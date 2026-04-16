@@ -1,0 +1,1053 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>診療情報管理士 問題演習</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #0f1117;
+  --surface: #1a1d27;
+  --surface-alt: #222636;
+  --border: #2d3248;
+  --text: #e8eaf0;
+  --text-dim: #8b90a5;
+  --accent: #6c8cff;
+  --accent-glow: rgba(108,140,255,0.15);
+  --correct: #34d399;
+  --correct-bg: rgba(52,211,153,0.1);
+  --wrong: #f87171;
+  --wrong-bg: rgba(248,113,113,0.1);
+  --tag-bg: rgba(108,140,255,0.12);
+  --ch8: #f59e0b;
+  --ch8-bg: rgba(245,158,11,0.12);
+  --ch9: #10b981;
+  --ch9-bg: rgba(16,185,129,0.12);
+  --ch10: #ec4899;
+  --ch10-bg: rgba(236,72,153,0.12);
+  --ch11: #8b5cf6;
+  --ch11-bg: rgba(139,92,246,0.12);
+  --mix: #ec4899;
+  --mix-bg: rgba(236,72,153,0.12);
+  --radius: 14px;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Noto Sans JP',sans-serif;background:var(--bg);color:var(--text);min-height:100dvh;-webkit-tap-highlight-color:transparent;}
+.screen{display:none}.screen.active{display:block}
+
+/* Header */
+.app-header{position:sticky;top:0;z-index:100;background:rgba(15,17,23,0.88);backdrop-filter:blur(16px);border-bottom:1px solid var(--border);padding:14px 20px;}
+.app-header h1{font-size:13px;font-weight:700;letter-spacing:0.04em;color:var(--text-dim);}
+.app-header .chapter-name{font-size:17px;font-weight:900;margin-top:2px;}
+
+/* Progress */
+.progress-bar-wrap{padding:0 20px;margin-top:12px;}
+.progress-track{height:6px;border-radius:3px;background:var(--surface-alt);overflow:hidden;}
+.progress-fill{height:100%;border-radius:3px;background:linear-gradient(90deg,var(--accent),#a78bfa);transition:width 0.4s cubic-bezier(.4,0,.2,1);}
+.progress-label{display:flex;justify-content:space-between;font-size:12px;color:var(--text-dim);margin-top:6px;padding:0 2px;font-family:'JetBrains Mono',monospace;}
+
+/* Home */
+.home-screen{padding:32px 20px 60px;}
+.home-logo{width:64px;height:64px;border-radius:16px;background:linear-gradient(135deg,var(--accent),#a78bfa);display:flex;align-items:center;justify-content:center;margin:0 auto 16px;font-size:28px;color:#fff;box-shadow:0 8px 32px rgba(108,140,255,0.25);}
+.home-title{text-align:center;font-size:21px;font-weight:900;margin-bottom:4px;}
+.home-sub{text-align:center;font-size:13px;color:var(--text-dim);margin-bottom:28px;}
+
+/* Chapter Cards */
+.chapter-cards{display:flex;flex-direction:column;gap:14px;margin-bottom:20px;}
+.ch-card{background:var(--surface);border:1.5px solid var(--border);border-radius:var(--radius);padding:16px;cursor:pointer;transition:all 0.2s;-webkit-user-select:none;user-select:none;}
+.ch-card:active{transform:scale(0.98);}
+.ch-card.selected{border-color:var(--accent);background:var(--accent-glow);}
+.ch-card .ch-head{display:flex;align-items:center;gap:10px;margin-bottom:8px;}
+.ch-card .ch-dot{width:10px;height:10px;border-radius:50%;flex-shrink:0;}
+.ch-card .ch-label{font-size:15px;font-weight:700;}
+.ch-card .ch-desc{font-size:12px;color:var(--text-dim);line-height:1.5;}
+.ch-card .ch-meta{display:flex;gap:12px;margin-top:10px;font-size:12px;font-family:'JetBrains Mono',monospace;}
+.ch-card .ch-meta span{color:var(--text-dim);}
+.ch-card .ch-meta strong{color:var(--text);}
+
+.section-label{font-size:13px;font-weight:700;color:var(--text-dim);margin-bottom:10px;letter-spacing:0.03em;}
+
+/* Mode buttons */
+.mode-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:14px;}
+.btn{display:block;width:100%;padding:14px;border:none;border-radius:var(--radius);font-family:'Noto Sans JP',sans-serif;font-size:14px;font-weight:700;cursor:pointer;transition:all 0.2s;text-align:center;}
+.btn:active{transform:scale(0.97);}
+.btn-primary{background:linear-gradient(135deg,var(--accent),#a78bfa);color:#fff;box-shadow:0 4px 20px rgba(108,140,255,0.25);}
+.btn-secondary{background:var(--surface);color:var(--text);border:1px solid var(--border);}
+.btn-secondary:active{background:var(--surface-alt);}
+.btn-wrong{background:var(--wrong-bg);color:var(--wrong);border:1px solid rgba(248,113,113,0.3);}
+.btn-full{grid-column:1/-1;}
+.btn-disabled{opacity:0.35;pointer-events:none;}
+
+/* Quiz */
+.quiz-screen{padding:16px 20px 100px;}
+.q-chapter-badge{display:inline-block;padding:3px 8px;border-radius:6px;font-size:11px;font-weight:700;margin-bottom:6px;}
+.q-number{font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--accent);margin-bottom:8px;font-weight:500;}
+.q-text{font-size:16.5px;font-weight:700;line-height:1.7;margin-bottom:22px;}
+.choices{display:flex;flex-direction:column;gap:10px;}
+.choice-btn{display:flex;align-items:flex-start;gap:12px;width:100%;padding:15px 16px;background:var(--surface);border:1.5px solid var(--border);border-radius:var(--radius);font-family:'Noto Sans JP',sans-serif;font-size:14.5px;color:var(--text);text-align:left;cursor:pointer;transition:all 0.15s;line-height:1.6;-webkit-user-select:none;user-select:none;}
+.choice-btn:active{transform:scale(0.98);}
+.choice-btn .key{flex-shrink:0;width:28px;height:28px;border-radius:8px;background:var(--surface-alt);display:flex;align-items:center;justify-content:center;font-family:'JetBrains Mono',monospace;font-size:13px;font-weight:700;color:var(--text-dim);}
+.choice-btn.selected{border-color:var(--accent);background:var(--accent-glow);}
+.choice-btn.selected .key{background:var(--accent);color:#fff;}
+.choice-btn.correct{border-color:var(--correct);background:var(--correct-bg);}
+.choice-btn.correct .key{background:var(--correct);color:#fff;}
+.choice-btn.wrong{border-color:var(--wrong);background:var(--wrong-bg);}
+.choice-btn.wrong .key{background:var(--wrong);color:#fff;}
+.choice-btn.disabled{pointer-events:none;}
+.choice-btn.dimmed{opacity:0.4;}
+
+/* Explanation */
+.explanation-box{margin-top:20px;padding:16px;border-radius:var(--radius);background:var(--surface);border:1px solid var(--border);animation:slideUp 0.3s ease;}
+@keyframes slideUp{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.result-badge{display:inline-block;padding:4px 10px;border-radius:6px;font-size:12px;font-weight:700;margin-bottom:10px;}
+.result-badge.correct{background:var(--correct-bg);color:var(--correct);}
+.result-badge.wrong{background:var(--wrong-bg);color:var(--wrong);}
+.exp-text{font-size:14px;line-height:1.75;color:var(--text-dim);white-space:pre-line;word-wrap:break-word;}
+.exp-text strong{color:var(--text);font-weight:700;}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px;}
+.tag{font-size:11px;padding:4px 8px;border-radius:6px;background:var(--tag-bg);color:var(--accent);font-weight:500;}
+
+/* Bottom Nav */
+.bottom-nav{position:fixed;bottom:0;left:0;right:0;padding:12px 20px calc(12px + env(safe-area-inset-bottom));background:rgba(15,17,23,0.92);backdrop-filter:blur(16px);border-top:1px solid var(--border);display:flex;gap:10px;}
+.bottom-nav .btn{flex:1;padding:14px;}
+
+/* Result */
+.result-screen{padding:36px 20px;}
+.result-screen .r-center{text-align:center;}
+.result-circle{width:140px;height:140px;border-radius:50%;margin:0 auto 24px;position:relative;display:flex;align-items:center;justify-content:center;flex-direction:column;}
+.result-circle svg{position:absolute;top:0;left:0;transform:rotate(-90deg);}
+.result-circle .pct{font-family:'JetBrains Mono',monospace;font-size:36px;font-weight:700;}
+.result-circle .pct-label{font-size:12px;color:var(--text-dim);}
+.result-detail{display:flex;justify-content:center;gap:24px;margin:20px 0 28px;}
+.result-detail .item{text-align:center;}
+.result-detail .item .val{font-family:'JetBrains Mono',monospace;font-size:22px;font-weight:700;}
+.result-detail .item .lbl{font-size:12px;color:var(--text-dim);margin-top:2px;}
+.result-detail .item.ok .val{color:var(--correct);}
+.result-detail .item.ng .val{color:var(--wrong);}
+.result-actions{display:flex;flex-direction:column;gap:10px;margin-top:12px;}
+
+/* Chapter breakdown */
+.ch-breakdown{display:flex;gap:10px;margin-bottom:20px;justify-content:center;}
+.ch-break-item{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:12px 16px;text-align:center;min-width:100px;}
+.ch-break-item .cb-label{font-size:11px;color:var(--text-dim);margin-bottom:4px;}
+.ch-break-item .cb-val{font-family:'JetBrains Mono',monospace;font-size:18px;font-weight:700;}
+
+/* Review */
+.review-list{padding:0 20px 40px;}
+.review-item{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:14px 16px;margin-bottom:10px;}
+.review-item .ri-head{display:flex;align-items:center;gap:8px;margin-bottom:6px;}
+.ri-badge{width:22px;height:22px;border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:12px;color:#fff;}
+.ri-badge.ok{background:var(--correct);}.ri-badge.ng{background:var(--wrong);}
+.ri-num{font-size:12px;color:var(--text-dim);font-family:'JetBrains Mono',monospace;}
+.ri-ch{font-size:10px;padding:2px 6px;border-radius:4px;font-weight:700;}
+.review-item .ri-q{font-size:13px;line-height:1.55;}
+.review-item .ri-ans{font-size:12px;color:var(--text-dim);margin-top:6px;}
+/* Utility */
+.hidden{display:none!important}
+
+/* Count picker */
+.count-picker{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px;}
+.count-chip{flex:1;min-width:60px;padding:12px 8px;background:var(--surface);border:1.5px solid var(--border);border-radius:10px;text-align:center;font-family:'JetBrains Mono',monospace;font-size:15px;font-weight:700;color:var(--text);cursor:pointer;transition:all 0.15s;-webkit-user-select:none;user-select:none;}
+.count-chip:active{transform:scale(0.95);}
+.count-chip.selected{border-color:var(--accent);background:var(--accent-glow);color:var(--accent);}
+.count-custom-row{display:flex;gap:8px;align-items:center;margin-bottom:14px;}
+.count-custom-row input{flex:1;padding:12px 14px;background:var(--surface);border:1.5px solid var(--border);border-radius:10px;color:var(--text);font-family:'JetBrains Mono',monospace;font-size:15px;font-weight:700;text-align:center;outline:none;}
+.count-custom-row input:focus{border-color:var(--accent);}
+.count-custom-row .unit{color:var(--text-dim);font-size:13px;}
+.pool-info{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:10px 14px;margin-bottom:14px;font-size:12px;color:var(--text-dim);text-align:center;}
+.pool-info strong{color:var(--accent);font-family:'JetBrains Mono',monospace;font-weight:700;}
+
+/* Flag button in quiz */
+.flag-btn{position:absolute;top:12px;right:20px;width:44px;height:44px;border:none;background:var(--surface);border:1.5px solid var(--border);border-radius:12px;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:20px;transition:all 0.15s;-webkit-tap-highlight-color:transparent;}
+.flag-btn:active{transform:scale(0.92);}
+.flag-btn.flagged{background:rgba(251,191,36,0.15);border-color:#fbbf24;}
+.q-head-row{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:8px;gap:12px;}
+
+/* Menu / additional buttons */
+.utility-section{margin-top:24px;}
+.util-btn-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+.util-btn{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:14px 10px;text-align:center;cursor:pointer;transition:all 0.15s;font-size:13px;font-weight:700;color:var(--text);}
+.util-btn:active{transform:scale(0.97);background:var(--surface-alt);}
+.util-btn .util-icon{font-size:20px;display:block;margin-bottom:4px;}
+.util-btn .util-count{font-family:'JetBrains Mono',monospace;color:var(--accent);font-size:11px;margin-top:2px;}
+
+/* Modal */
+.modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.7);backdrop-filter:blur(8px);z-index:200;display:none;align-items:flex-end;justify-content:center;padding:20px;}
+.modal-overlay.active{display:flex;}
+.modal{background:var(--surface);border:1px solid var(--border);border-radius:20px 20px 12px 12px;padding:24px 20px calc(24px + env(safe-area-inset-bottom));width:100%;max-width:500px;max-height:85dvh;overflow-y:auto;animation:slideUpModal 0.3s ease;}
+@keyframes slideUpModal{from{transform:translateY(30px);opacity:0;}to{transform:translateY(0);opacity:1;}}
+.modal h3{font-size:18px;font-weight:900;margin-bottom:8px;}
+.modal p{font-size:13px;color:var(--text-dim);line-height:1.6;margin-bottom:14px;}
+.modal textarea{width:100%;min-height:120px;padding:12px;background:var(--bg);border:1.5px solid var(--border);border-radius:10px;color:var(--text);font-family:'JetBrains Mono',monospace;font-size:11px;line-height:1.5;outline:none;resize:vertical;}
+.modal textarea:focus{border-color:var(--accent);}
+.modal-actions{display:flex;gap:10px;margin-top:16px;}
+.modal-actions .btn{flex:1;padding:13px;}
+.toast{position:fixed;bottom:calc(30px + env(safe-area-inset-bottom));left:50%;transform:translateX(-50%);background:var(--surface);border:1px solid var(--border);padding:12px 20px;border-radius:12px;font-size:13px;font-weight:700;z-index:300;box-shadow:0 8px 32px rgba(0,0,0,0.4);animation:toastIn 0.3s ease;}
+@keyframes toastIn{from{opacity:0;transform:translate(-50%,20px);}to{opacity:1;transform:translate(-50%,0);}}
+.toast.ok{color:var(--correct);border-color:rgba(52,211,153,0.3);}
+.toast.err{color:var(--wrong);border-color:rgba(248,113,113,0.3);}
+</style>
+</head>
+<body>
+
+<!-- ═══ HOME ═══ -->
+<div id="homeScreen" class="screen active">
+<div class="home-screen">
+  <div class="home-logo">📋</div>
+  <div class="home-title">診療情報管理士</div>
+  <div class="home-sub">学習用 問題演習アプリ</div>
+
+  <div class="section-label">章を選択（複数選択可）</div>
+  <div class="chapter-cards" id="chapterCards"></div>
+
+  <div class="section-label" style="margin-top:24px">問題数を選ぶ</div>
+  <div class="count-picker" id="countPicker">
+    <div class="count-chip" data-count="10" onclick="selectCount(10)">10問</div>
+    <div class="count-chip" data-count="20" onclick="selectCount(20)">20問</div>
+    <div class="count-chip" data-count="30" onclick="selectCount(30)">30問</div>
+    <div class="count-chip" data-count="50" onclick="selectCount(50)">50問</div>
+    <div class="count-chip" data-count="all" onclick="selectCount('all')">全問</div>
+  </div>
+  <div class="count-custom-row">
+    <input type="number" id="customCount" placeholder="自由入力" min="1" max="500" inputmode="numeric" oninput="handleCustomCount(this.value)">
+    <span class="unit">問</span>
+  </div>
+  <div class="pool-info" id="poolInfo">対象: <strong>0</strong>問から <strong>0</strong>問を出題</div>
+
+  <button class="btn btn-primary" style="margin-bottom:10px" onclick="startQuiz('normal')">🚀 学習を始める</button>
+  <button class="btn btn-wrong hidden" id="btnWrong" onclick="startQuiz('wrong')" style="margin-bottom:10px">📍 間違えた問題を復習</button>
+  <button class="btn btn-secondary hidden" id="btnFlagged" onclick="startQuiz('flagged')" style="margin-bottom:10px">🔖 ブックマークした問題</button>
+
+  <div class="utility-section">
+    <div class="section-label">データ管理</div>
+    <div class="util-btn-grid">
+      <div class="util-btn" onclick="openExport()">
+        <span class="util-icon">📤</span>
+        <div>データ書き出し</div>
+        <div class="util-count" id="exportCount">0件</div>
+      </div>
+      <div class="util-btn" onclick="openImport()">
+        <span class="util-icon">📥</span>
+        <div>データ読み込み</div>
+        <div class="util-count">復元</div>
+      </div>
+      <div class="util-btn" onclick="openReset()">
+        <span class="util-icon">🗑️</span>
+        <div>記録をリセット</div>
+        <div class="util-count">初期化</div>
+      </div>
+      <div class="util-btn" onclick="openStats()">
+        <span class="util-icon">📊</span>
+        <div>学習状況</div>
+        <div class="util-count" id="statsCount">--</div>
+      </div>
+    </div>
+    <div id="storageStatus" style="margin-top:10px;padding:10px 12px;border-radius:10px;font-size:12px;line-height:1.5;"></div>
+  </div>
+</div>
+</div>
+
+<!-- ═══ QUIZ ═══ -->
+<div id="quizScreen" class="screen">
+  <div class="app-header">
+    <h1>診療情報管理士 問題演習</h1>
+    <div class="chapter-name" id="quizHeaderTitle"></div>
+  </div>
+  <div class="progress-bar-wrap">
+    <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+    <div class="progress-label"><span id="progressCurrent">1 / 42</span><span id="progressPct">0%</span></div>
+  </div>
+  <div class="quiz-screen" id="quizBody"></div>
+  <div class="bottom-nav" id="bottomNav">
+    <button class="btn btn-secondary hidden" id="btnNext" onclick="nextQuestion()">次の問題 →</button>
+    <button class="btn btn-primary hidden" id="btnFinish" onclick="showResult()">結果を見る</button>
+  </div>
+</div>
+
+<!-- ═══ RESULT ═══ -->
+<div id="resultScreen" class="screen">
+  <div class="result-screen">
+    <div class="r-center">
+      <div class="result-circle"><svg width="140" height="140"><circle cx="70" cy="70" r="62" stroke="var(--surface-alt)" stroke-width="8" fill="none"/><circle id="resultArc" cx="70" cy="70" r="62" stroke="var(--accent)" stroke-width="8" fill="none" stroke-linecap="round" stroke-dasharray="389.56" stroke-dashoffset="389.56"/></svg><div class="pct" id="resultPct">0%</div><div class="pct-label">正答率</div></div>
+      <div class="result-detail">
+        <div class="item ok"><div class="val" id="resultOk">0</div><div class="lbl">正解</div></div>
+        <div class="item ng"><div class="val" id="resultNg">0</div><div class="lbl">不正解</div></div>
+        <div class="item"><div class="val" id="resultCount">0</div><div class="lbl">出題数</div></div>
+      </div>
+      <div class="ch-breakdown" id="chBreakdown"></div>
+    </div>
+    <div class="result-actions">
+      <button class="btn btn-primary" onclick="showReview()">解答を振り返る</button>
+      <button class="btn btn-secondary" onclick="goHome()">ホームに戻る</button>
+    </div>
+  </div>
+  <div class="review-list hidden" id="reviewList"></div>
+  <div style="padding:0 20px 40px" class="hidden" id="reviewBack">
+    <button class="btn btn-secondary" onclick="goHome()">ホームに戻る</button>
+  </div>
+</div>
+
+<!-- ═══ MODALS ═══ -->
+<div class="modal-overlay" id="modalOverlay" onclick="closeModalBg(event)">
+  <div class="modal" id="modalBox">
+    <h3 id="modalTitle">タイトル</h3>
+    <p id="modalDesc"></p>
+    <div id="modalBody"></div>
+    <div class="modal-actions" id="modalActions"></div>
+  </div>
+</div>
+
+<script>
+// ═══════════════════════════════════════
+// QUESTION DATA
+// ═══════════════════════════════════════
+const CHAPTERS = {
+  8: {
+    id: 8,
+    name: "第8章",
+    fullName: "第8章 診療情報管理I（法令・諸規則）",
+    color: "var(--ch8)",
+    bgColor: "var(--ch8-bg)",
+    questions: [
+      {"id":"ch08-001","chapterId":8,"chapterName":"第8章 診療情報管理I（法令・諸規則）","questionText":"「診療録」の説明として最も適切なのはどれか。","choices":{"A":"患者に関するあらゆる情報を総称した概念である。","B":"医師が作成する診療内容・経過などの記録である。","C":"看護記録のみを指す用語である。","D":"電子媒体に保存されたものだけを指す。","E":"病院が保有する統計資料を指す。"},"correctAnswer":"B","explanation":"【正答の根拠】診療録(いわゆるカルテ)は、医師法第24条が規定する『医師が診療を行った際に作成する記録』。医師自身の判断・処方・処置・経過観察等を記載する。\n【誤答の整理】A：『患者に関するあらゆる情報』は『診療情報』の定義で、診療録より広い概念(Q3参照)。C：看護記録は別途存在し2007年医療法改正で診療記録の一部として位置づけられたが、診療録とは別。D：紙・電子を問わず『記録の媒体』ではなく『内容』で定義される。E：統計資料は別物。\n【3つの用語整理】(1)診療情報(最広義：診療の過程で知り得たすべての情報)→(2)診療に関する諸記録(記録化されたもの全般：診療録・看護記録・検査・手術記録等)→(3)診療録(医師が作成する中核記録)。包含関係を押さえるのが章全体の鍵。","tags":["診療録","用語の定義","診療情報管理"]},
+      {"id":"ch08-002","chapterId":8,"chapterName":"第8章 診療情報管理I（法令・諸規則）","questionText":"「診療に関する諸記録」に含まれるものとして最も適切なのはどれか。","choices":{"A":"医師の診療録のみ","B":"診療録、手術記録、看護記録、検査所見記録など","C":"会計帳簿と給与台帳","D":"患者の家計簿","E":"病院の建築図面"},"correctAnswer":"B","explanation":"【正答の根拠】『診療に関する諸記録』は医療法施行規則第21条の5で範囲が規定されており、診療録に加え、病院日誌、各科診療日誌、処方せん、手術記録、看護記録、検査所見記録、エックス線写真、紹介状、退院した患者に係る入院期間中の診療経過の要約(退院時要約)、入院診療計画書などが含まれる。\n【誤答の整理】A：診療録のみでは狭すぎる。C：会計帳簿・給与台帳は診療記録ではなく経理記録。D・E：患者の家計簿・病院建築図面は診療と無関係。\n【保存期間の注意】医療法施行規則では『過去2年間』の保存を求められるものがある一方、診療録自体は医師法第24条で『5年間』保存。記録の種類により保存年限が異なる点が試験頻出。","tags":["診療に関する諸記録","用語の定義","記録"]},
+      {"id":"ch08-003","chapterId":8,"chapterName":"第8章 診療情報管理I（法令・諸規則）","questionText":"「診療情報」の説明として最も適切なのはどれか。","choices":{"A":"診療の過程で、患者の身体状況、病状、治療等について医療従事者が知り得た情報である。","B":"保険請求に必要なレセプト情報のみである。","C":"患者が自宅で記載したメモのみである。","D":"診療録と同義であり、区別はない。","E":"電子カルテに入力された情報だけをいう。"},"correctAnswer":"A","explanation":"【正答の根拠】『診療情報』は厚労省『診療情報の提供等に関する指針』で定義され、診療の過程で医療従事者が患者から知り得た、あるいは観察・検査等で得た身体状況・病状・治療に関するすべての情報を指す。記録化される前の『情報』段階も含む最広義の概念。\n【誤答の整理】B：レセプトは診療情報の一部にすぎない。C：患者メモは医療従事者が得た情報ではない。D：診療録は診療情報のうち『医師が文書化した中核部分』で、診療情報の方が広い。E：媒体で定義されない。\n【覚え方】『情報(intangible)→記録(tangible)→諸記録(制度上の一覧)→診療録(法定の中核)』という階層。患者の権利(知る権利・開示請求権)は『診療情報』レベルで保障される。","tags":["診療情報","用語の定義","診療情報管理"]},
+      {"id":"ch08-004","chapterId":8,"chapterName":"第8章 診療情報管理I（法令・諸規則）","questionText":"診療記録の価値のうち、「患者にとっての価値」として最も適切なのはどれか。","choices":{"A":"医師個人の研究資料となることだけを意味する。","B":"患者が安全な医療を受け、医療の継続性が確保されるうえで重要である。","C":"病院の経営統計にしか使われない。","D":"保険者の事務処理のみを目的とする。","E":"診療記録の価値は患者にはない。"},"correctAnswer":"B","explanation":"【正答の根拠】診療記録は患者にとって、(1)安全な医療提供の基盤(アレルギー歴・既往歴・投薬歴から医療事故を防ぐ)、(2)医療の継続性(他院受診や担当医変更時の情報継承)、(3)情報開示請求の基礎資料(インフォームドコンセント・セカンドオピニオン)、(4)医療過誤の有無を検証する証拠、という多面的価値を持つ。\n【誤答の整理】A：研究資料は医師側の価値の一部。C：経営統計は病院側の価値。D：保険者事務は一部用途。E：患者に最も直接的な価値がある。\n【補足】『患者の価値＝安全＋継続性＋知る権利』が3本柱。Q5(医師)・Q6(病院)との対比で理解する。","tags":["診療記録の価値","患者","継続性"]},
+      {"id":"ch08-005","chapterId":8,"chapterName":"第8章 診療情報管理I（法令・諸規則）","questionText":"診療記録の価値のうち、「医師にとっての価値」として最も適切なのはどれか。","choices":{"A":"医師にとっては不要であり、法的義務にすぎない。","B":"診療の経験と知見の集積であり、自らの医業管理や教育にも利用される。","C":"患者への説明には用いられない。","D":"他職種との連携を妨げる資料である。","E":"医師以外には価値がない。"},"correctAnswer":"B","explanation":"【正答の根拠】医師にとっての診療記録の価値：(1)臨床経験と知見の蓄積(過去症例の参照)、(2)自らの医業管理(診療の質の自己評価)、(3)教育資料(研修医指導、学生教育、症例検討会)、(4)研究資料(臨床研究の基礎)、(5)法的自己防衛(医療訴訟時の証拠)、(6)患者説明の根拠(インフォームドコンセント)。\n【誤答の整理】A：単なる法的義務を超えた専門職としての道具。C：むしろ患者説明の重要な基盤。D：チーム医療の連携ツール。E：医療職全般・患者・研究者に価値。\n【補足】『経験の蓄積＝実地の教科書』という視点が、SOAP形式の記録が普及した理由。医師が後から振り返って学べるよう構造化されている。","tags":["診療記録の価値","医師","教育"]},
+      {"id":"ch08-006","chapterId":8,"chapterName":"第8章 診療情報管理I（法令・諸規則）","questionText":"診療記録の価値のうち、「病院にとっての価値」として最も適切なのはどれか。","choices":{"A":"病院経営とは無関係である。","B":"医療機関におけるさまざまな診療活動を検証・評価するための情報源となる。","C":"患者のためには使えない。","D":"法廷で使用できないため価値は低い。","E":"医師個人の私物である。"},"correctAnswer":"B","explanation":"【正答の根拠】病院にとっての価値：(1)診療活動の検証・評価(医療の質評価、クリニカルインディケーターの集計)、(2)診療報酬請求の根拠、(3)医療機能評価・病院機能評価受審の資料、(4)DPCデータ・がん登録等の統計作成、(5)医療安全管理(インシデント検証)、(6)病院間比較(ベンチマーク)、(7)訴訟・紛争対応の証拠。\n【誤答の整理】A：病院経営の中核資料。C：患者サービス向上にも使う。D：民事訴訟法第220条により裁判所への文書提出義務があり、法廷での重要証拠。E：医師の私物ではなく、医療法上、病院・診療所の管理者が保存責任を負う『病院の記録』。\n【重要判例視点】診療録の所有権は医療機関側にあるが、記載された情報に対する患者の権利(開示請求等)は別途保障されている。","tags":["診療記録の価値","病院","質評価"]},
+      {"id":"ch08-007","chapterId":8,"chapterName":"第8章 診療情報管理I（法令・諸規則）","questionText":"わが国の古代の診療記録・医療記録に関する記述として適切なのはどれか。","choices":{"A":"養老律令には医療に関する記載はみられない。","B":"『医心方』は平安時代の医書として知られる。","C":"近代以前には診療記録は存在しなかった。","D":"古代の医療記録はすべて西洋医学に基づいていた。","E":"江戸時代に初めて医療記録が現れた。"},"correctAnswer":"B","explanation":"【正答の根拠】『医心方』は平安時代中期(984年)、丹波康頼が編纂した日本最古の医学書で、全30巻。中国の医学書から引用した疾病・治療・予防の記述を集大成している。国宝指定。\n【誤答の整理】A：養老律令(718年制定)には医疾令(医療制度の規定)があり、医師養成・医療行政の記載がある。C：古代日本でも医療の記録はあった。D：古代は中国医学(漢方)が主流で西洋医学ではない。E：江戸時代より遥か前から医療記録は存在。\n【医療史の流れ】医疾令(奈良時代)→医心方(平安)→本居宣長の診療記録(江戸)→医制(1874明治)→医師法(1906)→国民医療法(1942)→戦後の現行法体系(1948〜)。","tags":["診療記録の歴史","古代","医心方"]},
+      {"id":"ch08-008","chapterId":8,"chapterName":"第8章 診療情報管理I（法令・諸規則）","questionText":"近世の診療記録に関する人物として本文で示されていたものはどれか。","choices":{"A":"本居宣長","B":"伊藤博文","C":"福沢諭吉","D":"新島襄","E":"二宮尊徳"},"correctAnswer":"A","explanation":"【正答の根拠】本居宣長(1730-1801)は江戸時代中期の国学者として知られるが、本業は医師(小児科を中心とした町医者)。約40年にわたる詳細な診療記録(『済世録』『諸用帳』等)を残し、近世日本の町医者の診療実態を知る貴重な史料となっている。\n【誤答の整理】B：伊藤博文は明治期の政治家。C：福沢諭吉は教育者・思想家(慶應義塾創設者)。D：新島襄は同志社創設者。E：二宮尊徳は農政家。いずれも医師ではない。\n【補足】本居宣長は『古事記伝』の国学者として有名だが、日々の生計は医業で立てていた。近世の町医者が詳細な診療記録をつけていた証左として、医療記録史上重要な人物。","tags":["診療記録の歴史","近世","本居宣長"]},
+      {"id":"ch08-009","chapterId":8,"chapterName":"第8章 診療情報管理I（法令・諸規則）","questionText":"本文で、世界で初めて全身麻酔を用いた手術で知られる人物として示されていたのはどれか。","choices":{"A":"本居宣長","B":"緒方洪庵","C":"華岡青洲","D":"杉田玄白","E":"小石元瑞"},"correctAnswer":"C","explanation":"【正答の根拠】華岡青洲(1760-1835)は、1804年(文化元年)10月13日、60歳女性『藍屋勘』に対し、自ら開発した全身麻酔薬『通仙散(別名：麻沸散、主成分は曼陀羅華＝チョウセンアサガオ)』を用いた全身麻酔下で、世界初の乳癌摘出手術に成功した。欧米初例(1846年W.T.G.モートンのエーテル麻酔)より約42年早い快挙。\n【誤答の整理】A：本居宣長は町医者だが全身麻酔とは無関係(Q8)。B：緒方洪庵は適塾創設者で蘭学者。D：杉田玄白は『解体新書』翻訳者(1774年)。E：小石元瑞は京都の蘭方医。いずれも全身麻酔の先駆者ではない。\n【補足】日本麻酔科学会は青洲の業績にちなみ、10月13日を『麻酔の日』と定め、ロゴマークに曼陀羅華をあしらっている。患者記録『乳巖姓名録』に152名の手術記録が残る点でも、『記録』史的に重要。","tags":["診療記録の歴史","華岡青洲","近世"]},
+      {"id":"ch08-010","chapterId":8,"chapterName":"第8章 診療情報管理I（法令・諸規則）","questionText":"近代の医療制度の整備に関する記述として正しいのはどれか。","choices":{"A":"1874年に『医制』が公布された。","B":"1906年に初めて『医制』が公布された。","C":"1948年に初めて医療制度が法制化された。","D":"近代医療制度は戦後にのみ始まった。","E":"本文では近代の医療制度整備には触れていない。"},"correctAnswer":"A","explanation":"【正答の根拠】1874年(明治7年)、明治政府が『医制』を発布。これは日本最初の近代的な医療法規で、医学教育・医師免許・薬事・病院制度など医療全般を規定。西洋医学導入と医師制度の整備を一気に進めた。\n【誤答の整理】B：1906年は医師法制定年で、医制ではない(Q11)。C：1948年は戦後の現行医療法・医師法制定年で『初めて』ではない。D：近代医療制度は明治期から。E：本文で主要テーマ。\n【覚え方】『1874(医制)＝明治7年＝近代医療の夜明け』。富国強兵の一環として、軍事・教育と並んで医療制度が整備された。","tags":["診療記録の歴史","近代","医制"]},
+      {"id":"ch08-011","chapterId":8,"chapterName":"第8章 診療情報管理I（法令・諸規則）","questionText":"本文で示された医療法規の流れとして最も適切なのはどれか。","choices":{"A":"医制 → 医師法 → 国民医療法 → 戦後の現行法整備","B":"国民医療法 → 医制 → 医師法 → 戦後の現行法整備","C":"医師法 → 医制 → 戦後の現行法整備 → 国民医療法","D":"戦後の現行法整備 → 医制 → 医師法 → 国民医療法","E":"本文では年次的な流れは示されていない。"},"correctAnswer":"A","explanation":"【正答の根拠】わが国の医療法規の歴史的流れ：(1)1874年『医制』(明治7、最初の近代医療法規)→(2)1906年『医師法』(明治39、医師資格の法制化)→(3)1942年『国民医療法』(昭和17、戦時下の医療統制法)→(4)1948年『現行医師法・医療法』(昭和23、戦後GHQ改革下の整備、国民医療法廃止)。\n【誤答の整理】B〜D：年次順が不正確。E：本文の中心テーマ。\n【覚え方】『医制(1874)→医師法(1906)→国民医療法(1942)→現行法(1948)』＝『明治7・明治39・昭和17・昭和23』。国民医療法は戦時の統制色が強く、戦後すぐ廃止された。","tags":["診療記録の歴史","法規","医師法","国民医療法"]},
+      {"id":"ch08-012","chapterId":8,"chapterName":"第8章 診療情報管理I（法令・諸規則）","questionText":"日本病院会に関する記述として正しいのはどれか。","choices":{"A":"1951年に日本病院協会として設立され、1976年に日本病院会へ名称変更した。","B":"1948年に日本医師会として設立された。","C":"2005年に初めて設立された。","D":"国際組織には加盟していない。","E":"診療情報管理とは無関係である。"},"correctAnswer":"A","explanation":"【正答の根拠】日本病院会は1951年『日本病院協会』として設立、1976年に『日本病院会』へ名称変更。現在は日本の病院団体の中核の1つで、診療情報管理士の認定教育機関でもある(診療情報管理通信教育・認定試験の実施主体)。\n【誤答の整理】B：1948年日本医師会設立は別団体(医師個人の職能団体)。C：2005年ではない。D：ICD関連でWHOと協定を結ぶなど国際的にも活動(Q13・Q14)。E：診療情報管理士の認定・教育の中核機関。\n【補足】日本病院会・全日本病院協会・日本精神科病院協会・日本医療法人協会が『四病院団体協議会(四病協)』を構成し、医療政策への提言を行う。診療情報管理士の認定4団体の1つが日本病院会。","tags":["日本病院会","歴史","診療情報管理"]},
+      {"id":"ch08-013","chapterId":8,"chapterName":"第8章 診療情報管理I（法令・諸規則）","questionText":"本文によれば、日本病院会が厚生労働大臣官房統計情報部企画課国際分類情報管理室の指導のもとで行ったものとして適切なのはどれか。","choices":{"A":"介護保険制度の創設","B":"ICDに関する技術・資金の支援についてWHOと調印したこと","C":"医師国家試験の実施","D":"薬価基準の改定","E":"病院建築基準の策定"},"correctAnswer":"B","explanation":"【正答の根拠】日本病院会は厚生労働省(当時・大臣官房統計情報部企画課国際分類情報管理室、現・政策統括官付国際分類情報管理室)の指導のもと、ICD(国際疾病分類)に関する技術・資金の支援についてWHOと調印。これがICDの日本における普及・運用の基盤となった。\n【誤答の整理】A：介護保険は厚労省老健局所管で制度創設。C：医師国家試験は厚労省医政局所管。D：薬価基準は中医協の答申に基づき厚労相告示。E：病院建築基準は医療法の範疇。いずれも日本病院会の主業務ではない。\n【補足】日本病院会のICD関連活動は、診療情報管理士制度の国際的整合性を支える基盤。診療情報管理士がICD-10、ICD-11等の翻訳・解説に関わる背景。","tags":["日本病院会","ICD","WHO"]},
+      {"id":"ch08-014","chapterId":8,"chapterName":"第8章 診療情報管理I（法令・諸規則）","questionText":"本文で、日本病院会がWHO国際統計分類協力センターの指定を受けた年として示されていたのはどれか。","choices":{"A":"2005年","B":"2006年","C":"2007年","D":"2012年","E":"2018年"},"correctAnswer":"D","explanation":"【正答の根拠】2012年(平成24年)、日本病院会はWHO国際統計分類協力センター(WHO-FIC Collaborating Centre)の指定を受けた。国立保健医療科学院、日本診療情報管理学会等と共に、日本のWHO国際分類活動の中核を担う8機関の1つとして指定されている。\n【誤答の整理】A〜C・E：年次が異なる。他の国内機関(国立保健医療科学院等)との指定時期とも異なる。\n【補足】WHO-FIC(Family of International Classifications)は、ICD・ICF・ICHIなどWHOの国際分類ファミリーを指す。協力センター指定は、日本がWHO会議に専門家を派遣し、分類改定に関与する権限を持つことを意味する。","tags":["日本病院会","WHO","WHO-FIC"]},
+      {"id":"ch08-015","chapterId":8,"chapterName":"第8章 診療情報管理I（法令・諸規則）","questionText":"医師法第24条の内容として正しいのはどれか。","choices":{"A":"医師は、診療をしたときは、遅滞なく診療に関する事項を診療録に記載しなければならない。","B":"医師は、診療後1年以内に記録すればよい。","C":"医師は、患者が希望した場合のみ診療録を記載する。","D":"診療録は看護師が記載することとされている。","E":"診療録の記載は自由記述で法的な定めはない。"},"correctAnswer":"A","explanation":"【正答の根拠】医師法第24条第1項：『医師は、診療をしたときは、遅滞なく診療に関する事項を診療録に記載しなければならない』。これは医師に課せられた絶対的義務で、違反時は第33条の3により50万円以下の罰金が科される。\n【誤答の整理】B：『遅滞なく』は厚労省見解で『概ね24時間以内』を意味し、1年以内では遅すぎる。C：患者の希望の有無と無関係に義務。D：医師自身が記載する義務(ただし医師事務作業補助者による代行入力は医師の確認・署名を条件に可)。E：医師法施行規則第23条で記載事項が具体的に規定されている(Q17)。\n【補足】『診療したときは、遅滞なく』は医師法24条の核心フレーズで頻出。『遅滞なく＝概ね24時間以内』という解釈は神戸大学診療録記載マニュアル等でも明記されている。","tags":["医師法","第24条","診療録記載義務"]},
+      {"id":"ch08-016","chapterId":8,"chapterName":"第8章 診療情報管理I（法令・諸規則）","questionText":"医師法に基づく診療録の保存期間として正しいのはどれか。","choices":{"A":"1年","B":"3年","C":"5年","D":"10年","E":"20年"},"correctAnswer":"C","explanation":"【正答の根拠】医師法第24条第2項：『前項の診療録であつて、病院又は診療所に勤務する医師のした診療に関するものは、その病院又は診療所の管理者において、その他の診療に関するものは、その医師において、五年間これを保存しなければならない』。\n【誤答の整理】A・B：医師法の5年より短い。D・E：医師法は5年規定。ただし実務では訴訟対応等で20年保存が推奨される(Q18参照)。\n【保存期間の整理】(1)診療録(医師法24条)＝5年、(2)診療に関する諸記録(医療法施行規則21条の5)＝2年、(3)療担規則第9条：診療録以外の記録＝3年、(4)特定生物由来製品の記録＝20年。記録の種類により年限が違う。","tags":["医師法","保存期間","5年"]},
+      {"id":"ch08-017","chapterId":8,"chapterName":"第8章 診療情報管理I（法令・諸規則）","questionText":"医師法施行規則第23条に定められている診療録の記載事項として含まれないものはどれか。","choices":{"A":"診療を受けた者の住所・氏名・性別及び年齢","B":"病名及び主要症状","C":"治療方法（処方及び処置）","D":"診療の年月日","E":"患者の職業歴のみ"},"correctAnswer":"E","explanation":"【正答の根拠】医師法施行規則第23条が定める診療録の必須記載事項は4項目：(1)診療を受けた者の住所、氏名、性別及び年齢、(2)病名及び主要症状、(3)治療方法(処方及び処置)、(4)診療の年月日。職業歴は法定必須項目ではない(参考情報として記載することは有用)。\n【誤答の整理】A〜D：すべて法定必須4項目。E：法定必須ではない。\n【覚え方】『住氏性年(しゅうしせいねん)／病名症状／治療方法／年月日』の4セット。これは医師事務作業補助者の研修でも重点項目。職業歴・家族歴・既往歴等は記載が推奨されるが法定必須ではない。","tags":["医師法施行規則","第23条","記載事項"]},
+      {"id":"ch08-018","chapterId":8,"chapterName":"第8章 診療情報管理I（法令・諸規則）","questionText":"診療録の保存期間の起算日について正しいのはどれか。","choices":{"A":"記載した日","B":"患者が退院した日","C":"診療が完結した日","D":"保険請求した日","E":"病院が決めた任意の日"},"correctAnswer":"C","explanation":"【正答の根拠】保険医療機関及び保険医療養担当規則(療担規則)第9条：『保険医療機関は、療養の給付の担当に関する帳簿及び書類その他の記録をその完結の日から三年間保存しなければならない。ただし、患者の診療録にあつては、その完結の日から五年間とする』。『完結の日』とは当該患者に対する診療が完了した日を意味し、再診が続くうちは起算が始まらない。\n【誤答の整理】A：記載日ではなく診療完結日が起算点。B：退院後も外来通院が続けば起算は始まらない。D：保険請求日は無関係。E：法定基準に従うので任意設定不可。\n【実務ポイント】慢性疾患で通院が10年続けば、最終診療日から5年後まで保存義務が続く。実質的には『診療終了後5年』で、長期に及ぶことも多い。診療情報管理士の実務では、患者の最終来院日を起点に保存管理を行う。","tags":["保存期間","起算日","療担規則"]},
+      {"id":"ch08-019","chapterId":8,"chapterName":"第8章 診療情報管理I（法令・諸規則）","questionText":"医師法第24条の診療録保存義務に違反した場合の罰則として、本文に示されていたのはどれか。","choices":{"A":"1年以下の懲役または100万円以下の罰金","B":"50万円以下の罰金","C":"罰則は一切ない","D":"無期懲役","E":"病院閉鎖のみ"},"correctAnswer":"B","explanation":"【正答の根拠】医師法第33条の3により、第24条(診療録の記載・保存義務)に違反した場合は『50万円以下の罰金』が科される。具体的には、(1)診療したのに診療録を作成しない、(2)必要な事項を記載していない、(3)5年間保存しない等の場合が該当する。\n【誤答の整理】A：医師法全般の他罰則(無免許医業等の第17条違反等は3年以下の懲役または100万円以下)と混同されやすいが、第24条違反は50万円以下の罰金のみ。C：罰則あり。D・E：該当しない。\n【補足】罰則は罰金のみで懲役はない点が特徴。軽微にみえるが医師免許への影響(行政処分)や民事損害賠償・保険医取消等の間接的影響は大きい。","tags":["医師法","罰則","診療録保存"]},
+      {"id":"ch08-020","chapterId":8,"chapterName":"第8章 診療情報管理I（法令・諸規則）","questionText":"医師の守秘義務に関する罰則の根拠法として正しいのはどれか。","choices":{"A":"刑法第134条（秘密漏示罪）","B":"民法第709条","C":"医療法第7条","D":"労働基準法第1条","E":"健康保険法第1条"},"correctAnswer":"A","explanation":"【正答の根拠】医師の守秘義務違反は刑法第134条第1項(秘密漏示罪)により処罰される：『医師、薬剤師、医薬品販売業者、助産師、弁護士、弁護人、公証人又はこれらの職にあった者が、正当な理由がないのに、その業務上取り扱ったことについて知り得た人の秘密を漏らしたときは、六月以下の懲役又は十万円以下の罰金に処する』。\n【誤答の整理】B：民法709条は不法行為(民事責任)の一般規定で、守秘義務違反時の損害賠償根拠にはなるが刑事罰則ではない。C：医療法7条は病院・診療所の開設許可規定で守秘義務とは別。D：労基法1条は労働条件基本原則で無関係。E：健保法1条は目的規定で守秘と無関係。\n【補足】刑法134条は『医師』と明記され、判例上『歯科医師』も含むと解釈されている。看護師は保助看法第42条の2(罰則は第44条の4)で別途規定。","tags":["守秘義務","刑法","第134条","秘密漏示罪"]},
+      {"id":"ch08-021","chapterId":8,"chapterName":"第8章 診療情報管理I（法令・諸規則）","questionText":"刑法第134条（秘密漏示罪）の訴追形式として正しいのはどれか。","choices":{"A":"親告罪である","B":"非親告罪であり検察が独自に起訴できる","C":"告発のみで成立する","D":"告訴も告発も不要で自動的に起訴される","E":"本文では言及されていない"},"correctAnswer":"A","explanation":"【正答の根拠】刑法第135条により、秘密漏示罪は『親告罪』。つまり被害者(秘密を漏らされた当事者)の告訴がなければ公訴提起できない。これは被害者のプライバシー保護の観点からで、『裁判によって秘密がさらに公になる二次被害』を避けるため被害者の意思を尊重する設計。\n【誤答の整理】B：非親告罪ではなく、被害者の告訴が起訴の要件。C：告発(第三者が申告)ではなく『告訴(被害者本人等)』が必要。D：告訴が必要。E：試験頻出事項として本文で扱われる。\n【補足】親告罪の他の例：名誉毀損罪、器物損壊罪など『個人のプライバシーや名誉の回復を被害者が自己決定すべき罪』が親告罪となる傾向。","tags":["守秘義務","親告罪","刑法"]},
+      {"id":"ch08-022","chapterId":8,"chapterName":"第8章 診療情報管理I（法令・諸規則）","questionText":"医療法第86条に関する記述として本文に合致するのはどれか。","choices":{"A":"守秘義務違反に対する罰則が規定されている","B":"1年以下の懲役又は50万円以下の罰金が規定されている","C":"医師の資格を定める規定である","D":"介護保険の規定である","E":"救急医療のみに関する規定である"},"correctAnswer":"B","explanation":"【正答の根拠】医療法第86条は、病院・診療所の管理者が医療法上の義務(届出、記録保存、報告等)に違反した場合の罰則規定で、1年以下の懲役又は50万円以下の罰金が科される。医療法違反に対する最も重い刑事罰則の1つ。\n【誤答の整理】A：医療法86条は管理者の義務違反の罰則で、守秘義務違反は刑法134条。C：医師資格は医師法の範疇。D：介護保険は介護保険法。E：救急医療の独立規定ではない。\n【補足】医療法違反の罰則体系：管理者の義務違反(86条)、院内掲示義務違反等(87条)、など違反内容により罰則が異なる。診療情報管理部門の責任者は、医療法上の『記録保存管理責任』の一翼を担うため、86条の存在を理解しておくべき。","tags":["医療法","第86条","罰則"]},
+      {"id":"ch08-023","chapterId":8,"chapterName":"第8章 診療情報管理I（法令・諸規則）","questionText":"個人情報保護法に関して病院に求められる体制として最も適切なのはどれか。","choices":{"A":"院内での個人情報保護に関する組織的な体制整備","B":"患者情報の自由な公開","C":"職員による情報の院外持ち出しの奨励","D":"個人情報の無制限な第三者提供","E":"個人情報の取扱いを院長1人のみで完結させること"},"correctAnswer":"A","explanation":"【正答の根拠】個人情報保護法は病院を『個人情報取扱事業者』と位置づけ、(1)取得時の利用目的通知、(2)第三者提供時の本人同意、(3)安全管理措置(組織的・人的・物理的・技術的)、(4)開示請求への対応、(5)苦情処理体制、(6)漏えい時の報告義務等を求める。2017年改正で小規模事業者(5,000人以下)の適用除外が撤廃され、全医療機関が対象に。\n【誤答の整理】B：自由な公開は違法。C：院外持ち出しは厳格管理対象。D：第三者提供は原則本人同意が必要。E：組織的対応が必要(院長1人では不可)。\n【補足】個人情報保護法の安全管理4側面：(1)組織的(責任者・規程)、(2)人的(教育・契約)、(3)物理的(入退室・施錠)、(4)技術的(アクセス制御・暗号化)。診療情報管理部門はこの中核を担う。","tags":["個人情報保護法","体制整備","安全管理"]},
+      {"id":"ch08-024","chapterId":8,"chapterName":"第8章 診療情報管理I（法令・諸規則）","questionText":"医療機関における雇用契約上の守秘義務に関する説明として最も適切なのはどれか。","choices":{"A":"医師だけが守秘義務を負う","B":"医療職、事務職、委託業者を含む全ての職員が雇用契約や就業規則等で守秘義務を負うべきである","C":"雇用契約には守秘義務を明記できない","D":"退職後は守秘義務がなくなる","E":"守秘義務は口頭でのみ交わす"},"correctAnswer":"B","explanation":"【正答の根拠】医療機関では医師・看護師・薬剤師等の法定資格者だけでなく、診療情報管理士・医事課職員・委託業者(清掃・警備・給食・廃棄物処理等)を含む全員が守秘義務を負う。これは雇用契約書・就業規則・業務委託契約書に明記するのが原則。法定資格者は職種法で、それ以外は契約上の義務として規定する。\n【誤答の整理】A：全職員が対象。C：明記すべき。D：退職後も継続する(刑法134条・保助看法42条の2も『○○でなくなった後においても、同様』と規定)。E：書面で明記するのが原則。\n【補足】医師事務作業補助者の研修でも『守秘義務』は必須項目(Q26の第10章関連)。診療情報管理士の業務も、医師同様に診療情報に触れるため、雇用契約での守秘義務規定は必須。","tags":["守秘義務","雇用契約","全職員"]},
+      {"id":"ch08-025","chapterId":8,"chapterName":"第8章 診療情報管理I（法令・諸規則）","questionText":"職員への教育・研修の重要性について最も適切なのはどれか。","choices":{"A":"一度採用すれば教育は不要である","B":"個人情報保護・守秘義務・記載ルール等について定期的な教育を行うことが必要である","C":"教育は院長のみに必要である","D":"外部研修に参加させてはならない","E":"医師だけに教育すればよい"},"correctAnswer":"B","explanation":"【正答の根拠】医療機関では、個人情報保護法・医療法・医師法等の法令遵守、守秘義務、診療録記載ルール、医療安全、感染対策など、継続的な教育・研修が求められる。新規採用時のオリエンテーション、定期的な全職員研修、職種別の専門研修の3層構造が一般的。\n【誤答の整理】A：法改正や運用変化に対応した継続教育が必要。C：全職員対象。D：外部研修は知見の更新に有用。E：全職種対象。\n【補足】個人情報保護法の『人的安全管理措置』の中核が教育・研修。診療情報管理部門は研修企画の担当になることが多い。わたるさんの現場でも、整形外科クリニックのスタッフ向けに『記録・情報保護・ハラスメント』等の研修設計が実務テーマになり得る。","tags":["教育研修","個人情報保護","守秘義務"]},
+      {"id":"ch08-026","chapterId":8,"chapterName":"第8章 診療情報管理I（法令・諸規則）","questionText":"指示せんに関する説明として最も適切なのはどれか。","choices":{"A":"医師が他職種に対して行う医療上の指示を記録化したもので、診療記録の一部である","B":"患者が医師に渡すメモである","C":"病院の広告用チラシである","D":"薬局への業務依頼書である","E":"退院時の挨拶文である"},"correctAnswer":"A","explanation":"【正答の根拠】指示せん(指示箋)は、医師が看護師・薬剤師・リハビリ職・放射線技師等に対して行う医療上の指示を文書化したもの。例：『輸液の種類・速度』『安静度』『検査オーダー』『リハビリ指示』など。電子カルテではオーダーエントリーシステムに統合されている。診療記録の一部として保存対象。\n【誤答の整理】B：患者のメモではない。C：広告チラシでもない。D：薬局への処方箋とは別(院内指示)。E：退院挨拶文ではない。\n【補足】指示せんは『医師の責任による医療指示の証拠』として重要。医療過誤時には『どんな指示が出されたか』を検証する原資料になる。わたるさんの現場でも、PTへのリハビリ指示せんや運動療法指示はこの範疇。","tags":["指示せん","診療記録","医師の指示"]},
+      {"id":"ch08-027","chapterId":8,"chapterName":"第8章 診療情報管理I（法令・諸規則）","questionText":"診療記録上の禁止事項として最も適切なのはどれか。","choices":{"A":"誤記があった場合に元の記載を完全に消してしまうこと","B":"経過を時間順に正確に記載すること","C":"署名すること","D":"必要事項を遅滞なく書くこと","E":"正確な日付を書くこと"},"correctAnswer":"A","explanation":"【正答の根拠】診療記録は法的証拠としての性質を持つため、誤記を完全に消すこと(修正液・塗りつぶし・破棄・削除等)は禁止。これは記録の改ざん(真正性の喪失)にあたり、記録の証拠価値を根本から損なう。正しい訂正方法はQ31参照。\n【誤答の整理】B・C・D・E：いずれも診療記録の基本ルールで、禁止事項ではなく『すべきこと』。\n【補足】電子カルテでは監査ログ(誰がいつどこを変更したか)が残るため、物理的に『完全に消す』ことはできないが、意図的な訂正行為の記録も監査対象。紙カルテでの『塗りつぶし』は『何を隠したか』が不明になるため、特に医療訴訟で不利な証拠となる。","tags":["診療記録","禁止事項","真正性"]},
+      {"id":"ch08-028","chapterId":8,"chapterName":"第8章 診療情報管理I（法令・諸規則）","questionText":"傷病名と保険適用に関する説明として最も適切なのはどれか。","choices":{"A":"診療録に記載される傷病名は、診療・統計・保険請求のすべてに関わる重要な情報である","B":"傷病名は保険請求だけに使われる","C":"傷病名は診療のみに関係し、統計には使われない","D":"傷病名は記載しなくてよい","E":"傷病名は電子カルテ以外には存在しない"},"correctAnswer":"A","explanation":"【正答の根拠】傷病名(病名)は医療の中核情報で、(1)診療(治療方針決定の根拠)、(2)統計(疾病統計・人口動態・がん登録)、(3)保険請求(レセプト請求の基礎)、(4)DPC分類(医療資源病名)、(5)疫学研究、(6)医療の質評価等、多面的に使われる。傷病名の正確性は全ての下流業務の前提。\n【誤答の整理】B：保険請求だけではなく統計・研究にも必須。C：統計でも中核情報。D：医師法施行規則23条で必須記載事項。E：紙カルテにも記載される。\n【補足】傷病名の質は医師の記載品質に依存する。曖昧な病名(『○○の疑い』の長期放置、『上気道炎』等の広すぎる病名)はDPCコーディング・がん登録ともに精度を落とす。これが10章で扱ったコーディング委員会の設置義務につながる。","tags":["傷病名","保険適用","記載"]},
+      {"id":"ch08-029","chapterId":8,"chapterName":"第8章 診療情報管理I（法令・諸規則）","questionText":"診療録における「署名」と「記名」の違いとして最も適切なのはどれか。","choices":{"A":"署名は本人が自署すること、記名は氏名を記載しておくことである","B":"両者は完全に同一である","C":"記名は本人の自署を指し、署名は印字を指す","D":"署名は不要であり、記名だけでよい","E":"両者とも法的意味は全くない"},"correctAnswer":"A","explanation":"【正答の根拠】『署名』は本人が自筆でサインすること(筆跡による本人特定)。『記名』は氏名をあらかじめ印字・印鑑・スタンプで記載すること(本人特定の根拠は弱い)。法的効力は署名の方が強く、診断書・処方せん等は原則として署名が求められる。記名の場合は押印を併用することで署名と同等の効力とすることが多い(記名押印)。\n【誤答の整理】B：異なる概念。C：定義が逆。D：診断書等では署名(または記名押印)が必須。E：法的意味がある。\n【補足】電子カルテでは電子署名(PKI・タイムスタンプ等)が自筆署名の代わりになる。厚労省『医療情報システム安全管理ガイドライン』で要件が定められている。","tags":["署名","記名","診療録"]},
+      {"id":"ch08-030","chapterId":8,"chapterName":"第8章 診療情報管理I（法令・諸規則）","questionText":"紙カルテの記載を訂正する正しい方法はどれか。","choices":{"A":"修正液で完全に消し、新しい内容を書き直す","B":"元の記載を横線2本（二重線）で消し、元の記載が見える状態のまま、新しい内容を隣や上に書き、訂正者の署名・日付を添える","C":"ページごと破棄して書き直す","D":"記載をすべて黒塗りにする","E":"そのまま上書きする"},"correctAnswer":"B","explanation":"【正答の根拠】紙カルテの訂正は、(1)元の記載を『二重線(横線2本)』で消す、(2)元の記載が読める状態を保つ、(3)訂正内容を空きスペースに書く、(4)訂正者の署名と訂正日時を記入、が原則。これにより『いつ・誰が・何を・どう訂正したか』の履歴が追跡可能になり、記録の真正性が保たれる。\n【誤答の整理】A：修正液は元の記載が読めなくなるため禁止。C：ページ破棄は改ざんにあたる。D：黒塗りも元記載が不明になるため不可。E：上書きは履歴が残らない。\n【補足】電子カルテでは自動的に訂正ログ(誰が・いつ・どこを・どう変更したか)が記録されるため、手動の二重線処理は不要。ただしシステム設計上、訂正前後の両方が参照できる機能が必要(監査証跡)。","tags":["診療録","訂正方法","二重線"]},
+      {"id":"ch08-031","chapterId":8,"chapterName":"第8章 診療情報管理I（法令・諸規則）","questionText":"診療録への追記の方法として最も適切なのはどれか。","choices":{"A":"元の記載の途中に割り込んで書く","B":"診療録の末尾に日付を付けて「追記」と明記し、内容を記載する","C":"元の記載を書き換える","D":"追記は一切認められない","E":"元の日付で追記する"},"correctAnswer":"B","explanation":"【正答の根拠】診療録への追記は、(1)診療録の末尾または空きスペースに、(2)『追記』と明記し、(3)実際の追記日(追記した日)と署名を付けて、(4)内容を記載する、が正しい方法。これにより『いつ追記されたか』が明確になり、元記載との区別がつく。\n【誤答の整理】A：割り込み記載は履歴が不明確。C：書き換えは訂正の範疇で『二重線』処理が必要(Q30)。D：追記は必要な場合に認められる。E：元の日付で書くと『あたかも当時書かれたかのように偽装した』ことになり改ざんに該当する。\n【補足】追記と訂正は違う概念：(1)訂正＝元の記載を書き直す(二重線処理)、(2)追記＝元の記載はそのままに、後から情報を足す(末尾に日付付記)。どちらも『履歴を残す』のが絶対条件。","tags":["診療録","追記","日付"]},
+      {"id":"ch08-032","chapterId":8,"chapterName":"第8章 診療情報管理I（法令・諸規則）","questionText":"保険医療機関及び保険医療養担当規則（療担規則）に関する説明として最も適切なのはどれか。","choices":{"A":"保険医療機関及び保険医が保険診療を行う際の基本ルールを定めたものである","B":"介護保険の基本規則である","C":"個人情報保護の基本規則である","D":"労働災害の規則である","E":"医師の資格取得要件である"},"correctAnswer":"A","explanation":"【正答の根拠】『保険医療機関及び保険医療養担当規則』(療担規則、昭和32年厚生省令第15号)は、保険医療機関(病院・診療所)と保険医(個々の医師)が保険診療を行う際に遵守すべき基本ルールを定めた厚生労働省令。療養の給付の担当方法、診療録の記載・保存、適正な保険請求等を規定する。\n【誤答の整理】B：介護保険法とは別制度。C：個人情報保護法とは別。D：労働災害は労災保険法。E：医師資格は医師法。\n【補足】療担規則違反は保険医療機関の指定取消等、行政処分の根拠になる重大事項。診療情報管理士は特に第9条(記録の保存：診療録5年、その他3年)と第22条(診療録記載)に習熟する必要がある。","tags":["療担規則","保険診療","基本ルール"]},
+      {"id":"ch08-033","chapterId":8,"chapterName":"第8章 診療情報管理I（法令・諸規則）","questionText":"療担規則第9条で定められている「診療録以外の記録」の保存期間として正しいのはどれか。","choices":{"A":"1年","B":"3年","C":"5年","D":"10年","E":"20年"},"correctAnswer":"B","explanation":"【正答の根拠】療担規則第9条：『保険医療機関は、療養の給付の担当に関する帳簿及び書類その他の記録をその完結の日から三年間保存しなければならない。ただし、患者の診療録にあつては、その完結の日から五年間とする』。つまり診療録は5年、それ以外の記録(処方箋・手術記録・検査所見・会計記録等)は3年が原則。\n【誤答の整理】A：1年は短すぎる。C：5年は診療録の保存期間。D：10年は法定ではない。E：20年は特定生物由来製品の記録の保存期間、または民事訴訟の消滅時効対応としての推奨期間。\n【保存期間一覧】(1)診療録(医師法24条)＝5年、(2)診療以外の記録(療担規則9条)＝3年、(3)診療に関する諸記録(医療法施行規則21条の5)＝2年、(4)特定生物由来製品の使用記録＝20年。数字の使い分けが頻出。","tags":["療担規則","第9条","保存期間"]},
+      {"id":"ch08-034","chapterId":8,"chapterName":"第8章 診療情報管理I（法令・諸規則）","questionText":"診療情報管理士が法令・諸規則を理解すべき理由として最も適切なのはどれか。","choices":{"A":"診療記録の収集・管理・活用・開示の全工程で法令順守が前提となるため","B":"医師の業務を代行するため","C":"法律の専門家として法廷で弁護するため","D":"患者に法律相談するため","E":"法令と診療情報管理は無関係であるため"},"correctAnswer":"A","explanation":"【正答の根拠】診療情報管理士の業務全般(記録管理、コーディング、統計作成、情報開示対応、がん登録、DPC業務等)は、医師法・医療法・療担規則・個人情報保護法・がん登録推進法等、複数法令の枠組みの中で行われる。法令理解がなければ『なぜその業務ルールなのか』を根拠づけられず、現場判断で適切な対応ができない。\n【誤答の整理】B：医師業務の代行ではない(医師事務作業補助者の役割)。C：弁護士業務ではない。D：患者への法律相談は弁護士の範疇。E：むしろ密接に関連。\n【補足】診療情報管理士は『法令の直接的執行者ではないが、法令を現場実務に落とし込む橋渡し役』。わたるさんの立場なら、整形外科クリニックの運営設計で法令順守(記録・請求・個人情報)を設計に組み込む役割に通じる。\n\n★第8章完了。法令・保存期間・守秘義務・記載ルールは、診療情報管理士のすべての実務の基盤。","tags":["診療情報管理士","法令理解","実務の前提"]}
+    ]
+  },
+  9: {
+    id: 9,
+    name: "第9章",
+    fullName: "第9章 診療情報管理II（管理士の実務）",
+    color: "var(--ch9)",
+    bgColor: "var(--ch9-bg)",
+    questions: [
+      {"id":"ch09-001","chapterId":9,"chapterName":"第9章 診療情報管理II 診療情報管理士の実務","questionText":"診療情報管理士の役割の説明として最も適切なのはどれか。","choices":{"A":"病棟で直接看護ケアを行う","B":"診療記録の管理、点検、コーディング、データ活用など、診療情報全般を専門的に扱う","C":"医師国家試験の監督を行う","D":"病院の会計業務のみを担う","E":"患者の手術執刀を行う"},"correctAnswer":"B","explanation":"【正答の根拠】診療情報管理士の業務は多面的：(1)診療記録の管理(収集・保管・検索)、(2)記録の質の点検(記載不備・不整合の確認)、(3)ICDコーディング・DPCコーディング、(4)がん登録・統計作成、(5)データ活用支援(臨床研究・経営分析)、(6)情報開示請求対応、(7)医療安全・医療の質評価への貢献。いわば『診療情報の司令塔』。\n【誤答の整理】A：看護ケアは看護師の業務。C：医師国家試験は厚労省の所管。D：会計は医事課・経理の業務。E：医療行為は医師の業務。\n【補足】診療情報管理士の認定は日本病院会・全日本病院協会・日本医療法人協会・日本精神科病院協会の4団体が共同で行う民間資格。法定資格ではないが、診療録管理体制加算の要件として位置づけられる等、診療報酬上も重要視される。","tags":["診療情報管理士","役割","業務全般"]},
+      {"id":"ch09-002","chapterId":9,"chapterName":"第9章 診療情報管理II 診療情報管理士の実務","questionText":"診療情報管理士の位置づけとして本文に合致するものはどれか。","choices":{"A":"医師の補助のみに限定された職種である","B":"多職種連携の中で、診療情報の専門家としての役割を担う","C":"医療の質評価とは無関係である","D":"研究活動には関与しない","E":"病院経営と無関係である"},"correctAnswer":"B","explanation":"【正答の根拠】診療情報管理士はチーム医療(医師・看護師・薬剤師・リハビリ職・栄養士・医療ソーシャルワーカー等)の一員として、『診療情報の専門家』の立場から情報基盤を支える。医師事務作業補助者との連携(10章Q28)、コーディング委員会(10章Q14)、がん登録実務者(10章Q47)等、多方面で多職種と関わる。\n【誤答の整理】A：医師補助に限定されない(医師事務作業補助者とは別)。C：医療の質評価の中核データを提供。D：臨床研究・疫学研究・DPC研究の基盤データを提供。E：病院経営の意思決定資料(病床稼働、診療単価、在院日数)を作成。\n【補足】診療情報管理士のキャリアは『情報の正確性を支える裏方』から『データ分析・経営参画者』へ拡大しつつある。医療DX時代の鍵職種。","tags":["診療情報管理士","多職種連携","専門家"]},
+      {"id":"ch09-003","chapterId":9,"chapterName":"第9章 診療情報管理II 診療情報管理士の実務","questionText":"EMR（Electronic Medical Record）の説明として最も適切なのはどれか。","choices":{"A":"個人が自分の健康情報を管理するシステム","B":"医療機関内で運用される電子カルテ","C":"地域の医療機関で情報を共有するシステム","D":"レセプト請求専用ソフト","E":"介護施設専用の記録"},"correctAnswer":"B","explanation":"【正答の根拠】EMR(Electronic Medical Record：電子医療記録)は、『医療機関内で運用される電子カルテ』。個々の施設で診療記録を電子化し、院内業務の効率化を目的とする。他施設との連携は基本的に想定していない『院内完結型』のシステム。\n【誤答の整理】A：PHR(個人が主体)の説明。C：EHR(地域医療連携)の説明。D：レセコン(医事会計システム)の話で電子カルテとは別。E：介護記録は別システム(ケアプラン等)。\n【3用語整理】(1)EMR＝院内(Medical)、(2)EHR＝地域連携(Health)、(3)PHR＝本人主体(Personal)。『M→H→P』で範囲が広がっていくと覚える。","tags":["EMR","電子カルテ","院内運用"]},
+      {"id":"ch09-004","chapterId":9,"chapterName":"第9章 診療情報管理II 診療情報管理士の実務","questionText":"EHR（Electronic Health Record）の説明として最も適切なのはどれか。","choices":{"A":"個人が日記を書くアプリ","B":"医療機関や地域をまたいだ情報共有を目的とした電子健康記録","C":"会計システム","D":"薬局のみが使用するシステム","E":"患者家族の連絡網"},"correctAnswer":"B","explanation":"【正答の根拠】EHR(Electronic Health Record：電子健康記録、生涯医療記録)は、医療機関や地域をまたいで診療情報を共有する仕組み。患者中心に情報を統合することで、(1)重複検査の抑制、(2)転院時の情報継続、(3)地域医療連携の推進を実現する。日本では全国約80〜218のプロジェクトが稼働しているが、標準化の遅れで普及は道半ば。\n【誤答の整理】A：PHRに近いが正確ではない。C：医事会計は別。D：薬局単独ではなく、医療機関全体の連携。E：連絡網ではない。\n【補足】EHRは『診療情報の持ち運び』を可能にする仕組み。日本ではマイナンバーカードの健康保険証機能化(2021年〜)、電子処方箋(2023年〜)、診療情報共有基盤の整備等、医療DXの中核テーマ。","tags":["EHR","電子健康記録","地域連携"]},
+      {"id":"ch09-005","chapterId":9,"chapterName":"第9章 診療情報管理II 診療情報管理士の実務","questionText":"PHR（Personal Health Record）の説明として最も適切なのはどれか。","choices":{"A":"個人が自らの健康・医療情報を一元的に管理・活用する仕組み","B":"病院の電子カルテ","C":"国のレセプト審査システム","D":"医師の研究ノート","E":"保険会社の契約書"},"correctAnswer":"A","explanation":"【正答の根拠】PHR(Personal Health Record：個人健康記録)は、本人が主体となって、医療機関の受診記録・健康診断結果・服薬情報・日々のバイタル(血圧・体重・歩数・睡眠)等を一元管理するシステム。スマホアプリやマイナポータル(公的PHR)が代表例。\n【誤答の整理】B：EMRの説明。C：オンライン請求システム。D：個人の研究ノートではない。E：保険契約書ではない。\n【3つの主体比較】EMR＝医療機関が管理、EHR＝医療機関ネットワークが管理、PHR＝本人が管理。データの『所有者・管理主体』の違いを押さえる。PHRは医療DX推進と並んで厚労省が重点政策。","tags":["PHR","個人健康記録","本人管理"]},
+      {"id":"ch09-006","chapterId":9,"chapterName":"第9章 診療情報管理II 診療情報管理士の実務","questionText":"診療録ファイリングの一方式「連続番号法」の説明として最も適切なのはどれか。","choices":{"A":"患者ID番号の末尾2桁で並べる方法","B":"患者ID番号の中央2桁で並べる方法","C":"患者ID番号を若い順（連続した順）に並べて保管する方法","D":"アルファベット順に並べる方法","E":"病名ごとに並べる方法"},"correctAnswer":"C","explanation":"【正答の根拠】連続番号法(Straight Numeric Filing)は、患者ID番号を若い順(1, 2, 3...)に並べて保管する最もシンプルなファイリング法。ID発行順＝保管順になるため、新規患者のカルテは常に棚の最後に追加される。\n【誤答の整理】A：末尾2桁法(Terminal Digit Filing、Q7)の説明。B：中2桁法(Middle Digit Filing)の説明。D：アルファベット順は姓名ファイリング(Alphabetical)で別法。E：病名ファイリングは統計用で主記録のファイリングには不向き。\n【メリット・デメリット】メリット：ルールがシンプル、探しやすい。デメリット：新規カルテが常に同じ場所(末尾)に集中するため作業負荷が偏る。中小病院向き。","tags":["ファイリング法","連続番号法"]},
+      {"id":"ch09-007","chapterId":9,"chapterName":"第9章 診療情報管理II 診療情報管理士の実務","questionText":"「末尾2桁法（ターミナル・デジット・ファイリング）」の説明として最も適切なのはどれか。","choices":{"A":"患者ID番号の末尾2桁で第1区分を決め、その次の2桁で第2区分、残りを第3区分としてファイリングする方法","B":"患者の入院日で並べる方法","C":"病名ごとに並べる方法","D":"医師ごとに並べる方法","E":"住所ごとに並べる方法"},"correctAnswer":"A","explanation":"【正答の根拠】末尾2桁法(Terminal Digit Filing)は、6桁の患者IDを『XX-XX-XX』に分け、最後の2桁を第1区分(100区画)、中2桁を第2区分(100区画)、最初の2桁を第3区分として並べる方式。例：ID 123456の場合、末尾『56』→中『34』→頭『12』の順で格納場所が決まる。\n【誤答の整理】B〜E：いずれも通常のファイリング法としては使わない。\n【メリット・デメリット】メリット：(1)新規IDが発行されても100の末尾区分に均等に分散する(作業負荷が平準化)、(2)大規模病院で有効、(3)ID誤認も分散される。デメリット：(1)仕組みが複雑で職員教育が必要、(2)誤配置時の発見が遅れやすい。大病院向きの方式。","tags":["ファイリング法","末尾2桁法","ターミナルデジット"]},
+      {"id":"ch09-008","chapterId":9,"chapterName":"第9章 診療情報管理II 診療情報管理士の実務","questionText":"末尾2桁法が大規模病院で好まれる理由として最も適切なのはどれか。","choices":{"A":"作業負荷が一箇所に集中しないから","B":"ID番号を使わなくてよいから","C":"患者の名前を省略できるから","D":"医師の負担を減らすためだけに使うから","E":"病名管理が不要になるから"},"correctAnswer":"A","explanation":"【正答の根拠】連続番号法だと新規カルテが常に棚の末尾(最新ID側)に集中するため、作業者が特定の棚に集中し、探しに行くのも同じ場所になる。末尾2桁法では、新規IDが発行されても末尾2桁の100区画に分散して保管されるため、(1)格納作業、(2)取り出し作業、(3)棚の密度、すべてが100の区画に均等に分散し、作業負荷のピークが平準化する。大規模病院(患者数数万〜十万超)ほど効果が大きい。\n【誤答の整理】B〜E：末尾2桁法の導入目的と無関係。\n【補足】電子カルテ時代には物理的ファイリングの重要性は低下したが、紙カルテとスキャンデータの併存施設や、医療文書の保管(診断書控えなど)では今も実務に関わる。","tags":["末尾2桁法","作業負荷分散","大規模病院"]},
+      {"id":"ch09-009","chapterId":9,"chapterName":"第9章 診療情報管理II 診療情報管理士の実務","questionText":"「中2桁法（ミドル・デジット・ファイリング）」の説明として最も適切なのはどれか。","choices":{"A":"患者ID番号の中央2桁を第1区分として並べる方法","B":"患者ID番号の末尾2桁を第1区分として並べる方法","C":"患者の生年月日で並べる方法","D":"診療科別に並べる方法","E":"性別で並べる方法"},"correctAnswer":"A","explanation":"【正答の根拠】中2桁法(Middle Digit Filing)は、患者ID『XX-XX-XX』のうち中央2桁を第1区分として並べる方法。末尾2桁法と連続番号法の中間的な特性を持つ。\n【誤答の整理】B：末尾2桁法の説明。C〜E：ID番号ベースではない。\n【3つのファイリング法比較】(1)連続番号法＝若番から順(シンプル・中小向き)、(2)末尾2桁法＝末尾2桁が第1キー(分散・大規模向き)、(3)中2桁法＝中2桁が第1キー(両者の中間)。電子カルテ時代は物理配置より論理配置の話題が中心だが、試験ではこの3方式の比較が頻出。","tags":["ファイリング法","中2桁法","ミドルデジット"]},
+      {"id":"ch09-010","chapterId":9,"chapterName":"第9章 診療情報管理II 診療情報管理士の実務","questionText":"パージング（purging）の説明として最も適切なのはどれか。","choices":{"A":"使用頻度の低い記録を保管庫から別の場所（書庫・倉庫等）に移す作業","B":"記録をすべて廃棄すること","C":"記録を検索して患者に開示すること","D":"新しいカルテを作成する作業","E":"医師の署名を確認する作業"},"correctAnswer":"A","explanation":"【正答の根拠】パージング(purging、カルテパージ)は、一定期間使用されていないカルテ(インアクティブファイル)を、日常的に使う保管棚から、比較的アクセス頻度の低い書庫・倉庫・外部倉庫等に移す作業。限られた棚スペースを効率的に使うための運用。\n【誤答の整理】B：廃棄ではなく『移動』。法定保存期間中の廃棄は違法。C：開示請求対応とは別作業。D：新規作成はパージングではない。E：署名確認はファイリングと別の業務。\n【補足】『パージ基準』は施設ごとに設定(例：最終受診から2年経過、5年経過等)。電子カルテ時代もアーカイブサーバへの移行という形でパージは続く。診療情報管理士の日常業務の1つ。","tags":["パージング","ファイリング管理","インアクティブ"]},
+      {"id":"ch09-011","chapterId":9,"chapterName":"第9章 診療情報管理II 診療情報管理士の実務","questionText":"インアクティブファイルの説明として最も適切なのはどれか。","choices":{"A":"しばらく使用されていないため、日常運用から外されたカルテ","B":"電子化が不可能なカルテ","C":"破棄されたカルテ","D":"開示請求中のカルテ","E":"作成中のカルテ"},"correctAnswer":"A","explanation":"【正答の根拠】インアクティブファイル(inactive file)は、一定期間(施設により2年・5年等)来院がなく、日常運用のアクティブファイル群から外された非活性状態のカルテ。パージングの対象となり、書庫等へ移動される。ただし、再来院があれば再びアクティブファイルに戻される。\n【誤答の整理】B：電子化の可否とは別概念。C：破棄はされていない(法定保存期間中)。D：開示請求中のカルテはアクティブに使われている。E：作成中は『アクティブ』。\n【補足】『アクティブ／インアクティブ』の区分は、(1)検索効率、(2)棚スペース管理、(3)保存期間管理(5年経過判定)の3目的で重要。診療情報管理部門の運用設計の中核。","tags":["インアクティブファイル","アクティブファイル","運用"]},
+      {"id":"ch09-012","chapterId":9,"chapterName":"第9章 診療情報管理II 診療情報管理士の実務","questionText":"電子保存の三原則として正しいのはどれか。","choices":{"A":"公開性・迅速性・簡潔性","B":"真正性・見読性・保存性","C":"匿名性・網羅性・迅速性","D":"秘匿性・完全性・拡張性","E":"自動性・連続性・可逆性"},"correctAnswer":"B","explanation":"【正答の根拠】厚労省『医療情報システムの安全管理に関するガイドライン』で定められる電子保存の三原則は『(1)真正性、(2)見読性、(3)保存性』。1999年の『法令に保存義務が規定されている診療記録及び診療諸記録の電子媒体による保存に関するガイドライン』以来、電子カルテ・電子化診療記録の必須要件として一貫している。\n【誤答の整理】他の選択肢は三原則ではない。\n【覚え方】『真・見・保(しん・けん・ほ)』の3点セット。Q13〜Q15で個別に扱う。この3原則を満たさない電子保存は、医師法24条の『診療録』として認められない(つまり紙運用を続けるか、紙出力保存が必要になる)。","tags":["電子保存","三原則","真正性","見読性","保存性"]},
+      {"id":"ch09-013","chapterId":9,"chapterName":"第9章 診療情報管理II 診療情報管理士の実務","questionText":"電子保存の三原則のうち「真正性」の意味として最も適切なのはどれか。","choices":{"A":"記録が虚偽・改ざんされておらず、作成責任者が明確であること","B":"記録が必要なときに読めること","C":"記録が長期間残ること","D":"記録が暗号化されていること","E":"記録が縮小表示できること"},"correctAnswer":"A","explanation":"【正答の根拠】真正性とは『正当な権限において作成された記録に対し、虚偽入力、書換え、消去及び混同が防止されており、かつ、第三者から見て作成の責任の所在が明確であること』(厚労省ガイドライン)。具体要件：(1)ユーザー識別・認証(ID・パスワード等)、(2)操作ログ(誰がいつ何をしたか)、(3)改ざん防止(監査証跡)、(4)作成責任者の明示(電子署名等)。\n【誤答の整理】B：見読性(Q14)の説明。C：保存性(Q15)の説明。D：暗号化は安全管理措置の一部だが真正性の本質ではない。E：縮小表示は無関係。\n【補足】真正性は『この記録は本物で、作ったのは○○である』と裁判所で示せる水準が求められる。医療訴訟の証拠能力に直結する。","tags":["真正性","電子保存","改ざん防止"]},
+      {"id":"ch09-014","chapterId":9,"chapterName":"第9章 診療情報管理II 診療情報管理士の実務","questionText":"電子保存の三原則のうち「見読性」の意味として最も適切なのはどれか。","choices":{"A":"必要に応じて記録内容をただちに画面表示・紙出力でき、明瞭に読めること","B":"記録が改ざんされていないこと","C":"記録を長期保存できること","D":"記録が無制限に公開されること","E":"記録が暗号化されていること"},"correctAnswer":"A","explanation":"【正答の根拠】見読性とは『必要に応じ電磁的に記録された事項を出力することにより、ただちに明瞭かつ整然とした形式で使用に係る電子計算機その他の機器に表示し、及び書面を作成できるようにすること』(厚労省ガイドライン)。具体要件：(1)速やかな検索・表示、(2)停電・障害時の閲覧代替手段、(3)患者開示請求時の紙出力、(4)システム更新時の過去データ可読性維持。\n【誤答の整理】B：真正性。C：保存性。D：無制限公開は個人情報保護違反。E：暗号化は別の話。\n【補足】『必要に応じて』とは『診療・患者説明・監査・訴訟等の場面』を指す(厚労省読本)。電子カルテがシステム障害で見えない状態が長時間続くと、見読性違反になる可能性がある。","tags":["見読性","電子保存","表示・出力"]},
+      {"id":"ch09-015","chapterId":9,"chapterName":"第9章 診療情報管理II 診療情報管理士の実務","questionText":"電子保存の三原則のうち「保存性」の意味として最も適切なのはどれか。","choices":{"A":"法令で定められた保存期間中、真正性と見読性が保たれた状態で復元可能に保存されること","B":"記録を瞬時に公開できること","C":"記録が改ざんされないこと","D":"記録が暗号化されていること","E":"記録が検索できること"},"correctAnswer":"A","explanation":"【正答の根拠】保存性とは『電磁的記録に記録された事項について、保存すべき期間中において復元可能な状態で保存することができる措置を講じていること』(厚労省ガイドライン)。要件：(1)バックアップ体制、(2)ウイルス対策、(3)記録媒体・装置の劣化対応、(4)システム移行時のデータ継続性、(5)BCP(事業継続計画)対応。\n【誤答の整理】B：公開は見読性の一側面。C：真正性。D：暗号化は技術的安全管理。E：検索性は見読性の一部。\n【補足】『保存期間中』＝診療録なら医師法24条の5年、療担規則なら診療録5年・他記録3年(Q33第8章)。その間ずっと『真正性＋見読性＋復元可能性』を維持するのが保存性の要件。2011年東日本大震災以降、BCPとしての外部保存・クラウド化が推進されている。","tags":["保存性","電子保存","バックアップ","BCP"]},
+      {"id":"ch09-016","chapterId":9,"chapterName":"第9章 診療情報管理II 診療情報管理士の実務","questionText":"スキャン文書（紙原本を電子化した文書）の取扱いとして最も適切なのはどれか。","choices":{"A":"スキャン後の原本は必ずすべて破棄する","B":"スキャンした電子データが真正性・見読性・保存性を満たしていれば、原本の扱いは定められたルールに従い判断する","C":"スキャンは禁止されている","D":"スキャン後は電子データを破棄する","E":"スキャンは患者本人のみが行うべきである"},"correctAnswer":"B","explanation":"【正答の根拠】紙原本をスキャン電子化する場合、e-文書法(2005年施行)および厚労省ガイドラインに基づき、(1)電子保存3基準(真正性・見読性・保存性)を満たすこと、(2)スキャン時の画質・解像度基準、(3)運用規程の整備、(4)責任者の明示、が要件。これらを満たせば紙原本の廃棄が可能となるが、満たさない場合は原本保管が必要。\n【誤答の整理】A：必ず破棄ではなく、要件を満たした場合のみ。C：法令に従えば可能。D：電子データは保存対象。E：医療機関の責任で行う。\n【補足】スキャン運用は『電子保存の延長線上』で、安易に紙を捨てると3原則違反になる。専任の責任者(診療情報管理士等)を置き、定期的な監査が必要。わたるさんの現場でも、古いカルテの電子化プロジェクトでは『要件確認→責任者設置→運用規程整備→監査』の順で設計する。","tags":["スキャン文書","e-文書法","原本管理"]},
+      {"id":"ch09-017","chapterId":9,"chapterName":"第9章 診療情報管理II 診療情報管理士の実務","questionText":"診療録の共通番号（患者ID）の重要性として最も適切なのはどれか。","choices":{"A":"同一患者の記録を一元的に追跡できる","B":"ID番号は使わなくてもよい","C":"患者ごとに毎回異なるIDを発行する","D":"ID番号は病院の秘密にすべきである","E":"ID番号と病名は必ず一致させる"},"correctAnswer":"A","explanation":"【正答の根拠】患者ID(診療録番号)は、1人の患者に1つ(唯一性・一貫性)発行し、生涯通じて使う。これにより、(1)同一患者の記録を散逸させない、(2)複数診療科・複数入院の情報を統合できる、(3)複数医療機関連携(EHR)時の突合キーになる、(4)がん登録・DPC等の統計での名寄せが可能になる。\n【誤答の整理】B：ID運用はファイリングの必須基盤。C：毎回違うIDでは同一患者識別不可。D：ID自体は管理情報で、内容(診療情報)こそ秘密。E：病名は患者ごとに異なるので一致させる必要はなく、不可能。\n【補足】『1患者＝1ID＝1記録体系』の原則。重複IDの発生(初診時受付ミス)は医療安全上も重大で、診療情報管理部門が定期的にチェック・統合する業務を担う。","tags":["患者ID","共通番号","記録一元化"]},
+      {"id":"ch09-018","chapterId":9,"chapterName":"第9章 診療情報管理II 診療情報管理士の実務","questionText":"診療情報の開示について最も適切なのはどれか。","choices":{"A":"患者本人からの開示請求には原則として応じる必要がある","B":"開示請求には絶対に応じてはならない","C":"開示は医師の気分で決めてよい","D":"開示を求められても無視してよい","E":"開示請求は有料にすれば応じなくてよい"},"correctAnswer":"A","explanation":"【正答の根拠】個人情報保護法および厚労省『診療情報の提供等に関する指針』により、患者本人からの診療情報開示請求には原則として応じる義務がある。医療機関は『個人情報取扱事業者』として、本人からの開示請求を受けた場合、遅滞なく応じる必要がある。ただし、(1)第三者の生命・身体・財産に重大な損害を与える恐れ、(2)医療機関の業務の適正な実施に著しい支障をきたす恐れ、(3)法令違反となる場合、等の例外がある。\n【誤答の整理】B：拒否は原則違法。C：医師の恣意的判断は認められない(院内委員会等の合議で判断)。D：無視は違法。E：実費相当の手数料は認められるが、手数料があるから応じなくてよいとはならない。\n【補足】開示請求対応は診療情報管理部門の重要業務。開示の可否、開示範囲、開示方法、手数料の設定までを院内規程として整備するのが実務。","tags":["診療情報開示","患者の権利","個人情報保護法"]},
+      {"id":"ch09-019","chapterId":9,"chapterName":"第9章 診療情報管理II 診療情報管理士の実務","questionText":"診療情報の開示請求対応として最も適切なのはどれか。","choices":{"A":"すべての開示を即日対応する","B":"院内で開示の可否・範囲を検討し、適切な手続きで応じる体制を整える","C":"すべての開示を拒否する","D":"医師が不在なら対応しない","E":"本人確認は不要である"},"correctAnswer":"B","explanation":"【正答の根拠】開示請求対応の標準プロセス：(1)請求受付(本人確認、請求書受理)、(2)院内での検討(主治医確認、開示範囲決定、例外事由確認)、(3)必要に応じて院内委員会(開示審査委員会等)で合議、(4)手数料・方法(紙・電子・閲覧)の決定、(5)実施と記録。合理的な期間内に対応することが法的要件。\n【誤答の整理】A：即日は現実的でなく、適切な検討が必要。C：原則拒否は違法。D：診療情報管理部門が対応窓口となる(医師不在でも機能する体制が必要)。E：本人確認は必須(なりすまし防止)。\n【補足】請求者の本人確認は極めて重要。運転免許証等の身分証で確認し、代理人の場合は委任状・戸籍謄本等で関係を確認する。個人情報漏えいの最大リスクは『誤送付・誤交付』である。","tags":["診療情報開示","対応プロセス","本人確認"]},
+      {"id":"ch09-020","chapterId":9,"chapterName":"第9章 診療情報管理II 診療情報管理士の実務","questionText":"第三者（患者本人以外）への情報提供として最も適切なのはどれか。","choices":{"A":"本人の同意なく第三者に自由に提供してよい","B":"原則として本人の同意が必要であり、法定の例外事由がある場合のみ同意なく提供できる","C":"家族なら無条件で提供してよい","D":"警察からの問い合わせには何でも応じる","E":"保険会社の依頼には本人の同意は不要である"},"correctAnswer":"B","explanation":"【正答の根拠】個人情報保護法第27条により、第三者提供は原則として本人の同意が必要。法定の例外：(1)法令に基づく場合(感染症法の届出・児童虐待通告・DV通報等)、(2)生命・身体・財産保護のため必要で本人同意を得るのが困難な場合、(3)公衆衛生向上・児童健全育成に特に必要で本人同意が困難な場合、(4)国・地方公共団体の法令事務協力、等。\n【誤答の整理】A：自由提供は違法。C：家族でも本人同意が原則必要(成人の場合)。D：警察は正式な令状(捜査関係事項照会書など)があっても慎重な検討が必要(弁護士相談推奨)。E：保険会社は本人の書面同意が必要。\n【補足】医療現場では『家族なら問題ないだろう』という判断が最も危険。特に夫婦間・親子間の秘匿希望(DV被害・精神疾患告知等)があるケースで家族に情報を出すと重大な問題になる。","tags":["第三者提供","本人同意","個人情報保護"]},
+      {"id":"ch09-021","chapterId":9,"chapterName":"第9章 診療情報管理II 診療情報管理士の実務","questionText":"チーム医療における診療情報の位置づけとして最も適切なのはどれか。","choices":{"A":"医師個人の所有物として他職種には見せない","B":"多職種が共有・参照する情報基盤であり、チーム医療の成立に不可欠","C":"患者に見せてはいけない","D":"看護師のみが参照するものである","E":"紙カルテでしか共有できない"},"correctAnswer":"B","explanation":"【正答の根拠】現代医療は医師・看護師・薬剤師・リハビリ職・栄養士・検査技師・MSW(医療ソーシャルワーカー)・診療情報管理士など多職種のチームで行う。それぞれの職種が異なる視点で患者情報を記録・参照し、情報の統合によって質の高い医療が成立する。診療情報は『チーム共有の情報基盤』。\n【誤答の整理】A：医師個人の所有物ではない(病院の記録、患者の情報)。C：本人開示請求は原則応じる義務(Q18)。D：多職種参照が原則。E：電子カルテで共有可能、むしろ電子化の方が共有効率が高い。\n【補足】わたるさんのリハ部門では、PT・OT・ST各職種の記録が診療情報の一部として統合されるべき。リハ記録が医師・看護師に参照されない運用は、チーム医療の機能不全を招く。","tags":["チーム医療","情報共有","多職種連携"]},
+      {"id":"ch09-022","chapterId":9,"chapterName":"第9章 診療情報管理II 診療情報管理士の実務","questionText":"退院時要約（退院サマリ）の重要性として最も適切なのはどれか。","choices":{"A":"入院経過の要点をまとめ、他院連携や次回診療の基盤になる重要文書である","B":"病院の宣伝用に作られる文書である","C":"作成は任意で法的意味はない","D":"患者にだけ渡せばよい","E":"研究にしか使われない"},"correctAnswer":"A","explanation":"【正答の根拠】退院時要約は入院期間中の(1)主病名・副病名、(2)入院経過、(3)実施した検査・治療、(4)退院時の状態、(5)退院後の指示・処方、(6)次回受診予定等を簡潔にまとめた文書。(1)継続医療の基盤(他院への紹介、外来主治医への情報継承)、(2)DPCコーディングの根拠、(3)病院機能評価・診療録管理体制加算の要件、(4)医療の質評価・研究のデータ源、など多面的に重要。\n【誤答の整理】B：宣伝ではない。C：医療法施行規則第21条の5で『診療に関する諸記録』として位置づけられ、法的文書。D：他医療機関・次回診療用の文書。E：研究用途は副次的。\n【補足】診療録管理体制加算1の要件には『退院後14日以内に退院時要約を作成する割合が全退院患者の90%以上』がある。つまり作成遅延は加算喪失につながる。診療情報管理部門が医師に作成を促すワークフロー構築が実務テーマ。","tags":["退院時要約","サマリ","継続医療"]},
+      {"id":"ch09-023","chapterId":9,"chapterName":"第9章 診療情報管理II 診療情報管理士の実務","questionText":"退院時要約の記載基準として最も適切なのはどれか。","choices":{"A":"遅滞なく作成し、必要な項目を網羅することが求められる","B":"退院後1年以内に作成すればよい","C":"医師以外が単独で作成してよい","D":"作成は任意で省略できる","E":"患者本人が作成する"},"correctAnswer":"A","explanation":"【正答の根拠】退院時要約は『遅滞なく』作成し、(1)病名・副病名、(2)入院目的・経過、(3)診断・治療内容、(4)退院時状態、(5)退院後方針を網羅することが必要。診療録管理体制加算1では『退院後14日以内』、同加算2では『退院後30日以内』が作成期限の目安。\n【誤答の整理】B：1年以内は遅すぎる。C：医師が最終責任を持って作成(医師事務作業補助者の代行入力は医師の確認・署名を条件に可)。D：省略はDPC・加算要件上も許されない。E：患者作成ではない。\n【補足】退院時要約の作成遅延は全国的な課題で、診療情報管理部門は(1)未作成リストの医師への提示、(2)期限アラート、(3)作成支援(コーディング情報提供)でサポートする。わたるさんの現場でも、退院サマリの運用効率化は整形外科クリニック・病院運営の定番テーマ。","tags":["退院時要約","作成期限","記載基準"]},
+      {"id":"ch09-024","chapterId":9,"chapterName":"第9章 診療情報管理II 診療情報管理士の実務","questionText":"医療の質評価に関する説明として最も適切なのはどれか。","choices":{"A":"診療録やDPCデータ等から算出した指標を用いて、医療の質を客観的に評価する取り組みである","B":"患者アンケートのみで評価する","C":"医師の感覚で評価する","D":"評価は病院に不要である","E":"経営数値のみで評価する"},"correctAnswer":"A","explanation":"【正答の根拠】医療の質評価は『構造(Structure)・過程(Process)・結果(Outcome)』の3側面(ドナベディアンモデル)で行うのが標準。(1)構造＝施設・人員・体制、(2)過程＝診療プロセス(予防的抗菌薬投与率、血液培養2セット実施率等)、(3)結果＝患者アウトカム(死亡率、在院日数、再入院率、褥瘡発生率等)。データ源は診療録・DPCデータ・がん登録・レセプト等。\n【誤答の整理】B：患者アンケートは主観評価の一部にすぎない。C：感覚評価は客観性に欠ける。D：質評価は病院機能評価・DPC係数・診療報酬加算等で必須。E：経営数値だけでは医療の質は測れない。\n【補足】2024年度診療報酬改定で『医療の質指標』の公表が評価対象になった(10章Q11)。診療情報管理士は質指標計測の中核人材。","tags":["医療の質評価","質指標","ドナベディアンモデル"]},
+      {"id":"ch09-025","chapterId":9,"chapterName":"第9章 診療情報管理II 診療情報管理士の実務","questionText":"クリニカルインディケーターの説明として最も適切なのはどれか。","choices":{"A":"医療の質を測定するための客観的指標","B":"患者の満足度のみを測る指標","C":"病院建築費用の指標","D":"医師の給与水準を表す指標","E":"病院の株価指標"},"correctAnswer":"A","explanation":"【正答の根拠】クリニカルインディケーター(Clinical Indicator、臨床指標)は、医療の質を定量的に評価する客観的指標。例：(1)手術後30日死亡率、(2)平均在院日数、(3)再入院率(30日以内)、(4)術後合併症発生率、(5)予防的抗菌薬投与率、(6)転倒・転落発生率、(7)褥瘡発生率、(8)DVT予防実施率、等。病院間比較・経時変化の測定に使う。\n【誤答の整理】B：満足度は質の一側面にすぎない。C・D・E：医療の質ではなく経営・人事の指標。\n【補足】日本では日本病院会『QIプロジェクト』、国立病院機構『臨床評価指標』等で標準指標セットが開発されている。診療情報管理士は指標の定義に沿ったデータ抽出・算出を担う。わたるさんが整形外科領域で質指標を設計するなら、手術後の転倒・褥瘡・再手術率・リハ介入開始時間等が候補。","tags":["クリニカルインディケーター","臨床指標","質評価"]},
+      {"id":"ch09-026","chapterId":9,"chapterName":"第9章 診療情報管理II 診療情報管理士の実務","questionText":"医療安全と診療記録の関係として最も適切なのはどれか。","choices":{"A":"診療記録は医療安全と無関係である","B":"正確な診療記録は、インシデント検証・再発防止・医療安全の基盤となる","C":"医療安全は記録とは別領域である","D":"医療安全は医師のみが担うべきである","E":"記録は安全より効率を優先する"},"correctAnswer":"B","explanation":"【正答の根拠】正確な診療記録は医療安全の基盤：(1)アレルギー歴・禁忌情報の共有で有害事象を予防、(2)インシデント・アクシデント発生時の原因究明と再発防止、(3)医療事故調査制度(2015年施行)での事実確認、(4)医療訴訟時の証拠として医療者を守る。逆に記録の不備は『やっていなかった』と解釈され、医療者側が不利になる。\n【誤答の整理】A・C：密接に関連。D：多職種全員の責任。E：安全を優先する。\n【補足】医療事故調査制度では、予期しない死亡事例について医療機関が院内調査を行い、医療事故調査・支援センター(日本医療安全調査機構)に報告する。この過程で診療記録は最重要資料となる。診療情報管理士は記録の完全性を担保する役割を担う。","tags":["医療安全","インシデント","記録の重要性"]},
+      {"id":"ch09-027","chapterId":9,"chapterName":"第9章 診療情報管理II 診療情報管理士の実務","questionText":"病院機能評価における診療情報管理の位置づけとして最も適切なのはどれか。","choices":{"A":"評価対象外である","B":"診療記録の整備・管理状況が評価項目に含まれる重要領域である","C":"医師の人数のみで評価される","D":"建物の新しさで評価される","E":"患者数のみで評価される"},"correctAnswer":"B","explanation":"【正答の根拠】病院機能評価(公益財団法人日本医療機能評価機構が実施)は、病院の医療の質を多面的に評価する第三者認証制度。評価領域には『診療記録管理機能』があり、(1)診療記録の整備・管理体制、(2)診療情報管理士等の配置、(3)記録の質監査、(4)退院時要約作成状況、(5)情報開示対応体制等が評価対象となる。\n【誤答の整理】A：重要な評価領域。C〜E：単一指標では評価されない。\n【補足】病院機能評価の認定は病院の『格』を示す指標の1つで、診療報酬の一部加算要件にもなる。診療情報管理士の配置・活動の質が評価に直結するため、記録管理部門の実力が病院評価そのものを左右する。","tags":["病院機能評価","診療記録管理","第三者認証"]},
+      {"id":"ch09-028","chapterId":9,"chapterName":"第9章 診療情報管理II 診療情報管理士の実務","questionText":"診療録管理体制加算について最も適切なのはどれか。","choices":{"A":"診療録管理体制の整備を診療報酬上で評価する加算","B":"医師数を評価する加算","C":"病床数のみで決まる加算","D":"建物の築年数による加算","E":"救急車受入台数に対する加算"},"correctAnswer":"A","explanation":"【正答の根拠】診療録管理体制加算(A207)は診療報酬上の加算で、診療録管理体制の整備を評価する。加算1(100点)の主な要件：(1)専任の診療記録管理者(診療情報管理士等)を複数名配置、(2)退院後14日以内の退院時要約作成率90%以上、(3)中央病歴管理、(4)ICDコーディングによる疾病統計作成、等。加算2(30点)は要件が緩和される。\n【誤答の整理】B〜E：診療録管理体制加算の本質的要件ではない。\n【補足】DPC対象病院の要件にも診療録管理体制加算の届出が含まれる(加算1推奨、10章Q2)。つまり『診療情報管理士の配置＝診療報酬に直結する』構造。病院経営上も診療情報管理部門の整備は重要投資。","tags":["診療録管理体制加算","診療報酬","A207"]},
+      {"id":"ch09-029","chapterId":9,"chapterName":"第9章 診療情報管理II 診療情報管理士の実務","questionText":"診療情報管理士が担う統計作成業務として最も適切なのはどれか。","choices":{"A":"患者の家計簿作成","B":"疾病分類統計、手術統計、退院患者統計、在院日数統計等の院内統計作成","C":"株式売買の記録作成","D":"職員の給与明細作成","E":"建築図面の作成"},"correctAnswer":"B","explanation":"【正答の根拠】診療情報管理士の統計作成業務：(1)疾病分類統計(ICD別集計)、(2)手術統計(術式別件数)、(3)退院患者統計(年齢・性別・疾患別)、(4)在院日数統計(診断群分類別、診療科別)、(5)死亡統計、(6)がん登録統計、(7)DPCデータ集計、(8)病院情報公表用集計(10章Q8〜10)、等。これらは病院運営・政策立案・研究の基礎データ。\n【誤答の整理】A・C・D・E：診療情報管理士の業務範囲外。\n【補足】統計作成は単なる数値集計ではなく、『定義の一貫性』『欠損データの扱い』『分母・分子の正確性』が質の鍵。診療情報管理士の統計リテラシーが院内データの信頼性を決める。","tags":["統計作成","院内統計","データ活用"]},
+      {"id":"ch09-030","chapterId":9,"chapterName":"第9章 診療情報管理II 診療情報管理士の実務","questionText":"診療情報管理士のデータ活用業務として最も適切なのはどれか。","choices":{"A":"臨床研究・経営分析・医療の質改善等、多面的なデータ活用を支援する","B":"データは請求後すぐ廃棄する","C":"データ分析は外部委託のみで行う","D":"診療情報管理士はデータ活用に関与しない","E":"データは医師のみが使う"},"correctAnswer":"A","explanation":"【正答の根拠】データ活用の場面：(1)臨床研究(症例抽出、後方視的研究、疫学研究)、(2)経営分析(診療単価、科別採算、紹介率・逆紹介率)、(3)質改善(クリニカルインディケーター、クリニカルパス遵守率)、(4)人員配置計画(病床稼働、救急件数)、(5)地域医療連携(他院紹介状況)。診療情報管理士は『データの抽出・整形・解釈』の中核を担う。\n【誤答の整理】B：廃棄ではなく活用対象。C：院内主体で行い、必要に応じて外部連携。D：中核人材。E：多職種で使う。\n【補足】医療DXの時代、診療情報管理士は『記録管理者』から『データサイエンティスト』への役割拡大が求められる。わたるさんが整形外科領域のデータ活用を設計するなら、(1)患者背景別の手術成績、(2)リハビリ介入強度別の機能回復、(3)術後再手術率などが応用例。","tags":["データ活用","臨床研究","経営分析"]},
+      {"id":"ch09-031","chapterId":9,"chapterName":"第9章 診療情報管理II 診療情報管理士の実務","questionText":"診療情報管理士の倫理として最も適切なのはどれか。","choices":{"A":"守秘義務・個人情報保護・データの誠実な扱いが基本倫理である","B":"倫理は不要である","C":"記録は自由に外部に持ち出してよい","D":"患者情報は友人と共有してよい","E":"倫理よりも業務効率が常に優先される"},"correctAnswer":"A","explanation":"【正答の根拠】診療情報管理士の職業倫理：(1)守秘義務(雇用契約・就業規則・個人情報保護法、第8章Q24参照)、(2)個人情報保護の徹底、(3)データの誠実な扱い(改ざん・アップコーディングの拒否)、(4)利害相反の回避、(5)継続学習、(6)患者の人権尊重。医師・看護師と同じレベルの職業倫理が求められる。\n【誤答の整理】B：倫理は職業の基盤。C：持ち出しは厳格制限対象。D：友人共有は秘密漏示罪(刑法134条準用、または個人情報保護法違反)。E：倫理と効率は両立させるべきだが、倫理が優先。\n【補足】日本診療情報管理士会は倫理綱領を定めており、認定時に遵守を宣誓する。診療情報管理士の信頼性は職業倫理の徹底によって保たれる。","tags":["職業倫理","守秘義務","誠実性"]},
+      {"id":"ch09-032","chapterId":9,"chapterName":"第9章 診療情報管理II 診療情報管理士の実務","questionText":"診療情報管理士の継続教育の重要性として最も適切なのはどれか。","choices":{"A":"一度資格取得すれば学習は不要","B":"ICDの改訂・法令改正・IT進化等に対応するため、継続的な学習が不可欠である","C":"継続教育は義務ではないので不要","D":"医師にだけ継続教育が必要","E":"資格の更新制度は一切ない"},"correctAnswer":"B","explanation":"【正答の根拠】診療情報管理士が対応すべき変化：(1)ICDの改訂(ICD-10→ICD-11への移行)、(2)DPCの改定(2年ごと)、(3)法令改正(個人情報保護法・医療法等)、(4)診療報酬改定(2年ごと)、(5)IT進化(電子カルテ更新、クラウド化、AI活用)、(6)医療DX推進(電子処方箋・マイナ保険証連携)。これらに対応するため継続教育が必須。\n【誤答の整理】A：学習継続が職業の前提。C：日本病院会等による生涯教育研修が用意されている。D：診療情報管理士にも必要。E：認定証には更新の仕組みがある(生涯教育点数等)。\n【補足】日本病院会では生涯教育研修・症例検討会・ICD講習会等を継続的に実施。日本診療情報管理学会での発表・参加も知見更新の場。わたるさんの学習姿勢(『時間かけてゆっくり』『Web検索で補完』)はこの分野に合う。","tags":["継続教育","生涯学習","法令改正"]},
+      {"id":"ch09-033","chapterId":9,"chapterName":"第9章 診療情報管理II 診療情報管理士の実務","questionText":"診療情報管理士の将来展望として最も適切なのはどれか。","choices":{"A":"電子化・AI化で役割は縮小する一方である","B":"医療DX・データ活用・質評価の進展で専門性の重要性はむしろ高まっている","C":"資格は不要になる","D":"医師に吸収される","E":"診療情報管理の仕事はなくなる"},"correctAnswer":"B","explanation":"【正答の根拠】医療DXの進展(電子カルテ普及、マイナ保険証、電子処方箋、診療情報共有基盤、PHR、AI診断支援等)により、診療情報管理士の役割は拡大している：(1)データ標準化の推進役、(2)AI活用時のデータ品質保証、(3)質指標計測の中核、(4)がん登録実務者、(5)DPCコーディング専門家、(6)医療情報のガバナンス担当者。単純な記録整理は自動化される一方、『データの意味を理解し活用する専門性』の需要はむしろ増す。\n【誤答の整理】A：拡大している。C：むしろ高度化。D：別職種の専門性。E：なくならない。\n【補足】AI時代に残る仕事は『文脈理解』『判断』『倫理判断』が必要な領域。診療情報管理士のコーディング・データ監査・開示判断はいずれもこれに該当する。","tags":["将来展望","医療DX","専門性"]},
+      {"id":"ch09-034","chapterId":9,"chapterName":"第9章 診療情報管理II 診療情報管理士の実務","questionText":"診療情報管理部門の役割として最も適切なのはどれか。","choices":{"A":"単なる倉庫機能だけを担う","B":"診療情報の収集・管理・点検・提供・活用を支える中核部門となる","C":"診療録の法的保存義務とは無関係である","D":"紙カルテ運用時にのみ必要である","E":"病院の改善活動には関与しない"},"correctAnswer":"B","explanation":"【正答の根拠】診療情報管理部門の機能は『5つの柱』：(1)収集(診療録・諸記録の受入・整備)、(2)管理(保存・ファイリング・電子化)、(3)点検(質監査・コーディング精度管理)、(4)提供(開示請求対応、院内検索支援)、(5)活用(統計・研究支援、質改善、経営分析)。これらは独立した業務ではなく、連携して機能することで病院全体の情報基盤を支える中核となる。\n【誤答の整理】A：倉庫機能だけでは管理士の価値を発揮できない。C：医師法24条・療担規則9条の保存義務の実務執行者。D：電子カルテ運用でも同じ機能が必要。E：クリニカルパス・医療安全・質改善活動の中核。\n【補足】本章で扱った実務(EMR/EHR/PHR、ファイリング、電子保存3原則、開示請求、退院時要約、質評価)のすべてが、診療情報管理部門の『5本柱』のどこかに位置づけられる。この総括視点で章を整理すると定着しやすい。\n\n★第9章完了。これで第8・9・10・11章の全解説拡充が完成。","tags":["診療情報管理部門","組織","中核部門"]}
+    ]
+  },
+  10: {
+    id: 10,
+    name: "第10章",
+    fullName: "第10章 診療情報管理III（DPC・医師事務・がん登録）",
+    color: "var(--ch10)",
+    bgColor: "var(--ch10-bg)",
+    questions: [
+      {"id":"ch10-001","chapterId":10,"chapterName":"第10章 診療情報管理III DPC・医師事務作業補助者・がん登録の実務","questionText":"10章で扱われる実務分野の組み合わせとして正しいのはどれか。","choices":{"A":"DPC、医師事務作業補助者、がん登録","B":"介護保険、訪問看護、感染対策","C":"電子カルテ、看護管理、救急搬送","D":"医療安全、栄養管理、薬剤管理","E":"診療報酬、医療法、災害医療"},"correctAnswer":"A","explanation":"【正答の根拠】第10章は『診療情報管理III』として、診療情報管理士の応用的実務である『DPC・医師事務作業補助者・がん登録』の3分野を扱う。いずれも診療記録から情報を抽出・コード化し、制度運用やデータ活用につなげる業務で、診療情報管理士の専門性が最も活かされる領域。\n【誤答の整理】他の選択肢は医療実務に関わるが、診療情報管理士の中核業務とは直接的に結びつかない。\n【補足】この3分野の共通項は『ICDなどの分類体系を使って、診療記録から統計・請求・登録用のデータを生成する』こと。章全体の問題はこの視点で整理できる。","tags":["10章","章構成","DPC","医師事務作業補助者","がん登録"]},
+      {"id":"ch10-002","chapterId":10,"chapterName":"第10章 診療情報管理III DPC・医師事務作業補助者・がん登録の実務","questionText":"DPCと診療情報管理士(診療情報管理部門)の関わりとして最も適切なのはどれか。","choices":{"A":"DPCは診療情報管理士とは無関係である","B":"診療情報管理士はDPC関連データの整備や精度確保に関わる重要な職種である","C":"診療情報管理士はDPCでは請求業務だけを行う","D":"DPCは医師のみで運用できるため診療情報管理士は不要である","E":"DPCでは診療録の質は問われない"},"correctAnswer":"B","explanation":"【正答の根拠】DPC制度はICD-10に基づく傷病名コーディングが出発点となるため、ICDを扱える診療情報管理士の専門性が不可欠。DPC対象病院の施設基準には『診療録管理体制加算』の届出と『適切なコーディングに関する委員会』の設置が含まれ、いずれも診療情報管理士が中核的に関わる。\n【誤答の整理】A：DPCとICDコーディングは表裏一体。C：請求業務だけでなく、データの抽出・精度管理・委員会運営まで関与。D：医師だけでは適切なコーディングとデータ精度確保は困難。E：DPCの根幹は診療録の質（医療資源病名の根拠）にあり『診療録の質が診療報酬に直結する』のがDPCの特徴。\n【補足】『DPC対象病院＝診療録管理体制加算＋コーディング委員会＋診療情報管理士』は施設基準の三点セット。","tags":["DPC","診療情報管理士","役割"]},
+      {"id":"ch10-003","chapterId":10,"chapterName":"第10章 診療情報管理III DPC・医師事務作業補助者・がん登録の実務","questionText":"1998年11月から開始されたものとして本文で示されていたのはどれか。","choices":{"A":"全国がん登録","B":"医師事務作業補助体制加算","C":"国立病院等10病院に対する入院医療の定額支払制度、いわゆる日本版DRGの試行的導入","D":"病院情報の公表制度","E":"電子カルテ保存の全面義務化"},"correctAnswer":"C","explanation":"【正答の根拠】1998年(平成10年)11月、国立病院等10病院(当時の8国立病院＋2社会保険病院)で『急性期入院医療の定額支払い方式の試行』が開始された。これが『日本版DRG/PPS』と呼ばれ、現在のDPC制度の直接の前身。米国DRG/PPS(1983年メディケア導入)の日本版として検討された。\n【誤答の整理】A：全国がん登録は2016年1月施行。B：医師事務作業補助体制加算は2008年度改定で創設。D：病院情報の公表は2017年度改定以降の仕組み。E：電子カルテの全面義務化はされていない(医療DX推進は進行中)。\n【年号整理】1998年11月(日本版DRG試行開始)→ 2003年4月(DPC制度開始、82特定機能病院)→ 2006年4月(DPC対象病院の名称確定、本格運用)。","tags":["DPC","日本版DRG","1998年"]},
+      {"id":"ch10-004","chapterId":10,"chapterName":"第10章 診療情報管理III DPC・医師事務作業補助者・がん登録の実務","questionText":"DPCの分類開発や妥当性検証・評価等に必要なデータとして本文で示されていたのはどれか。","choices":{"A":"患者アンケートのみ","B":"影響調査データ(当初は基礎調査)","C":"医師の経験則のみ","D":"看護必要度だけ","E":"会計伝票だけ"},"correctAnswer":"B","explanation":"【正答の根拠】DPC制度の維持・改善には『DPC導入の影響評価に係る調査』、いわゆる『影響調査(退院患者調査)』のデータが不可欠。当初は『基礎調査』と呼ばれたが現在は『影響調査』に改称。対象病院から提出される様式1(診療録情報)・様式3(施設情報)・EFファイル(医療行為情報)等から構成され、分類の妥当性検証や係数計算、改定判断に使われる。\n【誤答の整理】A：患者アンケートは参考情報にすぎない。C：経験則だけでは科学的な分類開発は不可能。D：看護必要度は入院基本料の指標で、DPC分類の中心データではない。E：会計伝票だけでは臨床的分類はできない。\n【補足】DPC対象病院・準備病院は毎月データ提出が義務。2024年度改定では『月90症例未満』の病院は制度から退出することになった。","tags":["影響調査","基礎調査","DPC"]},
+      {"id":"ch10-005","chapterId":10,"chapterName":"第10章 診療情報管理III DPC・医師事務作業補助者・がん登録の実務","questionText":"影響調査データに求められる性質として最も適切なのはどれか。","choices":{"A":"速報性だけが重要で精度は問われない","B":"高い精度を持っていることが必要である","C":"病院ごとに定義が異なる方が望ましい","D":"紙媒体であることが条件である","E":"診療録とは無関係に作成できる"},"correctAnswer":"B","explanation":"【正答の根拠】影響調査データはDPC分類の開発・改定・診療報酬算定の根拠になるため、高い精度が必須。精度が低いとアップコーディング(不正に高い報酬を得る操作)や制度の歪みを招き、厚労省も『適切なコーディングに関する委員会』の開催(年4回以上、望ましくは毎月)を義務付けている。\n【誤答の整理】A：速報性より精度が優先。C：病院ごとに定義が違えば全国データとして比較不能。D：現在はすべて電子提出。E：診療録を基にコーディングするので無関係ではありえない。\n【補足】データ精度の担保は『記載(医師)→抽出(診療情報管理士)→コーディング→監査(委員会)』の全工程で行う。診療録の記載品質が根本。","tags":["影響調査","データ精度","DPC"]},
+      {"id":"ch10-006","chapterId":10,"chapterName":"第10章 診療情報管理III DPC・医師事務作業補助者・がん登録の実務","questionText":"DPCにおける傷病名選択の考え方として本文に合致するのはどれか。","choices":{"A":"ICDとは無関係に各病院が独自に選択する","B":"ICDを基本として行う","C":"診断書の病名だけをそのまま用いる","D":"傷病名は不要で手術名だけで決まる","E":"すべてダブルコーディングを適用する"},"correctAnswer":"B","explanation":"【正答の根拠】DPCは『疾病及び関連保健問題の国際統計分類(ICD-10 2003年版準拠)』を基本に傷病名を選択する。DPC14桁コードの上6桁(MDCコード2桁＋傷病名4桁)はICD-10と対応しており、ICDの理解がDPC精度の前提となる。\n【誤答の整理】A：病院独自ではICDが基盤。C：診断書の病名をそのまま使うのではなく、入院中に『最も医療資源を投入した傷病名』を選択(医療資源病名)。D：DPCは傷病名＋手術・処置の組み合わせ。E：ダブルコーディングは特定の病態のみ(剣印・星印システム)で、すべてではない。\n【補足】DPCでは『医療資源病名＝ICD上の主要病態』と読み替える。MBルール(Q38-40)の適用もここで効いてくる。","tags":["DPC","ICD","傷病名選択"]},
+      {"id":"ch10-007","chapterId":10,"chapterName":"第10章 診療情報管理III DPC・医師事務作業補助者・がん登録の実務","questionText":"質の高い影響調査データ作成の前提として、本文で重視されていたものはどれか。","choices":{"A":"診療記録や退院時要約の質","B":"病院の建物規模","C":"患者満足度調査のみ","D":"レセプト提出の速さだけ","E":"医師の経験年数だけ"},"correctAnswer":"A","explanation":"【正答の根拠】DPCコーディングの根拠は診療録と退院時要約。医師の記載が曖昧だと、診療情報管理士がいかに優秀でも適切なコーディングはできない。『不適切な病名(部位不明の悪性新生物C80、性状不詳D48等の乱用)』は精度低下の典型で、厚労省の傷病名コーディングテキストでも明示的に注意喚起されている。\n【誤答の整理】B：建物規模は無関係。C：患者満足度は別指標。D：速さは副次的、まず精度。E：経験年数だけでは記載品質の保証にならない。\n【補足】『診療録の質 → 抽出の質 → コーディングの質 → データの質 → 制度の質』という連鎖。退院時要約は特に重要で、DPC対象病院は『退院後14日以内の作成率9割以上』が診療録管理体制加算1の要件。","tags":["影響調査","退院時要約","診療記録"]},
+      {"id":"ch10-008","chapterId":10,"chapterName":"第10章 診療情報管理III DPC・医師事務作業補助者・がん登録の実務","questionText":"病院情報の公表に関する説明として最も適切なのはどれか。","choices":{"A":"DPC対象病院では病院情報は公表されない","B":"病院指標や医療の質指標などが公表対象となる","C":"公表されるのは病院の建築年だけである","D":"患者個人名を公表する制度である","E":"病院情報の公表と診療情報管理士は無関係である"},"correctAnswer":"B","explanation":"【正答の根拠】DPC制度の一環として、DPC対象病院は自院ホームページで『病院指標(診療実績等)』と『医療の質指標(質評価項目)』を公表する。機能評価係数II(地域医療指数・体制評価指数)の評価項目にもなっており、公表は評価加点対象。\n【誤答の整理】A：DPC対象病院は公表が評価対象。C：建築年は対象外。D：患者個人名は個人情報保護上あり得ない。E：公表データは診療情報管理士が抽出・集計する中核業務。\n【補足】病院指標の7項目：(1)年齢階級別退院患者数、(2)診断群分類別患者数、(3)初発・再発別5大がん患者数、(4)成人市中肺炎の重症度別患者数、(5)脳梗塞の病型別患者数、(6)診療科別主要手術件数、(7)DPC別在院日数等。","tags":["病院情報の公表","病院指標","医療の質指標"]},
+      {"id":"ch10-009","chapterId":10,"chapterName":"第10章 診療情報管理III DPC・医師事務作業補助者・がん登録の実務","questionText":"病院情報の公表における病院指標の例として適切なのはどれか。","choices":{"A":"年齢階級別退院患者数","B":"病院長の在任年数","C":"職員食堂の利用率","D":"病院建築費","E":"医局会開催回数"},"correctAnswer":"A","explanation":"【正答の根拠】病院指標の代表項目：(1)年齢階級別退院患者数(10歳刻みの退院患者集計)、(2)診断群分類別患者数等、(3)初発・再発別5大がん患者数、(4)成人市中肺炎の重症度別、(5)脳梗塞の病型別、(6)診療科別主要手術件数、(7)DPC別在院日数(自院と全国比較)。これらはいずれも診療録・DPCデータから診療情報管理士が抽出・集計する。\n【誤答の整理】B・C・D・Eはいずれも診療実績ではなく経営・運営情報で、病院情報の公表の対象ではない。\n【補足】年齢階級別退院患者数は病院の患者層(高齢者中心か、小児中心か等)を示す基礎指標。この7項目を押さえれば『病院指標の中身』は全体把握できる。","tags":["病院情報の公表","病院指標","退院患者数"]},
+      {"id":"ch10-010","chapterId":10,"chapterName":"第10章 診療情報管理III DPC・医師事務作業補助者・がん登録の実務","questionText":"病院情報の公表における医療の質指標の例として適切なのはどれか。","choices":{"A":"病床数","B":"血液培養2セット実施率","C":"病院敷地面積","D":"救急車の台数","E":"診療科数"},"correctAnswer":"B","explanation":"【正答の根拠】医療の質指標は『実際の診療プロセスの質』を測る指標。代表例は『血液培養2セット実施率(敗血症疑い時に2セット以上採取する適正な検査プロセスの評価)』、『広域スペクトル抗菌薬使用時の適切な培養実施率』、『手術開始前1時間以内の予防的抗菌薬投与率』、『転倒・転落による損傷発生率』、『入院患者の褥瘡発生率』など。\n【誤答の整理】A・C・D・Eは『構造(structure)』や『規模』の指標で、医療の質(プロセス・アウトカム)とは別。医療の質評価は『ドナベディアンモデル(構造・過程・結果)』でいう過程と結果の指標。\n【補足】血液培養2セットは、1セットだと汚染菌なのか真の菌血症か判別困難なため、2セット採取が感染症診療の国際標準。これを実施できているかは病院の質の象徴的指標。","tags":["医療の質指標","血液培養","病院情報の公表"]},
+      {"id":"ch10-011","chapterId":10,"chapterName":"第10章 診療情報管理III DPC・医師事務作業補助者・がん登録の実務","questionText":"2024(令和6)年度の病院情報の公表について本文で示されていたものはどれか。","choices":{"A":"病院指標がすべて廃止された","B":"医療の質指標3項目が追加された","C":"DPCが廃止された","D":"がん登録項目が削除された","E":"診療情報管理士の関与が不要になった"},"correctAnswer":"B","explanation":"【正答の根拠】2024年度(令和6年度)診療報酬改定で、医療の質指標が拡充・追加された。また機能評価係数IIの体制評価指数に『医療の質向上に向けた取り組み』評価項目が新設され、医療の質指標のデータ提出・公表が評価対象に。『医療の質指標の自院ホームページ公表』に加点(令和7年度以降の評価)も導入。\n【誤答の整理】A：病院指標は継続。C：DPCは拡充(改定継続)。D：がん登録は別制度で削除されていない。E：診療情報管理士の関与はむしろ重要度が増している。\n【補足】2024年度改定は『医療の質可視化プロジェクト』の方向性も反映。診療情報管理士にとって『質指標の計測・公表支援』が新たな業務領域として明確化された。","tags":["2024年度","病院情報の公表","医療の質指標"]},
+      {"id":"ch10-012","chapterId":10,"chapterName":"第10章 診療情報管理III DPC・医師事務作業補助者・がん登録の実務","questionText":"DPC制度におけるデータ精度の重要性として最も適切なのはどれか。","choices":{"A":"精度が低くても診療や制度には影響しない","B":"精度が低いと医療過誤や制度の歪みにつながる可能性がある","C":"精度は会計部門だけの問題である","D":"病院外では影響しない","E":"データ精度は影響調査には不要である"},"correctAnswer":"B","explanation":"【正答の根拠】DPCデータの精度が低いと：(1)院内では診療プロセスの問題(アレルギー情報漏れ等)が見逃されて医療過誤につながる、(2)院外では不正確な分類集計が全国集計に混入し、診断群分類の設定・係数計算を歪め、制度全体の公平性を損なう。厚労省は『アップコーディング』を名指しで問題視し、コーディング委員会設置を義務化している。\n【誤答の整理】A：精度は診療・制度の根幹。C：診療情報管理部門・医師・コーディング委員会全体の問題。D：全国集計に影響する。E：影響調査こそ精度が命。\n【補足】『精度低下 → 個別病院の医療安全リスク ＋ 制度全体の歪み』の二重の害がある。『自院だけの問題』ではない。","tags":["データ精度","DPC","医療安全"]},
+      {"id":"ch10-013","chapterId":10,"chapterName":"第10章 診療情報管理III DPC・医師事務作業補助者・がん登録の実務","questionText":"本文で「はがしなデータ」の問題として示唆されていた背景として最も適切なのはどれか。","choices":{"A":"詳細な病名が分かっていても、入力やチェックの不備で精度が落ちることがある","B":"電子カルテでは常に精度が保証される","C":"診療録の内容はDPCに反映されない","D":"病名の詳細性はDPCでは不要である","E":"部位不明コードは必ず正しい"},"correctAnswer":"A","explanation":"【正答の根拠】臨床現場では詳細な病名(例：噴門部癌＝C16.0)が分かっているにもかかわらず、入力やチェック体制の不備で『C16.9(胃部位不明)』『C80(部位不明の悪性新生物)』等の曖昧なコードが多用される問題がある。詳細情報が粗いコードに『剥がされて』しまう現象で、厚労省も留意コードとして警告している。\n【誤答の整理】B：電子カルテでも入力品質と運用品質で精度は変動する。C：診療録こそDPCの根拠。D：詳細性は診断群分類の精度に直結。E：部位不明コードは極力避けるべきコード。\n【補足】留意すべきICDコード：C80(部位不明の悪性新生物)、D37-D44・D48(性状不詳の新生物)、各種.9(詳細不明)。これらを避け、可能な限り具体的コードを選ぶのが精度の鍵。","tags":["データ精度","ICDコーディング","チェック体制"]},
+      {"id":"ch10-014","chapterId":10,"chapterName":"第10章 診療情報管理III DPC・医師事務作業補助者・がん登録の実務","questionText":"DPC対象病院における精度向上策として本文で示されていたものはどれか。","choices":{"A":"コーディングに関する委員会の設置","B":"診療録の廃止","C":"ICDの使用禁止","D":"外来患者のデータ削除","E":"病院情報の非公表"},"correctAnswer":"A","explanation":"【正答の根拠】DPC対象病院は『適切なコーディングに関する委員会(コーディング委員会)』の設置が義務。年4回以上(望ましくは毎月)開催し、『DPC/PDPS傷病名コーディングテキスト(厚労省保険局医療課)』を活用した検討を行う。メンバーには医師、診療情報管理士、医事課職員等が含まれる。\n【誤答の整理】B・C：診療録とICDはDPCの基盤で廃止や禁止はありえない。D：外来データ削除は精度向上と逆行。E：公表はむしろ評価対象で、非公表は減点。\n【補足】コーディング委員会はDPC制度の品質保証(QA)の中核。医師・管理士・医事が連携して『病名記載→コーディング→点検』のPDCAを回す場。診療情報管理士が実務的な中心になる。","tags":["DPC","精度向上","委員会","コーディング"]},
+      {"id":"ch10-015","chapterId":10,"chapterName":"第10章 診療情報管理III DPC・医師事務作業補助者・がん登録の実務","questionText":"DPCデータの活用として最も適切なのはどれか。","choices":{"A":"他院比較や在院日数分析などのベンチマークに用いる","B":"患者個人名を公表するために用いる","C":"データは請求後すぐ廃棄する","D":"診療科の統廃合だけに限定して使う","E":"研究には利用できない"},"correctAnswer":"A","explanation":"【正答の根拠】DPCデータは請求目的を超えて多面的に活用される：(1)ベンチマーク(他院との在院日数・治療パターン比較)、(2)診療プロセス改善(クリニカルパスの見直し)、(3)経営分析(収益構造、診療科別採算)、(4)臨床研究・疫学研究(DPCデータベース研究として論文化多数)、(5)医療政策立案(診療報酬改定の根拠データ)。\n【誤答の整理】B：個人情報保護上あり得ない。C：統計・研究目的で保管される。D：統廃合だけでなく医療の質改善・研究など多岐に活用。E：MDV社・厚労省公開データ等による研究は盛ん。\n【補足】DPCデータは日本の医療ビッグデータの中核で、国際誌掲載の日本発臨床研究にも多用される。診療情報管理士が『請求係』から『データ活用推進者』へ役割拡大する基盤。","tags":["DPCデータ活用","在院日数","ベンチマーク"]},
+      {"id":"ch10-016","chapterId":10,"chapterName":"第10章 診療情報管理III DPC・医師事務作業補助者・がん登録の実務","questionText":"厚生労働省が公表するDPC病院データの活用例として適切なのはどれか。","choices":{"A":"在院日数や再入院の状況などを比較する","B":"職員の私的メールを閲覧する","C":"患者個人の資産を調べる","D":"病院の土地価格を算定する","E":"救急車の走行距離だけを集計する"},"correctAnswer":"A","explanation":"【正答の根拠】厚労省が公表するDPC病院データの活用項目は広範：(1)在院日数(診断群分類別、病院別、全国平均)、(2)再入院の状況、(3)退院先(自宅・他院・介護施設等)、(4)MDC(主要診断群)構成、(5)手術実施率、(6)救急対応状況など。病院間ベンチマークの基礎になる。\n【誤答の整理】B〜E：いずれも診療データとは無関係、または個人情報保護違反や目的外利用にあたる。\n【補足】再入院率は『退院後の診療継続性』を示す質指標の1つ。短すぎる在院日数で早期退院→再入院が増えると、真の効率化とは言えない。DPCデータはこうした『見せかけの効率化』も可視化できる。","tags":["DPCデータ活用","厚生労働省","比較"]},
+      {"id":"ch10-017","chapterId":10,"chapterName":"第10章 診療情報管理III DPC・医師事務作業補助者・がん登録の実務","questionText":"医師事務作業補助者の導入が進んだ背景として最も適切なのはどれか。","choices":{"A":"医師不足や地域偏在、さらに医師の勤務環境改善への対応","B":"診療録を不要にするため","C":"看護師を廃止するため","D":"診療報酬請求をなくすため","E":"病院情報公表をやめるため"},"correctAnswer":"A","explanation":"【正答の根拠】2000年代以降、勤務医の過重労働、医師不足、地方の医師偏在が社会問題化。特に書類作成(診断書・紹介状・主治医意見書等)が医師の時間を圧迫していた。その対策として『医療関係職と事務職員の役割分担推進』が打ち出され、医師事務作業補助者が制度化された。2024年4月の医師の時間外労働規制(働き方改革)でさらに重要性が高まっている。\n【誤答の整理】B〜E：いずれも医師事務作業補助者の導入目的ではない。診療録・看護師・請求事務・病院情報公表は医療制度の根幹で、廃止・縮減の対象ではない。\n【補足】背景キーワード：(1)医師不足 (2)地域偏在 (3)勤務環境改善 (4)医師の働き方改革(2024年4月〜)。これら4つはすべて根底でつながっている。","tags":["医師事務作業補助者","背景","医師不足","地域偏在"]},
+      {"id":"ch10-018","chapterId":10,"chapterName":"第10章 診療情報管理III DPC・医師事務作業補助者・がん登録の実務","questionText":"本文で示されていた通知として正しいのはどれか。","choices":{"A":"2007年12月28日医政局長通知『医師及び医療関係職と事務職員等との間等での役割分担の推進について』","B":"2016年1月1日医療法全面改正通知","C":"1998年11月病院情報公表通知","D":"2003年全国がん登録通知","E":"2024年電子カルテ義務化通知"},"correctAnswer":"A","explanation":"【正答の根拠】2007年12月28日付の医政局長通知『医師及び医療関係職と事務職員等との間等での役割分担の推進について』(医政発第1228001号)が、医師事務作業補助者の業務範囲を公式に示した最初の根幹通知。診断書・診療録・処方せん作成などで『医師が最終確認・署名することを条件に、事務職員が代行可能』と明記。\n【誤答の整理】B：医療法全面改正ではない日付。C：病院情報公表は2017年度以降。D：全国がん登録は2016年1月施行。E：電子カルテ全面義務化は2024年時点で未実施(医療DX推進中)。\n【補足】この通知は翌2008年度診療報酬改定の『医師事務作業補助体制加算』創設の根拠になった。『通知→加算創設→現場普及』の流れを押さえる。","tags":["医師事務作業補助者","通知","2007年"]},
+      {"id":"ch10-019","chapterId":10,"chapterName":"第10章 診療情報管理III DPC・医師事務作業補助者・がん登録の実務","questionText":"医師事務作業補助体制加算について正しいのはどれか。","choices":{"A":"2008年度診療報酬改定で生まれ、医師事務作業補助者の業務が評価対象になった","B":"1998年に全国がん登録と同時に創設された","C":"2024年に初めて創設された","D":"診療報酬とは無関係である","E":"看護補助加算の別名である"},"correctAnswer":"A","explanation":"【正答の根拠】医師事務作業補助体制加算(A207-2)は2008年度(平成20年度)診療報酬改定で創設。勤務医の負担軽減・処遇改善を目的とし、医師事務作業補助者を配置した医療機関の入院初日に加算される。配置人数に応じて複数区分があり、診療報酬改定のたびに点数が引き上げられ、評価は年々拡充されている。\n【誤答の整理】B：1998年は日本版DRG試行。全国がん登録とは別で同時ではない。C：2024年は創設ではなく拡充改定年。D：診療報酬そのもの。E：看護補助加算(看護補助者配置の加算)とは別物。\n【補足】『2008年創設』は医療制度史の重要年号。同年は後期高齢者医療制度も始まっており、医療制度の大転換期だった。","tags":["医師事務作業補助体制加算","2008年","診療報酬改定"]},
+      {"id":"ch10-020","chapterId":10,"chapterName":"第10章 診療情報管理III DPC・医師事務作業補助者・がん登録の実務","questionText":"医師事務作業補助者が関わる書類作成に関する説明として最も適切なのはどれか。","choices":{"A":"医師の関与なく自由に診断書を作成できる","B":"医師が最終的に確認し署名することを前提に、補助者が記載を代行できる場合がある","C":"処方せんは補助者が単独で発行できる","D":"主治医意見書は看護師しか扱えない","E":"診療録作成補助は一切認められない"},"correctAnswer":"B","explanation":"【正答の根拠】2007年通知の要点：診断書・診療録・処方せんは『診察した医師が作成する書類で作成責任は医師が負う』が、『医師が最終的に確認し署名することを条件に、事務職員が記載を代行できる』。つまり『代行入力＋医師の確認・署名』が原則のスキーム。\n【誤答の整理】A：医師の関与なしは不可。作成責任は医師。C：処方せんは医師法により医師の発行が必須、単独発行は不可。D：主治医意見書も医師が最終確認のもと、医師事務作業補助者が代行可能。E：診療録代行入力は主要業務の1つ(認められる)。\n【補足】『医師の指示 → 代行入力 → 医師の確認・署名』の3段階が必須。この流れが崩れると無資格診療や文書偽造につながる。","tags":["医師事務作業補助者","書類作成","診断書","処方せん"]},
+      {"id":"ch10-021","chapterId":10,"chapterName":"第10章 診療情報管理III DPC・医師事務作業補助者・がん登録の実務","questionText":"主治医意見書の作成補助について本文に合致するのはどれか。","choices":{"A":"医師の確認は不要である","B":"医師が最終確認し署名することを条件に、補助者が記載代行できる場合がある","C":"介護保険とは無関係である","D":"補助者が単独で法的責任を負う","E":"病院外では扱えない"},"correctAnswer":"B","explanation":"【正答の根拠】主治医意見書は介護保険法に基づき、要介護認定申請時に市町村が主治医に作成を求める書類。これも診断書・処方せんと同様、『医師の最終確認・署名』を条件に、医師事務作業補助者による記載代行が可能。\n【誤答の整理】A：医師の確認は必須。C：介護保険制度の中核書類。D：補助者は法的責任を負わない(作成責任は医師)。E：病院・診療所・介護施設など主治医が属する機関で扱う。\n【補足】主治医意見書は介護認定の根幹書類で、記載内容が要介護度の決定に直結する。医師事務作業補助者の活躍する典型業務。","tags":["主治医意見書","介護保険","医師事務作業補助者"]},
+      {"id":"ch10-022","chapterId":10,"chapterName":"第10章 診療情報管理III DPC・医師事務作業補助者・がん登録の実務","questionText":"医師事務作業補助者の業務として本文で示されていたものはどれか。","choices":{"A":"医療上の判断が必要な診断そのものの決定","B":"診察や検査の予約に関する事務、オーダリングシステム入力補助","C":"手術適応の最終判断","D":"薬剤の単独処方","E":"病理解剖の実施"},"correctAnswer":"B","explanation":"【正答の根拠】医師事務作業補助者の業務範囲(2007年通知・診療報酬通知)：(1)文書作成補助(診断書・診療情報提供書等)、(2)診療記録への代行入力、(3)医療の質向上に資する事務作業(データ整理、がん登録統計等)、(4)オーダリングシステム入力補助、(5)診察・検査予約事務、(6)行政業務(感染症サーベイランス入力等)。医療判断を伴わない事務が中心。\n【誤答の整理】A・C：医療上の判断は医師の専権。D：処方権は医師のみ。E：病理解剖は病理医の業務。\n【補足】『医師の判断を代行する業務は不可、医師の判断を記録・伝達する業務は可』が分岐点。","tags":["医師事務作業補助者","予約","オーダリングシステム"]},
+      {"id":"ch10-023","chapterId":10,"chapterName":"第10章 診療情報管理III DPC・医師事務作業補助者・がん登録の実務","questionText":"医師事務作業補助者が担当しうる「その他」の業務として本文に示されていたものはどれか。","choices":{"A":"医療上の判断を伴う治療方針の決定","B":"診療報酬請求書の作成、伝票整理、医療判断を要しない電話対応など","C":"手術の執刀","D":"病理診断の確定","E":"がん登録の届出免除判定"},"correctAnswer":"B","explanation":"【正答の根拠】教科書本文では、医師事務作業補助者の『その他の業務』として、診療報酬請求書作成の補助、伝票整理、医療判断を要しない電話対応等が例示されている。\n【注意】ただし、診療報酬通知(A207-2)の最新解釈では、『診療報酬の請求事務(DPCのコーディングに係る業務を含む)、窓口・受付業務、医療機関の経営・運営のためのデータ収集業務、看護業務の補助及び物品運搬業務等は医師事務作業補助者の業務としない』と明示されており、加算の対象業務としては除外される方向で整理されている。教科書の記載は広めの定義に基づくため、試験では教科書記載に従うが、実務では最新通知を確認することが重要。\n【誤答の整理】A・C：医療判断・医療行為は医師・専門職の業務。D：病理診断は病理医。E：がん登録の届出判定は医師の判断。\n【補足】医師事務作業補助体制加算の対象業務は、(1)文書作成補助、(2)代行入力、(3)医療の質向上業務、(4)患者対応業務、(5)行政業務に限定されるため、試験では教科書記載、実務では加算要件を優先という二重基準を理解しておく。","tags":["医師事務作業補助者","その他業務","電話対応","請求書"]},
+      {"id":"ch10-024","chapterId":10,"chapterName":"第10章 診療情報管理III DPC・医師事務作業補助者・がん登録の実務","questionText":"医師事務作業補助者の配置や体制について本文で示されていたものとして適切なのはどれか。","choices":{"A":"配置後の研修は不要である","B":"配置には32時間の研修が求められている","C":"全国統一の国家資格が必須である","D":"すべての病院で名称と業務範囲が法律で完全に同一化されている","E":"責任者の配置は不要である"},"correctAnswer":"B","explanation":"【正答の根拠】医師事務作業補助体制加算の施設基準：配置後6か月以内に、基礎知識習得のため32時間以上の研修を実施することが義務づけられている。研修内容には医療関連法規の概要、個人情報保護、一般的な医療内容、診療録の記載、電子カルテ、医療安全等が含まれる。\n【誤答の整理】A：研修は義務。C：国家資格は存在しない(民間資格としてドクターズクラーク®等はあるが必須ではない)。D：名称は医療機関ごとに異なる(医療クラーク、MA、DA、臨床支援士等)。業務範囲も細部は施設ごとに運用。E：業務管理・改善のための責任者配置は必要。\n【覚え方】『32時間・6か月以内・基礎知識』がキーセット。","tags":["医師事務作業補助者","研修","32時間"]},
+      {"id":"ch10-025","chapterId":10,"chapterName":"第10章 診療情報管理III DPC・医師事務作業補助者・がん登録の実務","questionText":"医師事務作業補助者の研修について正しいのはどれか。","choices":{"A":"新規配置後6か月以内に32時間以上の研修を行うことが求められる","B":"研修は10年ごとに1回だけでよい","C":"個人情報保護は研修項目に含まれない","D":"電子カルテは研修対象外である","E":"院内研修は認められない"},"correctAnswer":"A","explanation":"【正答の根拠】医師事務作業補助体制加算の施設基準では、新規配置後6か月間を研修期間とし、その間に32時間以上の研修を行うことが義務化されている。これに加えて、実務に必要な内容については6か月間の業務研修(OJT)も別途実施。\n【誤答の整理】B：10年ごと1回は不十分。C：個人情報保護は研修必須項目。D：電子カルテの研修は必須。E：院内研修も認められる(むしろ通常は院内研修)。\n【補足】『6か月以内 × 32時間以上』の研修は、医師事務作業補助者の品質保証(QA)の根幹。診療情報管理士が講師として関わることも多い。","tags":["医師事務作業補助者","研修","6か月","32時間"]},
+      {"id":"ch10-026","chapterId":10,"chapterName":"第10章 診療情報管理III DPC・医師事務作業補助者・がん登録の実務","questionText":"医師事務作業補助者の研修内容として本文に示されていたものはどれか。","choices":{"A":"個人情報保護に関する事項","B":"航空管制の基礎","C":"病院建築設計","D":"薬剤の単独処方権","E":"救急車運転技能"},"correctAnswer":"A","explanation":"【正答の根拠】32時間研修の必須項目：(1)関連法規の概要(医療法・医師法・個人情報保護法等)、(2)個人情報保護、(3)一般的な医療内容、(4)診療録の記載、(5)電子カルテ操作、(6)医療安全、(7)医師事務作業補助業務の概要等。『医療現場で安全に事務を遂行する』ための基礎教養。\n【誤答の整理】B・C・D・E：いずれも医師事務作業補助業務と無関係。\n【補足】個人情報保護は診療記録を扱う全職種の必須教養。医師事務作業補助者は診療録に日常的にアクセスするため、守秘義務(雇用契約書・就業規則に明記)と保護法教育は特に重要。","tags":["医師事務作業補助者","研修内容","個人情報保護"]},
+      {"id":"ch10-027","chapterId":10,"chapterName":"第10章 診療情報管理III DPC・医師事務作業補助者・がん登録の実務","questionText":"医師事務作業補助者の体制整備で求められるものとして本文に示されていたのはどれか。","choices":{"A":"責任者を置かず現場任せにすること","B":"補助者の業務を管理・改善する責任者を置くこと","C":"医師だけで研修内容を秘密にすること","D":"配置状況の見直しを行わないこと","E":"関連医師の意見を聞かないこと"},"correctAnswer":"B","explanation":"【正答の根拠】医師事務作業補助体制加算の施設基準では、業務管理・改善の責任者配置が明記されている。責任者は研修計画、業務範囲の明確化、トラブル対応、医師との調整、業務品質の監督など幅広い役割を担う。\n【誤答の整理】A：現場任せでは体制とは言えない。C：研修内容の秘匿は意味がない(むしろ文書化・共有推奨)。D：配置状況の定期的見直しは運用改善の基本。E：現場の医師の意見を聞かない体制は機能しない。\n【補足】責任者には診療情報管理士や事務長、医事課長等が就くことが多い。『誰が責任を持つか』を明確にするのが組織運用の鉄則。","tags":["医師事務作業補助者","体制整備","責任者"]},
+      {"id":"ch10-028","chapterId":10,"chapterName":"第10章 診療情報管理III DPC・医師事務作業補助者・がん登録の実務","questionText":"医師事務作業補助者と診療情報管理士の関係として最も適切なのはどれか。","choices":{"A":"両者の業務は全く無関係である","B":"研修内容や業務範囲に重なる部分が多く、今後さらに結びつくと考えられる","C":"診療情報管理士は医師事務作業補助者業務を理解する必要はない","D":"診療情報管理士は必ず医師事務作業補助者より下位である","E":"医師事務作業補助者はがん登録に全く関与しない"},"correctAnswer":"B","explanation":"【正答の根拠】両者の重なり：(1)研修内容(医療法規・個人情報保護・診療録・電子カルテ)、(2)業務(診療記録の取扱い、データ整理、がん登録実務)、(3)診療情報の精度管理。日本診療情報管理士会には『医師事務作業補助者コース小委員会』もあり、両者は人材育成面でも連携している。実務では、診療情報管理士が医師事務作業補助者の研修・指導・管理を担うケースが多い。\n【誤答の整理】A：強く関連する業務領域。C：管理士は補助者業務の理解が不可欠(研修講師等を担う)。D：上下関係ではなく役割分担。E：医師事務作業補助者の業務には『院内がん登録等の統計・調査』が明記されている(診療報酬通知)。\n【補足】両職種は『医師の業務負担軽減』と『診療情報の質向上』という2つの目的で連携する。","tags":["医師事務作業補助者","診療情報管理士","関係"]},
+      {"id":"ch10-029","chapterId":10,"chapterName":"第10章 診療情報管理III DPC・医師事務作業補助者・がん登録の実務","questionText":"がん登録の説明として最も適切なのはどれか。","choices":{"A":"がん患者の診療費だけを集計する仕組みである","B":"がんの罹患、傷病名、診断根拠や病期等を登録し、分析する仕組みである","C":"病理診断だけを記録するものである","D":"外来患者だけを対象とする","E":"医療機関ではなく患者本人のみが行う"},"correctAnswer":"B","explanation":"【正答の根拠】がん登録は、がんの診断・治療・経過に関する情報を収集・保管・整理・解析する仕組み。登録項目には罹患(いつ・どこの・どんながんが発生したか)、傷病名、診断根拠、病期(ステージ)、治療内容、予後などが含まれる。これを分析することで、罹患率・生存率・治療実態などが明らかになり、がん対策の基礎データとなる。\n【誤答の整理】A：診療費は対象外(医療費統計は別)。C：病理診断は根拠の1つだが全体ではない。D：入院・外来を問わず対象。E：医療機関(医師・がん登録実務者)が届出する。\n【補足】がん登録の3本柱：(1)罹患情報(いつ・誰が・どんながん)、(2)診療情報(どう治療したか)、(3)転帰情報(その後の経過)。この3つで『がんの全体像』が見える。","tags":["がん登録","定義","罹患","病期"]},
+      {"id":"ch10-030","chapterId":10,"chapterName":"第10章 診療情報管理III DPC・医師事務作業補助者・がん登録の実務","questionText":"現在のわが国のがん対策の基本法として本文で示されていたものはどれか。","choices":{"A":"健康増進法","B":"がん対策基本法","C":"医療法","D":"感染症法","E":"個人情報保護法"},"correctAnswer":"B","explanation":"【正答の根拠】『がん対策基本法』(平成18年=2006年法律第98号、2007年4月施行)が、わが国のがん対策の基本法。基本理念、国・地方公共団体・医療保険者・国民・医師等・事業主の責務を定め、『がん対策推進基本計画』の策定を政府に義務付けている。\n【誤答の整理】A：健康増進法(2003年施行)はがん検診や地域がん登録の根拠として関与するが、がん対策全般の基本法ではない。C：医療法は医療提供体制の基本法で、がん特化ではない。D：感染症法は感染症対策。E：個人情報保護法は情報保護の基本法。\n【補足】『基本法』は分野の憲法的役割を持つ法律。がん対策基本法(2006)→がん対策推進基本計画(第1期2007〜)→がん登録推進法(2013成立・2016施行)という制度発展の流れ。","tags":["がん対策基本法","がん対策","2006年"]},
+      {"id":"ch10-031","chapterId":10,"chapterName":"第10章 診療情報管理III DPC・医師事務作業補助者・がん登録の実務","questionText":"がん対策基本法に関する説明として適切なのはどれか。","choices":{"A":"がん対策の基本理念や各主体の責務を定めている","B":"がん登録を廃止する法律である","C":"医師だけの責務を定めた法律である","D":"保険請求の方法のみを定める法律である","E":"病院建築の基準を定める法律である"},"correctAnswer":"A","explanation":"【正答の根拠】がん対策基本法の構造：第1章(総則)で基本理念、第2章で責務(国・地方公共団体・医療保険者・国民・医師等・事業主)、第3章で基本計画策定義務、第4章で具体的施策(がん予防・検診、医療提供体制、研究推進、がん登録)。2016年改正で事業主の責務(治療と仕事の両立支援)が追加された。\n【誤答の整理】B：逆で、がん登録の推進をうたっている。C：6つの主体の責務を規定。D：保険請求とは別法の範疇。E：病院建築は医療法の範疇。\n【補足】『6主体の責務』=(1)国、(2)地方公共団体、(3)医療保険者、(4)国民、(5)医師等、(6)事業主。特に(6)事業主は2016年追加で、働く世代のがんサバイバー支援を意識した改正。","tags":["がん対策基本法","責務","基本理念"]},
+      {"id":"ch10-032","chapterId":10,"chapterName":"第10章 診療情報管理III DPC・医師事務作業補助者・がん登録の実務","questionText":"がん対策基本法に基づき政府が策定しなければならないものとして本文で示されていたのはどれか。","choices":{"A":"病院建築基本計画","B":"がん対策推進基本計画","C":"診療録保存基本計画","D":"病床再編基本計画","E":"災害派遣基本計画"},"correctAnswer":"B","explanation":"【正答の根拠】がん対策基本法第10条により、政府は『がん対策推進基本計画』を策定する義務を負う。6年ごとに見直し、現在は第4期(2023年3月閣議決定、2023〜2028年度)。3本柱は『(1)がん予防、(2)がん医療、(3)がんとの共生』。\n【誤答の整理】A・C・D・Eは存在しない、または別法の基本計画。\n【補足】都道府県は基本計画を踏まえて『都道府県がん対策推進計画』を策定。国→都道府県→医療圏→医療機関と計画が連鎖する構造。診療情報管理士の業務(がん登録・DPC)もこの計画に組み込まれている。","tags":["がん対策推進基本計画","がん対策基本法"]},
+      {"id":"ch10-033","chapterId":10,"chapterName":"第10章 診療情報管理III DPC・医師事務作業補助者・がん登録の実務","questionText":"2016年1月に施行された法律として本文に示されていたものはどれか。","choices":{"A":"医療法","B":"がん登録等の推進に関する法律","C":"介護保険法","D":"医師法","E":"統計法"},"correctAnswer":"B","explanation":"【正答の根拠】『がん登録等の推進に関する法律(通称：がん登録推進法)』は2013年12月13日公布、2016年1月1日施行。全国がん登録の実施・情報利用・保護、院内がん登録の推進等を定めた法律。議員立法として成立した点も特徴。\n【誤答の整理】A：医療法は1948年制定で度重なる改正あり、2016年施行の新法ではない。C：介護保険法は2000年施行。D：医師法は1948年制定。E：統計法は2007年全面改正。\n【年号整理】2006年：がん対策基本法成立 → 2007年：同施行、基本計画第1期 → 2013年：がん登録推進法成立 → 2016年1月：同施行・全国がん登録開始。","tags":["がん登録等の推進に関する法律","2016年","施行"]},
+      {"id":"ch10-034","chapterId":10,"chapterName":"第10章 診療情報管理III DPC・医師事務作業補助者・がん登録の実務","questionText":"2016年施行前にわが国のがん登録が大別されていた3種類として正しいのはどれか。","choices":{"A":"全国がん登録、院内がん登録、臓器(別)がん登録","B":"外来がん登録、入院がん登録、死亡がん登録","C":"地域がん登録、院内がん登録、臓器(別)がん登録","D":"住民がん登録、保険がん登録、研究がん登録","E":"学校がん登録、企業がん登録、保険がん登録"},"correctAnswer":"C","explanation":"【正答の根拠】2016年1月の法施行前のがん登録は3種類：(1)地域がん登録(都道府県単位、健康増進法に基づく努力義務)、(2)院内がん登録(病院内、がん診療連携拠点病院が中心)、(3)臓器(別)がん登録(学会・研究会が臓器別に実施)。2016年以降は(1)が法制化されて『全国がん登録』に発展し、統一的な国家事業となった。\n【誤答の整理】A：『全国がん登録』は法施行後の呼称で、施行前の3種類には含まれない(ここが引っかけ)。B・D・E：そもそも存在しない分類。\n【注意】問題の選択肢Aと正答Cは非常に紛らわしい。『地域』(旧)と『全国』(新)の違いを押さえる。","tags":["がん登録","地域がん登録","院内がん登録","臓器別がん登録"]},
+      {"id":"ch10-035","chapterId":10,"chapterName":"第10章 診療情報管理III DPC・医師事務作業補助者・がん登録の実務","questionText":"院内がん登録で用いられ、病期分類の国際比較が可能と本文で示されていたものはどれか。","choices":{"A":"病床機能報告","B":"TNM悪性腫瘍の分類","C":"診療報酬点数表","D":"介護認定基準","E":"DPC係数表"},"correctAnswer":"B","explanation":"【正答の根拠】TNM分類はUICC(国際対がん連合)が策定する悪性腫瘍の国際標準病期分類。T(Tumor：原発腫瘍の広がり)、N(Node：リンパ節転移)、M(Metastasis：遠隔転移)の3軸で評価し、これらからステージ(I〜IV期)が決まる。国際標準のため、国をまたいだ予後比較や研究が可能。\n【誤答の整理】A：病床機能報告は医療計画制度。C：診療報酬点数表は請求用。D：介護認定基準は介護保険制度。E：DPC係数表は支払制度用で、国際比較不可。\n【補足】TNMの版が変わると病期分類も変わる(現在は第8版、2017年〜)。院内がん登録では採用している版を必ず記録する。診療情報管理士はTNM分類の理解が必須。","tags":["院内がん登録","TNM","病期分類"]},
+      {"id":"ch10-036","chapterId":10,"chapterName":"第10章 診療情報管理III DPC・医師事務作業補助者・がん登録の実務","questionText":"本文で、学会・研究会で作成されるが国独自の決まりであり国際比較はできないとされていたものはどれか。","choices":{"A":"TNM悪性腫瘍の分類","B":"癌取扱い規約","C":"ICD-10","D":"DPC分類","E":"WHO-FIC"},"correctAnswer":"B","explanation":"【正答の根拠】『癌取扱い規約』は日本の各臓器別学会(日本胃癌学会、日本肺癌学会、日本乳癌学会等)が作成する日本独自の臨床ルール。病期分類・組織分類・治療指針等を含むが、日本の診療実態に合わせた独自規定が多いため、そのままでは国際比較できない。\n【誤答の整理】A：TNM分類は国際標準で比較可能(Q35)。C：ICD-10はWHOの国際分類。D：DPC分類は日本独自だがICDをベースにする。E：WHO-FICはWHOの国際分類ファミリー全体。\n【補足】日本では『TNM(国際標準)＋癌取扱い規約(日本独自)』の両方が併用される。前者は国際比較、後者は日本の診療実務に最適化。両者は一致しないこともあり、院内がん登録ではTNMを使う。","tags":["癌取扱い規約","TNM","国際比較"]},
+      {"id":"ch10-037","chapterId":10,"chapterName":"第10章 診療情報管理III DPC・医師事務作業補助者・がん登録の実務","questionText":"全国がん登録について最も適切なのはどれか。","choices":{"A":"2016年1月以降、全国でがんと診断された患者データを国で1つにまとめて集計・分析・管理する仕組みである","B":"大学病院だけが参加する任意制度である","C":"患者の自己申告のみで成り立つ制度である","D":"院内がん登録の別名である","E":"外来患者は対象外である"},"correctAnswer":"A","explanation":"【正答の根拠】全国がん登録は2016年1月1日から開始された国家事業。仕組み：(1)すべての病院＋指定診療所が都道府県の登録室へ届出 → (2)都道府県が審査 → (3)国(国立がん研究センター)が全国データベースへ記録 → (4)死亡情報(人口動態統計)と突合 → (5)罹患率・生存率等を算出・公表。国が一元管理する点が旧『地域がん登録』との最大の違い。\n【誤答の整理】B：大学病院だけではなく全病院。C：医療機関からの届出で、自己申告ではない。D：院内がん登録は病院単位の登録で別物。E：外来・入院を問わず診断されたがんすべて対象。\n【補足】『全国がん登録(国家事業)』と『院内がん登録(病院内)』は併存。診療情報管理士は両方の実務に関わる。","tags":["全国がん登録","2016年","一元管理"]},
+      {"id":"ch10-038","chapterId":10,"chapterName":"第10章 診療情報管理III DPC・医師事務作業補助者・がん登録の実務","questionText":"全国がん登録に関する説明として正しいのはどれか。","choices":{"A":"全国の医療機関は、がんと診断された人のデータを都道府県知事に届け出る義務を負う","B":"患者が希望すれば医療機関は届出を行わなくてよい","C":"診療所は対象外である","D":"原発性がんは対象外である","E":"届出先は病院長個人である"},"correctAnswer":"A","explanation":"【正答の根拠】がん登録推進法第6条により、全国のすべての病院と、都道府県知事が指定した診療所の管理者は、原発性のがんと診断された患者について都道府県知事へ届け出る義務を負う。これは『努力義務』ではなく『法的義務』で、違反時の罰則規定もある。\n【誤答の整理】B：患者同意は不要(法律で義務化)。C：知事が指定した診療所は対象。D：原発性がんこそ登録対象(転移性は原発性がんの経過として記録される)。E：届出先は『都道府県知事』(病院長個人ではない)。\n【補足】届出から登録までの流れ：(1)医療機関→(2)都道府県(審査)→(3)国立がん研究センター(全国DB)→(4)匿名化処理→(5)統計公表・研究利用。","tags":["全国がん登録","届出","都道府県知事"]},
+      {"id":"ch10-039","chapterId":10,"chapterName":"第10章 診療情報管理III DPC・医師事務作業補助者・がん登録の実務","questionText":"全国がん登録における患者本人の同意について本文の趣旨として最も適切なのはどれか。","choices":{"A":"登録には必ず患者本人の書面同意が必要である","B":"患者本人の同意を得なくても登録できるとされている","C":"患者本人の口頭同意だけで足りる","D":"未成年者のみ同意不要である","E":"主治医が反対すれば登録しない"},"correctAnswer":"B","explanation":"【正答の根拠】全国がん登録は法律に基づく義務的な届出で、患者本人の同意は不要。これは個人情報保護法の例外にあたる。理由：(1)正確な罹患統計を得るには全数登録が必要、(2)同意を要件にすると漏れが生じ統計の信頼性が損なわれる、(3)公益性が高い。ただし、個人情報の管理・罰則規定は厳格に設けられている(がん登録推進法第28条・29条の秘密保持義務・罰則)。\n【誤答の整理】A：書面同意は不要。C：口頭同意も不要。D：年齢に関係なく同意不要。E：主治医の反対で登録しないことはできない(法的義務)。\n【補足】同意不要だからこそ、代わりに『秘密保持』『目的外利用禁止』『個人情報保護法の開示等対象外(第35条)』『違反時の罰則』が厳格。患者の知る権利とのバランスで設計されている。","tags":["全国がん登録","同意","個人情報"]},
+      {"id":"ch10-040","chapterId":10,"chapterName":"第10章 診療情報管理III DPC・医師事務作業補助者・がん登録の実務","questionText":"全国がん登録の登録項目の概要に含まれるものとして適切なのはどれか。","choices":{"A":"患者の氏名、性別、生年月日、住所","B":"患者の銀行口座番号","C":"患者の勤務先給与額","D":"患者家族全員の健康状態","E":"病院職員の住所録"},"correctAnswer":"A","explanation":"【正答の根拠】全国がん登録の登録項目(施行規則)は大きく(1)患者基本情報、(2)がん情報、(3)診断・治療情報、(4)転帰情報の4区分。患者基本情報には氏名・性別・生年月日・住所・個人番号(連結管理用)が含まれる。これらは他データベース(人口動態統計の死亡情報等)との突合に必須。\n【誤答の整理】B・C・D・Eはいずれも個人のプライバシー情報で、がん登録の目的(罹患・生存統計)とは無関係。目的外利用は法律で明確に禁止。\n【補足】『氏名・住所が登録される』ことに違和感を持つ人もいるが、匿名統計を作るためには最初は実名で集めて突合し、統計集計後は匿名化(法第15条)する設計になっている。","tags":["全国がん登録","登録項目","基本情報"]},
+      {"id":"ch10-041","chapterId":10,"chapterName":"第10章 診療情報管理III DPC・医師事務作業補助者・がん登録の実務","questionText":"全国がん登録の登録項目の概要として本文に含まれていたものはどれか。","choices":{"A":"がんの診断を行った医療機関名","B":"患者のSNSアカウント名","C":"病院の建築年","D":"患者の趣味","E":"病院の清掃計画"},"correctAnswer":"A","explanation":"【正答の根拠】登録項目には『診断・治療を行った医療機関名』が含まれる。これにより複数医療機関を受診した患者の情報を名寄せ・突合でき、同一症例の重複登録を避けることができる。また、施設別の診療実績分析にも使われる。\n【誤答の整理】B〜E：いずれもプライバシー情報または無関係な情報。がん登録の目的に合致しない。\n【補足】患者は複数病院にかかることが多いため(診断A病院→手術B病院→化学療法C病院など)、『どこで何をしたか』の情報がないと正しい統計が取れない。医療機関名は突合・名寄せのキー情報。","tags":["全国がん登録","登録項目","医療機関名"]},
+      {"id":"ch10-042","chapterId":10,"chapterName":"第10章 診療情報管理III DPC・医師事務作業補助者・がん登録の実務","questionText":"全国がん登録の登録項目の概要として本文に含まれていたものはどれか。","choices":{"A":"がんの診断を受けた日","B":"医師の自宅住所","C":"患者の学歴のみ","D":"病院の宣伝費","E":"看護師の勤務年数"},"correctAnswer":"A","explanation":"【正答の根拠】『がんの診断を受けた日』は全国がん登録の必須項目。これは罹患年の基準となる重要データで、年次罹患率の計算や時系列分析の起点になる。正確性が求められ、複数医療機関で診断された場合は最初の診断日を採用するのがルール。\n【誤答の整理】B〜E：いずれもプライバシー情報または無関係情報で登録対象外。\n【補足】診断日と似た概念：(1)初診日(その病院に来た日)、(2)診断確定日(がんと確定した日)、(3)治療開始日。登録上は『診断日』をどう定義するかの統一ルールが重要で、診療情報管理士の正確な判断が求められる。","tags":["全国がん登録","登録項目","診断日"]},
+      {"id":"ch10-043","chapterId":10,"chapterName":"第10章 診療情報管理III DPC・医師事務作業補助者・がん登録の実務","questionText":"全国がん登録の登録項目の概要として本文に含まれていたものはどれか。","choices":{"A":"がんの種類、進行度、発見の経緯、治療内容","B":"患者の旅行歴のみ","C":"病院の設備投資額のみ","D":"主治医の趣味のみ","E":"患者家族の勤務先一覧"},"correctAnswer":"A","explanation":"【正答の根拠】臨床情報の登録項目には、(1)がんの種類(原発部位・組織型、ICD-O準拠)、(2)進行度(ステージ：TNM分類)、(3)発見経緯(検診発見・症状発見・他疾患での偶発発見等)、(4)治療内容(手術・化学療法・放射線療法・内分泌療法・免疫療法など)が含まれる。これらがあってこそ『どのがんがどう見つかり、どう治療され、どうなったか』が分かる。\n【誤答の整理】B〜E：いずれもがん登録の目的に合致しない個人情報や運営情報。\n【補足】『発見経緯』はがん検診の有効性評価に重要で、検診で見つかったがんは早期発見で予後が良いかなどを検証できる。これがあってがん検診政策の改善につながる。","tags":["全国がん登録","登録項目","進行度","治療内容"]},
+      {"id":"ch10-044","chapterId":10,"chapterName":"第10章 診療情報管理III DPC・医師事務作業補助者・がん登録の実務","questionText":"院内がん登録の目的として本文に合致するものはどれか。","choices":{"A":"施設のがん診療の向上や患者支援に役立てること","B":"病院ごとの秘密情報を公開すること","C":"がん患者の登録を減らすこと","D":"DPC請求だけに使うこと","E":"診療録を廃棄しやすくすること"},"correctAnswer":"A","explanation":"【正答の根拠】院内がん登録は『その病院で診断・治療した全がん症例』を詳細に登録する病院独自のデータベース。目的：(1)自院の診療実態の把握と改善、(2)他院との比較(ベンチマーク)、(3)患者支援(追跡・生存率計測)、(4)臨床研究の基盤、(5)がん診療連携拠点病院等の指定要件。がん登録推進法では病院の『努力義務』。\n【誤答の整理】B：秘密情報公開ではなく、集計データの活用。C：減らすのではなく漏れなく登録。D：DPC請求とは別目的(ただしICDコーディング等の知識は共通)。E：逆で詳細保存が必要。\n【補足】院内がん登録は全国がん登録より詳細な項目を記録する(病理組織型、治療詳細、予後追跡等)。全国がん登録が『広く浅く』なら院内がん登録は『狭く深く』。","tags":["院内がん登録","目的","患者支援","質向上"]},
+      {"id":"ch10-045","chapterId":10,"chapterName":"第10章 診療情報管理III DPC・医師事務作業補助者・がん登録の実務","questionText":"院内がん登録の活用例として本文に示されていたものはどれか。","choices":{"A":"施設のがん患者の生存率の計測","B":"病院敷地の資産評価","C":"全職員の私用電話の管理","D":"患者の住宅ローン審査","E":"病院職員の家系図作成"},"correctAnswer":"A","explanation":"【正答の根拠】院内がん登録の代表的活用例：(1)施設の生存率計測(5年生存率・10年生存率等)、(2)部位別・ステージ別の診療実績分析、(3)他院とのベンチマーク(がん診療連携拠点病院院内がん登録全国集計)、(4)臨床研究の症例抽出、(5)患者さんへの説明資料(病院の治療実績の透明化)、(6)院内改善活動(プロセス指標の計測)。\n【誤答の整理】B〜E：すべて院内がん登録の目的と無関係。\n【補足】生存率計測には患者追跡が不可欠。住民票照会や人口動態情報との突合で行うが、これは法的根拠と個人情報保護の両立が重要。診療情報管理士はこの追跡実務の中心を担う。","tags":["院内がん登録","生存率","活用"]},
+      {"id":"ch10-046","chapterId":10,"chapterName":"第10章 診療情報管理III DPC・医師事務作業補助者・がん登録の実務","questionText":"臓器(別)がん登録の説明として最も適切なのはどれか。","choices":{"A":"法律で全国一律に義務づけられている","B":"学会や研究会が独自に実施する登録の総称である","C":"院内がん登録の別名である","D":"全国がん登録に統合され廃止されたため存在しない","E":"外来だけを対象とする制度である"},"correctAnswer":"B","explanation":"【正答の根拠】臓器(別)がん登録は、各臓器の専門学会・研究会が独自に実施する登録の総称。例：日本胃癌学会・日本肺癌学会・日本乳癌学会・日本大腸癌学会・全国肝癌登録(日本肝癌研究会)・前立腺癌登録(日本泌尿器科学会)等。参加は任意で、臓器別の詳細な臨床情報(組織型、手術術式、薬剤レジメン等)を扱う。\n【誤答の整理】A：法律義務ではなく学会主導の任意登録。C：院内がん登録とは別。D：2016年以降も存続しており廃止されていない。E：入院・外来問わず対象。\n【補足】3種類のがん登録の整理：(1)全国がん登録(国家事業・義務・全がん)、(2)院内がん登録(病院単位・努力義務・全がん詳細)、(3)臓器別がん登録(学会単位・任意・臓器特化詳細)。目的・主体・対象範囲の違いを押さえる。","tags":["臓器別がん登録","学会","研究会"]},
+      {"id":"ch10-047","chapterId":10,"chapterName":"第10章 診療情報管理III DPC・医師事務作業補助者・がん登録の実務","questionText":"診療情報管理士とがん登録の関わりとして最も適切なのはどれか。","choices":{"A":"がん登録では診療情報管理士の関与は不要である","B":"診療記録から情報を抽出し、コード化することは診療情報管理士が関わるべき専門的領域の一つである","C":"がん登録はすべて自動化され、記録確認は不要である","D":"診療情報管理士は全国がん登録だけに関与し院内がん登録には関与しない","E":"がん登録は医師だけが行える"},"correctAnswer":"B","explanation":"【正答の根拠】がん登録の実務は『診療記録から必要情報を抽出→ICD-O等で正確にコード化→届出票に記入→都道府県・国に提出』の流れで、診療情報管理士の専門性(医学用語・解剖・ICD/ICD-O・コーディング技能)が不可欠。国立がん研究センターが主催する『がん登録実務者研修』を受けた認定者が中心となり、診療情報管理士がその多くを占める。\n【誤答の整理】A：中核人材として関与。C：医師の記載不備や曖昧な表記の確認が必要で自動化は不完全。D：全国がん登録・院内がん登録ともに関与。E：医師だけでは実務的に不可能で、がん登録実務者(多くは診療情報管理士)が担う。\n【補足】診療情報管理士のキャリアパス：ICDコーディング → DPCコーディング → がん登録実務者 → がん登録指導者、という専門性の積み上げが可能。わたるさんの領域(リハビリ・整形外科)とは直接重ならないが、診療情報管理士の職能の広がりを知る参考になる。","tags":["診療情報管理士","がん登録","抽出","コード化"]}
+    ]
+  },
+  11: {
+    id: 11,
+    name: "第11章",
+    fullName: "第11章 国際統計分類I",
+    color: "var(--ch11)",
+    bgColor: "var(--ch11-bg)",
+    questions: [
+      {"id":"ch11-001","chapterId":11,"chapterName":"第11章 国際統計分類I","questionText":"疾病分類の説明として最も適切なのはどれか。","choices":{"A":"病名を自由記述で残し、後から個別に解釈する方法である。","B":"似た事象を一定の法則に従って集団に分け、分析や処理をしやすくする考え方である。","C":"医師が使いやすい俗称を優先して集めた一覧である。","D":"病名の日本語表記だけを統一するための仕組みである。","E":"死因統計のためだけに作られた限定的な手法である。"},"correctAnswer":"B","explanation":"【正答の根拠】分類（classification）とは、類似する事象を一定のルール・基準に基づきグループ化し、統計的な集計・比較・分析を可能にする考え方である。ICDはこの原理に立脚している。\n【誤答の整理】A：自由記述は分類ではなく、そのままでは集計・国際比較ができない。C：俗称では施設間の差が大きく標準化できない。D：日本語表記の統一は「標準病名集」の役割であり、分類とは別物（Q3参照）。E：ICDは死因だけでなく疾病統計にも使われる（第6回改訂以降）。\n【補足】疾病分類は『記録』ではなく『整理・集計の仕組み』。この概念整理がICD理解の出発点になる。","tags":["分類の意義","疾病分類","標準化"]},
+      {"id":"ch11-002","chapterId":11,"chapterName":"第11章 国際統計分類I","questionText":"ICDの役割として最も適切なのはどれか。","choices":{"A":"医療機関ごとの独自病名を増やすこと","B":"医師の自由記述を制限しないこと","C":"国際比較や医療内容評価のための共通コードとして使うこと","D":"診療報酬請求だけに使うこと","E":"看護記録の表現を統一することだけを目的とすること"},"correctAnswer":"C","explanation":"【正答の根拠】ICD（International Statistical Classification of Diseases and Related Health Problems）は、WHOが定める国際共通の分類で、異なる国・地域・時点のデータを比較可能にするための標準コード。国際比較、疫学研究、医療の質評価、DPC、診療録管理など幅広く活用される。\n【誤答の整理】A：ICDは独自病名を増やすのではなく共通化する仕組み。B：自由記述では国際比較不可能。D：診療報酬請求は用途の一部にすぎず、本質は統計・分析。E：看護記録の表現統一はICNP（看護実践国際分類）の役割。\n【補足】ICDは単なる請求コードではなく『統計・国際比較の基盤』であることが要点。","tags":["ICD","使用目的","国際比較"]},
+      {"id":"ch11-003","chapterId":11,"chapterName":"第11章 国際統計分類I","questionText":"ICDと標準病名集の違いとして適切なのはどれか。","choices":{"A":"ICDは俗称を集めた病名集である。","B":"標準病名集は統計分類表である。","C":"ICDは分類体系であり、標準病名集とは性格が異なる。","D":"両者は完全に同一である。","E":"標準病名集の方が国際比較に向いている。"},"correctAnswer":"C","explanation":"【正答の根拠】ICDは『分類体系（classification）』——病態をグループ化して統計を取るための枠組み。一方、標準病名集（例：MEDIS-DC標準病名マスター）は『病名辞書（terminology）』——臨床で使う個々の病名を統一した表記で集めたもの。両者は連携するが役割が違う。\n【誤答の整理】A：ICDは俗称集ではなく、整理された分類。B：標準病名集は分類表ではなく病名リスト。D：両者は連携するが別物。E：国際比較に向くのはICD。標準病名集は国内の電子カルテでの入力統一が主目的。\n【補足】『分類＝グルーピングの枠』、『病名集＝個別病名の辞書』と覚える。日本ではMEDIS-DC標準病名マスターがICD-10コードとの対応を持ち、両者を橋渡ししている。","tags":["ICD","標準病名集","分類体系"]},
+      {"id":"ch11-004","chapterId":11,"chapterName":"第11章 国際統計分類I","questionText":"コード化が必要な理由として最も適切なのはどれか。","choices":{"A":"同じ病態でも患者ごとに別のコードを付けるため","B":"病名の長さを短くするためだけ","C":"同じ分類に当てはまるものに同じコードを付け、比較可能にするため","D":"医師の記載を不要にするため","E":"診断を自動化するため"},"correctAnswer":"C","explanation":"【正答の根拠】コード化（coding）の本質は『同じものに同じ識別子を与える』こと。これにより、施設・国・言語を超えて集計・比較が可能になる。例えば日本語「百日咳」、英語「Whooping cough」でも、ICDコードはA37で世界共通。\n【誤答の整理】A：患者ごとに別コードでは統計にならない。B：短縮は副次的効果にすぎない。D：医師の記載あってのコード化。E：コード化は診断の自動化ではなく、記録の集計基盤。\n【補足】コード化の3つの価値は『①検索性 ②集計性 ③国際比較』。この原則はDPCやがん登録でも同じ。","tags":["コード化","コーディング","比較可能性"]},
+      {"id":"ch11-005","chapterId":11,"chapterName":"第11章 国際統計分類I","questionText":"人口動態事象の例として本文に含まれていたものはどれか。","choices":{"A":"出生、死亡、死産、婚姻、離婚","B":"出生、入院、退院、婚姻、失業","C":"出生、転居、転職、婚姻、離婚","D":"死亡、手術、退院、養子縁組、就職","E":"出生、入院、死産、離職、離婚"},"correctAnswer":"A","explanation":"【正答の根拠】わが国の人口動態統計の対象は『出生・死亡・死産・婚姻・離婚』の5事象。これは統計法・人口動態調査令に基づき、それぞれの届書を基礎に調査票が作成される。\n【誤答の整理】入院・退院・手術は医療統計（患者調査等）の対象で、人口動態には含まれない。転居・転職・失業・就職・養子縁組は社会経済統計や住民基本台帳の範疇。\n【覚え方】『出・死・死・婚・離』の5つ——生まれる／死ぬ／生まれずに死ぬ／結婚する／別れる、という『人の一生の節目』のうち戸籍に関わる事象と覚える。","tags":["人口動態統計","人口動態事象"]},
+      {"id":"ch11-006","chapterId":11,"chapterName":"第11章 国際統計分類I","questionText":"わが国の人口動態統計が始まった年として正しいのはどれか。","choices":{"A":"1855年","B":"1872年","C":"1899年","D":"1946年","E":"1968年"},"correctAnswer":"B","explanation":"【正答の根拠】わが国の人口動態統計は1872年（明治5年）に開始。当初は出生・死亡・死産の3事象から。\n【誤答の整理】1855年は幕末で統計制度以前。1899年（明治32年）は戸籍法施行に伴う近代的調査方式への移行年（Q8参照）。1946年は戦後の人口動態調査令制定年（Q9）。1968年はOMR（光学式マーク読取）導入年（Q13）。\n【年号の流れ】①1872：開始 → ②1884：婚姻・離婚追加 → ③1886：死産追加 → ④1899：戸籍法で近代化 → ⑤1946：調査令制定 → ⑥1968：OMR → ⑦1992：OCR → ⑧2003-2004：オンライン化。この時系列はセットで押さえる。","tags":["人口動態統計","沿革"]},
+      {"id":"ch11-007","chapterId":11,"chapterName":"第11章 国際統計分類I","questionText":"わが国の人口動態統計で、婚姻・離婚が加わった年として正しいのはどれか。","choices":{"A":"1872年","B":"1884年","C":"1886年","D":"1898年","E":"1947年"},"correctAnswer":"B","explanation":"【正答の根拠】1872年の開始時点では『出生・死亡・死産』の3事象のみ。1884年に婚姻・離婚が追加され、1886年に死産（再）追加で現行の5事象構成に。\n【誤答の整理】1872：統計開始年（まだ婚姻・離婚は未追加）。1886：死産が追加された年。1898：戸籍法の制定年（施行は翌1899年）。1947：厚生省への移管年。\n【覚え方】『婚・離は1884年（いっぱっぱよ、で結ばれる／別れる）』など語呂で年号を紐付けると定着しやすい。","tags":["人口動態統計","沿革","婚姻","離婚"]},
+      {"id":"ch11-008","chapterId":11,"chapterName":"第11章 国際統計分類I","questionText":"1899年からの人口動態調査の近代的方法への移行の契機として最も適切なのはどれか。","choices":{"A":"WHOの発足","B":"戸籍法施行により登録制度が法体系的に完全となったこと","C":"ICD-10の公表","D":"OCRの導入","E":"オンライン報告システムの導入"},"correctAnswer":"B","explanation":"【正答の根拠】1898年に戸籍法が制定・施行され、登録制度が法的に整備された。これを機に、1899年から『1事件1枚の個別票』による中央集計方式に移行し、近代的な人口動態調査方式が確立された。\n【誤答の整理】A：WHO発足は1948年。C：ICD-10はWHOで1990年採択、日本適用は1995年。D：OCR導入は1992年。E：オンライン化は2003-2004年。いずれも1899年より後の出来事。\n【補足】戸籍法による届出義務の明確化が、統計の完全性・正確性を担保した。戸籍制度と人口動態統計はセットで機能する。","tags":["人口動態統計","戸籍法","沿革"]},
+      {"id":"ch11-009","chapterId":11,"chapterName":"第11章 国際統計分類I","questionText":"戦後の人口動態統計に関する記述として正しいのはどれか。","choices":{"A":"1946年に人口動態調査令が新設され、1947年に厚生省へ移管された。","B":"1946年にICD-10が導入された。","C":"1947年にOCRが導入された。","D":"1946年にオンライン報告が始まった。","E":"1947年に戸籍法が施行された。"},"correctAnswer":"A","explanation":"【正答の根拠】戦中の混乱で途絶えた人口動態統計は、1946年に『人口動態調査令』で再開され、1947年9月に所管が内務省から厚生省（現・厚生労働省）へ移管された。\n【誤答の整理】B：ICD-10は1990年採択、日本適用は1995年。C：OCRは1992年。D：オンラインは2003-2004年。E：戸籍法は1898年制定（現行戸籍法は1947年に新法として制定だが、本問は『人口動態統計整備のための施行年』ではない）。\n【覚え方】『1946年＝調査令』『1947年＝厚生省移管』の2段階。戦後復興の流れで、国民健康把握のため統計を早急に再開した文脈。","tags":["人口動態統計","人口動態調査令","厚生省"]},
+      {"id":"ch11-010","chapterId":11,"chapterName":"第11章 国際統計分類I","questionText":"人口動態統計の法的根拠として本文に示されていた組み合わせはどれか。","choices":{"A":"医療法・健康保険法・戸籍法","B":"統計法・人口動態調査令・人口動態調査令施行規則","C":"医師法・保健師助産師看護師法・統計法","D":"地方自治法・戸籍法・統計法","E":"健康増進法・統計法・介護保険法"},"correctAnswer":"B","explanation":"【正答の根拠】人口動態統計の法的根拠は3つ：①統計法（統計全般の基本法、2007年全面改正）、②人口動態調査令（1946年制定）、③人口動態調査令施行規則。この三層構造で運用される。\n【誤答の整理】医療法・健康保険法は医療提供・保険の法律で統計の根拠法ではない。戸籍法は届出の根拠で、統計作成の直接の根拠法ではない（届書を統計利用するのが人口動態調査令）。医師法・保助看法は職種法。健康増進法・介護保険法も別領域。\n【補足】『届書（戸籍法に基づく）→ 調査票（人口動態調査令に基づく）→ 統計（統計法に基づく）』という流れを押さえる。","tags":["人口動態統計","統計法","法令"]},
+      {"id":"ch11-011","chapterId":11,"chapterName":"第11章 国際統計分類I","questionText":"人口動態調査票について正しいのはどれか。","choices":{"A":"調査票は病院が独自に作成する。","B":"出生・死亡・死産・婚姻・離婚について、それぞれの届書に基づいて作成される。","C":"調査票は電子カルテから自動生成される。","D":"調査票は都道府県のみが作成する。","E":"死亡調査票は死体検案書とは無関係である。"},"correctAnswer":"B","explanation":"【正答の根拠】人口動態調査票は、市区町村が受理した5つの届書（出生届・死亡届・死産届・婚姻届・離婚届）を基礎に作成される。死亡調査票の場合は、死亡届に添付された『死亡診断書（死体検案書）』の記載が原データとなる。\n【誤答の整理】A：病院が独自に作るのではなく、届出を受けた市区町村が作成。C：電子カルテから自動生成ではない（届書ベース）。D：都道府県のみではなく市区町村が作成（その後都道府県経由で国へ）。E：死亡調査票は死体検案書の情報を直接反映するので『無関係』は誤り。\n【補足】市区町村→保健所→都道府県→厚生労働省という集計のルートも押さえる。","tags":["人口動態統計","調査票","届書"]},
+      {"id":"ch11-012","chapterId":11,"chapterName":"第11章 国際統計分類I","questionText":"人口動態調査を作成するうえで強く求められるものとして本文に示されていたのはどれか。","choices":{"A":"多様性・自由度・柔軟性","B":"完全性・正確性・迅速性","C":"網羅性・匿名性・秘匿性","D":"柔軟性・独自性・迅速性","E":"完全性・国際性・独自性"},"correctAnswer":"B","explanation":"【正答の根拠】人口動態調査の3大要件は『完全性・正確性・迅速性』。完全性＝漏れなく届出が集まる、正確性＝記載内容が正しい、迅速性＝タイムリーに集計される。この3つが揃って初めて政策判断・医療計画に使える統計になる。\n【誤答の整理】Aの多様性・自由度・柔軟性は調査票に求めない方向性（標準化を崩すため）。Cの匿名性・秘匿性は個人情報保護上の要件だが、調査の作成品質を示す言葉ではない。\n【補足】『完・正・迅』と覚える。特にコロナ禍以降、死因統計の迅速性の重要性が再認識された。","tags":["人口動態統計","完全性","正確性","迅速性"]},
+      {"id":"ch11-013","chapterId":11,"chapterName":"第11章 国際統計分類I","questionText":"人口動態統計の入力・集計方法の大きな改正として正しい組み合わせはどれか。","choices":{"A":"1968年にOMR、1992年にOCR","B":"1968年にOCR、1992年にOMR","C":"1967年にOCR、1995年にOMR","D":"1899年にOMR、1946年にOCR","E":"2003年にOMR、2004年にOCR"},"correctAnswer":"A","explanation":"【正答の根拠】1968年にOMR（Optical Mark Reader：光学式マーク読取装置、いわゆるマークシート）、1992年にOCR（Optical Character Reader：光学式文字読取装置、手書き・印字文字をテキスト化）を導入。機械化で処理が飛躍的に迅速化した。\n【誤答の整理】B：OMRとOCRが入れ替わっている。OMRの方が技術的に先。D：1899年は近代化移行年、1946年は調査令制定年でIT導入とは別。E：2003-2004年はオンライン報告開始。\n【覚え方】『M（マーク）が先、C（キャラクター/文字）が後』。OMR→OCR→オンラインの順で高度化した。","tags":["人口動態統計","OMR","OCR"]},
+      {"id":"ch11-014","chapterId":11,"chapterName":"第11章 国際統計分類I","questionText":"人口動態調査オンライン報告システムの導入について正しいのはどれか。","choices":{"A":"1992年に全国一斉に導入された。","B":"2003年1月から保健所・都道府県、2004年2月から市区町村で導入可能となった。","C":"1947年から運用されている。","D":"戸籍法施行と同時に始まった。","E":"死亡票だけに限定して導入された。"},"correctAnswer":"B","explanation":"【正答の根拠】オンライン報告システムは段階的導入。2003年1月に保健所・都道府県から、2004年2月に市区町村へ拡大された。一斉導入ではなく、上位機関から段階的に降ろす方式。\n【誤答の整理】A：1992年はOCR導入年でオンライン化ではない。C：1947年は厚生省移管年でIT導入ではない。D：戸籍法は1898年で当時オンラインは存在しない。E：死亡票だけではなく人口動態5事象が対象。\n【補足】上位（保健所・都道府県）から先に整備し、翌年に現場（市区町村）に下ろす段階導入は、日本の行政IT化によくある順序。","tags":["人口動態統計","オンライン報告"]},
+      {"id":"ch11-015","chapterId":11,"chapterName":"第11章 国際統計分類I","questionText":"1853年の第1回国際統計会議で死因分類作成を要請された2人の組み合わせとして正しいのはどれか。","choices":{"A":"Bertillon と Huber","B":"Farr と d'Espine","C":"Nightingale と Farr","D":"WHO と国際連盟","E":"Bertillon と Nightingale"},"correctAnswer":"B","explanation":"【正答の根拠】1853年、ベルギー・ブリュッセルで開催された第1回国際統計会議において、英国のWilliam Farrとスイス・ジュネーブのMarc d'Espineが死因の国際分類作成を依頼された。これがICDの最古の起源。\n【誤答の整理】Bertillon（ジャック・ベルティヨン）はFarrらの分類を引き継ぎ1893年に『ベルティヨン分類』を発表した後継者。Nightingaleは1860年の第4回会議でFarr分類の病院統計応用を提唱した人物（Q17）。WHOは1948年発足で時代が合わない。\n【人物整理】Farr（英）＝解剖学的部位 → Bertillon（仏）＝統合・体系化 → Nightingale（英）＝病院統計への応用提唱。ICD史の『三大人物』。","tags":["ICDの歴史","Farr","dEspine"]},
+      {"id":"ch11-016","chapterId":11,"chapterName":"第11章 国際統計分類I","questionText":"Farr分類とd'Espine分類の違いとして最も適切なのはどれか。","choices":{"A":"Farrは疾病の性質、d'Espineは解剖学的部位を重視した。","B":"Farrは解剖学的部位局所病を含む分類、d'Espineは疾病の性質に沿う分類であった。","C":"両者とも完全に同一であった。","D":"Farrは病院統計専用、d'Espineは死因統計専用であった。","E":"d'Espineのみが採用され、Farrは採用されなかった。"},"correctAnswer":"B","explanation":"【正答の根拠】Farrは疾病を5群（流行病・体質性疾患・解剖学的部位による局所病・発育性疾患・暴力の直接結果）に分類し、部位を重視。d'Espineは疾病の『性質（痛風性・疱疹性・血液性など）』に沿った分類を提案。最終的にFarrの方式が採用・発展しICDの原型となった。\n【誤答の整理】A：FarrとEspineの役割が逆。C：2人は異なる原理で提案したので同一ではない。D：両者とも死因分類が目的で、病院統計への応用提唱はNightingale。E：Farrの方式こそ主流として採用された。\n【覚え方】『Farr＝部位（Fがfieldのイメージ）』、『Espine＝性質（Eがessenceのイメージ）』。部位派が勝ち残ったのが現在のICD。","tags":["ICDの歴史","Farr分類","dEspine分類"]},
+      {"id":"ch11-017","chapterId":11,"chapterName":"第11章 国際統計分類I","questionText":"Florence Nightingaleが提唱した内容として正しいのはどれか。","choices":{"A":"ICD-10の名称変更","B":"ICHIの策定","C":"Farr分類を病院の疾病統計に用いること","D":"J・Kコードの導入","E":"MBルールの作成"},"correctAnswer":"C","explanation":"【正答の根拠】1860年、ロンドンで開かれた第4回国際統計会議において、Florence Nightingale（クリミア戦争の看護統計で知られる）はFarrの死因分類を病院の疾病統計に応用することを提唱した。これにより分類が死因のみならず『疾病』にも広がる契機となった。\n【誤答の整理】A：ICD-10の名称変更は1990年のWHO総会の話（1世紀以上後）。B：ICHIはWHOが近年開発中の医療行為分類。D：J・Kコードは日本の診療報酬請求コード。E：MBルールはICD本体の主要病態選択ルール。\n【補足】Nightingaleの功績は『統計を医療改善に使う』という発想の先駆け。のちの病院統計・DPC・医療の質評価に通じる。","tags":["ICDの歴史","Nightingale","病院統計"]},
+      {"id":"ch11-018","chapterId":11,"chapterName":"第11章 国際統計分類I","questionText":"Bertillon分類について正しいのはどれか。","choices":{"A":"1893年の国際統計協会会議で提出・承認され、その後10年ごとの改訂案が提起された。","B":"WHO発足後に初めて採用された。","C":"日本だけで使用された。","D":"疾病分類のみで死因分類は含まない。","E":"一度も改訂されなかった。"},"correctAnswer":"A","explanation":"【正答の根拠】Jacques Bertillon（仏・パリ市統計部長）が委員長となり、1893年シカゴで開かれた国際統計協会（ISI）で『ベルティヨン死因分類』を提出・承認。以後10年ごとの改訂が望ましいとされ、これが現ICDの改訂サイクルの起源。\n【誤答の整理】B：WHO発足は1948年で、ベルティヨン分類はそれ以前から使用。C：欧米諸国（1898年APHA採用）など国際的に広く使われた。D：本体は死因分類。E：1900年第1回改訂会議以降、継続的に改訂されている。\n【補足】『1893年承認＋10年改訂サイクル』は現在も続くICDの基本構造。Bertillon→第1回改訂（1900）→…→第10回（ICD-10, 1990）→ICD-11（2019承認）。","tags":["ICDの歴史","Bertillon分類"]},
+      {"id":"ch11-019","chapterId":11,"chapterName":"第11章 国際統計分類I","questionText":"第1回国際改訂会議について正しいのはどれか。","choices":{"A":"1900年にパリで26か国が参加して開催された。","B":"1909年にジュネーブで開催された。","C":"1948年にニューヨークで開催された。","D":"日本は参加していない。","E":"ICD-10がここで公表された。"},"correctAnswer":"A","explanation":"【正答の根拠】1900年、フランス政府の主催でパリにて第1回国際死因分類改訂会議が開催され、26か国が参加。ベルティヨン分類の正式な国際改訂版が採択された。日本は同年にこの分類を採用。\n【誤答の整理】B：1909年は第2回改訂会議（パリ）で、ジュネーブではない。C：1948年はジュネーブで第6回改訂会議（WHO主催）。D：日本はこの時からICDを国内適用している（明治33年）。E：ICD-10は1990年WHO総会採択。\n【補足】日本のICD適用は1900年（明治33年）からという長い歴史。これは世界的にも早い部類に入る。","tags":["ICDの歴史","国際改訂会議"]},
+      {"id":"ch11-020","chapterId":11,"chapterName":"第11章 国際統計分類I","questionText":"第4回国際死因分類改訂会議（1929年）の特徴として正しいのはどれか。","choices":{"A":"WHOが正式に発足した。","B":"「死因としてはさほど必要としない疾病・病態分類」が12項目の細分類として追加された。","C":"dagger・asteriskシステムが導入された。","D":"ICD-10が公表された。","E":"ICFが採択された。"},"correctAnswer":"B","explanation":"【正答の根拠】1929年の第4回改訂会議で、死因としては重要度が低いが疾病統計には必要な病態について12項目の細分類が追加された。これは死因だけでなく『疾病』への拡張の萌芽となった。\n【誤答の整理】A：WHO発足は1948年。C：dagger（†）・asterisk（*）の二重分類は第9回改訂会議（1975年）で承認（Q23）。D：ICD-10は1990年WHO総会。E：ICF（国際生活機能分類）は2001年WHO総会採択。\n【補足】第4回は『疾病分類への拡張の第一歩』として重要。本格的に疾病分類が統合されるのは第6回（1948年）。","tags":["ICDの歴史","第4回改訂会議"]},
+      {"id":"ch11-021","chapterId":11,"chapterName":"第11章 国際統計分類I","questionText":"第5回国際改訂会議（1938年）について正しいのはどれか。","choices":{"A":"複合死因の取り扱いが検討された。","B":"ICD-11が採択された。","C":"3桁10進法がここで初めて採用された。","D":"死亡診断書様式が廃止された。","E":"日本標準病名集が作られた。"},"correctAnswer":"A","explanation":"【正答の根拠】1938年の第5回改訂会議では、死因が単一ではなく複数関連する場合の『複合死因』の扱いが検討された。これはのちの原死因選択ルール（第6回以降で体系化）の前段階。\n【誤答の整理】B：ICD-11は2019年WHO総会採択。C：3桁10進法の現行型は第6回（1948年）で確立。D：死亡診断書様式が廃止された事実はない（現在も継続的に改訂）。E：日本標準病名集は別の話（MEDIS-DC等）。\n【補足】『第5回＝複合死因』『第6回＝疾病と死因の統一』『第9回＝二重分類（†*）』は改訂会議のキーワードとしてセットで覚える。","tags":["ICDの歴史","第5回改訂会議","複合死因"]},
+      {"id":"ch11-022","chapterId":11,"chapterName":"第11章 国際統計分類I","questionText":"第6回国際疾病及び死因分類改訂会議（1948年）の意義として最も適切なのはどれか。","choices":{"A":"疾病分類と死因分類が分離された。","B":"疾病と死因の統一分類が打ち出され、3桁数字による10進法や表形式・索引表の構成が現在の原型となった。","C":"ICD-10の小改正が始まった。","D":"ICHIが公表された。","E":"日本のオンライン報告が始まった。"},"correctAnswer":"B","explanation":"【正答の根拠】1948年、WHO発足と同時に開催された第6回改訂会議は、ICD史上最大の転換点。それまで別々だった『疾病分類』と『死因分類』を統一し、3桁10進法の基本コード体系、表形式（内容例示表）、索引表という現在のICDの原型が確立された。またWHOが正式に主管機関となった年でもある。\n【誤答の整理】A：逆で『統一』された。C：小改正は毎年行われるが第6回の意義ではない。D：ICHIはWHOが近年開発中の医療行為分類で公表時期が異なる。E：日本のオンライン化は2003-2004年。\n【補足】『第6回＝WHO主管開始＋疾病と死因統一＋3桁10進法』の3点セット。ICD史の最重要ポイント。","tags":["ICDの歴史","第6回改訂会議","ICDの原型"]},
+      {"id":"ch11-023","chapterId":11,"chapterName":"第11章 国際統計分類I","questionText":"第9回改訂会議で承認された二重分類システムとして正しいのはどれか。","choices":{"A":"＋ と −","B":"† と *","C":"○ と ×","D":"A と B","E":"J と K"},"correctAnswer":"B","explanation":"【正答の根拠】1975年の第9回改訂会議で、dagger（†：剣印）とasterisk（*：星印）による二重分類システム（ダブルコーディング）が承認された。剣印は『原因となる基礎疾患』、星印は『特定臓器の症状・所見』を表し、両方のコードを付ける仕組み。例：糖尿病性網膜症では、糖尿病（†）と網膜症（*）の両方をコード化。\n【誤答の整理】他の記号はICDの分類体系とは無関係。J・KはQ34で扱う日本の診療報酬コード（医科点数表のJ検査・K手術）で全く別物。\n【補足】ダブルコーディングは『全身疾患の臓器症状を両面から捉える』ための仕組み。ICD-11でも考え方は継承されている（ポストコーディネーション）。","tags":["ICDの歴史","第9回改訂会議","二重分類"]},
+      {"id":"ch11-024","chapterId":11,"chapterName":"第11章 国際統計分類I","questionText":"ICD-10の正式名称として追加された要素はどれか。","choices":{"A":"Nursing Problems","B":"Genetic Diseases","C":"Related Health Problems","D":"Surgical Claims","E":"Social Insurance Codes"},"correctAnswer":"C","explanation":"【正答の根拠】ICD-10の正式名称は『International Statistical Classification of Diseases and Related Health Problems（疾病及び関連保健問題の国際統計分類）』。ICD-9までは『Diseases, Injuries and Causes of Death』だったが、ICD-10で『Related Health Problems（関連保健問題）』が加わり、対象が『疾病・死因』から『保健問題全般』へ拡大した。\n【誤答の整理】Nursing Problemsは看護分類（ICNP等）の領域。Genetic Diseasesは単独分類ではない。Surgical ClaimsやSocial Insurance Codesは請求・保険の用語でWHO分類ではない。\n【補足】ICD-10（1990年採択）は、社会要因・生活習慣・保健サービスまで統計対象を広げた。この名称変更は思想の拡張を反映している。","tags":["ICD-10","正式名称"]},
+      {"id":"ch11-025","chapterId":11,"chapterName":"第11章 国際統計分類I","questionText":"大改正と小改正の説明として正しいのはどれか。","choices":{"A":"同一3桁分類内での索引追加や表現変更は大改正である。","B":"新規コード追加やコード削除は小改正である。","C":"同一3桁分類項目内での補足や索引強化は小改正に含まれる。","D":"大改正は毎年必ず行われる。","E":"小改正では誤植修正は行わない。"},"correctAnswer":"C","explanation":"【正答の根拠】ICDの改正には『大改正（Major revision）』と『小改正（Minor revision）』がある。大改正＝新規コード追加・削除など3桁分類自体の変更（3年ごと）。小改正＝同一3桁分類内での補足、表現修正、索引強化、誤植訂正など（毎年）。\n【誤答の整理】A：3桁分類内の変更は小改正。B：新規コード追加・削除は大改正。D：大改正は3年ごと、毎年行われるのは小改正と索引改正。E：小改正には誤植修正も含まれる。\n【補足】『大＝構造変更（3年）／小＝微調整（毎年）／索引＝毎年』と整理。日本ではICD-10の2003年版、2013年版などの版差もこの改正を反映。","tags":["ICD-10","大改正","小改正"]},
+      {"id":"ch11-026","chapterId":11,"chapterName":"第11章 国際統計分類I","questionText":"ICD-10の3桁分類項目の基本形として正しいのはどれか。","choices":{"A":"数字3桁のみ","B":"アルファベット2文字＋数字1桁","C":"アルファベット1文字＋数字2桁","D":"アルファベット1文字＋数字4桁","E":"数字2桁＋アルファベット1文字"},"correctAnswer":"C","explanation":"【正答の根拠】ICD-10の3桁分類はアルファベット1文字＋数字2桁の形式（例：I21＝急性心筋梗塞、C34＝気管支・肺の悪性新生物、A37＝百日咳）。アルファベットA〜U（Uは一部の緊急用途のみ）で21章を構成し、続く数字で詳細を表す。さらに4桁目以降の細分類（小数点以下）で精度を高める（例：I21.0 前壁心筋梗塞）。\n【誤答の整理】A：数字のみではICD-9以前の形式。B：アルファベット2文字はICD-11の形式に近い。D：アルファベット1文字＋数字4桁は日本独自の細分類などでは見られるが基本形ではない。E：その形式は存在しない。\n【補足】ICD-9（数字のみ）→ICD-10（英数字）→ICD-11（英数字＋ポストコーディネーション）と進化。","tags":["ICD-10","構造","3桁分類"]},
+      {"id":"ch11-027","chapterId":11,"chapterName":"第11章 国際統計分類I","questionText":"ICD-10の4桁分類までを含めた項目数として本文に示されていたものはどれか。","choices":{"A":"2,036項目","B":"1,775項目","C":"5,284項目","D":"12,159項目","E":"14,000項目ちょうど"},"correctAnswer":"D","explanation":"【正答の根拠】ICD-10では、3桁分類を4桁分類で細分化した結果、全体で約12,159項目に達する。3桁レベルで約2,000、4桁まで含めると約14,000項目（WHO基本版）とされるが、本文記載に合わせると12,159。日本独自の細分類を加えるとさらに項目数は増える。\n【誤答の整理】A・B：3桁レベルの概算。C：中間的な数字。E：『ちょうど』という表現が誤り。\n【補足】正確な数値暗記より『数千〜1万項目規模で疾病を網羅』というスケール感を押さえる。DPCやがん登録での実務では4桁・5桁レベルの精度が求められる。","tags":["ICD-10","構造","項目数"]},
+      {"id":"ch11-028","chapterId":11,"chapterName":"第11章 国際統計分類I","questionText":"ICD-10の分類軸について正しいのはどれか。","choices":{"A":"全章で完全に同一の軸だけで構成される。","B":"多軸性を持ち、全体として必ずしも一貫していない。","C":"すべて病因論のみで分類される。","D":"すべて解剖学的部位のみで分類される。","E":"腫瘍分類では形態分類は存在しない。"},"correctAnswer":"B","explanation":"【正答の根拠】ICD-10は複数の分類軸を併用する『多軸性（multiaxial）』な構造。章によって軸が異なる：第I章（感染症）＝病因論、第II章（新生物）＝部位＋形態、第V章（精神）＝症状群、第XIX章（損傷）＝外因＋部位、等々。全体として一貫した単一軸では構成されていない。\n【誤答の整理】A：完全同一軸ではない。C・D：病因論のみ／部位のみではなく複数軸が混在。E：腫瘍分類ではICD-Oで形態コードが存在し、部位と組み合わせる（Q29-31参照）。\n【補足】多軸性は『疾病の性質ごとに最適な切り口を選ぶ』実用性と、『一貫性の欠如』という批判が併存する。ICD-11ではポストコーディネーションでこれを改善。","tags":["ICD-10","分類軸","多軸性"]},
+      {"id":"ch11-029","chapterId":11,"chapterName":"第11章 国際統計分類I","questionText":"ICD-Oの形態コードにおいて、第5桁の「/3」が表すものはどれか。","choices":{"A":"良性新生物","B":"性状不詳","C":"上皮内癌","D":"原発性悪性新生物","E":"続発性悪性新生物"},"correctAnswer":"D","explanation":"【正答の根拠】ICD-O（国際疾病分類 腫瘍学）の形態コードは『M-XXXX/Y』の形式。Yが第5桁の性状コードで、/0＝良性、/1＝良悪性不明（境界悪性）、/2＝上皮内癌（in situ）、/3＝原発性悪性、/6＝続発性悪性（転移）、/9＝原発性か転移性か不明。\n【誤答の整理】A：/0が良性。B：/1が性状不詳/境界悪性、/9が原発か転移か不明。C：/2が上皮内癌。E：/6が続発性（転移）悪性。\n【覚え方】『0＝良性、1＝境界、2＝上皮内、3＝原発悪性、6＝転移、9＝不明』。臨床的重要度は0→1→2→3→6の順で悪性度が増すイメージ。がん登録業務で必須の知識。","tags":["ICD-O","形態コード","性状コード"]},
+      {"id":"ch11-030","chapterId":11,"chapterName":"第11章 国際統計分類I","questionText":"ICD-Oの第6桁コード「4」が表すものとして正しいのはどれか。","choices":{"A":"高分化型","B":"中等度分化型","C":"低分化型","D":"未分化型・退形成","E":"分化度不定"},"correctAnswer":"D","explanation":"【正答の根拠】ICD-Oの第6桁は分化度／異型度（Grade）を表す。1＝高分化（Grade I）、2＝中等度分化（II）、3＝低分化（III）、4＝未分化・退形成（IV）、9＝分化度不定。分化度が低いほど悪性度が高く、予後も悪い傾向がある。\n【誤答の整理】A：1（Grade I）が高分化。B：2が中等度分化。C：3が低分化。E：9が分化度不定。\n【覚え方】『数字が上がるほど未分化（悪性度高）』と覚える。腫瘍の病理診断書で『G1/G2/G3/G4』と記載されるのと対応している。","tags":["ICD-O","分化度","異型度"]},
+      {"id":"ch11-031","chapterId":11,"chapterName":"第11章 国際統計分類I","questionText":"ICD-Oの局在コード（T分類）について正しいのはどれか。","choices":{"A":"DPC請求専用コードである。","B":"C00〜C80で表され、ICD-10の悪性新生物コードと一致する部分が多い。","C":"良性腫瘍だけを表す。","D":"形態を中心に表す。","E":"看護分類の一部である。"},"correctAnswer":"B","explanation":"【正答の根拠】ICD-Oの局在コード（T分類：Topography）は、腫瘍の発生部位を示し、C00〜C80の範囲で表される。これはICD-10第II章（新生物）の悪性新生物コードと多くが一致する構造で、連携して使える。例：C34＝気管支・肺、C50＝乳房、C16＝胃。\n【誤答の整理】A：DPC請求専用ではなく、がん登録・統計全般で使う国際分類。C：悪性新生物の部位を表すため良性だけではない（良性はD00-D48）。D：形態はM分類で別。E：看護分類ではない。\n【補足】がんは『T（部位）＋M（形態・分化度）』の組合せで表現される。国際的に使える標準だから、がん登録で国際比較が可能になる。","tags":["ICD-O","局在コード","T分類"]},
+      {"id":"ch11-032","chapterId":11,"chapterName":"第11章 国際統計分類I","questionText":"ICHIについて正しいのはどれか。","choices":{"A":"外科手術のみに限定した分類である。","B":"診断的処置、プライマリケア、メンタルヘルス、看護介入、公衆衛生的応用も視野に入れる。","C":"ICD-Oの別名である。","D":"日本独自の診療報酬請求コードである。","E":"すでに1989年に完成している。"},"correctAnswer":"B","explanation":"【正答の根拠】ICHI（International Classification of Health Interventions：国際医療行為分類）は、WHOが開発中の医療行為全般の国際分類。外科手術だけでなく、診断的処置、プライマリケア、メンタルヘルス介入、看護介入、公衆衛生活動まで広くカバーする設計。WHO国際分類ファミリー（WHO-FIC）の『中心分類』候補の1つ。\n【誤答の整理】A：外科手術限定ではなく医療介入全般。C：ICD-O（腫瘍）とは別物。D：J・Kコード（Q34）が日本の請求コード。E：2021年時点でもベータ版の段階で『完成』ではない。\n【補足】WHO国際分類ファミリーの3中心分類：ICD（疾病）、ICF（生活機能）、ICHI（医療行為）。ICHIは『何を治すか』ではなく『何をするか』の分類。","tags":["ICHI","医療行為分類"]},
+      {"id":"ch11-033","chapterId":11,"chapterName":"第11章 国際統計分類I","questionText":"ICHIの基本構造として正しいのはどれか。","choices":{"A":"Target 2桁、Action 2桁、Means 3桁","B":"Target 3桁、Action 2桁、Means 2桁","C":"Target 1桁、Action 3桁、Means 3桁","D":"数字7桁のみ","E":"アルファベット3桁のみ"},"correctAnswer":"B","explanation":"【正答の根拠】ICHIは『Target（対象）3桁＋Action（行為）2桁＋Means（手段・方法）2桁』の計7桁で構成。例：どの臓器に（Target）、何をして（Action）、どのように（Means）、という3軸で医療行為を記述する。\n【誤答の整理】桁数の配分が異なる選択肢はすべて誤り。単純な数字やアルファベットだけではない。\n【覚え方】『TAM 3-2-2』または『誰に（3）・何を（2）・どう（2）』で7桁。DPCやレセプトの行為コードとは根本思想が異なり、より構造的・国際的。","tags":["ICHI","構造","Target","Action","Means"]},
+      {"id":"ch11-034","chapterId":11,"chapterName":"第11章 国際統計分類I","questionText":"わが国の医療行為コードについて正しいのはどれか。","choices":{"A":"J・Kコードは長期的な統計分析に最適な分類体系である。","B":"STEM7は診療報酬請求専用で統計には不向きである。","C":"J・Kコードは請求実務で用いられるが、分類体系としての体をなさず長期統計には不向きとされる。","D":"J・KコードとSTEM7は完全に同じものである。","E":"どちらもWHOが作成した。"},"correctAnswer":"C","explanation":"【正答の根拠】J・Kコード（診療報酬点数表のJ検査・K手術）は日本の診療報酬請求実務で使われるが、分類体系ではなく『請求項目のリスト』。診療報酬改定のたびに変わり時系列比較が困難で、国際比較もできないため長期統計には不向き。STEM7は日本外科学会等が中心に開発した外科手術の標準コードで、医療行為分類として統計用途を意識した設計。\n【誤答の整理】A：J・Kコードは統計には不向き。B：逆でSTEM7の方が統計向き。D：J・KコードとSTEM7は別物。E：どちらも日本国内で作成され、WHO作成ではない。\n【補足】『請求用（J・K）と統計用（STEM7、ICHI）は分けて考える』のが整理のコツ。","tags":["Jコード","Kコード","STEM7","医療行為分類"]},
+      {"id":"ch11-035","chapterId":11,"chapterName":"第11章 国際統計分類I","questionText":"死因の定義について正しいのはどれか。","choices":{"A":"死亡直前の心停止だけを死因とする。","B":"死因には終末期の心不全や呼吸不全のような死亡様式を必ず含める。","C":"死因とは、死亡に関与したすべての疾病・損傷、または損傷を引き起こした事故・暴力の状況をいう。","D":"原死因は死亡診断書には不要である。","E":"死因統計では複数病態があっても常に最初に記載されたものを採用する。"},"correctAnswer":"C","explanation":"【正答の根拠】ICDにおける死因の定義は『死亡をもたらしたすべての疾病・損傷、または損傷を引き起こした事故・暴力の状況』。単なる死亡様式（心停止・呼吸停止など）は死因とみなさない。心停止は『死の様態』であって、その背景にある疾患こそが死因。\n【誤答の整理】A：心停止は死因ではなく死亡様式。B：死亡様式は死因に含めない（むしろ除外）。D：原死因こそ死亡診断書記載の中心。E：死因統計では『原死因選択ルール』に基づき選ぶので、記載順ではない。\n【補足】死亡診断書記入マニュアル（厚労省）でも、『心不全』『呼吸不全』『老衰以外の原因不明』を死因としないよう明記されている。原死因の特定は死因統計の精度の根幹。","tags":["死因","死亡診断書","原死因"]},
+      {"id":"ch11-036","chapterId":11,"chapterName":"第11章 国際統計分類I","questionText":"死亡診断書の記載形式について正しいのはどれか。","choices":{"A":"I欄はその他の重要な病態、II欄は原死因である。","B":"I欄には直接死因から先行死因までの連鎖を書き、II欄にはその他の重要な病態を書く。","C":"I欄には生活歴、II欄には死因を書く。","D":"原死因はII欄にしか書けない。","E":"直接死因だけを書けば十分である。"},"correctAnswer":"B","explanation":"【正答の根拠】死亡診断書のI欄は『死因の因果連鎖』を記載する欄。（ア）直接死因→（イ）その原因→（ウ）さらに原因→（エ）原死因、と時間をさかのぼる形で書く。II欄は『I欄の傷病経過に関連しないが、死亡に影響した重要な病態』を記載する欄。原死因（統計用）はI欄の連鎖の最終行から決定される。\n【誤答の整理】A：I欄とII欄の役割が逆。C：生活歴は記載事項ではない。D：原死因はI欄から選ばれる。E：連鎖記載が必要で、直接死因だけでは不十分。\n【補足】例）直接死因（ア）肺炎 ← （イ）脳梗塞 ← （ウ）高血圧、II欄：糖尿病。この場合の原死因は高血圧。II欄の糖尿病は統計上の原死因とはならないが参考情報として残る。","tags":["死亡診断書","死因連鎖","原死因"]},
+      {"id":"ch11-037","chapterId":11,"chapterName":"第11章 国際統計分類I","questionText":"「主要病態」の定義として最も適切なのはどれか。","choices":{"A":"退院時に最も重症だった病態","B":"最も長く存在した病態","C":"エピソードの終わりに、主として治療または検査された病態","D":"既往歴の中で最も重要な病態","E":"主治医が最初に記載した病名"},"correctAnswer":"C","explanation":"【正答の根拠】ICD第2巻（総論）の定義：主要病態（main condition）とは『保健ケアのエピソードの終わりに、主として治療または検査された病態』。重症度や期間ではなく『そのエピソードで医療資源を最も投入した病態』。DPCの『医療資源病名』もこの定義に準拠する。\n【誤答の整理】A：重症度は判断要素ではない。B：期間の長さも基準ではない。D：既往歴は主要病態ではなく副傷病（入院時併存症）。E：記載順も関係ない。\n【補足】『エピソード終わり』『治療・検査の主対象』の2点がキー。DPCで主要病態が揺らぐと請求・統計の両方に影響するため、退院時の見直しが重要。","tags":["主要病態","定義","疾病統計"]},
+      {"id":"ch11-038","chapterId":11,"chapterName":"第11章 国際統計分類I","questionText":"MB1「重要でない主要病態」の考え方として正しいのはどれか。","choices":{"A":"主要病態欄に書かれていれば必ずそれを採用する。","B":"「その他の病態」に、より重要で治療された病態があればそちらを主要病態として再選択する。","C":"糖尿病は常に主要病態になる。","D":"慢性病は急性病より必ず優先する。","E":"手術された病態は選ばない。"},"correctAnswer":"B","explanation":"【正答の根拠】MB1（Modification Rule B1）は『主要病態として記載されたものが軽微で、その他の病態欄により重要な治療対象があった場合は、そちらを主要病態として再選択する』ルール。医師の記載をそのまま鵜呑みにせず、コーダーが記録全体を見て判断し直す仕組み。\n【誤答の整理】A：記載されていても再選択されうる（まさにMB1の意義）。C：糖尿病は合併症や他疾患で入院した場合は主要病態にならないことが多い。D：慢性優先のルールはない。E：手術対象は多くの場合むしろ主要病態となる。\n【補足】MBルールは『記載の書き方で統計が歪まないようにする』ためのコーダー側の調整ルール。MB1〜MB5まで存在し、それぞれ異なるケースを扱う。","tags":["主要病態","MBルール","MB1"]},
+      {"id":"ch11-039","chapterId":11,"chapterName":"第11章 国際統計分類I","questionText":"MB3「主要病態が症状・保健上の問題（R・Zコード）」の考え方として正しいのはどれか。","choices":{"A":"Rコードが書かれていれば必ずRコードを採用する。","B":"Zコードは主要病態にならない。","C":"主要病態が症状や問題で、それが他に記載された診断病態の徴候・症状であり、治療が後者に行われた場合は診断病態を選ぶ。","D":"症状と診断病態が両方あれば両方を主要病態とする。","E":"最初に書かれたRコードを必ず優先する。"},"correctAnswer":"C","explanation":"【正答の根拠】MB3は『主要病態が症状・異常所見（Rコード）や健康状態影響要因（Zコード）になっており、それが別に記載された診断病態の徴候・症状に過ぎず、治療は診断病態に対して行われた場合、診断病態を主要病態に再選択する』ルール。例：主要病態『発熱（R50）』＋その他の病態『肺炎』で抗菌薬治療なら、主要病態は肺炎に変更。\n【誤答の整理】A：Rコードがあっても原因疾患が分かれば再選択。B：Zコードも単独なら主要病態になりうる（健診等）。D：主要病態は1つのみ選ぶ。E：記載順では決まらない。\n【補足】Rコード＝症状・徴候、Zコード＝保健サービス利用理由（健診・経過観察等）。これらは『原因となる診断が別にあれば』再選択される。","tags":["主要病態","MBルール","MB3","Rコード","Zコード"]},
+      {"id":"ch11-040","chapterId":11,"chapterName":"第11章 国際統計分類I","questionText":"MB4「特異性」の考え方として正しいのはどれか。","choices":{"A":"一般名と具体名が併記されたら一般名を選ぶ。","B":"「その他の病態」に部位や性質をより具体的に示す病態があれば、そちらを選ぶ。","C":"具体的病名は主病名にならない。","D":"先天性疾患は常に除外する。","E":"症候群名は必ず優先する。"},"correctAnswer":"B","explanation":"【正答の根拠】MB4（特異性）は『主要病態が一般的・曖昧で、その他の病態欄に部位や性質をより具体的に示す病態があれば、そちらを主要病態として再選択する』ルール。例：主要病態『心疾患』＋その他『急性前壁心筋梗塞』なら、後者が具体的なので主要病態に再選択。\n【誤答の整理】A：逆で『具体的な方を選ぶ』のがMB4の趣旨。C：具体的病名こそ主病名にふさわしい。D：先天性疾患を除外する根拠はない。E：症候群名は総称的なので具体的病名より後回しになることが多い。\n【補足】『MB1＝重要度』『MB3＝症状 vs 診断』『MB4＝具体性』と整理。統計精度向上のための『コーダー判断の標準化』。","tags":["主要病態","MBルール","MB4","特異性"]},
+      {"id":"ch11-041","chapterId":11,"chapterName":"第11章 国際統計分類I","questionText":"完全性の高いコーディングに関する説明として正しいのはどれか。","choices":{"A":"主傷病名だけをコード化すれば十分である。","B":"入院時併存症は入院後に新たに発症した病態をいう。","C":"入院後発症は、今回の入院や治療が開始された時点ですでに持っていた病態をいう。","D":"副傷病名、入院時併存症、入院後発症も漏れなく把握・コード化することが望ましい。","E":"追加病名をコード化すると主傷病名の見直しは不要になる。"},"correctAnswer":"D","explanation":"【正答の根拠】完全性の高いコーディングには、主傷病名に加え、副傷病名・入院時併存症・入院後発症も漏れなく把握する必要がある。これらの違い：【入院時併存症】＝入院時点ですでに持っていた病態、【入院後発症】＝入院中に新たに発症した病態。両者は明確に区別される。\n【誤答の整理】A：主傷病名のみではDPC・統計とも不十分。B：入院後発症の定義と混同。C：入院時併存症の定義と混同。E：追加病名が増えると主傷病名の見直しが必要になることもある（MBルール適用）。\n【補足】DPC制度では『入院時併存症』と『入院後発症』の区別が支払い分類に影響する場合がある。医師の記載時から区別を意識することが重要。","tags":["コーディング","完全性","入院時併存症","入院後発症"]},
+      {"id":"ch11-042","chapterId":11,"chapterName":"第11章 国際統計分類I","questionText":"診療情報の精度を高める考え方として最も適切なのはどれか。","choices":{"A":"情報の精度は医師の記載だけで決まり、診療情報管理士の工程は関係しない。","B":"同じ病態でも施設ごとに異なるコードを使う方が実態を反映しやすい。","C":"情報の抽出、コーディング、監査・評価、高度な情報化まで含めて精度を高める必要がある。","D":"医師とのコミュニケーションは不要である。","E":"コーディングは研究目的には使えない。"},"correctAnswer":"C","explanation":"【正答の根拠】診療情報の精度は『①情報の発生（医師記載）→②抽出→③コーディング→④監査・評価→⑤情報化・活用』の全工程を通じて担保される。診療情報管理士は抽出以降の工程の中心的担い手で、医師とのコミュニケーションも含めて質を支える。\n【誤答の整理】A：記載だけでなく後工程の質も重要。B：施設ごとに違うコードでは統計・比較が崩壊する（標準化の原則に反する）。D：疑義照会など医師との連携は必須。E：研究目的にも広く使われる（疫学研究、DPC研究、がん登録研究など）。\n【補足】精度管理の4要素：①発生源の質（記載）②抽出精度③コーディング精度④監査体制。どれか一つ欠けても統計の信頼性が損なわれる。コーディング委員会の設置（DPC対象病院での必須要件）もこの考え方に基づく。","tags":["情報精度","コーディング","監査","診療情報管理士"]}
+    ]
+  }
+};
+
+// ═══ State (persistent across session) ═══
+let selectedChapters = [8, 9, 10, 11];
+let selectedCount = 10; // default
+let currentQuestions = [];
+let currentIndex = 0;
+let answers = {};
+let wrongIds = [];    // auto-tracked: answered wrong
+let flaggedIds = [];  // manually flagged by user
+let answeredIds = []; // all answered (for stats)
+let correctCountTotal = 0;
+let attempts = 0;
+
+// ═══ localStorage auto-save/load ═══
+const STORAGE_KEY = 'iryokanriso_quiz_v1';
+let storageAvailable = false;
+let autoSaveEnabled = true;
+
+function checkStorage(){
+  try{
+    const t='__test__';
+    localStorage.setItem(t,t);
+    localStorage.removeItem(t);
+    return true;
+  }catch(e){return false;}
+}
+
+function saveToStorage(){
+  if(!storageAvailable||!autoSaveEnabled)return;
+  try{
+    const data={
+      version:1,
+      savedAt:new Date().toISOString(),
+      wrongIds,flaggedIds,answeredIds,correctCountTotal,attempts
+    };
+    localStorage.setItem(STORAGE_KEY,JSON.stringify(data));
+  }catch(e){/* silently ignore quota errors */}
+}
+
+function loadFromStorage(){
+  if(!storageAvailable)return false;
+  try{
+    const raw=localStorage.getItem(STORAGE_KEY);
+    if(!raw)return false;
+    const data=JSON.parse(raw);
+    wrongIds=Array.isArray(data.wrongIds)?data.wrongIds.filter(id=>findQuestion(id)):[];
+    flaggedIds=Array.isArray(data.flaggedIds)?data.flaggedIds.filter(id=>findQuestion(id)):[];
+    answeredIds=Array.isArray(data.answeredIds)?data.answeredIds.filter(id=>findQuestion(id)):[];
+    correctCountTotal=+data.correctCountTotal||0;
+    attempts=+data.attempts||0;
+    return true;
+  }catch(e){return false;}
+}
+
+function clearStorage(){
+  if(!storageAvailable)return;
+  try{localStorage.removeItem(STORAGE_KEY);}catch(e){}
+}
+
+function renderStorageStatus(){
+  const el=document.getElementById('storageStatus');
+  if(!el)return;
+  if(storageAvailable){
+    el.style.background='#e8f5ee';
+    el.style.color='#1a7a3f';
+    el.style.border='1px solid #b4e0c5';
+    el.innerHTML='💾 <strong>自動保存：ON</strong><br><span style="color:#4a5f52">このブラウザに自動的に学習記録を保存しています。閉じて開き直しても記録は残ります。</span>';
+  }else{
+    el.style.background='#fff4e5';
+    el.style.color='#8a4a10';
+    el.style.border='1px solid #f0c99c';
+    el.innerHTML='⚠️ <strong>自動保存：OFF</strong><br><span style="color:#6b5032">この環境では自動保存が使えません。記録を残すには「📤 データ書き出し」でバックアップしてください（次回「📥 データ読み込み」で復元）。</span>';
+  }
+}
+
+function shuffle(a){const b=[...a];for(let i=b.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[b[i],b[j]]=[b[j],b[i]];}return b;}
+
+function getAllSelected(){
+  let qs=[];
+  selectedChapters.forEach(id=>{qs=qs.concat(CHAPTERS[id].questions);});
+  return qs;
+}
+
+function getAllQuestions(){
+  let qs=[];
+  Object.values(CHAPTERS).forEach(ch=>{qs=qs.concat(ch.questions);});
+  return qs;
+}
+
+function getChapterColor(chId){return CHAPTERS[chId]?.color||'var(--accent)';}
+function getChapterBg(chId){return CHAPTERS[chId]?.bgColor||'var(--accent-glow)';}
+
+function findQuestion(id){
+  for(const ch of Object.values(CHAPTERS)){
+    const q=ch.questions.find(qq=>qq.id===id);
+    if(q)return q;
+  }
+  return null;
+}
+
+// ═══ Render Home ═══
+function renderHome(){
+  const wrap=document.getElementById('chapterCards');
+  let html='';
+  Object.keys(CHAPTERS).sort((a,b)=>+a-+b).forEach(id=>{
+    const ch=CHAPTERS[id];
+    const sel=selectedChapters.includes(+id);
+    html+=`<div class="ch-card ${sel?'selected':''}" onclick="toggleChapter(${id})" data-ch="${id}">
+      <div class="ch-head">
+        <div class="ch-dot" style="background:${ch.color}"></div>
+        <div class="ch-label">${ch.fullName}</div>
+      </div>
+      <div class="ch-meta"><span>問題数: <strong>${ch.questions.length}問</strong></span></div>
+    </div>`;
+  });
+  wrap.innerHTML=html;
+  updatePoolInfo();
+  updateActionButtons();
+  updateDataCounts();
+  renderStorageStatus();
+}
+
+function toggleChapter(id){
+  id=+id;
+  const idx=selectedChapters.indexOf(id);
+  if(idx>-1){
+    if(selectedChapters.length<=1)return;
+    selectedChapters.splice(idx,1);
+  }else{
+    selectedChapters.push(id);
+  }
+  selectedChapters.sort((a,b)=>a-b);
+  document.querySelectorAll('.ch-card').forEach(c=>{
+    const cid=+c.dataset.ch;
+    c.classList.toggle('selected',selectedChapters.includes(cid));
+  });
+  updatePoolInfo();
+  updateActionButtons();
+}
+
+function selectCount(n){
+  selectedCount=n;
+  document.querySelectorAll('.count-chip').forEach(c=>{
+    c.classList.toggle('selected',c.dataset.count==String(n));
+  });
+  document.getElementById('customCount').value='';
+  updatePoolInfo();
+}
+
+function handleCustomCount(v){
+  const n=parseInt(v);
+  if(isNaN(n)||n<1){selectedCount=10;return;}
+  selectedCount=n;
+  document.querySelectorAll('.count-chip').forEach(c=>c.classList.remove('selected'));
+  updatePoolInfo();
+}
+
+function updatePoolInfo(){
+  const pool=getAllSelected().length;
+  let outCount=selectedCount==='all'?pool:Math.min(selectedCount,pool);
+  document.getElementById('poolInfo').innerHTML=`対象 <strong>${pool}</strong>問 から <strong>${outCount}</strong>問を出題`;
+}
+
+function updateActionButtons(){
+  // Wrong review
+  const wrongInScope=wrongIds.filter(wid=>{
+    const q=findQuestion(wid);
+    return q&&selectedChapters.includes(q.chapterId);
+  });
+  const btnW=document.getElementById('btnWrong');
+  if(wrongInScope.length>0){
+    btnW.classList.remove('hidden');
+    btnW.textContent=`📍 間違えた問題を復習（${wrongInScope.length}問）`;
+  }else{btnW.classList.add('hidden');}
+
+  // Flagged
+  const flaggedInScope=flaggedIds.filter(fid=>{
+    const q=findQuestion(fid);
+    return q&&selectedChapters.includes(q.chapterId);
+  });
+  const btnF=document.getElementById('btnFlagged');
+  if(flaggedInScope.length>0){
+    btnF.classList.remove('hidden');
+    btnF.textContent=`🔖 ブックマーク問題（${flaggedInScope.length}問）`;
+  }else{btnF.classList.add('hidden');}
+}
+
+function updateDataCounts(){
+  const total=wrongIds.length+flaggedIds.length;
+  document.getElementById('exportCount').textContent=total>0?`${total}件保存中`:'0件';
+  const answered=answeredIds.length;
+  if(answered>0){
+    const rate=Math.round((correctCountTotal/answered)*100);
+    document.getElementById('statsCount').textContent=`${rate}% / ${answered}問`;
+  }else{
+    document.getElementById('statsCount').textContent='未学習';
+  }
+}
+
+// ═══ Start Quiz ═══
+function startQuiz(mode){
+  answers={};currentIndex=0;
+  let pool;
+
+  if(mode==='wrong'){
+    pool=getAllSelected().filter(q=>wrongIds.includes(q.id));
+    if(!pool.length){showToast('復習対象の問題がありません','err');return;}
+    currentQuestions=shuffle(pool);
+  }else if(mode==='flagged'){
+    pool=getAllSelected().filter(q=>flaggedIds.includes(q.id));
+    if(!pool.length){showToast('ブックマーク問題がありません','err');return;}
+    currentQuestions=shuffle(pool);
+  }else{
+    pool=getAllSelected();
+    if(!pool.length){showToast('章を選択してください','err');return;}
+    const n=selectedCount==='all'?pool.length:Math.min(selectedCount,pool.length);
+    currentQuestions=shuffle(pool).slice(0,n);
+  }
+
+  let label;
+  if(mode==='wrong')label='📍 復習モード';
+  else if(mode==='flagged')label='🔖 ブックマーク';
+  else label=selectedChapters.length>1?'ミックス（'+selectedChapters.map(id=>CHAPTERS[id].name).join('+')+'）':CHAPTERS[selectedChapters[0]].fullName;
+  document.getElementById('quizHeaderTitle').textContent=label;
+
+  showScreen('quizScreen');
+  renderQuestion();
+}
+
+// ═══ Render Question ═══
+function renderQuestion(){
+  const q=currentQuestions[currentIndex];
+  const total=currentQuestions.length;
+  const pct=Math.round((currentIndex/total)*100);
+  document.getElementById('progressFill').style.width=pct+'%';
+  document.getElementById('progressCurrent').textContent=`${currentIndex+1} / ${total}`;
+  document.getElementById('progressPct').textContent=pct+'%';
+
+  const chColor=getChapterColor(q.chapterId);
+  const chBg=getChapterBg(q.chapterId);
+  const chName=CHAPTERS[q.chapterId]?.name||'';
+  const isFlagged=flaggedIds.includes(q.id);
+
+  let html=`<div class="q-head-row"><div style="flex:1"><div class="q-chapter-badge" style="background:${chBg};color:${chColor}">${chName}</div><div class="q-number">Q${currentIndex+1} / ${total}</div></div><button class="flag-btn ${isFlagged?'flagged':''}" id="flagBtn" onclick="toggleFlag()" title="ブックマーク">${isFlagged?'🔖':'🏷️'}</button></div>`;
+  html+=`<div class="q-text">${q.questionText}</div><div class="choices" id="choicesWrap">`;
+  ['A','B','C','D','E'].forEach(k=>{
+    html+=`<button class="choice-btn" data-key="${k}" onclick="selectChoice('${k}')"><span class="key">${k}</span><span>${q.choices[k]}</span></button>`;
+  });
+  html+='</div><div id="explanationWrap"></div>';
+  document.getElementById('quizBody').innerHTML=html;
+  document.getElementById('btnNext').classList.add('hidden');
+  document.getElementById('btnFinish').classList.add('hidden');
+  window.scrollTo(0,0);
+  if(answers[q.id])applyAnswer(q,answers[q.id]);
+}
+
+function toggleFlag(){
+  const q=currentQuestions[currentIndex];
+  const idx=flaggedIds.indexOf(q.id);
+  if(idx>-1){
+    flaggedIds.splice(idx,1);
+    showToast('ブックマーク解除','ok');
+  }else{
+    flaggedIds.push(q.id);
+    showToast('ブックマークに追加','ok');
+  }
+  const btn=document.getElementById('flagBtn');
+  const isFlagged=flaggedIds.includes(q.id);
+  btn.classList.toggle('flagged',isFlagged);
+  btn.textContent=isFlagged?'🔖':'🏷️';
+  saveToStorage();
+}
+
+function selectChoice(key){
+  const q=currentQuestions[currentIndex];
+  if(answers[q.id])return;
+  answers[q.id]=key;
+
+  // Track globally
+  if(!answeredIds.includes(q.id))answeredIds.push(q.id);
+  const ok=key===q.correctAnswer;
+  if(ok){
+    correctCountTotal++;
+    // If previously wrong, remove from wrongIds (now correct)
+    const wIdx=wrongIds.indexOf(q.id);
+    if(wIdx>-1)wrongIds.splice(wIdx,1);
+  }else{
+    if(!wrongIds.includes(q.id))wrongIds.push(q.id);
+  }
+
+  applyAnswer(q,key);
+  saveToStorage();
+}
+
+function applyAnswer(q,key){
+  const ok=key===q.correctAnswer;
+  document.querySelectorAll('.choice-btn').forEach(btn=>{
+    const k=btn.dataset.key;
+    btn.classList.add('disabled');
+    if(k===q.correctAnswer)btn.classList.add('correct');
+    if(k===key&&!ok)btn.classList.add('wrong');
+    if(k!==key&&k!==q.correctAnswer)btn.classList.add('dimmed');
+  });
+
+  const isLast=currentIndex>=currentQuestions.length-1;
+  const nextLabel=isLast?'結果を見る →':'次の問題 →';
+
+  // Format explanation: highlight 【...】 headings and preserve line breaks
+  const formattedExp=q.explanation
+    .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')
+    .replace(/【([^】]+)】/g,'<strong>【$1】</strong>');
+
+  document.getElementById('explanationWrap').innerHTML=`
+    <div class="explanation-box">
+      <div class="result-badge ${ok?'correct':'wrong'}">${ok?'✓ 正解':'✗ 不正解（正答: '+q.correctAnswer+'）'}</div>
+      <div style="font-size:13px;color:var(--text);font-weight:700;margin-bottom:6px">💡 解説</div>
+      <div class="exp-text">${formattedExp}</div>
+      <div class="tags">${q.tags.map(t=>`<span class="tag">${t}</span>`).join('')}</div>
+    </div>`;
+
+  if(isLast){
+    document.getElementById('btnFinish').classList.remove('hidden');
+    document.getElementById('btnNext').classList.add('hidden');
+  }else{
+    document.getElementById('btnNext').classList.remove('hidden');
+    document.getElementById('btnFinish').classList.add('hidden');
+  }
+  // Scroll to show explanation
+  setTimeout(()=>{
+    document.getElementById('explanationWrap').scrollIntoView({behavior:'smooth',block:'nearest'});
+  },100);
+}
+
+function nextQuestion(){
+  if(currentIndex<currentQuestions.length-1){currentIndex++;renderQuestion();}
+}
+
+// ═══ Result ═══
+function showResult(){
+  let correct=0;
+  currentQuestions.forEach(q=>{
+    if(answers[q.id]===q.correctAnswer)correct++;
+  });
+
+  const total=currentQuestions.length;
+  const pct=Math.round((correct/total)*100);
+  attempts++;
+  saveToStorage();
+
+  showScreen('resultScreen');
+  document.getElementById('reviewList').classList.add('hidden');
+  document.getElementById('reviewBack').classList.add('hidden');
+  document.getElementById('resultPct').textContent=pct+'%';
+  document.getElementById('resultOk').textContent=correct;
+  document.getElementById('resultNg').textContent=total-correct;
+  document.getElementById('resultCount').textContent=total;
+
+  // Chapter breakdown
+  const breakdown={};
+  currentQuestions.forEach(q=>{
+    if(!breakdown[q.chapterId])breakdown[q.chapterId]={ok:0,ng:0};
+    if(answers[q.id]===q.correctAnswer)breakdown[q.chapterId].ok++;
+    else breakdown[q.chapterId].ng++;
+  });
+  const bdWrap=document.getElementById('chBreakdown');
+  if(Object.keys(breakdown).length>1){
+    let bHtml='';
+    Object.keys(breakdown).sort((a,b)=>+a-+b).forEach(chId=>{
+      const b=breakdown[chId];const t=b.ok+b.ng;const p=Math.round((b.ok/t)*100);
+      bHtml+=`<div class="ch-break-item"><div class="cb-label" style="color:${getChapterColor(chId)}">${CHAPTERS[chId].name}</div><div class="cb-val">${p}%</div><div class="cb-label">${b.ok}/${t}</div></div>`;
+    });
+    bdWrap.innerHTML=bHtml;bdWrap.style.display='flex';
+  }else{bdWrap.style.display='none';}
+
+  const circ=2*Math.PI*62;const off=circ*(1-pct/100);
+  const arc=document.getElementById('resultArc');
+  arc.style.transition='none';arc.setAttribute('stroke-dashoffset',circ);
+  setTimeout(()=>{
+    arc.style.transition='stroke-dashoffset 1s cubic-bezier(.4,0,.2,1)';
+    arc.setAttribute('stroke-dashoffset',off);
+    arc.setAttribute('stroke',pct>=80?'var(--correct)':pct>=50?'var(--accent)':'var(--wrong)');
+  },50);
+}
+
+function showReview(){
+  const list=document.getElementById('reviewList');
+  const back=document.getElementById('reviewBack');
+  list.classList.remove('hidden');back.classList.remove('hidden');
+  let html='';
+  currentQuestions.forEach((q,i)=>{
+    const ans=answers[q.id];const ok=ans===q.correctAnswer;
+    const chColor=getChapterColor(q.chapterId);const chBg=getChapterBg(q.chapterId);
+    const flagged=flaggedIds.includes(q.id);
+    html+=`<div class="review-item"><div class="ri-head"><span class="ri-badge ${ok?'ok':'ng'}">${ok?'✓':'✗'}</span><span class="ri-num">Q${i+1}</span><span class="ri-ch" style="background:${chBg};color:${chColor}">${CHAPTERS[q.chapterId].name}</span>${flagged?'<span style="margin-left:auto">🔖</span>':''}</div><div class="ri-q">${q.questionText}</div><div class="ri-ans">${ok?'正解: '+q.correctAnswer:'あなた: '+ans+' → 正答: '+q.correctAnswer}</div></div>`;
+  });
+  list.innerHTML=html;list.scrollIntoView({behavior:'smooth'});
+}
+
+function showScreen(id){
+  document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+}
+
+function goHome(){
+  showScreen('homeScreen');
+  renderHome();
+}
+
+// ═══ Modals ═══
+function openModal(title,desc,bodyHtml,actionsHtml){
+  document.getElementById('modalTitle').textContent=title;
+  document.getElementById('modalDesc').innerHTML=desc;
+  document.getElementById('modalBody').innerHTML=bodyHtml;
+  document.getElementById('modalActions').innerHTML=actionsHtml;
+  document.getElementById('modalOverlay').classList.add('active');
+}
+function closeModal(){document.getElementById('modalOverlay').classList.remove('active');}
+function closeModalBg(e){if(e.target.id==='modalOverlay')closeModal();}
+
+function openExport(){
+  const data={
+    version:1,
+    exportedAt:new Date().toISOString(),
+    wrongIds:wrongIds,
+    flaggedIds:flaggedIds,
+    answeredIds:answeredIds,
+    correctCountTotal:correctCountTotal,
+    attempts:attempts
+  };
+  const json=JSON.stringify(data,null,2);
+  openModal(
+    '📤 データ書き出し',
+    '下のテキストを全選択してコピー（長押しで「すべてを選択」→「コピー」）し、メモアプリ等に保存してください。次回使うときは「データ読み込み」から貼り付けて復元できます。',
+    `<textarea id="exportText" readonly>${json}</textarea>`,
+    `<button class="btn btn-primary" onclick="copyExport()">📋 コピー</button><button class="btn btn-secondary" onclick="closeModal()">閉じる</button>`
+  );
+}
+
+function copyExport(){
+  const ta=document.getElementById('exportText');
+  ta.select();ta.setSelectionRange(0,99999);
+  try{
+    navigator.clipboard.writeText(ta.value).then(()=>{showToast('コピーしました','ok');closeModal();},()=>{
+      document.execCommand('copy');showToast('コピーしました','ok');closeModal();
+    });
+  }catch(e){
+    document.execCommand('copy');showToast('コピーしました','ok');closeModal();
+  }
+}
+
+function openImport(){
+  openModal(
+    '📥 データ読み込み',
+    '前回書き出したデータを下に貼り付けて「読み込む」を押してください。現在の記録は上書きされます。',
+    `<textarea id="importText" placeholder="ここに貼り付け..."></textarea>`,
+    `<button class="btn btn-primary" onclick="doImport()">✓ 読み込む</button><button class="btn btn-secondary" onclick="closeModal()">キャンセル</button>`
+  );
+}
+
+function doImport(){
+  const txt=document.getElementById('importText').value.trim();
+  if(!txt){showToast('データがありません','err');return;}
+  try{
+    const data=JSON.parse(txt);
+    wrongIds=Array.isArray(data.wrongIds)?data.wrongIds.filter(id=>findQuestion(id)):[];
+    flaggedIds=Array.isArray(data.flaggedIds)?data.flaggedIds.filter(id=>findQuestion(id)):[];
+    answeredIds=Array.isArray(data.answeredIds)?data.answeredIds.filter(id=>findQuestion(id)):[];
+    correctCountTotal=+data.correctCountTotal||0;
+    attempts=+data.attempts||0;
+    saveToStorage();
+    closeModal();
+    renderHome();
+    showToast(`読み込み完了（不正解${wrongIds.length}件・🔖${flaggedIds.length}件）`,'ok');
+  }catch(e){
+    showToast('データ形式が不正です','err');
+  }
+}
+
+function openReset(){
+  openModal(
+    '🗑️ 記録をリセット',
+    '間違えた問題、ブックマーク、学習履歴をすべて初期化します。この操作は取り消せません。書き出しでバックアップしてからの実行を推奨します。',
+    '',
+    `<button class="btn btn-wrong" onclick="doReset()">すべて削除</button><button class="btn btn-secondary" onclick="closeModal()">キャンセル</button>`
+  );
+}
+
+function doReset(){
+  wrongIds=[];flaggedIds=[];answeredIds=[];correctCountTotal=0;attempts=0;
+  clearStorage();
+  closeModal();renderHome();
+  showToast('リセットしました','ok');
+}
+
+function openStats(){
+  let statsHtml='';
+  const totalQ=getAllQuestions().length;
+  const answered=answeredIds.length;
+  const rate=answered>0?Math.round((correctCountTotal/answered)*100):0;
+
+  // Chapter-wise stats
+  let chStatsHtml='';
+  Object.keys(CHAPTERS).sort((a,b)=>+a-+b).forEach(chId=>{
+    const ch=CHAPTERS[chId];
+    const chQs=ch.questions;
+    const chAnswered=chQs.filter(q=>answeredIds.includes(q.id)).length;
+    const chWrong=chQs.filter(q=>wrongIds.includes(q.id)).length;
+    const chFlagged=chQs.filter(q=>flaggedIds.includes(q.id)).length;
+    const chPct=chQs.length>0?Math.round((chAnswered/chQs.length)*100):0;
+    chStatsHtml+=`<div style="background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:10px 12px;margin-bottom:8px;">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;">
+        <div style="font-weight:700;font-size:13px;color:${ch.color}">${ch.name}</div>
+        <div style="font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--text-dim)">${chAnswered}/${chQs.length} (${chPct}%)</div>
+      </div>
+      <div style="display:flex;gap:10px;font-size:11px;color:var(--text-dim)">
+        <span>❌ 要復習: <strong style="color:var(--wrong)">${chWrong}</strong></span>
+        <span>🔖 BM: <strong style="color:#fbbf24">${chFlagged}</strong></span>
+      </div>
+    </div>`;
+  });
+
+  statsHtml=`<div style="background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:14px;margin-bottom:14px;text-align:center;">
+    <div style="font-size:11px;color:var(--text-dim);margin-bottom:4px;">全体の学習進捗</div>
+    <div style="font-family:'JetBrains Mono',monospace;font-size:24px;font-weight:700;color:var(--accent);">${answered} / ${totalQ}</div>
+    <div style="font-size:12px;color:var(--text-dim);margin-top:4px;">正答率 ${rate}% ・ 挑戦 ${attempts}回</div>
+  </div>
+  <div style="font-size:12px;color:var(--text-dim);margin-bottom:10px;font-weight:700;">📚 章別</div>
+  ${chStatsHtml}`;
+
+  openModal('📊 学習状況','',statsHtml,`<button class="btn btn-secondary" onclick="closeModal()">閉じる</button>`);
+}
+
+function showToast(msg,type){
+  const t=document.createElement('div');
+  t.className='toast '+(type||'');t.textContent=msg;
+  document.body.appendChild(t);
+  setTimeout(()=>{t.style.opacity='0';t.style.transition='opacity 0.3s';},1500);
+  setTimeout(()=>t.remove(),1900);
+}
+
+// ═══ Init ═══
+storageAvailable = checkStorage();
+if(storageAvailable){
+  loadFromStorage();
+}
+selectCount(10);
+renderHome();
+// Show a subtle hint on first load if storage is available and data exists
+if(storageAvailable && (wrongIds.length||flaggedIds.length||attempts)){
+  setTimeout(()=>showToast(`前回の記録を復元しました（🔖${flaggedIds.length}・要復習${wrongIds.length}）`,'ok'),300);
+}
+</script>
+</body>
+</html>

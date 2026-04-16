@@ -1,0 +1,1275 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>診療情報管理士 模擬問題集</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --paper: #f5f2ed;
+  --ink: #111;
+  --red: #c23a22;
+  --faint: #d5d0c8;
+  --mid: #8a8477;
+  --green: #2e7d4f;
+  --green-light: #e8f5e9;
+  --red-light: #fbe9e7;
+  --card: #fffefa;
+  --explain-bg: #f0ece5;
+}
+
+html { font-size: 16px; }
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  background: var(--paper);
+  color: var(--ink);
+  line-height: 1.75;
+  min-height: 100dvh;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── Top bar ── */
+.topbar {
+  position: sticky; top: 0; z-index: 100;
+  background: var(--paper);
+  border-bottom: 1px solid var(--faint);
+  padding: 10px 16px;
+  display: flex; align-items: center; gap: 10px;
+}
+.topbar-back {
+  background: none; border: none; font-size: 1.2rem; cursor: pointer;
+  color: var(--mid); padding: 4px 8px; border-radius: 4px;
+}
+.topbar-back:hover { color: var(--ink); }
+.topbar-title {
+  font-size: 0.85rem; font-weight: 500; color: var(--mid);
+  flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.topbar-progress-text {
+  font-size: 0.75rem; color: var(--mid); white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ── Progress bar ── */
+.progress-track {
+  height: 3px; background: var(--faint); width: 100%;
+}
+.progress-fill {
+  height: 100%; background: var(--red); transition: width 0.3s ease;
+}
+
+/* ── Home screen ── */
+.home { max-width: 560px; margin: 0 auto; padding: 40px 20px 60px; }
+.home-header { margin-bottom: 36px; }
+.home-header h1 {
+  font-size: 1.4rem; font-weight: 700; letter-spacing: 0.02em;
+  margin-bottom: 4px;
+}
+.home-header p { font-size: 0.82rem; color: var(--mid); }
+
+.chapter-card {
+  background: var(--card);
+  border: 1px solid var(--faint);
+  border-left: 4px solid var(--red);
+  border-radius: 6px;
+  padding: 20px;
+  margin-bottom: 16px;
+  cursor: pointer;
+  transition: box-shadow 0.15s ease, border-color 0.15s ease;
+}
+.chapter-card:hover {
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+}
+.chapter-badge {
+  display: inline-block;
+  font-size: 0.7rem; font-weight: 500;
+  color: var(--red); background: var(--red-light);
+  padding: 2px 10px; border-radius: 3px;
+  margin-bottom: 8px; letter-spacing: 0.04em;
+}
+.chapter-card h2 { font-size: 1.05rem; font-weight: 700; margin-bottom: 10px; }
+.chapter-meta { display: flex; gap: 16px; font-size: 0.78rem; color: var(--mid); }
+.chapter-bar-track {
+  margin-top: 12px; height: 4px; background: var(--faint); border-radius: 2px; overflow: hidden;
+}
+.chapter-bar-fill { height: 100%; background: var(--green); border-radius: 2px; transition: width 0.3s; }
+
+.home-actions { margin-top: 28px; display: flex; gap: 10px; flex-wrap: wrap; }
+.home-btn {
+  background: var(--card); border: 1px solid var(--faint);
+  border-radius: 6px; padding: 10px 18px;
+  font-size: 0.82rem; font-family: inherit; cursor: pointer;
+  color: var(--ink); transition: border-color 0.15s;
+}
+.home-btn:hover { border-color: var(--mid); }
+.home-btn:disabled { opacity: 0.4; cursor: default; }
+
+/* ── Quiz screen ── */
+.quiz { max-width: 600px; margin: 0 auto; padding: 16px 16px 100px; }
+
+.q-card {
+  background: var(--card);
+  border: 1px solid var(--faint);
+  border-left: 4px solid var(--red);
+  border-radius: 6px;
+  padding: 22px 20px;
+  margin-bottom: 16px;
+}
+.q-number {
+  font-size: 0.72rem; font-weight: 500; color: var(--mid);
+  margin-bottom: 6px; display: flex; align-items: center; gap: 8px;
+}
+.q-bookmark {
+  background: none; border: none; cursor: pointer;
+  font-size: 1rem; color: var(--faint); padding: 0;
+  transition: color 0.15s;
+}
+.q-bookmark.active { color: #d4a017; }
+.q-text { font-size: 0.95rem; font-weight: 500; line-height: 1.8; }
+
+/* ── Choices ── */
+.choices { display: flex; flex-direction: column; gap: 8px; margin-bottom: 16px; }
+.choice-btn {
+  display: flex; align-items: flex-start; gap: 12px;
+  background: var(--card);
+  border: 1px solid var(--faint);
+  border-left: 4px solid transparent;
+  border-radius: 6px;
+  padding: 14px 16px;
+  font-family: inherit; font-size: 0.88rem;
+  text-align: left; cursor: pointer;
+  transition: border-color 0.15s, background 0.15s;
+  line-height: 1.7;
+}
+.choice-btn:hover:not(.answered) {
+  border-color: var(--mid);
+  background: #f9f7f3;
+}
+.choice-label {
+  flex-shrink: 0;
+  width: 26px; height: 26px;
+  display: flex; align-items: center; justify-content: center;
+  border: 1.5px solid var(--faint);
+  border-radius: 50%;
+  font-size: 0.78rem; font-weight: 500; color: var(--mid);
+  margin-top: 1px;
+}
+.choice-text { flex: 1; }
+
+.choice-btn.correct {
+  border-left-color: var(--green);
+  background: var(--green-light);
+  cursor: default;
+}
+.choice-btn.correct .choice-label {
+  background: var(--green); color: #fff; border-color: var(--green);
+}
+.choice-btn.wrong {
+  border-left-color: var(--red);
+  background: var(--red-light);
+  cursor: default;
+}
+.choice-btn.wrong .choice-label {
+  background: var(--red); color: #fff; border-color: var(--red);
+}
+.choice-btn.answered { cursor: default; }
+.choice-btn.answered:hover { background: inherit; border-color: inherit; }
+.choice-btn.dimmed { opacity: 0.55; cursor: default; }
+
+.choice-icon { margin-left: auto; font-size: 1rem; flex-shrink: 0; }
+
+/* ── Explanation ── */
+.explanation {
+  background: var(--explain-bg);
+  border-radius: 6px;
+  padding: 20px;
+  font-size: 0.84rem;
+  line-height: 1.85;
+  display: none;
+}
+.explanation.show { display: block; }
+.explain-section { margin-bottom: 14px; }
+.explain-section:last-child { margin-bottom: 0; }
+.explain-heading {
+  font-weight: 700; font-size: 0.8rem;
+  color: var(--red); margin-bottom: 4px;
+  letter-spacing: 0.03em;
+}
+.explain-heading.green { color: var(--green); }
+.explain-heading.point { color: #7b6c2a; }
+.explain-wrong-item { margin-bottom: 2px; }
+.explain-wrong-label { font-weight: 500; }
+
+/* ── Navigation ── */
+.nav-bar {
+  position: fixed; bottom: 0; left: 0; right: 0;
+  background: var(--paper);
+  border-top: 1px solid var(--faint);
+  padding: 10px 16px;
+  display: flex; justify-content: space-between; align-items: center;
+  z-index: 100;
+}
+.nav-btn {
+  background: none; border: 1px solid var(--faint);
+  border-radius: 6px; padding: 8px 20px;
+  font-family: inherit; font-size: 0.82rem;
+  cursor: pointer; color: var(--ink);
+  transition: border-color 0.15s;
+}
+.nav-btn:hover { border-color: var(--mid); }
+.nav-btn:disabled { opacity: 0.3; cursor: default; }
+.nav-btn.primary {
+  background: var(--ink); color: #fff; border-color: var(--ink);
+}
+.nav-btn.primary:hover { background: #333; }
+.nav-counter { font-size: 0.75rem; color: var(--mid); font-variant-numeric: tabular-nums; }
+
+/* ── Results screen ── */
+.results { max-width: 560px; margin: 0 auto; padding: 40px 20px 60px; }
+.results-header { text-align: center; margin-bottom: 32px; }
+.results-header h2 { font-size: 1.2rem; font-weight: 700; margin-bottom: 8px; }
+.results-score {
+  font-size: 2.8rem; font-weight: 700; color: var(--ink);
+  margin: 16px 0 4px;
+}
+.results-score span { font-size: 1rem; font-weight: 400; color: var(--mid); }
+.results-sub { font-size: 0.85rem; color: var(--mid); }
+.results-actions { display: flex; gap: 10px; justify-content: center; margin-top: 24px; flex-wrap: wrap; }
+
+.wrong-list { margin-top: 24px; }
+.wrong-list h3 { font-size: 0.9rem; font-weight: 700; margin-bottom: 12px; color: var(--red); }
+.wrong-item {
+  background: var(--card); border: 1px solid var(--faint);
+  border-left: 4px solid var(--red); border-radius: 6px;
+  padding: 14px 16px; margin-bottom: 10px;
+  cursor: pointer; transition: box-shadow 0.15s;
+}
+.wrong-item:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
+.wrong-item-q { font-size: 0.84rem; font-weight: 500; margin-bottom: 4px; }
+.wrong-item-a { font-size: 0.78rem; color: var(--mid); }
+
+/* ── Utilities ── */
+.screen { display: none; }
+.screen.active { display: block; }
+.fade-in { animation: fadeIn 0.2s ease; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+
+@media (max-width: 480px) {
+  .home-header h1 { font-size: 1.2rem; }
+  .q-card { padding: 18px 16px; }
+  .choice-btn { padding: 12px 14px; }
+}
+</style>
+</head>
+<body>
+
+<!-- ===== HOME ===== -->
+<div id="screen-home" class="screen active">
+  <div class="home">
+    <div class="home-header">
+      <h1>診療情報管理士 模擬問題集</h1>
+      <p>基礎課程 第1章・第2章（各15問）</p>
+    </div>
+    <div id="chapter-list"></div>
+    <div class="home-actions">
+      <button class="home-btn" id="btn-bookmarks" disabled>★ ブックマーク一覧</button>
+      <button class="home-btn" id="btn-reset">進捗をリセット</button>
+    </div>
+  </div>
+</div>
+
+<!-- ===== QUIZ ===== -->
+<div id="screen-quiz" class="screen">
+  <div class="topbar">
+    <button class="topbar-back" id="quiz-back">←</button>
+    <div class="topbar-title" id="quiz-topbar-title"></div>
+    <div class="topbar-progress-text" id="quiz-progress-text"></div>
+  </div>
+  <div class="progress-track"><div class="progress-fill" id="quiz-progress-bar"></div></div>
+  <div class="quiz" id="quiz-body"></div>
+  <div class="nav-bar">
+    <button class="nav-btn" id="nav-prev">← 前へ</button>
+    <div class="nav-counter" id="nav-counter"></div>
+    <button class="nav-btn primary" id="nav-next">次へ →</button>
+  </div>
+</div>
+
+<!-- ===== RESULTS ===== -->
+<div id="screen-results" class="screen">
+  <div class="results" id="results-body"></div>
+</div>
+
+<script>
+// ──────────────────────────────────────────
+// QUESTION DATA
+// ──────────────────────────────────────────
+const CHAPTERS = [
+  {
+    id: 1,
+    title: "医療管理総論",
+    questions: [
+      {
+        id: "1-1",
+        text: "医療資源は一般に4つに区分される。次のうち、医療資源の区分として正しい組み合わせはどれか。",
+        choices: [
+          "物的資源・人的資源・財的資源・情報資源",
+          "物的資源・人的資源・財的資源・時間資源",
+          "物的資源・技術資源・財的資源・情報資源",
+          "施設資源・人的資源・財的資源・情報資源",
+          "物的資源・人的資源・知的資源・情報資源"
+        ],
+        answer: 0,
+        explanation: {
+          correct: "医療資源は「物的資源（施設・医療機器等）」「人的資源（医師・看護師等の医療従事者）」「財的資源（医療費・経営資金等）」「情報資源（診療情報・医学知識等）」の4つに区分される。この分類は医療経営学における基本的枠組みであり、診療情報管理士は特に「情報資源」の管理を担う専門職として位置づけられる。",
+          wrong: {
+            "B": "「時間資源」は医療資源の基本4区分には含まれない。時間は経営管理上重要だが、独立した医療資源区分としては扱われない。",
+            "C": "「技術資源」は独立した区分ではなく、人的資源に付随する要素として捉えられる。",
+            "D": "「施設資源」は物的資源の一部であり、より広い概念である物的資源が正しい区分名である。",
+            "E": "「知的資源」という区分は存在せず、知識・情報は「情報資源」として分類される。"
+          },
+          point: "医療資源＝「物・人・金・情報」と覚える。一般経営学の経営資源（ヒト・モノ・カネ・情報）と対応させると記憶しやすい。"
+        }
+      },
+      {
+        id: "1-2",
+        text: "EBM（Evidence-Based Medicine）を実践する際に統合すべき3つの要素として正しいものはどれか。",
+        choices: [
+          "最善の研究エビデンス・臨床的専門技能・患者の価値観と状況",
+          "最善の研究エビデンス・ガイドライン・医療経済学的評価",
+          "臨床的専門技能・患者の希望・保険制度の制約",
+          "最善の研究エビデンス・臨床的専門技能・医療チームの合意"
+        ],
+        answer: 0,
+        explanation: {
+          correct: "EBMの3要素は、Sackettらにより「①最善の研究エビデンス（best research evidence）」「②臨床的専門技能（clinical expertise）」「③患者の価値観と状況（patient values and circumstances）」と定義された。EBMはエビデンスだけに頼るのではなく、臨床家の経験と患者個人の希望・状況を統合して意思決定を行うアプローチである。",
+          wrong: {
+            "B": "ガイドラインはエビデンスを集約したものだが、EBMの3要素そのものではない。医療経済学的評価も3要素に含まれない。",
+            "C": "保険制度の制約は実臨床上の考慮事項ではあるが、EBMの理論的枠組みの3要素には含まれない。",
+            "D": "医療チームの合意は重要だが、EBMの3要素として定義されているのは「患者の価値観と状況」である。"
+          },
+          point: "EBM＝「エビデンス＋臨床技能＋患者の価値観」の3本柱。「エビデンスだけがEBMではない」という点が頻出。"
+        }
+      },
+      {
+        id: "1-3",
+        text: "ドナベディアン（Donabedian）が提唱した医療の質評価の3つのアプローチとして正しいものはどれか。",
+        choices: [
+          "安全性・有効性・効率性",
+          "構造・過程・結果",
+          "投入・活動・成果",
+          "計画・実行・評価",
+          "予防・治療・回復"
+        ],
+        answer: 1,
+        explanation: {
+          correct: "Donabedianモデルでは、医療の質を「構造（Structure）」「過程（Process）」「結果（Outcome）」の3側面から評価する。構造は医療提供体制（人員配置・設備等）、過程は実際の診療行為、結果は患者の健康状態の変化を指す。1966年に発表されたこの枠組みは、現在も医療の質評価の基本モデルとして世界的に使用されている。",
+          wrong: {
+            "A": "安全性・有効性・効率性はIOM（米国医学研究所）が掲げた医療の質の6つの目標の一部であり、Donabedianの枠組みとは異なる。",
+            "C": "投入・活動・成果はプログラム評価等で使用されるロジックモデルの用語であり、Donabedianモデルではない。",
+            "D": "計画・実行・評価はPDCAサイクルに近い概念であり、Donabedianの質評価モデルとは異なる。",
+            "E": "予防・治療・回復は医療の段階的区分であり、質評価の枠組みではない。"
+          },
+          point: "Donabedian＝「Structure（構造）・Process（過程）・Outcome（結果）」のSPO。病院機能評価にもこの考え方が反映されている。"
+        }
+      },
+      {
+        id: "1-4",
+        text: "医療安全におけるインシデントとアクシデントの違いについて、正しい記述はどれか。",
+        choices: [
+          "インシデントとは患者に傷害が生じた事象を指し、アクシデントとは傷害に至らなかった事象を指す。",
+          "インシデントとは患者に傷害が生じなかったが、日常診療の現場で「ヒヤリ」としたり「ハッ」としたりした事象を指す。",
+          "インシデントとアクシデントは同義であり、いずれも医療事故を意味する。",
+          "インシデントは医療従事者のみに影響する事象であり、患者には関係しない。"
+        ],
+        answer: 1,
+        explanation: {
+          correct: "インシデント（ヒヤリ・ハット事象）とは、実際には患者に傷害は生じなかったが、危険な状況が発生した事象を指す。一方、アクシデントは患者に実際に傷害が生じた事象である。ハインリッヒの法則によれば、1件の重大事故の背後には29件の軽微な事故と300件のインシデントがあるとされ、インシデント報告の収集・分析が事故予防の鍵となる。",
+          wrong: {
+            "A": "インシデントとアクシデントの定義が逆になっている。傷害が生じたものがアクシデント、生じなかったものがインシデントである。",
+            "C": "インシデントとアクシデントは明確に区別される概念であり、同義ではない。",
+            "D": "インシデントは患者に関係する事象である。投薬ミスの未遂など、患者に影響し得た事象をいう。"
+          },
+          point: "インシデント＝ヒヤリ・ハット（傷害なし）、アクシデント＝実際の傷害あり。ハインリッヒの法則「1:29:300」もセットで覚える。"
+        }
+      },
+      {
+        id: "1-5",
+        text: "インフォームド・コンセントに関する記述として、最も適切なものはどれか。",
+        choices: [
+          "医師が最善と判断した治療法を患者に説明し、同意を得ればよい。",
+          "患者が治療を拒否する権利は含まれない。",
+          "医師は病状・治療法・代替手段・リスク等を十分に説明し、患者の自由な意思に基づく同意を得なければならない。",
+          "文書による同意が得られれば、口頭での説明は省略できる。",
+          "意識のない緊急患者であっても、必ず患者本人の同意が必要である。"
+        ],
+        answer: 2,
+        explanation: {
+          correct: "インフォームド・コンセントとは、医師が①病状の診断内容、②提案する治療法の内容・目的、③代替可能な治療法、④各治療法のリスク・副作用、⑤予後等を十分に説明し、患者がその内容を理解した上で、自由な意思に基づいて同意（または拒否）することを指す。医療法第1条の4第2項にも「適切な説明を行い、医療を受ける者の理解を得るよう努めなければならない」と規定されている。",
+          wrong: {
+            "A": "医師が最善と判断した治療法のみを説明するのでは不十分である。代替手段やリスクも含めた包括的な説明が必要である。",
+            "B": "患者には治療を拒否する権利が含まれる。インフォームド・コンセントは患者の自己決定権に基づく概念である。",
+            "D": "文書があっても口頭での説明は不可欠である。形式的な同意書の取得だけではインフォームド・コンセントとはいえない。",
+            "E": "緊急時で患者本人の意思確認が不可能な場合は、緊急避難として同意なしでの治療が認められている。"
+          },
+          point: "インフォームド・コンセント＝「説明と同意」。患者の自己決定権が根底にあり、治療拒否の権利も含むことを押さえる。"
+        }
+      },
+      {
+        id: "1-6",
+        text: "チーム医療について、正しい記述はどれか。",
+        choices: [
+          "チーム医療では医師がすべての指示を出し、他の職種はそれに従えばよい。",
+          "チーム医療とは、各専門職が専門性を発揮しつつ、対等な立場で連携・協働して患者中心の医療を提供することである。",
+          "チーム医療は急性期病院のみで実践される概念であり、在宅医療には適用されない。",
+          "チーム医療の推進により、各職種の業務範囲が縮小される。"
+        ],
+        answer: 1,
+        explanation: {
+          correct: "チーム医療とは、医師・看護師・薬剤師・診療情報管理士・リハビリテーション専門職など多職種が、それぞれの専門性を活かしながら対等な関係で連携・協働し、患者中心の質の高い医療を提供する取り組みである。厚生労働省の「チーム医療の推進に関する検討会」報告書（2010年）でも、各専門職の積極的な活用と連携の重要性が示されている。",
+          wrong: {
+            "A": "チーム医療は医師の一方的な指示によるものではなく、各専門職が主体的に関与する協働モデルである。",
+            "C": "チーム医療は急性期のみならず、在宅医療・回復期リハ・緩和ケアなど、あらゆる場面で実践される。",
+            "D": "チーム医療の推進により各職種の専門性が尊重され、業務範囲はむしろ拡大する方向にある（タスクシフト・シェア等）。"
+          },
+          point: "チーム医療のキーワードは「多職種連携」「対等な立場」「患者中心」。診療情報管理士もチームの一員であることを意識する。"
+        }
+      },
+      {
+        id: "1-7",
+        text: "医療の質指標（QI: Quality Indicator）に関する記述として、正しいものはどれか。",
+        choices: [
+          "QIは医療機関の収益性を評価するための経営指標である。",
+          "QIは医療の質を定量的に測定・比較するための指標であり、臨床指標とも呼ばれる。",
+          "QIの測定は法律で義務づけられており、全医療機関が報告しなければならない。",
+          "QIは構造指標のみを対象とし、過程や結果は含まない。"
+        ],
+        answer: 1,
+        explanation: {
+          correct: "QI（Quality Indicator）は、医療の質を定量的に測定・評価するための指標であり、「臨床指標」とも呼ばれる。例えば「術後30日死亡率」「褥瘡発生率」「入院患者転倒・転落率」などがある。日本病院会のQIプロジェクト等を通じて、医療機関間のベンチマーキングにも活用され、Donabedianの構造・過程・結果すべての側面で設定される。",
+          wrong: {
+            "A": "QIは経営指標ではなく、医療の質（安全性・有効性・患者満足度等）を測定する指標である。",
+            "C": "QIの測定は現時点で法的義務ではなく、各医療機関が自主的に取り組んでいるものである。",
+            "D": "QIはDonabedianの3側面（構造・過程・結果）すべてを対象とする。"
+          },
+          point: "QI＝医療の質を「数値化」して改善に活かす指標。Donabedianの構造・過程・結果に対応する指標がそれぞれ存在する。"
+        }
+      },
+      {
+        id: "1-8",
+        text: "患者の権利に関する宣言として、世界医師会が1981年に採択したものはどれか。",
+        choices: [
+          "ヘルシンキ宣言",
+          "ジュネーブ宣言",
+          "リスボン宣言",
+          "アルマ・アタ宣言",
+          "オタワ憲章"
+        ],
+        answer: 2,
+        explanation: {
+          correct: "リスボン宣言（1981年、世界医師会）は、「患者の権利に関する宣言」として知られ、良質の医療を受ける権利、選択の自由の権利、自己決定の権利、意識喪失患者の代行決定の権利、情報を得る権利、秘密保持の権利、健康教育を受ける権利、尊厳に対する権利、宗教的支援を受ける権利などを規定している。",
+          wrong: {
+            "A": "ヘルシンキ宣言（1964年）は人間を対象とする医学研究の倫理原則に関する宣言である。",
+            "B": "ジュネーブ宣言（1948年）は医師の倫理的義務を定めた宣言であり、現代版ヒポクラテスの誓いとも呼ばれる。",
+            "D": "アルマ・アタ宣言（1978年）はプライマリ・ヘルス・ケア（PHC）に関するWHO/UNICEF宣言である。",
+            "E": "オタワ憲章（1986年）はヘルスプロモーションに関するWHO憲章である。"
+          },
+          point: "患者の権利＝リスボン宣言（1981年）。「ヘルシンキ＝研究倫理」「ジュネーブ＝医師の倫理」「リスボン＝患者の権利」と整理する。"
+        }
+      },
+      {
+        id: "1-9",
+        text: "日本の医療提供体制に関する記述として、正しいものはどれか。",
+        choices: [
+          "医療法では、病院とは10人以上の患者を入院させるための施設を有するものと定義されている。",
+          "医療法では、病院とは15人以上の患者を入院させるための施設を有するものと定義されている。",
+          "医療法では、病院とは20人以上の患者を入院させるための施設を有するものと定義されている。",
+          "医療法では、病院とは30人以上の患者を入院させるための施設を有するものと定義されている。"
+        ],
+        answer: 2,
+        explanation: {
+          correct: "医療法第1条の5第1項において、病院は「20人以上の患者を入院させるための施設を有するもの」と定義されている。19人以下の入院施設は「診療所（有床診療所）」に分類される。この20人という基準は、管理体制や人員配置基準の違いに直結する重要な区分点である。",
+          wrong: {
+            "A": "10人以上という基準は存在しない。20人が正しい区分点である。",
+            "B": "15人以上という基準も存在しない。",
+            "D": "30人以上という基準ではなく、20人以上が正しい。"
+          },
+          point: "病院＝20床以上、診療所＝19床以下（または無床）。医療法の最も基本的な定義として必出。"
+        }
+      },
+      {
+        id: "1-10",
+        text: "病院機能評価に関する記述として、正しいものはどれか。",
+        choices: [
+          "病院機能評価は厚生労働省が直接実施する法定の審査である。",
+          "病院機能評価は公益財団法人日本医療機能評価機構が実施する第三者評価であり、受審は任意である。",
+          "病院機能評価に合格しなければ保険医療機関の指定を受けることができない。",
+          "病院機能評価は5年に一度自動的に更新される。"
+        ],
+        answer: 1,
+        explanation: {
+          correct: "病院機能評価は、公益財団法人日本医療機能評価機構が実施する第三者評価制度である。病院が自主的に受審し、書面審査・訪問審査を経て認定される。認定期間は5年間であり、更新には再度の受審が必要である。受審は任意であるが、認定を受けることで医療の質に対する社会的信頼の向上につながる。",
+          wrong: {
+            "A": "病院機能評価は厚生労働省ではなく、日本医療機能評価機構（独立した第三者機関）が実施する。法定の審査でもない。",
+            "C": "病院機能評価の認定は保険医療機関の指定要件ではない。未受審でも保険診療は可能である。",
+            "D": "認定期間は5年間だが、自動更新ではなく再度の受審・審査が必要である。"
+          },
+          point: "病院機能評価＝日本医療機能評価機構による「第三者評価」「任意」「認定期間5年」がキーワード。"
+        }
+      },
+      {
+        id: "1-11",
+        text: "クリニカルパスに関する記述として、正しいものはどれか。",
+        choices: [
+          "クリニカルパスとは、特定の疾患・手術ごとに標準的な治療・ケアの計画を時間軸に沿って示したものである。",
+          "クリニカルパスの使用は医師のみに限定され、看護師や他の職種は参照できない。",
+          "クリニカルパスを使用すると、個々の患者の状態に合わせた治療の変更はできなくなる。",
+          "クリニカルパスはすべての疾患に対して作成が法律で義務づけられている。"
+        ],
+        answer: 0,
+        explanation: {
+          correct: "クリニカルパス（クリティカルパス）は、特定の疾患や手術について、入院から退院までの標準的な治療・検査・看護ケア・リハビリ・食事・患者指導等の計画を、時間軸（日単位等）に沿って一覧表にまとめたものである。医療の標準化・質の向上・在院日数の適正化・チーム医療の促進に寄与する。患者用と医療者用の2種類が作られることが多い。",
+          wrong: {
+            "B": "クリニカルパスは多職種で共有・使用するものであり、チーム医療のツールとして全職種が参照・活用する。",
+            "C": "パスから外れた場合は「バリアンス」として記録し、個々の患者に合わせた治療変更は当然可能である。",
+            "D": "クリニカルパスの作成に法的義務はなく、各医療機関が自主的に作成・運用するものである。"
+          },
+          point: "クリニカルパス＝「標準治療計画の時間軸表」。バリアンス（パスからの逸脱）の記録・分析が質改善につながることも重要。"
+        }
+      },
+      {
+        id: "1-12",
+        text: "地域医療構想に関する記述として、正しいものはどれか。",
+        choices: [
+          "地域医療構想は市町村が策定する。",
+          "地域医療構想は二次医療圏を基本とした構想区域ごとに、2025年の医療需要と病床の必要量を推計するものである。",
+          "地域医療構想で定める病床機能は、急性期と慢性期の2区分である。",
+          "地域医療構想の実現は医療機関への強制力を持ち、従わない場合は罰則がある。"
+        ],
+        answer: 1,
+        explanation: {
+          correct: "地域医療構想は、2014年の医療介護総合確保推進法に基づき各都道府県が策定するもので、二次医療圏を基本とした構想区域ごとに、2025年の医療需要と病床の必要量を4つの医療機能（高度急性期・急性期・回復期・慢性期）別に推計する。地域医療構想調整会議を通じて、医療機関の自主的な機能分化・連携を促進することを目的とする。",
+          wrong: {
+            "A": "地域医療構想は市町村ではなく、都道府県が医療計画の一部として策定する。",
+            "C": "病床機能は「高度急性期・急性期・回復期・慢性期」の4区分である。2区分ではない。",
+            "D": "地域医療構想の実現は基本的に医療機関の自主的な取り組みに委ねられており、罰則による強制ではない（ただし一定の措置要請は可能）。"
+          },
+          point: "地域医療構想＝都道府県が策定、病床機能4区分（高度急性期・急性期・回復期・慢性期）、2025年の需要推計がポイント。"
+        }
+      },
+      {
+        id: "1-13",
+        text: "医療計画に関する記述として、正しいものはどれか。",
+        choices: [
+          "医療計画は国（厚生労働省）が全国一律に策定する。",
+          "医療計画は都道府県が策定し、基準病床数や医療連携体制等を定める。",
+          "医療計画で定める疾病は「3疾病」と呼ばれる。",
+          "医療計画の計画期間は3年間である。",
+          "二次医療圏は都道府県と同一の範囲である。"
+        ],
+        answer: 1,
+        explanation: {
+          correct: "医療計画は、医療法第30条の4に基づき各都道府県が策定する。計画には、基準病床数、5疾病（がん・脳卒中・心筋梗塞等の心血管疾患・糖尿病・精神疾患）・5事業（救急・災害・へき地・周産期・小児）＋新興感染症対応の医療連携体制、地域医療構想等が含まれる。計画期間は6年間（中間見直し3年）である。",
+          wrong: {
+            "A": "医療計画は国ではなく都道府県が策定する。国は基本方針を示すが、具体的計画は都道府県が地域の実情に応じて策定する。",
+            "C": "「3疾病」ではなく「5疾病」（がん・脳卒中・心筋梗塞等・糖尿病・精神疾患）である。",
+            "D": "計画期間は3年ではなく6年間である。3年で中間見直しを行う。",
+            "E": "二次医療圏は都道府県を複数に分割した区域であり、都道府県全体は三次医療圏に相当する。"
+          },
+          point: "医療計画＝都道府県が策定、5疾病5事業＋新興感染症、計画期間6年。「5疾病5事業」の内容は頻出。"
+        }
+      },
+      {
+        id: "1-14",
+        text: "PDCAサイクルの4段階を正しい順序で示したものはどれか。",
+        choices: [
+          "Plan → Do → Check → Act",
+          "Plan → Do → Act → Check",
+          "Plan → Check → Do → Act",
+          "Do → Plan → Check → Act"
+        ],
+        answer: 0,
+        explanation: {
+          correct: "PDCAサイクルは、Plan（計画）→ Do（実行）→ Check（評価）→ Act（改善）の4段階を繰り返すことで、業務の継続的改善を図るマネジメント手法である。デミング（W.E. Deming）が提唱したことから「デミングサイクル」とも呼ばれる。医療経営においては、医療の質改善・経営改善・安全管理など幅広い場面で適用される。",
+          wrong: {
+            "B": "ActとCheckの順序が逆である。実行（Do）の後にまず評価（Check）を行い、その結果に基づいて改善（Act）を行う。",
+            "C": "DoとCheckの順序が逆である。計画（Plan）の後は実行（Do）が先である。",
+            "D": "最初に来るのはDo（実行）ではなくPlan（計画）である。計画なき実行では改善サイクルが成立しない。"
+          },
+          point: "PDCA＝Plan→Do→Check→Act。「計画→実行→評価→改善」の順序を確実に。医療安全やQI活動との関連でも出題される。"
+        }
+      },
+      {
+        id: "1-15",
+        text: "DPC/PDPS（診断群分類包括評価）に関する記述として、正しいものはどれか。",
+        choices: [
+          "DPC/PDPSでは、入院医療費のすべてが包括払いとなる。",
+          "DPC/PDPSでは、診断群分類ごとに1日当たりの定額点数が設定され、入院日数に応じた包括評価と出来高評価を組み合わせて算定する。",
+          "DPC/PDPSはすべての病院に適用が義務づけられている。",
+          "DPC/PDPSにおける分類は、主に手術の種類のみによって決定される。"
+        ],
+        answer: 1,
+        explanation: {
+          correct: "DPC/PDPS（Diagnosis Procedure Combination / Per-Diem Payment System）では、入院基本料・検査・投薬・注射・画像診断等は診断群分類ごとの1日当たり定額点数で包括評価され、手術・麻酔・リハビリテーション・1000点以上の処置等は出来高で算定される。つまり「包括評価＋出来高評価」の組み合わせ方式である。入院期間に応じて点数が3段階に変動する仕組みも特徴的である。",
+          wrong: {
+            "A": "すべてが包括払いではない。手術・麻酔・リハビリ等は出来高で算定される。",
+            "C": "DPC/PDPSはDPC対象病院（急性期入院医療を担う一定の要件を満たす病院）のみに適用され、すべての病院に義務づけられているわけではない。",
+            "D": "DPC分類は、傷病名（診断）・手術・処置・副傷病名等の組み合わせによって決定され、手術のみでは決まらない。"
+          },
+          point: "DPC/PDPS＝「包括＋出来高」の混合方式。手術・麻酔・リハは出来高、それ以外が包括。入院期間による3段階の点数逓減も重要。"
+        }
+      }
+    ]
+  },
+  {
+    id: 2,
+    title: "医療保険制度",
+    questions: [
+      {
+        id: "2-1",
+        text: "日本の国民皆保険制度に関する記述として、正しいものはどれか。",
+        choices: [
+          "国民皆保険制度は1945年に達成された。",
+          "国民皆保険制度は1961年に達成され、すべての国民がいずれかの公的医療保険に加入する仕組みである。",
+          "国民皆保険制度では、加入する保険を自由に選ぶことができる。",
+          "国民皆保険制度のもとでは、患者の自己負担はゼロである。"
+        ],
+        answer: 1,
+        explanation: {
+          correct: "日本の国民皆保険制度は1961年（昭和36年）に達成された。国民健康保険法の全面改正により、被用者保険に加入しない者は国民健康保険に加入することが義務づけられ、すべての国民がいずれかの公的医療保険に加入する体制が整備された。フリーアクセス（自由に医療機関を選べること）と並び、日本の医療制度の根幹をなすものである。",
+          wrong: {
+            "A": "1945年は終戦の年であり、国民皆保険の達成年ではない。正しくは1961年である。",
+            "C": "加入する保険は職業・年齢等により自動的に決まるものであり、自由に選択できるわけではない。",
+            "D": "患者には一定の自己負担（原則3割、年齢等により異なる）がある。自己負担ゼロではない。"
+          },
+          point: "国民皆保険＝1961年達成。「全国民がいずれかの保険に加入」「フリーアクセス」が日本の医療制度の2大特徴。"
+        }
+      },
+      {
+        id: "2-2",
+        text: "保険者と被保険者に関する記述として、正しいものはどれか。",
+        choices: [
+          "保険者とは、保険料を支払って保険に加入している者のことである。",
+          "被保険者とは、保険事業を運営し、保険給付を行う団体のことである。",
+          "保険者とは保険事業を運営する主体であり、被保険者とは保険に加入し保険料を負担する者のことである。",
+          "保険者と被保険者は同一の主体である。"
+        ],
+        answer: 2,
+        explanation: {
+          correct: "保険者とは、保険事業を運営する主体（全国健康保険協会、健康保険組合、市町村、後期高齢者医療広域連合等）であり、保険料の徴収や保険給付を行う。被保険者とは、保険に加入している者であり、保険料を負担する代わりに疾病等の際に保険給付を受ける権利を有する。この関係は社会保険制度の基本構造である。",
+          wrong: {
+            "A": "保険料を支払って加入しているのは「被保険者」であり、保険者の定義が誤っている。",
+            "B": "保険事業を運営し給付を行うのは「保険者」であり、被保険者の定義が逆になっている。",
+            "D": "保険者と被保険者は明確に異なる立場であり、同一ではない。"
+          },
+          point: "保険者＝運営する側（協会けんぽ・組合・市町村等）、被保険者＝加入する側（国民・勤労者等）。用語の混同に注意。"
+        }
+      },
+      {
+        id: "2-3",
+        text: "診療報酬制度に関する記述として、正しいものはどれか。",
+        choices: [
+          "診療報酬点数表の1点の単価は15円である。",
+          "診療報酬は各医療機関が自由に価格を設定できる。",
+          "診療報酬点数表の1点の単価は10円であり、中央社会保険医療協議会（中医協）の答申に基づき厚生労働大臣が改定する。",
+          "診療報酬の改定は毎年行われる。",
+          "診療報酬は都道府県ごとに異なる点数が設定されている。"
+        ],
+        answer: 2,
+        explanation: {
+          correct: "診療報酬は、保険診療における医療行為の公定価格であり、点数表で定められた点数に1点＝10円を乗じて算出する。改定は原則2年ごとに行われ、中央社会保険医療協議会（中医協）が支払側・診療側・公益委員の三者構成で審議し、その答申に基づき厚生労働大臣が最終決定する。全国一律の点数が適用される。",
+          wrong: {
+            "A": "1点の単価は15円ではなく10円である。",
+            "B": "保険診療の価格は診療報酬点数表により全国一律に定められており、各医療機関が自由に設定することはできない。",
+            "D": "診療報酬の改定は毎年ではなく原則2年ごとである。",
+            "E": "診療報酬は全国一律であり、都道府県ごとに異なることはない。"
+          },
+          point: "診療報酬＝1点10円、2年ごと改定、中医協の答申→厚労大臣が決定、全国一律。基本中の基本。"
+        }
+      },
+      {
+        id: "2-4",
+        text: "高額療養費制度に関する記述として、正しいものはどれか。",
+        choices: [
+          "高額療養費制度では、年間の医療費が一定額を超えた場合にのみ適用される。",
+          "高額療養費制度は、同一月内の自己負担額が一定の限度額を超えた場合に、超えた分が保険者から払い戻される制度である。",
+          "高額療養費制度は入院の場合のみ適用され、外来には適用されない。",
+          "高額療養費制度では、所得に関係なく一律の自己負担限度額が設定されている。"
+        ],
+        answer: 1,
+        explanation: {
+          correct: "高額療養費制度は、同一月（1日〜末日）内に同一の医療機関で支払った自己負担額が、所得に応じた自己負担限度額を超えた場合に、超過分が保険者から払い戻される制度である。健康保険法第115条等に規定されている。事前に「限度額適用認定証」を取得すれば、窓口での支払いを自己負担限度額までに抑えることもできる。",
+          wrong: {
+            "A": "年間ではなく「同一月内」の自己負担額が基準となる（ただし多数回該当や世帯合算等の特例もある）。",
+            "C": "外来にも適用される。入院・外来の区別なく自己負担限度額の対象となる。",
+            "D": "自己負担限度額は所得に応じて段階的に設定されており、一律ではない。高所得者ほど限度額は高い。"
+          },
+          point: "高額療養費＝「同一月内」「所得に応じた限度額」「超過分の払い戻し」。限度額適用認定証による現物給付化も押さえる。"
+        }
+      },
+      {
+        id: "2-5",
+        text: "後期高齢者医療制度に関する記述として、正しいものはどれか。",
+        choices: [
+          "後期高齢者医療制度の対象は65歳以上のすべての者である。",
+          "後期高齢者医療制度の対象は原則75歳以上の者であり、運営は都道府県単位の広域連合が行う。",
+          "後期高齢者医療制度の財源は、すべて公費（税金）で賄われている。",
+          "後期高齢者医療制度では、患者の自己負担割合は一律1割である。"
+        ],
+        answer: 1,
+        explanation: {
+          correct: "後期高齢者医療制度（高齢者の医療の確保に関する法律に基づく）は、原則75歳以上の者（および65歳以上75歳未満で一定の障害のある者）を対象とする。運営主体は都道府県単位のすべての市町村が加入する「後期高齢者医療広域連合」である。財源構成は、公費約5割、現役世代からの支援金約4割、高齢者の保険料約1割となっている。",
+          wrong: {
+            "A": "対象は65歳以上ではなく原則75歳以上である。65〜74歳は前期高齢者として従来の保険に加入する。",
+            "C": "すべて公費ではなく、公費約5割・現役世代支援金約4割・被保険者保険料約1割の構成である。",
+            "D": "自己負担割合は原則1割だが、現役並み所得者は3割、一定以上所得者は2割であり、一律ではない。"
+          },
+          point: "後期高齢者＝75歳以上、広域連合が運営、財源は公費5割・支援金4割・保険料1割。自己負担は1〜3割。"
+        }
+      },
+      {
+        id: "2-6",
+        text: "国民健康保険（国保）と被用者保険（社会保険）に関する記述として、正しいものはどれか。",
+        choices: [
+          "国民健康保険の保険者は国（厚生労働省）である。",
+          "被用者保険では事業主が保険料の全額を負担する。",
+          "国民健康保険は自営業者・農業者・無職者等が加入し、被用者保険はサラリーマン等の被用者が加入する。",
+          "国民健康保険には扶養の概念があり、家族は保険料を支払わなくてよい。"
+        ],
+        answer: 2,
+        explanation: {
+          correct: "国民健康保険は、被用者保険に加入しない自営業者・農業者・退職者・無職者等を対象とする保険であり、保険者は都道府県と市町村が共同で運営する。被用者保険（健康保険）は企業に雇用されるサラリーマン等が加入し、協会けんぽや健康保険組合が保険者となる。この二本立ての構造で国民皆保険が実現されている。",
+          wrong: {
+            "A": "国保の保険者は国ではなく、都道府県と市町村である（2018年度の制度改革以降）。",
+            "B": "被用者保険の保険料は事業主と被保険者（従業員）が原則折半（労使折半）で負担する。全額事業主負担ではない。",
+            "D": "国民健康保険には被用者保険のような扶養の概念がなく、加入者全員がそれぞれ保険料を負担する。"
+          },
+          point: "国保＝自営業等・扶養概念なし、被用者保険＝サラリーマン・労使折半・扶養あり。この対比は必須。"
+        }
+      },
+      {
+        id: "2-7",
+        text: "介護保険制度に関する記述として、正しいものはどれか。",
+        choices: [
+          "介護保険の被保険者は65歳以上の者のみである。",
+          "介護保険の第1号被保険者は65歳以上、第2号被保険者は40歳以上65歳未満の医療保険加入者である。",
+          "介護保険の保険者は都道府県である。",
+          "介護保険のサービスを利用するために、要介護認定は必要ない。"
+        ],
+        answer: 1,
+        explanation: {
+          correct: "介護保険制度（2000年施行）において、第1号被保険者は65歳以上の者で原因を問わず要介護・要支援状態になった場合にサービスを受けられる。第2号被保険者は40歳以上65歳未満の医療保険加入者で、特定疾病（16疾病）に起因する要介護・要支援状態の場合にサービスを受けられる。保険者は市町村および特別区である。",
+          wrong: {
+            "A": "65歳以上は第1号被保険者であるが、40歳以上65歳未満の医療保険加入者も第2号被保険者として介護保険に加入している。",
+            "C": "介護保険の保険者は都道府県ではなく市町村（および特別区）である。",
+            "D": "介護保険サービスの利用には、市町村に申請し要介護（要支援）認定を受ける必要がある。"
+          },
+          point: "介護保険＝保険者は市町村、第1号（65歳以上）・第2号（40〜64歳）。第2号は「特定疾病」が要件であることも重要。"
+        }
+      },
+      {
+        id: "2-8",
+        text: "混合診療の禁止に関する記述として、正しいものはどれか。",
+        choices: [
+          "混合診療とは、保険診療と保険外診療を同時に行うことであり、日本では原則として禁止されている。",
+          "混合診療は日本で全面的に認められており、自由に組み合わせることができる。",
+          "混合診療が行われた場合でも、保険適用部分は保険給付が受けられる。",
+          "混合診療の禁止は医療法に明文で規定されている。"
+        ],
+        answer: 0,
+        explanation: {
+          correct: "混合診療とは、保険が適用される診療（保険診療）と保険が適用されない診療（自由診療）を併せて行うことであり、日本では原則として禁止されている。混合診療が行われた場合、本来保険が適用される部分を含めて全額が患者の自己負担となる。これは、安全性・有効性が確認されていない医療が不当に広がることを防ぎ、国民皆保険制度を維持する趣旨に基づく。",
+          wrong: {
+            "B": "日本では混合診療は原則禁止であり、全面的に認められてはいない。ただし「保険外併用療養費」として例外的に認められるものがある。",
+            "C": "混合診療が行われた場合は、保険適用部分を含めて全額が自己負担となる。保険給付は受けられない。",
+            "D": "混合診療の禁止は医療法の明文規定ではなく、健康保険法の解釈・運用として確立された原則である。"
+          },
+          point: "混合診療＝原則禁止。行うと全額自己負担。ただし「保険外併用療養費」の枠組みで例外あり（評価療養・選定療養・患者申出療養）。"
+        }
+      },
+      {
+        id: "2-9",
+        text: "保険外併用療養費に関する記述として、正しいものはどれか。",
+        choices: [
+          "保険外併用療養費には、評価療養と選定療養の2種類のみがある。",
+          "保険外併用療養費には、評価療養・選定療養・患者申出療養の3種類がある。",
+          "差額ベッド代（特別の療養環境）は評価療養に分類される。",
+          "先進医療は選定療養に分類される。"
+        ],
+        answer: 1,
+        explanation: {
+          correct: "保険外併用療養費は、保険診療との併用が例外的に認められる療養であり、①評価療養（先進医療・医薬品の治験等、将来的に保険導入を検討するもの）、②選定療養（差額ベッド・予約診療・大病院の初診等、患者が自ら選択するもの）、③患者申出療養（2016年創設、患者の申出に基づき未承認薬等を迅速に使用するもの）の3種類がある。",
+          wrong: {
+            "A": "2016年に「患者申出療養」が追加され、現在は3種類である。2種類のみではない。",
+            "C": "差額ベッド代は「選定療養」に分類される。評価療養ではない。",
+            "D": "先進医療は「評価療養」に分類される。選定療養ではない。"
+          },
+          point: "保険外併用療養費＝評価療養（先進医療等）・選定療養（差額ベッド等）・患者申出療養の3つ。どれがどちらに分類されるかが頻出。"
+        }
+      },
+      {
+        id: "2-10",
+        text: "レセプト（診療報酬明細書）に関する記述として、正しいものはどれか。",
+        choices: [
+          "レセプトは患者に対して発行される医療費の領収書である。",
+          "レセプトは医療機関が審査支払機関に提出する診療報酬の請求書であり、患者ごと・月ごとに作成される。",
+          "レセプトには傷病名や診療内容は記載されず、金額のみが記載される。",
+          "レセプトの提出は任意であり、提出しなくても診療報酬は支払われる。"
+        ],
+        answer: 1,
+        explanation: {
+          correct: "レセプト（診療報酬明細書）は、保険医療機関が保険者に診療報酬を請求するために作成する書類であり、審査支払機関（社会保険診療報酬支払基金または国民健康保険団体連合会）を通じて提出する。患者ごと・診療月ごとに1枚作成し、傷病名・診療開始日・診療行為の内容・点数等が記載される。現在はオンライン請求が原則となっている。",
+          wrong: {
+            "A": "レセプトは患者向けの領収書ではなく、保険者への請求書類である。患者向けには別途領収書・明細書が発行される。",
+            "C": "レセプトには傷病名・診療内容・使用薬剤等が詳細に記載される。金額のみではない。",
+            "D": "レセプトの提出は請求の必須手続きであり、提出しなければ診療報酬は支払われない。"
+          },
+          point: "レセプト＝医療機関→審査支払機関→保険者の流れで提出される「請求書」。患者ごと・月ごとに作成。オンライン請求が原則。"
+        }
+      },
+      {
+        id: "2-11",
+        text: "審査支払機関に関する記述として、正しいものはどれか。",
+        choices: [
+          "社会保険診療報酬支払基金は国民健康保険のレセプトを審査する。",
+          "国民健康保険団体連合会は被用者保険のレセプトを審査する。",
+          "社会保険診療報酬支払基金は被用者保険のレセプトを、国民健康保険団体連合会は国民健康保険のレセプトをそれぞれ審査する。",
+          "審査支払機関は存在せず、各保険者が直接レセプトを審査する。"
+        ],
+        answer: 2,
+        explanation: {
+          correct: "日本には2つの審査支払機関がある。①社会保険診療報酬支払基金（支払基金）は、被用者保険（健康保険・共済組合等）のレセプトの審査・支払を行う。②国民健康保険団体連合会（国保連）は、国民健康保険および後期高齢者医療のレセプトの審査・支払を行う。いずれも、医療機関から提出されたレセプトの内容を審査し、適正な診療報酬の支払いを担保する役割を持つ。",
+          wrong: {
+            "A": "支払基金が審査するのは被用者保険のレセプトであり、国保のレセプトは審査しない。",
+            "B": "国保連が審査するのは国保・後期高齢者のレセプトであり、被用者保険のレセプトは審査しない。",
+            "D": "審査支払機関は存在しており、レセプトの審査は各保険者ではなく審査支払機関が行う。"
+          },
+          point: "支払基金＝被用者保険、国保連＝国保・後期高齢者。この対応関係を確実に覚える。"
+        }
+      },
+      {
+        id: "2-12",
+        text: "DPC/PDPSにおける包括払いに関する記述として、正しいものはどれか。",
+        choices: [
+          "DPC/PDPSでは、手術料も包括評価の対象に含まれる。",
+          "DPC/PDPSの包括評価部分には、入院基本料・検査・投薬・注射・画像診断等が含まれる。",
+          "DPC/PDPSの包括評価部分の点数は、入院期間に関係なく一定である。",
+          "DPC/PDPSは外来診療にも適用される。"
+        ],
+        answer: 1,
+        explanation: {
+          correct: "DPC/PDPSの包括評価部分には、入院基本料、検査（一部を除く）、投薬、注射、画像診断（一部を除く）、処置（1000点未満）等が含まれる。これらは診断群分類ごとに設定された1日当たりの定額点数で算定される。一方、手術・麻酔・リハビリテーション・1000点以上の処置・指導管理料等は出来高で別途算定される。",
+          wrong: {
+            "A": "手術料は出来高評価の対象であり、包括評価には含まれない。手術の技術料は個別に算定される。",
+            "C": "包括評価の点数は入院期間に応じて3段階（入院期間Ⅰ・Ⅱ・Ⅲ）に変動し、長くなるほど1日当たりの点数が逓減する。",
+            "D": "DPC/PDPSは入院医療のみに適用される制度であり、外来診療は対象外（出来高払い）である。"
+          },
+          point: "DPC包括部分＝入院基本料・検査・投薬・注射・画像診断等。手術・麻酔・リハは「出来高」。入院期間3段階の逓減制も重要。"
+        }
+      },
+      {
+        id: "2-13",
+        text: "出来高払いと包括払いの違いに関する記述として、正しいものはどれか。",
+        choices: [
+          "出来高払いでは、実施した診療行為一つひとつに対して報酬が支払われる。",
+          "出来高払いは過少診療の誘因となりやすい。",
+          "包括払いは過剰診療の誘因となりやすい。",
+          "日本では出来高払いは完全に廃止され、すべて包括払いに移行した。"
+        ],
+        answer: 0,
+        explanation: {
+          correct: "出来高払い（Fee-for-Service）は、医療機関が実施した個々の診療行為（診察・検査・投薬・手術等）ごとに、診療報酬点数表に基づいて報酬が支払われる方式である。日本の外来診療やDPC非対象病院の入院は、現在も出来高払いが基本である。一方、包括払いは疾患や入院日数等に基づいて定額が支払われる方式（DPC/PDPS等）である。",
+          wrong: {
+            "B": "出来高払いは「やればやるほど報酬が増える」ため、過剰診療の誘因となりやすい。過少診療ではない。",
+            "C": "包括払いは定額のため「なるべく少ない診療行為で済ませる」方向に誘因が働き、過少診療のリスクがある。過剰診療ではない。",
+            "D": "日本では出来高払いは廃止されておらず、外来診療やDPC非対象の入院等で広く使われている。"
+          },
+          point: "出来高払い＝個別算定・過剰診療リスク、包括払い＝定額・過少診療リスク。両方式のメリット・デメリットの対比が重要。"
+        }
+      },
+      {
+        id: "2-14",
+        text: "公費負担医療に関する記述として、正しいものはどれか。",
+        choices: [
+          "公費負担医療とは、すべての医療費を国が全額負担する制度である。",
+          "公費負担医療とは、特定の疾病や対象者について法令に基づき国や地方公共団体が医療費の全部または一部を公費で負担する制度であり、生活保護法による医療扶助や感染症法による入院措置等が含まれる。",
+          "公費負担医療は保険診療と無関係に運用される。",
+          "公費負担医療の対象は高齢者のみである。"
+        ],
+        answer: 1,
+        explanation: {
+          correct: "公費負担医療は、法令に基づき国や地方公共団体が特定の疾病・状態にある者の医療費の全部または一部を公費で負担する制度の総称である。主なものに、生活保護法による医療扶助、感染症法による入院措置、精神保健福祉法による措置入院、障害者総合支援法による自立支援医療（育成医療・更生医療・精神通院医療）、母子保健法による養育医療、難病法による特定医療費助成等がある。",
+          wrong: {
+            "A": "公費負担医療は「すべての医療費を全額」負担するのではなく、特定の対象者・疾病について全部または一部を負担するものである。",
+            "C": "公費負担医療は保険診療との関係で運用されることが多い。例えば保険優先で自己負担分を公費が補填する形態がある。",
+            "D": "公費負担医療の対象は高齢者に限らず、生活保護受給者、感染症患者、障害者、難病患者、乳幼児など多様である。"
+          },
+          point: "公費負担医療＝法令に基づき国・自治体が負担する制度の総称。生活保護の医療扶助、感染症法、自立支援医療、難病医療費助成等を整理しておく。"
+        }
+      },
+      {
+        id: "2-15",
+        text: "労災保険と自賠責保険に関する記述として、正しいものはどれか。",
+        choices: [
+          "労災保険は健康保険の一部であり、保険者は協会けんぽである。",
+          "自賠責保険による診療には診療報酬点数表が適用され、1点＝10円で算定される。",
+          "労災保険は業務上の事由または通勤による傷病等に対して給付を行う制度であり、健康保険とは別の制度である。自賠責保険は自動車事故による損害賠償を目的とした強制保険である。",
+          "労災保険と自賠責保険は任意加入の保険であり、未加入でも罰則はない。"
+        ],
+        answer: 2,
+        explanation: {
+          correct: "労災保険（労働者災害補償保険）は、労働基準法に基づく使用者の補償責任を保険化したもので、業務災害・通勤災害による傷病に対して療養補償給付等を行う。健康保険とは完全に別の制度であり、所管は厚生労働省労働基準局である。自賠責保険（自動車損害賠償責任保険）は自動車損害賠償保障法に基づく強制保険であり、交通事故の被害者救済を目的とする。",
+          wrong: {
+            "A": "労災保険は健康保険とは別の制度であり、保険者は政府（労働基準監督署が窓口）である。協会けんぽではない。",
+            "B": "自賠責保険の診療は自由診療扱いとなり、健康保険の診療報酬点数表が当然に適用されるわけではない。労災保険には独自の労災診療費算定基準（1点＝12円）がある。",
+            "D": "労災保険は労働者を雇用する事業主に加入が義務づけられており、自賠責保険もすべての自動車に加入が義務づけられている。いずれも任意ではない。"
+          },
+          point: "労災保険＝業務上・通勤災害、健保とは別制度、1点12円。自賠責＝自動車事故、強制保険、自由診療扱い。両方とも「健康保険の対象外」であることがポイント。"
+        }
+      }
+    ]
+  }
+];
+
+// ──────────────────────────────────────────
+// APP STATE
+// ──────────────────────────────────────────
+const STORAGE_KEY = "him-quiz-v1";
+
+function loadState() {
+  try {
+    const raw = localStorage.getItem(STORAGE_KEY);
+    if (raw) return JSON.parse(raw);
+  } catch(e) {}
+  return { answers: {}, bookmarks: {} };
+}
+
+function saveState() {
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+}
+
+let state = loadState();
+let currentChapter = null;
+let currentIndex = 0;
+let quizQuestions = []; // current set of questions
+let quizMode = "normal"; // "normal" | "review" | "bookmarks"
+
+// ──────────────────────────────────────────
+// SCREENS
+// ──────────────────────────────────────────
+function showScreen(id) {
+  document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+  document.getElementById('screen-' + id).classList.add('active');
+  window.scrollTo(0, 0);
+}
+
+// ──────────────────────────────────────────
+// HOME
+// ──────────────────────────────────────────
+function renderHome() {
+  const list = document.getElementById('chapter-list');
+  list.innerHTML = '';
+  CHAPTERS.forEach(ch => {
+    const total = ch.questions.length;
+    const correct = ch.questions.filter(q => state.answers[q.id] === true).length;
+    const answered = ch.questions.filter(q => state.answers[q.id] !== undefined).length;
+    const wrong = ch.questions.filter(q => state.answers[q.id] === false).length;
+    const pct = total > 0 ? Math.round((correct / total) * 100) : 0;
+
+    const card = document.createElement('div');
+    card.className = 'chapter-card';
+    card.innerHTML = `
+      <div class="chapter-badge">第${ch.id}章</div>
+      <h2>${ch.title}</h2>
+      <div class="chapter-meta">
+        <span>全${total}問</span>
+        <span>正解 ${correct}/${answered}問</span>
+        <span>${pct}%</span>
+      </div>
+      <div class="chapter-bar-track"><div class="chapter-bar-fill" style="width:${pct}%"></div></div>
+    `;
+    card.addEventListener('click', () => startChapter(ch.id, "normal"));
+    list.appendChild(card);
+  });
+
+  // Review wrong answers
+  const wrongCount = Object.values(state.answers).filter(v => v === false).length;
+  const bmCount = Object.keys(state.bookmarks).filter(k => state.bookmarks[k]).length;
+
+  const btnBookmarks = document.getElementById('btn-bookmarks');
+  btnBookmarks.textContent = `★ ブックマーク一覧（${bmCount}）`;
+  btnBookmarks.disabled = bmCount === 0;
+  btnBookmarks.onclick = () => startBookmarks();
+
+  document.getElementById('btn-reset').onclick = () => {
+    if (confirm('すべての進捗をリセットしますか？')) {
+      state = { answers: {}, bookmarks: {} };
+      saveState();
+      renderHome();
+    }
+  };
+
+  showScreen('home');
+}
+
+// ──────────────────────────────────────────
+// START QUIZ
+// ──────────────────────────────────────────
+function startChapter(chapterId, mode) {
+  currentChapter = CHAPTERS.find(c => c.id === chapterId);
+  quizMode = mode;
+  if (mode === "review") {
+    quizQuestions = currentChapter.questions.filter(q => state.answers[q.id] === false);
+  } else {
+    quizQuestions = [...currentChapter.questions];
+  }
+  if (quizQuestions.length === 0) {
+    alert("該当する問題がありません。");
+    return;
+  }
+  currentIndex = 0;
+  renderQuiz();
+  showScreen('quiz');
+}
+
+function startBookmarks() {
+  const bmIds = Object.keys(state.bookmarks).filter(k => state.bookmarks[k]);
+  quizQuestions = [];
+  CHAPTERS.forEach(ch => {
+    ch.questions.forEach(q => {
+      if (bmIds.includes(q.id)) quizQuestions.push(q);
+    });
+  });
+  if (quizQuestions.length === 0) { alert("ブックマークがありません。"); return; }
+  currentChapter = null;
+  quizMode = "bookmarks";
+  currentIndex = 0;
+  renderQuiz();
+  showScreen('quiz');
+}
+
+// ──────────────────────────────────────────
+// RENDER QUIZ
+// ──────────────────────────────────────────
+function renderQuiz() {
+  const q = quizQuestions[currentIndex];
+  const isAnswered = state.answers[q.id] !== undefined;
+  const isBookmarked = !!state.bookmarks[q.id];
+
+  // Topbar
+  const titleEl = document.getElementById('quiz-topbar-title');
+  if (quizMode === "bookmarks") {
+    titleEl.textContent = "ブックマーク一覧";
+  } else if (currentChapter) {
+    titleEl.textContent = `第${currentChapter.id}章　${currentChapter.title}` + (quizMode === "review" ? "（復習）" : "");
+  }
+  document.getElementById('quiz-progress-text').textContent = `${currentIndex + 1} / ${quizQuestions.length}`;
+  document.getElementById('quiz-progress-bar').style.width = `${((currentIndex + 1) / quizQuestions.length) * 100}%`;
+
+  // Question body
+  const body = document.getElementById('quiz-body');
+  const labels = "ABCDE";
+
+  let choicesHtml = q.choices.map((c, i) => {
+    let cls = "choice-btn";
+    let icon = "";
+    if (isAnswered) {
+      cls += " answered";
+      if (i === q.answer) {
+        cls += " correct";
+        icon = '<span class="choice-icon">✓</span>';
+      } else if (state.answers[q.id] === false && i === state.answers[q.id + "_selected"]) {
+        cls += " wrong";
+        icon = '<span class="choice-icon">✗</span>';
+      } else {
+        cls += " dimmed";
+      }
+    }
+    return `<button class="${cls}" data-idx="${i}">
+      <span class="choice-label">${labels[i]}</span>
+      <span class="choice-text">${c}</span>
+      ${icon}
+    </button>`;
+  }).join('');
+
+  // Explanation
+  let explainHtml = '';
+  if (isAnswered) {
+    const exp = q.explanation;
+    let wrongItems = '';
+    for (const [label, text] of Object.entries(exp.wrong)) {
+      wrongItems += `<div class="explain-wrong-item"><span class="explain-wrong-label">${label}.</span> ${text}</div>`;
+    }
+    explainHtml = `
+      <div class="explanation show fade-in">
+        <div class="explain-section">
+          <div class="explain-heading green">【正答の根拠】</div>
+          <div>${exp.correct}</div>
+        </div>
+        <div class="explain-section">
+          <div class="explain-heading">【誤答の整理】</div>
+          ${wrongItems}
+        </div>
+        <div class="explain-section">
+          <div class="explain-heading point">【試験のポイント】</div>
+          <div>${exp.point}</div>
+        </div>
+      </div>
+    `;
+  }
+
+  // Find original question number
+  let qNumDisplay = "";
+  const chForQ = CHAPTERS.find(ch => ch.questions.some(qq => qq.id === q.id));
+  if (chForQ) {
+    const idx = chForQ.questions.indexOf(q);
+    qNumDisplay = `第${chForQ.id}章 問${idx + 1}`;
+  }
+
+  body.innerHTML = `
+    <div class="q-card fade-in">
+      <div class="q-number">
+        <span>${qNumDisplay}</span>
+        <button class="q-bookmark ${isBookmarked ? 'active' : ''}" id="btn-bookmark">★</button>
+      </div>
+      <div class="q-text">${q.text}</div>
+    </div>
+    <div class="choices">${choicesHtml}</div>
+    ${explainHtml}
+  `;
+
+  // Bookmark
+  document.getElementById('btn-bookmark').addEventListener('click', function() {
+    state.bookmarks[q.id] = !state.bookmarks[q.id];
+    saveState();
+    this.classList.toggle('active');
+  });
+
+  // Choice click
+  if (!isAnswered) {
+    body.querySelectorAll('.choice-btn').forEach(btn => {
+      btn.addEventListener('click', function() {
+        const idx = parseInt(this.dataset.idx);
+        handleAnswer(q, idx);
+      });
+    });
+  }
+
+  // Nav
+  document.getElementById('nav-prev').disabled = currentIndex === 0;
+  const isLast = currentIndex === quizQuestions.length - 1;
+  const nextBtn = document.getElementById('nav-next');
+  nextBtn.textContent = isLast ? "結果を見る →" : "次へ →";
+  nextBtn.disabled = false;
+  document.getElementById('nav-counter').textContent = `${currentIndex + 1} / ${quizQuestions.length}`;
+}
+
+function handleAnswer(q, selectedIdx) {
+  const isCorrect = selectedIdx === q.answer;
+  state.answers[q.id] = isCorrect;
+  state.answers[q.id + "_selected"] = selectedIdx;
+  saveState();
+  renderQuiz();
+}
+
+// Nav events
+document.getElementById('nav-prev').addEventListener('click', () => {
+  if (currentIndex > 0) { currentIndex--; renderQuiz(); window.scrollTo(0, 0); }
+});
+document.getElementById('nav-next').addEventListener('click', () => {
+  if (currentIndex < quizQuestions.length - 1) {
+    currentIndex++;
+    renderQuiz();
+    window.scrollTo(0, 0);
+  } else {
+    showResults();
+  }
+});
+document.getElementById('quiz-back').addEventListener('click', () => {
+  renderHome();
+});
+
+// ──────────────────────────────────────────
+// RESULTS
+// ──────────────────────────────────────────
+function showResults() {
+  const correctCount = quizQuestions.filter(q => state.answers[q.id] === true).length;
+  const total = quizQuestions.length;
+  const pct = Math.round((correctCount / total) * 100);
+  const wrongQs = quizQuestions.filter(q => state.answers[q.id] === false);
+
+  let titleText = "結果";
+  if (quizMode === "bookmarks") {
+    titleText = "ブックマーク　結果";
+  } else if (currentChapter) {
+    titleText = `第${currentChapter.id}章　${currentChapter.title}` + (quizMode === "review" ? "（復習）" : "") + "　結果";
+  }
+
+  let wrongListHtml = '';
+  if (wrongQs.length > 0) {
+    const items = wrongQs.map(q => {
+      const labels = "ABCDE";
+      const selIdx = state.answers[q.id + "_selected"];
+      return `<div class="wrong-item" data-qid="${q.id}">
+        <div class="wrong-item-q">${q.text.substring(0, 60)}…</div>
+        <div class="wrong-item-a">あなたの回答: ${labels[selIdx]} → 正答: ${labels[q.answer]}</div>
+      </div>`;
+    }).join('');
+    wrongListHtml = `<div class="wrong-list"><h3>間違えた問題（${wrongQs.length}問）</h3>${items}</div>`;
+  }
+
+  const resultsBody = document.getElementById('results-body');
+  resultsBody.innerHTML = `
+    <div class="results-header fade-in">
+      <h2>${titleText}</h2>
+      <div class="results-score">${pct}<span>%</span></div>
+      <div class="results-sub">${total}問中 ${correctCount}問正解</div>
+      <div class="results-actions">
+        <button class="home-btn" id="res-home">ホームに戻る</button>
+        ${wrongQs.length > 0 && currentChapter ? `<button class="home-btn" id="res-review">間違えた問題を復習</button>` : ''}
+      </div>
+    </div>
+    ${wrongListHtml}
+  `;
+
+  document.getElementById('res-home').addEventListener('click', () => renderHome());
+  const revBtn = document.getElementById('res-review');
+  if (revBtn && currentChapter) {
+    revBtn.addEventListener('click', () => {
+      // Reset wrong answers so they can be re-attempted
+      wrongQs.forEach(q => {
+        delete state.answers[q.id];
+        delete state.answers[q.id + "_selected"];
+      });
+      saveState();
+      startChapter(currentChapter.id, "review");
+    });
+  }
+
+  // Click wrong items to jump
+  resultsBody.querySelectorAll('.wrong-item').forEach(el => {
+    el.addEventListener('click', () => {
+      const qid = el.dataset.qid;
+      const idx = quizQuestions.findIndex(q => q.id === qid);
+      if (idx >= 0) {
+        currentIndex = idx;
+        renderQuiz();
+        showScreen('quiz');
+      }
+    });
+  });
+
+  showScreen('results');
+}
+
+// ──────────────────────────────────────────
+// INIT
+// ──────────────────────────────────────────
+renderHome();
+</script>
+</body>
+</html>
