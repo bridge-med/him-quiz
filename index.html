@@ -131,6 +131,7 @@ function shuffle(arr){var a=arr.slice();for(var i=a.length-1;i>0;i--){var j=Math
 function getTitle(){
   if(state.mode==="chapter"){var ch=CH.find(function(c){return c.id===state.chId;});return ch?ch.name:"";}
   if(state.mode==="random") return "\u5168\u7ae0\u30e9\u30f3\u30c0\u30e0";
+  if(state.mode==="exam") return "\u6a21\u64ec\u8a66\u9a13\uff08"+state.questions.length+"\u554f / "+state.examTime+"\u5206\uff09";
   if(state.mode==="wrong") return "\u9593\u9055\u3048\u305f\u554f\u984c\u306e\u5fa9\u7fd2";
   if(state.mode==="bookmark") return "\u30d6\u30c3\u30af\u30de\u30fc\u30af";
   return "";
@@ -147,6 +148,7 @@ function renderHome(){
   h+='<div class="stats-bar"><span>\u7dcf\u554f\u984c\u6570: '+tq+'</span><span>\u6b63\u89e3: '+tc+'</span><span>\u6b63\u7b54\u7387: '+acc+'%</span></div>';
   h+='<div class="top-actions">';
   h+='<button class="btn btn-primary" onclick="startRandom()">\u5168\u7ae0\u30e9\u30f3\u30c0\u30e0</button>';
+  h+='<button class="btn btn-accent" onclick="startExam()">\u6a21\u64ec\u8a66\u9a13\uff0850\u554f / 60\u5206\uff09</button>';
   h+='<button class="btn btn-secondary" onclick="startWrongReview()">\u9593\u9055\u3048\u305f\u554f\u984c\u3092\u5fa9\u7fd2';
   if(wrongCount>0) h+='<span class="badge">'+wrongCount+'</span>';
   h+='</button>';
@@ -209,6 +211,41 @@ function startRandom(){
     state.questions=shuffle(pool).slice(0,count);state.qIdx=0;state.mode="random";state.answers={};state.chId=null;renderQuiz();
   });
 }
+// --- 模擬試験モード ---
+var examTimer=null;
+var examStartTime=null;
+var examTimeLimit=60; // 分
+
+function startExam(){
+  var pool=[];CH.forEach(function(ch){ch.questions.forEach(function(q,i){pool.push({chId:ch.id,qIdx:i,data:q});});});
+  state.questions=shuffle(pool).slice(0,50);state.qIdx=0;state.mode="exam";state.answers={};state.chId=null;
+  state.examTime=examTimeLimit;
+  examStartTime=Date.now();
+  if(examTimer)clearInterval(examTimer);
+  examTimer=setInterval(updateExamTimer,1000);
+  renderQuiz();
+}
+
+function updateExamTimer(){
+  if(state.mode!=="exam"){clearInterval(examTimer);return;}
+  var elapsed=Math.floor((Date.now()-examStartTime)/1000);
+  var remaining=examTimeLimit*60-elapsed;
+  if(remaining<=0){
+    clearInterval(examTimer);
+    alert("時間切れです。結果を表示します。");
+    renderResults();
+    return;
+  }
+  var min=Math.floor(remaining/60);var sec=remaining%60;
+  var timerEl=document.getElementById("exam-timer");
+  if(timerEl){
+    timerEl.textContent=min+"分"+("0"+sec).slice(-2)+"秒";
+    if(remaining<300)timerEl.style.color="var(--red)";
+  }
+}
+
+function stopExamTimer(){if(examTimer){clearInterval(examTimer);examTimer=null;}}
+
 function startWrongReview(){
   var wrong=getWrong();if(!wrong.length){alert("\u9593\u9055\u3048\u305f\u554f\u984c\u306f\u3042\u308a\u307e\u305b\u3093\u3002");return;}
   var qs=[];wrong.forEach(function(w){var ch=CH.find(function(c){return c.id===w.chId;});if(ch&&ch.questions[w.qIdx])qs.push({chId:w.chId,qIdx:w.qIdx,data:ch.questions[w.qIdx]});});
@@ -229,7 +266,9 @@ function renderQuiz(){
   var bm=getBookmarks();var isBookmarked=bm.some(function(b){return b.chId===qObj.chId&&b.qIdx===qObj.qIdx;});
   var pct=Math.round((state.qIdx+1)/total*100);
   var h='<div class="quiz-header"><button class="back-btn" onclick="goHome()">\u2190</button>';
-  h+='<span class="quiz-title">'+title+'</span><span class="q-counter">'+(state.qIdx+1)+' / '+total+'</span></div>';
+  h+='<span class="quiz-title">'+title+'</span>';
+  if(state.mode==="exam")h+='<span id="exam-timer" style="font-size:.8rem;font-weight:700;color:var(--red);margin-right:8px">'+state.examTime+':00</span>';
+  h+='<span class="q-counter">'+(state.qIdx+1)+' / '+total+'</span></div>';
   h+='<div class="progress-bar-wrap"><div class="progress-track"><div class="progress-fill" style="width:'+pct+'%"></div></div></div>';
   h+='<div class="q-card fade-in'+(answered?(isCorrect?' correct':' wrong'):'')+'">';
   h+='<button class="bookmark-btn'+(isBookmarked?' active':'')+'" onclick="toggleBookmark('+qObj.chId+','+qObj.qIdx+')">'+(isBookmarked?'\u2605':'\u2606')+'</button>';
@@ -279,15 +318,47 @@ function goNext(){
 
 function renderResults(){
   state.screen="results";bnav.classList.add("hidden");
-  var correct=0,total=state.questions.length,wrongList=[];
+  stopExamTimer();
+  var correct=0,total=state.questions.length,wrongList=[],unanswered=0;
   state.questions.forEach(function(qObj,i){
     var qKey=qObj.chId+"_"+qObj.qIdx;var ans=state.answers[qKey];
-    if(ans===qObj.data.a)correct++;
+    if(ans===undefined){unanswered++;wrongList.push({idx:i,q:qObj.data.q,yourAns:"未解答",correctAns:qObj.data.c[qObj.data.a]});}
+    else if(ans===qObj.data.a)correct++;
     else wrongList.push({idx:i,q:qObj.data.q,yourAns:qObj.data.c[ans]||"",correctAns:qObj.data.c[qObj.data.a]});
   });
   var pct=Math.round(correct/total*100);
-  var h='<div class="quiz-header"><button class="back-btn" onclick="goHome()">\u2190</button><span class="quiz-title">\u7d50\u679c</span></div>';
-  h+='<div class="result-card"><div class="result-score">'+correct+' / '+total+'</div><div class="result-label">\u6b63\u7b54\u7387 '+pct+'%</div></div>';
+  var isExam=state.mode==="exam";
+  var h='<div class="quiz-header"><button class="back-btn" onclick="goHome()">\u2190</button><span class="quiz-title">'+(isExam?'\u6a21\u64ec\u8a66\u9a13 \u7d50\u679c':'\u7d50\u679c')+'</span></div>';
+  h+='<div class="result-card"><div class="result-score">'+correct+' / '+total+'</div><div class="result-label">\u6b63\u7b54\u7387 '+pct+'%</div>';
+  if(isExam){
+    var elapsed=examStartTime?Math.floor((Date.now()-examStartTime)/1000):0;
+    var eMin=Math.floor(elapsed/60);var eSec=elapsed%60;
+    h+='<div style="margin-top:8px;font-size:.85rem;color:var(--mid)">\u6240\u8981\u6642\u9593: '+eMin+'\u5206'+("0"+eSec).slice(-2)+'\u79d2</div>';
+    if(pct>=60)h+='<div style="margin-top:12px;padding:10px;background:var(--green);color:#fff;border-radius:var(--radius);font-weight:700;font-size:1.1rem">\u2713 \u5408\u683c\u30e9\u30a4\u30f3\u7a81\u7834\uff01\uff0860%\u4ee5\u4e0a\uff09</div>';
+    else h+='<div style="margin-top:12px;padding:10px;background:var(--red);color:#fff;border-radius:var(--radius);font-weight:700;font-size:1.1rem">\u25b2 \u5408\u683c\u30e9\u30a4\u30f3\u672a\u5230\u9054\uff0860%\u672a\u6e80\uff09</div>';
+    if(unanswered>0)h+='<div style="margin-top:8px;font-size:.82rem;color:var(--mid)">\u203b \u672a\u89e3\u7b54: '+unanswered+'\u554f</div>';
+    // 章別正答率
+    h+='<div style="margin-top:16px;text-align:left"><div style="font-weight:700;margin-bottom:8px;font-size:.85rem">\u7ae0\u5225\u6b63\u7b54\u7387</div>';
+    var chStats={};
+    state.questions.forEach(function(qObj){
+      if(!chStats[qObj.chId])chStats[qObj.chId]={correct:0,total:0,name:""};
+      chStats[qObj.chId].total++;
+      var ch=CH.find(function(c){return c.id===qObj.chId;});
+      if(ch)chStats[qObj.chId].name=ch.name;
+      var qKey=qObj.chId+"_"+qObj.qIdx;var ans=state.answers[qKey];
+      if(ans===qObj.data.a)chStats[qObj.chId].correct++;
+    });
+    for(var cid in chStats){
+      if(!chStats.hasOwnProperty(cid))continue;
+      var cs=chStats[cid];var cp=cs.total>0?Math.round(cs.correct/cs.total*100):0;
+      var cColor=cp>=60?"var(--green)":"var(--red)";
+      h+='<div style="display:flex;justify-content:space-between;padding:4px 0;font-size:.82rem;border-bottom:1px solid var(--faint)">';
+      h+='<span>\u7b2c'+cid+'\u7ae0 '+cs.name+'</span>';
+      h+='<span style="font-weight:700;color:'+cColor+'">'+cs.correct+'/'+cs.total+' ('+cp+'%)</span></div>';
+    }
+    h+='</div>';
+  }
+  h+='</div>';
   if(wrongList.length>0){
     h+='<div class="result-card" style="text-align:left"><div style="font-weight:700;margin-bottom:12px">\u9593\u9055\u3048\u305f\u554f\u984c ('+wrongList.length+'\u554f)</div>';
     wrongList.forEach(function(w){
@@ -300,7 +371,7 @@ function renderResults(){
   app.innerHTML=h;
 }
 
-function goHome(){renderHome();}
+function goHome(){stopExamTimer();renderHome();}
 function resetAll(){
   if(!confirm("\u3059\u3079\u3066\u306e\u5b66\u7fd2\u30c7\u30fc\u30bf\u3092\u30ea\u30bb\u30c3\u30c8\u3057\u307e\u3059\u304b\uff1f"))return;
   var keys=[];for(var i=0;i<LS.length;i++){var k=LS.key(i);if(k&&k.indexOf("himq_")===0)keys.push(k);}
