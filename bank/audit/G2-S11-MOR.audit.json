@@ -1,0 +1,270 @@
+{
+ "verdicts": [
+  {
+   "key": "G2-S11-MOR-01",
+   "verdict": "fix",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": false,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:instruction 4.4本文（主要病態の定義・医療資源・診断なし→主要症状）で key・各注記を確認。ソルバー一致。",
+   "detail": "sources の locator「4.4 疾病（罹病）統計」は原典の見出し（本文6836行・目次とも「4.4 疾病統計」）と不一致のため「4.4 疾病統計」に修正。内容・key は変更なし。",
+   "fixed": {
+    "key": "G2-S11-MOR-01",
+    "subject": "S11",
+    "subtopic": "疾病統計と主要病態の選択",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "ICD-10（2013年版）第2巻に示された疾病データの単一病態分析において、「主要病態」の定義として正しいものはどれか。",
+    "choices": [
+     "保健ケアのエピソードの最初（入院時）に診断された病態",
+     "エピソード中に記録された病態のうち、生命予後に最も影響する病態",
+     "主として治療又は検査の必要性にもとづく、エピソードの最後に診断された病態",
+     "診断の有無にかかわらず、患者が受診時に最も強く訴えた症状",
+     "過去のエピソードを含め、その患者が最も長期間治療を受けてきた病態"
+    ],
+    "answer": 2,
+    "explanation": {
+     "correct": "第2巻4.4は、主要病態を「主として、患者の治療又は検査に対する必要性にもとづく、保健ケアのエピソードの最後に診断された病態」と定義している。該当する病態が多数ある場合は、もっとも医療資源が使われた病態を選ぶ。",
+     "choiceNotes": [
+      "定義の基準時点はエピソードの「最後」であり、入院時の診断ではない。",
+      "選択の基準は治療又は検査の必要性（多数ある場合は医療資源の投入量）であり、致命性ではない。",
+      null,
+      "主要症状を主要病態とするのは、診断がなされなかった場合に限られる。",
+      "現在のエピソードに関連しない以前のエピソードの病態は、その他の病態としても記載してはいけないとされ、主要病態の基準にもならない。"
+     ],
+     "point": "主要病態＝エピソードの最後に診断された、治療・検査の主な理由となった病態。複数なら医療資源最多。"
+    },
+    "sources": [
+     {
+      "ref": "icd:instruction",
+      "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+      "locator": "4.4 疾病統計",
+      "quote": "主要病態とは、主として、患者の治療又は検査に対する必要性にもとづく、保健ケアのエピソードの最後に診断された病態であると定義される。"
+     },
+     {
+      "ref": "icd:instruction",
+      "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+      "locator": "4.4 疾病統計",
+      "quote": "もし診断がなされなかった場合は、主要症状又は異常な所見もしくは問題を主要病態として選択すべきである。"
+     }
+    ],
+    "asOf": "ICD-10（2013年版）準拠"
+   }
+  },
+  {
+   "key": "G2-S11-MOR-02",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:instruction 4.4.2（疑診→確診、Z03.-は否定された疑診）と4.4.1「不明確な診断又は症状」で確認。選択肢2のみ誤り。ソルバー一致。"
+  },
+  {
+   "key": "G2-S11-MOR-03",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:instruction 4.4.2 例5・例6（否定→Z03.1/Z03.4）と naiyou21 Z03.0、icd.mjs で全コード名称確認。ソルバー一致。"
+  },
+  {
+   "key": "G2-S11-MOR-04",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:instruction 4.4.3 MB2（他の記載でケア対象不明→最初に記載）で確認。他選択肢の注記も原文と整合。ソルバー一致。"
+  },
+  {
+   "key": "G2-S11-MOR-05",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:instruction 4.4.3 MB4（例15〜17）と kihon2013 K70.3。K76.9/K74.6/K70.9/E11.9 の名称を icd.mjs で確認。ソルバー一致。"
+  },
+  {
+   "key": "G2-S11-MOR-06",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:instruction 4.4.3 MB5（例19：症状を選択）。naiyou18 R10.1 包含「上腹部＜心窩部＞痛」・除外K30、R10.4名称確認。ソルバー一致。"
+  },
+  {
+   "key": "G2-S11-MOR-07",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:instruction 4.4.2「急性及び慢性の病態のコーディング」例20。naiyou10 J35.0 除外（急性 J03.-）、J03.9包含を確認。ソルバー一致。"
+  },
+  {
+   "key": "G2-S11-MOR-08",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:instruction 4.4.3 冒頭（情報が得られない場合に適用）、MB1〜MB4本文と照合。選択肢2（最後に記載）のみ誤り。ソルバー一致。Q04と同一事実（MB2初筆）を扱うが形式が異なるため可。"
+  },
+  {
+   "key": "G2-S11-MOR-09",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "症例1：15年来の高血圧＝長期間続いた病態、治療（胆のう摘出術）・専門科目（外科）に関連するより重要な病態がその他欄→icd:instruction 4.4.3 MB1。ソルバー一致。"
+  },
+  {
+   "key": "G2-S11-MOR-10",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "MB1再選択後、4.4.2 複合分類項目の規定と naiyou11 K80.0、K81 除外「胆石症を伴うもの（K80.-）」で確認。K80.1/K80.2/K81.0/I10 名称確認。ソルバー一致。"
+  },
+  {
+   "key": "G2-S11-MOR-11",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "症例2：呼吸困難（第XVIII章 R06.0）→ icd:instruction 4.4.3 MB3 で診断病態へ。naiyou10 J13 名称・除外（J15.3−J15.4）確認。ソルバー一致。"
+  },
+  {
+   "key": "G2-S11-MOR-12",
+   "verdict": "fix",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": false,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:instruction 4.4（その他の病態の定義・以前のエピソードの病態は記載しない）、4.4.3冒頭で確認。選択肢2のみ誤り。ソルバー一致。",
+   "detail": "sources の locator「4.4 疾病（罹病）統計」は原典の見出し（本文6836行・目次とも「4.4 疾病統計」）と不一致のため「4.4 疾病統計」に修正。内容・key は変更なし。",
+   "fixed": {
+    "key": "G2-S11-MOR-12",
+    "subject": "S11",
+    "subtopic": "疾病統計と主要病態の選択",
+    "format": "case",
+    "difficulty": "advanced",
+    "polarity": "negative",
+    "question": "次の退院時要約（架空症例）を読み、この症例の病態の記録・選択に関する記述として、誤っているものはどれか。",
+    "choices": [
+     "2型糖尿病は、エピソードの間に並存し、血糖管理の方法の変更を要して患者管理に影響したので、「その他の病態」として記録してよい",
+     "15年前に治療した胃潰瘍は、現在のエピソードに関連しない以前のエピソードの病態なので、「その他の病態」として記載しない",
+     "主要病態の再選択は、主治医から明確にできる情報が得られるかどうかにかかわらず、コーダーの判断で先に行ってよい",
+     "主要病態として記載された呼吸困難は肺炎の症状であり、ケアは肺炎に対してなされているので、ルールMB3の対象となる"
+    ],
+    "answer": 2,
+    "explanation": {
+     "correct": "責任ある保健ケア実施者が主要病態を示すのが原則で、再選択ルールは、実施者が正しい手順に従わなかったことが判り、かつ実施者から明確にできる情報を得ることが不可能な場合に適用される。本例は主治医に確認を依頼したうえで回答が得られなかったため再選択を行うのであり、確認の可否にかかわらず先に再選択してよいわけではない。",
+     "choiceNotes": [
+      "その他の病態は、エピソードの間に並存し、又は悪化して患者管理に影響を与えた病態と定義される。本例の2型糖尿病はこれに当たる。",
+      "現在のエピソードに関連しない以前のエピソードに関連する病態は記載してはいけない。",
+      null,
+      "症状が他に記載された診断病態の症状で、ケアが後者になされた場合はMB3により診断病態を再選択する。"
+     ],
+     "point": "その他の病態＝並存・悪化して患者管理に影響。無関係な既往は記載しない。再選択は実施者に確認できないときの手段。"
+    },
+    "sources": [
+     {
+      "ref": "icd:instruction",
+      "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+      "locator": "4.4 疾病統計",
+      "quote": "その他の病態とは、保健ケアのエピソードの間に並存し、又はその間に悪化して、患者管理に影響を与えた病態と定義される。"
+     },
+     {
+      "ref": "icd:instruction",
+      "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+      "locator": "4.4 疾病統計",
+      "quote": "現在のエピソードに関連しない以前のエピソードに関連する病態は、記載してはいけない。"
+     },
+     {
+      "ref": "icd:instruction",
+      "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+      "locator": "4.4.3",
+      "quote": "保健ケアの実施者から、明確にできる情報を得ることが不可能な場合は、下記のルールの一つが適用され、「主要病態」が選択される。"
+     }
+    ],
+    "asOf": "ICD-10（2013年版）準拠",
+    "caseId": "case-g2-s11-mor-02"
+   }
+  }
+ ]
+}

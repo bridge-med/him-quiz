@@ -1,0 +1,88 @@
+{
+ "answers": [
+  {
+   "key": "#0",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "介護保険法3条1項・市町村、介護認定審査会は市町村(15条)、介護保険審査会は都道府県(184条)"
+  },
+  {
+   "key": "#1",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "法10条1号 40歳に達したとき。2号は至った日から、11条ただし書は同日から"
+  },
+  {
+   "key": "#2",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "法7条3項2号・令2条13号 脳血管疾患。がんは回復の見込みなしに限る"
+  },
+  {
+   "key": "#3",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "令2条 特定疾病16種に多発性硬化症なし"
+  },
+  {
+   "key": "#4",
+   "answer": 3,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "特定疾病の考え方(加齢との関係)"
+  },
+  {
+   "key": "#5",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "要介護認定基準は全国一律"
+  },
+  {
+   "key": "#6",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "法27条8項 申請日にさかのぼって効力"
+  },
+  {
+   "key": "#7",
+   "answer": 3,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "法28条3項・9項 理由のやんだ日から1月以内、満了日翌日にさかのぼる"
+  },
+  {
+   "key": "#8",
+   "answer": 1,
+   "confidence": "medium",
+   "ambiguous": false,
+   "note": "居宅介護サービス計画費は全額給付(法46条)。第2号は1割、原則1割、2割27年8月・3割30年8月、3割は百分の七十"
+  },
+  {
+   "key": "#9",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "法123条1項2号 施設分17.5% → 140億円"
+  },
+  {
+   "key": "#10",
+   "answer": 3,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "第2号は医療保険者が医療保険料と一括徴収、市町村は徴収しない。負担率は1/2基準(125条2項)"
+  },
+  {
+   "key": "#11",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "概要資料: 施行は原則令和9年4月1日・更新制廃止、夜間対応型は廃止統合、法定研修は見直し"
+  }
+ ]
+}

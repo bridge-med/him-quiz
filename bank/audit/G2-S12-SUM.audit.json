@@ -1,0 +1,172 @@
+{
+ "verdicts": [
+  {
+   "key": "G2-S12-SUM-01",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "S72.0/S72.1/S72.2/T93.1/S32.4 exist & titles match (icd.mjs). instruction 4.4.2 疾病の外因のコーディング(L7148-): 主要病態=病態の性質. Solver agrees."
+  },
+  {
+   "key": "G2-S12-SUM-02",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "W10 包含 階段からの転落 (naiyou20 L1647); W01/W06/W18/X59 titles verified. 4桁目=発生場所 consistent with kihon2013 W10.0 家(庭). XX章=任意的追加 (instruction 4.4.2). Solver agrees."
+  },
+  {
+   "key": "G2-S12-SUM-03",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "Solver chose J95.8 (from index memory). Key J18.9 confirmed: instruction 4.4.2 処置後病態及び合併症のコーディング(L7262-7269) explicitly names 肺炎 as coded in the usual way with optional Y83-Y84; J95 (naiyou10 L1205-1226) has no pneumonia inclusion; T81.4/T81.8 and Y83.1 correctly excluded. No cached index contradicts. Pass."
+  },
+  {
+   "key": "G2-S12-SUM-04",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "Z43 包含 閉鎖, 除外 Z93.- / 外部ストマの合併症 K91.4 (naiyou21); Z93 除外 Z43.- ; Z43.2 回腸瘻. Solver agrees."
+  },
+  {
+   "key": "G2-S12-SUM-05",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "T81.4 包含 処置後の創傷膿瘍, 除外 プロステーシス等 (naiyou19 L3863-); T81.3 離開, T81.0 出血; instruction 4.4.2 T80-T88. Solver agrees."
+  },
+  {
+   "key": "G2-S12-SUM-06",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "instruction 4.4 (L6856-6860) その他の病態の定義と『以前のエピソードに関連する病態は記載してはいけない』. Case supports each choice. Solver agrees."
+  },
+  {
+   "key": "G2-S12-SUM-07",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "naiyou04 E10-E14 共通4桁 .2† 腎合併症 incl 糖尿病性腎症(N08.3*), .3† 眼, .7 多発, .9 なし; E11.2† exists with †. Solver agrees."
+  },
+  {
+   "key": "G2-S12-SUM-08",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "N08.3* (naiyou14), N08.4* includes amyloidosis E85.-†; N18.9/N05.9/I12.0 are not asterisk codes; instruction 3.1.3 星印単独使用禁止. Solver agrees."
+  },
+  {
+   "key": "G2-S12-SUM-09",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "instruction 4.4.2 剣印星印: 両者を主要病態に; 例12 (糖尿病と白内障が主要病態の下に記録されていなければ連鎖しない); H25.9 老人性白内障,詳細不明; H28.0* exists. Solver agrees."
+  },
+  {
+   "key": "G2-S12-SUM-10",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "naiyou19 T36-T50 除外 → 有害作用の性質で分類 (L27.-); L27.0 全身/L27.1 限局; L27 除外 じんま疹 L50.-, 接触皮膚炎 L23-L25 (naiyou12). Solver agrees."
+  },
+  {
+   "key": "G2-S12-SUM-11",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "naiyou20 X40-X49 包含 過量・過誤投与, 除外 適正投与の有害作用(Y40-Y59); Y40.0 ペニシリン系, Y40.1 セファロスポリン系, Y40.9, Y57.9 verified. Solver agrees."
+  },
+  {
+   "key": "G2-S12-SUM-12",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "instruction 4.4.2 例15 (外因 Y コードは任意的追加); T88.7 除外 明示された有害作用 (naiyou19 L4156); T36-T50 包含 過量投与/誤投与. Overlaps #9/#10 but tests the synthesis; acceptable. Solver agrees."
+  }
+ ]
+}

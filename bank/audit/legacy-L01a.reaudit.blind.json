@@ -1,0 +1,13 @@
+{"answers":[
+{"key":"lg-01-01","answer":0,"confidence":"high","ambiguous":false,"note":"EBM = evidence + clinical expertise + patient values"},
+{"key":"lg-01-02","answer":0,"confidence":"high","ambiguous":false,"note":"structure/process/outcome"},
+{"key":"lg-01-03","answer":0,"confidence":"medium","ambiguous":false,"note":"incident = no harm reached; definitions vary by body"},
+{"key":"lg-01-04","answer":0,"confidence":"high","ambiguous":false,"note":"emergency exception exists"},
+{"key":"lg-01-05","answer":0,"confidence":"high","ambiguous":false,"note":"MHLW team iryou definition"},
+{"key":"lg-01-06","answer":3,"confidence":"high","ambiguous":false,"note":"Lisbon has no free-care right"},
+{"key":"lg-01-08","answer":0,"confidence":"high","ambiguous":false,"note":"standard plan on time axis"},
+{"key":"lg-01-10","answer":0,"confidence":"medium","ambiguous":false,"note":"DPC coding text: one per admission"},
+{"key":"lg-01-11","answer":3,"confidence":"high","ambiguous":false,"note":"4 functions: 高度急性期/急性期/回復期/慢性期"},
+{"key":"lg-01-14","answer":0,"confidence":"medium","ambiguous":false,"note":"400床以上 in 規則"},
+{"key":"lg-01-15","answer":0,"confidence":"high","ambiguous":false,"note":"supports kakaritsuke, 紹介患者"}
+]}

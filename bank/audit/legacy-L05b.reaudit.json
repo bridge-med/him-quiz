@@ -1,0 +1,140 @@
+{
+ "verdicts": [
+  {
+   "key": "lg-05-16",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "x-legacy-L05b:msd-asthma L19「部分的または完全に可逆的な気管支収縮…気道のびまん性炎症疾患」; x-legacy-L04a:msd-ja-copd L35 肺気腫=肺実質破壊・弾性収縮力喪失。B（不可逆）・D（胸膜）は喘息の定義と矛盾。blind一致。"
+  },
+  {
+   "key": "lg-05-18",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "x-legacy-L05b:msd-crc L30「全症例の半数以上が直腸およびS状結腸で発生」。blind一致。"
+  },
+  {
+   "key": "lg-05-20",
+   "verdict": "pass",
+   "blindAnswer": 1,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "x-legacy-L05b:msd-dvt L19「DVTは肺塞栓症の第1の原因」、L31 下肢DVT→PE、L44/L77 不動状態が危険因子。blind一致。"
+  },
+  {
+   "key": "lg-05-21",
+   "verdict": "pass",
+   "blindAnswer": 2,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "msd-panc L39/L42 CA19-9による経過観察・nonproducer・スクリーニング不適; msd-hcc L19 AFP; msd-pca L19 PSA; msd-crc L62/L155 CEA（初期評価・治療後モニタリング）。blind一致。"
+  },
+  {
+   "key": "lg-05-22",
+   "verdict": "pass",
+   "blindAnswer": 1,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "msd-bph L20 下部尿路閉塞症状（尿勢低下・頻尿・夜間頻尿・残尿…）; L126 血尿を生じることがある→「血尿のみ」は誤り。blind一致。"
+  },
+  {
+   "key": "lg-05-23",
+   "verdict": "pass",
+   "blindAnswer": 1,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "msd-aml L80「骨髄検査（穿刺および針生検）がルーチンで実施」, L74 骨髄芽球20％以上。急性白血病一般への一般化はAMLの記載に基づく（ALLも骨髄検査で診断する標準事実）。blind一致。"
+  },
+  {
+   "key": "lg-05-24",
+   "verdict": "pass",
+   "blindAnswer": 1,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "msd-lymph L20-22「不均一な一群の腫瘍…大別される：ホジキンリンパ腫／非ホジキンリンパ腫」。blind一致。"
+  },
+  {
+   "key": "lg-05-25",
+   "verdict": "provisional",
+   "blindAnswer": 1,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": false,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "x-legacy-L05b:tyojyu-osteo-shindan L42 DXA法, L48-50 診断基準（YAM70%以下／70〜80%＋脆弱性骨折）。キーは確実、blind一致。",
+   "detail": "キー（骨密度）は確実だが、解説・pointの診断基準は健康長寿ネット（2019年更新）の簡略版で、原発性骨粗鬆症の診断基準（2012年度改訂版）の『椎体骨折または大腿骨近位部骨折があれば骨密度によらず骨粗鬆症』の区分や『−2.5SD以下』を欠き、point が「＝」で等式的に記述しているため学習者が不完全な基準を覚える恐れ。また『YAM』の略語は引用元テキストに無い（『若年成人平均値』のみ）。一次資料（日本骨代謝学会等の診断基準）で未確認。"
+  },
+  {
+   "key": "lg-05-29",
+   "verdict": "pass",
+   "blindAnswer": 1,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "msd-pu L155「最も一般的な発生部位は仙骨部で，次いで踵部」, L86 好発部位列挙。blind一致。"
+  }
+ ]
+}

@@ -1,0 +1,200 @@
+{
+ "verdicts": [
+  {
+   "key": "lg-08-00",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:医師法 24条2項（版施行日2026-05-21）五年・管理者/医師の保存主体を確認。law:療担規則 9条 帳簿等3年・診療録5年、law:医療法施行規則 20条10号 諸記録過去2年を確認（20条内の号であることを確認）。"
+  },
+  {
+   "key": "lg-08-01",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "info:mhlw-ebunsho-shiko-tsuchi 第二2(3)「次の三条件」①見読性②真正性③保存性、別添GL本文の真正性・見読性及び保存性を確認。info:mhlw-anzen-gl7-gaisetsu 4.2 で機密性・完全性・可用性が情報セキュリティの要素であることを確認。"
+  },
+  {
+   "key": "lg-08-03",
+   "verdict": "pass",
+   "blindAnswer": 3,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "him:jhim-discharge-summary-guidance-2019 ＜退院サマリーの構造＞ 2)退院時診断・3)アレルギー・7)入院経過・11)退院時方針＝必須、4)デバイス情報・8)手術・処置情報＝推奨（該当時）を確認。解答一意。"
+  },
+  {
+   "key": "lg-08-04",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:r08-kihon-shisetsukijun-tsuchi 第4 1(5) 退院2,000名ごと専任常勤（うち1名専従）、2(2) 専任1名以上、1(7) 電子的な一覧表（電子カルテ導入要件なし）、1(9) 診療情報の提供、病床数要件なしを本文で確認。"
+  },
+  {
+   "key": "lg-08-06",
+   "verdict": "pass",
+   "blindAnswer": 1,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "him:jhim-gyomu-shishin-2026 5-13(2) バリアンス＝個々の症例における標準的な経過（達成目標）からのずれ、5-13(3) 適用率・バリアンス発生率、量的点検でパス適用の確認を確認。"
+  },
+  {
+   "key": "lg-08-07",
+   "verdict": "provisional",
+   "blindAnswer": 1,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": false,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "info:ppc-iryoukaigo-guidance（令和8年4月一部改正）本文で「組織的、人的、物理的及び技術的安全管理措置等を講じなければならない」を確認。キー・選択肢注記・他の2出典（GL7 4.2のCIA、施行通知の三条件）は正しい。",
+   "detail": "sources[0].locator「Ⅳ 10(1)① 安全管理措置」が誤り。キャッシュ本文では目次・本文とも「Ⅳ 7．安全管理措置、従業者の監督及び委託先の監督」の（１）①であり、Ⅳ10は「外国にある第三者への提供の制限」。locatorを「Ⅳ 7(1)①」に直せば合格。"
+  },
+  {
+   "key": "lg-08-08",
+   "verdict": "pass",
+   "blindAnswer": 2,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:dpc-chosa-setsumei-2026 4 提出データ一覧: 様式1＝患者属性や病態等の情報、様式4＝医科保険診療以外、Hファイル＝日ごとの患者情報（評価票各項目の点数）、入院EF統合ファイル＝医科点数表に基づく出来高情報。様式1(2)の主傷病名・入院の目的・手術術式等を確認。"
+  },
+  {
+   "key": "lg-08-09",
+   "verdict": "pass",
+   "blindAnswer": 3,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "info:jami-ssmix2 Ver.1.2j「厚生労働省標準規格（HS026）として認定」、info:helics-hs026-ssmix2-report 概要「標準化された診療データ利用の仕組みであるSS-MIX2ストレージ」「SS-MIX標準化ストレージ仕様書をベース」、HS011=DICOM、HS038=診療情報提供書HL7FHIR記述仕様を確認。"
+  },
+  {
+   "key": "lg-08-10",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "x-legacy-L08:mhlw-grants-hl7-allergy 2.1) HL7＝医療情報交換のための標準規約、名称はISO-OSI第7層アプリケーション層に由来、患者管理・オーダ等の情報交換を確認。DICOM（HS011）・SS-MIX2の区別も確認。"
+  },
+  {
+   "key": "lg-08-11",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:個人情報の保護に関する法律 33条2項（遅滞なく開示、ただし書の不開示事由）、37条3項（代理人による請求）を確認。info:mhlw-shinryojoho-teikyo-shishin 7 原則として応じる、8 拒む場合は原則文書で理由を示すを確認。"
+  },
+  {
+   "key": "lg-08-13",
+   "verdict": "pass",
+   "blindAnswer": 1,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "x-legacy-L08:ncd-about 2010年に専門医制度を支える手術症例データベースとして外科系10学会が参画し設立、x-legacy-L08:ncd-business 医療の質向上に資する分析を確認。law:がん登録等の推進に関する法律 5条 厚生労働大臣がデータベースを整備を確認。"
+  },
+  {
+   "key": "lg-08-14",
+   "verdict": "pass",
+   "blindAnswer": 1,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "mgmt:quality-outcome-process-h23 1(1) アウトカム指標の例＝死亡率・回復率・再入院率・患者満足度、プロセス指標の例＝早期リハビリテーション開始率・糖尿病患者での血糖コントロールを確認。出典の分類に沿い一意。"
+  },
+  {
+   "key": "lg-08-15",
+   "verdict": "pass",
+   "blindAnswer": 1,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "info:mhlw-ebunsho-shiko-tsuchi 前文（平成11年健政発第517号通知で一定の条件の下に電子保存が既に認められていた）、第二1(1)「民間事業者等…保存を行うことができる」、第二2(1)一 医師法第24条の診療録を確認。義務化でない・医療機関限定でないも本文どおり。"
+  }
+ ]
+}

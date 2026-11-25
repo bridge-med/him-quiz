@@ -1,0 +1,64 @@
+{
+ "verdicts": [
+  {
+   "key": "G2-S11-DTH-07",
+   "verdict": "pass",
+   "blindAnswer": 1,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:instruction 4.1.5 ルール１ (multiple sequences -> first-mentioned origin), 4.1.6 (最下欄に多数の病態→一般原則不適用), 4.1.7 ルール３推定 (J18.0 bronchopneumonia due to 脳出血 等の麻痺を起こす疾患), 例11 analogous. J18.0 exists. No Rule 3 presumption links 脳出血 to 慢性腎臓病. Blind matched; validator 0 errors."
+  },
+  {
+   "key": "G2-S11-DTH-08",
+   "verdict": "pass",
+   "blindAnswer": 2,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:instruction 4.1.5 ルール２, 4.1.6 (単一病態が上欄すべてを引き起こす可能性がない→一般原則不適用), 4.2.2 A⒝ (悪性新生物はHIV病を除き何らかの疾病によると考えない). C16.9 exists. Blind matched."
+  },
+  {
+   "key": "G2-S11-DTH-09",
+   "verdict": "pass",
+   "blindAnswer": 1,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:instruction 4.1.5 ルール３; 4.1.7 ルール３推定 (肺塞栓症等の続発性病態は悪性腫瘍など消耗性疾患の明らかな結果) and list I26.0-I26.9; 4.1.9 ルールC連鎖/ルールD特異性 wording consistent with choice notes. C25.9 exists. Blind matched."
+  },
+  {
+   "key": "G2-S11-DTH-15",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:instruction 4.1.7 ルール３「他の病態の直接的な影響によると推定できる場合について」: HIV presumption limited to C46.-/C81-C96 (その他の型は推定しない) -> A false; 心不全I50.-, 食道静脈瘤I85.- (B18/K70/K73/K74/K76), 脱水←腸管感染症, 急性腎不全←尿路感染症 all verbatim in text (p.54-56). Blind matched."
+  }
+ ]
+}

@@ -62,13 +62,13 @@
     "key": "lg-06-00",
     "by": "旧版（v2・AI作成）"
    },
-   "status": "provisional",
+   "status": "verified",
    "verification": {
     "date": "2026-11-25",
     "method": [
      "独立ブラインド解答（別モデル）",
      "領域監査（統計）で修正",
-     "修正後の再監査は未実施",
+     "修正後の独立再監査（pass）",
      "引用の機械照合（一次資料キャッシュ）",
      "スキーマ・ICDコード・計算の機械検査"
     ],
@@ -76,10 +76,10 @@
      "author": "旧版（AI作成・出典なし）",
      "solver": "solve:L06（別モデル・正答を見ずに解答）",
      "auditor": "audit:L06a（統計）",
-     "reauditor": null
+     "reauditor": "reaudit:L06a"
     },
     "log": "bank/audit/legacy-L06a.audit.json#lg-06-00",
-    "notes": "naruhodo-chushin「平均値と中央値と最頻値の違い」、chirabari-shokyu「範囲」で確認。キーは正しい。"
+    "notes": "再監査: stats:naruhodo-chushin 平均値と中央値と最頻値の違い: 平均値が最も影響、中央値はそれほど影響なし、モードはまず受けない（選択肢にモードなし、合計値・範囲は代表値でない→中央値が一意）。chirabari: 範囲=最大−最小。 盲検解答=キー一致。validate 0 errors.｜naruhodo-chushin「平均値と中央値と最頻値の違い」、chirabari-shokyu「範囲」で確認。キーは正しい。"
    }
   },
   {
@@ -143,13 +143,13 @@
     "key": "lg-06-01",
     "by": "旧版（v2・AI作成）"
    },
-   "status": "provisional",
+   "status": "verified",
    "verification": {
     "date": "2026-11-25",
     "method": [
      "独立ブラインド解答（別モデル）",
      "領域監査（統計）で修正",
-     "修正後の再監査は未実施",
+     "修正後の独立再監査（pass）",
      "引用の機械照合（一次資料キャッシュ）",
      "スキーマ・ICDコード・計算の機械検査"
     ],
@@ -157,10 +157,10 @@
      "author": "旧版（AI作成・出典なし）",
      "solver": "solve:L06（別モデル・正答を見ずに解答）",
      "auditor": "audit:L06a（統計）",
-     "reauditor": null
+     "reauditor": "reaudit:L06a"
     },
     "log": "bank/audit/legacy-L06a.audit.json#lg-06-01",
-    "notes": "CDC Lesson2 Sec7で±1SD=68.3%、±2SD=95.5%、±3SD=99.7%、±1.96SD=95.0%を確認。キーは正しい。"
+    "notes": "再監査: x-legacy-L06a:cdc-poe-l2s7: ±1SD 68.3%, ±2SD 95.5%, ±3SD 99.7%; ±1.96SD=95%は統計理論上正しい。 盲検解答=キー一致。validate 0 errors.｜CDC Lesson2 Sec7で±1SD=68.3%、±2SD=95.5%、±3SD=99.7%、±1.96SD=95.0%を確認。キーは正しい。"
    }
   },
   {
@@ -224,13 +224,13 @@
     "key": "lg-06-02",
     "by": "旧版（v2・AI作成）"
    },
-   "status": "provisional",
+   "status": "verified",
    "verification": {
     "date": "2026-11-25",
     "method": [
      "独立ブラインド解答（別モデル）",
      "領域監査（統計）で修正",
-     "修正後の再監査は未実施",
+     "修正後の独立再監査（pass）",
      "引用の機械照合（一次資料キャッシュ）",
      "スキーマ・ICDコード・計算の機械検査"
     ],
@@ -238,10 +238,10 @@
      "author": "旧版（AI作成・出典なし）",
      "solver": "solve:L06（別モデル・正答を見ずに解答）",
      "auditor": "audit:L06a（統計）",
-     "reauditor": null
+     "reauditor": "reaudit:L06a"
     },
     "log": "bank/audit/legacy-L06a.audit.json#lg-06-02",
-    "notes": "naruhodo-kentei（有意水準・P値・帰無仮説の棄却）、mhlw統計用語集（棄却できない＝同じではない）で確認。キーは正しい。"
+    "notes": "再監査: stats:naruhodo-kentei 有意水準・棄却→対立仮説採択; mhlw-tokei-yougo 信頼区間「同じ、ということではない」で非棄却≠差なしを確認。統計的有意≠臨床的重要の記述も正しい。 盲検解答=キー一致。validate 0 errors.｜naruhodo-kentei（有意水準・P値・帰無仮説の棄却）、mhlw統計用語集（棄却できない＝同じではない）で確認。キーは正しい。"
    }
   },
   {
@@ -384,13 +384,13 @@
     "key": "lg-06-04",
     "by": "旧版（v2・AI作成）"
    },
-   "status": "provisional",
+   "status": "verified",
    "verification": {
     "date": "2026-11-25",
     "method": [
      "独立ブラインド解答（別モデル）",
      "領域監査（統計）で修正",
-     "修正後の再監査は未実施",
+     "修正後の独立再監査（pass）",
      "引用の機械照合（一次資料キャッシュ）",
      "スキーマ・ICDコード・計算の機械検査"
     ],
@@ -398,10 +398,10 @@
      "author": "旧版（AI作成・出典なし）",
      "solver": "solve:L06（別モデル・正答を見ずに解答）",
      "auditor": "audit:L06a（統計）",
-     "reauditor": null
+     "reauditor": "reaudit:L06a"
     },
     "log": "bank/audit/legacy-L06a.audit.json#lg-06-04",
-    "notes": "MSD「ROC曲線」「感度，特異度，適中率」で確認。キー（識別性能が高い）は正しい。"
+    "notes": "再監査: x-legacy-L06a:msd-kensa ROC曲線（l.40付近）: 面積大ほど識別良好; 感度・特異度は検査特性で集団と無関係; カットオフ移動で反対方向に変化。 盲検解答=キー一致。validate 0 errors.｜MSD「ROC曲線」「感度，特異度，適中率」で確認。キー（識別性能が高い）は正しい。"
    }
   },
   {
@@ -465,13 +465,13 @@
     "key": "lg-06-05",
     "by": "旧版（v2・AI作成）"
    },
-   "status": "provisional",
+   "status": "verified",
    "verification": {
     "date": "2026-11-25",
     "method": [
      "独立ブラインド解答（別モデル）",
      "領域監査（統計）で修正",
-     "修正後の再監査は未実施",
+     "修正後の独立再監査（pass）",
      "引用の機械照合（一次資料キャッシュ）",
      "スキーマ・ICDコード・計算の機械検査"
     ],
@@ -479,10 +479,10 @@
      "author": "旧版（AI作成・出典なし）",
      "solver": "solve:L06（別モデル・正答を見ずに解答）",
      "auditor": "audit:L06a（統計）",
-     "reauditor": null
+     "reauditor": "reaudit:L06a"
     },
     "log": "bank/audit/legacy-L06a.audit.json#lg-06-05",
-    "notes": "mhlw統計用語集（疾患オッズの比、1との比較）、Minds（症例対照研究で多用）、環境省資料（寄与リスク＝差）で確認。キーは正しい。"
+    "notes": "再監査: stats:mhlw-tokei-yougo-rr-or l.43-49: 疾患オッズの比=OR、発症率低で近似、>1で増加; minds glossary l.443-447 症例対照研究で多用; env slide 寄与リスク=差。 盲検解答=キー一致。validate 0 errors.｜mhlw統計用語集（疾患オッズの比、1との比較）、Minds（症例対照研究で多用）、環境省資料（寄与リスク＝差）で確認。キーは正しい。"
    }
   },
   {
@@ -548,13 +548,13 @@
     "key": "lg-06-06",
     "by": "旧版（v2・AI作成）"
    },
-   "status": "provisional",
+   "status": "verified",
    "verification": {
     "date": "2026-11-25",
     "method": [
      "独立ブラインド解答（別モデル）",
      "領域監査（統計）で修正",
-     "修正後の再監査は未実施",
+     "修正後の独立再監査（pass）",
      "引用の機械照合（一次資料キャッシュ）",
      "スキーマ・ICDコード・計算の機械検査"
     ],
@@ -562,10 +562,10 @@
      "author": "旧版（AI作成・出典なし）",
      "solver": "solve:L06（別モデル・正答を見ずに解答）",
      "auditor": "audit:L06a（統計）",
-     "reauditor": null
+     "reauditor": "reaudit:L06a"
     },
     "log": "bank/audit/legacy-L06a.audit.json#lg-06-06",
-    "notes": "mhlw-ev-level：JSH2014分類（Ⅰ=SR/RCTのMA、Ⅱ=RCT、Ⅲ=非ランダム化比較試験、Ⅳa=コホート、Ⅳb=症例対照・横断、Ⅴ=記述研究、Ⅵ=専門家意見）を確認。"
+    "notes": "再監査: x-legacy-L06a:mhlw-ev-level l.127-133: JSH2014 Ⅰ=SR/RCTのMA, Ⅱ=RCT, Ⅲ=非RCT（・RCTのサブ解析/後付解析）, Ⅳa=コホート/コホートMA, Ⅳb=症例対照・横断, Ⅴ=記述研究, Ⅵ=専門家意見。解説のⅢはサブ解析を省略しているが誤りではない。 盲検解答=キー一致。validate 0 errors.｜mhlw-ev-level：JSH2014分類（Ⅰ=SR/RCTのMA、Ⅱ=RCT、Ⅲ=非ランダム化比較試験、Ⅳa=コホート、Ⅳb=症例対照・横断、Ⅴ=記述研究、Ⅵ=専門家意見）を確認。"
    }
   },
   {
@@ -629,13 +629,13 @@
     "key": "lg-06-07",
     "by": "旧版（v2・AI作成）"
    },
-   "status": "provisional",
+   "status": "verified",
    "verification": {
     "date": "2026-11-25",
     "method": [
      "独立ブラインド解答（別モデル）",
      "領域監査（統計）で修正",
-     "修正後の再監査は未実施",
+     "修正後の独立再監査（pass）",
      "引用の機械照合（一次資料キャッシュ）",
      "スキーマ・ICDコード・計算の機械検査"
     ],
@@ -643,10 +643,10 @@
      "author": "旧版（AI作成・出典なし）",
      "solver": "solve:L06（別モデル・正答を見ずに解答）",
      "auditor": "audit:L06a（統計）",
-     "reauditor": null
+     "reauditor": "reaudit:L06a"
     },
     "log": "bank/audit/legacy-L06a.audit.json#lg-06-07",
-    "notes": "Minds重要用語集「NNT」「サンプルサイズ」「増分費用効果比」で確認。キーは正しい。"
+    "notes": "再監査: x-legacy-L06a:minds-glossary-2020 NNT（1人のイベント抑制に必要な治療人数、ARRの絶対値の逆数）、ICER（費用増分/効果増分）を確認。 盲検解答=キー一致。validate 0 errors.｜Minds重要用語集「NNT」「サンプルサイズ」「増分費用効果比」で確認。キーは正しい。"
    }
   },
   {
@@ -703,13 +703,13 @@
     "key": "lg-06-08",
     "by": "旧版（v2・AI作成）"
    },
-   "status": "provisional",
+   "status": "verified",
    "verification": {
     "date": "2026-11-25",
     "method": [
      "独立ブラインド解答（別モデル）",
      "領域監査（統計）で修正",
-     "修正後の再監査は未実施",
+     "修正後の独立再監査（pass）",
      "引用の機械照合（一次資料キャッシュ）",
      "スキーマ・ICDコード・計算の機械検査"
     ],
@@ -717,10 +717,10 @@
      "author": "旧版（AI作成・出典なし）",
      "solver": "solve:L06（別モデル・正答を見ずに解答）",
      "auditor": "audit:L06a（統計）",
-     "reauditor": null
+     "reauditor": "reaudit:L06a"
     },
     "log": "bank/audit/legacy-L06a.audit.json#lg-06-08",
-    "notes": "mhlw統計用語集「χ2検定」（2項目間の関連）、NIST 1.3.5.3（2標本t検定）で確認。キーは正しい。"
+    "notes": "再監査: stats:mhlw-tokei-yougo-rr-or χ２検定: 2つの質問項目間の関連; stats:nist-two-sample-t-test: 2母平均の比較はt検定。他の選択肢（ANOVA・相関係数の検定）も明確に誤り。 盲検解答=キー一致。validate 0 errors.｜mhlw統計用語集「χ2検定」（2項目間の関連）、NIST 1.3.5.3（2標本t検定）で確認。キーは正しい。"
    }
   },
   {
@@ -784,13 +784,13 @@
     "key": "lg-06-09",
     "by": "旧版（v2・AI作成）"
    },
-   "status": "provisional",
+   "status": "verified",
    "verification": {
     "date": "2026-11-25",
     "method": [
      "独立ブラインド解答（別モデル）",
      "領域監査（統計）で修正",
-     "修正後の再監査は未実施",
+     "修正後の独立再監査（pass）",
      "引用の機械照合（一次資料キャッシュ）",
      "スキーマ・ICDコード・計算の機械検査"
     ],
@@ -798,10 +798,10 @@
      "author": "旧版（AI作成・出典なし）",
      "solver": "solve:L06（別モデル・正答を見ずに解答）",
      "auditor": "audit:L06a（統計）",
-     "reauditor": null
+     "reauditor": "reaudit:L06a"
     },
     "log": "bank/audit/legacy-L06a.audit.json#lg-06-09",
-    "notes": "mhlw-edc-epi（症例対照研究の短所＝思い出しバイアス、追跡不要）、Minds（出版・実行・症例減少バイアス）で確認。"
+    "notes": "再監査: x-legacy-L06a:mhlw-edc-epi l.816 症例対照研究の思い出しバイアス、l.754「症例対照研究で問題となるような思い出しバイアス」; minds glossary 実行バイアス・症例減少バイアスの定義。 盲検解答=キー一致。validate 0 errors.｜mhlw-edc-epi（症例対照研究の短所＝思い出しバイアス、追跡不要）、Minds（出版・実行・症例減少バイアス）で確認。"
    }
   },
   {
@@ -865,13 +865,13 @@
     "key": "lg-06-10",
     "by": "旧版（v2・AI作成）"
    },
-   "status": "provisional",
+   "status": "verified",
    "verification": {
     "date": "2026-11-25",
     "method": [
      "独立ブラインド解答（別モデル）",
      "領域監査（統計）で修正",
-     "修正後の再監査は未実施",
+     "修正後の独立再監査（pass）",
      "引用の機械照合（一次資料キャッシュ）",
      "スキーマ・ICDコード・計算の機械検査"
     ],
@@ -879,10 +879,10 @@
      "author": "旧版（AI作成・出典なし）",
      "solver": "solve:L06（別モデル・正答を見ずに解答）",
      "auditor": "audit:L06a（統計）",
-     "reauditor": null
+     "reauditor": "reaudit:L06a"
     },
     "log": "bank/audit/legacy-L06a.audit.json#lg-06-10",
-    "notes": "ganjoho「Kaplan-Meier法」（実測生存率の計算法、打ち切り例の扱い）、NIST 1.3.5.3で確認。キーは正しい。"
+    "notes": "再監査: stats:ganjoho-kapuranmaiyahou: 死亡が1例ずつ起きた時点で逐次計算、打ち切り例はその時点で観察人数から除外。 盲検解答=キー一致。validate 0 errors.｜ganjoho「Kaplan-Meier法」（実測生存率の計算法、打ち切り例の扱い）、NIST 1.3.5.3で確認。キーは正しい。"
    }
   },
   {
@@ -946,13 +946,13 @@
     "key": "lg-06-11",
     "by": "旧版（v2・AI作成）"
    },
-   "status": "provisional",
+   "status": "verified",
    "verification": {
     "date": "2026-11-25",
     "method": [
      "独立ブラインド解答（別モデル）",
      "領域監査（統計）で修正",
-     "修正後の再監査は未実施",
+     "修正後の独立再監査（pass）",
      "引用の機械照合（一次資料キャッシュ）",
      "スキーマ・ICDコード・計算の機械検査"
     ],
@@ -960,10 +960,10 @@
      "author": "旧版（AI作成・出典なし）",
      "solver": "solve:L06（別モデル・正答を見ずに解答）",
      "auditor": "audit:L06a（統計）",
-     "reauditor": null
+     "reauditor": "reaudit:L06a"
     },
     "log": "bank/audit/legacy-L06a.audit.json#lg-06-11",
-    "notes": "naruhodo-hukusu「相関係数」の特徴(1)〜(4)で確認。キーは正しい。"
+    "notes": "再監査: stats:naruhodo-hukusu 相関係数 l.49-53: −1〜1、負の相関が強いと−1に近づく、0付近は相関なし。 盲検解答=キー一致。validate 0 errors.｜naruhodo-hukusu「相関係数」の特徴(1)〜(4)で確認。キーは正しい。"
    }
   },
   {
@@ -1027,13 +1027,13 @@
     "key": "lg-06-12",
     "by": "旧版（v2・AI作成）"
    },
-   "status": "provisional",
+   "status": "verified",
    "verification": {
     "date": "2026-11-25",
     "method": [
      "独立ブラインド解答（別モデル）",
      "領域監査（統計）で修正",
-     "修正後の再監査は未実施",
+     "修正後の独立再監査（pass）",
      "引用の機械照合（一次資料キャッシュ）",
      "スキーマ・ICDコード・計算の機械検査"
     ],
@@ -1041,10 +1041,10 @@
      "author": "旧版（AI作成・出典なし）",
      "solver": "solve:L06（別モデル・正答を見ずに解答）",
      "auditor": "audit:L06a（統計）",
-     "reauditor": null
+     "reauditor": "reaudit:L06a"
     },
     "log": "bank/audit/legacy-L06a.audit.json#lg-06-12",
-    "notes": "Minds重要用語集「交絡因子」で定義と制御法（ランダム化・限定・マッチング／層化・数学的モデリング）を確認。キーは正しい。"
+    "notes": "再監査: x-legacy-L06a:minds-glossary-2020 交絡因子: 曝露とアウトカムの両方に関係、真の関係と異なる結果、層化・数学的モデリング。 盲検解答=キー一致。validate 0 errors.｜Minds重要用語集「交絡因子」で定義と制御法（ランダム化・限定・マッチング／層化・数学的モデリング）を確認。キーは正しい。"
    }
   },
   {
@@ -1108,13 +1108,13 @@
     "key": "lg-06-13",
     "by": "旧版（v2・AI作成）"
    },
-   "status": "provisional",
+   "status": "verified",
    "verification": {
     "date": "2026-11-25",
     "method": [
      "独立ブラインド解答（別モデル）",
      "領域監査（統計）で修正",
-     "修正後の再監査は未実施",
+     "修正後の独立再監査（pass）",
      "引用の機械照合（一次資料キャッシュ）",
      "スキーマ・ICDコード・計算の機械検査"
     ],
@@ -1122,10 +1122,10 @@
      "author": "旧版（AI作成・出典なし）",
      "solver": "solve:L06（別モデル・正答を見ずに解答）",
      "auditor": "audit:L06a（統計）",
-     "reauditor": null
+     "reauditor": "reaudit:L06a"
     },
     "log": "bank/audit/legacy-L06a.audit.json#lg-06-13",
-    "notes": "環境省スライド3.4で寄与リスク＝ばく露群の罹患リスク−非ばく露群の罹患リスク、相対リスク＝比、過剰相対リスク＝相対リスク−1を確認。Mindsでオッズ比を確認。キーは正しい。lg-06-23（L06b）と同じ問いで、そちらが重複候補。"
+    "notes": "再監査: stats:env-soutai-kiyo-risk スライド3.4: 寄与リスク=曝露群罹患リスク−非曝露群罹患リスク（「その集団の罹患率がどれだけ増えるのか」）、RR−1=過剰相対リスク; minds glossary OR=2つのオッズの比。 盲検解答=キー一致。validate 0 errors.｜環境省スライド3.4で寄与リスク＝ばく露群の罹患リスク−非ばく露群の罹患リスク、相対リスク＝比、過剰相対リスク＝相対リスク−1を確認。Mindsでオッズ比を確認。キーは正しい。lg-06-23（L06b）と同じ問いで、そちらが重複候補。"
    }
   },
   {
@@ -1191,13 +1191,13 @@
     "key": "lg-06-14",
     "by": "旧版（v2・AI作成）"
    },
-   "status": "provisional",
+   "status": "verified",
    "verification": {
     "date": "2026-11-25",
     "method": [
      "独立ブラインド解答（別モデル）",
      "領域監査（統計）で修正",
-     "修正後の再監査は未実施",
+     "修正後の独立再監査（pass）",
      "引用の機械照合（一次資料キャッシュ）",
      "スキーマ・ICDコード・計算の機械検査"
     ],
@@ -1205,10 +1205,10 @@
      "author": "旧版（AI作成・出典なし）",
      "solver": "solve:L06（別モデル・正答を見ずに解答）",
      "auditor": "audit:L06b（統計）",
-     "reauditor": null
+     "reauditor": "reaudit:L06b"
     },
     "log": "bank/audit/legacy-L06b.audit.json#lg-06-14",
-    "notes": "OR=(A/B)/(C/D) は stats:mhlw-tokei-yougo-rr-or（相対リスクとオッズ比）、症例対照研究での使用は Minds用語集「オッズ比」。solver=0 一致。"
+    "notes": "再監査: OR=(a/b)/(c/d)=ad/bc verified in stats:mhlw-tokei-yougo-rr-or (相対リスクとオッズ比: p3/p4, p1/p2) and Minds glossary オッズ比 (症例対照研究・横断研究, 低確率でリスク比近似). Distractors B–E correctly identified (RR = choice E). Blind matched. Validator: 0 errors.｜OR=(A/B)/(C/D) は stats:mhlw-tokei-yougo-rr-or（相対リスクとオッズ比）、症例対照研究での使用は Minds用語集「オッズ比」。solver=0 一致。"
    }
   },
   {
@@ -1274,13 +1274,13 @@
     "key": "lg-06-15",
     "by": "旧版（v2・AI作成）"
    },
-   "status": "provisional",
+   "status": "verified",
    "verification": {
     "date": "2026-11-25",
     "method": [
      "独立ブラインド解答（別モデル）",
      "領域監査（統計）で修正",
-     "修正後の再監査は未実施",
+     "修正後の独立再監査（pass）",
      "引用の機械照合（一次資料キャッシュ）",
      "スキーマ・ICDコード・計算の機械検査"
     ],
@@ -1288,10 +1288,10 @@
      "author": "旧版（AI作成・出典なし）",
      "solver": "solve:L06（別モデル・正答を見ずに解答）",
      "auditor": "audit:L06b（統計）",
-     "reauditor": null
+     "reauditor": "reaudit:L06b"
     },
     "log": "bank/audit/legacy-L06b.audit.json#lg-06-15",
-    "notes": "stats:naruhodo-chirabari-jyokyu（分散・標準偏差）、stats:naruhodo-chirabari-shokyu（範囲）。solver=1 一致。"
+    "notes": "再監査: stats:naruhodo-chirabari-jyokyu 分散 (偏差二乗和の平均; 偏差の平均は必ず0) and 標準偏差 (分散の正の平方根); range = 最大値と最小値の差 (naruhodo-chirabari-shokyu 範囲). Population-variance definition, consistent with source. Blind matched. Validator: 0 errors.｜stats:naruhodo-chirabari-jyokyu（分散・標準偏差）、stats:naruhodo-chirabari-shokyu（範囲）。solver=1 一致。"
    }
   },
   {
@@ -1355,13 +1355,13 @@
     "key": "lg-06-16",
     "by": "旧版（v2・AI作成）"
    },
-   "status": "provisional",
+   "status": "verified",
    "verification": {
     "date": "2026-11-25",
     "method": [
      "独立ブラインド解答（別モデル）",
      "領域監査（統計）で修正",
-     "修正後の再監査は未実施",
+     "修正後の独立再監査（pass）",
      "引用の機械照合（一次資料キャッシュ）",
      "スキーマ・ICDコード・計算の機械検査"
     ],
@@ -1369,10 +1369,10 @@
      "author": "旧版（AI作成・出典なし）",
      "solver": "solve:L06（別モデル・正答を見ずに解答）",
      "auditor": "audit:L06b（統計）",
-     "reauditor": null
+     "reauditor": "reaudit:L06b"
     },
     "log": "bank/audit/legacy-L06b.audit.json#lg-06-16",
-    "notes": "stats:naruhodo-suisoku（推測統計）、stats:naruhodo-zensu、stats:datastart-hyohon-gosa（標本規模と標本誤差）。solver=1 一致。"
+    "notes": "再監査: stats:naruhodo-suisoku (推測統計とは…), stats:naruhodo-zensu (全数調査/標本調査), stats:datastart-hyohon-gosa (標本規模を大きく→標本誤差小). All distractors clearly wrong. Blind matched. Validator: 0 errors.｜stats:naruhodo-suisoku（推測統計）、stats:naruhodo-zensu、stats:datastart-hyohon-gosa（標本規模と標本誤差）。solver=1 一致。"
    }
   },
   {
@@ -1594,13 +1594,13 @@
     "key": "lg-06-19",
     "by": "旧版（v2・AI作成）"
    },
-   "status": "provisional",
+   "status": "verified",
    "verification": {
     "date": "2026-11-25",
     "method": [
      "独立ブラインド解答（別モデル）",
      "領域監査（統計）で修正",
-     "修正後の再監査は未実施",
+     "修正後の独立再監査（pass）",
      "引用の機械照合（一次資料キャッシュ）",
      "スキーマ・ICDコード・計算の機械検査"
     ],
@@ -1608,10 +1608,10 @@
      "author": "旧版（AI作成・出典なし）",
      "solver": "solve:L06（別モデル・正答を見ずに解答）",
      "auditor": "audit:L06b（統計）",
-     "reauditor": null
+     "reauditor": "reaudit:L06b"
     },
     "log": "bank/audit/legacy-L06b.audit.json#lg-06-19",
-    "notes": "重回帰＝目的変数Yをp個の説明変数で説明（x-legacy-L06b:mext-joho2-ch3a 学習13）、単回帰（stats:naruhodo-hukusu）、主成分分析＝次元削減（同 学習14）、クラスタリング＝似ているデータをグループに分ける（文科省 情報Ⅱ教材 第3章後半 学習16 で確認）。solver=1 一致。"
+    "notes": "再監査: x-legacy-L06b:mext-joho2-ch3a 学習13 (目的変数Yをp個の説明変数で説明=重回帰), 学習14 (主成分分析=次元削減); stats:naruhodo-hukusu (単回帰=一つの説明変数). Clustering note (正解を与えずにグループ分け) consistent with source's 教師なし学習 framing. Blind matched. Validator: 0 errors.｜重回帰＝目的変数Yをp個の説明変数で説明（x-legacy-L06b:mext-joho2-ch3a 学習13）、単回帰（stats:naruhodo-hukusu）、主成分分析＝次元削減（同 学習14）、クラスタリング＝似ているデータをグループに分ける（文科省 情報Ⅱ教材 第3章後半 学習16 で確認）。solver=1 一致。"
    }
   },
   {
@@ -1675,13 +1675,13 @@
     "key": "lg-06-20",
     "by": "旧版（v2・AI作成）"
    },
-   "status": "provisional",
+   "status": "verified",
    "verification": {
     "date": "2026-11-25",
     "method": [
      "独立ブラインド解答（別モデル）",
      "領域監査（統計）で修正",
-     "修正後の再監査は未実施",
+     "修正後の独立再監査（pass）",
      "引用の機械照合（一次資料キャッシュ）",
      "スキーマ・ICDコード・計算の機械検査"
     ],
@@ -1689,10 +1689,10 @@
      "author": "旧版（AI作成・出典なし）",
      "solver": "solve:L06（別モデル・正答を見ずに解答）",
      "auditor": "audit:L06b（統計）",
-     "reauditor": null
+     "reauditor": "reaudit:L06b"
     },
     "log": "bank/audit/legacy-L06b.audit.json#lg-06-20",
-    "notes": "ハザード比＝2群の瞬間的な死亡確率（ハザード）の比・生存時間分析で使用（Minds用語集 ハザード比）、累積発症率＝リスク（CDC Lesson3 Sec2）とリスク比（Minds）。solver=0 一致。"
+    "notes": "再監査: x-legacy-L06b:minds-glossary-2020 ハザード比 (時間tにおける瞬間的な死亡確率; 2群のハザードの比; 生存時間分析) and リスク比 (イベント発生率の比); CDC L3S2 cumulative incidence = risk. Distractors clearly not HR. Blind matched. Validator: 0 errors.｜ハザード比＝2群の瞬間的な死亡確率（ハザード）の比・生存時間分析で使用（Minds用語集 ハザード比）、累積発症率＝リスク（CDC Lesson3 Sec2）とリスク比（Minds）。solver=0 一致。"
    }
   },
   {
@@ -1756,13 +1756,13 @@
     "key": "lg-06-21",
     "by": "旧版（v2・AI作成）"
    },
-   "status": "provisional",
+   "status": "verified",
    "verification": {
     "date": "2026-11-25",
     "method": [
      "独立ブラインド解答（別モデル）",
      "領域監査（統計）で修正",
-     "修正後の再監査は未実施",
+     "修正後の独立再監査（pass）",
      "引用の機械照合（一次資料キャッシュ）",
      "スキーマ・ICDコード・計算の機械検査"
     ],
@@ -1770,10 +1770,10 @@
      "author": "旧版（AI作成・出典なし）",
      "solver": "solve:L06（別モデル・正答を見ずに解答）",
      "auditor": "audit:L06b（統計）",
-     "reauditor": null
+     "reauditor": "reaudit:L06b"
     },
     "log": "bank/audit/legacy-L06b.audit.json#lg-06-21",
-    "notes": "累積発症率＝incidence proportion（cumulative incidence）、分母＝観察開始時の人数、人年法の罹患率（x-legacy-L06b:cdc-ss1978-l3s2）。致命率は stats:ganjoho-timeiritu、時点有病率は stats:ganjoho-yuubyouritu で確認。solver=0 一致。"
+    "notes": "再監査: x-legacy-L06b:cdc-ss1978-l3s2 Incidence proportion (synonym cumulative incidence; denominator = persons at start of observation) vs incidence rate (person-time denominator). Prevalence and case-fatality distractors correct. Blind matched. Validator: 0 errors.｜累積発症率＝incidence proportion（cumulative incidence）、分母＝観察開始時の人数、人年法の罹患率（x-legacy-L06b:cdc-ss1978-l3s2）。致命率は stats:ganjoho-timeiritu、時点有病率は stats:ganjoho-yuubyouritu で確認。solver=0 一致。"
    }
   },
   {
@@ -1837,13 +1837,13 @@
     "key": "lg-06-22",
     "by": "旧版（v2・AI作成）"
    },
-   "status": "provisional",
+   "status": "verified",
    "verification": {
     "date": "2026-11-25",
     "method": [
      "独立ブラインド解答（別モデル）",
      "領域監査（統計）で修正",
-     "修正後の再監査は未実施",
+     "修正後の独立再監査（pass）",
      "引用の機械照合（一次資料キャッシュ）",
      "スキーマ・ICDコード・計算の機械検査"
     ],
@@ -1851,10 +1851,10 @@
      "author": "旧版（AI作成・出典なし）",
      "solver": "solve:L06（別モデル・正答を見ずに解答）",
      "auditor": "audit:L06b（統計）",
-     "reauditor": null
+     "reauditor": "reaudit:L06b"
     },
     "log": "bank/audit/legacy-L06b.audit.json#lg-06-22",
-    "notes": "罹患率（stats:ganjoho-rikanritu、有病率との違い）、有病率は新規＋既存・罹患率と有病期間の両方に依存（x-legacy-L06b:cdc-ss1978-l3s2 Prevalence）。solver=1 一致。"
+    "notes": "再監査: stats:ganjoho-rikanritu (新たに診断された数/人口; 有病率=ある時点の患者数/人口) and CDC L3S2 Prevalence (both new and preexisting; based on both incidence and duration). Blind matched. Validator: 0 errors.｜罹患率（stats:ganjoho-rikanritu、有病率との違い）、有病率は新規＋既存・罹患率と有病期間の両方に依存（x-legacy-L06b:cdc-ss1978-l3s2 Prevalence）。solver=1 一致。"
    }
   },
   {
@@ -1918,13 +1918,13 @@
     "key": "lg-06-23",
     "by": "旧版（v2・AI作成）"
    },
-   "status": "provisional",
+   "status": "verified",
    "verification": {
     "date": "2026-11-25",
     "method": [
      "独立ブラインド解答（別モデル）",
      "領域監査（統計）で修正",
-     "修正後の再監査は未実施",
+     "修正後の独立再監査（pass）",
      "引用の機械照合（一次資料キャッシュ）",
      "スキーマ・ICDコード・計算の機械検査"
     ],
@@ -1932,10 +1932,10 @@
      "author": "旧版（AI作成・出典なし）",
      "solver": "solve:L06（別モデル・正答を見ずに解答）",
      "auditor": "audit:L06b（統計）",
-     "reauditor": null
+     "reauditor": "reaudit:L06b"
     },
     "log": "bank/audit/legacy-L06b.audit.json#lg-06-23",
-    "notes": "寄与リスク＝ばく露群罹患リスク−非ばく露群罹患リスク、相対リスク＝比（stats:env-soutai-kiyo-risk）、リスク差＝発生率の差（Minds用語集）。solver=1 一致。"
+    "notes": "再監査: stats:env-soutai-kiyo-risk スライド3.4 (寄与リスク=ばく露群罹患リスク−非ばく露群罹患リスク); Minds glossary リスク差/オッズ比. Distractors = RR, OR, prevalence. Blind matched. Validator: 0 errors.｜寄与リスク＝ばく露群罹患リスク−非ばく露群罹患リスク、相対リスク＝比（stats:env-soutai-kiyo-risk）、リスク差＝発生率の差（Minds用語集）。solver=1 一致。"
    }
   },
   {
@@ -2157,13 +2157,13 @@
     "key": "lg-06-26",
     "by": "旧版（v2・AI作成）"
    },
-   "status": "provisional",
+   "status": "verified",
    "verification": {
     "date": "2026-11-25",
     "method": [
      "独立ブラインド解答（別モデル）",
      "領域監査（統計）で修正",
-     "修正後の再監査は未実施",
+     "修正後の独立再監査（pass）",
      "引用の機械照合（一次資料キャッシュ）",
      "スキーマ・ICDコード・計算の機械検査"
     ],
@@ -2171,10 +2171,10 @@
      "author": "旧版（AI作成・出典なし）",
      "solver": "solve:L06（別モデル・正答を見ずに解答）",
      "auditor": "audit:L06b（統計）",
-     "reauditor": null
+     "reauditor": "reaudit:L06b"
     },
     "log": "bank/audit/legacy-L06b.audit.json#lg-06-26",
-    "notes": "交絡因子の3条件（x-legacy-L06b:jjh-64-796 2-8、①曝露と関連 ②アウトカムのリスクファクター ③中間因子でない）。solver=0 一致。"
+    "notes": "再監査: x-legacy-L06b:jjh-64-796 2-8 (従来の疫学理論の3点=必要条件: ①曝露と関連 ②アウトカムのリスクファクター(予測できればよい) ③曝露・アウトカムの影響を受けない, 特に中間因子でない). Stem wording 必要条件 matches source. Blind matched. Validator: 0 errors.｜交絡因子の3条件（x-legacy-L06b:jjh-64-796 2-8、①曝露と関連 ②アウトカムのリスクファクター ③中間因子でない）。solver=0 一致。"
    }
   },
   {
@@ -2240,13 +2240,13 @@
     "key": "lg-07-10",
     "by": "旧版（v2・AI作成）"
    },
-   "status": "provisional",
+   "status": "verified",
    "verification": {
     "date": "2026-11-25",
     "method": [
      "独立ブラインド解答（別モデル）",
      "領域監査（統計）で修正",
-     "修正後の再監査は未実施",
+     "修正後の独立再監査（pass）",
      "引用の機械照合（一次資料キャッシュ）",
      "スキーマ・ICDコード・計算の機械検査"
     ],
@@ -2254,10 +2254,10 @@
      "author": "旧版（AI作成・出典なし）",
      "solver": "solve:L07（別モデル・正答を見ずに解答）",
      "auditor": "audit:L07a（統計）",
-     "reauditor": null
+     "reauditor": "reaudit:L07a"
     },
     "log": "bank/audit/legacy-L07a.audit.json#lg-07-10",
-    "notes": "がん統計用語集「罹患率」「有病率」、CDC Lesson3 §2（prevalence は incidence と duration に依存）で確認。罹患率・有病率は疫学指標のためS06へ再分類。"
+    "notes": "再監査: ganjoho罹患率（新規診断数/人口）・有病率（一時点の全患者数/人口）、CDC Lesson3 Sec2（prolonged survival→高有病率）を確認。key一致。｜がん統計用語集「罹患率」「有病率」、CDC Lesson3 §2（prevalence は incidence と duration に依存）で確認。罹患率・有病率は疫学指標のためS06へ再分類。"
    }
   },
   {
@@ -2323,13 +2323,13 @@
     "key": "lg-07-14",
     "by": "旧版（v2・AI作成）"
    },
-   "status": "provisional",
+   "status": "verified",
    "verification": {
     "date": "2026-11-25",
     "method": [
      "独立ブラインド解答（別モデル）",
      "領域監査（統計）で修正",
-     "修正後の再監査は未実施",
+     "修正後の独立再監査（pass）",
      "引用の機械照合（一次資料キャッシュ）",
      "スキーマ・ICDコード・計算の機械検査"
     ],
@@ -2337,10 +2337,10 @@
      "author": "旧版（AI作成・出典なし）",
      "solver": "solve:L07（別モデル・正答を見ずに解答）",
      "auditor": "audit:L07b（統計）",
-     "reauditor": null
+     "reauditor": "reaudit:L07b"
     },
     "log": "bank/audit/legacy-L07b.audit.json#lg-07-14",
-    "notes": "ganjoho 致命率 定義; 粗死亡率・有病率の定義で誤肢を確認"
+    "notes": "再監査: stats:ganjoho-timeiritu/sosibouritu/yuubyouritu quotes confirm 致命率（分母=診断された人）・粗死亡率・有病率; 年齢階級別死亡率・実数は定義上明白。blind一致。｜ganjoho 致命率 定義; 粗死亡率・有病率の定義で誤肢を確認"
    }
   }
  ]

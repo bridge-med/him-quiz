@@ -1,0 +1,13 @@
+{"answers":[
+{"key":"lg-12-01","answer":0,"confidence":"high","ambiguous":false,"note":"PACS=Picture Archiving and Communication System"},
+{"key":"lg-12-04","answer":0,"confidence":"high","ambiguous":false,"note":"order entry -> 部門へ伝達"},
+{"key":"lg-12-05","answer":0,"confidence":"high","ambiguous":false,"note":"GL経営管理編 BCP: 災害・サイバー攻撃・システム障害"},
+{"key":"lg-12-06","answer":0,"confidence":"high","ambiguous":false,"note":"Virtual Private Network"},
+{"key":"lg-12-07","answer":0,"confidence":"high","ambiguous":false,"note":"PHR definition"},
+{"key":"lg-12-08","answer":0,"confidence":"high","ambiguous":false,"note":"least privilege"},
+{"key":"lg-12-09","answer":0,"confidence":"medium","ambiguous":false,"note":"令和7年改正医療法でオンライン診療受診施設; check source"},
+{"key":"lg-12-10","answer":0,"confidence":"high","ambiguous":false,"note":"IoT貸出時のリスク説明・同意"},
+{"key":"lg-12-11","answer":0,"confidence":"high","ambiguous":false,"note":"認定作成事業者の仕組み"},
+{"key":"lg-12-12","answer":0,"confidence":"high","ambiguous":false,"note":"R5.4 原則義務化"},
+{"key":"lg-12-13","answer":0,"confidence":"medium","ambiguous":false,"note":"クラウド移行によるセキュリティ強化; check source"}
+]}

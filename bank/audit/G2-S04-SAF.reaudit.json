@@ -1,0 +1,6 @@
+{"verdicts":[
+{"key":"G2-S04-SAF-05","verdict":"pass","blindAnswer":4,"checks":{"answer":true,"distractors":true,"stem":true,"explanations":true,"sources":true,"asOf":true,"domain":true},
+"notes":"Blind answer 4 matches key. mgmt:ianzen-r8-sochi-tsuchi (医政発0331第72号, 令和8年3月31日) 記1⑴①〜⑧: ①基本的考え方(a)、⑥情報の共有に関する基本方針(d)、⑦患者からの相談への対応に関する基本方針(c)。b・eは掲げられていない。choiceNote Aの「個人の責任追及を行うものではない」は記1⑵④に実在。規則第1条の11第1項第1号=指針の整備（law:医療法施行規則, 2026-10-01施行版）。validate 0 errors。"},
+{"key":"G2-S04-SAF-09","verdict":"pass","blindAnswer":3,"checks":{"answer":true,"distractors":true,"stem":true,"explanations":true,"sources":true,"asOf":true,"domain":true},
+"notes":"Blind answer 3 matches key. law:医療法 第6条の10第1項（2026-10-01施行版）の定義=医療に起因（疑い含む）かつ管理者が予期しなかった死亡又は死産→D正、B（後遺障害）誤。mgmt:jikocho-qa A2「※過誤の有無は問わない」→A誤、「判断と最初の報告は管理者…遺族が報告する仕組みとはなっていません」→C誤。x-audit-G2-S04-SAF:jikocho-sekou-tsuchi-h27-raw（医政発0508第1号）「人工死産は対象としない」→E誤。validate 0 errors。"}
+]}

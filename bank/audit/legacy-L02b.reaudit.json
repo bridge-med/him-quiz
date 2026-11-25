@@ -1,0 +1,201 @@
+{
+ "verdicts": [
+  {
+   "key": "lg-02-17",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:健康保険法(施行2026-10-01版) 第64条 保険医=厚生労働大臣の登録、第63条第3項第1号 保険医療機関=厚生労働大臣の指定、第205条 地方厚生局長への委任を確認。distractors明確に誤り。 validate.mjs 0 errors。blind一致。"
+  },
+  {
+   "key": "lg-02-18",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:健康保険法 第74条第1項第1〜3号(70歳到達月以前30/100、翌月以後20/100、現役並み30/100)、ins:wagakuni-iryouhoken(70〜74歳2割、75歳以上1割、就学前2割)を確認。 validate.mjs 0 errors。blind一致。"
+  },
+  {
+   "key": "lg-02-19",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:健康保険法 第88条第1項(指定訪問看護事業者・居宅・主治医基準・保険医療機関等によるものを除く)、第63条第1項第5号、第52条第1号(訪問看護療養費)を確認。 validate.mjs 0 errors。blind一致。"
+  },
+  {
+   "key": "lg-02-20",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:国民健康保険法 第3条第1項・第2項(都道府県が市町村とともに/国保組合)、第5条(住所を有する者は被保険者)、law:健康保険法 第4条(協会・健保組合)を確認。 validate.mjs 0 errors。blind一致。"
+  },
+  {
+   "key": "lg-02-21",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:健康保険法 第85条第1項(入院の療養の給付と併せて受けた食事療養)、第2項(食事療養標準負担額を控除)、第63条第2項第1号を確認。 validate.mjs 0 errors。blind一致。"
+  },
+  {
+   "key": "lg-02-22",
+   "verdict": "provisional",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": false,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "key正しい(保険料徴収と保険給付)。第76条第2項・第82条第1項(中医協諮問)、医師法第10条、第52条を確認。 validate.mjs 0 errors。blind一致。",
+   "detail": "解説の「保険者は…保険料を徴収し（健康保険法第155条）」が条文上不正確。第155条の主語は「保険者等」で、第39条の定義により協会管掌健康保険では厚生労働大臣（任意継続のみ協会、第155条第2項）。正答自体は妥当だが、根拠条文の表現（協会けんぽは国が徴収）か国保法の徴収規定への差し替えが未確定。"
+  },
+  {
+   "key": "lg-02-23",
+   "verdict": "pass",
+   "blindAnswer": 1,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:健康保険法 第160条第1〜3項(1000分の30〜130、支部被保険者単位で協会が決定、都道府県単位保険料率)、第156条を確認。 validate.mjs 0 errors。blind一致。"
+  },
+  {
+   "key": "lg-02-24",
+   "verdict": "pass",
+   "blindAnswer": 1,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "x-legacy-L02b:nenkin-hifuyou-19-23(日本年金機構2025-08-19) 現行要件130万円未満(60歳以上・障害者180万円)・同居は収入の半分未満、19〜23歳(配偶者除く)150万円未満を本文で確認。40歳代配偶者は130万円基準で一意。 validate.mjs 0 errors。blind一致。"
+  },
+  {
+   "key": "lg-02-25",
+   "verdict": "pass",
+   "blindAnswer": 3,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:健康保険法 第63条第1項(疾病又は負傷に関し、一〜五号)、第2項第1号、第101条を確認。polarity negative と stem一致。 validate.mjs 0 errors。blind一致。"
+  },
+  {
+   "key": "lg-02-27",
+   "verdict": "pass",
+   "blindAnswer": 1,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:健康保険法 第99条第1項(3日経過)、第2項(3分の2)、第4項(通算して一年六月間)を確認。 validate.mjs 0 errors。blind一致。"
+  },
+  {
+   "key": "lg-02-28",
+   "verdict": "pass",
+   "blindAnswer": 2,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:wagakuni-iryouhoken(令和6年6月時点) 出産育児一時金 原則50万円、law:健康保険法 第101条(政令で定める金額)。時点がstemに明記。改正法(ins:iryouhoken-kaisei-r08-page)の出産費用無償化は今後の方針で現行額を否定しない。 validate.mjs 0 errors。blind一致。"
+  },
+  {
+   "key": "lg-02-29",
+   "verdict": "provisional",
+   "blindAnswer": 1,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": false,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:wagakuni-iryouhoken 埋葬料 定額5万円、国保・後期は条例・規約で1〜5万円程度、law:国民健康保険法 第58条第1項、law:健康保険法 第100条第1項・第52条第3号を確認。 validate.mjs 0 errors。blind一致。",
+   "detail": "stemが「埋葬料（埋葬費）」と併記するが、正答B「健康保険では一律5万円」は埋葬料（第100条第1項、定額5万円）には当てはまる一方、埋葬費（第100条第2項）は「同項の金額の範囲内においてその埋葬に要した費用に相当する金額」で一律ではない。最善解はBで一意だが、stemの（埋葬費）削除か解説での区別が必要。"
+  },
+  {
+   "key": "lg-02-30",
+   "verdict": "pass",
+   "blindAnswer": 1,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "stats:kokumin-iryohi-r6-kekka 表3 令和6年度: 公費37.4%、事業主21.9%、被保険者28.5%、患者負担11.8%。公費が最大で一意。 validate.mjs 0 errors。blind一致。"
+  }
+ ]
+}

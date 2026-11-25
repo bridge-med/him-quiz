@@ -1,0 +1,88 @@
+{
+ "answers": [
+  {
+   "key": "#0",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "主要病態の定義 4.4.1 単一病因分析"
+  },
+  {
+   "key": "#1",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "確診化は否定されない疑診には不適。4.4.1"
+  },
+  {
+   "key": "#2",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "Z03.0 結核の疑いに対する観察"
+  },
+  {
+   "key": "#3",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "MB2 最初に記載"
+  },
+  {
+   "key": "#4",
+   "answer": 3,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "MB4 K70.3"
+  },
+  {
+   "key": "#5",
+   "answer": 4,
+   "confidence": "medium",
+   "ambiguous": false,
+   "note": "MB5 症状選択 R10.1"
+  },
+  {
+   "key": "#6",
+   "answer": 1,
+   "confidence": "medium",
+   "ambiguous": false,
+   "note": "急性・慢性両方は急性を優先 J03.9"
+  },
+  {
+   "key": "#7",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "MB2は最初に記載された病態"
+  },
+  {
+   "key": "#8",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "MB1"
+  },
+  {
+   "key": "#9",
+   "answer": 4,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "K80.0 急性胆嚢炎を伴う胆嚢結石"
+  },
+  {
+   "key": "#10",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "MB3→J13"
+  },
+  {
+   "key": "#11",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "情報が得られない場合のみ再選択"
+  }
+ ]
+}

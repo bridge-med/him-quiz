@@ -1,0 +1,935 @@
+{
+ "verdicts": [
+  {
+   "id": "lg-04-14",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "正答: DM＝Diabetes mellitus（MedlinePlus Appendix B）、ICD-10 第4章 糖尿病（E10-E14）の英名が Diabetes mellitus（icd:naiyou04）。solver一致。",
+   "detail": "誤答解説の略語（MI・CVA・HT）は出典で確認できないため、DMの展開に基づく説明に置換。",
+   "question": {
+    "id": "lg-04-14",
+    "legacy": {
+     "key": "4_14",
+     "chapter": 4,
+     "chapterName": "医学用語・医学略語",
+     "index": 14,
+     "hash": "5545e0d7479dbd2c"
+    },
+    "subject": "B12",
+    "subtopic": "医学略語",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "DMの日本語名はどれか。",
+    "choices": [
+     "糖尿病",
+     "心筋梗塞",
+     "脳卒中",
+     "高血圧症"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "DMはDiabetes mellitus（糖尿病）の略。ICD-10でも糖尿病（E10-E14）の英名はDiabetes mellitusである。",
+     "choiceNotes": [
+      null,
+      "DMはDiabetes mellitus（糖尿病）の略で、心筋梗塞を表す略語ではない。",
+      "DMはDiabetes mellitus（糖尿病）の略で、脳卒中を表す略語ではない。",
+      "DMはDiabetes mellitus（糖尿病）の略で、高血圧症を表す略語ではない。"
+     ],
+     "point": "DM＝Diabetes mellitus＝糖尿病（ICD-10 E10-E14）。"
+    },
+    "sources": [
+     {
+      "ref": "x-legacy-L04b:mp-appendixb",
+      "title": "MedlinePlus Appendix B: Some common abbreviations",
+      "url": "https://medlineplus.gov/appendixb.html",
+      "locator": "Appendix B: DM",
+      "quote": "DM Diabetes mellitus"
+     },
+     {
+      "ref": "icd:naiyou04",
+      "title": "ICD-10（2013年版）準拠 内容例示表 第4章 内分泌，栄養及び代謝疾患（E00-E90）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou04.pdf",
+      "locator": "第4章 糖尿病（E10-E14）見出し",
+      "quote": "糖 尿 病（Ｅ10－Ｅ14） Diabetes mellitus"
+     }
+    ],
+    "asOf": "MedlinePlus / SEER Training 略語一覧（2026-11閲覧）・ICD-10（2013年版）準拠"
+   }
+  },
+  {
+   "id": "lg-04-15",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "正答: B-i-d＝bis in die＝twice-daily（MedlinePlus Understanding Medical Words p.2）、BID Twice a day / TID Three times a day（Appendix B）。solver一致。",
+   "detail": "誤答解説の「1日1回はq.d.」「食前はa.c.」は出典未確認（q.d.は誤読されやすい略語として使用を避けるべきとされる）ため、b.i.d.の意味に基づく説明に置換。",
+   "question": {
+    "id": "lg-04-15",
+    "legacy": {
+     "key": "4_15",
+     "chapter": 4,
+     "chapterName": "医学用語・医学略語",
+     "index": 15,
+     "hash": "39042993e9b6d562"
+    },
+    "subject": "B12",
+    "subtopic": "医学略語",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "「b.i.d.」の意味はどれか。",
+    "choices": [
+     "1日2回",
+     "1日1回",
+     "1日3回",
+     "食前"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "b.i.d.はラテン語bis in dieの略で、1日2回（twice a day）を意味する。処方で投与回数を示す略語。",
+     "choiceNotes": [
+      null,
+      "b.i.d.は1日2回を表し、1日1回ではない。",
+      "1日3回を表す略語はt.i.d.（TID）。",
+      "b.i.d.は投与回数（1日2回）を表す略語で、服用時点（食前）を表すものではない。"
+     ],
+     "point": "b.i.d.（BID）＝1日2回、t.i.d.（TID）＝1日3回。"
+    },
+    "sources": [
+     {
+      "ref": "x-legacy-L04b:mp-abbrev2",
+      "title": "MedlinePlus: Understanding Medical Words — Abbreviations (p.2)",
+      "url": "https://medlineplus.gov/medwords/abbreviations2.html",
+      "locator": "Abbreviations p.2",
+      "quote": "B-i-d comes from the Latin \" bis in die \" which means twice-daily dosage."
+     },
+     {
+      "ref": "x-legacy-L04b:mp-appendixb",
+      "title": "MedlinePlus Appendix B: Some common abbreviations",
+      "url": "https://medlineplus.gov/appendixb.html",
+      "locator": "Appendix B: BID",
+      "quote": "BID Twice a day"
+     },
+     {
+      "ref": "x-legacy-L04b:mp-appendixb",
+      "title": "MedlinePlus Appendix B: Some common abbreviations",
+      "url": "https://medlineplus.gov/appendixb.html",
+      "locator": "Appendix B: TID",
+      "quote": "TID Three times a day"
+     }
+    ],
+    "asOf": "MedlinePlus / SEER Training 略語一覧（2026-11閲覧）"
+   }
+  },
+  {
+   "id": "lg-04-16",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "正答: msd-ja-hf 病態生理（BNPは心室の伸展に反応して心室から放出）・検査（心不全ではしばしば血清BNP高値）。solver一致。",
+   "detail": "誤答解説「肝不全はAST・ALT」は不正確（AST・ALTは肝細胞障害の指標で肝不全の重症度指標ではない）。腎不全・呼吸不全の解説も出典に沿う形に修正。",
+   "question": {
+    "id": "lg-04-16",
+    "legacy": {
+     "key": "4_16",
+     "chapter": 4,
+     "chapterName": "医学用語・医学略語",
+     "index": 16,
+     "hash": "0ef976a6a150f11e"
+    },
+    "subject": "B12",
+    "subtopic": "医学略語",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "BNPが指標となる疾患はどれか。",
+    "choices": [
+     "心不全",
+     "腎不全",
+     "肝不全",
+     "呼吸不全"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "BNPは脳性（B型）ナトリウム利尿ペプチドで、心室の伸展に反応して心室から放出される。心不全ではしばしば血清BNP濃度が高値となり、心不全の診断・評価に用いられる。",
+     "choiceNotes": [
+      null,
+      "BNPは心室から放出されるペプチドで、心不全の指標として用いる。腎不全の指標ではない。",
+      "BNPは心不全の指標で、肝不全の指標ではない。",
+      "呼吸不全（低酸素血症）の評価には動脈血ガス分析が用いられる。BNPは呼吸不全の指標ではない。"
+     ],
+     "point": "BNP＝心不全の指標。名称は「脳性」だが心室から放出される。"
+    },
+    "sources": [
+     {
+      "ref": "x-legacy-L04b:msd-ja-hf",
+      "title": "MSDマニュアル プロフェッショナル版：心不全",
+      "url": "https://www.msdmanuals.com/ja-jp/professional/04-心血管疾患/心不全/心不全",
+      "locator": "心不全＞病態生理",
+      "quote": "脳性（B型）ナトリウム利尿ペプチド（BNP）は，心室の伸展に対する反応として心室から放出される"
+     },
+     {
+      "ref": "x-legacy-L04b:msd-ja-hf",
+      "title": "MSDマニュアル プロフェッショナル版：心不全",
+      "url": "https://www.msdmanuals.com/ja-jp/professional/04-心血管疾患/心不全/心不全",
+      "locator": "心不全＞診断＞血液検査",
+      "quote": "心不全では，しばしば血清BNP濃度が高値となる"
+     },
+     {
+      "ref": "x-legacy-L04b:msd-ja-gas",
+      "title": "MSDマニュアル プロフェッショナル版：ガス交換の測定",
+      "url": "https://www.msdmanuals.com/ja-jp/professional/05-肺疾患/肺機能検査-pft-pulmonary-function-test/ガス交換の測定",
+      "locator": "動脈血ガス",
+      "quote": "動脈血ガス分析は，低酸素血症の存在を正確に評価するもので"
+     }
+    ],
+    "asOf": "MSDマニュアル プロフェッショナル版（2026-11閲覧）"
+   }
+  },
+  {
+   "id": "lg-04-17",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "正答: CBC＝Complete blood count（MedlinePlus Appendix B, SEER）。solver一致。",
+   "detail": "誤答解説「血液培養はBC」は出典なし・不自然、「CBCとは異なる」等は説明になっていないため置換。正答解説の測定項目列挙も出典に沿う表現に修正。",
+   "question": {
+    "id": "lg-04-17",
+    "legacy": {
+     "key": "4_17",
+     "chapter": 4,
+     "chapterName": "医学用語・医学略語",
+     "index": 17,
+     "hash": "2e594f5b355526b9"
+    },
+    "subject": "B12",
+    "subtopic": "医学略語",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "CBCの正式名称はどれか。",
+    "choices": [
+     "Complete Blood Count",
+     "Cardiac Bypass Catheter",
+     "Central Blood Culture",
+     "Cerebral Blood Circulation"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "CBCはComplete Blood Countの略で、血液中の細胞（血球）のさまざまな性状を測定する基本的な血液検査。",
+     "choiceNotes": [
+      null,
+      "CBCは血液検査（Complete Blood Count）の略で、心臓カテーテルとは関係がない。",
+      "CBCのBCはBlood Count（血球の計数）で、培養（Culture）ではない。",
+      "CBCは血液検査（Complete Blood Count）の略で、脳循環を表すものではない。"
+     ],
+     "point": "CBC＝Complete Blood Count（血球の検査）。"
+    },
+    "sources": [
+     {
+      "ref": "x-legacy-L04b:mp-appendixb",
+      "title": "MedlinePlus Appendix B: Some common abbreviations",
+      "url": "https://medlineplus.gov/appendixb.html",
+      "locator": "Appendix B: CBC",
+      "quote": "CBC Complete blood count A blood test that measures many properties of the cells in your blood"
+     },
+     {
+      "ref": "x-legacy-L04b:seer-abbrev",
+      "title": "Common Abbreviations (All) | SEER Training",
+      "url": "https://training.seer.cancer.gov/abstracting/additional/abbreviations/all.html",
+      "locator": "Common Abbreviations: CBC",
+      "quote": "CBC Complete blood count"
+     }
+    ],
+    "asOf": "MedlinePlus / SEER Training 略語一覧（2026-11閲覧）"
+   }
+  },
+  {
+   "id": "lg-04-18",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "正答: msd-ja-gas パルスオキシメトリー（経皮的に酸素飽和度SpO2を推定、SaO2と相関）。solver一致。",
+   "detail": "「正常96%以上」は出典で確認できず削除。誤答「脊椎の第2レベル」は学習価値が低いため、紛らわしい「動脈血酸素分圧（PaO2）」に差し替え。",
+   "question": {
+    "id": "lg-04-18",
+    "legacy": {
+     "key": "4_18",
+     "chapter": 4,
+     "chapterName": "医学用語・医学略語",
+     "index": 18,
+     "hash": "085c4da5c551f1a2"
+    },
+    "subject": "B12",
+    "subtopic": "医学略語",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "SpO2の意味はどれか。",
+    "choices": [
+     "経皮的動脈血酸素飽和度",
+     "収縮期血圧",
+     "血清蛋白量",
+     "動脈血酸素分圧"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "SpO2は経皮的動脈血酸素飽和度。パルスオキシメーター（指先クリップ等のプローブ）で非侵襲的に推定する酸素飽和度で、動脈血で測定する酸素飽和度（SaO2）とよく相関する。",
+     "choiceNotes": [
+      null,
+      "SpO2は酸素飽和度で、血圧ではない。",
+      "SpO2は酸素飽和度で、血清蛋白量ではない。",
+      "動脈血酸素分圧はPaO2で、動脈血ガス分析で測定する。SpO2は分圧ではなく飽和度。"
+     ],
+     "point": "SpO2＝パルスオキシメーターで測る酸素飽和度、PaO2＝動脈血ガス分析で測る酸素分圧。"
+    },
+    "sources": [
+     {
+      "ref": "x-legacy-L04b:msd-ja-gas",
+      "title": "MSDマニュアル プロフェッショナル版：ガス交換の測定",
+      "url": "https://www.msdmanuals.com/ja-jp/professional/05-肺疾患/肺機能検査-pft-pulmonary-function-test/ガス交換の測定",
+      "locator": "パルスオキシメトリー",
+      "quote": "経皮的パルスオキシメトリーとは，指先クリップまたは粘着式プローブ内に配置された発光ダイオードからの光の吸収量に基づき，毛細血管血の酸素飽和度（SpO2）を推定するものである。"
+     },
+     {
+      "ref": "x-legacy-L04b:msd-ja-gas",
+      "title": "MSDマニュアル プロフェッショナル版：ガス交換の測定",
+      "url": "https://www.msdmanuals.com/ja-jp/professional/05-肺疾患/肺機能検査-pft-pulmonary-function-test/ガス交換の測定",
+      "locator": "動脈血ガス",
+      "quote": "動脈血ガス分析は動脈血酸素分圧（PaO2），動脈血二酸化炭素分圧（PaCO2），および動脈血pHの正確な値を得るために行われ"
+     }
+    ],
+    "asOf": "MSDマニュアル プロフェッショナル版（2026-11閲覧）"
+   }
+  },
+  {
+   "id": "lg-04-19",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "正答: msd-en-pci 見出し Percutaneous Coronary Interventions (PCI)、msd-ja-pci（PTCA・ステント留置、ガイディングカテーテル）、point の CABG は msd-ja-cabg。solver一致。",
+   "detail": "正答の選択肢だけに日本語訳が付いており長さ・形式が手がかりになっていたため、英語名のみに揃えた（日本語訳は解説に記載済み）。",
+   "question": {
+    "id": "lg-04-19",
+    "legacy": {
+     "key": "4_19",
+     "chapter": 4,
+     "chapterName": "医学用語・医学略語",
+     "index": 19,
+     "hash": "7ab9f5189fdf9e16"
+    },
+    "subject": "B12",
+    "subtopic": "医学略語",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "PCIの正式名称はどれか。",
+    "choices": [
+     "Percutaneous Coronary Intervention",
+     "Primary Care Institution",
+     "Peripheral Circulation Index",
+     "Pulmonary Capillary Insufficiency"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "PCI＝経皮的冠動脈インターベンション。カテーテルを用いた冠動脈治療。ステント留置等。",
+     "choiceNotes": [
+      null,
+      "PCIは冠動脈治療の略語。",
+      "末梢循環指数ではない。",
+      "肺毛細血管不全ではない。"
+     ],
+     "point": "PCI＝カテーテルによる冠動脈治療。CABG＝外科的バイパス術。対比で覚える。"
+    },
+    "sources": [
+     {
+      "ref": "x-legacy-L04b:msd-en-pci",
+      "title": "MSD Manual Professional Edition: Percutaneous Coronary Interventions (PCI)",
+      "url": "https://www.msdmanuals.com/professional/cardiovascular-disorders/coronary-artery-disease/percutaneous-coronary-interventions-pci",
+      "locator": "見出し",
+      "quote": "Percutaneous Coronary Interventions (PCI)"
+     },
+     {
+      "ref": "x-legacy-L04b:msd-ja-pci",
+      "title": "MSDマニュアル プロフェッショナル版：経皮的冠動脈インターベンション（PCI）",
+      "url": "https://www.msdmanuals.com/ja-jp/professional/04-心血管疾患/冠動脈疾患/経皮的冠動脈インターベンション-pci",
+      "locator": "概要",
+      "quote": "経皮的冠動脈インターベンション（PCI）には，経皮的冠動脈形成術（PTCA）やステント留置を伴うPTCAなどがある。"
+     },
+     {
+      "ref": "x-legacy-L04b:msd-ja-cabg",
+      "title": "MSDマニュアル プロフェッショナル版：冠動脈バイパス術（CABG）",
+      "url": "https://www.msdmanuals.com/ja-jp/professional/04-心血管疾患/冠動脈疾患/冠動脈バイパス術-cabg",
+      "locator": "概要",
+      "quote": "冠動脈バイパス術（CABG）では，ステント留置による血行再建が困難な高度狭窄または閉塞を来した固有冠動脈に対して迂回路を作成する。"
+     }
+    ],
+    "asOf": "MSDマニュアル プロフェッショナル版（2026-11閲覧）"
+   }
+  },
+  {
+   "id": "lg-04-20",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "正答: msd-ja-icuintro「集中治療室（ICU）」。CCU＝Coronary care unit（SEER）。集中治療室・ハイケアユニット・新生児集中治療室は別の病棟として例示（mgmt:chiikikousou-susumekata 高度急性期機能）。solver一致。",
+   "detail": "NICU（Neonatal ICU）・HCU（High Care Unit）の英語展開は出典で確認できないため、出典に沿う説明に修正。",
+   "question": {
+    "id": "lg-04-20",
+    "legacy": {
+     "key": "4_20",
+     "chapter": 4,
+     "chapterName": "医学用語・医学略語",
+     "index": 20,
+     "hash": "bbb4ee97b2e304c2"
+    },
+    "subject": "B12",
+    "subtopic": "医学略語",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "ICU（Intensive Care Unit）の日本語名称として正しいのはどれか。",
+    "choices": [
+     "冠疾患集中治療室",
+     "集中治療室",
+     "新生児集中治療室",
+     "高度治療室"
+    ],
+    "answer": 1,
+    "explanation": {
+     "correct": "ICUはIntensive Care Unitの略で、集中治療室を意味する。病状が最も重篤な患者を、熟練したスタッフが配置された環境で集中的に治療する。",
+     "choiceNotes": [
+      "冠疾患集中治療室はCCU（Coronary Care Unit）。",
+      null,
+      "新生児集中治療室（NICU）は、集中治療室とは別の病棟として扱われる。",
+      "高度治療室はハイケアユニット（HCU）を指し、集中治療室とは別の病棟として扱われる。"
+     ],
+     "point": "ICU＝集中治療室、CCU＝冠疾患集中治療室、NICU＝新生児集中治療室、HCU＝ハイケアユニット。"
+    },
+    "sources": [
+     {
+      "ref": "x-legacy-L04b:msd-ja-icuintro",
+      "title": "MSDマニュアル プロフェッショナル版：重篤（critically ill）患者へのアプローチに関する序論",
+      "url": "https://www.msdmanuals.com/ja-jp/professional/21-救命医療/重篤-critically-ill-患者へのアプローチ/重篤-critically-ill-患者へのアプローチに関する序論",
+      "locator": "序論",
+      "quote": "熟練したスタッフが配属された集中治療室（ICU）で治療を行うのが最もよい"
+     },
+     {
+      "ref": "x-legacy-L04b:seer-abbrev",
+      "title": "Common Abbreviations (All) | SEER Training",
+      "url": "https://training.seer.cancer.gov/abstracting/additional/abbreviations/all.html",
+      "locator": "Common Abbreviations: CCU",
+      "quote": "CCU Coronary care unit"
+     },
+     {
+      "ref": "mgmt:chiikikousou-susumekata",
+      "title": "地域医療構想について（地域医療構想の基本的な進め方について）",
+      "url": "https://www.mhlw.go.jp/content/10800000/001621986.pdf",
+      "locator": "病床機能（高度急性期機能）の病棟の例",
+      "quote": "救命救急病棟、集中治療室、ハイケアユニット、新生児集中治療室"
+     }
+    ],
+    "asOf": "MSDマニュアル プロフェッショナル版（2026-11閲覧）・地域医療構想の進め方（厚生労働省）"
+   }
+  },
+  {
+   "id": "lg-04-21",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "正答: NSAID＝Non-steroidal anti-inflammatory drug（MedlinePlus Appendix B）、msd-ja-pain「非ステロイド系抗炎症薬（NSAID）」。solver一致。",
+   "detail": "正答解説のロキソプロフェン（出典未確認）を削除し、point の他薬（PPI・SSRI）は本問の出典外のため整理。",
+   "question": {
+    "id": "lg-04-21",
+    "legacy": {
+     "key": "4_21",
+     "chapter": 4,
+     "chapterName": "医学用語・医学略語",
+     "index": 21,
+     "hash": "45ad65ff4f0847d2"
+    },
+    "subject": "B12",
+    "subtopic": "医学略語",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "NSAIDsの正式名称はどれか。",
+    "choices": [
+     "Non-Steroidal Anti-Inflammatory Drugs",
+     "Non-Specific Anti-Infective Drugs",
+     "Neuro-Stimulating Anti-Inflammatory Drugs",
+     "Non-Steroidal Anti-Infective Drugs"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "NSAIDsはNon-Steroidal Anti-Inflammatory Drugs（非ステロイド性抗炎症薬）の略。イブプロフェン等が該当し、軽度〜中等度の疼痛に用いられる。",
+     "choiceNotes": [
+      null,
+      "Anti-Infective（抗感染）ではなくAnti-Inflammatory（抗炎症）。",
+      "Neuro-Stimulatingは神経刺激の意味で無関係。",
+      "Anti-InfectiveではなくAnti-Inflammatoryが正しい。"
+     ],
+     "point": "NSAIDs＝Non-Steroidal Anti-Inflammatory Drugs＝非ステロイド性抗炎症薬。"
+    },
+    "sources": [
+     {
+      "ref": "x-legacy-L04b:mp-appendixb",
+      "title": "MedlinePlus Appendix B: Some common abbreviations",
+      "url": "https://medlineplus.gov/appendixb.html",
+      "locator": "Appendix B: NSAID",
+      "quote": "NSAID Non-steroidal anti-inflammatory drug Drugs like ibuprofen"
+     },
+     {
+      "ref": "x-legacy-L04b:msd-ja-pain",
+      "title": "MSDマニュアル プロフェッショナル版：疼痛の治療",
+      "url": "https://www.msdmanuals.com/ja-jp/professional/07-神経疾患/疼痛/疼痛の治療",
+      "locator": "非オピオイド鎮痛薬",
+      "quote": "アセトアミノフェンと非ステロイド系抗炎症薬（NSAID）は，しばしば軽度から中等度の疼痛に効果的である"
+     }
+    ],
+    "asOf": "MedlinePlus / SEER Training 略語一覧（2026-11閲覧）・MSDマニュアル プロフェッショナル版（2026-11閲覧）"
+   }
+  },
+  {
+   "id": "lg-04-22",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "正答: PPI＝Proton pump inhibitors（MedlinePlus 000381）、msd-ja-acid（H+,K+-ATPase阻害、H2受容体拮抗薬は別分類）。solver一致。",
+   "detail": "誤答解説の略語（PI・PDE阻害薬）や「抗血小板薬に分類」は出典未確認のため、PPIの展開と作用に基づく説明に置換。",
+   "question": {
+    "id": "lg-04-22",
+    "legacy": {
+     "key": "4_22",
+     "chapter": 4,
+     "chapterName": "医学用語・医学略語",
+     "index": 22,
+     "hash": "2e6819e2c7e1a030"
+    },
+    "subject": "B12",
+    "subtopic": "医学略語",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "PPIが意味する薬剤分類はどれか。",
+    "choices": [
+     "プロテアーゼ阻害薬",
+     "プロトンポンプ阻害薬",
+     "血小板凝集阻害薬",
+     "ホスホジエステラーゼ阻害薬"
+    ],
+    "answer": 1,
+    "explanation": {
+     "correct": "PPIはProton Pump Inhibitor（プロトンポンプ阻害薬）の略。壁細胞のH+,K+-ATPase（プロトンポンプ）を阻害して胃酸分泌を抑える薬剤で、オメプラゾール等がある。",
+     "choiceNotes": [
+      "PPIのPPはProton Pump（プロトンポンプ）で、プロテアーゼではない。",
+      null,
+      "PPIは胃酸分泌を抑える薬剤で、血小板凝集を抑える薬剤ではない。",
+      "PPIのPPはProton Pump（プロトンポンプ）で、ホスホジエステラーゼではない。"
+     ],
+     "point": "PPI＝プロトンポンプ阻害薬（胃酸分泌抑制）。H2受容体拮抗薬は別の薬剤群。"
+    },
+    "sources": [
+     {
+      "ref": "x-legacy-L04b:mp-ppi",
+      "title": "MedlinePlus: Proton pump inhibitors",
+      "url": "https://medlineplus.gov/ency/patientinstructions/000381.htm",
+      "locator": "冒頭",
+      "quote": "Proton pump inhibitors (PPIs) are medicines that work by reducing the amount of stomach acid made by glands in the lining of your stomach."
+     },
+     {
+      "ref": "x-legacy-L04b:msd-ja-acid",
+      "title": "MSDマニュアル プロフェッショナル版：胃酸過多の治療薬",
+      "url": "https://www.msdmanuals.com/ja-jp/professional/01-消化管疾患/胃炎および消化性潰瘍/胃酸過多の治療薬",
+      "locator": "プロトンポンプ阻害薬",
+      "quote": "この種の薬剤はH+,K+-ATPaseを強力に阻害する。"
+     },
+     {
+      "ref": "x-legacy-L04b:msd-ja-acid",
+      "title": "MSDマニュアル プロフェッショナル版：胃酸過多の治療薬",
+      "url": "https://www.msdmanuals.com/ja-jp/professional/01-消化管疾患/胃炎および消化性潰瘍/胃酸過多の治療薬",
+      "locator": "プロトンポンプ阻害薬（用量）",
+      "quote": "オメプラゾール20mg，1日1回"
+     }
+    ],
+    "asOf": "MedlinePlus / SEER Training 略語一覧（2026-11閲覧）・MSDマニュアル プロフェッショナル版（2026-11閲覧）"
+   }
+  },
+  {
+   "id": "lg-04-23",
+   "verdict": "reject",
+   "contentChanged": false,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": false,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "lg-04-06（HbA1cが示す内容はどれか。正答「過去1〜2ヶ月の平均血糖値の指標」）と同一内容。solverも重複を指摘。",
+   "detail": "lg-04-06 の重複。さらに point の「基準値6.5%未満」は誤り（msd-ja-dm: HbA1C ≥ 6.5％ は糖尿病の診断基準で、基準値ではない）。期間も MSD は「過去3カ月間」と記載し出典間で揺れる。",
+   "reason": "duplicate"
+  },
+  {
+   "id": "lg-04-24",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "正答: ROM＝Range of motions（SEER）、msd-ja-pt 可動域（ゴニオメーターで評価）。FIM＝Functional Independence Measure（x-legacy-L04b:shimane-fim）。solver一致。",
+   "detail": "誤答解説の ADL・Exercise Stress Test の展開は出典未確認のため、ROMの意味に基づく説明に修正。",
+   "question": {
+    "id": "lg-04-24",
+    "legacy": {
+     "key": "4_24",
+     "chapter": 4,
+     "chapterName": "医学用語・医学略語",
+     "index": 24,
+     "hash": "1303c69e0654d7fe"
+    },
+    "subject": "B12",
+    "subtopic": "医学略語",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "ROMが意味するリハビリテーション用語はどれか。",
+    "choices": [
+     "日常生活動作",
+     "機能的自立度評価",
+     "関節可動域",
+     "運動負荷試験"
+    ],
+    "answer": 2,
+    "explanation": {
+     "correct": "ROMはRange of Motion（関節可動域）の略。関節の動く範囲を示し、リハビリテーションではゴニオメーターを用いて評価する。",
+     "choiceNotes": [
+      "ROMは関節可動域で、日常生活動作を表す略語ではない。",
+      "機能的自立度評価はFIM（Functional Independence Measure）。",
+      null,
+      "ROMは関節の動く範囲（関節可動域）を表し、運動負荷試験ではない。"
+     ],
+     "point": "ROM＝関節可動域（ゴニオメーターで測定）、FIM＝機能的自立度評価。"
+    },
+    "sources": [
+     {
+      "ref": "x-legacy-L04b:seer-abbrev",
+      "title": "Common Abbreviations (All) | SEER Training",
+      "url": "https://training.seer.cancer.gov/abstracting/additional/abbreviations/all.html",
+      "locator": "Common Abbreviations: ROM",
+      "quote": "ROM Range of motions"
+     },
+     {
+      "ref": "x-legacy-L04b:msd-ja-pt",
+      "title": "MSDマニュアル プロフェッショナル版：理学療法",
+      "url": "https://www.msdmanuals.com/ja-jp/professional/24-その他のトピック/リハビリテーション/理学療法",
+      "locator": "可動域",
+      "quote": "ゴニオメーターを用いて可動域を評価すべきであり"
+     },
+     {
+      "ref": "x-legacy-L04b:shimane-fim",
+      "title": "FIMによる評価マニュアル（益田保健所 地域リハビリテーション資料）",
+      "url": "https://www.pref.shimane.lg.jp/medical/kenko/kikan/masuda_hoken/tiikiriha/ryouyouno-to.data/no2fimmamyuaru.doc",
+      "locator": "Ⅰ．FIMとは",
+      "quote": "FIMとは、機能的自立度評価表（Functional  Independence  Ｍeasure）の略"
+     }
+    ],
+    "asOf": "MedlinePlus / SEER Training 略語一覧（2026-11閲覧）・MSDマニュアル プロフェッショナル版（2026-11閲覧）"
+   }
+  },
+  {
+   "id": "lg-04-25",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "正答: shimane-fim「運動ADL13項目と認知ADL5項目から構成」、採点 7〜1点（運動項目）・各項目7点満点（認知項目）。solver一致。",
+   "detail": "誤答解説「10項目はBarthel Indexの項目数」は本問の出典で確認できないため、FIMの構成に基づく説明に修正。名称を出典どおり「機能的自立度評価表」に。",
+   "question": {
+    "id": "lg-04-25",
+    "legacy": {
+     "key": "4_25",
+     "chapter": 4,
+     "chapterName": "医学用語・医学略語",
+     "index": 25,
+     "hash": "a3489191923dbcb0"
+    },
+    "subject": "B12",
+    "subtopic": "医学用語",
+    "format": "knowledge",
+    "difficulty": "standard",
+    "polarity": "positive",
+    "question": "FIMの評価項目の総数はどれか。",
+    "choices": [
+     "10項目",
+     "13項目",
+     "18項目",
+     "25項目"
+    ],
+    "answer": 2,
+    "explanation": {
+     "correct": "FIM（機能的自立度評価表、Functional Independence Measure）は運動項目13項目と認知項目5項目の計18項目で構成され、各項目を1〜7点で評価する。",
+     "choiceNotes": [
+      "FIMは運動13項目＋認知5項目の18項目で、10項目ではない。",
+      "13項目はFIMの運動項目の数。認知項目5項目を加えた18項目が総数。",
+      null,
+      "FIMは18項目で、25項目ではない。"
+     ],
+     "point": "FIM＝18項目（運動13＋認知5）。各1〜7点で、合計は18〜126点。"
+    },
+    "sources": [
+     {
+      "ref": "x-legacy-L04b:shimane-fim",
+      "title": "FIMによる評価マニュアル（益田保健所 地域リハビリテーション資料）",
+      "url": "https://www.pref.shimane.lg.jp/medical/kenko/kikan/masuda_hoken/tiikiriha/ryouyouno-to.data/no2fimmamyuaru.doc",
+      "locator": "Ⅰ．FIMとは",
+      "quote": "食事や移動などの“運動ＡＤＬ”13項目と“認知ＡＤＬ”5項目から構成され"
+     },
+     {
+      "ref": "x-legacy-L04b:shimane-fim",
+      "title": "FIMによる評価マニュアル（益田保健所 地域リハビリテーション資料）",
+      "url": "https://www.pref.shimane.lg.jp/medical/kenko/kikan/masuda_hoken/tiikiriha/ryouyouno-to.data/no2fimmamyuaru.doc",
+      "locator": "運動項目の原則（採点の基準）",
+      "quote": "7・6点 ：一人でできる 5～1点 ：何らかの監視や介助が必要"
+     },
+     {
+      "ref": "x-legacy-L04b:shimane-fim",
+      "title": "FIMによる評価マニュアル（益田保健所 地域リハビリテーション資料）",
+      "url": "https://www.pref.shimane.lg.jp/medical/kenko/kikan/masuda_hoken/tiikiriha/ryouyouno-to.data/no2fimmamyuaru.doc",
+      "locator": "認知項目の原則",
+      "quote": "社会認識（社会的交流、問題解決、記憶）について各項目７点満点で評価します。"
+     }
+    ],
+    "asOf": "FIM評価マニュアル（島根県益田保健所、2008年）"
+   }
+  },
+  {
+   "id": "lg-04-26",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "正答: msd-ja-antidep「選択的セロトニン再取り込み阻害薬（SSRI）」、うつ病で「SSRIが最初の第1選択薬とされる場合が多い」。solver一致。",
+   "detail": "point「SSRI＝うつ病の第一選択薬」は断定しすぎ（MSD: 第1選択薬とされる場合が多い）。誤答解説の他疾患の治療薬列挙・パニック障害は出典未確認のため削除。",
+   "question": {
+    "id": "lg-04-26",
+    "legacy": {
+     "key": "4_26",
+     "chapter": 4,
+     "chapterName": "医学用語・医学略語",
+     "index": 26,
+     "hash": "115734408fb28999"
+    },
+    "subject": "B12",
+    "subtopic": "医学略語",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "SSRIが適応となる主な疾患はどれか。",
+    "choices": [
+     "高血圧症",
+     "うつ病",
+     "糖尿病",
+     "骨粗鬆症"
+    ],
+    "answer": 1,
+    "explanation": {
+     "correct": "SSRIは選択的セロトニン再取り込み阻害薬（Selective Serotonin Reuptake Inhibitor）で、うつ病の治療に用いられる抗うつ薬である。",
+     "choiceNotes": [
+      "SSRIは抗うつ薬であり、高血圧症の治療薬ではない。",
+      null,
+      "SSRIは抗うつ薬であり、糖尿病の治療薬ではない。",
+      "SSRIは抗うつ薬であり、骨粗鬆症の治療薬ではない。"
+     ],
+     "point": "SSRI＝選択的セロトニン再取り込み阻害薬。うつ病の薬物療法で第1選択薬とされることが多い。"
+    },
+    "sources": [
+     {
+      "ref": "x-legacy-L04b:msd-ja-antidep",
+      "title": "MSDマニュアル プロフェッショナル版：うつ病の治療に用いられる薬剤",
+      "url": "https://www.msdmanuals.com/ja-jp/professional/08-精神疾患/気分症/うつ病の治療に用いられる薬剤",
+      "locator": "見出し",
+      "quote": "選択的セロトニン再取り込み阻害薬（SSRI）"
+     },
+     {
+      "ref": "x-legacy-L04b:msd-ja-antidep",
+      "title": "MSDマニュアル プロフェッショナル版：うつ病の治療に用いられる薬剤",
+      "url": "https://www.msdmanuals.com/ja-jp/professional/08-精神疾患/気分症/うつ病の治療に用いられる薬剤",
+      "locator": "薬剤の選択",
+      "quote": "それ以外の場合は，SSRIが最初の第1選択薬とされる場合が多い。"
+     }
+    ],
+    "asOf": "MSDマニュアル プロフェッショナル版（2026-11閲覧）"
+   }
+  },
+  {
+   "id": "lg-04-27",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "正答: TPN＝Total parenteral nutrition（SEER）、msd-ja-pn「静脈栄養（PN）（完全静脈栄養）」「静脈内に投与」。経腸栄養は消化管を使う（msd-ja-en）。solver一致。",
+   "detail": "「EN」「経管栄養とも呼ばれる」「PPN」は出典未確認または不正確（経管栄養は経腸栄養の一方法）。中心静脈の記述も出典どおりに修正。",
+   "question": {
+    "id": "lg-04-27",
+    "legacy": {
+     "key": "4_27",
+     "chapter": 4,
+     "chapterName": "医学用語・医学略語",
+     "index": 27,
+     "hash": "6b516ebed9b10b7b"
+    },
+    "subject": "B12",
+    "subtopic": "医学略語",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "TPN（Total Parenteral Nutrition）の日本語訳はどれか。",
+    "choices": [
+     "経腸栄養",
+     "完全静脈栄養",
+     "経口栄養",
+     "半消化態栄養"
+    ],
+    "answer": 1,
+    "explanation": {
+     "correct": "TPNはTotal Parenteral Nutrition（完全静脈栄養）の略。栄養を静脈内に投与する方法で、高浸透圧の輸液を用いる中心静脈栄養では中心静脈アクセスデバイスが必要となる。",
+     "choiceNotes": [
+      "経腸栄養は消化管を用いる栄養法（経管栄養など）で、静脈栄養ではない。",
+      null,
+      "経口栄養は口から摂取する方法で、静脈栄養ではない。",
+      "半消化態栄養は経腸栄養で用いる栄養剤の種類を指す用語で、静脈から投与する栄養法ではない。"
+     ],
+     "point": "TPN＝完全静脈栄養（静脈から投与）。経腸栄養は消化管を使う。"
+    },
+    "sources": [
+     {
+      "ref": "x-legacy-L04b:seer-abbrev",
+      "title": "Common Abbreviations (All) | SEER Training",
+      "url": "https://training.seer.cancer.gov/abstracting/additional/abbreviations/all.html",
+      "locator": "Common Abbreviations: TPN",
+      "quote": "TPN Total parenteral nutrition"
+     },
+     {
+      "ref": "x-legacy-L04b:msd-ja-pn",
+      "title": "MSDマニュアル プロフェッショナル版：静脈栄養（PN）",
+      "url": "https://www.msdmanuals.com/ja-jp/professional/09-栄養障害/栄養サポート/静脈栄養-pn",
+      "locator": "概要",
+      "quote": "静脈栄養（PN）はその定義から，静脈内に投与するものである。"
+     },
+     {
+      "ref": "x-legacy-L04b:msd-ja-en",
+      "title": "MSDマニュアル プロフェッショナル版：経腸栄養",
+      "url": "https://www.msdmanuals.com/ja-jp/professional/09-栄養障害/栄養サポート/経腸栄養",
+      "locator": "概要",
+      "quote": "消化管は機能しているものの，経口摂食ができないか，またはしたがらないために経口で十分な栄養素を摂取できない患者は，経腸栄養の適応とな"
+     }
+    ],
+    "asOf": "MedlinePlus / SEER Training 略語一覧（2026-11閲覧）・MSDマニュアル プロフェッショナル版（2026-11閲覧）"
+   }
+  }
+ ]
+}

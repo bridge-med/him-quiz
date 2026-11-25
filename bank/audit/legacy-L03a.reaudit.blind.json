@@ -1,0 +1,12 @@
+{"answers":[
+{"key":"lg-03-05","answer":0,"confidence":"high","ambiguous":false,"note":"電子保存の三基準 = 真正性・見読性・保存性"},
+{"key":"lg-03-06","answer":0,"confidence":"high","ambiguous":false,"note":"感染症法6条2項 一類 エボラ出血熱"},
+{"key":"lg-03-07","answer":0,"confidence":"high","ambiguous":false,"note":"医師法21条 所轄警察署"},
+{"key":"lg-03-08","answer":0,"confidence":"high","ambiguous":false,"note":"記入マニュアルの使い分け"},
+{"key":"lg-03-10","answer":0,"confidence":"high","ambiguous":false,"note":"医療法施行規則20条10号 過去2年間"},
+{"key":"lg-03-11","answer":0,"confidence":"medium","ambiguous":false,"note":"400床(規則6条の5)。診療科数21の数え方は要確認(規則6条の4第1項の列挙は数え方で20〜21)"},
+{"key":"lg-03-12","answer":0,"confidence":"high","ambiguous":false,"note":"臨床研究法2条2項1号"},
+{"key":"lg-03-13","answer":0,"confidence":"high","ambiguous":false,"note":"精神保健福祉法29条1項・29条の2? 2人以上の指定医の一致"},
+{"key":"lg-03-14","answer":0,"confidence":"high","ambiguous":false,"note":"児童虐待防止法6条1項"},
+{"key":"lg-03-15","answer":0,"confidence":"medium","ambiguous":false,"note":"医療法6条の5 第3項 広告可能事項以外は広告不可（限定解除あり）"}
+]}

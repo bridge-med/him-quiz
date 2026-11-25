@@ -1,0 +1,13 @@
+{"answers":[
+{"key":"lg-01-17","answer":0,"confidence":"high","ambiguous":false,"note":"相談対応・対話促進"},
+{"key":"lg-01-20","answer":0,"confidence":"high","ambiguous":false,"note":"研究の実施の適否等の審査"},
+{"key":"lg-01-21","answer":0,"confidence":"high","ambiguous":false,"note":"日本医療機能評価機構の第三者評価"},
+{"key":"lg-01-22","answer":0,"confidence":"high","ambiguous":false,"note":"昭和23年法律第205号"},
+{"key":"lg-01-23","answer":0,"confidence":"high","ambiguous":false,"note":"裁判外・第三者関与"},
+{"key":"lg-01-24","answer":1,"confidence":"high","ambiguous":false,"note":"日常的な診療・疾病の予防"},
+{"key":"lg-01-26","answer":2,"confidence":"high","ambiguous":false,"note":"医療法6条の10"},
+{"key":"lg-01-27","answer":1,"confidence":"high","ambiguous":false,"note":"非懲罰的報告文化"},
+{"key":"lg-01-28","answer":1,"confidence":"high","ambiguous":false,"note":"病院報告の算式"},
+{"key":"lg-01-30","answer":0,"confidence":"high","ambiguous":false,"note":"売上高=総費用"},
+{"key":"lg-01-31","answer":1,"confidence":"high","ambiguous":false,"note":"医療法施行規則19条 療養病床4:1"}
+]}

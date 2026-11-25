@@ -57,13 +57,13 @@
     "key": "lg-09-00",
     "by": "旧版（v2・AI作成）"
    },
-   "status": "provisional",
+   "status": "verified",
    "verification": {
     "date": "2026-11-25",
     "method": [
      "独立ブラインド解答（別モデル）",
      "領域監査（ICD-10専門）で修正",
-     "修正後の再監査は未実施",
+     "修正後の独立再監査（pass）",
      "引用の機械照合（一次資料キャッシュ）",
      "スキーマ・ICDコード・計算の機械検査"
     ],
@@ -71,10 +71,10 @@
      "author": "旧版（AI作成・出典なし）",
      "solver": "solve:L09（別モデル・正答を見ずに解答）",
      "auditor": "audit:L09a（ICD-10専門）",
-     "reauditor": null
+     "reauditor": "reaudit:L09a"
     },
     "log": "bank/audit/legacy-L09a.audit.json#lg-09-00",
-    "notes": "icd:rikai（3桁/4桁分類の構成）・icd:instruction 2.4で確認。"
+    "notes": "再監査: icd:instruction 2.4 (英字1桁+数字、第4桁は小数点後; ICD-9は数字のみ), icd:rikai ICDの構成で確認。誤肢すべて明確に誤り。 Blind一致。validate 0 errors。｜icd:rikai（3桁/4桁分類の構成）・icd:instruction 2.4で確認。"
    }
   },
   {
@@ -140,13 +140,13 @@
     "key": "lg-09-01",
     "by": "旧版（v2・AI作成）"
    },
-   "status": "provisional",
+   "status": "verified",
    "verification": {
     "date": "2026-11-25",
     "method": [
      "独立ブラインド解答（別モデル）",
      "領域監査（ICD-10専門）で修正",
-     "修正後の再監査は未実施",
+     "修正後の独立再監査（pass）",
      "引用の機械照合（一次資料キャッシュ）",
      "スキーマ・ICDコード・計算の機械検査"
     ],
@@ -154,10 +154,10 @@
      "author": "旧版（AI作成・出典なし）",
      "solver": "solve:L09（別モデル・正答を見ずに解答）",
      "auditor": "audit:L09a（ICD-10専門）",
-     "reauditor": null
+     "reauditor": "reaudit:L09a"
     },
     "log": "bank/audit/legacy-L09a.audit.json#lg-09-01",
-    "notes": "icd:rikai（22の章／17章→21章、セカンドエディションから22章）・icd:instruction 2.4.1で確認。ソルバーも21章を誤りと指摘。"
+    "notes": "再監査: icd:rikai l.78 現行22章, l.741-744 17章→21章・セカンドエディションから22章; icd:instruction 2.4.1 22章。 Blind一致。validate 0 errors。｜icd:rikai（22の章／17章→21章、セカンドエディションから22章）・icd:instruction 2.4.1で確認。ソルバーも21章を誤りと指摘。"
    }
   },
   {
@@ -216,13 +216,13 @@
     "key": "lg-09-04",
     "by": "旧版（v2・AI作成）"
    },
-   "status": "provisional",
+   "status": "verified",
    "verification": {
     "date": "2026-11-25",
     "method": [
      "独立ブラインド解答（別モデル）",
      "領域監査（ICD-10専門）で修正",
-     "修正後の再監査は未実施",
+     "修正後の独立再監査（pass）",
      "引用の機械照合（一次資料キャッシュ）",
      "スキーマ・ICDコード・計算の機械検査"
     ],
@@ -230,10 +230,10 @@
      "author": "旧版（AI作成・出典なし）",
      "solver": "solve:L09（別モデル・正答を見ずに解答）",
      "auditor": "audit:L09a（ICD-10専門）",
-     "reauditor": null
+     "reauditor": "reaudit:L09a"
     },
     "log": "bank/audit/legacy-L09a.audit.json#lg-09-04",
-    "notes": "icd:instruction「剣印及び星印」システム（l.1024-1048）で確認。"
+    "notes": "再監査: icd:instruction 3.1.3 剣印=原疾患の一次コード・常に使用、星印=任意的追加コード・単独使用不可。 Blind一致。validate 0 errors。｜icd:instruction「剣印及び星印」システム（l.1024-1048）で確認。"
    }
   },
   {
@@ -292,13 +292,13 @@
     "key": "lg-09-09",
     "by": "旧版（v2・AI作成）"
    },
-   "status": "provisional",
+   "status": "verified",
    "verification": {
     "date": "2026-11-25",
     "method": [
      "独立ブラインド解答（別モデル）",
      "領域監査（ICD-10専門）で修正",
-     "修正後の再監査は未実施",
+     "修正後の独立再監査（pass）",
      "引用の機械照合（一次資料キャッシュ）",
      "スキーマ・ICDコード・計算の機械検査"
     ],
@@ -306,10 +306,10 @@
      "author": "旧版（AI作成・出典なし）",
      "solver": "solve:L09（別モデル・正答を見ずに解答）",
      "auditor": "audit:L09a（ICD-10専門）",
-     "reauditor": null
+     "reauditor": "reaudit:L09a"
     },
     "log": "bank/audit/legacy-L09a.audit.json#lg-09-09",
-    "notes": "cancer:glossary-kokusaisippeibunruisyuyougaku（がん登録用、部位（局在）・組織型（形態）、O＝Oncology）・icd:instruction 腫瘍学の項（局在及び形態の2軸分類、がん登録で使用）で確認。"
+    "notes": "再監査: cancer:glossary-kokusaisippeibunruisyuyougaku (OはOncology, 部位・組織型); icd:instruction l.368-374 局在及び形態の2軸分類。 Blind一致。validate 0 errors。｜cancer:glossary-kokusaisippeibunruisyuyougaku（がん登録用、部位（局在）・組織型（形態）、O＝Oncology）・icd:instruction 腫瘍学の項（局在及び形態の2軸分類、がん登録で使用）で確認。"
    }
   },
   {
@@ -359,13 +359,13 @@
     "key": "lg-09-12",
     "by": "旧版（v2・AI作成）"
    },
-   "status": "provisional",
+   "status": "verified",
    "verification": {
     "date": "2026-11-25",
     "method": [
      "独立ブラインド解答（別モデル）",
      "領域監査（ICD-10専門）で修正",
-     "修正後の再監査は未実施",
+     "修正後の独立再監査（pass）",
      "引用の機械照合（一次資料キャッシュ）",
      "スキーマ・ICDコード・計算の機械検査"
     ],
@@ -373,10 +373,10 @@
      "author": "旧版（AI作成・出典なし）",
      "solver": "solve:L09（別モデル・正答を見ずに解答）",
      "auditor": "audit:L09a（ICD-10専門）",
-     "reauditor": null
+     "reauditor": "reaudit:L09a"
     },
     "log": "bank/audit/legacy-L09a.audit.json#lg-09-12",
-    "notes": "icd:instruction 4.1.2 原死因の定義（⒜疾病又は損傷、⒝致命傷を負わせた事故又は暴力の状況）で確認。"
+    "notes": "再監査: icd:instruction 4.1.2 (l.1516-1530) 原死因の定義⒜、死亡の防止・公衆衛生の観点の記述も一致。 Blind一致。validate 0 errors。｜icd:instruction 4.1.2 原死因の定義（⒜疾病又は損傷、⒝致命傷を負わせた事故又は暴力の状況）で確認。"
    }
   },
   {
@@ -442,13 +442,13 @@
     "key": "lg-09-15",
     "by": "旧版（v2・AI作成）"
    },
-   "status": "provisional",
+   "status": "verified",
    "verification": {
     "date": "2026-11-25",
     "method": [
      "独立ブラインド解答（別モデル）",
      "領域監査（ICD-10専門）で修正",
-     "修正後の再監査は未実施",
+     "修正後の独立再監査（pass）",
      "引用の機械照合（一次資料キャッシュ）",
      "スキーマ・ICDコード・計算の機械検査"
     ],
@@ -456,10 +456,10 @@
      "author": "旧版（AI作成・出典なし）",
      "solver": "solve:L09（別モデル・正答を見ずに解答）",
      "auditor": "audit:L09a（ICD-10専門）",
-     "reauditor": null
+     "reauditor": "reaudit:L09a"
     },
     "log": "bank/audit/legacy-L09a.audit.json#lg-09-15",
-    "notes": "icd:instruction 3.3（索引表を先に参照→手順6で内容例示表で確認、両方を参照）、2.4.1（第1巻＝内容例示表、第3巻＝索引）、3.1.2（索引表は最初に参照するべき）で確認。"
+    "notes": "再監査: icd:instruction l.974 索引表を最初に参照, 3.3 l.1426-1427 索引表は第1巻にない多くの用語を含む・両方を参照, 手順6 内容例示表で確認。 Blind一致。validate 0 errors。｜icd:instruction 3.3（索引表を先に参照→手順6で内容例示表で確認、両方を参照）、2.4.1（第1巻＝内容例示表、第3巻＝索引）、3.1.2（索引表は最初に参照するべき）で確認。"
    }
   },
   {
@@ -525,13 +525,13 @@
     "key": "lg-09-18",
     "by": "旧版（v2・AI作成）"
    },
-   "status": "provisional",
+   "status": "verified",
    "verification": {
     "date": "2026-11-25",
     "method": [
      "独立ブラインド解答（別モデル）",
      "領域監査（ICD-10専門）で修正",
-     "修正後の再監査は未実施",
+     "修正後の独立再監査（pass）",
      "引用の機械照合（一次資料キャッシュ）",
      "スキーマ・ICDコード・計算の機械検査"
     ],
@@ -539,10 +539,10 @@
      "author": "旧版（AI作成・出典なし）",
      "solver": "solve:L09（別モデル・正答を見ずに解答）",
      "auditor": "audit:L09b（ICD-10専門）",
-     "reauditor": null
+     "reauditor": "reaudit:L09b"
     },
     "log": "bank/audit/legacy-L09b.audit.json#lg-09-18",
-    "notes": "icdbg:mhlw-icd11-overview 年表（2019年5月 WHA72採択、2022年1月発効）；who:wha72-15 前文（1990年 第43回WHAでICD-10採択）；who:icd11-fact-sheet-2026（Digitally native）；icdbg:soumu-kokuji-r08-11（令和9年1月1日施行）も確認。"
+    "notes": "再監査: icdbg:mhlw-icd11-overview 改訂の経緯（2018年6月公表・2019年5月WHA72採択・2022年1月発効）、who:wha72-15 前文（WHA43 1990年5月17日にICD-10採択）、who:icd11-fact-sheet-2026（Digitally native, EHR統合前提）を確認。2027-01-01は国内ICD-11準拠分類の施行日（総務省告示令和8年第11号）。｜icdbg:mhlw-icd11-overview 年表（2019年5月 WHA72採択、2022年1月発効）；who:wha72-15 前文（1990年 第43回WHAでICD-10採択）；who:icd11-fact-sheet-2026（Digitally native）；icdbg:soumu-kokuji-r08-11（令和9年1月1日施行）も確認。"
    }
   },
   {
@@ -607,7 +607,7 @@
     "method": [
      "独立ブラインド解答（別モデル）",
      "領域監査（ICD-10専門）で修正",
-     "修正後の再監査は未実施",
+     "修正後の独立再監査（provisional）",
      "引用の機械照合（一次資料キャッシュ）",
      "スキーマ・ICDコード・計算の機械検査"
     ],
@@ -615,10 +615,10 @@
      "author": "旧版（AI作成・出典なし）",
      "solver": "solve:L09（別モデル・正答を見ずに解答）",
      "auditor": "audit:L09b（ICD-10専門）",
-     "reauditor": null
+     "reauditor": "reaudit:L09b"
     },
     "log": "bank/audit/legacy-L09b.audit.json#lg-09-26",
-    "notes": "icd:instruction 4.4.1（主要病態の定義：エピソードの最後に診断、多数あれば最も医療資源が使われた病態、未診断なら主要症状・異常所見）。"
+    "notes": "再監査: 内容は icd:instruction 4.4 疾病統計（p.161-162）の主要病態の定義（エピソードの最後に診断／多数なら最も医療資源が使われた病態／未診断なら主要症状・異常所見）と一致し、key・全choiceNotes は正しい。｜icd:instruction 4.4.1（主要病態の定義：エピソードの最後に診断、多数あれば最も医療資源が使われた病態、未診断なら主要症状・異常所見）。"
    }
   },
   {
@@ -683,7 +683,7 @@
     "method": [
      "独立ブラインド解答（別モデル）",
      "領域監査（ICD-10専門）で修正",
-     "修正後の再監査は未実施",
+     "修正後の独立再監査（provisional）",
      "引用の機械照合（一次資料キャッシュ）",
      "スキーマ・ICDコード・計算の機械検査"
     ],
@@ -691,10 +691,10 @@
      "author": "旧版（AI作成・出典なし）",
      "solver": "solve:L09（別モデル・正答を見ずに解答）",
      "auditor": "audit:L09b（ICD-10専門）",
-     "reauditor": null
+     "reauditor": "reaudit:L09b"
     },
     "log": "bank/audit/legacy-L09b.audit.json#lg-09-27",
-    "notes": "icd:instruction 3.1.6 続発・後遺症の分類項目（B90－B94，E64.-，E68，G09，I69.-，O97，T90－T98，Y85－Y89）、4.4.2 病態の続発・後遺症のコーディング（主要病態の優先コードは続発・後遺症それ自身の性質）。"
+    "notes": "再監査: icd:instruction の続発・後遺症の分類項目一覧（B90－B94，E64.-，E68，G09，I69.-，O97，T90－T98，Y85－Y89）と 4.4.2「病態の続発・後遺症のコーディング」（優先コードは続発・後遺症それ自身の性質）を確認。I63脳梗塞・G81片麻痺・Z54回復期・T14部位不明の損傷（kihon2013）。key は正しい。｜icd:instruction 3.1.6 続発・後遺症の分類項目（B90－B94，E64.-，E68，G09，I69.-，O97，T90－T98，Y85－Y89）、4.4.2 病態の続発・後遺症のコーディング（主要病態の優先コードは続発・後遺症それ自身の性質）。"
    }
   },
   {
@@ -760,13 +760,13 @@
     "key": "lg-09-31",
     "by": "旧版（v2・AI作成）"
    },
-   "status": "provisional",
+   "status": "verified",
    "verification": {
     "date": "2026-11-25",
     "method": [
      "独立ブラインド解答（別モデル）",
      "領域監査（ICD-10専門）で修正",
-     "修正後の再監査は未実施",
+     "修正後の独立再監査（pass）",
      "引用の機械照合（一次資料キャッシュ）",
      "スキーマ・ICDコード・計算の機械検査"
     ],
@@ -774,10 +774,10 @@
      "author": "旧版（AI作成・出典なし）",
      "solver": "solve:L09（別モデル・正答を見ずに解答）",
      "auditor": "audit:L09b（ICD-10専門）",
-     "reauditor": null
+     "reauditor": "reaudit:L09b"
     },
     "log": "bank/audit/legacy-L09b.audit.json#lg-09-31",
-    "notes": "icd:instruction 3.1.3 剣印及び星印システム（剣印＝一次コード・原疾患、星印＝症状発現の任意的追加コード、星印は単独使用不可、疾病では逆転可）、4.1 表2注（星印コードは死亡コーディングに使用しない）；tools/icd.mjs E11.2†・N08.3*。"
+    "notes": "再監査: icd:instruction 3.1.3（一次コード＝原疾患に剣印、症状発現の任意的追加コードに星印、剣印は常に使用、星印は決して単独で使用しない、疾病コーディングでは逆転可）、4.1 表２の注（星印コードは死亡コーディングに使用されない）を確認。E11.2†＋N08.3* は naiyou04 で確認。｜icd:instruction 3.1.3 剣印及び星印システム（剣印＝一次コード・原疾患、星印＝症状発現の任意的追加コード、星印は単独使用不可、疾病では逆転可）、4.1 表2注（星印コードは死亡コーディングに使用しない）；tools/icd.mjs E11.2†・N08.3*。"
    }
   },
   {
@@ -841,13 +841,13 @@
     "key": "lg-10-00",
     "by": "旧版（v2・AI作成）"
    },
-   "status": "provisional",
+   "status": "verified",
    "verification": {
     "date": "2026-11-25",
     "method": [
      "独立ブラインド解答（別モデル）",
      "領域監査（ICD-10専門）で修正",
-     "修正後の再監査は未実施",
+     "修正後の独立再監査（pass）",
      "引用の機械照合（一次資料キャッシュ）",
      "スキーマ・ICDコード・計算の機械検査"
     ],
@@ -855,10 +855,10 @@
      "author": "旧版（AI作成・出典なし）",
      "solver": "solve:L10（別モデル・正答を見ずに解答）",
      "auditor": "audit:L10a（ICD-10専門）",
-     "reauditor": null
+     "reauditor": "reaudit:L10a"
     },
     "log": "bank/audit/legacy-L10a.audit.json#lg-10-00",
-    "notes": "icd:rikai「１ ICDとは」で英名と正式名称「疾病及び関連保健問題の国際統計分類」を確認。誤答肢の ICF・ICHI の英名は icdbg:mhlw-icf-ja-2002、icdbg:whofic-japan-about で確認。"
+    "notes": "再監査: icd:rikai L35-36 ICD正式名称確認; ICF名称 icdbg:mhlw-icf-ja-2002; ICHI英語名はcancer/who_classifications_whofic.txt L400でも確認。validate 0 errors。｜icd:rikai「１ ICDとは」で英名と正式名称「疾病及び関連保健問題の国際統計分類」を確認。誤答肢の ICF・ICHI の英名は icdbg:mhlw-icf-ja-2002、icdbg:whofic-japan-about で確認。"
    }
   },
   {
@@ -915,13 +915,13 @@
     "key": "lg-10-01",
     "by": "旧版（v2・AI作成）"
    },
-   "status": "provisional",
+   "status": "verified",
    "verification": {
     "date": "2026-11-25",
     "method": [
      "独立ブラインド解答（別モデル）",
      "領域監査（ICD-10専門）で修正",
-     "修正後の再監査は未実施",
+     "修正後の独立再監査（pass）",
      "引用の機械照合（一次資料キャッシュ）",
      "スキーマ・ICDコード・計算の機械検査"
     ],
@@ -929,10 +929,10 @@
      "author": "旧版（AI作成・出典なし）",
      "solver": "solve:L10（別モデル・正答を見ずに解答）",
      "auditor": "audit:L10a（ICD-10専門）",
-     "reauditor": null
+     "reauditor": "reaudit:L10a"
     },
     "log": "bank/audit/legacy-L10a.audit.json#lg-10-01",
-    "notes": "icdbg:whofic-japan-about（中心分類はICD・ICF・開発中のICHI）、icd:rikai のWHO-FIC図（医療行為の分類（ICHI）作成中）、ins:dpc-gaiyo-kangaekata（DPC＝診断群分類）で確認。"
+    "notes": "再監査: icdbg:whofic-japan-about L37 中心分類=ICD・ICF・ICHI(開発中、2026-11取得); ins:dpc-gaiyo-kangaekata 冒頭注記 DPC呼称。否定形と問い方一致。｜icdbg:whofic-japan-about（中心分類はICD・ICF・開発中のICHI）、icd:rikai のWHO-FIC図（医療行為の分類（ICHI）作成中）、ins:dpc-gaiyo-kangaekata（DPC＝診断群分類）で確認。"
    }
   },
   {
@@ -998,13 +998,13 @@
     "key": "lg-10-02",
     "by": "旧版（v2・AI作成）"
    },
-   "status": "provisional",
+   "status": "verified",
    "verification": {
     "date": "2026-11-25",
     "method": [
      "独立ブラインド解答（別モデル）",
      "領域監査（ICD-10専門）で修正",
-     "修正後の再監査は未実施",
+     "修正後の独立再監査（pass）",
      "引用の機械照合（一次資料キャッシュ）",
      "スキーマ・ICDコード・計算の機械検査"
     ],
@@ -1012,10 +1012,10 @@
      "author": "旧版（AI作成・出典なし）",
      "solver": "solve:L10（別モデル・正答を見ずに解答）",
      "auditor": "audit:L10a（ICD-10専門）",
-     "reauditor": null
+     "reauditor": "reaudit:L10a"
     },
     "log": "bank/audit/legacy-L10a.audit.json#lg-10-02",
-    "notes": "icd:instruction 3.2.2（索引の構造：見出し用語と修飾語・限定語）、3.3 の手順2・4（見出し用語は通常病理学的病態の名詞、括弧内の限定語はコードに影響しない）、3.1.2（包含用語）で確認。"
+    "notes": "再監査: icd:instruction 3.2.2構造(L1382-1387)、3.3手順2・4(L1446-1456)、3.1.2包含用語(L962-966)、3.2.4相互参照(L1414-1415)で各選択肢を確認。｜icd:instruction 3.2.2（索引の構造：見出し用語と修飾語・限定語）、3.3 の手順2・4（見出し用語は通常病理学的病態の名詞、括弧内の限定語はコードに影響しない）、3.1.2（包含用語）で確認。"
    }
   },
   {
@@ -1152,7 +1152,7 @@
     "method": [
      "独立ブラインド解答（別モデル）",
      "領域監査（ICD-10専門）で修正",
-     "修正後の再監査は未実施",
+     "修正後の独立再監査（provisional）",
      "引用の機械照合（一次資料キャッシュ）",
      "スキーマ・ICDコード・計算の機械検査"
     ],
@@ -1160,10 +1160,10 @@
      "author": "旧版（AI作成・出典なし）",
      "solver": "solve:L10（別モデル・正答を見ずに解答）",
      "auditor": "audit:L10a（ICD-10専門）",
-     "reauditor": null
+     "reauditor": "reaudit:L10a"
     },
     "log": "bank/audit/legacy-L10a.audit.json#lg-10-04",
-    "notes": "icd:instruction 4.4.1（主要病態の定義：エピソードの最後に診断された病態、多数ある場合は最も医療資源が使われた病態、診断なしは主要症状等）で確認。"
+    "notes": "再監査: icd:instruction L6849-6853 主要病態の定義・多数の場合は最も医療資源・診断なしは主要症状。内容・誤答の理由は正しい。｜icd:instruction 4.4.1（主要病態の定義：エピソードの最後に診断された病態、多数ある場合は最も医療資源が使われた病態、診断なしは主要症状等）で確認。"
    }
   },
   {
@@ -1228,7 +1228,7 @@
     "method": [
      "独立ブラインド解答（別モデル）",
      "領域監査（ICD-10専門）で修正",
-     "修正後の再監査は未実施",
+     "修正後の独立再監査（provisional）",
      "引用の機械照合（一次資料キャッシュ）",
      "スキーマ・ICDコード・計算の機械検査"
     ],
@@ -1236,10 +1236,10 @@
      "author": "旧版（AI作成・出典なし）",
      "solver": "solve:L10（別モデル・正答を見ずに解答）",
      "auditor": "audit:L10a（ICD-10専門）",
-     "reauditor": null
+     "reauditor": "reaudit:L10a"
     },
     "log": "bank/audit/legacy-L10a.audit.json#lg-10-08",
-    "notes": "icd:instruction 4.1.6「一般原則」「選択ルール」（ルール1〜3）で確認。lg-10-22（L10b）と同主題。"
+    "notes": "再監査: icd:instruction L1754-1756 一般原則、L1762-1765 ルール1の文言を確認。正答・誤答の説明はどちらも正しい。｜icd:instruction 4.1.6「一般原則」「選択ルール」（ルール1〜3）で確認。lg-10-22（L10b）と同主題。"
    }
   },
   {
@@ -1303,13 +1303,13 @@
     "key": "lg-10-12",
     "by": "旧版（v2・AI作成）"
    },
-   "status": "provisional",
+   "status": "verified",
    "verification": {
     "date": "2026-11-25",
     "method": [
      "独立ブラインド解答（別モデル）",
      "領域監査（ICD-10専門）で修正",
-     "修正後の再監査は未実施",
+     "修正後の独立再監査（pass）",
      "引用の機械照合（一次資料キャッシュ）",
      "スキーマ・ICDコード・計算の機械検査"
     ],
@@ -1317,10 +1317,10 @@
      "author": "旧版（AI作成・出典なし）",
      "solver": "solve:L10（別モデル・正答を見ずに解答）",
      "auditor": "audit:L10a（ICD-10専門）",
-     "reauditor": null
+     "reauditor": "reaudit:L10a"
     },
     "log": "bank/audit/legacy-L10a.audit.json#lg-10-12",
-    "notes": "icd:instruction 3.1.4「NOS」「他に分類されないもの＜NEC＞」で確認。lg-10-16（L10b）は同一主題の重複（本問を残し、NECとの区別を誤答肢に取り込んだ）。"
+    "notes": "再監査: icd:instruction 3.1.4（L1156〜）「NOS」L1239-1255、NEC L1264-1265を確認。｜icd:instruction 3.1.4「NOS」「他に分類されないもの＜NEC＞」で確認。lg-10-16（L10b）は同一主題の重複（本問を残し、NECとの区別を誤答肢に取り込んだ）。"
    }
   },
   {
@@ -1439,13 +1439,13 @@
     "key": "lg-10-15",
     "by": "旧版（v2・AI作成）"
    },
-   "status": "provisional",
+   "status": "verified",
    "verification": {
     "date": "2026-11-25",
     "method": [
      "独立ブラインド解答（別モデル）",
      "領域監査（ICD-10専門）で修正",
-     "修正後の再監査は未実施",
+     "修正後の独立再監査（pass）",
      "引用の機械照合（一次資料キャッシュ）",
      "スキーマ・ICDコード・計算の機械検査"
     ],
@@ -1453,10 +1453,10 @@
      "author": "旧版（AI作成・出典なし）",
      "solver": "solve:L10（別モデル・正答を見ずに解答）",
      "auditor": "audit:L10b（ICD-10専門）",
-     "reauditor": null
+     "reauditor": "reaudit:L10b"
     },
     "log": "bank/audit/legacy-L10b.audit.json#lg-10-15",
-    "notes": "icd:instruction 3.2.4節「相互参照」（～を参照／～も参照の定義）で確認。キーは正しい。"
+    "notes": "再監査: icd:instruction 3.2.4節 相互参照（L1414-1420）で「～も参照」の意味を確認。3.3節で索引表・内容例示表の両方参照。blind一致。｜icd:instruction 3.2.4節「相互参照」（～を参照／～も参照の定義）で確認。キーは正しい。"
    }
   },
   {
@@ -1515,13 +1515,13 @@
     "key": "lg-10-16",
     "by": "旧版（v2・AI作成）"
    },
-   "status": "provisional",
+   "status": "verified",
    "verification": {
     "date": "2026-11-25",
     "method": [
      "独立ブラインド解答（別モデル）",
      "領域監査（ICD-10専門）で修正",
-     "修正後の再監査は未実施",
+     "修正後の独立再監査（pass）",
      "引用の機械照合（一次資料キャッシュ）",
      "スキーマ・ICDコード・計算の機械検査"
     ],
@@ -1529,10 +1529,10 @@
      "author": "旧版（AI作成・出典なし）",
      "solver": "solve:L10（別モデル・正答を見ずに解答）",
      "auditor": "audit:L10b（ICD-10専門）",
-     "reauditor": null
+     "reauditor": "reaudit:L10b"
     },
     "log": "bank/audit/legacy-L10b.audit.json#lg-10-16",
-    "notes": "icd:instruction 3.1.4節（NOS・NEC）、3.2.3節（第4桁のダッシュ）・3.2.4節（NEC・相互参照）で確認。"
+    "notes": "再監査: icd:instruction 3.2.4節「NEC」(L1409-1411)、3.1.4節 NOS(L1244)・NEC(L1264)、3.2.3節ダッシュ、3.1.3節星印(L1033)。各誤肢の出典を確認。blind一致。｜icd:instruction 3.1.4節（NOS・NEC）、3.2.3節（第4桁のダッシュ）・3.2.4節（NEC・相互参照）で確認。"
    }
   },
   {
@@ -1670,13 +1670,13 @@
     "key": "lg-10-18",
     "by": "旧版（v2・AI作成）"
    },
-   "status": "provisional",
+   "status": "verified",
    "verification": {
     "date": "2026-11-25",
     "method": [
      "独立ブラインド解答（別モデル）",
      "領域監査（ICD-10専門）で修正",
-     "修正後の再監査は未実施",
+     "修正後の独立再監査（pass）",
      "引用の機械照合（一次資料キャッシュ）",
      "スキーマ・ICDコード・計算の機械検査"
     ],
@@ -1684,10 +1684,10 @@
      "author": "旧版（AI作成・出典なし）",
      "solver": "solve:L10（別モデル・正答を見ずに解答）",
      "auditor": "audit:L10b（ICD-10専門）",
-     "reauditor": null
+     "reauditor": "reaudit:L10b"
     },
     "log": "bank/audit/legacy-L10b.audit.json#lg-10-18",
-    "notes": "icd:naiyou01 A17.0†（G01*）、tools/icd.mjs で A17.0†・G01*・E11.2†・N08.3* の存在と剣星区分を確認。icd:instruction 3.1.3節で†＝原疾患・＊＝症状発現を確認。 キーは正しい。"
+    "notes": "再監査: naiyou01 A17.0†（G01＊）、naiyou06 G01＊・G00.9（星印なし）、icd.mjsでE11.2†/N08.3*確認、instruction 3.1.3節。blind一致。｜icd:naiyou01 A17.0†（G01*）、tools/icd.mjs で A17.0†・G01*・E11.2†・N08.3* の存在と剣星区分を確認。icd:instruction 3.1.3節で†＝原疾患・＊＝症状発現を確認。 キーは正しい。"
    }
   },
   {
@@ -1751,13 +1751,13 @@
     "key": "lg-10-19",
     "by": "旧版（v2・AI作成）"
    },
-   "status": "provisional",
+   "status": "verified",
    "verification": {
     "date": "2026-11-25",
     "method": [
      "独立ブラインド解答（別モデル）",
      "領域監査（ICD-10専門）で修正",
-     "修正後の再監査は未実施",
+     "修正後の独立再監査（pass）",
      "引用の機械照合（一次資料キャッシュ）",
      "スキーマ・ICDコード・計算の機械検査"
     ],
@@ -1765,10 +1765,10 @@
      "author": "旧版（AI作成・出典なし）",
      "solver": "solve:L10（別モデル・正答を見ずに解答）",
      "auditor": "audit:L10b（ICD-10専門）",
-     "reauditor": null
+     "reauditor": "reaudit:L10b"
     },
     "log": "bank/audit/legacy-L10b.audit.json#lg-10-19",
-    "notes": "icd:instruction 2.2.1節（形態コードは5桁：4桁組織型＋第5桁性状）、icd:rikai（M8000/3の表記）、icd:naiyou02 D00-D09/D10-D36/D37-D48 の包含・注（性状コード/2・/0・/1）で確認。"
+    "notes": "再監査: instruction 2.2.1節(L384-389)形態コード5桁（4桁組織型＋第5桁性状）、第1巻・第3巻で使用。naiyou02の性状コード／0／2／3の用例、rikai M8000/3。naiyou02 L53のICD-O 6桁（第6桁異型度）記述は選択肢に影響せず。blind一致。｜icd:instruction 2.2.1節（形態コードは5桁：4桁組織型＋第5桁性状）、icd:rikai（M8000/3の表記）、icd:naiyou02 D00-D09/D10-D36/D37-D48 の包含・注（性状コード/2・/0・/1）で確認。"
    }
   },
   {
@@ -1834,13 +1834,13 @@
     "key": "lg-10-22",
     "by": "旧版（v2・AI作成）"
    },
-   "status": "provisional",
+   "status": "verified",
    "verification": {
     "date": "2026-11-25",
     "method": [
      "独立ブラインド解答（別モデル）",
      "領域監査（ICD-10専門）で修正",
-     "修正後の再監査は未実施",
+     "修正後の独立再監査（pass）",
      "引用の機械照合（一次資料キャッシュ）",
      "スキーマ・ICDコード・計算の機械検査"
     ],
@@ -1848,10 +1848,10 @@
      "author": "旧版（AI作成・出典なし）",
      "solver": "solve:L10（別モデル・正答を見ずに解答）",
      "auditor": "audit:L10b（ICD-10専門）",
-     "reauditor": null
+     "reauditor": "reaudit:L10b"
     },
     "log": "bank/audit/legacy-L10b.audit.json#lg-10-22",
-    "notes": "icd:instruction 4.1.5節（一般原則・選択ルール1〜3）、4.1.2節（原死因の定義）、4.1.4節（修正ルールへの流れ）で確認。同章 lg-10-08 も一般原則を扱うため、L10a側の判定と突き合わせて重複を整理すること。"
+    "notes": "再監査: instruction 4.1.5節 一般原則(L1751-1756)、選択ルール1、4.1.2節 原死因定義(L1530)。blind一致。｜icd:instruction 4.1.5節（一般原則・選択ルール1〜3）、4.1.2節（原死因の定義）、4.1.4節（修正ルールへの流れ）で確認。同章 lg-10-08 も一般原則を扱うため、L10a側の判定と突き合わせて重複を整理すること。"
    }
   },
   {
@@ -1908,13 +1908,13 @@
     "key": "lg-10-23",
     "by": "旧版（v2・AI作成）"
    },
-   "status": "provisional",
+   "status": "verified",
    "verification": {
     "date": "2026-11-25",
     "method": [
      "独立ブラインド解答（別モデル）",
      "領域監査（ICD-10専門）で修正",
-     "修正後の再監査は未実施",
+     "修正後の独立再監査（pass）",
      "引用の機械照合（一次資料キャッシュ）",
      "スキーマ・ICDコード・計算の機械検査"
     ],
@@ -1922,10 +1922,10 @@
      "author": "旧版（AI作成・出典なし）",
      "solver": "solve:L10（別モデル・正答を見ずに解答）",
      "auditor": "audit:L10b（ICD-10専門）",
-     "reauditor": null
+     "reauditor": "reaudit:L10b"
     },
     "log": "bank/audit/legacy-L10b.audit.json#lg-10-23",
-    "notes": "icd:instruction 4.1.4節（修正ルールの位置づけ、A〜D）、4.1.9節（ルールA 老衰及びその他の診断名不明確な病態、B 軽微な病態、C 連鎖、D 特異性）で確認。"
+    "notes": "再監査: instruction 4.1.4節(L1640-1649)、4.1.9節 ルールA〜Dの名称(L2357-2409)。blind一致。｜icd:instruction 4.1.4節（修正ルールの位置づけ、A〜D）、4.1.9節（ルールA 老衰及びその他の診断名不明確な病態、B 軽微な病態、C 連鎖、D 特異性）で確認。"
    }
   },
   {
@@ -1989,13 +1989,13 @@
     "key": "lg-10-24",
     "by": "旧版（v2・AI作成）"
    },
-   "status": "provisional",
+   "status": "verified",
    "verification": {
     "date": "2026-11-25",
     "method": [
      "独立ブラインド解答（別モデル）",
      "領域監査（ICD-10専門）で修正",
-     "修正後の再監査は未実施",
+     "修正後の独立再監査（pass）",
      "引用の機械照合（一次資料キャッシュ）",
      "スキーマ・ICDコード・計算の機械検査"
     ],
@@ -2003,10 +2003,10 @@
      "author": "旧版（AI作成・出典なし）",
      "solver": "solve:L10（別モデル・正答を見ずに解答）",
      "auditor": "audit:L10b（ICD-10専門）",
-     "reauditor": null
+     "reauditor": "reaudit:L10b"
     },
     "log": "bank/audit/legacy-L10b.audit.json#lg-10-24",
-    "notes": "icdbg:mhlw-icd11-reference-guide-ja 2.17節・2.17.1節（定義・目的・原死因と両方記録）、icd:instruction 4.1.9節ルールC（多重原因コーディング）・4.3.3節（周産期の複合原因解析）で確認。"
+    "notes": "再監査: icdbg:mhlw-icd11-reference-guide-ja 2.17節/2.17.1節(L3030-3047)で定義・原死因と複数死因の両方記録を確認。instruction 4.1.9ルールC(L2393)、4.3.3節(L6662)周産期の複合原因解析。asOfにICD-11ガイドで補足と明記。blind一致。｜icdbg:mhlw-icd11-reference-guide-ja 2.17節・2.17.1節（定義・目的・原死因と両方記録）、icd:instruction 4.1.9節ルールC（多重原因コーディング）・4.3.3節（周産期の複合原因解析）で確認。"
    }
   },
   {
@@ -2070,13 +2070,13 @@
     "key": "lg-10-25",
     "by": "旧版（v2・AI作成）"
    },
-   "status": "provisional",
+   "status": "verified",
    "verification": {
     "date": "2026-11-25",
     "method": [
      "独立ブラインド解答（別モデル）",
      "領域監査（ICD-10専門）で修正",
-     "修正後の再監査は未実施",
+     "修正後の独立再監査（pass）",
      "引用の機械照合（一次資料キャッシュ）",
      "スキーマ・ICDコード・計算の機械検査"
     ],
@@ -2084,10 +2084,10 @@
      "author": "旧版（AI作成・出典なし）",
      "solver": "solve:L10（別モデル・正答を見ずに解答）",
      "auditor": "audit:L10b（ICD-10専門）",
-     "reauditor": null
+     "reauditor": "reaudit:L10b"
     },
     "log": "bank/audit/legacy-L10b.audit.json#lg-10-25",
-    "notes": "icd:instruction 3.2.3節（第4桁のダッシュ、3桁のみは細分類なし）、3.3節ガイドライン6で確認。キーは正しい。"
+    "notes": "再監査: instruction 3.2.3節(L1393-1397)第4桁ダッシュ、3.3節ガイドライン6(L1465)。blind一致。｜icd:instruction 3.2.3節（第4桁のダッシュ、3桁のみは細分類なし）、3.3節ガイドライン6で確認。キーは正しい。"
    }
   },
   {
@@ -2143,6 +2143,1888 @@
     },
     "log": "bank/audit/legacy-L10b.audit.json#lg-10-26",
     "notes": "除外理由: duplicate 同章 lg-10-03（内容例示表の「包含（includes）」の意味）と同一の知識を同じ形式で問う重複。除外注記は lg-10-17 で扱われる。｜icd:instruction 3.1.2節「包含用語」で内容自体は正しいことを確認。"
+   }
+  },
+  {
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "ICD-10（2013年版）第2巻に示される「原死因」の定義として正しいものはどれか。",
+   "choices": [
+    "直接に死亡を引き起こした疾病又は病態で、死亡診断書のⅠ欄の最上欄に記載されるもの",
+    "直接に死亡を引き起こした一連の事象の起因となった疾病又は損傷、又は致命傷を負わせた事故又は暴力の状況",
+    "死亡に寄与したが、直接に死亡を引き起こした疾病又は病態には関連しなかった重要な病態",
+    "死亡前の入院期間中に、医療資源を最も多く投入した疾病又は病態",
+    "死亡診断書に記載された病態のうち、発病から死亡までの期間が最も長い疾病又は病態"
+   ],
+   "answer": 1,
+   "explanation": {
+    "correct": "第2巻4.1.2は、死亡の防止という公衆衛生の観点から、原死因を「⒜直接に死亡を引き起こした一連の事象の起因となった疾病又は損傷」「⒝致命傷を負わせた事故又は暴力の状況」と定義している。",
+    "choiceNotes": [
+     "これは直接死因（Ⅰ欄の最上欄に記載する病態）の説明であり、原死因ではない。",
+     null,
+     "これは死亡診断書の国際様式のⅡ欄に記載する病態の説明である。",
+     "医療資源の投入量は原死因の定義に含まれない（DPCの「医療資源を最も投入した傷病名」と混同しない）。",
+     "原死因の定義は事象の連鎖の起因であり、発病から死亡までの期間の長さで決まるものではない。"
+    ],
+    "point": "原死因＝死を招いた一連の事象の起因となった疾病・損傷、又は致命傷を負わせた事故・暴力の状況。"
+   },
+   "sources": [
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "4.1.2 原死因",
+     "quote": "⒜ 直接に死亡を引き起こした一連の事象の起因となった疾病又は損傷"
+    },
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "4.1.2 原死因",
+     "quote": "⒝ 致命傷を負わせた事故又は暴力の状況"
+    }
+   ],
+   "subject": "S11",
+   "subtopic": "死因統計と原死因の選択",
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s11-0001",
+   "origin": {
+    "batch": "G2-S11-DTH",
+    "key": "G2-S11-DTH-01",
+    "by": "gen:G2-S11-DTH"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G2-S11-DTH",
+     "solver": "solve:G2-S11-DTH（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G2-S11-DTH（ICD-10専門）"
+    },
+    "log": "bank/audit/G2-S11-DTH.audit.json#G2-S11-DTH-01",
+    "notes": "4.1.2(⒜⒝)で定義確認。選択肢0=直接死因、2=4.1.3のⅡ欄、3=DPC概念、4=根拠なし。"
+   }
+  },
+  {
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "死亡の一次製表に用いる死因を原死因とすることが合意されたのはどれか。",
+   "choices": [
+    "第５回改訂国際会議",
+    "第６回改訂国際会議",
+    "第７回改訂国際会議",
+    "第８回改訂国際会議",
+    "第10回改訂国際会議"
+   ],
+   "answer": 1,
+   "explanation": {
+    "correct": "第2巻4.1.2に「一次製表のための死因は、原死因とするべきであるということが、第６回改訂国際会議において合意された」とある。",
+    "choiceNotes": [
+     "第2巻は合意の場を第６回改訂国際会議としており、第５回ではない。",
+     null,
+     "第７回ではなく第６回である。",
+     "第８回ではなく第６回である。",
+     "第10回はICD-10を採択した改訂であり、原死因を一次製表の死因とする合意は第６回である。"
+    ],
+    "point": "一次製表の死因＝原死因（第６回改訂国際会議で合意）。"
+   },
+   "sources": [
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "4.1.2 原死因",
+     "quote": "一次製表のための死因は、原死因（underlying cause of death）とするべきであるということが、第６回改訂国際会議において合意された。"
+    }
+   ],
+   "subject": "S11",
+   "subtopic": "死因統計と原死因の選択",
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s11-0002",
+   "origin": {
+    "batch": "G2-S11-DTH",
+    "key": "G2-S11-DTH-02",
+    "by": "gen:G2-S11-DTH"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G2-S11-DTH",
+     "solver": "solve:G2-S11-DTH（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G2-S11-DTH（ICD-10専門）"
+    },
+    "log": "bank/audit/G2-S11-DTH.audit.json#G2-S11-DTH-02",
+    "notes": "4.1.2「第６回改訂国際会議において合意」確認。第10回=1989年会議(6.9)。"
+   }
+  },
+  {
+   "format": "knowledge",
+   "difficulty": "standard",
+   "polarity": "negative",
+   "question": "死亡統計製表のための原死因の選択手順について、誤っているものはどれか。",
+   "choices": [
+    "死亡診断書に単一の死因だけが記載された場合は、単一死因ルールによりその死因が製表に用いられる。",
+    "多数の死因が記載された場合は、まず一般原則又は選択ルール１〜３を適用して起点となる先行原因を決定する。",
+    "起点となる先行原因を決定した後、修正ルールＡ〜Ｄのいずれかが適用されるかどうかを判断する。",
+    "起点となる先行原因が損傷などの外因の影響である場合は、その病態を生じた状況をV01〜Y89にコードして原死因とする。",
+    "修正ルールを適用した後に、選択ルール３を改めて適用することはない。"
+   ],
+   "answer": 4,
+   "explanation": {
+    "correct": "第2巻は「修正ルールを適用したら、選択ルール３を再使用する場合がある」とし、4.1.10でも「修正ルールの適用後、改めてルール３を適用する」と定めている。したがって再適用しないとする記述は誤り。",
+    "choiceNotes": [
+     "4.1.4のとおり。単一の死因の記載なら単一死因ルールでその原因が表に記載される。",
+     "4.1.4のとおり。原死因選択の第一歩は一般原則又は選択ルール１、２及び３による起点となる先行原因の決定である。",
+     "4.1.4のとおり。次の段階として修正ルールＡからＤの適用の有無を決定する。",
+     "4.1.4のとおり。第ⅩⅨ章の損傷等が起点の場合は状況をV01－Y89にコードし、損傷のコードは追加コードとして使用してよい。",
+     null
+    ],
+    "point": "手順：一般原則／選択ルール１〜３ → 修正ルールＡ〜Ｄ → 必要ならルール３を再適用。"
+   },
+   "sources": [
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "4.1.4 原死因の選択手順",
+     "quote": "多数の死因が記載された場合は、原死因選択の第一歩は、一般原則又は選択ルール１、２及び３を適用して、起点となる先行原因を決定することであり"
+    },
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "4.1.8 選択された死因の修正",
+     "quote": "修正ルールを適用したら、選択ルール３を再使用する場合がある。"
+    },
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "4.1.4 原死因の選択手順",
+     "quote": "製表のための原死因としては、その病態を生じる状況を選択して V01 － Y89にコードすべきである。"
+    }
+   ],
+   "subject": "S11",
+   "subtopic": "死因統計と原死因の選択",
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s11-0003",
+   "origin": {
+    "batch": "G2-S11-DTH",
+    "key": "G2-S11-DTH-03",
+    "by": "gen:G2-S11-DTH"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G2-S11-DTH",
+     "solver": "solve:G2-S11-DTH（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G2-S11-DTH（ICD-10専門）"
+    },
+    "log": "bank/audit/G2-S11-DTH.audit.json#G2-S11-DTH-03",
+    "notes": "4.1.4(単一死因ルール/一般原則・ルール1-3→修正A-D/外因はV01-Y89)、4.1.8「選択ルール３を再使用する場合がある」、4.1.10「修正後のルール３の適用」確認。"
+   }
+  },
+  {
+   "format": "knowledge",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "ICD-10（2013年版）第2巻で用いられる「起点となる先行原因（起因）」と「原死因」という表現の使い分けとして正しいものはどれか。",
+   "choices": [
+    "両者は同じ意味で用いられ、どのような死亡診断書でも必ず同じ病態を指す。",
+    "「起点となる先行原因」はⅠ欄の最下欄に記載された病態にふさわしい病態を指し、「原死因」は製表のために選ばれた原因を指す。",
+    "「原死因」はⅠ欄の最上欄に記載された直接死因を指し、「起点となる先行原因」はⅡ欄に記載された病態を指す。",
+    "「起点となる先行原因」は修正ルールＡ〜Ｄを適用した後に得られる病態を指し、「原死因」は修正前の病態を指す。",
+    "「原死因」はⅡ欄に記載された病態の中から選ばれ、「起点となる先行原因」はⅠ欄の中から選ばれる。"
+   ],
+   "answer": 1,
+   "explanation": {
+    "correct": "第2巻4.1.3は、Ⅰ欄の最下欄の病態は通常は原死因だが、選択手順により別の病態に行き着くこともあるため、「起点となる先行原因（起因）」はⅠ欄の最下欄に記載された病態にふさわしい病態を、「原死因」は製表のために選ばれた原因を示す表現として区別している。",
+    "choiceNotes": [
+     "4.1.4〜4.1.5の手順により、原死因として起点となる先行原因とは別の病態に行き着くことがあるとされており、常に同じではない。",
+     null,
+     "直接死因はⅠ欄の最上欄に記載する病態で、原死因とは別の概念である。また起点となる先行原因はⅠ欄の最下欄にふさわしい病態であり、Ⅱ欄の病態ではない。",
+     "順序が逆である。修正ルールは起点となる先行原因の選択の後に適用され、その結果が製表に使う原死因となる。",
+     "原死因はⅡ欄に限って選ばれるものではない。ルール３等でⅡ欄の病態が選ばれることはあるが、定義上の区別ではない。"
+    ],
+    "point": "起点となる先行原因＝Ⅰ欄最下欄にふさわしい病態。原死因＝修正等を経て製表に使う原因。"
+   },
+   "sources": [
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "4.1.3 死亡診断書の国際様式",
+     "quote": "「起点となる先行原因（起因）」という表現は、死亡診断書のⅠ欄の最下欄に記載された病態にふさわしい病態を参照するために使用されるべきであり"
+    },
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "4.1.3 死亡診断書の国際様式",
+     "quote": "「原死因」という表現は、製表のために選ばれた原因を示すために使用される。"
+    }
+   ],
+   "subject": "S11",
+   "subtopic": "死因統計と原死因の選択",
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s11-0004",
+   "origin": {
+    "batch": "G2-S11-DTH",
+    "key": "G2-S11-DTH-04",
+    "by": "gen:G2-S11-DTH"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G2-S11-DTH",
+     "solver": "solve:G2-S11-DTH（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G2-S11-DTH（ICD-10専門）"
+    },
+    "log": "bank/audit/G2-S11-DTH.audit.json#G2-S11-DTH-04",
+    "notes": "4.1.3末尾「起点となる先行原因（起因）」「原死因」の使い分け本文で確認。"
+   }
+  },
+  {
+   "format": "combination",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "原死因の選択に用いる一般原則と選択ルールについて、正しいものの組合せはどれか。\na　ルール１は、一般原則が適用できず、死亡診断書に最初に記載された病態に帰着する上下の因果関係がある場合に、その上下の因果関係の起因を選ぶ。\nb　ルール２は、最初に記載された病態に帰着する上下の因果関係の記載がない場合に、Ⅰ欄の最下欄に記載された病態を選ぶ。\nc　ルール３は、選ばれた病態が明らかにⅠ欄又はⅡ欄に記載されている他の病態の直接影響による場合に、先行する病態を選ぶ。\nd　ルール３は、医師が記載すれば認められたであろう因果関係であれば、明確な因果関係がなくても適用する。\ne　一般原則は、Ⅰ欄の最下欄に複数の病態が記載されている場合にも適用する。",
+   "choices": [
+    "a と b",
+    "a と c",
+    "b と d",
+    "c と e",
+    "d と e"
+   ],
+   "answer": 1,
+   "explanation": {
+    "correct": "aはルール１、cはルール３の記述どおりで正しい。",
+    "choiceNotes": [
+     "bが誤り。ルール２で選ぶのは「最初に記載された病態」であり、Ⅰ欄の最下欄の病態ではない。",
+     null,
+     "bとdが誤り。dについて第2巻は、ルール３は二つの病態間に明確な因果関係が認められる場合にのみ適用し、医師が記載すれば認められたであろうということでは十分とはいえないとしている。",
+     "eが誤り。Ⅰ欄の最下欄に多数の病態が記載された場合は一般原則を適用しない。",
+     "dとeがともに誤り（上記のとおり）。"
+    ],
+    "point": "ルール１＝最初の病態に帰着する（最初の）因果関係の起因、ルール２＝最初に記載された病態、ルール３＝明らかな直接影響なら先行病態。"
+   },
+   "sources": [
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "4.1.5 選択ルール ルール２",
+     "quote": "死亡診断書に最初に記載された病態に帰着する上下の因果関係の記載がない場合には、この最初に記載された病態を選ぶ。"
+    },
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "4.1.6 選択ルールについての留意事項",
+     "quote": "Ⅰ欄の最下欄に多数の病態が記載された場合、又は記載された単一病態が、その上欄に記載されたすべての病態を引き起こす可能性がない場合は、一般原則は適用しない。"
+    },
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "4.1.6 選択ルールについての留意事項",
+     "quote": "医師が記載すれば認められたであろうということを持って、これらの病態間の因果関係を許容するには十分とはいえない。"
+    }
+   ],
+   "subject": "S11",
+   "subtopic": "死因統計と原死因の選択",
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s11-0005",
+   "origin": {
+    "batch": "G2-S11-DTH",
+    "key": "G2-S11-DTH-05",
+    "by": "gen:G2-S11-DTH"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G2-S11-DTH",
+     "solver": "solve:G2-S11-DTH（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G2-S11-DTH（ICD-10専門）"
+    },
+    "log": "bank/audit/G2-S11-DTH.audit.json#G2-S11-DTH-05",
+    "notes": "4.1.5ルール1-3本文、4.1.6(最下欄に多数→一般原則不適用/医師が記載すれば…では不十分)確認。a,c正。"
+   }
+  },
+  {
+   "format": "case",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "次の死亡診断書（架空例）の死亡の原因欄の記載について、起点となる先行原因の選択に適用されるものと、選ばれる病態の組合せとして正しいものはどれか。\nⅠ欄　(ア) 腎不全　(イ) 水腎症　(ウ) 前立腺肥大（症）\nⅡ欄　記載なし",
+   "choices": [
+    "選択ルール１ ― 前立腺肥大（症）",
+    "選択ルール２ ― 腎不全",
+    "一般原則 ― 前立腺肥大（症）",
+    "選択ルール３ ― 水腎症",
+    "一般原則 ― 腎不全"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "Ⅰ欄の最下欄に単独で記載された前立腺肥大（症）は、水腎症を経て腎不全を引き起こし得るので、一般原則によりこれを選ぶ（N40）。正しく記載された死亡診断書では一般原則が適用できる。",
+    "choiceNotes": [
+     "病態は正しいが、ルール１は一般原則が適用できない場合に用いるものである。",
+     "ルール２は最初に記載された病態に帰着する上下の因果関係の記載がない場合に用いる。本例は因果関係が正しく記載されている。",
+     null,
+     "水腎症は前立腺肥大（症）による病態として正しく記載されており、ルール３で選ぶ先行病態ではない。",
+     "一般原則で選ぶのはⅠ欄の最下欄に単独で記載された病態であり、最上欄の腎不全ではない。"
+    ],
+    "point": "最下欄の単独病態が上欄すべてを引き起こし得る→一般原則でその病態。"
+   },
+   "sources": [
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "4.1.5 一般原則",
+     "quote": "Ⅰ欄の最下欄に単独で記載された病態が、その上欄に記載されたすべての病態を引き起こす可能性がある場合に限り、その病態を選ぶ。"
+    },
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "4.1.6 選択ルールについての留意事項",
+     "quote": "したがって、正しく記載された死亡診断書では、一般原則が適用できる。"
+    }
+   ],
+   "subject": "S11",
+   "subtopic": "死因統計と原死因の選択",
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s11-0006",
+   "origin": {
+    "batch": "G2-S11-DTH",
+    "key": "G2-S11-DTH-06",
+    "by": "gen:G2-S11-DTH"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G2-S11-DTH",
+     "solver": "solve:G2-S11-DTH（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G2-S11-DTH（ICD-10専門）"
+    },
+    "log": "bank/audit/G2-S11-DTH.audit.json#G2-S11-DTH-06",
+    "notes": "4.1.5一般原則・4.1.6(正しく記載された診断書では一般原則)、例3と同型。N40存在確認。"
+   }
+  },
+  {
+   "format": "case",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "次の死亡診断書（架空例）の死亡の原因欄の記載について、起点となる先行原因の選択に適用されるものと、選ばれる病態の組合せとして正しいものはどれか。\nⅠ欄　(ア) 気管支肺炎　(イ) 脳出血及び慢性腎臓病\nⅡ欄　記載なし",
+   "choices": [
+    "選択ルール１ ― 脳出血",
+    "一般原則 ― 慢性腎臓病",
+    "選択ルール１ ― 慢性腎臓病",
+    "選択ルール２ ― 気管支肺炎",
+    "選択ルール３ ― 慢性腎臓病"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "Ⅰ欄の最下欄に二つの病態が記載されているので一般原則は適用しない。最初に記載された気管支肺炎に帰着する上下の因果関係があり（脳出血のような麻痺を起こす疾患による気管支肺炎は認められる）、因果関係が複数ある場合は最初に記載された因果関係の起因を選ぶので、ルール１により脳出血を選ぶ。",
+    "choiceNotes": [
+     null,
+     "最下欄に複数の病態があるため一般原則は適用しない。",
+     "ルール１で選ぶのは最初に記載された上下の因果関係の起因であり、後に記載された慢性腎臓病ではない。",
+     "最初に記載された病態に帰着する上下の因果関係があるので、ルール２は用いない。",
+     "脳出血が慢性腎臓病の直接影響によることは明らかではなく、ルール３で先行病態として選ぶ根拠はない。"
+    ],
+    "point": "最下欄に複数→一般原則×。ルール１では「最初に記載された」因果関係の起因を選ぶ。"
+   },
+   "sources": [
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "4.1.5 選択ルール ルール１",
+     "quote": "最初に記載された病態に帰着する上下の因果関係が多数ある場合には、最初に記載された上下の因果関係の起因を選ぶ。"
+    },
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "4.1.7 一般原則と選択ルールの例 ルール３「他の病態の直接的な影響によると推定できる場合について」",
+     "quote": "J15.8 － J15.9、J16.8、J18.0 及び J18.2 － J18.9 の肺炎は、次の疾患の結果生じたと考えるべきである：すなわち、悪性腫瘍や栄養失調（症）といった消耗性疾患、脳出血や脳塞栓症といった麻痺を起こす疾患"
+    },
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "4.1.6 選択ルールについての留意事項",
+     "quote": "Ⅰ欄の最下欄に多数の病態が記載された場合、又は記載された単一病態が、その上欄に記載されたすべての病態を引き起こす可能性がない場合は、一般原則は適用しない。"
+    }
+   ],
+   "subject": "S11",
+   "subtopic": "死因統計と原死因の選択",
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s11-0007",
+   "origin": {
+    "batch": "G2-S11-DTH",
+    "key": "G2-S11-DTH-07",
+    "by": "gen:G2-S11-DTH"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（ICD-10専門）で修正",
+     "修正後の独立再監査（pass）",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G2-S11-DTH",
+     "solver": "solve:G2-S11-DTH（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G2-S11-DTH（ICD-10専門）",
+     "reauditor": "reaudit:G2-S11-DTH"
+    },
+    "log": "bank/audit/G2-S11-DTH.audit.json#G2-S11-DTH-07",
+    "notes": "再監査: icd:instruction 4.1.5 ルール１ (multiple sequences -> first-mentioned origin), 4.1.6 (最下欄に多数の病態→一般原則不適用), 4.1.7 ルール３推定 (J18.0 bronchopneumonia due to 脳出血 等の麻痺を起こす疾患), 例11 analogous. J18.0 exists. No Rule 3 presumption links 脳出血 to 慢性腎臓病. Blind matched; validator 0 errors.｜4.1.5ルール1(最初に記載された因果関係の起因)、4.1.7推定(J18.0肺炎は脳出血等麻痺性疾患の結果)。key・解説は正しい。"
+   }
+  },
+  {
+   "format": "case",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "次の死亡診断書（架空例）の死亡の原因欄の記載について、起点となる先行原因の選択に適用されるものと、選ばれる病態の組合せとして正しいものはどれか。\nⅠ欄　(ア) 胃癌　(イ) 脳梗塞\nⅡ欄　記載なし",
+   "choices": [
+    "選択ルール２ ― 胃癌",
+    "一般原則 ― 脳梗塞",
+    "選択ルール１ ― 脳梗塞",
+    "選択ルール２ ― 脳梗塞",
+    "選択ルール３ ― 脳梗塞"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "第2巻4.2.2の認められない因果関係により、悪性新生物はHIV病を除き何らかの疾病「による」と考えるべきではない。したがって最下欄の脳梗塞は胃癌を引き起こし得る病態とはならず一般原則は適用できず、最初に記載された胃癌に帰着する上下の因果関係もない。ルール２により最初に記載された胃癌（C16.9）を選ぶ。",
+    "choiceNotes": [
+     null,
+     "最下欄の脳梗塞が上欄の胃癌を引き起こす可能性はない（悪性新生物はHIV病以外の疾病によるとは考えない）ため、一般原則は適用しない。",
+     "最初に記載された病態（胃癌）に帰着する上下の因果関係がないため、ルール１は適用できない。",
+     "ルール２で選ぶのは最初に記載された病態（胃癌）であり、脳梗塞ではない。",
+     "胃癌が脳梗塞の直接影響によることはあり得ない（悪性新生物はHIV病以外の疾病によるとは考えない）ので、ルール３で脳梗塞を選ぶことはできない。"
+    ],
+    "point": "悪性新生物は（HIV病を除き）他の疾病によるとしない→因果関係なし→ルール２で最初に記載された病態。"
+   },
+   "sources": [
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "4.1.5 選択ルール ルール２",
+     "quote": "死亡診断書に最初に記載された病態に帰着する上下の因果関係の記載がない場合には、この最初に記載された病態を選ぶ。"
+    },
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "4.1.6 選択ルールについての留意事項",
+     "quote": "又は記載された単一病態が、その上欄に記載されたすべての病態を引き起こす可能性がない場合は、一般原則は適用しない。"
+    },
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "4.2.2 A ⒝ 悪性新生物＜腫瘍＞",
+     "quote": "悪性新生物＜腫瘍＞は、何らかの疾病「による」と考えるべきではない。ただし、 ヒト免疫不全ウイルス［HIV］病は除く。"
+    }
+   ],
+   "subject": "S11",
+   "subtopic": "死因統計と原死因の選択",
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s11-0008",
+   "origin": {
+    "batch": "G2-S11-DTH",
+    "key": "G2-S11-DTH-08",
+    "by": "gen:G2-S11-DTH"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（ICD-10専門）で修正",
+     "修正後の独立再監査（pass）",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G2-S11-DTH",
+     "solver": "solve:G2-S11-DTH（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G2-S11-DTH（ICD-10専門）",
+     "reauditor": "reaudit:G2-S11-DTH"
+    },
+    "log": "bank/audit/G2-S11-DTH.audit.json#G2-S11-DTH-08",
+    "notes": "再監査: icd:instruction 4.1.5 ルール２, 4.1.6 (単一病態が上欄すべてを引き起こす可能性がない→一般原則不適用), 4.2.2 A⒝ (悪性新生物はHIV病を除き何らかの疾病によると考えない). C16.9 exists. Blind matched.｜4.2.2 A末尾『上記以外の症例では…一般原則を適用すべき』。脳梗塞→急性膵炎は認められない因果関係リストになく、『引き起こし得ない』は出典で確認できない(文理上は一般原則→脳梗塞も主張可能)。"
+   }
+  },
+  {
+   "format": "case",
+   "difficulty": "advanced",
+   "polarity": "positive",
+   "question": "次の死亡診断書（架空例）の死亡の原因欄の記載について、原死因として選ばれる病態と、その決め手となる規則の組合せとして正しいものはどれか。\nⅠ欄　(ア) 肺塞栓症\nⅡ欄　膵臓癌",
+   "choices": [
+    "肺塞栓症 ― 一般原則",
+    "膵臓癌 ― 選択ルール２",
+    "肺塞栓症 ― 修正ルールＣ（連鎖）",
+    "膵臓癌 ― 選択ルール３",
+    "膵臓癌 ― 修正ルールＤ（特異性）"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "一般原則によりⅠ欄の肺塞栓症がいったん選ばれるが、肺塞栓症のような一般的な続発性の病態は、悪性腫瘍などの消耗性疾患の明らかな結果と考えるべきとされている。選ばれた病態がⅡ欄の膵臓癌の直接影響によることが明らかなので、ルール３により先行する膵臓癌（C25.9）を選ぶ。",
+    "choiceNotes": [
+     "一般原則で肺塞栓症が選ばれるが、それがⅡ欄の膵臓癌の明らかな結果であるためルール３で選びなおされ、原死因にはならない。",
+     "ルール２は最初に記載された病態（本例では肺塞栓症）を選ぶ規則であり、Ⅱ欄の膵臓癌を選ぶ根拠にはならない。",
+     "連鎖は分類や注の規定で複合した病態にコードする規則であり、本例で原死因を決めるのはルール３である。",
+     null,
+     "特異性は一般的な用語をより詳細な用語に置き換える規則であり、肺塞栓症と膵臓癌の関係には当たらない。"
+    ],
+    "point": "選ばれた病態がⅡ欄の病態の明らかな直接影響→ルール３で先行病態（肺塞栓症←悪性腫瘍）。"
+   },
+   "sources": [
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "4.1.5 選択ルール ルール３",
+     "quote": "ルール１又はルール２によって選ばれた病態が、明らかにⅠ欄又はⅡ欄に記載されている他の病態の直接影響による場合には、先行する病態を選ぶ。"
+    },
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "4.1.7 一般原則と選択ルールの例 ルール３「他の病態の直接的な影響によると推定できる場合について」",
+     "quote": "その他の一般的な続発性の病態（肺塞栓症、褥瘡性潰瘍、膀胱炎等）は、次の疾患の明らかな結果と考えるべきである。すなわち、悪性腫瘍や栄養失調（症）といった消耗性疾患"
+    }
+   ],
+   "subject": "S11",
+   "subtopic": "死因統計と原死因の選択",
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s11-0009",
+   "origin": {
+    "batch": "G2-S11-DTH",
+    "key": "G2-S11-DTH-09",
+    "by": "gen:G2-S11-DTH"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（ICD-10専門）で修正",
+     "修正後の独立再監査（pass）",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G2-S11-DTH",
+     "solver": "solve:G2-S11-DTH（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G2-S11-DTH（ICD-10専門）",
+     "reauditor": "reaudit:G2-S11-DTH"
+    },
+    "log": "bank/audit/G2-S11-DTH.audit.json#G2-S11-DTH-09",
+    "notes": "再監査: icd:instruction 4.1.5 ルール３; 4.1.7 ルール３推定 (肺塞栓症等の続発性病態は悪性腫瘍など消耗性疾患の明らかな結果) and list I26.0-I26.9; 4.1.9 ルールC連鎖/ルールD特異性 wording consistent with choice notes. C25.9 exists. Blind matched.｜一般原則で肺塞栓症→4.1.7推定『肺塞栓症…悪性腫瘍の明らかな結果』でルール3→膵臓癌(C25.9)。例26と同型。"
+   }
+  },
+  {
+   "format": "case",
+   "difficulty": "advanced",
+   "polarity": "positive",
+   "question": "次の死亡診断書（架空例）の死亡の原因欄の記載について、原死因の選択として正しいものはどれか。\nⅠ欄　(ア) 肺炎　(イ) 老衰\nⅡ欄　記載なし",
+   "choices": [
+    "一般原則により老衰が選ばれ、そのまま老衰が原死因となる。",
+    "一般原則により老衰が選ばれるが、修正ルールＡにより老衰は記載されなかったものとして選びなおし、肺炎が原死因となる。",
+    "一般原則により老衰が選ばれるが、修正ルールＢにより老衰は軽微な病態として無視され、肺炎が原死因となる。",
+    "ルール２により最初に記載された肺炎が選ばれ、修正ルールを検討するまでもなく肺炎が原死因となる。",
+    "一般原則により老衰が選ばれるが、修正ルールＣにより老衰と肺炎を合わせた複合した病態にコードする。"
+   ],
+   "answer": 1,
+   "explanation": {
+    "correct": "一般原則によりⅠ欄の最下欄の老衰が選ばれる。老衰（R54）はR00－R94に含まれ診断名不明確な病態とみなされ、他に分類される病態（肺炎）が記載されているので、修正ルールＡにより老衰は記載されなかったものとして選びなおし、肺炎（J18.9）を選ぶ。",
+    "choiceNotes": [
+     "他に分類される病態が記載されているので、修正ルールＡにより診断名不明確な病態である老衰は採らない。",
+     null,
+     "老衰の扱いは修正ルールＢ（軽微な病態）ではなく、修正ルールＡ（老衰及びその他の診断名不明確な病態）による。",
+     "Ⅰ欄の最下欄の老衰が単独で記載されているため、最初に選ばれるのは一般原則による老衰であり、ルール２ではない。",
+     "老衰と肺炎を組み合わせる連鎖の規定はなく、修正ルールＣは当たらない。"
+    ],
+    "point": "老衰・心停止・呼吸不全などの診断名不明確な病態が選ばれ、他に分類される病態があれば修正ルールＡで選びなおす。"
+   },
+   "sources": [
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "4.1.9 修正ルール ルールＡ",
+     "quote": "選ばれた死因が診断名不明確な病態である場合で、他に分類される病態が死亡診断書に記載されている場合には、その診断名不明確な病態は記載されなかったものとして、死因を選びなおす。"
+    },
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "4.1.9 修正ルール ルールＡ",
+     "quote": "R00 － R94 及び R96 － R99（症状，徴候及び異常臨床所見，異常検査所見で，他に分類されないもの）"
+    }
+   ],
+   "subject": "S11",
+   "subtopic": "死因統計と原死因の選択",
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s11-0010",
+   "origin": {
+    "batch": "G2-S11-DTH",
+    "key": "G2-S11-DTH-10",
+    "by": "gen:G2-S11-DTH"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G2-S11-DTH",
+     "solver": "solve:G2-S11-DTH（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G2-S11-DTH（ICD-10専門）"
+    },
+    "log": "bank/audit/G2-S11-DTH.audit.json#G2-S11-DTH-10",
+    "notes": "4.1.9ルールA(R00-R94、R54老衰)、例35(一般原則で老衰→無視)で一般原則→ルールAの流れを確認。R54/J18.9存在確認。"
+   }
+  },
+  {
+   "format": "case",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "次の死亡診断書（架空例）の死亡の原因欄の記載について、原死因のコードとして正しいものはどれか。\nⅠ欄　(ア) うっ血性心不全　(イ) 高血圧（症）\nⅡ欄　記載なし",
+   "choices": [
+    "I10",
+    "I50.0",
+    "I11.9",
+    "I11.0",
+    "I13.0"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "一般原則により高血圧（症）（I10）が選ばれる。原死因コーディングのための注で、I10は心不全（I50.-）の記載を伴うときI11.0にコードするとされており、修正ルールＣ（連鎖）により心不全（うっ血性）を伴う高血圧性心疾患（I11.0）にコードする。",
+    "choiceNotes": [
+     "一般原則で選ばれたI10は、心不全と連鎖するためそのままでは用いない。",
+     "うっ血性心不全は直接死因であり、起点となる先行原因である高血圧（症）と連鎖した複合コードにする。",
+     "I11.9は心不全（うっ血性）を伴わない高血圧性心疾患であり、本例には当たらない。",
+     null,
+     "I13.0は高血圧性心腎疾患であり、腎疾患の記載がない本例には当たらない。"
+    ],
+    "point": "高血圧（症）＋心不全の記載→連鎖でI11.0。"
+   },
+   "sources": [
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "4.1.9 修正ルール ルールＣ",
+     "quote": "選ばれた死因が、分類にある規定又は原死因コーディングのための注にある規定によって、死亡診断書上の一つ以上の他の病態と連鎖する場合には、複合した病態にコードする。"
+    },
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "4.1.11 原死因コーディングのための注 I10",
+     "quote": "I50.- （心不全）、I11.0 にコードする。"
+    }
+   ],
+   "subject": "S11",
+   "subtopic": "死因統計と原死因の選択",
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s11-0011",
+   "origin": {
+    "batch": "G2-S11-DTH",
+    "key": "G2-S11-DTH-11",
+    "by": "gen:G2-S11-DTH"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G2-S11-DTH",
+     "solver": "solve:G2-S11-DTH（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G2-S11-DTH（ICD-10専門）"
+    },
+    "log": "bank/audit/G2-S11-DTH.audit.json#G2-S11-DTH-11",
+    "notes": "4.1.11 I10の注『I50.-（心不全）、I11.0 にコードする』、ルールC本文確認。I11.0/I11.9/I13.0/I50.0の名称確認。"
+   }
+  },
+  {
+   "format": "icd",
+   "difficulty": "standard",
+   "polarity": "negative",
+   "question": "修正ルールＡにおいて、診断名不明確な病態とみなされないものはどれか。",
+   "choices": [
+    "心停止，詳細不明（I46.9）",
+    "急性呼吸不全（J96.0）",
+    "老衰（R54）",
+    "乳幼児突然死症候群（R95）",
+    "低血圧（症），詳細不明（I95.9）"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "修正ルールＡは、I46.1（心臓性突然死と記載されたもの）、I46.9、I95.9、I99、J96.0、J96.9、P28.5、R00－R94及びR96－R99を診断名不明確な病態とみなすが、R95（乳幼児突然死症候群）は含まれないと明記している。",
+    "choiceNotes": [
+     "I46.9（心停止，詳細不明）は診断名不明確な病態として列挙されている。",
+     "J96.0（急性呼吸不全）は診断名不明確な病態として列挙されている。",
+     "老衰（R54）はR00－R94の範囲にあり、診断名不明確な病態とみなされる。",
+     null,
+     "I95.9（低血圧，詳細不明）は診断名不明確な病態として列挙されている。"
+    ],
+    "point": "ルールＡの不明確病態：I46.1・I46.9・I95.9・I99・J96.0・J96.9・P28.5・R00–R94・R96–R99（R95は除く）。"
+   },
+   "sources": [
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "4.1.9 修正ルール ルールＡ",
+     "quote": "I46.9（心停止，詳細不明）"
+    },
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "4.1.9 修正ルール ルールＡ",
+     "quote": "ただし、R95（乳幼児突然死症候群）は含まれない。"
+    }
+   ],
+   "subject": "S11",
+   "subtopic": "死因統計と原死因の選択",
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s11-0012",
+   "origin": {
+    "batch": "G2-S11-DTH",
+    "key": "G2-S11-DTH-12",
+    "by": "gen:G2-S11-DTH"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G2-S11-DTH",
+     "solver": "solve:G2-S11-DTH（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G2-S11-DTH（ICD-10専門）"
+    },
+    "log": "bank/audit/G2-S11-DTH.audit.json#G2-S11-DTH-12",
+    "notes": "4.1.9ルールAの列挙(I46.9,J96.0,I95.9,R00-R94)と『R95…は含まれない』確認。"
+   }
+  },
+  {
+   "format": "knowledge",
+   "difficulty": "standard",
+   "polarity": "negative",
+   "question": "修正ルールＢ（軽微な病態）について、誤っているものはどれか。",
+   "choices": [
+    "選ばれた死因がそれ自身では死因になりそうもない軽微な病態で、もっと重篤な病態が記載されている場合は、軽微な病態が記載されなかったものとして選びなおす。",
+    "軽微な病態を治療して副作用が生じ、その結果死亡した場合は、副作用を死因として選ぶ。",
+    "選びなおす際には、診断名不明確な病態や軽微な病態は選ばない。",
+    "軽微な病態が他の病態の原因として記載されていても、より重篤な病態が記載されていれば軽微な病態は無視する。",
+    "修正ルールは、起点となる先行原因の選択の後に適用される。"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "第2巻は「軽微な病態が他の病態の原因となっていると記載されている場合は、その軽微な病態は無視されない。つまりルール B は適用されない」としている。",
+    "choiceNotes": [
+     "ルールＢの本文どおりで正しい。",
+     "ルールＢの本文どおりで正しい（扁桃摘出術の術中出血の例など）。",
+     "ルールＢは選びなおしについて「ただし、診断名不明確な病態や軽微な病態は除く」としている。",
+     null,
+     "4.1.8のとおり、修正ルールは起点となる先行原因の選択の後に適用されるべきものである。"
+    ],
+    "point": "軽微な病態でも、他の病態の原因として記載されていれば無視しない（ルールＢ不適用）。"
+   },
+   "sources": [
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "4.1.9 修正ルール ルールＢ",
+     "quote": "軽微な病態が他の病態の原因となっていると記載されている場合は、その軽微な病態は無視されない。つまりルール B は適用されない。"
+    },
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "4.1.9 修正ルール ルールＢ",
+     "quote": "もし軽微な病態を治療して副作用が生じ、その結果死亡したとしたら、副作用を死因として選ぶ。"
+    },
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "4.1.8 選択された死因の修正",
+     "quote": "起点となる先行原因の選択の後に適用されるべきである。"
+    }
+   ],
+   "subject": "S11",
+   "subtopic": "死因統計と原死因の選択",
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s11-0013",
+   "origin": {
+    "batch": "G2-S11-DTH",
+    "key": "G2-S11-DTH-13",
+    "by": "gen:G2-S11-DTH"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G2-S11-DTH",
+     "solver": "solve:G2-S11-DTH（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G2-S11-DTH（ICD-10専門）"
+    },
+    "log": "bank/audit/G2-S11-DTH.audit.json#G2-S11-DTH-13",
+    "notes": "4.1.9ルールB本文(無視されない/副作用/ただし…除く)、4.1.8『起点となる先行原因の選択の後に適用』確認。"
+   }
+  },
+  {
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "選ばれた死因が一般的な用語で病態を表しており、その部位又は性質についてより詳細な情報を与える用語が死亡診断書に記載されている場合に、より詳細な用語を選ぶ規則はどれか。",
+   "choices": [
+    "修正ルールＡ",
+    "修正ルールＢ",
+    "修正ルールＣ",
+    "修正ルールＤ",
+    "選択ルール３"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "修正ルールＤ（特異性・原死因の明確化）の内容である。例として、Ⅰ欄に脳梗塞と脳卒中が記載された場合は脳梗塞（I63.9）にコードする。",
+    "choiceNotes": [
+     "修正ルールＡは老衰及びその他の診断名不明確な病態を扱う。",
+     "修正ルールＢは軽微な病態を扱う。",
+     "修正ルールＣは連鎖で、規定により他の病態と結び付けて複合した病態にコードする。",
+     null,
+     "選択ルール３は、選ばれた病態が他の病態の明らかな直接影響による場合に先行する病態を選ぶ規則である。"
+    ],
+    "point": "Ａ＝不明確病態、Ｂ＝軽微な病態、Ｃ＝連鎖、Ｄ＝特異性。"
+   },
+   "sources": [
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "4.1.9 修正ルール ルールＤ",
+     "quote": "より詳細な情報を与える用語が、死亡診断書に記載されている場合には、このより詳細な情報のある用語を選ぶ。"
+    },
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "4.1.9 修正ルール",
+     "quote": "ルール D     特異性（原死因の明確化）"
+    }
+   ],
+   "subject": "S11",
+   "subtopic": "死因統計と原死因の選択",
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s11-0014",
+   "origin": {
+    "batch": "G2-S11-DTH",
+    "key": "G2-S11-DTH-14",
+    "by": "gen:G2-S11-DTH"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G2-S11-DTH",
+     "solver": "solve:G2-S11-DTH（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G2-S11-DTH（ICD-10専門）"
+    },
+    "log": "bank/audit/G2-S11-DTH.audit.json#G2-S11-DTH-14",
+    "notes": "4.1.9ルールD本文、例59(脳梗塞/脳卒中→I63.9)確認。"
+   }
+  },
+  {
+   "format": "knowledge",
+   "difficulty": "advanced",
+   "polarity": "negative",
+   "question": "選択ルール３の適用で「他の病態の直接的な影響によると推定できる場合」として第2巻に示される内容について、誤っているものはどれか。",
+   "choices": [
+    "心不全（I50.-）は、他の心臓の病態の結果生じたと考える。",
+    "食道静脈瘤（I85.-）は、B18.-、K70.-、K73.-、K74.-及びK76.-に分類される肝疾患の結果生じたと考える。",
+    "脱水は、腸管感染症の結果生じたと考える。",
+    "HIV病が記載されている場合は、あらゆる型の悪性新生物＜腫瘍＞がそのHIV病によって生じたと考える。",
+    "急性腎不全は、尿路感染症の発症前から存在していたという記載がある場合を除いて、尿路感染症の結果生じたと推定する。"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "HIV病によって生じたと考えるのは、C46.-又はC81－C96に分類されるカポジ肉腫、バーキット腫瘍並びにリンパ系、造血系及び関連組織の悪性新生物に限られ、その他の型の悪性新生物にはこのような推定をするべきではないとされている。",
+    "choiceNotes": [
+     "第2巻に「心不全（I50.-）及び心疾患，詳細不明（I51.9）は、他の心臓の病態の結果生じたと考えるべき」とある。",
+     "第2巻の記述どおりで正しい。",
+     "第2巻に「脱水は、腸管感染症の結果生じたと考えるべき」とある。",
+     null,
+     "第2巻の記述どおりで正しい。"
+    ],
+    "point": "HIV病との推定はカポジ肉腫・リンパ系／造血系等（C46.-、C81–C96）に限る。"
+   },
+   "sources": [
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "4.1.7 一般原則と選択ルールの例 ルール３「他の病態の直接的な影響によると推定できる場合について」",
+     "quote": "その他の型の悪性新生物＜腫瘍＞は、このような推定をするべきではない。"
+    },
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "4.1.7 一般原則と選択ルールの例 ルール３「他の病態の直接的な影響によると推定できる場合について」",
+     "quote": "食道静脈瘤（I85.-）は、B18.-、K70.-、K73.-、K74.- 及び K76.-. に分類される肝疾患の結果生じたと考えるべきである。"
+    },
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "4.1.7 一般原則と選択ルールの例 ルール３「他の病態の直接的な影響によると推定できる場合について」",
+     "quote": "急性腎不全は、尿路感染症の発症前から存在していたという記載がある場合を除いて、尿路感染症の結果生じたと推定すべきである。"
+    }
+   ],
+   "subject": "S11",
+   "subtopic": "死因統計と原死因の選択",
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s11-0015",
+   "origin": {
+    "batch": "G2-S11-DTH",
+    "key": "G2-S11-DTH-15",
+    "by": "gen:G2-S11-DTH"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（ICD-10専門）で修正",
+     "修正後の独立再監査（pass）",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G2-S11-DTH",
+     "solver": "solve:G2-S11-DTH（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G2-S11-DTH（ICD-10専門）",
+     "reauditor": "reaudit:G2-S11-DTH"
+    },
+    "log": "bank/audit/G2-S11-DTH.audit.json#G2-S11-DTH-15",
+    "notes": "再監査: icd:instruction 4.1.7 ルール３「他の病態の直接的な影響によると推定できる場合について」: HIV presumption limited to C46.-/C81-C96 (その他の型は推定しない) -> A false; 心不全I50.-, 食道静脈瘤I85.- (B18/K70/K73/K74/K76), 脱水←腸管感染症, 急性腎不全←尿路感染症 all verbatim in text (p.54-56). Blind matched.｜4.1.7推定リスト(HIVはC46.-/C81-C96のみ、I50.-、I85.-、脱水、急性腎不全)本文確認。key正。"
+   }
+  },
+  {
+   "subject": "S11",
+   "subtopic": "疾病統計と主要病態の選択",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "ICD-10（2013年版）第2巻に示された疾病データの単一病態分析において、「主要病態」の定義として正しいものはどれか。",
+   "choices": [
+    "保健ケアのエピソードの最初（入院時）に診断された病態",
+    "主として治療又は検査の必要性にもとづく、エピソードの最後に診断された病態",
+    "エピソード中に記録された病態のうち、生命予後に最も影響する病態",
+    "診断の有無にかかわらず、患者が受診時に最も強く訴えた症状",
+    "過去のエピソードを含め、その患者が最も長期間治療を受けてきた病態"
+   ],
+   "answer": 1,
+   "explanation": {
+    "correct": "第2巻4.4は、主要病態を「主として、患者の治療又は検査に対する必要性にもとづく、保健ケアのエピソードの最後に診断された病態」と定義している。該当する病態が多数ある場合は、もっとも医療資源が使われた病態を選ぶ。",
+    "choiceNotes": [
+     "定義の基準時点はエピソードの「最後」であり、入院時の診断ではない。",
+     null,
+     "選択の基準は治療又は検査の必要性（多数ある場合は医療資源の投入量）であり、致命性ではない。",
+     "主要症状を主要病態とするのは、診断がなされなかった場合に限られる。",
+     "現在のエピソードに関連しない以前のエピソードの病態は、その他の病態としても記載してはいけないとされ、主要病態の基準にもならない。"
+    ],
+    "point": "主要病態＝エピソードの最後に診断された、治療・検査の主な理由となった病態。複数なら医療資源最多。"
+   },
+   "sources": [
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "4.4 疾病統計",
+     "quote": "主要病態とは、主として、患者の治療又は検査に対する必要性にもとづく、保健ケアのエピソードの最後に診断された病態であると定義される。"
+    },
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "4.4 疾病統計",
+     "quote": "もし診断がなされなかった場合は、主要症状又は異常な所見もしくは問題を主要病態として選択すべきである。"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s11-0016",
+   "origin": {
+    "batch": "G2-S11-MOR",
+    "key": "G2-S11-MOR-01",
+    "by": "gen:G2-S11-MOR"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（ICD-10専門）で修正",
+     "修正後の独立再監査（pass）",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G2-S11-MOR",
+     "solver": "solve:G2-S11-MOR（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G2-S11-MOR（ICD-10専門）",
+     "reauditor": "reaudit:G2-S11-MOR"
+    },
+    "log": "bank/audit/G2-S11-MOR.audit.json#G2-S11-MOR-01",
+    "notes": "再監査: Blind=key(2). icd:instruction 4.4 疾病統計 (l.6836, 6848-6853): 主要病態の定義（治療又は検査の必要性・エピソードの最後に診断）、多数なら医療資源最多、診断なしの場合のみ主要症状; l.6856-6861: 以前のエピソードの病態は記載しない（E注記）。Locator fix「4.4 疾病統計」は本文見出しと一致。validate 0 errors.｜icd:instruction 4.4本文（主要病態の定義・医療資源・診断なし→主要症状）で key・各注記を確認。ソルバー一致。"
+   }
+  },
+  {
+   "subject": "S11",
+   "subtopic": "疾病統計と主要病態の選択",
+   "format": "knowledge",
+   "difficulty": "standard",
+   "polarity": "negative",
+   "question": "ICD-10（2013年版）第2巻のガイドラインにおける、不明確な診断や疑診の取扱いについて、誤っているものはどれか。",
+   "choices": [
+    "エピソードの後も主要病態が「疑い」と記録され、それ以上の情報も確認もない場合は、疑診を確診としてコーディングする",
+    "分類項目Z03.-（疾病及び病態の疑いに対する医学的観察及び評価）は、検査後に否定することのできる疑診に適用する",
+    "検査の結果否定された疑診は、疑われた疾患の確診としてコーディングする",
+    "確定診断がなされなかった場合、診断名の記録は「と疑われる」とするよりも、症状、異常所見又は問題の記述によるべきである"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "検査の結果否定された疑診は確診としてはコードせず、Z03.-（疾病及び病態の疑いに対する医学的観察及び評価）を適用する。確診としてコードするのは、エピソード後も「疑い」のままで、それ以上の情報も確認もない場合である。",
+    "choiceNotes": [
+     "4.4.2のとおり。「疑い」のまま情報も確認もない場合は確診としてコードする。",
+     "4.4.2のとおり。Z03.-は検査後に否定できる疑診に適用する。",
+     null,
+     "4.4.1「不明確な診断又は症状」のとおり。記録は症状・異常所見・問題の記述によるべきとされる。"
+    ],
+    "point": "「疑い」のまま未確認→確診としてコード。検査で否定→Z03.-。"
+   },
+   "sources": [
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "4.4.2",
+     "quote": "疑診を確診としてコーディングしなければならない。"
+    },
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "4.4.2",
+     "quote": "分類項目 Z03.-（疾病及び病態の疑いに対する医学的観察及び評価）は、検査後に否定することのできる疑診に適用する。"
+    },
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "4.4.1 不明確な診断又は症状",
+     "quote": "診断を「の可能性のある」、「と思われる」又は「と疑われる」とするよりは、症状、異常所見又は問題の記"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s11-0017",
+   "origin": {
+    "batch": "G2-S11-MOR",
+    "key": "G2-S11-MOR-02",
+    "by": "gen:G2-S11-MOR"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G2-S11-MOR",
+     "solver": "solve:G2-S11-MOR（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G2-S11-MOR（ICD-10専門）"
+    },
+    "log": "bank/audit/G2-S11-MOR.audit.json#G2-S11-MOR-02",
+    "notes": "icd:instruction 4.4.2（疑診→確診、Z03.-は否定された疑診）と4.4.1「不明確な診断又は症状」で確認。選択肢2のみ誤り。ソルバー一致。"
+   }
+  },
+  {
+   "subject": "S11",
+   "subtopic": "疾病統計と主要病態の選択",
+   "format": "icd",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "40歳代 男性。肺結核の疑いで入院し精査を行ったが、結核は否定された。その他に治療や医学的ケアを要する病態は認められなかった。主要病態のコードとして正しいものはどれか。",
+   "choices": [
+    "A16.2",
+    "Z03.8",
+    "Z86.1",
+    "Z03.9",
+    "Z03.0"
+   ],
+   "answer": 4,
+   "explanation": {
+    "correct": "検査後に否定された疑診には分類項目Z03.-を適用する。結核の疑いについては専用の細分類項目Z03.0（結核の疑いに対する観察）がある。",
+    "choiceNotes": [
+     "A16.2は肺結核（細菌学的又は組織学的確認の記載がないもの）で、結核が否定された本例には用いない。",
+     "Z03.8はその他の疾病及び病態の疑いに対する観察で、結核には専用のZ03.0がある。",
+     "Z86.1は感染症及び寄生虫症の既往歴で、否定された疑診の観察ではない。",
+     "Z03.9は詳細不明の疑いに対する観察で、疑われた疾患（結核）が明らかな本例には用いない。",
+     null
+    ],
+    "point": "否定された疑診→Z03.-。結核ならZ03.0、心筋梗塞ならZ03.4。"
+   },
+   "sources": [
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "4.4.2",
+     "quote": "分類項目 Z03.-（疾病及び病態の疑いに対する医学的観察及び評価）は、検査後に否定することのできる疑診に適用する。"
+    },
+    {
+     "ref": "icd:naiyou21",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第21章 健康状態に影響を及ぼす要因及び保健サービスの利用（Z00-Z99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou21.pdf",
+     "locator": "Z03.0",
+     "quote": "Ｚ03．0   結核の疑いに対する観察"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s11-0018",
+   "origin": {
+    "batch": "G2-S11-MOR",
+    "key": "G2-S11-MOR-03",
+    "by": "gen:G2-S11-MOR"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G2-S11-MOR",
+     "solver": "solve:G2-S11-MOR（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G2-S11-MOR（ICD-10専門）"
+    },
+    "log": "bank/audit/G2-S11-MOR.audit.json#G2-S11-MOR-03",
+    "notes": "icd:instruction 4.4.2 例5・例6（否定→Z03.1/Z03.4）と naiyou21 Z03.0、icd.mjs で全コード名称確認。ソルバー一致。"
+   }
+  },
+  {
+   "subject": "S11",
+   "subtopic": "疾病統計と主要病態の選択",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "「主要病態」の欄に、一緒にコードできない「白内障」「急性気管支炎」「腰部脊柱管狭窄症」の3病態がこの順で記載されていた。その他の病態の記載はなく、治療内容や専門科目など、どの病態に対してケアが行われたかを示す記載も記録にない。主治医からの情報も得られない。再選択ルールに従って主要病態として選択する病態はどれか。",
+   "choices": [
+    "白内障",
+    "急性気管支炎",
+    "腰部脊柱管狭窄症",
+    "3病態を並列して主要病態とする"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "ルールMB2では、一緒にコードできないいくつかの病態が主要病態として記載され、記録の他の記載事項からケアの対象が判らない場合は、最初に記載された病態を選択する。",
+    "choiceNotes": [
+     null,
+     "急性の病態を優先するのは、同一の病態が急性及び慢性の両者と記載された場合のルールであり、本例には当たらない。",
+     "最後に記載された病態を選ぶルールはない。",
+     "単一病態分析では主要病態を一つ選択する。MB2は最初に記載された病態の選択を定めている。"
+    ],
+    "point": "MB2：主要病態欄に複数→記録からケア対象が判ればそれ、判らなければ初筆。"
+   },
+   "sources": [
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "4.4.3 ルールMB2",
+     "quote": "もし一緒にコードできないいくつかの病態が、「主要病態」として記載され、記録にあるその他の詳細な記載事項により、それらの病態のうちの一つが、患者がケアを受けた「主要病態」であると判る場合は、その病態を選択する。そうでなければ、最初に記載された病態を選択する。"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s11-0019",
+   "origin": {
+    "batch": "G2-S11-MOR",
+    "key": "G2-S11-MOR-04",
+    "by": "gen:G2-S11-MOR"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G2-S11-MOR",
+     "solver": "solve:G2-S11-MOR（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G2-S11-MOR（ICD-10専門）"
+    },
+    "log": "bank/audit/G2-S11-MOR.audit.json#G2-S11-MOR-04",
+    "notes": "icd:instruction 4.4.3 MB2（他の記載でケア対象不明→最初に記載）で確認。他選択肢の注記も原文と整合。ソルバー一致。"
+   }
+  },
+  {
+   "subject": "S11",
+   "subtopic": "疾病統計と主要病態の選択",
+   "format": "icd",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "50歳代 男性。消化器内科に入院し、腹水のコントロールを行った。記録には「主要病態：肝疾患」「その他の病態：アルコール性肝硬変、2型糖尿病（合併症なし）」とあり、主治医から訂正の情報は得られなかった。再選択ルールを適用したうえでの主要病態のコードとして正しいものはどれか。",
+   "choices": [
+    "K76.9",
+    "K74.6",
+    "K70.9",
+    "K70.3",
+    "E11.9"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "ルールMB4（特異性）により、主要病態が一般的な用語（肝疾患）で記載され、部位又は性質をより明確にする用語（アルコール性肝硬変）が他に記載されている場合は、後者を主要病態として再選択する。アルコール性肝硬変はK70.3。",
+    "choiceNotes": [
+     "K76.9は肝疾患，詳細不明。より特異的な病態が記載されているので用いない。",
+     "K74.6はその他及び詳細不明の肝硬変。アルコール性と明示されているので用いない。",
+     "K70.9はアルコール性肝疾患，詳細不明。肝硬変と明示されているので用いない。",
+     null,
+     "E11.9は2型糖尿病（合併症を伴わないもの）。今回のケアの対象ではなく、主要病態を特異化する記載でもない。"
+    ],
+    "point": "MB4：一般的な用語の主要病態→より特異的な記載を再選択。"
+   },
+   "sources": [
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "4.4.3 ルールMB4",
+     "quote": "「主要病態」として示された診断名が、一般的な用語で記載され、この病態の部位又は性質についてさらに明確な情報を与える用語が、他に記載されている場合は、"
+    },
+    {
+     "ref": "icd:kihon2013",
+     "title": "基本分類表（2013年版）準拠",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/xls/kihon2013.xlsx",
+     "locator": "K70.3",
+     "quote": "K70.3\tアルコール性肝硬変"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s11-0020",
+   "origin": {
+    "batch": "G2-S11-MOR",
+    "key": "G2-S11-MOR-05",
+    "by": "gen:G2-S11-MOR"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G2-S11-MOR",
+     "solver": "solve:G2-S11-MOR（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G2-S11-MOR（ICD-10専門）"
+    },
+    "log": "bank/audit/G2-S11-MOR.audit.json#G2-S11-MOR-05",
+    "notes": "icd:instruction 4.4.3 MB4（例15〜17）と kihon2013 K70.3。K76.9/K74.6/K70.9/E11.9 の名称を icd.mjs で確認。ソルバー一致。"
+   }
+  },
+  {
+   "subject": "S11",
+   "subtopic": "疾病統計と主要病態の選択",
+   "format": "icd",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "記録に「主要病態：胆石症又は消化性潰瘍による心窩部痛」「その他の病態：―」とあり、ほかに診断を確定する情報はない。主要病態のコードとして正しいものはどれか。",
+   "choices": [
+    "K80.2",
+    "K27.9",
+    "R10.1",
+    "R10.4",
+    "K30"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "ルールMB5では、症状又は徴候が主要病態として記載され、それがある病態又は他の病態のどちらかによるであろうと示されている場合は、その症状を主要病態として選択する。心窩部痛はR10.1（上腹部に限局した疼痛）に含まれる。",
+    "choiceNotes": [
+     "K80.2は胆のう炎を伴わない胆のう結石（胆石症）。原因が二者択一で示された症状の記載なので、原因の一方を選ばない。",
+     "K27.9は部位不明の消化性潰瘍。同様に原因の一方を選ぶことになり誤り。",
+     null,
+     "R10.4はその他及び詳細不明の腹痛。上腹部＜心窩部＞痛はR10.1に分類される。",
+     "K30は機能性ディスペプシアで、R10.1の除外項目である。本例の記載とは異なる。"
+    ],
+    "point": "MB5：「A又はBによる症状」→症状を選ぶ。「A又はB」と病態が並ぶ→初筆。"
+   },
+   "sources": [
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "4.4.3 ルールMB5",
+     "quote": "症状又は徴候が「主要病態」として記載され、それがある病態又は他の病態のどちらかによるであろうと示されている場合は、「主要病態」としてその症状を選択する。"
+    },
+    {
+     "ref": "icd:naiyou18",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第18章 症状，徴候及び異常臨床所見・異常検査所見で他に分類されないもの（R00-R99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou18.pdf",
+     "locator": "R10.1",
+     "quote": "上腹部＜心窩部＞痛"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s11-0021",
+   "origin": {
+    "batch": "G2-S11-MOR",
+    "key": "G2-S11-MOR-06",
+    "by": "gen:G2-S11-MOR"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G2-S11-MOR",
+     "solver": "solve:G2-S11-MOR（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G2-S11-MOR（ICD-10専門）"
+    },
+    "log": "bank/audit/G2-S11-MOR.audit.json#G2-S11-MOR-06",
+    "notes": "icd:instruction 4.4.3 MB5（例19：症状を選択）。naiyou18 R10.1 包含「上腹部＜心窩部＞痛」・除外K30、R10.4名称確認。ソルバー一致。"
+   }
+  },
+  {
+   "subject": "S11",
+   "subtopic": "疾病統計と主要病態の選択",
+   "format": "icd",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "記録に「主要病態：急性及び慢性扁桃炎」「その他の病態：―」とあり、病原体の記載はない。主要病態のコードとして正しいものはどれか。",
+   "choices": [
+    "J35.0",
+    "J03.0",
+    "J35.1",
+    "J02.9",
+    "J03.9"
+   ],
+   "answer": 4,
+   "explanation": {
+    "correct": "主要病態が急性及び慢性の両者と記載され、ICDに複合の項目でない別々の分類項目がある場合は、急性病態の分類項目を優先的主要病態とする。急性扁桃炎（詳細不明）はJ03.9。慢性扁桃炎J35.0は急性扁桃炎を除外しており、複合の項目ではない。",
+    "choiceNotes": [
+     "J35.0は慢性扁桃炎。急性と慢性が併記されたときは急性病態を優先する（J35.0は任意的追加コードとして使用しうる）。",
+     "J03.0は連鎖球菌による扁桃炎。病原体の記載がないので用いない。",
+     "J35.1は扁桃肥大で、扁桃炎ではない。",
+     "J02.9は急性咽頭炎，詳細不明で、部位が異なる。",
+     null
+    ],
+    "point": "急性＋慢性が別項目→急性を主要病態。複合項目があればそれ（例：急性増悪を伴うCOPD J44.1）。"
+   },
+   "sources": [
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "4.4.2 急性及び慢性の病態のコーディング",
+     "quote": "急性病態に対する分類項目を優先的主要病態として使用しなければならない。"
+    },
+    {
+     "ref": "icd:naiyou10",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第10章 呼吸器系の疾患（J00-J99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou10.pdf",
+     "locator": "J03.9",
+     "quote": "Ｊ03．9   急性扁桃炎， 詳細不明"
+    },
+    {
+     "ref": "icd:naiyou10",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第10章 呼吸器系の疾患（J00-J99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou10.pdf",
+     "locator": "J35.0",
+     "quote": "Ｊ35．0   慢性扁桃炎"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s11-0022",
+   "origin": {
+    "batch": "G2-S11-MOR",
+    "key": "G2-S11-MOR-07",
+    "by": "gen:G2-S11-MOR"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G2-S11-MOR",
+     "solver": "solve:G2-S11-MOR（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G2-S11-MOR（ICD-10専門）"
+    },
+    "log": "bank/audit/G2-S11-MOR.audit.json#G2-S11-MOR-07",
+    "notes": "icd:instruction 4.4.2「急性及び慢性の病態のコーディング」例20。naiyou10 J35.0 除外（急性 J03.-）、J03.9包含を確認。ソルバー一致。"
+   }
+  },
+  {
+   "subject": "S11",
+   "subtopic": "疾病統計と主要病態の選択",
+   "format": "knowledge",
+   "difficulty": "standard",
+   "polarity": "negative",
+   "question": "ICD-10（2013年版）第2巻の「主要病態の再選択ルール」について、誤っているものはどれか。",
+   "choices": [
+    "再選択ルールは、保健ケアの実施者が正しい手順に従わなかったことが判り、実施者から明確にできる情報を得ることが不可能な場合に適用する",
+    "MB1：重要でない病態が主要病態として記載され、治療や専門科目に関連してより重要な病態がその他の病態に記載されていれば、後者を再選択する",
+    "MB3：主要病態として記載された症状が、他に記載された診断病態の症状であり、ケアが後者になされたならば、診断病態を再選択する",
+    "MB2：一緒にコードできない複数の病態が主要病態として記載され、ケアの対象が記録から判らなければ、最後に記載された病態を選択する",
+    "MB4：主要病態が一般的な用語で記載され、部位又は性質をより明確にする用語が他に記載されていれば、後者を再選択する"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "ルールMB2では、記録の他の記載事項からケアの対象が判らない場合は「最初に記載された病態」を選択する。最後に記載された病態ではない。",
+    "choiceNotes": [
+     "4.4.3冒頭のとおり。実施者から明確にできる情報が得られない場合に、ルールの一つを適用して主要病態を選択する。",
+     "ルールMB1の内容のとおり。",
+     "ルールMB3の内容のとおり。",
+     null,
+     "ルールMB4（特異性）の内容のとおり。"
+    ],
+    "point": "再選択の前提＝実施者から情報が得られない。MB2の既定は「初筆」。"
+   },
+   "sources": [
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "4.4.3",
+     "quote": "保健ケアの実施者から、明確にできる情報を得ることが不可能な場合は、下記のルールの一つが適用され、「主要病態」が選択される。"
+    },
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "4.4.3 ルールMB2",
+     "quote": "そうでなければ、最初に記載された病態を選択する。"
+    },
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "4.4.3 ルールMB3",
+     "quote": "ケアが後者に対してなされたならば、「主要病態」として診断病態を"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s11-0023",
+   "origin": {
+    "batch": "G2-S11-MOR",
+    "key": "G2-S11-MOR-08",
+    "by": "gen:G2-S11-MOR"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G2-S11-MOR",
+     "solver": "solve:G2-S11-MOR（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G2-S11-MOR（ICD-10専門）"
+    },
+    "log": "bank/audit/G2-S11-MOR.audit.json#G2-S11-MOR-08",
+    "notes": "icd:instruction 4.4.3 冒頭（情報が得られない場合に適用）、MB1〜MB4本文と照合。選択肢2（最後に記載）のみ誤り。ソルバー一致。Q04と同一事実（MB2初筆）を扱うが形式が異なるため可。"
+   }
+  },
+  {
+   "subject": "S11",
+   "subtopic": "疾病統計と主要病態の選択",
+   "format": "case",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "次の退院時要約（架空症例）を読み、主要病態の選択に適用すべき再選択ルールとして正しいものはどれか。",
+   "choices": [
+    "MB2（主要病態として記載されているいくつかの病態）",
+    "MB1（主要病態として記載された重要でない病態、その他の病態として記載されたより重要な病態）",
+    "MB3（主要病態として記載された病態が、診断され治療された病態の症状を表している）",
+    "MB4（特異性）",
+    "MB5（主要診断名の選択肢）"
+   ],
+   "answer": 1,
+   "explanation": {
+    "correct": "長期間続いた病態（15年来の高血圧症）が主要病態として記載され、行われた治療（胆のう摘出術）と専門科目（外科）に関連するより重要な病態（胆のう結石を伴う急性胆のう炎）がその他の病態に記載されている。主治医からの情報も得られないため、ルールMB1により後者を主要病態として再選択する。",
+    "choiceNotes": [
+     "MB2は主要病態の欄に複数の病態が記載された場合のルール。本例の主要病態欄は高血圧症のみである。",
+     null,
+     "MB3は主要病態として症状・徴候等が記載された場合のルール。高血圧症は症状ではない。",
+     "MB4は主要病態が一般的な用語で記載され、より特異的な記載が他にある場合のルール。高血圧症と胆のう炎は別の病態である。",
+     "MB5は症状又は病態が二者択一の形で記載された場合のルール。本例に該当しない。"
+    ],
+    "point": "長期の病態が主要病態欄、治療・専門科目に合う病態がその他欄→MB1で入れ替え。"
+   },
+   "sources": [
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "4.4.3 ルールMB1",
+     "quote": "重要でないもしくは長期間続いた病態又は付随する問題が「主要病態」として記載され、加えられた治療及び／又は患者のケアをした専門科目に関連して、さらに重要な病態が、「その他の病態」として記載されている場合は、後者を「主要病態」として再選択する。"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "caseId": "case-g2-s11-mor-01",
+   "id": "s11-0024",
+   "origin": {
+    "batch": "G2-S11-MOR",
+    "key": "G2-S11-MOR-09",
+    "by": "gen:G2-S11-MOR"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G2-S11-MOR",
+     "solver": "solve:G2-S11-MOR（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G2-S11-MOR（ICD-10専門）"
+    },
+    "log": "bank/audit/G2-S11-MOR.audit.json#G2-S11-MOR-09",
+    "notes": "症例1：15年来の高血圧＝長期間続いた病態、治療（胆のう摘出術）・専門科目（外科）に関連するより重要な病態がその他欄→icd:instruction 4.4.3 MB1。ソルバー一致。"
+   }
+  },
+  {
+   "subject": "S11",
+   "subtopic": "疾病統計と主要病態の選択",
+   "format": "case",
+   "difficulty": "advanced",
+   "polarity": "positive",
+   "question": "次の退院時要約（架空症例）を読み、再選択ルールを適用したうえでの主要病態のコードとして正しいものはどれか。",
+   "choices": [
+    "I10",
+    "K81.0",
+    "K80.2",
+    "K80.1",
+    "K80.0"
+   ],
+   "answer": 4,
+   "explanation": {
+    "correct": "ルールMB1により「胆のう結石を伴う急性胆のう炎」を主要病態として再選択する。ICDには二つの病態を単一のコードで表す複合分類項目K80.0（急性胆のう炎を伴う胆のう結石）があり、適切な情報が記録されている場合は複合分類項目を主要病態として用いる。K81（胆のう炎）は胆石症を伴うものを除外している。",
+    "choiceNotes": [
+     "I10は本態性高血圧（症）。MB1により主要病態から外れる長期の病態である。",
+     "K81.0は急性胆のう炎だが、K81は胆石症を伴うもの（K80.-）を除外している。",
+     "K80.2は胆のう炎を伴わない胆のう結石で、急性胆のう炎を伴う本例には当たらない。",
+     "K80.1はその他の（慢性等の）胆のう炎を伴う胆のう結石で、急性胆のう炎にはK80.0を用いる。",
+     null
+    ],
+    "point": "MB1で再選択→複合分類項目があれば優先（胆石＋急性胆のう炎＝K80.0）。"
+   },
+   "sources": [
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "4.4.2 複合分類項目のコーディング",
+     "quote": "このような複合分類項目は、適切な情報が記録されている場合は、主要病態として用いるべきである。"
+    },
+    {
+     "ref": "icd:kihon2013",
+     "title": "基本分類表（2013年版）準拠",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/xls/kihon2013.xlsx",
+     "locator": "K80.0",
+     "quote": "K80.0\t急性胆のう＜嚢＞炎を伴う胆のう＜嚢＞結石"
+    },
+    {
+     "ref": "icd:naiyou11",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第11章 消化器系の疾患（K00-K93）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou11.pdf",
+     "locator": "K81 除外",
+     "quote": "胆石症を伴うもの（Ｋ80.-）"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "caseId": "case-g2-s11-mor-01",
+   "id": "s11-0025",
+   "origin": {
+    "batch": "G2-S11-MOR",
+    "key": "G2-S11-MOR-10",
+    "by": "gen:G2-S11-MOR"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G2-S11-MOR",
+     "solver": "solve:G2-S11-MOR（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G2-S11-MOR（ICD-10専門）"
+    },
+    "log": "bank/audit/G2-S11-MOR.audit.json#G2-S11-MOR-10",
+    "notes": "MB1再選択後、4.4.2 複合分類項目の規定と naiyou11 K80.0、K81 除外「胆石症を伴うもの（K80.-）」で確認。K80.1/K80.2/K81.0/I10 名称確認。ソルバー一致。"
+   }
+  },
+  {
+   "subject": "S11",
+   "subtopic": "疾病統計と主要病態の選択",
+   "format": "case",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "次の退院時要約（架空症例）を読み、再選択ルールを適用したうえでの主要病態のコードとして正しいものはどれか。",
+   "choices": [
+    "R06.0",
+    "J18.9",
+    "J13",
+    "J15.4",
+    "A40.3"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "主要病態に記載された呼吸困難は、その他の病態に記載された肺炎球菌による肺炎の症状であり、ケアは肺炎に対してなされている。ルールMB3により診断病態を再選択し、J13（肺炎連鎖球菌による肺炎）にコードする。",
+    "choiceNotes": [
+     "R06.0は呼吸困難（症状）。MB3により診断病態を再選択するので用いない。",
+     "J18.9は肺炎，詳細不明。病原体（肺炎球菌）が明らかなので用いない。",
+     null,
+     "J15.4はその他の連鎖球菌による肺炎。J13の除外項目であり、肺炎連鎖球菌には用いない。",
+     "A40.3は肺炎連鎖球菌による敗血症。本例は敗血症の記載がない。"
+    ],
+    "point": "MB3：主要病態欄の症状が診断病態の症状で、ケアが診断病態に→診断病態を再選択。"
+   },
+   "sources": [
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "4.4.3 ルールMB3",
+     "quote": "これが明らかに、他に記載された診断病態の徴候、症状又は問題であり、ケアが後者に対してなされたならば、「主要病態」として診断病態を"
+    },
+    {
+     "ref": "icd:naiyou10",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第10章 呼吸器系の疾患（J00-J99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou10.pdf",
+     "locator": "J13",
+     "quote": "Ｊ13        肺炎連鎖球菌による肺炎"
+    },
+    {
+     "ref": "icd:naiyou10",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第10章 呼吸器系の疾患（J00-J99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou10.pdf",
+     "locator": "J13 除外",
+     "quote": "その他の連鎖球菌による肺炎（Ｊ15．3－Ｊ15．4）"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "caseId": "case-g2-s11-mor-02",
+   "id": "s11-0026",
+   "origin": {
+    "batch": "G2-S11-MOR",
+    "key": "G2-S11-MOR-11",
+    "by": "gen:G2-S11-MOR"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G2-S11-MOR",
+     "solver": "solve:G2-S11-MOR（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G2-S11-MOR（ICD-10専門）"
+    },
+    "log": "bank/audit/G2-S11-MOR.audit.json#G2-S11-MOR-11",
+    "notes": "症例2：呼吸困難（第XVIII章 R06.0）→ icd:instruction 4.4.3 MB3 で診断病態へ。naiyou10 J13 名称・除外（J15.3−J15.4）確認。ソルバー一致。"
+   }
+  },
+  {
+   "subject": "S11",
+   "subtopic": "疾病統計と主要病態の選択",
+   "format": "case",
+   "difficulty": "advanced",
+   "polarity": "negative",
+   "question": "次の退院時要約（架空症例）を読み、この症例の病態の記録・選択に関する記述として、誤っているものはどれか。",
+   "choices": [
+    "主要病態の再選択は、主治医から明確にできる情報が得られるかどうかにかかわらず、コーダーの判断で先に行ってよい",
+    "2型糖尿病は、エピソードの間に並存し、血糖管理の方法の変更を要して患者管理に影響したので、「その他の病態」として記録してよい",
+    "15年前に治療した胃潰瘍は、現在のエピソードに関連しない以前のエピソードの病態なので、「その他の病態」として記載しない",
+    "主要病態として記載された呼吸困難は肺炎の症状であり、ケアは肺炎に対してなされているので、ルールMB3の対象となる"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "責任ある保健ケア実施者が主要病態を示すのが原則で、再選択ルールは、実施者が正しい手順に従わなかったことが判り、かつ実施者から明確にできる情報を得ることが不可能な場合に適用される。本例は主治医に確認を依頼したうえで回答が得られなかったため再選択を行うのであり、確認の可否にかかわらず先に再選択してよいわけではない。",
+    "choiceNotes": [
+     null,
+     "その他の病態は、エピソードの間に並存し、又は悪化して患者管理に影響を与えた病態と定義される。本例の2型糖尿病はこれに当たる。",
+     "現在のエピソードに関連しない以前のエピソードに関連する病態は記載してはいけない。",
+     "症状が他に記載された診断病態の症状で、ケアが後者になされた場合はMB3により診断病態を再選択する。"
+    ],
+    "point": "その他の病態＝並存・悪化して患者管理に影響。無関係な既往は記載しない。再選択は実施者に確認できないときの手段。"
+   },
+   "sources": [
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "4.4 疾病統計",
+     "quote": "その他の病態とは、保健ケアのエピソードの間に並存し、又はその間に悪化して、患者管理に影響を与えた病態と定義される。"
+    },
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "4.4 疾病統計",
+     "quote": "現在のエピソードに関連しない以前のエピソードに関連する病態は、記載してはいけない。"
+    },
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "4.4.3",
+     "quote": "保健ケアの実施者から、明確にできる情報を得ることが不可能な場合は、下記のルールの一つが適用され、「主要病態」が選択される。"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "caseId": "case-g2-s11-mor-02",
+   "id": "s11-0027",
+   "origin": {
+    "batch": "G2-S11-MOR",
+    "key": "G2-S11-MOR-12",
+    "by": "gen:G2-S11-MOR"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（ICD-10専門）で修正",
+     "修正後の独立再監査（pass）",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G2-S11-MOR",
+     "solver": "solve:G2-S11-MOR（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G2-S11-MOR（ICD-10専門）",
+     "reauditor": "reaudit:G2-S11-MOR"
+    },
+    "log": "bank/audit/G2-S11-MOR.audit.json#G2-S11-MOR-12",
+    "notes": "再監査: Blind=key(2). icd:instruction 4.4 (l.6856-6861) その他の病態の定義・以前のエピソードの病態は記載しない→A,B正; 4.4.2 一般的事項 (l.6976-6979) 不正確な記録は発生源に戻し明確に、できなかった場合MB1-MB5; 4.4.3冒頭 (l.7310-7313) 実施者から明確にできる情報を得ることが不可能な場合にルール適用→Cが誤り; MB3 (l.7339-7350, 例11) 症状（呼吸困難=第XVIII章）が診断病態の症状でケアが後者→D正。Locator 4.4/4.4.3 正しい。validate 0 errors.｜icd:instruction 4.4（その他の病態の定義・以前のエピソードの病態は記載しない）、4.4.3冒頭で確認。選択肢2のみ誤り。ソルバー一致。"
    }
   }
  ]

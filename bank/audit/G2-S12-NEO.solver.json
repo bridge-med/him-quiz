@@ -1,0 +1,17 @@
+{"answers":[
+{"key":"#0","answer":2,"confidence":"high","ambiguous":false,"note":"C78.7 肝及び肝内胆管の続発性悪性新生物"},
+{"key":"#1","answer":1,"confidence":"high","ambiguous":false,"note":"/0良性,/1不詳,/2上皮内,/3悪性。aとc正"},
+{"key":"#2","answer":1,"confidence":"high","ambiguous":false,"note":"内容例示表第Ⅱ章注5: 舌尖の癌が舌下面に拡がればC02.1"},
+{"key":"#3","answer":3,"confidence":"high","ambiguous":false,"note":"注5: 胃と小腸の癌はC26.8"},
+{"key":"#4","answer":2,"confidence":"high","ambiguous":false,"note":"注5: 食道及び胃はC16.0に特に指示"},
+{"key":"#5","answer":3,"confidence":"high","ambiguous":false,"note":"「その他」は「.7」。「.8」は誤り"},
+{"key":"#6","answer":4,"confidence":"high","ambiguous":false,"note":"instruction C97: 独立した原発性2つ以上で主要といえないとき"},
+{"key":"#7","answer":3,"confidence":"high","ambiguous":false,"note":"C97は原死因コーディングには使用しない"},
+{"key":"#8","answer":2,"confidence":"high","ambiguous":false,"note":"instruction 第Ⅱ章 例7同様、続発部位C78.7を主要病態、Z85.0は任意追加"},
+{"key":"#9","answer":1,"confidence":"high","ambiguous":false,"note":"Z08.0 悪性新生物の外科手術後の経過観察（例8）"},
+{"key":"#10","answer":2,"confidence":"high","ambiguous":false,"note":"C79.9 全身性悪性腫瘍で部位記載なし"},
+{"key":"#11","answer":4,"confidence":"high","ambiguous":false,"note":"原発部位不明と記載はC80.0。C80.9はNOS類"},
+{"key":"#12","answer":0,"confidence":"high","ambiguous":false,"note":"C77.0 頭部・顔面・頚部のリンパ節（鎖骨上を含む）"},
+{"key":"#13","answer":3,"confidence":"high","ambiguous":false,"note":"CIN II=中等度異形成 N87.1"},
+{"key":"#14","answer":3,"confidence":"high","ambiguous":false,"note":"配置は性状に次いで部位を優先。形態最優先は誤り"}
+]}

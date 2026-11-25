@@ -57,13 +57,13 @@
     "key": "lg-09-02",
     "by": "旧版（v2・AI作成）"
    },
-   "status": "provisional",
+   "status": "verified",
    "verification": {
     "date": "2026-11-25",
     "method": [
      "独立ブラインド解答（別モデル）",
      "領域監査（ICD-10専門）で修正",
-     "修正後の再監査は未実施",
+     "修正後の独立再監査（pass）",
      "引用の機械照合（一次資料キャッシュ）",
      "スキーマ・ICDコード・計算の機械検査"
     ],
@@ -71,10 +71,10 @@
      "author": "旧版（AI作成・出典なし）",
      "solver": "solve:L09（別モデル・正答を見ずに解答）",
      "auditor": "audit:L09a（ICD-10専門）",
-     "reauditor": null
+     "reauditor": "reaudit:L09a"
     },
     "log": "bank/audit/legacy-L09a.audit.json#lg-09-02",
-    "notes": "icd:naiyou02 冒頭の中間分類項目群で確認。第Ⅰ・Ⅳ・ⅩⅨ章の範囲はnaiyou01/04/19の章見出しで確認。"
+    "notes": "再監査: icd:naiyou02 冒頭中間分類 C00-C97/D00-D09/D10-D36/D37-D48。他肢の章範囲も正しい。 Blind一致。validate 0 errors。｜icd:naiyou02 冒頭の中間分類項目群で確認。第Ⅰ・Ⅳ・ⅩⅨ章の範囲はnaiyou01/04/19の章見出しで確認。"
    }
   },
   {
@@ -205,13 +205,13 @@
     "key": "lg-09-05",
     "by": "旧版（v2・AI作成）"
    },
-   "status": "provisional",
+   "status": "verified",
    "verification": {
     "date": "2026-11-25",
     "method": [
      "独立ブラインド解答（別モデル）",
      "領域監査（ICD-10専門）で修正",
-     "修正後の再監査は未実施",
+     "修正後の独立再監査（pass）",
      "引用の機械照合（一次資料キャッシュ）",
      "スキーマ・ICDコード・計算の機械検査"
     ],
@@ -219,10 +219,10 @@
      "author": "旧版（AI作成・出典なし）",
      "solver": "solve:L09（別モデル・正答を見ずに解答）",
      "auditor": "audit:L09a（ICD-10専門）",
-     "reauditor": null
+     "reauditor": "reaudit:L09a"
     },
     "log": "bank/audit/legacy-L09a.audit.json#lg-09-05",
-    "notes": "icd:naiyou20 冒頭注・中間分類項目（V01－V99交通事故、W00－W19転倒・転落、X40－X49不慮の中毒）で確認。"
+    "notes": "再監査: icd:naiyou20 冒頭注（周囲の状況及びできごと、他章コードに追加）; icd.mjs block V01-V99 交通事故, W00-W19 転倒・転落・墜落。 Blind一致。validate 0 errors。｜icd:naiyou20 冒頭注・中間分類項目（V01－V99交通事故、W00－W19転倒・転落、X40－X49不慮の中毒）で確認。"
    }
   },
   {
@@ -281,13 +281,13 @@
     "key": "lg-09-10",
     "by": "旧版（v2・AI作成）"
    },
-   "status": "provisional",
+   "status": "verified",
    "verification": {
     "date": "2026-11-25",
     "method": [
      "独立ブラインド解答（別モデル）",
      "領域監査（ICD-10専門）で修正",
-     "修正後の再監査は未実施",
+     "修正後の独立再監査（pass）",
      "引用の機械照合（一次資料キャッシュ）",
      "スキーマ・ICDコード・計算の機械検査"
     ],
@@ -295,10 +295,10 @@
      "author": "旧版（AI作成・出典なし）",
      "solver": "solve:L09（別モデル・正答を見ずに解答）",
      "auditor": "audit:L09a（ICD-10専門）",
-     "reauditor": null
+     "reauditor": "reaudit:L09a"
     },
     "log": "bank/audit/legacy-L09a.audit.json#lg-09-10",
-    "notes": "icd:kihon2013・tools/icd.mjsでJ18/J15/C34/I21/K70の名称とJ09-J18中間分類を確認。"
+    "notes": "再監査: icd.mjs: J18 肺炎,病原体不詳; J15 細菌性肺炎NEC; J09-J18 インフルエンザ及び肺炎; C34/I21/K70 名称・章とも正しい。 Blind一致。validate 0 errors。｜icd:kihon2013・tools/icd.mjsでJ18/J15/C34/I21/K70の名称とJ09-J18中間分類を確認。"
    }
   },
   {
@@ -357,13 +357,13 @@
     "key": "lg-09-11",
     "by": "旧版（v2・AI作成）"
    },
-   "status": "provisional",
+   "status": "verified",
    "verification": {
     "date": "2026-11-25",
     "method": [
      "独立ブラインド解答（別モデル）",
      "領域監査（ICD-10専門）で修正",
-     "修正後の再監査は未実施",
+     "修正後の独立再監査（pass）",
      "引用の機械照合（一次資料キャッシュ）",
      "スキーマ・ICDコード・計算の機械検査"
     ],
@@ -371,10 +371,10 @@
      "author": "旧版（AI作成・出典なし）",
      "solver": "solve:L09（別モデル・正答を見ずに解答）",
      "auditor": "audit:L09a（ICD-10専門）",
-     "reauditor": null
+     "reauditor": "reaudit:L09a"
     },
     "log": "bank/audit/legacy-L09a.audit.json#lg-09-11",
-    "notes": "icd:naiyou19 冒頭の除外（M84.4・M80.-・M84.3）、icd:naiyou20 冒頭注、tools/icd.mjsでS72.0大腿骨頚部骨折を確認。"
+    "notes": "再監査: icd:naiyou19 冒頭除外 M84.4/M80.-/M84.3; icd.mjs S72.0 大腿骨頚部骨折(第XIX章), M84.3/M84.4 第XIII章; icd:naiyou20 注。 Blind一致。validate 0 errors。｜icd:naiyou19 冒頭の除外（M84.4・M80.-・M84.3）、icd:naiyou20 冒頭注、tools/icd.mjsでS72.0大腿骨頚部骨折を確認。"
    }
   },
   {
@@ -550,13 +550,13 @@
     "key": "lg-09-19",
     "by": "旧版（v2・AI作成）"
    },
-   "status": "provisional",
+   "status": "verified",
    "verification": {
     "date": "2026-11-25",
     "method": [
      "独立ブラインド解答（別モデル）",
      "領域監査（ICD-10専門）で修正",
-     "修正後の再監査は未実施",
+     "修正後の独立再監査（pass）",
      "引用の機械照合（一次資料キャッシュ）",
      "スキーマ・ICDコード・計算の機械検査"
     ],
@@ -564,10 +564,10 @@
      "author": "旧版（AI作成・出典なし）",
      "solver": "solve:L09（別モデル・正答を見ずに解答）",
      "auditor": "audit:L09b（ICD-10専門）",
-     "reauditor": null
+     "reauditor": "reaudit:L09b"
     },
     "log": "bank/audit/legacy-L09b.audit.json#lg-09-19",
-    "notes": "icd:naiyou09 I21 包含・除外（28日、陳旧性I25.2、再発性I22）；icd:kihon2013 I20/I22/I24/I25。"
+    "notes": "再監査: icd:naiyou09 I21 包含（4週＝28日以内）・除外（陳旧性I25.2、4週超I25.8、再発性I22.-、心筋梗塞後症候群I24.1）、I24.1＝ドレスラー症候群（心筋梗塞後症候群）、I25.8 包含を確認。icd.mjs で全コード存在。｜icd:naiyou09 I21 包含・除外（28日、陳旧性I25.2、再発性I22）；icd:kihon2013 I20/I22/I24/I25。"
    }
   },
   {
@@ -633,13 +633,13 @@
     "key": "lg-09-20",
     "by": "旧版（v2・AI作成）"
    },
-   "status": "provisional",
+   "status": "verified",
    "verification": {
     "date": "2026-11-25",
     "method": [
      "独立ブラインド解答（別モデル）",
      "領域監査（ICD-10専門）で修正",
-     "修正後の再監査は未実施",
+     "修正後の独立再監査（pass）",
      "引用の機械照合（一次資料キャッシュ）",
      "スキーマ・ICDコード・計算の機械検査"
     ],
@@ -647,10 +647,10 @@
      "author": "旧版（AI作成・出典なし）",
      "solver": "solve:L09（別モデル・正答を見ずに解答）",
      "auditor": "audit:L09b（ICD-10専門）",
-     "reauditor": null
+     "reauditor": "reaudit:L09b"
     },
     "log": "bank/audit/legacy-L09b.audit.json#lg-09-20",
-    "notes": "icd:naiyou04 E10－E14（E11 名称・除外：E12, P70.2, O24.-）；icd:naiyou15 O24.4（妊娠性糖尿病NOS）。"
+    "notes": "再監査: icd:naiyou04 E11「２型＜インスリン非依存性＞糖尿病＜NIDDM＞」除外：E12.-、P70.2、O24.-。kihon2013 でE10=1型、E12、P70.2新生児糖尿病、icd:naiyou15 O24.4 妊娠中に発生した糖尿病を確認。｜icd:naiyou04 E10－E14（E11 名称・除外：E12, P70.2, O24.-）；icd:naiyou15 O24.4（妊娠性糖尿病NOS）。"
    }
   },
   {
@@ -709,13 +709,13 @@
     "key": "lg-09-21",
     "by": "旧版（v2・AI作成）"
    },
-   "status": "provisional",
+   "status": "verified",
    "verification": {
     "date": "2026-11-25",
     "method": [
      "独立ブラインド解答（別モデル）",
      "領域監査（ICD-10専門）で修正",
-     "修正後の再監査は未実施",
+     "修正後の独立再監査（pass）",
      "引用の機械照合（一次資料キャッシュ）",
      "スキーマ・ICDコード・計算の機械検査"
     ],
@@ -723,10 +723,10 @@
      "author": "旧版（AI作成・出典なし）",
      "solver": "solve:L09（別モデル・正答を見ずに解答）",
      "auditor": "audit:L09b（ICD-10専門）",
-     "reauditor": null
+     "reauditor": "reaudit:L09b"
     },
     "log": "bank/audit/legacy-L09b.audit.json#lg-09-21",
-    "notes": "icd:naiyou04 E10－E14共通4桁細分類（.0昏睡、.2†腎合併症＝糖尿病性腎症 N08.3*、.4†神経、.5末梢循環、.9合併症なし）；tools/icd.mjs で E11.2†/N08.3* 確認。"
+    "notes": "再監査: icd:naiyou04 E10－E14共通4桁 .2†腎合併症（糖尿病性腎症 N08.3＊）、.4†神経、.5末梢循環を確認。icd.mjs E11.2†/E11.4† 剣印付き、E11.0昏睡・E11.9合併症なし。｜icd:naiyou04 E10－E14共通4桁細分類（.0昏睡、.2†腎合併症＝糖尿病性腎症 N08.3*、.4†神経、.5末梢循環、.9合併症なし）；tools/icd.mjs で E11.2†/N08.3* 確認。"
    }
   },
   {
@@ -862,13 +862,13 @@
     "key": "lg-09-23",
     "by": "旧版（v2・AI作成）"
    },
-   "status": "provisional",
+   "status": "verified",
    "verification": {
     "date": "2026-11-25",
     "method": [
      "独立ブラインド解答（別モデル）",
      "領域監査（ICD-10専門）で修正",
-     "修正後の再監査は未実施",
+     "修正後の独立再監査（pass）",
      "引用の機械照合（一次資料キャッシュ）",
      "スキーマ・ICDコード・計算の機械検査"
     ],
@@ -876,10 +876,10 @@
      "author": "旧版（AI作成・出典なし）",
      "solver": "solve:L09（別モデル・正答を見ずに解答）",
      "auditor": "audit:L09b（ICD-10専門）",
-     "reauditor": null
+     "reauditor": "reaudit:L09b"
     },
     "log": "bank/audit/legacy-L09b.audit.json#lg-09-23",
-    "notes": "icd:naiyou19 S72.0（股関節部骨折NOS）、S72.1（転子間・転子部）、S82.0 膝蓋骨骨折、S52.0 尺骨近位端骨折、S42.0 鎖骨骨折。"
+    "notes": "再監査: icd:naiyou19 S72.0 大腿骨頚部骨折（股関節部骨折NOS）、S72.1 転子貫通骨折。kihon2013 S82.0膝蓋骨骨折・S42.0鎖骨骨折・S52.0尺骨近位端骨折を確認。｜icd:naiyou19 S72.0（股関節部骨折NOS）、S72.1（転子間・転子部）、S82.0 膝蓋骨骨折、S52.0 尺骨近位端骨折、S42.0 鎖骨骨折。"
    }
   },
   {
@@ -943,13 +943,13 @@
     "key": "lg-09-24",
     "by": "旧版（v2・AI作成）"
    },
-   "status": "provisional",
+   "status": "verified",
    "verification": {
     "date": "2026-11-25",
     "method": [
      "独立ブラインド解答（別モデル）",
      "領域監査（ICD-10専門）で修正",
-     "修正後の再監査は未実施",
+     "修正後の独立再監査（pass）",
      "引用の機械照合（一次資料キャッシュ）",
      "スキーマ・ICDコード・計算の機械検査"
     ],
@@ -957,10 +957,10 @@
      "author": "旧版（AI作成・出典なし）",
      "solver": "solve:L09（別モデル・正答を見ずに解答）",
      "auditor": "audit:L09b（ICD-10専門）",
-     "reauditor": null
+     "reauditor": "reaudit:L09b"
     },
     "log": "bank/audit/legacy-L09b.audit.json#lg-09-24",
-    "notes": "icd:naiyou20 章題（V01－Y98）・V01－V09 交通事故により受傷した歩行者；icd:instruction 4.4.4 第ⅩⅩ章（主要病態コードとして使用しない・任意的追加コード）、疾病の外因のコーディング。"
+    "notes": "再監査: icd:naiyou20 章題 V01－Y98・中間分類 V01－V09 交通事故により受傷した歩行者、icd:instruction 4.4.4 第ⅩⅩ章「本章のコードは『主要病態』コードとして使用しない…任意的追加コード」を確認。｜icd:naiyou20 章題（V01－Y98）・V01－V09 交通事故により受傷した歩行者；icd:instruction 4.4.4 第ⅩⅩ章（主要病態コードとして使用しない・任意的追加コード）、疾病の外因のコーディング。"
    }
   },
   {
@@ -1024,13 +1024,13 @@
     "key": "lg-09-25",
     "by": "旧版（v2・AI作成）"
    },
-   "status": "provisional",
+   "status": "verified",
    "verification": {
     "date": "2026-11-25",
     "method": [
      "独立ブラインド解答（別モデル）",
      "領域監査（ICD-10専門）で修正",
-     "修正後の再監査は未実施",
+     "修正後の独立再監査（pass）",
      "引用の機械照合（一次資料キャッシュ）",
      "スキーマ・ICDコード・計算の機械検査"
     ],
@@ -1038,10 +1038,10 @@
      "author": "旧版（AI作成・出典なし）",
      "solver": "solve:L09（別モデル・正答を見ずに解答）",
      "auditor": "audit:L09b（ICD-10専門）",
-     "reauditor": null
+     "reauditor": "reaudit:L09b"
     },
     "log": "bank/audit/legacy-L09b.audit.json#lg-09-25",
-    "notes": "icd:naiyou19 T36－T50 除外（適正投与の有害作用は有害作用の性質により分類、T88.7は詳細不明の場合）；icd:instruction 疾病の外因のコーディング 例15（H53.2＋Y43.0任意的追加）・第ⅩⅩ章は主要病態に使わない。"
+    "notes": "再監査: icd:naiyou19 T36－T50 除外（適正な薬物が適正に投与された場合の有害作用は有害作用の性質により分類）、icd:instruction 4.4.2 例15（複視H53.2を主要病態、Y43.0は任意的追加コード）、4.4.4 第ⅩⅩ章注釈を確認。T88.7=薬物及び薬剤の詳細不明の有害作用。｜icd:naiyou19 T36－T50 除外（適正投与の有害作用は有害作用の性質により分類、T88.7は詳細不明の場合）；icd:instruction 疾病の外因のコーディング 例15（H53.2＋Y43.0任意的追加）・第ⅩⅩ章は主要病態に使わない。"
    }
   },
   {
@@ -1160,13 +1160,13 @@
     "key": "lg-10-05",
     "by": "旧版（v2・AI作成）"
    },
-   "status": "provisional",
+   "status": "verified",
    "verification": {
     "date": "2026-11-25",
     "method": [
      "独立ブラインド解答（別モデル）",
      "領域監査（ICD-10専門）で修正",
-     "修正後の再監査は未実施",
+     "修正後の独立再監査（pass）",
      "引用の機械照合（一次資料キャッシュ）",
      "スキーマ・ICDコード・計算の機械検査"
     ],
@@ -1174,10 +1174,10 @@
      "author": "旧版（AI作成・出典なし）",
      "solver": "solve:L10（別モデル・正答を見ずに解答）",
      "auditor": "audit:L10a（ICD-10専門）",
-     "reauditor": null
+     "reauditor": "reaudit:L10a"
     },
     "log": "bank/audit/legacy-L10a.audit.json#lg-10-05",
-    "notes": "icd:naiyou02 C80（C80.0 原発部位不明と記載されたもの）、D37-D48の注、icd:naiyou21 Z03（Z03.1）で確認。icd.mjs で C80/C34/D48/Z03 の存在と名称を確認。"
+    "notes": "再監査: icd.mjs C80/C80.0/C34/D48/Z03.1の名称一致; icd:naiyou02 L1347-1348 C80.0 包含「原発部位不明」、L2409 D37-D48注; icd:naiyou21 L158。｜icd:naiyou02 C80（C80.0 原発部位不明と記載されたもの）、D37-D48の注、icd:naiyou21 Z03（Z03.1）で確認。icd.mjs で C80/C34/D48/Z03 の存在と名称を確認。"
    }
   },
   {
@@ -1243,13 +1243,13 @@
     "key": "lg-10-06",
     "by": "旧版（v2・AI作成）"
    },
-   "status": "provisional",
+   "status": "verified",
    "verification": {
     "date": "2026-11-25",
     "method": [
      "独立ブラインド解答（別モデル）",
      "領域監査（ICD-10専門）で修正",
-     "修正後の再監査は未実施",
+     "修正後の独立再監査（pass）",
      "引用の機械照合（一次資料キャッシュ）",
      "スキーマ・ICDコード・計算の機械検査"
     ],
@@ -1257,10 +1257,10 @@
      "author": "旧版（AI作成・出典なし）",
      "solver": "solve:L10（別モデル・正答を見ずに解答）",
      "auditor": "audit:L10a（ICD-10専門）",
-     "reauditor": null
+     "reauditor": "reaudit:L10a"
     },
     "log": "bank/audit/legacy-L10a.audit.json#lg-10-06",
-    "notes": "icd:naiyou20 章冒頭の注（他章のコードに追加して使用、病態の性質はほとんどⅩⅨ章、死因で単一コードならⅩⅩ章優先）、icd:instruction 4.4.4 第ⅩⅩ章（主要病態コードとして使用しない、任意的追加コード）で確認。"
+    "notes": "再監査: icd:naiyou20 第ⅩⅩ章冒頭注 L5-10（他章コードに追加、ほとんどⅩⅨ章、単一コード集計はⅩⅩ章優先）; icd:instruction 4.4.4 第ⅩⅩ章 L8221（主要病態コードに使用しない・任意的追加コード）。章名・範囲はicd.mjs chapterで確認。｜icd:naiyou20 章冒頭の注（他章のコードに追加して使用、病態の性質はほとんどⅩⅨ章、死因で単一コードならⅩⅩ章優先）、icd:instruction 4.4.4 第ⅩⅩ章（主要病態コードとして使用しない、任意的追加コード）で確認。"
    }
   },
   {
@@ -1316,7 +1316,7 @@
     "method": [
      "独立ブラインド解答（別モデル）",
      "領域監査（ICD-10専門）で修正",
-     "修正後の再監査は未実施",
+     "修正後の独立再監査（provisional）",
      "引用の機械照合（一次資料キャッシュ）",
      "スキーマ・ICDコード・計算の機械検査"
     ],
@@ -1324,10 +1324,10 @@
      "author": "旧版（AI作成・出典なし）",
      "solver": "solve:L10（別モデル・正答を見ずに解答）",
      "auditor": "audit:L10a（ICD-10専門）",
-     "reauditor": null
+     "reauditor": "reaudit:L10a"
     },
     "log": "bank/audit/legacy-L10a.audit.json#lg-10-07",
-    "notes": "icd:naiyou15 章タイトル（O00-O99）と章の注、icd.mjs chapter 1/9/19 で各章の名称・範囲を確認。"
+    "notes": "再監査: icd:naiyou15 章タイトル・注 L1-7で第ⅩⅤ章（O00-O99）を確認。正答は意図どおりで最良の答え。｜icd:naiyou15 章タイトル（O00-O99）と章の注、icd.mjs chapter 1/9/19 で各章の名称・範囲を確認。"
    }
   },
   {
@@ -1384,13 +1384,13 @@
     "key": "lg-10-09",
     "by": "旧版（v2・AI作成）"
    },
-   "status": "provisional",
+   "status": "verified",
    "verification": {
     "date": "2026-11-25",
     "method": [
      "独立ブラインド解答（別モデル）",
      "領域監査（ICD-10専門）で修正",
-     "修正後の再監査は未実施",
+     "修正後の独立再監査（pass）",
      "引用の機械照合（一次資料キャッシュ）",
      "スキーマ・ICDコード・計算の機械検査"
     ],
@@ -1398,10 +1398,10 @@
      "author": "旧版（AI作成・出典なし）",
      "solver": "solve:L10（別モデル・正答を見ずに解答）",
      "auditor": "audit:L10a（ICD-10専門）",
-     "reauditor": null
+     "reauditor": "reaudit:L10a"
     },
     "log": "bank/audit/legacy-L10a.audit.json#lg-10-09",
-    "notes": "icd:naiyou21 章冒頭の注（Z00-Z99はA00-Y89以外の状況、予防接種・健診等）、icd.mjs chapter 2/1/9 で確認。"
+    "notes": "再監査: icd:naiyou21 L6 注（国際比較・原死因に使用しない）、L9-16 Z00-Z99の目的（予防接種・集団健診等）; icd.mjs Z85、第Ⅰ・Ⅱ・Ⅸ章の範囲を確認。｜icd:naiyou21 章冒頭の注（Z00-Z99はA00-Y89以外の状況、予防接種・健診等）、icd.mjs chapter 2/1/9 で確認。"
    }
   },
   {
@@ -1523,13 +1523,13 @@
     "key": "lg-10-13",
     "by": "旧版（v2・AI作成）"
    },
-   "status": "provisional",
+   "status": "verified",
    "verification": {
     "date": "2026-11-25",
     "method": [
      "独立ブラインド解答（別モデル）",
      "領域監査（ICD-10専門）で修正",
-     "修正後の再監査は未実施",
+     "修正後の独立再監査（pass）",
      "引用の機械照合（一次資料キャッシュ）",
      "スキーマ・ICDコード・計算の機械検査"
     ],
@@ -1537,10 +1537,10 @@
      "author": "旧版（AI作成・出典なし）",
      "solver": "solve:L10（別モデル・正答を見ずに解答）",
      "auditor": "audit:L10a（ICD-10専門）",
-     "reauditor": null
+     "reauditor": "reaudit:L10a"
     },
     "log": "bank/audit/legacy-L10a.audit.json#lg-10-13",
-    "notes": "icd:naiyou05 章タイトル、icd.mjs chapter 5（中間分類）、code F00（F00* アルツハイマー病の認知症（G30.-†））・F20 で確認。"
+    "notes": "再監査: icd:naiyou05 章タイトル; icd.mjs F00*（G30.-†）・F20、第Ⅰ・Ⅹ・ⅩⅤ章の範囲を確認。｜icd:naiyou05 章タイトル、icd.mjs chapter 5（中間分類）、code F00（F00* アルツハイマー病の認知症（G30.-†））・F20 で確認。"
    }
   },
   {
@@ -1606,13 +1606,13 @@
     "key": "lg-10-20",
     "by": "旧版（v2・AI作成）"
    },
-   "status": "provisional",
+   "status": "verified",
    "verification": {
     "date": "2026-11-25",
     "method": [
      "独立ブラインド解答（別モデル）",
      "領域監査（ICD-10専門）で修正",
-     "修正後の再監査は未実施",
+     "修正後の独立再監査（pass）",
      "引用の機械照合（一次資料キャッシュ）",
      "スキーマ・ICDコード・計算の機械検査"
     ],
@@ -1620,10 +1620,10 @@
      "author": "旧版（AI作成・出典なし）",
      "solver": "solve:L10（別モデル・正答を見ずに解答）",
      "auditor": "audit:L10b（ICD-10専門）",
-     "reauditor": null
+     "reauditor": "reaudit:L10b"
     },
     "log": "bank/audit/legacy-L10b.audit.json#lg-10-20",
-    "notes": "icd:naiyou15 O80（単胎自然分娩・包含）、O81、O82、icd:naiyou21 Z37（注）・Z38 で確認。tools/icd.mjs で各コードの存在を確認。"
+    "notes": "再監査: naiyou15 O80包含（最小限の介助・完全な正常例）、O81鉗子・吸引、O82帝王切開、naiyou21 Z37注・Z38タイトル。blind一致。｜icd:naiyou15 O80（単胎自然分娩・包含）、O81、O82、icd:naiyou21 Z37（注）・Z38 で確認。tools/icd.mjs で各コードの存在を確認。"
    }
   },
   {
@@ -1687,13 +1687,13 @@
     "key": "lg-10-21",
     "by": "旧版（v2・AI作成）"
    },
-   "status": "provisional",
+   "status": "verified",
    "verification": {
     "date": "2026-11-25",
     "method": [
      "独立ブラインド解答（別モデル）",
      "領域監査（ICD-10専門）で修正",
-     "修正後の再監査は未実施",
+     "修正後の独立再監査（pass）",
      "引用の機械照合（一次資料キャッシュ）",
      "スキーマ・ICDコード・計算の機械検査"
     ],
@@ -1701,10 +1701,2946 @@
      "author": "旧版（AI作成・出典なし）",
      "solver": "solve:L10（別モデル・正答を見ずに解答）",
      "auditor": "audit:L10b（ICD-10専門）",
-     "reauditor": null
+     "reauditor": "reaudit:L10b"
     },
     "log": "bank/audit/legacy-L10b.audit.json#lg-10-21",
-    "notes": "icd:naiyou20 章冒頭の中間分類一覧（V01-V99、W00-W19、X60-X84、Y40-Y59）とY40-Y59の注・除外、tools/icd.mjs で確認。キーは正しい。"
+    "notes": "再監査: naiyou20 中間分類一覧 V01－V99・W00－W19・X60－X84・Y40－Y59・Y60－Y69 を確認。blind一致。｜icd:naiyou20 章冒頭の中間分類一覧（V01-V99、W00-W19、X60-X84、Y40-Y59）とY40-Y59の注・除外、tools/icd.mjs で確認。キーは正しい。"
+   }
+  },
+  {
+   "subject": "S12",
+   "subtopic": "循環器（第Ⅸ章）",
+   "format": "icd",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "ICD-10（2013年版）で、高血圧（症）によるうっ血性心不全（腎疾患の記載はない）に付与するコードはどれか。",
+   "choices": [
+    "I10",
+    "I11.0",
+    "I50.0",
+    "I11.9",
+    "I13.0"
+   ],
+   "answer": 1,
+   "explanation": {
+    "correct": "I11（高血圧性心疾患）は「高血圧（症）によるI50.-，I51.4－I51.9の各病態」を包含し、心不全（うっ血性）を伴うものはI11.0に分類する。I50（心不全）の除外にも「高血圧（症）によるもの（I11.0）」とある。",
+    "choiceNotes": [
+     "I10は心・腎などの病態の記載がない本態性高血圧（症）。高血圧による心不全はI11.-に組み合わせて分類する。",
+     null,
+     "I50.0はうっ血性心不全だが、I50の除外に「高血圧（症）によるもの（I11.0）」とあり、高血圧による場合は使わない。",
+     "I11.9は心不全（うっ血性）を伴わない高血圧性心疾患。",
+     "I13.0は高血圧性心腎疾患（I12.-の病態を伴うI11.-）で心不全を伴うもの。腎疾患の記載がないので該当しない。"
+    ],
+    "point": "高血圧＋心不全＝I11.0（I50は使わない）。腎疾患も加わればI13.-。"
+   },
+   "sources": [
+    {
+     "ref": "icd:naiyou09",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第9章 循環器系の疾患（I00-I99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou09.pdf",
+     "locator": "I11 包含／I11.0",
+     "quote": "高血圧（症）によるＩ50.-， Ｉ51．4－Ｉ51．9 の各病態"
+    },
+    {
+     "ref": "icd:naiyou09",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第9章 循環器系の疾患（I00-I99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou09.pdf",
+     "locator": "I50 除外",
+     "quote": "高血圧（症）によるもの（Ｉ11．0）"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s12-0001",
+   "origin": {
+    "batch": "G2-S12-CIR",
+    "key": "G2-S12-CIR-01",
+    "by": "gen:G2-S12-CIR"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G2-S12-CIR",
+     "solver": "solve:G2-S12-CIR（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G2-S12-CIR（ICD-10専門）"
+    },
+    "log": "bank/audit/G2-S12-CIR.audit.json#G2-S12-CIR-01",
+    "notes": "naiyou09 I11包含・I11.0、I50除外「高血圧（症）によるもの（I11.0）／腎疾患を伴うもの（I13.-）」で確認。全コード実在。blind一致。"
+   }
+  },
+  {
+   "subject": "S12",
+   "subtopic": "循環器（第Ⅸ章）",
+   "format": "icd",
+   "difficulty": "advanced",
+   "polarity": "positive",
+   "question": "ICD-10（2013年版）で、高血圧（症）による心疾患と腎疾患をともに有し、うっ血性心不全と腎不全の両方を合併している病態に付与するコードはどれか。",
+   "choices": [
+    "I11.0",
+    "I12.0",
+    "I13.2",
+    "I13.0",
+    "I13.1"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "I13（高血圧性心腎疾患）は「I12.-の病態を伴うI11.-の各病態」を包含する。4桁目は心不全のみ＝.0、腎不全のみ＝.1、心不全（うっ血性）及び腎不全の合併＝.2である。",
+    "choiceNotes": [
+     "I11.0は心不全を伴う高血圧性心疾患で、腎疾患を伴わない場合に用いる。",
+     "I12.0は腎不全を伴う高血圧性腎疾患で、心疾患を伴わない場合に用いる。",
+     null,
+     "I13.0は高血圧性心腎疾患のうち心不全（うっ血性）を伴うもの。腎不全の合併を表さない。",
+     "I13.1は高血圧性心腎疾患のうち腎不全を伴うもの。心不全の合併を表さない。"
+    ],
+    "point": "高血圧性の心＋腎はI13。心不全のみ.0、腎不全のみ.1、両方.2。"
+   },
+   "sources": [
+    {
+     "ref": "icd:naiyou09",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第9章 循環器系の疾患（I00-I99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou09.pdf",
+     "locator": "I13 包含",
+     "quote": "Ｉ12.-の病態を伴うＩ11.-の各病態"
+    },
+    {
+     "ref": "icd:naiyou09",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第9章 循環器系の疾患（I00-I99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou09.pdf",
+     "locator": "I13.2",
+     "quote": "Ｉ13．2    心不全（うっ血性）及び腎不全の合併を伴う高血圧性心腎疾患"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s12-0002",
+   "origin": {
+    "batch": "G2-S12-CIR",
+    "key": "G2-S12-CIR-02",
+    "by": "gen:G2-S12-CIR"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G2-S12-CIR",
+     "solver": "solve:G2-S12-CIR（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G2-S12-CIR（ICD-10専門）"
+    },
+    "log": "bank/audit/G2-S12-CIR.audit.json#G2-S12-CIR-02",
+    "notes": "naiyou09 I13包含（I12.-の病態を伴うI11.-）、I13.0/.1/.2の名称で確認。blind一致。"
+   }
+  },
+  {
+   "subject": "S12",
+   "subtopic": "循環器（第Ⅸ章）",
+   "format": "knowledge",
+   "difficulty": "standard",
+   "polarity": "negative",
+   "question": "ICD-10（2013年版）内容例示表の高血圧性疾患（I10－I15）とその周辺の分類について、誤っているものはどれか。",
+   "choices": [
+    "腎硬化症は、二次性＜続発性＞高血圧（症）としてI15.-に分類する。",
+    "妊娠、分娩及び産じょくに合併する高血圧（症）は、I10－I15から除外され第ⅩⅤ章に分類する。",
+    "新生児高血圧（症）は、I10－I15から除外されP29.2に分類する。",
+    "肺高血圧（症）は、I10－I15から除外されI27.0に分類する。",
+    "冠血管を障害する高血圧（症）は、I10－I15から除外され虚血性心疾患（I20－I25）に分類する。"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "腎硬化症はI12（高血圧性腎疾患）の包含用語であり、I12の除外には「二次性＜続発性＞高血圧（症）（I15.-）」がある。したがってI15.-に分類するという記述は誤り。",
+    "choiceNotes": [
+     null,
+     "正しい。高血圧性疾患（I10－I15）の除外に妊娠，分娩及び産じょくに合併するもの（O10－O11，O13－O16）がある。",
+     "正しい。同ブロックの除外に新生児高血圧（症）（P29.2）がある。",
+     "正しい。同ブロックの除外に肺高血圧（症）（I27.0）がある。",
+     "正しい。同ブロックの除外に冠血管を障害するもの（I20－I25）がある。"
+    ],
+    "point": "腎硬化症・高血圧性腎症はI12。妊娠はO、新生児はP29.2、肺高血圧はI27.0、冠血管はI20－I25。"
+   },
+   "sources": [
+    {
+     "ref": "icd:naiyou09",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第9章 循環器系の疾患（I00-I99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou09.pdf",
+     "locator": "高血圧性疾患（I10－I15） 除外",
+     "quote": "妊娠， 分娩及び産じょく＜褥＞に合併するもの（Ｏ10－Ｏ11， Ｏ13－Ｏ16）"
+    },
+    {
+     "ref": "icd:naiyou09",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第9章 循環器系の疾患（I00-I99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou09.pdf",
+     "locator": "高血圧性疾患（I10－I15） 除外（続き）",
+     "quote": "冠血管を障害するもの（Ｉ20－Ｉ25） 新生児高血圧（症）（Ｐ29．2） 肺高血圧（症）（Ｉ27．0）"
+    },
+    {
+     "ref": "icd:naiyou09",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第9章 循環器系の疾患（I00-I99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou09.pdf",
+     "locator": "I12 包含・除外",
+     "quote": "腎硬化症 除外： 二次性＜続発性＞高血圧（症）（I15.-）"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s12-0003",
+   "origin": {
+    "batch": "G2-S12-CIR",
+    "key": "G2-S12-CIR-03",
+    "by": "gen:G2-S12-CIR"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G2-S12-CIR",
+     "solver": "solve:G2-S12-CIR（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G2-S12-CIR（ICD-10専門）"
+    },
+    "log": "bank/audit/G2-S12-CIR.audit.json#G2-S12-CIR-03",
+    "notes": "naiyou09 I10-I15ブロック除外（O10-O11,O13-O16／I20-I25／P29.2／I27.0）、I12包含に腎硬化症・除外にI15.-を確認。blind一致。"
+   }
+  },
+  {
+   "subject": "S12",
+   "subtopic": "循環器（第Ⅸ章）",
+   "format": "knowledge",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "ICD-10（2013年版）における二次性＜続発性＞高血圧（症）（I15.-）の扱いとして、正しいものはどれか。",
+   "choices": [
+    "原因疾患が記載されていれば、ケアの内容にかかわらず、I15.-を「主要病態」に対する優先コードとする。",
+    "脳の血管を障害する二次性高血圧（症）は、I15.-に分類する。",
+    "眼の血管を障害する二次性高血圧（症）は、I15.-に分類する。",
+    "高血圧性腎疾患（I12.-）は、二次性高血圧（症）としてI15.-に含める。",
+    "ケアのエピソードが主に高血圧（症）自身に対するものでなければ、I15.-は「主要病態」に対する優先コードとしては使用しない。"
+   ],
+   "answer": 4,
+   "explanation": {
+    "correct": "インストラクションマニュアルの疾病コーディングの章別注に、I15.-は原因が記載されていても、ケアのエピソードが主に高血圧（症）自身に対するものでなければ「主要病態」の優先コードとしては使用せず、原因のコーディングの場合は任意的追加コードとして使用できるとある。",
+    "choiceNotes": [
+     "誤り。原因が記載されていても、ケアが主に高血圧自身に対するものでなければ優先コードにしない。",
+     "誤り。I15の除外に「下記の血管を障害するもの：脳（I60－I69）」がある。",
+     "誤り。I15の除外に眼（H35.0）を障害するものがある。",
+     "誤り。I12の除外に二次性＜続発性＞高血圧（症）（I15.-）があり、両者は別の分類項目である。",
+     null
+    ],
+    "point": "I15.-は原則として主要病態に優先しない（任意的追加コード）。脳はI60－I69、眼はH35.0。"
+   },
+   "sources": [
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "疾病のコーディング 第Ⅸ章 I15.-",
+     "quote": "このコードは、もし原因が記載されてあったとしても、ケアのエピソードが主に高 血圧（症）自身に対するものでなければ、「主要病態」に対する優先コードとしては 使用しない。"
+    },
+    {
+     "ref": "icd:naiyou09",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第9章 循環器系の疾患（I00-I99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou09.pdf",
+     "locator": "I15 除外",
+     "quote": "下記の血管を障害するもの： ・脳（Ｉ60－Ｉ69） ・眼（Ｈ35．0） Ｉ15．0"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s12-0004",
+   "origin": {
+    "batch": "G2-S12-CIR",
+    "key": "G2-S12-CIR-04",
+    "by": "gen:G2-S12-CIR"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G2-S12-CIR",
+     "solver": "solve:G2-S12-CIR（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G2-S12-CIR（ICD-10専門）"
+    },
+    "log": "bank/audit/G2-S12-CIR.audit.json#G2-S12-CIR-04",
+    "notes": "instruction 疾病コーディング 第Ⅸ章 I15.-注（原因記載があってもケアが高血圧自身でなければ主要病態の優先コードとしない、任意的追加コード）、naiyou09 I15除外（脳I60-I69・眼H35.0）、I12除外I15.-を確認。blind一致。"
+   }
+  },
+  {
+   "subject": "S12",
+   "subtopic": "循環器（第Ⅸ章）",
+   "format": "icd",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "ICD-10（2013年版）で、発症から3週間以内に治療のため入院したと記載された前壁中隔の貫壁性心筋梗塞（初回の梗塞）に付与するコードはどれか。",
+   "choices": [
+    "I21.9",
+    "I22.0",
+    "I21.0",
+    "I25.2",
+    "I25.8"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "I21（急性心筋梗塞）は「急性と明示された，又は期間が発症から4週（28日）以内と記載された心筋梗塞」を包含する。前壁中隔の貫壁性梗塞はI21.0（前壁の急性貫壁性心筋梗塞）の包含用語である。",
+    "choiceNotes": [
+     "I21.9は急性心筋梗塞，詳細不明。部位（前壁中隔）と貫壁性が記載されているので詳細不明コードは使わない。",
+     "I22.0は前壁の再発性心筋梗塞。初回の梗塞であり、以前の梗塞から28日以内の梗塞ではない。",
+     null,
+     "I25.2は陳旧性心筋梗塞（過去の心筋梗塞で現在は症状のないもの）。",
+     "I25.8は慢性と明示された、又は発症から4週（28日）を超えると記載された心筋梗塞などに用いる。"
+    ],
+    "point": "発症から28日以内＝I21。前壁（前壁中隔・前側壁・前壁心尖を含む）の貫壁性はI21.0。"
+   },
+   "sources": [
+    {
+     "ref": "icd:naiyou09",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第9章 循環器系の疾患（I00-I99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou09.pdf",
+     "locator": "I21 包含",
+     "quote": "急性と明示された， 又は期間が発症から 4 週（28 日）以内と記載された心筋梗塞"
+    },
+    {
+     "ref": "icd:naiyou09",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第9章 循環器系の疾患（I00-I99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou09.pdf",
+     "locator": "I21.0",
+     "quote": "Ｉ21．0   前壁の急性貫壁性心筋梗塞"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s12-0005",
+   "origin": {
+    "batch": "G2-S12-CIR",
+    "key": "G2-S12-CIR-05",
+    "by": "gen:G2-S12-CIR"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G2-S12-CIR",
+     "solver": "solve:G2-S12-CIR（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G2-S12-CIR（ICD-10専門）"
+    },
+    "log": "bank/audit/G2-S12-CIR.audit.json#G2-S12-CIR-05",
+    "notes": "naiyou09 I21包含（急性又は4週以内）、I21.0包含に前壁中隔、I22注、I25.2/I25.8の内容を確認。blind一致。"
+   }
+  },
+  {
+   "subject": "S12",
+   "subtopic": "循環器（第Ⅸ章）",
+   "format": "icd",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "ICD-10（2013年版）で、発症から6週間を経て治療のため入院したと記載された心筋梗塞（「陳旧性」の記載はなく、症状が続いている）に付与するコードはどれか。",
+   "choices": [
+    "I21.9",
+    "I22.9",
+    "I24.8",
+    "I25.2",
+    "I25.8"
+   ],
+   "answer": 4,
+   "explanation": {
+    "correct": "I21の除外に「慢性と明示されたもの，又は期間が発症から4週（28日）を超えると記載されたもの（I25.8）」がある。I25.8はこれらのI21－I22及びI24.-の各病態を包含する。疾病分類での期間は発症から治療のための入院までである。",
+    "choiceNotes": [
+     "I21.9は急性心筋梗塞，詳細不明。発症から28日を超えると記載された心筋梗塞はI21から除外される。",
+     "I22.9は部位不明の再発性心筋梗塞。以前の梗塞の記載はなく、I22もまた28日を超えるものを除外している。",
+     "I24.8はその他の型の急性虚血性心疾患（冠不全など）。",
+     "I25.2は陳旧性心筋梗塞で、専門的検査で診断された過去の心筋梗塞で現在は症状のないもの。陳旧性の記載がなく症状が続いているので該当しない。",
+     null
+    ],
+    "point": "心筋梗塞で発症から28日超（慢性と明示を含む）＝I25.8。無症状の過去の梗塞＝I25.2。"
+   },
+   "sources": [
+    {
+     "ref": "icd:naiyou09",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第9章 循環器系の疾患（I00-I99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou09.pdf",
+     "locator": "I21 除外",
+     "quote": "慢性と明示されたもの， 又は期間が発症から 4 週（28 日）を超えると記載されたも の（Ｉ25．8）"
+    },
+    {
+     "ref": "icd:naiyou09",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第9章 循環器系の疾患（I00-I99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou09.pdf",
+     "locator": "I25.8",
+     "quote": "慢性と明示されたもの， 又は期間が発症から 4 週（28 日）を越えると記載されたＩ21－Ｉ 22 及びＩ24.-の各病態"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s12-0006",
+   "origin": {
+    "batch": "G2-S12-CIR",
+    "key": "G2-S12-CIR-06",
+    "by": "gen:G2-S12-CIR"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G2-S12-CIR",
+     "solver": "solve:G2-S12-CIR（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G2-S12-CIR（ICD-10専門）"
+    },
+    "log": "bank/audit/G2-S12-CIR.audit.json#G2-S12-CIR-06",
+    "notes": "naiyou09 I21除外・I22除外（4週超→I25.8）、I25.8包含、I25.2（現在症状なし）、I20-I25注（期間＝発症から治療のための入院）を確認。blind一致。"
+   }
+  },
+  {
+   "subject": "S12",
+   "subtopic": "循環器（第Ⅸ章）",
+   "format": "knowledge",
+   "difficulty": "standard",
+   "polarity": "negative",
+   "question": "ICD-10（2013年版）内容例示表の虚血性心疾患（I20－I25）の注・包含・除外について、誤っているものはどれか。",
+   "choices": [
+    "疾病分類の場合、I21、I22、I24、I25で使用される期間は、虚血発作の発症から退院までに経過した期間とする。",
+    "死因分類の場合、罹病期間は発症から死亡までに経過した期間とする。",
+    "高血圧（症）の記載がある虚血性心疾患もI20－I25に分類し、高血圧の存在を示す必要があれば追加コードを使用する。",
+    "急性心筋梗塞（I21）からは、再発性の心筋梗塞（I22.-）が除外されている。",
+    "急性心筋梗塞（I21）からは、心筋梗塞後症候群（I24.1）が除外されている。"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "ブロックの注では、疾病分類の場合の期間は「虚血発作の発症から治療のための入院までに経過した期間」とされている。退院までではない。",
+    "choiceNotes": [
+     null,
+     "正しい。死因分類の場合の罹病期間は発症から死亡までの期間である。",
+     "正しい。虚血性心疾患のブロックは高血圧（症）（I10－I15）の記載があるものを包含し、必要な場合は追加コードを使用する。",
+     "正しい。I21の除外に心筋梗塞・再発性（I22.-）がある。",
+     "正しい。I21の除外に心筋梗塞後症候群（I24.1）がある。"
+    ],
+    "point": "期間の起点と終点：疾病分類は発症→治療のための入院、死因分類は発症→死亡。"
+   },
+   "sources": [
+    {
+     "ref": "icd:naiyou09",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第9章 循環器系の疾患（I00-I99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou09.pdf",
+     "locator": "虚血性心疾患（I20－I25） 注",
+     "quote": "虚血発作の発症から治 療のための入院までに経過した期間とする。 死因分類の場合， 罹病期間は発症から 死亡までに経過した期間とする。"
+    },
+    {
+     "ref": "icd:naiyou09",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第9章 循環器系の疾患（I00-I99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou09.pdf",
+     "locator": "虚血性心疾患（I20－I25） 包含",
+     "quote": "高血圧（症）の存在を明示することが必要な場合は， 追加コ－ドを使用する。"
+    },
+    {
+     "ref": "icd:naiyou09",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第9章 循環器系の疾患（I00-I99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou09.pdf",
+     "locator": "I21 除外",
+     "quote": "・再発性（Ｉ22.-） 心筋梗塞後症候群（Ｉ24．1）"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s12-0007",
+   "origin": {
+    "batch": "G2-S12-CIR",
+    "key": "G2-S12-CIR-07",
+    "by": "gen:G2-S12-CIR"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G2-S12-CIR",
+     "solver": "solve:G2-S12-CIR（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G2-S12-CIR（ICD-10専門）"
+    },
+    "log": "bank/audit/G2-S12-CIR.audit.json#G2-S12-CIR-07",
+    "notes": "naiyou09 I20-I25注（疾病＝入院まで、死因＝死亡まで）・包含（高血圧記載、追加コード）、I21除外（I22.-、I24.1）を確認。誤り選択肢は「退院まで」のみ。blind一致。"
+   }
+  },
+  {
+   "subject": "S12",
+   "subtopic": "循環器（第Ⅸ章）",
+   "format": "icd",
+   "difficulty": "advanced",
+   "polarity": "positive",
+   "question": "ICD-10（2013年版）の疾病コーディングで、前壁の急性心筋梗塞の発症から10日後、入院中に下壁に新たな梗塞が発生した。この新たな下壁の梗塞に付与するコードはどれか。",
+   "choices": [
+    "I21.1",
+    "I22.0",
+    "I22.1",
+    "I23.8",
+    "I25.2"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "I22（再発性心筋梗塞）の注では、疾病コーディングについて、以前の梗塞の発症から4週間（28日）以内に発生した梗塞を本項目に割り当てる。新たな梗塞の部位は下壁なのでI22.1（下壁の再発性心筋梗塞）となる。",
+    "choiceNotes": [
+     "I21.1は下壁の急性貫壁性心筋梗塞。以前の梗塞から28日以内の新たな梗塞はI22に割り当て、I21の除外にも再発性（I22.-）がある。",
+     "I22.0は前壁の再発性心筋梗塞。4桁目は新たな梗塞の部位（下壁）で決める。",
+     null,
+     "I23.8は急性心筋梗塞のその他の続発合併症。新たな梗塞そのものは続発合併症ではなくI22に分類する。",
+     "I25.2は陳旧性心筋梗塞（過去の梗塞で現在は症状のないもの）。"
+    ],
+    "point": "以前の梗塞から28日以内の新たな梗塞＝I22（4桁目は新しい梗塞の部位）。"
+   },
+   "sources": [
+    {
+     "ref": "icd:naiyou09",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第9章 循環器系の疾患（I00-I99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou09.pdf",
+     "locator": "I22 注",
+     "quote": "疾病コーディングについては，以前の梗塞が発症から 4 週間（28 日）以内に発生した心 筋部位の梗塞を本項目に割り当てる。"
+    },
+    {
+     "ref": "icd:naiyou09",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第9章 循環器系の疾患（I00-I99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou09.pdf",
+     "locator": "I22.1",
+     "quote": "Ｉ22．1   下壁の再発性心筋梗塞"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s12-0008",
+   "origin": {
+    "batch": "G2-S12-CIR",
+    "key": "G2-S12-CIR-08",
+    "by": "gen:G2-S12-CIR"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G2-S12-CIR",
+     "solver": "solve:G2-S12-CIR（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G2-S12-CIR（ICD-10専門）"
+    },
+    "log": "bank/audit/G2-S12-CIR.audit.json#G2-S12-CIR-08",
+    "notes": "naiyou09 I22注（以前の梗塞から28日以内の梗塞をI22）、I22.1包含（下壁）、I21除外（再発性I22.-）、I23は続発合併症で確認。blind一致。"
+   }
+  },
+  {
+   "subject": "S12",
+   "subtopic": "循環器（第Ⅸ章）",
+   "format": "icd",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "ICD-10（2013年版）で、心電図検査により診断された過去の心筋梗塞で、現在は症状のないものに付与するコードはどれか。",
+   "choices": [
+    "Z86.7",
+    "I21.9",
+    "I25.8",
+    "I25.9",
+    "I25.2"
+   ],
+   "answer": 4,
+   "explanation": {
+    "correct": "I25.2（陳旧性心筋梗塞）は治癒心筋梗塞を含み、「心電図又はその他の専門的検査により診断された過去の心筋梗塞で，現在は症状のないもの」に用いる。",
+    "choiceNotes": [
+     "Z86.7は循環器系の疾患の既往歴だが、その除外に陳旧性心筋梗塞（I25.2）がある。",
+     "I21.9は急性心筋梗塞，詳細不明。急性と明示された、又は発症から28日以内の心筋梗塞に用いる。",
+     "I25.8は慢性と明示された、又は発症から4週（28日）を超えると記載された心筋梗塞などに用いる。",
+     "I25.9は慢性虚血性心疾患，詳細不明（虚血性心疾患（慢性）NOS）。",
+     null
+    ],
+    "point": "検査で見つかった無症状の過去の梗塞＝I25.2（Z86.7ではない）。"
+   },
+   "sources": [
+    {
+     "ref": "icd:naiyou09",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第9章 循環器系の疾患（I00-I99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou09.pdf",
+     "locator": "I25.2",
+     "quote": "心電図又はその他の専門的検査により診断された過去の心筋梗塞で， 現在は症状のない もの"
+    },
+    {
+     "ref": "icd:naiyou21",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第21章 健康状態に影響を及ぼす要因及び保健サービスの利用（Z00-Z99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou21.pdf",
+     "locator": "Z86.7 除外",
+     "quote": "除外： 陳旧性心筋梗塞（Ｉ25．2）"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s12-0009",
+   "origin": {
+    "batch": "G2-S12-CIR",
+    "key": "G2-S12-CIR-09",
+    "by": "gen:G2-S12-CIR"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G2-S12-CIR",
+     "solver": "solve:G2-S12-CIR（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G2-S12-CIR（ICD-10専門）"
+    },
+    "log": "bank/audit/G2-S12-CIR.audit.json#G2-S12-CIR-09",
+    "notes": "naiyou09 I25.2（心電図等で診断された過去の梗塞で現在症状なし）、naiyou21 Z86.7除外（I25.2）を確認。blind一致。"
+   }
+  },
+  {
+   "subject": "S12",
+   "subtopic": "循環器（第Ⅸ章）",
+   "format": "combination",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "ICD-10（2013年版）の虚血性心疾患（I20－I25）の分類について、正しいものの組合せはどれか。\na　不安定狭心症（増悪型、初発労作型を含む）はI20.0に分類する。\nb　冠（状）動脈血栓症で心筋梗塞に至らなかったものはI24.0に分類する。\nc　心筋梗塞後症候群は急性心筋梗塞（I21.-）に分類する。\nd　虚血性心筋症は心筋症（I42.-）に分類する。\ne　先天性冠（状）動脈瘤はI25.4に分類する。",
+   "choices": [
+    "a と b",
+    "a と c",
+    "b と d",
+    "c と e",
+    "d と e"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "a：I20.0（不安定狭心症）は狭心症の増悪型・初発労作型・増悪労作型を含む。b：I24.0は「冠（状）（動脈）血栓症，心筋梗塞に至らなかったもの」。よってaとbが正しい。",
+    "choiceNotes": [
+     null,
+     "cは誤り。心筋梗塞後症候群はI21から除外され、I24.1（ドレスラー症候群）に分類する。",
+     "dは誤り。虚血性心筋症はI25.5（慢性虚血性心疾患）に分類する。",
+     "cもeも誤り。eの先天性冠（状）動脈瘤はI25.4から除外されQ24.5に分類する。",
+     "dもeも誤り。虚血性心筋症はI25.5、先天性冠（状）動脈瘤はQ24.5。"
+    ],
+    "point": "心筋梗塞後症候群＝I24.1、虚血性心筋症＝I25.5、先天性冠動脈瘤＝Q24.5。"
+   },
+   "sources": [
+    {
+     "ref": "icd:naiyou09",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第9章 循環器系の疾患（I00-I99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou09.pdf",
+     "locator": "I24.0／I24.1",
+     "quote": "Ｉ24．1      ドレスラー＜Dressler＞症候群 心筋梗塞後症候群"
+    },
+    {
+     "ref": "icd:naiyou09",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第9章 循環器系の疾患（I00-I99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou09.pdf",
+     "locator": "I25.4 除外／I25.5",
+     "quote": "先天性冠（状）動脈瘤（Ｑ24．5） Ｉ25．5    虚血性心筋症"
+    },
+    {
+     "ref": "icd:naiyou09",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第9章 循環器系の疾患（I00-I99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou09.pdf",
+     "locator": "I24.0",
+     "quote": "Ｉ24．0      冠（状）（動脈）血栓症， 心筋梗塞に至らなかったもの"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s12-0010",
+   "origin": {
+    "batch": "G2-S12-CIR",
+    "key": "G2-S12-CIR-10",
+    "by": "gen:G2-S12-CIR"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G2-S12-CIR",
+     "solver": "solve:G2-S12-CIR（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G2-S12-CIR（ICD-10専門）"
+    },
+    "log": "bank/audit/G2-S12-CIR.audit.json#G2-S12-CIR-10",
+    "notes": "naiyou09 I20.0包含（増悪型・初発労作型）、I24.0、I24.1（心筋梗塞後症候群、I21除外）、I25.5虚血性心筋症、I25.4除外Q24.5を確認。正はa,bのみ。blind一致。"
+   }
+  },
+  {
+   "subject": "S12",
+   "subtopic": "循環器（第Ⅸ章）",
+   "format": "icd",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "ICD-10（2013年版）で、一過性脳虚血発作（詳細の記載なし）に付与するコードはどれか。",
+   "choices": [
+    "I63.9",
+    "I64",
+    "I66.9",
+    "I67.8",
+    "G45.9"
+   ],
+   "answer": 4,
+   "explanation": {
+    "correct": "一過性脳虚血発作及び関連症候群（G45.-）は第Ⅸ章（循環器系の疾患）および脳血管疾患（I60－I69）の除外に挙げられ、第Ⅵ章（神経系の疾患）に分類される。詳細不明のものはG45.9。",
+    "choiceNotes": [
+     "I63.9は脳梗塞，詳細不明。一過性脳虚血発作は脳梗塞ではない。",
+     "I64は脳卒中，脳出血又は脳梗塞と明示されないもの（脳卒中NOS）。",
+     "I66.9は詳細不明の脳動脈の閉塞及び狭窄（脳梗塞に至らなかったもの）。",
+     "I67.8はその他の明示された脳血管疾患（脳虚血（慢性）など）。一過性脳虚血発作はI60－I69から除外される。",
+     null
+    ],
+    "point": "TIAは循環器の章ではなく神経系の章＝G45.-（詳細不明はG45.9）。"
+   },
+   "sources": [
+    {
+     "ref": "icd:naiyou09",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第9章 循環器系の疾患（I00-I99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou09.pdf",
+     "locator": "第Ⅸ章 除外",
+     "quote": "一過性脳虚血発作及び関連症候群（Ｇ45.-）"
+    },
+    {
+     "ref": "icd:naiyou06",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第6章 神経系の疾患（G00-G99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou06.pdf",
+     "locator": "G45.9",
+     "quote": "Ｇ45．9       一過性脳虚血発作， 詳細不明"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s12-0011",
+   "origin": {
+    "batch": "G2-S12-CIR",
+    "key": "G2-S12-CIR-11",
+    "by": "gen:G2-S12-CIR"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G2-S12-CIR",
+     "solver": "solve:G2-S12-CIR（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G2-S12-CIR（ICD-10専門）"
+    },
+    "log": "bank/audit/G2-S12-CIR.audit.json#G2-S12-CIR-11",
+    "notes": "naiyou09 第Ⅸ章除外・I60-I69除外にG45.-、naiyou06 G45.9、I66（脳梗塞に至らなかったもの）・I67.8（脳虚血（慢性））を確認。blind一致。"
+   }
+  },
+  {
+   "subject": "S12",
+   "subtopic": "循環器（第Ⅸ章）",
+   "format": "knowledge",
+   "difficulty": "standard",
+   "polarity": "negative",
+   "question": "ICD-10（2013年版）内容例示表の脳血管疾患（I60－I69）の包含・除外について、誤っているものはどれか。",
+   "choices": [
+    "一過性脳虚血発作及び関連症候群は、I60－I69から除外されG45.-に分類する。",
+    "外傷性頭蓋内出血は、I60－I69から除外されS06.-に分類する。",
+    "血管性認知症は、I60－I69から除外されF01.-に分類する。",
+    "脳動脈瘤の破裂によるくも膜下出血は、先天性脳動脈瘤としてQ28.-に分類する。",
+    "高血圧（症）（I10及びI15.-の病態）の記載がある脳血管疾患は、I60－I69に分類する。"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "I60（くも膜下出血）は脳動脈瘤出血を包含し、I67.1（脳動脈瘤，非破裂性）の除外にも脳動脈瘤破裂（I60.-）とある。Q28.-に分類されるのは先天性脳動脈瘤の非破裂のものである。",
+    "choiceNotes": [
+     "正しい。脳血管疾患（I60－I69）の除外に一過性脳虚血発作及び関連症候群（G45.-）がある。",
+     "正しい。同ブロックの除外に外傷性頭蓋内出血（S06.-）がある。",
+     "正しい。同ブロックの除外に血管性認知症（F01.-）がある。",
+     null,
+     "正しい。同ブロックは高血圧（症）の記載があるものを包含し、必要なら追加コードを使用する。"
+    ],
+    "point": "破裂した脳動脈瘤＝I60（くも膜下出血）。Q28は先天性の非破裂。TIA＝G45、外傷性＝S06、血管性認知症＝F01。"
+   },
+   "sources": [
+    {
+     "ref": "icd:naiyou09",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第9章 循環器系の疾患（I00-I99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou09.pdf",
+     "locator": "脳血管疾患（I60－I69） 包含・除外",
+     "quote": "一過性脳虚血発作及び関連症候群（Ｇ45.-） 外傷性頭蓋内出血（Ｓ06.-） 血管性認知症（Ｆ01.-）"
+    },
+    {
+     "ref": "icd:naiyou09",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第9章 循環器系の疾患（I00-I99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou09.pdf",
+     "locator": "I67.1 除外",
+     "quote": "先天性脳動脈瘤，非＜未＞破裂（Ｑ28.-） 脳動脈瘤破裂（I60.-）"
+    },
+    {
+     "ref": "icd:naiyou09",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第9章 循環器系の疾患（I00-I99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou09.pdf",
+     "locator": "脳血管疾患（I60－I69） 包含",
+     "quote": "高血圧（症）（Ｉ10 及びＩ15.-の病態）の記載があるもの"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s12-0012",
+   "origin": {
+    "batch": "G2-S12-CIR",
+    "key": "G2-S12-CIR-12",
+    "by": "gen:G2-S12-CIR"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G2-S12-CIR",
+     "solver": "solve:G2-S12-CIR（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G2-S12-CIR（ICD-10専門）"
+    },
+    "log": "bank/audit/G2-S12-CIR.audit.json#G2-S12-CIR-12",
+    "notes": "naiyou09 I60-I69包含（I10及びI15.-の記載）・除外（G45.-、S06.-、F01.-）、I60包含 脳動脈瘤出血、I67.1除外（Q28.-非破裂／I60.-破裂）を確認。blind一致。"
+   }
+  },
+  {
+   "subject": "S12",
+   "subtopic": "循環器（第Ⅸ章）",
+   "format": "coding",
+   "difficulty": "advanced",
+   "polarity": "positive",
+   "question": "ICD-10（2013年版）の疾病コーディングで、「主要病態：1年半前の脳内出血の後遺症としての右片麻痺（病型の記載なし）」と記載され、患者は片麻痺に対して理学療法を受けている。コードの付け方として正しいものはどれか。",
+   "choices": [
+    "主要病態をI69.1とし、G81.9を任意的追加コードとして使用できる。",
+    "主要病態をI61.9とし、G81.9を任意的追加コードとして使用できる。",
+    "主要病態をG81.9とし、I69.3を任意的追加コードとして使用できる。",
+    "主要病態をG81.9とし、I69.1を任意的追加コードとして使用できる。",
+    "主要病態をI64とし、G81.9を任意的追加コードとして使用できる。"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "続発・後遺症のコーディングでは、「主要病態」に対する優先コードは続発・後遺症それ自身の性質に対するコードであり、「…の続発・後遺症」のコードは任意的追加コードとして使用できる。第Ⅸ章の注でもI69.-は遺残病態の性質が記載されていれば主要病態の優先コードとしない。よって片麻痺（G81.9）が主要病態、脳内出血の続発・後遺症（I69.1）が任意的追加コード。",
+    "choiceNotes": [
+     "遺残病態（片麻痺）の性質が記載されているので、I69.-を主要病態の優先コードとはしない。",
+     "I61.9は現在の脳内出血。脳内出血はもはや存在せず、その続発・後遺症はI69.1で表す（I61の続発・後遺症はI69.1）。",
+     "I69.3は脳梗塞の続発・後遺症。原因病態は脳内出血なのでI69.1を用いる。",
+     null,
+     "I64は出血又は梗塞と明示されない現在の脳卒中。原因は脳内出血と明示され、かつ後遺症の状態である。"
+    ],
+    "point": "後遺症は「いまある病態」を主要病態に、I69.-は任意的追加コード（出血＝I69.1、梗塞＝I69.3）。"
+   },
+   "sources": [
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "疾病のコーディング 病態の続発・後遺症のコーディング",
+     "quote": "「主要病態」に対する優先コードは、続発・後遺症それ自身の性質に対するコードであり"
+    },
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "疾病のコーディング 第Ⅸ章 I69.-",
+     "quote": "このコードは、もし遺残病態の性質が記載されてあったならば、「主要病態」に対 する優先コードとしては使用しない。"
+    },
+    {
+     "ref": "icd:naiyou09",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第9章 循環器系の疾患（I00-I99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou09.pdf",
+     "locator": "I69.1",
+     "quote": "Ｉ69．1      脳内出血の続発・後遺症"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s12-0013",
+   "origin": {
+    "batch": "G2-S12-CIR",
+    "key": "G2-S12-CIR-13",
+    "by": "gen:G2-S12-CIR"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G2-S12-CIR",
+     "solver": "solve:G2-S12-CIR（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G2-S12-CIR（ICD-10専門）"
+    },
+    "log": "bank/audit/G2-S12-CIR.audit.json#G2-S12-CIR-13",
+    "notes": "instruction 病態の続発・後遺症のコーディング（主要病態＝続発・後遺症それ自身の性質、…の続発・後遺症は任意的追加）、第Ⅸ章 I69.-注、同書 例18（脳梗塞後の下肢麻痺で理学療法→G83.1主、I69.3任意）、naiyou06 G81.9、naiyou09 I61除外→I69.1を確認。blind一致。"
+   }
+  },
+  {
+   "subject": "S12",
+   "subtopic": "循環器（第Ⅸ章）",
+   "format": "knowledge",
+   "difficulty": "standard",
+   "polarity": "negative",
+   "question": "ICD-10（2013年版）の脳血管疾患の続発・後遺症（I69）について、誤っているものはどれか。",
+   "choices": [
+    "I69は、続発・後遺症の原因がI60－I67.1及びI67.4－I67.9の病態であることを示すために使用する。",
+    "「続発・後遺症」には、原因病態が発生後1年以上存在している病態を含む。",
+    "慢性脳血管疾患にはI69を使用せず、I60－I67にコードする。",
+    "一過性脳虚血発作（G45.-）の後に残った症状の原因を示すときも、I69を使用する。",
+    "循環器系の疾患の既往歴（Z86.7）からは、脳血管疾患の続発・後遺症（I69.-）が除外されている。"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "I69の注は、原因がI60－I67.1及びI67.4－I67.9の病態であることを示すために使用すると定めている。一過性脳虚血発作はG45.-（第Ⅵ章）であり、この範囲に含まれない。",
+    "choiceNotes": [
+     "正しい。I69の注に示された原因病態の範囲である。",
+     "正しい。注に「原因病態が発生後１年以上存在している病態を含む」とある。",
+     "正しい。注に「慢性脳血管疾患については使用しない。これらをI60－I67にコードする」とある。",
+     null,
+     "正しい。Z86.7の除外に脳血管疾患の続発・後遺症（I69.-）がある。"
+    ],
+    "point": "I69の原因はI60－I67.1、I67.4－I67.9。1年以上存在する病態を含む。慢性脳血管疾患はI60－I67。"
+   },
+   "sources": [
+    {
+     "ref": "icd:naiyou09",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第9章 循環器系の疾患（I00-I99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou09.pdf",
+     "locator": "I69 注",
+     "quote": "続発・後遺症の原因が I60－I67．1 及び I67．4－I67．9 の病態であることを示すために使用する。"
+    },
+    {
+     "ref": "icd:naiyou09",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第9章 循環器系の疾患（I00-I99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou09.pdf",
+     "locator": "I69 注（続き）",
+     "quote": "症と記載された病態又は原因病態が発生後１年以上存在している病態を含む。 慢性脳血管疾患については使用しない。これらを I60－I67 にコードする。"
+    },
+    {
+     "ref": "icd:naiyou21",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第21章 健康状態に影響を及ぼす要因及び保健サービスの利用（Z00-Z99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou21.pdf",
+     "locator": "Z86.7 除外",
+     "quote": "脳血管疾患の続発・後遺症（Ｉ69.-）"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s12-0014",
+   "origin": {
+    "batch": "G2-S12-CIR",
+    "key": "G2-S12-CIR-14",
+    "by": "gen:G2-S12-CIR"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G2-S12-CIR",
+     "solver": "solve:G2-S12-CIR（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G2-S12-CIR（ICD-10専門）"
+    },
+    "log": "bank/audit/G2-S12-CIR.audit.json#G2-S12-CIR-14",
+    "notes": "naiyou09 I69注（原因I60-I67.1及びI67.4-I67.9、1年以上存在する病態を含む、慢性脳血管疾患はI60-I67）、naiyou21 Z86.7除外I69.-を確認。G45.-は範囲外。blind一致。"
+   }
+  },
+  {
+   "subject": "S12",
+   "subtopic": "循環器（第Ⅸ章）",
+   "format": "icd",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "ICD-10（2013年版）で、「悪性高血圧（症）」とのみ記載され、心・腎・脳・眼の病態や原因疾患の記載がないものに付与するコードはどれか。",
+   "choices": [
+    "I11.9",
+    "I12.0",
+    "I15.9",
+    "I67.4",
+    "I10"
+   ],
+   "answer": 4,
+   "explanation": {
+    "correct": "I10（本態性（原発性＜一次性＞）高血圧（症））は「高血圧（症）（動脈性）（良性）（本態性）（悪性）（原発性＜一次性＞）（全身性）」を包含する。悪性であることだけでは別の分類項目にならない。",
+    "choiceNotes": [
+     "I11.9は心不全を伴わない高血圧性心疾患。心疾患の記載がない。",
+     "I12.0は腎不全を伴う高血圧性腎疾患。腎の病態の記載がない。",
+     "I15.9は二次性＜続発性＞高血圧（症），詳細不明。原因疾患による二次性の記載がない。",
+     "I67.4は高血圧性脳症（脳血管疾患）。脳の病態の記載がない。",
+     null
+    ],
+    "point": "悪性高血圧もI10に包含。心＝I11、腎＝I12、心腎＝I13、二次性＝I15、脳＝I60－I69。"
+   },
+   "sources": [
+    {
+     "ref": "icd:naiyou09",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第9章 循環器系の疾患（I00-I99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou09.pdf",
+     "locator": "I10 包含",
+     "quote": "高血圧（症）（動脈性）（良性）（本態性）（悪性）（原発性＜一次性＞）（全身性）"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s12-0015",
+   "origin": {
+    "batch": "G2-S12-CIR",
+    "key": "G2-S12-CIR-15",
+    "by": "gen:G2-S12-CIR"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G2-S12-CIR",
+     "solver": "solve:G2-S12-CIR（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G2-S12-CIR（ICD-10専門）"
+    },
+    "log": "bank/audit/G2-S12-CIR.audit.json#G2-S12-CIR-15",
+    "notes": "naiyou09 I10包含（悪性を含む）、I11.9/I12.0/I15.9/I67.4の名称を確認。blind一致。"
+   }
+  },
+  {
+   "subject": "S12",
+   "subtopic": "新生物（第Ⅱ章）",
+   "format": "icd",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "胃癌の原発巣が判明している患者で、今回の治療対象が肝への転移巣（肝の続発性悪性新生物）であるとき、その肝転移巣を表すICD-10コードはどれか。",
+   "choices": [
+    "C22.0",
+    "C22.9",
+    "C78.8",
+    "C78.7",
+    "C79.8"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "続発性（転移性）の悪性新生物はC77－C79に分類し、肝及び肝内胆管の続発性悪性新生物はC78.7である。",
+    "choiceNotes": [
+     "C22.0は肝細胞癌で、肝原発の悪性新生物である。転移巣には用いない。",
+     "C22.9は肝の悪性新生物（組織型の詳細不明）で、肝原発のものに用いる。肝の続発性悪性新生物はC22から除外され、C78.7に分類される。",
+     "C78.8はその他及び部位不明の消化器の続発性悪性新生物で、肝は別にC78.7が設けられている。",
+     null,
+     "C79.8はその他の明示された部位の続発性悪性新生物で、呼吸器・消化器以外の部位用である。"
+    ],
+    "point": "転移巣はC77－C79。肝転移＝C78.7（肺転移C78.0、骨転移C79.5）。"
+   },
+   "sources": [
+    {
+     "ref": "icd:naiyou02",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第2章 新生物＜腫瘍＞（C00-D48）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou02.pdf",
+     "locator": "C78.7",
+     "quote": "Ｃ78．7   肝及び肝内胆管の続発性悪性新生物＜腫瘍＞"
+    },
+    {
+     "ref": "icd:naiyou02",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第2章 新生物＜腫瘍＞（C00-D48）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou02.pdf",
+     "locator": "C78",
+     "quote": "Ｃ78     呼吸器及び消化器の続発性悪性新生物＜腫瘍＞"
+    },
+    {
+     "ref": "icd:naiyou02",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第2章 新生物＜腫瘍＞（C00-D48）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou02.pdf",
+     "locator": "C22 除外",
+     "quote": "肝の続発性悪性新生物＜腫瘍＞（Ｃ78．7）"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s12-0016",
+   "origin": {
+    "batch": "G2-S12-NEO",
+    "key": "G2-S12-NEO-01",
+    "by": "gen:G2-S12-NEO"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（ICD-10専門）で修正",
+     "修正後の独立再監査（pass）",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G2-S12-NEO",
+     "solver": "solve:G2-S12-NEO（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G2-S12-NEO（ICD-10専門）",
+     "reauditor": "reaudit:G2-S12-NEO"
+    },
+    "log": "bank/audit/G2-S12-NEO.audit.json#G2-S12-NEO-01",
+    "notes": "再監査: Blind answer C78.7 matched key. icd.mjs: C22.0肝細胞癌, C22.9肝，詳細不明, C78.7肝及び肝内胆管の続発性, C78.8その他及び部位不明の消化器の続発性, C79.8その他の明示された部位の続発性 — all exist, titles match. naiyou02 l.448-466: C22 除外「肝の続発性悪性新生物＜腫瘍＞（Ｃ78．7）」supports C22.x distractors; l.1310-1338 C78/C78.7/C78.0/C79.5/C79.8 support choiceNotes and poin｜naiyou02 C78.7・C78、C22除外（肝の続発性→C78.7）で確認。答えC78.7は正、solver一致。"
+   }
+  },
+  {
+   "subject": "S12",
+   "subtopic": "新生物（第Ⅱ章）",
+   "format": "combination",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "新生物の性状と、ICD-O形態コードの性状コード（第5桁）の組み合わせについて、内容例示表の記載に照らして正しいものの組み合わせはどれか。\na．良性新生物（D10－D36）― 性状コード／0\nb．上皮内新生物（D00－D09）― 性状コード／1\nc．性状不詳又は不明の新生物（D37－D48）― 性状コード／1\nd．上皮内新生物（D00－D09）― 性状コード／3",
+   "choices": [
+    "aとb",
+    "aとc",
+    "aとd",
+    "bとc",
+    "cとd"
+   ],
+   "answer": 1,
+   "explanation": {
+    "correct": "内容例示表では、良性新生物（D10－D36）は性状コード／0、上皮内新生物（D00－D09）は性状コード／2、性状不詳又は不明の新生物（D37－D48）は性状コード／1を伴う形態コードとされる。したがってaとcが正しい。",
+    "choiceNotes": [
+     "bが誤り。上皮内新生物の性状コードは／2であり、／1は性状不詳又は不明の新生物に付けられる。",
+     null,
+     "dが誤り。性状コード／3は悪性（原発）のものに付けられる（例：C43の包含「性状コード／３のもの」）。上皮内は／2。",
+     "bが誤り。上皮内新生物は／2である。",
+     "dが誤り。上皮内新生物は／2で、／3は悪性（原発）である。"
+    ],
+    "point": "性状コード：/0良性、/1性状不詳、/2上皮内、/3悪性原発。"
+   },
+   "sources": [
+    {
+     "ref": "icd:naiyou02",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第2章 新生物＜腫瘍＞（C00-D48）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou02.pdf",
+     "locator": "D10－D36 良性新生物 包含",
+     "quote": "性状コード／０を伴う形態コード"
+    },
+    {
+     "ref": "icd:naiyou02",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第2章 新生物＜腫瘍＞（C00-D48）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou02.pdf",
+     "locator": "D00－D09 上皮内新生物 包含",
+     "quote": "性状コード／２を伴う形態コード"
+    },
+    {
+     "ref": "icd:naiyou02",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第2章 新生物＜腫瘍＞（C00-D48）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou02.pdf",
+     "locator": "D37－D48 注",
+     "quote": "これらの新生物＜腫瘍＞には新生物＜腫瘍＞の形態分類で性状コード／１が付けられている。"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s12-0017",
+   "origin": {
+    "batch": "G2-S12-NEO",
+    "key": "G2-S12-NEO-02",
+    "by": "gen:G2-S12-NEO"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G2-S12-NEO",
+     "solver": "solve:G2-S12-NEO（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G2-S12-NEO（ICD-10専門）"
+    },
+    "log": "bank/audit/G2-S12-NEO.audit.json#G2-S12-NEO-02",
+    "notes": "naiyou02 D00-D09包含(/2)・D10-D36包含(/0)・D37-D48注(/1)、C43包含(/3)で確認。solver一致。"
+   }
+  },
+  {
+   "subject": "S12",
+   "subtopic": "新生物（第Ⅱ章）",
+   "format": "icd",
+   "difficulty": "advanced",
+   "polarity": "positive",
+   "question": "舌尖に原発した癌（腫）が舌下面に拡がっていると記載されている。内容例示表の注に従ったICD-10コードはどれか。",
+   "choices": [
+    "C02.1",
+    "C01",
+    "C02.2",
+    "C02.8",
+    "C14.8"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "連続する2部位に重複し原発部位が決定できないときは「.8 境界部病巣」に分類するが、原発部位が判明している場合はその原発部位にコードする。舌尖の癌が舌下面に拡がった場合は原発部位が舌尖と判明しているため、舌尖を包含するC02.1（舌縁）にコードする。",
+    "choiceNotes": [
+     null,
+     "C01は舌根部の悪性新生物で、舌尖・舌下面とは別の部位である。",
+     "C02.2は舌下面で、拡がった先の部位である。原発部位（舌尖）でコードする。",
+     "C02.8（舌の境界部病巣）は、舌尖及び舌下面にまたがり原発部位が決定できない場合に用いる。本例は原発部位が判明している。",
+     "C14.8は口唇、口腔及び咽頭の境界部病巣で、3桁項目の境界にまたがり原発不明の場合用である。"
+    ],
+    "point": "原発部位が分かれば.8にせず原発部位。舌尖はC02.1（舌縁）に含まれる。"
+   },
+   "sources": [
+    {
+     "ref": "icd:naiyou02",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第2章 新生物＜腫瘍＞（C00-D48）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou02.pdf",
+     "locator": "第Ⅱ章 注5",
+     "quote": "舌尖の癌（腫）が舌下面に拡がった場合は原発部位が舌尖であると判明しているため， Ｃ02．1 にコードする。"
+    },
+    {
+     "ref": "icd:naiyou02",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第2章 新生物＜腫瘍＞（C00-D48）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou02.pdf",
+     "locator": "C02.1",
+     "quote": "Ｃ02．1   舌縁 舌尖"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s12-0018",
+   "origin": {
+    "batch": "G2-S12-NEO",
+    "key": "G2-S12-NEO-03",
+    "by": "gen:G2-S12-NEO"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G2-S12-NEO",
+     "solver": "solve:G2-S12-NEO（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G2-S12-NEO（ICD-10専門）"
+    },
+    "log": "bank/audit/G2-S12-NEO.audit.json#G2-S12-NEO-03",
+    "notes": "naiyou02 第Ⅱ章注5「舌尖の癌が舌下面に拡がった場合…C02.1」、C02.1包含に舌尖。他コード名称もicd.mjsで確認。"
+   }
+  },
+  {
+   "subject": "S12",
+   "subtopic": "新生物（第Ⅱ章）",
+   "format": "icd",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "胃と小腸にまたがり、原発部位を決定できない癌（腫）のICD-10コードはどれか。",
+   "choices": [
+    "C16.8",
+    "C26.8",
+    "C16.9",
+    "C17.8",
+    "C78.4"
+   ],
+   "answer": 1,
+   "explanation": {
+    "correct": "3桁分類項目の境界（胃C16と小腸C17）にまたがり原発部位が決定できない新生物のために、器官系ごとの境界部病巣の細分類が定められている。胃と小腸の癌はC26.8（消化器系の境界部病巣）にコードする。",
+    "choiceNotes": [
+     "C16.8は胃の境界部病巣で、胃（C16）の中の連続部位にまたがる場合用である。小腸にまで及ぶものは含まない。",
+     null,
+     "C16.9は胃、部位不明で、小腸にまたがる病変を表さない。",
+     "C17.8は小腸の境界部病巣で、小腸（C17）内の連続部位にまたがる場合用である。",
+     "C78.4は小腸の続発性悪性新生物で、転移巣に用いる。"
+    ],
+    "point": "3桁項目をまたぐ境界部病巣は器官系の「.8」（消化器系はC26.8）。"
+   },
+   "sources": [
+    {
+     "ref": "icd:naiyou02",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第2章 新生物＜腫瘍＞（C00-D48）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou02.pdf",
+     "locator": "第Ⅱ章 注5",
+     "quote": "一例をあげると胃と小腸の癌（腫）の場合には， Ｃ26．8（消化器系の境界部病巣）にコードすべきである。"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s12-0019",
+   "origin": {
+    "batch": "G2-S12-NEO",
+    "key": "G2-S12-NEO-04",
+    "by": "gen:G2-S12-NEO"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G2-S12-NEO",
+     "solver": "solve:G2-S12-NEO（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G2-S12-NEO（ICD-10専門）"
+    },
+    "log": "bank/audit/G2-S12-NEO.audit.json#G2-S12-NEO-04",
+    "notes": "naiyou02 注5「胃と小腸の癌…C26.8」。C16.8/C17.8/C78.4名称確認。"
+   }
+  },
+  {
+   "subject": "S12",
+   "subtopic": "新生物（第Ⅱ章）",
+   "format": "icd",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "食道及び胃にまたがる癌（腫）（原発部位の記載なし）について、内容例示表の注で特に指示されているICD-10コードはどれか。",
+   "choices": [
+    "C15.5",
+    "C16.0",
+    "C15.8",
+    "C16.8",
+    "C26.8"
+   ],
+   "answer": 1,
+   "explanation": {
+    "correct": "原発部位が決定できない連続部位の新生物は原則「.8」に分類するが、その組み合わせが特に他の所に指示されている場合は指示に従う。食道及び胃の癌（腫）はC16.0（噴門）に指示されている。",
+    "choiceNotes": [
+     "C15.5は下部食道で、胃にまたがる病変として指示されたコードではない。",
+     null,
+     "C15.8は食道の境界部病巣で、食道内の連続部位用である。食道及び胃の組み合わせは別に指示がある。",
+     "C16.8は胃の境界部病巣で、胃内の連続部位用である。",
+     "C26.8は消化器系の境界部病巣だが、食道及び胃の組み合わせは特にC16.0に指示されているため用いない。"
+    ],
+    "point": "食道＋胃の癌はC16.0（噴門）。「特に指示があれば.8より優先」。"
+   },
+   "sources": [
+    {
+     "ref": "icd:naiyou02",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第2章 新生物＜腫瘍＞（C00-D48）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou02.pdf",
+     "locator": "第Ⅱ章 注5",
+     "quote": "その組み合わせが特に他の所に指示されていない限り， ４桁細分類項目 「．８」 「境界部病巣」 に分類する。"
+    },
+    {
+     "ref": "icd:naiyou02",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第2章 新生物＜腫瘍＞（C00-D48）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou02.pdf",
+     "locator": "第Ⅱ章 注5",
+     "quote": "食道及び胃の癌（腫）は特にＣ16．0（噴門）に指示されている"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s12-0020",
+   "origin": {
+    "batch": "G2-S12-NEO",
+    "key": "G2-S12-NEO-05",
+    "by": "gen:G2-S12-NEO"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G2-S12-NEO",
+     "solver": "solve:G2-S12-NEO（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G2-S12-NEO（ICD-10専門）"
+    },
+    "log": "bank/audit/G2-S12-NEO.audit.json#G2-S12-NEO-05",
+    "notes": "naiyou02 注5「食道及び胃の癌（腫）は特にC16.0（噴門）に指示」。C15.5/C15.8名称確認。"
+   }
+  },
+  {
+   "subject": "S12",
+   "subtopic": "新生物（第Ⅱ章）",
+   "format": "knowledge",
+   "difficulty": "standard",
+   "polarity": "negative",
+   "question": "第Ⅱ章の細分類項目「.8」（境界部病巣）とその使用について、誤っているものはどれか。",
+   "choices": [
+    "3桁分類項目内の2項目以上の連続部位に重複し、原発部位が決定できない新生物は、原則として「.8」に分類する。",
+    "「境界部」とは、関連した部位が連続性（互いにつながっている）であることを意味する。",
+    "数字上連続している細分類項目が解剖学的にも連続しているとは限らないため、部位関係の決定には解剖学書の参照が望ましい。",
+    "3桁分類項目の境界にまたがる場合に備え、消化器系の境界部病巣（C26.8）などの細分類項目が定められている。",
+    "「その他」の細分類項目が必要な場合は、一般に細分類項目「.8」として示している。"
+   ],
+   "answer": 4,
+   "explanation": {
+    "correct": "第Ⅱ章では「.8」は境界部病巣という特殊な使い方をするため、「その他」の細分類項目が必要な場合は一般に「.7」として示している。",
+    "choiceNotes": [
+     "内容例示表第Ⅱ章注5のとおりで正しい。",
+     "注5の定義どおりで正しい。",
+     "注5に、数字上連続する細分類が必ずしも解剖学的に連続しない（例：膀胱C67.-）ため解剖学書を参照することが望ましいとあり、正しい。",
+     "注5に、C26.8など3桁項目の境界にまたがる場合の細分類項目が列挙されており、正しい。",
+     null
+    ],
+    "point": "第Ⅱ章：「.8」＝境界部病巣、「その他」＝「.7」。"
+   },
+   "sources": [
+    {
+     "ref": "icd:naiyou02",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第2章 新生物＜腫瘍＞（C00-D48）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou02.pdf",
+     "locator": "第Ⅱ章 注4",
+     "quote": "「その他」 の細分類項目が必要な場合は細分類項目 「．７」 として一般的に示している。"
+    },
+    {
+     "ref": "icd:naiyou02",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第2章 新生物＜腫瘍＞（C00-D48）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou02.pdf",
+     "locator": "第Ⅱ章 注5",
+     "quote": "「境界部」 とは関連した部位が連続性（お互いにつながっている）であることを意味している。"
+    },
+    {
+     "ref": "icd:naiyou02",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第2章 新生物＜腫瘍＞（C00-D48）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou02.pdf",
+     "locator": "第Ⅱ章 注5",
+     "quote": "数字上連続している細分類項目はしばしば解剖学的に連続しているが， これは必ずしもそうとは限らない"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s12-0021",
+   "origin": {
+    "batch": "G2-S12-NEO",
+    "key": "G2-S12-NEO-06",
+    "by": "gen:G2-S12-NEO"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G2-S12-NEO",
+     "solver": "solve:G2-S12-NEO（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G2-S12-NEO（ICD-10専門）"
+    },
+    "log": "bank/audit/G2-S12-NEO.audit.json#G2-S12-NEO-06",
+    "notes": "naiyou02 注4「その他」は.7、注5の定義・膀胱C67.-の例・器官系境界部病巣一覧を確認。"
+   }
+  },
+  {
+   "subject": "S12",
+   "subtopic": "新生物（第Ⅱ章）",
+   "format": "coding",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "疾病のコーディングで、医療従事者が上行結腸癌と腎細胞癌を、いずれも独立した原発性の悪性新生物として「主要病態」に記載しており、どちらが主要ともいえない。「主要病態」としてコードするものはどれか。",
+   "choices": [
+    "C97",
+    "C18.2",
+    "C26.8",
+    "C64",
+    "C80.9"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "第2巻の疾病コーディングの章別注釈では、C97は医療従事者が二つ以上の独立した原発性の悪性新生物を「主要病態」と記載し、どちらが主要ともいえないときに使用する。個々の悪性新生物（C18.2、C64）は特定したい場合に追加コードとして使用できる。",
+    "choiceNotes": [
+     null,
+     "C18.2（上行結腸）は個々の新生物を示す追加コードとしては使えるが、どちらが主要ともいえない場合の「主要病態」はC97である。",
+     "C26.8は消化器系の連続部位にまたがり原発部位が決定できない病巣のコードで、独立した2つの原発には用いない。",
+     "C64（腎の悪性新生物）も追加コードとしては使えるが、「主要病態」はC97である。",
+     "C80.9は原発部位詳細不明の悪性新生物で、本例は2つの原発部位が明示されている。"
+    ],
+    "point": "独立した原発が複数で、どれも主要といえない→C97（個々は追加コード）。"
+   },
+   "sources": [
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "4.4.4 章ごとの注釈 第Ⅱ章 C97",
+     "quote": "C97 は医療従事者が二つ以上の独立した原発性の悪性新生物＜腫瘍＞を「主要病態」と記載しており、どちらが主要ともいえないときに使用すべきである。"
+    },
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "4.4.4 章ごとの注釈 第Ⅱ章 C97",
+     "quote": "追加コードは個々の悪性新生物＜腫瘍＞を特定したい場合に使用することができる。"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s12-0022",
+   "origin": {
+    "batch": "G2-S12-NEO",
+    "key": "G2-S12-NEO-07",
+    "by": "gen:G2-S12-NEO"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G2-S12-NEO",
+     "solver": "solve:G2-S12-NEO（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G2-S12-NEO（ICD-10専門）"
+    },
+    "log": "bank/audit/G2-S12-NEO.audit.json#G2-S12-NEO-07",
+    "notes": "instruction 第Ⅱ章注釈C97「二つ以上の独立した原発…どちらが主要ともいえないとき」、追加コード可。C18.2/C64名称確認。"
+   }
+  },
+  {
+   "subject": "S12",
+   "subtopic": "新生物（第Ⅱ章）",
+   "format": "knowledge",
+   "difficulty": "advanced",
+   "polarity": "negative",
+   "question": "死因（原死因）のコーディングにおける悪性新生物の扱いについて、誤っているものはどれか。",
+   "choices": [
+    "続発性悪性新生物のコード（C77－C79）は原死因には使用せず、C80.-にコードする。",
+    "死亡診断書に原発部位不明と記載されている場合は、形態型に対応する「部位不明」の分類項目にコードする（例：腺がんはC80.0）。",
+    "死亡診断書に原発部位不明と記載されている場合、死亡診断書の他の場所に記載されたその他の部位は無視する。",
+    "二つ以上の独立した原発性悪性新生物が記載され、作成医師への確認が取れない場合は、原死因をC97にコードする。",
+    "一つの部位の原発性悪性新生物が、別の部位の原発性新生物によるものと考えるべきではない。"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "C97は死亡コーディングには使用されないコードであり、C00－C76、C81－C96にコードする。多数の原発性悪性新生物の記載があり作成医師への確認が取れない場合は、選択ルールを通常の方法で適用して原死因を選ぶ。",
+    "choiceNotes": [
+     "表２「死亡コーディングには使用されないコードの表」でC77－C79は（C80.-にコードする）とされ、正しい。",
+     "4.2.7.3 B.（原発部位不明）のとおりで正しい。",
+     "4.2.7.3 B.に、死亡診断書の他の場所に記載されているその他の各部位は無視するとあり、正しい。",
+     null,
+     "4.2.7.3 C.(a)のとおりで正しい。"
+    ],
+    "point": "原死因にC77－C79とC97は使わない（C77－C79→C80.-、C97→個々の原発部位を選択ルールで）。"
+   },
+   "sources": [
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "表２ 死亡コーディングには使用されないコードの表",
+     "quote": "C97          （C00 － C76、C81 － C96 にコードする）"
+    },
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "4.2.7.3 C. 多数の原発性新生物＜腫瘍＞がある場合",
+     "quote": "そうした確認が取れない場合、選択ルールを通常の方法で適用するべきである。"
+    },
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "4.2.7.3 B. 原発部位不明",
+     "quote": "関与する形態型に対応する「部位不明」の分類項目にコードする。たとえば、腺がんは C80.0"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s12-0023",
+   "origin": {
+    "batch": "G2-S12-NEO",
+    "key": "G2-S12-NEO-08",
+    "by": "gen:G2-S12-NEO"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G2-S12-NEO",
+     "solver": "solve:G2-S12-NEO（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G2-S12-NEO（ICD-10専門）"
+    },
+    "log": "bank/audit/G2-S12-NEO.audit.json#G2-S12-NEO-08",
+    "notes": "instruction 表2(C77-C79→C80.-、C97→C00-C76,C81-C96)、4.2.7.3 B(原発部位不明・他部位無視)、C.(確認不可→選択ルール通常適用、一つの原発が別の原発によると考えない)を確認。"
+   }
+  },
+  {
+   "subject": "S12",
+   "subtopic": "新生物（第Ⅱ章）",
+   "format": "coding",
+   "difficulty": "advanced",
+   "polarity": "positive",
+   "question": "疾病のコーディングで、退院時の記載が次のとおりである。「主要病態」としてコードするものはどれか。\n主要病態：S状結腸癌－3年前に切除済み、今回は肝転移\nその他の病態：―\n処置：肝部分切除術\n（S状結腸の原発巣の再発はない）",
+   "choices": [
+    "C18.7",
+    "C22.0",
+    "C80.9",
+    "Z85.0",
+    "C78.7"
+   ],
+   "answer": 4,
+   "explanation": {
+    "correct": "新生物は原発・転移にかかわらずケアの中心となった対象疾患を「主要病態」とする。原発巣が以前のエピソードで除去されて存在しない場合は、今回の治療の中心となった続発部位の新生物にコードする。よって肝の続発性悪性新生物C78.7を「主要病態」とし、Z85.0（消化器の悪性新生物の既往歴）は任意的追加コードとして使用できる。",
+    "choiceNotes": [
+     "C18.7（S状結腸）は原発巣のコードだが、原発巣は3年前に切除され現存しないため「主要病態」にしない。",
+     "C22.0は肝細胞癌（肝原発）で、転移巣には用いない。",
+     "C80.9は原発部位詳細不明のときに用いる。本例は原発部位（S状結腸）が判明しており、治療対象は肝の続発巣である。",
+     "Z85.0は消化器の悪性新生物の既往歴で、任意的追加コードとして使用できるが、治療の中心となった続発性新生物がある以上「主要病態」ではない。",
+     null
+    ],
+    "point": "原発が過去に切除済み→今回治療した転移巣を主要病態（肝転移C78.7）、既往はZ85.-を追加。"
+   },
+   "sources": [
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "4.4.4 章ごとの注釈 第Ⅱ章",
+     "quote": "現在のケアのエピソードにおいて治療や検査の中心となった続発部位の新生物＜腫瘍＞"
+    },
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "4.4.4 章ごとの注釈 第Ⅱ章",
+     "quote": "新生物＜腫瘍＞の既往歴については第ⅩⅪ章の適当なコードを任意的追加コードとして使用することができる。"
+    },
+    {
+     "ref": "icd:naiyou02",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第2章 新生物＜腫瘍＞（C00-D48）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou02.pdf",
+     "locator": "C78.7",
+     "quote": "Ｃ78．7   肝及び肝内胆管の続発性悪性新生物＜腫瘍＞"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s12-0024",
+   "origin": {
+    "batch": "G2-S12-NEO",
+    "key": "G2-S12-NEO-09",
+    "by": "gen:G2-S12-NEO"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G2-S12-NEO",
+     "solver": "solve:G2-S12-NEO（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G2-S12-NEO（ICD-10専門）"
+    },
+    "log": "bank/audit/G2-S12-NEO.audit.json#G2-S12-NEO-09",
+    "notes": "instruction 第Ⅱ章注釈（以前除去→続発部位を主要病態、既往歴はⅩⅪ章任意的追加）・例7と同型。C78.7確認。"
+   }
+  },
+  {
+   "subject": "S12",
+   "subtopic": "新生物（第Ⅱ章）",
+   "format": "coding",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "2年前に胃癌で胃切除術を受けた患者が、再発の有無を確認する上部消化管内視鏡検査のために入院した。検査で再発は認められなかった。「主要病態」としてコードするものはどれか。",
+   "choices": [
+    "C16.9",
+    "Z08.9",
+    "Z09.0",
+    "Z85.0",
+    "Z08.0"
+   ],
+   "answer": 4,
+   "explanation": {
+    "correct": "原発巣が以前のエピソードで除去され、今回は経過観察の検査のみである場合は、第ⅩⅪ章の適当なコードを用いる。悪性新生物の外科手術後の経過観察検査はZ08.0で、Z85.0（消化器の悪性新生物の既往歴）は任意的追加コードとして使用できる（第2巻の膀胱がんの例と同じ考え方）。",
+    "choiceNotes": [
+     "C16.9は現存する胃の悪性新生物を表す。胃癌は既に切除され、今回再発も認められていないため用いない。",
+     "Z08.9は悪性新生物の詳細不明の治療後の経過観察検査で、外科手術後と分かっている本例には用いない。",
+     "Z09.0はその他の病態（悪性新生物以外）の術後の経過観察検査である。",
+     "Z85.0は消化器の悪性新生物の既往歴で、任意的追加コードとして使用できるが「主要病態」ではない。",
+     null
+    ],
+    "point": "がん術後の経過観察検査入院→Z08.0（既往歴Z85.-は追加）。"
+   },
+   "sources": [
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "4.4.4 章ごとの注釈 第Ⅱ章 例8",
+     "quote": "「主要病態」として、悪性新生物＜腫瘍＞の外科手術後の経過観察＜フォローアップ＞検査（Z08.0）にコードする。"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s12-0025",
+   "origin": {
+    "batch": "G2-S12-NEO",
+    "key": "G2-S12-NEO-10",
+    "by": "gen:G2-S12-NEO"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G2-S12-NEO",
+     "solver": "solve:G2-S12-NEO（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G2-S12-NEO（ICD-10専門）"
+    },
+    "log": "bank/audit/G2-S12-NEO.audit.json#G2-S12-NEO-10",
+    "notes": "instruction 第Ⅱ章例8（Z08.0）、naiyou21 Z08.0/Z08.9/Z09.0/Z85.0(C15-C26)の名称確認。"
+   }
+  },
+  {
+   "subject": "S12",
+   "subtopic": "新生物（第Ⅱ章）",
+   "format": "coding",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "疾病のコーディングで、「主要病態」が「全身性悪性腫瘍」とだけ記載され、特定の部位の記載がない。「主要病態」としてコードするものはどれか。",
+   "choices": [
+    "C76.7",
+    "C77.8",
+    "C80.0",
+    "C79.9",
+    "C80.9"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "C79.9（続発性悪性新生物、部位不明）は、悪性新生物が「播種性癌腫性」又は「全身性悪性腫瘍」等と記載され、かつ特定の部位が記載されていないときにのみ「主要病態」として使用する。原発部位が不明の場合はC80.9を追加コードとして使用できる。",
+    "choiceNotes": [
+     "C76.7はその他の不明確な部位の悪性新生物で、全身性・播種性の記載に対応するコードではない。",
+     "C77.8は多部位のリンパ節の続発性悪性新生物で、リンパ節に限った転移に用いる。",
+     "C80.0は「原発部位不明」と明確に記載された悪性新生物に用いる。",
+     null,
+     "C80.9は原発部位詳細不明の悪性新生物（がんNOS等）。全身性悪性腫瘍はC79.9の包含で、C80.9は原発部位不明の場合の追加コードとして使える。"
+    ],
+    "point": "全身性・播種性で部位記載なし→C79.9（原発不明ならC80.9を追加）。"
+   },
+   "sources": [
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "4.4.4 章ごとの注釈 第Ⅱ章 C79.9",
+     "quote": "C79.9 は、悪性新生物＜腫瘍＞が、「播種性癌腫性」又は「全身性悪性腫瘍」（又は"
+    },
+    {
+     "ref": "icd:naiyou02",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第2章 新生物＜腫瘍＞（C00-D48）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou02.pdf",
+     "locator": "C79.9",
+     "quote": "全身性（続発性）： ・がんＮＯＳ ・悪性腫瘍ＮＯＳ"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s12-0026",
+   "origin": {
+    "batch": "G2-S12-NEO",
+    "key": "G2-S12-NEO-11",
+    "by": "gen:G2-S12-NEO"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G2-S12-NEO",
+     "solver": "solve:G2-S12-NEO（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G2-S12-NEO（ICD-10専門）"
+    },
+    "log": "bank/audit/G2-S12-NEO.audit.json#G2-S12-NEO-11",
+    "notes": "instruction 第Ⅱ章注釈C79.9（播種性癌腫性・全身性悪性腫瘍で部位記載なし）、例9（C80.9追加可）、naiyou02 C79.9包含確認。"
+   }
+  },
+  {
+   "subject": "S12",
+   "subtopic": "新生物（第Ⅱ章）",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "negative",
+   "question": "内容例示表で、C80.9（悪性新生物，原発部位詳細不明）に含まれないものはどれか。",
+   "choices": [
+    "部位の記載がない「がん」（がんNOS）",
+    "部位の記載がない「癌（腫）」",
+    "部位の記載がない悪性悪液質",
+    "部位の記載がない多発がん＜重複がん＞",
+    "「原発部位不明」と記載されたもの"
+   ],
+   "answer": 4,
+   "explanation": {
+    "correct": "C80は部位が明示されていない悪性新生物で、「原発部位不明」と記載されたものはC80.0、がんNOS・癌（腫）NOS・悪性腫瘍NOS・悪性悪液質NOS・多発がん＜重複がん＞NOSはC80.9に分類される。",
+    "choiceNotes": [
+     "C80.9の包含に「がんNOS」がある。",
+     "C80.9の包含に「癌（腫）NOS」がある。",
+     "C80.9の包含に「悪性悪液質NOS」がある。",
+     "C80.9の包含に「多発がん＜重複がん＞NOS」がある（続発性多発がんNOSはC79.9）。",
+     null
+    ],
+    "point": "C80.0＝原発部位不明と記載、C80.9＝がんNOSなど詳細不明。"
+   },
+   "sources": [
+    {
+     "ref": "icd:naiyou02",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第2章 新生物＜腫瘍＞（C00-D48）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou02.pdf",
+     "locator": "C80.0",
+     "quote": "C80．0   悪性新生物＜腫瘍＞，原発部位不明と記載されたもの"
+    },
+    {
+     "ref": "icd:naiyou02",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第2章 新生物＜腫瘍＞（C00-D48）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou02.pdf",
+     "locator": "C80.9",
+     "quote": "C80．9   悪性新生物＜腫瘍＞，原発部位詳細不明 がんＮＯＳ 癌（腫）ＮＯＳ"
+    },
+    {
+     "ref": "icd:naiyou02",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第2章 新生物＜腫瘍＞（C00-D48）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou02.pdf",
+     "locator": "C80.9 包含",
+     "quote": "悪性悪液質ＮＯＳ 多発がん＜重複がん＞ＮＯＳ"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s12-0027",
+   "origin": {
+    "batch": "G2-S12-NEO",
+    "key": "G2-S12-NEO-12",
+    "by": "gen:G2-S12-NEO"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G2-S12-NEO",
+     "solver": "solve:G2-S12-NEO（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G2-S12-NEO（ICD-10専門）"
+    },
+    "log": "bank/audit/G2-S12-NEO.audit.json#G2-S12-NEO-12",
+    "notes": "naiyou02 C80.0/C80.9包含（がんNOS・癌(腫)NOS・悪性腫瘍NOS・悪性悪液質NOS・多発がんNOS）を確認。"
+   }
+  },
+  {
+   "subject": "S12",
+   "subtopic": "新生物（第Ⅱ章）",
+   "format": "icd",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "肺癌の鎖骨上リンパ節への転移（鎖骨上リンパ節の続発性悪性新生物）を表すICD-10コードはどれか。",
+   "choices": [
+    "C77.1",
+    "C77.3",
+    "C77.8",
+    "C77.0",
+    "C85.9"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "リンパ節の続発性悪性新生物はC77に分類し、鎖骨上リンパ節はC77.0（頭部、顔面及び頚部リンパ節）の包含に掲げられている。",
+    "choiceNotes": [
+     "C77.1は胸腔内リンパ節で、鎖骨上リンパ節は含まない。",
+     "C77.3は腋窩及び上肢リンパ節である。",
+     "C77.8は多部位のリンパ節で、1領域のリンパ節転移には用いない。",
+     null,
+     "C85.9は非ホジキンリンパ腫（詳細不明）で、リンパ組織原発の悪性新生物である。原発性と記載されたリンパ節の悪性新生物はC77から除外される。"
+    ],
+    "point": "リンパ節転移＝C77。鎖骨上はC77.0（頭頚部）に含む。"
+   },
+   "sources": [
+    {
+     "ref": "icd:naiyou02",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第2章 新生物＜腫瘍＞（C00-D48）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou02.pdf",
+     "locator": "C77.0",
+     "quote": "Ｃ77．0   頭部， 顔面及び頚部リンパ節 鎖骨上リンパ節"
+    },
+    {
+     "ref": "icd:naiyou02",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第2章 新生物＜腫瘍＞（C00-D48）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou02.pdf",
+     "locator": "C77 除外",
+     "quote": "原発性と記載されたリンパ節の悪性新生物＜腫瘍＞（Ｃ81－C86，Ｃ96.-）"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s12-0028",
+   "origin": {
+    "batch": "G2-S12-NEO",
+    "key": "G2-S12-NEO-13",
+    "by": "gen:G2-S12-NEO"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G2-S12-NEO",
+     "solver": "solve:G2-S12-NEO（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G2-S12-NEO（ICD-10専門）"
+    },
+    "log": "bank/audit/G2-S12-NEO.audit.json#G2-S12-NEO-13",
+    "notes": "naiyou02 C77.0包含に鎖骨上リンパ節、C77除外（原発性はC81-C86,C96.-）確認。"
+   }
+  },
+  {
+   "subject": "S12",
+   "subtopic": "新生物（第Ⅱ章）",
+   "format": "icd",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "子宮頚（部）上皮内腫瘍［CIN］異型度Ⅱと診断された。ICD-10コードはどれか。",
+   "choices": [
+    "C53.9",
+    "D06.9",
+    "N87.0",
+    "N87.1",
+    "N87.2"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "上皮内新生物（D00－D09）の注により、異型度Ⅲの上皮内腫瘍は上皮内新生物に分類するが、異型度Ⅰ及びⅡはその器官系の異形成として関連する身体系統の章にコードする。CIN異型度ⅡはN87.1（中等度子宮頚（部）異形成）に包含されている。",
+    "choiceNotes": [
+     "C53.9は子宮頚部の悪性新生物（浸潤癌）で、上皮内腫瘍には用いない。",
+     "D06.-（子宮頚部の上皮内癌）に分類されるのはCIN異型度Ⅲ（高度異形成の記載の有無にかかわらない）である。",
+     "N87.0は軽度子宮頚（部）異形成で、CIN異型度Ⅰが含まれる。",
+     null,
+     "N87.2は高度子宮頚（部）異形成NOSで、CIN異型度Ⅲは除外されD06.-に分類される。異型度ⅡはN87.1。"
+    ],
+    "point": "CINⅠ→N87.0、CINⅡ→N87.1、CINⅢ→D06.-（上皮内癌）。"
+   },
+   "sources": [
+    {
+     "ref": "icd:naiyou02",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第2章 新生物＜腫瘍＞（C00-D48）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou02.pdf",
+     "locator": "D00－D09 注",
+     "quote": "異型度＜grade＞Ⅰ及びⅡはその器官系の異形成に分類し， 関連する身体系統の章にコードする。"
+    },
+    {
+     "ref": "icd:naiyou14",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第14章 腎尿路生殖器系の疾患（N00-N99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou14.pdf",
+     "locator": "N87.1",
+     "quote": "Ｎ87．1   中等度子宮頚（部）異形成 子宮頚（部）上皮内腫瘍＜intraepithelial neoplasia＞ ［ＣＩＮ］， 異型度Ⅱ"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s12-0029",
+   "origin": {
+    "batch": "G2-S12-NEO",
+    "key": "G2-S12-NEO-14",
+    "by": "gen:G2-S12-NEO"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G2-S12-NEO",
+     "solver": "solve:G2-S12-NEO（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G2-S12-NEO（ICD-10専門）"
+    },
+    "log": "bank/audit/G2-S12-NEO.audit.json#G2-S12-NEO-14",
+    "notes": "naiyou02 D00-D09注（異型度Ⅰ・Ⅱは異形成）、D06包含CINⅢ、naiyou14 N87.0/N87.1/N87.2包含・除外を確認。"
+   }
+  },
+  {
+   "subject": "S12",
+   "subtopic": "新生物（第Ⅱ章）",
+   "format": "knowledge",
+   "difficulty": "standard",
+   "polarity": "negative",
+   "question": "内容例示表第Ⅱ章の注に示された新生物の分類の考え方について、誤っているものはどれか。",
+   "choices": [
+    "新生物は機能的に活性であると否とにかかわらず第Ⅱ章に分類し、機能的活性の分類が必要な場合は第Ⅳ章から追加コードを引用できる。",
+    "副腎のカテコールアミン産生悪性褐色細胞腫はC74に分類し、追加コードとしてE27.5を引用できる。",
+    "異所性組織の悪性新生物は記載された部位にコードし、異所性膵の悪性新生物はC25.9にコードする。",
+    "「癌（腫）＜carcinoma＞」を「がん＜cancer＞」の同義語として使用するのは誤りとされている。",
+    "第Ⅱ章における新生物の配置は、形態（組織型）を最優先し、次いで部位による。"
+   ],
+   "answer": 4,
+   "explanation": {
+    "correct": "第Ⅱ章における新生物の配置は、良性又は悪性等の性状の分類に次いで部位を優先しており、形態が分類項目に示されるのはごくわずかな例外である。組織型の分類には別に形態コード（ICD-O由来）が用意されている。",
+    "choiceNotes": [
+     "第Ⅱ章注2（機能的活性）のとおりで正しい。",
+     "注2の例示どおりで正しい。",
+     "注6（異所性組織の悪性新生物）のとおりで正しい。",
+     "注3に、がん＜cancer＞は包括的な用語であり、癌（腫）を同義語として使用するのは誤りとあり、正しい。",
+     null
+    ],
+    "point": "第Ⅱ章の配置：性状（悪性・上皮内・良性・性状不詳）→部位。機能的活性は第Ⅳ章で追加コード。"
+   },
+   "sources": [
+    {
+     "ref": "icd:naiyou02",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第2章 新生物＜腫瘍＞（C00-D48）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou02.pdf",
+     "locator": "第Ⅱ章 注3",
+     "quote": "第Ⅱ章における新生物＜腫瘍＞の配置は良性又は悪性等の性状の分類に次いで部位を優先する。"
+    },
+    {
+     "ref": "icd:naiyou02",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第2章 新生物＜腫瘍＞（C00-D48）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou02.pdf",
+     "locator": "第Ⅱ章 注2",
+     "quote": "副腎のカテコールアミン産性悪生褐色細胞腫はＣ74，追加コードＥ27．5"
+    },
+    {
+     "ref": "icd:naiyou02",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第2章 新生物＜腫瘍＞（C00-D48）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou02.pdf",
+     "locator": "第Ⅱ章 注6",
+     "quote": "異所性組織の悪性新生物＜腫瘍＞は記載された部位にコードすることとなる。"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s12-0030",
+   "origin": {
+    "batch": "G2-S12-NEO",
+    "key": "G2-S12-NEO-15",
+    "by": "gen:G2-S12-NEO"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G2-S12-NEO",
+     "solver": "solve:G2-S12-NEO（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G2-S12-NEO（ICD-10専門）"
+    },
+    "log": "bank/audit/G2-S12-NEO.audit.json#G2-S12-NEO-15",
+    "notes": "naiyou02 第Ⅱ章注2（機能的活性・C74+E27.5）、注3（性状→部位、癌腫≠がん）、注6（異所性膵C25.9）を確認。"
+   }
+  },
+  {
+   "subject": "S12",
+   "subtopic": "退院時要約からのコーディング",
+   "format": "summary",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "caseId": "case-g2-s12-sum-01",
+   "question": "次の退院時要約（架空症例）を読み、ICD-10（2013年版）の疾病コーディングルールに従って「主要病態」に付与するコードとして正しいものはどれか。",
+   "choices": [
+    "S72.1",
+    "S72.2",
+    "S72.0",
+    "T93.1",
+    "S32.4"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "主要病態は今回の入院で治療（人工骨頭挿入術）の対象となった右大腿骨頚部骨折である。外因による損傷では、優先される主要病態コードは病態の性質を記述するコードであり、大腿骨頚部骨折は S72.0 に分類される。",
+    "choiceNotes": [
+     "S72.1 は転子貫通骨折（転子間骨折・転子部骨折を含む）で、頚部骨折とは部位が異なる。",
+     "S72.2 は転子下骨折で、頚部骨折とは部位が異なる。",
+     null,
+     "T93.1 は大腿骨骨折の続発・後遺症で、もはや存在しない骨折の後遺症に用いる。今回は新鮮骨折そのものを治療している。",
+     "S32.4 は寛骨臼骨折（骨盤の骨折）で、大腿骨の骨折ではない。"
+    ],
+    "point": "損傷の主要病態は「病態の性質」（第ⅩⅨ章）でコードする。大腿骨頚部骨折＝S72.0、転子貫通＝S72.1、転子下＝S72.2。"
+   },
+   "sources": [
+    {
+     "ref": "icd:instruction",
+     "title": "ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "4.4.2 疾病の外因のコーディング",
+     "quote": "優先される「主要病態」コードは、病態の性質を記述するものである。"
+    },
+    {
+     "ref": "icd:naiyou19",
+     "title": "内容例示表 第ⅩⅨ章",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou19.pdf",
+     "locator": "S72.0〜S72.2",
+     "quote": "Ｓ72．0   大腿骨頚部骨折 股関節部骨折 ＮＯＳ Ｓ72．1   転子貫通骨折"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s12-0031",
+   "origin": {
+    "batch": "G2-S12-SUM",
+    "key": "G2-S12-SUM-01",
+    "by": "gen:G2-S12-SUM"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G2-S12-SUM",
+     "solver": "solve:G2-S12-SUM（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G2-S12-SUM（ICD-10専門）"
+    },
+    "log": "bank/audit/G2-S12-SUM.audit.json#G2-S12-SUM-01",
+    "notes": "S72.0/S72.1/S72.2/T93.1/S32.4 exist & titles match (icd.mjs). instruction 4.4.2 疾病の外因のコーディング(L7148-): 主要病態=病態の性質. Solver agrees."
+   }
+  },
+  {
+   "subject": "S12",
+   "subtopic": "退院時要約からのコーディング",
+   "format": "summary",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "caseId": "case-g2-s12-sum-01",
+   "question": "次の退院時要約（架空症例）を読み、骨折の外因を任意的追加コードとして付与する場合、第ⅩⅩ章の3桁分類項目として正しいものはどれか。",
+   "choices": [
+    "W01",
+    "W06",
+    "W18",
+    "W10",
+    "X59"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "外因による損傷では病態の性質と外因の状況の両者をコードし、第ⅩⅩ章のコードは任意的追加コードとして使用する。本症例は自宅の階段を下りる途中の転落であり、「階段及びステップからの転落及びその上での転倒」W10 に分類する（発生場所は4桁目で家（庭）を示す）。",
+    "choiceNotes": [
+     "W01 はスリップ、つまづき及びよろめきによる同一平面上での転倒で、階段からの転落には用いない。",
+     "W06 はベッドからの転落で、本症例の状況と異なる。",
+     "W18 は同一平面上でのその他の転倒で、階段からの転落には用いない。",
+     null,
+     "X59 は詳細不明の要因への曝露で、外因の状況が明らかな本症例には用いない。"
+    ],
+    "point": "外因（第ⅩⅩ章）は任意的追加コード。階段からの転落＝W10、同一平面上の転倒＝W01／W18。"
+   },
+   "sources": [
+    {
+     "ref": "icd:instruction",
+     "title": "ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "4.4.2 疾病の外因のコーディング",
+     "quote": "外因を分類する第ⅩⅩ章からのコードは、任意的追加コードとして使用する。"
+    },
+    {
+     "ref": "icd:naiyou20",
+     "title": "内容例示表 第ⅩⅩ章",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou20.pdf",
+     "locator": "W10",
+     "quote": "Ｗ10   階段及びステップからの転落及びその上での転倒"
+    },
+    {
+     "ref": "icd:naiyou20",
+     "title": "内容例示表 第ⅩⅩ章",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou20.pdf",
+     "locator": "W01",
+     "quote": "Ｗ01   スリップ， つまづき及びよろめきによる同一平面上での転倒"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s12-0032",
+   "origin": {
+    "batch": "G2-S12-SUM",
+    "key": "G2-S12-SUM-02",
+    "by": "gen:G2-S12-SUM"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G2-S12-SUM",
+     "solver": "solve:G2-S12-SUM（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G2-S12-SUM（ICD-10専門）"
+    },
+    "log": "bank/audit/G2-S12-SUM.audit.json#G2-S12-SUM-02",
+    "notes": "W10 包含 階段からの転落 (naiyou20 L1647); W01/W06/W18/X59 titles verified. 4桁目=発生場所 consistent with kihon2013 W10.0 家(庭). XX章=任意的追加 (instruction 4.4.2). Solver agrees."
+   }
+  },
+  {
+   "subject": "S12",
+   "subtopic": "退院時要約からのコーディング",
+   "format": "summary",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "caseId": "case-g2-s12-sum-01",
+   "question": "次の退院時要約（架空症例）を読み、術後4日目に発症した肺炎を「その他の病態」としてコードする場合、病態の性質を表すコードとして正しいものはどれか。",
+   "choices": [
+    "J18.9",
+    "J95.8",
+    "T81.4",
+    "Y83.1",
+    "T81.8"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "処置後の期間に発生することがある肺炎・肺塞栓症などは、処置に特有の病態とは考えられず通常の方法でコードする。病原体不詳・病型の記載がない肺炎は J18.9（肺炎、詳細不明）である。処置との関連を示したい場合は Y83－Y84 の任意的追加コードを加えてもよい。",
+    "choiceNotes": [
+     null,
+     "J95.8 はその他の処置後の呼吸器障害であるが、処置後に生じた肺炎は通常の方法でコードするため用いない。",
+     "T81.4 は手術創感染などの処置に続発する感染症に用いる分類で、肺炎は通常の方法でコードする。",
+     "Y83.1 は処置との関連を示す第ⅩⅩ章の任意的追加コードであり、病態の性質を表すコードではない。",
+     "T81.8 は処置のその他の合併症であり、肺炎は通常の方法でコードする。"
+    ],
+    "point": "術後に起きた肺炎・肺塞栓症は普通にコードし（肺炎NOS＝J18.9）、処置との関連は Y83－Y84 で任意に補う。"
+   },
+   "sources": [
+    {
+     "ref": "icd:instruction",
+     "title": "ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "4.4.2 処置後病態及び合併症のコーディング",
+     "quote": "処置後の期間に発生することがあるいくつかの病態（たとえば肺炎、肺塞栓症）は、独自の病態とは考えられず、それゆえ通常の方法でコードされる"
+    },
+    {
+     "ref": "icd:instruction",
+     "title": "ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "4.4.2 処置後病態及び合併症のコーディング",
+     "quote": "処置との関連を分類するために、Y83 － Y84 からの任意的追加コードを加えてもよい。"
+    },
+    {
+     "ref": "icd:naiyou10",
+     "title": "内容例示表 第Ⅹ章",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou10.pdf",
+     "locator": "J18.9",
+     "quote": "Ｊ18．9   肺炎， 詳細不明"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s12-0033",
+   "origin": {
+    "batch": "G2-S12-SUM",
+    "key": "G2-S12-SUM-03",
+    "by": "gen:G2-S12-SUM"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と不一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G2-S12-SUM",
+     "solver": "solve:G2-S12-SUM（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G2-S12-SUM（ICD-10専門）"
+    },
+    "log": "bank/audit/G2-S12-SUM.audit.json#G2-S12-SUM-03",
+    "notes": "ブラインド解答と不一致（要確認）｜Solver chose J95.8 (from index memory). Key J18.9 confirmed: instruction 4.4.2 処置後病態及び合併症のコーディング(L7262-7269) explicitly names 肺炎 as coded in the usual way with optional Y83-Y84; J95 (naiyou10 L1205-1226) has no pneumonia inclusion; T81.4/T81.8 and Y83.1 correctly excluded. No cached index contradicts. Pass."
+   }
+  },
+  {
+   "subject": "S12",
+   "subtopic": "退院時要約からのコーディング",
+   "format": "summary",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "caseId": "case-g2-s12-sum-02",
+   "question": "次の退院時要約（架空症例）を読み、ICD-10（2013年版）に従って「主要病態」に付与するコードとして正しいものはどれか。",
+   "choices": [
+    "Z43.2",
+    "Z93.2",
+    "Z43.3",
+    "K91.4",
+    "Z85.0"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "今回の入院は一時的回腸瘻の閉鎖を目的とした保健サービスの利用であり、関連した状況を主要病態として第ⅩⅩⅠ章でコードする。Z43「人工開口部に対する手当て」は閉鎖を包含し、回腸瘻は Z43.2（回腸瘻造設に対する手当て）である。",
+    "choiceNotes": [
+     null,
+     "Z93.2 は回腸瘻造設状態で、ケアの必要のない人工開口状態に用いる。手当て（閉鎖）を受けた場合は Z43.- に分類する（Z93 の除外）。",
+     "Z43.3 は結腸瘻造設に対する手当てで、本症例の人工開口部は回腸瘻である。",
+     "K91.4 は結腸瘻及び小腸瘻の機能障害で、外部ストマの合併症に用いる。本症例にストーマの機能障害はない。",
+     "Z85.0 は消化器の悪性新生物の既往歴で、今回のエピソードで手当てを受けた状況（回腸瘻の閉鎖）を表さない。"
+    ],
+    "point": "人工開口部の閉鎖・修復などの手当て＝Z43.-（回腸瘻 .2、結腸瘻 .3）。手当て不要の状態のみ＝Z93.-。"
+   },
+   "sources": [
+    {
+     "ref": "icd:naiyou21",
+     "title": "内容例示表 第ⅩⅩⅠ章",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou21.pdf",
+     "locator": "Z43 包含・除外",
+     "quote": "人工開口部に対する手当て Attention to artificial openings 包含： 閉鎖"
+    },
+    {
+     "ref": "icd:naiyou21",
+     "title": "内容例示表 第ⅩⅩⅠ章",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou21.pdf",
+     "locator": "Z43 除外",
+     "quote": "人工的開口状態のみ， ケアの必要のないもの（Ｚ93.-）"
+    },
+    {
+     "ref": "icd:naiyou21",
+     "title": "内容例示表 第ⅩⅩⅠ章",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou21.pdf",
+     "locator": "Z43.2",
+     "quote": "Ｚ43．2   回腸瘻造設に対する手当て"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s12-0034",
+   "origin": {
+    "batch": "G2-S12-SUM",
+    "key": "G2-S12-SUM-04",
+    "by": "gen:G2-S12-SUM"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G2-S12-SUM",
+     "solver": "solve:G2-S12-SUM（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G2-S12-SUM（ICD-10専門）"
+    },
+    "log": "bank/audit/G2-S12-SUM.audit.json#G2-S12-SUM-04",
+    "notes": "Z43 包含 閉鎖, 除外 Z93.- / 外部ストマの合併症 K91.4 (naiyou21); Z93 除外 Z43.- ; Z43.2 回腸瘻. Solver agrees."
+   }
+  },
+  {
+   "subject": "S12",
+   "subtopic": "退院時要約からのコーディング",
+   "format": "summary",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "caseId": "case-g2-s12-sum-02",
+   "question": "次の退院時要約（架空症例）を読み、回腸瘻閉鎖術後に生じた手術創部の表在性膿瘍に付与するコードとして正しいものはどれか。",
+   "choices": [
+    "T81.3",
+    "K91.4",
+    "T81.4",
+    "L02.2",
+    "T81.0"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "手術創感染症などの外科的処置に関連する合併症は第ⅩⅨ章 T80－T88 に分類される。処置後の創傷膿瘍は T81.4「処置に続発する感染症、他に分類されないもの」に包含される。本症例はプロステーシスや挿入物によるものではない。",
+    "choiceNotes": [
+     "T81.3 は手術創の離開で、本症例では創の離開はない。",
+     "K91.4 は結腸瘻及び小腸瘻の機能障害で、ストーマはすでに閉鎖され、機能障害もない。",
+     null,
+     "L02.2 は体幹の皮膚膿瘍であるが、処置後の創傷膿瘍は T81.4 に包含されるため用いない。",
+     "T81.0 は処置に合併する出血及び血腫で、本症例の病態（感染・膿瘍）と異なる。"
+    ],
+    "point": "処置後の創傷膿瘍・手術創感染＝T81.4（挿入物・プロステーシスによる感染は T82－T85 の該当項目）。"
+   },
+   "sources": [
+    {
+     "ref": "icd:instruction",
+     "title": "ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "4.4.2 処置後病態及び合併症のコーディング",
+     "quote": "外科的処置及びその他の処置、たとえば手術創感染症、挿入物の機械的合併症、ショック等に関連する合併症に対しては、第ⅩⅨ章（T80 － T88）に分類項目が記載されている。"
+    },
+    {
+     "ref": "icd:naiyou19",
+     "title": "内容例示表 第ⅩⅨ章",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou19.pdf",
+     "locator": "T81.4",
+     "quote": "Ｔ81．4   処置に続発する感染症， 他に分類されないもの 膿瘍： ・腹腔内 ・縫合 処置後 ・横隔膜下 ・創傷"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s12-0035",
+   "origin": {
+    "batch": "G2-S12-SUM",
+    "key": "G2-S12-SUM-05",
+    "by": "gen:G2-S12-SUM"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G2-S12-SUM",
+     "solver": "solve:G2-S12-SUM（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G2-S12-SUM（ICD-10専門）"
+    },
+    "log": "bank/audit/G2-S12-SUM.audit.json#G2-S12-SUM-05",
+    "notes": "T81.4 包含 処置後の創傷膿瘍, 除外 プロステーシス等 (naiyou19 L3863-); T81.3 離開, T81.0 出血; instruction 4.4.2 T80-T88. Solver agrees."
+   }
+  },
+  {
+   "subject": "S12",
+   "subtopic": "退院時要約からのコーディング",
+   "format": "summary",
+   "difficulty": "standard",
+   "polarity": "negative",
+   "caseId": "case-g2-s12-sum-02",
+   "question": "次の退院時要約（架空症例）を読み、ICD-10（2013年版）の疾病データの記録の考え方に従うとき、「その他の病態」として記録しないものはどれか。",
+   "choices": [
+    "20年前の急性虫垂炎",
+    "手術創部の表在性膿瘍",
+    "2型糖尿病",
+    "本態性高血圧症"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "その他の病態とは、保健ケアのエピソードの間に並存し、又はその間に悪化して患者管理に影響を与えた病態であり、現在のエピソードに関連しない以前のエピソードに関連する病態は記載しない。20年前の急性虫垂炎は虫垂切除後に問題がなく、今回の入院の管理に影響していない。",
+    "choiceNotes": [
+     null,
+     "手術創部の表在性膿瘍は今回のエピソード中に発生し、ドレナージと抗菌薬投与を要したので、その他の病態として記録する。",
+     "2型糖尿病は並存し、入院中に血糖測定とインスリンで管理されたので、その他の病態として記録する。",
+     "本態性高血圧症は並存し、入院中も降圧薬の継続と血圧測定で管理されたので、その他の病態として記録する。"
+    ],
+    "point": "その他の病態＝今回のエピソード中に並存・悪化して患者管理に影響した病態。以前のエピソードだけに関係する病態は記載しない。"
+   },
+   "sources": [
+    {
+     "ref": "icd:instruction",
+     "title": "ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "4.4 疾病のコーディング（主要病態・その他の病態の定義）",
+     "quote": "その他の病態とは、保健ケアのエピソードの間に並存し、又はその間に悪化して、患者管理に影響を与えた病態と定義される。"
+    },
+    {
+     "ref": "icd:instruction",
+     "title": "ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "4.4 疾病のコーディング（主要病態・その他の病態の定義）",
+     "quote": "現在のエピソードに関連しない以前のエピソードに関連する病態は、記載してはいけない。"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s12-0036",
+   "origin": {
+    "batch": "G2-S12-SUM",
+    "key": "G2-S12-SUM-06",
+    "by": "gen:G2-S12-SUM"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G2-S12-SUM",
+     "solver": "solve:G2-S12-SUM（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G2-S12-SUM（ICD-10専門）"
+    },
+    "log": "bank/audit/G2-S12-SUM.audit.json#G2-S12-SUM-06",
+    "notes": "instruction 4.4 (L6856-6860) その他の病態の定義と『以前のエピソードに関連する病態は記載してはいけない』. Case supports each choice. Solver agrees."
+   }
+  },
+  {
+   "subject": "S12",
+   "subtopic": "退院時要約からのコーディング",
+   "format": "summary",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "caseId": "case-g2-s12-sum-03",
+   "question": "次の退院時要約（架空症例）を読み、「主要病態」の2型糖尿病性腎症に付与する剣印（†）コードとして正しいものはどれか。",
+   "choices": [
+    "E11.9",
+    "E11.7",
+    "E11.2",
+    "E14.2",
+    "E11.3"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "糖尿病（E10－E14）の共通4桁項目では、.2† が腎合併症を伴うもので、糖尿病性腎症（N08.3*）を含む。2型糖尿病なので E11、腎合併症で .2 となり、剣印コードは E11.2† である。",
+    "choiceNotes": [
+     "E11.9 は合併症を伴わないもので、糖尿病性腎症がある本症例には用いない。",
+     "E11.7 は多発合併症を伴うもので、本症例の糖尿病の合併症は腎症のみである（白内障は老人性と診断されている）。",
+     null,
+     "E14.2 は詳細不明の糖尿病で腎合併症を伴うもの。本症例は2型と明示されているので E11 を用いる。",
+     "E11.3 は眼合併症を伴うもの。本症例では糖尿病網膜症はなく、白内障は老人性である。"
+    ],
+    "point": "糖尿病の4桁目：.2†腎、.3†眼、.4†神経、.7 多発、.9 合併症なし。病型が明示されていれば E14 は使わない。"
+   },
+   "sources": [
+    {
+     "ref": "icd:naiyou04",
+     "title": "内容例示表 第Ⅳ章",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou04.pdf",
+     "locator": "E10－E14 共通4桁項目 .2",
+     "quote": "．2†   腎合併症を伴うもの 糖尿病性腎症＜ネフロパシー＞（Ｎ08．3＊）"
+    },
+    {
+     "ref": "icd:naiyou04",
+     "title": "内容例示表 第Ⅳ章",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou04.pdf",
+     "locator": "E10－E14 共通4桁項目 .7〜.9",
+     "quote": "．7    多発合併症を伴うもの ．8    詳細不明の合併症を伴うもの ．9    合併症を伴わないもの"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s12-0037",
+   "origin": {
+    "batch": "G2-S12-SUM",
+    "key": "G2-S12-SUM-07",
+    "by": "gen:G2-S12-SUM"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G2-S12-SUM",
+     "solver": "solve:G2-S12-SUM（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G2-S12-SUM（ICD-10専門）"
+    },
+    "log": "bank/audit/G2-S12-SUM.audit.json#G2-S12-SUM-07",
+    "notes": "naiyou04 E10-E14 共通4桁 .2† 腎合併症 incl 糖尿病性腎症(N08.3*), .3† 眼, .7 多発, .9 なし; E11.2† exists with †. Solver agrees."
+   }
+  },
+  {
+   "subject": "S12",
+   "subtopic": "退院時要約からのコーディング",
+   "format": "summary",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "caseId": "case-g2-s12-sum-03",
+   "question": "次の退院時要約（架空症例）を読み、「主要病態」の剣印（†）コードとともに用いる星印（＊）コードとして正しいものはどれか。",
+   "choices": [
+    "N08.4",
+    "N18.9",
+    "N05.9",
+    "I12.0",
+    "N08.3"
+   ],
+   "answer": 4,
+   "explanation": {
+    "correct": "N08.3* は糖尿病（共通4桁項目 .2 を伴う E10－E14†）における糸球体障害で、糖尿病性腎症の発現を示す星印コードである。星印コードは単独で使用せず、剣印コード E11.2† とともに用いる。",
+    "choiceNotes": [
+     "N08.4* はその他の内分泌、栄養及び代謝疾患（アミロイドーシスなど）における糸球体障害で、糖尿病による糸球体障害は N08.3* である。",
+     "N18.9 は慢性腎臓病、詳細不明で、星印コードではない。糖尿病性腎症は剣印・星印の組み合わせで表す。",
+     "N05.9 は詳細不明の腎炎症候群で、星印コードではなく、糖尿病性腎症の発現を示す分類でもない。",
+     "I12.0 は腎不全を伴う高血圧性腎疾患で、本症例は糖尿病性腎症と診断され、腎不全にも至っていない。",
+     null
+    ],
+    "point": "糖尿病性腎症＝E1x.2† ＋ N08.3*。星印コードは剣印コードなしに単独では使わない。"
+   },
+   "sources": [
+    {
+     "ref": "icd:naiyou14",
+     "title": "内容例示表 第ⅩⅣ章",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou14.pdf",
+     "locator": "N08.3*",
+     "quote": "Ｎ08．3＊   糖尿病（共通４桁項目．2 を伴うＥ10－Ｅ14†）における糸球体障害"
+    },
+    {
+     "ref": "icd:instruction",
+     "title": "ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "3.1.3 剣印及び星印システム",
+     "quote": "コーディングには、星印コードは決して単独で使用してはならない。"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s12-0038",
+   "origin": {
+    "batch": "G2-S12-SUM",
+    "key": "G2-S12-SUM-08",
+    "by": "gen:G2-S12-SUM"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G2-S12-SUM",
+     "solver": "solve:G2-S12-SUM（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G2-S12-SUM（ICD-10専門）"
+    },
+    "log": "bank/audit/G2-S12-SUM.audit.json#G2-S12-SUM-08",
+    "notes": "N08.3* (naiyou14), N08.4* includes amyloidosis E85.-†; N18.9/N05.9/I12.0 are not asterisk codes; instruction 3.1.3 星印単独使用禁止. Solver agrees."
+   }
+  },
+  {
+   "subject": "S12",
+   "subtopic": "退院時要約からのコーディング",
+   "format": "summary",
+   "difficulty": "advanced",
+   "polarity": "negative",
+   "caseId": "case-g2-s12-sum-03",
+   "question": "次の退院時要約（架空症例）を読み、ICD-10（2013年版）に従ったコーディングについて誤っているものはどれか。",
+   "choices": [
+    "白内障についても主要病態の糖尿病と連鎖させ、E11.3† と H28.0* にコードする。",
+    "主要病態の糖尿病性腎症には、E11.2† と N08.3* の両者を主要病態のコードとして用いる。",
+    "E11.2† と N08.3* は、単一の病態（糖尿病性腎症）の異なる側面を示すコードである。",
+    "白内障は病型の記載のない老人性白内障であり、H25.9 にコードする。"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "連鎖（剣印・星印の組み合わせ）は、同じ病態が「主要病態」の下に記録されている場合に行う。本症例の白内障は「その他の病態」に記録され、しかも糖尿病によるものではなく老人性白内障と診断されているので、E11.3†・H28.0* とはしない。",
+    "choiceNotes": [
+     null,
+     "剣印及び星印システムが使用できる場合は、両者が主要病態として用いられるので正しい。",
+     "このシステムは単一の病態に対して二つの異なる側面を示すものなので正しい。",
+     "老人性白内障で病型の記載がないので H25.9（老人性白内障、詳細不明）にコードする。正しい。"
+    ],
+    "point": "†と＊は両方が主要病態のコード。糖尿病と白内障が「主要病態」の下に一緒に記録されていなければ連鎖しない。"
+   },
+   "sources": [
+    {
+     "ref": "icd:instruction",
+     "title": "ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "4.4.2 剣印及び星印システムで使用される病態のコーディング",
+     "quote": "使用できる場合は、剣印及び星印コードの両者が主要病態として用いられる。なぜなら、このシステムは単一の病態に対して、二つの異なる側面を示しているからである。"
+    },
+    {
+     "ref": "icd:instruction",
+     "title": "ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "4.4.2 例12",
+     "quote": "糖尿病及び白内障の両者が「主要病態」の下に記録されていないので、連鎖はすべきでないことに注意する。"
+    },
+    {
+     "ref": "icd:naiyou07",
+     "title": "内容例示表 第Ⅶ章",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou07.pdf",
+     "locator": "H25.9",
+     "quote": "Ｈ25．9   老人性白内障， 詳細不明"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s12-0039",
+   "origin": {
+    "batch": "G2-S12-SUM",
+    "key": "G2-S12-SUM-09",
+    "by": "gen:G2-S12-SUM"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G2-S12-SUM",
+     "solver": "solve:G2-S12-SUM（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G2-S12-SUM（ICD-10専門）"
+    },
+    "log": "bank/audit/G2-S12-SUM.audit.json#G2-S12-SUM-09",
+    "notes": "instruction 4.4.2 剣印星印: 両者を主要病態に; 例12 (糖尿病と白内障が主要病態の下に記録されていなければ連鎖しない); H25.9 老人性白内障,詳細不明; H28.0* exists. Solver agrees."
+   }
+  },
+  {
+   "subject": "S12",
+   "subtopic": "退院時要約からのコーディング",
+   "format": "summary",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "caseId": "case-g2-s12-sum-04",
+   "question": "次の退院時要約（架空症例）を読み、「主要病態」に付与する病態の性質を表すコードとして正しいものはどれか。",
+   "choices": [
+    "L27.1",
+    "L50.0",
+    "L27.0",
+    "L23.3",
+    "R21"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "適正な薬物が適正に投与された場合の有害作用は、有害作用の性質により分類する。内服した薬剤による全身性の発疹は L27.0「薬物及び薬剤による全身の発疹」であり、薬物の分類が必要なら第ⅩⅩ章の追加外因コードを使用する。",
+    "choiceNotes": [
+     "L27.1 は薬物及び薬剤による限局性の発疹で、本症例の発疹は体幹と四肢に広がる全身性である。",
+     "L50.0 はアレルギー性じんま疹で、本症例に膨疹はなく、L27 はじんま疹（L50.-）を除外している。",
+     null,
+     "L23.3 は医薬品の皮膚接触によるアレルギー性接触皮膚炎で、本症例は内服薬によるもので外用歴もない。",
+     "R21 は発疹などの非特異性皮疹（症状）で、薬疹と診断がついているので症状コードは主要病態にしない。"
+    ],
+    "point": "適正使用の薬の副作用は「起きた病態」でコード：内服薬の全身性発疹＝L27.0、限局性＝L27.1。"
+   },
+   "sources": [
+    {
+     "ref": "icd:naiyou19",
+     "title": "内容例示表 第ⅩⅨ章",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou19.pdf",
+     "locator": "T36－T50 除外",
+     "quote": "適正な薬物が適正に投与された場合の有害作用 ［過敏症， 反応など］ は， 下記のような有害作用の性質により分類する"
+    },
+    {
+     "ref": "icd:naiyou12",
+     "title": "内容例示表 第ⅩⅡ章",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou12.pdf",
+     "locator": "L27.0〜L27.1",
+     "quote": "Ｌ27．0   薬物及び薬剤による全身の発疹 薬物の分類が必要な場合は， 追加外因コード（ⅩⅩ章）を使用する。 Ｌ27．1   薬物及び薬剤による限局性の発疹"
+    },
+    {
+     "ref": "icd:instruction",
+     "title": "ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "4.4 主要病態の定義",
+     "quote": "もし診断がなされなかった場合は、主要症状又は異常な所見もしくは問題を主要病態として選択すべきである。"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s12-0040",
+   "origin": {
+    "batch": "G2-S12-SUM",
+    "key": "G2-S12-SUM-10",
+    "by": "gen:G2-S12-SUM"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G2-S12-SUM",
+     "solver": "solve:G2-S12-SUM（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G2-S12-SUM（ICD-10専門）"
+    },
+    "log": "bank/audit/G2-S12-SUM.audit.json#G2-S12-SUM-10",
+    "notes": "naiyou19 T36-T50 除外 → 有害作用の性質で分類 (L27.-); L27.0 全身/L27.1 限局; L27 除外 じんま疹 L50.-, 接触皮膚炎 L23-L25 (naiyou12). Solver agrees."
+   }
+  },
+  {
+   "subject": "S12",
+   "subtopic": "退院時要約からのコーディング",
+   "format": "summary",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "caseId": "case-g2-s12-sum-04",
+   "question": "次の退院時要約（架空症例）を読み、原因薬剤を示す第ⅩⅩ章の追加外因コードとして正しいものはどれか。",
+   "choices": [
+    "Y40.0",
+    "X44",
+    "Y57.9",
+    "Y40.9",
+    "Y40.1"
+   ],
+   "answer": 4,
+   "explanation": {
+    "correct": "治療上又は予防上の適量で正しく投与された適正な薬物の有害作用は Y40－Y59 に分類する。原因薬剤はセフェム系（セファロスポリン系）抗菌薬なので Y40.1「セファロスポリン系及びその他のベータラクタム系抗生物質」である。",
+    "choiceNotes": [
+     "Y40.0 はペニシリン系で、本症例の原因薬剤（セフェム系）と系統が異なる。",
+     "X44 は薬物による不慮の中毒及び曝露（過量投与・誤投与など）で、適量で正しく投与された薬物の有害作用は除外される。",
+     "Y57.9 は薬物又は薬剤、詳細不明で、原因薬剤が明らかな本症例には用いない。",
+     "Y40.9 は全身性抗生物質、詳細不明で、系統（セフェム系）が明らかな本症例には用いない。",
+     null
+    ],
+    "point": "治療上の適正使用による有害作用の外因＝Y40－Y59（セフェム系＝Y40.1）。過量・誤投与なら不慮の中毒 X40－X49。"
+   },
+   "sources": [
+    {
+     "ref": "icd:naiyou20",
+     "title": "内容例示表 第ⅩⅩ章",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou20.pdf",
+     "locator": "X40－X49 除外",
+     "quote": "治療上又は予防上の適量で正しく投与された適正な薬物の有害作用 （Ｙ40－Ｙ59）"
+    },
+    {
+     "ref": "icd:naiyou20",
+     "title": "内容例示表 第ⅩⅩ章",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou20.pdf",
+     "locator": "Y40.0〜Y40.1",
+     "quote": "Ｙ40．0   ペニシリン系 Ｙ40．1   セファロスポリン系及びその他のベータラクタム系抗生物質"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s12-0041",
+   "origin": {
+    "batch": "G2-S12-SUM",
+    "key": "G2-S12-SUM-11",
+    "by": "gen:G2-S12-SUM"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G2-S12-SUM",
+     "solver": "solve:G2-S12-SUM（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G2-S12-SUM（ICD-10専門）"
+    },
+    "log": "bank/audit/G2-S12-SUM.audit.json#G2-S12-SUM-11",
+    "notes": "naiyou20 X40-X49 包含 過量・過誤投与, 除外 適正投与の有害作用(Y40-Y59); Y40.0 ペニシリン系, Y40.1 セファロスポリン系, Y40.9, Y57.9 verified. Solver agrees."
+   }
+  },
+  {
+   "subject": "S12",
+   "subtopic": "退院時要約からのコーディング",
+   "format": "summary",
+   "difficulty": "advanced",
+   "polarity": "negative",
+   "caseId": "case-g2-s12-sum-04",
+   "question": "次の退院時要約（架空症例）を読み、本症例のコーディングについて誤っているものはどれか。",
+   "choices": [
+    "主要病態には、有害作用の性質を表す L27.0 を用いる。",
+    "原因が薬剤であることを示すため、Y40.1 を主要病態とし、L27.0 を任意的追加コードとする。",
+    "原因薬剤を示す Y40.1 は、任意的追加コードとして使用できる。",
+    "有害作用の性質が明示されているので、T88.7（薬物及び薬剤の詳細不明の有害作用）は用いない。",
+    "過量投与や誤った服用ではないので、T36－T50 の中毒には分類しない。"
+   ],
+   "answer": 1,
+   "explanation": {
+    "correct": "治療上の使用による有害作用では、主要病態は病態の性質（本症例は L27.0）でコードし、原因薬剤を示す第ⅩⅩ章の外因コード（Y40.1）は任意的追加コードとして使用する。外因コードを主要病態にするのは誤り。",
+    "choiceNotes": [
+     "病態の性質を表すコードを主要病態とするので正しい。",
+     null,
+     "治療上の使用により有害作用を起こした薬物の外因コードは任意的追加コードとして使用できるので正しい。",
+     "T88.7 は明示された有害作用（A00－R99 など）を除外しているので正しい。",
+     "T36－T50 は過量投与や過失による誤った薬物の摂取・投与を包含し、適正投与の有害作用は除外されるので正しい。"
+    ],
+    "point": "副作用：主要病態＝起きた病態（L27.0 など）、薬剤＝Y40－Y59 を任意的追加。中毒（T36－T50）は過量・誤投与のとき。"
+   },
+   "sources": [
+    {
+     "ref": "icd:instruction",
+     "title": "ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "4.4.2 例15",
+     "quote": "治療上の使用により有害作用を起こした抗アレルギー薬及び制吐薬に対する外因コード（Y43.0）は、任意的追加コードとして使用することができる。"
+    },
+    {
+     "ref": "icd:naiyou19",
+     "title": "内容例示表 第ⅩⅨ章",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou19.pdf",
+     "locator": "T88.7 除外",
+     "quote": "薬物及び薬剤の明示された有害作用（Ａ00－Ｒ99， Ｔ80－Ｔ88．6， Ｔ88．8）"
+    },
+    {
+     "ref": "icd:naiyou19",
+     "title": "内容例示表 第ⅩⅨ章",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou19.pdf",
+     "locator": "T36－T50 包含",
+     "quote": "包含： 過量投与 過失による誤った薬物の摂取又は投与"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s12-0042",
+   "origin": {
+    "batch": "G2-S12-SUM",
+    "key": "G2-S12-SUM-12",
+    "by": "gen:G2-S12-SUM"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G2-S12-SUM",
+     "solver": "solve:G2-S12-SUM（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G2-S12-SUM（ICD-10専門）"
+    },
+    "log": "bank/audit/G2-S12-SUM.audit.json#G2-S12-SUM-12",
+    "notes": "instruction 4.4.2 例15 (外因 Y コードは任意的追加); T88.7 除外 明示された有害作用 (naiyou19 L4156); T36-T50 包含 過量投与/誤投与. Overlaps #9/#10 but tests the synthesis; acceptable. Solver agrees."
    }
   }
  ]

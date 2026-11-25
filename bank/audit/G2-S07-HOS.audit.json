@@ -1,0 +1,172 @@
+{
+ "verdicts": [
+  {
+   "key": "G2-S07-HOS-01",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "mgmt:byouinhoukoku-yougo 平均在院日数式(p4)。36000/2400=15.0。誤肢再計算 7.5/14.7/15.3/98.6 全て一致。solver一致"
+  },
+  {
+   "key": "G2-S07-HOS-02",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "mgmt:byouinhoukoku-yougo・stats:iryoshisetsu-byoinhokoku-r7-gaiyou(11) 病床利用率=延数/Σ(月間日数×月末病床数)×100。2025年1-3月=90日・4-12月=275日を確認。84000→80.0%。誤肢76.7/81.2/83.7/92.1再計算一致"
+  },
+  {
+   "key": "G2-S07-HOS-03",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "mgmt:byouinhoukoku-yougo 月末病床利用率=月末在院患者数/月末病床数×100。171/180=95.0。誤肢5.0/90.0/94.7/105.3再計算一致"
+  },
+  {
+   "key": "G2-S07-HOS-04",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "mgmt:byouinhoukoku-yougo 療養病床の式(移された患者数を両方加算)、stats:iryoshisetsu-byoinhokoku-r7-gaiyou(12)にも同式。21000/120=175.0。誤肢87.5/190.9/280.0/323.1再計算一致"
+  },
+  {
+   "key": "G2-S07-HOS-05",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "stats:iryoshisetsu-byoinhokoku-r7-gaiyou(9)(10) 1日平均外来患者数=年間外来患者延数/当該年の年間日数、※令和7年は365日。200.0。誤肢150/199.5/298.0/350再計算一致"
+  },
+  {
+   "key": "G2-S07-HOS-06",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "stats:iryoshisetsu-byoinhokoku-r7-gaiyou(7) 新入院・退院患者に当日入退院を含む。3300/220=15.0。誤肢7.5/13.75→13.8/15.7/16.5一致"
+  },
+  {
+   "key": "G2-S07-HOS-07",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "mgmt:byouinhoukoku-yougo 病床利用率・平均在院日数の両式。300×365×0.8=87600、/5475=16.0。誤肢8.0/12.8/20.0/25.0一致"
+  },
+  {
+   "key": "G2-S07-HOS-08",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "mgmt:byouinhoukoku-yougo・stats:iryoshisetsu-byoinhokoku-r7-gaiyou(6) 在院患者=毎日24時現在。A2+B0+C1+D1+E3=7。誤肢6(D不算入)/8(B算入)/9(退院日算入)/10再現一致"
+  },
+  {
+   "key": "G2-S07-HOS-09",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "mgmt:byouinhoukoku-yougo 在院患者の定義(p3)を逐語確認。誤肢は時点・対象の改変で明確に誤り"
+  },
+  {
+   "key": "G2-S07-HOS-10",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "mgmt:byouinhoukoku-yougo・stats:iryoshisetsu-byoinhokoku-r7-gaiyou(7)(11)(12) 各肢の算式・定義を照合。Dのみ誤り(分母はΣ月間日数×月末病床数)"
+  },
+  {
+   "key": "G2-S07-HOS-11",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "mgmt:byouinhoukoku-yougo・stats:iryoshisetsu-byoinhokoku-r7-gaiyou(8)(9)(10) 外来患者の定義(科ごとに診療録作成ならそれぞれ計上)。Cのみ誤り。E=※令和7年は365日"
+  },
+  {
+   "key": "G2-S07-HOS-12",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "mgmt:byouinhoukoku-r07-kekka 本文・表3/表4を照合: 全病床77.9%(前年77.0,+0.9)、平均在院25.1日(−0.5)、精神246.3/療養114.7/結核55.9/一般15.3/感染症9.9日、利用率 療養85.4>一般74.7、感染症10.9最低。Dのみ誤り。設問に年次明記"
+  }
+ ]
+}

@@ -1,0 +1,95 @@
+{
+ "answers": [
+  {
+   "key": "lg-06-00",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": ""
+  },
+  {
+   "key": "lg-06-01",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": ""
+  },
+  {
+   "key": "lg-06-02",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": ""
+  },
+  {
+   "key": "lg-06-04",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": ""
+  },
+  {
+   "key": "lg-06-05",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": ""
+  },
+  {
+   "key": "lg-06-06",
+   "answer": 0,
+   "confidence": "medium",
+   "ambiguous": false,
+   "note": "JSH2014 evidence level I = SR/RCTメタ解析 (Minds2007型); to confirm in source"
+  },
+  {
+   "key": "lg-06-07",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": ""
+  },
+  {
+   "key": "lg-06-08",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": ""
+  },
+  {
+   "key": "lg-06-09",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": ""
+  },
+  {
+   "key": "lg-06-10",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": ""
+  },
+  {
+   "key": "lg-06-11",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": ""
+  },
+  {
+   "key": "lg-06-12",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": ""
+  },
+  {
+   "key": "lg-06-13",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": ""
+  }
+ ]
+}

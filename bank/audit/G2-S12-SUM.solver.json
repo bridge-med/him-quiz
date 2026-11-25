@@ -1,0 +1,88 @@
+{
+ "answers": [
+  {
+   "key": "#0",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "S72.0 頚部骨折(大腿骨頚部)"
+  },
+  {
+   "key": "#1",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "W10 階段・段差からの転落"
+  },
+  {
+   "key": "#2",
+   "answer": 0,
+   "confidence": "medium",
+   "ambiguous": false,
+   "note": "術後肺炎=J95.8(索引: 肺炎,術後)。J18.9は処置後の分類でなく不適"
+  },
+  {
+   "key": "#3",
+   "answer": 1,
+   "confidence": "medium",
+   "ambiguous": false,
+   "note": "Z43.2 回腸瘻造設に対する手当て(閉鎖目的)"
+  },
+  {
+   "key": "#4",
+   "answer": 4,
+   "confidence": "medium",
+   "ambiguous": false,
+   "note": "T81.4 処置に続発する感染症(手術創膿瘍)"
+  },
+  {
+   "key": "#5",
+   "answer": 3,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "20年前の虫垂炎は入院ケアに影響せず記録しない"
+  },
+  {
+   "key": "#6",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "E11.2† 糖尿病性腎症"
+  },
+  {
+   "key": "#7",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "N08.3* 糖尿病における糸球体障害"
+  },
+  {
+   "key": "#8",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "白内障は老人性で糖尿病と無関連のため連鎖不可(E11.3は糖尿病性網膜症)"
+  },
+  {
+   "key": "#9",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "L27.0 薬物による全身性発疹"
+  },
+  {
+   "key": "#10",
+   "answer": 3,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "Y40.1 セファロスポリン系"
+  },
+  {
+   "key": "#11",
+   "answer": 4,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "Y40.1は主要病態にしない(外因コードは追加コード)"
+  }
+ ]
+}

@@ -1,0 +1,4 @@
+{"verdicts":[
+{"key":"G2-S03-KAI-09","verdict":"pass","blindAnswer":1,"checks":{"answer":true,"distractors":true,"stem":true,"explanations":true,"sources":true,"asOf":true,"domain":true},"notes":"Blind=1 matches key. law:介護保険法 第46条第2項（居宅介護サービス計画費は基準額全額、百分の九十の規定なし）; 第49条の2第1項（第一号被保険者・百分の八十）・第2項（百分の七十）, cached版施行日2026-10-01. ins:kaigo-hoken-gaiyo L152「居宅介護支援は全額が保険給付される」, L63 2割H27.8/3割H30.8. ins:kaigo-hoken-kaisei-r08: 新設の登録施設介護支援に1割負担（施行令和9年4月以降）で、居宅介護支援の全額給付は2026年12月時点で不変。2割負担範囲見直しは未結論（gaiyo L852）。validate 0 errors."},
+{"key":"G2-S03-KAI-10","verdict":"pass","blindAnswer":2,"checks":{"answer":true,"distractors":true,"stem":true,"explanations":true,"sources":true,"asOf":true,"domain":true},"notes":"Blind=2 matches key. law:介護保険法 第123条第1項第2号 百分の十七・五 → 800×0.175=140億円; 第1号 百分の十二・五; 第121条第1項第1号 百分の二十・第2号 百分の十五; 第124条第1項 市町村 百分の十二・五（point の記述と一致）。calc OK, validate 0 errors. pointの「国15％」は第121条の定率負担（調整交付金第122条は別）として正確。"}
+]}

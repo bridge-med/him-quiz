@@ -1,0 +1,12 @@
+{"answers":[
+{"key":"lg-10-15","answer":1,"confidence":"high","ambiguous":false,"note":"instruction 3.2.4 相互参照"},
+{"key":"lg-10-16","answer":0,"confidence":"high","ambiguous":false,"note":"instruction 3.2.4 NEC"},
+{"key":"lg-10-18","answer":1,"confidence":"high","ambiguous":false,"note":"A17.0† G01*"},
+{"key":"lg-10-19","answer":1,"confidence":"high","ambiguous":false,"note":"形態コード5桁: 4桁組織型+1桁性状"},
+{"key":"lg-10-20","answer":0,"confidence":"high","ambiguous":false,"note":"O80 単胎自然分娩"},
+{"key":"lg-10-21","answer":2,"confidence":"high","ambiguous":false,"note":"Y40-Y59 治療上の使用で有害作用"},
+{"key":"lg-10-22","answer":1,"confidence":"high","ambiguous":false,"note":"4.1.5 一般原則"},
+{"key":"lg-10-23","answer":1,"confidence":"high","ambiguous":false,"note":"4.1.4"},
+{"key":"lg-10-24","answer":0,"confidence":"medium","ambiguous":false,"note":"複数死因コーディング: 全病態コード化"},
+{"key":"lg-10-25","answer":1,"confidence":"high","ambiguous":false,"note":"3.2.3 第4桁のダッシュ"}
+]}

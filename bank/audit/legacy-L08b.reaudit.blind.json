@@ -1,0 +1,15 @@
+{"answers":[
+{"key":"lg-08-16","answer":0,"confidence":"high","ambiguous":false,"note":"医療法6条の4: 7日以内、担当医師が作成・交付・説明。短期退院は例外、電磁的提供可、傷病名・主要症状は記載事項"},
+{"key":"lg-08-18","answer":3,"confidence":"high","ambiguous":false,"note":"医師法施行規則23条に家族構成図はない"},
+{"key":"lg-08-19","answer":3,"confidence":"high","ambiguous":false,"note":"POMR: 基礎データ・問題リスト・初期計画・経過記録"},
+{"key":"lg-08-21","answer":0,"confidence":"high","ambiguous":false,"note":"ガイダンス: 退院時診断=必須、デバイス・手術処置=推奨"},
+{"key":"lg-08-22","answer":1,"confidence":"medium","ambiguous":false,"note":"同意書は診療記録の一部"},
+{"key":"lg-08-23","answer":1,"confidence":"high","ambiguous":false,"note":"がん登録推進法施行規則: 進展度"},
+{"key":"lg-08-24","answer":1,"confidence":"high","ambiguous":false,"note":"院内感染発生率"},
+{"key":"lg-08-25","answer":1,"confidence":"high","ambiguous":false,"note":"二重線・日付・修正者"},
+{"key":"lg-08-26","answer":1,"confidence":"high","ambiguous":false,"note":"電子署名法2条1項 両要件"},
+{"key":"lg-08-27","answer":1,"confidence":"high","ambiguous":false,"note":"存在証明・非改ざん証明"},
+{"key":"lg-08-28","answer":1,"confidence":"high","ambiguous":false,"note":"業務指針2026 4-3 監査の定義"},
+{"key":"lg-08-29","answer":1,"confidence":"high","ambiguous":false,"note":"アクセス記録・不正検知"},
+{"key":"lg-08-30","answer":1,"confidence":"high","ambiguous":false,"note":"本人の開示請求権"}
+]}

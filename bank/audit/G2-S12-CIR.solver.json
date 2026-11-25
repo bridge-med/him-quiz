@@ -1,0 +1,17 @@
+{"answers":[
+{"key":"#0","answer":2,"confidence":"high","ambiguous":false,"note":"I11.0 心不全を伴う高血圧性心疾患"},
+{"key":"#1","answer":4,"confidence":"high","ambiguous":false,"note":"I13.2 心不全及び腎不全の両方を伴う"},
+{"key":"#2","answer":3,"confidence":"high","ambiguous":false,"note":"naiyou09: 腎硬化症はI12の包含、I15は除外"},
+{"key":"#3","answer":1,"confidence":"medium","ambiguous":false,"note":"I15は高血圧自体へのケアでなければ主要病態の優先コードとしない（I15注）"},
+{"key":"#4","answer":0,"confidence":"high","ambiguous":false,"note":"I21.0 前壁貫壁性急性心筋梗塞"},
+{"key":"#5","answer":4,"confidence":"high","ambiguous":false,"note":"4週超でI25.8、症状なしのみI25.2"},
+{"key":"#6","answer":0,"confidence":"high","ambiguous":false,"note":"naiyou09注: 期間は発症から治療のための入院まで"},
+{"key":"#7","answer":2,"confidence":"high","ambiguous":false,"note":"I22.1 下壁の再発性心筋梗塞"},
+{"key":"#8","answer":2,"confidence":"high","ambiguous":false,"note":"I25.2 陳旧性心筋梗塞"},
+{"key":"#9","answer":0,"confidence":"high","ambiguous":false,"note":"a,b正。c=I24.1、d=I25.5、e=Q24.5"},
+{"key":"#10","answer":4,"confidence":"high","ambiguous":false,"note":"G45.9"},
+{"key":"#11","answer":4,"confidence":"high","ambiguous":false,"note":"破裂くも膜下出血はI60、Q28は非破裂先天性"},
+{"key":"#12","answer":0,"confidence":"high","ambiguous":false,"note":"後遺症の型を主要病態、I69は任意追加コード"},
+{"key":"#13","answer":4,"confidence":"high","ambiguous":false,"note":"I69の原因はI60-I67.1,I67.4-I67.9でありG45は含まない"},
+{"key":"#14","answer":0,"confidence":"high","ambiguous":false,"note":"I10に悪性高血圧が含まれる"}
+]}

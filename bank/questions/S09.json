@@ -55,13 +55,13 @@
     "key": "lg-01-08",
     "by": "旧版（v2・AI作成）"
    },
-   "status": "provisional",
+   "status": "verified",
    "verification": {
     "date": "2026-11-25",
     "method": [
      "独立ブラインド解答（別モデル）",
      "領域監査（医療管理・情報）で修正",
-     "修正後の再監査は未実施",
+     "修正後の独立再監査（pass）",
      "引用の機械照合（一次資料キャッシュ）",
      "スキーマ・ICDコード・計算の機械検査"
     ],
@@ -69,10 +69,10 @@
      "author": "旧版（AI作成・出典なし）",
      "solver": "solve:L01（別モデル・正答を見ずに解答）",
      "auditor": "audit:L01a（医療管理・情報）",
-     "reauditor": null
+     "reauditor": "reaudit:L01a"
     },
     "log": "bank/audit/legacy-L01a.audit.json#lg-01-08",
-    "notes": "日本クリニカルパス学会 定義（2026）、業務指針2026 5-13(2)を確認。key正、solver一致。"
+    "notes": "再監査: x-legacy-L01a:jscp-about 定義（2026）：時間軸に沿って示した標準診療計画、多職種協働により作成・運用（ライブページを再取得し、定義(2026)がHTMLコメント外で掲示されていることを確認）。him:jhim-gyomu-shishin-2026 5-13（2）バリアンス分析で B の注を確認。｜日本クリニカルパス学会 定義（2026）、業務指針2026 5-13(2)を確認。key正、solver一致。"
    }
   },
   {
@@ -136,13 +136,13 @@
     "key": "lg-04-02",
     "by": "旧版（v2・AI作成）"
    },
-   "status": "provisional",
+   "status": "verified",
    "verification": {
     "date": "2026-11-25",
     "method": [
      "独立ブラインド解答（別モデル）",
      "領域監査（医学用語）で修正",
-     "修正後の再監査は未実施",
+     "修正後の独立再監査（pass）",
      "引用の機械照合（一次資料キャッシュ）",
      "スキーマ・ICDコード・計算の機械検査"
     ],
@@ -150,10 +150,10 @@
      "author": "旧版（AI作成・出典なし）",
      "solver": "solve:L04（別モデル・正答を見ずに解答）",
      "auditor": "audit:L04a（医学用語）",
-     "reauditor": null
+     "reauditor": "reaudit:L04a"
     },
     "log": "bank/audit/legacy-L04a.audit.json#lg-04-02",
-    "notes": "神戸大学病院 診療録記載マニュアル SOAPの項: S=Subjective Data（主訴・症状経過等の主観的情報）、O=Objective Data、A=Assessment、P=Plan。院内マニュアルだが定義は一般的なPOSの整理。"
+    "notes": "再監査: him:kobeu-shinryoroku-manual-2023 SOAP項: S=Subjective Data（主訴・症状経過等）、O=Objective Data を確認。Symptomの説明も根拠と整合。｜神戸大学病院 診療録記載マニュアル SOAPの項: S=Subjective Data（主訴・症状経過等の主観的情報）、O=Objective Data、A=Assessment、P=Plan。院内マニュアルだが定義は一般的なPOSの整理。"
    }
   },
   {
@@ -284,13 +284,13 @@
     "key": "lg-08-03",
     "by": "旧版（v2・AI作成）"
    },
-   "status": "provisional",
+   "status": "verified",
    "verification": {
     "date": "2026-11-25",
     "method": [
      "独立ブラインド解答（別モデル）",
      "領域監査（法令・制度）で修正",
-     "修正後の再監査は未実施",
+     "修正後の独立再監査（pass）",
      "引用の機械照合（一次資料キャッシュ）",
      "スキーマ・ICDコード・計算の機械検査"
     ],
@@ -298,10 +298,10 @@
      "author": "旧版（AI作成・出典なし）",
      "solver": "solve:L08（別モデル・正答を見ずに解答）",
      "auditor": "audit:L08a（法令・制度）",
-     "reauditor": null
+     "reauditor": "reaudit:L08a"
     },
     "log": "bank/audit/legacy-L08a.audit.json#lg-08-03",
-    "notes": "him:jhim-discharge-summary-guidance-2019 ＜退院サマリーの構造＞（必須記載項目／推奨記載項目の区分）。"
+    "notes": "再監査: him:jhim-discharge-summary-guidance-2019 ＜退院サマリーの構造＞ 2)退院時診断・3)アレルギー・7)入院経過・11)退院時方針＝必須、4)デバイス情報・8)手術・処置情報＝推奨（該当時）を確認。解答一意。｜him:jhim-discharge-summary-guidance-2019 ＜退院サマリーの構造＞（必須記載項目／推奨記載項目の区分）。"
    }
   },
   {
@@ -365,13 +365,13 @@
     "key": "lg-08-04",
     "by": "旧版（v2・AI作成）"
    },
-   "status": "provisional",
+   "status": "verified",
    "verification": {
     "date": "2026-11-25",
     "method": [
      "独立ブラインド解答（別モデル）",
      "領域監査（法令・制度）で修正",
-     "修正後の再監査は未実施",
+     "修正後の独立再監査（pass）",
      "引用の機械照合（一次資料キャッシュ）",
      "スキーマ・ICDコード・計算の機械検査"
     ],
@@ -379,10 +379,10 @@
      "author": "旧版（AI作成・出典なし）",
      "solver": "solve:L08（別モデル・正答を見ずに解答）",
      "auditor": "audit:L08a（法令・制度）",
-     "reauditor": null
+     "reauditor": "reaudit:L08a"
     },
     "log": "bank/audit/legacy-L08a.audit.json#lg-08-04",
-    "notes": "ins:r08-kihon-shisetsukijun-tsuchi 第4 1(5)・(7)・(9)、2(2)（令和8年度：加算1は専任常勤＋うち1名専従、加算2は専任1名以上）。病床数・電子カルテの要件なし。"
+    "notes": "再監査: ins:r08-kihon-shisetsukijun-tsuchi 第4 1(5) 退院2,000名ごと専任常勤（うち1名専従）、2(2) 専任1名以上、1(7) 電子的な一覧表（電子カルテ導入要件なし）、1(9) 診療情報の提供、病床数要件なしを本文で確認。｜ins:r08-kihon-shisetsukijun-tsuchi 第4 1(5)・(7)・(9)、2(2)（令和8年度：加算1は専任常勤＋うち1名専従、加算2は専任1名以上）。病床数・電子カルテの要件なし。"
    }
   },
   {
@@ -446,13 +446,13 @@
     "key": "lg-08-06",
     "by": "旧版（v2・AI作成）"
    },
-   "status": "provisional",
+   "status": "verified",
    "verification": {
     "date": "2026-11-25",
     "method": [
      "独立ブラインド解答（別モデル）",
      "領域監査（法令・制度）で修正",
-     "修正後の再監査は未実施",
+     "修正後の独立再監査（pass）",
      "引用の機械照合（一次資料キャッシュ）",
      "スキーマ・ICDコード・計算の機械検査"
     ],
@@ -460,10 +460,10 @@
      "author": "旧版（AI作成・出典なし）",
      "solver": "solve:L08（別モデル・正答を見ずに解答）",
      "auditor": "audit:L08a（法令・制度）",
-     "reauditor": null
+     "reauditor": "reaudit:L08a"
     },
     "log": "bank/audit/legacy-L08a.audit.json#lg-08-06",
-    "notes": "him:jhim-gyomu-shishin-2026 5-13(2)（標準的な経過〈達成目標〉からのずれ）・(3)（適用率・量的点検）。"
+    "notes": "再監査: him:jhim-gyomu-shishin-2026 5-13(2) バリアンス＝個々の症例における標準的な経過（達成目標）からのずれ、5-13(3) 適用率・バリアンス発生率、量的点検でパス適用の確認を確認。｜him:jhim-gyomu-shishin-2026 5-13(2)（標準的な経過〈達成目標〉からのずれ）・(3)（適用率・量的点検）。"
    }
   },
   {
@@ -599,13 +599,13 @@
     "key": "lg-08-19",
     "by": "旧版（v2・AI作成）"
    },
-   "status": "provisional",
+   "status": "verified",
    "verification": {
     "date": "2026-11-25",
     "method": [
      "独立ブラインド解答（別モデル）",
      "領域監査（法令・制度）で修正",
-     "修正後の再監査は未実施",
+     "修正後の独立再監査（pass）",
      "引用の機械照合（一次資料キャッシュ）",
      "スキーマ・ICDコード・計算の機械検査"
     ],
@@ -613,10 +613,10 @@
      "author": "旧版（AI作成・出典なし）",
      "solver": "solve:L08（別モデル・正答を見ずに解答）",
      "auditor": "audit:L08b（法令・制度）",
-     "reauditor": null
+     "reauditor": "reaudit:L08b"
     },
     "log": "bank/audit/legacy-L08b.audit.json#lg-08-19",
-    "notes": "x-legacy-L08:kwtan-pomr-1981 p.116（Weedの4つの基本的要素：データベース・問題リスト・初期計画・経過記録）、初期計画のDx/Rx/Ex、問題への番号（＃）付与を確認。ブラインド解答一致。"
+    "notes": "再監査: x-legacy-L08:kwtan-pomr-1981 l.191-192『Weedは診療記録の4つの基本的要素として①データベース②問題リスト③初期計画④経過記録』、初期計画のDx/Rx/Ex記述を確認。｜x-legacy-L08:kwtan-pomr-1981 p.116（Weedの4つの基本的要素：データベース・問題リスト・初期計画・経過記録）、初期計画のDx/Rx/Ex、問題への番号（＃）付与を確認。ブラインド解答一致。"
    }
   },
   {
@@ -680,13 +680,13 @@
     "key": "lg-08-21",
     "by": "旧版（v2・AI作成）"
    },
-   "status": "provisional",
+   "status": "verified",
    "verification": {
     "date": "2026-11-25",
     "method": [
      "独立ブラインド解答（別モデル）",
      "領域監査（法令・制度）で修正",
-     "修正後の再監査は未実施",
+     "修正後の独立再監査（pass）",
      "引用の機械照合（一次資料キャッシュ）",
      "スキーマ・ICDコード・計算の機械検査"
     ],
@@ -694,10 +694,10 @@
      "author": "旧版（AI作成・出典なし）",
      "solver": "solve:L08（別モデル・正答を見ずに解答）",
      "auditor": "audit:L08b（法令・制度）",
-     "reauditor": null
+     "reauditor": "reaudit:L08b"
     },
     "log": "bank/audit/legacy-L08b.audit.json#lg-08-21",
-    "notes": "him:jhim-discharge-summary-guidance-2019＜退院サマリーの構造＞（退院時診断＝必須、デバイス情報・手術処置情報＝推奨）、ins:r08-kihon-shisetsukijun-tsuchi 第4（診療録管理体制加算1(8)：退院日の翌日から起算して14日以内の作成・提出が毎月9割以上）を確認。"
+    "notes": "再監査: him:jhim-discharge-summary-guidance-2019(2019年9月25日) ＜退院サマリーの構造＞: 2)退院時診断=必須、4)デバイス情報・8)手術・処置情報=推奨。ins:r08-kihon-shisetsukijun-tsuchi 第4 1(8) 加算1: 14日以内作成・毎月9割以上を確認。｜him:jhim-discharge-summary-guidance-2019＜退院サマリーの構造＞（退院時診断＝必須、デバイス情報・手術処置情報＝推奨）、ins:r08-kihon-shisetsukijun-tsuchi 第4（診療録管理体制加算1(8)：退院日の翌日から起算して14日以内の作成・提出が毎月9割以上）を確認。"
    }
   },
   {
@@ -761,13 +761,13 @@
     "key": "lg-08-22",
     "by": "旧版（v2・AI作成）"
    },
-   "status": "provisional",
+   "status": "verified",
    "verification": {
     "date": "2026-11-25",
     "method": [
      "独立ブラインド解答（別モデル）",
      "領域監査（法令・制度）で修正",
-     "修正後の再監査は未実施",
+     "修正後の独立再監査（pass）",
      "引用の機械照合（一次資料キャッシュ）",
      "スキーマ・ICDコード・計算の機械検査"
     ],
@@ -775,10 +775,10 @@
      "author": "旧版（AI作成・出典なし）",
      "solver": "solve:L08（別モデル・正答を見ずに解答）",
      "auditor": "audit:L08b（法令・制度）",
-     "reauditor": null
+     "reauditor": "reaudit:L08b"
     },
     "log": "bank/audit/legacy-L08b.audit.json#lg-08-22",
-    "notes": "him:jhim-gyomu-shishin-2026 5-3（量的点検の対象に説明と同意に関する文書を含む）、him:jhim-kiroku-shishin-2024 4(2)⑧・(3)③（入院同意書等の整備、説明者と患者本人の署名・押印の徹底）を確認。"
+    "notes": "再監査: him:jhim-gyomu-shishin-2026 5-3(1) 量的点検の対象に『説明と同意に関する文書』; him:jhim-kiroku-shishin-2024 4⑵⑧ 入院同意書・誓約書を入院時文書として整備、4⑶③ 説明者と患者本人の署名・押印の徹底。いずれも日本診療情報管理学会。｜him:jhim-gyomu-shishin-2026 5-3（量的点検の対象に説明と同意に関する文書を含む）、him:jhim-kiroku-shishin-2024 4(2)⑧・(3)③（入院同意書等の整備、説明者と患者本人の署名・押印の徹底）を確認。"
    }
   },
   {
@@ -842,13 +842,13 @@
     "key": "lg-08-25",
     "by": "旧版（v2・AI作成）"
    },
-   "status": "provisional",
+   "status": "verified",
    "verification": {
     "date": "2026-11-25",
     "method": [
      "独立ブラインド解答（別モデル）",
      "領域監査（法令・制度）で修正",
-     "修正後の再監査は未実施",
+     "修正後の独立再監査（pass）",
      "引用の機械照合（一次資料キャッシュ）",
      "スキーマ・ICDコード・計算の機械検査"
     ],
@@ -856,10 +856,10 @@
      "author": "旧版（AI作成・出典なし）",
      "solver": "solve:L08（別モデル・正答を見ずに解答）",
      "auditor": "audit:L08b（法令・制度）",
-     "reauditor": null
+     "reauditor": "reaudit:L08b"
     },
     "log": "bank/audit/legacy-L08b.audit.json#lg-08-25",
-    "notes": "him:tohoku-shinryoroku-kisai-2023（訂正は訂正前の文字が見えるように二重線）、him:jhim-kiroku-shishin-2024 3(3)（原記録を残し日時・理由等を併記）、him:kobeu-shinryoroku-manual-2023（修正・削除の履歴を残す）を確認。ブラインド解答一致。"
+    "notes": "再監査: him:tohoku-shinryoroku-kisai-2023『訂正は訂正前の文字が見えるように二重線で行う』; him:jhim-kiroku-shishin-2024 3⑶ 原記録は残して追記・訂正し日時・理由等を併記; him:kobeu-shinryoroku-manual-2023 【削除・修正】修正箇所・修正者・修正した日時を記載(修正者名の根拠)。｜him:tohoku-shinryoroku-kisai-2023（訂正は訂正前の文字が見えるように二重線）、him:jhim-kiroku-shishin-2024 3(3)（原記録を残し日時・理由等を併記）、him:kobeu-shinryoroku-manual-2023（修正・削除の履歴を残す）を確認。ブラインド解答一致。"
    }
   },
   {
@@ -916,13 +916,13 @@
     "key": "lg-08-28",
     "by": "旧版（v2・AI作成）"
    },
-   "status": "provisional",
+   "status": "verified",
    "verification": {
     "date": "2026-11-25",
     "method": [
      "独立ブラインド解答（別モデル）",
      "領域監査（法令・制度）で修正",
-     "修正後の再監査は未実施",
+     "修正後の独立再監査（pass）",
      "引用の機械照合（一次資料キャッシュ）",
      "スキーマ・ICDコード・計算の機械検査"
     ],
@@ -930,10 +930,10 @@
      "author": "旧版（AI作成・出典なし）",
      "solver": "solve:L08（別モデル・正答を見ずに解答）",
      "auditor": "audit:L08b（法令・制度）",
-     "reauditor": null
+     "reauditor": "reaudit:L08b"
     },
     "log": "bank/audit/legacy-L08b.audit.json#lg-08-28",
-    "notes": "him:jhim-gyomu-shishin-2026 4-3（点検＝個々の記録の日常的確認・不備の是正、監査＝体制・運用が基準に適合しているかを評価し医療の質の改善につなげる活動）を確認。"
+    "notes": "再監査: him:jhim-gyomu-shishin-2026 4-3 点検と監査の定義を原文で確認(選択肢1=監査、2=点検)。｜him:jhim-gyomu-shishin-2026 4-3（点検＝個々の記録の日常的確認・不備の是正、監査＝体制・運用が基準に適合しているかを評価し医療の質の改善につなげる活動）を確認。"
    }
   },
   {
@@ -1006,6 +1006,784 @@
     },
     "log": "bank/audit/legacy-L08b.audit.json#lg-08-31",
     "notes": "x-legacy-L08:kwtan-pomr-1981 p.116（S＝主観的情報、O＝客観的情報、A＝評価〈assessment〉、P＝計画）を確認。ブラインド解答一致。"
+   }
+  },
+  {
+   "subject": "S09",
+   "subtopic": "退院時要約からの情報抽出",
+   "format": "summary",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "caseId": "case-g2-s09-sum-01",
+   "question": "次の退院時要約（架空症例）を読み，「主訴，または入院理由」欄の記載として，退院サマリー作成に関するガイダンスに照らして最も適切なものはどれか。",
+   "choices": [
+    "主訴：健診での便潜血検査陽性",
+    "入院理由：内視鏡的腫瘍切除を受ける",
+    "主訴：入院4日目に生じた下血",
+    "主訴：腹痛",
+    "主訴：高血圧症"
+   ],
+   "answer": 1,
+   "explanation": {
+    "correct": "ガイダンスは，症状や愁訴に基づく入院では患者の主観的な徴候として「主訴」を，予定手術入院や異常検査値に基づく検査・治療入院など明らかな症候がない場合は「入院理由」（例：「内視鏡的ポリープ切除を受ける」）を記載するとしている。本例は自覚症状のない早期癌に対する予定治療入院なので，入院理由を記載する。",
+    "choiceNotes": [
+     "便潜血検査陽性は検査値の異常であり患者の主観的な訴えではない。症候がない予定入院なので入院理由を記載する。",
+     null,
+     "下血は入院4日目に生じた出来事で，入院の契機ではない（入院経過に記載する）。",
+     "現病歴に「腹痛・血便などの自覚症状はない」とあり，要約から読み取れない。",
+     "高血圧症は既存症として退院時診断名列に挙げるもので，今回入院の主訴ではない。"
+    ],
+    "point": "症状で入院→主訴，予定手術・検査入院で症候なし→入院理由（「〜を受ける」「検査入院」「教育入院」等）。"
+   },
+   "sources": [
+    {
+     "ref": "him:jhim-discharge-summary-guidance-2019",
+     "title": "退院サマリー作成に関するガイダンス",
+     "url": "https://jhim-e.com/pdf/guidance.pdf",
+     "locator": "退院サマリーの構造の解説 5)〔主訴，または入院理由〕",
+     "quote": "予定手術入院や異常検査値などに基づく検査／治療入院の場合や明らかな症候が見られない場合は，入院理由と"
+    }
+   ],
+   "asOf": "退院サマリー作成に関するガイダンス（2019年9月）／診療情報の記録指針2024",
+   "id": "s09-0001",
+   "origin": {
+    "batch": "G2-S09-SUM",
+    "key": "G2-S09-SUM-01",
+    "by": "gen:G2-S09-SUM"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（実務・DPC・がん登録）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G2-S09-SUM",
+     "solver": "solve:G2-S09-SUM（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G2-S09-SUM（実務・DPC・がん登録）"
+    },
+    "log": "bank/audit/G2-S09-SUM.audit.json#G2-S09-SUM-01",
+    "notes": "him:jhim-discharge-summary-guidance-2019 5)〔主訴，または入院理由〕: 予定治療入院・症候なし→入院理由（例「内視鏡的ポリープ切除を受ける」）。便潜血陽性は検査異常で主訴に当たらず、腹痛は現病歴で否定。blind一致。"
+   }
+  },
+  {
+   "subject": "S09",
+   "subtopic": "退院時要約からの情報抽出",
+   "format": "summary",
+   "difficulty": "standard",
+   "polarity": "negative",
+   "caseId": "case-g2-s09-sum-01",
+   "question": "次の退院時要約（架空症例）を読み，退院時診断名列に記載する傷病として，退院サマリー作成に関するガイダンスに照らして適切でないものはどれか。",
+   "choices": [
+    "S状結腸癌",
+    "ESD後の遅発性出血",
+    "20歳代の急性虫垂炎",
+    "2型糖尿病",
+    "前立腺肥大症"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "ガイダンスは，退院時診断名列には入院の契機となった疾病だけでなく，現在も介入を要する・影響している「既存症」も記載し，過去完了の既往は「入院までの経過」欄の既往歴として表記するとしている。後遺症もなく現在の診療に影響しない20歳代の虫垂炎は既往歴にあたる。",
+    "choiceNotes": [
+     "今回入院で主として対象とした疾病であり，診断名列の先頭に記載する。",
+     "入院中に発症し止血術を要した病態で，診断名列に記載し転帰を登録する。",
+     null,
+     "近医で治療継続中の既存症（約10年前から）で，今後の診療・ケアに影響するため記載する。",
+     "近医で治療継続中の既存症（約5年前から）で，今後の診療・ケアに影響するため記載する。"
+    ],
+    "point": "現在も影響する傷病＝既存症→退院時診断名列。過去完了の既往→入院までの経過欄の既往歴。"
+   },
+   "sources": [
+    {
+     "ref": "him:jhim-discharge-summary-guidance-2019",
+     "title": "退院サマリー作成に関するガイダンス",
+     "url": "https://jhim-e.com/pdf/guidance.pdf",
+     "locator": "退院サマリーの構造の解説 6)〔入院までの経過〕<既往歴>",
+     "quote": "〔退院時診断名〕列に記載すべきもの：現在も健康問題として介入を要している，ないし影響している傷病名．"
+    },
+    {
+     "ref": "him:jhim-discharge-summary-guidance-2019",
+     "title": "退院サマリー作成に関するガイダンス",
+     "url": "https://jhim-e.com/pdf/guidance.pdf",
+     "locator": "同上",
+     "quote": "一方で過去完了の既往については，「入院までの経過」欄における “既往（歴）”として表記する．"
+    }
+   ],
+   "asOf": "退院サマリー作成に関するガイダンス（2019年9月）／診療情報の記録指針2024",
+   "id": "s09-0002",
+   "origin": {
+    "batch": "G2-S09-SUM",
+    "key": "G2-S09-SUM-02",
+    "by": "gen:G2-S09-SUM"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（実務・DPC・がん登録）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G2-S09-SUM",
+     "solver": "solve:G2-S09-SUM（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G2-S09-SUM（実務・DPC・がん登録）"
+    },
+    "log": "bank/audit/G2-S09-SUM.audit.json#G2-S09-SUM-02",
+    "notes": "同ガイダンス 6)<既往歴>: 現在も影響する既存症は退院時診断名列、過去完了の既往は入院までの経過欄。虫垂炎（後遺症なし）が既往歴。記載心得3 i も同旨。blind一致。"
+   }
+  },
+  {
+   "subject": "S09",
+   "subtopic": "退院時要約からの情報抽出",
+   "format": "summary",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "caseId": "case-g2-s09-sum-01",
+   "question": "次の退院時要約（架空症例）を読み，DPC/PDPS傷病名コーディングテキストにいう「入院後発症疾患」に該当するものはどれか。",
+   "choices": [
+    "2型糖尿病",
+    "高血圧症",
+    "S状結腸癌",
+    "ESD後の遅発性出血",
+    "前立腺肥大症"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "コーディングテキストは，入院時併存症を入院時点で入院の契機となった傷病や医療資源病名とは別に既に存在した傷病，入院後発症疾患を入院期間中に発生した傷病としている。ESD後の遅発性出血は入院4日目に発症しており入院後発症疾患にあたる。",
+    "choiceNotes": [
+     "約10年前から存在する傷病で，入院後発症疾患ではなく入院時併存症にあたる。",
+     "約15年前から存在する傷病で，入院時併存症にあたる。",
+     "入院の契機となり，ESDを行った傷病（医療資源を最も投入した傷病名の候補）であり，入院後に発生したものではない。",
+     null,
+     "約5年前から存在する傷病で，入院時併存症にあたる。"
+    ],
+    "point": "入院時併存症＝入院時に既に存在，入院後発症疾患＝入院期間中に発生。"
+   },
+   "sources": [
+    {
+     "ref": "ins:dpc-coding-text-v7",
+     "title": "DPC/PDPS傷病名コーディングテキスト（第7版）",
+     "url": "https://www.mhlw.go.jp/content/12400000/001684575.pdf",
+     "locator": "Ⅲ DPCコーディングの基本的な考え方（６）副傷病名の選択について",
+     "quote": "「入院後発症疾患（入院後発症傷病名）」は入院期間中に発生した傷病である。"
+    }
+   ],
+   "asOf": "DPC/PDPS傷病名コーディングテキスト第7版（令和8年6月）",
+   "id": "s09-0003",
+   "origin": {
+    "batch": "G2-S09-SUM",
+    "key": "G2-S09-SUM-03",
+    "by": "gen:G2-S09-SUM"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（実務・DPC・がん登録）で修正",
+     "修正後の独立再監査（pass）",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G2-S09-SUM",
+     "solver": "solve:G2-S09-SUM（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G2-S09-SUM（実務・DPC・がん登録）",
+     "reauditor": "reaudit:G2-S09-SUM"
+    },
+    "log": "bank/audit/G2-S09-SUM.audit.json#G2-S09-SUM-03",
+    "notes": "再監査: ins:dpc-coding-text-v7 Ⅲ．DPCコーディングの基本的な考え方（６）副傷病名の選択について(l.912-916): 入院時併存症=入院時点で既に存在した傷病、入院後発症疾患=入院期間中に発生した傷病。症例#2は入院4日目発症で唯一該当。#3-5は年単位の既往＝入院時併存症、#1は入院契機・ESD対象。修正後locatorは見出しと一致。validate 0 errors。blind一致。｜ins:dpc-coding-text-v7 の該当箇所は「Ⅲ．DPCコーディングの基本的な考え方（６）」で、locator「Ⅱ（６）」は誤り（Ⅱ（６）は傷病名表記の項）。定義・鍵（入院4日目発症の遅発性出血）は正しい。blind一致。"
+   }
+  },
+  {
+   "subject": "S09",
+   "subtopic": "退院時要約からの情報抽出",
+   "format": "summary",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "caseId": "case-g2-s09-sum-02",
+   "question": "次の退院時要約（架空症例）を読み，基本情報の入院日・退院日から在院日数を「退院日から入院日を差し引いた日数」として求めると何日か。",
+   "choices": [
+    "16日",
+    "17日",
+    "18日",
+    "19日",
+    "20日"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "入院日・退院日は退院サマリーの必須の基本情報であり，在院日数はこれらから算出する。3月28日から3月31日までで3日，4月1日から4月15日までで15日，合計18日となる（退院日 − 入院日）。",
+    "choiceNotes": [
+     "月の日数や日付を取り違えた値で，退院日−入院日の18日と一致しない。",
+     "差し引いた日数より1日少なく，退院日−入院日の18日と一致しない。",
+     null,
+     "入院日と退院日の両方を含めて数えた値（18＋1）であり，設問の数え方とは異なる。",
+     "日付の数え誤りで，退院日−入院日の18日と一致しない。"
+    ],
+    "point": "在院日数は要約の入院日・退院日から算出する。数え方（両端を含むか）を確認してから計算する。"
+   },
+   "sources": [
+    {
+     "ref": "him:jhim-discharge-summary-guidance-2019",
+     "title": "退院サマリー作成に関するガイダンス",
+     "url": "https://jhim-e.com/pdf/guidance.pdf",
+     "locator": "退院サマリーの構造の解説 1)〔基本情報〕",
+     "quote": "入院日時ならびに退院日時（必須）"
+    },
+    {
+     "ref": "stats:kanja-chosa-r5-gaikyou",
+     "title": "令和５年(2023)患者調査の概況（概況版）",
+     "url": "https://www.mhlw.go.jp/toukei/saikin/hw/kanja/23/dl/kanjya.pdf",
+     "locator": "利用上の注意 (7)",
+     "quote": "本調査では、入院年月日と退院年月日を把握し、これらの項目から在院日数を算出している。"
+    }
+   ],
+   "asOf": "退院サマリー作成に関するガイダンス（2019年9月）／令和5年患者調査",
+   "id": "s09-0004",
+   "origin": {
+    "batch": "G2-S09-SUM",
+    "key": "G2-S09-SUM-04",
+    "by": "gen:G2-S09-SUM"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（実務・DPC・がん登録）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G2-S09-SUM",
+     "solver": "solve:G2-S09-SUM（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G2-S09-SUM（実務・DPC・がん登録）"
+    },
+    "log": "bank/audit/G2-S09-SUM.audit.json#G2-S09-SUM-04",
+    "notes": "3/28→4/15 の差＝18日（月またぎ、閏年の影響なし）。ガイダンス1)基本情報「入院日時ならびに退院日時（必須）」、stats:kanja-chosa-r5-gaikyou 利用上の注意(7)の文言を確認。blind一致。"
+   }
+  },
+  {
+   "subject": "S09",
+   "subtopic": "退院時要約からの情報抽出",
+   "format": "summary",
+   "difficulty": "advanced",
+   "polarity": "positive",
+   "caseId": "case-g2-s09-sum-02",
+   "question": "次の退院時要約（架空症例）を読み，診療録管理体制加算１の施設基準にいう「退院日の翌日から起算して14日以内」に退院時要約が作成され中央病歴管理室に提出されたと扱える最も遅い日はどれか。",
+   "choices": [
+    "4月22日",
+    "4月28日",
+    "4月29日",
+    "4月30日",
+    "5月15日"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "施設基準（第4の1(8)）は，前月に退院した患者のうち退院日の翌日から起算して14日以内に退院時要約が作成されて中央病歴管理室に提出された者の割合が毎月9割以上であることを求める。退院日4月15日の翌日4月16日を1日目とすると，14日目は4月29日である。",
+    "choiceNotes": [
+     "退院日の翌日から7日目であり，期限内ではあるが最も遅い日ではない。",
+     "退院日（4月15日）を1日目として数えた14日目で，「翌日から起算」の数え方と異なる。期限内だが最も遅い日ではない。",
+     null,
+     "4月16日から数えて15日目にあたり，14日以内を超える。",
+     "「退院後30日以内に作成されていることが望ましい」とされる目安に近い日付で，14日以内を大きく超える。"
+    ],
+    "point": "加算１：退院日の翌日を1日目として14日以内に作成・提出した割合が毎月9割以上。"
+   },
+   "sources": [
+    {
+     "ref": "ins:r08-kihon-shisetsukijun-tsuchi",
+     "title": "基本診療料の施設基準等及びその届出に関する手続きの取扱いについて（令和８年３月５日保医発0305第７号）",
+     "url": "https://www.mhlw.go.jp/content/12400000/001757361.pdf",
+     "locator": "第4 診療録管理体制加算 1(8)",
+     "quote": "退院日の翌日から起算して 14 日以内に退院時要約が作成されて中央病歴管理"
+    }
+   ],
+   "asOf": "令和8年度診療報酬改定（令和8年3月5日保医発0305第7号）",
+   "id": "s09-0005",
+   "origin": {
+    "batch": "G2-S09-SUM",
+    "key": "G2-S09-SUM-05",
+    "by": "gen:G2-S09-SUM"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（実務・DPC・がん登録）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G2-S09-SUM",
+     "solver": "solve:G2-S09-SUM（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G2-S09-SUM（実務・DPC・がん登録）"
+    },
+    "log": "bank/audit/G2-S09-SUM.audit.json#G2-S09-SUM-05",
+    "notes": "ins:r08-kihon-shisetsukijun-tsuchi 第4 1(8)「退院日の翌日から起算して14日以内…毎月９割以上」「退院後30日以内…望ましい」を確認。4/16起算14日目＝4/29、4/28＝退院日起算、4/30＝15日目、5/15＝30日目。blind一致。"
+   }
+  },
+  {
+   "subject": "S09",
+   "subtopic": "退院時要約からの情報抽出",
+   "format": "summary",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "caseId": "case-g2-s09-sum-02",
+   "question": "次の退院時要約（架空症例）を読み，退院サマリー作成に関するガイダンスが必須記載項目とする項目のうち，この要約で記載が欠けているものはどれか。",
+   "choices": [
+    "アレルギー・不適応反応",
+    "デバイス情報",
+    "手術・処置情報",
+    "退院時使用薬剤情報",
+    "主訴，または入院理由"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "ガイダンスはアレルギー・不適応反応を必須記載項目とし，ない場合も「なし」等を登録する。本要約にはこの欄がない。デバイス情報と手術・処置情報は該当がある場合の推奨記載項目である。",
+    "choiceNotes": [
+     null,
+     "デバイス情報は「デバイス装着がある場合」の推奨記載項目で，本例は植込み型医療機器がなく欠落にはあたらない。",
+     "手術・処置情報は「手術・処置で記載すべきものがある場合」の推奨記載項目で，本例は手術・処置を行っていない。",
+     "フロセミド等が記載されている。",
+     "「息切れ，両下肢のむくみ」が記載されている。"
+    ],
+    "point": "退院サマリーは11項目（必須9・推奨2）で，アレルギー・不適応反応は必須（ない場合も「なし」と記載）。デバイス情報・手術・処置情報は推奨（該当時）。"
+   },
+   "sources": [
+    {
+     "ref": "him:jhim-discharge-summary-guidance-2019",
+     "title": "退院サマリー作成に関するガイダンス",
+     "url": "https://jhim-e.com/pdf/guidance.pdf",
+     "locator": "退院サマリーの構造",
+     "quote": "3) 〔アレルギー・不適応反応〕 ---- 退院サマリー必須記載項目"
+    },
+    {
+     "ref": "him:jhim-discharge-summary-guidance-2019",
+     "title": "退院サマリー作成に関するガイダンス",
+     "url": "https://jhim-e.com/pdf/guidance.pdf",
+     "locator": "退院サマリーの構造",
+     "quote": "4) 〔デバイス情報〕 ---- 退院サマリー推奨記載項目（デバイス装着がある場合）"
+    }
+   ],
+   "asOf": "退院サマリー作成に関するガイダンス（2019年9月）／診療情報の記録指針2024",
+   "id": "s09-0006",
+   "origin": {
+    "batch": "G2-S09-SUM",
+    "key": "G2-S09-SUM-06",
+    "by": "gen:G2-S09-SUM"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（実務・DPC・がん登録）で修正",
+     "修正後の独立再監査（provisional）",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G2-S09-SUM",
+     "solver": "solve:G2-S09-SUM（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G2-S09-SUM（実務・DPC・がん登録）",
+     "reauditor": "reaudit:G2-S09-SUM"
+    },
+    "log": "bank/audit/G2-S09-SUM.audit.json#G2-S09-SUM-06",
+    "notes": "再監査: him:jhim-discharge-summary-guidance-2019 ＜退院サマリーの構造＞(l.90-100): 3)アレルギー・不適応反応=必須、4)デバイス情報・8)手術・処置情報=推奨（該当時）、5)主訴、10)退院時使用薬剤情報=必須。l.234-235: ない場合も“なし”“不詳”を必ず記載。症例2にはアレルギー欄がなく、主訴・薬剤は記載あり、植込み機器なし・手術処置なしと明記。鍵は唯一。validate 0 errors。blind一致。｜ガイダンス＜退院サマリーの構造＞: アレルギー・不適応反応は必須、デバイス・手術処置は推奨（該当時）。症例2にアレルギー欄なし、その他の選択肢は記載あり/該当なしで鍵は一意。ただし point「必須9項目（基本情報以外）」は誤り（記載心得2「11項目（必須項目9，推奨項目2）」は基本情報を含む数で、基本情報以外の必須は8）。blind一致。"
+   }
+  },
+  {
+   "subject": "S09",
+   "subtopic": "退院時要約からの情報抽出",
+   "format": "summary",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "caseId": "case-g2-s09-sum-03",
+   "question": "次の退院時要約（架空症例）を読み，経過記録の記載のうち，SOAPのO（客観的情報）に該当するものはどれか。",
+   "choices": [
+    "「仕事中に甘い缶コーヒーを1日3本飲んでいる」",
+    "空腹時血糖 168 mg/dL",
+    "清涼飲料水の摂取が血糖上昇の一因と考えられる",
+    "管理栄養士による個別栄養指導を追加する",
+    "「空腹感はあまりない」"
+   ],
+   "answer": 1,
+   "explanation": {
+    "correct": "POMRの経過記録では，患者の訴えを主観的情報（S），診察所見や検査成績を客観的情報（O），S・Oに対する医師の考えを評価（A），診断・治療・患者教育に関する計画を計画（P）として書く。空腹時血糖は検査成績でありOにあたる。",
+    "choiceNotes": [
+     "患者自身の訴え（発言）であり，主観的情報（S）にあたる。",
+     null,
+     "S・Oに基づく考え（評価）であり，A にあたる。",
+     "今後の治療・指導の計画であり，P にあたる。",
+     "患者自身の訴え（発言）であり，主観的情報（S）にあたる。"
+    ],
+    "point": "S＝患者の訴え，O＝診察所見・検査成績，A＝S・Oに対する考え，P＝診断・治療・患者教育の計画。"
+   },
+   "sources": [
+    {
+     "ref": "x-legacy-L08:kwtan-pomr-1981",
+     "title": "POMRの実際（川崎医療短期大学紀要 第1号）",
+     "url": "https://kwtan.repo.nii.ac.jp/record/640/files/kwjckiyo_1_pp115-130_1981.pdf",
+     "locator": "1 Weedのいう POMR とは",
+     "quote": "として患者の訴えを，客観的情報"
+    },
+    {
+     "ref": "x-legacy-L08:kwtan-pomr-1981",
+     "title": "POMRの実際（川崎医療短期大学紀要 第1号）",
+     "url": "https://kwtan.repo.nii.ac.jp/record/640/files/kwjckiyo_1_pp115-130_1981.pdf",
+     "locator": "同上",
+     "quote": "として 診察所見や検査成績を書き ，評価"
+    }
+   ],
+   "asOf": "POMRの実際（川崎医療短期大学紀要 第1号，1981年度）",
+   "id": "s09-0007",
+   "origin": {
+    "batch": "G2-S09-SUM",
+    "key": "G2-S09-SUM-07",
+    "by": "gen:G2-S09-SUM"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（実務・DPC・がん登録）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G2-S09-SUM",
+     "solver": "solve:G2-S09-SUM（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G2-S09-SUM（実務・DPC・がん登録）"
+    },
+    "log": "bank/audit/G2-S09-SUM.audit.json#G2-S09-SUM-07",
+    "notes": "x-legacy-L08:kwtan-pomr-1981「1 WeedのいうPOMRとは」S＝患者の訴え、O＝診察所見や検査成績、A＝s,oに対する考え、P＝Dx/Rx/Ex。空腹時血糖＝O。blind一致。"
+   }
+  },
+  {
+   "subject": "S09",
+   "subtopic": "退院時要約からの情報抽出",
+   "format": "summary",
+   "difficulty": "advanced",
+   "polarity": "negative",
+   "caseId": "case-g2-s09-sum-03",
+   "question": "次の退院時要約（架空症例）を読み，入院8日目の経過記録の記載とSOAPの区分の組合せとして誤っているものはどれか。",
+   "choices": [
+    "「空腹感はあまりない」― S",
+    "体重 80.6 kg ― O",
+    "食事療法への理解が進み，血糖は改善傾向である ― O",
+    "シタグリプチンを追加する ― P",
+    "退院前に糖尿病教室（フットケア）へ参加する ― P"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "「食事療法への理解が進み，血糖は改善傾向である」は，SとOを踏まえた医師の判断であり評価（A）に区分される。Oは診察所見や検査成績である。",
+    "choiceNotes": [
+     "患者の訴えであり主観的情報（S）として正しい。",
+     "測定値であり客観的情報（O）として正しい。",
+     null,
+     "治療に関する計画（Rx）であり P として正しい。",
+     "患者教育に関する計画も P に含まれるため正しい。"
+    ],
+    "point": "A は S・O に対する考え（判断）。P には診断・治療だけでなく患者教育の計画も含む。"
+   },
+   "sources": [
+    {
+     "ref": "x-legacy-L08:kwtan-pomr-1981",
+     "title": "POMRの実際（川崎医療短期大学紀要 第1号）",
+     "url": "https://kwtan.repo.nii.ac.jp/record/640/files/kwjckiyo_1_pp115-130_1981.pdf",
+     "locator": "1 Weedのいう POMR とは",
+     "quote": "s,oに対する自分の考えを述べ，計画"
+    },
+    {
+     "ref": "x-legacy-L08:kwtan-pomr-1981",
+     "title": "POMRの実際（川崎医療短期大学紀要 第1号）",
+     "url": "https://kwtan.repo.nii.ac.jp/record/640/files/kwjckiyo_1_pp115-130_1981.pdf",
+     "locator": "同上",
+     "quote": "患者教育に関する計画"
+    }
+   ],
+   "asOf": "POMRの実際（川崎医療短期大学紀要 第1号，1981年度）",
+   "id": "s09-0008",
+   "origin": {
+    "batch": "G2-S09-SUM",
+    "key": "G2-S09-SUM-08",
+    "by": "gen:G2-S09-SUM"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（実務・DPC・がん登録）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G2-S09-SUM",
+     "solver": "solve:G2-S09-SUM（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G2-S09-SUM（実務・DPC・がん登録）"
+    },
+    "log": "bank/audit/G2-S09-SUM.audit.json#G2-S09-SUM-08",
+    "notes": "同POMR文献: 「改善傾向である」は評価（A）、教育計画（Ex）はPに含まれる。他の組合せは正。Q07とは同症例だが問う点が異なり重複でない。blind一致。"
+   }
+  },
+  {
+   "subject": "S09",
+   "subtopic": "退院時要約からの情報抽出",
+   "format": "summary",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "caseId": "case-g2-s09-sum-03",
+   "question": "次の退院時要約（架空症例）を読み，作成中の「退院時使用薬剤情報」欄に記載する薬剤として，退院サマリー作成に関するガイダンスに照らして最も適切なものはどれか。",
+   "choices": [
+    "当科の退院時処方であるシタグリプチンのみ",
+    "入院中に使用したすべての薬剤（中止したものを含む）",
+    "シタグリプチン，メトホルミン，アムロジピン",
+    "近医処方のメトホルミン，アムロジピンのみ",
+    "入院中に新たに追加した薬剤のみ"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "ガイダンスは，退院時投薬内容は当該診療科から処方される退院時処方を記載するのではなく，退院時ならびに直近の退院後において使用される薬剤すべての情報を列記するとしている。退院後も近医処方で継続するメトホルミンとアムロジピンを含め，3剤を記載する。",
+    "choiceNotes": [
+     "当該診療科の退院時処方だけでは，退院後に使用する薬剤の全貌が伝わらない。",
+     "対象は退院時ならびに直近の退院後に使用される薬剤であり，入院中に中止した薬剤までは含めない。",
+     null,
+     "当科で追加したシタグリプチンが抜けており，すべての薬剤になっていない。",
+     "継続する常用薬が抜けており，すべての薬剤になっていない。"
+    ],
+    "point": "退院時使用薬剤情報＝自科の退院時処方だけでなく，退院後当面使うすべての薬剤（常用薬を含む）。"
+   },
+   "sources": [
+    {
+     "ref": "him:jhim-discharge-summary-guidance-2019",
+     "title": "退院サマリー作成に関するガイダンス",
+     "url": "https://jhim-e.com/pdf/guidance.pdf",
+     "locator": "退院サマリー記載心得 7",
+     "quote": "退院時投薬内容は，当該診療科から処方される退院時処方を記載するのではなく，退院時ならびに直近の退院後において使用される薬剤すべての情報を列記するものである．"
+    }
+   ],
+   "asOf": "退院サマリー作成に関するガイダンス（2019年9月）／診療情報の記録指針2024",
+   "id": "s09-0009",
+   "origin": {
+    "batch": "G2-S09-SUM",
+    "key": "G2-S09-SUM-09",
+    "by": "gen:G2-S09-SUM"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（実務・DPC・がん登録）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G2-S09-SUM",
+     "solver": "solve:G2-S09-SUM（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G2-S09-SUM（実務・DPC・がん登録）"
+    },
+    "log": "bank/audit/G2-S09-SUM.audit.json#G2-S09-SUM-09",
+    "notes": "ガイダンス 記載心得7「当該診療科から処方される退院時処方を記載するのではなく…直近の退院後において使用される薬剤すべて」と10)「常用薬…すべての薬剤」を確認。3剤が正。blind一致。"
+   }
+  },
+  {
+   "subject": "S09",
+   "subtopic": "退院時要約からの情報抽出",
+   "format": "summary",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "caseId": "case-g2-s09-sum-04",
+   "question": "次の退院時要約（架空症例）を読み，退院時診断名列で術後せん妄の転帰として登録する区分は，退院サマリー作成に関するガイダンスに照らしてどれか。",
+   "choices": [
+    "治癒",
+    "不変",
+    "軽快",
+    "悪化",
+    "寛解"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "ガイダンスは転帰を各疾病について個々に，軽快（治癒を含む）・不変・悪化（増悪）・死亡の4択で登録するとし，「軽快」は病状が軽くなった状態で治癒を含むとしている。入院7日目に症状が消失した術後せん妄は「軽快」で登録する。",
+    "choiceNotes": [
+     "ガイダンスの転帰区分に「治癒」は独立して設けられておらず，治癒は「軽快」に含まれる。",
+     "症状は消失しており，病状が変わらない「不変」ではない。",
+     null,
+     "症状は消失しており，「悪化」ではない。",
+     "「寛解」はガイダンスの4区分に含まれない。"
+    ],
+    "point": "転帰は疾病ごとに軽快（治癒を含む）・不変・悪化・死亡の4択。"
+   },
+   "sources": [
+    {
+     "ref": "him:jhim-discharge-summary-guidance-2019",
+     "title": "退院サマリー作成に関するガイダンス",
+     "url": "https://jhim-e.com/pdf/guidance.pdf",
+     "locator": "退院サマリーの構造の解説 2)〔退院時診断〕",
+     "quote": "“軽快”は病状が軽くなった状態であり，治癒を含む．"
+    },
+    {
+     "ref": "him:jhim-discharge-summary-guidance-2019",
+     "title": "退院サマリー作成に関するガイダンス",
+     "url": "https://jhim-e.com/pdf/guidance.pdf",
+     "locator": "退院サマリー記載心得 3 iii",
+     "quote": "（軽快（治癒を含む）・不変・増悪・死亡の 4 択で登録）"
+    }
+   ],
+   "asOf": "退院サマリー作成に関するガイダンス（2019年9月）／診療情報の記録指針2024",
+   "id": "s09-0010",
+   "origin": {
+    "batch": "G2-S09-SUM",
+    "key": "G2-S09-SUM-10",
+    "by": "gen:G2-S09-SUM"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（実務・DPC・がん登録）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G2-S09-SUM",
+     "solver": "solve:G2-S09-SUM（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G2-S09-SUM（実務・DPC・がん登録）"
+    },
+    "log": "bank/audit/G2-S09-SUM.audit.json#G2-S09-SUM-10",
+    "notes": "ガイダンス 2)「軽快・不変・悪化・死亡…“軽快”は…治癒を含む」・記載心得3 iii「4択」を確認。症状消失のせん妄＝軽快。治癒・寛解は区分外。blind一致（medium）だが鍵は原文で一意。"
+   }
+  },
+  {
+   "subject": "S09",
+   "subtopic": "退院時要約からの情報抽出",
+   "format": "summary",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "caseId": "case-g2-s09-sum-04",
+   "question": "次の退院時要約（架空症例）を読み，「入院までの経過」の下書き①〜⑤のうち，退院サマリー作成に関するガイダンスにいう<現病歴>に記載するものはどれか。",
+   "choices": [
+    "①",
+    "②",
+    "③",
+    "④",
+    "⑤"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "ガイダンスは<現病歴>を，当該入院にかかる主疾患・病態を中心とした入院に至るまでの経過や入院適応の判断内容としている。①は転倒から骨折の診断，手術適応の判断までの経過であり現病歴にあたる。",
+    "choiceNotes": [
+     null,
+     "過去に罹患し現在影響のない医療歴であり，<既往歴>に記載する。",
+     "母の病歴であり，<家族歴>に記載する。",
+     "喫煙・飲酒の状況であり，<嗜好>に記載する。",
+     "入院前から使用している薬剤であり，<常用薬情報>に記載する。"
+    ],
+    "point": "現病歴＝主疾患の入院に至るまでの経過＋入院適応の判断。既往歴・家族歴・嗜好・常用薬は別項目。"
+   },
+   "sources": [
+    {
+     "ref": "him:jhim-discharge-summary-guidance-2019",
+     "title": "退院サマリー作成に関するガイダンス",
+     "url": "https://jhim-e.com/pdf/guidance.pdf",
+     "locator": "退院サマリーの構造の解説 6)〔入院までの経過〕",
+     "quote": "<現病歴> 当該入院にかかる主疾患，病態を中心とした，入院に至るまでの経過や入院適応の判断内容"
+    }
+   ],
+   "asOf": "退院サマリー作成に関するガイダンス（2019年9月）／診療情報の記録指針2024",
+   "id": "s09-0011",
+   "origin": {
+    "batch": "G2-S09-SUM",
+    "key": "G2-S09-SUM-11",
+    "by": "gen:G2-S09-SUM"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（実務・DPC・がん登録）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G2-S09-SUM",
+     "solver": "solve:G2-S09-SUM（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G2-S09-SUM（実務・DPC・がん登録）"
+    },
+    "log": "bank/audit/G2-S09-SUM.audit.json#G2-S09-SUM-11",
+    "notes": "ガイダンス 6)〔入院までの経過〕<現病歴>…入院適応の判断内容、<既往歴><家族歴><嗜好>（喫煙・飲酒）<常用薬情報>の項目を確認。①が現病歴。blind一致。"
+   }
+  },
+  {
+   "subject": "S09",
+   "subtopic": "退院時要約からの情報抽出",
+   "format": "summary",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "caseId": "case-g2-s09-sum-04",
+   "question": "次の退院時要約（架空症例）を読み，下書きの退院時診断名に#を付ける際，ガイダンスに照らして通常#1（先頭）とするものはどれか。",
+   "choices": [
+    "術後せん妄",
+    "右大腿骨頸部骨折",
+    "骨粗鬆症",
+    "高血圧症",
+    "脂質異常症"
+   ],
+   "answer": 1,
+   "explanation": {
+    "correct": "ガイダンスは，#（診断名番号）は当該入院中に主として対象とした疾病を先頭に，以下主治医の判断により順序をつけるのが通常としている。本例で入院・手術の対象となったのは右大腿骨頸部骨折である。",
+    "choiceNotes": [
+     "入院3日目に発症した病態で，今回の入院で主として対象とした疾病ではない。",
+     null,
+     "既存症として列記するが，今回の入院で主として対象とした疾病ではない（手術の対象は骨折）。",
+     "既存症であり，今回の入院で主として対象とした疾病ではない。",
+     "既存症であり，今回の入院で主として対象とした疾病ではない。"
+    ],
+    "point": "退院時診断名列の#1＝当該入院中に主として対象とした疾病。"
+   },
+   "sources": [
+    {
+     "ref": "him:jhim-discharge-summary-guidance-2019",
+     "title": "退院サマリー作成に関するガイダンス",
+     "url": "https://jhim-e.com/pdf/guidance.pdf",
+     "locator": "退院サマリーの構造の解説 2)〔退院時診断〕",
+     "quote": "#（診断名番号）は当該入院中に主として対象とした疾病を先頭に，以下主治医の判断により順序をつけてゆくことが"
+    }
+   ],
+   "asOf": "退院サマリー作成に関するガイダンス（2019年9月）／診療情報の記録指針2024",
+   "id": "s09-0012",
+   "origin": {
+    "batch": "G2-S09-SUM",
+    "key": "G2-S09-SUM-12",
+    "by": "gen:G2-S09-SUM"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（実務・DPC・がん登録）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G2-S09-SUM",
+     "solver": "solve:G2-S09-SUM（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G2-S09-SUM（実務・DPC・がん登録）"
+    },
+    "log": "bank/audit/G2-S09-SUM.audit.json#G2-S09-SUM-12",
+    "notes": "ガイダンス 2)「#（診断名番号）は当該入院中に主として対象とした疾病を先頭に…通常」を確認。手術対象の右大腿骨頸部骨折が#1。blind一致。"
    }
   }
  ]

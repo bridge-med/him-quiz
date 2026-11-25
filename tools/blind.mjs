@@ -12,7 +12,7 @@ if (!Array.isArray(d) && d.cases) for (const c of d.cases) caseMap.set(c.id, c);
 const usedCases = new Set();
 const blind = qs.map((q, i) => {
   if (q.caseId) usedCases.add(q.caseId);
-  return { key: q.id || `#${i}`, subject: q.subject, caseId: q.caseId || undefined, question: q.question, choices: q.choices };
+  return { key: q.key || q.id || `#${i}`, subject: q.subject, caseId: q.caseId || undefined, question: q.question, choices: q.choices };
 });
 fs.writeFileSync(out, JSON.stringify({ questions: blind, cases: [...usedCases].map((id) => caseMap.get(id)).filter(Boolean) }, null, 1));
 console.log(`blind: ${blind.length} questions -> ${out}`);

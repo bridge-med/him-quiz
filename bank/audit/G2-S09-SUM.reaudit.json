@@ -1,0 +1,9 @@
+{"verdicts":[
+{"key":"G2-S09-SUM-03","verdict":"pass","blindAnswer":3,
+ "checks":{"answer":true,"distractors":true,"stem":true,"explanations":true,"sources":true,"asOf":true,"domain":true},
+ "notes":"ins:dpc-coding-text-v7 Ⅲ．DPCコーディングの基本的な考え方（６）副傷病名の選択について(l.912-916): 入院時併存症=入院時点で既に存在した傷病、入院後発症疾患=入院期間中に発生した傷病。症例#2は入院4日目発症で唯一該当。#3-5は年単位の既往＝入院時併存症、#1は入院契機・ESD対象。修正後locatorは見出しと一致。validate 0 errors。blind一致。"},
+{"key":"G2-S09-SUM-06","verdict":"provisional","blindAnswer":2,
+ "checks":{"answer":true,"distractors":true,"stem":true,"explanations":false,"sources":true,"asOf":true,"domain":true},
+ "notes":"him:jhim-discharge-summary-guidance-2019 ＜退院サマリーの構造＞(l.90-100): 3)アレルギー・不適応反応=必須、4)デバイス情報・8)手術・処置情報=推奨（該当時）、5)主訴、10)退院時使用薬剤情報=必須。l.234-235: ない場合も“なし”“不詳”を必ず記載。症例2にはアレルギー欄がなく、主訴・薬剤は記載あり、植込み機器なし・手術処置なしと明記。鍵は唯一。validate 0 errors。blind一致。",
+ "detail":"pointの「11項目（必須9・推奨2）」の『必須9』はガイダンスに明記がない。構造一覧で「必須記載項目」と標示されるのは2)3)5)6)7)9)10)11)の8項目で、1)基本情報は見出しに必須の標示がない（個々の要素に（必須）とある）。基本情報を必須に数える解釈は成り立つが、暗記用の数として出典で確認できない。鍵・選択肢・解説本文は正しい。"}
+]}

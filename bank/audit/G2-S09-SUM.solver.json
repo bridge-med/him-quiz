@@ -1,0 +1,14 @@
+{"answers":[
+{"key":"#0","answer":2,"confidence":"medium","ambiguous":false,"note":"ガイダンス5): 症候なしの予定入院は入院理由『内視鏡的ポリープ切除を受ける』等。便潜血陽性は症状でない"},
+{"key":"#1","answer":4,"confidence":"high","ambiguous":false,"note":"ガイダンス6): 過去完了の既往(虫垂炎)は入院までの経過の既往歴欄"},
+{"key":"#2","answer":3,"confidence":"high","ambiguous":false,"note":"DPCコーディングテキスト: 入院後発症疾患名"},
+{"key":"#3","answer":2,"confidence":"high","ambiguous":false,"note":"3/28→4/15=18日"},
+{"key":"#4","answer":2,"confidence":"high","ambiguous":false,"note":"4/16起算14日目=4/29。施設基準通知"},
+{"key":"#5","answer":2,"confidence":"high","ambiguous":false,"note":"アレルギー欄が欠落。デバイス・手術は推奨/なしと記載あり"},
+{"key":"#6","answer":1,"confidence":"high","ambiguous":false,"note":"O=検査値"},
+{"key":"#7","answer":2,"confidence":"high","ambiguous":false,"note":"『改善傾向である』は評価=A"},
+{"key":"#8","answer":1,"confidence":"high","ambiguous":false,"note":"ガイダンス10): 常用薬含め退院時以降利用されるすべて"},
+{"key":"#9","answer":1,"confidence":"medium","ambiguous":false,"note":"転帰は軽快(治癒を含む)・不変・悪化・死亡"},
+{"key":"#10","answer":0,"confidence":"high","ambiguous":false,"note":"現病歴=入院に至る経過と入院適応判断"},
+{"key":"#11","answer":2,"confidence":"high","ambiguous":false,"note":"当該入院で主として対象とした疾病を先頭"}
+]}

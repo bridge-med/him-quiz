@@ -1,0 +1,154 @@
+{
+ "verdicts": [
+  {
+   "key": "lg-07-02",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "stats:jinkou-kakutei-r7-cho 比率の解説 l.131-134（年齢調整死亡率・平成27年モデル人口）、ganjoho年齢調整死亡率、東京都jguide将来推計で確認。key一致。"
+  },
+  {
+   "key": "lg-07-04",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "r7-cho l.64-110,124 で出生率・自然増減率・合計特殊出生率の定義を確認。r6-tfr（期間/コーホート）も確認。key一致。"
+  },
+  {
+   "key": "lg-07-05",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "r7-gaikyou l.215-217 と第７表 l.1081-1084：1位悪性新生物23.8％、2位心疾患13.9％、3位老衰13.5％、4位脳血管疾患6.3％。houkokusho-r6 l.2248 で1981年1位。key一致。"
+  },
+  {
+   "key": "lg-07-07",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "kokumin-seikatsu-r7-yougo 21/23（有訴者率・通院者率 人口千対）、r7-gaiyou l.6（3年ごと大規模）、kanja-chosa-r5-gaiyou (3)(4)（退院患者の平均在院日数・受療率）、病院報告 (11)病床利用率を確認。key一致。"
+  },
+  {
+   "key": "lg-07-08",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ganjoho標準化死亡比（実死亡数/期待死亡数、年齢階級別死亡率が得られない場合等）、hoken24_death 注（100倍・100超は全国より高い）を確認。key一致。"
+  },
+  {
+   "key": "lg-07-09",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "e-ヘルスネット l.5,8（0歳平均余命、健康寿命の定義、差＝不健康な期間）を確認。key一致。"
+  },
+  {
+   "key": "lg-07-10",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ganjoho罹患率（新規診断数/人口）・有病率（一時点の全患者数/人口）、CDC Lesson3 Sec2（prolonged survival→高有病率）を確認。key一致。"
+  },
+  {
+   "key": "lg-07-11",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "r7-cho l.72-98：周産期死亡率の分母＝出生＋22週以後死産、死産率＝12週以後/出産、新生児28日未満、乳児1年未満を確認。key一致。"
+  },
+  {
+   "key": "lg-07-12",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "発生動向調査事業実施要綱 第１（把握・分析・提供公開→予防・まん延防止）を確認。選択肢4の否定は 感染症法第16条第4項（公表時の個人情報保護留意）でも裏付けられる（未引用だが記述は正しい）。key一致。"
+  },
+  {
+   "key": "lg-07-13",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "kani-seimeihyo-r7-about（生命表とは）、r7-teigi（死亡率q・生存数l・平均余命・平均寿命）、患者調査概要（受療率・退院患者平均在院日数）、国民生活基礎調査用語、r7-cho（合計特殊出生率）を確認。key一致。"
+  }
+ ]
+}

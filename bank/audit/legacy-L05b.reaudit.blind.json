@@ -1,0 +1,11 @@
+{"answers":[
+{"key":"lg-05-16","answer":0,"confidence":"high","ambiguous":false,"note":"喘息=慢性気道炎症+可逆性気流制限。B=気管支拡張症、C=肺気腫、D=胸膜炎"},
+{"key":"lg-05-18","answer":0,"confidence":"high","ambiguous":false,"note":"日本では直腸・S状結腸が大半"},
+{"key":"lg-05-20","answer":1,"confidence":"high","ambiguous":false,"note":"DVT→肺塞栓症"},
+{"key":"lg-05-21","answer":2,"confidence":"high","ambiguous":false,"note":"CA19-9"},
+{"key":"lg-05-22","answer":1,"confidence":"high","ambiguous":false,"note":"LUTS"},
+{"key":"lg-05-23","answer":1,"confidence":"high","ambiguous":false,"note":"骨髄検査"},
+{"key":"lg-05-24","answer":1,"confidence":"high","ambiguous":false,"note":"HL/NHL"},
+{"key":"lg-05-25","answer":1,"confidence":"high","ambiguous":false,"note":"骨密度YAM%"},
+{"key":"lg-05-29","answer":1,"confidence":"high","ambiguous":false,"note":"仙骨部"}
+]}

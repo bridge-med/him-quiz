@@ -1,0 +1,14 @@
+{"answers":[
+{"key":"#0","answer":1,"confidence":"high","ambiguous":false,"note":"根拠: コーディングテキストv7 図表5注。R・Z・Uは原則選択不可"},
+{"key":"#1","answer":3,"confidence":"high","ambiguous":false,"note":"例外はR040,R042,R048,R049,R560,R610,R611,R619,R730"},
+{"key":"#2","answer":3,"confidence":"high","ambiguous":false,"note":"喀血→右下葉肺癌の修正例。下葉C34.3（部位が分かるためC34.9は不可）"},
+{"key":"#3","answer":4,"confidence":"high","ambiguous":false,"note":"根拠: 退院後に病理結果が出てもDPCの変更はしない（Ⅲ基本、退院時に確定）"},
+{"key":"#4","answer":3,"confidence":"high","ambiguous":false,"note":"根拠: 部位不明・詳細不明コードは第三者的に判断できない等の例外的事例。他は誤り"},
+{"key":"#5","answer":3,"confidence":"high","ambiguous":false,"note":"根拠: 1年前の甲状腺切除術後は術後甲状腺機能低下症(E89.0)を選択、甲状腺癌術後は選択しない"},
+{"key":"#6","answer":4,"confidence":"high","ambiguous":false,"note":"根拠: 「○○を伴う」分類を選ぶ場合はその情報を傷病名に含めなければならない"},
+{"key":"#7","answer":3,"confidence":"high","ambiguous":false,"note":"根拠: 060040の注。Z43.3は選択不可、原因傷病名。Ra(上部直腸)はC20"},
+{"key":"#8","answer":0,"confidence":"high","ambiguous":false,"note":"肺炎球菌性肺炎J13。喀痰培養・尿中抗原で病原体確定"},
+{"key":"#9","answer":0,"confidence":"medium","ambiguous":false,"note":"糖尿病は入院時併存症で治療継続。胃癌は治療終了で不可。UTIは抗菌薬変更で資源投入に影響、在院日数延長は要件でない(Dは根拠なし)"},
+{"key":"#10","answer":2,"confidence":"high","ambiguous":false,"note":"原疾患として心筋症が明らかな場合は心不全として処理せず心筋症(I42$)を選択"},
+{"key":"#11","answer":1,"confidence":"high","ambiguous":false,"note":"根拠: 続発・後遺症は患者管理への影響が明らかなら入院時併存症として追加。転倒予防・PT実施"}
+]}

@@ -1,0 +1,12 @@
+{"answers":[
+{"key":"lg-07-14","answer":0,"confidence":"high","ambiguous":false,"note":"致命率=罹患者中の死亡割合"},
+{"key":"lg-07-15","answer":0,"confidence":"high","ambiguous":false,"note":"stats:jinkou-kakutei-r7-gaikyou 率の算出式: 出生率は10月1日現在日本人人口千対"},
+{"key":"lg-07-16","answer":1,"confidence":"high","ambiguous":false,"note":"死産率=死産数/出産数(出生+死産)×1000"},
+{"key":"lg-07-17","answer":2,"confidence":"high","ambiguous":false,"note":"R7確定数 概況: 死因順位第1位は悪性新生物＜腫瘍＞"},
+{"key":"lg-07-18","answer":2,"confidence":"high","ambiguous":false,"note":"兵庫県 類型: つぼ(紡錘)型"},
+{"key":"lg-07-19","answer":2,"confidence":"high","ambiguous":false,"note":"21%超=超高齢社会（一般的区分）"},
+{"key":"lg-07-21","answer":1,"confidence":"high","ambiguous":false,"note":"概況: 15〜49歳女性の年齢別出生率の合計"},
+{"key":"lg-07-23","answer":1,"confidence":"high","ambiguous":false,"note":"15〜64歳"},
+{"key":"lg-07-24","answer":1,"confidence":"high","ambiguous":false,"note":"静態調査は3年ごと、全医療施設（病院・診療所）。助産所は対象外"},
+{"key":"lg-07-25","answer":2,"confidence":"medium","ambiguous":false,"note":"訪問診療は増加傾向"}
+]}

@@ -1,0 +1,231 @@
+{
+ "verdicts": [
+  {
+   "key": "lg-05-00",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "x-legacy-L04a:msd-ja-ami 症状と徴候(l.69): 胸骨下深部の内臓痛、狭心症より重度で長く、安静・ニトログリセリンで一時的軽快のみかほとんど軽快しない。distractorsは典型像に該当しない。"
+  },
+  {
+   "key": "lg-05-01",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "x-legacy-L04a:msd-ja-copd 病因(l.51,53,55): 喫煙が第一の危険因子；受動喫煙・大気汚染・職業性塵埃・低体重・小児期呼吸器疾患・α1-AT欠乏。飲酒・高血圧・肥満は挙げられていない。"
+  },
+  {
+   "key": "lg-05-02",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "x-legacy-L04a:msd-ja-dm l.52(1型=自己免疫β細胞破壊), 表 l.85-89(発症年齢1型<30歳・2型≥30歳), 治療(2型の一部は生活習慣で薬物回避)。"
+  },
+  {
+   "key": "lg-05-03",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "cancer:glossary-yuaisisitexienuemubunrui: T=原発がんの大きさ・広がり・深さ、N=所属リンパ節、M=遠隔転移。cancer:hcr-standard-format-2016 l.1170: 6桁目=異型度・分化度。"
+  },
+  {
+   "key": "lg-05-04",
+   "verdict": "pass",
+   "blindAnswer": 3,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "x-legacy-L05a:msd-ischemic-stroke 概要 l.19(アテローム血栓性閉塞・脳塞栓症・ラクナ梗塞), l.64-77(心原性塞栓・ラクナ), 治療 l.469(出血性梗塞への変化=急性期抗凝固回避の理由)。出血性梗塞は機序による病型でない。"
+  },
+  {
+   "key": "lg-05-05",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "x-legacy-L05a:msd-ckd 病期 l.138-143: GFRによるステージ1〜5; 血圧はl.168で管理目標。"
+  },
+  {
+   "key": "lg-05-06",
+   "verdict": "provisional",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": false,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "x-legacy-L05a:msd-hip-fracture l.20(高齢患者・特に骨粗鬆症で最も多く平地転倒で起こる), l.28(ごくわずかな力で骨折), l.62(大多数は外科的治療、長期臥床でDVT・褥瘡・肺炎)。key・distractorsは正しい。",
+   "detail": "choiceNotes[1]「高齢患者（特に骨粗鬆症の高齢者）で最も多い骨折である」は、出典の「この骨折は高齢患者で最も多く」（この骨折は高齢者に最も多く起こる）を「高齢者で最多の骨折」とも読める形に言い換えており、出典の主張を超える読みを許す。「高齢患者（特に骨粗鬆症の高齢者）で最も多く起こり、小児に多い骨折ではない」等が正確。keyへの影響なし。"
+  },
+  {
+   "key": "lg-05-07",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "x-legacy-L05a:msd-cap l.19,34(肺炎球菌が最も一般的な細菌性原因), l.41-44(CA-MRSAまれ、緑膿菌は危険因子), l.59(結核は別項); msd-hap l.41。"
+  },
+  {
+   "key": "lg-05-08",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "x-legacy-L05a:msd-af l.32(心房収縮欠如→血栓→脳血管塞栓年3〜5%、全脳卒中の20〜25%), l.33(心不全), l.35 CHA2DS2-VASc。心筋梗塞・腎不全は合併症として挙げられていない。"
+  },
+  {
+   "key": "lg-05-09",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "x-legacy-L05a:msd-sah 病因 l.30-31: 自発性SAHは約85%が嚢状動脈瘤破裂；感染性動脈瘤・AVM・出血性疾患は比較的まれ。l.35 数秒以内にピーク。"
+  },
+  {
+   "key": "lg-05-10",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "x-legacy-L05a:msd-alzheimer l.31(認知症の最も一般的な原因、高齢者認知症の60〜80%); msd-vascular-dementia l.29(2番目); msd-dementia l.41-45(レビー小体型・前頭側頭型は頻度の高い病型)。"
+  },
+  {
+   "key": "lg-05-11",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "x-legacy-L05a:ganjoho-stomach-prevention l.217,227(ピロリ菌感染と喫煙、食塩；除菌で確実にリスク低下、ゼロにはならない; 更新2026-01-13); liver l.(B/C型肝炎ウイルス→肝細胞がん); cervix(HPV)。"
+  },
+  {
+   "key": "lg-05-13",
+   "verdict": "provisional",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": false,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "x-legacy-L04a:msd-ja-dm 治療 l.(血糖上昇が軽度の2型→食事・運動療法、不十分ならメトホルミン等), l.209(妊娠・HHS/DKAは初期治療としてインスリン)。key・distractorsは正しい。",
+   "detail": "choiceNotes[1]が「著しい高血糖などの場合に初期治療となる」とするが、出典 l.209 は妊娠・急性代謝代償不全では「初期治療としてインスリンが適応」、HbA1c>10%かつ血糖≥300mg/dL等では「インスリンを考慮すべき」と区別しており、著しい高血糖を初期治療の適応と同列に書くのはやや言い過ぎ。keyへの影響なし。"
+  },
+  {
+   "key": "lg-05-14",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "x-legacy-L05a:msd-ra l.19(末梢関節の対称性炎症), l.29(女性に2〜3倍、35〜50歳), l.60(対称性・朝のこわばり60分超), 診断(RF・抗CCP・赤沈/CRP)。"
+  },
+  {
+   "key": "lg-05-15",
+   "verdict": "pass",
+   "blindAnswer": 3,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "x-legacy-L05a:msd-cirrhosis 症状と徴候 l.70(代償不全=消化管出血・腹水・肝性脳症)、合併症(門脈圧亢進→静脈瘤出血；肝機能不全→肝性脳症)。胆石症は代償不全の特徴として挙げられていない。「いわゆる三大合併症」は教科書的呼称で、stemの「いわゆる」で限定済み。"
+  }
+ ]
+}

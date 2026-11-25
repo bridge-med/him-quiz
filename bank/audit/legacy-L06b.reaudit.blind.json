@@ -1,0 +1,11 @@
+{"answers":[
+{"key":"lg-06-14","answer":0,"confidence":"high","ambiguous":false,"note":"OR=ad/bc"},
+{"key":"lg-06-15","answer":1,"confidence":"high","ambiguous":false,"note":"variance = mean of squared deviations (population def.); E = SD"},
+{"key":"lg-06-16","answer":1,"confidence":"high","ambiguous":false,"note":"inferential statistics"},
+{"key":"lg-06-19","answer":1,"confidence":"high","ambiguous":false,"note":"multiple regression"},
+{"key":"lg-06-20","answer":0,"confidence":"high","ambiguous":false,"note":"ratio of hazards (instantaneous rates)"},
+{"key":"lg-06-21","answer":0,"confidence":"high","ambiguous":false,"note":"cumulative incidence = new cases / population at risk at start; D = incidence rate"},
+{"key":"lg-06-22","answer":1,"confidence":"high","ambiguous":false,"note":"incidence new cases, prevalence all existing"},
+{"key":"lg-06-23","answer":1,"confidence":"high","ambiguous":false,"note":"risk difference"},
+{"key":"lg-06-26","answer":0,"confidence":"high","ambiguous":false,"note":"classic three confounder criteria"}
+]}

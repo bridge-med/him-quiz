@@ -63,6 +63,10 @@ const auditDir = path.join(ROOT, 'bank', 'audit');
 fs.mkdirSync(auditDir, { recursive: true });
 function keep(src, name) { if (fs.existsSync(src)) fs.copyFileSync(src, path.join(auditDir, name)); }
 const byKey = (arr, k = 'key') => new Map((arr || []).map((x) => [x[k] ?? x.id ?? x.key, x]));
+// 目隠し版の番号（#0, #1 …）で書かれた解答を、元ファイルの問題の key に直す（blind.mjs が id しか見ていなかった時期の互換）
+function positional(answers, questions) {
+  return (answers || []).map((a) => { const m = /^#(\d+)$/.exec(String(a.key ?? '')); return m && questions[+m[1]] ? { ...a, key: questions[+m[1]].key ?? questions[+m[1]].id } : a; });
+}
 
 function finalize(q, status, ver, base) {
   const fixedQ = rebalance({ ...q, status });
@@ -75,6 +79,32 @@ function finalize(q, status, ver, base) {
   delete fixedQ.key;
   out.push(fixedQ);
   return fixedQ.status;
+}
+
+// ================= 再修正（再監査で provisional → 修正 → 別の再監査） =================
+const repairs = new Map();
+for (const f of fs.readdirSync(path.join(WORK, 'results')).filter((f) => /^R-\d+\.repair\.json$/.test(f))) {
+  const g = f.replace(/\.repair\.json$/, '');
+  const rp = readJson(path.join(WORK, 'results', f), { verdicts: [] });
+  const ra = byKey(readJson(path.join(WORK, 'results', `${g}.reaudit.json`), { verdicts: [] }).verdicts);
+  const rfix = readJson(path.join(WORK, 'batches', 'repair', `${g}.fix.json`), { questions: [] }).questions;
+  const rb = byKey(positional(readJson(path.join(WORK, 'results', `${g}.reaudit.json.blind-answers.json`), { answers: [] }).answers, rfix));
+  for (const x of ['repair', 'reaudit']) keep(path.join(WORK, 'results', `${g}.${x}.json`), `${g}.${x}.json`);
+  keep(path.join(WORK, 'results', `${g}.reaudit.json.blind-answers.json`), `${g}.reaudit.blind.json`);
+  for (const v of rp.verdicts || []) repairs.set(v.key ?? v.id, { v, r: ra.get(v.key ?? v.id), b: rb.get(v.key ?? v.id), g });
+}
+function applyRepair(key, cand, status, ver, base) {
+  const rp = repairs.get(key);
+  if (!rp || status !== 'provisional') return { cand, status };
+  const fixed = rp.v.fixed || rp.v.question;
+  if (rp.v.verdict === 'fix' && fixed && rp.r && rp.r.verdict === 'pass' && (rp.b ? rp.b.answer === fixed.answer : rp.r.blindAnswer === fixed.answer)) {
+    ver.method.push('再監査の指摘に沿って再修正し、別エージェントの再監査（ブラインド解答一致）で合格');
+    ver.roles.repair = `repair:${rp.g}`; ver.roles.reauditor2 = `reaudit:${rp.g}`;
+    ver.notes = `再修正: ${(rp.v.detail || '').slice(0, 200)}｜${ver.notes}`;
+    return { cand: { ...fixed, ...base }, status: 'verified' };
+  }
+  if (rp.v.verdict === 'reject' || (rp.r && rp.r.verdict === 'reject')) { ver.notes = `再修正後に除外: ${(rp.r?.detail || rp.v.detail || '').slice(0, 200)}｜${ver.notes}`; return { cand, status: 'rejected' }; }
+  return { cand, status };
 }
 
 // ================= 旧版 =================
@@ -94,7 +124,8 @@ for (let ch = 1; ch <= 12; ch++) {
     const ra = readJson(path.join(WORK, 'results', `legacy-${pb}.reaudit.json`));
     if (ra) { reVerdicts.push(...(ra.verdicts || [])); keep(path.join(WORK, 'results', `legacy-${pb}.reaudit.json`), `legacy-${pb}.reaudit.json`); }
     const rb = readJson(path.join(WORK, 'results', `legacy-${pb}.reaudit.json.blind-answers.json`));
-    if (rb) { reBlind.push(...(rb.answers || [])); keep(path.join(WORK, 'results', `legacy-${pb}.reaudit.json.blind-answers.json`), `legacy-${pb}.reaudit.blind.json`); }
+    const lfix = readJson(path.join(WORK, 'batches', 'legacy', `${pb}.fix.json`), { questions: [] }).questions;
+    if (rb) { reBlind.push(...positional(rb.answers || [], lfix)); keep(path.join(WORK, 'results', `legacy-${pb}.reaudit.json.blind-answers.json`), `legacy-${pb}.reaudit.blind.json`); }
   }
   const reaudit = byKey(reVerdicts), reblind = byKey(reBlind);
   const verdicts = byKey(audVerdicts, 'id');
@@ -103,7 +134,7 @@ for (let ch = 1; ch <= 12; ch++) {
     const base = { id: o.id, legacy: o.legacy, origin: { batch: b, key: o.id, by: '旧版（v2・AI作成）' } };
     const ver = { date: DATE, method: [], roles: { author: '旧版（AI作成・出典なし）' }, log: `bank/audit/${auditFileOf[o.id] || `legacy-${b}.audit.json`}#${o.id}`, notes: '' };
     if (!v) { counts.legacy.unaudited++; finalize({ ...o, ...base }, 'provisional', { ...ver, notes: '未監査' }, base); continue; }
-    const cand = { ...(v.question || o), ...base };
+    let cand = { ...(v.question || o), ...base };
     const s = solver.get(o.id);
     ver.roles.solver = `solve:${b}（別モデル・正答を見ずに解答）`; ver.roles.auditor = `audit:${(auditFileOf[o.id] || b).replace(/^legacy-|\.audit\.json$/g, '')}（${LEGACY_LENS[ch]}）`;
     ver.notes = (v.notes || '').slice(0, 600);
@@ -122,6 +153,7 @@ for (let ch = 1; ch <= 12; ch++) {
       const blindOk = rb ? rb.answer === cand.answer : (r && r.blindAnswer === cand.answer);
       status = r && r.verdict === 'pass' && blindOk ? 'verified' : r && r.verdict === 'reject' ? 'rejected' : 'provisional';
       if (r) ver.notes = `再監査: ${(r.notes || r.detail || '').slice(0, 300)}｜${ver.notes}`;
+      ({ cand, status } = applyRepair(o.id, cand, status, ver, base));
     } else {
       status = 'rejected';
       ver.method = ['独立ブラインド解答（別モデル）', `領域監査（${LEGACY_LENS[ch]}）で除外`];
@@ -140,10 +172,11 @@ for (const a of plan) {
   const audit = readJson(path.join(WORK, 'results', `${a.id}.audit.json`));
   if (!gen || !audit) continue;
   for (const c of gen.cases || []) cases.set(c.id, { id: c.id, title: c.title, text: c.text, fictional: true, origin: a.id });
-  const solver = byKey(readJson(path.join(WORK, 'results', `${a.id}.solver.json`), { answers: [] }).answers);
+  const solver = byKey(positional(readJson(path.join(WORK, 'results', `${a.id}.solver.json`), { answers: [] }).answers, gen.questions));
   const verdicts = byKey(audit.verdicts);
   const reaudit = byKey(readJson(path.join(WORK, 'results', `${a.id}.reaudit.json`), { verdicts: [] }).verdicts);
-  const reblind = byKey(readJson(path.join(WORK, 'results', `${a.id}.reaudit.json.blind-answers.json`), { answers: [] }).answers);
+  const fixQs = readJson(path.join(WORK, 'batches', 'gen', `${a.id}.fix.json`), { questions: [] }).questions;
+  const reblind = byKey(positional(readJson(path.join(WORK, 'results', `${a.id}.reaudit.json.blind-answers.json`), { answers: [] }).answers, fixQs));
   for (const f of ['solver', 'audit', 'reaudit']) keep(path.join(WORK, 'results', `${a.id}.${f}.json`), `${a.id}.${f}.json`);
   keep(path.join(WORK, 'batches', 'gen', `${a.id}.json`), `${a.id}.generated.json`);
   for (const g of gen.questions) {
@@ -170,6 +203,7 @@ for (const a of plan) {
       const blindOk = rb ? rb.answer === cand.answer : (r && r.blindAnswer === cand.answer);
       status = r && r.verdict === 'pass' && blindOk ? 'verified' : r && r.verdict === 'reject' ? 'rejected' : 'provisional';
       if (r) ver.notes = `再監査: ${(r.notes || r.detail || '').slice(0, 300)}｜${ver.notes}`;
+      ({ cand, status } = applyRepair(key, cand, status, ver, base));
     } else {
       status = 'rejected';
       ver.method = ['独立ブラインド解答（別モデル）', `領域監査（${LENS[a.subject]}）で除外`];
