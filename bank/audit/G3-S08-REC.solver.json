@@ -1,0 +1,14 @@
+{"answers":[
+{"key":"#0","answer":0,"confidence":"high","ambiguous":false,"note":"療担規則第8条: 他の診療録と区別して整備"},
+{"key":"#1","answer":2,"confidence":"high","ambiguous":false,"note":"療担規則第9条: その完結の日から5年(診療録)"},
+{"key":"#2","answer":3,"confidence":"high","ambiguous":false,"note":"療担規則第6条: 無償交付だが、ただし書で法第88条等(傷病手当金意見書等)は例外あり。「例外なく」が誤り。a(第9条:3年)は正"},
+{"key":"#3","answer":0,"confidence":"high","ambiguous":false,"note":"療担規則第22条 遅滞なく様式第一号又はこれに準ずる様式"},
+{"key":"#4","answer":1,"confidence":"high","ambiguous":false,"note":"a正(第9条ただし書)、b誤(3年)、c正(医師法24条2項)、d誤(歯科医師法も5年)、e誤"},
+{"key":"#5","answer":0,"confidence":"high","ambiguous":false,"note":"医師法24条2項:病院管理者、療担規則第9条:保険医療機関"},
+{"key":"#6","answer":0,"confidence":"high","ambiguous":false,"note":"保助看法42条2項: 病院管理者、5年"},
+{"key":"#7","answer":3,"confidence":"high","ambiguous":false,"note":"薬剤師法28条3項:調剤録の保存義務は薬局開設者。個人ではない"},
+{"key":"#8","answer":4,"confidence":"high","ambiguous":false,"note":"診療放射線技師法28条:技師が作成し医師の署名を受ける。逆が誤"},
+{"key":"#9","answer":3,"confidence":"high","ambiguous":false,"note":"救急救命士法46条2項:記載の日から5年間"},
+{"key":"#10","answer":4,"confidence":"high","ambiguous":false,"note":"診療放射線技師法37条:第28条1項違反は20万円以下の過料"},
+{"key":"#11","answer":4,"confidence":"high","ambiguous":false,"note":"薬剤師法施行規則14条ただし書:1,3,5,6号のみ。処方箋交付医師の氏名は8号"}
+]}

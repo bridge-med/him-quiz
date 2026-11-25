@@ -1,0 +1,15 @@
+{"answers":[
+{"key":"G3-S07-OTH-01","answer":3,"confidence":"high","ambiguous":false,"note":"外来/入院比=540/300=1.8（経営管理指標 参考1）"},
+{"key":"G3-S07-OTH-02","answer":2,"confidence":"high","ambiguous":false,"note":"紹介率=(紹介+救急)/初診=1000/2000=50%"},
+{"key":"G3-S07-OTH-03","answer":1,"confidence":"high","ambiguous":false,"note":"146000/(365×200)=2.0（許可病床数）"},
+{"key":"G3-S07-OTH-04","answer":4,"confidence":"high","ambiguous":false,"note":"職員1人当たり医業収益の分母は常勤＋非常勤換算職員数。許可病床数は1床当たり医業収益"},
+{"key":"G3-S07-OTH-05","answer":2,"confidence":"high","ambiguous":false,"note":"病院報告用語:外来患者は往診及び巡回診療患者を含む"},
+{"key":"G3-S07-OTH-06","answer":0,"confidence":"medium","ambiguous":false,"note":"1日平均外来患者数=年間延数/当該年の年間日数(365)=200.0。292日は罠"},
+{"key":"G3-S07-OTH-07","answer":0,"confidence":"high","ambiguous":false,"note":"a,bの分子が1日平均入院患者数。cは外来、dは入院診療収益、eは外来延数"},
+{"key":"G3-S07-OTH-08","answer":2,"confidence":"high","ambiguous":false,"note":"1,314,000千円/109,500人=12,000円"},
+{"key":"G3-S07-OTH-09","answer":2,"confidence":"high","ambiguous":false,"note":"09200はI11を含まない（I10-I15は09100）"},
+{"key":"G3-S07-OTH-10","answer":1,"confidence":"high","ambiguous":false,"note":"疾病分類表 a-0905 に I60-I62等"},
+{"key":"G3-S07-OTH-11","answer":1,"confidence":"high","ambiguous":false,"note":"死因分類表に20000外因あり、S00-T98とZ00-Z99の項目なし。疾病統計は損傷の性質（第XIX章）を主要病態、死因統計は外因を原死因"},
+{"key":"G3-S07-OTH-12","answer":3,"confidence":"high","ambiguous":false,"note":"a-0200新生物はC00-D48で悪性のみではない"},
+{"key":"G3-S07-OTH-13","answer":0,"confidence":"high","ambiguous":false,"note":"死因分類表09303 脳梗塞=I63,I69.3"}
+]}

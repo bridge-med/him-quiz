@@ -1,0 +1,381 @@
+{
+ "verdicts": [
+  {
+   "key": "G3-S06-DAT-01",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "x-legacy-L06b:mext-joho1-ch4 学習22（量的データの分析）尺度の4分類: 名義=性別、順序=成績評価、間隔=気温、比例=身長・体重 を本文で確認。盲検一致。"
+  },
+  {
+   "key": "G3-S06-DAT-02",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "x-legacy-L06b:mext-joho1-ch4 学習22: 間隔尺度=絶対的な原点なし・等単位制あり・差は意味あり比は意味なし、量的データに分類、を確認。他の選択肢は名義/順序/比例の記述と一致。盲検一致。"
+  },
+  {
+   "key": "G3-S06-DAT-03",
+   "verdict": "fix",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": false,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "x-legacy-L06b:mext-joho1-ch4 学習22（2倍暑いは不適合例・比例尺度は比も意味）と学習23(1)（質的データ/カテゴリ型データ、数値でも同様の演算ができないことがある）を確認。キー・解説は正しい。盲検一致。",
+   "detail": "出典2のロケータ誤り: 見出し「質的データの種類とその扱い」は学習23(1)（学習24の見出しは「質的データとその種類」）。学習23に修正。",
+   "fixed": {
+    "subject": "S06",
+    "subtopic": "データの種類と尺度",
+    "format": "knowledge",
+    "difficulty": "standard",
+    "polarity": "negative",
+    "question": "データの尺度水準について、誤っているものはどれか。",
+    "choices": [
+     "名義尺度と順序尺度は、まとめて質的データ（カテゴリ型データ）と呼ばれることがある。",
+     "気温15℃の地点と30℃の地点では、30℃の地点の方が2倍暑いといえる。",
+     "体重は絶対的な0をもつので、データの比も意味をもつ。",
+     "成績評価（優・良・可）では、優と良の差と良と可の差が一致する保障はない。",
+     "質的データは、数値で表されていても量的データと同様の演算ができないことがある。"
+    ],
+    "answer": 1,
+    "explanation": {
+     "correct": "気温は間隔尺度であり、絶対的な原点がないためデータの比は意味をもたない。「30℃の地点は15℃の地点より2倍暑い」と判断するのは、尺度と分析の方法が合っていない例として挙げられている。",
+     "choiceNotes": [
+      "正しい。名義尺度と順序尺度をまとめて質的データまたはカテゴリ型データと呼ぶことがある。",
+      null,
+      "正しい。体重は比例尺度で、絶対的な0と等単位制をもつ。",
+      "正しい。順序尺度では順序はあるが、程度の差が一致する保障はない。",
+      "正しい。一見数値で表されていても量的データと同様の演算や可視化ができないことがある。"
+     ],
+     "point": "間隔尺度（気温）で「何倍」と言ってはいけない。比が言えるのは比例尺度だけ。"
+    },
+    "sources": [
+     {
+      "ref": "x-legacy-L06b:mext-joho1-ch4",
+      "title": "高等学校情報科「情報Ⅰ」教員研修用教材（本編）第4章 情報通信ネットワークとデータの活用・巻末",
+      "url": "https://www.mext.go.jp/content/20200722-mxt_jogai02-100013300_006.pdf",
+      "locator": "第4章 学習22（データの尺度）",
+      "quote": "地点 B は地点 A より２倍暑いと判断してしまう"
+     },
+     {
+      "ref": "x-legacy-L06b:mext-joho1-ch4",
+      "title": "高等学校情報科「情報Ⅰ」教員研修用教材（本編）第4章 情報通信ネットワークとデータの活用・巻末",
+      "url": "https://www.mext.go.jp/content/20200722-mxt_jogai02-100013300_006.pdf",
+      "locator": "第4章 学習23（質的データの種類とその扱い）",
+      "quote": "名義尺度と順序尺度をまとめて質的データまたはカテゴリ型データと呼ぶことがある"
+     },
+     {
+      "ref": "x-legacy-L06b:mext-joho1-ch4",
+      "title": "高等学校情報科「情報Ⅰ」教員研修用教材（本編）第4章 情報通信ネットワークとデータの活用・巻末",
+      "url": "https://www.mext.go.jp/content/20200722-mxt_jogai02-100013300_006.pdf",
+      "locator": "第4章 学習22（データの尺度）",
+      "quote": "0cm や 0kg など，絶対的な 0 を持ち等単位制もあるので，データの差だけでなくデータの比も意味を持つ"
+     }
+    ],
+    "asOf": "2020-07 文部科学省「情報Ⅰ」教員研修用教材（尺度水準の定義は改定の影響を受けない基本事項）",
+    "key": "G3-S06-DAT-03"
+   }
+  },
+  {
+   "key": "G3-S06-DAT-04",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "x-legacy-L06b:mext-joho1-ch4 学習22 データ変容: 水準化（レベル化）=量的データを区切って順序尺度（質的データ）に変換、例に気温→普通・夏日・真夏日。盲検一致。"
+  },
+  {
+   "key": "G3-S06-DAT-05",
+   "verdict": "fix",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": false,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "x-legacy-L06b:mext-joho1-ch4 学習22: 不適合例3つ（名義尺度の平均／順序尺度の順序無視のグラフ／気温の2倍）と、比例尺度は比も意味・間隔尺度は差が意味・層別の定義を確認。a,bが不適合、c,d,eは適切でキー「aとb」は一意。",
+   "detail": "盲検がb（順序無視の棒グラフ）を『適切』と読み曖昧と指摘。出典はbを不適合例として明記しておりキーは正しいが、bの文が何をしたのか具体性に欠けるため、並べ順を明示（良・可・優）して不適合であることを明確化。解説も補足。",
+   "fixed": {
+    "subject": "S06",
+    "subtopic": "データの種類と尺度",
+    "format": "combination",
+    "difficulty": "advanced",
+    "polarity": "positive",
+    "question": "次のa〜eのうち、データの尺度と分析・表現の方法が合っていない例の組み合わせはどれか。\na　病棟番号（数字で入力された名義尺度のデータ）の平均を計算する。\nb　順序尺度のデータ（優・良・可）をカテゴリー別に集計し、カテゴリーの順序を無視して「良・可・優」の順に並べた棒グラフに表す。\nc　体重60kgの人は体重30kgの人の2倍の体重であると判断する。\nd　性別（名義尺度）のデータの値を基に対象をグループに分け、身長を比較する。\ne　2地点の気温（摂氏）について、その差を比較する。",
+    "choices": [
+     "aとb",
+     "aとc",
+     "bとd",
+     "cとe",
+     "dとe"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "a（数字で入力されている名義尺度のデータの平均を計算する）とb（順序尺度の集計結果を、優・良・可というカテゴリーの順序を無視して棒グラフや円グラフに表す）は、尺度と分析の方法があっていない例として示されている。順序尺度は順序構造が情報なので、順序を保って表す。",
+     "choiceNotes": [
+      null,
+      "cは比例尺度（体重）で比が意味をもつので適切である。",
+      "dは名義尺度の値に基づく層別で、適切な分析である。",
+      "cは適切（比例尺度は比も意味をもつ）、eも適切（間隔尺度は差が意味をもつ）。",
+      "dは層別、eは間隔尺度の差の比較で、いずれも適切である。"
+     ],
+     "point": "名義尺度は平均しない、順序尺度は順序を保って表す、間隔尺度は差まで、比例尺度は比まで使える。"
+    },
+    "sources": [
+     {
+      "ref": "x-legacy-L06b:mext-joho1-ch4",
+      "title": "高等学校情報科「情報Ⅰ」教員研修用教材（本編）第4章 情報通信ネットワークとデータの活用・巻末",
+      "url": "https://www.mext.go.jp/content/20200722-mxt_jogai02-100013300_006.pdf",
+      "locator": "第4章 学習22（データの尺度）",
+      "quote": "数字で入力されている名義尺度のデータについて平均を計算してしまう。"
+     },
+     {
+      "ref": "x-legacy-L06b:mext-joho1-ch4",
+      "title": "高等学校情報科「情報Ⅰ」教員研修用教材（本編）第4章 情報通信ネットワークとデータの活用・巻末",
+      "url": "https://www.mext.go.jp/content/20200722-mxt_jogai02-100013300_006.pdf",
+      "locator": "第4章 学習22（データの尺度）",
+      "quote": "順序尺度のデータをカテゴリー別に集計した結果をカテゴリーの順序を無視して棒グラフや円グラフに表し"
+     },
+     {
+      "ref": "x-legacy-L06b:mext-joho1-ch4",
+      "title": "高等学校情報科「情報Ⅰ」教員研修用教材（本編）第4章 情報通信ネットワークとデータの活用・巻末",
+      "url": "https://www.mext.go.jp/content/20200722-mxt_jogai02-100013300_006.pdf",
+      "locator": "第4章 学習22（データ変容）",
+      "quote": "層別とは，名義尺度や順序尺度で記録されたデータの値を基に，データの対象をグループに分けて比較分析等"
+     }
+    ],
+    "asOf": "2020-07 文部科学省「情報Ⅰ」教員研修用教材（尺度水準の定義は改定の影響を受けない基本事項）",
+    "key": "G3-S06-DAT-05"
+   }
+  },
+  {
+   "key": "G3-S06-DAT-06",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "x-legacy-L06b:mext-joho1-ch4 学習22 データ変容: 層別・変数変換（人口1000人あたり）・水準化・欠測値を近い値で埋める、を確認。stats:naruhodo-chirabari-jyokyu 偏差値: 標準化=平均0・標準偏差1。盲検一致。"
+  },
+  {
+   "key": "G3-S06-DAT-07",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "stats:naruhodo-histogram 特徴／気をつけることは？: 量的データ用、度数分布表を作成してから、横軸=階級・縦軸=階級に含まれるデータ数、面積が度数、階級数5～10 を本文で確認。盲検一致。"
+  },
+  {
+   "key": "G3-S06-DAT-08",
+   "verdict": "fix",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": false,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "再計算 16÷(20÷10)=8（calc一致）。stats:naruhodo-chirabari-shokyu ヒストグラム（幅2倍→縦1/2）、stats:naruhodo-histogram 気をつけることは？（面積が個数に比例）を確認。盲検一致。",
+   "detail": "choiceNotes[0] が『2回割っている（16÷2÷2÷2）』と記載（式は3回割っており記述と不一致）。16÷8＝2 の説明に修正。",
+   "fixed": {
+    "subject": "S06",
+    "subtopic": "度数分布とグラフ",
+    "format": "calculation",
+    "difficulty": "standard",
+    "polarity": "positive",
+    "question": "入院患者の年齢のヒストグラムを、縦軸を「階級幅10歳あたりの度数」として描いている。度数16の階級を、階級幅20歳（例：60歳以上80歳未満）の1つの階級として描く場合、面積が度数に比例するようにするには、長方形の高さをいくつにすればよいか。",
+    "choices": [
+     "2",
+     "4",
+     "8",
+     "16",
+     "32"
+    ],
+    "answer": 2,
+    "explanation": {
+     "correct": "ヒストグラムは面積が度数を表す。階級幅が2倍になれば横幅を2倍にし、高さを2分の1にする。16÷（20÷10）＝8。",
+     "choiceNotes": [
+      "高さを8分の1にしている（16÷8＝2）。割るのは階級幅の比である2（20÷10）である。",
+      "高さを4分の1にしている。",
+      null,
+      "高さを度数のまま描くと、階級をまとめただけで高く見え誤解を招く。",
+      "階級幅の比を掛けており逆である。"
+     ],
+     "point": "階級幅が k 倍 → 高さは度数÷k（面積＝度数）。"
+    },
+    "sources": [
+     {
+      "ref": "stats:naruhodo-chirabari-shokyu",
+      "title": "なるほど統計学園「データの散らばりを捉える」",
+      "url": "https://www.stat.go.jp/naruhodo/5_tokucho/chirabari.html",
+      "locator": "ヒストグラム",
+      "quote": "階級の幅が2倍になったときには、長方形の横の長さが2倍になり、縦の長さが2分の1になります"
+     },
+     {
+      "ref": "stats:naruhodo-histogram",
+      "title": "なるほど統計学園「ヒストグラム」",
+      "url": "https://www.stat.go.jp/naruhodo/4_graph/shokyu/histogram.html",
+      "locator": "気をつけることは？",
+      "quote": "面積がデータの個数に比例するように描きます"
+     }
+    ],
+    "asOf": "総務省統計局 なるほど統計学園（2026-11取得時点の掲載内容）",
+    "calc": {
+     "expr": "16/(20/10)",
+     "value": 8
+    },
+    "key": "G3-S06-DAT-08"
+   }
+  },
+  {
+   "key": "G3-S06-DAT-09",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "stats:naruhodo-hakohige 特徴／気をつけることは？: 中央の線=中央値（平均値ではない）、箱の下辺=Q1・上辺=Q3、偏りがあれば平均は箱の外もあり、複数データのばらつき比較、10％点をひげの両端とする図もある、を確認。盲検一致。"
+  },
+  {
+   "key": "G3-S06-DAT-10",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "再計算: 度数合計20+15+9+4+2=50、15/50=0.30、累積35/50=0.70、20/50=0.40。stats:naruhodo-yougo-sa 相対度数の定義を確認。盲検一致。"
+  },
+  {
+   "key": "G3-S06-DAT-11",
+   "verdict": "fix",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": false,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "再計算: IQR=10、下限20-15=5、上限30+15=45、46のみ外側（6,12,38,44は範囲内）。x-legacy-L06b:mext-joho1-ch4 学習22 の箱ひげ図（外れ値表示）記述と stats:naruhodo-chirabari-shokyu 四分位範囲の定義を確認。盲検一致。",
+   "detail": "出典1・2のロケータ誤り: 該当箇所（Q1−1.5×IQR／Q3＋1.5×IQR、外れ値を点で示す箱ひげ図）は『学習22 量的データの分析』にある（学習23は『質的データの分析』）。学習22に修正。",
+   "fixed": {
+    "subject": "S06",
+    "subtopic": "度数分布とグラフ",
+    "format": "knowledge",
+    "difficulty": "advanced",
+    "polarity": "positive",
+    "question": "あるデータの第1四分位数が20、第3四分位数が30であった。四分位範囲の1.5倍を基準とし、その外側にある値を外れ値として点で示す箱ひげ図を描くとき、外れ値として点で示されるものはどれか。",
+    "choices": [
+     "6",
+     "12",
+     "38",
+     "44",
+     "46"
+    ],
+    "answer": 4,
+    "explanation": {
+     "correct": "四分位範囲（IQR）＝30−20＝10。ひげは第1四分位数−1.5×IQR＝5から第3四分位数＋1.5×IQR＝45までの範囲に収まり、それより離れた値が外れ値として点で示される。46は45を超えるので外れ値である。",
+     "choiceNotes": [
+      "6は下側の基準5より大きく、ひげの範囲内である。",
+      "12はひげの範囲（5〜45）内である。",
+      "38は第3四分位数と45の間で、ひげの範囲内である。",
+      "44は45以下で、ひげの範囲内である。",
+      null
+     ],
+     "point": "外れ値の基準：Q1−1.5×IQR 未満、Q3＋1.5×IQR 超（IQR＝Q3−Q1）。"
+    },
+    "sources": [
+     {
+      "ref": "x-legacy-L06b:mext-joho1-ch4",
+      "title": "高等学校情報科「情報Ⅰ」教員研修用教材（本編）第4章 情報通信ネットワークとデータの活用・巻末",
+      "url": "https://www.mext.go.jp/content/20200722-mxt_jogai02-100013300_006.pdf",
+      "locator": "第4章 学習22（量的データの分析）",
+      "quote": "第 3 四分位数から第 3 四分位数＋ 1.5 ×四分位範囲 ( 箱の長さ ) までの間の"
+     },
+     {
+      "ref": "x-legacy-L06b:mext-joho1-ch4",
+      "title": "高等学校情報科「情報Ⅰ」教員研修用教材（本編）第4章 情報通信ネットワークとデータの活用・巻末",
+      "url": "https://www.mext.go.jp/content/20200722-mxt_jogai02-100013300_006.pdf",
+      "locator": "第4章 学習22（量的データの分析）",
+      "quote": "それ以上離れた値を外れ値として点で示す箱ひげ図"
+     },
+     {
+      "ref": "stats:naruhodo-chirabari-shokyu",
+      "title": "なるほど統計学園「データの散らばりを捉える」",
+      "url": "https://www.stat.go.jp/naruhodo/5_tokucho/chirabari.html",
+      "locator": "四分位範囲",
+      "quote": "（第3四分位数－第1四分位数）の値のことを四分位範囲といい"
+     }
+    ],
+    "asOf": "2020-07 文部科学省「情報Ⅰ」教員研修用教材（尺度水準の定義は改定の影響を受けない基本事項）",
+    "key": "G3-S06-DAT-11"
+   }
+  },
+  {
+   "key": "G3-S06-DAT-12",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "stats:naruhodo-yougo-a 円グラフ（構成比の内訳を円で）・帯グラフ（長方形で）・折れ線グラフ（経過時間の変化）、stats:naruhodo-yougo-ha 棒グラフ（数量の大小比較）・ヒストグラム・箱ひげ図（分布・ばらつき）を確認。盲検一致。"
+  }
+ ]
+}

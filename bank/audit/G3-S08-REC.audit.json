@@ -1,0 +1,278 @@
+{
+ "verdicts": [
+  {
+   "key": "G3-S08-REC-01",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "療担規則 第8条（版の施行日2026-06-01）を原文確認。「他の診療録と区別して整備」。誤答はいずれも条文に反する（第9条ただし書5年）。blind一致。"
+  },
+  {
+   "key": "G3-S08-REC-02",
+   "verdict": "fix",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": false,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "療担規則 第9条、薬剤師法 第28条第3項、救急救命士法 第46条第2項を原文確認。キー（完結の日）は正しい。blind一致。",
+   "detail": "正答肢「その診療の完結の日」の「診療の」は条文にない解釈で、キャッシュ内に裏づけがない。条文は「患者の診療録にあつては、その完結の日」。条文どおり「その診療録の完結の日」に修正し、解説末尾も合わせた。",
+   "fixed": {
+    "subject": "S08",
+    "subtopic": "療養担当規則と診療録",
+    "format": "knowledge",
+    "difficulty": "standard",
+    "polarity": "positive",
+    "question": "療担規則に定める、保険医療機関における患者の診療録の保存期間（5年間）の起算点として正しいものはどれか。",
+    "choices": [
+     "その診療録の最終の記入の日",
+     "その診療録の記載の日",
+     "その診療録の完結の日",
+     "その患者の初診の日",
+     "その診療に係る費用を請求した日"
+    ],
+    "answer": 2,
+    "explanation": {
+     "correct": "療担規則第9条は、帳簿及び書類その他の記録を「その完結の日から三年間」保存するとしたうえで、ただし書で「患者の診療録にあつては、その完結の日から五年間とする」と定める。診療録の保存期間の起算点は、その完結の日である。",
+     "choiceNotes": [
+      "「最終の記入の日から三年間」は薬剤師法第28条第3項の調剤録の保存の起算点であり、療担規則の診療録ではない。",
+      "「その記載の日から五年間」は救急救命士法第46条第2項の救急救命処置録の保存の起算点である。",
+      null,
+      "療担規則第9条の起算点は「完結の日」であり、初診の日とは定められていない。",
+      "療担規則第9条の起算点は「完結の日」であり、費用を請求した日とは定められていない。"
+     ],
+     "point": "療担の保存期間はいずれも「完結の日から」：記録3年・診療録5年。"
+    },
+    "sources": [
+     {
+      "ref": "law:保険医療機関及び保険医療養担当規則",
+      "title": "保険医療機関及び保険医療養担当規則",
+      "url": "https://laws.e-gov.go.jp/law/332M50000100015",
+      "locator": "第9条",
+      "quote": "ただし、患者の診療録にあつては、その完結の日から五年間とする。"
+     },
+     {
+      "ref": "law:薬剤師法",
+      "title": "薬剤師法",
+      "url": "https://laws.e-gov.go.jp/law/335AC0000000146",
+      "locator": "第28条第3項",
+      "quote": "薬局開設者は、第一項の調剤録を、最終の記入の日から三年間、保存しなければならない。"
+     },
+     {
+      "ref": "law:救急救命士法",
+      "title": "救急救命士法",
+      "url": "https://laws.e-gov.go.jp/law/403AC0000000036",
+      "locator": "第46条第2項",
+      "quote": "その他の救急救命処置に関するものはその救急救命士において、その記載の日から五年間、これを保存しなければならない。"
+     }
+    ],
+    "asOf": "2026-11 e-Gov現行法令",
+    "key": "G3-S08-REC-02"
+   }
+  },
+  {
+   "key": "G3-S08-REC-03",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "療担規則 第6条ただし書（傷病手当金等は無償交付の例外）、第9条本文、第11条の5第一号・第三号、第23条の2を原文確認。blind一致。"
+  },
+  {
+   "key": "G3-S08-REC-04",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "療担規則 第22条を原文確認（保険医・遅滞なく・様式第一号又はこれに準ずる様式）。blind一致。"
+  },
+  {
+   "key": "G3-S08-REC-05",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "療担規則 第9条（記録3年・診療録5年）、医師法 第24条第2項（5年）、歯科医師法 第23条第2項（5年）を原文確認。正しいのはaとcのみ。blind一致。"
+  },
+  {
+   "key": "G3-S08-REC-06",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "医師法 第24条第2項（勤務医分は管理者）、療担規則 第9条（主体は保険医療機関）、第22条（記載は保険医）を原文確認。blind一致。"
+  },
+  {
+   "key": "G3-S08-REC-07",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "保健師助産師看護師法 第42条第1項・第2項を原文確認（病院等の管理者／その助産師、5年間）。blind一致。"
+  },
+  {
+   "key": "G3-S08-REC-08",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "薬剤師法 第27条、第28条第1〜3項（版の施行日2026-05-21）を原文確認。備付け・保存は薬局開設者、記入は薬剤師。blind一致。"
+  },
+  {
+   "key": "G3-S08-REC-09",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "診療放射線技師法 第28条第1項・第2項を原文確認。技師が作成し、指示した医師・歯科医師の署名を受ける。blind一致。"
+  },
+  {
+   "key": "G3-S08-REC-10",
+   "verdict": "fix",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": false,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "救急救命士法 第46条第1項・第2項、薬剤師法 第28条第3項、療担規則 第9条を原文確認。キー（記載の日から5年間）は正しい。blind一致。",
+   "detail": "解説が保存義務者を一律に救急救命士と読める書き方だった。第46条第2項は、省令で定める機関に勤務する場合は厚生労働大臣が指定する者、その他は救急救命士と分けている。解説のみ修正。",
+   "fixed": {
+    "subject": "S08",
+    "subtopic": "医療関係職種の記録",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "救急救命士法に定める救急救命処置録の保存期間として、正しいものはどれか。",
+    "choices": [
+     "その記載の日から2年間",
+     "その記載の日から3年間",
+     "最終の記入の日から3年間",
+     "その記載の日から5年間",
+     "その完結の日から3年間"
+    ],
+    "answer": 3,
+    "explanation": {
+     "correct": "救急救命士法第46条は、救急救命士は救急救命処置を行ったときは遅滞なく救急救命処置録に記載しなければならないとし（第1項）、その救急救命処置録は「その記載の日から五年間」保存しなければならないと定める（第2項）。保存するのは、厚生労働省令で定める機関に勤務する救急救命士のものはその機関につき厚生労働大臣が指定する者、その他のものはその救急救命士である。",
+     "choiceNotes": [
+      "保存期間は5年間であり、2年間ではない。",
+      "保存期間は5年間であり、3年間ではない。",
+      "「最終の記入の日から三年間」は薬剤師法第28条第3項の調剤録の保存期間である。",
+      null,
+      "「完結の日から三年間」は療担規則第9条の帳簿・書類その他の記録の保存期間である。"
+     ],
+     "point": "救急救命処置録：記載の日から5年間。"
+    },
+    "sources": [
+     {
+      "ref": "law:救急救命士法",
+      "title": "救急救命士法",
+      "url": "https://laws.e-gov.go.jp/law/403AC0000000036",
+      "locator": "第46条第1項",
+      "quote": "救急救命士は、救急救命処置を行ったときは、遅滞なく厚生労働省令で定める事項を救急救命処置録に記載しなければならない。"
+     },
+     {
+      "ref": "law:救急救命士法",
+      "title": "救急救命士法",
+      "url": "https://laws.e-gov.go.jp/law/403AC0000000036",
+      "locator": "第46条第2項",
+      "quote": "その他の救急救命処置に関するものはその救急救命士において、その記載の日から五年間、これを保存しなければならない。"
+     },
+     {
+      "ref": "law:薬剤師法",
+      "title": "薬剤師法",
+      "url": "https://laws.e-gov.go.jp/law/335AC0000000146",
+      "locator": "第28条第3項",
+      "quote": "薬局開設者は、第一項の調剤録を、最終の記入の日から三年間、保存しなければならない。"
+     }
+    ],
+    "asOf": "2026-11 e-Gov現行法令",
+    "key": "G3-S08-REC-10"
+   }
+  },
+  {
+   "key": "G3-S08-REC-11",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "診療放射線技師法 第37条第二号（20万円以下の過料）、医師法 第33条の3第一号、保助看法 第45条第二号、薬剤師法 第32条第六号（いずれも50万円以下の罰金）、救急救命士法 第55条第二号・第三号（30万円以下の罰金）を原文確認。blind一致。"
+  },
+  {
+   "key": "G3-S08-REC-12",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "薬剤師法施行規則 第16条（版の施行日2026-10-01）柱書ただし書と第一〜十号を原文確認。調剤済みの場合は一・三・五・六号のみ、医師等の氏名は第八号。blind一致。"
+  }
+ ]
+}

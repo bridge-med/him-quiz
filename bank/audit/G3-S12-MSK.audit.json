@@ -1,0 +1,172 @@
+{
+ "verdicts": [
+  {
+   "key": "G3-S12-MSK-01",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou12 L00－L08 除外で丹毒(A46)・伝染性軟属腫(B08.1)・帯状疱疹(B02.-)を確認。L01 膿か疹(※とびひ)・L03 蜂巣炎は第ⅩⅡ章。a/c/eのみ第Ⅰ章で組合せは一意。全コード実在。"
+  },
+  {
+   "key": "G3-S12-MSK-02",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou12 L89 注「最も高いステージを示すコード１つのみ」、L89.0〜L89.3・L89.9 の定義を確認。Ⅲ＋Ⅱ→L89.2のみ。"
+  },
+  {
+   "key": "G3-S12-MSK-03",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou13 M80 包含(骨粗しょう症性椎骨圧潰及び楔状化)、M80.0、M48.5 除外(M80.-)、M84.4 除外、M81 除外を確認。S32.0=腰椎骨折。"
+  },
+  {
+   "key": "G3-S12-MSK-04",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou13 M84.4(病的骨折NOS／除外: 圧潰脊椎NEC M48.5・骨粗しょう症における病的骨折 M80.-)、M81.8 老人性、M82.0*(C90.0†) を確認。誤りはcのみ。"
+  },
+  {
+   "key": "G3-S12-MSK-05",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou13 M16.0〜M16.7 の細分を確認。M16.2=形成不全の結果としての股関節症，両側性、M16.3=NOS・一側性。Q65.1=先天性股関節脱臼，両側性。"
+  },
+  {
+   "key": "G3-S12-MSK-06",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou13 M15 包含/除外(単関節で両側の併発 M16－M19)、M15－M19 除外(脊椎の骨関節炎 M47.-)、M15.1、M16.1 を確認。誤りはdのみ。"
+  },
+  {
+   "key": "G3-S12-MSK-07",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou14 N18.1〜N18.5 の説明文を確認。N18.3=GFRの中度低下(30－59 mL/min)。他の選択肢は各ステージの原文どおり。"
+  },
+  {
+   "key": "G3-S12-MSK-08",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou14 N18.5 包含(慢性尿毒症、末期腎臓病: 透析中もの 等)を確認。N18.4/N19/N17.9/N18.9 の名称も確認。"
+  },
+  {
+   "key": "G3-S12-MSK-09",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou14 N18 除外「高血圧（症）を伴う慢性腎不全（I12.0）」、icd:naiyou09 I12 包含・I12.0/I12.9/I13.1 を確認。icd:instruction の連鎖規定(N18.- に I10 の記載を伴う→I12.-)と主要病態 例８(I12.0)も整合。N18 には高血圧の追加コードの注もあるが、問題文は除外の用語どおりで選択肢中 I12.0 が唯一。"
+  },
+  {
+   "key": "G3-S12-MSK-10",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou14 N39.0 の注(B95－B97 追加)、icd:naiyou01 B95－B98 注(一次コーディングに用いない)、B96.2 を確認。N30.9・A41.5・N12 の名称確認。"
+  },
+  {
+   "key": "G3-S12-MSK-11",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou14 N10(急性)、N11.9(慢性NOS)、N12 包含(腎盂腎炎NOS)・除外(結石性 N20.9)、N20 包含を確認。"
+  },
+  {
+   "key": "G3-S12-MSK-12",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou14 腎不全(N17－N19)除外(R39.2, O90.4, N99.0, P96.0)、N17 包含(急性腎機能障害)、N19 包含(腎機能不全NOS)を確認。誤りはdのみ。"
+  }
+ ]
+}

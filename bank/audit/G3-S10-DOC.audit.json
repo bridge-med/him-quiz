@@ -1,0 +1,271 @@
+{
+ "verdicts": [
+  {
+   "key": "G3-S10-DOC-01",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:r08-kihon-shisetsukijun-tsuchi 第4の2 1(4) を通読。6か月・32時間以上で一致。他肢は期間/時間数が相違。盲検一致。"
+  },
+  {
+   "key": "G3-S10-DOC-02",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:r08-kihon-shisetsukijun-tsuchi 第4の2 1(4)ア〜オの5項目を確認、レセプト作成・点検は項目外。ins:r08-ika-ryuijiko A207-2(3)で請求事務は業務外。選択肢0は「等」で医薬品医療機器等法を包含。盲検一致。"
+  },
+  {
+   "key": "G3-S10-DOC-03",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:r08-kihon-shisetsukijun-tsuchi 第4の2 1(3)(4) 確認。職場内研修を含む／研修中も業務を行わせる／責任者は補助者以外の常勤／教育システムは「望ましい」。盲検一致。"
+  },
+  {
+   "key": "G3-S10-DOC-04",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:r08-kihon-shisetsukijun-tsuchi 第4の2 1(2)(3) 確認。派遣可・請負不可・院内看護職員不可・常勤換算可・勤務場所不問。盲検一致。"
+  },
+  {
+   "key": "G3-S10-DOC-05",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:r08-kihon-shisetsukijun-tsuchi 第4の2 1(2) 25床ごとに1名以上、300/25=12。誤答肢も40/30/20/15対1の計算と一致。2のICT算入(1.2/1.3人)を除外する但し書きあり。盲検一致。"
+  },
+  {
+   "key": "G3-S10-DOC-06",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:r08-kihon-shisetsukijun-tsuchi 第4の2 1(2) 確認。常勤=週4日以上かつ週31時間以上、育児等短縮は週30時間以上、換算は所定労働時間(32時間未満は32時間)。盲検一致。"
+  },
+  {
+   "key": "G3-S10-DOC-07",
+   "verdict": "fix",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": false,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:r08-ika-ryuijiko A207-2(3) を通読し、正答(文書作成補助)と4つの誤答肢(医師以外の指示・請求事務・窓口受付・物品運搬)を確認。盲検一致。",
+   "detail": "キー・解説・出典は正しい。設問文に根拠となる制度（医師事務作業補助体制加算の算定上の業務範囲）と年度が無く条件が不完全なため、設問文のみ補った。他は無変更。",
+   "fixed": {
+    "key": "G3-S10-DOC-07",
+    "subject": "S10",
+    "subtopic": "医師事務作業補助者",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "医師事務作業補助体制加算（令和8年度）の算定上、医師事務作業補助者が行うことができる業務として、正しいものはどれか。",
+    "choices": [
+     "医師の指示の下に行う診断書の文書作成補助",
+     "看護師の指示の下に行う看護記録の整理",
+     "入院患者の診療報酬明細書の作成",
+     "外来の受付窓口での患者の受付業務",
+     "病棟間の検体や物品の運搬"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "留意事項通知 A207-2(3)により、医師事務作業補助者の業務は医師（歯科医師を含む）の指示の下に、診断書・診療情報提供書・返信・診療サマリー・診療計画書等の文書作成補助などに限定される。",
+     "choiceNotes": [
+      null,
+      "医師以外の職種の指示の下に行う業務は医師事務作業補助者の業務としない。",
+      "診療報酬の請求事務は医師事務作業補助者の業務としない。",
+      "窓口・受付業務は医師事務作業補助者の業務としない。",
+      "物品運搬業務は医師事務作業補助者の業務としない。"
+     ],
+     "point": "業務は「医師の指示の下」に限る。請求事務・受付・看護補助・物品運搬は業務外。"
+    },
+    "sources": [
+     {
+      "ref": "ins:r08-ika-ryuijiko",
+      "title": "診療報酬の算定方法の一部改正に伴う実施上の留意事項について（令和８年３月５日保医発0305第６号）別添１ 医科診療報酬点数表に関する事項",
+      "url": "https://www.mhlw.go.jp/content/12400000/001757385.pdf",
+      "locator": "A207-2(3)",
+      "quote": "診断書 ・診療 情報提供書・返信・診療サマリー・診療計画書 等の文書作成補助"
+     },
+     {
+      "ref": "ins:r08-ika-ryuijiko",
+      "title": "診療報酬の算定方法の一部改正に伴う実施上の留意事項について（令和８年３月５日保医発0305第６号）別添１ 医科診療報酬点数表に関する事項",
+      "url": "https://www.mhlw.go.jp/content/12400000/001757385.pdf",
+      "locator": "A207-2(3)",
+      "quote": "医師以外の職種の指示の下に行う業務、診療報酬の請求事務（ＤＰＣのコーディングに係る業務を含む。）、窓口・受付業務"
+     }
+    ],
+    "asOf": "令和8年度診療報酬改定（令和8年3月5日 保医発0305第7号・第6号、令和8年10月訂正反映）"
+   }
+  },
+  {
+   "key": "G3-S10-DOC-08",
+   "verdict": "fix",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": false,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:r08-ika-ryuijiko A207-2(3) を通読。院内がん登録等の入力、救急医療情報システム入力、カンファレンス準備、地域連携パス代行入力は業務内、DPCコーディングは請求事務として業務外。盲検一致。",
+   "detail": "キー・解説・出典は正しい。設問文に根拠となる制度と年度が無く、「医師の指示の下に行うものとして」の係り方も曖昧なため、設問文のみ明確化した。他は無変更。",
+   "fixed": {
+    "key": "G3-S10-DOC-08",
+    "subject": "S10",
+    "subtopic": "医師事務作業補助者",
+    "format": "knowledge",
+    "difficulty": "standard",
+    "polarity": "negative",
+    "question": "医師事務作業補助体制加算（令和8年度）の算定上、医師の指示の下に行うものであっても、医師事務作業補助者の業務に含まれないものはどれか。",
+    "choices": [
+     "院内がん登録等の統計・調査のための入力作業",
+     "救急医療情報システムへの入力",
+     "カンファレンスのための準備作業",
+     "地域連携パスへの代行入力",
+     "DPCのコーディングに係る業務"
+    ],
+    "answer": 4,
+    "explanation": {
+     "correct": "留意事項通知 A207-2(3)は、診療報酬の請求事務（DPCのコーディングに係る業務を含む）を医師事務作業補助者の業務としないこととしている。医師の指示の下であっても業務範囲外である。",
+     "choiceNotes": [
+      "医療の質の向上に資する事務作業（院内がん登録等の統計・調査・入力作業）として業務に含まれる。",
+      "行政上の業務（救急医療情報システムへの入力）として業務に含まれる。",
+      "医療の質の向上に資する事務作業（教育や研修・カンファレンスのための準備作業等）として業務に含まれる。",
+      "クリニカルパス・地域連携パスへの代行入力として業務に含まれる。",
+      null
+     ],
+     "point": "院内がん登録の入力は業務内、DPCコーディングは請求事務として業務外。"
+    },
+    "sources": [
+     {
+      "ref": "ins:r08-ika-ryuijiko",
+      "title": "診療報酬の算定方法の一部改正に伴う実施上の留意事項について（令和８年３月５日保医発0305第６号）別添１ 医科診療報酬点数表に関する事項",
+      "url": "https://www.mhlw.go.jp/content/12400000/001757385.pdf",
+      "locator": "A207-2(3)",
+      "quote": "院内がん登録等の統計・調査 ・入力作業"
+     },
+     {
+      "ref": "ins:r08-ika-ryuijiko",
+      "title": "診療報酬の算定方法の一部改正に伴う実施上の留意事項について（令和８年３月５日保医発0305第６号）別添１ 医科診療報酬点数表に関する事項",
+      "url": "https://www.mhlw.go.jp/content/12400000/001757385.pdf",
+      "locator": "A207-2(3)",
+      "quote": "診療報酬の請求事務（ＤＰＣのコーディングに係る業務を含む。）"
+     },
+     {
+      "ref": "ins:r08-ika-ryuijiko",
+      "title": "診療報酬の算定方法の一部改正に伴う実施上の留意事項について（令和８年３月５日保医発0305第６号）別添１ 医科診療報酬点数表に関する事項",
+      "url": "https://www.mhlw.go.jp/content/12400000/001757385.pdf",
+      "locator": "A207-2(3)",
+      "quote": "救急医療情報システムへの入力"
+     }
+    ],
+    "asOf": "令和8年度診療報酬改定（令和8年3月5日 保医発0305第7号・第6号、令和8年10月訂正反映）"
+   }
+  },
+  {
+   "key": "G3-S10-DOC-09",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:r08-kihon-shisetsukijun-tsuchi 第4の2 1(5)エ 確認。代行入力機能を使用、機能なしは入力業務に携わらない、安全管理GL等に準拠。盲検一致。"
+  },
+  {
+   "key": "G3-S10-DOC-10",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:r08-kihon-shisetsukijun-tsuchi 第4の2 1(5)ア〜エ 確認。a・b正、c・dは根拠文書の入替え、eは個別業務内容の文書整備が必要で誤り。盲検一致。"
+  },
+  {
+   "key": "G3-S10-DOC-11",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:r08-kihon-shisetsukijun-tsuchi 第4の2 3（3年以上・5割以上）、4（加算2に経験割合要件なし）、5(3)（併せて届出不可）、ins:r08-ika-ryuijiko A207-2(2)（入院初日に限り算定）を確認。盲検一致。"
+  },
+  {
+   "key": "G3-S10-DOC-12",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:r08-kihon-shisetsukijun-tsuchi 第4の2 3(1)ア・イと3(2)イを確認。災害拠点病院は20〜40対1の要件。盲検一致。"
+  }
+ ]
+}

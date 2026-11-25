@@ -1,0 +1,10 @@
+{"answers":[
+{"key":"G3-S01-WRK-01","answer":2,"confidence":"high","ambiguous":false,"note":"A水準は年960時間以下（労基法141条・特別則）"},
+{"key":"G3-S01-WRK-02","answer":2,"confidence":"high","ambiguous":false,"note":"医療法118条 連携型特定地域医療提供機関（派遣、通算1,860/各院960）"},
+{"key":"G3-S01-WRK-03","answer":3,"confidence":"high","ambiguous":false,"note":"医療法施行規則65条: 要件は管理者でないこと＋講習修了。産業医に限られない"},
+{"key":"G3-S01-WRK-04","answer":1,"confidence":"high","ambiguous":false,"note":"医療法施行規則 24時間/46時間・9時間/18時間（3583-3587行）"},
+{"key":"G3-S01-WRK-05","answer":2,"confidence":"high","ambiguous":false,"note":"施行規則 休息予定時間中の労働は労働発生月の翌月末日（11月→12月31日）までにできるだけ早期に確保"},
+{"key":"G3-S01-WRK-06","answer":4,"confidence":"high","ambiguous":false,"note":"C水準は2035年度末終了の対象外（B・連携Bのみ）。155時間超措置は施行規則"},
+{"key":"G3-S01-WRK-07","answer":3,"confidence":"medium","ambiguous":false,"note":"検診センター医師は診療を直接の目的としない業務で対象外（ikisapo資料）。老健・介護医療院は対象施設に含まれる"},
+{"key":"G3-S01-WRK-08","answer":1,"confidence":"high","ambiguous":false,"note":"医療法113条1項: 都道府県知事が開設者の申請により指定"}
+]}

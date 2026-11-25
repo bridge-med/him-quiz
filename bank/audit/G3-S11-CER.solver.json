@@ -1,0 +1,16 @@
+{"answers":[
+{"key":"#0","answer":1,"confidence":"high","ambiguous":false,"note":"根拠: 死亡診断書記入マニュアルR8 p4-5。Cは24h経過でも死後診察で関連死と判定できれば死亡診断書可"},
+{"key":"#1","answer":3,"confidence":"high","ambiguous":false,"note":"根拠: マニュアル4(1)⑤ 脳死判定は第2回検査終了時刻"},
+{"key":"#2","answer":1,"confidence":"high","ambiguous":false,"note":"根拠: マニュアル(6)③ 終末期の呼吸不全は記入しない"},
+{"key":"#3","answer":2,"confidence":"high","ambiguous":false,"note":"根拠: マニュアル⑥ 産科的原因ならⅠ欄、否ならⅡ欄。産後日数は出産当日0日、妊産婦死亡は42日未満"},
+{"key":"#4","answer":1,"confidence":"high","ambiguous":false,"note":"根拠: マニュアル死因の種類 ガス中毒自殺は7中毒ではなく9自殺"},
+{"key":"#5","answer":3,"confidence":"high","ambiguous":false,"note":"根拠: 医政医発0831第1号 死後診察で関連死と判定できれば死亡診断書"},
+{"key":"#6","answer":1,"confidence":"high","ambiguous":false,"note":"肝不全←転移性肝癌←S状結腸癌の因果順"},
+{"key":"#7","answer":2,"confidence":"high","ambiguous":false,"note":"根拠: マニュアル 5老人ホームに有料老人ホームを含む"},
+{"key":"#8","answer":2,"confidence":"high","ambiguous":false,"note":"根拠: 総務省告示R8-11 令和9年1月1日から施行"},
+{"key":"#9","answer":2,"confidence":"high","ambiguous":false,"note":"根拠: 統計法28条2項"},
+{"key":"#10","answer":2,"confidence":"high","ambiguous":false,"note":"根拠: 告示R8-11 章分類は25項目"},
+{"key":"#11","answer":0,"confidence":"high","ambiguous":false,"note":"根拠: 告示H27-35 4桁以上で3桁目と4桁目の間に小数点、疾病分類表はハイフン"},
+{"key":"#12","answer":3,"confidence":"high","ambiguous":false,"note":"根拠: 告示 5 留意事項"},
+{"key":"#13","answer":0,"confidence":"high","ambiguous":false,"note":"a,bが正。cは我が国の疾病構造等にも配慮、dは施行日以後に適用、eは当分の間"}
+]}

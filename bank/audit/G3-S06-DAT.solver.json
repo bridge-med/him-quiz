@@ -1,0 +1,14 @@
+{"answers":[
+{"key":"G3-S06-DAT-01","answer":0,"confidence":"high","ambiguous":false,"note":"性別は名義尺度"},
+{"key":"G3-S06-DAT-02","answer":2,"confidence":"high","ambiguous":false,"note":"間隔尺度は原点が任意で差のみ意味をもつ"},
+{"key":"G3-S06-DAT-03","answer":1,"confidence":"high","ambiguous":false,"note":"摂氏は間隔尺度で比は無意味"},
+{"key":"G3-S06-DAT-04","answer":1,"confidence":"high","ambiguous":false,"note":"区分化で順序尺度"},
+{"key":"G3-S06-DAT-05","answer":0,"confidence":"low","ambiguous":true,"note":"合っていないのはaのみ。c(体重は比例尺度で2倍は妥当)・b・d・eは適切。aと対になる選択肢はaとb/aとcだが、どちらも2つ目は適切で、問題に欠陥の疑い。仮にaとbを選択"},
+{"key":"G3-S06-DAT-06","answer":0,"confidence":"high","ambiguous":false,"note":"層別の定義"},
+{"key":"G3-S06-DAT-07","answer":0,"confidence":"high","ambiguous":false,"note":"ヒストグラムは量的データ用"},
+{"key":"G3-S06-DAT-08","answer":2,"confidence":"high","ambiguous":false,"note":"16/(20/10)=8"},
+{"key":"G3-S06-DAT-09","answer":0,"confidence":"high","ambiguous":false,"note":"中央線は中央値"},
+{"key":"G3-S06-DAT-10","answer":1,"confidence":"high","ambiguous":false,"note":"15/50=0.30"},
+{"key":"G3-S06-DAT-11","answer":4,"confidence":"high","ambiguous":false,"note":"IQR=10、境界5と45、46のみ外側"},
+{"key":"G3-S06-DAT-12","answer":0,"confidence":"high","ambiguous":false,"note":"構成比は円・帯グラフ"}
+]}

@@ -1,0 +1,116 @@
+{
+ "verdicts": [
+  {
+   "key": "G3-S02-REG-01",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:医療法 第4条第1項（所在地の都道府県知事の承認）・第2項（医療審議会の意見）・第4条の2第1項（特定機能病院＝厚生労働大臣）を2026-10-01施行版で確認。選択肢2の解説（地方厚生局長＝保険医療機関の指定を扱う）は健康保険法第205条（キャッシュ）と同法施行規則第159条第1項第5号の2（e-Govで別途照合、未登録）で確認。盲検一致。"
+  },
+  {
+   "key": "G3-S02-REG-02",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "mgmt:chiiki-shien-h10-tsuchi 第二 三(一)①イ) の算式を確認。1680/2400×100=70.0。誤答4値（55.0／41.2／78.6／127.3）も再計算して解説どおり。盲検一致。"
+  },
+  {
+   "key": "G3-S02-REG-03",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "mgmt:chiiki-shien-gaiyou 承認要件ア〜ウ、および通知 第二 三(一)①ア)〜ウ) と一致（80／65+40／50+70）。通知⑤の年次計画による承認（紹介率65％以上）は問題文のただし書きで除外済みのため選択肢0は不該当で一意。盲検一致。"
+  },
+  {
+   "key": "G3-S02-REG-04",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "通知 第二 三(一)①（紹介患者の数＝初診に限る・電話情報の転記を含む、初診患者の数＝救急自動車搬入患者を除く、前年度の数）と③（開設者と直接関係のある他の機関への紹介を除く）を原文で確認。誤りは選択肢3のみ。盲検一致。"
+  },
+  {
+   "key": "G3-S02-REG-05",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:医療法施行規則 第9条の2第1項・第2項（開設者→都道府県知事、毎年10月5日まで）、第9条の2の2第1項・第2項（特定機能病院→厚生労働大臣、毎年10月5日まで）を2026-10-01施行版で確認。盲検一致。"
+  },
+  {
+   "key": "G3-S02-REG-06",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "規則第6条の2（200・知事の例外）、法第4条第2項・第3項、通知 第二 三(五)（病床の種別は問わない）を確認。a・d正、b・c誤で組合せは一意。盲検一致。"
+  },
+  {
+   "key": "G3-S02-REG-07",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "通知 第二 三(四)ウ)（病院内に教育責任者・研修委員会）・オ)（年間12回以上・前年度）・なお書き（院外の医療従事者を含む、医師以外も対象）、五(三)②（臨床研修を念頭におかない）を確認。盲検一致。"
+  },
+  {
+   "key": "G3-S02-REG-08",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "規則第9条の19第1項第1号、通知 第二 三(一)⑥・三(二)ア)イ)・五(七)③④ を原文で確認。誤りは選択肢4（関係者以外が大半）のみ。厚労省ページ（mgmt:chiiki-shien-page）で同通知が現行掲載であることも確認。盲検一致。"
+  }
+ ]
+}

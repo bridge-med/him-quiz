@@ -1,0 +1,225 @@
+{
+ "verdicts": [
+  {
+   "key": "G4-S12-END-01",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou04 E10-E14共通4桁 .3†（白内障H28.0＊・網膜症H36.0＊）、.2†N08.3＊、.4†G63.2＊を確認。E11=2型、全コード実在。solver一致。"
+  },
+  {
+   "key": "G4-S12-END-02",
+   "verdict": "fix",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": false,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "答E10.0は正（icd:naiyou04 共通4桁 .0『ケトアシドーシスを伴う又は伴わない昏睡』、.1『昏睡の記載のないもの』、E87.2除外）。solver一致。",
+   "detail": "sources[2]のlocatorのみ誤り。引用文『昏睡は糖尿病によるものと考えられ、』は icd:instruction 4.4.3 再選択ルール ルールMB3 の例12（主要病態：昏睡→E10.0）にあり、4.4.4 第Ⅳ章の注釈の例12（糖尿病性糸球体ネフローゼ E14.2†/N08.3*）とは別。locatorを訂正（他は無変更）。",
+   "fixed": {
+    "format": "coding",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "ICD-10（2013年版）で、「主要病態」として「ケトアシドーシスによる昏睡を伴う1型＜インスリン依存性＞糖尿病」と記載された場合に付与するコードはどれか。",
+    "choices": [
+     "E10.0",
+     "E10.1",
+     "E10.7",
+     "E87.2",
+     "R40.2"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "共通4桁細分類.0「昏睡を伴うもの」には「ケトアシドーシスを伴う又は伴わない昏睡」が含まれる。昏睡を伴うケトアシドーシスは.0を用い、1型糖尿病ではE10.0となる。",
+     "choiceNotes": [
+      null,
+      ".1「ケトアシドーシスを伴うもの」は昏睡の記載のないもの。昏睡があれば.0を用いる。",
+      ".7は多発合併症を伴うもので、主要病態に複数の合併症が記載され一つを選べない場合に用いる。",
+      "E87.2（アシドーシス）では糖尿病性アシドーシス（共通4桁項目.1を伴うE10－E14）が除外されている。",
+      "昏睡が糖尿病によるものと考えられる場合、昏睡はコーディングを修飾するものとして扱われ、糖尿病の細分類.0で表す。"
+     ],
+     "point": "糖尿病の.0は昏睡（ケトアシドーシスの有無を問わない）、.1は昏睡なしのケトアシドーシス。"
+    },
+    "sources": [
+     {
+      "ref": "icd:naiyou04",
+      "title": "疾病、傷害及び死因の統計分類 内容例示表 第Ⅳ章",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou04.pdf",
+      "locator": "E10－E14 共通4桁細分類 .0",
+      "quote": "・ケトアシドーシスを伴う又は伴わない昏睡"
+     },
+     {
+      "ref": "icd:naiyou04",
+      "title": "疾病、傷害及び死因の統計分類 内容例示表 第Ⅳ章",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou04.pdf",
+      "locator": "E10－E14 共通4桁細分類 .1",
+      "quote": "．1    ケトアシドーシスを伴うもの 糖尿病性： ・アシドーシス 昏睡の記載のないもの"
+     },
+     {
+      "ref": "icd:instruction",
+      "title": "ICD-10（2013年版）準拠 インストラクションマニュアル",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+      "locator": "4.4.3 主要病態が正確に記載されていない場合の再選択ルール ルールMB3 例12",
+      "quote": "昏睡は糖尿病によるものと考えられ、"
+     }
+    ],
+    "subject": "S12",
+    "subtopic": "内分泌・代謝（第Ⅳ章）",
+    "asOf": "ICD-10（2013年版）準拠",
+    "key": "G4-S12-END-02"
+   }
+  },
+  {
+   "key": "G4-S12-END-03",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou04 共通4桁 .2†腎症／.4†多発ニューロパチー(G63.2＊)／.5え疽／.6関節障害†(M14.2＊)／.7多発合併症／.9を確認。誤りは.7のみ。solver一致。"
+  },
+  {
+   "key": "G4-S12-END-04",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:instruction 4.4.4 第Ⅳ章 E10－E14（.7は一つを選択できないときのみ、例13 E10.7）とnaiyou04 .8/.9を確認。E11.7が唯一。solver一致。"
+  },
+  {
+   "key": "G4-S12-END-05",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "a,b: icd:instruction 4.4.4 第Ⅳ章 E10－E14（任意的追加コード可）。c: naiyou04 E87.2除外。d: E89.1包含・E10-E14除外。e: E11除外O24.-、naiyou15 O24.4。a・dのみ正。solver一致。"
+  },
+  {
+   "key": "G4-S12-END-06",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou04 E06.3 橋本甲状腺炎＜橋本病＞、E06.1/E06.2の除外(E06.3)、E06.5、E03.9（粘液水腫NOS）を確認。solver一致。"
+  },
+  {
+   "key": "G4-S12-END-07",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou04 E06除外 分娩後甲状腺炎(O90.5)、naiyou15 O90.5、E05.5、E03.5、E89.0、E03除外(E89.0)、E06.1、章頭除外(O00－O99)を確認。solver一致。"
+  },
+  {
+   "key": "G4-S12-END-08",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou04 E05.9 甲状腺中毒症性心疾患†(I43.8＊)、naiyou09 I43.8＊ 甲状腺中毒症性心疾患(E05.9†)を確認。E05.0/E05.5/I42.9/I51.9の名称も確認。solver一致。"
+  },
+  {
+   "key": "G4-S12-END-09",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou04 E43（3倍）、E44.0（2倍以上3倍未満）、E44.1（1倍以上2倍未満）、E45、E46の定義・包含を確認。solver一致。"
+  },
+  {
+   "key": "G4-S12-END-10",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou04 E66.2 ピックウィック症候群、E66.0/.8/.9、naiyou06 G47.3除外(E66.2)を確認。solver一致。"
+  },
+  {
+   "key": "G4-S12-END-11",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou04 E79除外 痛風(M10.-)、E79.0 無症候性高尿酸血症、E86包含 脱水(症)、E87.6、E88.3 腫瘍溶解症候群を確認。solver一致。"
+  },
+  {
+   "key": "G4-S12-END-12",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou04 共通4桁 .5（え疽は星印なし、†は末梢血管症のみI79.2＊）、naiyou09 I79.2＊、naiyou18 R02除外を確認。E11.5単独が唯一。solver一致。"
+  }
+ ]
+}

@@ -4642,6 +4642,4246 @@
     "log": "bank/audit/G2-S12-SUM.audit.json#G2-S12-SUM-12",
     "notes": "instruction 4.4.2 例15 (外因 Y コードは任意的追加); T88.7 除外 明示された有害作用 (naiyou19 L4156); T36-T50 包含 過量投与/誤投与. Overlaps #9/#10 but tests the synthesis; acceptable. Solver agrees."
    }
+  },
+  {
+   "subject": "S12",
+   "subtopic": "感染症（第Ⅰ章）",
+   "format": "icd",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "ICD-10（2013年版）の第Ⅰ章「感染症及び寄生虫症（A00－B99）」で、章の除外として示され、他章に分類されるものはどれか。",
+   "choices": [
+    "インフルエンザ",
+    "腸チフス",
+    "肺結核",
+    "帯状疱疹",
+    "カンジダ症"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "第Ⅰ章の章除外に「インフルエンザ及びその他の急性呼吸器感染症（J00－J22）」があり、インフルエンザは第Ⅹ章（呼吸器系の疾患）のJ09－J11に分類される。",
+    "choiceNotes": [
+     null,
+     "腸チフスは第Ⅰ章の腸管感染症（A01.0）に分類される。",
+     "肺結核は第Ⅰ章の結核（A15－A16）に分類される。",
+     "帯状疱疹は第Ⅰ章のB02（皮膚及び粘膜病変を特徴とするウイルス感染症）に分類される。",
+     "カンジダ症は第Ⅰ章の真菌症B37に分類される。"
+    ],
+    "point": "感染症でもインフルエンザ・急性呼吸器感染症（J00－J22）は第Ⅹ章。"
+   },
+   "sources": [
+    {
+     "ref": "icd:naiyou01",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第1章 感染症及び寄生虫症（A00-B99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou01.pdf",
+     "locator": "第Ⅰ章 章の除外",
+     "quote": "インフルエンザ及びその他の急性呼吸器感染症（Ｊ00－Ｊ22）"
+    },
+    {
+     "ref": "icd:naiyou10",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第10章 呼吸器系の疾患（J00-J99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou10.pdf",
+     "locator": "中間分類 J09－J18",
+     "quote": "インフルエンザ及び肺炎（Ｊ09－Ｊ18）"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s12-0043",
+   "origin": {
+    "batch": "G3-S12-INF",
+    "key": "G3-S12-INF-01",
+    "by": "gen:G3-S12-INF"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G3-S12-INF",
+     "solver": "solve:G3-S12-INF（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G3-S12-INF（ICD-10専門）"
+    },
+    "log": "bank/audit/G3-S12-INF.audit.json#G3-S12-INF-01",
+    "notes": "icd:naiyou01 第Ⅰ章冒頭の除外（インフルエンザ及びその他の急性呼吸器感染症 J00-J22）を確認。A01.0/A15-A16/B02/B37は第Ⅰ章、J09-J11は第Ⅹ章（icd.mjs）。盲検一致。"
+   }
+  },
+  {
+   "subject": "S12",
+   "subtopic": "感染症（第Ⅰ章）",
+   "format": "icd",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "ICD-10（2013年版）の第Ⅰ章では「周産期に特有の感染症及び寄生虫症（P35－P39）」が章の除外とされているが、例外として第Ⅰ章に分類されるものはどれか。",
+   "choices": [
+    "先天性結核",
+    "先天性風疹症候群",
+    "先天性サイトメガロウイルス感染症",
+    "新生児の細菌性敗血症",
+    "先天梅毒"
+   ],
+   "answer": 4,
+   "explanation": {
+    "correct": "章の除外注は「周産期に特有の感染症及び寄生虫症［新生児破傷風，先天梅毒，周産期淋菌感染症及び周産期HIV病を除く］（P35－P39）」としており、先天梅毒は第Ⅰ章のA50に分類される。",
+    "choiceNotes": [
+     "先天性結核はP37.0（第ⅩⅥ章）。結核の中間分類でも除外されている。",
+     "先天性風疹症候群はP35.0（第ⅩⅥ章）に分類される。",
+     "先天性サイトメガロウイルス感染症はP35.1（第ⅩⅥ章）に分類される。",
+     "新生児の細菌性敗血症はP36（第ⅩⅥ章）に分類され、A40・A41から除外されている。",
+     null
+    ],
+    "point": "周産期の感染症はP35－P39が原則。例外は新生児破傷風・先天梅毒・周産期淋菌感染症・周産期HIV病の4つ。"
+   },
+   "sources": [
+    {
+     "ref": "icd:naiyou01",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第1章 感染症及び寄生虫症（A00-B99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou01.pdf",
+     "locator": "第Ⅰ章 章の除外",
+     "quote": "周産期に特有の感染症及び寄生虫症 ［新生児破傷風， 先天梅毒， 周産期淋菌感染症 及び周産期ヒト免疫不全ウイルス ［ＨＩＶ］ 病を除く］（Ｐ35－Ｐ39）"
+    },
+    {
+     "ref": "icd:naiyou01",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第1章 感染症及び寄生虫症（A00-B99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou01.pdf",
+     "locator": "A15－A19 除外",
+     "quote": "先天性結核（Ｐ37．0）"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s12-0044",
+   "origin": {
+    "batch": "G3-S12-INF",
+    "key": "G3-S12-INF-02",
+    "by": "gen:G3-S12-INF"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G3-S12-INF",
+     "solver": "solve:G3-S12-INF（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G3-S12-INF（ICD-10専門）"
+    },
+    "log": "bank/audit/G3-S12-INF.audit.json#G3-S12-INF-02",
+    "notes": "icd:naiyou01 章除外の括弧書き（新生児破傷風・先天梅毒・周産期淋菌感染症・周産期HIV病）を確認。P37.0/P35.0/P35.1/P36は第XVI章、A50は第Ⅰ章。盲検一致。"
+   }
+  },
+  {
+   "subject": "S12",
+   "subtopic": "感染症（第Ⅰ章）",
+   "format": "icd",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "診療録に「肺結核」とのみ記載され、細菌学的検査・組織学的検査の実施の有無や結果についての記載がない場合、ICD-10（2013年版）で分類されるコードはどれか。",
+   "choices": [
+    "A15.0",
+    "A15.3",
+    "A16.2",
+    "A16.0",
+    "A16.1"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "A16は「細菌学的又は組織学的に確認されていない」呼吸器結核で、確認の記載がない肺結核（肺結核NOS）はA16.2に分類される。",
+    "choiceNotes": [
+     "A15.0は培養の有無にかかわらず喀痰鏡検により確認された肺結核。",
+     "A15.3は確認されているがその方法が詳細不明の肺結核で、確認されたことの記載が前提になる。",
+     null,
+     "A16.0は細菌学的及び組織学的検査が陰性であった肺結核。",
+     "A16.1は検査が実施されていないことが明らかな肺結核。"
+    ],
+    "point": "A15＝確認あり、A16＝確認なし。A16.0陰性／A16.1未実施／A16.2記載なし（NOS）。"
+   },
+   "sources": [
+    {
+     "ref": "icd:naiyou01",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第1章 感染症及び寄生虫症（A00-B99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou01.pdf",
+     "locator": "A16.2",
+     "quote": "Ａ16．2   肺結核， 細菌学的又は組織学的確認の記載がないもの"
+    },
+    {
+     "ref": "icd:naiyou01",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第1章 感染症及び寄生虫症（A00-B99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou01.pdf",
+     "locator": "A16.1",
+     "quote": "Ａ16．1   肺結核， 細菌学的及び組織学的検査が実施されていないもの"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s12-0045",
+   "origin": {
+    "batch": "G3-S12-INF",
+    "key": "G3-S12-INF-03",
+    "by": "gen:G3-S12-INF"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G3-S12-INF",
+     "solver": "solve:G3-S12-INF（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G3-S12-INF（ICD-10専門）"
+    },
+    "log": "bank/audit/G3-S12-INF.audit.json#G3-S12-INF-03",
+    "notes": "icd:naiyou01 A15.0/A15.3/A16.0/A16.1/A16.2の名称とA16.2包含「肺結核…NOS」を確認。盲検一致。"
+   }
+  },
+  {
+   "subject": "S12",
+   "subtopic": "感染症（第Ⅰ章）",
+   "format": "icd",
+   "difficulty": "standard",
+   "polarity": "negative",
+   "question": "ICD-10（2013年版）の結核（A15－A19）に関連する分類について、誤っているものはどれか。",
+   "choices": [
+    "先天性結核はP37.0に分類される。",
+    "結核を起こしたHIV病はB20.0に分類される。",
+    "細菌学的に確認された結核性胸膜炎は、第Ⅹ章の胸水（J90）に分類される。",
+    "珪肺結核はJ65に分類される。",
+    "結核の続発・後遺症はB90.-に分類される。"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "結核性胸膜炎は結核の中間分類に含まれ、細菌学的又は組織学的に確認されたものはA15.6（確認の記載がないものはA16.5）に分類される。J90（胸水，他に分類されないもの）には分類しない。",
+    "choiceNotes": [
+     "正しい。結核の中間分類の除外に先天性結核（P37.0）とある。",
+     "正しい。除外に結核を起こしたHIV病（B20.0）とある。",
+     null,
+     "正しい。除外に珪肺結核（J65）とある。",
+     "正しい。除外に結核の続発・後遺症（B90.-）とある。"
+    ],
+    "point": "結核の除外：先天性P37.0、HIV病B20.0、じん肺・珪肺J65、続発・後遺症B90。結核性胸膜炎はA15.6／A16.5。"
+   },
+   "sources": [
+    {
+     "ref": "icd:naiyou01",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第1章 感染症及び寄生虫症（A00-B99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou01.pdf",
+     "locator": "A15－A19 除外",
+     "quote": "結核を起こした HIV 病（Ｂ20．0）"
+    },
+    {
+     "ref": "icd:naiyou01",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第1章 感染症及び寄生虫症（A00-B99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou01.pdf",
+     "locator": "A15.6",
+     "quote": "Ａ15．6   結核性胸膜炎， 細菌学的又は組織学的に確認されたもの"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s12-0046",
+   "origin": {
+    "batch": "G3-S12-INF",
+    "key": "G3-S12-INF-04",
+    "by": "gen:G3-S12-INF"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G3-S12-INF",
+     "solver": "solve:G3-S12-INF（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G3-S12-INF（ICD-10専門）"
+    },
+    "log": "bank/audit/G3-S12-INF.audit.json#G3-S12-INF-04",
+    "notes": "icd:naiyou01 A15-A19除外（P37.0, B20.0, J65, B90.-）とA15.6、icd:naiyou10 J90除外「結核性（A15-A16）」を確認。盲検一致。"
+   }
+  },
+  {
+   "subject": "S12",
+   "subtopic": "感染症（第Ⅰ章）",
+   "format": "coding",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "主要病態が「大腸菌による急性膀胱炎」と記載されている。ICD-10（2013年版）の疾病コーディングルールに従ったコーディングとして正しいものはどれか。",
+   "choices": [
+    "N30.0を「主要病態」とし、B96.2を任意的追加コードとする。",
+    "B96.2を「主要病態」とし、N30.0を追加コードとする。",
+    "A04.4を「主要病態」とする。",
+    "N39.0を「主要病態」とし、B96.2を任意的追加コードとする。",
+    "A49.8を「主要病態」とし、N30.0を追加コードとする。"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "B95－B97は「主要病態」のコードとしては使用せず、第Ⅰ章以外に分類される疾患の病原体を示す任意の追加コードである。部位の明らかな急性膀胱炎はN30.0にコードし、大腸菌はB96.2で追加できる。",
+    "choiceNotes": [
+     null,
+     "B95－B97は主要病態には使用しない（一次コーディングには用いない）。",
+     "A04.4は大腸菌性の腸管感染症で、膀胱炎には当たらない。",
+     "N39.0は部位不明の尿路感染症で、部位（膀胱）が記載されている本例には使わない。",
+     "A49.8は部位不明の細菌感染症。部位の明らかな疾患は身体系統の章に分類する。"
+    ],
+    "point": "病原体＋他章の疾患＝疾患の章のコードが主、B95－B97は任意追加。"
+   },
+   "sources": [
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "疾病コーディング 第Ⅰ章 B95－B97",
+     "quote": "これらのコードは「主要病態」のコードとしては使用しない。"
+    },
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "同 例４",
+     "quote": "急性膀胱炎（N30.0）を「主要病態」としてコードする。"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s12-0047",
+   "origin": {
+    "batch": "G3-S12-INF",
+    "key": "G3-S12-INF-05",
+    "by": "gen:G3-S12-INF"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G3-S12-INF",
+     "solver": "solve:G3-S12-INF（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G3-S12-INF（ICD-10専門）"
+    },
+    "log": "bank/audit/G3-S12-INF.audit.json#G3-S12-INF-05",
+    "notes": "icd:instruction 4.4.4 第Ⅰ章 B95-B97注と例4（N30.0主要病態・B96.2任意的追加）を確認。A04.4/N39.0/A49.8の名称もicd.mjsで確認。盲検一致。"
+   }
+  },
+  {
+   "subject": "S12",
+   "subtopic": "感染症（第Ⅰ章）",
+   "format": "coding",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "主要病態が「細菌性感染症」とのみ記載され、部位も病原体も記載されていない。ICD-10（2013年版）で「主要病態」としてコードするものはどれか。",
+   "choices": [
+    "A49.8",
+    "B96.8",
+    "A49.9",
+    "A41.9",
+    "B94.9"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "部位不明の細菌感染症で病原体も不明なものはA49.9（細菌感染症，詳細不明）にコードする。B95－B97にはコードしない。",
+    "choiceNotes": [
+     "A49.8は部位不明の「その他の」細菌感染症で、病原体が明示された場合に用いる。",
+     "B96.8は他章に分類される疾患の病原体を示す追加コードで、主要病態には使用しない。",
+     null,
+     "A41.9は敗血症，詳細不明で、敗血症の記載がない本例には当たらない。",
+     "B94.9は感染症の続発・後遺症で、現在の感染症には使わない。"
+    ],
+    "point": "「細菌感染症」だけ→A49.9。B95－B97は主要病態に使わない。"
+   },
+   "sources": [
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "疾病コーディング 第Ⅰ章 例５",
+     "quote": "細菌感染症，詳細不明（A49.9）を「主要病態」としてコードする。"
+    },
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "疾病コーディング 第Ⅰ章 B95－B97",
+     "quote": "これらのコードは「主要病態」のコードとしては使用しない。"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s12-0048",
+   "origin": {
+    "batch": "G3-S12-INF",
+    "key": "G3-S12-INF-06",
+    "by": "gen:G3-S12-INF"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G3-S12-INF",
+     "solver": "solve:G3-S12-INF（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G3-S12-INF（ICD-10専門）"
+    },
+    "log": "bank/audit/G3-S12-INF.audit.json#G3-S12-INF-06",
+    "notes": "icd:instruction 4.4.4 第Ⅰ章 例5（A49.9、B95-B97にはコードしない）を確認。A49.8/B96.8/A41.9/B94.9の名称確認。盲検一致。"
+   }
+  },
+  {
+   "subject": "S12",
+   "subtopic": "感染症（第Ⅰ章）",
+   "format": "coding",
+   "difficulty": "advanced",
+   "polarity": "positive",
+   "question": "主要病態が「ウイルス脳炎の後遺症によるてんかん（ウイルス脳炎は10年前に治癒）」と記載されている。ICD-10（2013年版）の疾病コーディングルールに従ったコーディングとして正しいものはどれか。",
+   "choices": [
+    "B94.1を「主要病態」とし、G40.9を追加コードとする。",
+    "G40.9を「主要病態」とし、B94.1を任意的追加コードとする。",
+    "A86を「主要病態」とし、G40.9を追加コードとする。",
+    "G09を「主要病態」とし、G40.9を追加コードとする。",
+    "B94.8を「主要病態」とし、G40.9を追加コードとする。"
+   ],
+   "answer": 1,
+   "explanation": {
+    "correct": "続発・後遺症の分類項目（B90－B94など）は、遺残病態の性質が記載されている場合には「主要病態」の優先コードとしない。優先コードは遺残病態（てんかん，詳細不明 G40.9）で、ウイルス（性）脳炎の続発・後遺症B94.1は任意的追加コードとして使用できる。",
+    "choiceNotes": [
+     "遺残病態の性質（てんかん）が記載されているので、B94.1を主要病態の優先コードにはしない。",
+     null,
+     "ウイルス脳炎は治癒しており、現在の問題として存在しないのでA86は使わない。",
+     "G09はG00.-、G03－G04、G06.-、G08に分類される病態の続発・後遺症に用いる。第Ⅰ章のウイルス脳炎の続発・後遺症はB94.1であり、しかも遺残病態が記載されているので主要病態にしない。",
+     "ウイルス（性）脳炎の続発・後遺症には専用のB94.1がある。B94.8はその他の明示された感染症の続発・後遺症。"
+    ],
+    "point": "後遺症は「残った病態」が主、「…の続発・後遺症」コードは任意追加。"
+   },
+   "sources": [
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "4.4.2 続発・後遺症のコーディング",
+     "quote": "「主要病態」に対する優先コードは、続発・後遺症それ自身"
+    },
+    {
+     "ref": "icd:naiyou01",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第1章 感染症及び寄生虫症（A00-B99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou01.pdf",
+     "locator": "B94.1",
+     "quote": "Ｂ94．1   ウイルス（性）脳炎の続発・後遺症"
+    },
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "4.2.4 G09",
+     "quote": "この分類項目は、G00.-、G03 － G04、G06.- 及び G08 に分類される病態の続発・後"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s12-0049",
+   "origin": {
+    "batch": "G3-S12-INF",
+    "key": "G3-S12-INF-07",
+    "by": "gen:G3-S12-INF"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G3-S12-INF",
+     "solver": "solve:G3-S12-INF（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G3-S12-INF（ICD-10専門）"
+    },
+    "log": "bank/audit/G3-S12-INF.audit.json#G3-S12-INF-07",
+    "notes": "icd:instruction 4.4.2 続発・後遺症、4.4.4 B90-B94注・G09注（例15 G40.9）、4.2.4 G09、icd:naiyou01 B94.1、naiyou06 G09注を確認。盲検一致（medium）だが規則上キーのみ成立。"
+   }
+  },
+  {
+   "subject": "S12",
+   "subtopic": "感染症（第Ⅰ章）",
+   "format": "knowledge",
+   "difficulty": "standard",
+   "polarity": "negative",
+   "question": "ICD-10（2013年版）の感染症及び寄生虫症の続発・後遺症（B90－B94）について、誤っているものはどれか。",
+   "choices": [
+    "B90－B94は、A00－B89に分類される病態が続発・後遺症の原因であることを示すために使用する。",
+    "慢性感染症が現在も持続している場合は、B90－B94に分類する。",
+    "ウイルス性肝炎の続発・後遺症はB94.2に分類される。",
+    "ポリオ後症候群は、B91ではなくG14に分類される。",
+    "死因統計では、ウイルス脳炎の発病から1年以上存在している病態をB94.1に含める。"
+   ],
+   "answer": 1,
+   "explanation": {
+    "correct": "B90－B94の注に「慢性感染症については使用しない。現在の感染症を慢性又は活動性感染症に適宜コードする」とある。持続している感染症は、その感染症自体のコードに分類する。",
+    "choiceNotes": [
+     "正しい。B90－B94の注にある使用目的である。",
+     null,
+     "正しい。B94.2はウイルス性肝炎の続発・後遺症で、ウイルス性肝炎（B15－B19）の除外にも示されている。",
+     "正しい。B91の除外にポリオ後症候群（G14）とある。",
+     "正しい。死因コーディング（4.2.4）でB94.1は発病から1年以上存在している病態を含むとされる。"
+    ],
+    "point": "B90－B94は「もはや存在しない」感染症の後遺症用。慢性・活動性の感染症には使わない。"
+   },
+   "sources": [
+    {
+     "ref": "icd:naiyou01",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第1章 感染症及び寄生虫症（A00-B99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou01.pdf",
+     "locator": "B90－B94 注",
+     "quote": "慢性感染症については使用しない。"
+    },
+    {
+     "ref": "icd:naiyou01",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第1章 感染症及び寄生虫症（A00-B99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou01.pdf",
+     "locator": "B91 除外",
+     "quote": "ポリオ後症候群（G14）"
+    },
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "4.2.4 B94.1",
+     "quote": "及びウイルス脳炎の発病から１年以上存在している病態を含んでいる。"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s12-0050",
+   "origin": {
+    "batch": "G3-S12-INF",
+    "key": "G3-S12-INF-08",
+    "by": "gen:G3-S12-INF"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G3-S12-INF",
+     "solver": "solve:G3-S12-INF（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G3-S12-INF（ICD-10専門）"
+    },
+    "log": "bank/audit/G3-S12-INF.audit.json#G3-S12-INF-08",
+    "notes": "icd:naiyou01 B90-B94注（慢性感染症には使用しない）、B91除外G14、B15-B19除外B94.2、icd:instruction 4.2.4 B94.1（1年以上）を確認。盲検一致。"
+   }
+  },
+  {
+   "subject": "S12",
+   "subtopic": "感染症（第Ⅰ章）",
+   "format": "icd",
+   "difficulty": "advanced",
+   "polarity": "positive",
+   "question": "HIV病が「主要病態」として記載され、HIV病の結果としてニューモシスチス肺炎とカポジ肉腫を起こしていた。ICD-10（2013年版）の疾病コーディングルールで「主要病態」としてコードするものはどれか。",
+   "choices": [
+    "B20.6",
+    "B21.0",
+    "B20.7",
+    "B22.7",
+    "B21.7"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "多発性の付随疾患を伴うHIV病が主要病態の場合、B20－B22の中の2つ以上の項目に分類できる病態はB22.7（他に分類される多発疾患を起こしたHIV病）にコードする。ニューモシスチス肺炎はB20（B20.6）、カポジ肉腫はB21（B21.0）に属し、項目が異なる。",
+    "choiceNotes": [
+     "B20.6はニューモシスチス肺炎を起こしたHIV病のみを表す。必要なら追加コードとして使う。",
+     "B21.0はカポジ肉腫を起こしたHIV病のみを表す。必要なら追加コードとして使う。",
+     "B20.7は同じB20の中の複数の感染症（複合感染症）の場合に使う。",
+     null,
+     "B21.7は同じB21の中の多発性の悪性新生物の場合に使う。"
+    ],
+    "point": "同じ項目内の複数→その項目の.7、B20－B22の項目をまたぐ→B22.7。"
+   },
+   "sources": [
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "疾病コーディング 第Ⅰ章 B20－B24",
+     "quote": "項目に分類できる病態については、B22.7 にコードすべきである。"
+    },
+    {
+     "ref": "icd:naiyou01",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第1章 感染症及び寄生虫症（A00-B99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou01.pdf",
+     "locator": "B20.6",
+     "quote": "Ｂ20．6   ニューモシスチス・イロベチイ肺炎を起こしたＨＩＶ病"
+    },
+    {
+     "ref": "icd:naiyou01",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第1章 感染症及び寄生虫症（A00-B99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou01.pdf",
+     "locator": "B21.0",
+     "quote": "Ｂ21．0   カポジ＜Kaposi＞肉腫を起こしたＨＩＶ病"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s12-0051",
+   "origin": {
+    "batch": "G3-S12-INF",
+    "key": "G3-S12-INF-09",
+    "by": "gen:G3-S12-INF"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G3-S12-INF",
+     "solver": "solve:G3-S12-INF（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G3-S12-INF（ICD-10専門）"
+    },
+    "log": "bank/audit/G3-S12-INF.audit.json#G3-S12-INF-09",
+    "notes": "icd:instruction 4.4.4 B20-B24（項目をまたぐ場合B22.7、例3）とicd:naiyou01 B20.6/B21.0/B20.7/B21.7/B22.7を確認。盲検一致。"
+   }
+  },
+  {
+   "subject": "S12",
+   "subtopic": "感染症（第Ⅰ章）",
+   "format": "icd",
+   "difficulty": "standard",
+   "polarity": "negative",
+   "question": "ICD-10（2013年版）のヒト免疫不全ウイルス［HIV］病に関連する分類について、誤っているものはどれか。",
+   "choices": [
+    "無症候性HIV感染状態はZ21に分類される。",
+    "急性HIV感染症候群はB20（感染症及び寄生虫症を起こしたHIV病）に分類される。",
+    "妊娠、分娩及び産じょくに合併するHIV病はO98.7に分類される。",
+    "後天性免疫不全症候群［AIDS］NOSはB24に分類される。",
+    "結核を起こしたHIV病はB20.0に分類される。"
+   ],
+   "answer": 1,
+   "explanation": {
+    "correct": "B20の除外に「急性HIV感染症候群（B23.0）」とあり、急性HIV感染症候群はB23.0（その他の病態を起こしたHIV病）に分類される。",
+    "choiceNotes": [
+     "正しい。B20－B24の除外に無症候性HIV感染状態（Z21）とある。",
+     null,
+     "正しい。B20－B24の除外に妊娠、分娩及び産じょくに合併するもの（O98.7）とある。",
+     "正しい。B24（詳細不明のHIV病）の包含にAIDS NOSがある。",
+     "正しい。B20.0（マイコバクテリウム感染症を起こしたHIV病）に結核を起こしたHIV病が含まれる。"
+    ],
+    "point": "HIV：無症候Z21、妊娠合併O98.7、急性HIV感染症候群B23.0、AIDS NOS B24。"
+   },
+   "sources": [
+    {
+     "ref": "icd:naiyou01",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第1章 感染症及び寄生虫症（A00-B99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou01.pdf",
+     "locator": "B20 除外",
+     "quote": "急性ＨＩＶ感染症候群（Ｂ23．0）"
+    },
+    {
+     "ref": "icd:naiyou01",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第1章 感染症及び寄生虫症（A00-B99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou01.pdf",
+     "locator": "B20－B24 除外",
+     "quote": "無症候性ヒト免疫不全ウイルス ［ＨＩＶ］ 感染状態（Ｚ21）"
+    },
+    {
+     "ref": "icd:naiyou01",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第1章 感染症及び寄生虫症（A00-B99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou01.pdf",
+     "locator": "B24 包含",
+     "quote": "後天性免疫不全症候群 ［ＡＩＤＳ＜エイズ＞］ ＮＯＳ"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s12-0052",
+   "origin": {
+    "batch": "G3-S12-INF",
+    "key": "G3-S12-INF-10",
+    "by": "gen:G3-S12-INF"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G3-S12-INF",
+     "solver": "solve:G3-S12-INF（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G3-S12-INF（ICD-10専門）"
+    },
+    "log": "bank/audit/G3-S12-INF.audit.json#G3-S12-INF-10",
+    "notes": "icd:naiyou01 B20-B24除外（Z21, O98.7）、B20除外（B23.0）、B20.0包含、B24包含を確認。盲検一致。"
+   }
+  },
+  {
+   "subject": "S12",
+   "subtopic": "感染症（第Ⅰ章）",
+   "format": "icd",
+   "difficulty": "standard",
+   "polarity": "negative",
+   "question": "ICD-10（2013年版）における敗血症の分類について、誤っているものはどれか。",
+   "choices": [
+    "肺炎球菌性敗血症はA40.3に分類される。",
+    "処置後の敗血症はA41.9に分類される。",
+    "カンジダ性敗血症はB37.7に分類される。",
+    "新生児の細菌性敗血症はP36.-に分類される。",
+    "産じょく敗血症はO85に分類される。"
+   ],
+   "answer": 1,
+   "explanation": {
+    "correct": "A41（その他の敗血症）の除外に「処置後（T81.4）」とあり、処置後の敗血症はT81.4（処置に続発する感染症，他に分類されないもの）に分類される。",
+    "choiceNotes": [
+     "正しい。A40.3（肺炎連鎖球菌による敗血症）に肺炎球菌性敗血症が含まれる。",
+     null,
+     "正しい。A41の除外にカンジダ（症）による敗血症（B37.7）とある。",
+     "正しい。A41の除外に新生児（P36.-）、A40の除外に新生児（P36.0－P36.1）とあり、新生児の細菌性敗血症はP36に分類される。",
+     "正しい。A40・A41の除外に産じょく（O85）とある。"
+    ],
+    "point": "敗血症の行き先：新生児P36、産じょくO85、分娩中O75.3、処置後T81.4、カンジダB37.7。"
+   },
+   "sources": [
+    {
+     "ref": "icd:naiyou01",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第1章 感染症及び寄生虫症（A00-B99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou01.pdf",
+     "locator": "A41 除外",
+     "quote": "・処置後（Ｔ81．4）"
+    },
+    {
+     "ref": "icd:naiyou01",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第1章 感染症及び寄生虫症（A00-B99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou01.pdf",
+     "locator": "A40.3",
+     "quote": "Ａ40．3   肺炎連鎖球菌による敗血症"
+    },
+    {
+     "ref": "icd:naiyou01",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第1章 感染症及び寄生虫症（A00-B99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou01.pdf",
+     "locator": "A41 除外",
+     "quote": "・カンジダ（症）（Ｂ37．7）"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s12-0053",
+   "origin": {
+    "batch": "G3-S12-INF",
+    "key": "G3-S12-INF-11",
+    "by": "gen:G3-S12-INF"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（ICD-10専門）で修正",
+     "修正後の独立再監査（pass）",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G3-S12-INF",
+     "solver": "solve:G3-S12-INF（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G3-S12-INF（ICD-10専門）",
+     "reauditor": "reaudit:G3-S12-INF"
+    },
+    "log": "bank/audit/G3-S12-INF.audit.json#G3-S12-INF-11",
+    "notes": "再監査: 盲検一致（1）。icd:naiyou01 A41 除外「・処置後（Ｔ81．4）」「・カンジダ（症）（Ｂ37．7）」「・新生児（Ｐ36.-）」「・産じょく＜褥＞（Ｏ85）」、A40 除外「新生児（Ｐ36．0－Ｐ36．1）」「処置後（Ｔ81．4）」「産じょく＜褥＞（Ｏ85）」「分娩中（Ｏ75．3）」、A40.3 包含「肺炎球菌性敗血症」を原文で確認。icd:naiyou19 T81.4 包含「敗血症 処置後」、icd:naiyou15 O85 包含「産じょく（性）敗血症」、icd:naiyou16 P36 名称も確認。全コードは icd.mjs で実在・名称一致。修正箇所（choiceNotes[｜icd:naiyou01 A40/A41の除外（T81.4, P36, O85, B37.7, O75.3）、A40.3包含、icd:naiyou19 T81.4包含「敗血症 処置後」を確認。キー・誤答肢とも正しい。盲検一致。"
+   }
+  },
+  {
+   "subject": "S12",
+   "subtopic": "感染症（第Ⅰ章）",
+   "format": "combination",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "ICD-10（2013年版）の第Ⅰ章について、正しいものの組み合わせはどれか。\na　抗菌薬への耐性を分類する必要がある場合には、追加コード（U82－U84）を使用する。\nb　敗血症性ショックに分類する必要がある場合には、追加コード（R57.2）を使用する。\nc　菌血症NOSはA41.9（敗血症，詳細不明）に分類される。\nd　感染症のキャリア（病原体保有者）は、第Ⅰ章の該当する感染症のコードに分類される。\ne　分類項目A40には、ブドウ球菌による敗血症が含まれる。",
+   "choices": [
+    "a と b",
+    "a と c",
+    "b と d",
+    "c と e",
+    "d と e"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "第Ⅰ章の冒頭に、抗菌薬への耐性の分類が必要な場合は追加コード（U82－U84）を使用するとある（a）。A40・A41には、敗血症性ショックの分類が必要な場合は追加コードR57.2を使用するとある（b）。",
+    "choiceNotes": [
+     null,
+     "cは誤り。A41の除外に菌血症NOS（A49.9）とある。",
+     "dは誤り。第Ⅰ章の章除外に感染症のキャリア（Z22.-）とある。",
+     "c・eとも誤り。A40は連鎖球菌性敗血症で、ブドウ球菌による敗血症はA41.0－A41.2。",
+     "d・eとも誤り。キャリアはZ22.-、ブドウ球菌による敗血症はA41に分類される。"
+    ],
+    "point": "耐性U82－U84、敗血症性ショックR57.2は追加コード。菌血症NOSはA49.9、キャリアはZ22。"
+   },
+   "sources": [
+    {
+     "ref": "icd:naiyou01",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第1章 感染症及び寄生虫症（A00-B99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou01.pdf",
+     "locator": "第Ⅰ章 冒頭",
+     "quote": "抗菌薬への耐性を分類する必要がある場合には追加コード（Ｕ82－Ｕ84）を使用する。"
+    },
+    {
+     "ref": "icd:naiyou01",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第1章 感染症及び寄生虫症（A00-B99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou01.pdf",
+     "locator": "A41",
+     "quote": "敗血症性ショックに分類する必要がある場合には追加コード(R57．2) を使用する。"
+    },
+    {
+     "ref": "icd:naiyou01",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第1章 感染症及び寄生虫症（A00-B99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou01.pdf",
+     "locator": "第Ⅰ章 章の除外",
+     "quote": "感染症のキャリア＜病原体保有者＞又はキャリア＜病原体保有者＞の疑いのある者（Ｚ22.-）"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s12-0054",
+   "origin": {
+    "batch": "G3-S12-INF",
+    "key": "G3-S12-INF-12",
+    "by": "gen:G3-S12-INF"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G3-S12-INF",
+     "solver": "solve:G3-S12-INF（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G3-S12-INF（ICD-10専門）"
+    },
+    "log": "bank/audit/G3-S12-INF.audit.json#G3-S12-INF-12",
+    "notes": "icd:naiyou01 章冒頭U82-U84、A40/A41のR57.2注、A41除外 菌血症NOS(A49.9)、A49.9包含、章除外Z22.-、A40=連鎖球菌性・A41.0-A41.2=ブドウ球菌を確認。盲検一致（盲検メモのR78.8は2013年版では不採用、A49.9が正）。"
+   }
+  },
+  {
+   "subject": "S12",
+   "subtopic": "消化器（第ⅩⅠ章）",
+   "format": "icd",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "「慢性胃潰瘍，出血を伴い穿孔を伴わない」と記載された病態のICD-10コードはどれか。",
+   "choices": [
+    "K25.0",
+    "K25.5",
+    "K26.4",
+    "K92.2",
+    "K25.4"
+   ],
+   "answer": 4,
+   "explanation": {
+    "correct": "胃潰瘍はK25で、K25－K28共通の4桁細分類では「.4 慢性又は詳細不明，出血を伴うもの」を用いる。したがってK25.4となる。",
+    "choiceNotes": [
+     "K25.0は「急性，出血を伴うもの」。慢性の記載があるので該当しない。",
+     "K25.5は「慢性又は詳細不明，穿孔を伴うもの」。穿孔は伴わない。",
+     "K26.4は十二指腸潰瘍（K26）の慢性・出血を伴うもの。部位が胃なので該当しない。",
+     "K92.2は「胃腸出血，詳細不明」。出血源の潰瘍が明らかなので潰瘍の項目に分類する。",
+     null
+    ],
+    "point": "K25－K28の4桁：.0〜.3が急性、.4〜.6が慢性又は詳細不明（.0/.4＝出血、.1/.5＝穿孔、.2/.6＝両者）。出血も穿孔も伴わないものは、急性.3、慢性.7、急性・慢性の別不明.9。"
+   },
+   "sources": [
+    {
+     "ref": "icd:naiyou11",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第11章 消化器系の疾患（K00-K93）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou11.pdf",
+     "locator": "K25－K28 4桁細分類項目",
+     "quote": "下記の４桁細分類項目は項目Ｋ25－Ｋ28 に使用する"
+    },
+    {
+     "ref": "icd:naiyou11",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第11章 消化器系の疾患（K00-K93）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou11.pdf",
+     "locator": "K25－K28 4桁細分類項目 .4",
+     "quote": "．4    慢性又は詳細不明， 出血を伴うもの"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s12-0055",
+   "origin": {
+    "batch": "G3-S12-DIG",
+    "key": "G3-S12-DIG-01",
+    "by": "gen:G3-S12-DIG"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（ICD-10専門）で修正",
+     "修正後の独立再監査（pass）",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G3-S12-DIG",
+     "solver": "solve:G3-S12-DIG（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G3-S12-DIG（ICD-10専門）",
+     "reauditor": "reaudit:G3-S12-DIG"
+    },
+    "log": "bank/audit/G3-S12-DIG.audit.json#G3-S12-DIG-01",
+    "notes": "再監査: 盲検一致（K25.4）。icd:naiyou11 K25－K28共通4桁細分類（.0〜.9）を原文で確認：.4=慢性又は詳細不明，出血を伴うもの、.0=急性・出血、.5=慢性又は詳細不明・穿孔。K26=十二指腸潰瘍。K92.2「胃腸出血，詳細不明」は除外注「消化性潰瘍を伴うもの（K25－K28）」で誤答根拠を確認。修正後のpoint（.0〜.3急性、.4〜.6慢性又は詳細不明、出血・穿孔なしは急性.3／慢性.7／別不明.9）は原文と一致。全コードの実在と名称をicd.mjsで確認。引用2件とも該当箇所に実在し主張を支持。validate 0 errors。｜icd:naiyou11 K25－K28 4桁細分類・K25を確認。正答K25.4と各誤答の名称は正しい（K92.2名称もicd.mjsで確認）。盲検一致。"
+   }
+  },
+  {
+   "subject": "S12",
+   "subtopic": "消化器（第ⅩⅠ章）",
+   "format": "icd",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "「急性十二指腸潰瘍，出血及び穿孔の両者を伴う」と記載された病態のICD-10コードはどれか。",
+   "choices": [
+    "K26.0",
+    "K26.1",
+    "K26.6",
+    "K26.2",
+    "K25.2"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "十二指腸潰瘍はK26。4桁細分類（K25－K28共通）で急性かつ出血及び穿孔の両者を伴うものは「.2」であり、K26.2となる。",
+    "choiceNotes": [
+     "K26.0は「急性，出血を伴うもの」。穿孔も伴う場合は.2を用いる。",
+     "K26.1は「急性，穿孔を伴うもの」。出血も伴う場合は.2を用いる。",
+     "K26.6は「慢性又は詳細不明，出血及び穿孔の両者を伴うもの」。急性と明示されているので該当しない。",
+     null,
+     "K25.2は胃潰瘍（K25）の急性・出血及び穿孔を伴うもの。部位が十二指腸なので該当しない。"
+    ],
+    "point": "出血と穿孔の両者：急性は.2、慢性又は詳細不明は.6。部位は胃K25・十二指腸K26・部位不明K27・胃空腸K28。"
+   },
+   "sources": [
+    {
+     "ref": "icd:naiyou11",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第11章 消化器系の疾患（K00-K93）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou11.pdf",
+     "locator": "K25－K28 4桁細分類項目 .2",
+     "quote": "．2    急性， 出血及び穿孔の両者を伴うもの"
+    },
+    {
+     "ref": "icd:naiyou11",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第11章 消化器系の疾患（K00-K93）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou11.pdf",
+     "locator": "K26",
+     "quote": "Ｋ26   十二指腸潰瘍"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s12-0056",
+   "origin": {
+    "batch": "G3-S12-DIG",
+    "key": "G3-S12-DIG-02",
+    "by": "gen:G3-S12-DIG"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G3-S12-DIG",
+     "solver": "solve:G3-S12-DIG（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G3-S12-DIG（ICD-10専門）"
+    },
+    "log": "bank/audit/G3-S12-DIG.audit.json#G3-S12-DIG-02",
+    "notes": "icd:naiyou11 K25－K28 4桁細分類 .2（急性，出血及び穿孔の両者）とK26を確認。K26.0/K26.1/K26.6/K25.2の名称もicd.mjsで一致。盲検一致。"
+   }
+  },
+  {
+   "subject": "S12",
+   "subtopic": "消化器（第ⅩⅠ章）",
+   "format": "icd",
+   "difficulty": "standard",
+   "polarity": "negative",
+   "question": "胃潰瘍・十二指腸潰瘍など（K25－K28）の分類について、誤っているものはどれか。",
+   "choices": [
+    "部位の記載がない消化性潰瘍はK27に分類する。",
+    "吻合部潰瘍はK28に分類する。",
+    "急性・慢性の別が不明で出血も穿孔も伴わない胃潰瘍はK25.9に分類する。",
+    "（急性）胃びらんはK29（胃炎及び十二指腸炎）に分類する。",
+    "幽門後潰瘍はK26に分類する。"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "K25（胃潰瘍）は包含として「（急性）胃びらん」を挙げている。したがって胃びらんを胃炎（K29）に分類するという記述は誤り。K25が除外して K29.0 に送るのは「急性出血性びらん性胃炎」である。",
+    "choiceNotes": [
+     "K27（部位不明の消化性潰瘍）は「消化性潰瘍 NOS」「胃十二指腸潰瘍 NOS」を包含する。正しい。",
+     "K28（胃空腸潰瘍）は吻合部・辺縁性・ストマ性などの潰瘍を包含する。正しい。",
+     "4桁細分類「.9 急性又は慢性の別不明，出血又は穿孔を伴わないもの」を用いるのでK25.9となる。正しい。",
+     null,
+     "K26（十二指腸潰瘍）は「潰瘍（消化性）：十二指腸，幽門後」を包含する。正しい。"
+    ],
+    "point": "胃びらん→K25、十二指腸びらん→K26、急性出血性びらん性胃炎→K29.0、消化性潰瘍NOS→K27。"
+   },
+   "sources": [
+    {
+     "ref": "icd:naiyou11",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第11章 消化器系の疾患（K00-K93）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou11.pdf",
+     "locator": "K25 包含",
+     "quote": "（急性）胃びらん 潰瘍（消化性）："
+    },
+    {
+     "ref": "icd:naiyou11",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第11章 消化器系の疾患（K00-K93）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou11.pdf",
+     "locator": "K25 除外",
+     "quote": "急性出血性びらん性胃炎（Ｋ29．0）"
+    },
+    {
+     "ref": "icd:naiyou11",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第11章 消化器系の疾患（K00-K93）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou11.pdf",
+     "locator": "K27 包含",
+     "quote": "胃十二指腸潰瘍 ＮＯＳ 消化性潰瘍 ＮＯＳ"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s12-0057",
+   "origin": {
+    "batch": "G3-S12-DIG",
+    "key": "G3-S12-DIG-03",
+    "by": "gen:G3-S12-DIG"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G3-S12-DIG",
+     "solver": "solve:G3-S12-DIG（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G3-S12-DIG（ICD-10専門）"
+    },
+    "log": "bank/audit/G3-S12-DIG.audit.json#G3-S12-DIG-03",
+    "notes": "icd:naiyou11 K25包含「（急性）胃びらん」・除外「急性出血性びらん性胃炎（K29.0）」、K29.0除外「（急性）胃びらん（K25.-）」、K26包含（幽門後）、K27包含、K28包含（吻合部）、.9の定義を確認。誤りは選択肢4番目のみ。盲検一致。"
+   }
+  },
+  {
+   "subject": "S12",
+   "subtopic": "消化器（第ⅩⅠ章）",
+   "format": "icd",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "虫垂の穿孔に続発した汎発性（びまん性）腹膜炎を伴う急性虫垂炎のICD-10コードはどれか。",
+   "choices": [
+    "K35.3",
+    "K35.8",
+    "K37",
+    "K35.2",
+    "K65.0"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "K35.2「汎発性腹膜炎を伴う急性虫垂炎」は、破裂又は穿孔に続発する汎発性（びまん性）腹膜炎を伴う虫垂炎（急性）を含む。急性虫垂炎と腹膜炎を一つのコードで表す。",
+    "choiceNotes": [
+     "K35.3は「限局性腹膜炎を伴う急性虫垂炎」。汎発性と明示されているので該当しない。",
+     "K35.8は限局性又は汎発性腹膜炎の記載がない急性虫垂炎に用いる。",
+     "K37は「詳細不明の虫垂炎」。急性と明示され、腹膜炎の情報もあるので用いない。",
+     null,
+     "K65.0は「急性腹膜炎」。虫垂炎に伴う腹膜炎はK35の細分類で一括して表す。"
+    ],
+    "point": "急性虫垂炎K35：汎発性腹膜炎あり.2、限局性腹膜炎・腹腔内膿瘍あり.3、腹膜炎の記載なし.8。"
+   },
+   "sources": [
+    {
+     "ref": "icd:naiyou11",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第11章 消化器系の疾患（K00-K93）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou11.pdf",
+     "locator": "K35.2",
+     "quote": "破裂又は穿孔に続発する汎発性（びまん性）腹膜炎を伴う虫垂炎（急性）"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s12-0058",
+   "origin": {
+    "batch": "G3-S12-DIG",
+    "key": "G3-S12-DIG-04",
+    "by": "gen:G3-S12-DIG"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G3-S12-DIG",
+     "solver": "solve:G3-S12-DIG（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G3-S12-DIG（ICD-10専門）"
+    },
+    "log": "bank/audit/G3-S12-DIG.audit.json#G3-S12-DIG-04",
+    "notes": "icd:naiyou11 K35.2/K35.3/K35.8、K37、K65除外「虫垂炎（K35.-）を伴う腹膜炎」を確認。盲検一致。"
+   }
+  },
+  {
+   "subject": "S12",
+   "subtopic": "消化器（第ⅩⅠ章）",
+   "format": "icd",
+   "difficulty": "standard",
+   "polarity": "negative",
+   "question": "虫垂の疾患（K35－K38）の分類について、誤っているものはどれか。",
+   "choices": [
+    "腹腔内膿瘍を伴う急性虫垂炎はK35.3に分類する。",
+    "腹膜炎の記載がない急性虫垂炎はK35.8に分類する。",
+    "慢性虫垂炎はK36に分類する。",
+    "虫垂結石はK38.1に分類する。",
+    "急性・慢性の別が記載されていない虫垂炎はK35.8に分類する。"
+   ],
+   "answer": 4,
+   "explanation": {
+    "correct": "K35は「急性虫垂炎」の項目であり、K35.8も「急性虫垂炎，その他及び詳細不明」である。急性・慢性の別が記載されていない虫垂炎はK37「詳細不明の虫垂炎」に分類するので、この記述は誤り。",
+    "choiceNotes": [
+     "K35.3「限局性腹膜炎を伴う急性虫垂炎」は腹腔内膿瘍を伴う急性虫垂炎を含む。正しい。",
+     "K35.8は「限局性又は汎発性腹膜炎の記載がない急性虫垂炎」を含む。正しい。",
+     "K36「その他の虫垂炎」は慢性・再発性の虫垂炎を包含する。正しい。",
+     "K38.1は「虫垂結石」（糞石・腸結石を含む）。正しい。",
+     null
+    ],
+    "point": "急性→K35、慢性・再発性→K36、急性/慢性の記載なし→K37、虫垂結石など虫垂のその他の疾患→K38。"
+   },
+   "sources": [
+    {
+     "ref": "icd:naiyou11",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第11章 消化器系の疾患（K00-K93）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou11.pdf",
+     "locator": "K35.8",
+     "quote": "限局性又は汎発性腹膜炎の記載がない急性虫垂炎"
+    },
+    {
+     "ref": "icd:naiyou11",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第11章 消化器系の疾患（K00-K93）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou11.pdf",
+     "locator": "K37",
+     "quote": "Ｋ37     詳細不明の虫垂炎"
+    },
+    {
+     "ref": "icd:naiyou11",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第11章 消化器系の疾患（K00-K93）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou11.pdf",
+     "locator": "K38.1",
+     "quote": "Ｋ38．1   虫垂結石"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s12-0059",
+   "origin": {
+    "batch": "G3-S12-DIG",
+    "key": "G3-S12-DIG-05",
+    "by": "gen:G3-S12-DIG"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G3-S12-DIG",
+     "solver": "solve:G3-S12-DIG（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G3-S12-DIG（ICD-10専門）"
+    },
+    "log": "bank/audit/G3-S12-DIG.audit.json#G3-S12-DIG-05",
+    "notes": "icd:naiyou11 K35.3（腹腔内膿瘍）、K35.8、K36包含（慢性・再発性）、K37、K38.1を確認。誤りは最後の選択肢のみ。盲検一致。"
+   }
+  },
+  {
+   "subject": "S12",
+   "subtopic": "消化器（第ⅩⅠ章）",
+   "format": "icd",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "「両側性そけい＜鼠径＞ヘルニア」とのみ記載され、閉塞及びえ＜壊＞疽の記載がない病態のICD-10コードはどれか。",
+   "choices": [
+    "K40.2",
+    "K40.0",
+    "K40.9",
+    "K41.2",
+    "K40.3"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "K40.2「両側性そけい＜鼠径＞ヘルニア，閉塞及びえ＜壊＞疽を伴わないもの」は「両側性そけい＜鼠径＞ヘルニア NOS」を含む。したがってK40.2となる。",
+    "choiceNotes": [
+     null,
+     "K40.0は両側性で閉塞を伴い壊疽を伴わないもの。閉塞の記載がないので該当しない。",
+     "K40.9は一側性又は患側不明で閉塞及び壊疽を伴わないもの。両側性と明示されているので該当しない。",
+     "K41.2は両側性の大腿＜股＞ヘルニア（K41）。鼠径ヘルニアではない。",
+     "K40.3は一側性又は患側不明で閉塞を伴うもの。両側性であり閉塞もない。"
+    ],
+    "point": "鼠径ヘルニアK40：両側性は.0〜.2、一側性又は患側不明は.3/.4/.9。閉塞なし・壊疽なしは両側.2、一側.9。"
+   },
+   "sources": [
+    {
+     "ref": "icd:naiyou11",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第11章 消化器系の疾患（K00-K93）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou11.pdf",
+     "locator": "K40.2",
+     "quote": "両側性そけい＜鼠径＞ヘルニア， 閉塞及びえ＜壊＞疽を伴わないもの 両側性そけい＜鼠径＞ヘルニア ＮＯＳ"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s12-0060",
+   "origin": {
+    "batch": "G3-S12-DIG",
+    "key": "G3-S12-DIG-06",
+    "by": "gen:G3-S12-DIG"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G3-S12-DIG",
+     "solver": "solve:G3-S12-DIG（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G3-S12-DIG（ICD-10専門）"
+    },
+    "log": "bank/audit/G3-S12-DIG.audit.json#G3-S12-DIG-06",
+    "notes": "icd:naiyou11 K40.2 包含「両側性そけいヘルニア NOS」、K40.0/.3/.9、K41.2を確認。盲検一致。"
+   }
+  },
+  {
+   "subject": "S12",
+   "subtopic": "消化器（第ⅩⅠ章）",
+   "format": "icd",
+   "difficulty": "advanced",
+   "polarity": "positive",
+   "question": "瘢痕ヘルニアで、閉塞（かん＜嵌＞頓）及びえ＜壊＞疽の両者を伴うと記載された病態のICD-10コードはどれか。",
+   "choices": [
+    "K43.0",
+    "K43.2",
+    "K43.7",
+    "K56.6",
+    "K43.1"
+   ],
+   "answer": 4,
+   "explanation": {
+    "correct": "ヘルニア（K40－K46）の注により、え＜壊＞疽及び閉塞の両者を伴うヘルニアは、え＜壊＞疽を伴うヘルニアに分類する。瘢痕ヘルニアでえ＜壊＞疽を伴うものはK43.1である。",
+    "choiceNotes": [
+     "K43.0は瘢痕ヘルニアで閉塞を伴いえ＜壊＞疽を伴わないもの。壊疽を伴うので用いない。",
+     "K43.2は瘢痕ヘルニアで閉塞及びえ＜壊＞疽を伴わないもの。",
+     "K43.7は「その他及び詳細不明の腹壁ヘルニア」でえ＜壊＞疽を伴うもの。瘢痕ヘルニアと明示されているので該当しない。",
+     "K56はヘルニアを伴わない腸閉塞の項目で、ヘルニアを伴うもの（K40－K46）を除外している。",
+     null
+    ],
+    "point": "閉塞＋壊疽のヘルニアは「壊疽を伴う」細分類へ（瘢痕ヘルニアならK43.1）。"
+   },
+   "sources": [
+    {
+     "ref": "icd:naiyou11",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第11章 消化器系の疾患（K00-K93）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou11.pdf",
+     "locator": "ヘルニア（K40－K46）注",
+     "quote": "え＜壊＞疽及び閉塞の両者を伴うヘルニアは， え＜壊＞疽を伴うヘルニアに分類す"
+    },
+    {
+     "ref": "icd:naiyou11",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第11章 消化器系の疾患（K00-K93）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou11.pdf",
+     "locator": "K43.1",
+     "quote": "Ｋ43．1   瘢痕ヘルニア， え＜壊＞疽を伴うもの"
+    },
+    {
+     "ref": "icd:naiyou11",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第11章 消化器系の疾患（K00-K93）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou11.pdf",
+     "locator": "K56 除外",
+     "quote": "ヘルニアを伴うもの（Ｋ40－Ｋ46）"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s12-0061",
+   "origin": {
+    "batch": "G3-S12-DIG",
+    "key": "G3-S12-DIG-07",
+    "by": "gen:G3-S12-DIG"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G3-S12-DIG",
+     "solver": "solve:G3-S12-DIG（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G3-S12-DIG（ICD-10専門）"
+    },
+    "log": "bank/audit/G3-S12-DIG.audit.json#G3-S12-DIG-07",
+    "notes": "icd:naiyou11 ヘルニア（K40－K46）注（壊疽＋閉塞→壊疽を伴うヘルニア）、K43.0/.1/.2/.7、K56除外を確認。盲検一致。"
+   }
+  },
+  {
+   "subject": "S12",
+   "subtopic": "消化器（第ⅩⅠ章）",
+   "format": "coding",
+   "difficulty": "advanced",
+   "polarity": "positive",
+   "question": "次の記録を疾病統計のコーディングルールに従ってコードするとき、主要病態のコードとして適切なものはどれか。\n主要病態：腸閉塞\nその他の病態：左そけい＜鼠径＞ヘルニア（え＜壊＞疽の記載なし）",
+   "choices": [
+    "K40.3",
+    "K56.6",
+    "K56.7",
+    "K40.9",
+    "K40.4"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "ICDには二つの病態を単一のコードで表す複合分類項目があり、それを用いる。腸閉塞と一側性の鼠径ヘルニアは「一側性又は患側不明のそけい＜鼠径＞ヘルニア，閉塞を伴い，え＜壊＞疽を伴わないもの」（K40.3）一つでコードする（インストラクションマニュアルの例10）。",
+    "choiceNotes": [
+     null,
+     "K56.6は「その他及び詳細不明の腸閉塞」。K56はヘルニアを伴うもの（K40－K46）を除外している。",
+     "K56.7は「イレウス，詳細不明」。ヘルニアを伴う腸閉塞はK56に分類しない。",
+     "K40.9は閉塞及びえ＜壊＞疽を伴わない鼠径ヘルニア。腸閉塞の情報が失われる。",
+     "K40.4はえ＜壊＞疽を伴う鼠径ヘルニア。え＜壊＞疽の記載はない。"
+    ],
+    "point": "腸閉塞＋ヘルニアは複合分類項目（ヘルニアの「閉塞を伴う」細分類）一つでコードする。"
+   },
+   "sources": [
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "4.4.2 複合分類項目のコーディング",
+     "quote": "二つの病態又は一つの病態とそれに引き続く過程とを、単一のコード で表すことができるような分類項目が用意されている"
+    },
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "4.4.2 複合分類項目 例10",
+     "quote": "一側性又は患側不明のそけい＜鼡径＞ヘルニア，閉塞を伴い，え＜壊＞疽を伴"
+    },
+    {
+     "ref": "icd:naiyou11",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第11章 消化器系の疾患（K00-K93）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou11.pdf",
+     "locator": "K56 除外",
+     "quote": "ヘルニアを伴うもの（Ｋ40－Ｋ46）"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s12-0062",
+   "origin": {
+    "batch": "G3-S12-DIG",
+    "key": "G3-S12-DIG-08",
+    "by": "gen:G3-S12-DIG"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G3-S12-DIG",
+     "solver": "solve:G3-S12-DIG（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G3-S12-DIG（ICD-10専門）"
+    },
+    "log": "bank/audit/G3-S12-DIG.audit.json#G3-S12-DIG-08",
+    "notes": "icd:instruction 4.4.2 複合分類項目のコーディング 例10（腸閉塞＋左そけいヘルニア→K40.3）を原文で確認。icd:naiyou11 K56除外・K40.3/.4/.9も一致。盲検一致（medium）。"
+   }
+  },
+  {
+   "subject": "S12",
+   "subtopic": "消化器（第ⅩⅠ章）",
+   "format": "icd",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "急性胆のう＜嚢＞炎を伴う胆のう＜嚢＞結石のICD-10コードはどれか。",
+   "choices": [
+    "K81.0",
+    "K80.1",
+    "K80.0",
+    "K80.2",
+    "K80.4"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "胆石症（K80）の細分類K80.0が「急性胆のう＜嚢＞炎を伴う胆のう＜嚢＞結石」である。胆のう炎（K81）は胆石症を伴うもの（K80.-）を除外している。",
+    "choiceNotes": [
+     "K81.0「急性胆のう＜嚢＞炎」は結石を伴わないものに用いる。K81は胆石症を伴うもの（K80.-）を除外する。",
+     "K80.1は「その他の胆のう＜嚢＞炎を伴う胆のう＜嚢＞結石」（慢性胆のう炎など）。急性胆のう炎ではない。",
+     null,
+     "K80.2は「胆のう＜嚢＞炎を伴わない胆のう＜嚢＞結石」。胆のう炎を伴うので該当しない。",
+     "K80.4は「胆のう＜嚢＞炎を伴う胆管結石」。結石の部位が胆管である。"
+    ],
+    "point": "胆石＋胆のう炎は K80 の組合せ細分類で一つに（急性.0、その他.1）。K81 は結石のない胆のう炎。"
+   },
+   "sources": [
+    {
+     "ref": "icd:naiyou11",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第11章 消化器系の疾患（K00-K93）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou11.pdf",
+     "locator": "K80.0",
+     "quote": "急性胆のう＜嚢＞炎を伴う胆のう＜嚢＞結石"
+    },
+    {
+     "ref": "icd:naiyou11",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第11章 消化器系の疾患（K00-K93）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou11.pdf",
+     "locator": "K81 除外",
+     "quote": "胆石症を伴うもの（Ｋ80.-）"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s12-0063",
+   "origin": {
+    "batch": "G3-S12-DIG",
+    "key": "G3-S12-DIG-09",
+    "by": "gen:G3-S12-DIG"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G3-S12-DIG",
+     "solver": "solve:G3-S12-DIG（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G3-S12-DIG（ICD-10専門）"
+    },
+    "log": "bank/audit/G3-S12-DIG.audit.json#G3-S12-DIG-09",
+    "notes": "icd:naiyou11 K80.0/.1/.2/.4、K81除外「胆石症を伴うもの（K80.-）」、K81.0「結石を伴わないもの」を確認。盲検一致。"
+   }
+  },
+  {
+   "subject": "S12",
+   "subtopic": "消化器（第ⅩⅠ章）",
+   "format": "coding",
+   "difficulty": "standard",
+   "polarity": "negative",
+   "question": "胆石症・胆のう＜嚢＞炎のコーディングについて、誤っているものはどれか。",
+   "choices": [
+    "胆管炎及び胆のう＜嚢＞炎を伴わない総胆管結石はK80.5に分類する。",
+    "胆管炎を伴う総胆管結石はK80.3に分類する。",
+    "結石を伴わない急性胆のう＜嚢＞炎はK81.0に分類する。",
+    "主要病態が急性及び慢性の胆のう＜嚢＞炎の場合、主要病態にはK81.0を用いる。",
+    "胆のう＜嚢＞結石を伴う慢性胆のう＜嚢＞炎は、K81.1とK80.2の2つのコードで表す。"
+   ],
+   "answer": 4,
+   "explanation": {
+    "correct": "K80.1「その他の胆のう＜嚢＞炎を伴う胆のう＜嚢＞結石」は（慢性）胆のう炎を伴う胆のう結石を含み、一つのコードで表す。K81（胆のう炎）は胆石症を伴うもの（K80.-）を除外しているので、K81.1とK80.2の組合せは誤り。",
+    "choiceNotes": [
+     "K80.5「胆管炎及び胆のう＜嚢＞炎を伴わない胆管結石」は総胆管結石症を含む。正しい。",
+     "K80.3「胆管炎を伴う胆管結石」。正しい。",
+     "K81.0「急性胆のう＜嚢＞炎」は結石を伴わないものに用いる。正しい。",
+     "急性及び慢性の両者が記載され別々の項目がある場合は急性病態を優先する（マニュアル例20：急性胆のう炎K81.0、慢性胆のう炎K81.1は任意的追加コード）。正しい。",
+     null
+    ],
+    "point": "胆のう結石＋慢性胆のう炎＝K80.1（一つ）。結石のない急性＋慢性の胆のう炎は急性K81.0を主に。"
+   },
+   "sources": [
+    {
+     "ref": "icd:naiyou11",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第11章 消化器系の疾患（K00-K93）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou11.pdf",
+     "locator": "K80.1",
+     "quote": "（慢性）胆のう＜嚢＞炎を伴うＫ80．2 の各病態"
+    },
+    {
+     "ref": "icd:naiyou11",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第11章 消化器系の疾患（K00-K93）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou11.pdf",
+     "locator": "K80.5",
+     "quote": "胆管炎及び胆のう＜嚢＞炎を伴わない胆管結石 総胆管結石症"
+    },
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "急性及び慢性の病態のコーディング 例20",
+     "quote": "「主要病態」として急性胆のう＜囊＞炎（K81.0）にコードする。"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s12-0064",
+   "origin": {
+    "batch": "G3-S12-DIG",
+    "key": "G3-S12-DIG-10",
+    "by": "gen:G3-S12-DIG"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G3-S12-DIG",
+     "solver": "solve:G3-S12-DIG（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G3-S12-DIG（ICD-10専門）"
+    },
+    "log": "bank/audit/G3-S12-DIG.audit.json#G3-S12-DIG-10",
+    "notes": "icd:naiyou11 K80.1包含（（慢性）胆のう炎を伴うK80.2の各病態）、K80.3、K80.5（総胆管結石症）、K81.0、K81除外を確認。icd:instruction 4.4.2 急性及び慢性の病態 例20（K81.0、K81.1は任意的追加）も原文一致。盲検一致。"
+   }
+  },
+  {
+   "subject": "S12",
+   "subtopic": "消化器（第ⅩⅠ章）",
+   "format": "icd",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "アルコール性肝硬変のICD-10コードはどれか。",
+   "choices": [
+    "K70.3",
+    "K74.6",
+    "K70.2",
+    "K71.7",
+    "K70.4"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "アルコール性肝疾患はK70に分類し、アルコール性肝硬変はK70.3である。K74（肝線維症及び肝硬変）はアルコール性肝硬変（K70.3）を除外している。",
+    "choiceNotes": [
+     null,
+     "K74.6は「その他及び詳細不明の肝硬変」。アルコール性のものはK74から除外されK70.3へ分類する。",
+     "K70.2は「アルコール性肝線維症及び肝硬化症」。肝硬変はK70.3である。",
+     "K71.7は「肝線維症及び肝硬変を伴う中毒性肝疾患」（薬物などによるもの）。K71はアルコール性肝疾患を除外する。",
+     "K70.4は「アルコール性肝不全」。"
+    ],
+    "point": "アルコール性：脂肪肝K70.0、肝炎K70.1、線維症・硬化症K70.2、肝硬変K70.3、肝不全K70.4。"
+   },
+   "sources": [
+    {
+     "ref": "icd:naiyou11",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第11章 消化器系の疾患（K00-K93）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou11.pdf",
+     "locator": "K70.3",
+     "quote": "Ｋ70．3   アルコール性肝硬変"
+    },
+    {
+     "ref": "icd:naiyou11",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第11章 消化器系の疾患（K00-K93）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou11.pdf",
+     "locator": "K74 除外（肝硬変：アルコール性）",
+     "quote": "肝硬変： ・アルコール性（Ｋ70．3）"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s12-0065",
+   "origin": {
+    "batch": "G3-S12-DIG",
+    "key": "G3-S12-DIG-11",
+    "by": "gen:G3-S12-DIG"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（ICD-10専門）で修正",
+     "修正後の独立再監査（pass）",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G3-S12-DIG",
+     "solver": "solve:G3-S12-DIG（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G3-S12-DIG（ICD-10専門）",
+     "reauditor": "reaudit:G3-S12-DIG"
+    },
+    "log": "bank/audit/G3-S12-DIG.audit.json#G3-S12-DIG-11",
+    "notes": "再監査: 盲検一致（K70.3）。icd:naiyou11 K70.0〜K70.4の名称を原文で確認（K70.2=アルコール性肝線維症及び肝硬化症、K70.3=アルコール性肝硬変、K70.4=アルコール性肝不全）。K74除外注「肝硬変：・アルコール性（K70.3）」（差し替え後の引用。K74の除外注内に1か所のみ）が解説の主張を直接支持。K74.6=その他及び詳細不明の肝硬変、K71.7=肝線維症及び肝硬変を伴う中毒性肝疾患、K71除外「アルコール性肝疾患（K70.-）」・包含「薬物誘発性」も確認。pointのK70.0〜K70.4対応も正しい。validate 0 errors。｜icd:naiyou11 K70.0〜K70.4、K71.7、K71除外（アルコール性肝疾患 K70.-）、K74除外、K74.6を確認。正答K70.3・各解説は正しい。盲検一致。"
+   }
+  },
+  {
+   "subject": "S12",
+   "subtopic": "消化器（第ⅩⅠ章）",
+   "format": "icd",
+   "difficulty": "advanced",
+   "polarity": "negative",
+   "question": "肝疾患のICD-10コーディングについて、誤っているものはどれか。",
+   "choices": [
+    "慢性C型ウイルス性肝炎は第Ⅰ章のB18.2に分類する。",
+    "アルコール性肝炎はK70.1に分類する。",
+    "デルタ因子を伴わない慢性B型ウイルス性肝炎はK73.9に分類する。",
+    "非アルコール性脂肪性肝炎（NASH）はK75.8に分類する。",
+    "薬物誘発性の中毒性肝疾患はK71に分類する。"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "ウイルス性肝炎は第Ⅰ章（B15－B19）に分類され、肝疾患（K70－K77）とK73（慢性肝炎，他に分類されないもの）から除外されている。デルタ因子を伴わない慢性B型ウイルス性肝炎はB18.1である。",
+    "choiceNotes": [
+     "B18.2は「慢性C型ウイルス性肝炎」。ウイルス性肝炎は第Ⅰ章に分類する。正しい。",
+     "K70.1は「アルコール性肝炎」。正しい。",
+     null,
+     "K75.8「その他の明示された炎症性肝疾患」は非アルコール性脂肪性肝炎（NASH）を含む。正しい。",
+     "K71「中毒性肝疾患」は薬物誘発性の肝疾患を包含する（毒性物質の分類が必要なら第ⅩⅩ章の追加外因コード）。正しい。"
+    ],
+    "point": "ウイルス性肝炎はB15－B19（慢性B型B18.0/B18.1、慢性C型B18.2）。アルコール性はK70、薬物性はK71。"
+   },
+   "sources": [
+    {
+     "ref": "icd:naiyou01",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第1章 感染症及び寄生虫症（A00-B99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou01.pdf",
+     "locator": "B18.1",
+     "quote": "Ｂ18．1   慢性Ｂ型ウイルス性肝炎， デルタ因子（重複感染）を伴わないもの"
+    },
+    {
+     "ref": "icd:naiyou11",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第11章 消化器系の疾患（K00-K93）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou11.pdf",
+     "locator": "K73 除外",
+     "quote": "・ウイルス（Ｂ15－Ｂ19）"
+    },
+    {
+     "ref": "icd:naiyou11",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第11章 消化器系の疾患（K00-K93）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou11.pdf",
+     "locator": "K75.8",
+     "quote": "非アルコール性脂肪性肝炎（NASH）"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s12-0066",
+   "origin": {
+    "batch": "G3-S12-DIG",
+    "key": "G3-S12-DIG-12",
+    "by": "gen:G3-S12-DIG"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G3-S12-DIG",
+     "solver": "solve:G3-S12-DIG（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G3-S12-DIG（ICD-10専門）"
+    },
+    "log": "bank/audit/G3-S12-DIG.audit.json#G3-S12-DIG-12",
+    "notes": "icd:naiyou01 B18.1/B18.2、icd:naiyou11 肝疾患（K70－K77）除外・K73除外（ウイルス B15－B19）、K70.1、K71包含（薬物誘発性）、K75.8包含（NASH）を確認。誤りは4番目のみ。盲検一致。"
+   }
+  },
+  {
+   "subject": "S12",
+   "subtopic": "周産期（第ⅩⅥ章）",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "ICD-10（2013年版）第ⅩⅥ章「周産期に発生した病態（P00－P96）」の対象について、正しいものはどれか。",
+   "choices": [
+    "出生後満7日以降に発病した病態は、原因にかかわらず本章から除外する。",
+    "周産期に診断された先天奇形は、本章に分類する。",
+    "新生児破傷風は、本章の周産期に特異的な感染症に分類する。",
+    "新生児期に発見された新生物＜腫瘍＞は、本章に分類する。",
+    "周産期後に発病又は死亡した場合でも、原因が周産期に発生した病態であれば本章に含める。"
+   ],
+   "answer": 4,
+   "explanation": {
+    "correct": "第ⅩⅥ章の章冒頭の包含注に「周産期後において発病又は死亡した場合であっても，その原因が周産期に発生した病態にある場合」とあり、発病・死亡の時期ではなく原因が周産期に発生したかどうかで本章の対象を判断する。",
+    "choiceNotes": [
+     "包含注のとおり、周産期後に発病した場合でも原因が周産期に発生した病態であれば本章に含める。発病時期だけで除外はしない。",
+     "先天奇形，変形及び染色体異常（Q00－Q99）は第ⅩⅥ章の章冒頭で除外され、第ⅩⅦ章に分類する。",
+     "新生児破傷風は第ⅩⅥ章から除外され、A33（第Ⅰ章）に分類する。",
+     "新生物＜腫瘍＞（C00－D48）は第ⅩⅥ章から除外され、第Ⅱ章に分類する。",
+     null
+    ],
+    "point": "P章は「原因が周産期」なら後で発症しても対象。Q章・E章・S/T章・新生物・新生児破傷風（A33）は除外。"
+   },
+   "sources": [
+    {
+     "ref": "icd:naiyou16",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第16章 周産期に発生した病態（P00-P96）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou16.pdf",
+     "locator": "第ⅩⅥ章 章冒頭 包含",
+     "quote": "周産期後において発病又は死亡した場合であっても， その原因が周産期に発生した病態にある場合"
+    },
+    {
+     "ref": "icd:naiyou16",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第16章 周産期に発生した病態（P00-P96）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou16.pdf",
+     "locator": "第ⅩⅥ章 章冒頭 除外",
+     "quote": "先天奇形， 変形及び染色体異常（Ｑ00－Ｑ99）"
+    },
+    {
+     "ref": "icd:naiyou16",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第16章 周産期に発生した病態（P00-P96）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou16.pdf",
+     "locator": "第ⅩⅥ章 章冒頭 除外",
+     "quote": "新生物＜腫瘍＞（Ｃ00－Ｄ48）"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s12-0067",
+   "origin": {
+    "batch": "G3-S12-PER",
+    "key": "G3-S12-PER-01",
+    "by": "gen:G3-S12-PER"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G3-S12-PER",
+     "solver": "solve:G3-S12-PER（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G3-S12-PER（ICD-10専門）"
+    },
+    "log": "bank/audit/G3-S12-PER.audit.json#G3-S12-PER-01",
+    "notes": "icd:naiyou16 章冒頭の包含注・除外注（Q00-Q99, E00-E90, S00-T98, C00-D48, A33）を確認。キーは包含注どおりで、他4肢は除外注等で明確に誤り。"
+   }
+  },
+  {
+   "subject": "S12",
+   "subtopic": "周産期（第ⅩⅥ章）",
+   "format": "icd",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "新生児の診療録に「母体の重症子かん＜癇＞前症により影響を受けた児」と記載されている。児の病態として用いるICD-10コードとして正しいものはどれか。",
+   "choices": [
+    "P01.9 母体の妊娠合併症により影響を受けた胎児及び新生児，詳細不明",
+    "P02.2 その他及び詳細不明の胎盤の形態及び機能の異常により影響を受けた胎児及び新生児",
+    "P03.8 その他の明示された分娩合併症により影響を受けた胎児及び新生児",
+    "P00.0 母体の高血圧性障害により影響を受けた胎児及び新生児",
+    "O14.1 重症子かん＜癇＞前症"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "P00.0 は「Ｏ10－Ｏ11，Ｏ13－Ｏ16 に分類される母体の病態により影響を受けた胎児又は新生児」を含む。子かん前症は母体側ではO14（O13－O16の範囲）に分類される妊娠高血圧性の病態なので、影響を受けた児はP00.0とする。インストラクションマニュアルの周産期死亡の例でも「重症子かん＜癇＞前症」はP00.0にコードされている。",
+    "choiceNotes": [
+     "子かん前症は妊娠中の合併症ではあるが、母体の高血圧性障害（O10－O11，O13－O16）により影響を受けた児はP01ではなくP00.0に分類される。",
+     "P02.2は胎盤の機能障害・梗塞・機能不全などにより影響を受けた児である。記載は胎盤の異常ではない。",
+     "P03.8はO60－O75の分娩合併症や陣痛誘発などにより影響を受けた児である。子かん前症は分娩合併症ではない。",
+     null,
+     "O14.1は母体の病態のコードで、母体の記録に用いる。児の病態としては、影響を受けた胎児及び新生児のPコードを用いる。"
+    ],
+    "point": "母体の妊娠高血圧（子かん前症など）→児はP00.0。P01＝その他の妊娠合併症、P02＝胎盤・臍帯・卵膜、P03＝分娩合併症。"
+   },
+   "sources": [
+    {
+     "ref": "icd:naiyou16",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第16章 周産期に発生した病態（P00-P96）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou16.pdf",
+     "locator": "P00.0",
+     "quote": "Ｏ10－Ｏ11， Ｏ13－Ｏ16 に分類される母体の病態により影響を受けた胎児又は新生"
+    },
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "4.3.5 ルールP1 例2",
+     "quote": "重症子かん＜癇＞前症         P00.0"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s12-0068",
+   "origin": {
+    "batch": "G3-S12-PER",
+    "key": "G3-S12-PER-02",
+    "by": "gen:G3-S12-PER"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G3-S12-PER",
+     "solver": "solve:G3-S12-PER（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G3-S12-PER（ICD-10専門）"
+    },
+    "log": "bank/audit/G3-S12-PER.audit.json#G3-S12-PER-02",
+    "notes": "icd:naiyou16 P00.0（O10-O11,O13-O16を含む）、P01.9/P02.2/P03.8の内容、O14.1の名称（icd.mjs）、icd:instruction 4.3.5 例2・例3（重症子かん前症→P00.0）を確認。"
+   }
+  },
+  {
+   "subject": "S12",
+   "subtopic": "周産期（第ⅩⅥ章）",
+   "format": "icd",
+   "difficulty": "standard",
+   "polarity": "negative",
+   "question": "胎児及び新生児に影響を与えた母体側要因・妊娠及び分娩の合併症と、ICD-10コードの組合せとして、誤っているものはどれか。",
+   "choices": [
+    "前期破水 ― P01.1",
+    "前置胎盤 ― P02.0",
+    "臍帯頚部巻絡 ― P03.1",
+    "鉗子分娩 ― P03.2",
+    "母体のタバコ使用＜喫煙＞ ― P04.2"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "臍帯頚部巻絡はP02.5「臍帯のその他の圧迫により影響を受けた胎児及び新生児」に例示されている。P03.1は分娩中の胎位異常・胎向異常・胎児骨盤不均衡（狭骨盤など）により影響を受けた児である。",
+    "choiceNotes": [
+     "P01.1は前期破水により影響を受けた胎児及び新生児で、正しい組合せ。",
+     "P02.0は前置胎盤により影響を受けた胎児及び新生児で、正しい組合せ。",
+     null,
+     "P03.2は鉗子分娩により影響を受けた胎児及び新生児で、正しい組合せ。",
+     "P04.2は母体のタバコ使用＜喫煙＞により影響を受けた胎児及び新生児で、正しい組合せ。"
+    ],
+    "point": "P00 母体の病態／P01 妊娠合併症（破水・羊水・多胎）／P02 胎盤・臍帯・卵膜／P03 分娩合併症（鉗子・吸引・帝切）／P04 胎盤・母乳経由の有害影響（薬・喫煙・飲酒）。"
+   },
+   "sources": [
+    {
+     "ref": "icd:naiyou16",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第16章 周産期に発生した病態（P00-P96）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou16.pdf",
+     "locator": "P02.5",
+     "quote": "臍帯のその他の圧迫により影響を受けた胎児及び新生児 臍帯頚部巻絡"
+    },
+    {
+     "ref": "icd:naiyou16",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第16章 周産期に発生した病態（P00-P96）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou16.pdf",
+     "locator": "P03.1",
+     "quote": "分娩中のその他の胎位異常， 胎向異常及び胎児骨盤不均衡により影響を受けた胎児"
+    },
+    {
+     "ref": "icd:naiyou16",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第16章 周産期に発生した病態（P00-P96）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou16.pdf",
+     "locator": "P01.1",
+     "quote": "前期破水により影響を受けた胎児及び新生児"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s12-0069",
+   "origin": {
+    "batch": "G3-S12-PER",
+    "key": "G3-S12-PER-03",
+    "by": "gen:G3-S12-PER"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G3-S12-PER",
+     "solver": "solve:G3-S12-PER（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G3-S12-PER（ICD-10専門）"
+    },
+    "log": "bank/audit/G3-S12-PER.audit.json#G3-S12-PER-03",
+    "notes": "icd:naiyou16 P01.1, P02.0, P02.5（臍帯頚部巻絡を例示）, P03.1, P03.2, P04.2 を確認。誤りの組合せはキーのみ。"
+   }
+  },
+  {
+   "subject": "S12",
+   "subtopic": "周産期（第ⅩⅥ章）",
+   "format": "icd",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "新生児の診療録に「妊娠満30週で出生、出産体重950グラム」とあり、それ以上の説明はない。P07（妊娠期間短縮及び低出産体重に関連する障害）でコードする場合、正しいものはどれか。",
+   "choices": [
+    "P07.3 その他の早産児",
+    "P07.1 その他の低出産体重（児）",
+    "P07.2 超未熟（児）",
+    "P05.0 妊娠期間に比較して低体重",
+    "P07.0 超低出産体重（児）"
+   ],
+   "answer": 4,
+   "explanation": {
+    "correct": "P07には「出産体重及び妊娠期間の両者の記載がある場合は，出産体重を優先する」という注がある。出産体重950グラムは「出産体重 999 グラム以下」のP07.0に該当するため、妊娠期間（満30週）よりも出産体重を優先してP07.0とする。",
+    "choiceNotes": [
+     "P07.3は妊娠満28週以上満37週未満の早産児で、妊娠期間で選んだ場合のコード。両方の記載があるときは出産体重を優先する。",
+     "P07.1は出産体重1000グラム－2499グラムの児で、950グラムは該当しない。",
+     "P07.2は妊娠満28週未満の超未熟児で、満30週は該当せず、そもそも出産体重が優先される。",
+     "P05.0は胎児発育遅延による妊娠期間に比較して低体重（light-for-dates）の児で、P07からは除外される別の項目。記載は発育遅延を示していない。",
+     null
+    ],
+    "point": "P07・P08は「体重と週数の両方あれば体重優先」。P07.0＝999g以下、P07.1＝1000－2499g、P07.2＝満28週未満、P07.3＝満28週以上満37週未満。"
+   },
+   "sources": [
+    {
+     "ref": "icd:naiyou16",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第16章 周産期に発生した病態（P00-P96）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou16.pdf",
+     "locator": "P07 注",
+     "quote": "出産体重及び妊娠期間の両者の記載がある場合は， 出産体重を優先する。"
+    },
+    {
+     "ref": "icd:naiyou16",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第16章 周産期に発生した病態（P00-P96）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou16.pdf",
+     "locator": "P07.0・P07.1",
+     "quote": "超低出産体重（児） 出産体重 999 グラム以下"
+    },
+    {
+     "ref": "icd:naiyou16",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第16章 周産期に発生した病態（P00-P96）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou16.pdf",
+     "locator": "P07.3",
+     "quote": "妊娠満 28 週以上で満 37 週未満（満 196 日以上満 259 日未満）"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s12-0070",
+   "origin": {
+    "batch": "G3-S12-PER",
+    "key": "G3-S12-PER-04",
+    "by": "gen:G3-S12-PER"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G3-S12-PER",
+     "solver": "solve:G3-S12-PER（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G3-S12-PER（ICD-10専門）"
+    },
+    "log": "bank/audit/G3-S12-PER.audit.json#G3-S12-PER-04",
+    "notes": "icd:naiyou16 P07 注（出産体重優先）と P07.0-P07.3 の範囲、P07の除外（P05.-）を確認。設問が『P07でコードする場合・それ以上の説明なし』と限定しておりP05.0は排除できる。"
+   }
+  },
+  {
+   "subject": "S12",
+   "subtopic": "周産期（第ⅩⅥ章）",
+   "format": "knowledge",
+   "difficulty": "standard",
+   "polarity": "negative",
+   "question": "インストラクションマニュアルに示された周産期死亡診断書の死因のコーディングについて、誤っているものはどれか。",
+   "choices": [
+    "一般死亡についての選択ルールを適用して、単一の原死因を選択する。",
+    "⒞欄及び⒟欄に記載された母体の病態は、P00－P04にコードする。",
+    "P00－P04のコードは、⒜欄及び⒝欄に対して使用しない。",
+    "⒝欄には、記載された病態の数だけコードを記載する。",
+    "⒠欄は個々の周産期死亡の調査のためのもので、通常はコードする必要がない。"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "4.3.5に「一般死亡についての選択ルールは，周産期死亡診断書には適用しない」とある。周産期死亡診断書では⒜⒝欄（児の病態）と⒞⒟欄（母体の病態）を別々にコードし、記載が様式どおりでない場合はルールP1〜P4を適用する。",
+    "choiceNotes": [
+     null,
+     "4.3.4のとおり、⒞欄及び⒟欄の母体の病歴はP00－P04にコードする。正しい記述。",
+     "4.3.4に、P00－P04のコードは⒜欄及び⒝欄に対して使用すべきでないとある。正しい記述。",
+     "4.3.4に、⒜欄及び⒞欄は一つのコードだけ、⒝欄及び⒟欄は記載された病態の数のコードを記載するとある。正しい記述。",
+     "4.3.4に、⒠欄は個々の周産期死亡の調査のためのもので通常コードする必要がないとある。正しい記述。"
+    ],
+    "point": "周産期死亡診断書：⒜⒝＝児（P05－P96・Qが中心）、⒞⒟＝母体（P00－P04）、⒠は通常コードしない。一般死亡の選択ルールは使わず、ルールP1〜P4。"
+   },
+   "sources": [
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "4.3.5 コーディング・ルール",
+     "quote": "一般死亡についての選択ルールは、周産期死亡診断書には適用しない。"
+    },
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "4.3.4 死因のコーディング",
+     "quote": "P00 － P04 にコードすべきであり、これらのコードは、⒜欄及び⒝欄に対して使用す べきでない。"
+    },
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "4.3.4 死因のコーディング",
+     "quote": "⒠欄は、個々の周産期死亡の調査のためのものであり、これは通常コードする必要 がない。"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s12-0071",
+   "origin": {
+    "batch": "G3-S12-PER",
+    "key": "G3-S12-PER-05",
+    "by": "gen:G3-S12-PER"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G3-S12-PER",
+     "solver": "solve:G3-S12-PER（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G3-S12-PER（ICD-10専門）"
+    },
+    "log": "bank/audit/G3-S12-PER.audit.json#G3-S12-PER-05",
+    "notes": "icd:instruction 4.3.4（P00-P04は⒞⒟欄、⒜⒞は1コード・⒝⒟は病態数、⒠は通常コード不要）と 4.3.5 冒頭（一般死亡の選択ルールは不適用）、ルールP1〜P4の存在を確認。"
+   }
+  },
+  {
+   "subject": "S12",
+   "subtopic": "周産期（第ⅩⅥ章）",
+   "format": "coding",
+   "difficulty": "advanced",
+   "polarity": "positive",
+   "question": "周産期死亡診断書（出生；2日で死亡）に、⒜欄「未熟」、⒝欄「呼吸窮＜促＞迫症候群」、⒞欄「前期破水」、⒟欄・⒠欄は記載なし、とある。インストラクションマニュアルのルールに従い⒜欄としてコードするものはどれか。",
+   "choices": [
+    "P07.3 その他の早産児",
+    "P22.0 新生児呼吸窮＜促＞迫症候群＜IRDS＞",
+    "P01.1 前期破水により影響を受けた胎児及び新生児",
+    "P96.9 周産期に発生した病態，詳細不明",
+    "P28.0 新生児原発性無気肺"
+   ],
+   "answer": 1,
+   "explanation": {
+    "correct": "ルールP1により、未熟（P07.-のあらゆる病態）が⒜欄に記載され、新生児の他の病態が⒜欄又は⒝欄に記載されている場合は、他の病態の最初に記載されたものを⒜欄に単独で記載されていたものとしてコードし、未熟は⒝欄としてコードする。したがって⒝欄の呼吸窮迫症候群（P22.0）を⒜欄とする。",
+    "choiceNotes": [
+     "未熟（P07.-）はルールP1により⒝欄に記載されていたものとしてコードする。⒜欄にはしない。",
+     null,
+     "前期破水は母体側の病態で⒞欄にコードする。P00－P04は⒜欄及び⒝欄に使用しない。",
+     "P96.9はルールP3で⒜欄にも⒝欄にも児の病態の記載がない早期新生児死亡に用いる。本例は⒝欄に記載がある。",
+     "P28.0（未熟肺NOSなどを含む）は記載されていない病態で、呼吸窮迫症候群はP22.0に分類される。"
+    ],
+    "point": "ルールP1：⒜欄の「死亡の様態（P20・P21）」や「未熟（P07）」は、他の児の病態があれば⒝欄へ回し、その病態を⒜欄とする。"
+   },
+   "sources": [
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "4.3.5 ルールP1",
+     "quote": "心不全、仮死もしくは無酸素症（P20.-、P21.- のあらゆる病態）又は未熟（P07.- のあ らゆる病態）が⒜欄に記載され"
+    },
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "4.3.5 ルールP1",
+     "quote": "これらの他の病態の最初に記載されたものを、⒜欄に 単独で記載されていたものとしてコードする。"
+    },
+    {
+     "ref": "icd:naiyou16",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第16章 周産期に発生した病態（P00-P96）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou16.pdf",
+     "locator": "P22.0",
+     "quote": "新生児呼吸窮＜促＞迫症候群＜ＩＲＤＳ＞"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s12-0072",
+   "origin": {
+    "batch": "G3-S12-PER",
+    "key": "G3-S12-PER-06",
+    "by": "gen:G3-S12-PER"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G3-S12-PER",
+     "solver": "solve:G3-S12-PER（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G3-S12-PER（ICD-10専門）"
+    },
+    "log": "bank/audit/G3-S12-PER.audit.json#G3-S12-PER-06",
+    "notes": "icd:instruction 4.3.5 ルールP1本文・例1（未熟→⒝欄P07.3）、ルールP3（P96.9）、icd:naiyou16 P22.0・P28.0（未熟肺NOS）・P01.1 を確認。"
+   }
+  },
+  {
+   "subject": "S12",
+   "subtopic": "先天奇形（第ⅩⅦ章）",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "ICD-10（2013年版）第ⅩⅦ章「先天奇形，変形及び染色体異常（Q00－Q99）」の章冒頭で除外され、他の章に分類されるものはどれか。",
+   "choices": [
+    "唇裂及び口蓋裂",
+    "先天代謝異常",
+    "染色体異常",
+    "股関節部の先天（性）変形",
+    "先天性魚りんせん＜鱗癬＞"
+   ],
+   "answer": 1,
+   "explanation": {
+    "correct": "第ⅩⅦ章の章冒頭には「除外：先天代謝異常（E70－E90）」とあり、先天代謝異常は「先天性」であっても第Ⅳ章（内分泌，栄養及び代謝疾患）に分類する。",
+    "choiceNotes": [
+     "唇裂及び口蓋裂は第ⅩⅦ章の中間分類Q35－Q37に含まれる。",
+     null,
+     "染色体異常は第ⅩⅦ章の中間分類Q90－Q99（染色体異常，他に分類されないもの）に含まれる。",
+     "股関節部の先天（性）変形はQ65として第ⅩⅦ章（Q65－Q79 筋骨格系の先天奇形及び変形）に含まれる。",
+     "先天性魚りんせん＜鱗癬＞はQ80として第ⅩⅦ章（Q80－Q89 その他の先天奇形）に含まれる。"
+    ],
+    "point": "「先天性」でも代謝異常はQ章ではなくE70－E90（第Ⅳ章）。"
+   },
+   "sources": [
+    {
+     "ref": "icd:naiyou17",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第17章 先天奇形，変形及び染色体異常（Q00-Q99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou17.pdf",
+     "locator": "第ⅩⅦ章 章冒頭 除外",
+     "quote": "先天代謝異常（Ｅ70－Ｅ90）"
+    },
+    {
+     "ref": "icd:naiyou17",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第17章 先天奇形，変形及び染色体異常（Q00-Q99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou17.pdf",
+     "locator": "第ⅩⅦ章 中間分類",
+     "quote": "Ｑ35－Ｑ37 唇裂及び口蓋裂"
+    },
+    {
+     "ref": "icd:naiyou17",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第17章 先天奇形，変形及び染色体異常（Q00-Q99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou17.pdf",
+     "locator": "第ⅩⅦ章 中間分類",
+     "quote": "Ｑ90－Ｑ99 染色体異常， 他に分類されないもの"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s12-0073",
+   "origin": {
+    "batch": "G3-S12-PER",
+    "key": "G3-S12-PER-07",
+    "by": "gen:G3-S12-PER"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G3-S12-PER",
+     "solver": "solve:G3-S12-PER（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G3-S12-PER（ICD-10専門）"
+    },
+    "log": "bank/audit/G3-S12-PER.audit.json#G3-S12-PER-07",
+    "notes": "icd:naiyou17 章冒頭の除外（先天代謝異常 E70-E90）と中間分類 Q35-Q37, Q65-Q79, Q80-Q89, Q90-Q99、Q65・Q80 の名称を確認。"
+   }
+  },
+  {
+   "subject": "S12",
+   "subtopic": "先天奇形（第ⅩⅦ章）",
+   "format": "icd",
+   "difficulty": "standard",
+   "polarity": "negative",
+   "question": "ICD-10（2013年版）第ⅩⅦ章の除外注に「後天性」として示されている病態と、その分類先の組合せとして、誤っているものはどれか。",
+   "choices": [
+    "後天性心（臓）中隔欠損（症） ― I51.0",
+    "脊椎すべり症（後天性） ― M43.1",
+    "脊椎分離症（後天性） ― M43.0",
+    "内反変形（後天性） ― M21.1",
+    "外反変形（後天性） ― Q66.6"
+   ],
+   "answer": 4,
+   "explanation": {
+    "correct": "Q66（足の先天（性）変形）の除外注に「外反変形（後天性）（M21.0）」とある。後天性の外反変形は第ⅩⅢ章のM21.0（外反変形，他に分類されないもの）に分類し、Q66.6（足のその他の先天（性）外反変形）は用いない。第ⅩⅦ章の各項目には、このように後天性のものを他章へ振り分ける除外注が置かれている。",
+    "choiceNotes": [
+     "Q21（心（臓）中隔の先天奇形）の除外注に、後天性心（臓）中隔欠損（症）はI51.0とある。正しい組合せ。",
+     "Q76.2（先天性脊椎すべり症）の除外注に、脊椎すべり症（後天性）はM43.1とある。正しい組合せ。",
+     "Q76.2の除外注に、脊椎分離症（後天性）はM43.0とある。正しい組合せ。",
+     "Q66の除外注に、内反変形（後天性）はM21.1とある。正しい組合せ。",
+     null
+    ],
+    "point": "Q章の除外注は「後天性」を他章へ：心中隔欠損→I51.0、外反変形/内反変形→M21.0/M21.1、脊椎すべり症/分離症→M43.1/M43.0。"
+   },
+   "sources": [
+    {
+     "ref": "icd:naiyou17",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第17章 先天奇形，変形及び染色体異常（Q00-Q99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou17.pdf",
+     "locator": "Q66 除外",
+     "quote": "外反変形（後天性）（Ｍ21．0） 内反変形（後天性）（Ｍ21．1）"
+    },
+    {
+     "ref": "icd:naiyou17",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第17章 先天奇形，変形及び染色体異常（Q00-Q99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou17.pdf",
+     "locator": "Q21 除外",
+     "quote": "後天性心（臓）中隔欠損（症）（Ｉ51．0）"
+    },
+    {
+     "ref": "icd:naiyou17",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第17章 先天奇形，変形及び染色体異常（Q00-Q99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou17.pdf",
+     "locator": "Q76.2 除外",
+     "quote": "脊椎すべり症（後天性）（Ｍ43．1） 脊椎分離症（後天性）（Ｍ43．0）"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s12-0074",
+   "origin": {
+    "batch": "G3-S12-PER",
+    "key": "G3-S12-PER-08",
+    "by": "gen:G3-S12-PER"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（ICD-10専門）で修正",
+     "修正後の独立再監査（pass）",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G3-S12-PER",
+     "solver": "solve:G3-S12-PER（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G3-S12-PER（ICD-10専門）",
+     "reauditor": "reaudit:G3-S12-PER"
+    },
+    "log": "bank/audit/G3-S12-PER.audit.json#G3-S12-PER-08",
+    "notes": "再監査: ブラインド解答2＝キー2で一致。icd:naiyou17 Q66除外注「外反変形（後天性）（M21.0）／内反変形（後天性）（M21.1）」、Q21除外注「後天性心（臓）中隔欠損（症）（I51.0）」、Q76.2除外注「脊椎すべり症（後天性）（M43.1）／脊椎分離症（後天性）（M43.0）」を文脈ごと確認。icd.mjsでI51.0・M43.0・M43.1・M21.0・M21.1・Q66.6の存在と名称を確認、icd:naiyou13 M21.0/M21.1/M43.0/M43.1、icd:naiyou09 I51.0とも整合。Q66.6は「足のその他の先天（性）外反変形」で後天性の分類先で｜icd:naiyou17 Q21除外(I51.0)、Q66除外(M21.0/M21.1)、Q76.2除外(M43.1/M43.0)、icd:naiyou13 M21.0/M21.1/M21.5、naiyou09 I51.0 を確認。キー(2)は正しい。"
+   }
+  },
+  {
+   "subject": "S12",
+   "subtopic": "先天奇形（第ⅩⅦ章）",
+   "format": "icd",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "乳児の診療録に、確定診断として「動脈管開存（症）（ボタロー＜Botallo＞管開存）」と記載されている。ICD-10コードとして正しいものはどれか。",
+   "choices": [
+    "P29.3",
+    "Q21.1",
+    "Q25.0",
+    "Q25.1",
+    "Q21.0"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "動脈管開存（症）は、ボタロー管開存・動脈管遺残とともにQ25.0（大型動脈の先天奇形のうち動脈管開存（症））に分類される。",
+    "choiceNotes": [
+     "P29.3は胎児循環持続＜遺残＞で、「動脈管の閉鎖遅延」や新生児の（持続性）肺高血圧（症）を含む周産期の心血管障害。確定診断の動脈管開存（症）はQ25.0。",
+     "Q21.1は心房中隔欠損（症）（卵円孔開存などを含む）。",
+     null,
+     "Q25.1は大動脈縮窄（症）。",
+     "Q21.0は心室中隔欠損（症）。"
+    ],
+    "point": "動脈管開存（症）＝Q25.0（Q章）。「動脈管の閉鎖遅延」はP29.3（P章）。卵円孔開存はQ21.1。"
+   },
+   "sources": [
+    {
+     "ref": "icd:naiyou17",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第17章 先天奇形，変形及び染色体異常（Q00-Q99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou17.pdf",
+     "locator": "Q25.0",
+     "quote": "動脈管開存（症） ボタロー＜Botallo＞管開存 動脈管遺残"
+    },
+    {
+     "ref": "icd:naiyou16",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第16章 周産期に発生した病態（P00-P96）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou16.pdf",
+     "locator": "P29.3",
+     "quote": "胎児循環持続＜遺残＞ 動脈管の閉鎖遅延"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s12-0075",
+   "origin": {
+    "batch": "G3-S12-PER",
+    "key": "G3-S12-PER-09",
+    "by": "gen:G3-S12-PER"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G3-S12-PER",
+     "solver": "solve:G3-S12-PER（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G3-S12-PER（ICD-10専門）"
+    },
+    "log": "bank/audit/G3-S12-PER.audit.json#G3-S12-PER-09",
+    "notes": "icd:naiyou17 Q25.0（ボタロー管開存・動脈管遺残）, Q25.1, Q21.0, Q21.1（卵円孔開存を含む）、icd:naiyou16 P29.3（動脈管の閉鎖遅延）を確認。"
+   }
+  },
+  {
+   "subject": "S12",
+   "subtopic": "先天奇形（第ⅩⅦ章）",
+   "format": "icd",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "染色体検査で、転座による21トリソミーと確認されたダウン＜Down＞症候群の児がいる。ICD-10コードとして正しいものはどれか。",
+   "choices": [
+    "Q90.0",
+    "Q90.1",
+    "Q90.2",
+    "Q91.2",
+    "Q92.9"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "Q90（ダウン症候群）は4桁目で成因を区分し、Q90.0が成熟＜減数＞分裂時の不分離、Q90.1がモザイク、Q90.2が転座、Q90.9が詳細不明（21トリソミーNOS）である。転座型はQ90.2。",
+    "choiceNotes": [
+     "Q90.0は成熟＜減数＞分裂時の不分離による21トリソミー（標準型）。",
+     "Q90.1はモザイク（有糸分裂時の不分離による）の21トリソミー。",
+     null,
+     "Q91.2は18トリソミー（エドワーズ症候群）の転座型。",
+     "Q92（常染色体のその他のトリソミー）は13，18，21染色体のトリソミーを除外している。"
+    ],
+    "point": "Q90＝21、Q91.0－Q91.3＝18、Q91.4－Q91.7＝13トリソミー。4桁目は不分離／モザイク／転座の順。"
+   },
+   "sources": [
+    {
+     "ref": "icd:naiyou17",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第17章 先天奇形，変形及び染色体異常（Q00-Q99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou17.pdf",
+     "locator": "Q90.2",
+     "quote": "21 トリソミー， 転座"
+    },
+    {
+     "ref": "icd:naiyou17",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第17章 先天奇形，変形及び染色体異常（Q00-Q99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou17.pdf",
+     "locator": "Q92 除外",
+     "quote": "13， 18， 21 染色体のトリソミー（Ｑ90－Ｑ91）"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s12-0076",
+   "origin": {
+    "batch": "G3-S12-PER",
+    "key": "G3-S12-PER-10",
+    "by": "gen:G3-S12-PER"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G3-S12-PER",
+     "solver": "solve:G3-S12-PER（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G3-S12-PER（ICD-10専門）"
+    },
+    "log": "bank/audit/G3-S12-PER.audit.json#G3-S12-PER-10",
+    "notes": "icd:naiyou17 Q90.0/Q90.1/Q90.2/Q90.9, Q91.0-Q91.7, Q92 除外注（13,18,21トリソミー）を確認。"
+   }
+  },
+  {
+   "subject": "S12",
+   "subtopic": "先天奇形（第ⅩⅦ章）",
+   "format": "icd",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "妊娠中の母体の飲酒が原因とされ、特有の顔貌などの形態異常を伴う「胎児アルコール症候群」と診断された児がいる。ICD-10コードとして正しいものはどれか。",
+   "choices": [
+    "Q86.0",
+    "P04.3",
+    "P04.4",
+    "Q86.8",
+    "Q87.0"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "Q86（既知の外因による先天奇形症候群）にQ86.0胎児アルコール症候群（異形性）がある。P04.3（母体のアルコール使用により影響を受けた胎児及び新生児）の除外注に「胎児アルコール症候群（Q86.0）」とあり、P04は経胎盤性移行物質の非催奇形性効果を対象とし、先天奇形（Q00－Q99）を除外している。",
+    "choiceNotes": [
+     null,
+     "P04.3は母体の飲酒による影響のうち胎児アルコール症候群以外のものに用いる。胎児アルコール症候群はP04.3の除外注でQ86.0とされている。",
+     "P04.4は母体の嗜癖性薬物使用により影響を受けた児で、飲酒（P04.3）とは別項目。",
+     "Q86.8は既知の外因によるその他の先天奇形症候群で、胎児アルコール症候群にはQ86.0という固有の細分類がある。",
+     "Q87.0は主として顔貌異常を伴う先天奇形症候群（多系統に及ぶその他の明示された症候群）で、既知の外因による症候群（Q86）とは別。"
+    ],
+    "point": "飲酒の影響：非催奇形性ならP04.3、奇形症候群（胎児アルコール症候群）ならQ86.0。ヒダントインQ86.1、ワーファリンQ86.2。"
+   },
+   "sources": [
+    {
+     "ref": "icd:naiyou16",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第16章 周産期に発生した病態（P00-P96）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou16.pdf",
+     "locator": "P04.3 除外",
+     "quote": "母体のアルコール使用＜飲酒＞により影響を受けた胎児及び新生児 除外： 胎児アルコール症候群（Ｑ86．0）"
+    },
+    {
+     "ref": "icd:naiyou16",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第16章 周産期に発生した病態（P00-P96）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou16.pdf",
+     "locator": "P04 包含・除外",
+     "quote": "経胎盤性移行物質の非催奇形性効果 除外： 先天奇形（Ｑ00－Ｑ99）"
+    },
+    {
+     "ref": "icd:naiyou17",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第17章 先天奇形，変形及び染色体異常（Q00-Q99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou17.pdf",
+     "locator": "Q86.0",
+     "quote": "胎児アルコール症候群（異形性）"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s12-0077",
+   "origin": {
+    "batch": "G3-S12-PER",
+    "key": "G3-S12-PER-11",
+    "by": "gen:G3-S12-PER"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G3-S12-PER",
+     "solver": "solve:G3-S12-PER（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G3-S12-PER（ICD-10専門）"
+    },
+    "log": "bank/audit/G3-S12-PER.audit.json#G3-S12-PER-11",
+    "notes": "icd:naiyou16 P04 包含・除外、P04.3 除外（Q86.0）、P04.4、icd:naiyou17 Q86.0/Q86.1/Q86.2/Q86.8, Q87.0 を確認。"
+   }
+  },
+  {
+   "subject": "S12",
+   "subtopic": "先天奇形（第ⅩⅦ章）",
+   "format": "knowledge",
+   "difficulty": "advanced",
+   "polarity": "positive",
+   "question": "死因コーディングにおける先天奇形の取扱いについて、インストラクションマニュアルの記述に照らして正しいものはどれか。なお、いずれも生後に罹患したという記述はないものとする。",
+   "choices": [
+    "生後3か月で死亡した児の死亡診断書の「心疾患NOS」は、先天性と考えてよい。",
+    "生後3週で死亡した児の死亡診断書の「水頭症NOS」は、先天性と考えてよい。",
+    "1歳6か月で死亡した児の死亡診断書の「大動脈弁狭窄（症）」は、先天性と考えてよい。",
+    "先天奇形は、未熟「による」ものと考えるべきである。",
+    "先天奇形は、染色体異常「による」ものと考えるべきではない。"
+   ],
+   "answer": 1,
+   "explanation": {
+    "correct": "4.2.10では、生後に罹患したという記述がない場合、1歳未満の死亡では動脈瘤・大動脈弁狭窄（症）・奇形など、4週未満の死亡では心疾患NOS・水頭症NOSを先天性と考えてよいとしている。生後3週は4週未満なので水頭症NOSは先天性と考えてよい。",
+    "choiceNotes": [
+     "心疾患NOSを先天性と考えてよいのは4週未満の死亡に限られる。生後3か月は該当しない。",
+     null,
+     "大動脈弁狭窄（症）を先天性と考えてよいのは1歳未満の死亡である。1歳6か月は該当しない。",
+     "先天奇形（Q00－Q99）は、未熟を含むその他の疾病「による」と考えるべきではないとされている。",
+     "先天奇形は、例外として染色体異常又は先天奇形症候群「による」と考えるべきであるとされている。"
+    ],
+    "point": "先天性とみなす年齢：1歳未満＝動脈瘤・大動脈弁狭窄・奇形など、4週未満＝心疾患NOS・水頭症NOS。先天奇形は未熟「による」としないが、染色体異常「による」とはする。"
+   },
+   "sources": [
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "4.2.10 先天奇形、変形及び染色体異常",
+     "quote": "１歳未満：動脈瘤、大動脈弁狭窄（症）・閉鎖（症）、脳萎縮、脳のう＜嚢＞胞、"
+    },
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "4.2.10 先天奇形、変形及び染色体異常",
+     "quote": "週未満：心疾患 NOS、水頭症 NOS"
+    },
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "4.2.2 認められない因果関係 ⒦ 先天奇形",
+     "quote": "先天奇形（Q00 － Q99）は、未熟を含むその他の疾病「による」と考えるべきでは ない。"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s12-0078",
+   "origin": {
+    "batch": "G3-S12-PER",
+    "key": "G3-S12-PER-12",
+    "by": "gen:G3-S12-PER"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G3-S12-PER",
+     "solver": "solve:G3-S12-PER（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G3-S12-PER（ICD-10専門）"
+    },
+    "log": "bank/audit/G3-S12-PER.audit.json#G3-S12-PER-12",
+    "notes": "icd:instruction 4.2.10（1歳未満／4週未満の列挙）と 4.2.2 A ⒦ 先天奇形（未熟を含む他の疾病によるとしない；染色体異常・先天奇形症候群によるとはする）を確認。"
+   }
+  },
+  {
+   "subject": "S12",
+   "subtopic": "皮膚・筋骨格・腎尿路生殖器（第ⅩⅡ〜ⅩⅣ章）",
+   "format": "combination",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "ICD-10（2013年版）で、次の皮膚の病態のうち、第ⅩⅡ章の「皮膚及び皮下組織の感染症（L00－L08）」ではなく第Ⅰ章（感染症及び寄生虫症）に分類されるものの組合せはどれか。\na 丹毒\nb 膿か＜痂＞疹（とびひ）\nc 帯状疱疹\nd 蜂巣炎＜蜂窩織炎＞\ne 伝染性軟属腫",
+   "choices": [
+    "a と b と d",
+    "a と c と e",
+    "b と c と d",
+    "b と d と e",
+    "c と d と e"
+   ],
+   "answer": 1,
+   "explanation": {
+    "correct": "L00－L08の除外に「第Ⅰ章に分類される皮膚局所感染症」として丹毒（A46）、伝染性軟属腫（B08.1）などが挙げられ、帯状疱疹（B02.-）も除外されている。膿か疹（L01）と蜂巣炎（L03）は第ⅩⅡ章のL00－L08に分類される。",
+    "choiceNotes": [
+     "b 膿か疹はL01、d 蜂巣炎はL03で、いずれも第ⅩⅡ章（L00－L08）に分類される。",
+     null,
+     "b 膿か疹（L01）と d 蜂巣炎（L03）は第ⅩⅡ章。第Ⅰ章は c のみ。",
+     "b 膿か疹（L01）と d 蜂巣炎（L03）は第ⅩⅡ章。第Ⅰ章は e のみ。",
+     "d 蜂巣炎はL03で第ⅩⅡ章。a 丹毒（A46）が第Ⅰ章なのに含まれていない。"
+    ],
+    "point": "皮膚の感染症でも丹毒A46・帯状疱疹B02・伝染性軟属腫B08.1・真菌症B35－B49は第Ⅰ章。膿か疹L01・せつL02・蜂巣炎L03は第ⅩⅡ章。"
+   },
+   "sources": [
+    {
+     "ref": "icd:naiyou12",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第12章 皮膚及び皮下組織の疾患（L00-L99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou12.pdf",
+     "locator": "L00－L08 除外",
+     "quote": "第Ⅰ章に分類される皮膚局所感染症， 下記のようなもの： ・丹毒（Ａ46）"
+    },
+    {
+     "ref": "icd:naiyou12",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第12章 皮膚及び皮下組織の疾患（L00-L99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou12.pdf",
+     "locator": "L00－L08 除外",
+     "quote": "伝染性軟属腫（Ｂ08．1）"
+    },
+    {
+     "ref": "icd:naiyou12",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第12章 皮膚及び皮下組織の疾患（L00-L99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou12.pdf",
+     "locator": "L00－L08 除外",
+     "quote": "帯状疱疹（Ｂ02.-）"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s12-0079",
+   "origin": {
+    "batch": "G3-S12-MSK",
+    "key": "G3-S12-MSK-01",
+    "by": "gen:G3-S12-MSK"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G3-S12-MSK",
+     "solver": "solve:G3-S12-MSK（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G3-S12-MSK（ICD-10専門）"
+    },
+    "log": "bank/audit/G3-S12-MSK.audit.json#G3-S12-MSK-01",
+    "notes": "icd:naiyou12 L00－L08 除外で丹毒(A46)・伝染性軟属腫(B08.1)・帯状疱疹(B02.-)を確認。L01 膿か疹(※とびひ)・L03 蜂巣炎は第ⅩⅡ章。a/c/eのみ第Ⅰ章で組合せは一意。全コード実在。"
+   }
+  },
+  {
+   "subject": "S12",
+   "subtopic": "皮膚・筋骨格・腎尿路生殖器（第ⅩⅡ〜ⅩⅣ章）",
+   "format": "icd",
+   "difficulty": "advanced",
+   "polarity": "positive",
+   "question": "ICD-10（2013年版）で、仙骨部にステージⅢ、右踵部にステージⅡの褥瘡性潰瘍がある患者について、褥瘡のコーディングとして正しいものはどれか。",
+   "choices": [
+    "L89.2 のみ",
+    "L89.1 のみ",
+    "L89.2 と L89.1",
+    "L89.9 のみ",
+    "L89.3 のみ"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "L89（じょく瘡性潰瘍及び圧迫領域）の注に「ステージが異なる複数の部位がある場合は，最も高いステージを示すコード１つのみを割り当てる」とある。最も高いのはステージⅢなので、L89.2を1つだけ付与する。",
+    "choiceNotes": [
+     null,
+     "L89.1はステージⅡ。複数部位では最も高いステージ（Ⅲ）のコードを使う。",
+     "部位ごとに複数のコードを付けるのではなく、最も高いステージのコード1つのみを割り当てる。",
+     "L89.9はステージの記載がないもの。本例はステージが記載されている。",
+     "L89.3はステージⅣ（筋肉・骨・支持構造の壊死を伴うもの）で、本例にⅣの部位はない。"
+    ],
+    "point": "褥瘡が複数部位でステージが異なる→最も高いステージのコード1つだけ（L89.0＝Ⅰ〜L89.3＝Ⅳ、L89.9＝ステージ不明）。"
+   },
+   "sources": [
+    {
+     "ref": "icd:naiyou12",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第12章 皮膚及び皮下組織の疾患（L00-L99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou12.pdf",
+     "locator": "L89 注",
+     "quote": "ステージが異なる複数の部位がある場合は，最も高いステージを示すコード１つのみを"
+    },
+    {
+     "ref": "icd:naiyou12",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第12章 皮膚及び皮下組織の疾患（L00-L99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou12.pdf",
+     "locator": "L89.2",
+     "quote": "皮下組織の傷害又はえ＜壊＞死を含む皮膚全層の欠損を伴うじょく＜褥＞瘡性［圧"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s12-0080",
+   "origin": {
+    "batch": "G3-S12-MSK",
+    "key": "G3-S12-MSK-02",
+    "by": "gen:G3-S12-MSK"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G3-S12-MSK",
+     "solver": "solve:G3-S12-MSK（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G3-S12-MSK（ICD-10専門）"
+    },
+    "log": "bank/audit/G3-S12-MSK.audit.json#G3-S12-MSK-02",
+    "notes": "icd:naiyou12 L89 注「最も高いステージを示すコード１つのみ」、L89.0〜L89.3・L89.9 の定義を確認。Ⅲ＋Ⅱ→L89.2のみ。"
+   }
+  },
+  {
+   "subject": "S12",
+   "subtopic": "皮膚・筋骨格・腎尿路生殖器（第ⅩⅡ〜ⅩⅣ章）",
+   "format": "icd",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "ICD-10（2013年版）で、閉経後骨粗しょう症による椎骨の圧潰（新たな外傷の記載はない）に付与するコードはどれか。",
+   "choices": [
+    "M81.0",
+    "M48.5",
+    "M84.4",
+    "S32.0",
+    "M80.0"
+   ],
+   "answer": 4,
+   "explanation": {
+    "correct": "M80（骨粗しょう症，病的骨折を伴うもの）は「骨粗しょう症性椎骨圧潰及び楔状化」を包含する。閉経後骨粗しょう症で病的骨折を伴うのでM80.0となる。M48.5の除外にも「骨粗しょう症における圧潰脊椎（M80.-）」とある。",
+    "choiceNotes": [
+     "M81.0は病的骨折を伴わない閉経後骨粗しょう症。椎骨圧潰（病的骨折）があるのでM80.-を使う。",
+     "M48.5は圧潰脊椎で他に分類されないもの（NOS）。骨粗しょう症における圧潰脊椎はM48.5から除外されM80.-に分類する。",
+     "M84.4は病的骨折NOS（他に分類されないもの）。骨粗しょう症における病的骨折はM84.4から除外される。",
+     "S32.0は腰椎骨折（損傷）。新たな外傷ではなく骨粗しょう症による圧潰なので第ⅩⅨ章は使わない。",
+     null
+    ],
+    "point": "骨粗しょう症＋病的骨折（椎骨圧潰を含む）＝M80.-、骨折なし＝M81.-。圧潰脊椎NOS＝M48.5、病的骨折NOS＝M84.4。"
+   },
+   "sources": [
+    {
+     "ref": "icd:naiyou13",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第13章 筋骨格系及び結合組織の疾患（M00-M99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou13.pdf",
+     "locator": "M80 包含",
+     "quote": "骨粗しょう＜鬆＞症＜オステオポローシス＞性椎骨圧潰及び楔状化"
+    },
+    {
+     "ref": "icd:naiyou13",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第13章 筋骨格系及び結合組織の疾患（M00-M99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou13.pdf",
+     "locator": "M48.5 除外",
+     "quote": "骨粗しょう＜鬆＞症＜オステオポローシス＞における圧潰脊椎（Ｍ80.-）"
+    },
+    {
+     "ref": "icd:naiyou13",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第13章 筋骨格系及び結合組織の疾患（M00-M99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou13.pdf",
+     "locator": "M80.0",
+     "quote": "閉経後骨粗しょう＜鬆＞症＜オステオポローシス＞， 病的骨折を伴うもの"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s12-0081",
+   "origin": {
+    "batch": "G3-S12-MSK",
+    "key": "G3-S12-MSK-03",
+    "by": "gen:G3-S12-MSK"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G3-S12-MSK",
+     "solver": "solve:G3-S12-MSK（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G3-S12-MSK（ICD-10専門）"
+    },
+    "log": "bank/audit/G3-S12-MSK.audit.json#G3-S12-MSK-03",
+    "notes": "icd:naiyou13 M80 包含(骨粗しょう症性椎骨圧潰及び楔状化)、M80.0、M48.5 除外(M80.-)、M84.4 除外、M81 除外を確認。S32.0=腰椎骨折。"
+   }
+  },
+  {
+   "subject": "S12",
+   "subtopic": "皮膚・筋骨格・腎尿路生殖器（第ⅩⅡ〜ⅩⅣ章）",
+   "format": "knowledge",
+   "difficulty": "standard",
+   "polarity": "negative",
+   "question": "ICD-10（2013年版）の骨粗しょう症と病的骨折の分類について、誤っているものはどれか。",
+   "choices": [
+    "病的骨折NOSは、M84.4に分類する。",
+    "圧潰脊椎で他に分類されないものは、M48.5に分類する。",
+    "病的骨折を伴わない老人性骨粗しょう症は、M81.8に分類する。",
+    "骨粗しょう症における病的骨折は、M84.4に分類する。",
+    "多発性骨髄腫症における骨粗しょう症は、星印（＊）項目のM82.0に分類する。"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "M84.4（病的骨折，他に分類されないもの）の除外に「骨粗しょう症における病的骨折（M80.-）」とあり、骨粗しょう症による病的骨折はM80.-に分類する。M84.4には分類しない。",
+    "choiceNotes": [
+     "M84.4は「病的骨折，他に分類されないもの」で、病的骨折NOSを包含する。正しい。",
+     "M84.4の除外に「圧潰脊椎NEC（M48.5）」とあり、正しい。",
+     "M81.8（その他の骨粗しょう症）に老人性骨粗しょう症が含まれる。正しい。",
+     null,
+     "M82.0＊は多発性骨髄腫症における骨粗しょう症で、C90.0†と組み合わせる星印項目。正しい。"
+    ],
+    "point": "病的骨折：骨粗しょう症によるもの＝M80.-、原因の記載がないNOS＝M84.4。老人性骨粗しょう症（骨折なし）＝M81.8。"
+   },
+   "sources": [
+    {
+     "ref": "icd:naiyou13",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第13章 筋骨格系及び結合組織の疾患（M00-M99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou13.pdf",
+     "locator": "M84.4",
+     "quote": "病的骨折 ＮＯＳ 除外： 圧潰脊椎 ＮＥＣ（Ｍ48．5） 骨粗しょう＜鬆＞症＜オステオポローシス＞における病的骨折（Ｍ80.-）"
+    },
+    {
+     "ref": "icd:naiyou13",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第13章 筋骨格系及び結合組織の疾患（M00-M99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou13.pdf",
+     "locator": "M81.8",
+     "quote": "Ｍ81．8 その他の骨粗しょう＜鬆＞症＜オステオポローシス＞ 老人性骨粗しょう＜鬆＞症＜オステオポローシス＞"
+    },
+    {
+     "ref": "icd:naiyou13",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第13章 筋骨格系及び結合組織の疾患（M00-M99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou13.pdf",
+     "locator": "M82.0",
+     "quote": "多発性骨髄腫症における骨粗しょう＜鬆＞症＜オステオポローシス＞（Ｃ90．0†）"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s12-0082",
+   "origin": {
+    "batch": "G3-S12-MSK",
+    "key": "G3-S12-MSK-04",
+    "by": "gen:G3-S12-MSK"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G3-S12-MSK",
+     "solver": "solve:G3-S12-MSK（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G3-S12-MSK（ICD-10専門）"
+    },
+    "log": "bank/audit/G3-S12-MSK.audit.json#G3-S12-MSK-04",
+    "notes": "icd:naiyou13 M84.4(病的骨折NOS／除外: 圧潰脊椎NEC M48.5・骨粗しょう症における病的骨折 M80.-)、M81.8 老人性、M82.0*(C90.0†) を確認。誤りはcのみ。"
+   }
+  },
+  {
+   "subject": "S12",
+   "subtopic": "皮膚・筋骨格・腎尿路生殖器（第ⅩⅡ〜ⅩⅣ章）",
+   "format": "icd",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "ICD-10（2013年版）で、股関節の形成不全の結果として両側の股関節に生じた関節症（変形性股関節症）に付与するコードはどれか。",
+   "choices": [
+    "M16.0",
+    "M16.3",
+    "M16.6",
+    "M16.2",
+    "Q65.1"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "M16（股関節症）は原因（原発性・形成不全・外傷後・その他の続発性）と両側性か否かで細分される。形成不全の結果としての両側性の股関節症はM16.2。一側性又はNOSの形成不全性股関節症はM16.3となる。",
+    "choiceNotes": [
+     "M16.0は原発性股関節症，両側性。形成不全という原因の記載があるので該当しない。",
+     "M16.3は形成不全性股関節症のうちNOS又は一側性のもの。本例は両側性。",
+     "M16.6は「その他の」続発性股関節症，両側性。形成不全によるものはM16.2として別に設けられている。",
+     null,
+     "Q65.1は先天性股関節脱臼，両側性で第ⅩⅦ章の先天奇形そのもの。生じた関節症はM16.-に分類する。"
+    ],
+    "point": "股関節症M16は偶数＝両側性：.0原発・.2形成不全・.4外傷後・.6その他の続発性。膝関節症M17も原因×両側で細分。"
+   },
+   "sources": [
+    {
+     "ref": "icd:naiyou13",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第13章 筋骨格系及び結合組織の疾患（M00-M99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou13.pdf",
+     "locator": "M16.2／M16.3",
+     "quote": "Ｍ16．2 形成不全の結果としての股関節症， 両側性 Ｍ16．3 その他の形成不全性股関節症 形成不全性股関節症： ・ＮＯＳ ・一側性"
+    },
+    {
+     "ref": "icd:naiyou13",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第13章 筋骨格系及び結合組織の疾患（M00-M99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou13.pdf",
+     "locator": "M16.6",
+     "quote": "Ｍ16．6 その他の続発性股関節症， 両側性"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s12-0083",
+   "origin": {
+    "batch": "G3-S12-MSK",
+    "key": "G3-S12-MSK-05",
+    "by": "gen:G3-S12-MSK"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G3-S12-MSK",
+     "solver": "solve:G3-S12-MSK（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G3-S12-MSK（ICD-10専門）"
+    },
+    "log": "bank/audit/G3-S12-MSK.audit.json#G3-S12-MSK-05",
+    "notes": "icd:naiyou13 M16.0〜M16.7 の細分を確認。M16.2=形成不全の結果としての股関節症，両側性、M16.3=NOS・一側性。Q65.1=先天性股関節脱臼，両側性。"
+   }
+  },
+  {
+   "subject": "S12",
+   "subtopic": "皮膚・筋骨格・腎尿路生殖器（第ⅩⅡ〜ⅩⅣ章）",
+   "format": "knowledge",
+   "difficulty": "standard",
+   "polarity": "negative",
+   "question": "ICD-10（2013年版）の関節症（M15－M19）の分類について、誤っているものはどれか。",
+   "choices": [
+    "二部位以上の記載のある関節症は、M15（多発性関節症）に含まれる。",
+    "脊椎の骨関節炎は、関節症（M15－M19）から除外され、M47.-に分類する。",
+    "一側性の原発性股関節症は、M16.1に分類する。",
+    "関節障害を伴うヘバーデン結節は、M15（多発性関節症）の中に設けられている。",
+    "両膝の関節症のように単関節で両側に併発したものは、M15（多発性関節症）に分類する。"
+   ],
+   "answer": 4,
+   "explanation": {
+    "correct": "M15（多発性関節症）は「二部位以上の記載のある関節症」を包含するが、「単関節で両側の併発（M16－M19）」は除外されている。両膝の関節症は膝関節症M17の両側性のコードに分類する。",
+    "choiceNotes": [
+     "M15の包含に「二部位以上の記載のある関節症」とあり、正しい。",
+     "中間分類M15－M19の除外に「脊椎の骨関節炎（M47.-）」とあり、正しい。",
+     "M16.1（その他の原発性股関節症）に原発性股関節症のNOS・一側性が含まれ、正しい。",
+     "M15.1がヘバーデン結節（関節障害を伴うもの）で、M15の細分類。正しい。",
+     null
+    ],
+    "point": "関節症：別々の二部位以上＝M15、同じ関節の両側＝M16〜M19の「両側性」、脊椎＝M47。"
+   },
+   "sources": [
+    {
+     "ref": "icd:naiyou13",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第13章 筋骨格系及び結合組織の疾患（M00-M99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou13.pdf",
+     "locator": "M15",
+     "quote": "Ｍ15 多発性関節症 Polyarthrosis 包含： 二部位以上の記載のある関節症 除外： 単関節で両側の併発（Ｍ16－Ｍ19） Ｍ15．0 原発性全身性（骨）関節症 Ｍ15．1 ヘバーデン＜Heberden＞結節（関節障害を伴うもの）"
+    },
+    {
+     "ref": "icd:naiyou13",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第13章 筋骨格系及び結合組織の疾患（M00-M99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou13.pdf",
+     "locator": "M15－M19 除外",
+     "quote": "脊椎の骨関節炎（Ｍ47.-）"
+    },
+    {
+     "ref": "icd:naiyou13",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第13章 筋骨格系及び結合組織の疾患（M00-M99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou13.pdf",
+     "locator": "M16.1",
+     "quote": "Ｍ16．1 その他の原発性股関節症 原発性股関節症： ・ＮＯＳ ・一側性"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s12-0084",
+   "origin": {
+    "batch": "G3-S12-MSK",
+    "key": "G3-S12-MSK-06",
+    "by": "gen:G3-S12-MSK"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G3-S12-MSK",
+     "solver": "solve:G3-S12-MSK（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G3-S12-MSK（ICD-10専門）"
+    },
+    "log": "bank/audit/G3-S12-MSK.audit.json#G3-S12-MSK-06",
+    "notes": "icd:naiyou13 M15 包含/除外(単関節で両側の併発 M16－M19)、M15－M19 除外(脊椎の骨関節炎 M47.-)、M15.1、M16.1 を確認。誤りはdのみ。"
+   }
+  },
+  {
+   "subject": "S12",
+   "subtopic": "皮膚・筋骨格・腎尿路生殖器（第ⅩⅡ〜ⅩⅣ章）",
+   "format": "icd",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "ICD-10（2013年版）の内容例示表で、N18.3（慢性腎臓病，ステージ３）の説明として示されているものはどれか。",
+   "choices": [
+    "GFR正常値又は亢進（＞90 mL/min）を伴う腎障害",
+    "GFRの軽度低下（60－89 mL/min）を伴う腎障害",
+    "GFRの中度低下（30－59 mL/min）を伴う腎障害",
+    "GFRの重度低下（15－29 mL/min）を伴う腎障害",
+    "末期腎臓病（透析中のものを含む）"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "N18（慢性腎臓病）はステージで細分され、N18.3（ステージ３）は「GFRの中度低下（30－59 mL/min）を伴う腎障害」と説明されている。",
+    "choiceNotes": [
+     "ステージ１（N18.1）の説明。",
+     "ステージ２（N18.2）の説明。",
+     null,
+     "ステージ４（N18.4）の説明。",
+     "末期腎臓病（透析中・NOSなど）はステージ５（N18.5）に含まれる。"
+    ],
+    "point": "N18.1 ＞90／N18.2 60－89／N18.3 30－59／N18.4 15－29（mL/min）／N18.5 末期腎臓病・慢性尿毒症／N18.9 詳細不明。"
+   },
+   "sources": [
+    {
+     "ref": "icd:naiyou14",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第14章 腎尿路生殖器系の疾患（N00-N99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou14.pdf",
+     "locator": "N18.1〜N18.4",
+     "quote": "N18．3 慢性腎臓病，ステージ３ GFR の中度低下（30－59 mL/min）を伴う腎障害"
+    },
+    {
+     "ref": "icd:naiyou14",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第14章 腎尿路生殖器系の疾患（N00-N99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou14.pdf",
+     "locator": "N18.2",
+     "quote": "GFR の軽度低下（60－89 mL/min）を伴う腎障害"
+    },
+    {
+     "ref": "icd:naiyou14",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第14章 腎尿路生殖器系の疾患（N00-N99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou14.pdf",
+     "locator": "N18.4",
+     "quote": "GFR の重度低下（15－29 mL/min）を伴う腎障害"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s12-0085",
+   "origin": {
+    "batch": "G3-S12-MSK",
+    "key": "G3-S12-MSK-07",
+    "by": "gen:G3-S12-MSK"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G3-S12-MSK",
+     "solver": "solve:G3-S12-MSK（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G3-S12-MSK（ICD-10専門）"
+    },
+    "log": "bank/audit/G3-S12-MSK.audit.json#G3-S12-MSK-07",
+    "notes": "icd:naiyou14 N18.1〜N18.5 の説明文を確認。N18.3=GFRの中度低下(30－59 mL/min)。他の選択肢は各ステージの原文どおり。"
+   }
+  },
+  {
+   "subject": "S12",
+   "subtopic": "皮膚・筋骨格・腎尿路生殖器（第ⅩⅡ〜ⅩⅣ章）",
+   "format": "icd",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "ICD-10（2013年版）で、維持透析を受けている末期腎臓病（高血圧症の記載はない）に付与する疾病のコードはどれか。",
+   "choices": [
+    "N18.5",
+    "N18.4",
+    "N19",
+    "N17.9",
+    "N18.9"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "N18.5（慢性腎臓病，ステージ５）は慢性尿毒症と末期腎臓病（同種移植片不全におけるもの、NOS、透析中のもの、透析又は移植を受けないもの）を包含する。透析中の末期腎臓病はN18.5に分類する。",
+    "choiceNotes": [
+     null,
+     "N18.4はステージ４（GFRの重度低下15－29 mL/min）。末期腎臓病はステージ５。",
+     "N19は詳細不明の腎不全（腎機能不全NOS）。末期腎臓病はN18.5に明示されている。",
+     "N17.9は急性腎不全，詳細不明。慢性の末期腎臓病は急性腎不全ではない。",
+     "N18.9は慢性腎臓病，詳細不明。末期腎臓病はN18.5に包含されている。"
+    ],
+    "point": "末期腎臓病（透析中・移植片不全・NOS）と慢性尿毒症＝N18.5。高血圧を伴えばI12.0。"
+   },
+   "sources": [
+    {
+     "ref": "icd:naiyou14",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第14章 腎尿路生殖器系の疾患（N00-N99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou14.pdf",
+     "locator": "N18.5",
+     "quote": "N18．5 慢性腎臓病，ステージ５ 慢性尿毒症 末期腎臓病："
+    },
+    {
+     "ref": "icd:naiyou14",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第14章 腎尿路生殖器系の疾患（N00-N99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou14.pdf",
+     "locator": "N18.5",
+     "quote": "•NOS •透析中もの •透析又は移植を受けないもの"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s12-0086",
+   "origin": {
+    "batch": "G3-S12-MSK",
+    "key": "G3-S12-MSK-08",
+    "by": "gen:G3-S12-MSK"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G3-S12-MSK",
+     "solver": "solve:G3-S12-MSK（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G3-S12-MSK（ICD-10専門）"
+    },
+    "log": "bank/audit/G3-S12-MSK.audit.json#G3-S12-MSK-08",
+    "notes": "icd:naiyou14 N18.5 包含(慢性尿毒症、末期腎臓病: 透析中もの 等)を確認。N18.4/N19/N17.9/N18.9 の名称も確認。"
+   }
+  },
+  {
+   "subject": "S12",
+   "subtopic": "皮膚・筋骨格・腎尿路生殖器（第ⅩⅡ〜ⅩⅣ章）",
+   "format": "icd",
+   "difficulty": "advanced",
+   "polarity": "positive",
+   "question": "ICD-10（2013年版）で、高血圧（症）を伴う慢性腎不全（心疾患の記載はない）に付与するコードはどれか。",
+   "choices": [
+    "N18.9",
+    "I12.9",
+    "I13.1",
+    "I10",
+    "I12.0"
+   ],
+   "answer": 4,
+   "explanation": {
+    "correct": "N18（慢性腎臓病）の除外に「高血圧（症）を伴う慢性腎不全（I12.0）」とある。I12（高血圧性腎疾患）は高血圧によるN18.-、N19の病態を包含し、腎不全を伴うものはI12.0に分類する。",
+    "choiceNotes": [
+     "N18の除外により、高血圧（症）を伴う慢性腎不全にはN18.-を主たるコードとして使わない。",
+     "I12.9は腎不全を伴わない高血圧性腎疾患。本例は腎不全を伴う。",
+     "I13.-は高血圧性心腎疾患で、心疾患を伴う場合。心疾患の記載がないので該当しない。",
+     "I10は心・腎の病態の記載がない本態性高血圧（症）。腎不全を伴うのでI12.-に組み合わせて分類する。",
+     null
+    ],
+    "point": "高血圧＋慢性腎不全＝I12.0（N18は除外）。心疾患も加わればI13.-。"
+   },
+   "sources": [
+    {
+     "ref": "icd:naiyou14",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第14章 腎尿路生殖器系の疾患（N00-N99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou14.pdf",
+     "locator": "N18 除外",
+     "quote": "高血圧（症）を伴う慢性腎不全（I12．0）"
+    },
+    {
+     "ref": "icd:naiyou09",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第9章 循環器系の疾患（I00-I99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou09.pdf",
+     "locator": "I12 包含",
+     "quote": "高血圧による N00－N07，N18.-，N19.-又は N26.-の各病態"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s12-0087",
+   "origin": {
+    "batch": "G3-S12-MSK",
+    "key": "G3-S12-MSK-09",
+    "by": "gen:G3-S12-MSK"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G3-S12-MSK",
+     "solver": "solve:G3-S12-MSK（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G3-S12-MSK（ICD-10専門）"
+    },
+    "log": "bank/audit/G3-S12-MSK.audit.json#G3-S12-MSK-09",
+    "notes": "icd:naiyou14 N18 除外「高血圧（症）を伴う慢性腎不全（I12.0）」、icd:naiyou09 I12 包含・I12.0/I12.9/I13.1 を確認。icd:instruction の連鎖規定(N18.- に I10 の記載を伴う→I12.-)と主要病態 例８(I12.0)も整合。N18 には高血圧の追加コードの注もあるが、問題文は除外の用語どおりで選択肢中 I12.0 が唯一。"
+   }
+  },
+  {
+   "subject": "S12",
+   "subtopic": "皮膚・筋骨格・腎尿路生殖器（第ⅩⅡ〜ⅩⅣ章）",
+   "format": "icd",
+   "difficulty": "advanced",
+   "polarity": "positive",
+   "question": "ICD-10（2013年版）で、部位の記載のない尿路感染症について、起炎菌（大腸菌）も分類する場合のコードの組合せとして正しいものはどれか。",
+   "choices": [
+    "N30.9 と B96.2",
+    "B96.2 のみ",
+    "N39.0 と A41.5",
+    "N12 と B96.2",
+    "N39.0 と B96.2"
+   ],
+   "answer": 4,
+   "explanation": {
+    "correct": "部位不明の尿路感染症はN39.0。その注に「感染病原体の分類が必要な場合は，追加コード（B95－B97）を使用する」とあり、大腸菌はB96.2を追加する。B95－B98は一次コーディングには用いず、補助コード・追加コードとして使う。",
+    "choiceNotes": [
+     "N30.9は膀胱炎，詳細不明。膀胱という部位の記載がないので使わない。",
+     "B95－B98は一次コーディングには決して用いるべきでないとされ、B96.2単独では付与しない。",
+     "A41.5はその他のグラム陰性菌による敗血症。敗血症の記載はなく、病原体の追加コードにはB96.2を用いる。",
+     "N12は急性・慢性の明示のない尿細管間質性腎炎（腎盂腎炎NOSなど）。腎という部位の記載がないので使わない。",
+     null
+    ],
+    "point": "尿路感染症（部位不明）＝N39.0、病原体はB95－B97を追加（単独で主に使わない）。大腸菌＝B96.2。"
+   },
+   "sources": [
+    {
+     "ref": "icd:naiyou14",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第14章 腎尿路生殖器系の疾患（N00-N99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou14.pdf",
+     "locator": "N39.0",
+     "quote": "尿路感染症， 部位不明 感染病原体の分類が必要な場合は， 追加コード（Ｂ95－Ｂ97）を使用する。"
+    },
+    {
+     "ref": "icd:naiyou01",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第1章 感染症及び寄生虫症（A00-B99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou01.pdf",
+     "locator": "B95－B98 注",
+     "quote": "本分類項目は一次コーディングには決して用いるべきではない。"
+    },
+    {
+     "ref": "icd:naiyou01",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第1章 感染症及び寄生虫症（A00-B99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou01.pdf",
+     "locator": "B96.2",
+     "quote": "他章に分類される疾患の原因である大腸菌 ［E．coli］"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s12-0088",
+   "origin": {
+    "batch": "G3-S12-MSK",
+    "key": "G3-S12-MSK-10",
+    "by": "gen:G3-S12-MSK"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G3-S12-MSK",
+     "solver": "solve:G3-S12-MSK（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G3-S12-MSK（ICD-10専門）"
+    },
+    "log": "bank/audit/G3-S12-MSK.audit.json#G3-S12-MSK-10",
+    "notes": "icd:naiyou14 N39.0 の注(B95－B97 追加)、icd:naiyou01 B95－B98 注(一次コーディングに用いない)、B96.2 を確認。N30.9・A41.5・N12 の名称確認。"
+   }
+  },
+  {
+   "subject": "S12",
+   "subtopic": "皮膚・筋骨格・腎尿路生殖器（第ⅩⅡ〜ⅩⅣ章）",
+   "format": "icd",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "ICD-10（2013年版）で、急性・慢性の別が明示されていない腎盂腎炎（結石の記載はない）に付与するコードはどれか。",
+   "choices": [
+    "N10",
+    "N11.9",
+    "N39.0",
+    "N12",
+    "N20.9"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "N12（尿細管間質性腎炎，急性又は慢性と明示されないもの）は間質性腎炎NOS、腎盂炎NOS、腎盂腎炎NOSを包含する。急性と明示されればN10、慢性ならN11.-に分類する。",
+    "choiceNotes": [
+     "N10（急性尿細管間質性腎炎）は急性と明示された腎盂腎炎などを含む。急性の記載がないので使わない。",
+     "N11.9は慢性尿細管間質性腎炎，詳細不明。慢性の記載がないので使わない。",
+     "N39.0は部位不明の尿路感染症。腎盂腎炎は部位が明示されている。",
+     null,
+     "N20.9（尿路結石，詳細不明）はN12から除外された結石性腎盂腎炎の分類先。結石の記載がないので使わない。"
+    ],
+    "point": "腎盂腎炎：急性＝N10、慢性＝N11.-、急性・慢性不明（NOS）＝N12、結石性＝N20.9。"
+   },
+   "sources": [
+    {
+     "ref": "icd:naiyou14",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第14章 腎尿路生殖器系の疾患（N00-N99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou14.pdf",
+     "locator": "N12 包含",
+     "quote": "間質性腎炎 ＮＯＳ 腎盂炎 ＮＯＳ 腎盂腎炎 ＮＯＳ 除外： 結石性腎盂腎炎（Ｎ20．9）"
+    },
+    {
+     "ref": "icd:naiyou14",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第14章 腎尿路生殖器系の疾患（N00-N99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou14.pdf",
+     "locator": "N10",
+     "quote": "急性： ・感染性間質性腎炎 ・腎盂炎 ・腎盂腎炎"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s12-0089",
+   "origin": {
+    "batch": "G3-S12-MSK",
+    "key": "G3-S12-MSK-11",
+    "by": "gen:G3-S12-MSK"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G3-S12-MSK",
+     "solver": "solve:G3-S12-MSK（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G3-S12-MSK（ICD-10専門）"
+    },
+    "log": "bank/audit/G3-S12-MSK.audit.json#G3-S12-MSK-11",
+    "notes": "icd:naiyou14 N10(急性)、N11.9(慢性NOS)、N12 包含(腎盂腎炎NOS)・除外(結石性 N20.9)、N20 包含を確認。"
+   }
+  },
+  {
+   "subject": "S12",
+   "subtopic": "皮膚・筋骨格・腎尿路生殖器（第ⅩⅡ〜ⅩⅣ章）",
+   "format": "knowledge",
+   "difficulty": "standard",
+   "polarity": "negative",
+   "question": "ICD-10（2013年版）で、腎不全に関連する病態の分類先について、誤っているものはどれか。",
+   "choices": [
+    "処置後の腎不全は、N99.0に分類する。",
+    "分娩に続発する腎不全は、O90.4に分類する。",
+    "腎機能不全NOSは、N18.9（慢性腎臓病，詳細不明）に分類する。",
+    "腎前性尿毒症は、R39.2に分類する。",
+    "急性腎機能障害は、N17（急性腎不全）に含まれる。"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "N19（詳細不明の腎不全）は「腎機能不全 NOS」を包含する。腎機能不全NOSはN19に分類し、N18.9ではない。",
+    "choiceNotes": [
+     "腎不全（N17－N19）の除外に「処置後（N99.0）」とあり、正しい。",
+     "同じ除外に「分娩に続発するもの（O90.4）」とあり、正しい。",
+     null,
+     "同じ除外に「腎前性尿毒症（R39.2）」とあり、正しい。",
+     "N17（急性腎不全）の包含に「急性腎機能障害」とあり、正しい。"
+    ],
+    "point": "腎機能不全NOS＝N19。処置後＝N99.0、分娩後＝O90.4、腎前性・腎外性尿毒症＝R39.2、先天性＝P96.0。"
+   },
+   "sources": [
+    {
+     "ref": "icd:naiyou14",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第14章 腎尿路生殖器系の疾患（N00-N99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou14.pdf",
+     "locator": "N17－N19 除外",
+     "quote": "腎前性尿毒症（Ｒ39．2） 腎不全： ・流産,子宮外妊娠又は胞状奇胎妊娠に合併するもの（Ｏ00－Ｏ07, Ｏ08．4） ・分娩に続発するもの（Ｏ90．4） ・処置後（Ｎ99．0）"
+    },
+    {
+     "ref": "icd:naiyou14",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第14章 腎尿路生殖器系の疾患（N00-N99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou14.pdf",
+     "locator": "N19 包含",
+     "quote": "包含： 腎機能不全 NOS 除外： 高血圧（症）による腎不全（Ｉ12．0）"
+    },
+    {
+     "ref": "icd:naiyou14",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第14章 腎尿路生殖器系の疾患（N00-N99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou14.pdf",
+     "locator": "N17 包含",
+     "quote": "急性腎不全 Acute renal failure 包含： 急性腎機能障害"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s12-0090",
+   "origin": {
+    "batch": "G3-S12-MSK",
+    "key": "G3-S12-MSK-12",
+    "by": "gen:G3-S12-MSK"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G3-S12-MSK",
+     "solver": "solve:G3-S12-MSK（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G3-S12-MSK（ICD-10専門）"
+    },
+    "log": "bank/audit/G3-S12-MSK.audit.json#G3-S12-MSK-12",
+    "notes": "icd:naiyou14 腎不全(N17－N19)除外(R39.2, O90.4, N99.0, P96.0)、N17 包含(急性腎機能障害)、N19 包含(腎機能不全NOS)を確認。誤りはdのみ。"
+   }
+  },
+  {
+   "format": "icd",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "ICD-10（2013年版）で、2型＜インスリン非依存性＞糖尿病による糖尿病性網膜症に付与する剣印（†）コードと星印（＊）コードの組合せとして正しいものはどれか。",
+   "choices": [
+    "E11.3† と H28.0＊",
+    "E11.2† と N08.3＊",
+    "E11.4† と G63.2＊",
+    "E11.3† と H36.0＊",
+    "E10.3† と H36.0＊"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "糖尿病（E10－E14）の共通4桁細分類.3†は「眼合併症を伴うもの」で、糖尿病性網膜症の星印コードはH36.0＊と示されている。2型糖尿病はE11なので、E11.3†とH36.0＊を組み合わせる。",
+    "choiceNotes": [
+     "H28.0＊は糖尿病性白内障の星印コード。網膜症はH36.0＊。",
+     "E11.2†とN08.3＊は腎合併症（糖尿病性腎症）の組合せ。",
+     "E11.4†とG63.2＊は神経（学的）合併症のうち多発（性）ニューロパチーの組合せ。",
+     null,
+     "E10は1型＜インスリン依存性＞糖尿病。2型はE11を用いる。"
+    ],
+    "point": "眼合併症は.3†。網膜症H36.0＊、白内障H28.0＊。"
+   },
+   "sources": [
+    {
+     "ref": "icd:naiyou04",
+     "title": "疾病、傷害及び死因の統計分類 内容例示表 第Ⅳ章",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou04.pdf",
+     "locator": "E10－E14 共通4桁細分類 .3",
+     "quote": "．3†   眼合併症を伴うもの 糖尿病性： ・白内障（Ｈ28．0＊） ・網膜症（Ｈ36．0＊）"
+    }
+   ],
+   "subject": "S12",
+   "subtopic": "内分泌・代謝（第Ⅳ章）",
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s12-0091",
+   "origin": {
+    "batch": "G4-S12-END",
+    "key": "G4-S12-END-01",
+    "by": "gen:G4-S12-END"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G4-S12-END",
+     "solver": "solve:G4-S12-END（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G4-S12-END（ICD-10専門）"
+    },
+    "log": "bank/audit/G4-S12-END.audit.json#G4-S12-END-01",
+    "notes": "icd:naiyou04 E10-E14共通4桁 .3†（白内障H28.0＊・網膜症H36.0＊）、.2†N08.3＊、.4†G63.2＊を確認。E11=2型、全コード実在。solver一致。"
+   }
+  },
+  {
+   "format": "coding",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "ICD-10（2013年版）で、「主要病態」として「ケトアシドーシスによる昏睡を伴う1型＜インスリン依存性＞糖尿病」と記載された場合に付与するコードはどれか。",
+   "choices": [
+    "E10.1",
+    "E10.7",
+    "E87.2",
+    "R40.2",
+    "E10.0"
+   ],
+   "answer": 4,
+   "explanation": {
+    "correct": "共通4桁細分類.0「昏睡を伴うもの」には「ケトアシドーシスを伴う又は伴わない昏睡」が含まれる。昏睡を伴うケトアシドーシスは.0を用い、1型糖尿病ではE10.0となる。",
+    "choiceNotes": [
+     ".1「ケトアシドーシスを伴うもの」は昏睡の記載のないもの。昏睡があれば.0を用いる。",
+     ".7は多発合併症を伴うもので、主要病態に複数の合併症が記載され一つを選べない場合に用いる。",
+     "E87.2（アシドーシス）では糖尿病性アシドーシス（共通4桁項目.1を伴うE10－E14）が除外されている。",
+     "昏睡が糖尿病によるものと考えられる場合、昏睡はコーディングを修飾するものとして扱われ、糖尿病の細分類.0で表す。",
+     null
+    ],
+    "point": "糖尿病の.0は昏睡（ケトアシドーシスの有無を問わない）、.1は昏睡なしのケトアシドーシス。"
+   },
+   "sources": [
+    {
+     "ref": "icd:naiyou04",
+     "title": "疾病、傷害及び死因の統計分類 内容例示表 第Ⅳ章",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou04.pdf",
+     "locator": "E10－E14 共通4桁細分類 .0",
+     "quote": "・ケトアシドーシスを伴う又は伴わない昏睡"
+    },
+    {
+     "ref": "icd:naiyou04",
+     "title": "疾病、傷害及び死因の統計分類 内容例示表 第Ⅳ章",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou04.pdf",
+     "locator": "E10－E14 共通4桁細分類 .1",
+     "quote": "．1    ケトアシドーシスを伴うもの 糖尿病性： ・アシドーシス 昏睡の記載のないもの"
+    },
+    {
+     "ref": "icd:instruction",
+     "title": "ICD-10（2013年版）準拠 インストラクションマニュアル",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "4.4.3 主要病態が正確に記載されていない場合の再選択ルール ルールMB3 例12",
+     "quote": "昏睡は糖尿病によるものと考えられ、"
+    }
+   ],
+   "subject": "S12",
+   "subtopic": "内分泌・代謝（第Ⅳ章）",
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s12-0092",
+   "origin": {
+    "batch": "G4-S12-END",
+    "key": "G4-S12-END-02",
+    "by": "gen:G4-S12-END"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（ICD-10専門）で修正",
+     "修正後の再監査は未実施",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G4-S12-END",
+     "solver": "solve:G4-S12-END（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G4-S12-END（ICD-10専門）",
+     "reauditor": null
+    },
+    "log": "bank/audit/G4-S12-END.audit.json#G4-S12-END-02",
+    "notes": "答E10.0は正（icd:naiyou04 共通4桁 .0『ケトアシドーシスを伴う又は伴わない昏睡』、.1『昏睡の記載のないもの』、E87.2除外）。solver一致。"
+   }
+  },
+  {
+   "format": "knowledge",
+   "difficulty": "standard",
+   "polarity": "negative",
+   "question": "ICD-10（2013年版）の糖尿病（E10－E14）に共通する4桁細分類項目と、そこに分類される病態の組合せとして、誤っているものはどれか。",
+   "choices": [
+    ".2 ― 糖尿病性腎症＜ネフロパシー＞",
+    ".5 ― 糖尿病性え＜壊＞疽",
+    ".6 ― 糖尿病性関節障害",
+    ".9 ― 合併症を伴わない糖尿病",
+    ".7 ― 糖尿病性多発（性）ニューロパチ＜シ＞ー"
+   ],
+   "answer": 4,
+   "explanation": {
+    "correct": "糖尿病性多発（性）ニューロパチーは「神経（学的）合併症を伴うもの」の.4†に分類され、星印コードG63.2＊と組み合わせる。.7は「多発合併症を伴うもの」で、複数の合併症を伴う場合の細分類であり、多発ニューロパチー単独の分類先ではない。",
+    "choiceNotes": [
+     "正しい。.2†「腎合併症を伴うもの」に糖尿病性腎症（N08.3＊）が例示されている。",
+     "正しい。.5「末梢循環合併症を伴うもの」に糖尿病性え疽が例示されている。",
+     "正しい。.6「その他の明示された合併症を伴うもの」に糖尿病性関節障害†（M14.2＊）が例示されている。",
+     "正しい。.9は「合併症を伴わないもの」。",
+     null
+    ],
+    "point": ".4†神経、.7多発合併症。「多発ニューロパチー」と「多発合併症」を混同しない。"
+   },
+   "sources": [
+    {
+     "ref": "icd:naiyou04",
+     "title": "疾病、傷害及び死因の統計分類 内容例示表 第Ⅳ章",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou04.pdf",
+     "locator": "E10－E14 共通4桁細分類 .4",
+     "quote": "．4†   神経（学的）合併症を伴うもの"
+    },
+    {
+     "ref": "icd:naiyou04",
+     "title": "疾病、傷害及び死因の統計分類 内容例示表 第Ⅳ章",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou04.pdf",
+     "locator": "E10－E14 共通4桁細分類 .4",
+     "quote": "･多発（性）ニューロパチ＜シ＞ー（Ｇ63．2＊）"
+    },
+    {
+     "ref": "icd:naiyou04",
+     "title": "疾病、傷害及び死因の統計分類 内容例示表 第Ⅳ章",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou04.pdf",
+     "locator": "E10－E14 共通4桁細分類 .7",
+     "quote": "．7    多発合併症を伴うもの"
+    }
+   ],
+   "subject": "S12",
+   "subtopic": "内分泌・代謝（第Ⅳ章）",
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s12-0093",
+   "origin": {
+    "batch": "G4-S12-END",
+    "key": "G4-S12-END-03",
+    "by": "gen:G4-S12-END"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G4-S12-END",
+     "solver": "solve:G4-S12-END（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G4-S12-END（ICD-10専門）"
+    },
+    "log": "bank/audit/G4-S12-END.audit.json#G4-S12-END-03",
+    "notes": "icd:naiyou04 共通4桁 .2†腎症／.4†多発ニューロパチー(G63.2＊)／.5え疽／.6関節障害†(M14.2＊)／.7多発合併症／.9を確認。誤りは.7のみ。solver一致。"
+   }
+  },
+  {
+   "format": "coding",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "ICD-10（2013年版）の疾病コーディングで、「主要病態」として「網膜症、腎症＜ネフロパシー＞及び多発（性）ニューロパチーを伴う2型＜インスリン非依存性＞糖尿病」と記載され、いずれか一つの合併症を選ぶことができない。「主要病態」に付与するコードはどれか。",
+   "choices": [
+    "E11.8",
+    "E11.2† と N08.3＊",
+    "E11.7",
+    "E11.9",
+    "E14.7"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "細分類.7は、糖尿病の多発合併症が「主要病態」として記載され、どれか一つを選択できないときのみ「主要病態」としてコードする。2型糖尿病であるためE11.7となる。個々の合併症のコードは任意的追加コードとして使用できる。",
+    "choiceNotes": [
+     ".8は「詳細不明の合併症を伴うもの」で、合併症が明示されている本例には該当しない。",
+     "腎症だけを選ぶことになる。一つを選択できないときは.7を「主要病態」とする（個々の合併症は任意的追加コード）。",
+     null,
+     ".9は「合併症を伴わないもの」。",
+     "E14は詳細不明の糖尿病。2型と明示されているのでE11を用いる。"
+    ],
+    "point": "主要病態に複数の糖尿病合併症が並び一つを選べない→.7。個々の合併症は任意的追加コード。"
+   },
+   "sources": [
+    {
+     "ref": "icd:instruction",
+     "title": "ICD-10（2013年版）準拠 インストラクションマニュアル",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "第Ⅳ章 E10－E14",
+     "quote": "細分類項目 .7 は、糖尿病の多発合併症が「主要病態」として記載され、どれか一つを選択できないときのみ、"
+    },
+    {
+     "ref": "icd:naiyou04",
+     "title": "疾病、傷害及び死因の統計分類 内容例示表 第Ⅳ章",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou04.pdf",
+     "locator": "E10－E14 共通4桁細分類 .8",
+     "quote": "．8    詳細不明の合併症を伴うもの"
+    }
+   ],
+   "subject": "S12",
+   "subtopic": "内分泌・代謝（第Ⅳ章）",
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s12-0094",
+   "origin": {
+    "batch": "G4-S12-END",
+    "key": "G4-S12-END-04",
+    "by": "gen:G4-S12-END"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G4-S12-END",
+     "solver": "solve:G4-S12-END（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G4-S12-END（ICD-10専門）"
+    },
+    "log": "bank/audit/G4-S12-END.audit.json#G4-S12-END-04",
+    "notes": "icd:instruction 4.4.4 第Ⅳ章 E10－E14（.7は一つを選択できないときのみ、例13 E10.7）とnaiyou04 .8/.9を確認。E11.7が唯一。solver一致。"
+   }
+  },
+  {
+   "format": "combination",
+   "difficulty": "advanced",
+   "polarity": "positive",
+   "question": "ICD-10（2013年版）における糖尿病と関連する病態のコーディングについて、正しいものの組合せはどれか。\na　細分類項目.7は、糖尿病の多発合併症が「主要病態」として記載され、どれか一つを選択できないときのみ「主要病態」としてコードする。\nb　多発合併症を伴う糖尿病を.7にコードした場合、個々の合併症のコードを追加して使用してはならない。\nc　糖尿病性アシドーシスはE87.2（アシドーシス）にコードする。\nd　術後低インスリン血症はE89.1（治療後低インスリン血症）にコードする。\ne　妊娠中に発生した糖尿病はE11（2型＜インスリン非依存性＞糖尿病）にコードする。",
+   "choices": [
+    "a と b",
+    "a と d",
+    "b と c",
+    "c と e",
+    "d と e"
+   ],
+   "answer": 1,
+   "explanation": {
+    "correct": "a：インストラクションマニュアルのとおり。d：E89.1に「術後低インスリン血症」が例示され、E10－E14の除外にも「術後低インスリン血症（E89.1）」とある。よってaとdが正しい。",
+    "choiceNotes": [
+     "bは誤り。記載された個々の合併症のコードは任意的追加コードとして使用することができる。",
+     null,
+     "bは誤り（任意的追加コードとして使用できる）。cも誤りで、E87.2では糖尿病性アシドーシス（共通4桁項目.1を伴うE10－E14）が除外されている。",
+     "cは誤り（糖尿病性アシドーシスは.1を伴うE10－E14）。eも誤りで、E11では妊娠、分娩及び産じょく＜褥＞における糖尿病（O24.-）が除外されている。",
+     "eは誤り。妊娠、分娩及び産じょく＜褥＞における糖尿病はO24.-に分類され、E11から除外されている。"
+    ],
+    "point": ".7は選べないときだけ。糖尿病性アシドーシス→.1、術後低インスリン血症→E89.1、妊娠中の糖尿病→O24.-。"
+   },
+   "sources": [
+    {
+     "ref": "icd:instruction",
+     "title": "ICD-10（2013年版）準拠 インストラクションマニュアル",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "第Ⅳ章 E10－E14",
+     "quote": "記載された個々の合併症のコードは、任意的追加コードとして使用することができる。"
+    },
+    {
+     "ref": "icd:naiyou04",
+     "title": "疾病、傷害及び死因の統計分類 内容例示表 第Ⅳ章",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou04.pdf",
+     "locator": "E87.2 除外",
+     "quote": "糖尿病性アシドーシス（共通４桁項目．1 を伴うＥ10－Ｅ14）"
+    },
+    {
+     "ref": "icd:naiyou04",
+     "title": "疾病、傷害及び死因の統計分類 内容例示表 第Ⅳ章",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou04.pdf",
+     "locator": "E89.1",
+     "quote": "Ｅ89．1   治療後低インスリン血症 膵切除後高血糖症 術後低インスリン血症"
+    }
+   ],
+   "subject": "S12",
+   "subtopic": "内分泌・代謝（第Ⅳ章）",
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s12-0095",
+   "origin": {
+    "batch": "G4-S12-END",
+    "key": "G4-S12-END-05",
+    "by": "gen:G4-S12-END"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G4-S12-END",
+     "solver": "solve:G4-S12-END（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G4-S12-END（ICD-10専門）"
+    },
+    "log": "bank/audit/G4-S12-END.audit.json#G4-S12-END-05",
+    "notes": "a,b: icd:instruction 4.4.4 第Ⅳ章 E10－E14（任意的追加コード可）。c: naiyou04 E87.2除外。d: E89.1包含・E10-E14除外。e: E11除外O24.-、naiyou15 O24.4。a・dのみ正。solver一致。"
+   }
+  },
+  {
+   "format": "icd",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "ICD-10（2013年版）で、橋本甲状腺炎＜橋本病＞が分類されるコードはどれか。",
+   "choices": [
+    "E06.1",
+    "E06.2",
+    "E06.3",
+    "E06.5",
+    "E03.9"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "E06.3「自己免疫性甲状腺炎」に橋本甲状腺炎＜橋本病＞が例示されている。",
+    "choiceNotes": [
+     "E06.1は亜急性甲状腺炎（ド・ケルヴァン、巨細胞性、肉芽腫性など）で、自己免疫性甲状腺炎（E06.3）は除外されている。",
+     "E06.2は一過性甲状腺中毒症を伴う慢性甲状腺炎で、自己免疫性甲状腺炎（E06.3）は除外されている。",
+     null,
+     "E06.5はその他の慢性甲状腺炎（慢性NOS、線維性、木様など）。",
+     "E03.9は甲状腺機能低下症、詳細不明（粘液水腫NOS）。橋本病は甲状腺炎の項目に分類される。"
+    ],
+    "point": "橋本病＝自己免疫性甲状腺炎E06.3。亜急性甲状腺炎はE06.1。"
+   },
+   "sources": [
+    {
+     "ref": "icd:naiyou04",
+     "title": "疾病、傷害及び死因の統計分類 内容例示表 第Ⅳ章",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou04.pdf",
+     "locator": "E06.3",
+     "quote": "Ｅ06．3   自己免疫性甲状腺炎 橋本甲状腺炎＜橋本病＞"
+    },
+    {
+     "ref": "icd:naiyou04",
+     "title": "疾病、傷害及び死因の統計分類 内容例示表 第Ⅳ章",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou04.pdf",
+     "locator": "E06.1",
+     "quote": "Ｅ06．1   亜急性甲状腺炎"
+    }
+   ],
+   "subject": "S12",
+   "subtopic": "内分泌・代謝（第Ⅳ章）",
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s12-0096",
+   "origin": {
+    "batch": "G4-S12-END",
+    "key": "G4-S12-END-06",
+    "by": "gen:G4-S12-END"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G4-S12-END",
+     "solver": "solve:G4-S12-END（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G4-S12-END（ICD-10専門）"
+    },
+    "log": "bank/audit/G4-S12-END.audit.json#G4-S12-END-06",
+    "notes": "icd:naiyou04 E06.3 橋本甲状腺炎＜橋本病＞、E06.1/E06.2の除外(E06.3)、E06.5、E03.9（粘液水腫NOS）を確認。solver一致。"
+   }
+  },
+  {
+   "format": "icd",
+   "difficulty": "standard",
+   "polarity": "negative",
+   "question": "ICD-10（2013年版）で、甲状腺に関連する病態とその分類先の組合せとして、誤っているものはどれか。",
+   "choices": [
+    "甲状腺クリーゼ ― E05.5",
+    "粘液水腫性昏睡 ― E03.5",
+    "分娩後甲状腺炎 ― E06.3",
+    "術後甲状腺機能低下症 ― E89.0",
+    "亜急性甲状腺炎 ― E06.1"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "分娩後甲状腺炎はE06（甲状腺炎）から除外され、第ⅩⅤ章のO90.5に分類される。第Ⅳ章全体でも妊娠、分娩及び産じょく＜褥＞の合併症（O00－O99）は除外されている。",
+    "choiceNotes": [
+     "正しい。E05.5は「甲状腺クリーゼ又は急性発症」。",
+     "正しい。E03.5は「粘液水腫性昏睡」。",
+     null,
+     "正しい。E89.0「治療後甲状腺機能低下症」に術後甲状腺機能低下症が例示され、E03からは処置後甲状腺機能低下症（E89.0）が除外されている。",
+     "正しい。E06.1は「亜急性甲状腺炎」。"
+    ],
+    "point": "分娩後甲状腺炎→O90.5。術後・照射後の甲状腺機能低下症→E89.0。"
+   },
+   "sources": [
+    {
+     "ref": "icd:naiyou04",
+     "title": "疾病、傷害及び死因の統計分類 内容例示表 第Ⅳ章",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou04.pdf",
+     "locator": "E06 除外",
+     "quote": "甲 状 腺 炎 Thyroiditis 除外： 分娩後甲状腺炎（Ｏ90．5）"
+    },
+    {
+     "ref": "icd:naiyou04",
+     "title": "疾病、傷害及び死因の統計分類 内容例示表 第Ⅳ章",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou04.pdf",
+     "locator": "E89.0",
+     "quote": "Ｅ89．0   治療後甲状腺機能低下症 照射後甲状腺機能低下症 術後甲状腺機能低下症"
+    },
+    {
+     "ref": "icd:naiyou04",
+     "title": "疾病、傷害及び死因の統計分類 内容例示表 第Ⅳ章",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou04.pdf",
+     "locator": "E05.5",
+     "quote": "Ｅ05．5   甲状腺クリーゼ又は急性発症"
+    }
+   ],
+   "subject": "S12",
+   "subtopic": "内分泌・代謝（第Ⅳ章）",
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s12-0097",
+   "origin": {
+    "batch": "G4-S12-END",
+    "key": "G4-S12-END-07",
+    "by": "gen:G4-S12-END"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G4-S12-END",
+     "solver": "solve:G4-S12-END（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G4-S12-END（ICD-10専門）"
+    },
+    "log": "bank/audit/G4-S12-END.audit.json#G4-S12-END-07",
+    "notes": "icd:naiyou04 E06除外 分娩後甲状腺炎(O90.5)、naiyou15 O90.5、E05.5、E03.5、E89.0、E03除外(E89.0)、E06.1、章頭除外(O00－O99)を確認。solver一致。"
+   }
+  },
+  {
+   "format": "icd",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "ICD-10（2013年版）で、甲状腺中毒症性心疾患をコーディングするとき、正しいものはどれか。",
+   "choices": [
+    "E05.0† と I43.8＊",
+    "I43.8† と E05.9＊",
+    "E05.5 と I42.9",
+    "E05.9 と I51.9",
+    "E05.9† と I43.8＊"
+   ],
+   "answer": 4,
+   "explanation": {
+    "correct": "内容例示表のE05.9「甲状腺中毒症、詳細不明」に「甲状腺中毒症性心疾患†（I43.8＊）」と例示されている。基礎疾患であるE05.9を剣印（†）、心臓の病態の発現を示すI43.8を星印（＊）として組み合わせる。",
+    "choiceNotes": [
+     "E05.0はびまん性甲状腺腫を伴う甲状腺中毒症（グレーブス病など）。甲状腺中毒症性心疾患はE05.9に例示されている。",
+     "剣印と星印が逆。剣印は基礎疾患（E05.9）、星印は発現（I43.8＊）に付ける。",
+     "E05.5は甲状腺クリーゼ又は急性発症で、I42.9は詳細不明の心筋症。表に示された組合せではない。",
+     "剣印・星印の組合せが示されている病態であり、I51.9（心疾患、詳細不明）は用いない。",
+     null
+    ],
+    "point": "甲状腺中毒症性心疾患＝E05.9†＋I43.8＊。剣印は原因、星印は発現。"
+   },
+   "sources": [
+    {
+     "ref": "icd:naiyou04",
+     "title": "疾病、傷害及び死因の統計分類 内容例示表 第Ⅳ章",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou04.pdf",
+     "locator": "E05.9",
+     "quote": "甲状腺中毒症性心疾患†（Ｉ43．8＊）"
+    },
+    {
+     "ref": "icd:naiyou04",
+     "title": "疾病、傷害及び死因の統計分類 内容例示表 第Ⅳ章",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou04.pdf",
+     "locator": "E05.9",
+     "quote": "Ｅ05．9   甲状腺中毒症， 詳細不明 甲状腺機能亢進症 ＮＯＳ"
+    }
+   ],
+   "subject": "S12",
+   "subtopic": "内分泌・代謝（第Ⅳ章）",
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s12-0098",
+   "origin": {
+    "batch": "G4-S12-END",
+    "key": "G4-S12-END-08",
+    "by": "gen:G4-S12-END"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G4-S12-END",
+     "solver": "solve:G4-S12-END（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G4-S12-END（ICD-10専門）"
+    },
+    "log": "bank/audit/G4-S12-END.audit.json#G4-S12-END-08",
+    "notes": "icd:naiyou04 E05.9 甲状腺中毒症性心疾患†(I43.8＊)、naiyou09 I43.8＊ 甲状腺中毒症性心疾患(E05.9†)を確認。E05.0/E05.5/I42.9/I51.9の名称も確認。solver一致。"
+   }
+  },
+  {
+   "format": "knowledge",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "ICD-10（2013年版）で、小児もしくは成人の体重減少が、個人の以前の成長と比較して期待値より標準偏差の2倍以上（3倍未満）下回っているタンパク＜蛋白＞エネルギー性栄養失調（症）に付与するコードはどれか。",
+   "choices": [
+    "E44.0",
+    "E43",
+    "E44.1",
+    "E45",
+    "E46"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "E44.0「中等度タンパク＜蛋白＞エネルギー性栄養失調（症）」は、期待値より標準偏差の2倍以上（しかし3倍未満）下回っているものと定義されている。",
+    "choiceNotes": [
+     null,
+     "E43は詳細不明の重度タンパクエネルギー性栄養失調（症）で、標準偏差の3倍を下回るもの。",
+     "E44.1は軽度で、標準偏差の1倍以上2倍未満下回るもの。",
+     "E45はタンパクエネルギー性栄養失調（症）に続発する発育遅延（栄養性低身長など）。",
+     "E46は詳細不明のタンパクエネルギー性栄養失調（症）で、栄養失調（症）NOSを含む。程度が示されている本例は該当しない。"
+    ],
+    "point": "栄養失調の程度：重度＝3SD以上（E43）、中等度＝2〜3SD（E44.0）、軽度＝1〜2SD（E44.1）。"
+   },
+   "sources": [
+    {
+     "ref": "icd:naiyou04",
+     "title": "疾病、傷害及び死因の統計分類 内容例示表 第Ⅳ章",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou04.pdf",
+     "locator": "E44.0",
+     "quote": "期待値より標準偏差の２倍以上（しかし標準偏差の３倍未満）下回っている"
+    },
+    {
+     "ref": "icd:naiyou04",
+     "title": "疾病、傷害及び死因の統計分類 内容例示表 第Ⅳ章",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou04.pdf",
+     "locator": "E44.1",
+     "quote": "期待値より標準偏差の１倍以上（しかし標準偏差の２倍未満）下回っているも"
+    },
+    {
+     "ref": "icd:naiyou04",
+     "title": "疾病、傷害及び死因の統計分類 内容例示表 第Ⅳ章",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou04.pdf",
+     "locator": "E46",
+     "quote": "Ｅ46     詳細不明のタンパク＜蛋白＞エネルギー性栄養失調（症）"
+    }
+   ],
+   "subject": "S12",
+   "subtopic": "内分泌・代謝（第Ⅳ章）",
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s12-0099",
+   "origin": {
+    "batch": "G4-S12-END",
+    "key": "G4-S12-END-09",
+    "by": "gen:G4-S12-END"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G4-S12-END",
+     "solver": "solve:G4-S12-END（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G4-S12-END（ICD-10専門）"
+    },
+    "log": "bank/audit/G4-S12-END.audit.json#G4-S12-END-09",
+    "notes": "icd:naiyou04 E43（3倍）、E44.0（2倍以上3倍未満）、E44.1（1倍以上2倍未満）、E45、E46の定義・包含を確認。solver一致。"
+   }
+  },
+  {
+   "format": "icd",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "ICD-10（2013年版）で、ピックウィック＜Pickwick＞症候群が分類されるコードはどれか。",
+   "choices": [
+    "E66.0",
+    "E66.8",
+    "E66.2",
+    "E66.9",
+    "G47.3"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "E66.2「肺胞低換気を伴う過度肥満（症）」にピックウィック＜Pickwick＞症候群が例示されている。",
+    "choiceNotes": [
+     "E66.0は過剰カロリーによる肥満（症）。",
+     "E66.8はその他の肥満（症）で、病的肥満（症）が例示されている。",
+     null,
+     "E66.9は肥満（症）、詳細不明（単純性肥満（症）NOS）。",
+     "G47.3は睡眠時無呼吸。ピックウィック症候群は第Ⅳ章のE66.2に例示されている。"
+    ],
+    "point": "ピックウィック症候群＝肺胞低換気を伴う過度肥満E66.2。"
+   },
+   "sources": [
+    {
+     "ref": "icd:naiyou04",
+     "title": "疾病、傷害及び死因の統計分類 内容例示表 第Ⅳ章",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou04.pdf",
+     "locator": "E66.2",
+     "quote": "Ｅ66．2   肺胞低換気を伴う過度肥満（症） ピックウィック＜Pickwick＞症候群"
+    }
+   ],
+   "subject": "S12",
+   "subtopic": "内分泌・代謝（第Ⅳ章）",
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s12-0100",
+   "origin": {
+    "batch": "G4-S12-END",
+    "key": "G4-S12-END-10",
+    "by": "gen:G4-S12-END"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G4-S12-END",
+     "solver": "solve:G4-S12-END（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G4-S12-END（ICD-10専門）"
+    },
+    "log": "bank/audit/G4-S12-END.audit.json#G4-S12-END-10",
+    "notes": "icd:naiyou04 E66.2 ピックウィック症候群、E66.0/.8/.9、naiyou06 G47.3除外(E66.2)を確認。solver一致。"
+   }
+  },
+  {
+   "format": "icd",
+   "difficulty": "standard",
+   "polarity": "negative",
+   "question": "ICD-10（2013年版）で、病態とその分類先の組合せとして、誤っているものはどれか。",
+   "choices": [
+    "痛風 ― E79.0",
+    "脱水（症） ― E86",
+    "無症候性高尿酸血症 ― E79.0",
+    "低カリウム＜K＞血症 ― E87.6",
+    "腫瘍溶解症候群 ― E88.3"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "E79（プリン及びピリミジン代謝障害）では痛風（M10.-）が除外されている。E79.0は「炎症性関節炎及び痛風結節性疾患の徴候を伴わない高尿酸血症」で、痛風は第ⅩⅢ章のM10.-に分類される。",
+    "choiceNotes": [
+     null,
+     "正しい。E86「体液量減少（症）」に脱水（症）が含まれる。",
+     "正しい。E79.0に無症候性高尿酸血症が例示されている。",
+     "正しい。E87.6は低カリウム＜K＞血症。",
+     "正しい。E88.3は腫瘍溶解症候群。"
+    ],
+    "point": "高尿酸血症（関節炎なし）→E79.0、痛風→M10.-。"
+   },
+   "sources": [
+    {
+     "ref": "icd:naiyou04",
+     "title": "疾病、傷害及び死因の統計分類 内容例示表 第Ⅳ章",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou04.pdf",
+     "locator": "E79 除外",
+     "quote": "痛風（Ｍ10.-）"
+    },
+    {
+     "ref": "icd:naiyou04",
+     "title": "疾病、傷害及び死因の統計分類 内容例示表 第Ⅳ章",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou04.pdf",
+     "locator": "E79.0",
+     "quote": "Ｅ79．0   炎症性関節炎及び痛風結節性疾患の徴候を伴わない高尿酸血症 無症候性高尿酸血症"
+    },
+    {
+     "ref": "icd:naiyou04",
+     "title": "疾病、傷害及び死因の統計分類 内容例示表 第Ⅳ章",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou04.pdf",
+     "locator": "E86",
+     "quote": "包含： 脱水（症） 血漿又は細胞外液量の減少"
+    }
+   ],
+   "subject": "S12",
+   "subtopic": "内分泌・代謝（第Ⅳ章）",
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s12-0101",
+   "origin": {
+    "batch": "G4-S12-END",
+    "key": "G4-S12-END-11",
+    "by": "gen:G4-S12-END"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G4-S12-END",
+     "solver": "solve:G4-S12-END（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G4-S12-END（ICD-10専門）"
+    },
+    "log": "bank/audit/G4-S12-END.audit.json#G4-S12-END-11",
+    "notes": "icd:naiyou04 E79除外 痛風(M10.-)、E79.0 無症候性高尿酸血症、E86包含 脱水(症)、E87.6、E88.3 腫瘍溶解症候群を確認。solver一致。"
+   }
+  },
+  {
+   "format": "icd",
+   "difficulty": "advanced",
+   "polarity": "positive",
+   "question": "ICD-10（2013年版）で、2型＜インスリン非依存性＞糖尿病による足のえ＜壊＞疽（他の合併症の記載はない）に付与するコードとして正しいものはどれか。",
+   "choices": [
+    "E11.5 と I79.2＊",
+    "E11.4† と G63.2＊",
+    "E11.6",
+    "R02",
+    "E11.5"
+   ],
+   "answer": 4,
+   "explanation": {
+    "correct": "糖尿病性え疽は共通4桁細分類.5「末梢循環合併症を伴うもの」に例示され、星印コードは示されていない。2型糖尿病なのでE11.5のみを付与する。",
+    "choiceNotes": [
+     "I79.2＊は.5のうち糖尿病性末梢血管症＜アンギオパシー＞†に対応する星印コード。え疽には星印コードが示されていない。",
+     "E11.4†とG63.2＊は糖尿病性多発（性）ニューロパチーの組合せ。",
+     "E11.6は「その他の明示された合併症を伴うもの」（糖尿病性関節障害など）。え疽は.5に例示されている。",
+     "R02（え疽、他に分類されないもの）では、糖尿病におけるえ疽（共通4桁項目.5を伴うE10－E14）が除外されている。",
+     null
+    ],
+    "point": "糖尿病性え疽は.5（星印なし）。.5で星印を使うのは末梢血管症（I79.2＊）。"
+   },
+   "sources": [
+    {
+     "ref": "icd:naiyou04",
+     "title": "疾病、傷害及び死因の統計分類 内容例示表 第Ⅳ章",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou04.pdf",
+     "locator": "E10－E14 共通4桁細分類 .5",
+     "quote": "．5    末梢循環合併症を伴うもの 糖尿病性： ・え＜壊＞疽 ・末梢血管症＜アンギオパシー＞†（Ｉ79．2＊）"
+    },
+    {
+     "ref": "icd:naiyou18",
+     "title": "疾病、傷害及び死因の統計分類 内容例示表 第ⅩⅧ章",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou18.pdf",
+     "locator": "R02 除外",
+     "quote": "・糖尿病（共通４桁項目．5 を伴うＥ10－Ｅ14）"
+    }
+   ],
+   "subject": "S12",
+   "subtopic": "内分泌・代謝（第Ⅳ章）",
+   "asOf": "ICD-10（2013年版）準拠",
+   "id": "s12-0102",
+   "origin": {
+    "batch": "G4-S12-END",
+    "key": "G4-S12-END-12",
+    "by": "gen:G4-S12-END"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G4-S12-END",
+     "solver": "solve:G4-S12-END（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G4-S12-END（ICD-10専門）"
+    },
+    "log": "bank/audit/G4-S12-END.audit.json#G4-S12-END-12",
+    "notes": "icd:naiyou04 共通4桁 .5（え疽は星印なし、†は末梢血管症のみI79.2＊）、naiyou09 I79.2＊、naiyou18 R02除外を確認。E11.5単独が唯一。solver一致。"
+   }
   }
  ]
 }

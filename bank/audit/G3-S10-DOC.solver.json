@@ -1,0 +1,14 @@
+{"answers":[
+{"key":"G3-S10-DOC-01","answer":2,"confidence":"high","ambiguous":false,"note":"ins:r08-kihon-shisetsukijun-tsuchi 第4の2 1(4): 6か月・32時間以上"},
+{"key":"G3-S10-DOC-02","answer":2,"confidence":"high","ambiguous":false,"note":"同(4)ア〜オにレセプト実務なし。選択肢0は医薬品医療機器等法を省略するが「等」で概要として妥当"},
+{"key":"G3-S10-DOC-03","answer":0,"confidence":"high","ambiguous":false,"note":"同(4)職場内研修を含む。責任者は補助者以外の常勤職員、教育システムは望ましい"},
+{"key":"G3-S10-DOC-04","answer":3,"confidence":"high","ambiguous":false,"note":"同(2)常勤換算でも差し支えない。派遣可、請負不可、看護職員不可、場所不問"},
+{"key":"G3-S10-DOC-05","answer":2,"confidence":"high","ambiguous":false,"note":"25対1: 300/25=12名"},
+{"key":"G3-S10-DOC-06","answer":0,"confidence":"high","ambiguous":false,"note":"同(2)32時間未満の場合は32時間。常勤は週4日・31時間以上"},
+{"key":"G3-S10-DOC-07","answer":0,"confidence":"high","ambiguous":false,"note":"留意事項通知A207-2(3)"},
+{"key":"G3-S10-DOC-08","answer":4,"confidence":"high","ambiguous":false,"note":"A207-2(3) DPCのコーディング業務は業務としない"},
+{"key":"G3-S10-DOC-09","answer":1,"confidence":"high","ambiguous":false,"note":"同(5)エ 代行入力機能を使用"},
+{"key":"G3-S10-DOC-10","answer":0,"confidence":"high","ambiguous":false,"note":"同(5)ア・イ正。ウは個人情報ガイダンス、エは安全管理GLで選択肢c・dは取り違え、eは誤り"},
+{"key":"G3-S10-DOC-11","answer":0,"confidence":"high","ambiguous":false,"note":"第4の2 3: 3年以上・5割以上。併願不可、算定は入院初日"},
+{"key":"G3-S10-DOC-12","answer":4,"confidence":"high","ambiguous":false,"note":"3(1)ア・イ。災害拠点病院は(2)の要件"}
+]}

@@ -1,0 +1,8 @@
+{"verdicts":[
+ {"key":"G3-S12-DIG-01","verdict":"pass","blindAnswer":1,
+  "checks":{"answer":true,"distractors":true,"stem":true,"explanations":true,"sources":true,"asOf":true,"domain":true},
+  "notes":"盲検一致（K25.4）。icd:naiyou11 K25－K28共通4桁細分類（.0〜.9）を原文で確認：.4=慢性又は詳細不明，出血を伴うもの、.0=急性・出血、.5=慢性又は詳細不明・穿孔。K26=十二指腸潰瘍。K92.2「胃腸出血，詳細不明」は除外注「消化性潰瘍を伴うもの（K25－K28）」で誤答根拠を確認。修正後のpoint（.0〜.3急性、.4〜.6慢性又は詳細不明、出血・穿孔なしは急性.3／慢性.7／別不明.9）は原文と一致。全コードの実在と名称をicd.mjsで確認。引用2件とも該当箇所に実在し主張を支持。validate 0 errors。"},
+ {"key":"G3-S12-DIG-11","verdict":"pass","blindAnswer":1,
+  "checks":{"answer":true,"distractors":true,"stem":true,"explanations":true,"sources":true,"asOf":true,"domain":true},
+  "notes":"盲検一致（K70.3）。icd:naiyou11 K70.0〜K70.4の名称を原文で確認（K70.2=アルコール性肝線維症及び肝硬化症、K70.3=アルコール性肝硬変、K70.4=アルコール性肝不全）。K74除外注「肝硬変：・アルコール性（K70.3）」（差し替え後の引用。K74の除外注内に1か所のみ）が解説の主張を直接支持。K74.6=その他及び詳細不明の肝硬変、K71.7=肝線維症及び肝硬変を伴う中毒性肝疾患、K71除外「アルコール性肝疾患（K70.-）」・包含「薬物誘発性」も確認。pointのK70.0〜K70.4対応も正しい。validate 0 errors。"}
+]}

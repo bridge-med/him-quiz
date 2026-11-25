@@ -1,0 +1,14 @@
+{"answers":[
+{"key":"G4-S12-END-01","answer":0,"confidence":"high","ambiguous":false,"note":"E1x.3† 眼合併症: 網膜症 H36.0*（naiyou04）"},
+{"key":"G4-S12-END-02","answer":0,"confidence":"high","ambiguous":false,"note":"E10.0 昏睡を伴うもの（ケトアシドーシス有無問わず）。E10.1は昏睡の記載のないもの"},
+{"key":"G4-S12-END-03","answer":3,"confidence":"high","ambiguous":false,"note":".7は多発合併症。多発ニューロパチーは.4†(G63.2*)"},
+{"key":"G4-S12-END-04","answer":0,"confidence":"high","ambiguous":false,"note":"instruction E10-E14: .7 多発合併症で一つを選べないとき"},
+{"key":"G4-S12-END-05","answer":1,"confidence":"high","ambiguous":false,"note":"a正。b誤（個々の合併症は任意的追加コード可）。c誤（糖尿病性アシドーシスは.1）。d正 E89.1。e誤（O24）"},
+{"key":"G4-S12-END-06","answer":2,"confidence":"high","ambiguous":false,"note":"E06.3 自己免疫性甲状腺炎に橋本甲状腺炎"},
+{"key":"G4-S12-END-07","answer":4,"confidence":"high","ambiguous":false,"note":"分娩後甲状腺炎はO90.5"},
+{"key":"G4-S12-END-08","answer":0,"confidence":"high","ambiguous":false,"note":"甲状腺中毒症性心疾患 E05.9† I43.8*（naiyou04/09）"},
+{"key":"G4-S12-END-09","answer":1,"confidence":"high","ambiguous":false,"note":"E44.0 中等度（SD2倍以上3倍未満）。E44.1は1倍以上2倍未満"},
+{"key":"G4-S12-END-10","answer":1,"confidence":"high","ambiguous":false,"note":"E66.2 ピックウィック症候群"},
+{"key":"G4-S12-END-11","answer":2,"confidence":"high","ambiguous":false,"note":"痛風はM10。E79.0は無症候性高尿酸血症"},
+{"key":"G4-S12-END-12","answer":0,"confidence":"high","ambiguous":false,"note":"E1x.5 えそ。I79.2*は末梢血管症の場合のみ"}
+]}

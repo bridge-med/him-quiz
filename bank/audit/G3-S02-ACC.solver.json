@@ -1,0 +1,102 @@
+{
+ "answers": [
+  {
+   "key": "G3-S02-ACC-01",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "準則第4: それぞれの病院を会計単位"
+  },
+  {
+   "key": "G3-S02-ACC-02",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "第13 単一性の原則"
+  },
+  {
+   "key": "G3-S02-ACC-03",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "準則第30等: 患者外給食収益は医業外収益。他は医業収益、固定資産売却益は臨時収益"
+  },
+  {
+   "key": "G3-S02-ACC-04",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "1000-950+10+30-20=70 (売却益・災害損失は臨時)"
+  },
+  {
+   "key": "G3-S02-ACC-05",
+   "answer": 3,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "第18: 流動性配列法"
+  },
+  {
+   "key": "G3-S02-ACC-06",
+   "answer": 3,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "第43・44: 施設設備補助金は投資、利息は業務、長期借入は財務"
+  },
+  {
+   "key": "G3-S02-ACC-07",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "労基34条1項: 6時間超45分、8時間超1時間。ちょうど8時間は45分"
+  },
+  {
+   "key": "G3-S02-ACC-08",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "勤続3.5年で14日"
+  },
+  {
+   "key": "G3-S02-ACC-09",
+   "answer": 3,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "労基90条: 意見聴取であり同意不要"
+  },
+  {
+   "key": "G3-S02-ACC-10",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "労基37条1項ただし書 60時間超5割以上。深夜は22時〜5時"
+  },
+  {
+   "key": "G3-S02-ACC-11",
+   "answer": 3,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "医療法施行規則16条1項3号イ 6.4m2"
+  },
+  {
+   "key": "G3-S02-ACC-12",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "規則16条1項11号: 病院の一般病床 両側2.1m以上。療養は両側2.7m・片側1.8m、一般片側1.8m"
+  },
+  {
+   "key": "G3-S02-ACC-13",
+   "answer": 3,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "規則16条1項: 直通階段幅は1.2m以上"
+  },
+  {
+   "key": "G3-S02-ACC-14",
+   "answer": 3,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "準則第23・注6: 流動資産、付随費用を含める、時価下落時は時価"
+  }
+ ]
+}
