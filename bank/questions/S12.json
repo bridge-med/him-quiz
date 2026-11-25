@@ -1,0 +1,1711 @@
+{
+ "subject": "S12",
+ "questions": [
+  {
+   "id": "lg-09-02",
+   "legacy": {
+    "key": "9_2",
+    "chapter": 9,
+    "chapterName": "診療情報管理II（コーディング）",
+    "index": 2,
+    "hash": "73f483cd866a82f5"
+   },
+   "subject": "S12",
+   "subtopic": "新生物（第Ⅱ章）",
+   "format": "icd",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "ICD-10（2013年版）で、悪性新生物＜腫瘍＞が分類されるコードの範囲はどれか。",
+   "choices": [
+    "A00-B99",
+    "D00-D48",
+    "C00-C97",
+    "E00-E90",
+    "S00-T98"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "第Ⅱ章「新生物＜腫瘍＞」（C00－D48）のうち、悪性新生物＜腫瘍＞はC00－C97に分類される。",
+    "choiceNotes": [
+     "A00－B99は第Ⅰ章「感染症及び寄生虫症」。",
+     "D00－D48は第Ⅱ章のうち上皮内新生物（D00－D09）、良性新生物（D10－D36）、性状不詳又は不明の新生物（D37－D48）。",
+     null,
+     "E00－E90は第Ⅳ章「内分泌，栄養及び代謝疾患」。",
+     "S00－T98は第ⅩⅨ章「損傷，中毒及びその他の外因の影響」。"
+    ],
+    "point": "第Ⅱ章 新生物（C00－D48）：C00－C97 悪性、D00－D09 上皮内、D10－D36 良性、D37－D48 性状不詳又は不明。"
+   },
+   "sources": [
+    {
+     "ref": "icd:naiyou02",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第2章 新生物＜腫瘍＞（C00-D48）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou02.pdf",
+     "locator": "第Ⅱ章 冒頭（中間分類項目群）",
+     "quote": "Ｃ00－Ｃ97 悪性新生物＜腫瘍＞"
+    },
+    {
+     "ref": "icd:naiyou02",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第2章 新生物＜腫瘍＞（C00-D48）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou02.pdf",
+     "locator": "第Ⅱ章 冒頭（中間分類項目群）",
+     "quote": "Ｄ00－Ｄ09 上皮内新生物＜腫瘍＞ Ｄ10－Ｄ36 良性新生物＜腫瘍＞ Ｄ37－Ｄ48 性状不詳又は不明の新生物＜腫瘍＞"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "origin": {
+    "batch": "L09",
+    "key": "lg-09-02",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（ICD-10専門）で修正",
+     "修正後の再監査は未実施",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L09（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L09a（ICD-10専門）",
+     "reauditor": null
+    },
+    "log": "bank/audit/legacy-L09a.audit.json#lg-09-02",
+    "notes": "icd:naiyou02 冒頭の中間分類項目群で確認。第Ⅰ・Ⅳ・ⅩⅨ章の範囲はnaiyou01/04/19の章見出しで確認。"
+   }
+  },
+  {
+   "id": "lg-09-03",
+   "legacy": {
+    "key": "9_3",
+    "chapter": 9,
+    "chapterName": "診療情報管理II（コーディング）",
+    "index": 3,
+    "hash": "e1265147f1d1b682"
+   },
+   "subject": "S12",
+   "subtopic": "内分泌・代謝（第Ⅳ章）",
+   "format": "icd",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "糖尿病のICD-10コードはどれか。",
+   "choices": [
+    "E10-E14",
+    "C34",
+    "J18",
+    "I21"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "糖尿病はE10（1型）、E11（2型）、E12（栄養障害関連）、E13（その他）、E14（詳細不明）に分類。",
+    "choiceNotes": [
+     null,
+     "C34は肺の悪性新生物。",
+     "J18は肺炎。",
+     "I21は急性心筋梗塞。"
+    ],
+    "point": "E10＝1型DM、E11＝2型DM。Eは内分泌・代謝疾患。"
+   },
+   "sources": [
+    {
+     "ref": "icd:kihon2013",
+     "title": "基本分類表（2013年版）準拠",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/xls/kihon2013.xlsx",
+     "locator": "E10-E14",
+     "quote": "糖尿病（E10－E14）"
+    },
+    {
+     "ref": "icd:kihon2013",
+     "title": "基本分類表（2013年版）準拠",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/xls/kihon2013.xlsx",
+     "locator": "E11",
+     "quote": "２型＜インスリン非依存性＞糖尿病＜NIDDM＞"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "origin": {
+    "batch": "L09",
+    "key": "lg-09-03",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L09（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L09a（ICD-10専門）"
+    },
+    "log": "bank/audit/legacy-L09a.audit.json#lg-09-03",
+    "notes": "icd:kihon2013でE10-E14糖尿病、E10〜E14各名称、C34気管支及び肺の悪性新生物、J18肺炎，病原体不詳、I21急性心筋梗塞を確認（tools/icd.mjs）。"
+   }
+  },
+  {
+   "id": "lg-09-05",
+   "legacy": {
+    "key": "9_5",
+    "chapter": 9,
+    "chapterName": "診療情報管理II（コーディング）",
+    "index": 5,
+    "hash": "90f2172949f01e3f"
+   },
+   "subject": "S12",
+   "subtopic": "外因（第ⅩⅩ章）",
+   "format": "icd",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "ICD-10（2013年版）で、損傷・中毒などの原因となった周囲の状況やできごと（外因）を分類するコードの範囲はどれか。",
+   "choices": [
+    "V01-Y98",
+    "A00-B99",
+    "C00-D48",
+    "S00-T98",
+    "J00-J99"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "第ⅩⅩ章「傷病及び死亡の外因」（V01－Y98）は、損傷，中毒及びその他の有害作用の原因としての周囲の状況及びできごとを分類する。本章のコードは、病態の性質を示す他章のコード（多くは第ⅩⅨ章）に追加して使用する。",
+    "choiceNotes": [
+     null,
+     "A00－B99は第Ⅰ章「感染症及び寄生虫症」。",
+     "C00－D48は第Ⅱ章「新生物＜腫瘍＞」。",
+     "S00－T98は第ⅩⅨ章「損傷，中毒及びその他の外因の影響」で、外因ではなく損傷・中毒などの病態の性質を分類する。",
+     "J00－J99は第Ⅹ章「呼吸器系の疾患」。"
+    ],
+    "point": "外因＝第ⅩⅩ章（V01－Y98）。V01－V99 交通事故、W00－W19 転倒・転落など。病態の性質（多くは第ⅩⅨ章）のコードに追加して使う。"
+   },
+   "sources": [
+    {
+     "ref": "icd:naiyou20",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第20章 傷病及び死亡の外因（V01-Y98）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou20.pdf",
+     "locator": "第ⅩⅩ章 冒頭注",
+     "quote": "本章は損傷， 中毒及びその他の有害作用の原因としての周囲の状況及びできごとを分類するもので あり"
+    },
+    {
+     "ref": "icd:naiyou20",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第20章 傷病及び死亡の外因（V01-Y98）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou20.pdf",
+     "locator": "第ⅩⅩ章 冒頭注",
+     "quote": "本章のコードを使用する場合は， 本分類の 病態の性質を示す他章のコードに追加するものとして使用する。"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "origin": {
+    "batch": "L09",
+    "key": "lg-09-05",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（ICD-10専門）で修正",
+     "修正後の再監査は未実施",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L09（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L09a（ICD-10専門）",
+     "reauditor": null
+    },
+    "log": "bank/audit/legacy-L09a.audit.json#lg-09-05",
+    "notes": "icd:naiyou20 冒頭注・中間分類項目（V01－V99交通事故、W00－W19転倒・転落、X40－X49不慮の中毒）で確認。"
+   }
+  },
+  {
+   "id": "lg-09-10",
+   "legacy": {
+    "key": "9_10",
+    "chapter": 9,
+    "chapterName": "診療情報管理II（コーディング）",
+    "index": 10,
+    "hash": "245d3da3d072493b"
+   },
+   "subject": "S12",
+   "subtopic": "呼吸器（第Ⅹ章）",
+   "format": "icd",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "ICD-10（2013年版）で、3桁分類項目「肺炎，病原体不詳」のコードはどれか。",
+   "choices": [
+    "C34",
+    "I21",
+    "J15",
+    "J18",
+    "K70"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "J18は「肺炎，病原体不詳」。第Ⅹ章「呼吸器系の疾患」（J00－J99）の中間分類「インフルエンザ及び肺炎」（J09－J18）に属する。",
+    "choiceNotes": [
+     "C34は「気管支及び肺の悪性新生物＜腫瘍＞」（第Ⅱ章）。",
+     "I21は「急性心筋梗塞」（第Ⅸ章）。",
+     "J15は「細菌性肺炎，他に分類されないもの」。病原体（細菌）が明らかな肺炎に用いる。",
+     null,
+     "K70は「アルコール性肝疾患」（第ⅩⅠ章）。"
+    ],
+    "point": "J09－J18＝インフルエンザ及び肺炎。J15 細菌性肺炎NEC、J18 肺炎，病原体不詳。"
+   },
+   "sources": [
+    {
+     "ref": "icd:kihon2013",
+     "title": "基本分類表（2013年版）準拠",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/xls/kihon2013.xlsx",
+     "locator": "J18",
+     "quote": "肺炎，病原体不詳"
+    },
+    {
+     "ref": "icd:kihon2013",
+     "title": "基本分類表（2013年版）準拠",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/xls/kihon2013.xlsx",
+     "locator": "J15",
+     "quote": "細菌性肺炎，他に分類されないもの"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "origin": {
+    "batch": "L09",
+    "key": "lg-09-10",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（ICD-10専門）で修正",
+     "修正後の再監査は未実施",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L09（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L09a（ICD-10専門）",
+     "reauditor": null
+    },
+    "log": "bank/audit/legacy-L09a.audit.json#lg-09-10",
+    "notes": "icd:kihon2013・tools/icd.mjsでJ18/J15/C34/I21/K70の名称とJ09-J18中間分類を確認。"
+   }
+  },
+  {
+   "id": "lg-09-11",
+   "legacy": {
+    "key": "9_11",
+    "chapter": 9,
+    "chapterName": "診療情報管理II（コーディング）",
+    "index": 11,
+    "hash": "39b4c42cce8cbafa"
+   },
+   "subject": "S12",
+   "subtopic": "損傷・中毒（第ⅩⅨ章）",
+   "format": "icd",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "ICD-10（2013年版）で、転倒などの外傷による骨折（病的骨折を除く）が分類される章はどれか。",
+   "choices": [
+    "第ⅩⅢ章 筋骨格系及び結合組織の疾患（M00－M99）",
+    "第ⅩⅧ章 症状，徴候及び異常臨床所見・異常検査所見で他に分類されないもの（R00－R99）",
+    "第ⅩⅨ章 損傷，中毒及びその他の外因の影響（S00－T98）",
+    "第ⅩⅩ章 傷病及び死亡の外因（V01－Y98）",
+    "第Ⅸ章 循環器系の疾患（I00－I99）"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "外傷による骨折は第ⅩⅨ章「損傷，中毒及びその他の外因の影響」（S00－T98）に分類する（例：大腿骨頚部骨折 S72.0）。転倒などの外因は第ⅩⅩ章のコードを追加情報として用いる。",
+    "choiceNotes": [
+     "第ⅩⅢ章には病的骨折NOS（M84.4）や病的骨折を伴う骨粗しょう症（M80.-）、疲労骨折（M84.3）が分類されるが、外傷による骨折は第ⅩⅨ章。",
+     "第ⅩⅧ章は症状・徴候・異常所見で他に分類されないもの。骨折は分類しない。",
+     null,
+     "第ⅩⅩ章は転倒などの外因を分類し、損傷の性質を示すコード（多くは第ⅩⅨ章）に追加して使用する。骨折そのものは分類しない。",
+     "第Ⅸ章は循環器系の疾患。"
+    ],
+    "point": "外傷性骨折＝第ⅩⅨ章（S）。病的骨折・骨粗しょう症性骨折・疲労骨折は第ⅩⅢ章（M）。外因（転倒）は第ⅩⅩ章を追加。"
+   },
+   "sources": [
+    {
+     "ref": "icd:naiyou19",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第19章 損傷，中毒及びその他の外因の影響（S00-T98）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou19.pdf",
+     "locator": "第ⅩⅨ章 冒頭 除外",
+     "quote": "病的骨折 ＮＯＳ（Ｍ84．4） 病的骨折を伴う骨粗しょう＜鬆＞症＜オステオポローシス＞（Ｍ80.-） 疲労骨折（Ｍ84．3）"
+    },
+    {
+     "ref": "icd:naiyou20",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第20章 傷病及び死亡の外因（V01-Y98）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou20.pdf",
+     "locator": "第ⅩⅩ章 冒頭注",
+     "quote": "ほとんどの場合， 病態の性質はⅩⅨ 章の 「損傷， 中毒及びその他の外因の影響（Ｓ00－Ｔ98）」 に分類可能である。"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "origin": {
+    "batch": "L09",
+    "key": "lg-09-11",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（ICD-10専門）で修正",
+     "修正後の再監査は未実施",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L09（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L09a（ICD-10専門）",
+     "reauditor": null
+    },
+    "log": "bank/audit/legacy-L09a.audit.json#lg-09-11",
+    "notes": "icd:naiyou19 冒頭の除外（M84.4・M80.-・M84.3）、icd:naiyou20 冒頭注、tools/icd.mjsでS72.0大腿骨頚部骨折を確認。"
+   }
+  },
+  {
+   "id": "lg-09-14",
+   "legacy": {
+    "key": "9_14",
+    "chapter": 9,
+    "chapterName": "診療情報管理II（コーディング）",
+    "index": 14,
+    "hash": "2639b775cbbce2fb"
+   },
+   "subject": "S12",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "コーディングの精度管理で重要なのはどれか。",
+   "choices": [
+    "コード番号の順番",
+    "用紙の色分け",
+    "主傷病名と術式の正確な対応確認",
+    "入力スピードのみ"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "コーディング精度管理では主傷病名の選択、コードの正確性、術式との対応等を確認・監査する。",
+    "choiceNotes": [
+     "番号の順番は精度管理の主要ポイントではない。",
+     "用紙の色分けは精度管理ではない。",
+     null,
+     "スピードだけでなく正確性が最も重要。"
+    ],
+    "point": "コーディング精度＝正確な傷病名選択＋正確なコード付与。定期的な監査が重要。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "rejected",
+   "origin": {
+    "batch": "L09",
+    "key": "lg-09-14",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（ICD-10専門）で除外"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L09（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L09a（ICD-10専門）"
+    },
+    "log": "bank/audit/legacy-L09a.audit.json#lg-09-14",
+    "notes": "除外理由: low-quality 選択肢が学習上無意味（ソルバーも曖昧と判定）で、正答を支える一次資料がない。｜自明な問題で、選択肢「用紙の色分け」「入力スピードのみ」は明らかに不適切。正答「主傷病名と術式の正確な対応確認」もキャッシュ内の一次資料で定義された精度管理の要点として裏付けられない。"
+   }
+  },
+  {
+   "id": "lg-09-17",
+   "legacy": {
+    "key": "9_17",
+    "chapter": 9,
+    "chapterName": "診療情報管理II（コーディング）",
+    "index": 17,
+    "hash": "740e8b2380b13d9f"
+   },
+   "subject": "S12",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "合併症と続発症のコーディングルールとして正しいのはどれか。",
+   "choices": [
+    "主傷病名のみコーディングすればよい",
+    "合併症は常に無視する",
+    "主傷病名の他に合併症・続発症も追加コーディングする",
+    "続発症のみコーディングする"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "正確なコーディングのため主傷病名に加えて入院中に治療対象となった合併症・続発症も追加コーディングする。",
+    "choiceNotes": [
+     "主傷病名のみでは不十分。",
+     "合併症も医療資源投入があれば記録。",
+     null,
+     "主傷病名＋合併症＋続発症すべてが対象。"
+    ],
+    "point": "コーディング＝主傷病名＋合併症＋続発症。すべて記録して正確な情報管理を行う。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "rejected",
+   "origin": {
+    "batch": "L09",
+    "key": "lg-09-17",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（ICD-10専門）で除外"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L09（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L09b（ICD-10専門）"
+    },
+    "log": "bank/audit/legacy-L09b.audit.json#lg-09-17",
+    "notes": "除外理由: ambiguous 『合併症・続発症のコーディングルール』が何の分類体系（ICD疾病統計／DPC）の何の規則かが不明で、ICDの『続発・後遺症』とも混同を招く。選択肢『合併症は常に無視する』等は藁人形で、正解『追加コーディングする』もICD（その他の病態は別々に記載）・DPC（単一の医療資源病名を選択しダブルコーディング不採用）のいずれの規定とも一致しない。主要病態の選択は lg-09-26 で扱う。ブラインド解答者も曖昧と指摘。｜icd:instruction 主要病態・その他の病態の記載（4.4.1）を確認。設問の『合併症と続発症のコーディングルール』に対応する規定はない。"
+   }
+  },
+  {
+   "id": "lg-09-19",
+   "legacy": {
+    "key": "9_19",
+    "chapter": 9,
+    "chapterName": "診療情報管理II（コーディング）",
+    "index": 19,
+    "hash": "96e678fbc23f915b"
+   },
+   "subject": "S12",
+   "subtopic": "循環器（第Ⅸ章）",
+   "format": "icd",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "ICD-10（2013年版）で、急性心筋梗塞を分類する3桁分類項目はどれか。",
+   "choices": [
+    "I20",
+    "I22",
+    "I24",
+    "I21",
+    "I25"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "I21は急性心筋梗塞で、急性と明示された、又は発症から4週（28日）以内と記載された心筋梗塞を含む。第Ⅸ章 循環器系の疾患の「虚血性心疾患（I20－I25）」に属する。",
+    "choiceNotes": [
+     "I20は狭心症である。",
+     "I22は再発性心筋梗塞であり、I21の除外に挙げられている。",
+     "I24はその他の急性虚血性心疾患（心筋梗塞後症候群I24.1など）である。",
+     null,
+     "I25は慢性虚血性心疾患で、陳旧性心筋梗塞（I25.2）や発症から4週を超える心筋梗塞（I25.8）が分類される。"
+    ],
+    "point": "急性心筋梗塞＝I21（発症から28日以内）、再発性＝I22、陳旧性＝I25.2。"
+   },
+   "sources": [
+    {
+     "ref": "icd:naiyou09",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第9章 循環器系の疾患（I00-I99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou09.pdf",
+     "locator": "I21 急性心筋梗塞 包含",
+     "quote": "急性と明示された， 又は期間が発症から 4 週（28 日）以内と記載された心筋梗塞"
+    },
+    {
+     "ref": "icd:naiyou09",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第9章 循環器系の疾患（I00-I99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou09.pdf",
+     "locator": "I21 除外",
+     "quote": "心筋梗塞： ・陳旧性（Ｉ25．2）"
+    },
+    {
+     "ref": "icd:kihon2013",
+     "title": "基本分類表（2013年版）準拠",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/xls/kihon2013.xlsx",
+     "locator": "I22",
+     "quote": "I22\t再発性心筋梗塞"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "origin": {
+    "batch": "L09",
+    "key": "lg-09-19",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（ICD-10専門）で修正",
+     "修正後の再監査は未実施",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L09（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L09b（ICD-10専門）",
+     "reauditor": null
+    },
+    "log": "bank/audit/legacy-L09b.audit.json#lg-09-19",
+    "notes": "icd:naiyou09 I21 包含・除外（28日、陳旧性I25.2、再発性I22）；icd:kihon2013 I20/I22/I24/I25。"
+   }
+  },
+  {
+   "id": "lg-09-20",
+   "legacy": {
+    "key": "9_20",
+    "chapter": 9,
+    "chapterName": "診療情報管理II（コーディング）",
+    "index": 20,
+    "hash": "9deb02765c42eb4f"
+   },
+   "subject": "S12",
+   "subtopic": "内分泌・代謝（第Ⅳ章）",
+   "format": "icd",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "ICD-10（2013年版）で、3桁分類項目E11に分類されるものはどれか。",
+   "choices": [
+    "1型糖尿病",
+    "妊娠中に発生した糖尿病",
+    "栄養障害に関連する糖尿病",
+    "新生児糖尿病",
+    "2型糖尿病"
+   ],
+   "answer": 4,
+   "explanation": {
+    "correct": "E11は「２型＜インスリン非依存性＞糖尿病＜NIDDM＞」である。E10－E14の4桁目は共通の細分類で、合併症の有無・種類を表す。",
+    "choiceNotes": [
+     "1型糖尿病はE10である。",
+     "妊娠中に発生した糖尿病（妊娠性糖尿病NOS）は第ⅩⅤ章のO24.4で、E11の除外に挙げられている。",
+     "栄養障害に関連する糖尿病はE12で、E11の除外に挙げられている。",
+     "新生児糖尿病はP70.2で、E11の除外に挙げられている。",
+     null
+    ],
+    "point": "E10＝1型、E11＝2型、E12＝栄養障害に関連、E13＝その他の明示、E14＝詳細不明。妊娠中はO24、新生児はP70.2。"
+   },
+   "sources": [
+    {
+     "ref": "icd:naiyou04",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第4章 内分泌，栄養及び代謝疾患（E00-E90）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou04.pdf",
+     "locator": "E11 名称",
+     "quote": "E11   ２型＜インスリン非依存性＞糖尿病＜NIDDM＞"
+    },
+    {
+     "ref": "icd:naiyou04",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第4章 内分泌，栄養及び代謝疾患（E00-E90）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou04.pdf",
+     "locator": "E11 除外",
+     "quote": "・栄養障害に関連する（E12．-） ・新生児（P70．2） ・妊娠，分娩及び産じょく＜褥＞（O24．-）"
+    },
+    {
+     "ref": "icd:naiyou15",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第15章 妊娠，分娩及び産じょく＜褥＞（O00-O99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou15.pdf",
+     "locator": "O24.4",
+     "quote": "Ｏ24．4   妊娠中に発生した糖尿病 妊娠性糖尿病 ＮＯＳ"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "origin": {
+    "batch": "L09",
+    "key": "lg-09-20",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（ICD-10専門）で修正",
+     "修正後の再監査は未実施",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L09（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L09b（ICD-10専門）",
+     "reauditor": null
+    },
+    "log": "bank/audit/legacy-L09b.audit.json#lg-09-20",
+    "notes": "icd:naiyou04 E10－E14（E11 名称・除外：E12, P70.2, O24.-）；icd:naiyou15 O24.4（妊娠性糖尿病NOS）。"
+   }
+  },
+  {
+   "id": "lg-09-21",
+   "legacy": {
+    "key": "9_21",
+    "chapter": 9,
+    "chapterName": "診療情報管理II（コーディング）",
+    "index": 21,
+    "hash": "47d658d638e4eda5"
+   },
+   "subject": "S12",
+   "subtopic": "内分泌・代謝（第Ⅳ章）",
+   "format": "icd",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "2型糖尿病による糖尿病性腎症をICD-10（2013年版）でコーディングするとき、剣印（†）コードとして正しいものはどれか。",
+   "choices": [
+    "E11.0",
+    "E11.4",
+    "E11.2",
+    "E11.5",
+    "E11.9"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "E10－E14共通の4桁細分類「.2†腎合併症を伴うもの」に糖尿病性腎症＜ネフロパシー＞が含まれ、星印コードN08.3*を併用する。2型糖尿病はE11なので、E11.2†（＋N08.3*）となる。",
+    "choiceNotes": [
+     "E11.0は昏睡を伴うものである。",
+     "E11.4は神経（学的）合併症を伴うものである。",
+     null,
+     "E11.5は末梢循環合併症を伴うものである。",
+     "E11.9は合併症を伴わないものである。"
+    ],
+    "point": "4桁目：.0昏睡 .1ケトアシドーシス .2†腎 .3†眼 .4†神経 .5末梢循環 .6その他の明示 .7多発 .8詳細不明 .9合併症なし。"
+   },
+   "sources": [
+    {
+     "ref": "icd:naiyou04",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第4章 内分泌，栄養及び代謝疾患（E00-E90）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou04.pdf",
+     "locator": "E10－E14 共通4桁細分類 .2",
+     "quote": "．2†   腎合併症を伴うもの 糖尿病性腎症＜ネフロパシー＞（Ｎ08．3＊）"
+    },
+    {
+     "ref": "icd:naiyou04",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第4章 内分泌，栄養及び代謝疾患（E00-E90）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou04.pdf",
+     "locator": "E10－E14 共通4桁細分類 .4・.5",
+     "quote": "．4†   神経（学的）合併症を伴うもの"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "origin": {
+    "batch": "L09",
+    "key": "lg-09-21",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（ICD-10専門）で修正",
+     "修正後の再監査は未実施",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L09（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L09b（ICD-10専門）",
+     "reauditor": null
+    },
+    "log": "bank/audit/legacy-L09b.audit.json#lg-09-21",
+    "notes": "icd:naiyou04 E10－E14共通4桁細分類（.0昏睡、.2†腎合併症＝糖尿病性腎症 N08.3*、.4†神経、.5末梢循環、.9合併症なし）；tools/icd.mjs で E11.2†/N08.3* 確認。"
+   }
+  },
+  {
+   "id": "lg-09-22",
+   "legacy": {
+    "key": "9_22",
+    "chapter": 9,
+    "chapterName": "診療情報管理II（コーディング）",
+    "index": 22,
+    "hash": "089453f79d36f764"
+   },
+   "subject": "S12",
+   "subtopic": "新生物（第Ⅱ章）",
+   "format": "icd",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "悪性新生物で「胃体部」の癌のICD-10コードはどれか。",
+   "choices": [
+    "C16.2",
+    "C16.0",
+    "C16.8",
+    "C16.9"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "C16.2は胃体部の悪性新生物。C16は胃の悪性新生物で4桁目で部位を特定する。",
+    "choiceNotes": [
+     null,
+     "C16.0は噴門部。",
+     "C16.8は胃の境界部病巣。",
+     "C16.9は胃の悪性新生物、部位不明。"
+    ],
+    "point": "C16.0噴門 .1胃底部 .2胃体部 .3幽門前庭部 .4幽門 .9部位不明。"
+   },
+   "sources": [
+    {
+     "ref": "icd:naiyou02",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第2章 新生物＜腫瘍＞（C00-D48）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou02.pdf",
+     "locator": "C16 胃の悪性新生物＜腫瘍＞",
+     "quote": "Ｃ16．1   胃底部 Ｃ16．2   胃体部"
+    },
+    {
+     "ref": "icd:naiyou02",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第2章 新生物＜腫瘍＞（C00-D48）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou02.pdf",
+     "locator": "C16.8",
+     "quote": "Ｃ16．8   胃の境界部病巣"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "origin": {
+    "batch": "L09",
+    "key": "lg-09-22",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L09（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L09b（ICD-10専門）"
+    },
+    "log": "bank/audit/legacy-L09b.audit.json#lg-09-22",
+    "notes": "icd:naiyou02 C16（.0噴門 .1胃底部 .2胃体部 .3幽門前庭 .4幽門 .8胃の境界部病巣 .9胃，部位不明）で鍵・選択肢・解説を確認。"
+   }
+  },
+  {
+   "id": "lg-09-23",
+   "legacy": {
+    "key": "9_23",
+    "chapter": 9,
+    "chapterName": "診療情報管理II（コーディング）",
+    "index": 23,
+    "hash": "23c04bb5414d2c08"
+   },
+   "subject": "S12",
+   "subtopic": "損傷・中毒（第ⅩⅨ章）",
+   "format": "icd",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "大腿骨頸部骨折のICD-10コードはどれか。",
+   "choices": [
+    "S82.0",
+    "S42.0",
+    "S72.0",
+    "S52.0"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "S72は大腿骨骨折で、4桁目.0が大腿骨頚部骨折（股関節部骨折NOSを含む）である。転子部・転子間骨折はS72.1（転子貫通骨折）に分類される。",
+    "choiceNotes": [
+     "S82.0は膝蓋骨骨折である（S82は下腿の骨折，足首を含む）。",
+     "S42.0は鎖骨骨折である（S42は肩及び上腕の骨折）。",
+     null,
+     "S52.0は尺骨近位端骨折である（S52は前腕の骨折）。"
+    ],
+    "point": "S72.0＝大腿骨頚部、S72.1＝転子貫通（転子部・転子間）、S72.2＝転子下。"
+   },
+   "sources": [
+    {
+     "ref": "icd:naiyou19",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第19章 損傷，中毒及びその他の外因の影響（S00-T98）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou19.pdf",
+     "locator": "S72 大腿骨骨折",
+     "quote": "Ｓ72．0   大腿骨頚部骨折 股関節部骨折 ＮＯＳ Ｓ72．1   転子貫通骨折"
+    },
+    {
+     "ref": "icd:naiyou19",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第19章 損傷，中毒及びその他の外因の影響（S00-T98）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou19.pdf",
+     "locator": "S82.0",
+     "quote": "Ｓ82．0   膝蓋骨骨折"
+    },
+    {
+     "ref": "icd:naiyou19",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第19章 損傷，中毒及びその他の外因の影響（S00-T98）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou19.pdf",
+     "locator": "S52.0",
+     "quote": "Ｓ52．0   尺骨近位端骨折"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "origin": {
+    "batch": "L09",
+    "key": "lg-09-23",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（ICD-10専門）で修正",
+     "修正後の再監査は未実施",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L09（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L09b（ICD-10専門）",
+     "reauditor": null
+    },
+    "log": "bank/audit/legacy-L09b.audit.json#lg-09-23",
+    "notes": "icd:naiyou19 S72.0（股関節部骨折NOS）、S72.1（転子間・転子部）、S82.0 膝蓋骨骨折、S52.0 尺骨近位端骨折、S42.0 鎖骨骨折。"
+   }
+  },
+  {
+   "id": "lg-09-24",
+   "legacy": {
+    "key": "9_24",
+    "chapter": 9,
+    "chapterName": "診療情報管理II（コーディング）",
+    "index": 24,
+    "hash": "3b9e8bf1928958cf"
+   },
+   "subject": "S12",
+   "subtopic": "外因（第ⅩⅩ章）",
+   "format": "icd",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "ICD-10（2013年版）で、交通事故により受傷した歩行者の外因（受傷の状況）を分類するコードが含まれる章はどれか。",
+   "choices": [
+    "第ⅩⅩ章（V01－Y98）",
+    "第ⅩⅨ章（S00－T98）",
+    "第ⅩⅧ章（R00－R99）",
+    "第ⅩⅩⅠ章（Z00－Z99）"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "外因は第ⅩⅩ章「傷病及び死亡の外因」（V01－Y98）に分類され、交通事故により受傷した歩行者はV01－V09である。疾病統計では損傷の性質（第ⅩⅨ章）を主要病態コードとし、第ⅩⅩ章のコードは任意的追加コードとして用いる。",
+    "choiceNotes": [
+     null,
+     "第ⅩⅨ章「損傷，中毒及びその他の外因の影響」は損傷の性質（部位・種類）を分類する章である。",
+     "第ⅩⅧ章は症状，徴候及び異常臨床所見・異常検査所見で他に分類されないものである。",
+     "第ⅩⅩⅠ章は健康状態に影響を及ぼす要因及び保健サービスの利用である。"
+    ],
+    "point": "損傷の性質＝第ⅩⅨ章（S・T）、外因＝第ⅩⅩ章（V－Y）。第ⅩⅩ章は主要病態コードにしない。"
+   },
+   "sources": [
+    {
+     "ref": "icd:naiyou20",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第20章 傷病及び死亡の外因（V01-Y98）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou20.pdf",
+     "locator": "第ⅩⅩ章 章題・中間分類",
+     "quote": "第ⅩⅩ章 傷病及び死亡の外因(V01－Y98)"
+    },
+    {
+     "ref": "icd:naiyou20",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第20章 傷病及び死亡の外因（V01-Y98）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou20.pdf",
+     "locator": "中間分類 V01－V09",
+     "quote": "Ｖ01－Ｖ09    交通事故により受傷した歩行者"
+    },
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "4.4.4 第ⅩⅩ章：傷病及び死亡の外因",
+     "quote": "本章のコードは「主要病態」コードとして使用しない。"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "origin": {
+    "batch": "L09",
+    "key": "lg-09-24",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（ICD-10専門）で修正",
+     "修正後の再監査は未実施",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L09（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L09b（ICD-10専門）",
+     "reauditor": null
+    },
+    "log": "bank/audit/legacy-L09b.audit.json#lg-09-24",
+    "notes": "icd:naiyou20 章題（V01－Y98）・V01－V09 交通事故により受傷した歩行者；icd:instruction 4.4.4 第ⅩⅩ章（主要病態コードとして使用しない・任意的追加コード）、疾病の外因のコーディング。"
+   }
+  },
+  {
+   "id": "lg-09-25",
+   "legacy": {
+    "key": "9_25",
+    "chapter": 9,
+    "chapterName": "診療情報管理II（コーディング）",
+    "index": 25,
+    "hash": "18dc096083917785"
+   },
+   "subject": "S12",
+   "subtopic": "損傷・中毒（第ⅩⅨ章）",
+   "format": "coding",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "ICD-10（2013年版）で、適正な薬物を適正に投与したときに生じた有害作用（副作用）の疾病コーディングとして正しいものはどれか。",
+   "choices": [
+    "有害作用の性質により分類し、薬物は外因コード（Y40－Y59）で追加して示す",
+    "薬物による中毒（T36－T50）に分類する",
+    "外因コード（Y40－Y59）を主要病態のコードとして用いる",
+    "有害作用の性質にかかわらず、T88.7（薬物の詳細不明の有害作用）に分類する"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "適正な薬物が適正に投与された場合の有害作用は、T36－T50（中毒）から除外され、有害作用の性質（例：アスピリン胃炎K29.-、複視H53.2）により分類する。原因薬物は第ⅩⅩ章の「治療上の使用により有害作用を引き起こした薬物，薬剤及び生物学的製剤（Y40－Y59）」を任意的追加コードとして用いて示す。",
+    "choiceNotes": [
+     null,
+     "T36－T50は過量投与や誤った薬物の摂取・投与による中毒で、適正投与の有害作用は除外されている。",
+     "第ⅩⅩ章のコードは「主要病態」コードとして使用しない。",
+     "T88.7は有害作用の性質が詳細不明の場合のコードであり、性質が分かれば、その性質により分類する。"
+    ],
+    "point": "副作用（適正投与）＝有害作用の性質でコード＋Y40－Y59（任意的追加）。誤用・過量＝中毒T36－T50。"
+   },
+   "sources": [
+    {
+     "ref": "icd:naiyou19",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第19章 損傷，中毒及びその他の外因の影響（S00-T98）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou19.pdf",
+     "locator": "T36－T50 除外",
+     "quote": "適正な薬物が適正に投与された場合の有害作用 ［過敏症， 反応など］ は， 下記のような有害作用の性質により分類する"
+    },
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "4.4.2 疾病の外因のコーディング 例15",
+     "quote": "治療上の使用により有害作用 を起こした抗アレルギー薬及び制吐薬に対する外因コード（Y43.0）は、任意 的追加コードとして使用することができる"
+    },
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "4.4.4 第ⅩⅩ章：傷病及び死亡の外因",
+     "quote": "本章のコードは「主要病態」コードとして使用しない。"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "origin": {
+    "batch": "L09",
+    "key": "lg-09-25",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（ICD-10専門）で修正",
+     "修正後の再監査は未実施",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L09（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L09b（ICD-10専門）",
+     "reauditor": null
+    },
+    "log": "bank/audit/legacy-L09b.audit.json#lg-09-25",
+    "notes": "icd:naiyou19 T36－T50 除外（適正投与の有害作用は有害作用の性質により分類、T88.7は詳細不明の場合）；icd:instruction 疾病の外因のコーディング 例15（H53.2＋Y43.0任意的追加）・第ⅩⅩ章は主要病態に使わない。"
+   }
+  },
+  {
+   "id": "lg-09-30",
+   "legacy": {
+    "key": "9_30",
+    "chapter": 9,
+    "chapterName": "診療情報管理II（コーディング）",
+    "index": 30,
+    "hash": "60b55e1d7a5c99c9"
+   },
+   "subject": "S12",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "コーディング精度の評価指標として用いられるものはどれか。",
+   "choices": [
+    "患者満足度",
+    "在院日数",
+    "食事の提供回数",
+    "コーディング一致率（Coding Accuracy Rate）"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "コーディング精度はコーディング一致率で評価する。外部監査等で専門家のコーディングと比較し一致率を算出。",
+    "choiceNotes": [
+     "患者満足度はサービスの質指標でありコーディング精度とは異なる。",
+     "在院日数は診療効率の指標。",
+     "食事の提供回数はコーディングとは無関係。",
+     null
+    ],
+    "point": "コーディング精度＝一致率で評価。内部・外部監査で定期的に検証。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "rejected",
+   "origin": {
+    "batch": "L09",
+    "key": "lg-09-30",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（ICD-10専門）で除外"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L09（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L09b（ICD-10専門）"
+    },
+    "log": "bank/audit/legacy-L09b.audit.json#lg-09-30",
+    "notes": "除外理由: unsupported 正答『コーディング一致率（Coding Accuracy Rate）』およびその算出方法（外部監査での専門家との比較）を裏付ける一次資料がない。他の選択肢（食事の提供回数など）も藁人形で判別力が低い。ブラインド解答者も『指標として一般的ではない』と曖昧判定。｜him:jhim-gyomu-shishin-2026（コーディングの精度確保）、ins:dpc-coding-text-v7 等を検索したが『コーディング一致率（Coding Accuracy Rate）』を評価指標と定める記述はキャッシュ内にない。"
+   }
+  },
+  {
+   "id": "lg-10-05",
+   "legacy": {
+    "key": "10_5",
+    "chapter": 10,
+    "chapterName": "国際統計分類I（ICD総論・コーディング実践）",
+    "index": 5,
+    "hash": "5b4715ea2d5ca15e"
+   },
+   "subject": "S12",
+   "subtopic": "新生物（第Ⅱ章）",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "ICD-10（2013年版）で、「原発部位不明」と記載された悪性新生物＜腫瘍＞が分類される３桁分類項目はどれか。",
+   "choices": [
+    "C34 気管支及び肺の悪性新生物＜腫瘍＞",
+    "D48 その他及び部位不明の性状不詳又は不明の新生物＜腫瘍＞",
+    "Z03 疾病及び病態の疑いに対する医学的観察及び評価",
+    "C80 悪性新生物＜腫瘍＞，部位が明示されていないもの"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "C80「悪性新生物＜腫瘍＞，部位が明示されていないもの」の4桁細分類C80.0が「悪性新生物＜腫瘍＞，原発部位不明と記載されたもの」であり、包含用語に「原発部位不明」がある。",
+    "choiceNotes": [
+     "C34は原発部位が気管支及び肺と明示された悪性新生物＜腫瘍＞の項目。",
+     "D37-D48は悪性か良性か確定できない性状不詳又は不明の新生物＜腫瘍＞の部位による分類で、D48はその他及び部位不明のもの。性状が悪性と分かっている場合には用いない。",
+     "Z03は疾病及び病態の疑いに対する医学的観察及び評価（Z03.1は悪性新生物＜腫瘍＞の疑いに対する観察）で、悪性新生物と診断された場合には用いない。",
+     null
+    ],
+    "point": "原発部位不明の悪性新生物＝C80（C80.0）。性状不詳又は不明＝D37-D48。悪性新生物の疑いに対する観察＝Z03.1。"
+   },
+   "sources": [
+    {
+     "ref": "icd:naiyou02",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第2章 新生物＜腫瘍＞（C00-D48）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou02.pdf",
+     "locator": "C80",
+     "quote": "C80．0   悪性新生物＜腫瘍＞，原発部位不明と記載されたもの 原発部位不明"
+    },
+    {
+     "ref": "icd:naiyou02",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第2章 新生物＜腫瘍＞（C00-D48）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou02.pdf",
+     "locator": "D37-D48 注",
+     "quote": "注：項目Ｄ37－Ｄ48 は性状不詳又は不明の新生物＜腫瘍＞， すなわち悪性か良性 か確定できない新生物＜腫瘍＞の部位による分類である。"
+    },
+    {
+     "ref": "icd:naiyou21",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第21章 健康状態に影響を及ぼす要因及び保健サービスの利用（Z00-Z99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou21.pdf",
+     "locator": "Z03",
+     "quote": "Ｚ03．1   悪性新生物＜腫瘍＞の疑いに対する観察"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "origin": {
+    "batch": "L10",
+    "key": "lg-10-05",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（ICD-10専門）で修正",
+     "修正後の再監査は未実施",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L10（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L10a（ICD-10専門）",
+     "reauditor": null
+    },
+    "log": "bank/audit/legacy-L10a.audit.json#lg-10-05",
+    "notes": "icd:naiyou02 C80（C80.0 原発部位不明と記載されたもの）、D37-D48の注、icd:naiyou21 Z03（Z03.1）で確認。icd.mjs で C80/C34/D48/Z03 の存在と名称を確認。"
+   }
+  },
+  {
+   "id": "lg-10-06",
+   "legacy": {
+    "key": "10_6",
+    "chapter": 10,
+    "chapterName": "国際統計分類I（ICD総論・コーディング実践）",
+    "index": 6,
+    "hash": "600cda5d2d1a1655"
+   },
+   "subject": "S12",
+   "subtopic": "外因（第ⅩⅩ章）",
+   "format": "knowledge",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "ICD-10（2013年版）で、第ⅩⅨ章（S00-T98）に分類される損傷や中毒について、その原因となった周囲の状況やできごとを示すために追加して用いるコードはどれか。",
+   "choices": [
+    "第Ⅰ章 感染症及び寄生虫症（A00-B99）",
+    "第ⅩⅧ章 症状，徴候及び異常臨床所見・異常検査所見で他に分類されないもの（R00-R99）",
+    "第ⅩⅩⅠ章 健康状態に影響を及ぼす要因及び保健サービスの利用（Z00-Z99）",
+    "第ⅩⅩ章 傷病及び死亡の外因（V01-Y98）",
+    "第ⅩⅥ章 周産期に発生した病態（P00-P96）"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "第ⅩⅩ章は損傷，中毒及びその他の有害作用の原因としての周囲の状況及びできごとを分類し、病態の性質を示す他章のコード（ほとんどの場合ⅩⅨ章）に追加するものとして使用する。疾病統計では第ⅩⅩ章のコードは主要病態コードとして使用せず任意的追加コードとし、死因統計で単一のコードのみで集計する場合は第ⅩⅩ章のコードを優先する。",
+    "choiceNotes": [
+     "第Ⅰ章は感染症及び寄生虫症の章で、損傷の原因となった状況・できごとを示すものではない。",
+     "第ⅩⅧ章は症状・徴候・異常所見で他に分類されないものの章で、外因を示すものではない。",
+     "第ⅩⅩⅠ章は健康状態に影響を及ぼす要因及び保健サービスの利用の章で、外因を示すものではない。",
+     null,
+     "第ⅩⅥ章は周産期に発生した病態の章で、外因を示すものではない。"
+    ],
+    "point": "損傷・中毒＝ⅩⅨ章（性質）＋ⅩⅩ章（外因）。疾病統計ではⅩⅩ章は任意的追加コード、死因の単一コード集計ではⅩⅩ章優先。"
+   },
+   "sources": [
+    {
+     "ref": "icd:naiyou20",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第20章 傷病及び死亡の外因（V01-Y98）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou20.pdf",
+     "locator": "第ⅩⅩ章 冒頭の注",
+     "quote": "本章のコードを使用する場合は， 本分類の 病態の性質を示す他章のコードに追加するものとして使用する。 ほとんどの場合， 病態の性質はⅩⅨ 章の 「損傷， 中毒及びその他の外因の影響（Ｓ00－Ｔ98）」 に分類可能である。"
+    },
+    {
+     "ref": "icd:naiyou20",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第20章 傷病及び死亡の外因（V01-Y98）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou20.pdf",
+     "locator": "第ⅩⅩ章 冒頭の注",
+     "quote": "単一のコードのみでしか集計しない場合には ⅩⅩ章のコードを優先して使用する。"
+    },
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "4.4.4 章ごとの注釈 第ⅩⅩ章",
+     "quote": "本章のコードは「主要病態」コードとして使用しない。これらは任意的追加コード として第ⅩⅨ章に分類される病態の外因を特定するための使用を意図したもの"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "origin": {
+    "batch": "L10",
+    "key": "lg-10-06",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（ICD-10専門）で修正",
+     "修正後の再監査は未実施",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L10（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L10a（ICD-10専門）",
+     "reauditor": null
+    },
+    "log": "bank/audit/legacy-L10a.audit.json#lg-10-06",
+    "notes": "icd:naiyou20 章冒頭の注（他章のコードに追加して使用、病態の性質はほとんどⅩⅨ章、死因で単一コードならⅩⅩ章優先）、icd:instruction 4.4.4 第ⅩⅩ章（主要病態コードとして使用しない、任意的追加コード）で確認。"
+   }
+  },
+  {
+   "id": "lg-10-07",
+   "legacy": {
+    "key": "10_7",
+    "chapter": 10,
+    "chapterName": "国際統計分類I（ICD総論・コーディング実践）",
+    "index": 7,
+    "hash": "211ac181c8cc7228"
+   },
+   "subject": "S12",
+   "subtopic": "妊娠・分娩・産じょく（第ⅩⅤ章）",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "産科コーディングで使用されるICD-10の章はどれか。",
+   "choices": [
+    "第Ⅰ章（A00-B99）",
+    "第Ⅸ章（I00-I99）",
+    "第ⅩⅨ章（S00-T98）",
+    "第ⅩⅤ章（O00-O99）"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "妊娠，分娩及び産じょく＜褥＞は第ⅩⅤ章（O00-O99）に分類される。本章のコードは、妊娠，分娩又は産じょく＜褥＞に関連する又はそれによって悪化する病態に使用する。",
+    "choiceNotes": [
+     "第Ⅰ章（A00-B99）は感染症及び寄生虫症。",
+     "第Ⅸ章（I00-I99）は循環器系の疾患。",
+     "第ⅩⅨ章（S00-T98）は損傷，中毒及びその他の外因の影響。",
+     null
+    ],
+    "point": "第ⅩⅤ章＝妊娠，分娩及び産じょく＜褥＞（O00-O99）。"
+   },
+   "sources": [
+    {
+     "ref": "icd:naiyou15",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第15章 妊娠，分娩及び産じょく＜褥＞（O00-O99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou15.pdf",
+     "locator": "第ⅩⅤ章 章タイトル・注",
+     "quote": "本章に含まれているコードは、妊娠，分娩又は産じょく＜褥＞（母体又は産科的な原因）に関連する又 はそれによって悪化する病態に使用する。"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "origin": {
+    "batch": "L10",
+    "key": "lg-10-07",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（ICD-10専門）で修正",
+     "修正後の再監査は未実施",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L10（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L10a（ICD-10専門）",
+     "reauditor": null
+    },
+    "log": "bank/audit/legacy-L10a.audit.json#lg-10-07",
+    "notes": "icd:naiyou15 章タイトル（O00-O99）と章の注、icd.mjs chapter 1/9/19 で各章の名称・範囲を確認。"
+   }
+  },
+  {
+   "id": "lg-10-09",
+   "legacy": {
+    "key": "10_9",
+    "chapter": 10,
+    "chapterName": "国際統計分類I（ICD総論・コーディング実践）",
+    "index": 9,
+    "hash": "ca3b4a63531a0e7a"
+   },
+   "subject": "S12",
+   "subtopic": "保健サービスの利用（第ⅩⅩⅠ章）",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "ICD-10（2013年版）で、Zで始まるコード（Z00-Z99）が分類するものはどれか。",
+   "choices": [
+    "健康状態に影響を及ぼす要因及び保健サービスの利用（健診・予防接種等）",
+    "原発性及び続発性の悪性新生物＜腫瘍＞",
+    "細菌・ウイルス等による感染症及び寄生虫症",
+    "心疾患・脳血管疾患などの循環器系の疾患"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "第ⅩⅩⅠ章（Z00-Z99）は、A00-Y89に分類される疾病，損傷又は外因以外の状況が「診断名」又は「問題」として記載された場合のための項目で、予防接種、集団健診で発見される要因、悪性新生物の既往歴（Z85）などを分類する。本章は国際比較及び原死因コーディングには使用しない。",
+    "choiceNotes": [
+     null,
+     "悪性新生物＜腫瘍＞は第Ⅱ章（C00-D48）のC00-C97に分類される。",
+     "感染症は第Ⅰ章（A00-B99）に分類される。",
+     "循環器系の疾患は第Ⅸ章（I00-I99）に分類される。"
+    ],
+    "point": "Zコード＝第ⅩⅩⅠ章。疾病・損傷以外の受診理由や健康状態に影響する要因（健診・予防接種・既往歴等）。原死因には使用しない。"
+   },
+   "sources": [
+    {
+     "ref": "icd:naiyou21",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第21章 健康状態に影響を及ぼす要因及び保健サービスの利用（Z00-Z99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou21.pdf",
+     "locator": "第ⅩⅩⅠ章 冒頭の注",
+     "quote": "項目Ｚ00－Ｚ99 は項目Ａ00－Ｙ89 に分類される疾病， 損傷又は外因以外の状況が 「診断名」 又は 「問題」として記載された場合のために設置された項目である。"
+    },
+    {
+     "ref": "icd:naiyou21",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第21章 健康状態に影響を及ぼす要因及び保健サービスの利用（Z00-Z99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou21.pdf",
+     "locator": "第ⅩⅩⅠ章 冒頭の注",
+     "quote": "注：本章は国際比較及び原死因コーディングには使用しない。"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "origin": {
+    "batch": "L10",
+    "key": "lg-10-09",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（ICD-10専門）で修正",
+     "修正後の再監査は未実施",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L10（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L10a（ICD-10専門）",
+     "reauditor": null
+    },
+    "log": "bank/audit/legacy-L10a.audit.json#lg-10-09",
+    "notes": "icd:naiyou21 章冒頭の注（Z00-Z99はA00-Y89以外の状況、予防接種・健診等）、icd.mjs chapter 2/1/9 で確認。"
+   }
+  },
+  {
+   "id": "lg-10-11",
+   "legacy": {
+    "key": "10_11",
+    "chapter": 10,
+    "chapterName": "国際統計分類I（ICD総論・コーディング実践）",
+    "index": 11,
+    "hash": "b9dd9fab867e230b"
+   },
+   "subject": "S12",
+   "subtopic": "新生物（第Ⅱ章）",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "新生物のコーディングで「良性新生物」のコード範囲はどれか。",
+   "choices": [
+    "D10-D36",
+    "C00-C97",
+    "D37-D48",
+    "Z85"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "良性新生物はD10-D36に分類。悪性はC00-C97、性状不詳はD37-D48。",
+    "choiceNotes": [
+     null,
+     "C00-C97は悪性新生物。",
+     "D37-D48は性状不詳の新生物。",
+     "Z85はがんの既往歴。"
+    ],
+    "point": "悪性＝C、良性＝D10-D36、性状不詳＝D37-D48。"
+   },
+   "sources": [
+    {
+     "ref": "icd:naiyou02",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第2章 新生物＜腫瘍＞（C00-D48）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou02.pdf",
+     "locator": "第Ⅱ章 中間分類項目一覧",
+     "quote": "Ｃ00－Ｃ97 悪性新生物＜腫瘍＞"
+    },
+    {
+     "ref": "icd:naiyou02",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第2章 新生物＜腫瘍＞（C00-D48）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou02.pdf",
+     "locator": "第Ⅱ章 中間分類項目一覧",
+     "quote": "Ｄ00－Ｄ09 上皮内新生物＜腫瘍＞ Ｄ10－Ｄ36 良性新生物＜腫瘍＞ Ｄ37－Ｄ48 性状不詳又は不明の新生物＜腫瘍＞"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "origin": {
+    "batch": "L10",
+    "key": "lg-10-11",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L10（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L10a（ICD-10専門）"
+    },
+    "log": "bank/audit/legacy-L10a.audit.json#lg-10-11",
+    "notes": "icd:naiyou02 第Ⅱ章の中間分類項目一覧（C00-C97 悪性、D00-D09 上皮内、D10-D36 良性、D37-D48 性状不詳又は不明）と icd.mjs で Z85「悪性新生物＜腫瘍＞の既往歴」を確認。"
+   }
+  },
+  {
+   "id": "lg-10-13",
+   "legacy": {
+    "key": "10_13",
+    "chapter": 10,
+    "chapterName": "国際統計分類I（ICD総論・コーディング実践）",
+    "index": 13,
+    "hash": "133b149eb67ddb13"
+   },
+   "subject": "S12",
+   "subtopic": "精神・神経・感覚器（第Ⅴ〜Ⅷ章）",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "ICD-10で精神疾患が分類される章はどれか。",
+   "choices": [
+    "第Ⅰ章（A00-B99）",
+    "第Ⅴ章（F00-F99）",
+    "第Ⅹ章（J00-J99）",
+    "第ⅩⅤ章（O00-O99）"
+   ],
+   "answer": 1,
+   "explanation": {
+    "correct": "精神及び行動の障害は第Ⅴ章（F00-F99）に分類される。たとえばF00*はアルツハイマー＜Alzheimer＞病の認知症（G30.-†）、F20は統合失調症である。",
+    "choiceNotes": [
+     "第Ⅰ章（A00-B99）は感染症及び寄生虫症。",
+     null,
+     "第Ⅹ章（J00-J99）は呼吸器系の疾患。",
+     "第ⅩⅤ章（O00-O99）は妊娠，分娩及び産じょく＜褥＞。"
+    ],
+    "point": "第Ⅴ章＝精神及び行動の障害（F00-F99）。F00-F09 症状性を含む器質性精神障害、F10-F19 精神作用物質使用による障害、F20-F29 統合失調症，統合失調症型障害及び妄想性障害など。"
+   },
+   "sources": [
+    {
+     "ref": "icd:naiyou05",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第5章 精神及び行動の障害（F00-F99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou05.pdf",
+     "locator": "第Ⅴ章 章タイトル",
+     "quote": "第Ⅴ章 精神及び行動の障害（F00－F99） Mental and behavioural disorders"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "origin": {
+    "batch": "L10",
+    "key": "lg-10-13",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（ICD-10専門）で修正",
+     "修正後の再監査は未実施",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L10（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L10a（ICD-10専門）",
+     "reauditor": null
+    },
+    "log": "bank/audit/legacy-L10a.audit.json#lg-10-13",
+    "notes": "icd:naiyou05 章タイトル、icd.mjs chapter 5（中間分類）、code F00（F00* アルツハイマー病の認知症（G30.-†））・F20 で確認。"
+   }
+  },
+  {
+   "id": "lg-10-20",
+   "legacy": {
+    "key": "10_20",
+    "chapter": 10,
+    "chapterName": "国際統計分類I（ICD総論・コーディング実践）",
+    "index": 20,
+    "hash": "a2046a038cf9376c"
+   },
+   "subject": "S12",
+   "subtopic": "妊娠・分娩・産じょく（第ⅩⅤ章）",
+   "format": "icd",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "ICD-10（2013年版）で、最小限の介助を伴う又は介助を伴わない単胎の自然分娩（完全な正常例における分娩を含む）を分類する3桁分類項目はどれか。",
+   "choices": [
+    "O81",
+    "O82",
+    "Z37",
+    "Z38",
+    "O80"
+   ],
+   "answer": 4,
+   "explanation": {
+    "correct": "O80「単胎自然分娩」には、最小限の介助を伴う症例又は介助を伴わない症例（会陰切開の有無にかかわらない）及び完全な正常例における分娩が包含される。",
+    "choiceNotes": [
+     "O81は鉗子分娩及び吸引分娩による単胎分娩である。",
+     "O82は帝王切開による単胎分娩である。",
+     "Z37「分娩の結果」は母の診療録に記載された分娩の結果（単胎出生など）を分類するための追加コードである。",
+     "Z38「出生児，出生の場所による」は出生した児（例：単胎児，院内出生）を分類する項目である。",
+     null
+    ],
+    "point": "O80＝単胎自然分娩、O81＝鉗子・吸引分娩、O82＝帝王切開。Z37（分娩の結果）は母の記録の追加コード。"
+   },
+   "sources": [
+    {
+     "ref": "icd:naiyou15",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第15章 妊娠，分娩及び産じょく＜褥＞（O00-O99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou15.pdf",
+     "locator": "O80",
+     "quote": "最小限の介助を伴う症例又は介助を伴わない症例， 会陰切開の有無にかかわらない"
+    },
+    {
+     "ref": "icd:naiyou15",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第15章 妊娠，分娩及び産じょく＜褥＞（O00-O99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou15.pdf",
+     "locator": "O82",
+     "quote": "Ｏ82      帝王切開による単胎分娩"
+    },
+    {
+     "ref": "icd:naiyou21",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第21章 健康状態に影響を及ぼす要因及び保健サービスの利用（Z00-Z99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou21.pdf",
+     "locator": "Z37 注",
+     "quote": "注：本項目は母の診療録に記載された分娩の結果を分類するための追加コードとして使用するものである。"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "origin": {
+    "batch": "L10",
+    "key": "lg-10-20",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（ICD-10専門）で修正",
+     "修正後の再監査は未実施",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L10（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L10b（ICD-10専門）",
+     "reauditor": null
+    },
+    "log": "bank/audit/legacy-L10b.audit.json#lg-10-20",
+    "notes": "icd:naiyou15 O80（単胎自然分娩・包含）、O81、O82、icd:naiyou21 Z37（注）・Z38 で確認。tools/icd.mjs で各コードの存在を確認。"
+   }
+  },
+  {
+   "id": "lg-10-21",
+   "legacy": {
+    "key": "10_21",
+    "chapter": 10,
+    "chapterName": "国際統計分類I（ICD総論・コーディング実践）",
+    "index": 21,
+    "hash": "f35501089d7d7fe0"
+   },
+   "subject": "S12",
+   "subtopic": "外因（第ⅩⅩ章）",
+   "format": "icd",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "ICD-10（2013年版）第ⅩⅩ章「傷病及び死亡の外因」で、Y40－Y59に分類されるのはどれか。",
+   "choices": [
+    "治療上の使用における薬物の有害作用",
+    "交通事故により受傷した歩行者・乗員等の外因",
+    "同一平面上での転倒や建物等からの転落の外因",
+    "手段を問わない故意の自傷及び自殺の外因"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "Y40－Y59は「治療上の使用により有害作用を引き起こした薬物，薬剤及び生物学的製剤」で、適正な薬物が適正に投与された場合の有害作用の外因を分類する。投与技術上の不慮の事故はY60－Y69に分類され、ここから除外される。",
+    "choiceNotes": [
+     null,
+     "交通事故はV01－V99である。",
+     "転倒・転落はW00－W19である。",
+     "故意の自傷及び自殺はX60－X84である。"
+    ],
+    "point": "V01－V99交通事故、W00－W19転倒・転落、X60－X84故意の自傷及び自殺、Y40－Y59治療上の使用により有害作用を引き起こした薬物等。"
+   },
+   "sources": [
+    {
+     "ref": "icd:naiyou20",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第20章 傷病及び死亡の外因（V01-Y98）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou20.pdf",
+     "locator": "章の中間分類一覧",
+     "quote": "Ｙ40－Ｙ59   治療上の使用により有害作用を引き起こした薬物， 薬剤及び生物学的製剤"
+    },
+    {
+     "ref": "icd:naiyou20",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第20章 傷病及び死亡の外因（V01-Y98）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou20.pdf",
+     "locator": "章の中間分類一覧",
+     "quote": "Ｘ60－Ｘ84   故意の自傷及び自殺"
+    },
+    {
+     "ref": "icd:naiyou20",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第20章 傷病及び死亡の外因（V01-Y98）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou20.pdf",
+     "locator": "Y40-Y59 除外",
+     "quote": "内科的及び外科的処置における薬物， 薬剤及び生物学的製剤の投与技術上の不慮の事故（Ｙ60－Ｙ69）"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "origin": {
+    "batch": "L10",
+    "key": "lg-10-21",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（ICD-10専門）で修正",
+     "修正後の再監査は未実施",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L10（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L10b（ICD-10専門）",
+     "reauditor": null
+    },
+    "log": "bank/audit/legacy-L10b.audit.json#lg-10-21",
+    "notes": "icd:naiyou20 章冒頭の中間分類一覧（V01-V99、W00-W19、X60-X84、Y40-Y59）とY40-Y59の注・除外、tools/icd.mjs で確認。キーは正しい。"
+   }
+  }
+ ]
+}

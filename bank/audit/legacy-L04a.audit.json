@@ -1,0 +1,940 @@
+{
+ "verdicts": [
+  {
+   "id": "lg-04-00",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "MedlinePlus App.B: MI=Myocardial infarction。MSD 急性心筋梗塞の定義・silent myocardial infarction=無症候性心筋梗塞で訳語確認。",
+   "question": {
+    "id": "lg-04-00",
+    "legacy": {
+     "key": "4_0",
+     "chapter": 4,
+     "chapterName": "医学用語・医学略語",
+     "index": 0,
+     "hash": "025195675c91fc6f"
+    },
+    "subject": "B12",
+    "subtopic": "医学略語",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "MIの正式名称はどれか。",
+    "choices": [
+     "Myocardial infarction（心筋梗塞）",
+     "Mitral insufficiency（僧帽弁閉鎖不全）",
+     "Multiple infection（多発感染）",
+     "Medical indication（医学的適応）"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "MIはMyocardial infarction（心筋梗塞）の略語である。急性心筋梗塞は、冠動脈の急性閉塞により心筋壊死が引き起こされる疾患である。",
+     "choiceNotes": [
+      null,
+      "Mitral insufficiency（僧帽弁閉鎖不全）はMIの正式名称ではない。略語としてのMIはMyocardial infarctionを指す。",
+      "Multiple infection（多発感染）はMIの正式名称ではない。",
+      "Medical indication（医学的適応）はMIの正式名称ではない。"
+     ],
+     "point": "MI＝Myocardial infarction＝心筋梗塞。冠動脈の急性閉塞による心筋壊死。"
+    },
+    "sources": [
+     {
+      "ref": "x-legacy-L04a:medlineplus-appendixb",
+      "title": "MedlinePlus Appendix B: Some Common Abbreviations",
+      "url": "https://medlineplus.gov/appendixb.html",
+      "locator": "Appendix B「MI」",
+      "quote": "MI Myocardial infarction"
+     },
+     {
+      "ref": "x-legacy-L04a:msd-ja-ami",
+      "title": "MSDマニュアル プロフェッショナル版「急性心筋梗塞」",
+      "url": "https://www.msdmanuals.com/ja-jp/professional/04-心血管疾患/冠動脈疾患/急性心筋梗塞",
+      "locator": "急性心筋梗塞 冒頭（定義）",
+      "quote": "急性心筋梗塞は，冠動脈の急性閉塞により心筋壊死が引き起こされる疾患である。"
+     },
+     {
+      "ref": "x-legacy-L04a:msd-ja-ami",
+      "title": "MSDマニュアル プロフェッショナル版「急性心筋梗塞」",
+      "url": "https://www.msdmanuals.com/ja-jp/professional/04-心血管疾患/冠動脈疾患/急性心筋梗塞",
+      "locator": "症状と徴候（無症候性心筋梗塞）",
+      "quote": "無症候性心筋梗塞（silent myocardial infarction）"
+     }
+    ],
+    "asOf": "MedlinePlus Appendix B（2026-11取得）・MSDマニュアル プロフェッショナル版「急性心筋梗塞」（2024年7月更新）"
+   },
+   "detail": "正解選択肢だけに和訳が付き語形で正答が分かった。根拠のない「AMI」「MR」の記述を削除し、各選択肢に和訳を付けた。"
+  },
+  {
+   "id": "lg-04-01",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "MedlinePlus App.B: COPD=Chronic obstructive pulmonary disease。MSD COPD 定義（タバコ煙に対する炎症反応による気流制限）・病因（喫煙が第一の危険因子）。",
+   "question": {
+    "id": "lg-04-01",
+    "legacy": {
+     "key": "4_1",
+     "chapter": 4,
+     "chapterName": "医学用語・医学略語",
+     "index": 1,
+     "hash": "bfa8b947c2a0e042"
+    },
+    "subject": "B12",
+    "subtopic": "医学略語",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "COPDの正式名称はどれか。",
+    "choices": [
+     "Chronic Obstructive Pulmonary Disease",
+     "Congenital Obstructive Pulmonary Disorder",
+     "Chronic Organic Peripheral Disease",
+     "Cardiac Output Pressure Deficiency"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "COPDはChronic Obstructive Pulmonary Disease（慢性閉塞性肺疾患）の略語である。毒素の吸入（しばしばタバコ煙）に対する炎症反応によって引き起こされる気流制限である。",
+     "choiceNotes": [
+      null,
+      "COPDのCはChronic（慢性）であり、Congenital（先天性）ではない。DもDisorderではなくDisease。",
+      "COPDのOPはObstructive Pulmonary（閉塞性・肺）であり、Organic Peripheral（器質性・末梢）ではない。",
+      "COPDは肺疾患（Pulmonary Disease）の略語であり、心臓（Cardiac）に関する用語ではない。"
+     ],
+     "point": "COPD＝慢性閉塞性肺疾患。大半の国で喫煙が第一の危険因子。"
+    },
+    "sources": [
+     {
+      "ref": "x-legacy-L04a:medlineplus-appendixb",
+      "title": "MedlinePlus Appendix B: Some Common Abbreviations",
+      "url": "https://medlineplus.gov/appendixb.html",
+      "locator": "Appendix B「COPD」",
+      "quote": "COPD Chronic obstructive pulmonary disease"
+     },
+     {
+      "ref": "x-legacy-L04a:msd-ja-copd",
+      "title": "MSDマニュアル プロフェッショナル版「慢性閉塞性肺疾患（COPD）」",
+      "url": "https://www.msdmanuals.com/ja-jp/professional/05-肺疾患/慢性閉塞性肺疾患および関連疾患/慢性閉塞性肺疾患-copd",
+      "locator": "COPD 冒頭（定義）",
+      "quote": "慢性閉塞性肺疾患（COPD）は，毒素の吸入（しばしばタバコ煙）に対する炎症反応によって引き起こされる気流制限である。"
+     },
+     {
+      "ref": "x-legacy-L04a:msd-ja-copd",
+      "title": "MSDマニュアル プロフェッショナル版「慢性閉塞性肺疾患（COPD）」",
+      "url": "https://www.msdmanuals.com/ja-jp/professional/05-肺疾患/慢性閉塞性肺疾患および関連疾患/慢性閉塞性肺疾患-copd",
+      "locator": "病因",
+      "quote": "大半の国において喫煙が第一の危険因子となっている"
+     }
+    ],
+    "asOf": "MedlinePlus Appendix B（2026-11取得）・MSDマニュアル プロフェッショナル版「慢性閉塞性肺疾患（COPD）」（2024年9月更新）"
+   },
+   "detail": "「先天性ではなく後天性」「喫煙が最大原因」は根拠資料の表現と一致しない（α1-アンチトリプシン欠乏など遺伝的要因もある）。誤答の説明を略語の構成要素の違いに改め、喫煙は「第一の危険因子」とした。"
+  },
+  {
+   "id": "lg-04-02",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "神戸大学病院 診療録記載マニュアル SOAPの項: S=Subjective Data（主訴・症状経過等の主観的情報）、O=Objective Data、A=Assessment、P=Plan。院内マニュアルだが定義は一般的なPOSの整理。",
+   "question": {
+    "id": "lg-04-02",
+    "legacy": {
+     "key": "4_2",
+     "chapter": 4,
+     "chapterName": "医学用語・医学略語",
+     "index": 2,
+     "hash": "cc345a1f6c2712cd"
+    },
+    "subject": "S09",
+    "subtopic": "診療記録の構成とPOS",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "SOAP形式の「S」の意味はどれか。",
+    "choices": [
+     "Subjective（主観的情報）",
+     "Structure（構造）",
+     "Surgery（手術）",
+     "Symptom（症状）"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "SOAPのSはSubjective Data（主観的情報）で、患者の主訴、受診目的、症状経過、既往歴などを記載する。",
+     "choiceNotes": [
+      null,
+      "Structure（構造）はSOAPの要素ではない。",
+      "Surgery（手術）はSOAPの要素ではない。",
+      "症状経過はSに記載する情報の一つだが、SはSubjective（主観的情報）の頭文字であり、Symptomではない。"
+     ],
+     "point": "SOAP＝S（Subjective：主観的情報）・O（Objective：客観的情報）・A（Assessment：評価）・P（Plan：計画）。"
+    },
+    "sources": [
+     {
+      "ref": "him:kobeu-shinryoroku-manual-2023",
+      "title": "診療録記載マニュアル（2023年7月改訂）",
+      "url": "https://www.med.kobe-u.ac.jp/gakumu/gakunai/ccs3/1file/shinryoroku_manual1.pdf",
+      "locator": "POS・SOAPの項",
+      "quote": "ＳＯＡＰとは、ＰＯＳの考え方によって得られたデータを内容ごとに分類・整理した上 で、下記のようにＳ、Ｏ、Ａ、Ｐの４つの項目に分けて考える分析手法である。"
+     },
+     {
+      "ref": "him:kobeu-shinryoroku-manual-2023",
+      "title": "診療録記載マニュアル（2023年7月改訂）",
+      "url": "https://www.med.kobe-u.ac.jp/gakumu/gakunai/ccs3/1file/shinryoroku_manual1.pdf",
+      "locator": "SOAPの項（S）",
+      "quote": "Ｓ（Subjective Data）：患者の主訴、受診目的、症状経過、既往歴"
+     },
+     {
+      "ref": "him:kobeu-shinryoroku-manual-2023",
+      "title": "診療録記載マニュアル（2023年7月改訂）",
+      "url": "https://www.med.kobe-u.ac.jp/gakumu/gakunai/ccs3/1file/shinryoroku_manual1.pdf",
+      "locator": "SOAPの項（O）",
+      "quote": "Ｏ（Objective Data）：医師の診察所見（理学的、局所的）、検査結果等の客観的情報"
+     }
+    ],
+    "asOf": "神戸大学医学部附属病院 診療録記載マニュアル（2023年7月改訂）"
+   },
+   "detail": "正解選択肢だけに和訳が付き語形で正答が分かった。全選択肢に和訳を付け、Symptomの説明（症状経過はSに書く情報の一つ）を補った。科目をS09へ再分類。"
+  },
+  {
+   "id": "lg-04-03",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "MedlinePlus Vital signs: heartbeat rate, breathing rate, temperature, blood pressure。血液型は含まれない。",
+   "question": {
+    "id": "lg-04-03",
+    "legacy": {
+     "key": "4_3",
+     "chapter": 4,
+     "chapterName": "医学用語・医学略語",
+     "index": 3,
+     "hash": "4620e9da1238bfed"
+    },
+    "subject": "BCL",
+    "subtopic": "臨床医学総論",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "negative",
+    "question": "バイタルサインに含まれないのはどれか。",
+    "choices": [
+     "体温",
+     "血圧",
+     "脈拍",
+     "血液型"
+    ],
+    "answer": 3,
+    "explanation": {
+     "correct": "バイタルサインは、心拍数（脈拍）・呼吸数・体温・血圧など、生命維持に不可欠な身体機能の状態を反映する指標である。血液型は身体機能の状態を測る指標ではなく、バイタルサインに含まれない。",
+     "choiceNotes": [
+      "体温はバイタルサインの基本項目である。",
+      "血圧はバイタルサインの基本項目である。",
+      "脈拍（心拍数）はバイタルサインの基本項目である。",
+      null
+     ],
+     "point": "バイタルサイン＝体温・脈拍（心拍数）・呼吸数・血圧。"
+    },
+    "sources": [
+     {
+      "ref": "x-legacy-L04a:medlineplus-vitalsigns",
+      "title": "Vital signs (MedlinePlus Medical Encyclopedia)",
+      "url": "https://medlineplus.gov/ency/article/002341.htm",
+      "locator": "Vital signs 本文冒頭",
+      "quote": "Vital signs reflect essential body functions, including your heartbeat rate, breathing rate, temperature, and blood pressure."
+     }
+    ],
+    "asOf": "MedlinePlus Medical Encyclopedia「Vital signs」（Review Date 2025-01-01）"
+   },
+   "detail": "説明・要点でSpO2をバイタルサインの基本項目として列挙していたが、根拠資料の列挙（心拍数・呼吸数・体温・血圧）にない。SpO2を削除し、血液型の説明を根拠のある表現に改めた。"
+  },
+  {
+   "id": "lg-04-04",
+   "verdict": "pass",
+   "contentChanged": false,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "MedlinePlus App.A: -ectomy=cut out, removal（切除）、-itis=inflammation、-plasty=surgical reconstruction（形成）、-scope/-scopy=examine。gastr-=stomach（例のgastrectomy）。",
+   "question": {
+    "id": "lg-04-04",
+    "legacy": {
+     "key": "4_4",
+     "chapter": 4,
+     "chapterName": "医学用語・医学略語",
+     "index": 4,
+     "hash": "b5bfb5a9a92d15c8"
+    },
+    "subject": "B12",
+    "subtopic": "医学用語",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "「-ectomy」の意味はどれか。",
+    "choices": [
+     "切除術",
+     "炎症",
+     "検査",
+     "形成術"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "-ectomy＝切除術。例：gastrectomy＝胃切除術。",
+     "choiceNotes": [
+      null,
+      "炎症は-itis。",
+      "検査は-scopy。",
+      "形成術は-plasty。"
+     ],
+     "point": "-ectomy＝切除、-itis＝炎症、-scopy＝鏡視、-plasty＝形成。"
+    },
+    "sources": [
+     {
+      "ref": "x-legacy-L04a:medlineplus-appendixa",
+      "title": "MedlinePlus Appendix A: Word Parts and What They Mean",
+      "url": "https://medlineplus.gov/appendixa.html",
+      "locator": "Appendix A Procedures, Diagnosis and Surgery「-ectomy」",
+      "quote": "-ectomy cut out, removal"
+     },
+     {
+      "ref": "x-legacy-L04a:medlineplus-appendixa",
+      "title": "MedlinePlus Appendix A: Word Parts and What They Mean",
+      "url": "https://medlineplus.gov/appendixa.html",
+      "locator": "Appendix A Body Parts and Disorders「-itis」",
+      "quote": "-ites, -itis inflammation"
+     },
+     {
+      "ref": "x-legacy-L04a:medlineplus-appendixa",
+      "title": "MedlinePlus Appendix A: Word Parts and What They Mean",
+      "url": "https://medlineplus.gov/appendixa.html",
+      "locator": "Appendix A Procedures「-plasty」「-scopy」",
+      "quote": "-plasty surgical reconstruction radio- radiation, radius -rrhaphy suture -scope, -scopy examine, for examining"
+     }
+    ],
+    "asOf": "MedlinePlus Appendix A/B（2026-11取得）"
+   }
+  },
+  {
+   "id": "lg-04-05",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "MedlinePlus App.B: CABG=Coronary artery bypass graft。MSD CABG 見出し・従来法（左内胸動脈・伏在静脈をグラフトに使用）。",
+   "question": {
+    "id": "lg-04-05",
+    "legacy": {
+     "key": "4_5",
+     "chapter": 4,
+     "chapterName": "医学用語・医学略語",
+     "index": 5,
+     "hash": "a66a306e385248e6"
+    },
+    "subject": "B12",
+    "subtopic": "医学略語",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "CABGの意味はどれか。",
+    "choices": [
+     "冠動脈バイパス術",
+     "心臓バイパスカテーテル",
+     "中心動脈血ガス",
+     "慢性腹部腸管ガス"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "CABGはCoronary Artery Bypass Graft（冠動脈バイパス術）の略語である。グラフトとして左内胸動脈や下肢の伏在静脈などを用いる外科手術である。",
+     "choiceNotes": [
+      null,
+      "CABGはカテーテルの名称ではなく、グラフトを用いる外科手術（冠動脈バイパス術）を指す。",
+      "CABGのCはCoronary（冠動脈）、GはGraft（グラフト）であり、血液ガスの略語ではない。",
+      "CABGのCはCoronary（冠動脈）であり、腹部・腸管ガスとは無関係である。"
+     ],
+     "point": "CABG＝Coronary Artery Bypass Graft＝冠動脈バイパス術。"
+    },
+    "sources": [
+     {
+      "ref": "x-legacy-L04a:medlineplus-appendixb",
+      "title": "MedlinePlus Appendix B: Some Common Abbreviations",
+      "url": "https://medlineplus.gov/appendixb.html",
+      "locator": "Appendix B「CABG」",
+      "quote": "CABG Coronary artery bypass graft"
+     },
+     {
+      "ref": "x-legacy-L04a:msd-ja-cabg",
+      "title": "MSDマニュアル プロフェッショナル版「冠動脈バイパス術（CABG）」",
+      "url": "https://www.msdmanuals.com/ja-jp/professional/04-心血管疾患/冠動脈疾患/冠動脈バイパス術-cabg",
+      "locator": "冠動脈バイパス術 見出し",
+      "quote": "冠動脈バイパス術（CABG）"
+     },
+     {
+      "ref": "x-legacy-L04a:msd-ja-cabg",
+      "title": "MSDマニュアル プロフェッショナル版「冠動脈バイパス術（CABG）」",
+      "url": "https://www.msdmanuals.com/ja-jp/professional/04-心血管疾患/冠動脈疾患/冠動脈バイパス術-cabg",
+      "locator": "従来法によるCABG",
+      "quote": "左前下行枝には，典型的には左内胸動脈を有茎グラフトとして使用する。"
+     }
+    ],
+    "asOf": "MedlinePlus Appendix B（2026-11取得）・MSDマニュアル プロフェッショナル版「冠動脈バイパス術（CABG）」（2024年2月更新）"
+   },
+   "detail": "読み方「キャベジ」とPCIの記述に根拠がなく、誤答の説明が「存在しない」等で不十分だった。説明を根拠のある内容に改めた。"
+  },
+  {
+   "id": "lg-04-06",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "MSD 糖尿病 診断: HbA1cは糖化ヘモグロビンで過去3カ月間の平均血糖値と関係、診断基準に用いる。lg-04-23（別バッチ）と内容が重複するため、どちらか一方のみ採用を推奨。",
+   "question": {
+    "id": "lg-04-06",
+    "legacy": {
+     "key": "4_6",
+     "chapter": 4,
+     "chapterName": "医学用語・医学略語",
+     "index": 6,
+     "hash": "c0ca601e1fc8a65d"
+    },
+    "subject": "BCL",
+    "subtopic": "血液・代謝・内分泌",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "HbA1cが示す内容はどれか。",
+    "choices": [
+     "過去の一定期間の平均的な血糖値を反映する指標",
+     "採血した時点の血糖値そのものを示す指標",
+     "肝臓の機能障害の程度を反映する指標",
+     "腎臓の糸球体ろ過量を推定する指標"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "HbA1cは糖に化学的に結合したヘモグロビン（糖化ヘモグロビン）の一種で、血糖の増加に伴って増加し、過去の一定期間（MSDマニュアルでは過去3カ月間）の平均血糖値と関係する。糖尿病の診断基準にも用いられる。",
+     "choiceNotes": [
+      null,
+      "HbA1cは血糖そのものではなく糖化ヘモグロビンの割合で、採血前の一定期間の平均的な血糖を反映する。",
+      "HbA1cは血糖の状態を反映する指標であり、肝機能の指標ではない。",
+      "HbA1cは血糖の状態を反映する指標であり、腎機能（糸球体ろ過量）の指標ではない。"
+     ],
+     "point": "HbA1c＝糖化ヘモグロビン。過去の一定期間の平均血糖を反映し、糖尿病の診断基準にも用いられる。"
+    },
+    "sources": [
+     {
+      "ref": "x-legacy-L04a:msd-ja-dm",
+      "title": "MSDマニュアル プロフェッショナル版「糖尿病」",
+      "url": "https://www.msdmanuals.com/ja-jp/professional/10-内分泌疾患と代謝性疾患/糖尿病と糖代謝異常症/糖尿病",
+      "locator": "糖尿病 > 診断 > HbA1c",
+      "quote": "HbA1Cは，糖に化学的に結合したヘモグロビンの一種であり，血糖の増加に伴って増加し，過去3カ月間の平均血糖値との関係が証明されている。"
+     },
+     {
+      "ref": "x-legacy-L04a:msd-ja-dm",
+      "title": "MSDマニュアル プロフェッショナル版「糖尿病」",
+      "url": "https://www.msdmanuals.com/ja-jp/professional/10-内分泌疾患と代謝性疾患/糖尿病と糖代謝異常症/糖尿病",
+      "locator": "糖尿病 > 診断 > HbA1c",
+      "quote": "現在の糖尿病の診断基準には，以下のHbA1C測定値がある"
+     }
+    ],
+    "asOf": "MSDマニュアル プロフェッショナル版「糖尿病」（2024年10月更新）"
+   },
+   "detail": "「過去1〜2ヶ月」はMSD（過去3カ月間）と期間が一致せず資料により揺れるため、期間を断定しない表現に改めた。「即時の血糖値はFPG」は誤り（FPGは空腹時血糖）、「正常4.6〜6.2%」、AST・ALT等の記述は根拠なし。"
+  },
+  {
+   "id": "lg-04-07",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "MedlinePlus CRP: 肝臓で産生、炎症で上昇する急性期反応物質（acute phase reactants）、非特異的な炎症の検査。MSD 糖尿病: 平均血糖を反映するのはHbA1c。",
+   "question": {
+    "id": "lg-04-07",
+    "legacy": {
+     "key": "4_7",
+     "chapter": 4,
+     "chapterName": "医学用語・医学略語",
+     "index": 7,
+     "hash": "c8a8120b4e8cd76d"
+    },
+    "subject": "BCL",
+    "subtopic": "臨床医学総論",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "CRPが示す内容はどれか。",
+    "choices": [
+     "炎症の有無や程度を反映する急性期反応物質",
+     "過去の一定期間の平均血糖を反映する指標",
+     "血液の凝固する能力を評価する指標",
+     "肝臓の解毒機能を評価する指標"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "CRP（C-reactive protein：C反応性蛋白）は肝臓で産生され、体内に炎症があると上昇する急性期反応物質の一つである。炎症の有無を調べる一般的な検査だが、炎症の部位や原因は特定できない（非特異的）。",
+     "choiceNotes": [
+      null,
+      "過去の一定期間の平均血糖を反映するのはHbA1cであり、CRPは炎症で上昇する蛋白である。",
+      "CRPは炎症で上昇する急性期反応物質であり、血液凝固能を測る指標ではない。",
+      "CRPは肝臓で産生されるが、肝臓の解毒機能を示す指標ではなく、炎症に反応して上昇する。"
+     ],
+     "point": "CRP＝C反応性蛋白。炎症で上昇する急性期反応物質（非特異的な炎症マーカー）。"
+    },
+    "sources": [
+     {
+      "ref": "x-legacy-L04a:medlineplus-crp",
+      "title": "C-reactive protein (MedlinePlus Medical Encyclopedia)",
+      "url": "https://medlineplus.gov/ency/article/003356.htm",
+      "locator": "Information",
+      "quote": "C-reactive protein (CRP) is produced by the liver. The level of CRP rises when there is inflammation in the body."
+     },
+     {
+      "ref": "x-legacy-L04a:msd-ja-dm",
+      "title": "MSDマニュアル プロフェッショナル版「糖尿病」",
+      "url": "https://www.msdmanuals.com/ja-jp/professional/10-内分泌疾患と代謝性疾患/糖尿病と糖代謝異常症/糖尿病",
+      "locator": "糖尿病 > 診断 > HbA1c",
+      "quote": "HbA1Cは，糖に化学的に結合したヘモグロビンの一種であり，血糖の増加に伴って増加し，過去3カ月間の平均血糖値との関係が証明されている。"
+     },
+     {
+      "ref": "x-legacy-L04a:medlineplus-crp",
+      "title": "C-reactive protein (MedlinePlus Medical Encyclopedia)",
+      "url": "https://medlineplus.gov/ency/article/003356.htm",
+      "locator": "Why the Test is Performed",
+      "quote": "The CRP test is a general test to check for inflammation in the body. It is not a specific test."
+     }
+    ],
+    "asOf": "MedlinePlus Medical Encyclopedia「C-reactive protein」（Review Date 2025-01-28）"
+   },
+   "detail": "「正常0.3mg/dL以下」（基準値は施設・測定法で異なる）、「凝固能はPT・APTT」「解毒機能はICG試験」は根拠がなく、ICG試験を解毒機能とするのも不正確。誤答の説明をCRPの性質に基づく内容に改めた。"
+  },
+  {
+   "id": "lg-04-08",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ISMP 2024: Per os=By mouth, orally（PO推奨）、SC/SQ=Subcutaneous。MedlinePlus App.B: IM=Intramuscular、IV=Intravenous。",
+   "question": {
+    "id": "lg-04-08",
+    "legacy": {
+     "key": "4_8",
+     "chapter": 4,
+     "chapterName": "医学用語・医学略語",
+     "index": 8,
+     "hash": "4c7a7796a548eb37"
+    },
+    "subject": "B12",
+    "subtopic": "医学略語",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "「p.o.」の意味はどれか。",
+    "choices": [
+     "経口投与",
+     "静脈注射",
+     "筋肉注射",
+     "皮下注射"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "p.o.はper os（by mouth：経口）の略で、経口投与を表す。なお per os と書くと os が左眼（OS）と誤読されることがあるため、PO または by mouth と書くことが推奨されている。",
+     "choiceNotes": [
+      null,
+      "静脈注射はi.v.（IV：Intravenous）。",
+      "筋肉注射はi.m.（IM：Intramuscular）。",
+      "皮下注射はs.c.（SC：Subcutaneous）。SCはSL（舌下）と誤読されやすく、SUBQ等の表記が推奨されている。"
+     ],
+     "point": "p.o.＝経口、i.v.＝静脈内、i.m.＝筋肉内、s.c.＝皮下。"
+    },
+    "sources": [
+     {
+      "ref": "x-legacy-L04a:ismp-error-prone-2024",
+      "title": "ISMP List of Error-Prone Abbreviations, Symbols, and Dose Designations (2024)",
+      "url": "https://online.ecri.org/hubfs/ISMP/Resources/ISMP_ErrorProneAbbreviation_List.pdf",
+      "locator": "Table 1「Per os」",
+      "quote": "Per os By mouth, orally The os mistaken as left eye Use PO, by mouth, or orally"
+     },
+     {
+      "ref": "x-legacy-L04a:ismp-error-prone-2024",
+      "title": "ISMP List of Error-Prone Abbreviations, Symbols, and Dose Designations (2024)",
+      "url": "https://online.ecri.org/hubfs/ISMP/Resources/ISMP_ErrorProneAbbreviation_List.pdf",
+      "locator": "Table 1「SC, SQ, sq, or sub q」",
+      "quote": "SC, SQ, sq, or sub q† Subcutaneous(ly)"
+     },
+     {
+      "ref": "x-legacy-L04a:medlineplus-appendixb",
+      "title": "MedlinePlus Appendix B: Some Common Abbreviations",
+      "url": "https://medlineplus.gov/appendixb.html",
+      "locator": "Appendix B「IM」「IV」",
+      "quote": "IM Intramuscular A type of injection IUD Intrauterine device A type of birth control for women IV Intravenous"
+     }
+    ],
+    "asOf": "ISMP List of Error-Prone Abbreviations（2024）・MedlinePlus Appendix B（2026-11取得）"
+   },
+   "detail": "「ラテン語由来」に根拠資料がない。説明を根拠に基づく内容にし、s.c.は誤読されやすい略語である旨を補った。"
+  },
+  {
+   "id": "lg-04-09",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "MedlinePlus App.B: MRSA=Methicillin-resistant Staphylococcus aureus。MSD ブドウ球菌感染症: MRSA=メチシリン耐性黄色ブドウ球菌、院内感染率の高い施設でのスクリーニング。",
+   "question": {
+    "id": "lg-04-09",
+    "legacy": {
+     "key": "4_9",
+     "chapter": 4,
+     "chapterName": "医学用語・医学略語",
+     "index": 9,
+     "hash": "b933f672d8500d44"
+    },
+    "subject": "B12",
+    "subtopic": "医学略語",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "MRSAの正式名称はどれか。",
+    "choices": [
+     "Methicillin-Resistant Staphylococcus Aureus",
+     "Multi-Resistant Streptococcus Aureus",
+     "Methicillin-Responsive Staphylococcus Aureus",
+     "Minimal Resistance Staphylococcus Aureus"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "MRSAはMethicillin-Resistant Staphylococcus Aureus（メチシリン耐性黄色ブドウ球菌）の略語である。院内感染率が高い医療施設では、入院患者に対してMRSAのスクリーニングが行われることがある。",
+     "choiceNotes": [
+      null,
+      "MRSAのMはMethicillin（メチシリン）、SはStaphylococcus（ブドウ球菌）であり、Multi-やStreptococcusではない。",
+      "MRSAのRはResistant（耐性）であり、Responsive（反応性）ではない。",
+      "MRSAのRはResistant（耐性）であり、Minimal Resistanceではない。"
+     ],
+     "point": "MRSA＝メチシリン耐性黄色ブドウ球菌（Methicillin-Resistant Staphylococcus Aureus）。"
+    },
+    "sources": [
+     {
+      "ref": "x-legacy-L04a:medlineplus-appendixb",
+      "title": "MedlinePlus Appendix B: Some Common Abbreviations",
+      "url": "https://medlineplus.gov/appendixb.html",
+      "locator": "Appendix B「MRSA」",
+      "quote": "MRSA Methicillin-resistant Staphylococcus aureus"
+     },
+     {
+      "ref": "x-legacy-L04a:msd-ja-staph",
+      "title": "MSDマニュアル プロフェッショナル版「ブドウ球菌感染症」",
+      "url": "https://www.msdmanuals.com/ja-jp/professional/13-感染性疾患/グラム陽性球菌/ブドウ球菌感染症",
+      "locator": "略語",
+      "quote": "MRSA = メチシリン耐性黄色ブドウ球菌（ Staphylococcus aureus ）。"
+     },
+     {
+      "ref": "x-legacy-L04a:msd-ja-staph",
+      "title": "MSDマニュアル プロフェッショナル版「ブドウ球菌感染症」",
+      "url": "https://www.msdmanuals.com/ja-jp/professional/13-感染性疾患/グラム陽性球菌/ブドウ球菌感染症",
+      "locator": "予防（医療施設におけるMRSAサーベイランス）",
+      "quote": "メチシリン耐性黄色ブドウ球菌（ S. aureus ）（MRSA）の院内感染率が高い一部の医療施設では，鼻腔拭い液検体による迅速診断により，入院患者に対してMRSAのスクリーニング"
+     }
+    ],
+    "asOf": "MedlinePlus Appendix B（2026-11取得）・MSDマニュアル プロフェッショナル版「ブドウ球菌感染症」（2024年6月更新）"
+   },
+   "detail": "「Streptococcusはレンサ球菌」「接触予防策が基本」は引用できる根拠資料がなく、正式名称の説明として不要。説明を略語の構成要素の違いに改めた。"
+  },
+  {
+   "id": "lg-04-10",
+   "verdict": "pass",
+   "contentChanged": false,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "MedlinePlus App.B: ERCP=Endoscopic retrograde cholangiopancreatography。MSD: 十二指腸下行部から内視鏡で胆管・膵管を造影（MSDの訳語は「胆道膵管造影」、「胆管膵管造影」も同義の訳）。",
+   "question": {
+    "id": "lg-04-10",
+    "legacy": {
+     "key": "4_10",
+     "chapter": 4,
+     "chapterName": "医学用語・医学略語",
+     "index": 10,
+     "hash": "45f6c879ea217e10"
+    },
+    "subject": "B12",
+    "subtopic": "医学略語",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "ERCPの意味はどれか。",
+    "choices": [
+     "内視鏡的逆行性胆管膵管造影",
+     "緊急蘇生心肺プロトコル",
+     "外部放射線化学療法",
+     "内視鏡的根治癌処置"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "ERCP＝Endoscopic Retrograde Cholangiopancreatography。十二指腸から胆管・膵管を造影。",
+     "choiceNotes": [
+      null,
+      "救急のプロトコルではない。",
+      "放射線治療ではない。",
+      "癌処置ではない。"
+     ],
+     "point": "ERCP＝内視鏡的逆行性胆管膵管造影。"
+    },
+    "sources": [
+     {
+      "ref": "x-legacy-L04a:medlineplus-appendixb",
+      "title": "MedlinePlus Appendix B: Some Common Abbreviations",
+      "url": "https://medlineplus.gov/appendixb.html",
+      "locator": "Appendix B「ERCP」",
+      "quote": "ERCP Endoscopic retrograde cholangiopancreatography"
+     },
+     {
+      "ref": "x-legacy-L04a:msd-ja-hbimaging",
+      "title": "MSDマニュアル プロフェッショナル版「肝臓および胆嚢の画像検査」",
+      "url": "https://www.msdmanuals.com/ja-jp/professional/02-肝胆道疾患/肝胆道疾患の検査/肝臓および胆嚢の画像検査",
+      "locator": "内視鏡的逆行性胆道膵管造影（ERCP）",
+      "quote": "ERCP では，十二指腸下行部を介した内視鏡検査とともに胆管および膵管の造影検査を行う。"
+     }
+    ],
+    "asOf": "MedlinePlus Appendix B（2026-11取得）・MSDマニュアル プロフェッショナル版「肝臓および胆嚢の画像検査」（2023年8月更新）"
+   }
+  },
+  {
+   "id": "lg-04-11",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "MedlinePlus App.B: PET=Positron emission tomography。MSD PET: 陽電子放出断層撮影、核医学検査、FDG（グルコースアナログ）、がんが使用の80％。",
+   "question": {
+    "id": "lg-04-11",
+    "legacy": {
+     "key": "4_11",
+     "chapter": 4,
+     "chapterName": "医学用語・医学略語",
+     "index": 11,
+     "hash": "dca88e36e47ae730"
+    },
+    "subject": "B12",
+    "subtopic": "医学略語",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "PETの正式名称はどれか。",
+    "choices": [
+     "Positron Emission Tomography",
+     "Percutaneous Endoscopic Treatment",
+     "Pulmonary Embolism Test",
+     "Peripheral Extremity Thermography"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "PETはPositron Emission Tomography（陽電子放出断層撮影）の略語で、核医学検査の一種である。グルコースのアナログであるFDGが最も頻用され、その取り込みはグルコース代謝率に比例する。臨床ではがんの病期分類・評価などに多く用いられる。",
+     "choiceNotes": [
+      null,
+      "PETは核医学検査（撮影）であり、経皮的内視鏡治療ではない。",
+      "PETは肺塞栓の検査名の略語ではない。",
+      "PETは陽電子を用いる断層撮影であり、四肢の温度記録（サーモグラフィ）ではない。"
+     ],
+     "point": "PET＝陽電子放出断層撮影。FDGの糖代謝を利用し、がんの評価に多く用いる。"
+    },
+    "sources": [
+     {
+      "ref": "x-legacy-L04a:medlineplus-appendixb",
+      "title": "MedlinePlus Appendix B: Some Common Abbreviations",
+      "url": "https://medlineplus.gov/appendixb.html",
+      "locator": "Appendix B「PET」",
+      "quote": "PET Positron emission tomography"
+     },
+     {
+      "ref": "x-legacy-L04a:msd-ja-pet",
+      "title": "MSDマニュアル プロフェッショナル版「PET」",
+      "url": "https://www.msdmanuals.com/ja-jp/professional/24-その他のトピック/放射線学的検査の原則/pet",
+      "locator": "PET 冒頭",
+      "quote": "PET（陽電子放出断層撮影）は， 核医学検査 の一種"
+     },
+     {
+      "ref": "x-legacy-L04a:msd-ja-pet",
+      "title": "MSDマニュアル プロフェッショナル版「PET」",
+      "url": "https://www.msdmanuals.com/ja-jp/professional/24-その他のトピック/放射線学的検査の原則/pet",
+      "locator": "PET 冒頭・PETの使用",
+      "quote": "FDGはグルコースのアナログであり，その取り込みはグルコース代謝率に比例する。"
+     }
+    ],
+    "asOf": "MedlinePlus Appendix B（2026-11取得）・MSDマニュアル プロフェッショナル版「PET」（2023年11月更新）"
+   },
+   "detail": "訳語「陽電子放射断層撮影」は引用資料（MSD：陽電子放出断層撮影）と一致しないため改めた。誤答の説明を核医学検査である点に基づく内容にした。"
+  },
+  {
+   "id": "lg-04-12",
+   "verdict": "reject",
+   "contentChanged": false,
+   "checks": {
+    "answer": true,
+    "distractors": false,
+    "stem": true,
+    "explanations": false,
+    "sources": false,
+    "asOf": true,
+    "domain": false
+   },
+   "notes": "キャッシュ内に s/o を定義する資料なし（DPCコーディングテキスト第7版 Ⅲ に「S/O 脳梗塞」の用例はあるが略語の定義はない）。Web検索でも公的資料の定義は見つからなかった。",
+   "reason": "unsupported",
+   "detail": "s/o（suspect of／suspicion of）、r/o、c/c は施設ごとに運用が異なる院内略語で、正式な定義を示す公的資料を確認できない。誤答「〜を除外（strike off）」も r/o の用法と紛らわしい。"
+  },
+  {
+   "id": "lg-04-13",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "MedlinePlus App.B: CPR=Cardiopulmonary resuscitation。MSD 成人CPR: 胸骨圧迫および人工呼吸による一次救命処置、100～120回/分、ACLS=二次救命処置。",
+   "question": {
+    "id": "lg-04-13",
+    "legacy": {
+     "key": "4_13",
+     "chapter": 4,
+     "chapterName": "医学用語・医学略語",
+     "index": 13,
+     "hash": "f0e9ef7d620ad50c"
+    },
+    "subject": "B12",
+    "subtopic": "医学略語",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "CPRの正式名称はどれか。",
+    "choices": [
+     "Cardiopulmonary Resuscitation",
+     "Cardiac Pressure Recovery",
+     "Central Pulse Regulation",
+     "Chest Pain Relief"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "CPRはCardiopulmonary Resuscitation（心肺蘇生）の略語である。胸骨圧迫および人工呼吸による一次救命処置が基本となる。",
+     "choiceNotes": [
+      null,
+      "CPRのPRはPulmonary Resuscitation（肺・蘇生）であり、Pressure Recovery（圧回復）ではない。",
+      "CPRのCはCardio（心）であり、Central Pulse Regulation（中枢の脈拍調整）ではない。",
+      "CPRは胸痛の緩和（Chest Pain Relief）ではなく、心停止に対する蘇生処置を指す。"
+     ],
+     "point": "CPR＝心肺蘇生。成人では胸骨圧迫を1分間に100〜120回の速さで行う。"
+    },
+    "sources": [
+     {
+      "ref": "x-legacy-L04a:medlineplus-appendixb",
+      "title": "MedlinePlus Appendix B: Some Common Abbreviations",
+      "url": "https://medlineplus.gov/appendixb.html",
+      "locator": "Appendix B「CPR」",
+      "quote": "CPR Cardiopulmonary resuscitation"
+     },
+     {
+      "ref": "x-legacy-L04a:msd-ja-cpr",
+      "title": "MSDマニュアル プロフェッショナル版「成人における心肺蘇生（CPR）」",
+      "url": "https://www.msdmanuals.com/ja-jp/professional/21-救命医療/心停止と心肺蘇生-cpr/成人における心肺蘇生-cpr",
+      "locator": "成人における心肺蘇生（CPR）",
+      "quote": "胸骨圧迫および人工呼吸による一次救命処置"
+     },
+     {
+      "ref": "x-legacy-L04a:msd-ja-cpr",
+      "title": "MSDマニュアル プロフェッショナル版「成人における心肺蘇生（CPR）」",
+      "url": "https://www.msdmanuals.com/ja-jp/professional/21-救命医療/心停止と心肺蘇生-cpr/成人における心肺蘇生-cpr",
+      "locator": "一次救命処置",
+      "quote": "1分間に100～120回の速さで胸骨圧迫を30回"
+     }
+    ],
+    "asOf": "MedlinePlus Appendix B（2026-11取得）・MSDマニュアル プロフェッショナル版「成人における心肺蘇生（CPR）」（2025年6月更新）"
+   },
+   "detail": "「BLS＝一次救命」は引用資料に略語の記載がなく、誤答の説明がすべて「正式名称ではない」で根拠を示していなかった。説明を改めた。"
+  }
+ ]
+}

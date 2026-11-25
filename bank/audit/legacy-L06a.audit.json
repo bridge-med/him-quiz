@@ -1,0 +1,1020 @@
+{
+ "verdicts": [
+  {
+   "id": "lg-06-00",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": false,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "naruhodo-chushin「平均値と中央値と最頻値の違い」、chirabari-shokyu「範囲」で確認。キーは正しい。",
+   "question": {
+    "id": "lg-06-00",
+    "legacy": {
+     "key": "6_0",
+     "chapter": 6,
+     "chapterName": "医療統計I（基礎統計学）",
+     "index": 0,
+     "hash": "8a3b8a47f496c15c"
+    },
+    "subject": "S06",
+    "subtopic": "代表値",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "外れ値の影響を最も受けにくい代表値はどれか。",
+    "choices": [
+     "中央値",
+     "平均値",
+     "合計値",
+     "範囲"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "中央値はデータを大きさの順に並べたとき真ん中にくる値であり，外れ値が加わっても多くの場合それほど影響を受けない。平均値は代表値の中で外れ値の影響を最も受けやすい。",
+     "choiceNotes": [
+      null,
+      "平均値は外れ値が加わると代表値の中で最も影響を受ける。",
+      "合計値はデータの総和であり，集団の中心的傾向を示す代表値ではない。",
+      "範囲（レンジ）は最大値と最小値の差で求める散らばりの指標であり，代表値ではない。"
+     ],
+     "point": "外れ値の影響を受けにくい代表値＝中央値（最頻値もほとんど影響を受けない）。平均値は外れ値の影響を受けやすい。"
+    },
+    "sources": [
+     {
+      "ref": "stats:naruhodo-chushin",
+      "title": "なるほど統計学園「中心的な傾向を捉える」",
+      "url": "https://www.stat.go.jp/naruhodo/5_tokucho/chushin.html",
+      "locator": "平均値と中央値と最頻値の違い",
+      "quote": "中央値は、データを並べてちょうど真ん中にくる値なので、外れ値が増えても、多くの場合はそれほど影響ありません。"
+     },
+     {
+      "ref": "stats:naruhodo-chushin",
+      "title": "なるほど統計学園「中心的な傾向を捉える」",
+      "url": "https://www.stat.go.jp/naruhodo/5_tokucho/chushin.html",
+      "locator": "平均値と中央値と最頻値の違い",
+      "quote": "あるデータに外れ値が加わった場合、平均値は三つの指標の中で最も影響を受けるデータといってもよいでしょう。"
+     },
+     {
+      "ref": "stats:naruhodo-chirabari-shokyu",
+      "title": "なるほど統計学園「データの散らばりを捉える」",
+      "url": "https://www.stat.go.jp/naruhodo/5_tokucho/chirabari.html",
+      "locator": "範囲、最大値、最小値",
+      "quote": "具体的には、変量の中の最大値と最小値の差で求めます。"
+     }
+    ],
+    "asOf": "総務省統計局 なるほど統計学園（2026-11取得）"
+   },
+   "detail": "解説の「在院日数の分析に適切」「在院日数には中央値を使用」は出典がなく、病院報告の平均在院日数（平均）と矛盾しうる誤解を招く記述のため削除。範囲の注を出典どおり「散らばりの指標で代表値ではない」に修正。"
+  },
+  {
+   "id": "lg-06-01",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": false,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "CDC Lesson2 Sec7で±1SD=68.3%、±2SD=95.5%、±3SD=99.7%、±1.96SD=95.0%を確認。キーは正しい。",
+   "question": {
+    "id": "lg-06-01",
+    "legacy": {
+     "key": "6_1",
+     "chapter": 6,
+     "chapterName": "医療統計I（基礎統計学）",
+     "index": 1,
+     "hash": "de563ff453ce8d60"
+    },
+    "subject": "S06",
+    "subtopic": "確率分布",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "正規分布で平均±1SDに含まれるデータは約何%か。",
+    "choices": [
+     "約68%",
+     "約95%",
+     "約99.7%",
+     "約50%"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "正規分布では，平均±1SDの範囲に約68%（68.3%），±2SDに約95%（95.5%），±3SDに約99.7%のデータが含まれる。",
+     "choiceNotes": [
+      null,
+      "約95%は平均±2SDの範囲（ちょうど95.0%になるのは±1.96SD）。",
+      "約99.7%は平均±3SDの範囲。",
+      "正規分布は平均を中心に左右対称なので，約50%は平均より上（または下）の片側に含まれる割合であり，±1SDの範囲の割合ではない。"
+     ],
+     "point": "±1SD≒68%，±2SD≒95%，±3SD≒99.7%（±1.96SDでちょうど95%）。"
+    },
+    "sources": [
+     {
+      "ref": "x-legacy-L06a:cdc-poe-l2s7",
+      "title": "Principles of Epidemiology in Public Health Practice, 3rd ed. Lesson 2 Section 7: Measures of Spread",
+      "url": "https://archive.cdc.gov/www_cdc_gov/csels/dsepd/ss1978/lesson2/section7.html",
+      "locator": "Lesson 2 Section 7: Normal distribution",
+      "quote": "approximately two-thirds (68.3%, to be exact) of the data fall within one standard deviation of either side of the mean"
+     },
+     {
+      "ref": "x-legacy-L06a:cdc-poe-l2s7",
+      "title": "Principles of Epidemiology in Public Health Practice, 3rd ed. Lesson 2 Section 7: Measures of Spread",
+      "url": "https://archive.cdc.gov/www_cdc_gov/csels/dsepd/ss1978/lesson2/section7.html",
+      "locator": "Lesson 2 Section 7: Normal distribution",
+      "quote": "95.5% of the data fall within two standard deviations of the mean; and 99.7% of the data fall within three standard deviations"
+     },
+     {
+      "ref": "x-legacy-L06a:cdc-poe-l2s7",
+      "title": "Principles of Epidemiology in Public Health Practice, 3rd ed. Lesson 2 Section 7: Measures of Spread",
+      "url": "https://archive.cdc.gov/www_cdc_gov/csels/dsepd/ss1978/lesson2/section7.html",
+      "locator": "Lesson 2 Section 7: Normal distribution",
+      "quote": "The mean is at the center, and data are equally distributed on either side of this mean."
+     }
+    ],
+    "asOf": "CDC Principles of Epidemiology 3rd ed.（2026-11取得）"
+   },
+   "detail": "選択肢「約50%」の注「50%は中央値の上下」が意味不明確のため、平均を境とした片側の割合である旨に修正。±2SDの正確な値（95.5%）と±1.96SD=95%を補足。"
+  },
+  {
+   "id": "lg-06-02",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": false,
+    "explanations": false,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "naruhodo-kentei（有意水準・P値・帰無仮説の棄却）、mhlw統計用語集（棄却できない＝同じではない）で確認。キーは正しい。",
+   "question": {
+    "id": "lg-06-02",
+    "legacy": {
+     "key": "6_2",
+     "chapter": 6,
+     "chapterName": "医療統計I（基礎統計学）",
+     "index": 2,
+     "hash": "55cacb32842d00f8"
+    },
+    "subject": "S06",
+    "subtopic": "仮説検定",
+    "format": "knowledge",
+    "difficulty": "standard",
+    "polarity": "positive",
+    "question": "2群の差について，有意水準を0.05として仮説検定を行ったところ，p値が0.05未満であった。この結果の解釈として正しいものはどれか。",
+    "choices": [
+     "帰無仮説を棄却し，統計学的に有意な差があると判断する",
+     "帰無仮説を採択し，差はないと判断する",
+     "臨床的にも必ず意味のある大きさの差があると判断する",
+     "対立仮説が100%正しいことが証明されたと判断する"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "p値が事前に定めた有意水準（0.05）より小さいときは，帰無仮説のもとで観察された結果が起こることは非常にまれであると判断し，帰無仮説を棄却して対立仮説を採択する（統計学的に有意な差あり）。",
+     "choiceNotes": [
+      null,
+      "p値が有意水準より小さいときは帰無仮説を棄却する。なお，棄却できなかった場合でも「差がない」と積極的にいえるわけではない。",
+      "p値は帰無仮説のもとで観察結果が起こる確率にもとづく判断であり，差が臨床的に意味のある大きさかどうかは示さない。",
+      "仮説検定は確率にもとづいて帰無仮説を棄却するかを判断する方法であり，対立仮説が100%正しいことを証明するものではない。"
+     ],
+     "point": "p値＜有意水準 → 帰無仮説を棄却（統計学的に有意）。統計学的有意≠臨床的に重要。"
+    },
+    "sources": [
+     {
+      "ref": "stats:naruhodo-kentei",
+      "title": "なるほど統計学園「統計的推定と統計的仮説検定」",
+      "url": "https://www.stat.go.jp/naruhodo/11_tokusei/kentei.html",
+      "locator": "②有意水準を決定する",
+      "quote": "有意水準とは、帰無仮説が間違っていると判断する（帰無仮説を棄却する）基準となる確率のことです。"
+     },
+     {
+      "ref": "stats:naruhodo-kentei",
+      "title": "なるほど統計学園「統計的推定と統計的仮説検定」",
+      "url": "https://www.stat.go.jp/naruhodo/11_tokusei/kentei.html",
+      "locator": "統計的仮説検定の手順（結論）",
+      "quote": "仮説検定では帰無仮説が棄却されれば、帰無仮説とは相反する対立仮説を採択することになります。"
+     },
+     {
+      "ref": "stats:mhlw-tokei-yougo-rr-or",
+      "title": "有効性・安全性に関する統計用語集",
+      "url": "https://www.mhlw.go.jp/www1/houdou/1106/h0602-3_c_15.html",
+      "locator": "信頼区間",
+      "quote": "積極的に否定することはできなくなり（同じ、ということではない）"
+     }
+    ],
+    "asOf": "総務省統計局 なるほど統計学園（2026-11取得）"
+   },
+   "detail": "旧問は有意水準を明示せず「p<0.05なら有意」を無条件の規則として扱っていたため、有意水準0.05を事前に定めた条件を問題文に追加。選択肢の文を完結させ、注を出典に基づく説明に修正。"
+  },
+  {
+   "id": "lg-06-03",
+   "verdict": "pass",
+   "contentChanged": false,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "MSD「感度，特異度，適中率」で感度・特異度・PPV・NPVの定義を確認（NPVも同節）。mhlw-kenshin-kando-tokuido の感度=A/(A+B)とも一致。解説も正しい。",
+   "question": {
+    "id": "lg-06-03",
+    "legacy": {
+     "key": "6_3",
+     "chapter": 6,
+     "chapterName": "医療統計I（基礎統計学）",
+     "index": 3,
+     "hash": "ef7718bbf09b034d"
+    },
+    "subject": "S06",
+    "subtopic": "スクリーニング指標",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "感度の定義はどれか。",
+    "choices": [
+     "疾患がある人で検査陽性の割合",
+     "疾患がない人で検査陰性の割合",
+     "検査陽性で実際に疾患ありの割合",
+     "検査陰性で実際に疾患なしの割合"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "感度＝真陽性÷（真陽性＋偽陰性）。疾患者を正しく陽性と判定する割合。",
+     "choiceNotes": [
+      null,
+      "それは特異度。",
+      "それは陽性的中率。",
+      "それは陰性的中率。"
+     ],
+     "point": "感度＝病気→陽性。特異度＝健康→陰性。セットで覚える。"
+    },
+    "sources": [
+     {
+      "ref": "x-legacy-L06a:msd-kensa",
+      "title": "MSDマニュアル プロフェッショナル版「医学的検査および検査結果の理解」",
+      "url": "https://www.msdmanuals.com/ja-jp/professional/24-その他のトピック/臨床的意思決定/医学的検査および検査結果の理解",
+      "locator": "感度，特異度，適中率",
+      "quote": "感度（sensitivity）とは，疾患のある患者において検査結果が陽性となる可能性である（真陽性率）。"
+     },
+     {
+      "ref": "x-legacy-L06a:msd-kensa",
+      "title": "MSDマニュアル プロフェッショナル版「医学的検査および検査結果の理解」",
+      "url": "https://www.msdmanuals.com/ja-jp/professional/24-その他のトピック/臨床的意思決定/医学的検査および検査結果の理解",
+      "locator": "感度，特異度，適中率",
+      "quote": "特異度（specificity）とは，疾患のない患者において検査結果が陰性となる可能性である（真陰性率）。"
+     },
+     {
+      "ref": "x-legacy-L06a:msd-kensa",
+      "title": "MSDマニュアル プロフェッショナル版「医学的検査および検査結果の理解」",
+      "url": "https://www.msdmanuals.com/ja-jp/professional/24-その他のトピック/臨床的意思決定/医学的検査および検査結果の理解",
+      "locator": "感度，特異度，適中率",
+      "quote": "陽性適中率（positive predictive value：PPV）とは，検査で陽性と判定された患者のうち実際に疾患を有している患者の割合である。"
+     }
+    ],
+    "asOf": "MSDマニュアル プロフェッショナル版（2024年11月最終更新）"
+   }
+  },
+  {
+   "id": "lg-06-04",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": false,
+    "stem": true,
+    "explanations": false,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "MSD「ROC曲線」「感度，特異度，適中率」で確認。キー（識別性能が高い）は正しい。",
+   "question": {
+    "id": "lg-06-04",
+    "legacy": {
+     "key": "6_4",
+     "chapter": 6,
+     "chapterName": "医療統計I（基礎統計学）",
+     "index": 4,
+     "hash": "71747b305102e424"
+    },
+    "subject": "S06",
+    "subtopic": "スクリーニング指標",
+    "format": "knowledge",
+    "difficulty": "standard",
+    "polarity": "positive",
+    "question": "ROC曲線の曲線下面積（AUC）が1.0に近い検査について，正しいものはどれか。",
+    "choices": [
+     "疾患のある人とない人を識別する性能が高い",
+     "疾患のある人とない人を識別する性能が低い",
+     "検査を受けた集団の有病率が高いことを示す",
+     "感度を上げるようにカットオフ値を変えると特異度も上がる"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "ROC曲線は，一連のカットオフ値ごとに偽陽性の割合（1−特異度）を横軸，真陽性の割合（感度）を縦軸にとって描く。ROC曲線下面積が大きい（1.0に近い）ほど，疾患のある人とない人をより良好に識別できる。",
+     "choiceNotes": [
+      null,
+      "ROC曲線下面積が大きいほど識別性能は高い。",
+      "ROC曲線は感度と特異度から描かれ，感度・特異度は一般に検査自体の特性で患者集団とは無関係とみなされる。有病率によって変わるのは適中率である。",
+      "カットオフ値を動かすと感度と特異度は反対方向に変化する（トレードオフ）。ROC曲線はこのトレードオフを表したものである。"
+     ],
+     "point": "ROC曲線＝縦軸 感度，横軸 1−特異度。曲線下面積が大きいほど識別能が高い。"
+    },
+    "sources": [
+     {
+      "ref": "x-legacy-L06a:msd-kensa",
+      "title": "MSDマニュアル プロフェッショナル版「医学的検査および検査結果の理解」",
+      "url": "https://www.msdmanuals.com/ja-jp/professional/24-その他のトピック/臨床的意思決定/医学的検査および検査結果の理解",
+      "locator": "ROC曲線",
+      "quote": "ROC曲線下面積が大きいほど，その検査は疾患のある患者と疾患のない患者をより良好に識別することができる。"
+     },
+     {
+      "ref": "x-legacy-L06a:msd-kensa",
+      "title": "MSDマニュアル プロフェッショナル版「医学的検査および検査結果の理解」",
+      "url": "https://www.msdmanuals.com/ja-jp/professional/24-その他のトピック/臨床的意思決定/医学的検査および検査結果の理解",
+      "locator": "感度，特異度，適中率",
+      "quote": "感度および特異度は一般に，検査自体の特性であり，患者集団とは無関係であるとみなされている。"
+     },
+     {
+      "ref": "x-legacy-L06a:msd-kensa",
+      "title": "MSDマニュアル プロフェッショナル版「医学的検査および検査結果の理解」",
+      "url": "https://www.msdmanuals.com/ja-jp/professional/24-その他のトピック/臨床的意思決定/医学的検査および検査結果の理解",
+      "locator": "検査結果の分布",
+      "quote": "カットオフ基準を移動させることで感度と特異度が変化するが，それぞれ反対の方向に変化する"
+     }
+    ],
+    "asOf": "MSDマニュアル プロフェッショナル版（2024年11月最終更新）"
+   },
+   "detail": "旧解説の「AUCは0.5〜1.0」（0.5未満もありうる）・「0.9以上で非常に良好」等は出典なしのため削除。「費用が高い」「実施時間が長い」は自明すぎる選択肢のため、出典で誤りと確認できる選択肢（有病率・感度と特異度の関係）に差し替え。"
+  },
+  {
+   "id": "lg-06-05",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": false,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "mhlw統計用語集（疾患オッズの比、1との比較）、Minds（症例対照研究で多用）、環境省資料（寄与リスク＝差）で確認。キーは正しい。",
+   "question": {
+    "id": "lg-06-05",
+    "legacy": {
+     "key": "6_5",
+     "chapter": 6,
+     "chapterName": "医療統計I（基礎統計学）",
+     "index": 5,
+     "hash": "d4854d722a11e1bc"
+    },
+    "subject": "S06",
+    "subtopic": "疫学指標",
+    "format": "knowledge",
+    "difficulty": "standard",
+    "polarity": "positive",
+    "question": "オッズ比の説明として正しいのはどれか。",
+    "choices": [
+     "曝露群と非曝露群の疾患発生オッズの比",
+     "疾患の罹患率そのもの",
+     "治療効果の絶対的な大きさ",
+     "標本サイズの適切さ"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "オッズ比は，曝露群の疾患オッズと非曝露群の疾患オッズの比である。1より大きければ曝露により発症が増加，1より小さければ減少したことを示し，1なら関連なし。症例対照研究で用いられることが多く，発症率が低い場合は相対リスクの近似値となる。",
+     "choiceNotes": [
+      null,
+      "オッズ比は2群のオッズの比であり，罹患率そのものではない。",
+      "オッズ比は比で表す相対的な指標であり，絶対的な大きさ（差）を示すものではない。絶対的な差を示すのはリスク差（寄与リスク）である。",
+      "オッズ比は曝露と疾患の関連の強さを表す指標であり，標本サイズの適切さを示すものではない。"
+     ],
+     "point": "OR＝曝露群の疾患オッズ÷非曝露群の疾患オッズ。OR＝1で関連なし。症例対照研究で多用。"
+    },
+    "sources": [
+     {
+      "ref": "stats:mhlw-tokei-yougo-rr-or",
+      "title": "有効性・安全性に関する統計用語集",
+      "url": "https://www.mhlw.go.jp/www1/houdou/1106/h0602-3_c_15.html",
+      "locator": "相対リスクとオッズ比",
+      "quote": "ＯＣ非使用者群と比べた場合の、ＯＣ使用者群の疾患オッズの比 ｐ ３ ／ｐ ４ を、 オッズ比 という。"
+     },
+     {
+      "ref": "x-legacy-L06a:minds-glossary-2020",
+      "title": "Minds診療ガイドライン作成マニュアル2020 ver.3.0 重要用語集",
+      "url": "https://minds.jcqhc.or.jp/docs/methods/cpg-development/minds-manual/pdf/glossary_manual_2020.pdf",
+      "locator": "オッズ比（odds ratio：OR）",
+      "quote": "症例対照研究や横断研究で用いることが多い。"
+     },
+     {
+      "ref": "stats:env-soutai-kiyo-risk",
+      "title": "放射線による健康影響等に関する統一的な基礎資料（令和７年度版）第3章 放射線による健康影響 スライド3.4 リスク（相対リスクと寄与リスク）",
+      "url": "https://www.env.go.jp/chemi/rhm/current/attach/slide-03-04.pdf",
+      "locator": "スライド3.4 リスク（相対リスクと寄与リスク）",
+      "quote": "寄与リスク ＝要因ばく露群の罹患リスク ― 要因非ばく露群の罹患リスク"
+     }
+    ],
+    "asOf": "厚生労働省「有効性・安全性に関する統計用語集」、Minds 2020 ver.3.0"
+   },
+   "detail": "選択肢Cの注「治療効果は効果量やNNT」はオッズ比自体も効果の指標であるため不正確。比（相対）と差（絶対）の違いで説明し直し、正答の解説にオッズ比の定義を追加。"
+  },
+  {
+   "id": "lg-06-06",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": false,
+    "distractors": false,
+    "stem": false,
+    "explanations": false,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "mhlw-ev-level：JSH2014分類（Ⅰ=SR/RCTのMA、Ⅱ=RCT、Ⅲ=非ランダム化比較試験、Ⅳa=コホート、Ⅳb=症例対照・横断、Ⅴ=記述研究、Ⅵ=専門家意見）を確認。",
+   "question": {
+    "id": "lg-06-06",
+    "legacy": {
+     "key": "6_6",
+     "chapter": 6,
+     "chapterName": "医療統計I（基礎統計学）",
+     "index": 6,
+     "hash": "5ff25d3368a72d50"
+    },
+    "subject": "S06",
+    "subtopic": "研究デザイン",
+    "format": "knowledge",
+    "difficulty": "standard",
+    "polarity": "positive",
+    "question": "高血圧治療ガイドライン2014（日本高血圧学会）の治療・診断に関するエビデンスレベルの分類で，最も高いレベル（レベルⅠ）とされるものはどれか。",
+    "choices": [
+     "システマティック・レビューやランダム化比較試験のメタアナリシス",
+     "ランダム化比較試験",
+     "非ランダム化比較試験",
+     "疫学研究（コホート研究，コホート研究のメタアナリシス）",
+     "記述研究（症例報告やケースシリーズ）"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "同分類では，Ⅰ＝システマティック・レビューやランダム化比較試験のメタアナリシス，Ⅱ＝ランダム化比較試験，Ⅲ＝非ランダム化比較試験，Ⅳa＝疫学研究（コホート研究，コホート研究のメタアナリシス），Ⅳb＝疫学研究（症例対照研究，横断研究），Ⅴ＝記述研究，Ⅵ＝専門委員会や専門家の意見である。",
+     "choiceNotes": [
+      null,
+      "ランダム化比較試験はレベルⅡである。",
+      "非ランダム化比較試験はレベルⅢである。",
+      "コホート研究はメタアナリシスであってもレベルⅣaである。メタアナリシスなら何でも最上位というわけではない。",
+      "記述研究（症例報告やケースシリーズ）はレベルⅤである。"
+     ],
+     "point": "SR・RCTのメタアナリシス＞RCT＞非ランダム化比較試験＞コホート＞症例対照・横断＞記述研究＞専門家の意見。分類の細部はガイドラインごとに異なる。"
+    },
+    "sources": [
+     {
+      "ref": "x-legacy-L06a:mhlw-ev-level",
+      "title": "各疾患ガイドラインにおけるエビデンスレベルの記載等（食事摂取基準策定検討会 参考資料1）",
+      "url": "https://www.mhlw.go.jp/content/10904750/001564280.pdf",
+      "locator": "３．高血圧治療ガイドライン2014 治療・診断に関するエビデンスレベルの分類",
+      "quote": "Ⅰ システマティック・レビューやランダム化比較試験のメタアナリシス"
+     },
+     {
+      "ref": "x-legacy-L06a:mhlw-ev-level",
+      "title": "各疾患ガイドラインにおけるエビデンスレベルの記載等（食事摂取基準策定検討会 参考資料1）",
+      "url": "https://www.mhlw.go.jp/content/10904750/001564280.pdf",
+      "locator": "３．高血圧治療ガイドライン2014 治療・診断に関するエビデンスレベルの分類",
+      "quote": "Ⅳa 疫学研究（コホート研究、コホート研究のメタアナリシス）"
+     },
+     {
+      "ref": "x-legacy-L06a:mhlw-ev-level",
+      "title": "各疾患ガイドラインにおけるエビデンスレベルの記載等（食事摂取基準策定検討会 参考資料1）",
+      "url": "https://www.mhlw.go.jp/content/10904750/001564280.pdf",
+      "locator": "１．動脈硬化性疾患予防ガイドライン2017 治療・診断に関するエビデンスレベルの分類",
+      "quote": "1+ 質の高い RCT＊およびそれらの MA/SR"
+     }
+    ],
+    "asOf": "高血圧治療ガイドライン2014の分類（厚生労働省 食事摂取基準策定検討会 参考資料1, H30.11.9 による）"
+   },
+   "detail": "ブラインド解答者が曖昧と指摘。分類は学会ごとに異なり（例：動脈硬化学会2017は質の高いRCTとそのMA/SRが同じ1+）、コホート研究のメタアナリシスは下位（Ⅳa）なので「メタアナリシス」単独では正答が一意に定まらない。分類を明示し、選択肢を「RCTのメタアナリシス」等の分類表の文言に修正、5択化。"
+  },
+  {
+   "id": "lg-06-07",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": false,
+    "stem": true,
+    "explanations": false,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "Minds重要用語集「NNT」「サンプルサイズ」「増分費用効果比」で確認。キーは正しい。",
+   "question": {
+    "id": "lg-06-07",
+    "legacy": {
+     "key": "6_7",
+     "chapter": 6,
+     "chapterName": "医療統計I（基礎統計学）",
+     "index": 7,
+     "hash": "6a46cde628812530"
+    },
+    "subject": "S06",
+    "subtopic": "疫学指標",
+    "format": "knowledge",
+    "difficulty": "standard",
+    "polarity": "positive",
+    "question": "NNTの説明として正しいのはどれか。",
+    "choices": [
+     "1人のイベント発生を防ぐために治療が必要な患者数",
+     "臨床試験に必要な最小の研究対象者数",
+     "治療によって副作用が発生する確率",
+     "費用の増加分を効果の増加分で割った指標"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "NNT（number needed to treat，治療必要人数）は，1人のイベント発生を抑制するのに何人の治療が必要かを示す指標で，絶対リスク減少（リスク差）の絶対値の逆数である。小さいほど治療効果は大きい。",
+     "choiceNotes": [
+      null,
+      "サンプルサイズは研究対象者の数のことであり，NNTとは別の概念である。",
+      "NNTは治療が必要な人数で表す指標であり，副作用の発生確率ではない。",
+      "費用の増加分を効果の増加分で割った指標は増分費用効果比（医療経済評価の指標）であり，NNTとは異なる。"
+     ],
+     "point": "NNT＝1÷|絶対リスク減少|。小さいほど治療効果が大きい。"
+    },
+    "sources": [
+     {
+      "ref": "x-legacy-L06a:minds-glossary-2020",
+      "title": "Minds診療ガイドライン作成マニュアル2020 ver.3.0 重要用語集",
+      "url": "https://minds.jcqhc.or.jp/docs/methods/cpg-development/minds-manual/pdf/glossary_manual_2020.pdf",
+      "locator": "NNT（number needed to treat）",
+      "quote": "一人のイベント発生を抑制するのに何人の治療が必要かを示す指標。"
+     },
+     {
+      "ref": "x-legacy-L06a:minds-glossary-2020",
+      "title": "Minds診療ガイドライン作成マニュアル2020 ver.3.0 重要用語集",
+      "url": "https://minds.jcqhc.or.jp/docs/methods/cpg-development/minds-manual/pdf/glossary_manual_2020.pdf",
+      "locator": "NNT（number needed to treat）",
+      "quote": "小さいほど治療の効果は大きい。絶対リスク減少（率差あるいはリスク差）の絶対値の逆数。"
+     },
+     {
+      "ref": "x-legacy-L06a:minds-glossary-2020",
+      "title": "Minds診療ガイドライン作成マニュアル2020 ver.3.0 重要用語集",
+      "url": "https://minds.jcqhc.or.jp/docs/methods/cpg-development/minds-manual/pdf/glossary_manual_2020.pdf",
+      "locator": "増分費用効果比（ICER）",
+      "quote": "「費用の増加分」 を「効果の増加分」 で除して求められる医療経済評価の指"
+     }
+    ],
+    "asOf": "Minds診療ガイドライン作成マニュアル2020 ver.3.0 重要用語集"
+   },
+   "detail": "注「副作用はNNH」は出典で確認できず、選択肢が誤りである理由も説明していないため、出典で確認できる説明に修正。正答だけが長く手がかりになるため誤答選択肢の文を整えた。解説のNNT＝1/ARRを「絶対リスク減少の絶対値の逆数」と正確化。"
+  },
+  {
+   "id": "lg-06-08",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": false,
+    "stem": true,
+    "explanations": false,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "mhlw統計用語集「χ2検定」（2項目間の関連）、NIST 1.3.5.3（2標本t検定）で確認。キーは正しい。",
+   "question": {
+    "id": "lg-06-08",
+    "legacy": {
+     "key": "6_8",
+     "chapter": 6,
+     "chapterName": "医療統計I（基礎統計学）",
+     "index": 8,
+     "hash": "daea4e7d11707d8d"
+    },
+    "subject": "S06",
+    "subtopic": "仮説検定",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "カイ二乗（χ2）検定が用いられる場面として，正しいものはどれか。",
+    "choices": [
+     "2つのカテゴリ（質的）変数の関連（独立性）の検定",
+     "2群の母平均が等しいかどうかの検定",
+     "3群以上の平均値の比較",
+     "2つの量的変数の相関係数の検定"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "カイ二乗（χ2）検定は，2つの質問項目間（例：薬の使用の有無と疾患発症の有無）の関連を検討する検定方法の一つで，クロス集計表（分割表）の度数を用いる。",
+     "choiceNotes": [
+      null,
+      "2つの母平均が等しいかを調べるのは2標本t検定である。",
+      "平均値の比較は量的データの平均を比べるものであり，カテゴリ別の度数を扱うカイ二乗検定の対象ではない。",
+      "相関係数は2つの量的変数の比例的な関係を表すもので，カテゴリ変数の関連をみるカイ二乗検定とは対象が異なる。"
+     ],
+     "point": "カイ二乗検定＝カテゴリ×カテゴリ（分割表）の関連。2群の平均の比較＝t検定。"
+    },
+    "sources": [
+     {
+      "ref": "stats:mhlw-tokei-yougo-rr-or",
+      "title": "有効性・安全性に関する統計用語集",
+      "url": "https://www.mhlw.go.jp/www1/houdou/1106/h0602-3_c_15.html",
+      "locator": "χ２検定",
+      "quote": "２つの質問項目間（例えば、ＯＣ使用の有無と乳癌発症の有無）の関連について検討する際の検定方法の一つである。"
+     },
+     {
+      "ref": "stats:nist-two-sample-t-test",
+      "title": "NIST/SEMATECH e-Handbook of Statistical Methods, 1.3.5.3. Two-Sample t -Test for Equal Means",
+      "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda353.htm",
+      "locator": "1.3.5.3 Two-Sample t-Test",
+      "quote": "is used to determine if two population means are equal"
+     }
+    ],
+    "asOf": "厚生労働省「有効性・安全性に関する統計用語集」、NIST e-Handbook"
+   },
+   "detail": "選択肢D「2変数間の相関検定」はカテゴリ変数の関連と紛らわしいため「2つの量的変数の相関係数の検定」と明確化。注のANOVA・ピアソン相関検定の記述は出典で確認できないため、データの種類の違いで説明し直した。"
+  },
+  {
+   "id": "lg-06-09",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": false,
+    "stem": true,
+    "explanations": false,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "mhlw-edc-epi（症例対照研究の短所＝思い出しバイアス、追跡不要）、Minds（出版・実行・症例減少バイアス）で確認。",
+   "question": {
+    "id": "lg-06-09",
+    "legacy": {
+     "key": "6_9",
+     "chapter": 6,
+     "chapterName": "医療統計I（基礎統計学）",
+     "index": 9,
+     "hash": "4d602d04220ba7e3"
+    },
+    "subject": "S06",
+    "subtopic": "研究デザイン",
+    "format": "knowledge",
+    "difficulty": "standard",
+    "polarity": "positive",
+    "question": "症例対照研究で特に問題となりやすいバイアスはどれか。",
+    "choices": [
+     "思い出しバイアス",
+     "出版（報告）バイアス",
+     "実行バイアス",
+     "症例減少バイアス"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "症例対照研究では，調査票などで過去の曝露状況を思い出してもらい症例と対照で比較するため，記憶に偏りが生じ，曝露と疾病の関連を過大評価したり過小評価したりする危険性がある（思い出しバイアス）。",
+     "choiceNotes": [
+      null,
+      "出版（報告）バイアスは研究が選択的に出版（報告）されることで生じ，システマティックレビューやメタアナリシスで問題となる。",
+      "実行バイアスは比較される群間で介入・ケアの実行に系統的な差がある場合に生じるもので，介入を行わない症例対照研究に特有の問題ではない。",
+      "症例減少バイアスは比較される群間で解析対象となる症例の減少に系統的な差がある場合に生じる。症例対照研究は追跡調査を必要としない。"
+     ],
+     "point": "症例対照研究の弱点＝思い出しバイアス（関連を過大にも過小にも評価しうる）。"
+    },
+    "sources": [
+     {
+      "ref": "x-legacy-L06a:mhlw-edc-epi",
+      "title": "内分泌かく乱化学物質の健康影響に関する検討会 中間報告書追補その２ 別冊（疫学研究の方法の解説を含む）",
+      "url": "https://www.mhlw.go.jp/shingi/2005/03/dl/s0331-9b1.pdf",
+      "locator": "症例対照研究の解説",
+      "quote": "過去の暴露状況を思い出してもらって調査するため、記憶に偏りが生じ、暴露と疾病の関連を過大評価したり、反対に過小評価したりする危険性がある（思い出しバイアス）"
+     },
+     {
+      "ref": "x-legacy-L06a:minds-glossary-2020",
+      "title": "Minds診療ガイドライン作成マニュアル2020 ver.3.0 重要用語集",
+      "url": "https://minds.jcqhc.or.jp/docs/methods/cpg-development/minds-manual/pdf/glossary_manual_2020.pdf",
+      "locator": "実行バイアス（performance bias）",
+      "quote": "比較される群間で，介入・ケアの実行に系統的な差がある場合に生じるバイアス。"
+     },
+     {
+      "ref": "x-legacy-L06a:minds-glossary-2020",
+      "title": "Minds診療ガイドライン作成マニュアル2020 ver.3.0 重要用語集",
+      "url": "https://minds.jcqhc.or.jp/docs/methods/cpg-development/minds-manual/pdf/glossary_manual_2020.pdf",
+      "locator": "症例減少バイアス（attrition bias）",
+      "quote": "比較される群間で解析対象となる症例の減少に系統的な差がある場合に生じるバイアス。"
+     }
+    ],
+    "asOf": "厚生労働省 内分泌かく乱化学物質検討会報告書別冊（平成17年）、Minds 2020 ver.3.0"
+   },
+   "detail": "旧解説「関連が過大評価される」は誤り（出典は過大・過小の両方向）。distractor「計測バイアス」は思い出しバイアス自体が測定（情報）の偏りであり明確に誤りといえず、「経時バイアス」は標準的な用語でないため、定義が出典で確認できるバイアス（出版・実行・症例減少）に差し替え。"
+  },
+  {
+   "id": "lg-06-10",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": false,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ganjoho「Kaplan-Meier法」（実測生存率の計算法、打ち切り例の扱い）、NIST 1.3.5.3で確認。キーは正しい。",
+   "question": {
+    "id": "lg-06-10",
+    "legacy": {
+     "key": "6_10",
+     "chapter": 6,
+     "chapterName": "医療統計I（基礎統計学）",
+     "index": 10,
+     "hash": "3b64c12ff23e40b7"
+    },
+    "subject": "S06",
+    "subtopic": "疫学指標",
+    "format": "knowledge",
+    "difficulty": "standard",
+    "polarity": "positive",
+    "question": "Kaplan-Meier法の説明として，正しいものはどれか。",
+    "choices": [
+     "中途打ち切り例を扱いながら生存率を推定する方法",
+     "2群の平均値の差を検定する方法",
+     "回帰式を用いて将来の値を予測する方法",
+     "検査の感度と特異度を算出する方法"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "Kaplan-Meier法は実測生存率の計算方法の一つで，観察期間を一定の期間に区切らず，死亡が1例ずつ起きた時点でその時点の生存率を逐次計算する。中途打ち切り例は，それが発生した時点で観察人数から除外する。",
+     "choiceNotes": [
+      null,
+      "2群の平均値の差の検定には2標本t検定などを用いる。",
+      "回帰による予測ではなく，死亡が起きるたびに生存率を逐次計算する方法である。",
+      "感度・特異度は検査結果（陽性・陰性）と疾患の有無の2×2表から算出する指標であり，Kaplan-Meier法とは関係しない。"
+     ],
+     "point": "Kaplan-Meier法＝死亡が起きるごとに生存率を逐次計算。打ち切り例はその時点で観察人数から除く。"
+    },
+    "sources": [
+     {
+      "ref": "stats:ganjoho-kapuranmaiyahou",
+      "title": "がん統計の用語集「Kaplan-Meier法」",
+      "url": "https://ganjoho.jp/reg_stat/statistics/qa_words/word/kapuranmaiyahou.html",
+      "locator": "Kaplan-Meier法",
+      "quote": "死亡が１例ずつ起きた時点でその時点の生存率を逐次計算する方法。"
+     },
+     {
+      "ref": "stats:ganjoho-kapuranmaiyahou",
+      "title": "がん統計の用語集「Kaplan-Meier法」",
+      "url": "https://ganjoho.jp/reg_stat/statistics/qa_words/word/kapuranmaiyahou.html",
+      "locator": "Kaplan-Meier法",
+      "quote": "中途打ち切り例は、それが発生した時点で観察人数から除外します。"
+     },
+     {
+      "ref": "stats:nist-two-sample-t-test",
+      "title": "NIST/SEMATECH e-Handbook of Statistical Methods, 1.3.5.3. Two-Sample t -Test for Equal Means",
+      "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda353.htm",
+      "locator": "1.3.5.3 Two-Sample t-Test",
+      "quote": "is used to determine if two population means are equal"
+     }
+    ],
+    "asOf": "国立がん研究センター がん統計用語集（2018-01-26更新）"
+   },
+   "detail": "注「生存時間の回帰はCox比例ハザードモデル」は出典で確認できず選択肢の誤りの理由にもなっていないため修正。選択肢を完結した文に整え、解説を出典の定義（死亡ごとの逐次計算・打ち切り例の除外）に合わせた。"
+  },
+  {
+   "id": "lg-06-11",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": false,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "naruhodo-hukusu「相関係数」の特徴(1)〜(4)で確認。キーは正しい。",
+   "question": {
+    "id": "lg-06-11",
+    "legacy": {
+     "key": "6_11",
+     "chapter": 6,
+     "chapterName": "医療統計I（基礎統計学）",
+     "index": 11,
+     "hash": "7778a2438032cf73"
+    },
+    "subject": "S06",
+    "subtopic": "相関と回帰",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "相関係数r=-0.9の解釈はどれか。",
+    "choices": [
+     "強い負の相関",
+     "相関なし",
+     "強い正の相関",
+     "弱い負の相関"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "相関係数は−1から1の値をとり，負の相関が強いほど−1に近づく。r＝−0.9は−1に近いので，強い負の相関（一方が増えると他方が減る傾向）を示す。",
+     "choiceNotes": [
+      null,
+      "相関がないといえるのは相関係数が0の付近の場合である。",
+      "正の相関では相関係数は正の値をとり，強いほど1に近づく。",
+      "−0.9は−1に近く，弱い相関ではない。"
+     ],
+     "point": "符号は向き（正・負），絶対値が1に近いほど強い相関。相関係数は比例的な関係の指標で，因果関係は示さない。"
+    },
+    "sources": [
+     {
+      "ref": "stats:naruhodo-hukusu",
+      "title": "なるほど統計学園「複数の変数の関係性を見る」",
+      "url": "https://www.stat.go.jp/naruhodo/10_tokucho/hukusu.html",
+      "locator": "相関係数",
+      "quote": "相関係数は-1から1までの値を取り、以下のような特徴を持ちます。"
+     },
+     {
+      "ref": "stats:naruhodo-hukusu",
+      "title": "なるほど統計学園「複数の変数の関係性を見る」",
+      "url": "https://www.stat.go.jp/naruhodo/10_tokucho/hukusu.html",
+      "locator": "相関係数",
+      "quote": "負の相関が強いと相関係数が-1に近づく"
+     },
+     {
+      "ref": "stats:naruhodo-hukusu",
+      "title": "なるほど統計学園「複数の変数の関係性を見る」",
+      "url": "https://www.stat.go.jp/naruhodo/10_tokucho/hukusu.html",
+      "locator": "相関係数",
+      "quote": "相関係数が0の付近は相関がないといえる"
+     }
+    ],
+    "asOf": "総務省統計局 なるほど統計学園（2026-11取得）"
+   },
+   "detail": "pointの「r＝±0.7以上で強い相関」という閾値は出典で確認できない慣用の目安のため削除し、出典どおりの説明（−1/1に近いほど強い）に修正。"
+  },
+  {
+   "id": "lg-06-12",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": false,
+    "stem": true,
+    "explanations": false,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "Minds重要用語集「交絡因子」で定義と制御法（ランダム化・限定・マッチング／層化・数学的モデリング）を確認。キーは正しい。",
+   "question": {
+    "id": "lg-06-12",
+    "legacy": {
+     "key": "6_12",
+     "chapter": 6,
+     "chapterName": "医療統計I（基礎統計学）",
+     "index": 12,
+     "hash": "d5103cb20ae5c5ad"
+    },
+    "subject": "S06",
+    "subtopic": "研究デザイン",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "交絡因子の説明として正しいのはどれか。",
+    "choices": [
+     "曝露と結果の両方に関連し関係を歪める第三の因子",
+     "測定方法の不正確さによって生じる測定値の誤差",
+     "標本サイズが小さいことによって生じる偶然の誤差",
+     "研究で採用した研究デザインの種類（例：コホート研究）"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "交絡因子は，要因曝露（介入）とアウトカムの両方に関係がある第三の因子で，真の関係とは異なった観察結果をもたらす。疫学では性別や年齢を交絡因子として扱う。",
+     "choiceNotes": [
+      null,
+      "測定の誤差は測定の正確さの問題であり，曝露と結果の両方に関係する第三の因子ではない。",
+      "標本サイズが小さいことによる偶然誤差は偶然の変動であり，交絡とは別の問題である。",
+      "交絡因子は研究デザインの種類ではなく，曝露とアウトカムの両方に関係する因子である。"
+     ],
+     "point": "交絡の制御＝計画段階でランダム化・限定・マッチング，解析段階で層化・数学的モデリング（多変量解析）。"
+    },
+    "sources": [
+     {
+      "ref": "x-legacy-L06a:minds-glossary-2020",
+      "title": "Minds診療ガイドライン作成マニュアル2020 ver.3.0 重要用語集",
+      "url": "https://minds.jcqhc.or.jp/docs/methods/cpg-development/minds-manual/pdf/glossary_manual_2020.pdf",
+      "locator": "交絡因子（confounding factor）",
+      "quote": "要因曝露や介入と疾病／病態発生の観察に影響を与え， 真の関係とは異なった観察結果をもたらす第"
+     },
+     {
+      "ref": "x-legacy-L06a:minds-glossary-2020",
+      "title": "Minds診療ガイドライン作成マニュアル2020 ver.3.0 重要用語集",
+      "url": "https://minds.jcqhc.or.jp/docs/methods/cpg-development/minds-manual/pdf/glossary_manual_2020.pdf",
+      "locator": "交絡因子（confounding factor）",
+      "quote": "交絡因子は要因曝露や介入とアウトカムの両方に関係がある因子である。"
+     },
+     {
+      "ref": "x-legacy-L06a:minds-glossary-2020",
+      "title": "Minds診療ガイドライン作成マニュアル2020 ver.3.0 重要用語集",
+      "url": "https://minds.jcqhc.or.jp/docs/methods/cpg-development/minds-manual/pdf/glossary_manual_2020.pdf",
+      "locator": "交絡因子（confounding factor）",
+      "quote": "統計解析段階では層化（stratification），数学的モデリング（mathematical modeling）を行"
+     }
+    ],
+    "asOf": "Minds診療ガイドライン作成マニュアル2020 ver.3.0 重要用語集"
+   },
+   "detail": "選択肢Bの注「測定誤差はバイアスの一種」は測定誤差には偶然誤差も含まれ不正確。誤りの理由（第三の因子ではない）が示されていなかったため注を修正し、pointに計画段階の制御法を追加。正答だけが長く手がかりになるため誤答選択肢の文を整えた。"
+  },
+  {
+   "id": "lg-06-13",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": false,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "環境省スライド3.4で寄与リスク＝ばく露群の罹患リスク−非ばく露群の罹患リスク、相対リスク＝比、過剰相対リスク＝相対リスク−1を確認。Mindsでオッズ比を確認。キーは正しい。lg-06-23（L06b）と同じ問いで、そちらが重複候補。",
+   "question": {
+    "id": "lg-06-13",
+    "legacy": {
+     "key": "6_13",
+     "chapter": 6,
+     "chapterName": "医療統計I（基礎統計学）",
+     "index": 13,
+     "hash": "6f0eb5b070baf01e"
+    },
+    "subject": "S06",
+    "subtopic": "疫学指標",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "寄与リスクの説明として正しいのはどれか。",
+    "choices": [
+     "曝露群の罹患率から非曝露群の罹患率を引いた差",
+     "曝露群の罹患率を非曝露群の罹患率で割った比",
+     "曝露群と非曝露群の罹患率の比から1を引いた値",
+     "曝露群と非曝露群のそれぞれのオッズの比"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "寄与リスク＝曝露群の罹患率（罹患リスク）−非曝露群の罹患率。曝露によって集団の罹患率がどれだけ増えるかを示す絶対的な差の指標である。",
+     "choiceNotes": [
+      null,
+      "罹患率の比は相対リスクであり，曝露によって何倍罹患しやすくなるかを示す。",
+      "相対リスクから1を引いた値は過剰相対リスクであり，リスクの増加分を比で表す。",
+      "2つのオッズの比はオッズ比である。"
+     ],
+     "point": "寄与リスク＝差，相対リスク＝比，過剰相対リスク＝相対リスク−1。"
+    },
+    "sources": [
+     {
+      "ref": "stats:env-soutai-kiyo-risk",
+      "title": "放射線による健康影響等に関する統一的な基礎資料（令和７年度版）第3章 放射線による健康影響 スライド3.4 リスク（相対リスクと寄与リスク）",
+      "url": "https://www.env.go.jp/chemi/rhm/current/attach/slide-03-04.pdf",
+      "locator": "スライド3.4 リスク（相対リスクと寄与リスク）",
+      "quote": "寄与リスク ＝要因ばく露群の罹患リスク ― 要因非ばく露群の罹患リスク"
+     },
+     {
+      "ref": "stats:env-soutai-kiyo-risk",
+      "title": "放射線による健康影響等に関する統一的な基礎資料（令和７年度版）第3章 放射線による健康影響 スライド3.4 リスク（相対リスクと寄与リスク）",
+      "url": "https://www.env.go.jp/chemi/rhm/current/attach/slide-03-04.pdf",
+      "locator": "スライド3.4 リスク（相対リスクと寄与リスク）",
+      "quote": "相対リスクから１を引いた"
+     },
+     {
+      "ref": "x-legacy-L06a:minds-glossary-2020",
+      "title": "Minds診療ガイドライン作成マニュアル2020 ver.3.0 重要用語集",
+      "url": "https://minds.jcqhc.or.jp/docs/methods/cpg-development/minds-manual/pdf/glossary_manual_2020.pdf",
+      "locator": "オッズ比（odds ratio：OR）",
+      "quote": "オッズ比とは 2 つ のオッズの比のことである。"
+     }
+    ],
+    "asOf": "環境省 放射線による健康影響等に関する統一的な基礎資料（令和７年度版）、Minds 2020 ver.3.0"
+   },
+   "detail": "「治療費用」「標本サイズ」は自明な誤答で正答だけが長く文言で解けるため、出典で区別できる疫学指標（相対リスク・過剰相対リスク・オッズ比）に差し替え。"
+  }
+ ]
+}

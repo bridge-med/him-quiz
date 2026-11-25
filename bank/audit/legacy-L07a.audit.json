@@ -1,0 +1,1016 @@
+{
+ "verdicts": [
+  {
+   "id": "lg-07-00",
+   "verdict": "pass",
+   "contentChanged": false,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "東京都統計 人口データ検索ガイド「人口統計の種類と内容」で人口静態統計＝国勢調査（5年おき）を確認。人口動態調査は届出の全数（81-1b 調査の対象）。患者調査・国民生活基礎調査の注も正しい。",
+   "question": {
+    "id": "lg-07-00",
+    "legacy": {
+     "key": "7_0",
+     "chapter": 7,
+     "chapterName": "医療統計II（保健統計・人口統計）",
+     "index": 0,
+     "hash": "fe440d22194a2f27"
+    },
+    "subject": "S07",
+    "subtopic": "人口静態統計",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "人口静態統計の基盤となる調査はどれか。",
+    "choices": [
+     "国勢調査",
+     "人口動態調査",
+     "患者調査",
+     "国民生活基礎調査"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "人口静態統計はある一時点の人口状態を示す。5年ごとの国勢調査が基盤。",
+     "choiceNotes": [
+      null,
+      "人口動態調査は出生・死亡等の動態統計。",
+      "患者調査は患者の傷病状況。",
+      "国民生活基礎調査は世帯の健康等。"
+     ],
+     "point": "静態＝国勢調査（5年ごと）。動態＝出生・死亡等の届出。"
+    },
+    "sources": [
+     {
+      "ref": "x-legacy-L07a:tokyo-jguide-jinkou",
+      "title": "人口データ検索ガイド 人口構造・定義・統計調査の基礎概念及び分析方法について",
+      "url": "https://www.toukei.metro.tokyo.lg.jp/jguide/js-index5.htm",
+      "locator": "人口統計の種類と内容 (1)人口調査（センサス）",
+      "quote": "特定地域の人口静態をとらえるために行う統計調査を「人口調査（センサス）」といい、「国勢調査」（総務省統計局）のことをいいます。大正9年10月1日午前0時現在をもって第1回の国勢調査が実施され、それ以降5年おきに実施しています。"
+     },
+     {
+      "ref": "stats:jinkou-chosa-gaiyo-yougo",
+      "title": "人口動態調査 調査の概要（用語の解説・利用上の注意）",
+      "url": "https://www.mhlw.go.jp/toukei/list/81-1b.html",
+      "locator": "調査の対象及び客体",
+      "quote": "「戸籍法」及び「死産の届出に関する規程」により届け出られた出生、死亡、婚姻、離婚及び死産の全数を対象としている。"
+     }
+    ],
+    "asOf": "東京都の統計「人口データ検索ガイド」（2026-11取得）・厚生労働省 人口動態調査 調査の概要（2026-11取得）"
+   }
+  },
+  {
+   "id": "lg-07-01",
+   "verdict": "pass",
+   "contentChanged": false,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "81-1b「調査の対象及び客体」「調査の方法」で5事象（出生・死亡・婚姻・離婚・死産）と市区町村への届出を確認。転入・転出は住民基本台帳の人口変動要素（東京都統計ガイド）。",
+   "question": {
+    "id": "lg-07-01",
+    "legacy": {
+     "key": "7_1",
+     "chapter": 7,
+     "chapterName": "医療統計II（保健統計・人口統計）",
+     "index": 1,
+     "hash": "6d6ca8c0ceeeea82"
+    },
+    "subject": "S07",
+    "subtopic": "人口動態統計",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "人口動態統計の5事象はどれか。",
+    "choices": [
+     "出生・死亡・婚姻・離婚・死産",
+     "出生・死亡・転入・転出・婚姻",
+     "出生・死亡・入院・退院・手術",
+     "出生・死亡・罹患・受診・治癒"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "人口動態統計は出生・死亡・婚姻・離婚・死産の5事象。市区町村への届出に基づく。",
+     "choiceNotes": [
+      null,
+      "転入・転出は住民基本台帳の統計。",
+      "入院・退院は医療統計。",
+      "罹患・受診は疾病統計。"
+     ],
+     "point": "5事象＝出生・死亡・婚姻・離婚・死産。"
+    },
+    "sources": [
+     {
+      "ref": "stats:jinkou-chosa-gaiyo-yougo",
+      "title": "人口動態調査 調査の概要（用語の解説・利用上の注意）",
+      "url": "https://www.mhlw.go.jp/toukei/list/81-1b.html",
+      "locator": "調査の対象及び客体",
+      "quote": "「戸籍法」及び「死産の届出に関する規程」により届け出られた出生、死亡、婚姻、離婚及び死産の全数を対象としている。"
+     },
+     {
+      "ref": "stats:jinkou-chosa-gaiyo-yougo",
+      "title": "人口動態調査 調査の概要（用語の解説・利用上の注意）",
+      "url": "https://www.mhlw.go.jp/toukei/list/81-1b.html",
+      "locator": "調査の方法 (1)ア",
+      "quote": "市区町村長は、出生、死亡、婚姻、離婚又は死産の届出を受けたときは、その届書に基づいてすみやかに人口動態調査票を作成し"
+     },
+     {
+      "ref": "x-legacy-L07a:tokyo-jguide-jinkou",
+      "title": "人口データ検索ガイド 人口構造・定義・統計調査の基礎概念及び分析方法について",
+      "url": "https://www.toukei.metro.tokyo.lg.jp/jguide/js-index5.htm",
+      "locator": "人口の推計",
+      "quote": "住民基本台帳に基づく人口変動要素（出生、死亡、転入及び転出）"
+     }
+    ],
+    "asOf": "厚生労働省 人口動態調査 調査の概要（2026-11取得）"
+   }
+  },
+  {
+   "id": "lg-07-02",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": false,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "確定数概況 調査の概要6 比率の解説で目的・基準人口（平成27年モデル人口）を確認、がん統計用語集も一致。",
+   "detail": "選択肢Dの注「将来予測は人口推計」が不正確（総務省「人口推計」は現在人口の推計。将来の見通しは将来推計）。注と解説を出典に合わせて修正。",
+   "question": {
+    "id": "lg-07-02",
+    "legacy": {
+     "key": "7_2",
+     "chapter": 7,
+     "chapterName": "医療統計II（保健統計・人口統計）",
+     "index": 2,
+     "hash": "ed94967ec50f4eef"
+    },
+    "subject": "S07",
+    "subtopic": "年齢調整死亡率とSMR",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "年齢調整死亡率の目的はどれか。",
+    "choices": [
+     "年齢構成の異なる集団間の死亡率を比較可能にする",
+     "すべての年齢の死亡率を合計する",
+     "特定年齢層のみの死亡率を算出",
+     "将来の死亡数を予測"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "年齢調整死亡率は、人口構成の異なる集団間で死亡率を比較するために、年齢階級別死亡率を一定の基準人口（平成27年モデル人口）に当てはめて算出する指標である。",
+     "choiceNotes": [
+      null,
+      "年齢階級別死亡率を基準人口に当てはめて算出するもので、単純な合計ではない。",
+      "特定の年齢層だけの死亡率は年齢階級別死亡率である。",
+      "将来の人口の見通しは将来推計で行う。年齢調整死亡率は観察された死亡率を比較するための指標である。"
+     ],
+     "point": "年齢調整死亡率＝年齢構成の違いを除いて集団間・年次間の死亡率を比較可能にする。基準人口は平成27年モデル人口。"
+    },
+    "sources": [
+     {
+      "ref": "stats:jinkou-kakutei-r7-cho",
+      "title": "令和７（2025）年人口動態統計（確定数）の概況　調査の概要",
+      "url": "https://www.mhlw.go.jp/toukei/saikin/hw/jinkou/kakutei25/dl/01_cho.pdf",
+      "locator": "比率の解説（年齢調整死亡率）",
+      "quote": "年齢調整死亡率は、人口構成の異なる集団間での死亡率を比較するために、年齢階級別死亡率を一定の基準人口（平成27 年"
+     },
+     {
+      "ref": "stats:ganjoho-nenreityouseisibouritu",
+      "title": "がん統計の用語集「年齢調整死亡率」",
+      "url": "https://ganjoho.jp/reg_stat/statistics/qa_words/word/nenreityouseisibouritu.html",
+      "locator": "年齢調整死亡率",
+      "quote": "年齢構成が異なる集団の間で死亡率を比較する場合や、同じ集団で死亡率の年次推移を見る場合にこの年齢調整死亡率が用いられます。"
+     },
+     {
+      "ref": "x-legacy-L07a:tokyo-jguide-jinkou",
+      "title": "人口データ検索ガイド 人口構造・定義・統計調査の基礎概念及び分析方法について",
+      "url": "https://www.toukei.metro.tokyo.lg.jp/jguide/js-index5.htm",
+      "locator": "人口の推計",
+      "quote": "あるいは将来の人口の見通しを行う（将来推計）などをいいます。"
+     }
+    ],
+    "asOf": "令和７（2025）年人口動態統計（確定数）の概況（2026-09-30公表）"
+   }
+  },
+  {
+   "id": "lg-07-03",
+   "verdict": "pass",
+   "contentChanged": false,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "確定数概況 調査の概要6 比率の解説：乳児死亡率＝生後1年未満の死亡数÷出生数×1,000、新生児（4週=28日未満）・早期新生児（1週=7日未満）の定義を確認。",
+   "question": {
+    "id": "lg-07-03",
+    "legacy": {
+     "key": "7_3",
+     "chapter": 7,
+     "chapterName": "医療統計II（保健統計・人口統計）",
+     "index": 3,
+     "hash": "7f7924a422bd34e0"
+    },
+    "subject": "S07",
+    "subtopic": "母子保健の指標",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "乳児死亡率の定義はどれか。",
+    "choices": [
+     "年間の生後1年未満の死亡数÷出生数×1000",
+     "生後28日未満の死亡数÷出生数×1000",
+     "生後7日未満の死亡数÷出生数×1000",
+     "5歳未満の死亡数÷出生数×1000"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "乳児死亡率＝生後1年未満の死亡。保健医療水準の指標。",
+     "choiceNotes": [
+      null,
+      "28日未満は新生児死亡率。",
+      "7日未満は早期新生児死亡率。",
+      "5歳未満はU5MR。"
+     ],
+     "point": "乳児＝1年未満。新生児＝28日未満。早期新生児＝7日未満。"
+    },
+    "sources": [
+     {
+      "ref": "stats:jinkou-kakutei-r7-cho",
+      "title": "令和７（2025）年人口動態統計（確定数）の概況　調査の概要",
+      "url": "https://www.mhlw.go.jp/toukei/saikin/hw/jinkou/kakutei25/dl/01_cho.pdf",
+      "locator": "比率の解説（乳児死亡率・出生千対）",
+      "quote": "年間乳児死亡数（生後 1 年未満の死亡数）"
+     },
+     {
+      "ref": "stats:jinkou-kakutei-r7-cho",
+      "title": "令和７（2025）年人口動態統計（確定数）の概況　調査の概要",
+      "url": "https://www.mhlw.go.jp/toukei/saikin/hw/jinkou/kakutei25/dl/01_cho.pdf",
+      "locator": "比率の解説（新生児死亡率）",
+      "quote": "年間新生児死亡数（生後 4 週（28 日）未満の死亡数）"
+     },
+     {
+      "ref": "stats:jinkou-kakutei-r7-cho",
+      "title": "令和７（2025）年人口動態統計（確定数）の概況　調査の概要",
+      "url": "https://www.mhlw.go.jp/toukei/saikin/hw/jinkou/kakutei25/dl/01_cho.pdf",
+      "locator": "比率の解説（早期新生児死亡率）",
+      "quote": "年間早期新生児死亡数（生後 1 週（７日）未満の死亡数）"
+     }
+    ],
+    "asOf": "令和７（2025）年人口動態統計（確定数）の概況（2026-09-30公表）"
+   }
+  },
+  {
+   "id": "lg-07-04",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": false,
+    "distractors": true,
+    "stem": false,
+    "explanations": false,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "確定数概況 比率の解説（合計特殊出生率・出生率・自然増減率）、参考資料「合計特殊出生率について」で期間/コーホートの区別を確認。",
+   "detail": "正答「生涯に産む子どもの数の推計値」は期間/コーホートの区別が曖昧（solverもmedium）。「人口置換水準は約2.07」は出典がなく年により変わるため削除。算出方法を問う形に改め、出生率・自然増減率など定義のある誤答に差し替え。",
+   "question": {
+    "id": "lg-07-04",
+    "legacy": {
+     "key": "7_4",
+     "chapter": 7,
+     "chapterName": "医療統計II（保健統計・人口統計）",
+     "index": 4,
+     "hash": "d0722cb00037fa87"
+    },
+    "subject": "S07",
+    "subtopic": "人口動態統計",
+    "format": "knowledge",
+    "difficulty": "standard",
+    "polarity": "positive",
+    "question": "人口動態統計の合計特殊出生率の説明として正しいものはどれか。",
+    "choices": [
+     "15〜49歳の女性の年齢別出生率を合計したもの",
+     "年間出生数を10月1日現在日本人人口で割り、1,000倍したもの",
+     "年間出生数から年間死亡数を引いた数を人口で割り、1,000倍したもの",
+     "15〜49歳の女性のうち、その年に出産した女性の割合"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "合計特殊出生率は15〜49歳の女性の年齢別出生率（年間の母の年齢別出生数÷10月1日現在年齢別女性人口）を合計したもので、1人の女性がその年齢別出生率で一生の間に生むとしたときの子どもの数に相当する。一般には、その年の出生状況に着目した期間合計特殊出生率が用いられる。",
+     "choiceNotes": [
+      null,
+      "それは出生率（人口千対）である。",
+      "それは自然増減率（人口千対）である。",
+      "出産した女性の割合ではなく、年齢別出生率を合計した値（子どもの数に相当）である。"
+     ],
+     "point": "合計特殊出生率＝15〜49歳の年齢別出生率の合計。実際に1人の女性が一生に生む子どもの数はコーホート合計特殊出生率で、通常は期間合計特殊出生率を用いる。"
+    },
+    "sources": [
+     {
+      "ref": "stats:jinkou-kakutei-r7-cho",
+      "title": "令和７（2025）年人口動態統計（確定数）の概況　調査の概要",
+      "url": "https://www.mhlw.go.jp/toukei/saikin/hw/jinkou/kakutei25/dl/01_cho.pdf",
+      "locator": "比率の解説（合計特殊出生率）",
+      "quote": "合計特殊出生率は「15 歳から49 歳までの女性の年齢別出生率を合計したもの」で、１人の女性がその年齢別出生率で一生 の間に生むとしたときの子どもの数に相当する。"
+     },
+     {
+      "ref": "stats:jinkou-kakutei-r6-tfr",
+      "title": "合計特殊出生率について（令和６年（2024）人口動態統計（確定数）の概況 参考資料）",
+      "url": "https://www.mhlw.go.jp/toukei/saikin/hw/jinkou/kakutei24/dl/18_tfrR06.pdf",
+      "locator": "（１）期間合計特殊出生率とコーホート合計特殊出生率",
+      "quote": "実際に「一人の女性が一生の間に生む子どもの数」はＢのコーホート合計特殊出生率で あるが、この値はその世代が 50 歳に到達するまで得られないため、それに相当するものと してＡの期間合計特殊出生率が一般に用いられている。"
+     },
+     {
+      "ref": "stats:jinkou-kakutei-r7-cho",
+      "title": "令和７（2025）年人口動態統計（確定数）の概況　調査の概要",
+      "url": "https://www.mhlw.go.jp/toukei/saikin/hw/jinkou/kakutei25/dl/01_cho.pdf",
+      "locator": "比率の解説（自然増減率）",
+      "quote": "年間自然増減数（年間出生数－年間死亡数）"
+     }
+    ],
+    "asOf": "令和７（2025）年人口動態統計（確定数）の概況（2026-09-30公表）・合計特殊出生率について（令和６年確定数 参考資料）"
+   }
+  },
+  {
+   "id": "lg-07-05",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": false,
+    "explanations": true,
+    "sources": true,
+    "asOf": false,
+    "domain": true
+   },
+   "notes": "令和７年確定数概況 本文・第７表で順位と割合、令和６年報告書で1981年に第1位となったことを確認。",
+   "detail": "統計の年次が問題文になく変動する値（死因順位）を問うていたため、令和７年確定数と明記。心疾患を正式な分類名（高血圧性を除く）にし、割合を出典の値で補った。",
+   "question": {
+    "id": "lg-07-05",
+    "legacy": {
+     "key": "7_5",
+     "chapter": 7,
+     "chapterName": "医療統計II（保健統計・人口統計）",
+     "index": 5,
+     "hash": "b68a38bb59fe6021"
+    },
+    "subject": "S07",
+    "subtopic": "人口動態統計",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "令和７（2025）年人口動態統計（確定数）で、死亡数の死因順位第１位はどれか。",
+    "choices": [
+     "悪性新生物＜腫瘍＞",
+     "心疾患（高血圧性を除く）",
+     "老衰",
+     "脳血管疾患"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "令和７年の死因順位は、第１位が悪性新生物＜腫瘍＞（死亡総数の23.8％）、第２位が心疾患（高血圧性を除く）（13.9％）、第３位が老衰（13.5％）、第４位が脳血管疾患（6.3％）である。悪性新生物は昭和56（1981）年に死因順位第１位となった。",
+     "choiceNotes": [
+      null,
+      "第２位（13.9％）。",
+      "第３位（13.5％）。",
+      "第４位（6.3％）。"
+     ],
+     "point": "令和７年確定数：1位悪性新生物、2位心疾患（高血圧性を除く）、3位老衰、4位脳血管疾患。悪性新生物は1981年から第1位。"
+    },
+    "sources": [
+     {
+      "ref": "stats:jinkou-kakutei-r7-gaikyou",
+      "title": "令和７（2025）年人口動態統計（確定数）の概況（概況PDF）",
+      "url": "https://www.mhlw.go.jp/toukei/saikin/hw/jinkou/kakutei25/dl/05_gaikyouR07.pdf",
+      "locator": "結果の概要 死亡（第７表）",
+      "quote": "死亡数の死因順位第１位は悪性新生物＜腫瘍＞で 37 万 8829 人(死亡総数に占める割合は 23.8％)、第２位は心疾患（高血圧性を除く）(同 13.9％)、第３ 位は老衰(同 13.5％)"
+     },
+     {
+      "ref": "stats:jinkou-kakutei-r7-gaikyou",
+      "title": "令和７（2025）年人口動態統計（確定数）の概況（概況PDF）",
+      "url": "https://www.mhlw.go.jp/toukei/saikin/hw/jinkou/kakutei25/dl/05_gaikyouR07.pdf",
+      "locator": "第７表 性別にみた死因順位",
+      "quote": "脳 血 管 疾 患 (4) 100 361 6.3"
+     },
+     {
+      "ref": "stats:jinkou-houkokusho-r6",
+      "title": "令和６年（2024）人口動態統計（報告書）全体版",
+      "url": "https://www.mhlw.go.jp/toukei/saikin/hw/jinkou/houkoku24/dl/all.pdf",
+      "locator": "死亡 死因の年次推移",
+      "quote": "悪性新生物＜腫瘍＞は一貫して上昇を続け、５6年（1981年）に死因順位の第 1 位となり"
+     }
+    ],
+    "asOf": "令和７（2025）年人口動態統計（確定数）（2026-09-30公表）"
+   }
+  },
+  {
+   "id": "lg-07-06",
+   "verdict": "pass",
+   "contentChanged": false,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "令和５年患者調査 調査の概要で受療率・退院患者の平均在院日数の定義、厚労省「調査の概要」沿革で3年に1回を確認。出生・婚姻率は人口動態統計（他問の出典と一致）。",
+   "question": {
+    "id": "lg-07-06",
+    "legacy": {
+     "key": "7_6",
+     "chapter": 7,
+     "chapterName": "医療統計II（保健統計・人口統計）",
+     "index": 6,
+     "hash": "8f51ce42225a67c2"
+    },
+    "subject": "S07",
+    "subtopic": "患者調査と受療率",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "患者調査で把握できる指標はどれか。",
+    "choices": [
+     "受療率と平均在院日数",
+     "出生率と死亡率",
+     "婚姻率と離婚率",
+     "国民所得と貯蓄率"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "患者調査は3年ごと実施。受療率・平均在院日数が主な指標。",
+     "choiceNotes": [
+      null,
+      "出生率・死亡率は人口動態統計。",
+      "婚姻率・離婚率は人口動態統計。",
+      "経済統計で無関係。"
+     ],
+     "point": "患者調査＝3年ごと・受療率・平均在院日数。"
+    },
+    "sources": [
+     {
+      "ref": "stats:kanja-chosa-r5-gaiyou",
+      "title": "令和５年(2023)患者調査の概況　調査の概要",
+      "url": "https://www.mhlw.go.jp/toukei/saikin/hw/kanja/23/dl/gaiyou.pdf",
+      "locator": "用語の解説 (4) 受療率",
+      "quote": "受療率（人口 10 万対）＝推計患者数／推計人口×100,000"
+     },
+     {
+      "ref": "stats:kanja-chosa-r5-gaiyou",
+      "title": "令和５年(2023)患者調査の概況　調査の概要",
+      "url": "https://www.mhlw.go.jp/toukei/saikin/hw/kanja/23/dl/gaiyou.pdf",
+      "locator": "用語の解説 (3) 退院患者の平均在院日数",
+      "quote": "調査対象期間中（令和５年９月１日～30 日）に退院した患者の在院日数の平均である。"
+     },
+     {
+      "ref": "x-legacy-L07a:mhlw-kanja-tyousa-gaiyou",
+      "title": "患者調査 調査の概要",
+      "url": "https://www.mhlw.go.jp/toukei/list/10-20-tyousa_gaiyou.html",
+      "locator": "調査の沿革",
+      "quote": "調査を3年に1回、医療施設静態調査と同時期に実施することとなった。"
+     }
+    ],
+    "asOf": "令和５年(2023)患者調査の概況（2024-12-20公表）・厚生労働省 患者調査 調査の概要（2026-11取得）"
+   }
+  },
+  {
+   "id": "lg-07-07",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": false,
+    "stem": true,
+    "explanations": false,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "国民生活基礎調査 用語の説明20〜23（有訴者・有訴者率・通院者率）、調査の概要（3年ごと大規模調査）、病院報告の報告事項を確認。",
+   "detail": "選択肢D「手術件数」の注「病院報告等」が誤り（病院報告の報告事項は在院患者延数・新入院患者数・退院患者数・外来患者延数等で手術件数を含まない）。Dを病院報告の指標である病床利用率に差し替え、注を修正。",
+   "question": {
+    "id": "lg-07-07",
+    "legacy": {
+     "key": "7_7",
+     "chapter": 7,
+     "chapterName": "医療統計II（保健統計・人口統計）",
+     "index": 7,
+     "hash": "69e87cd5e764333e"
+    },
+    "subject": "S07",
+    "subtopic": "その他の保健統計",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "国民生活基礎調査で把握される指標はどれか。",
+    "choices": [
+     "有訴者率・通院者率",
+     "受療率・平均在院日数",
+     "出生率・死亡率",
+     "病床利用率"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "国民生活基礎調査は世帯と世帯員を対象とする調査で、健康票から有訴者率（病気やけが等で自覚症状のある者の人口千対）と通院者率（人口千対）が得られる。",
+     "choiceNotes": [
+      null,
+      "受療率・平均在院日数は医療施設の患者を調べる患者調査の指標。",
+      "出生率・死亡率は人口動態統計の指標。",
+      "病床利用率は病院報告（在院患者延数などの報告）から算出する指標。"
+     ],
+     "point": "国民生活基礎調査＝有訴者率・通院者率（世帯調査、3年ごとに大規模調査）。"
+    },
+    "sources": [
+     {
+      "ref": "stats:kokumin-seikatsu-r7-yougo",
+      "title": "2025（令和７）年 国民生活基礎調査の概況　用語の説明",
+      "url": "https://www.mhlw.go.jp/toukei/saikin/hw/k-tyosa/k-tyosa25/dl/07.pdf",
+      "locator": "用語の説明 21",
+      "quote": "「有訴者率」とは、人口千人に対する有訴者数をいう。"
+     },
+     {
+      "ref": "stats:kokumin-seikatsu-r7-yougo",
+      "title": "2025（令和７）年 国民生活基礎調査の概況　用語の説明",
+      "url": "https://www.mhlw.go.jp/toukei/saikin/hw/k-tyosa/k-tyosa25/dl/07.pdf",
+      "locator": "用語の説明 23",
+      "quote": "「通院者率」とは、人口千人に対する通院者数をいう。"
+     },
+     {
+      "ref": "stats:iryoshisetsu-byoinhokoku-r7-gaiyou",
+      "title": "令和７(2025)年医療施設（動態）調査・病院報告の概況　調査の概要",
+      "url": "https://www.mhlw.go.jp/toukei/saikin/hw/iryosd/25/dl/01tyousa07.pdf",
+      "locator": "２ 病院報告 (5) 報告の事項",
+      "quote": "在院患者延数、新入院患者数、退院患者数、外来患者延数等"
+     }
+    ],
+    "asOf": "2025（令和７）年国民生活基礎調査の概況（2026-07-15公表）・令和７(2025)年病院報告"
+   }
+  },
+  {
+   "id": "lg-07-08",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": false,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "がん統計用語集「標準化死亡比」と保健所・市区町村別統計「２ 死亡」注で定義・100倍表示・判断基準を確認。",
+   "detail": "解説の「間接法の指標」「年齢調整死亡率は直接法」はキャッシュ資料で確認できないため、出典にある説明（期待死亡数との比、年齢階級別死亡率が得られない場合・小集団で用いる）に置き換えた。",
+   "question": {
+    "id": "lg-07-08",
+    "legacy": {
+     "key": "7_8",
+     "chapter": 7,
+     "chapterName": "医療統計II（保健統計・人口統計）",
+     "index": 8,
+     "hash": "1c0c35bc3e097bc9"
+    },
+    "subject": "S07",
+    "subtopic": "年齢調整死亡率とSMR",
+    "format": "knowledge",
+    "difficulty": "standard",
+    "polarity": "positive",
+    "question": "SMR（標準化死亡比）の説明として正しいのはどれか。",
+    "choices": [
+     "実際の死亡数を期待死亡数で割った比",
+     "2集団の粗死亡率の比",
+     "年齢調整死亡率そのもの",
+     "出生数と死亡数の比"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "SMR（標準化死亡比）は、観察集団の実際の死亡数が、基準集団の年齢階級別死亡率を当てはめた場合に予想される死亡数（期待死亡数）の何倍かを示す比である。厚生労働省の保健所・市区町村別統計では100倍して表し、100より大きければ全国より死亡率が高いと判断する。",
+     "choiceNotes": [
+      null,
+      "粗死亡率の単純な比では年齢構成の違いを除けない。",
+      "年齢調整死亡率は年齢階級別死亡率を基準人口に当てはめて算出する別の指標。SMRは年齢階級別死亡率が得られない場合や人口規模の小さい集団で用いられる。",
+      "出生数と死亡数の比ではない。"
+     ],
+     "point": "SMR＝実際の死亡数÷期待死亡数（100倍して表すことが多い）。100超は基準より死亡が多い。"
+    },
+    "sources": [
+     {
+      "ref": "stats:ganjoho-hyouzyunkasibouhi",
+      "title": "がん統計の用語集「標準化死亡比」",
+      "url": "https://ganjoho.jp/reg_stat/statistics/qa_words/word/hyouzyunkasibouhi.html",
+      "locator": "標準化死亡比",
+      "quote": "ある集団で実際に観察された死亡数が、もしその集団の死亡率が基準となる集団の死亡率と同じだった場合に予想される死亡数（期待死亡数）の何倍であるか"
+     },
+     {
+      "ref": "stats:hokenjo-shikuchoson-smr-h30-r4",
+      "title": "平成30年～令和４年人口動態保健所・市区町村別統計の概況「２ 死亡」",
+      "url": "https://www.mhlw.go.jp/toukei/saikin/hw/jinkou/other/hoken24/dl/death.pdf",
+      "locator": "２ 死亡 注",
+      "quote": "標準化死亡比が 100 より大きい場合、その地域の死亡率は全国より高いと判断され"
+     },
+     {
+      "ref": "stats:ganjoho-hyouzyunkasibouhi",
+      "title": "がん統計の用語集「標準化死亡比」",
+      "url": "https://ganjoho.jp/reg_stat/statistics/qa_words/word/hyouzyunkasibouhi.html",
+      "locator": "標準化死亡比",
+      "quote": "年齢調整死亡率の算出には年齢階級別死亡率が必要ですが、そのようなデータが得られない場合や、人口規模の小さい集団で年齢階級別死亡率の偶然変動が大きい場合の年齢調整の手法として、用いられます。"
+     }
+    ],
+    "asOf": "国立がん研究センター がん統計用語集・平成30年～令和４年人口動態保健所・市区町村別統計の概況（2024-04-19公表）"
+   }
+  },
+  {
+   "id": "lg-07-09",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": false,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "e-ヘルスネット「平均寿命と健康寿命」で平均寿命＝0歳平均余命、健康寿命の定義、差＝不健康な期間を確認。",
+   "detail": "内容は正しいが誤答が「両者は同じ意味」「男性のみの指標」など自明で、正答だけが長く手がかりになっていた。定義の取り違えを問う誤答に差し替え5択化。",
+   "question": {
+    "id": "lg-07-09",
+    "legacy": {
+     "key": "7_9",
+     "chapter": 7,
+     "chapterName": "医療統計II（保健統計・人口統計）",
+     "index": 9,
+     "hash": "494299aee8e462ca"
+    },
+    "subject": "S07",
+    "subtopic": "生命表",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "平均寿命と健康寿命の違いとして正しいのはどれか。",
+    "choices": [
+     "平均寿命は0歳の平均余命、健康寿命は日常生活が制限されることなく生活できる期間",
+     "平均寿命はその年に死亡した人の死亡時年齢の平均である",
+     "健康寿命は平均寿命に不健康な期間を加えた期間である",
+     "平均寿命と健康寿命の差は、日常生活に制限のない期間を表す",
+     "平均寿命は65歳時点の平均余命を指す"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "平均寿命は「0歳における平均余命」、健康寿命は「健康上の問題で日常生活が制限されることなく生活できる期間」である。両者の差は日常生活に制限のある「不健康な期間」を意味する。",
+     "choiceNotes": [
+      null,
+      "平均寿命は生命表上の0歳の平均余命であり、死亡者の死亡時年齢の平均ではない。",
+      "健康寿命は平均寿命のうち不健康な期間を除いた期間に当たり、平均寿命より長くはならない。",
+      "差は日常生活に制限のある「不健康な期間」を表す。",
+      "平均寿命は0歳における平均余命である。"
+     ],
+     "point": "平均寿命−健康寿命＝不健康な期間。健康寿命の延伸と、この差の縮小が重要とされる。"
+    },
+    "sources": [
+     {
+      "ref": "x-legacy-L07a:kennet-heikinjumyou-kenkoujumyou",
+      "title": "平均寿命と健康寿命（e-ヘルスネット 生活習慣病などの情報）",
+      "url": "https://kennet.mhlw.go.jp/information/information/hale/h-01-002.html",
+      "locator": "平均寿命と健康寿命の推移",
+      "quote": "平均寿命とは「0歳における平均余命」のことで"
+     },
+     {
+      "ref": "x-legacy-L07a:kennet-heikinjumyou-kenkoujumyou",
+      "title": "平均寿命と健康寿命（e-ヘルスネット 生活習慣病などの情報）",
+      "url": "https://kennet.mhlw.go.jp/information/information/hale/h-01-002.html",
+      "locator": "平均寿命と健康寿命の推移",
+      "quote": "健康寿命とは、「健康上の問題で日常生活が制限されることなく生活できる期間」のことをいい"
+     },
+     {
+      "ref": "x-legacy-L07a:kennet-heikinjumyou-kenkoujumyou",
+      "title": "平均寿命と健康寿命（e-ヘルスネット 生活習慣病などの情報）",
+      "url": "https://kennet.mhlw.go.jp/information/information/hale/h-01-002.html",
+      "locator": "健康寿命の延伸と平均寿命との差の縮小が重要",
+      "quote": "平均寿命と健康寿命の差は日常生活に制限のある「不健康な期間」を意味します"
+     }
+    ],
+    "asOf": "e-ヘルスネット「平均寿命と健康寿命」（2025-02-17最終更新）"
+   }
+  },
+  {
+   "id": "lg-07-10",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": false,
+    "stem": true,
+    "explanations": false,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "がん統計用語集「罹患率」「有病率」、CDC Lesson3 §2（prevalence は incidence と duration に依存）で確認。罹患率・有病率は疫学指標のためS06へ再分類。",
+   "detail": "point の「有病率≒罹患率×罹病期間」は前提付きの近似で出典にないため出典どおりに修正。誤答が「同じ意味」など自明で正答だけが長かったため、定義の取り違えを問う5択に改めた。",
+   "question": {
+    "id": "lg-07-10",
+    "legacy": {
+     "key": "7_10",
+     "chapter": 7,
+     "chapterName": "医療統計II（保健統計・人口統計）",
+     "index": 10,
+     "hash": "c8fcfa0d8f815bcb"
+    },
+    "subject": "S06",
+    "subtopic": "疫学指標",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "罹患率と有病率の違いとして正しいのはどれか。",
+    "choices": [
+     "罹患率は一定期間の新規発生、有病率はある時点の患者の割合",
+     "罹患率はある時点の患者の割合、有病率は一定期間の新規発生",
+     "罹患率の分母は観察集団の患者数である",
+     "有病率は罹病期間が長い疾患ほど低くなる",
+     "罹患率は慢性疾患だけに用いる指標である"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "罹患率は一定期間に新たに診断（発生）した数をその集団の人口で割った値、有病率はある一時点の患者数をその時点でその疾患を患う可能性のある人口で割った値である。",
+     "choiceNotes": [
+      null,
+      "定義が逆である。罹患率が新規発生、有病率がある時点の患者の割合。",
+      "罹患率の分母は観察集団の人口であり、患者数ではない。",
+      "有病率は罹患率と罹病期間の両方の影響を受け、治癒しないまま長く生存する疾患では高くなる。",
+      "罹患率は慢性疾患に限った指標ではない。"
+     ],
+     "point": "罹患率＝新規発生、有病率＝ある時点の既存患者。有病率は罹患率と罹病期間の両方の影響を受ける。"
+    },
+    "sources": [
+     {
+      "ref": "stats:ganjoho-rikanritu",
+      "title": "がん統計の用語集「罹患率」",
+      "url": "https://ganjoho.jp/reg_stat/statistics/qa_words/word/rikanritu.html",
+      "locator": "罹患率",
+      "quote": "ある集団で新たに診断されたがんの数を、その集団のその期間の人口で割った値。"
+     },
+     {
+      "ref": "stats:ganjoho-yuubyouritu",
+      "title": "がん統計の用語集「有病率」",
+      "url": "https://ganjoho.jp/reg_stat/statistics/qa_words/word/yuubyouritu.html",
+      "locator": "有病率",
+      "quote": "ある一時点で、特定の疾患（がん全体や、胃がん・肺がんなどの特定のがん、循環器疾患など）の全患者の数を、その時点でその疾患を患う可能性のある人口で割ったもの。"
+     },
+     {
+      "ref": "x-legacy-L06b:cdc-ss1978-l3s2",
+      "title": "Principles of Epidemiology in Public Health Practice, 3rd ed. Lesson 3 Section 2: Morbidity Frequency Measures",
+      "url": "https://archive.cdc.gov/www_cdc_gov/csels/dsepd/ss1978/lesson3/section2.html",
+      "locator": "Lesson 3 Section 2 Prevalence",
+      "quote": "High prevalence of a disease within a population might reflect high incidence or prolonged survival without cure or both."
+     }
+    ],
+    "asOf": "国立がん研究センター がん統計用語集（2018-01-26更新）・CDC Principles of Epidemiology 3rd ed."
+   }
+  },
+  {
+   "id": "lg-07-11",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": false,
+    "distractors": true,
+    "stem": true,
+    "explanations": false,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "確定数概況 調査の概要の用語定義と比率の解説で周産期死亡・分母（出生数＋妊娠満22週以後の死産数）・死産率の分母（出産数）を確認。",
+   "detail": "正答の分母「出産数」が誤り（人口動態統計の出産数＝出生数＋妊娠満12週以後の死産数で、周産期死亡率の分母は出生数＋妊娠満22週以後の死産数）。solverも分母を読み替えていた。算出式を正しくし、死産率など定義のある誤答に整理。",
+   "question": {
+    "id": "lg-07-11",
+    "legacy": {
+     "key": "7_11",
+     "chapter": 7,
+     "chapterName": "医療統計II（保健統計・人口統計）",
+     "index": 11,
+     "hash": "11e1391c2486f7aa"
+    },
+    "subject": "S07",
+    "subtopic": "母子保健の指標",
+    "format": "knowledge",
+    "difficulty": "standard",
+    "polarity": "positive",
+    "question": "人口動態統計における周産期死亡率の算出式として正しいものはどれか。",
+    "choices": [
+     "（妊娠満22週以後の死産数＋早期新生児死亡数）÷（出生数＋妊娠満22週以後の死産数）×1,000",
+     "（妊娠満22週以後の死産数＋早期新生児死亡数）÷（出生数＋妊娠満12週以後の死産数）×1,000",
+     "妊娠満12週以後の死産数÷（出生数＋妊娠満12週以後の死産数）×1,000",
+     "新生児死亡数÷出生数×1,000",
+     "乳児死亡数÷出生数×1,000"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "周産期死亡は妊娠満22週以後の死産に早期新生児死亡（生後1週（7日）未満の死亡）を加えたもので、周産期死亡率の分母は出生数＋妊娠満22週以後の死産数である。",
+     "choiceNotes": [
+      null,
+      "分母が誤り。出生数＋妊娠満12週以後の死産数は死産率の分母（出産数）であり、周産期死亡率の分母は出生数＋妊娠満22週以後の死産数。",
+      "それは死産率（出産千対）である。",
+      "それは新生児死亡率（生後4週（28日）未満の死亡）である。",
+      "それは乳児死亡率（生後1年未満の死亡）である。"
+     ],
+     "point": "周産期死亡率＝（22週以後の死産＋早期新生児死亡）÷（出生＋22週以後の死産）×1,000。死産は妊娠満12週以後、周産期は満22週以後。"
+    },
+    "sources": [
+     {
+      "ref": "stats:jinkou-kakutei-r7-cho",
+      "title": "令和７（2025）年人口動態統計（確定数）の概況　調査の概要",
+      "url": "https://www.mhlw.go.jp/toukei/saikin/hw/jinkou/kakutei25/dl/01_cho.pdf",
+      "locator": "比率の解説（周産期死亡率）",
+      "quote": "年間周産期死亡数（妊娠満22 週以後の死産数＋早期新生児死亡数（生後１週（７日）未満の死亡数）） 周産期死亡率 ＝ × 1,000 年間出生数＋年間の妊娠満 22 週以後の死産数"
+     },
+     {
+      "ref": "stats:jinkou-kakutei-r7-cho",
+      "title": "令和７（2025）年人口動態統計（確定数）の概況　調査の概要",
+      "url": "https://www.mhlw.go.jp/toukei/saikin/hw/jinkou/kakutei25/dl/01_cho.pdf",
+      "locator": "比率の解説（死産率の分子）",
+      "quote": "年間死産数（妊娠満 12 週以後の死児の出産数）"
+     },
+     {
+      "ref": "stats:jinkou-kakutei-r7-cho",
+      "title": "令和７（2025）年人口動態統計（確定数）の概況　調査の概要",
+      "url": "https://www.mhlw.go.jp/toukei/saikin/hw/jinkou/kakutei25/dl/01_cho.pdf",
+      "locator": "比率の解説（死産率の分母）",
+      "quote": "年間出産数（年間出生数＋年間死産数）"
+     }
+    ],
+    "asOf": "令和７（2025）年人口動態統計（確定数）の概況（2026-09-30公表）"
+   }
+  },
+  {
+   "id": "lg-07-12",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": false,
+    "distractors": true,
+    "stem": true,
+    "explanations": false,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "感染症発生動向調査事業実施要綱 第１ 趣旨及び目的で確認。",
+   "detail": "正答の「流行の早期探知」はキャッシュ資料で確認できず、制度名も曖昧だったため、感染症法に基づく感染症発生動向調査と明示し、実施要綱の目的の表現に合わせた。",
+   "question": {
+    "id": "lg-07-12",
+    "legacy": {
+     "key": "7_12",
+     "chapter": 7,
+     "chapterName": "医療統計II（保健統計・人口統計）",
+     "index": 12,
+     "hash": "8c1e1ff0d7a88672"
+    },
+    "subject": "S07",
+    "subtopic": "その他の保健統計",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "感染症法に基づく感染症発生動向調査（感染症サーベイランス）の目的として正しいものはどれか。",
+    "choices": [
+     "感染症の発生情報を把握・分析し、予防とまん延防止の対策に生かす",
+     "届出のあった感染症の患者をすべて隔離する",
+     "流行している感染症の新しい治療薬を開発する",
+     "患者の氏名などの個人情報を公開して注意を促す"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "感染症発生動向調査事業実施要綱は、感染症の発生情報の正確な把握と分析、その結果の国民や医療関係者への迅速な提供・公開により、有効かつ的確な予防・診断・治療に係る対策を図り、多様な感染症の発生及びまん延を防止することを目的としている。",
+     "choiceNotes": [
+      null,
+      "患者の隔離は事業の目的ではない。目的は発生情報の把握・分析と対策への活用。",
+      "治療薬の開発は臨床研究の領域で、発生動向調査の目的ではない。",
+      "提供・公開するのは分析した発生情報であり、患者の個人情報ではない。"
+     ],
+     "point": "感染症発生動向調査＝発生情報の把握・分析→提供・公開→予防・まん延防止の対策。"
+    },
+    "sources": [
+     {
+      "ref": "x-legacy-L07a:mhlw-hasseidoukou-youkou",
+      "title": "感染症発生動向調査事業実施要綱",
+      "url": "https://www.mhlw.go.jp/content/10900000/001449523.pdf",
+      "locator": "第１ 趣旨及び目的",
+      "quote": "本事業は、感染症の発生情報の正確な 把握と分析、その結果の国民や医療関係者への迅速な提供・公開により、感染症に対す る有効かつ的確な予防・診断・治療に係る対策を図り、多様な感染症の発生及びまん延 を防止する"
+     },
+     {
+      "ref": "x-legacy-L07a:mhlw-hasseidoukou-youkou",
+      "title": "感染症発生動向調査事業実施要綱",
+      "url": "https://www.mhlw.go.jp/content/10900000/001449523.pdf",
+      "locator": "第１ 趣旨及び目的",
+      "quote": "法に基づく施 策として感染症発生動向調査が位置づけられた。"
+     }
+    ],
+    "asOf": "感染症発生動向調査事業実施要綱（令和7年4月7日施行の一部改正まで）"
+   }
+  },
+  {
+   "id": "lg-07-13",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": false,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "簡易生命表「（１）生命表とは」と参考資料1 生命表諸関数の定義で確認。誤答の出典は lg-07-06/07 と同じ患者調査・国民生活基礎調査の定義。",
+   "detail": "内容は正しいが誤答が「年収と貯蓄額」「就業率と失業率」など無関係で、正答だけが長く自明だった。他の保健統計の指標を誤答にした5択に改めた。",
+   "question": {
+    "id": "lg-07-13",
+    "legacy": {
+     "key": "7_13",
+     "chapter": 7,
+     "chapterName": "医療統計II（保健統計・人口統計）",
+     "index": 13,
+     "hash": "66969ed90c009f03"
+    },
+    "subject": "S07",
+    "subtopic": "生命表",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "生命表から得られる情報はどれか。",
+    "choices": [
+     "年齢別の死亡率・生存数・平均余命",
+     "年齢別の受療率・推計患者数",
+     "年齢別の有訴者率・通院者率",
+     "母の年齢別の出生率・合計特殊出生率",
+     "傷病別の退院患者の平均在院日数"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "生命表は、ある期間の死亡状況が今後変化しないと仮定したとき、各年齢の者が1年以内に死亡する確率や平均してあと何年生きられるかを、死亡率・生存数・平均余命などの関数で表したものである。0歳の平均余命が平均寿命。",
+     "choiceNotes": [
+      null,
+      "受療率・推計患者数は患者調査で得られる。",
+      "有訴者率・通院者率は国民生活基礎調査で得られる。",
+      "出生率・合計特殊出生率は人口動態統計で算出される。",
+      "退院患者の平均在院日数は患者調査で得られる。"
+     ],
+     "point": "生命表＝死亡率・生存数・平均余命など。0歳の平均余命＝平均寿命。"
+    },
+    "sources": [
+     {
+      "ref": "stats:kani-seimeihyo-r7-about",
+      "title": "令和７(2025)年簡易生命表の概況　令和７(2025)年簡易生命表について",
+      "url": "https://www.mhlw.go.jp/toukei/saikin/hw/life/life25/dl/life25-01.pdf",
+      "locator": "（１）生命表とは",
+      "quote": "生命表は、ある期間における死亡状況が今後変化しないと仮定したときに、各年齢の者が１年以内に死亡す る確率や、平均してあと何年生きられるかという期待値などを、死亡率や平均余命などの指標によって表した"
+     },
+     {
+      "ref": "stats:kani-seimeihyo-r7-teigi",
+      "title": "令和７(2025)年簡易生命表の概況　参考資料１ 生命表諸関数の定義",
+      "url": "https://www.mhlw.go.jp/toukei/saikin/hw/life/life25/dl/life25-08.pdf",
+      "locator": "生命表諸関数の定義 平均余命",
+      "quote": "歳以降に生存する年数の平均を 𝑥 歳における平均余命とい"
+     },
+     {
+      "ref": "stats:kani-seimeihyo-r7-teigi",
+      "title": "令和７(2025)年簡易生命表の概況　参考資料１ 生命表諸関数の定義",
+      "url": "https://www.mhlw.go.jp/toukei/saikin/hw/life/life25/dl/life25-08.pdf",
+      "locator": "生命表諸関数の定義 平均寿命",
+      "quote": "０歳における平均余命 𝑒 を平均寿命という。"
+     }
+    ],
+    "asOf": "令和７(2025)年簡易生命表の概況（2026-07-24公表）"
+   }
+  }
+ ]
+}

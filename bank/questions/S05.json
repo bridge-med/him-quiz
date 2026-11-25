@@ -1,0 +1,1820 @@
+{
+ "subject": "S05",
+ "questions": [
+  {
+   "id": "lg-03-05",
+   "legacy": {
+    "key": "3_5",
+    "chapter": 3,
+    "chapterName": "医療関連法規",
+    "index": 5,
+    "hash": "f1b0a76c2283a8ac"
+   },
+   "subject": "S05",
+   "subtopic": "電子保存の三基準と外部保存",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "診療録等を電子媒体に保存する場合に確保が求められる3つの基準（電子保存の三基準）として正しいものはどれか。",
+   "choices": [
+    "機密性・完全性・可用性",
+    "正確性・網羅性・適時性",
+    "安全性・信頼性・効率性",
+    "真正性・見読性・保存性"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "法令で保存義務のある文書等の情報を電子媒体に保存する場合は、真正性・見読性・保存性の確保が求められる（安全管理ガイドライン第7.0版 概説編）。",
+    "choiceNotes": [
+     "機密性・完全性・可用性は、同ガイドラインが示す情報セキュリティの要素であり、電子保存の三基準ではない。",
+     "電子保存の三基準ではない。三基準は真正性・見読性・保存性。",
+     "電子保存の三基準ではない。三基準は真正性・見読性・保存性。",
+     null
+    ],
+    "point": "電子保存の三基準＝真正性・見読性・保存性。情報セキュリティの要素（機密性・完全性・可用性）と混同しない。"
+   },
+   "sources": [
+    {
+     "ref": "info:mhlw-anzen-gl7-gaisetsu",
+     "title": "医療情報システムの安全管理に関するガイドライン 第7.0版 概説編",
+     "url": "https://www.mhlw.go.jp/content/10808000/001716290.pdf",
+     "locator": "４．２",
+     "quote": "当該情報の真正性・見読性・保存性が確保され"
+    },
+    {
+     "ref": "info:mhlw-anzen-gl7-gaisetsu",
+     "title": "医療情報システムの安全管理に関するガイドライン 第7.0版 概説編",
+     "url": "https://www.mhlw.go.jp/content/10808000/001716290.pdf",
+     "locator": "４．２",
+     "quote": "「機密性（Confidentiality）」は、情報資産に対して、許可された者のみがアクセスできることを指す。"
+    }
+   ],
+   "asOf": "医療情報システムの安全管理に関するガイドライン第7.0版（令和8年6月）",
+   "origin": {
+    "batch": "L03",
+    "key": "lg-03-05",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（法令・制度）で修正",
+     "修正後の再監査は未実施",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L03（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L03a（法令・制度）",
+     "reauditor": null
+    },
+    "log": "bank/audit/legacy-L03a.audit.json#lg-03-05",
+    "notes": "GL7.0概説編4.2で三基準とCIAを確認。"
+   }
+  },
+  {
+   "id": "lg-08-01",
+   "legacy": {
+    "key": "8_1",
+    "chapter": 8,
+    "chapterName": "診療情報管理I（法令・諸規則）",
+    "index": 1,
+    "hash": "c9a30cc341595a44"
+   },
+   "subject": "S05",
+   "subtopic": "電子保存の三基準と外部保存",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "法令で保存義務のある診療録等を電子媒体に保存する場合に満たさなければならない三条件はどれか。",
+   "choices": [
+    "機密性・完全性・可用性",
+    "安全性・効率性・正確性",
+    "利便性・経済性・互換性",
+    "真正性・見読性・保存性"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "e-文書法の施行通知は、電子媒体に保存する場合の三条件として、見読性（必要に応じ直ちに明瞭かつ整然とした形式で表示・書面化できる）、真正性（改変・消去の有無を確認でき、作成の責任の所在が明らか）、保存性（保存すべき期間中、復元可能な状態で保存）の確保を挙げている。",
+    "choiceNotes": [
+     "機密性・完全性・可用性は、安全管理ガイドラインが示す情報セキュリティの要素であり、電子保存の三条件ではない。",
+     "電子保存の三条件として示されたものではない。",
+     "電子保存の三条件として示されたものではない。",
+     null
+    ],
+    "point": "電子保存の三条件＝真正性・見読性・保存性。情報セキュリティの3要素（機密性・完全性・可用性）と混同しない。"
+   },
+   "sources": [
+    {
+     "ref": "info:mhlw-ebunsho-shiko-tsuchi",
+     "title": "民間事業者等が行う書面の保存等における情報通信の技術の利用に関する法律等の施行等について〔医療法〕",
+     "url": "https://www.mhlw.go.jp/web/t_doc?dataId=00tb2663&dataType=1&pageNo=1",
+     "locator": "第二 2(3)",
+     "quote": "電磁的記録による保存を行うことができる文書等に記録された情報を電子媒体に保存する場合は次の三条件を満たさなければならない。"
+    },
+    {
+     "ref": "info:mhlw-ebunsho-shiko-tsuchi",
+     "title": "民間事業者等が行う書面の保存等における情報通信の技術の利用に関する法律等の施行等について〔医療法〕",
+     "url": "https://www.mhlw.go.jp/web/t_doc?dataId=00tb2663&dataType=1&pageNo=1",
+     "locator": "別添 医療情報システムの安全管理に関するガイドライン（策定時）",
+     "quote": "書類の内容、性格に応じた電子データの真正性、見読性及び保存性の確保措置を講ずる必要がある。"
+    },
+    {
+     "ref": "info:mhlw-anzen-gl7-gaisetsu",
+     "title": "医療情報システムの安全管理に関するガイドライン 第7.0版 概説編",
+     "url": "https://www.mhlw.go.jp/content/10808000/001716290.pdf",
+     "locator": "4.2 医療情報システムの安全管理に必要な要素",
+     "quote": "「機密性（Confidentiality）」は、情報資産に対して、許可された者のみがアクセスできることを指す。"
+    }
+   ],
+   "asOf": "平成17年医政発第0331009号等（平成28年一部改正）・安全管理GL第7.0版（令和8年6月）",
+   "origin": {
+    "batch": "L08",
+    "key": "lg-08-01",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（法令・制度）で修正",
+     "修正後の再監査は未実施",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L08（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L08a（法令・制度）",
+     "reauditor": null
+    },
+    "log": "bank/audit/legacy-L08a.audit.json#lg-08-01",
+    "notes": "info:mhlw-ebunsho-shiko-tsuchi 第二2(3)（見読性・真正性・保存性の三条件）; info:mhlw-anzen-gl7-gaisetsu 4.2（機密性・完全性・可用性＝情報セキュリティの要素）。"
+   }
+  },
+  {
+   "id": "lg-08-09",
+   "legacy": {
+    "key": "8_9",
+    "chapter": 8,
+    "chapterName": "診療情報管理I（法令・諸規則）",
+    "index": 9,
+    "hash": "4ee5a532f0c65196"
+   },
+   "subject": "S05",
+   "subtopic": "医療情報の標準化",
+   "format": "knowledge",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "SS-MIX2の説明として正しいものはどれか。",
+   "choices": [
+    "医用画像の保存と通信のための国際標準規格",
+    "診療報酬請求（レセプト）を電子的に提出するためのフォーマット",
+    "診療情報提供書をHL7 FHIRで記述するための仕様",
+    "診療データを標準化された形式で蓄積するストレージの仕様"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "SS-MIX2ストレージは、厚生労働省電子的診療情報交換事業の成果物「SS-MIX標準化ストレージ仕様書」をベースとした、標準化された診療データ利用の仕組みであり、その仕様書は厚生労働省標準規格（HS026）として認定されている。地域医療連携や多施設での二次利用に用いられる。",
+    "choiceNotes": [
+     "医用画像の保存と通信の規格はDICOM（HS011）である。",
+     "レセプトの電子請求の様式であり、診療データを蓄積するストレージの仕様であるSS-MIX2とは異なる。",
+     "診療情報提供書のHL7 FHIR記述仕様（HS038）であり、SS-MIX2ではない。",
+     null
+    ],
+    "point": "SS-MIX2＝標準化ストレージの仕様（厚生労働省標準規格HS026）。地域医療連携・データの二次利用に活用。"
+   },
+   "sources": [
+    {
+     "ref": "info:jami-ssmix2",
+     "title": "SS-MIX2仕様書・ガイドライン",
+     "url": "https://www.jami.jp/jamistd/ss-mix2/",
+     "locator": "SS-MIX2仕様書・ガイドライン",
+     "quote": "本書は厚生労働省標準規格（HS026）として認定されています。"
+    },
+    {
+     "ref": "info:helics-hs026-ssmix2-report",
+     "title": "HS026 医療情報標準化レポート SS-MIX2ストレージ仕様書および構築ガイドライン",
+     "url": "https://square.umin.ac.jp/helics/html/files/HS026/HS026_rep20180428_JAMI.pdf",
+     "locator": "概要",
+     "quote": "標準化された診療データ利用の仕組み である SS-MIX2 ストレージ（標準お よび拡張）の実装の普及が期待されて います。"
+    },
+    {
+     "ref": "info:helics-hs011-dicom-report",
+     "title": "HS011 医療情報標準化レポート 医療におけるデジタル画像と通信（DICOM）",
+     "url": "https://square.umin.ac.jp/helics/html/files/HS011/HS011_rep20180428_JIRA.pdf",
+     "locator": "表題",
+     "quote": "医療におけるデジタル画像と通信"
+    }
+   ],
+   "asOf": "JAMI SS-MIX2仕様書・ガイドライン掲載ページ（2026年8月 Ver.1.2j）",
+   "origin": {
+    "batch": "L08",
+    "key": "lg-08-09",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（法令・制度）で修正",
+     "修正後の再監査は未実施",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L08（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L08a（法令・制度）",
+     "reauditor": null
+    },
+    "log": "bank/audit/legacy-L08a.audit.json#lg-08-09",
+    "notes": "info:jami-ssmix2（厚生労働省標準規格HS026）; info:helics-hs026-ssmix2-report（厚生労働省電子的診療情報交換事業の成果物をベース、地域医療連携・二次利用）。"
+   }
+  },
+  {
+   "id": "lg-08-10",
+   "legacy": {
+    "key": "8_10",
+    "chapter": 8,
+    "chapterName": "診療情報管理I（法令・諸規則）",
+    "index": 10,
+    "hash": "146d8f8ce347019a"
+   },
+   "subject": "S05",
+   "subtopic": "医療情報の標準化",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "HL7の説明として正しいものはどれか。",
+   "choices": [
+    "医用画像の保存と通信のための規格",
+    "診療データを標準化された形式で蓄積するストレージの仕様",
+    "医療情報システム間で医療データを交換するための標準規約",
+    "患者の重症度を7段階で分類する基準"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "HL7（Health Level Seven）は医療情報交換のための標準規約で、名称は「医療情報システム間のISO-OSI第7層アプリケーション層」に由来する。患者管理、オーダ、検査報告、患者紹介などの情報交換を扱う。",
+    "choiceNotes": [
+     "医用画像の保存と通信の規格はDICOMである。",
+     "標準化ストレージの仕様はSS-MIX2である。",
+     null,
+     "「7」はOSI参照モデルの第7層に由来し、重症度の段階ではない。"
+    ],
+    "point": "HL7＝医療情報交換の標準規約（7＝OSI第7層アプリケーション層）。画像はDICOM、標準化ストレージはSS-MIX2。"
+   },
+   "sources": [
+    {
+     "ref": "x-legacy-L08:mhlw-grants-hl7-allergy",
+     "title": "厚生労働科学研究 研究報告書（課題番号201325030B）分冊0006「電子情報としてのアレルギー情報」（HL7の説明を含む）",
+     "url": "https://mhlw-grants.niph.go.jp/system/files/2013/134011/201325030B_upload/201325030B0006.pdf",
+     "locator": "２．１）HL7",
+     "quote": "医療情報交換のための標準規約。Health Level Seven の略で、"
+    },
+    {
+     "ref": "x-legacy-L08:mhlw-grants-hl7-allergy",
+     "title": "厚生労働科学研究 研究報告書（課題番号201325030B）分冊0006「電子情報としてのアレルギー情報」（HL7の説明を含む）",
+     "url": "https://mhlw-grants.niph.go.jp/system/files/2013/134011/201325030B_upload/201325030B0006.pdf",
+     "locator": "２．１）HL7",
+     "quote": "の ISO‑OSI 第７層アプリケーション層」に由来する。"
+    },
+    {
+     "ref": "info:helics-hs011-dicom-report",
+     "title": "HS011 医療情報標準化レポート 医療におけるデジタル画像と通信（DICOM）",
+     "url": "https://square.umin.ac.jp/helics/html/files/HS011/HS011_rep20180428_JIRA.pdf",
+     "locator": "表題",
+     "quote": "医療におけるデジタル画像と通信"
+    }
+   ],
+   "asOf": "厚生労働科学研究報告書（2013年度）・HELICS標準化レポート",
+   "origin": {
+    "batch": "L08",
+    "key": "lg-08-10",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（法令・制度）で修正",
+     "修正後の再監査は未実施",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L08（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L08a（法令・制度）",
+     "reauditor": null
+    },
+    "log": "bank/audit/legacy-L08a.audit.json#lg-08-10",
+    "notes": "x-legacy-L08:mhlw-grants-hl7-allergy（医療情報交換のための標準規約、Health Level Seven、ISO-OSI第7層アプリケーション層に由来）; info:helics-hs011-dicom-report; info:jami-ssmix2。"
+   }
+  },
+  {
+   "id": "lg-08-27",
+   "legacy": {
+    "key": "8_27",
+    "chapter": 8,
+    "chapterName": "診療情報管理I（法令・諸規則）",
+    "index": 27,
+    "hash": "2752445c5d82d1bc"
+   },
+   "subject": "S05",
+   "subtopic": "医療情報システムの安全管理",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "タイムスタンプの目的として正しいのはどれか。",
+   "choices": [
+    "ある時刻にその電子データが存在し、以降改ざんされていないことを証明すること",
+    "障害に備えて、電子データの複製を別の媒体に保存すること",
+    "電子データのファイルサイズを圧縮し、保存容量を節約すること",
+    "ネットワークの通信速度を向上させ、データ転送を速めること"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "安全管理ガイドライン第7.0版 企画管理編14.2によれば、タイムスタンプは刻印された時刻以前にその文書が存在したこと（存在証明）と、その時刻以降改ざんされていないこと（非改ざん証明）を証明する。",
+    "choiceNotes": [
+     null,
+     "データの複製保存はバックアップであり、タイムスタンプの目的ではない。",
+     "ファイルの圧縮はタイムスタンプとは無関係。",
+     "通信速度の向上はタイムスタンプとは無関係。"
+    ],
+    "point": "タイムスタンプ＝存在証明＋非改ざん証明。法令で保存義務のある文書では、認定された事業者が提供するタイムスタンプを使用（安全管理GL第7.0版 企画管理編14）。"
+   },
+   "sources": [
+    {
+     "ref": "info:mhlw-anzen-gl7-kikaku",
+     "title": "医療情報システムの安全管理に関するガイドライン 第7.0版 企画管理編",
+     "url": "https://www.mhlw.go.jp/content/10808000/001716292.pdf",
+     "locator": "14.2 電子署名を含む文書全体に付与するタイムスタンプの要件",
+     "quote": "タイムスタンプは、タイムスタンプに刻印されている時刻以前にその文書が存在し（存在証明）、その時刻以降文 書が改ざんされていないことを証明する（非改ざん証明）。"
+    },
+    {
+     "ref": "info:mhlw-anzen-gl7-kikaku",
+     "title": "医療情報システムの安全管理に関するガイドライン 第7.0版 企画管理編",
+     "url": "https://www.mhlw.go.jp/content/10808000/001716292.pdf",
+     "locator": "14 遵守事項2(1)",
+     "quote": "タイムスタンプは、第三者による検証を可能にするため、時刻認証業務の認定に関する規程"
+    }
+   ],
+   "asOf": "医療情報システムの安全管理に関するガイドライン 第7.0版（令和8年6月）",
+   "origin": {
+    "batch": "L08",
+    "key": "lg-08-27",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（法令・制度）で修正",
+     "修正後の再監査は未実施",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L08（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L08b（法令・制度）",
+     "reauditor": null
+    },
+    "log": "bank/audit/legacy-L08b.audit.json#lg-08-27",
+    "notes": "info:mhlw-anzen-gl7-kikaku 14.2（タイムスタンプ＝存在証明・非改ざん証明、認定事業者のタイムスタンプ使用）を確認。ブラインド解答一致。"
+   }
+  },
+  {
+   "id": "lg-08-29",
+   "legacy": {
+    "key": "8_29",
+    "chapter": 8,
+    "chapterName": "診療情報管理I（法令・諸規則）",
+    "index": 29,
+    "hash": "25cbc20cb22595b5"
+   },
+   "subject": "S05",
+   "subtopic": "医療情報システムの安全管理",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "アクセスログ管理の目的として正しいのはどれか。",
+   "choices": [
+    "診療録の印刷枚数を記録し、用紙の使用量を削減すること",
+    "患者ごとの来院回数を記録し、再来の傾向を把握すること",
+    "誰がいつどの情報にアクセスしたかを記録し、不正アクセスを検知すること",
+    "医師の勤務時間を集計し、時間外労働を管理すること"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "医療情報システムの安全管理に関するガイドライン第7.0版は、利用者のアクセスについてアクセスログを記録し定期的に確認することを求め、個人情報を含む資源は全てのアクセスログを収集して不正利用がないことを確認するとしている。",
+    "choiceNotes": [
+     "用紙使用量の削減はアクセスログの目的ではない。",
+     "来院傾向の把握はアクセスログの目的ではない。",
+     null,
+     "勤務時間・時間外労働の管理はアクセスログの目的ではない。"
+    ],
+    "point": "アクセスログ＝少なくともログイン時刻・アクセス時間・操作した医療情報が特定できるよう記録し、定期的に確認して不正利用を検知（安全管理GL第7.0版 システム運用編17）。ログ自体も改ざん防止の対象。"
+   },
+   "sources": [
+    {
+     "ref": "info:mhlw-anzen-gl7-unyo",
+     "title": "医療情報システムの安全管理に関するガイドライン 第7.0版 システム運用編",
+     "url": "https://www.mhlw.go.jp/content/10808000/001716295.pdf",
+     "locator": "17 証跡のレビュー・システム監査 遵守事項①",
+     "quote": "少なくとも利用者のログイン時刻、アクセス時間及びログイン中に操作した医療情報が特定できるように記録す"
+    },
+    {
+     "ref": "info:mhlw-anzen-gl7-unyo",
+     "title": "医療情報システムの安全管理に関するガイドライン 第7.0版 システム運用編",
+     "url": "https://www.mhlw.go.jp/content/10808000/001716295.pdf",
+     "locator": "17.1 証跡のレビュー",
+     "quote": "全てのアクセスログを収集し、定期的にそ の内容をチェックして不正利用がないことを確認しなければならない。"
+    }
+   ],
+   "asOf": "医療情報システムの安全管理に関するガイドライン 第7.0版（令和8年6月）",
+   "origin": {
+    "batch": "L08",
+    "key": "lg-08-29",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（法令・制度）で修正",
+     "修正後の再監査は未実施",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L08（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L08b（法令・制度）",
+     "reauditor": null
+    },
+    "log": "bank/audit/legacy-L08b.audit.json#lg-08-29",
+    "notes": "info:mhlw-anzen-gl7-unyo 17（遵守事項①：ログイン時刻・アクセス時間・操作した医療情報が特定できるよう記録し定期確認、17.1：不正利用がないことの確認）を確認。ブラインド解答一致。"
+   }
+  },
+  {
+   "id": "lg-12-00",
+   "legacy": {
+    "key": "12_0",
+    "chapter": 12,
+    "chapterName": "医療情報学（医療情報システム）",
+    "index": 0,
+    "hash": "475b595e53199a24"
+   },
+   "subject": "S05",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "電子カルテシステムの略称として正しいのはどれか。",
+   "choices": [
+    "EMR（Electronic Medical Record）",
+    "EBM（Evidence-Based Medicine）",
+    "DPC（Diagnosis Procedure Combination）",
+    "ICD（International Classification of Diseases）"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "EMR＝Electronic Medical Record（電子カルテ）。施設内の診療録を電子化。EHRは施設間で共有可能な電子健康記録。",
+    "choiceNotes": [
+     null,
+     "EBMは根拠に基づく医療。",
+     "DPCは診断群分類。",
+     "ICDは国際疾病分類。"
+    ],
+    "point": "EMR＝施設内電子カルテ。EHR＝施設間で共有できる電子健康記録。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L12",
+    "key": "lg-12-00",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L12.audit.json#lg-12-00",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-12-01",
+   "legacy": {
+    "key": "12_1",
+    "chapter": 12,
+    "chapterName": "医療情報学（医療情報システム）",
+    "index": 1,
+    "hash": "7ab178e84b56cdc1"
+   },
+   "subject": "S05",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "PACSの説明として正しいのはどれか。",
+   "choices": [
+    "患者アクセス管理システム",
+    "薬剤処方管理システム",
+    "人事管理システム",
+    "医用画像管理システム"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "PACS（Picture Archiving and Communication System）は医用画像（CT・MRI等）のデジタル保存・表示・通信を行うシステム。",
+    "choiceNotes": [
+     "患者アクセス管理ではない。",
+     "処方管理はオーダリングシステム。",
+     "人事管理は医療情報システムではない。",
+     null
+    ],
+    "point": "PACS＝医用画像管理。フィルムレス化を実現。DICOMが通信規格。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L12",
+    "key": "lg-12-01",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L12.audit.json#lg-12-01",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-12-02",
+   "legacy": {
+    "key": "12_2",
+    "chapter": 12,
+    "chapterName": "医療情報学（医療情報システム）",
+    "index": 2,
+    "hash": "5ceafa2716d5a627"
+   },
+   "subject": "S05",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "DICOMの説明として正しいのはどれか。",
+   "choices": [
+    "診療報酬の計算規格",
+    "電子カルテの入力規格",
+    "薬剤の分類規格",
+    "医用画像の通信規格"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "DICOM（Digital Imaging and Communications in Medicine）は医用画像の保存・通信に関する国際標準規格。PACSの基盤技術。",
+    "choiceNotes": [
+     "診療報酬の計算規格ではない。",
+     "電子カルテの入力規格ではない。",
+     "薬剤分類ではない。",
+     null
+    ],
+    "point": "DICOM＝医用画像通信規格。PACSとセットで覚える。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L12",
+    "key": "lg-12-02",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L12.audit.json#lg-12-02",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-12-03",
+   "legacy": {
+    "key": "12_3",
+    "chapter": 12,
+    "chapterName": "医療情報学（医療情報システム）",
+    "index": 3,
+    "hash": "3fe62f39df3b15e3"
+   },
+   "subject": "S05",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "情報セキュリティの3要素はどれか。",
+   "choices": [
+    "機密性・完全性・可用性",
+    "真正性・見読性・保存性",
+    "安全性・効率性・正確性",
+    "速度・容量・信頼性"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "情報セキュリティの3要素（CIA）＝機密性（Confidentiality）、完全性（Integrity）、可用性（Availability）。",
+    "choiceNotes": [
+     null,
+     "真正性・見読性・保存性は電子保存の3基準。",
+     "安全性等はCIAではない。",
+     "速度等はシステム性能指標。"
+    ],
+    "point": "CIA＝機密性・完全性・可用性。電子保存3基準（真正性・見読性・保存性）との混同に注意。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L12",
+    "key": "lg-12-03",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L12.audit.json#lg-12-03",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-12-04",
+   "legacy": {
+    "key": "12_4",
+    "chapter": 12,
+    "chapterName": "医療情報学（医療情報システム）",
+    "index": 4,
+    "hash": "b4c6f2537ada5d7b"
+   },
+   "subject": "S05",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "オーダリングシステムの説明として正しいのはどれか。",
+   "choices": [
+    "医師が検査・処方等の指示をコンピュータで行うシステム",
+    "患者が自分で検査を予約するシステム",
+    "会計処理のみを行うシステム",
+    "医師の勤務管理を行うシステム"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "オーダリングシステムは医師がコンピュータ上で検査・処方・注射等のオーダー（指示）を入力し、各部門に伝達するシステム。",
+    "choiceNotes": [
+     null,
+     "患者の自己予約ではない。",
+     "会計は医事会計システム。",
+     "勤務管理は人事システム。"
+    ],
+    "point": "オーダリングシステム＝医師の指示入力→各部門への伝達。電子カルテの前段階。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L12",
+    "key": "lg-12-04",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L12.audit.json#lg-12-04",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-12-05",
+   "legacy": {
+    "key": "12_5",
+    "chapter": 12,
+    "chapterName": "医療情報学（医療情報システム）",
+    "index": 5,
+    "hash": "2578a922944eec65"
+   },
+   "subject": "S05",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "BCP（事業継続計画）の医療機関における意義はどれか。",
+   "choices": [
+    "新規事業を開始する計画",
+    "病院を建て替える計画",
+    "災害時でも医療サービスを継続するための計画",
+    "保険料を値上げする計画"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "BCP（Business Continuity Plan）は災害・システム障害等の緊急事態発生時にも重要な医療サービスを継続するための計画。",
+    "choiceNotes": [
+     "新規事業計画ではない。",
+     "建替計画ではない。",
+     null,
+     "保険料とは無関係。"
+    ],
+    "point": "BCP＝災害時の業務継続計画。医療情報システムのバックアップも含む。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L12",
+    "key": "lg-12-05",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L12.audit.json#lg-12-05",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-12-06",
+   "legacy": {
+    "key": "12_6",
+    "chapter": 12,
+    "chapterName": "医療情報学（医療情報システム）",
+    "index": 6,
+    "hash": "f640973b83d4fd5c"
+   },
+   "subject": "S05",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "VPNの説明として正しいのはどれか。",
+   "choices": [
+    "病院内の院内LANのこと",
+    "インターネット上に仮想的な専用回線を構築する技術",
+    "患者情報をインターネットに公開する技術",
+    "医療画像を圧縮する技術"
+   ],
+   "answer": 1,
+   "explanation": {
+    "correct": "VPN（Virtual Private Network）はインターネット上に暗号化された仮想的な専用回線を構築し、安全な通信を実現する技術。地域医療連携等に活用。",
+    "choiceNotes": [
+     "院内LANとVPNは異なる。",
+     null,
+     "患者情報の公開技術ではない。",
+     "画像圧縮とは異なる。"
+    ],
+    "point": "VPN＝仮想専用回線。暗号化通信で安全にデータ交換。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L12",
+    "key": "lg-12-06",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L12.audit.json#lg-12-06",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-12-07",
+   "legacy": {
+    "key": "12_7",
+    "chapter": 12,
+    "chapterName": "医療情報学（医療情報システム）",
+    "index": 7,
+    "hash": "1b07a754bc33e74a"
+   },
+   "subject": "S05",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "PHR（Personal Health Record）の説明として正しいのはどれか。",
+   "choices": [
+    "病院が管理する診療録のこと",
+    "個人が自身の健康情報を管理・活用する仕組み",
+    "保険者が管理する医療費記録",
+    "製薬会社の臨床試験データ"
+   ],
+   "answer": 1,
+   "explanation": {
+    "correct": "PHRは個人が自分の健康・医療情報（検診結果、服薬情報等）を自ら管理し活用する仕組み。マイナポータル等で推進。",
+    "choiceNotes": [
+     "病院の診療録はEMR/EHR。",
+     null,
+     "保険者の記録はレセプトデータ。",
+     "臨床試験データとは異なる。"
+    ],
+    "point": "PHR＝個人が自ら管理する健康記録。EMR（施設管理）と対比。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L12",
+    "key": "lg-12-07",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L12.audit.json#lg-12-07",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-12-08",
+   "legacy": {
+    "key": "12_8",
+    "chapter": 12,
+    "chapterName": "医療情報学（医療情報システム）",
+    "index": 8,
+    "hash": "13173a7c0bf4ab69"
+   },
+   "subject": "S05",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "アクセス制御の方式で「ロールベースアクセス制御」の説明はどれか。",
+   "choices": [
+    "職務上の役割に基づいてアクセス権限を設定する方式",
+    "患者の希望に基づくアクセス制御",
+    "時間帯によるアクセス制御のみ",
+    "パスワードなしでアクセスする方式"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "RBAC（Role-Based Access Control）は医師・看護師・事務等の職務上の役割に応じてシステムへのアクセス権限を設定する方式。",
+    "choiceNotes": [
+     null,
+     "患者の希望ではなく職務上の役割に基づく。",
+     "時間帯制御はRBACの主要概念ではない。",
+     "パスワードなしではなく認証は必要。"
+    ],
+    "point": "RBAC＝役割ベースのアクセス制御。職種ごとに閲覧・編集権限を設定。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L12",
+    "key": "lg-12-08",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L12.audit.json#lg-12-08",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-12-09",
+   "legacy": {
+    "key": "12_9",
+    "chapter": 12,
+    "chapterName": "医療情報学（医療情報システム）",
+    "index": 9,
+    "hash": "82283800f6d8a6cb"
+   },
+   "subject": "S05",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "遠隔医療（オンライン診療）について正しいのはどれか。",
+   "choices": [
+    "対面診療の完全な代替として常に利用可能",
+    "すべての疾患で初診からオンラインが可能",
+    "保険適用の対象外である",
+    "情報通信技術を用いて離れた場所から診療を行うこと"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "遠隔医療はICTを用いて医師と患者が離れた場所で診療を行う方法。オンライン診療として保険適用あり。",
+    "choiceNotes": [
+     "対面診療の完全代替ではなく、適切な場合に利用。",
+     "初診は原則対面だが2020年以降一部緩和。",
+     "2018年の診療報酬改定でオンライン診療料が新設され保険適用。",
+     null
+    ],
+    "point": "オンライン診療＝2018年から保険適用。COVID-19で初診からの利用も一時的に緩和。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L12",
+    "key": "lg-12-09",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L12.audit.json#lg-12-09",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-12-10",
+   "legacy": {
+    "key": "12_10",
+    "chapter": 12,
+    "chapterName": "医療情報学（医療情報システム）",
+    "index": 10,
+    "hash": "3b84015d6327d63f"
+   },
+   "subject": "S05",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "IoTの医療応用として正しいのはどれか。",
+   "choices": [
+    "紙のカルテを保管すること",
+    "院内の掃除を自動化すること",
+    "ウェアラブルデバイスで患者のバイタルサインを常時モニタリング",
+    "手書きの処方箋を作成すること"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "IoT（Internet of Things）の医療応用では、ウェアラブルデバイスでバイタルサインを常時モニタリングし遠隔でデータを収集・分析する。",
+    "choiceNotes": [
+     "紙カルテの保管はIoTではない。",
+     "掃除の自動化はロボティクスでありIoTの主要応用ではない。",
+     null,
+     "手書き処方箋はデジタル化以前の方法。"
+    ],
+    "point": "IoT医療＝ウェアラブルデバイス、遠隔モニタリング、スマートベッド等。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L12",
+    "key": "lg-12-10",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L12.audit.json#lg-12-10",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-12-11",
+   "legacy": {
+    "key": "12_11",
+    "chapter": 12,
+    "chapterName": "医療情報学（医療情報システム）",
+    "index": 11,
+    "hash": "aa64be25945a5924"
+   },
+   "subject": "S05",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "次世代医療基盤法の目的として正しいのはどれか。",
+   "choices": [
+    "患者情報を無制限に公開",
+    "医療機関の統廃合を推進",
+    "医療ビッグデータを匿名加工して研究・産業に活用",
+    "医師の給与を規定"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "次世代医療基盤法（2018年施行）は医療情報を匿名加工して、研究開発や産業利用に活用することを目的とする。認定匿名加工医療情報作成事業者が処理。",
+    "choiceNotes": [
+     "無制限公開ではなく匿名加工して活用。",
+     "統廃合の推進法ではない。",
+     null,
+     "給与規定ではない。"
+    ],
+    "point": "次世代医療基盤法＝医療ビッグデータの匿名加工＋研究活用。2018年施行。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L12",
+    "key": "lg-12-11",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L12.audit.json#lg-12-11",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-12-12",
+   "legacy": {
+    "key": "12_12",
+    "chapter": 12,
+    "chapterName": "医療情報学（医療情報システム）",
+    "index": 12,
+    "hash": "d1e8de8ebfe6c440"
+   },
+   "subject": "S05",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "マイナンバーカードの健康保険証利用について正しいのはどれか。",
+   "choices": [
+    "マイナンバーカードで治療内容を自分で入力する制度",
+    "マイナンバーカードが処方箋の代わりになる制度",
+    "マイナンバーカードを健康保険証として利用できるオンライン資格確認制度",
+    "マイナンバーカードで手術を予約する制度"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "2021年からマイナンバーカードの健康保険証利用が開始。オンライン資格確認システムで保険資格をリアルタイムに確認。",
+    "choiceNotes": [
+     "治療内容を自分で入力する制度ではない。",
+     "処方箋の代わりにはならない。",
+     null,
+     "手術予約とは無関係。"
+    ],
+    "point": "マイナ保険証＝オンライン資格確認。2021年開始。2024年12月から原則義務化。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L12",
+    "key": "lg-12-12",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L12.audit.json#lg-12-12",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-12-13",
+   "legacy": {
+    "key": "12_13",
+    "chapter": 12,
+    "chapterName": "医療情報学（医療情報システム）",
+    "index": 13,
+    "hash": "fa689738fea039d4"
+   },
+   "subject": "S05",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "クラウドコンピューティングの医療分野での利点はどれか。",
+   "choices": [
+    "初期投資の軽減とスケーラビリティの向上",
+    "通信速度の低下",
+    "データの安全性の低下",
+    "利用コストの永久無料化"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "クラウドは初期投資の軽減、柔軟なスケーラビリティ、災害時のデータ保全等の利点がある。3省2ガイドラインに基づくセキュリティ確保が必要。",
+    "choiceNotes": [
+     null,
+     "通信速度は低下しない。",
+     "適切な対策で安全性は確保可能。",
+     "永久無料ではなく従量課金等。"
+    ],
+    "point": "医療クラウド＝初期投資軽減＋スケーラビリティ。セキュリティガイドライン遵守が必須。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L12",
+    "key": "lg-12-13",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L12.audit.json#lg-12-13",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-12-14",
+   "legacy": {
+    "key": "12_14",
+    "chapter": 12,
+    "chapterName": "医療情報学（医療情報システム）",
+    "index": 14,
+    "hash": "57c4dd24157f0c66"
+   },
+   "subject": "S05",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "SS-MIX2の目的として正しいのはどれか。",
+   "choices": [
+    "特定のベンダーのみで利用するシステム",
+    "患者の自己管理ツール",
+    "保険請求の自動化ツール",
+    "異なるベンダーのシステム間で医療情報を標準的に交換すること"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "SS-MIX2は異なるベンダーの医療情報システム間でデータを標準的な形式で蓄積・交換するための仕組み。地域医療連携を促進。",
+    "choiceNotes": [
+     "特定ベンダーに限定せず標準化が目的。",
+     "患者の自己管理ツールではない。",
+     "保険請求の自動化ではない。",
+     null
+    ],
+    "point": "SS-MIX2＝ベンダー非依存の標準化ストレージ。地域医療連携の基盤技術。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L12",
+    "key": "lg-12-14",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L12.audit.json#lg-12-14",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-12-15",
+   "legacy": {
+    "key": "12_15",
+    "chapter": 12,
+    "chapterName": "医療情報学（医療情報システム）",
+    "index": 15,
+    "hash": "6af6191ec7525385"
+   },
+   "subject": "S05",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "AIの医療応用として正しいのはどれか。",
+   "choices": [
+    "すべての診療をAIが代替すること",
+    "患者の同意なくAIが治療方針を決定すること",
+    "画像診断支援（内視鏡・CT等の読影補助）",
+    "AIの判断は常に医師より正確であること"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "AIの医療応用は画像診断支援（内視鏡画像の病変検出、CT/MRIの読影補助）等で実用化が進んでいる。",
+    "choiceNotes": [
+     "AIはすべての診療を代替するものではなく支援ツール。",
+     "最終判断は医師が行い患者の同意も必要。",
+     null,
+     "AIの判断が常に正確とは限らない。"
+    ],
+    "point": "AI医療＝画像診断支援が先行。最終判断は医師。支援ツールとしての位置づけ。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L12",
+    "key": "lg-12-15",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L12.audit.json#lg-12-15",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-12-16",
+   "legacy": {
+    "key": "12_16",
+    "chapter": 12,
+    "chapterName": "医療情報学（医療情報システム）",
+    "index": 16,
+    "hash": "735ad10cdd996586"
+   },
+   "subject": "S05",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "地域医療連携システムの基盤技術はどれか。",
+   "choices": [
+    "紙の紹介状のみ",
+    "EHRとSS-MIX2",
+    "FAXでの情報伝達のみ",
+    "院内PHSシステム"
+   ],
+   "answer": 1,
+   "explanation": {
+    "correct": "地域医療連携システムはEHR（Electronic Health Record）とSS-MIX2を基盤技術として、施設間で患者情報を安全に共有する。",
+    "choiceNotes": [
+     "紙の紹介状のみでは電子的連携ではない。",
+     null,
+     "FAXのみでは標準化されていない。",
+     "院内PHSは施設内通信。"
+    ],
+    "point": "地域医療連携＝EHR＋SS-MIX2。施設間の安全な情報共有を実現。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L12",
+    "key": "lg-12-16",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L12.audit.json#lg-12-16",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-12-17",
+   "legacy": {
+    "key": "12_17",
+    "chapter": 12,
+    "chapterName": "医療情報学（医療情報システム）",
+    "index": 17,
+    "hash": "693c57d6906e99bf"
+   },
+   "subject": "S05",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "電子カルテの導入効果として最も適切なのはどれか。",
+   "choices": [
+    "紙の使用量が増加する",
+    "医療費が必ず削減される",
+    "診療情報の共有・検索が迅速になる",
+    "すべての医療ミスがなくなる"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "電子カルテの主な導入効果は診療情報の即時共有・迅速な検索・診療支援機能・データの二次利用等。",
+    "choiceNotes": [
+     "電子カルテ導入により紙の使用量は減少する。",
+     "導入コストがかかり必ず削減されるとは限らない。",
+     null,
+     "電子カルテはツールであり、すべてのミスを防ぐことは不可能。"
+    ],
+    "point": "電子カルテの効果＝情報共有＋検索性＋データ活用＋安全支援。課題＝導入コスト・操作教育。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L12",
+    "key": "lg-12-17",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L12.audit.json#lg-12-17",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-12-18",
+   "legacy": {
+    "key": "12_18",
+    "chapter": 12,
+    "chapterName": "医療情報学（医療情報システム）",
+    "index": 18,
+    "hash": "5c8e29f54ec1213b"
+   },
+   "subject": "S05",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "病院情報システムの部門システムのうち、検査部門システムの略称はどれか。",
+   "choices": [
+    "RIS",
+    "NIS",
+    "LIS",
+    "PIS"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "LIS（Laboratory Information System）は検査部門システム。検体検査のオーダ受付・結果報告を管理する。",
+    "choiceNotes": [
+     "RIS（Radiology Information System）は放射線部門システム。",
+     "NIS（Nursing Information System）は看護情報システム。",
+     null,
+     "PIS（Pharmacy Information System）は薬剤部門システム。"
+    ],
+    "point": "LIS＝検査、RIS＝放射線、PIS＝薬剤、NIS＝看護。部門システムの略称は頻出。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L12",
+    "key": "lg-12-18",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L12.audit.json#lg-12-18",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-12-19",
+   "legacy": {
+    "key": "12_19",
+    "chapter": 12,
+    "chapterName": "医療情報学（医療情報システム）",
+    "index": 19,
+    "hash": "10d3ec170daaafa1"
+   },
+   "subject": "S05",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "HPKI（保健医療福祉分野の公開鍵基盤）の主な用途はどれか。",
+   "choices": [
+    "医療従事者の電子署名・認証",
+    "患者の体温測定",
+    "病院の建築設計",
+    "医薬品の製造管理"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "HPKIは医師・薬剤師等の資格を電子的に確認し、電子署名・認証を行うための公開鍵基盤。処方箋の電子化等に活用。",
+    "choiceNotes": [
+     null,
+     "体温測定は医療機器の機能でありHPKIとは無関係。",
+     "建築設計はHPKIの対象外。",
+     "医薬品の製造管理はGMP等の規制による。"
+    ],
+    "point": "HPKI＝医療資格の電子認証基盤。電子処方箋・電子紹介状の署名に使用。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L12",
+    "key": "lg-12-19",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L12.audit.json#lg-12-19",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-12-20",
+   "legacy": {
+    "key": "12_20",
+    "chapter": 12,
+    "chapterName": "医療情報学（医療情報システム）",
+    "index": 20,
+    "hash": "36961a529c699928"
+   },
+   "subject": "S05",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "クリティカルパス（クリニカルパス）の電子化の利点はどれか。",
+   "choices": [
+    "パスの作成が不要になる",
+    "すべての患者に同一の治療を強制できる",
+    "医師の判断が不要になる",
+    "バリアンス分析の自動化・パスの標準化が容易になる"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "電子化によりバリアンス（逸脱）の自動記録・集計・分析が容易になり、パスの改訂・標準化が促進される。",
+    "choiceNotes": [
+     "電子化してもパスの作成は必要。",
+     "患者の個別性は尊重され、強制ではない。バリアンスとして記録。",
+     "医師の臨床判断は常に必要。パスはあくまでガイドライン。",
+     null
+    ],
+    "point": "電子パスの利点＝バリアンス自動収集＋分析＋標準化＋改訂の効率化。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L12",
+    "key": "lg-12-20",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L12.audit.json#lg-12-20",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-12-21",
+   "legacy": {
+    "key": "12_21",
+    "chapter": 12,
+    "chapterName": "医療情報学（医療情報システム）",
+    "index": 21,
+    "hash": "d57067eb1e96d451"
+   },
+   "subject": "S05",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "BI（ビジネスインテリジェンス）ツールの医療分野での活用例はどれか。",
+   "choices": [
+    "経営データの可視化・分析によるダッシュボード作成",
+    "手術の実施",
+    "患者の搬送",
+    "医薬品の調剤"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "BIツールは経営データ・診療データを可視化し、ダッシュボードやレポートを自動生成。意思決定を支援する。",
+    "choiceNotes": [
+     null,
+     "手術の実施はBIツールの機能ではない。",
+     "患者搬送はBIツールとは無関係。",
+     "調剤は薬剤部門の業務。"
+    ],
+    "point": "BI＝データの可視化・分析ツール。DWH（データウェアハウス）と連携して活用。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L12",
+    "key": "lg-12-21",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L12.audit.json#lg-12-21",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-12-22",
+   "legacy": {
+    "key": "12_22",
+    "chapter": 12,
+    "chapterName": "医療情報学（医療情報システム）",
+    "index": 22,
+    "hash": "167adc5ff4001e6c"
+   },
+   "subject": "S05",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "データウェアハウス（DWH）の特徴として正しいのはどれか。",
+   "choices": [
+    "複数の情報源からデータを統合し分析用に蓄積する",
+    "日常業務の処理を目的とする",
+    "リアルタイムでデータを更新する",
+    "個々のトランザクション処理に特化している"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "DWHは複数のシステムからデータを抽出・統合・蓄積し、分析・意思決定に活用するためのデータベース。",
+    "choiceNotes": [
+     null,
+     "日常業務処理はOLTP（オンライントランザクション処理）。",
+     "DWHは定期的なバッチ処理でデータを更新。リアルタイムではない。",
+     "トランザクション処理はOLTPの特徴。"
+    ],
+    "point": "DWH＝分析用データ統合基盤。ETL（抽出・変換・格納）でデータを投入。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L12",
+    "key": "lg-12-22",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L12.audit.json#lg-12-22",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-12-23",
+   "legacy": {
+    "key": "12_23",
+    "chapter": 12,
+    "chapterName": "医療情報学（医療情報システム）",
+    "index": 23,
+    "hash": "f1723298c4c7da01"
+   },
+   "subject": "S05",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "匿名加工情報について正しいのはどれか。",
+   "choices": [
+    "特定の個人を識別できないように加工された情報",
+    "個人を特定できる状態の情報",
+    "暗号化されただけの情報",
+    "医療機関名を削除しただけの情報"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "匿名加工情報は個人情報保護法に定められ、特定の個人を識別できないよう加工し、復元できないようにした情報。一定条件で第三者提供可。",
+    "choiceNotes": [
+     null,
+     "個人特定可能な状態は個人情報であり匿名加工情報ではない。",
+     "暗号化は復号可能なため匿名加工とは異なる。",
+     "医療機関名だけでなく個人識別情報全体の加工が必要。"
+    ],
+    "point": "匿名加工情報＝個人特定不可＋復元不可。本人同意なしで第三者提供可能。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L12",
+    "key": "lg-12-23",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L12.audit.json#lg-12-23",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-12-24",
+   "legacy": {
+    "key": "12_24",
+    "chapter": 12,
+    "chapterName": "医療情報学（医療情報システム）",
+    "index": 24,
+    "hash": "a7cc63d3aadad12b"
+   },
+   "subject": "S05",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "次世代医療基盤法の目的として正しいのはどれか。",
+   "choices": [
+    "医療費の削減のみ",
+    "医療機関の統廃合",
+    "医師の増員",
+    "医療情報を匿名加工して研究・分析に活用すること"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "次世代医療基盤法（2018年施行）は医療情報を認定匿名加工医療情報作成事業者が匿名加工し、研究・開発に活用する仕組みを定めた法律。",
+    "choiceNotes": [
+     "医療費削減のみが目的ではなく、医療分野の研究開発促進が主目的。",
+     "医療機関の統廃合は医療法の領域。",
+     "医師の増員は医療基盤法の目的ではない。",
+     null
+    ],
+    "point": "次世代医療基盤法＝医療ビッグデータの安全な利活用。認定事業者が匿名加工。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L12",
+    "key": "lg-12-24",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L12.audit.json#lg-12-24",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-12-25",
+   "legacy": {
+    "key": "12_25",
+    "chapter": 12,
+    "chapterName": "医療情報学（医療情報システム）",
+    "index": 25,
+    "hash": "63d0d48be99aca00"
+   },
+   "subject": "S05",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "標準マスターのうち、病名の標準マスターはどれか。",
+   "choices": [
+    "HOTコード",
+    "ICD大分類コード",
+    "標準病名マスター（MEDIS）",
+    "JLACコード"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "標準病名マスターはMEDIS-DC（医療情報システム開発センター）が管理。ICD-10コードとの対応付けも含む。",
+    "choiceNotes": [
+     "HOTコードは医薬品の標準コード。",
+     "ICD大分類は国際統計分類であり標準マスターそのものではない。",
+     null,
+     "JLACコードは臨床検査の標準コード。"
+    ],
+    "point": "標準マスター：病名＝MEDIS、薬剤＝HOT、検査＝JLAC10、手術＝Kコード。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L12",
+    "key": "lg-12-25",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L12.audit.json#lg-12-25",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-12-26",
+   "legacy": {
+    "key": "12_26",
+    "chapter": 12,
+    "chapterName": "医療情報学（医療情報システム）",
+    "index": 26,
+    "hash": "1adb9db3108ce2f7"
+   },
+   "subject": "S05",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "医療情報技師の主な役割として正しいのはどれか。",
+   "choices": [
+    "診療行為を直接実施すること",
+    "医療情報システムの企画・開発・運用を担うこと",
+    "医療保険の審査を行うこと",
+    "薬剤の調合を行うこと"
+   ],
+   "answer": 1,
+   "explanation": {
+    "correct": "医療情報技師は医療情報システムの企画・導入・運用・保守を担う専門職。日本医療情報学会が認定。",
+    "choiceNotes": [
+     "診療行為は医師・看護師等の医療職の役割。",
+     null,
+     "医療保険の審査は審査支払機関の業務。",
+     "薬剤の調合は薬剤師の業務。"
+    ],
+    "point": "医療情報技師＝医療IT専門職。医学・情報技術・医療情報システムの3分野の知識が必要。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L12",
+    "key": "lg-12-26",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L12.audit.json#lg-12-26",
+    "notes": "未監査"
+   }
+  }
+ ]
+}

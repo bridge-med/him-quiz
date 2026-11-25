@@ -1,0 +1,193 @@
+{
+ "answers": [
+  {
+   "key": "lg-12-00",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "一般知識。他選択肢は明確に誤り"
+  },
+  {
+   "key": "lg-12-01",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "一般知識。他選択肢は明確に誤り"
+  },
+  {
+   "key": "lg-12-02",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "一般知識。他選択肢は明確に誤り"
+  },
+  {
+   "key": "lg-12-03",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "一般知識。他選択肢は明確に誤り"
+  },
+  {
+   "key": "lg-12-04",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "一般知識。他選択肢は明確に誤り"
+  },
+  {
+   "key": "lg-12-05",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "一般知識。他選択肢は明確に誤り"
+  },
+  {
+   "key": "lg-12-06",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "一般知識。他選択肢は明確に誤り"
+  },
+  {
+   "key": "lg-12-07",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "一般知識。他選択肢は明確に誤り"
+  },
+  {
+   "key": "lg-12-08",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "一般知識。他選択肢は明確に誤り"
+  },
+  {
+   "key": "lg-12-09",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "一般知識。他選択肢は明確に誤り"
+  },
+  {
+   "key": "lg-12-10",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "一般知識。他選択肢は明確に誤り"
+  },
+  {
+   "key": "lg-12-11",
+   "answer": 0,
+   "confidence": "medium",
+   "ambiguous": true,
+   "note": "lg-12-24と実質重複"
+  },
+  {
+   "key": "lg-12-12",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "現行はマイナ保険証/オンライン資格確認"
+  },
+  {
+   "key": "lg-12-13",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "一般知識。他選択肢は明確に誤り"
+  },
+  {
+   "key": "lg-12-14",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "SS-MIX2は標準化ストレージ/交換規約"
+  },
+  {
+   "key": "lg-12-15",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "一般知識。他選択肢は明確に誤り"
+  },
+  {
+   "key": "lg-12-16",
+   "answer": 0,
+   "confidence": "medium",
+   "ambiguous": true,
+   "note": "EHR+SS-MIX2は基盤技術として他選択肢より妥当だが設問が曖昧"
+  },
+  {
+   "key": "lg-12-17",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "一般知識。他選択肢は明確に誤り"
+  },
+  {
+   "key": "lg-12-18",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "一般知識。他選択肢は明確に誤り"
+  },
+  {
+   "key": "lg-12-19",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "一般知識。他選択肢は明確に誤り"
+  },
+  {
+   "key": "lg-12-20",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "一般知識。他選択肢は明確に誤り"
+  },
+  {
+   "key": "lg-12-21",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "一般知識。他選択肢は明確に誤り"
+  },
+  {
+   "key": "lg-12-22",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "一般知識。他選択肢は明確に誤り"
+  },
+  {
+   "key": "lg-12-23",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "一般知識。他選択肢は明確に誤り"
+  },
+  {
+   "key": "lg-12-24",
+   "answer": 1,
+   "confidence": "medium",
+   "ambiguous": true,
+   "note": "lg-12-11と実質重複"
+  },
+  {
+   "key": "lg-12-25",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "標準病名マスターはMEDIS"
+  },
+  {
+   "key": "lg-12-26",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "一般知識。他選択肢は明確に誤り"
+  }
+ ]
+}

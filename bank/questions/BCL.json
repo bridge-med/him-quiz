@@ -1,0 +1,1827 @@
+{
+ "subject": "BCL",
+ "questions": [
+  {
+   "id": "lg-04-03",
+   "legacy": {
+    "key": "4_3",
+    "chapter": 4,
+    "chapterName": "医学用語・医学略語",
+    "index": 3,
+    "hash": "4620e9da1238bfed"
+   },
+   "subject": "BCL",
+   "subtopic": "臨床医学総論",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "negative",
+   "question": "バイタルサインに含まれないのはどれか。",
+   "choices": [
+    "体温",
+    "血液型",
+    "血圧",
+    "脈拍"
+   ],
+   "answer": 1,
+   "explanation": {
+    "correct": "バイタルサインは、心拍数（脈拍）・呼吸数・体温・血圧など、生命維持に不可欠な身体機能の状態を反映する指標である。血液型は身体機能の状態を測る指標ではなく、バイタルサインに含まれない。",
+    "choiceNotes": [
+     "体温はバイタルサインの基本項目である。",
+     null,
+     "血圧はバイタルサインの基本項目である。",
+     "脈拍（心拍数）はバイタルサインの基本項目である。"
+    ],
+    "point": "バイタルサイン＝体温・脈拍（心拍数）・呼吸数・血圧。"
+   },
+   "sources": [
+    {
+     "ref": "x-legacy-L04a:medlineplus-vitalsigns",
+     "title": "Vital signs (MedlinePlus Medical Encyclopedia)",
+     "url": "https://medlineplus.gov/ency/article/002341.htm",
+     "locator": "Vital signs 本文冒頭",
+     "quote": "Vital signs reflect essential body functions, including your heartbeat rate, breathing rate, temperature, and blood pressure."
+    }
+   ],
+   "asOf": "MedlinePlus Medical Encyclopedia「Vital signs」（Review Date 2025-01-01）",
+   "origin": {
+    "batch": "L04",
+    "key": "lg-04-03",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（医学用語）で修正",
+     "修正後の再監査は未実施",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L04（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L04a（医学用語）",
+     "reauditor": null
+    },
+    "log": "bank/audit/legacy-L04a.audit.json#lg-04-03",
+    "notes": "MedlinePlus Vital signs: heartbeat rate, breathing rate, temperature, blood pressure。血液型は含まれない。"
+   }
+  },
+  {
+   "id": "lg-04-06",
+   "legacy": {
+    "key": "4_6",
+    "chapter": 4,
+    "chapterName": "医学用語・医学略語",
+    "index": 6,
+    "hash": "c0ca601e1fc8a65d"
+   },
+   "subject": "BCL",
+   "subtopic": "血液・代謝・内分泌",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "HbA1cが示す内容はどれか。",
+   "choices": [
+    "採血した時点の血糖値そのものを示す指標",
+    "肝臓の機能障害の程度を反映する指標",
+    "過去の一定期間の平均的な血糖値を反映する指標",
+    "腎臓の糸球体ろ過量を推定する指標"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "HbA1cは糖に化学的に結合したヘモグロビン（糖化ヘモグロビン）の一種で、血糖の増加に伴って増加し、過去の一定期間（MSDマニュアルでは過去3カ月間）の平均血糖値と関係する。糖尿病の診断基準にも用いられる。",
+    "choiceNotes": [
+     "HbA1cは血糖そのものではなく糖化ヘモグロビンの割合で、採血前の一定期間の平均的な血糖を反映する。",
+     "HbA1cは血糖の状態を反映する指標であり、肝機能の指標ではない。",
+     null,
+     "HbA1cは血糖の状態を反映する指標であり、腎機能（糸球体ろ過量）の指標ではない。"
+    ],
+    "point": "HbA1c＝糖化ヘモグロビン。過去の一定期間の平均血糖を反映し、糖尿病の診断基準にも用いられる。"
+   },
+   "sources": [
+    {
+     "ref": "x-legacy-L04a:msd-ja-dm",
+     "title": "MSDマニュアル プロフェッショナル版「糖尿病」",
+     "url": "https://www.msdmanuals.com/ja-jp/professional/10-内分泌疾患と代謝性疾患/糖尿病と糖代謝異常症/糖尿病",
+     "locator": "糖尿病 > 診断 > HbA1c",
+     "quote": "HbA1Cは，糖に化学的に結合したヘモグロビンの一種であり，血糖の増加に伴って増加し，過去3カ月間の平均血糖値との関係が証明されている。"
+    },
+    {
+     "ref": "x-legacy-L04a:msd-ja-dm",
+     "title": "MSDマニュアル プロフェッショナル版「糖尿病」",
+     "url": "https://www.msdmanuals.com/ja-jp/professional/10-内分泌疾患と代謝性疾患/糖尿病と糖代謝異常症/糖尿病",
+     "locator": "糖尿病 > 診断 > HbA1c",
+     "quote": "現在の糖尿病の診断基準には，以下のHbA1C測定値がある"
+    }
+   ],
+   "asOf": "MSDマニュアル プロフェッショナル版「糖尿病」（2024年10月更新）",
+   "origin": {
+    "batch": "L04",
+    "key": "lg-04-06",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（医学用語）で修正",
+     "修正後の再監査は未実施",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L04（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L04a（医学用語）",
+     "reauditor": null
+    },
+    "log": "bank/audit/legacy-L04a.audit.json#lg-04-06",
+    "notes": "MSD 糖尿病 診断: HbA1cは糖化ヘモグロビンで過去3カ月間の平均血糖値と関係、診断基準に用いる。lg-04-23（別バッチ）と内容が重複するため、どちらか一方のみ採用を推奨。"
+   }
+  },
+  {
+   "id": "lg-04-07",
+   "legacy": {
+    "key": "4_7",
+    "chapter": 4,
+    "chapterName": "医学用語・医学略語",
+    "index": 7,
+    "hash": "c8a8120b4e8cd76d"
+   },
+   "subject": "BCL",
+   "subtopic": "臨床医学総論",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "CRPが示す内容はどれか。",
+   "choices": [
+    "過去の一定期間の平均血糖を反映する指標",
+    "血液の凝固する能力を評価する指標",
+    "炎症の有無や程度を反映する急性期反応物質",
+    "肝臓の解毒機能を評価する指標"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "CRP（C-reactive protein：C反応性蛋白）は肝臓で産生され、体内に炎症があると上昇する急性期反応物質の一つである。炎症の有無を調べる一般的な検査だが、炎症の部位や原因は特定できない（非特異的）。",
+    "choiceNotes": [
+     "過去の一定期間の平均血糖を反映するのはHbA1cであり、CRPは炎症で上昇する蛋白である。",
+     "CRPは炎症で上昇する急性期反応物質であり、血液凝固能を測る指標ではない。",
+     null,
+     "CRPは肝臓で産生されるが、肝臓の解毒機能を示す指標ではなく、炎症に反応して上昇する。"
+    ],
+    "point": "CRP＝C反応性蛋白。炎症で上昇する急性期反応物質（非特異的な炎症マーカー）。"
+   },
+   "sources": [
+    {
+     "ref": "x-legacy-L04a:medlineplus-crp",
+     "title": "C-reactive protein (MedlinePlus Medical Encyclopedia)",
+     "url": "https://medlineplus.gov/ency/article/003356.htm",
+     "locator": "Information",
+     "quote": "C-reactive protein (CRP) is produced by the liver. The level of CRP rises when there is inflammation in the body."
+    },
+    {
+     "ref": "x-legacy-L04a:msd-ja-dm",
+     "title": "MSDマニュアル プロフェッショナル版「糖尿病」",
+     "url": "https://www.msdmanuals.com/ja-jp/professional/10-内分泌疾患と代謝性疾患/糖尿病と糖代謝異常症/糖尿病",
+     "locator": "糖尿病 > 診断 > HbA1c",
+     "quote": "HbA1Cは，糖に化学的に結合したヘモグロビンの一種であり，血糖の増加に伴って増加し，過去3カ月間の平均血糖値との関係が証明されている。"
+    },
+    {
+     "ref": "x-legacy-L04a:medlineplus-crp",
+     "title": "C-reactive protein (MedlinePlus Medical Encyclopedia)",
+     "url": "https://medlineplus.gov/ency/article/003356.htm",
+     "locator": "Why the Test is Performed",
+     "quote": "The CRP test is a general test to check for inflammation in the body. It is not a specific test."
+    }
+   ],
+   "asOf": "MedlinePlus Medical Encyclopedia「C-reactive protein」（Review Date 2025-01-28）",
+   "origin": {
+    "batch": "L04",
+    "key": "lg-04-07",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（医学用語）で修正",
+     "修正後の再監査は未実施",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L04（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L04a（医学用語）",
+     "reauditor": null
+    },
+    "log": "bank/audit/legacy-L04a.audit.json#lg-04-07",
+    "notes": "MedlinePlus CRP: 肝臓で産生、炎症で上昇する急性期反応物質（acute phase reactants）、非特異的な炎症の検査。MSD 糖尿病: 平均血糖を反映するのはHbA1c。"
+   }
+  },
+  {
+   "id": "lg-05-00",
+   "legacy": {
+    "key": "5_0",
+    "chapter": 5,
+    "chapterName": "臨床医学",
+    "index": 0,
+    "hash": "fa7847f2ab1801e0"
+   },
+   "subject": "BCL",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "急性心筋梗塞の典型的症状はどれか。",
+   "choices": [
+    "数秒間の胸痛が繰り返される",
+    "運動時のみの息切れ",
+    "食後に悪化する上腹部痛",
+    "激しい胸痛が30分以上持続しニトロで改善しない"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "AMIは前胸部の激しい圧迫感が30分以上持続しニトログリセリンでは改善しない。",
+    "choiceNotes": [
+     "数秒の胸痛は不整脈を示唆。",
+     "運動時の息切れは心不全や狭心症。",
+     "食後の上腹部痛は胃腸疾患。",
+     null
+    ],
+    "point": "AMI＝30分以上の胸痛＋ニトロ無効。狭心症＝数分＋ニトロ有効。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L05",
+    "key": "lg-05-00",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L05.audit.json#lg-05-00",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-05-01",
+   "legacy": {
+    "key": "5_1",
+    "chapter": 5,
+    "chapterName": "臨床医学",
+    "index": 1,
+    "hash": "ace810b7944e3a89"
+   },
+   "subject": "BCL",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "COPDの最大のリスク因子はどれか。",
+   "choices": [
+    "飲酒",
+    "喫煙",
+    "高血圧",
+    "肥満"
+   ],
+   "answer": 1,
+   "explanation": {
+    "correct": "COPD患者の約90%に喫煙歴がある。長期喫煙で不可逆的な気流制限。",
+    "choiceNotes": [
+     "飲酒は肝疾患のリスク因子。",
+     null,
+     "高血圧は循環器疾患のリスク因子。",
+     "COPDでは体重減少がむしろ多い。"
+    ],
+    "point": "COPD＝喫煙が最大原因（90%）。「タバコ病」。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L05",
+    "key": "lg-05-01",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L05.audit.json#lg-05-01",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-05-02",
+   "legacy": {
+    "key": "5_2",
+    "chapter": 5,
+    "chapterName": "臨床医学",
+    "index": 2,
+    "hash": "5a84e2dbbf6f79d5"
+   },
+   "subject": "BCL",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "糖尿病の分類について正しいのはどれか。",
+   "choices": [
+    "1型は自己免疫によるインスリン分泌不全、2型はインスリン抵抗性が主体",
+    "1型は生活習慣が原因、2型は自己免疫が原因",
+    "1型は高齢者に多く2型は小児に多い",
+    "1型と2型の治療法は同一"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "1型＝自己免疫で膵β細胞破壊→インスリン絶対不足。2型＝インスリン抵抗性＋分泌低下。日本は2型が90%。",
+    "choiceNotes": [
+     null,
+     "1型と2型の原因が逆。",
+     "1型は若年、2型は中高年に多い。",
+     "1型はインスリン必須、2型は段階的治療。"
+    ],
+    "point": "1型＝自己免疫・インスリン依存。2型＝生活習慣・抵抗性。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L05",
+    "key": "lg-05-02",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L05.audit.json#lg-05-02",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-05-03",
+   "legacy": {
+    "key": "5_3",
+    "chapter": 5,
+    "chapterName": "臨床医学",
+    "index": 3,
+    "hash": "e2fbb46bd4bc3fd0"
+   },
+   "subject": "BCL",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "TNM分類の「T」の意味はどれか。",
+   "choices": [
+    "転移の有無",
+    "原発腫瘍の大きさ・進展度",
+    "リンパ節転移の程度",
+    "腫瘍の悪性度"
+   ],
+   "answer": 1,
+   "explanation": {
+    "correct": "T＝Tumor（原発腫瘍）、N＝Node（リンパ節転移）、M＝Metastasis（遠隔転移）。",
+    "choiceNotes": [
+     "転移はM。",
+     null,
+     "リンパ節はN。",
+     "悪性度はGradeで別途分類。"
+    ],
+    "point": "T＝腫瘍、N＝リンパ節、M＝遠隔転移。TNMでStageが決まる。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L05",
+    "key": "lg-05-03",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L05.audit.json#lg-05-03",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-05-04",
+   "legacy": {
+    "key": "5_4",
+    "chapter": 5,
+    "chapterName": "臨床医学",
+    "index": 4,
+    "hash": "b106a584dfe605f5"
+   },
+   "subject": "BCL",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "negative",
+   "question": "脳梗塞の3病型に含まれないのはどれか。",
+   "choices": [
+    "出血性脳梗塞",
+    "ラクナ梗塞",
+    "アテローム血栓性脳梗塞",
+    "心原性脳塞栓症"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "3病型＝ラクナ梗塞・アテローム血栓性・心原性塞栓症。「出血性脳梗塞」は独立した病型ではない。",
+    "choiceNotes": [
+     null,
+     "ラクナ梗塞は3病型の一つ。",
+     "アテローム血栓性は3病型の一つ。",
+     "心原性塞栓症は3病型の一つ。"
+    ],
+    "point": "脳梗塞3病型＝ラクナ・アテローム血栓性・心原性塞栓。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L05",
+    "key": "lg-05-04",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L05.audit.json#lg-05-04",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-05-05",
+   "legacy": {
+    "key": "5_5",
+    "chapter": 5,
+    "chapterName": "臨床医学",
+    "index": 5,
+    "hash": "ee0c8c45a194e918"
+   },
+   "subject": "BCL",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "CKDのステージ分類に用いる指標はどれか。",
+   "choices": [
+    "GFR",
+    "血糖値",
+    "血圧値",
+    "BMI"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "CKDステージはGFR（糸球体濾過量）に基づく。G5（GFR<15）が末期腎不全。",
+    "choiceNotes": [
+     null,
+     "血糖値は糖尿病の管理指標。",
+     "血圧は管理に重要だがステージ分類はGFR。",
+     "BMIは肥満の指標。"
+    ],
+    "point": "CKDステージ＝GFRで分類。G5＝GFR<15→透析導入。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L05",
+    "key": "lg-05-05",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L05.audit.json#lg-05-05",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-05-06",
+   "legacy": {
+    "key": "5_6",
+    "chapter": 5,
+    "chapterName": "臨床医学",
+    "index": 6,
+    "hash": "a99938f4cbc5ff07"
+   },
+   "subject": "BCL",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "大腿骨近位部骨折について正しいのはどれか。",
+   "choices": [
+    "小児に最も多い骨折",
+    "高齢者の転倒で多発し寝たきりの原因となる",
+    "保存療法が第一選択",
+    "骨粗鬆症と関連しない"
+   ],
+   "answer": 1,
+   "explanation": {
+    "correct": "高齢者の転倒＋骨粗鬆症で多発。寝たきり予防のため手術＋早期リハビリが基本。",
+    "choiceNotes": [
+     "高齢者に圧倒的に多い。",
+     null,
+     "手術療法が第一選択。",
+     "骨粗鬆症が最大のリスク因子。"
+    ],
+    "point": "大腿骨近位部骨折＝高齢者＋骨粗鬆症。手術が基本。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L05",
+    "key": "lg-05-06",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L05.audit.json#lg-05-06",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-05-07",
+   "legacy": {
+    "key": "5_7",
+    "chapter": 5,
+    "chapterName": "臨床医学",
+    "index": 7,
+    "hash": "ffa68887800aadb9"
+   },
+   "subject": "BCL",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "市中肺炎で最も多い起因菌はどれか。",
+   "choices": [
+    "肺炎球菌",
+    "緑膿菌",
+    "MRSA",
+    "結核菌"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "市中肺炎（CAP）の最多起因菌は肺炎球菌。ワクチン接種が推奨。",
+    "choiceNotes": [
+     null,
+     "緑膿菌は院内肺炎に多い。",
+     "MRSAは院内感染の起因菌。",
+     "結核菌は肺結核の原因だが市中肺炎の最多ではない。"
+    ],
+    "point": "市中肺炎＝肺炎球菌。院内肺炎＝MRSA・緑膿菌。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L05",
+    "key": "lg-05-07",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L05.audit.json#lg-05-07",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-05-08",
+   "legacy": {
+    "key": "5_8",
+    "chapter": 5,
+    "chapterName": "臨床医学",
+    "index": 8,
+    "hash": "4d788bf247b75491"
+   },
+   "subject": "BCL",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "心房細動の最も重要な合併症はどれか。",
+   "choices": [
+    "心筋梗塞",
+    "肺気腫",
+    "脳塞栓症",
+    "腎不全"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "心房細動→心房内血栓→脳塞栓症。抗凝固療法で予防。",
+    "choiceNotes": [
+     "心筋梗塞は冠動脈閉塞が原因。",
+     "肺気腫は喫煙が主因。",
+     null,
+     "腎不全は直接的合併症ではない。"
+    ],
+    "point": "心房細動→血栓→脳塞栓。抗凝固療法が重要。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L05",
+    "key": "lg-05-08",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L05.audit.json#lg-05-08",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-05-09",
+   "legacy": {
+    "key": "5_9",
+    "chapter": 5,
+    "chapterName": "臨床医学",
+    "index": 9,
+    "hash": "e3d76fdff98e4009"
+   },
+   "subject": "BCL",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "くも膜下出血の最も多い原因はどれか。",
+   "choices": [
+    "高血圧性脳出血",
+    "脳動脈瘤の破裂",
+    "脳腫瘍",
+    "外傷"
+   ],
+   "answer": 1,
+   "explanation": {
+    "correct": "SAHの約80%は脳動脈瘤破裂。突然の激しい頭痛が特徴。",
+    "choiceNotes": [
+     "高血圧性は脳内出血の主因。",
+     null,
+     "脳腫瘍は主因ではない。",
+     "外傷性もあるが自発性SAHは動脈瘤が最多。"
+    ],
+    "point": "SAH＝脳動脈瘤破裂が80%。突然の激しい頭痛。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L05",
+    "key": "lg-05-09",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L05.audit.json#lg-05-09",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-05-10",
+   "legacy": {
+    "key": "5_10",
+    "chapter": 5,
+    "chapterName": "臨床医学",
+    "index": 10,
+    "hash": "7f2ea5ffcae23a4f"
+   },
+   "subject": "BCL",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "認知症で最も多い原因疾患はどれか。",
+   "choices": [
+    "アルツハイマー型",
+    "血管性",
+    "レビー小体型",
+    "前頭側頭型"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "アルツハイマー型が約60-70%で最多。次いで血管性、レビー小体型。",
+    "choiceNotes": [
+     null,
+     "血管性は2番目（約20%）。",
+     "レビー小体型は3番目。",
+     "前頭側頭型は比較的稀。"
+    ],
+    "point": "認知症：アルツハイマー（60-70%）>血管性（約20%）>レビー小体型。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L05",
+    "key": "lg-05-10",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L05.audit.json#lg-05-10",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-05-11",
+   "legacy": {
+    "key": "5_11",
+    "chapter": 5,
+    "chapterName": "臨床医学",
+    "index": 11,
+    "hash": "ba7367e872c24981"
+   },
+   "subject": "BCL",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "胃がんの最大リスク因子はどれか。",
+   "choices": [
+    "ヘリコバクター・ピロリ菌感染",
+    "喫煙",
+    "飲酒",
+    "肥満"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "ピロリ菌が胃がんの最大リスク因子。除菌でリスク低減。",
+    "choiceNotes": [
+     null,
+     "喫煙はリスク因子だがピロリ菌ほどではない。",
+     "飲酒は食道がんのリスク因子としてより重要。",
+     "肥満は大腸がん・乳がんのリスク因子。"
+    ],
+    "point": "胃がん＝ピロリ菌が最大リスク。除菌→リスク低下。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L05",
+    "key": "lg-05-11",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L05.audit.json#lg-05-11",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-05-12",
+   "legacy": {
+    "key": "5_12",
+    "chapter": 5,
+    "chapterName": "臨床医学",
+    "index": 12,
+    "hash": "3fdf2e443acc98a1"
+   },
+   "subject": "BCL",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "negative",
+   "question": "ショックの分類に含まれないのはどれか。",
+   "choices": [
+    "循環血液量減少性ショック",
+    "心原性ショック",
+    "代謝性ショック",
+    "敗血症性ショック"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "ショック分類＝循環血液量減少性・心原性・心外閉塞性・血液分布異常性。代謝性は存在しない。",
+    "choiceNotes": [
+     "出血等で生じるショックの基本型。",
+     "心筋梗塞等でポンプ機能破綻。",
+     null,
+     "感染症による分布異常性ショック。"
+    ],
+    "point": "ショック分類＝循環血液量減少性・心原性・心外閉塞性・血液分布異常性。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L05",
+    "key": "lg-05-12",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L05.audit.json#lg-05-12",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-05-13",
+   "legacy": {
+    "key": "5_13",
+    "chapter": 5,
+    "chapterName": "臨床医学",
+    "index": 13,
+    "hash": "d9f65665b7ba9840"
+   },
+   "subject": "BCL",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "2型糖尿病の初期治療はどれか。",
+   "choices": [
+    "インスリン注射",
+    "透析療法",
+    "手術療法",
+    "食事療法と運動療法"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "2型DMの治療は食事・運動療法が基本で最初に行うべき治療。段階的にステップアップ。",
+    "choiceNotes": [
+     "インスリンは効果不十分時に使用。",
+     "透析は糖尿病性腎症進行時。",
+     "手術は重度肥満の場合のみ。",
+     null
+    ],
+    "point": "2型DM＝①食事・運動→②経口薬→③インスリン。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L05",
+    "key": "lg-05-13",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L05.audit.json#lg-05-13",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-05-14",
+   "legacy": {
+    "key": "5_14",
+    "chapter": 5,
+    "chapterName": "臨床医学",
+    "index": 14,
+    "hash": "c21173a4c94edfec"
+   },
+   "subject": "BCL",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "関節リウマチの特徴として正しいのはどれか。",
+   "choices": [
+    "高齢男性に多い",
+    "血液検査に異常なし",
+    "片側の大関節のみ",
+    "朝のこわばりと対称性多関節炎"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "RA＝朝のこわばり（30分以上）＋対称性多関節炎。30〜50歳代女性に好発。",
+    "choiceNotes": [
+     "30〜50歳代女性に多い。",
+     "RF・抗CCP抗体・CRP等が異常。",
+     "対称性の多関節炎が特徴。",
+     null
+    ],
+    "point": "RA＝朝のこわばり＋対称性＋女性に多い。RF・抗CCP抗体。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L05",
+    "key": "lg-05-14",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L05.audit.json#lg-05-14",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-05-15",
+   "legacy": {
+    "key": "5_15",
+    "chapter": 5,
+    "chapterName": "臨床医学",
+    "index": 15,
+    "hash": "ac714d278d75ae76"
+   },
+   "subject": "BCL",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "negative",
+   "question": "肝硬変の三大合併症に含まれないのはどれか。",
+   "choices": [
+    "食道静脈瘤",
+    "腹水",
+    "胆石症",
+    "肝性脳症"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "三大合併症＝食道静脈瘤・腹水・肝性脳症。すべて門脈圧亢進が関連。",
+    "choiceNotes": [
+     "食道静脈瘤は門脈圧亢進による。",
+     "腹水は門脈圧亢進＋低アルブミン。",
+     null,
+     "肝性脳症はアンモニア蓄積。"
+    ],
+    "point": "肝硬変三大合併症＝食道静脈瘤・腹水・肝性脳症。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L05",
+    "key": "lg-05-15",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L05.audit.json#lg-05-15",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-05-16",
+   "legacy": {
+    "key": "5_16",
+    "chapter": 5,
+    "chapterName": "臨床医学",
+    "index": 16,
+    "hash": "0cb1883befaf3395"
+   },
+   "subject": "BCL",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "気管支喘息の病態として正しいのはどれか。",
+   "choices": [
+    "気道の慢性炎症と可逆性の気道狭窄",
+    "不可逆性の気道狭窄",
+    "肺胞の破壊",
+    "胸膜の炎症"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "気管支喘息は気道の慢性炎症に基づく可逆性の気道狭窄（気流制限）を特徴とする。",
+    "choiceNotes": [
+     null,
+     "不可逆性の気道狭窄はCOPDの特徴。",
+     "肺胞破壊は肺気腫の特徴。",
+     "胸膜炎は別の疾患。"
+    ],
+    "point": "喘息＝可逆性（治療で改善）。COPD＝不可逆性。重要な違い。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L05",
+    "key": "lg-05-16",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L05.audit.json#lg-05-16",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-05-17",
+   "legacy": {
+    "key": "5_17",
+    "chapter": 5,
+    "chapterName": "臨床医学",
+    "index": 17,
+    "hash": "4b74071a5735ea5d"
+   },
+   "subject": "BCL",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "甲状腺機能亢進症（バセドウ病）の症状として正しいのはどれか。",
+   "choices": [
+    "徐脈・体重増加・寒がり",
+    "高血糖・多飲多尿",
+    "関節痛・朝のこわばり",
+    "頻脈・体重減少・発汗過多"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "バセドウ病は甲状腺ホルモン過剰により頻脈・体重減少・発汗過多・手指振戦・眼球突出等を呈する。",
+    "choiceNotes": [
+     "徐脈・体重増加は甲状腺機能低下症の症状。",
+     "高血糖・多飲多尿は糖尿病の症状。",
+     "関節痛は関節リウマチの症状。",
+     null
+    ],
+    "point": "亢進症＝頻脈・体重減少・発汗。低下症＝徐脈・体重増加・寒がり。対比で覚える。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L05",
+    "key": "lg-05-17",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L05.audit.json#lg-05-17",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-05-18",
+   "legacy": {
+    "key": "5_18",
+    "chapter": 5,
+    "chapterName": "臨床医学",
+    "index": 18,
+    "hash": "7b530cb52dad8a65"
+   },
+   "subject": "BCL",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "大腸がんの好発部位として最も多いのはどれか。",
+   "choices": [
+    "盲腸",
+    "横行結腸",
+    "上行結腸",
+    "S状結腸・直腸"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "大腸がんはS状結腸と直腸に好発し、全体の約70%を占める。",
+    "choiceNotes": [
+     "盲腸は大腸がんの好発部位ではない。",
+     "横行結腸の頻度は低い。",
+     "上行結腸の頻度も低い。",
+     null
+    ],
+    "point": "大腸がん＝S状結腸・直腸が約70%。便潜血検査でスクリーニング。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L05",
+    "key": "lg-05-18",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L05.audit.json#lg-05-18",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-05-19",
+   "legacy": {
+    "key": "5_19",
+    "chapter": 5,
+    "chapterName": "臨床医学",
+    "index": 19,
+    "hash": "a30f4a136044ca13"
+   },
+   "subject": "BCL",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "心房細動の最も重大な合併症はどれか。",
+   "choices": [
+    "心室中隔欠損",
+    "脳塞栓症",
+    "肺気腫",
+    "腎結石"
+   ],
+   "answer": 1,
+   "explanation": {
+    "correct": "心房細動では心房内に血栓が形成されやすく、それが脳に飛んで脳塞栓症（心原性脳塞栓症）を引き起こすリスクが高い。",
+    "choiceNotes": [
+     "心室中隔欠損は先天性心疾患であり心房細動の合併症ではない。",
+     null,
+     "肺気腫はCOPDの一型であり心房細動とは直接関係しない。",
+     "腎結石は泌尿器系疾患で心房細動の合併症ではない。"
+    ],
+    "point": "心房細動→心房内血栓→脳塞栓症。抗凝固療法（ワルファリン・DOAC）が重要。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L05",
+    "key": "lg-05-19",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L05.audit.json#lg-05-19",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-05-20",
+   "legacy": {
+    "key": "5_20",
+    "chapter": 5,
+    "chapterName": "臨床医学",
+    "index": 20,
+    "hash": "b75d65ecb5b1e93a"
+   },
+   "subject": "BCL",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "深部静脈血栓症（DVT）の最も危険な合併症はどれか。",
+   "choices": [
+    "肺塞栓症",
+    "蜂窩織炎",
+    "脳出血",
+    "心筋梗塞"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "DVTで形成された血栓が遊離して肺動脈に詰まると肺塞栓症（PE）を引き起こす。エコノミークラス症候群とも呼ばれる。",
+    "choiceNotes": [
+     null,
+     "蜂窩織炎は皮膚軟部組織の感染症。",
+     "脳出血は動脈病変が原因であり静脈血栓とは機序が異なる。",
+     "心筋梗塞は冠動脈の閉塞であり静脈血栓が直接の原因とはならない。"
+    ],
+    "point": "DVT→PE（肺塞栓症）。長期臥床・術後・長時間座位がリスク。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L05",
+    "key": "lg-05-20",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L05.audit.json#lg-05-20",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-05-21",
+   "legacy": {
+    "key": "5_21",
+    "chapter": 5,
+    "chapterName": "臨床医学",
+    "index": 21,
+    "hash": "a1c6f7198f0a3278"
+   },
+   "subject": "BCL",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "膵臓がんの腫瘍マーカーとして最も有用なのはどれか。",
+   "choices": [
+    "AFP",
+    "CEA",
+    "CA19-9",
+    "PSA"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "CA19-9は膵臓がんの腫瘍マーカーとして最も広く使用される。膵がんの診断・経過観察に有用。",
+    "choiceNotes": [
+     "AFPは肝細胞がんの腫瘍マーカー。",
+     "CEAは大腸がんなど消化器がん全般のマーカーだが膵臓がんの特異性は低い。",
+     null,
+     "PSAは前立腺がんの腫瘍マーカー。"
+    ],
+    "point": "膵がん＝CA19-9、肝がん＝AFP、大腸がん＝CEA、前立腺がん＝PSA。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L05",
+    "key": "lg-05-21",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L05.audit.json#lg-05-21",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-05-22",
+   "legacy": {
+    "key": "5_22",
+    "chapter": 5,
+    "chapterName": "臨床医学",
+    "index": 22,
+    "hash": "5fe2ddc059299352"
+   },
+   "subject": "BCL",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "前立腺肥大症の主な症状はどれか。",
+   "choices": [
+    "排尿困難・頻尿・残尿感",
+    "血尿のみ",
+    "腰痛",
+    "下痢"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "前立腺肥大症は尿道を圧迫し、排尿困難・頻尿（特に夜間）・残尿感・尿線細小などの下部尿路症状を呈する。",
+    "choiceNotes": [
+     null,
+     "血尿は出ることもあるが主症状ではない。",
+     "腰痛は前立腺肥大症の典型的症状ではない。",
+     "下痢は消化器症状であり前立腺とは無関係。"
+    ],
+    "point": "前立腺肥大症＝下部尿路症状（LUTS）。排尿困難・頻尿・残尿感が三大症状。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L05",
+    "key": "lg-05-22",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L05.audit.json#lg-05-22",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-05-23",
+   "legacy": {
+    "key": "5_23",
+    "chapter": 5,
+    "chapterName": "臨床医学",
+    "index": 23,
+    "hash": "1329392034e0fcac"
+   },
+   "subject": "BCL",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "急性白血病の診断に最も重要な検査はどれか。",
+   "choices": [
+    "胸部X線検査",
+    "腹部CT",
+    "骨髄穿刺（骨髄生検）",
+    "心電図"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "急性白血病の確定診断には骨髄穿刺を行い、芽球（未熟な血液細胞）の割合を確認する。骨髄中の芽球が20%以上で診断。",
+    "choiceNotes": [
+     "胸部X線は縦隔腫瘤の評価に用いるが確定診断にはならない。",
+     "腹部CTは臓器浸潤の評価に有用だが確定診断ではない。",
+     null,
+     "心電図は白血病の診断には使用しない。"
+    ],
+    "point": "白血病の確定診断＝骨髄穿刺。芽球20%以上＝急性白血病（WHO分類）。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L05",
+    "key": "lg-05-23",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L05.audit.json#lg-05-23",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-05-24",
+   "legacy": {
+    "key": "5_24",
+    "chapter": 5,
+    "chapterName": "臨床医学",
+    "index": 24,
+    "hash": "5e9f5bdeea0c371a"
+   },
+   "subject": "BCL",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "悪性リンパ腫の分類として正しいのはどれか。",
+   "choices": [
+    "小細胞がんと大細胞がん",
+    "T細胞性のみ",
+    "ホジキンリンパ腫と非ホジキンリンパ腫",
+    "急性型と慢性型"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "悪性リンパ腫はホジキンリンパ腫と非ホジキンリンパ腫に大別される。日本では非ホジキンリンパ腫が約90%を占める。",
+    "choiceNotes": [
+     "小細胞・大細胞は肺がんの分類。",
+     "B細胞性・T細胞性・NK細胞性があり、T細胞性のみではない。",
+     null,
+     "急性型・慢性型は白血病の分類。"
+    ],
+    "point": "悪性リンパ腫＝ホジキン＋非ホジキン。日本は非ホジキンが9割。Ann Arbor分類でI〜IV期。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L05",
+    "key": "lg-05-24",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L05.audit.json#lg-05-24",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-05-25",
+   "legacy": {
+    "key": "5_25",
+    "chapter": 5,
+    "chapterName": "臨床医学",
+    "index": 25,
+    "hash": "028e8351c8ed2cd7"
+   },
+   "subject": "BCL",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "骨粗鬆症の診断基準で用いられる指標はどれか。",
+   "choices": [
+    "骨密度（YAM値）",
+    "BMI",
+    "血糖値",
+    "CRP"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "骨粗鬆症はYAM（Young Adult Mean：若年成人平均値）の70%以下で診断。DXA法による骨密度測定が標準。",
+    "choiceNotes": [
+     null,
+     "BMIは肥満度の指標であり骨粗鬆症の診断基準ではない。",
+     "血糖値は糖尿病の指標。",
+     "CRPは炎症の指標。"
+    ],
+    "point": "骨粗鬆症＝YAM70%以下。80%未満は骨量減少。DXA法が標準的測定法。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L05",
+    "key": "lg-05-25",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L05.audit.json#lg-05-25",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-05-26",
+   "legacy": {
+    "key": "5_26",
+    "chapter": 5,
+    "chapterName": "臨床医学",
+    "index": 26,
+    "hash": "5046be3f9213febb"
+   },
+   "subject": "BCL",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "関節リウマチの特徴的な症状として正しいのはどれか。",
+   "choices": [
+    "朝のこわばりと手指小関節の対称性腫脹",
+    "大関節の非対称性腫脹",
+    "発熱のみ",
+    "片側の膝関節痛のみ"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "関節リウマチは朝のこわばり（30分以上）と手指などの小関節の対称性多関節炎が特徴。自己免疫疾患である。",
+    "choiceNotes": [
+     null,
+     "大関節の非対称性はむしろ変形性関節症や痛風の特徴。",
+     "発熱は随伴症状であり特徴的症状は関節症状。",
+     "片側のみではなく対称性（左右同時）が特徴。"
+    ],
+    "point": "関節リウマチ＝朝のこわばり＋小関節対称性腫脹。RF・抗CCP抗体が重要。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L05",
+    "key": "lg-05-26",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L05.audit.json#lg-05-26",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-05-27",
+   "legacy": {
+    "key": "5_27",
+    "chapter": 5,
+    "chapterName": "臨床医学",
+    "index": 27,
+    "hash": "9168adb43cc97415"
+   },
+   "subject": "BCL",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "てんかんの診断に最も有用な検査はどれか。",
+   "choices": [
+    "脳波検査（EEG）",
+    "頭部MRI",
+    "腰椎穿刺",
+    "血液検査"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "てんかんの診断には脳波検査（EEG）が最も有用。棘波・鋭波などのてんかん性異常波を検出する。",
+    "choiceNotes": [
+     null,
+     "頭部MRIは器質的病変の検索に有用だがてんかんの機能的診断はEEG。",
+     "腰椎穿刺は髄膜炎等の診断に用いる。",
+     "血液検査は鑑別診断に用いるがてんかんの直接的診断にはならない。"
+    ],
+    "point": "てんかん診断＝EEG（脳波）。発作型分類に基づき薬物選択を行う。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L05",
+    "key": "lg-05-27",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L05.audit.json#lg-05-27",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-05-28",
+   "legacy": {
+    "key": "5_28",
+    "chapter": 5,
+    "chapterName": "臨床医学",
+    "index": 28,
+    "hash": "62945d36da10d093"
+   },
+   "subject": "BCL",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "negative",
+   "question": "パーキンソン病の4大症状に含まれないものはどれか。",
+   "choices": [
+    "安静時振戦",
+    "筋強剛（固縮）",
+    "認知症",
+    "無動・寡動"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "パーキンソン病の4大症状は安静時振戦・筋強剛・無動/寡動・姿勢反射障害。認知症は合併することがあるが4大症状には含まれない。",
+    "choiceNotes": [
+     "安静時振戦は4大症状の一つで初発症状として多い。",
+     "筋強剛（固縮）は4大症状の一つ。",
+     null,
+     "無動・寡動は動作緩慢として4大症状の一つ。"
+    ],
+    "point": "パーキンソン4大症状＝振戦・固縮・無動・姿勢反射障害。ドパミン神経の変性が原因。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L05",
+    "key": "lg-05-28",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L05.audit.json#lg-05-28",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-05-29",
+   "legacy": {
+    "key": "5_29",
+    "chapter": 5,
+    "chapterName": "臨床医学",
+    "index": 29,
+    "hash": "beb4ad44435a4f81"
+   },
+   "subject": "BCL",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "褥瘡の好発部位として最も多いのはどれか。",
+   "choices": [
+    "前腕",
+    "腹部",
+    "仙骨部",
+    "前胸部"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "褥瘡は仙骨部が最も好発する。体圧が集中し骨が突出している部位に発生しやすい。",
+    "choiceNotes": [
+     "前腕は褥瘡の好発部位ではない。",
+     "腹部は褥瘡の好発部位として頻度が低い。",
+     null,
+     "前胸部は体圧がかかりにくく褥瘡の好発部位ではない。"
+    ],
+    "point": "褥瘡好発部位＝仙骨部＞踵部＞大転子部。DESIGN-R分類で重症度評価。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L05",
+    "key": "lg-05-29",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L05.audit.json#lg-05-29",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-05-30",
+   "legacy": {
+    "key": "5_30",
+    "chapter": 5,
+    "chapterName": "臨床医学",
+    "index": 30,
+    "hash": "1bf8137464d0da57"
+   },
+   "subject": "BCL",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "敗血症の定義として現在（Sepsis-3）正しいのはどれか。",
+   "choices": [
+    "感染症に対する制御不能な宿主反応による臓器障害",
+    "細菌が血液中に存在すること",
+    "38℃以上の発熱があること",
+    "白血球数が増加していること"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "Sepsis-3（2016年）では敗血症を「感染症に対する制御不能な宿主反応に起因する生命を脅かす臓器障害」と定義。SOFAスコアで評価。",
+    "choiceNotes": [
+     null,
+     "菌血症（bacteremia）の定義であり敗血症とは異なる。",
+     "発熱は敗血症の一症状だが定義そのものではない。",
+     "白血球増加は感染の指標だが敗血症の定義ではない。"
+    ],
+    "point": "Sepsis-3＝感染症＋臓器障害。qSOFA（呼吸数・意識・血圧）でスクリーニング。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L05",
+    "key": "lg-05-30",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L05.audit.json#lg-05-30",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-05-31",
+   "legacy": {
+    "key": "5_31",
+    "chapter": 5,
+    "chapterName": "臨床医学",
+    "index": 31,
+    "hash": "48cc34cd0d4876b3"
+   },
+   "subject": "BCL",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "肺塞栓症の確定診断に最も有用な画像検査はどれか。",
+   "choices": [
+    "胸部X線",
+    "造影CT（CTPA）",
+    "心エコー",
+    "腹部超音波"
+   ],
+   "answer": 1,
+   "explanation": {
+    "correct": "造影CT肺動脈造影（CTPA）は肺塞栓症の確定診断に最も有用。肺動脈内の血栓を直接描出できる。",
+    "choiceNotes": [
+     "胸部X線は非特異的所見が多く確定診断には不十分。",
+     null,
+     "心エコーは右心負荷の評価に有用だが血栓の直接描出は困難。",
+     "腹部超音波は肺塞栓の診断には使用しない。"
+    ],
+    "point": "肺塞栓の確定診断＝CTPA。D-dimerは除外診断に有用。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L05",
+    "key": "lg-05-31",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L05.audit.json#lg-05-31",
+    "notes": "未監査"
+   }
+  }
+ ]
+}

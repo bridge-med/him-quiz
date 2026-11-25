@@ -1,0 +1,2404 @@
+{
+ "subject": "S10",
+ "questions": [
+  {
+   "id": "lg-01-10",
+   "legacy": {
+    "key": "1_10",
+    "chapter": 1,
+    "chapterName": "医療管理総論",
+    "index": 10,
+    "hash": "11652fcae3daf2c0"
+   },
+   "subject": "S10",
+   "subtopic": "DPCのコーディング",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "DPC/PDPSの「医療資源を最も投入した傷病名」について正しいのはどれか。",
+   "choices": [
+    "入院時の主訴に該当する傷病名",
+    "レセプトに医師が記載した主傷病名",
+    "1入院期間を対象として退院時に1つ決定する傷病名",
+    "退院時に治癒していない傷病名"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "DPC/PDPS傷病名コーディングテキスト（第7版）では、医療資源病名は1入院期間を対象として退院時に1つ決定し、入院期間中に複数の病態が存在する場合はどの病態に医療資源を最も投入したかで判断する。医療資源とは「ヒト・モノ・カネ」の総体である。",
+    "choiceNotes": [
+     "入院時の主訴とは限らず、入院期間中に医療資源を最も投入した病態で判断する。",
+     "レセプトや様式１の主傷病名は医師が診療録に記載した傷病名であり、必ずしも医療資源の投入量に基づいて決定されたものである必要はない。",
+     null,
+     "治癒の有無ではなく、医療資源の投入量で判断する。"
+    ],
+    "point": "医療資源病名＝1入院期間で医療資源（ヒト・モノ・カネ）を最も投入した傷病名を退院時に1つ選ぶ。"
+   },
+   "sources": [
+    {
+     "ref": "ins:dpc-coding-text-v7",
+     "title": "DPC／PDPS 傷病名コーディングテキスト 改定版（第７版）",
+     "url": "https://www.mhlw.go.jp/content/12400000/001684575.pdf",
+     "locator": "Ⅲ（1）医療資源とは",
+     "quote": "「医療資源」とは「ヒト・モノ・カネ」の総体である。"
+    },
+    {
+     "ref": "ins:dpc-coding-text-v7",
+     "title": "DPC／PDPS 傷病名コーディングテキスト 改定版（第７版）",
+     "url": "https://www.mhlw.go.jp/content/12400000/001684575.pdf",
+     "locator": "Ⅲ（2）",
+     "quote": "医療資源病名は、１入院期間を対象として退院時に１つ決定すること"
+    },
+    {
+     "ref": "ins:dpc-coding-text-v7",
+     "title": "DPC／PDPS 傷病名コーディングテキスト 改定版（第７版）",
+     "url": "https://www.mhlw.go.jp/content/12400000/001684575.pdf",
+     "locator": "Ⅰ 注",
+     "quote": "必ずしも医療資源の投入量に基づいて決定されたものである必要はない。"
+    }
+   ],
+   "asOf": "DPC/PDPS傷病名コーディングテキスト 第7版（令和8年6月）",
+   "origin": {
+    "batch": "L01",
+    "key": "lg-01-10",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（医療管理・情報）で修正",
+     "修正後の再監査は未実施",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L01（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L01a（医療管理・情報）",
+     "reauditor": null
+    },
+    "log": "bank/audit/legacy-L01a.audit.json#lg-01-10",
+    "notes": "DPCコーディングテキスト第7版 Ⅲ(1)(2)とⅠの注（主傷病名）を確認。key正、solver一致。"
+   }
+  },
+  {
+   "id": "lg-08-08",
+   "legacy": {
+    "key": "8_8",
+    "chapter": 8,
+    "chapterName": "診療情報管理I（法令・諸規則）",
+    "index": 8,
+    "hash": "dbb67e9b7c2d5cc9"
+   },
+   "subject": "S10",
+   "subtopic": "DPCデータ",
+   "format": "knowledge",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "2026年度「DPCの評価・検証等に係る調査（退院患者調査）」で提出する様式1の内容として正しいものはどれか。",
+   "choices": [
+    "主傷病名・入院の目的・手術術式等の患者属性や病態等の情報",
+    "入院診療患者の医科点数表に基づく出来高情報",
+    "医科保険診療以外の診療情報",
+    "重症度、医療・看護必要度の評価票の各評価項目の日ごとの点数"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "実施説明資料の提出データ一覧で、様式1は「患者属性や病態等の情報」とされ、必要となる情報として主傷病名、入院の目的、手術術式等が挙げられている（退院時サマリーのイメージ）。",
+    "choiceNotes": [
+     null,
+     "医科点数表に基づく出来高情報は入院EF統合ファイルの内容である。",
+     "医科保険診療以外の診療情報は様式4の内容である。",
+     "重症度、医療・看護必要度の評価票の点数を日ごとに入力するのはHファイルである。"
+    ],
+    "point": "様式1＝患者属性・病態（主傷病名・入院の目的・手術術式等）／様式4＝保険診療以外／EF統合＝出来高／H＝日ごとの患者情報（看護必要度）。"
+   },
+   "sources": [
+    {
+     "ref": "ins:dpc-chosa-setsumei-2026",
+     "title": "2026年度 DPCの評価・検証等に係る調査（退院患者調査）実施説明資料",
+     "url": "https://www.mhlw.go.jp/content/12400000/001679918.pdf",
+     "locator": "4 提出データの概要【DPC調査提出データ一覧】",
+     "quote": "患者属性や病態等の情報 様式1"
+    },
+    {
+     "ref": "ins:dpc-chosa-setsumei-2026",
+     "title": "2026年度 DPCの評価・検証等に係る調査（退院患者調査）実施説明資料",
+     "url": "https://www.mhlw.go.jp/content/12400000/001679918.pdf",
+     "locator": "様式1 (2) 必要となる情報（抜粋）",
+     "quote": "主傷病名、入院の目的、手術術式等（「入力要領」参照）で匿名化された情報。"
+    },
+    {
+     "ref": "ins:dpc-chosa-setsumei-2026",
+     "title": "2026年度 DPCの評価・検証等に係る調査（退院患者調査）実施説明資料",
+     "url": "https://www.mhlw.go.jp/content/12400000/001679918.pdf",
+     "locator": "Hファイル (2) 必要とする情報（抜粋）",
+     "quote": "重症度、医療・看護必要度に係る評価票の各評価項目の点数。"
+    }
+   ],
+   "asOf": "2026年度 DPCの評価・検証等に係る調査（退院患者調査）実施説明資料（2026年3月25日時点）",
+   "origin": {
+    "batch": "L08",
+    "key": "lg-08-08",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（法令・制度）で修正",
+     "修正後の再監査は未実施",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L08（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L08a（法令・制度）",
+     "reauditor": null
+    },
+    "log": "bank/audit/legacy-L08a.audit.json#lg-08-08",
+    "notes": "ins:dpc-chosa-setsumei-2026 提出データの概要（様式1＝患者属性や病態等の情報、様式4＝医科保険診療以外、Hファイル＝日ごとの患者情報、EF統合ファイル＝出来高情報）・様式1(2)（主傷病名、入院の目的、手術術式等）。"
+   }
+  },
+  {
+   "id": "lg-08-23",
+   "legacy": {
+    "key": "8_23",
+    "chapter": 8,
+    "chapterName": "診療情報管理I（法令・諸規則）",
+    "index": 23,
+    "hash": "16f72d04eddf662c"
+   },
+   "subject": "S10",
+   "subtopic": "全国がん登録",
+   "format": "knowledge",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "がん登録等の推進に関する法律（がん登録推進法）に基づく全国がん登録の届出項目に含まれるのはどれか。",
+   "choices": [
+    "がんの進展度",
+    "患者の喫煙歴",
+    "患者の職業",
+    "がんの家族歴"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "がん登録推進法第6条第1項第5号は届出対象情報に「当該がんの進行度」を挙げ、全国がん登録届出マニュアルでは進行度として進展度（治療前／術後病理学的）を届け出る。",
+    "choiceNotes": [
+     null,
+     "喫煙歴は全国がん登録の届出項目一覧（26項目）に含まれない。",
+     "職業は全国がん登録の届出項目一覧に含まれない。",
+     "がんの家族歴は全国がん登録の届出項目一覧に含まれない。"
+    ],
+    "point": "全国がん登録＝がん登録推進法により平成28（2016）年1月1日開始。届出項目には診断日・発見経緯・原発部位・病理診断・進展度・初回治療の有無・死亡日等がある。"
+   },
+   "sources": [
+    {
+     "ref": "law:がん登録等の推進に関する法律",
+     "title": "がん登録等の推進に関する法律",
+     "url": "https://laws.e-gov.go.jp/law/425AC0100000111",
+     "locator": "第6条第1項第5号",
+     "quote": "五 当該がんの進行度に関し厚生労働省令で定める事項"
+    },
+    {
+     "ref": "cancer:zenkoku-todokede-manual-2026",
+     "title": "全国がん登録 届出マニュアル 2026（ダウンロード版）",
+     "url": "https://www.mhlw.go.jp/content/001728039.pdf",
+     "locator": "第2章 届出項目について（進展度について）",
+     "quote": "に関する法律第 6 条第 1 項第 5 号で定める進行度として、進展度を用います。"
+    },
+    {
+     "ref": "cancer:mhlw-gan-toroku",
+     "title": "がん登録（厚生労働省 政策ページ）",
+     "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/kenkou/gan/gan_toroku.html",
+     "locator": "がん登録推進法の施行",
+     "quote": "平成２８（２０１６）年 １月１日から施行されました"
+    }
+   ],
+   "asOf": "2026-11 e-Gov現行法令／全国がん登録 届出マニュアル2026",
+   "origin": {
+    "batch": "L08",
+    "key": "lg-08-23",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（法令・制度）で修正",
+     "修正後の再監査は未実施",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L08（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L08b（法令・制度）",
+     "reauditor": null
+    },
+    "log": "bank/audit/legacy-L08b.audit.json#lg-08-23",
+    "notes": "law:がん登録等の推進に関する法律 第6条第1項第5号（進行度）、cancer:zenkoku-todokede-manual-2026（届出項目一覧26項目、進行度として進展度を用いる。喫煙歴・職業・家族歴は項目にない）、cancer:mhlw-gan-toroku（平成28年1月1日施行）を確認。"
+   }
+  },
+  {
+   "id": "lg-09-06",
+   "legacy": {
+    "key": "9_6",
+    "chapter": 9,
+    "chapterName": "診療情報管理II（コーディング）",
+    "index": 6,
+    "hash": "45a02419585e4015"
+   },
+   "subject": "S10",
+   "subtopic": "DPCのコーディング",
+   "format": "knowledge",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "DPC/PDPSにおける「医療資源を最も投入した傷病名」の選択について、正しいものはどれか。",
+   "choices": [
+    "入院の契機となった傷病名を必ず選択する",
+    "1入院期間を通して最も医療資源を投入した傷病名を一つ選ぶ",
+    "治療期間が最も長かった傷病名を選択する",
+    "月によって医療資源を投入した傷病名が異なる場合は、月ごとに一つずつ選ぶ",
+    "ICDのダブルコーディングのルールに従い、剣印と星印の両方のコードを選択する"
+   ],
+   "answer": 1,
+   "explanation": {
+    "correct": "医療資源を最も投入した傷病名は一入院で一つだけ入力し、月によって病態が変化した場合でも、退院時に1入院期間を通して最も医療資源を投入した傷病名を一つ選ぶ。",
+    "choiceNotes": [
+     "入院の契機となった傷病名は別の項目で、医療資源病名は入院中の主要な傷病名・病態に基づき医療資源の投入量で選択する。",
+     null,
+     "治療期間の長さではなく、医療資源の投入量で判断する。",
+     "月ごとに異なる場合でも、1入院期間を通して一つ選ぶ。",
+     "DPCではICDのダブルコーディングのルールは採用されず、†・＊も添付しない。"
+    ],
+    "point": "医療資源病名＝1入院期間を通して最も医療資源を投入した傷病名を一つ。期間の長さや入院契機ではなく資源投入量で判断。"
+   },
+   "sources": [
+    {
+     "ref": "ins:dpc-chosa-setsumei-2026",
+     "title": "2026年度 DPCの評価・検証等に係る調査（退院患者調査）実施説明資料",
+     "url": "https://www.mhlw.go.jp/content/12400000/001679918.pdf",
+     "locator": "様式1 医療資源を最も投入した傷病名",
+     "quote": "退院時に、親様式1の場合1入院期間を通して最も医療資源を投入した傷病名を一つ選ぶこと"
+    },
+    {
+     "ref": "ins:dpc-coding-text-v7",
+     "title": "DPC／PDPS 傷病名コーディングテキスト 改定版（第７版）",
+     "url": "https://www.mhlw.go.jp/content/12400000/001684575.pdf",
+     "locator": "Ⅱ DPCの基本構造",
+     "quote": "ICD のルールにあるダブルコーディングや分類選択に 当たっての優先ルール等は DPC コーディングでは採用されていない"
+    }
+   ],
+   "asOf": "2026年度 DPCの評価・検証等に係る調査 実施説明資料（2026年3月25日時点）・DPC傷病名コーディングテキスト第7版（令和8年6月）",
+   "origin": {
+    "batch": "L09",
+    "key": "lg-09-06",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（ICD-10専門）で修正",
+     "修正後の再監査は未実施",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L09（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L09a（ICD-10専門）",
+     "reauditor": null
+    },
+    "log": "bank/audit/legacy-L09a.audit.json#lg-09-06",
+    "notes": "ins:dpc-chosa-setsumei-2026（医療資源を最も投入した傷病名について）・ins:dpc-coding-text-v7 Ⅱ章で確認。"
+   }
+  },
+  {
+   "id": "lg-09-07",
+   "legacy": {
+    "key": "9_7",
+    "chapter": 9,
+    "chapterName": "診療情報管理II（コーディング）",
+    "index": 7,
+    "hash": "23c66daae97a6d96"
+   },
+   "subject": "S10",
+   "subtopic": "診断群分類の構造",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "DPC（診断群分類）コードの桁数はどれか。",
+   "choices": [
+    "6桁",
+    "10桁",
+    "14桁",
+    "16桁",
+    "20桁"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "DPCは14桁の英数字で構成される。上6桁が疾患コード（うち上2桁が主要診断群（MDC））で、続いて病態等分類、年齢・出生時体重等、手術（2桁）、手術・処置等1、手術・処置等2、副傷病、重症度等が並ぶ。",
+    "choiceNotes": [
+     "6桁はDPCの上6桁（疾患コード）にあたる。DPC全体は14桁。",
+     "10桁ではない。DPCは14桁。",
+     null,
+     "16桁ではない。DPCは14桁。",
+     "20桁ではない。DPCは14桁。"
+    ],
+    "point": "DPC＝14桁。上2桁MDC、上6桁が疾患コード、以下は手術・処置等・副傷病・重症度等の分岐。"
+   },
+   "sources": [
+    {
+     "ref": "ins:dpc-coding-text-v7",
+     "title": "DPC／PDPS 傷病名コーディングテキスト 改定版（第７版）",
+     "url": "https://www.mhlw.go.jp/content/12400000/001684575.pdf",
+     "locator": "Ⅱ DPCの基本構造",
+     "quote": "DPC は 14 桁の英数字で構成される。"
+    },
+    {
+     "ref": "ins:dpc-chosa-setsumei-2026",
+     "title": "2026年度 DPCの評価・検証等に係る調査（退院患者調査）実施説明資料",
+     "url": "https://www.mhlw.go.jp/content/12400000/001679918.pdf",
+     "locator": "再入院の取扱い",
+     "quote": "類番号（14桁）の上2桁（主要診断群（MDC））"
+    }
+   ],
+   "asOf": "DPC傷病名コーディングテキスト第7版（令和8年6月）・2026年度 DPC調査実施説明資料",
+   "origin": {
+    "batch": "L09",
+    "key": "lg-09-07",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（ICD-10専門）で修正",
+     "修正後の再監査は未実施",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L09（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L09a（ICD-10専門）",
+     "reauditor": null
+    },
+    "log": "bank/audit/legacy-L09a.audit.json#lg-09-07",
+    "notes": "ins:dpc-coding-text-v7「DPC（14桁）の構成」図、ins:dpc-chosa-setsumei-2026で上2桁MDC・上6桁を確認。"
+   }
+  },
+  {
+   "id": "lg-09-08",
+   "legacy": {
+    "key": "9_8",
+    "chapter": 9,
+    "chapterName": "診療情報管理II（コーディング）",
+    "index": 8,
+    "hash": "9bac76071b15866e"
+   },
+   "subject": "S10",
+   "subtopic": "入院期間と医療機関別係数",
+   "format": "knowledge",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "DPC/PDPSにおける在院日数に応じた1日当たり点数の設定について、正しいものはどれか。",
+   "choices": [
+    "1日当たり点数は在院日数にかかわらず入院全期間で同一である",
+    "入院初期を重点評価するため、在院日数に応じた3段階の定額報酬が設定されている",
+    "入院期間Ⅲを超えて入院が長期化した部分も、入院期間Ⅲの1日当たり点数で包括算定される",
+    "点数設定方式は、すべての診断群分類で1種類に統一されている"
+   ],
+   "answer": 1,
+   "explanation": {
+    "correct": "DPC/PDPSでは、入院初期を重点評価するため、在院日数に応じた3段階（入院期間Ⅰ・Ⅱ・Ⅲ）の定額報酬が設定されている。例外的に入院が長期化した場合、期間Ⅲを超えた部分は出来高で算定する。",
+    "choiceNotes": [
+     "在院日数に応じた3段階の点数が設定されており、全期間同一ではない。",
+     null,
+     "期間Ⅲを超えた部分は出来高算定となる。",
+     "入院初期に要する医療資源投入量等に応じた5つの点数設定方式がある。"
+    ],
+    "point": "DPCの1日当たり点数＝入院初期を重点評価する3段階（期間Ⅰ・Ⅱ・Ⅲ）。期間Ⅲ超は出来高。点数設定方式は5種類。"
+   },
+   "sources": [
+    {
+     "ref": "ins:r08-kaitei-gaiyo-dpc",
+     "title": "令和８年度診療報酬改定の概要 ５.入院（DPC/PDPS）",
+     "url": "https://www.mhlw.go.jp/content/12400000/001696832.pdf",
+     "locator": "DPC/PDPSの概要（1日当たり点数）",
+     "quote": "入院初期を重点評価するため、在院日数に応じた３段階の定額報酬を設定"
+    },
+    {
+     "ref": "ins:r08-kaitei-gaiyo-dpc",
+     "title": "令和８年度診療報酬改定の概要 ５.入院（DPC/PDPS）",
+     "url": "https://www.mhlw.go.jp/content/12400000/001696832.pdf",
+     "locator": "DPC/PDPSの概要（1日当たり点数）",
+     "quote": "期間Ⅲ（平均在院日数＋2SD以上の ３０の整数倍を超えた部分）以降については出来高算定"
+    },
+    {
+     "ref": "ins:r08-kaitei-gaiyo-dpc",
+     "title": "令和８年度診療報酬改定の概要 ５.入院（DPC/PDPS）",
+     "url": "https://www.mhlw.go.jp/content/12400000/001696832.pdf",
+     "locator": "1日当たり点数の設定方法",
+     "quote": "入院初期に要する医療資源投入量等に応じた５つの点数設定方式により点数が設定される。"
+    }
+   ],
+   "asOf": "令和8年度診療報酬改定（2026年6月施行）",
+   "origin": {
+    "batch": "L09",
+    "key": "lg-09-08",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（ICD-10専門）で修正",
+     "修正後の再監査は未実施",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L09（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L09a（ICD-10専門）",
+     "reauditor": null
+    },
+    "log": "bank/audit/legacy-L09a.audit.json#lg-09-08",
+    "notes": "ins:r08-kaitei-gaiyo-dpc（3段階の定額報酬・期間Ⅲ超は出来高・5つの点数設定方式A〜E）、ins:r08-dpc-ryuijiko 第2の2(1)（入院期間Ⅰ〜Ⅲの定義）で確認。"
+   }
+  },
+  {
+   "id": "lg-09-13",
+   "legacy": {
+    "key": "9_13",
+    "chapter": 9,
+    "chapterName": "診療情報管理II（コーディング）",
+    "index": 13,
+    "hash": "60b9afce611b7a22"
+   },
+   "subject": "S10",
+   "subtopic": "DPC/PDPSの仕組み",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "negative",
+   "question": "DPC/PDPSの包括評価部分に含まれないものはどれか。",
+   "choices": [
+    "入院基本料",
+    "手術",
+    "画像診断",
+    "投薬",
+    "注射"
+   ],
+   "answer": 1,
+   "explanation": {
+    "correct": "DPC/PDPSの診療報酬は包括評価部分と出来高評価部分の合計。包括評価部分（ホスピタルフィー的報酬部分）には入院基本料・検査・画像診断・投薬・注射・1,000点未満の処置等が含まれ、手術は医学管理・麻酔・放射線治療・1,000点以上の処置等とともに出来高評価部分で算定する。",
+    "choiceNotes": [
+     "入院基本料は包括評価部分に含まれる。",
+     null,
+     "画像診断は包括評価部分に含まれる。",
+     "投薬は包括評価部分に含まれる。",
+     "注射は包括評価部分に含まれる。"
+    ],
+    "point": "包括＝入院基本料・検査・画像診断・投薬・注射・1,000点未満の処置等。出来高＝医学管理・手術・麻酔・放射線治療・1,000点以上の処置等。"
+   },
+   "sources": [
+    {
+     "ref": "ins:r08-kaitei-gaiyo-dpc",
+     "title": "令和８年度診療報酬改定の概要 ５.入院（DPC/PDPS）",
+     "url": "https://www.mhlw.go.jp/content/12400000/001696832.pdf",
+     "locator": "DPC/PDPSにおける診療報酬の算定方法（概要）",
+     "quote": "・検査 ＋ ・手術 ・画像診断 ・麻酔"
+    },
+    {
+     "ref": "ins:r08-kaitei-gaiyo-dpc",
+     "title": "令和８年度診療報酬改定の概要 ５.入院（DPC/PDPS）",
+     "url": "https://www.mhlw.go.jp/content/12400000/001696832.pdf",
+     "locator": "DPC/PDPSにおける診療報酬の算定方法（概要）",
+     "quote": "・注射 ・1,000点以上の処置 等"
+    },
+    {
+     "ref": "ins:r08-kaitei-gaiyo-dpc",
+     "title": "令和８年度診療報酬改定の概要 ５.入院（DPC/PDPS）",
+     "url": "https://www.mhlw.go.jp/content/12400000/001696832.pdf",
+     "locator": "DPC/PDPSにおける診療報酬の算定方法（概要）",
+     "quote": "ホスピタルフィー的報酬部分 ドクターフィー的報酬部分等 【包括評価部分】 【出来高評価部分】"
+    }
+   ],
+   "asOf": "令和8年度診療報酬改定（2026年6月施行）",
+   "origin": {
+    "batch": "L09",
+    "key": "lg-09-13",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（ICD-10専門）で修正",
+     "修正後の再監査は未実施",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L09（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L09a（ICD-10専門）",
+     "reauditor": null
+    },
+    "log": "bank/audit/legacy-L09a.audit.json#lg-09-13",
+    "notes": "ins:r08-kaitei-gaiyo-dpc「DPC/PDPSにおける診療報酬の算定方法（概要）」の包括評価部分／出来高評価部分の一覧で確認（ins:dpc-gaiyo-kangaekataも同内容）。"
+   }
+  },
+  {
+   "id": "lg-09-16",
+   "legacy": {
+    "key": "9_16",
+    "chapter": 9,
+    "chapterName": "診療情報管理II（コーディング）",
+    "index": 16,
+    "hash": "c34e80f23b6ef54b"
+   },
+   "subject": "S10",
+   "subtopic": "診断群分類の構造",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "DPC/PDPSにおけるMDC（主要診断群）の数はどれか。",
+   "choices": [
+    "10",
+    "14",
+    "18",
+    "22"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "DPC/PDPS傷病名コーディングテキスト（第7版）では、MDC（Major Diagnostic Category：主要診断群）は「01 神経系疾患」から「18 その他」までの18分類とされ、14桁のDPCコードの上2桁がMDCコードである。",
+    "choiceNotes": [
+     "MDCは01〜18の18分類であり、10ではない。",
+     "14はDPCコードの桁数であり、MDCの数ではない。",
+     null,
+     "22はICD-10（2013年版）の章の数であり、MDCの数ではない。"
+    ],
+    "point": "MDC＝18分類（DPCコード14桁の上2桁）。ICD-10（2013年版）の章は22。"
+   },
+   "sources": [
+    {
+     "ref": "ins:dpc-coding-text-v7",
+     "title": "DPC／PDPS 傷病名コーディングテキスト 改定版（第７版）",
+     "url": "https://www.mhlw.go.jp/content/12400000/001684575.pdf",
+     "locator": "用語解説「MDC」（Ⅱ．DPCの基本構造 図表３）",
+     "quote": "主要診断群のこと。DPC/ PDPS では 18 の MDC に分類されて"
+    },
+    {
+     "ref": "ins:dpc-coding-text-v7",
+     "title": "DPC／PDPS 傷病名コーディングテキスト 改定版（第７版）",
+     "url": "https://www.mhlw.go.jp/content/12400000/001684575.pdf",
+     "locator": "Ⅱ．DPCの基本構造",
+     "quote": "○ DPC は 14 桁の英数字で構成される。"
+    },
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "2.4 第1巻（内容例示表）の構成",
+     "quote": "分類は 22 章に分けられている。"
+    }
+   ],
+   "asOf": "DPC/PDPS傷病名コーディングテキスト第7版（令和8年6月）；ICD-10（2013年版）準拠",
+   "origin": {
+    "batch": "L09",
+    "key": "lg-09-16",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（ICD-10専門）で修正",
+     "修正後の再監査は未実施",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L09（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L09b（ICD-10専門）",
+     "reauditor": null
+    },
+    "log": "bank/audit/legacy-L09b.audit.json#lg-09-16",
+    "notes": "ins:dpc-coding-text-v7 用語解説「MDC」・図表3（MDC01〜18）、Ⅱ DPCの基本構造（14桁）；icd:instruction 第1巻の構成（22章）。"
+   }
+  },
+  {
+   "id": "lg-09-28",
+   "legacy": {
+    "key": "9_28",
+    "chapter": 9,
+    "chapterName": "診療情報管理II（コーディング）",
+    "index": 28,
+    "hash": "078fbfcf3aa6d11d"
+   },
+   "subject": "S10",
+   "subtopic": "診断群分類の構造",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "DPC（14桁の診断群分類）の分岐に用いられる項目はどれか。",
+   "choices": [
+    "患者の職業",
+    "手術の有無",
+    "患者の血液型",
+    "医療保険の種別",
+    "入院した曜日"
+   ],
+   "answer": 1,
+   "explanation": {
+    "correct": "DPCは14桁の英数字で構成され、傷病名の層（上6桁）に続き、病態等分類、年齢・出生時体重等、手術（9・10桁目）、手術・処置等1・2、副傷病、重症度等によって分岐する。",
+    "choiceNotes": [
+     "患者の職業はDPCの分岐項目ではない。",
+     null,
+     "血液型はDPCの分岐項目ではない。",
+     "医療保険の種別はDPCの分岐項目ではない。",
+     "入院した曜日はDPCの分岐項目ではない。"
+    ],
+    "point": "DPC14桁＝傷病名（上6桁）→病態等分類・年齢等→手術→手術・処置等1・2→副傷病→重症度等。"
+   },
+   "sources": [
+    {
+     "ref": "ins:dpc-coding-text-v7",
+     "title": "DPC／PDPS 傷病名コーディングテキスト 改定版（第７版）",
+     "url": "https://www.mhlw.go.jp/content/12400000/001684575.pdf",
+     "locator": "Ⅱ．DPCの基本構造 図表１",
+     "quote": "○ DPC は 14 桁の英数字で構成される。"
+    },
+    {
+     "ref": "ins:dpc-coding-text-v7",
+     "title": "DPC／PDPS 傷病名コーディングテキスト 改定版（第７版）",
+     "url": "https://www.mhlw.go.jp/content/12400000/001684575.pdf",
+     "locator": "Ⅱ．DPCの基本構造 図表２",
+     "quote": "【２層目：手術の層】 9・10 桁目 【３層目：その他の処置、副傷病名、重傷度等の層】"
+    }
+   ],
+   "asOf": "DPC/PDPS傷病名コーディングテキスト第7版（令和8年6月）",
+   "origin": {
+    "batch": "L09",
+    "key": "lg-09-28",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（ICD-10専門）で修正",
+     "修正後の再監査は未実施",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L09（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L09b（ICD-10専門）",
+     "reauditor": null
+    },
+    "log": "bank/audit/legacy-L09b.audit.json#lg-09-28",
+    "notes": "ins:dpc-coding-text-v7 Ⅱ．DPCの基本構造 図表１・２（14桁：疾患コード、病態等分類、年齢・出生時体重等、手術、手術・処置等1・2、副傷病、重症度等）。"
+   }
+  },
+  {
+   "id": "lg-10-10",
+   "legacy": {
+    "key": "10_10",
+    "chapter": 10,
+    "chapterName": "国際統計分類I（ICD総論・コーディング実践）",
+    "index": 10,
+    "hash": "99839a7444cd828f"
+   },
+   "subject": "S10",
+   "subtopic": "DPCのコーディング",
+   "format": "knowledge",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "「DPC/PDPS傷病名コーディングテキスト」（第7版）が示す適切なコーディングのための体制について、正しいものはどれか。",
+   "choices": [
+    "DPCコーディングの最終的な決定者は診療情報管理士である。",
+    "傷病名の選択は診療報酬請求部門の専権事項である。",
+    "包括で算定した場合の点数と出来高で算定した場合の点数との差額が小さいことは、適切なDPCコーディングであることの根拠となる。",
+    "個別事例のDPCコーディングに係る問い合わせ先は、厚生労働省保険局医療課である。",
+    "「適切なコーディングに関する委員会」の設置と年4回以上の委員会開催がDPC参加の要件とされている。"
+   ],
+   "answer": 4,
+   "explanation": {
+    "correct": "コーディングテキストは、主治医の診断名表記だけでは適切なICDコーディングに必要な情報がそろわない現状を改善するため、「適切なコーディングに関する委員会」の設置と年4回以上の委員会開催がDPC参加の要件とされたと述べ、診療情報管理部門による診療録等の確認などの支援体制の構築を求めている。",
+    "choiceNotes": [
+     "DPCコーディングの最終的な決定者は主治医である。診療情報管理部門や診療報酬請求部門が適切に関与することが望ましいとされる。",
+     "傷病名の選択は主治医の専権事項である。",
+     "差額が小さいことは、適切なDPCコーディングであることの根拠にはならないことに留意するとされている。",
+     "個別事例のDPCコーディング・診療報酬請求に係る問い合わせ先は地方厚生（支）局である。厚生労働省保険局医療課は本書の改定に係る要望等の窓口。",
+     null
+    ],
+    "point": "DPCコーディングの最終決定者＝主治医。適切なコーディングに関する委員会（年4回以上）がDPC参加要件。点数差額が小さいことは適切さの根拠にならない。"
+   },
+   "sources": [
+    {
+     "ref": "ins:dpc-coding-text-v7",
+     "title": "DPC／PDPS 傷病名コーディングテキスト 改定版（第７版）",
+     "url": "https://www.mhlw.go.jp/content/12400000/001684575.pdf",
+     "locator": "Ⅳ（ICDコーディングのための情報と傷病名の表記）",
+     "quote": "このような現状を 改善するために「適切なコーディングに関する委員会」の設置と年 4 回以上の委員会開催 が DPC 参加の要件とされたところであり"
+    },
+    {
+     "ref": "ins:dpc-coding-text-v7",
+     "title": "DPC／PDPS 傷病名コーディングテキスト 改定版（第７版）",
+     "url": "https://www.mhlw.go.jp/content/12400000/001684575.pdf",
+     "locator": "Ⅰ-2-1) コーディングに係る体制",
+     "quote": "DPC コーディングの最終的な決定者は主治医であるが、このほか、診療情報管理士を中心 とする診療情報管理部門や診療報酬請求担当職員を中心とする診療報酬請求部門が適切に 関与していくことが望ましい。"
+    },
+    {
+     "ref": "ins:dpc-coding-text-v7",
+     "title": "DPC／PDPS 傷病名コーディングテキスト 改定版（第７版）",
+     "url": "https://www.mhlw.go.jp/content/12400000/001684575.pdf",
+     "locator": "Ⅰ-2-3) 適切な DPC コーディングに関する委員会について",
+     "quote": "差額が小さいことが、 適切な DPC コーディングであることの根拠にはならないことに留意すること。"
+    }
+   ],
+   "asOf": "DPC/PDPS傷病名コーディングテキスト第7版（令和8年6月）",
+   "origin": {
+    "batch": "L10",
+    "key": "lg-10-10",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（ICD-10専門）で修正",
+     "修正後の再監査は未実施",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L10（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L10a（ICD-10専門）",
+     "reauditor": null
+    },
+    "log": "bank/audit/legacy-L10a.audit.json#lg-10-10",
+    "notes": "ins:dpc-coding-text-v7 Ⅰ-2「適切なコーディングのための望ましい体制」1)〜3)、Ⅰ-3（問い合わせ先）、適切なコーディングに関する委員会の設置と年4回以上の開催がDPC参加要件である旨の記載で確認。"
+   }
+  },
+  {
+   "id": "lg-11-00",
+   "legacy": {
+    "key": "11_0",
+    "chapter": 11,
+    "chapterName": "国際統計分類II（DPC・がん登録）",
+    "index": 0,
+    "hash": "dbec9d8f01502788"
+   },
+   "subject": "S10",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "DPC制度の目的として正しいのはどれか。",
+   "choices": [
+    "急性期入院医療の適正化と透明性の向上",
+    "外来診療の効率化",
+    "予防医療の推進",
+    "在宅医療の拡充"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "DPC制度は急性期入院医療の包括的評価を通じて、医療の透明性向上と効率化を目的とする。",
+    "choiceNotes": [
+     null,
+     "外来診療は出来高払いでありDPCの対象外。",
+     "予防医療はDPCの直接的な目的ではない。",
+     "在宅医療はDPCの対象外。"
+    ],
+    "point": "DPC＝急性期入院医療の包括評価。透明性と効率化が目的。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L11",
+    "key": "lg-11-00",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L11.audit.json#lg-11-00",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-11-01",
+   "legacy": {
+    "key": "11_1",
+    "chapter": 11,
+    "chapterName": "国際統計分類II（DPC・がん登録）",
+    "index": 1,
+    "hash": "ad002ef2a7bd2fec"
+   },
+   "subject": "S10",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "MDCの構成について正しいのはどれか。",
+   "choices": [
+    "疾患の重症度別に5段階で構成",
+    "臓器系統別に18カテゴリで構成",
+    "年齢別に10区分で構成",
+    "治療法別に20区分で構成"
+   ],
+   "answer": 1,
+   "explanation": {
+    "correct": "MDC（Major Diagnostic Category）は臓器系統別に18カテゴリで構成。神経系、眼科系、耳鼻科系、呼吸器系等。",
+    "choiceNotes": [
+     "重症度別ではなく臓器系統別。",
+     null,
+     "年齢別ではない。",
+     "治療法別ではない。"
+    ],
+    "point": "MDC＝18カテゴリ。臓器系統別分類。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L11",
+    "key": "lg-11-01",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L11.audit.json#lg-11-01",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-11-02",
+   "legacy": {
+    "key": "11_2",
+    "chapter": 11,
+    "chapterName": "国際統計分類II（DPC・がん登録）",
+    "index": 2,
+    "hash": "5d1dff7fc15ce306"
+   },
+   "subject": "S10",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "negative",
+   "question": "DPCコード14桁の構成要素に含まれないのはどれか。",
+   "choices": [
+    "MDC（主要診断群）",
+    "傷病名コード",
+    "手術・処置分岐",
+    "患者の年収"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "DPCコード14桁＝MDC（2桁）＋傷病名（4桁）＋手術等（6桁）＋副傷病等（2桁）。年収は含まれない。",
+    "choiceNotes": [
+     "MDCは14桁の最初の2桁。",
+     "傷病名コードは含まれる。",
+     "手術・処置による分岐は含まれる。",
+     null
+    ],
+    "point": "DPC14桁＝MDC＋傷病名＋手術分岐＋副傷病等。患者属性（年収等）は含まない。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L11",
+    "key": "lg-11-02",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L11.audit.json#lg-11-02",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-11-03",
+   "legacy": {
+    "key": "11_3",
+    "chapter": 11,
+    "chapterName": "国際統計分類II（DPC・がん登録）",
+    "index": 3,
+    "hash": "4e89ecca6454bb45"
+   },
+   "subject": "S10",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "機能評価係数IIに含まれる係数はどれか。",
+   "choices": [
+    "効率性係数",
+    "基礎係数",
+    "暫定調整係数",
+    "入院基本料係数"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "機能評価係数IIには効率性係数、複雑性係数、カバー率係数、救急医療係数、地域医療係数、保険診療係数が含まれる。",
+    "choiceNotes": [
+     null,
+     "基礎係数は機能評価係数IIではなく別の係数。",
+     "暫定調整係数は廃止された。",
+     "入院基本料係数は機能評価係数IIではない。"
+    ],
+    "point": "機能評価係数II＝効率性・複雑性・カバー率・救急・地域・保険診療の6項目。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L11",
+    "key": "lg-11-03",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L11.audit.json#lg-11-03",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-11-04",
+   "legacy": {
+    "key": "11_4",
+    "chapter": 11,
+    "chapterName": "国際統計分類II（DPC・がん登録）",
+    "index": 4,
+    "hash": "d07981bf8edf597f"
+   },
+   "subject": "S10",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "DPC調査で提出するファイルに含まれるのはどれか。",
+   "choices": [
+    "確定申告書",
+    "人事評価書",
+    "様式1・EFファイル・Dファイル",
+    "建築図面"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "DPC調査では様式1（臨床情報）、EFファイル（出来高情報）、Dファイル（包括情報）等を提出。",
+    "choiceNotes": [
+     "確定申告書はDPC調査と無関係。",
+     "人事評価書は無関係。",
+     null,
+     "建築図面は無関係。"
+    ],
+    "point": "DPC調査＝様式1＋EFファイル＋Dファイル。診療情報管理士が作成に関与。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L11",
+    "key": "lg-11-04",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L11.audit.json#lg-11-04",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-11-05",
+   "legacy": {
+    "key": "11_5",
+    "chapter": 11,
+    "chapterName": "国際統計分類II（DPC・がん登録）",
+    "index": 5,
+    "hash": "2fe07999e14d5bbd"
+   },
+   "subject": "S10",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "院内がん登録の目的として正しいのはどれか。",
+   "choices": [
+    "自施設のがん診療の実態把握と質の向上",
+    "がん患者の個人情報を公開すること",
+    "がんの発生を防止すること",
+    "がん治療費を無料にすること"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "院内がん登録は自施設で診断・治療されたがんの情報を登録し、がん診療の実態把握、質の評価・向上に活用する。",
+    "choiceNotes": [
+     null,
+     "個人情報の公開は目的ではない。",
+     "発生防止は一次予防であり登録の直接目的ではない。",
+     "治療費無料化は目的ではない。"
+    ],
+    "point": "院内がん登録＝自施設のがん診療の実態把握＋質向上。全国がん登録とは異なる。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L11",
+    "key": "lg-11-05",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L11.audit.json#lg-11-05",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-11-06",
+   "legacy": {
+    "key": "11_6",
+    "chapter": 11,
+    "chapterName": "国際統計分類II（DPC・がん登録）",
+    "index": 6,
+    "hash": "9a1ac63bd4763e84"
+   },
+   "subject": "S10",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "全国がん登録の開始年はどれか。",
+   "choices": [
+    "2000年",
+    "2010年",
+    "2020年",
+    "2016年"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "全国がん登録はがん登録推進法に基づき2016年1月から開始。すべての病院に届出義務。",
+    "choiceNotes": [
+     "2000年は介護保険開始年。",
+     "2010年ではない。",
+     "2020年ではない。",
+     null
+    ],
+    "point": "全国がん登録＝2016年開始。全病院に届出義務。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L11",
+    "key": "lg-11-06",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L11.audit.json#lg-11-06",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-11-07",
+   "legacy": {
+    "key": "11_7",
+    "chapter": 11,
+    "chapterName": "国際統計分類II（DPC・がん登録）",
+    "index": 7,
+    "hash": "427e12ee8664c548"
+   },
+   "subject": "S10",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "TNM分類でT3N1M0のステージとして最も考えられるのはどれか。",
+   "choices": [
+    "Stage III",
+    "Stage I",
+    "Stage IV",
+    "Stage 0"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "T3（原発腫瘍がある程度の大きさ）N1（所属リンパ節転移あり）M0（遠隔転移なし）はStage IIIに分類されることが多い。",
+    "choiceNotes": [
+     null,
+     "Stage Iは早期でリンパ節転移なしが典型。",
+     "Stage IVは遠隔転移（M1）がある場合。",
+     "Stage 0は上皮内癌（Tis）。"
+    ],
+    "point": "M1＝Stage IV。N+M0＝通常Stage II〜III。臓器により異なるが大まかな目安。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L11",
+    "key": "lg-11-07",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L11.audit.json#lg-11-07",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-11-08",
+   "legacy": {
+    "key": "11_8",
+    "chapter": 11,
+    "chapterName": "国際統計分類II（DPC・がん登録）",
+    "index": 8,
+    "hash": "69cb661a6293672e"
+   },
+   "subject": "S10",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "5年生存率の算出に用いられる統計手法はどれか。",
+   "choices": [
+    "カイ二乗検定",
+    "t検定",
+    "回帰分析",
+    "Kaplan-Meier法"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "がんの5年生存率はKaplan-Meier法（打ち切りデータを含む生存分析）で算出される。",
+    "choiceNotes": [
+     "カイ二乗検定はカテゴリデータの検定。",
+     "t検定は平均値の比較。",
+     "回帰分析は予測モデル。",
+     null
+    ],
+    "point": "5年生存率＝Kaplan-Meier法で算出。打ち切りデータへの対応が重要。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L11",
+    "key": "lg-11-08",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L11.audit.json#lg-11-08",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-11-09",
+   "legacy": {
+    "key": "11_9",
+    "chapter": 11,
+    "chapterName": "国際統計分類II（DPC・がん登録）",
+    "index": 9,
+    "hash": "dff0a0af3f52bd61"
+   },
+   "subject": "S10",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "がん登録の精度指標であるDCO率の説明はどれか。",
+   "choices": [
+    "がんの治癒率",
+    "手術の成功率",
+    "死亡票のみで把握されたがん症例の割合",
+    "5年生存率"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "DCO率（Death Certificate Only）は死亡票のみで把握され生前の届出がなかったがん症例の割合。低いほど登録精度が高い。",
+    "choiceNotes": [
+     "治癒率ではない。",
+     "手術成功率ではない。",
+     null,
+     "5年生存率ではない。"
+    ],
+    "point": "DCO率＝死亡票のみの症例割合。低いほど精度良好。がん登録の質指標。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L11",
+    "key": "lg-11-09",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L11.audit.json#lg-11-09",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-11-10",
+   "legacy": {
+    "key": "11_10",
+    "chapter": 11,
+    "chapterName": "国際統計分類II（DPC・がん登録）",
+    "index": 10,
+    "hash": "9a2a23ee61e4bf2c"
+   },
+   "subject": "S10",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "DPC対象病院の要件として正しいのはどれか。",
+   "choices": [
+    "すべての病院が対象",
+    "200床以上のみが対象",
+    "急性期一般入院基本料を算定し一定のデータ提出要件を満たす病院",
+    "特定機能病院のみが対象"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "DPC対象病院は急性期一般入院基本料を算定し、データ提出要件（適切なコーディング体制等）を満たす病院。",
+    "choiceNotes": [
+     "すべての病院ではなく要件を満たした病院。",
+     "200床以上に限定されない。",
+     null,
+     "特定機能病院以外もDPC対象。"
+    ],
+    "point": "DPC対象病院＝急性期入院料算定＋データ提出要件。規模は問わない。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L11",
+    "key": "lg-11-10",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L11.audit.json#lg-11-10",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-11-11",
+   "legacy": {
+    "key": "11_11",
+    "chapter": 11,
+    "chapterName": "国際統計分類II（DPC・がん登録）",
+    "index": 11,
+    "hash": "ddbbf99fba8c7b65"
+   },
+   "subject": "S10",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "がんの臨床病期分類で最も進行した段階はどれか。",
+   "choices": [
+    "Stage I",
+    "Stage IV",
+    "Stage II",
+    "Stage 0"
+   ],
+   "answer": 1,
+   "explanation": {
+    "correct": "Stage IVは遠隔転移がある最も進行した病期。Stage 0は上皮内癌で最も早期。",
+    "choiceNotes": [
+     "Stage Iは早期段階。",
+     null,
+     "Stage IIは中程度の進行。",
+     "Stage 0は上皮内で最も早期。"
+    ],
+    "point": "Stage 0（上皮内）→I→II→III→IV（遠隔転移）。数字が大きいほど進行。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L11",
+    "key": "lg-11-11",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L11.audit.json#lg-11-11",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-11-12",
+   "legacy": {
+    "key": "11_12",
+    "chapter": 11,
+    "chapterName": "国際統計分類II（DPC・がん登録）",
+    "index": 12,
+    "hash": "c8eff9c3115bf044"
+   },
+   "subject": "S10",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "標準登録様式の届出項目に含まれるのはどれか。",
+   "choices": [
+    "患者の年収",
+    "患者の学歴",
+    "がんの部位・組織型・進行度・治療内容",
+    "保険の種類のみ"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "標準登録様式にはがんの部位、組織型（病理診断）、進行度（TNM/Stage）、治療内容等が含まれる。",
+    "choiceNotes": [
+     "年収は登録項目ではない。",
+     "学歴は登録項目ではない。",
+     null,
+     "保険種類のみでは不十分。"
+    ],
+    "point": "がん登録届出＝部位＋組織型＋進行度＋治療。臨床情報が中心。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L11",
+    "key": "lg-11-12",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L11.audit.json#lg-11-12",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-11-13",
+   "legacy": {
+    "key": "11_13",
+    "chapter": 11,
+    "chapterName": "国際統計分類II（DPC・がん登録）",
+    "index": 13,
+    "hash": "e76a0592b4476d88"
+   },
+   "subject": "S10",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "MI比（Mortality/Incidence比）の説明として正しいのはどれか。",
+   "choices": [
+    "入院死亡率",
+    "手術死亡率",
+    "在院日数の比",
+    "がん死亡数÷がん罹患数で登録の精度や予後を反映する指標"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "MI比＝がん死亡数÷がん罹患数。がん登録の精度指標の一つであり、予後不良ながんや登録精度の問題を反映する。",
+    "choiceNotes": [
+     "入院死亡率とは異なる。",
+     "手術死亡率ではない。",
+     "在院日数の比ではない。",
+     null
+    ],
+    "point": "MI比＝死亡÷罹患。1に近いほど予後不良。登録精度指標としても使用。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L11",
+    "key": "lg-11-13",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L11.audit.json#lg-11-13",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-11-14",
+   "legacy": {
+    "key": "11_14",
+    "chapter": 11,
+    "chapterName": "国際統計分類II（DPC・がん登録）",
+    "index": 14,
+    "hash": "a015d76d63e345a3"
+   },
+   "subject": "S10",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "がん登録実務者の役割として正しいのはどれか。",
+   "choices": [
+    "がんの治療を直接行う",
+    "がん患者のカウンセリングのみを行う",
+    "がん症例の情報収集・登録・精度管理を行う",
+    "がんの画像診断を読影する"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "がん登録実務者は診療録等からがん症例の情報を収集し、正確に登録・コーディングし、精度管理を行う専門職。",
+    "choiceNotes": [
+     "治療は医師の業務。",
+     "カウンセリングのみではない。",
+     null,
+     "読影は放射線科医の業務。"
+    ],
+    "point": "がん登録実務者＝情報収集＋登録＋コーディング＋精度管理。診療情報管理士が担うことも多い。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L11",
+    "key": "lg-11-14",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L11.audit.json#lg-11-14",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-11-15",
+   "legacy": {
+    "key": "11_15",
+    "chapter": 11,
+    "chapterName": "国際統計分類II（DPC・がん登録）",
+    "index": 15,
+    "hash": "5fbc2a7c3a4d2383"
+   },
+   "subject": "S10",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "DPCにおける包括評価と出来高評価の併用について正しいのはどれか。",
+   "choices": [
+    "すべて包括で算定",
+    "すべて出来高で算定",
+    "包括と出来高の選択は患者が行う",
+    "入院基本料等は包括、手術料等は出来高で算定"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "DPCでは入院基本料・検査・投薬等は包括評価、手術・麻酔・リハビリ等は出来高評価の併用方式。",
+    "choiceNotes": [
+     "すべて包括ではなく出来高部分がある。",
+     "すべて出来高ではなく包括部分がある。",
+     "患者の選択ではなく制度として決まっている。",
+     null
+    ],
+    "point": "DPC＝包括（入院料・検査・投薬）＋出来高（手術・麻酔・リハビリ）。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L11",
+    "key": "lg-11-15",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L11.audit.json#lg-11-15",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-11-16",
+   "legacy": {
+    "key": "11_16",
+    "chapter": 11,
+    "chapterName": "国際統計分類II（DPC・がん登録）",
+    "index": 16,
+    "hash": "dfb5ca52c55ed4f9"
+   },
+   "subject": "S10",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "地域がん登録の説明として正しいのはどれか。",
+   "choices": [
+    "市区町村単位の登録",
+    "都道府県単位でがんの罹患・死亡を把握する登録制度",
+    "病院単位の登録",
+    "国レベルのみの登録"
+   ],
+   "answer": 1,
+   "explanation": {
+    "correct": "地域がん登録は都道府県単位でがんの罹患・死亡データを収集する制度。2016年の全国がん登録開始後も一部運用。",
+    "choiceNotes": [
+     "市区町村単位ではなく都道府県単位。",
+     null,
+     "病院単位は院内がん登録。",
+     "国レベルは全国がん登録。"
+    ],
+    "point": "院内がん登録＝病院単位。地域がん登録＝都道府県単位。全国がん登録＝国単位。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L11",
+    "key": "lg-11-16",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L11.audit.json#lg-11-16",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-11-17",
+   "legacy": {
+    "key": "11_17",
+    "chapter": 11,
+    "chapterName": "国際統計分類II（DPC・がん登録）",
+    "index": 17,
+    "hash": "96edd6759613b175"
+   },
+   "subject": "S10",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "negative",
+   "question": "がんの治療分類に含まれないのはどれか。",
+   "choices": [
+    "手術",
+    "交通事故防止",
+    "化学療法",
+    "放射線療法"
+   ],
+   "answer": 1,
+   "explanation": {
+    "correct": "がんの3大治療＝手術・化学療法（薬物療法）・放射線療法。交通事故防止はがん治療ではない。",
+    "choiceNotes": [
+     "手術はがん治療の主要方法。",
+     null,
+     "化学療法は薬物でがんを治療。",
+     "放射線療法はがん治療の一つ。"
+    ],
+    "point": "がん3大治療＝手術・化学療法・放射線療法。免疫療法が第4の治療として注目。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L11",
+    "key": "lg-11-17",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L11.audit.json#lg-11-17",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-11-18",
+   "legacy": {
+    "key": "11_18",
+    "chapter": 11,
+    "chapterName": "国際統計分類II（DPC・がん登録）",
+    "index": 18,
+    "hash": "752d22f8eb75060a"
+   },
+   "subject": "S10",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "DPC/PDPSの包括評価における1日当たりの点数の特徴はどれか。",
+   "choices": [
+    "入院期間が長くなるほど1日当たり点数が段階的に逓減する",
+    "入院期間を通じて一定である",
+    "入院期間が長くなるほど1日当たり点数が増加する",
+    "退院日にのみ点数が発生する"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "DPC/PDPSでは入院期間I・II・IIIの3段階で1日当たり点数が逓減する設計。早期退院にインセンティブを与える。",
+    "choiceNotes": [
+     null,
+     "一定ではなく3段階で逓減する。",
+     "増加ではなく逓減。長期入院にはディスインセンティブ。",
+     "退院日のみではなく入院期間全体に点数が発生。"
+    ],
+    "point": "DPC点数＝入院期間I（高い）→II（中間）→III（低い）。逓減制で在院日数短縮を促進。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L11",
+    "key": "lg-11-18",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L11.audit.json#lg-11-18",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-11-19",
+   "legacy": {
+    "key": "11_19",
+    "chapter": 11,
+    "chapterName": "国際統計分類II（DPC・がん登録）",
+    "index": 19,
+    "hash": "540ddfab99f87667"
+   },
+   "subject": "S10",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "DPC/PDPSで出来高算定となる項目はどれか。",
+   "choices": [
+    "手術",
+    "入院基本料",
+    "投薬",
+    "注射"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "手術・麻酔・放射線治療・リハビリ等は包括範囲外であり出来高で算定する。",
+    "choiceNotes": [
+     null,
+     "入院基本料は包括範囲に含まれる。",
+     "投薬は包括範囲に含まれる。",
+     "注射は包括範囲に含まれる。"
+    ],
+    "point": "包括＝入院料・検査・投薬・注射・画像。出来高＝手術・麻酔・放射線・リハビリ。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L11",
+    "key": "lg-11-19",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L11.audit.json#lg-11-19",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-11-20",
+   "legacy": {
+    "key": "11_20",
+    "chapter": 11,
+    "chapterName": "国際統計分類II（DPC・がん登録）",
+    "index": 20,
+    "hash": "e55ea97d174db947"
+   },
+   "subject": "S10",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "DPC/PDPSの包括範囲に含まれる項目の組み合わせとして正しいのはどれか。",
+   "choices": [
+    "入院基本料・検査・投薬・注射・画像診断",
+    "手術・麻酔・放射線治療",
+    "リハビリテーション・指導管理料",
+    "精神科専門療法・内視鏡手術"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "DPCの包括範囲は入院基本料、検査、投薬、注射、1,000点未満の処置、画像診断が含まれる。",
+    "choiceNotes": [
+     null,
+     "手術・麻酔は出来高算定。",
+     "リハビリは出来高算定。",
+     "精神科専門療法・手術は出来高算定。"
+    ],
+    "point": "包括5項目＝入院料＋検査＋投薬＋注射＋画像。処置は1,000点で包括/出来高が分かれる。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L11",
+    "key": "lg-11-20",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L11.audit.json#lg-11-20",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-11-21",
+   "legacy": {
+    "key": "11_21",
+    "chapter": 11,
+    "chapterName": "国際統計分類II（DPC・がん登録）",
+    "index": 21,
+    "hash": "6f24b39b4066b697"
+   },
+   "subject": "S10",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "DPCにおいて副傷病名の有無が影響するのはどれか。",
+   "choices": [
+    "外来の医療費",
+    "診断群分類番号の決定",
+    "患者の自己負担割合",
+    "保険証の種類"
+   ],
+   "answer": 1,
+   "explanation": {
+    "correct": "副傷病名（合併症・併存症）の有無はDPCの分岐条件の一つであり、診断群分類番号（14桁）の決定に影響する。",
+    "choiceNotes": [
+     "DPCは入院の制度であり外来には適用されない。",
+     null,
+     "自己負担割合は保険制度により決定されDPCとは無関係。",
+     "保険証の種類はDPC分岐に影響しない。"
+    ],
+    "point": "副傷病名あり→高い点数の分岐に入る場合がある。コーディングの正確性が重要。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L11",
+    "key": "lg-11-21",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L11.audit.json#lg-11-21",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-11-22",
+   "legacy": {
+    "key": "11_22",
+    "chapter": 11,
+    "chapterName": "国際統計分類II（DPC・がん登録）",
+    "index": 22,
+    "hash": "758069a77df5ea51"
+   },
+   "subject": "S10",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "DPCで同一疾患での再入院ルール（3日以内）について正しいのはどれか。",
+   "choices": [
+    "3日以内の再入院は新規入院として扱う",
+    "3日以内の再入院は前回入院の継続として一連の入院とみなす",
+    "再入院のルールは存在しない",
+    "7日以内に統一されている"
+   ],
+   "answer": 1,
+   "explanation": {
+    "correct": "DPCでは退院後3日以内に同一傷病で再入院した場合、一連の入院として前回入院の継続とみなす。",
+    "choiceNotes": [
+     "3日以内は新規ではなく継続扱い。",
+     null,
+     "再入院ルールはDPCの重要ルール。",
+     "3日と7日の2つのルールがある。7日は同一MDCでの再入院。"
+    ],
+    "point": "DPC再入院：3日以内（同一傷病）→一連。7日以内（同一MDC）→再入院の検証対象。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L11",
+    "key": "lg-11-22",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L11.audit.json#lg-11-22",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-11-23",
+   "legacy": {
+    "key": "11_23",
+    "chapter": 11,
+    "chapterName": "国際統計分類II（DPC・がん登録）",
+    "index": 23,
+    "hash": "e8c50a8b0fb8beb8"
+   },
+   "subject": "S10",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "DPCの特定入院期間を超えた場合の算定方法はどれか。",
+   "choices": [
+    "包括評価のまま点数が上がる",
+    "退院させなければならない",
+    "出来高算定に切り替わる",
+    "算定できない"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "特定入院期間（入院期間III）を超えた場合は包括評価から出来高算定に切り替わる。",
+    "choiceNotes": [
+     "特定入院期間超過後は包括評価ではなくなる。",
+     "退院の義務はない。算定方法が変わるだけ。",
+     null,
+     "出来高で算定可能。"
+    ],
+    "point": "入院期間III超過→出来高算定。DPCの包括期間には上限がある。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L11",
+    "key": "lg-11-23",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L11.audit.json#lg-11-23",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-11-24",
+   "legacy": {
+    "key": "11_24",
+    "chapter": 11,
+    "chapterName": "国際統計分類II（DPC・がん登録）",
+    "index": 24,
+    "hash": "cc716a757016a14a"
+   },
+   "subject": "S10",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "がん登録において登録対象となるのはどれか。",
+   "choices": [
+    "転移性腫瘍のみ",
+    "良性腫瘍のみ",
+    "すべての疾患",
+    "原発性悪性新生物"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "全国がん登録の登録対象は原発性の悪性新生物（上皮内がんを含む）。転移性腫瘍は原発巣として登録。",
+    "choiceNotes": [
+     "転移性のみではなく原発性が登録対象。転移は原発巣で登録。",
+     "良性腫瘍は全国がん登録の対象外（院内がん登録では一部含む）。",
+     "すべての疾患ではなく悪性新生物が対象。",
+     null
+    ],
+    "point": "がん登録＝原発性悪性新生物が対象。転移先ではなく原発巣の情報で登録。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L11",
+    "key": "lg-11-24",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L11.audit.json#lg-11-24",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-11-25",
+   "legacy": {
+    "key": "11_25",
+    "chapter": 11,
+    "chapterName": "国際統計分類II（DPC・がん登録）",
+    "index": 25,
+    "hash": "2752e7fb921eee02"
+   },
+   "subject": "S10",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "UICC TNM分類のTが意味するのはどれか。",
+   "choices": [
+    "腫瘍の大きさ・進展度",
+    "所属リンパ節転移の有無・程度",
+    "遠隔転移の有無",
+    "腫瘍の組織型"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "T（Tumor）は原発腫瘍の大きさ・進展度を示す。T1-T4で段階的に評価。",
+    "choiceNotes": [
+     null,
+     "リンパ節転移はN（Node）で評価。",
+     "遠隔転移はM（Metastasis）で評価。",
+     "組織型は形態コードで分類。TNMには含まれない。"
+    ],
+    "point": "T＝原発腫瘍、N＝リンパ節、M＝遠隔転移。TNMの組み合わせでステージ決定。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L11",
+    "key": "lg-11-25",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L11.audit.json#lg-11-25",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-11-26",
+   "legacy": {
+    "key": "11_26",
+    "chapter": 11,
+    "chapterName": "国際統計分類II（DPC・がん登録）",
+    "index": 26,
+    "hash": "5cfe0b2cd1f69430"
+   },
+   "subject": "S10",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "臨床病期（cTNM）と病理病期（pTNM）の違いについて正しいのはどれか。",
+   "choices": [
+    "cTNMは手術所見に基づく",
+    "pTNMは治療前の画像検査に基づく",
+    "両者に違いはない",
+    "cTNMは治療前の臨床所見、pTNMは手術標本の病理所見に基づく"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "cTNM（臨床病期）は治療前の画像・身体所見等に基づく。pTNM（病理病期）は手術で摘出した標本の病理組織学的所見に基づく。",
+    "choiceNotes": [
+     "手術所見に基づくのはpTNM。",
+     "画像検査に基づくのはcTNM。",
+     "臨床と病理で異なる評価法であり区別される。",
+     null
+    ],
+    "point": "c＝clinical（臨床）、p＝pathological（病理）。病理病期のほうが正確。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L11",
+    "key": "lg-11-26",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L11.audit.json#lg-11-26",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-11-27",
+   "legacy": {
+    "key": "11_27",
+    "chapter": 11,
+    "chapterName": "国際統計分類II（DPC・がん登録）",
+    "index": 27,
+    "hash": "3dfb3ad7c90938b9"
+   },
+   "subject": "S10",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "がん登録の精度指標であるDCO（Death Certificate Only）率とは何か。",
+   "choices": [
+    "診断確定率",
+    "登録完全性の指標",
+    "手術実施率",
+    "死亡診断書のみで登録された症例の割合"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "DCO率は死亡票のみの情報で登録され、医療機関からの届出がなかった症例の割合。低いほど登録精度が高い。",
+    "choiceNotes": [
+     "診断確定率はMV（Morphological Verification）率。",
+     "登録完全性はM/I比（罹患/死亡比）等で評価。",
+     "手術実施率はがん登録の精度指標ではない。",
+     null
+    ],
+    "point": "DCO率＝低いほど良い。DCN率＝死亡票からの追跡で情報が得られた割合。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L11",
+    "key": "lg-11-27",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L11.audit.json#lg-11-27",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-11-28",
+   "legacy": {
+    "key": "11_28",
+    "chapter": 11,
+    "chapterName": "国際統計分類II（DPC・がん登録）",
+    "index": 28,
+    "hash": "9c49583116e045d0"
+   },
+   "subject": "S10",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "多重がんの判定基準として正しいのはどれか。",
+   "choices": [
+    "同一臓器に発生した同じ組織型のがんは常に多重がんとする",
+    "時期が異なれば同じ部位でも多重がんとする",
+    "多重がんの判定基準は存在しない",
+    "異なる臓器に発生したがんは原則として多重がんとする"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "多重がんは原則として異なる臓器に独立して発生した原発性がん。IARC/IACRの判定ルールに基づく。同一臓器は組織型で判断。",
+    "choiceNotes": [
+     "同一臓器の同じ組織型は原則として1つのがんとして登録。",
+     "時期だけでなく部位と組織型の組み合わせで判定。",
+     "IARC/IACRの国際的な判定ルールが存在する。",
+     null
+    ],
+    "point": "多重がん判定＝IARC/IACRルール。部位×組織型で独立性を判断。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L11",
+    "key": "lg-11-28",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L11.audit.json#lg-11-28",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-11-29",
+   "legacy": {
+    "key": "11_29",
+    "chapter": 11,
+    "chapterName": "国際統計分類II（DPC・がん登録）",
+    "index": 29,
+    "hash": "47af7e7bd84bf61a"
+   },
+   "subject": "S10",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "がんの治療効果判定基準（RECIST）で「PR（部分奏効）」の定義はどれか。",
+   "choices": [
+    "腫瘍が完全に消失",
+    "標的病変の最大径の和が20%以上増大",
+    "腫瘍の大きさに変化なし",
+    "標的病変の最大径の和が30%以上縮小"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "RECISTでPR（Partial Response）は標的病変の径和がベースラインから30%以上縮小した場合。",
+    "choiceNotes": [
+     "完全消失はCR（Complete Response）。",
+     "20%以上増大はPD（Progressive Disease）。",
+     "変化なしはSD（Stable Disease）。",
+     null
+    ],
+    "point": "RECIST：CR＝完全消失、PR＝30%以上縮小、SD＝変化なし、PD＝20%以上増大。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L11",
+    "key": "lg-11-29",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L11.audit.json#lg-11-29",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-11-30",
+   "legacy": {
+    "key": "11_30",
+    "chapter": 11,
+    "chapterName": "国際統計分類II（DPC・がん登録）",
+    "index": 30,
+    "hash": "f24ff81349897275"
+   },
+   "subject": "S10",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "Kaplan-Meier法について正しいのはどれか。",
+   "choices": [
+    "打ち切りデータを考慮して生存率を推定する方法",
+    "平均値を計算する方法",
+    "多変量解析の方法",
+    "正規分布を仮定する方法"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "Kaplan-Meier法は生存分析の手法で、打ち切り（追跡不能・観察期間終了）データを含めて生存率を推定する。",
+    "choiceNotes": [
+     null,
+     "平均値計算ではなく生存率推定の方法。",
+     "多変量解析はCox回帰等。KM法は単変量の記述的方法。",
+     "正規分布の仮定は不要。ノンパラメトリック法。"
+    ],
+    "point": "KM法＝生存曲線の推定。打ち切りを考慮。ログランク検定で群間比較。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L11",
+    "key": "lg-11-30",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L11.audit.json#lg-11-30",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-11-31",
+   "legacy": {
+    "key": "11_31",
+    "chapter": 11,
+    "chapterName": "国際統計分類II（DPC・がん登録）",
+    "index": 31,
+    "hash": "d4cf2d3ebcca297a"
+   },
+   "subject": "S10",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "negative",
+   "question": "日本の5大がん（がん検診対象）に含まれないのはどれか。",
+   "choices": [
+    "胃がん",
+    "肺がん",
+    "膵がん",
+    "大腸がん"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "5大がん（がん検診対象）は胃がん・肺がん・大腸がん・乳がん・子宮頸がん。膵がんは含まれない。",
+    "choiceNotes": [
+     "胃がんは5大がんの一つ。バリウム検査・胃内視鏡で検診。",
+     "肺がんは5大がんの一つ。胸部X線・喀痰細胞診で検診。",
+     null,
+     "大腸がんは5大がんの一つ。便潜血検査で検診。"
+    ],
+    "point": "5大がん検診＝胃・肺・大腸・乳・子宮頸。対策型検診として市区町村が実施。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L11",
+    "key": "lg-11-31",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L11.audit.json#lg-11-31",
+    "notes": "未監査"
+   }
+  }
+ ]
+}

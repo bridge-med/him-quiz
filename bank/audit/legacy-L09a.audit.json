@@ -1,0 +1,1055 @@
+{
+ "verdicts": [
+  {
+   "id": "lg-09-00",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:rikai（3桁/4桁分類の構成）・icd:instruction 2.4で確認。",
+   "detail": "旧解説の「A〜Z、Uを除く」は2013年版では不正確（第ⅩⅩⅡ章 特殊目的用コードでUを使用）。旧choiceNote/選択肢が4つで弱いため5択化し、正答位置を変更。",
+   "question": {
+    "id": "lg-09-00",
+    "legacy": {
+     "key": "9_0",
+     "chapter": 9,
+     "chapterName": "診療情報管理II（コーディング）",
+     "index": 0,
+     "hash": "086088d764f244d0"
+    },
+    "subject": "S11",
+    "subtopic": "ICD-10の構成",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "ICD-10（2013年版）の分類コードの構成として正しいものはどれか。",
+    "choices": [
+     "数字のみの3桁コードを基本とし、小数点の後の第4桁で細分する",
+     "アルファベット3文字のコードを基本とする",
+     "アルファベット1文字＋数字2文字の3桁分類項目を基本とする",
+     "数字2文字＋アルファベット1文字の3桁分類項目を基本とする",
+     "数字のみの5桁コードを基本とする"
+    ],
+    "answer": 2,
+    "explanation": {
+     "correct": "ICD-10の分類項目は、3桁分類（アルファベット1文字＋数字2文字）と、より詳細な4桁分類（アルファベット1文字＋数字3文字）からなる。第1桁がアルファベット、第2〜4桁が数字の英数字コードで、第4桁は小数点の後に続く（例：A00.0）。",
+     "choiceNotes": [
+      "数字のみのコーディング・システムはICD-9の方式。ICD-10では第1桁にアルファベットを用いる。",
+      "アルファベットは第1桁の1文字だけで、第2・3桁は数字である。",
+      null,
+      "アルファベットは末尾ではなく第1桁に置かれる。",
+      "数字のみの5桁コードではない。3桁分類項目と、小数点の後の第4桁による4桁細分類項目からなる。"
+     ],
+     "point": "ICD-10＝アルファベット1文字＋数字2文字（3桁分類）、小数点の後の第4桁で細分（例：A00.0）。"
+    },
+    "sources": [
+     {
+      "ref": "icd:rikai",
+      "title": "疾病、傷害及び死因の統計分類の正しい理解と普及に向けて（ICD-10（2013年版）準拠）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/ICD-10_2013_2802.pdf",
+      "locator": "2 ICDの構成",
+      "quote": "３桁分類（アルファベット １文字＋数字２文字）と、より詳細な分類である４桁分類（アルファベット１文字＋数字３ 文字）からなっています"
+     },
+     {
+      "ref": "icd:instruction",
+      "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+      "locator": "2.4 ICD分類の基本構造及び基本原則",
+      "quote": "ICD-9 の純粋に数字だけの コーディング・システムの代わりに、ICD-10 では、第１桁にアルファベット文字、 第２、３及び４桁に数字からなる英数字コードが使われている。第４桁は、小数点の 後に続いている。"
+     }
+    ],
+    "asOf": "ICD-10（2013年版）準拠"
+   }
+  },
+  {
+   "id": "lg-09-01",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:rikai（22の章／17章→21章、セカンドエディションから22章）・icd:instruction 2.4.1で確認。ソルバーも21章を誤りと指摘。",
+   "detail": "旧正答「21章」は誤り。2013年版は22章（ソルバーも曖昧と指摘）。旧pointの「ICD-11は26章」は出典で揺れがあるため削除。",
+   "question": {
+    "id": "lg-09-01",
+    "legacy": {
+     "key": "9_1",
+     "chapter": 9,
+     "chapterName": "診療情報管理II（コーディング）",
+     "index": 1,
+     "hash": "7cb280c01cf9c6cf"
+    },
+    "subject": "S11",
+    "subtopic": "ICD-10の構成",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "ICD-10（2013年版）の内容例示表は、いくつの章で構成されているか。",
+    "choices": [
+     "17章",
+     "21章",
+     "22章",
+     "24章",
+     "26章"
+    ],
+    "answer": 2,
+    "explanation": {
+     "correct": "現行のICD-10（2013年版）は22の章から構成されている。発効当初のICD-10は21章であったが、セカンドエディション以降は第ⅩⅩⅡ章「特殊目的用コード」を加えた22章となっている。",
+     "choiceNotes": [
+      "17章はICD-9の内容例示表の章構成。ICD-10で21章に拡大された。",
+      "21章はICD-10発効当初の章構成。セカンドエディションから22章になっている。",
+      null,
+      "現行のICD-10は22章構成であり、24章ではない。",
+      "現行のICD-10は22章構成であり、26章ではない。"
+     ],
+     "point": "ICD-10（2013年版）＝22章。第ⅩⅩⅡ章は特殊目的用コード。"
+    },
+    "sources": [
+     {
+      "ref": "icd:rikai",
+      "title": "疾病、傷害及び死因の統計分類の正しい理解と普及に向けて（ICD-10（2013年版）準拠）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/ICD-10_2013_2802.pdf",
+      "locator": "ICD-10の分類の構成",
+      "quote": "現行の ICD-10 は、22 の章から構成されており"
+     },
+     {
+      "ref": "icd:rikai",
+      "title": "疾病、傷害及び死因の統計分類の正しい理解と普及に向けて（ICD-10（2013年版）準拠）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/ICD-10_2013_2802.pdf",
+      "locator": "ICDの改訂の歴史（第10回）",
+      "quote": "内容例示表の章構成が 17 章から 21 章＊に拡大し"
+     },
+     {
+      "ref": "icd:instruction",
+      "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+      "locator": "2.4.1 書籍",
+      "quote": "４桁レベルの詳細な分類をすべて含んでいる内容例示表は、 22 章に分けられている。"
+     }
+    ],
+    "asOf": "ICD-10（2013年版）準拠"
+   }
+  },
+  {
+   "id": "lg-09-02",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou02 冒頭の中間分類項目群で確認。第Ⅰ・Ⅳ・ⅩⅨ章の範囲はnaiyou01/04/19の章見出しで確認。",
+   "detail": "旧選択肢「A00-A99」「S00-S99」は実在しない範囲で、旧choiceNote「A00-A99は感染症（第I章）」が不正確。旧point「D＝良性新生物等」はD50以降が第Ⅲ章である点を欠く。範囲を正し5択化。",
+   "question": {
+    "id": "lg-09-02",
+    "legacy": {
+     "key": "9_2",
+     "chapter": 9,
+     "chapterName": "診療情報管理II（コーディング）",
+     "index": 2,
+     "hash": "73f483cd866a82f5"
+    },
+    "subject": "S12",
+    "subtopic": "新生物（第Ⅱ章）",
+    "format": "icd",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "ICD-10（2013年版）で、悪性新生物＜腫瘍＞が分類されるコードの範囲はどれか。",
+    "choices": [
+     "A00-B99",
+     "C00-C97",
+     "D00-D48",
+     "E00-E90",
+     "S00-T98"
+    ],
+    "answer": 1,
+    "explanation": {
+     "correct": "第Ⅱ章「新生物＜腫瘍＞」（C00－D48）のうち、悪性新生物＜腫瘍＞はC00－C97に分類される。",
+     "choiceNotes": [
+      "A00－B99は第Ⅰ章「感染症及び寄生虫症」。",
+      null,
+      "D00－D48は第Ⅱ章のうち上皮内新生物（D00－D09）、良性新生物（D10－D36）、性状不詳又は不明の新生物（D37－D48）。",
+      "E00－E90は第Ⅳ章「内分泌，栄養及び代謝疾患」。",
+      "S00－T98は第ⅩⅨ章「損傷，中毒及びその他の外因の影響」。"
+     ],
+     "point": "第Ⅱ章 新生物（C00－D48）：C00－C97 悪性、D00－D09 上皮内、D10－D36 良性、D37－D48 性状不詳又は不明。"
+    },
+    "sources": [
+     {
+      "ref": "icd:naiyou02",
+      "title": "ICD-10（2013年版）準拠 内容例示表 第2章 新生物＜腫瘍＞（C00-D48）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou02.pdf",
+      "locator": "第Ⅱ章 冒頭（中間分類項目群）",
+      "quote": "Ｃ00－Ｃ97 悪性新生物＜腫瘍＞"
+     },
+     {
+      "ref": "icd:naiyou02",
+      "title": "ICD-10（2013年版）準拠 内容例示表 第2章 新生物＜腫瘍＞（C00-D48）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou02.pdf",
+      "locator": "第Ⅱ章 冒頭（中間分類項目群）",
+      "quote": "Ｄ00－Ｄ09 上皮内新生物＜腫瘍＞ Ｄ10－Ｄ36 良性新生物＜腫瘍＞ Ｄ37－Ｄ48 性状不詳又は不明の新生物＜腫瘍＞"
+     }
+    ],
+    "asOf": "ICD-10（2013年版）準拠"
+   }
+  },
+  {
+   "id": "lg-09-03",
+   "verdict": "pass",
+   "contentChanged": false,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:kihon2013でE10-E14糖尿病、E10〜E14各名称、C34気管支及び肺の悪性新生物、J18肺炎，病原体不詳、I21急性心筋梗塞を確認（tools/icd.mjs）。",
+   "question": {
+    "id": "lg-09-03",
+    "legacy": {
+     "key": "9_3",
+     "chapter": 9,
+     "chapterName": "診療情報管理II（コーディング）",
+     "index": 3,
+     "hash": "e1265147f1d1b682"
+    },
+    "subject": "S12",
+    "subtopic": "内分泌・代謝（第Ⅳ章）",
+    "format": "icd",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "糖尿病のICD-10コードはどれか。",
+    "choices": [
+     "E10-E14",
+     "C34",
+     "J18",
+     "I21"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "糖尿病はE10（1型）、E11（2型）、E12（栄養障害関連）、E13（その他）、E14（詳細不明）に分類。",
+     "choiceNotes": [
+      null,
+      "C34は肺の悪性新生物。",
+      "J18は肺炎。",
+      "I21は急性心筋梗塞。"
+     ],
+     "point": "E10＝1型DM、E11＝2型DM。Eは内分泌・代謝疾患。"
+    },
+    "sources": [
+     {
+      "ref": "icd:kihon2013",
+      "title": "基本分類表（2013年版）準拠",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/xls/kihon2013.xlsx",
+      "locator": "E10-E14",
+      "quote": "糖尿病（E10－E14）"
+     },
+     {
+      "ref": "icd:kihon2013",
+      "title": "基本分類表（2013年版）準拠",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/xls/kihon2013.xlsx",
+      "locator": "E11",
+      "quote": "２型＜インスリン非依存性＞糖尿病＜NIDDM＞"
+     }
+    ],
+    "asOf": "ICD-10（2013年版）準拠"
+   }
+  },
+  {
+   "id": "lg-09-04",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:instruction「剣印及び星印」システム（l.1024-1048）で確認。",
+   "detail": "旧choiceNote「両方を記録することが推奨される」は不正確（星印は任意的追加コード、剣印は常に使用）。旧選択肢「どちらか一方のみ使用する」は剣印単独使用が可能なため誤りと断定できず曖昧。選択肢を出典に沿って作り直し。",
+   "question": {
+    "id": "lg-09-04",
+    "legacy": {
+     "key": "9_4",
+     "chapter": 9,
+     "chapterName": "診療情報管理II（コーディング）",
+     "index": 4,
+     "hash": "5d23c3c36a376e86"
+    },
+    "subject": "S11",
+    "subtopic": "剣印・星印分類",
+    "format": "knowledge",
+    "difficulty": "standard",
+    "polarity": "positive",
+    "question": "ICD-10の剣印（†）及び星印（＊）システムについて、正しいものはどれか。",
+    "choices": [
+     "剣印は症状発現、星印は原疾患（基礎疾患）に対するコードである",
+     "星印コードは単独で一次コードとして使用できる",
+     "剣印は原疾患（基礎疾患）、星印は症状発現に対するコードである",
+     "剣印コードは任意的追加コードであり、省略してよい",
+     "剣印と星印は同じ意味で、どちらを付けてもよい"
+    ],
+    "answer": 2,
+    "explanation": {
+     "correct": "剣印（†）は原疾患（基礎疾患）に対する一次コード、星印（＊）は特定の臓器又は部位における症状発現に対する任意的追加コードである。剣印コードは常に使用しなければならず、星印コードは決して単独で使用してはならない。",
+     "choiceNotes": [
+      "逆である。剣印が原疾患、星印が症状発現。",
+      "コーディングには、星印コードは決して単独で使用してはならない。",
+      null,
+      "任意的追加コードなのは星印コード。剣印コードは一次コードで、常に使用しなければならない。",
+      "剣印と星印は役割が異なる（原疾患と症状発現）。"
+     ],
+     "point": "†＝原疾患（一次コード・常に使用）、＊＝症状発現（任意的追加コード・単独使用不可）。"
+    },
+    "sources": [
+     {
+      "ref": "icd:instruction",
+      "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+      "locator": "3.1.3 病態に対する二つのコード（剣印及び星印システム）",
+      "quote": "一次コードは、原疾患（基礎疾患）に対するものであり、剣印（†）が付けられて いる；症状発現に対する任意的追加コードには、星印（＊）が付けられている。"
+     },
+     {
+      "ref": "icd:instruction",
+      "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+      "locator": "3.1.3 病態に対する二つのコード（剣印及び星印システム）",
+      "quote": "剣印コードが一次コードであって、剣印コードを常に使用しな ければならないというのが ICD の原則である。コーディングには、星印コードは決 して単独で使用してはならない。"
+     }
+    ],
+    "asOf": "ICD-10（2013年版）準拠"
+   }
+  },
+  {
+   "id": "lg-09-05",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou20 冒頭注・中間分類項目（V01－V99交通事故、W00－W19転倒・転落、X40－X49不慮の中毒）で確認。",
+   "detail": "旧pointの「X＝中毒等、Y＝その他」は不正確（XにはX00－X39の不慮の損傷やX60－X84の故意の自傷等も含まれる）。S00－T98を紛らわしい選択肢として加え5択化。",
+   "question": {
+    "id": "lg-09-05",
+    "legacy": {
+     "key": "9_5",
+     "chapter": 9,
+     "chapterName": "診療情報管理II（コーディング）",
+     "index": 5,
+     "hash": "90f2172949f01e3f"
+    },
+    "subject": "S12",
+    "subtopic": "外因（第ⅩⅩ章）",
+    "format": "icd",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "ICD-10（2013年版）で、損傷・中毒などの原因となった周囲の状況やできごと（外因）を分類するコードの範囲はどれか。",
+    "choices": [
+     "A00-B99",
+     "C00-D48",
+     "S00-T98",
+     "V01-Y98",
+     "J00-J99"
+    ],
+    "answer": 3,
+    "explanation": {
+     "correct": "第ⅩⅩ章「傷病及び死亡の外因」（V01－Y98）は、損傷，中毒及びその他の有害作用の原因としての周囲の状況及びできごとを分類する。本章のコードは、病態の性質を示す他章のコード（多くは第ⅩⅨ章）に追加して使用する。",
+     "choiceNotes": [
+      "A00－B99は第Ⅰ章「感染症及び寄生虫症」。",
+      "C00－D48は第Ⅱ章「新生物＜腫瘍＞」。",
+      "S00－T98は第ⅩⅨ章「損傷，中毒及びその他の外因の影響」で、外因ではなく損傷・中毒などの病態の性質を分類する。",
+      null,
+      "J00－J99は第Ⅹ章「呼吸器系の疾患」。"
+     ],
+     "point": "外因＝第ⅩⅩ章（V01－Y98）。V01－V99 交通事故、W00－W19 転倒・転落など。病態の性質（多くは第ⅩⅨ章）のコードに追加して使う。"
+    },
+    "sources": [
+     {
+      "ref": "icd:naiyou20",
+      "title": "ICD-10（2013年版）準拠 内容例示表 第20章 傷病及び死亡の外因（V01-Y98）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou20.pdf",
+      "locator": "第ⅩⅩ章 冒頭注",
+      "quote": "本章は損傷， 中毒及びその他の有害作用の原因としての周囲の状況及びできごとを分類するもので あり"
+     },
+     {
+      "ref": "icd:naiyou20",
+      "title": "ICD-10（2013年版）準拠 内容例示表 第20章 傷病及び死亡の外因（V01-Y98）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou20.pdf",
+      "locator": "第ⅩⅩ章 冒頭注",
+      "quote": "本章のコードを使用する場合は， 本分類の 病態の性質を示す他章のコードに追加するものとして使用する。"
+     }
+    ],
+    "asOf": "ICD-10（2013年版）準拠"
+   }
+  },
+  {
+   "id": "lg-09-06",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:dpc-chosa-setsumei-2026（医療資源を最も投入した傷病名について）・ins:dpc-coding-text-v7 Ⅱ章で確認。",
+   "detail": "旧解説「主傷病名として選択」は誤り（コーディングテキストは主傷病名と医療資源病名を区別）。subjectはS10へ再分類。選択肢を出典に沿って5択化し正答位置を変更。",
+   "question": {
+    "id": "lg-09-06",
+    "legacy": {
+     "key": "9_6",
+     "chapter": 9,
+     "chapterName": "診療情報管理II（コーディング）",
+     "index": 6,
+     "hash": "45a02419585e4015"
+    },
+    "subject": "S10",
+    "subtopic": "DPCのコーディング",
+    "format": "knowledge",
+    "difficulty": "standard",
+    "polarity": "positive",
+    "question": "DPC/PDPSにおける「医療資源を最も投入した傷病名」の選択について、正しいものはどれか。",
+    "choices": [
+     "入院の契機となった傷病名を必ず選択する",
+     "1入院期間を通して最も医療資源を投入した傷病名を一つ選ぶ",
+     "治療期間が最も長かった傷病名を選択する",
+     "月によって医療資源を投入した傷病名が異なる場合は、月ごとに一つずつ選ぶ",
+     "ICDのダブルコーディングのルールに従い、剣印と星印の両方のコードを選択する"
+    ],
+    "answer": 1,
+    "explanation": {
+     "correct": "医療資源を最も投入した傷病名は一入院で一つだけ入力し、月によって病態が変化した場合でも、退院時に1入院期間を通して最も医療資源を投入した傷病名を一つ選ぶ。",
+     "choiceNotes": [
+      "入院の契機となった傷病名は別の項目で、医療資源病名は入院中の主要な傷病名・病態に基づき医療資源の投入量で選択する。",
+      null,
+      "治療期間の長さではなく、医療資源の投入量で判断する。",
+      "月ごとに異なる場合でも、1入院期間を通して一つ選ぶ。",
+      "DPCではICDのダブルコーディングのルールは採用されず、†・＊も添付しない。"
+     ],
+     "point": "医療資源病名＝1入院期間を通して最も医療資源を投入した傷病名を一つ。期間の長さや入院契機ではなく資源投入量で判断。"
+    },
+    "sources": [
+     {
+      "ref": "ins:dpc-chosa-setsumei-2026",
+      "title": "2026年度 DPCの評価・検証等に係る調査（退院患者調査）実施説明資料",
+      "url": "https://www.mhlw.go.jp/content/12400000/001679918.pdf",
+      "locator": "様式1 医療資源を最も投入した傷病名",
+      "quote": "退院時に、親様式1の場合1入院期間を通して最も医療資源を投入した傷病名を一つ選ぶこと"
+     },
+     {
+      "ref": "ins:dpc-coding-text-v7",
+      "title": "DPC／PDPS 傷病名コーディングテキスト 改定版（第７版）",
+      "url": "https://www.mhlw.go.jp/content/12400000/001684575.pdf",
+      "locator": "Ⅱ DPCの基本構造",
+      "quote": "ICD のルールにあるダブルコーディングや分類選択に 当たっての優先ルール等は DPC コーディングでは採用されていない"
+     }
+    ],
+    "asOf": "2026年度 DPCの評価・検証等に係る調査 実施説明資料（2026年3月25日時点）・DPC傷病名コーディングテキスト第7版（令和8年6月）"
+   }
+  },
+  {
+   "id": "lg-09-07",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:dpc-coding-text-v7「DPC（14桁）の構成」図、ins:dpc-chosa-setsumei-2026で上2桁MDC・上6桁を確認。",
+   "detail": "旧解説の内訳「MDC（2桁）＋傷病名（4桁）＋手術等（6桁）＋その他（2桁）」が誤り（手術は2桁、ほかに病態等分類・年齢等・手術処置等1/2・副傷病・重症度等が各1桁）。5択化し正答位置を変更。",
+   "question": {
+    "id": "lg-09-07",
+    "legacy": {
+     "key": "9_7",
+     "chapter": 9,
+     "chapterName": "診療情報管理II（コーディング）",
+     "index": 7,
+     "hash": "23c66daae97a6d96"
+    },
+    "subject": "S10",
+    "subtopic": "診断群分類の構造",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "DPC（診断群分類）コードの桁数はどれか。",
+    "choices": [
+     "6桁",
+     "10桁",
+     "14桁",
+     "16桁",
+     "20桁"
+    ],
+    "answer": 2,
+    "explanation": {
+     "correct": "DPCは14桁の英数字で構成される。上6桁が疾患コード（うち上2桁が主要診断群（MDC））で、続いて病態等分類、年齢・出生時体重等、手術（2桁）、手術・処置等1、手術・処置等2、副傷病、重症度等が並ぶ。",
+     "choiceNotes": [
+      "6桁はDPCの上6桁（疾患コード）にあたる。DPC全体は14桁。",
+      "10桁ではない。DPCは14桁。",
+      null,
+      "16桁ではない。DPCは14桁。",
+      "20桁ではない。DPCは14桁。"
+     ],
+     "point": "DPC＝14桁。上2桁MDC、上6桁が疾患コード、以下は手術・処置等・副傷病・重症度等の分岐。"
+    },
+    "sources": [
+     {
+      "ref": "ins:dpc-coding-text-v7",
+      "title": "DPC／PDPS 傷病名コーディングテキスト 改定版（第７版）",
+      "url": "https://www.mhlw.go.jp/content/12400000/001684575.pdf",
+      "locator": "Ⅱ DPCの基本構造",
+      "quote": "DPC は 14 桁の英数字で構成される。"
+     },
+     {
+      "ref": "ins:dpc-chosa-setsumei-2026",
+      "title": "2026年度 DPCの評価・検証等に係る調査（退院患者調査）実施説明資料",
+      "url": "https://www.mhlw.go.jp/content/12400000/001679918.pdf",
+      "locator": "再入院の取扱い",
+      "quote": "類番号（14桁）の上2桁（主要診断群（MDC））"
+     }
+    ],
+    "asOf": "DPC傷病名コーディングテキスト第7版（令和8年6月）・2026年度 DPC調査実施説明資料"
+   }
+  },
+  {
+   "id": "lg-09-08",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:r08-kaitei-gaiyo-dpc（3段階の定額報酬・期間Ⅲ超は出来高・5つの点数設定方式A〜E）、ins:r08-dpc-ryuijiko 第2の2(1)（入院期間Ⅰ〜Ⅲの定義）で確認。",
+   "detail": "旧正答「期間Iが最も高く期間IIIが最も低い」は点数設定方式（A〜E）によって成り立たない場合があり一般化できない。旧選択肢「期間の区分はない」等も弱い。出典で確認できる仕組み（3段階・期間Ⅲ超の出来高・5方式）で作り直し。",
+   "question": {
+    "id": "lg-09-08",
+    "legacy": {
+     "key": "9_8",
+     "chapter": 9,
+     "chapterName": "診療情報管理II（コーディング）",
+     "index": 8,
+     "hash": "9bac76071b15866e"
+    },
+    "subject": "S10",
+    "subtopic": "入院期間と医療機関別係数",
+    "format": "knowledge",
+    "difficulty": "standard",
+    "polarity": "positive",
+    "question": "DPC/PDPSにおける在院日数に応じた1日当たり点数の設定について、正しいものはどれか。",
+    "choices": [
+     "1日当たり点数は在院日数にかかわらず入院全期間で同一である",
+     "入院初期を重点評価するため、在院日数に応じた3段階の定額報酬が設定されている",
+     "入院期間Ⅲを超えて入院が長期化した部分も、入院期間Ⅲの1日当たり点数で包括算定される",
+     "点数設定方式は、すべての診断群分類で1種類に統一されている"
+    ],
+    "answer": 1,
+    "explanation": {
+     "correct": "DPC/PDPSでは、入院初期を重点評価するため、在院日数に応じた3段階（入院期間Ⅰ・Ⅱ・Ⅲ）の定額報酬が設定されている。例外的に入院が長期化した場合、期間Ⅲを超えた部分は出来高で算定する。",
+     "choiceNotes": [
+      "在院日数に応じた3段階の点数が設定されており、全期間同一ではない。",
+      null,
+      "期間Ⅲを超えた部分は出来高算定となる。",
+      "入院初期に要する医療資源投入量等に応じた5つの点数設定方式がある。"
+     ],
+     "point": "DPCの1日当たり点数＝入院初期を重点評価する3段階（期間Ⅰ・Ⅱ・Ⅲ）。期間Ⅲ超は出来高。点数設定方式は5種類。"
+    },
+    "sources": [
+     {
+      "ref": "ins:r08-kaitei-gaiyo-dpc",
+      "title": "令和８年度診療報酬改定の概要 ５.入院（DPC/PDPS）",
+      "url": "https://www.mhlw.go.jp/content/12400000/001696832.pdf",
+      "locator": "DPC/PDPSの概要（1日当たり点数）",
+      "quote": "入院初期を重点評価するため、在院日数に応じた３段階の定額報酬を設定"
+     },
+     {
+      "ref": "ins:r08-kaitei-gaiyo-dpc",
+      "title": "令和８年度診療報酬改定の概要 ５.入院（DPC/PDPS）",
+      "url": "https://www.mhlw.go.jp/content/12400000/001696832.pdf",
+      "locator": "DPC/PDPSの概要（1日当たり点数）",
+      "quote": "期間Ⅲ（平均在院日数＋2SD以上の ３０の整数倍を超えた部分）以降については出来高算定"
+     },
+     {
+      "ref": "ins:r08-kaitei-gaiyo-dpc",
+      "title": "令和８年度診療報酬改定の概要 ５.入院（DPC/PDPS）",
+      "url": "https://www.mhlw.go.jp/content/12400000/001696832.pdf",
+      "locator": "1日当たり点数の設定方法",
+      "quote": "入院初期に要する医療資源投入量等に応じた５つの点数設定方式により点数が設定される。"
+     }
+    ],
+    "asOf": "令和8年度診療報酬改定（2026年6月施行）"
+   }
+  },
+  {
+   "id": "lg-09-09",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "cancer:glossary-kokusaisippeibunruisyuyougaku（がん登録用、部位（局在）・組織型（形態）、O＝Oncology）・icd:instruction 腫瘍学の項（局在及び形態の2軸分類、がん登録で使用）で確認。",
+   "detail": "旧選択肢（眼科・整形外科・産科の分類）は明らかに不適切で、正答だけが長く語句の手がかりで解けた。内容は正しいため、出典で否定できる紛らわしい選択肢に作り直し5択化。",
+   "question": {
+    "id": "lg-09-09",
+    "legacy": {
+     "key": "9_9",
+     "chapter": 9,
+     "chapterName": "診療情報管理II（コーディング）",
+     "index": 9,
+     "hash": "78aa078c734bee94"
+    },
+    "subject": "S11",
+    "subtopic": "ICD-11・ICF・ICD-O",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "ICD-O（国際疾病分類－腫瘍学）について、正しいものはどれか。",
+    "choices": [
+     "局在（部位）のみを1軸でコード化する分類である",
+     "名称の「O」は眼科（Ophthalmology）を意味する",
+     "局在（部位）と形態（組織型）の2軸でコード化する分類である",
+     "精神及び行動の障害を詳細にコード化する分類である",
+     "生活機能と障害をコード化する分類である"
+    ],
+    "answer": 2,
+    "explanation": {
+     "correct": "ICD-O（International Classification of Diseases for Oncology）は、局在（部位）及び形態（組織型）の両者によるコーディング・システムをもった2軸分類で、がん登録などで用いられる。",
+     "choiceNotes": [
+      "局在だけでなく形態（組織型）もコード化する2軸分類である。",
+      "「O」はOncology（腫瘍学）を意味する。",
+      null,
+      "ICD-Oは腫瘍（新生物）をコード化する分類で、精神及び行動の障害の分類ではない。",
+      "生活機能と障害を分類するのはICF（国際生活機能分類）。ICD-Oは腫瘍の分類である。"
+     ],
+     "point": "ICD-O＝腫瘍学（Oncology）の分類。局在（部位）＋形態（組織型）の2軸。がん登録で使用。"
+    },
+    "sources": [
+     {
+      "ref": "cancer:glossary-kokusaisippeibunruisyuyougaku",
+      "title": "がん統計の用語集：国際疾病分類-腫瘍学［ICD-O］",
+      "url": "https://ganjoho.jp/reg_stat/statistics/qa_words/word/kokusaisippeibunruisyuyougaku.html",
+      "locator": "用語解説",
+      "quote": "がん（新生物）の登録に使用されるコード。部位（局在）や組織型（形態）をコード化するために整理されたもので、ICD-O と略します（OはOncology腫瘍学）。"
+     },
+     {
+      "ref": "icd:instruction",
+      "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+      "locator": "2.2.1 診断関連分類（腫瘍学）",
+      "quote": "ICD-O は、局在及び形態の両者によるコーディング・システムをもっ た２軸分類である。"
+     }
+    ],
+    "asOf": "ICD-O第3版（ICD-O-3）・ICD-10（2013年版）準拠インストラクションマニュアル"
+   }
+  },
+  {
+   "id": "lg-09-10",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:kihon2013・tools/icd.mjsでJ18/J15/C34/I21/K70の名称とJ09-J18中間分類を確認。",
+   "detail": "旧問は「肺炎のコード」とするが肺炎はJ12－J18に分かれ、J18は病原体不詳に限られる。旧解説「起因菌不詳」を正式名称「病原体不詳」に修正、根拠のない語呂合わせ（Jはlung/pulmonary）を削除。J15を加え5択化。",
+   "question": {
+    "id": "lg-09-10",
+    "legacy": {
+     "key": "9_10",
+     "chapter": 9,
+     "chapterName": "診療情報管理II（コーディング）",
+     "index": 10,
+     "hash": "245d3da3d072493b"
+    },
+    "subject": "S12",
+    "subtopic": "呼吸器（第Ⅹ章）",
+    "format": "icd",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "ICD-10（2013年版）で、3桁分類項目「肺炎，病原体不詳」のコードはどれか。",
+    "choices": [
+     "C34",
+     "I21",
+     "J15",
+     "J18",
+     "K70"
+    ],
+    "answer": 3,
+    "explanation": {
+     "correct": "J18は「肺炎，病原体不詳」。第Ⅹ章「呼吸器系の疾患」（J00－J99）の中間分類「インフルエンザ及び肺炎」（J09－J18）に属する。",
+     "choiceNotes": [
+      "C34は「気管支及び肺の悪性新生物＜腫瘍＞」（第Ⅱ章）。",
+      "I21は「急性心筋梗塞」（第Ⅸ章）。",
+      "J15は「細菌性肺炎，他に分類されないもの」。病原体（細菌）が明らかな肺炎に用いる。",
+      null,
+      "K70は「アルコール性肝疾患」（第ⅩⅠ章）。"
+     ],
+     "point": "J09－J18＝インフルエンザ及び肺炎。J15 細菌性肺炎NEC、J18 肺炎，病原体不詳。"
+    },
+    "sources": [
+     {
+      "ref": "icd:kihon2013",
+      "title": "基本分類表（2013年版）準拠",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/xls/kihon2013.xlsx",
+      "locator": "J18",
+      "quote": "肺炎，病原体不詳"
+     },
+     {
+      "ref": "icd:kihon2013",
+      "title": "基本分類表（2013年版）準拠",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/xls/kihon2013.xlsx",
+      "locator": "J15",
+      "quote": "細菌性肺炎，他に分類されないもの"
+     }
+    ],
+    "asOf": "ICD-10（2013年版）準拠"
+   }
+  },
+  {
+   "id": "lg-09-11",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou19 冒頭の除外（M84.4・M80.-・M84.3）、icd:naiyou20 冒頭注、tools/icd.mjsでS72.0大腿骨頚部骨折を確認。",
+   "detail": "旧choiceNote「骨折はS章（M章ではない）」は病的骨折（M84.4）・骨粗しょう症性骨折（M80）・疲労骨折（M84.3）が第ⅩⅢ章である点を欠き誤解を招く。問題文に「外傷による」「病的骨折を除く」を明示し、第ⅩⅩ章を紛らわしい選択肢に加え5択化。",
+   "question": {
+    "id": "lg-09-11",
+    "legacy": {
+     "key": "9_11",
+     "chapter": 9,
+     "chapterName": "診療情報管理II（コーディング）",
+     "index": 11,
+     "hash": "39b4c42cce8cbafa"
+    },
+    "subject": "S12",
+    "subtopic": "損傷・中毒（第ⅩⅨ章）",
+    "format": "icd",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "ICD-10（2013年版）で、転倒などの外傷による骨折（病的骨折を除く）が分類される章はどれか。",
+    "choices": [
+     "第ⅩⅢ章 筋骨格系及び結合組織の疾患（M00－M99）",
+     "第ⅩⅧ章 症状，徴候及び異常臨床所見・異常検査所見で他に分類されないもの（R00－R99）",
+     "第ⅩⅨ章 損傷，中毒及びその他の外因の影響（S00－T98）",
+     "第ⅩⅩ章 傷病及び死亡の外因（V01－Y98）",
+     "第Ⅸ章 循環器系の疾患（I00－I99）"
+    ],
+    "answer": 2,
+    "explanation": {
+     "correct": "外傷による骨折は第ⅩⅨ章「損傷，中毒及びその他の外因の影響」（S00－T98）に分類する（例：大腿骨頚部骨折 S72.0）。転倒などの外因は第ⅩⅩ章のコードを追加情報として用いる。",
+     "choiceNotes": [
+      "第ⅩⅢ章には病的骨折NOS（M84.4）や病的骨折を伴う骨粗しょう症（M80.-）、疲労骨折（M84.3）が分類されるが、外傷による骨折は第ⅩⅨ章。",
+      "第ⅩⅧ章は症状・徴候・異常所見で他に分類されないもの。骨折は分類しない。",
+      null,
+      "第ⅩⅩ章は転倒などの外因を分類し、損傷の性質を示すコード（多くは第ⅩⅨ章）に追加して使用する。骨折そのものは分類しない。",
+      "第Ⅸ章は循環器系の疾患。"
+     ],
+     "point": "外傷性骨折＝第ⅩⅨ章（S）。病的骨折・骨粗しょう症性骨折・疲労骨折は第ⅩⅢ章（M）。外因（転倒）は第ⅩⅩ章を追加。"
+    },
+    "sources": [
+     {
+      "ref": "icd:naiyou19",
+      "title": "ICD-10（2013年版）準拠 内容例示表 第19章 損傷，中毒及びその他の外因の影響（S00-T98）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou19.pdf",
+      "locator": "第ⅩⅨ章 冒頭 除外",
+      "quote": "病的骨折 ＮＯＳ（Ｍ84．4） 病的骨折を伴う骨粗しょう＜鬆＞症＜オステオポローシス＞（Ｍ80.-） 疲労骨折（Ｍ84．3）"
+     },
+     {
+      "ref": "icd:naiyou20",
+      "title": "ICD-10（2013年版）準拠 内容例示表 第20章 傷病及び死亡の外因（V01-Y98）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou20.pdf",
+      "locator": "第ⅩⅩ章 冒頭注",
+      "quote": "ほとんどの場合， 病態の性質はⅩⅨ 章の 「損傷， 中毒及びその他の外因の影響（Ｓ00－Ｔ98）」 に分類可能である。"
+     }
+    ],
+    "asOf": "ICD-10（2013年版）準拠"
+   }
+  },
+  {
+   "id": "lg-09-12",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:instruction 4.1.2 原死因の定義（⒜疾病又は損傷、⒝致命傷を負わせた事故又は暴力の状況）で確認。",
+   "detail": "旧問は正答だけが長く、誤答（直前・最長・最後）が短く手がかりで解けた。旧解説は⒝（事故又は暴力の状況）に触れず「WHOが定義」とのみ記載。選択肢の長さをそろえ、定義の⒜⒝を解説に明記。",
+   "question": {
+    "id": "lg-09-12",
+    "legacy": {
+     "key": "9_12",
+     "chapter": 9,
+     "chapterName": "診療情報管理II（コーディング）",
+     "index": 12,
+     "hash": "3c57276bc0412d8f"
+    },
+    "subject": "S11",
+    "subtopic": "死因統計と原死因の選択",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "死因統計における「原死因」の定義（⒜疾病又は損傷に関する部分）として、正しいものはどれか。",
+    "choices": [
+     "死亡直前に存在し、直接に死亡を引き起こした疾病又は病態",
+     "直接に死亡を引き起こした一連の事象の起因となった疾病又は損傷",
+     "死亡時に存在した疾病のうち、最も罹病期間が長かった疾病",
+     "死亡に至る経過中に最後に診断された疾病又は合併症"
+    ],
+    "answer": 1,
+    "explanation": {
+     "correct": "原死因は、⒜直接に死亡を引き起こした一連の事象の起因となった疾病又は損傷、⒝致命傷を負わせた事故又は暴力の状況、と定義されている。死亡の防止という公衆衛生の観点から、一次製表の死因として用いる。",
+     "choiceNotes": [
+      "直接に死亡を引き起こした病態は、一連の事象の終点（直接死因）であり、原死因はその起因となった疾病又は損傷。",
+      null,
+      "罹病期間の長さは原死因の定義に含まれない。",
+      "最後に診断されたかどうかは原死因の定義に含まれない。"
+     ],
+     "point": "原死因＝死亡に至る一連の事象の起点となった疾病又は損傷（⒜）、又は致命傷を負わせた事故・暴力の状況（⒝）。"
+    },
+    "sources": [
+     {
+      "ref": "icd:instruction",
+      "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+      "locator": "4.1.2 原死因",
+      "quote": "直接に死亡を引き起こした一連の事象の起因となった疾病又は損傷"
+     }
+    ],
+    "asOf": "ICD-10（2013年版）準拠"
+   }
+  },
+  {
+   "id": "lg-09-13",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:r08-kaitei-gaiyo-dpc「DPC/PDPSにおける診療報酬の算定方法（概要）」の包括評価部分／出来高評価部分の一覧で確認（ins:dpc-gaiyo-kangaekataも同内容）。",
+   "detail": "旧pointの「出来高＝…リハビリ」は令和8年度の概要資料で確認できないため、出典の列挙（医学管理・手術・麻酔・放射線治療・1,000点以上の処置等）に修正。「画像診断」を加え5択化。",
+   "question": {
+    "id": "lg-09-13",
+    "legacy": {
+     "key": "9_13",
+     "chapter": 9,
+     "chapterName": "診療情報管理II（コーディング）",
+     "index": 13,
+     "hash": "60b9afce611b7a22"
+    },
+    "subject": "S10",
+    "subtopic": "DPC/PDPSの仕組み",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "negative",
+    "question": "DPC/PDPSの包括評価部分に含まれないものはどれか。",
+    "choices": [
+     "入院基本料",
+     "画像診断",
+     "投薬",
+     "注射",
+     "手術"
+    ],
+    "answer": 4,
+    "explanation": {
+     "correct": "DPC/PDPSの診療報酬は包括評価部分と出来高評価部分の合計。包括評価部分（ホスピタルフィー的報酬部分）には入院基本料・検査・画像診断・投薬・注射・1,000点未満の処置等が含まれ、手術は医学管理・麻酔・放射線治療・1,000点以上の処置等とともに出来高評価部分で算定する。",
+     "choiceNotes": [
+      "入院基本料は包括評価部分に含まれる。",
+      "画像診断は包括評価部分に含まれる。",
+      "投薬は包括評価部分に含まれる。",
+      "注射は包括評価部分に含まれる。",
+      null
+     ],
+     "point": "包括＝入院基本料・検査・画像診断・投薬・注射・1,000点未満の処置等。出来高＝医学管理・手術・麻酔・放射線治療・1,000点以上の処置等。"
+    },
+    "sources": [
+     {
+      "ref": "ins:r08-kaitei-gaiyo-dpc",
+      "title": "令和８年度診療報酬改定の概要 ５.入院（DPC/PDPS）",
+      "url": "https://www.mhlw.go.jp/content/12400000/001696832.pdf",
+      "locator": "DPC/PDPSにおける診療報酬の算定方法（概要）",
+      "quote": "・検査 ＋ ・手術 ・画像診断 ・麻酔"
+     },
+     {
+      "ref": "ins:r08-kaitei-gaiyo-dpc",
+      "title": "令和８年度診療報酬改定の概要 ５.入院（DPC/PDPS）",
+      "url": "https://www.mhlw.go.jp/content/12400000/001696832.pdf",
+      "locator": "DPC/PDPSにおける診療報酬の算定方法（概要）",
+      "quote": "・注射 ・1,000点以上の処置 等"
+     },
+     {
+      "ref": "ins:r08-kaitei-gaiyo-dpc",
+      "title": "令和８年度診療報酬改定の概要 ５.入院（DPC/PDPS）",
+      "url": "https://www.mhlw.go.jp/content/12400000/001696832.pdf",
+      "locator": "DPC/PDPSにおける診療報酬の算定方法（概要）",
+      "quote": "ホスピタルフィー的報酬部分 ドクターフィー的報酬部分等 【包括評価部分】 【出来高評価部分】"
+     }
+    ],
+    "asOf": "令和8年度診療報酬改定（2026年6月施行）"
+   }
+  },
+  {
+   "id": "lg-09-14",
+   "verdict": "reject",
+   "contentChanged": false,
+   "checks": {
+    "answer": false,
+    "distractors": false,
+    "stem": false,
+    "explanations": false,
+    "sources": false,
+    "asOf": true,
+    "domain": false
+   },
+   "notes": "自明な問題で、選択肢「用紙の色分け」「入力スピードのみ」は明らかに不適切。正答「主傷病名と術式の正確な対応確認」もキャッシュ内の一次資料で定義された精度管理の要点として裏付けられない。",
+   "detail": "選択肢が学習上無意味（ソルバーも曖昧と判定）で、正答を支える一次資料がない。",
+   "reason": "low-quality"
+  },
+  {
+   "id": "lg-09-15",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:instruction 3.3（索引表を先に参照→手順6で内容例示表で確認、両方を参照）、2.4.1（第1巻＝内容例示表、第3巻＝索引）、3.1.2（索引表は最初に参照するべき）で確認。",
+   "detail": "旧問は内容は正しいが、正答だけが長く誤答（どちらか一方のみ／同一の表）が短く手がかりで解けた。選択肢の長さをそろえ5択化し、正答位置を変更。",
+   "question": {
+    "id": "lg-09-15",
+    "legacy": {
+     "key": "9_15",
+     "chapter": 9,
+     "chapterName": "診療情報管理II（コーディング）",
+     "index": 15,
+     "hash": "a2c34241f9fee213"
+    },
+    "subject": "S11",
+    "subtopic": "索引表の使い方",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "ICD-10の索引表（第3巻）と内容例示表（第1巻）を用いたコーディングの手順として、正しいものはどれか。",
+    "choices": [
+     "内容例示表で疾患名からコードを検索し、索引表で確認する",
+     "索引表で疾患名からコードを検索し、内容例示表で確認する",
+     "索引表に記載されたコードは、内容例示表を確認せずにそのまま用いる",
+     "内容例示表だけを用い、索引表は使用しない",
+     "索引表と内容例示表は同一の内容で、どちらか一方を参照すればよい"
+    ],
+    "answer": 1,
+    "explanation": {
+     "correct": "索引表は診断書の記載をコードする場合に最初に参照するべきもので、選ばれたコード番号が適切かどうかを内容例示表で確かめる。コードを付ける前に索引表及び内容例示表の両方を参照しなければならない。",
+     "choiceNotes": [
+      "順序が逆。最初に索引表を参照し、内容例示表で確認する。",
+      null,
+      "選ばれたコード番号が適切かどうか、内容例示表を参照して確かめる（包含・除外の指示にも従う）。",
+      "索引表は内容例示表に含まれていない多くの用語を含んでおり、両方を参照しなければならない。",
+      "両者は別の巻で内容も異なる（第1巻＝内容例示表、第3巻＝索引表）。両方を参照する。"
+     ],
+     "point": "コーディング手順＝索引表（第3巻）で検索→内容例示表（第1巻）で確認。必ず両方を参照する。"
+    },
+    "sources": [
+     {
+      "ref": "icd:instruction",
+      "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+      "locator": "3.3 基本的コーディング・ガイドライン",
+      "quote": "コーディングする場合は、コードを付ける前に索引表及び内容例示表の両方を参照しなけ ればならない。"
+     },
+     {
+      "ref": "icd:instruction",
+      "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+      "locator": "3.3 基本的コーディング・ガイドライン（手順6）",
+      "quote": "選ばれたコード番号が適切であるかどうかを確かめるために、内容例示表を参 照する。"
+     },
+     {
+      "ref": "icd:instruction",
+      "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+      "locator": "3.1.2 包含用語の例示及び４桁細分類項目の利用",
+      "quote": "索引表は、示された診断書の記載をコードする場合には、最初に参照するべき である。"
+     }
+    ],
+    "asOf": "ICD-10（2013年版）準拠"
+   }
+  }
+ ]
+}

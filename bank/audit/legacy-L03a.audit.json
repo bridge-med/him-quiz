@@ -1,0 +1,1086 @@
+{
+ "verdicts": [
+  {
+   "id": "lg-03-00",
+   "verdict": "pass",
+   "contentChanged": false,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "医療法1条の5第1・2項（2026-10-01施行版）で病院20人以上・診療所無床又は19人以下を確認。有床診療所があるためC誤り。",
+   "question": {
+    "id": "lg-03-00",
+    "legacy": {
+     "key": "3_0",
+     "chapter": 3,
+     "chapterName": "医療関連法規",
+     "index": 0,
+     "hash": "c50bd353345c6ec8"
+    },
+    "subject": "S01",
+    "subtopic": "医療施設の類型",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "医療法における病院と診療所の区分基準はどれか。",
+    "choices": [
+     "病院は20床以上、診療所は19床以下または無床",
+     "病院は50床以上、診療所は49床以下",
+     "病院は入院施設あり、診療所は入院施設なし",
+     "法的な区分はない"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "医療法により病院は20人以上、診療所は19人以下または無床と定義。",
+     "choiceNotes": [
+      null,
+      "50床以上の基準は存在しない。",
+      "有床診療所（19床以下）もある。",
+      "医療法で明確に区分されている。"
+     ],
+     "point": "病院＝20床以上、診療所＝0〜19床。"
+    },
+    "sources": [
+     {
+      "ref": "law:医療法",
+      "title": "医療法",
+      "url": "https://laws.e-gov.go.jp/law/323AC0000000205",
+      "locator": "第1条の5第1項",
+      "quote": "二十人以上の患者を入院させるための施設を有するものをいう"
+     },
+     {
+      "ref": "law:医療法",
+      "title": "医療法",
+      "url": "https://laws.e-gov.go.jp/law/323AC0000000205",
+      "locator": "第1条の5第2項",
+      "quote": "患者を入院させるための施設を有しないもの（オンライン診療受診施設であるものを除く。）又は十九人以下の患者を入院させるための施設を有するものをいう"
+     }
+    ],
+    "asOf": "2026-11 e-Gov現行法令"
+   }
+  },
+  {
+   "id": "lg-03-01",
+   "verdict": "pass",
+   "contentChanged": false,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "医師法24条2項5年、施行規則20条10号諸記録2年を確認。療担9条でも診療録は完結の日から5年（3年は他の記録）なので3年も誤り。",
+   "question": {
+    "id": "lg-03-01",
+    "legacy": {
+     "key": "3_1",
+     "chapter": 3,
+     "chapterName": "医療関連法規",
+     "index": 1,
+     "hash": "cecaf0fff82086f3"
+    },
+    "subject": "S08",
+    "subtopic": "診療録の保存義務",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "診療録の保存期間として正しいのはどれか。",
+    "choices": [
+     "5年間",
+     "3年間",
+     "10年間",
+     "永久保存"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "医師法第24条により診療録は5年間保存。診療に関する諸記録は医療法施行規則で2年間。",
+     "choiceNotes": [
+      null,
+      "3年間ではなく5年間。",
+      "10年間は法定ではない。",
+      "永久保存は法的義務ではない。"
+     ],
+     "point": "診療録＝5年（医師法）。診療諸記録＝2年（医療法施行規則）。"
+    },
+    "sources": [
+     {
+      "ref": "law:医師法",
+      "title": "医師法",
+      "url": "https://laws.e-gov.go.jp/law/323AC0000000201",
+      "locator": "第24条第2項",
+      "quote": "五年間これを保存しなければならない"
+     },
+     {
+      "ref": "law:医療法施行規則",
+      "title": "医療法施行規則",
+      "url": "https://laws.e-gov.go.jp/law/323M40000100050",
+      "locator": "第20条第10号",
+      "quote": "診療に関する諸記録は、過去二年間の病院日誌、各科診療日誌、処方せん、手術記録、看護記録"
+     }
+    ],
+    "asOf": "2026-11 e-Gov現行法令"
+   }
+  },
+  {
+   "id": "lg-03-02",
+   "verdict": "pass",
+   "contentChanged": false,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "医師法19条1項を確認。",
+   "question": {
+    "id": "lg-03-02",
+    "legacy": {
+     "key": "3_2",
+     "chapter": 3,
+     "chapterName": "医療関連法規",
+     "index": 2,
+     "hash": "b6c1ba8241121e85"
+    },
+    "subject": "S01",
+    "subtopic": "医療従事者と資格法",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "応召義務の内容として正しいのはどれか。",
+    "choices": [
+     "正当な事由がなければ診療を拒んではならない",
+     "すべての患者を無条件に診療しなければならない",
+     "24時間365日診療する義務",
+     "往診を断ることはできない"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "医師法第19条は正当な事由がなければ診療を拒否できないと規定。",
+     "choiceNotes": [
+      null,
+      "正当な事由があれば拒否可能。",
+      "24時間365日の義務はない。",
+      "正当事由があれば断れる。"
+     ],
+     "point": "応召義務＝「正当な事由がなければ」拒否不可。"
+    },
+    "sources": [
+     {
+      "ref": "law:医師法",
+      "title": "医師法",
+      "url": "https://laws.e-gov.go.jp/law/323AC0000000201",
+      "locator": "第19条第1項",
+      "quote": "診療に従事する医師は、診察治療の求があつた場合には、正当な事由がなければ、これを拒んではならない。"
+     }
+    ],
+    "asOf": "2026-11 e-Gov現行法令"
+   }
+  },
+  {
+   "id": "lg-03-03",
+   "verdict": "pass",
+   "contentChanged": false,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "個情法2条3項（病歴）、20条2項（取得の同意）、27条2項ただし書（オプトアウト不可）、ガイダンスⅣ3（障害の事実も該当）を確認。",
+   "question": {
+    "id": "lg-03-03",
+    "legacy": {
+     "key": "3_3",
+     "chapter": 3,
+     "chapterName": "医療関連法規",
+     "index": 3,
+     "hash": "052d560bc755057d"
+    },
+    "subject": "S08",
+    "subtopic": "個人情報保護法",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "要配慮個人情報に該当するのはどれか。",
+    "choices": [
+     "病歴",
+     "氏名",
+     "住所",
+     "電話番号"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "要配慮個人情報は病歴・障害・犯罪歴等。取得に原則本人同意が必要。オプトアウト不可。",
+     "choiceNotes": [
+      null,
+      "氏名は個人情報だが要配慮ではない。",
+      "住所は要配慮ではない。",
+      "電話番号は要配慮ではない。"
+     ],
+     "point": "要配慮個人情報＝病歴・障害・犯罪歴等。オプトアウト不可。"
+    },
+    "sources": [
+     {
+      "ref": "law:個人情報の保護に関する法律",
+      "title": "個人情報の保護に関する法律",
+      "url": "https://laws.e-gov.go.jp/law/415AC0000000057",
+      "locator": "第2条第3項",
+      "quote": "本人の人種、信条、社会的身分、病歴、犯罪の経歴、犯罪により害を被った事実"
+     },
+     {
+      "ref": "law:個人情報の保護に関する法律",
+      "title": "個人情報の保護に関する法律",
+      "url": "https://laws.e-gov.go.jp/law/415AC0000000057",
+      "locator": "第27条第2項ただし書",
+      "quote": "第三者に提供される個人データが要配慮個人情報又は"
+     },
+     {
+      "ref": "info:ppc-iryoukaigo-guidance",
+      "title": "医療・介護関係事業者における個人情報の適切な取扱いのためのガイダンス",
+      "url": "https://www.ppc.go.jp/files/pdf/260401_iryoukaigo_guidance.pdf",
+      "locator": "Ⅳ３．要配慮個人情報",
+      "quote": "なお、要配慮個人情報の取得や個人データの第三者提供には、原則として本人同意が"
+     }
+    ],
+    "asOf": "2026-11 e-Gov現行法令／個人情報ガイダンス（令和8年4月一部改正）"
+   }
+  },
+  {
+   "id": "lg-03-04",
+   "verdict": "pass",
+   "contentChanged": false,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "刑法134条1項、1条（第一編総則・国内犯）、199条殺人、235条窃盗を確認。",
+   "question": {
+    "id": "lg-03-04",
+    "legacy": {
+     "key": "3_4",
+     "chapter": 3,
+     "chapterName": "医療関連法規",
+     "index": 4,
+     "hash": "944af396fd4e77a2"
+    },
+    "subject": "S08",
+    "subtopic": "守秘義務",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "守秘義務を定めた刑法の条文はどれか。",
+    "choices": [
+     "刑法第134条",
+     "刑法第1条",
+     "刑法第199条",
+     "刑法第235条"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "刑法第134条は医師・薬剤師・助産師等の守秘義務違反を規定。",
+     "choiceNotes": [
+      null,
+      "第1条は総則。",
+      "第199条は殺人罪。",
+      "第235条は窃盗罪。"
+     ],
+     "point": "守秘義務＝刑法134条。"
+    },
+    "sources": [
+     {
+      "ref": "law:刑法",
+      "title": "刑法",
+      "url": "https://laws.e-gov.go.jp/law/140AC0000000045",
+      "locator": "第134条第1項",
+      "quote": "医師、薬剤師、医薬品販売業者、助産師、弁護士、弁護人、公証人又はこれらの職にあった者が、正当な理由がないのに"
+     }
+    ],
+    "asOf": "2026-11 e-Gov現行法令"
+   }
+  },
+  {
+   "id": "lg-03-05",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "GL7.0概説編4.2で三基準とCIAを確認。",
+   "question": {
+    "id": "lg-03-05",
+    "legacy": {
+     "key": "3_5",
+     "chapter": 3,
+     "chapterName": "医療関連法規",
+     "index": 5,
+     "hash": "f1b0a76c2283a8ac"
+    },
+    "subject": "S05",
+    "subtopic": "電子保存の三基準と外部保存",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "診療録等を電子媒体に保存する場合に確保が求められる3つの基準（電子保存の三基準）として正しいものはどれか。",
+    "choices": [
+     "真正性・見読性・保存性",
+     "機密性・完全性・可用性",
+     "正確性・網羅性・適時性",
+     "安全性・信頼性・効率性"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "法令で保存義務のある文書等の情報を電子媒体に保存する場合は、真正性・見読性・保存性の確保が求められる（安全管理ガイドライン第7.0版 概説編）。",
+     "choiceNotes": [
+      null,
+      "機密性・完全性・可用性は、同ガイドラインが示す情報セキュリティの要素であり、電子保存の三基準ではない。",
+      "電子保存の三基準ではない。三基準は真正性・見読性・保存性。",
+      "電子保存の三基準ではない。三基準は真正性・見読性・保存性。"
+     ],
+     "point": "電子保存の三基準＝真正性・見読性・保存性。情報セキュリティの要素（機密性・完全性・可用性）と混同しない。"
+    },
+    "sources": [
+     {
+      "ref": "info:mhlw-anzen-gl7-gaisetsu",
+      "title": "医療情報システムの安全管理に関するガイドライン 第7.0版 概説編",
+      "url": "https://www.mhlw.go.jp/content/10808000/001716290.pdf",
+      "locator": "４．２",
+      "quote": "当該情報の真正性・見読性・保存性が確保され"
+     },
+     {
+      "ref": "info:mhlw-anzen-gl7-gaisetsu",
+      "title": "医療情報システムの安全管理に関するガイドライン 第7.0版 概説編",
+      "url": "https://www.mhlw.go.jp/content/10808000/001716290.pdf",
+      "locator": "４．２",
+      "quote": "「機密性（Confidentiality）」は、情報資産に対して、許可された者のみがアクセスできることを指す。"
+     }
+    ],
+    "asOf": "医療情報システムの安全管理に関するガイドライン第7.0版（令和8年6月）"
+   },
+   "detail": "C・Dの解説（「データ品質の要素」「システム評価の指標」）は出典で裏づけられないため中立的な記述に変更。設問文に対象（診療録等の電子媒体保存）を明記。"
+  },
+  {
+   "id": "lg-03-06",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "感染症法6条2項（一類7疾患にエボラ出血熱）、3項2号結核、6項1号インフルエンザ・6号梅毒を確認（2026-10-01施行版）。",
+   "question": {
+    "id": "lg-03-06",
+    "legacy": {
+     "key": "3_6",
+     "chapter": 3,
+     "chapterName": "医療関連法規",
+     "index": 6,
+     "hash": "550b3c197ca97c39"
+    },
+    "subject": "S08",
+    "subtopic": "届出と証明書",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "感染症法の1類感染症に該当するのはどれか。",
+    "choices": [
+     "エボラ出血熱",
+     "インフルエンザ",
+     "結核",
+     "梅毒"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "感染症法第6条第2項の一類感染症は、エボラ出血熱、クリミア・コンゴ出血熱、痘そう、南米出血熱、ペスト、マールブルグ病、ラッサ熱の7疾患。",
+     "choiceNotes": [
+      null,
+      "インフルエンザ（鳥インフルエンザ及び新型インフルエンザ等感染症を除く）は五類感染症（第6条第6項）。",
+      "結核は二類感染症（第6条第3項）。",
+      "梅毒は五類感染症（第6条第6項）。"
+     ],
+     "point": "一類＝エボラ出血熱・ペスト・痘そう等7疾患。二類＝結核・重症急性呼吸器症候群（SARS）等。"
+    },
+    "sources": [
+     {
+      "ref": "law:感染症の予防及び感染症の患者に対する医療に関する法律",
+      "title": "感染症の予防及び感染症の患者に対する医療に関する法律",
+      "url": "https://laws.e-gov.go.jp/law/410AC0000000114",
+      "locator": "第6条第2項",
+      "quote": "この法律において「一類感染症」とは、次に掲げる感染性の疾病をいう。"
+     },
+     {
+      "ref": "law:感染症の予防及び感染症の患者に対する医療に関する法律",
+      "title": "感染症の予防及び感染症の患者に対する医療に関する法律",
+      "url": "https://laws.e-gov.go.jp/law/410AC0000000114",
+      "locator": "第6条第3項第2号",
+      "quote": "この法律において「二類感染症」とは、次に掲げる感染性の疾病をいう。"
+     },
+     {
+      "ref": "law:感染症の予防及び感染症の患者に対する医療に関する法律",
+      "title": "感染症の予防及び感染症の患者に対する医療に関する法律",
+      "url": "https://laws.e-gov.go.jp/law/410AC0000000114",
+      "locator": "第6条第6項第1号",
+      "quote": "インフルエンザ（鳥インフルエンザ及び新型インフルエンザ等感染症を除く。）"
+     }
+    ],
+    "asOf": "2026-11 e-Gov現行法令"
+   },
+   "detail": "解説の「最も危険度が高い」は条文で裏づけられないため削除。インフルエンザの五類の範囲（鳥・新型等を除く）と条文番号を明記。"
+  },
+  {
+   "id": "lg-03-07",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "医師法21条、感染症法12条1項を確認。",
+   "question": {
+    "id": "lg-03-07",
+    "legacy": {
+     "key": "3_7",
+     "chapter": 3,
+     "chapterName": "医療関連法規",
+     "index": 7,
+     "hash": "0529445cf56de849"
+    },
+    "subject": "S08",
+    "subtopic": "届出と証明書",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "異状死の届出先として正しいのはどれか。",
+    "choices": [
+     "所轄警察署",
+     "保健所",
+     "厚生労働省",
+     "都道府県知事"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "医師法第21条により、医師は死体又は妊娠4月以上の死産児を検案して異状があると認めたときは、24時間以内に所轄警察署に届け出なければならない。",
+     "choiceNotes": [
+      null,
+      "異状死体の届出先は保健所ではない。保健所長を経由するのは感染症法第12条の医師の届出（届出先は都道府県知事等）。",
+      "厚生労働省は医師法第21条の届出先ではない。",
+      "都道府県知事は医師法第21条の届出先ではない。"
+     ],
+     "point": "異状死体等＝24時間以内に所轄警察署（医師法21条）。感染症の届出＝保健所長経由で都道府県知事等（感染症法12条）。"
+    },
+    "sources": [
+     {
+      "ref": "law:医師法",
+      "title": "医師法",
+      "url": "https://laws.e-gov.go.jp/law/323AC0000000201",
+      "locator": "第21条",
+      "quote": "二十四時間以内に所轄警察署に届け出なければならない"
+     },
+     {
+      "ref": "law:感染症の予防及び感染症の患者に対する医療に関する法律",
+      "title": "感染症の予防及び感染症の患者に対する医療に関する法律",
+      "url": "https://laws.e-gov.go.jp/law/410AC0000000114",
+      "locator": "第12条第1項",
+      "quote": "最寄りの保健所長を経由して都道府県知事（保健所設置市等にあっては、その長。"
+     }
+    ],
+    "asOf": "2026-11 e-Gov現行法令"
+   },
+   "detail": "解説・ポイントの「感染症＝保健所」は不正確（保健所長を経由して都道府県知事等へ届出）。条文どおりに修正。"
+  },
+  {
+   "id": "lg-03-08",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "マニュアル令和8年度版「2 使い分け」、医師法19条2項を確認。",
+   "question": {
+    "id": "lg-03-08",
+    "legacy": {
+     "key": "3_8",
+     "chapter": 3,
+     "chapterName": "医療関連法規",
+     "index": 8,
+     "hash": "89f59a62f8a5e57f"
+    },
+    "subject": "S08",
+    "subtopic": "届出と証明書",
+    "format": "knowledge",
+    "difficulty": "standard",
+    "polarity": "positive",
+    "question": "死亡診断書と死体検案書の使い分けとして正しいものはどれか。",
+    "choices": [
+     "診療管理下にある患者が生前に診療していた傷病に関連して死亡したと認める場合は死亡診断書、それ以外は死体検案書",
+     "診療中の患者の死亡であれば、死因が診療していた傷病と関連しなくても死亡診断書を交付する",
+     "死亡診断書は、医師の指示があれば看護師も作成し交付できる",
+     "異状死体の死体検案書は、医師ではなく所轄警察署の警察官が作成する"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "死亡診断書（死体検案書）記入マニュアル（令和8年度版）は、医師は「診療管理下にある患者が、生前に診療していた傷病に関連して死亡したと認める場合」には死亡診断書を、それ以外の場合には死体検案書を交付するとしている。診療中の患者でも、診療していた傷病と関連しない死亡なら死体検案書となる。",
+     "choiceNotes": [
+      null,
+      "診療していた傷病に関連する死亡と認められない場合は、診療中の患者でも死体検案書を交付する。",
+      "作成交付の義務は医師・歯科医師に規定されており、看護師は作成者ではない。",
+      "死体検案書は検案をした医師が交付する（医師法第19条第2項）。警察官は作成者ではない。"
+     ],
+     "point": "死亡診断書＝診療管理下の患者が診療中の傷病に関連して死亡。それ以外＝死体検案書（検案した医師が交付）。"
+    },
+    "sources": [
+     {
+      "ref": "cancer:shibou-manual-r08",
+      "title": "令和8年度版 死亡診断書（死体検案書）記入マニュアル",
+      "url": "https://www.mhlw.go.jp/toukei/manual/dl/manual_r08.pdf",
+      "locator": "２ 死亡診断書と死体検案書の使い分け",
+      "quote": "には「死亡診断書」を、それ以外の場合には「死体検案書」を交付してください。"
+     },
+     {
+      "ref": "cancer:shibou-manual-r08",
+      "title": "令和8年度版 死亡診断書（死体検案書）記入マニュアル",
+      "url": "https://www.mhlw.go.jp/toukei/manual/dl/manual_r08.pdf",
+      "locator": "１（作成交付の義務）",
+      "quote": "医師、歯科医師には、それぞれ法律によって作成交付の義務が規定されています。"
+     },
+     {
+      "ref": "law:医師法",
+      "title": "医師法",
+      "url": "https://laws.e-gov.go.jp/law/323AC0000000201",
+      "locator": "第19条第2項",
+      "quote": "診察若しくは検案をし、又は出産に立ち会つた医師は、診断書若しくは検案書又は出生証明書若しくは死産証書の交付の求があつた場合には"
+     }
+    ],
+    "asOf": "令和8年度版 死亡診断書（死体検案書）記入マニュアル／2026-11 e-Gov現行法令"
+   },
+   "detail": "正答肢「生前診療していた患者の死亡は死亡診断書」は不正確（診療していた傷病に関連する死亡に限る）。解説「どちらも医師が作成」も歯科医師の死亡診断書があるため不正確。修正。"
+  },
+  {
+   "id": "lg-03-09",
+   "verdict": "pass",
+   "contentChanged": false,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "療担20条3号イ（2026-06-01施行版）を確認。設問の「原則」で例外にも対応。",
+   "question": {
+    "id": "lg-03-09",
+    "legacy": {
+     "key": "3_9",
+     "chapter": 3,
+     "chapterName": "医療関連法規",
+     "index": 9,
+     "hash": "7337e363bfa5dc24"
+    },
+    "subject": "S03",
+    "subtopic": "保険医療機関と療養担当規則",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "処方箋の使用期間として原則正しいのはどれか。",
+    "choices": [
+     "交付日含め4日以内",
+     "交付日含め7日以内",
+     "14日以内",
+     "30日以内"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "処方箋の使用期間は交付の日を含めて4日以内（療養担当規則）。",
+     "choiceNotes": [
+      null,
+      "7日以内ではなく4日以内。",
+      "14日以内ではない。",
+      "30日以内ではない。"
+     ],
+     "point": "処方箋有効期限＝交付日含め4日。"
+    },
+    "sources": [
+     {
+      "ref": "law:保険医療機関及び保険医療養担当規則",
+      "title": "保険医療機関及び保険医療養担当規則",
+      "url": "https://laws.e-gov.go.jp/law/332M50000100015",
+      "locator": "第20条第3号イ",
+      "quote": "処方箋の使用期間は、交付の日を含めて四日以内とする。ただし、長期の旅行等特殊の事情があると認められる場合は、この限りでない。"
+     }
+    ],
+    "asOf": "2026-11 e-Gov現行法令"
+   }
+  },
+  {
+   "id": "lg-03-10",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "施行規則20条10号（2年）、療担9条（3年・診療録5年）を確認。",
+   "question": {
+    "id": "lg-03-10",
+    "legacy": {
+     "key": "3_10",
+     "chapter": 3,
+     "chapterName": "医療関連法規",
+     "index": 10,
+     "hash": "83788baaab88c58d"
+    },
+    "subject": "S08",
+    "subtopic": "診療に関する諸記録",
+    "format": "knowledge",
+    "difficulty": "standard",
+    "polarity": "positive",
+    "question": "医療法施行規則で、病院が備えておく診療に関する諸記録（病院日誌、手術記録、看護記録など）の保存期間はどれか。",
+    "choices": [
+     "2年間",
+     "5年間",
+     "3年間",
+     "10年間"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "医療法施行規則第20条第10号により、診療に関する諸記録は過去2年間の病院日誌、各科診療日誌、処方せん、手術記録、看護記録、検査所見記録、エックス線写真等とされる。診療録の5年（医師法第24条）とは異なる。",
+     "choiceNotes": [
+      null,
+      "5年は医師法第24条の診療録の保存期間。",
+      "3年は療養担当規則第9条で保険医療機関に課される療養の給付の担当に関する記録の保存期間であり、医療法施行規則の諸記録の期間ではない。",
+      "10年は医療法施行規則の諸記録の期間ではない。"
+     ],
+     "point": "診療録＝5年（医師法）、医療法施行規則の諸記録＝2年、療担規則の帳簿・記録＝3年（診療録は5年）。"
+    },
+    "sources": [
+     {
+      "ref": "law:医療法施行規則",
+      "title": "医療法施行規則",
+      "url": "https://laws.e-gov.go.jp/law/323M40000100050",
+      "locator": "第20条第10号",
+      "quote": "診療に関する諸記録は、過去二年間の病院日誌、各科診療日誌、処方せん、手術記録、看護記録"
+     },
+     {
+      "ref": "law:保険医療機関及び保険医療養担当規則",
+      "title": "保険医療機関及び保険医療養担当規則",
+      "url": "https://laws.e-gov.go.jp/law/332M50000100015",
+      "locator": "第9条",
+      "quote": "療養の給付の担当に関する帳簿及び書類その他の記録をその完結の日から三年間保存しなければならない。"
+     }
+    ],
+    "asOf": "2026-11 e-Gov現行法令"
+   },
+   "detail": "解説「3年の規定はない」は誤り（療担規則9条で3年）。根拠法令を設問に明記し解説を修正。"
+  },
+  {
+   "id": "lg-03-11",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "施行規則6条の4（診療科の列挙が拡大）・6条の5（400）、制度の概要（21診療科・特定機能病院B別途）を確認。",
+   "question": {
+    "id": "lg-03-11",
+    "legacy": {
+     "key": "3_11",
+     "chapter": 3,
+     "chapterName": "医療関連法規",
+     "index": 11,
+     "hash": "8c1b16e0ddfc61f1"
+    },
+    "subject": "S01",
+    "subtopic": "医療施設の類型",
+    "format": "knowledge",
+    "difficulty": "standard",
+    "polarity": "positive",
+    "question": "特定機能病院（特定機能病院Bを除く）の承認要件として正しいものはどれか。",
+    "choices": [
+     "原則として定められた21の診療科を有し、400床以上の病床を有すること",
+     "10以上の診療科を有し、200床以上の病床を有すること",
+     "すべての診療科を有し、500床以上の病床を有すること",
+     "救急科を有し、100床以上の病床を有すること"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "厚生労働省「特定機能病院制度の概要」では、承認要件として400床以上の病床と、原則定められた21の診療科を有することが示されている（病床数は医療法第4条の2第1項第6号・同法施行規則第6条の5で400）。特定機能病院Bは診療科等について別途要件が設定されている。",
+     "choiceNotes": [
+      null,
+      "診療科・病床数とも承認要件と異なる。病床数は400床以上。",
+      "すべての診療科は求められておらず、病床数も400床以上が要件。",
+      "救急科と100床は承認要件ではない。病床数は400床以上。"
+     ],
+     "point": "特定機能病院＝400床以上＋原則21の診療科（令和8年の概要）。厚生労働大臣が承認。"
+    },
+    "sources": [
+     {
+      "ref": "mgmt:tokutei-kinou-gaiyou",
+      "title": "特定機能病院制度の概要",
+      "url": "https://www.mhlw.go.jp/content/10800000/001018535.pdf",
+      "locator": "承認要件",
+      "quote": "原則定められた21の診療科を有していること"
+     },
+     {
+      "ref": "mgmt:tokutei-kinou-gaiyou",
+      "title": "特定機能病院制度の概要",
+      "url": "https://www.mhlw.go.jp/content/10800000/001018535.pdf",
+      "locator": "承認要件",
+      "quote": "400床以上の病床を有することが必要"
+     },
+     {
+      "ref": "law:医療法施行規則",
+      "title": "医療法施行規則",
+      "url": "https://laws.e-gov.go.jp/law/323M40000100050",
+      "locator": "第6条の5",
+      "quote": "法第四条の二第一項第六号に規定する厚生労働省令で定める数は四百とする。"
+     }
+    ],
+    "asOf": "厚生労働省「特定機能病院制度の概要」（令和8年4月時点）／2026-11 e-Gov現行法令"
+   },
+   "detail": "「16以上の診療科」は旧要件で現行の施行規則6条の4・制度の概要（原則21の診療科）と不一致。B肢解説の「地域医療支援病院に近い要件」も根拠なし。A/B類型を踏まえ設問を限定して修正。"
+  },
+  {
+   "id": "lg-03-12",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "臨床研究法2条1項・2項、4条、5条3項を確認。",
+   "question": {
+    "id": "lg-03-12",
+    "legacy": {
+     "key": "3_12",
+     "chapter": 3,
+     "chapterName": "医療関連法規",
+     "index": 12,
+     "hash": "48c9a409f77d5573"
+    },
+    "subject": "S01",
+    "subtopic": "医療の概念と倫理",
+    "format": "knowledge",
+    "difficulty": "advanced",
+    "polarity": "positive",
+    "question": "臨床研究法で、実施計画について認定臨床研究審査委員会の意見を聴くことが義務付けられている「特定臨床研究」に該当するものはどれか。",
+    "choices": [
+     "医薬品等製造販売業者から研究資金等の提供を受けて、その業者の医薬品を人に用いて有効性を明らかにする臨床研究",
+     "医薬品等を用いず、既存の診療録に記録された情報のみを後ろ向きに解析する研究",
+     "マウスなどの実験動物に医薬品を投与して、その有効性や安全性を調べる研究",
+     "医薬品の製造販売承認の申請のために、医薬品医療機器等法に基づいて行う治験",
+     "承認された用法・用量の範囲で既承認医薬品を用い、企業からの研究資金等の提供を受けずに行う臨床研究"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "臨床研究法第2条第2項第1号は、医薬品等製造販売業者等から研究資金等の提供を受けて実施する臨床研究（当該業者の医薬品等を用いるもの）を特定臨床研究とする。特定臨床研究の実施者は、実施計画について認定臨床研究審査委員会の意見を聴かなければならない（第5条第3項）。",
+     "choiceNotes": [
+      null,
+      "臨床研究法の「臨床研究」は医薬品等を人に対して用いる研究であり（第2条第1項）、診療録の情報のみを解析する研究は該当しない。",
+      "人に対して用いる研究ではないため臨床研究に該当しない（第2条第1項）。",
+      "治験は臨床研究法の「臨床研究」から除かれている（第2条第1項）。",
+      "臨床研究ではあるが、企業資金の提供も未承認・適応外の使用もないため特定臨床研究に該当しない（第2条第2項）。臨床研究実施基準の遵守は努力義務（第4条第1項）。"
+     ],
+     "point": "特定臨床研究＝企業から資金提供を受ける臨床研究、又は未承認・適応外の医薬品等を用いる臨床研究。認定臨床研究審査委員会の意見聴取が必須。"
+    },
+    "sources": [
+     {
+      "ref": "x-legacy-L03:臨床研究法",
+      "title": "臨床研究法",
+      "url": "https://laws.e-gov.go.jp/law/429AC0000000016",
+      "locator": "第2条第1項",
+      "quote": "医薬品等を人に対して用いることにより、当該医薬品等の有効性又は安全性を明らかにする研究"
+     },
+     {
+      "ref": "x-legacy-L03:臨床研究法",
+      "title": "臨床研究法",
+      "url": "https://laws.e-gov.go.jp/law/429AC0000000016",
+      "locator": "第2条第2項第1号",
+      "quote": "医薬品等製造販売業者又はその特殊関係者"
+     },
+     {
+      "ref": "x-legacy-L03:臨床研究法",
+      "title": "臨床研究法",
+      "url": "https://laws.e-gov.go.jp/law/429AC0000000016",
+      "locator": "第5条第3項",
+      "quote": "当該実施計画に記載されている認定臨床研究審査委員会の意見を聴かなければならない。"
+     }
+    ],
+    "asOf": "2026-11 e-Gov現行法令（臨床研究法 2026-05-01施行版）"
+   },
+   "detail": "旧正答「特定臨床研究（…）」は法が臨床研究全般も対象（非特定は努力義務、4条1項）とする点で不正確、「2018年施行」は施行日が政令委任で出典なし、動物実験・疫学調査の解説も根拠不十分。特定臨床研究の定義を問う形に作り直し5択化。"
+  },
+  {
+   "id": "lg-03-13",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "精神保健福祉法29条1・2項、29条の2、33条1項（2026-10-01施行版）を確認。",
+   "question": {
+    "id": "lg-03-13",
+    "legacy": {
+     "key": "3_13",
+     "chapter": 3,
+     "chapterName": "医療関連法規",
+     "index": 13,
+     "hash": "d78259cfefa3a447"
+    },
+    "subject": "S01",
+    "subtopic": "医療の概念と倫理",
+    "format": "knowledge",
+    "difficulty": "standard",
+    "polarity": "positive",
+    "question": "精神保健福祉法の措置入院の要件として正しいのはどれか。",
+    "choices": [
+     "都道府県知事が指定する2人以上の指定医の診察の結果が一致して、自傷他害のおそれがあると認められる場合",
+     "本人が入院に同意しており、精神保健指定医でない医師1名が入院の必要を判断した場合",
+     "家族が都道府県に入院を申請し、指定医の診察を経ないで入院させる場合",
+     "市区町村長が自傷他害のおそれがあると判断し、その権限で入院させる場合"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "精神保健福祉法第29条により、都道府県知事は、その指定する2人以上の指定医の診察を経て、精神障害者であり、入院させなければ自身を傷つけ又は他人に害を及ぼすおそれがあると各指定医の診察結果が一致した場合に、措置入院させることができる。",
+     "choiceNotes": [
+      null,
+      "措置入院は本人の同意を要件とせず、都道府県知事が指定する指定医の診察を要する。指定医1名で行えるのは急速を要する場合の緊急措置入院（第29条の2）であり、措置入院は2人以上の指定医の診察結果の一致が必要。",
+      "措置入院には2人以上の指定医の診察が必要。家族等の同意によるのは医療保護入院（第33条）で、これも指定医の診察を要する。",
+      "措置入院を行うのは都道府県知事であり、市区町村長ではない。"
+     ],
+     "point": "措置入院＝知事が指定する指定医2人以上の診察結果の一致＋自傷他害のおそれ。医療保護入院＝指定医の診察＋家族等の同意。"
+    },
+    "sources": [
+     {
+      "ref": "law:精神保健及び精神障害者福祉に関する法律",
+      "title": "精神保健及び精神障害者福祉に関する法律",
+      "url": "https://laws.e-gov.go.jp/law/325AC0100000123",
+      "locator": "第29条第2項",
+      "quote": "その指定する二人以上の指定医の診察を経て"
+     },
+     {
+      "ref": "law:精神保健及び精神障害者福祉に関する法律",
+      "title": "精神保健及び精神障害者福祉に関する法律",
+      "url": "https://laws.e-gov.go.jp/law/325AC0100000123",
+      "locator": "第29条第2項",
+      "quote": "各指定医の診察の結果が一致した場合でなければならない。"
+     },
+     {
+      "ref": "law:精神保健及び精神障害者福祉に関する法律",
+      "title": "精神保健及び精神障害者福祉に関する法律",
+      "url": "https://laws.e-gov.go.jp/law/325AC0100000123",
+      "locator": "第33条第1項",
+      "quote": "その家族等のうちいずれかの者の同意があるときは、本人の同意がなくても"
+     }
+    ],
+    "asOf": "2026-11 e-Gov現行法令"
+   },
+   "detail": "正答肢に「診察結果の一致」「知事の指定」が欠落。B肢解説「1名では不可」は緊急措置入院（29条の2、指定医1名）を無視しており不正確。修正。"
+  },
+  {
+   "id": "lg-03-14",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "児童虐待防止法5条・6条1項・3項を確認。",
+   "question": {
+    "id": "lg-03-14",
+    "legacy": {
+     "key": "3_14",
+     "chapter": 3,
+     "chapterName": "医療関連法規",
+     "index": 14,
+     "hash": "ffca78b8a16d60cd"
+    },
+    "subject": "S08",
+    "subtopic": "届出と証明書",
+    "format": "knowledge",
+    "difficulty": "standard",
+    "polarity": "positive",
+    "question": "児童虐待防止法の通告義務について正しいのはどれか。",
+    "choices": [
+     "児童虐待を受けたと思われる児童を発見した者は、速やかに通告しなければならない",
+     "通告義務は医師に限って課されており、看護師など他の職種には課されていない",
+     "通告先は所轄警察署に限られ、児童相談所には通告できない",
+     "虐待の確証が得られるまでは、医療機関から通告してはならない",
+     "医師が通告すると刑法の秘密漏示罪に問われる"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "児童虐待防止法第6条第1項により、児童虐待を受けたと思われる児童を発見した者は、速やかに市町村、都道府県の設置する福祉事務所若しくは児童相談所（又は児童委員を介してこれら）に通告しなければならない。",
+     "choiceNotes": [
+      null,
+      "通告義務は「発見した者」すべてに課されている（第6条第1項）。医師等は早期発見の努力義務も負う（第5条）。",
+      "通告先は市町村、福祉事務所又は児童相談所である（第6条第1項）。",
+      "「受けたと思われる」段階で通告義務がある（第6条第1項）。",
+      "守秘義務に関する法律の規定は通告義務の遵守を妨げるものと解釈してはならない（第6条第3項）。"
+     ],
+     "point": "児童虐待の通告＝「受けたと思われる」児童を発見した者すべての義務。通告先は市町村・福祉事務所・児童相談所。守秘義務は通告を妨げない。"
+    },
+    "sources": [
+     {
+      "ref": "x-legacy-L03:児童虐待の防止等に関する法律",
+      "title": "児童虐待の防止等に関する法律",
+      "url": "https://laws.e-gov.go.jp/law/412AC1000000082",
+      "locator": "第6条第1項",
+      "quote": "児童虐待を受けたと思われる児童を発見した者は、速やかに、これを市町村、都道府県の設置する福祉事務所若しくは児童相談所"
+     },
+     {
+      "ref": "x-legacy-L03:児童虐待の防止等に関する法律",
+      "title": "児童虐待の防止等に関する法律",
+      "url": "https://laws.e-gov.go.jp/law/412AC1000000082",
+      "locator": "第6条第3項",
+      "quote": "守秘義務に関する法律の規定は、第一項の規定による通告をする義務の遵守を妨げるものと解釈してはならない。"
+     }
+    ],
+    "asOf": "2026-11 e-Gov現行法令（児童虐待の防止等に関する法律 2026-10-01施行版）"
+   },
+   "detail": "正答肢「児童虐待を発見した者」は条文の「受けたと思われる児童を発見した者」と異なる。C肢解説「電話等でも可能」は条文に根拠なし。条文どおりの選択肢に差し替え5択化。"
+  },
+  {
+   "id": "lg-03-15",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "医療法6条の5第1〜3項、施行規則1条の9第1号を確認。",
+   "question": {
+    "id": "lg-03-15",
+    "legacy": {
+     "key": "3_15",
+     "chapter": 3,
+     "chapterName": "医療関連法規",
+     "index": 15,
+     "hash": "34321abdd53514c1"
+    },
+    "subject": "S02",
+    "subtopic": "医療広告と病院の情報発信",
+    "format": "knowledge",
+    "difficulty": "standard",
+    "polarity": "positive",
+    "question": "医療広告規制について正しいのはどれか。",
+    "choices": [
+     "原則として、法令で定められた事項以外は広告してはならない",
+     "医療機関は自由に広告できる",
+     "患者の主観に基づく治療効果の体験談を広告できる",
+     "他の病院と比較して優良である旨を広告できる"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "医療法第6条の5第3項により、厚生労働省令で定める場合（広告可能事項の限定解除）を除き、同項各号に掲げる事項以外の広告をしてはならない。広告の規制は「文書その他いかなる方法によるを問わず」及ぶ（同条第1項）。",
+     "choiceNotes": [
+      null,
+      "広告は虚偽広告の禁止（第6条の5第1項）や広告可能事項の限定（同条第3項）などで規制されている。",
+      "患者等の主観又は伝聞に基づく治療等の内容・効果の体験談の広告は禁止（医療法施行規則第1条の9第1号）。",
+      "他の病院又は診療所と比較して優良である旨の広告はしてはならない（医療法第6条の5第2項第1号）。"
+     ],
+     "point": "医療広告＝原則として広告可能事項に限る（限定解除あり）。比較優良広告・誇大広告・体験談は禁止。"
+    },
+    "sources": [
+     {
+      "ref": "law:医療法",
+      "title": "医療法",
+      "url": "https://laws.e-gov.go.jp/law/323AC0000000205",
+      "locator": "第6条の5第3項",
+      "quote": "次に掲げる事項以外の広告をしてはならない。"
+     },
+     {
+      "ref": "law:医療法",
+      "title": "医療法",
+      "url": "https://laws.e-gov.go.jp/law/323AC0000000205",
+      "locator": "第6条の5第2項第1号",
+      "quote": "他の病院又は診療所と比較して優良である旨の広告をしないこと。"
+     },
+     {
+      "ref": "law:医療法施行規則",
+      "title": "医療法施行規則",
+      "url": "https://laws.e-gov.go.jp/law/323M40000100050",
+      "locator": "第1条の9第1号",
+      "quote": "の主観又は伝聞に基づく、治療等の内容又は効果に関する体験談の広告をしては"
+     }
+    ],
+    "asOf": "2026-11 e-Gov現行法令"
+   },
+   "detail": "解説「体験談は2018年ガイドラインで禁止」は誤り（施行規則1条の9で禁止）、「Web広告も2018年から」は出典なし。限定解除の例外を踏まえ正答肢を「原則として」に修正。"
+  }
+ ]
+}

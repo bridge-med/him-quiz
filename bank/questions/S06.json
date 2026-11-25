@@ -1,0 +1,2347 @@
+{
+ "subject": "S06",
+ "questions": [
+  {
+   "id": "lg-06-00",
+   "legacy": {
+    "key": "6_0",
+    "chapter": 6,
+    "chapterName": "医療統計I（基礎統計学）",
+    "index": 0,
+    "hash": "8a3b8a47f496c15c"
+   },
+   "subject": "S06",
+   "subtopic": "代表値",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "外れ値の影響を最も受けにくい代表値はどれか。",
+   "choices": [
+    "中央値",
+    "平均値",
+    "合計値",
+    "範囲"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "中央値はデータを大きさの順に並べたとき真ん中にくる値であり，外れ値が加わっても多くの場合それほど影響を受けない。平均値は代表値の中で外れ値の影響を最も受けやすい。",
+    "choiceNotes": [
+     null,
+     "平均値は外れ値が加わると代表値の中で最も影響を受ける。",
+     "合計値はデータの総和であり，集団の中心的傾向を示す代表値ではない。",
+     "範囲（レンジ）は最大値と最小値の差で求める散らばりの指標であり，代表値ではない。"
+    ],
+    "point": "外れ値の影響を受けにくい代表値＝中央値（最頻値もほとんど影響を受けない）。平均値は外れ値の影響を受けやすい。"
+   },
+   "sources": [
+    {
+     "ref": "stats:naruhodo-chushin",
+     "title": "なるほど統計学園「中心的な傾向を捉える」",
+     "url": "https://www.stat.go.jp/naruhodo/5_tokucho/chushin.html",
+     "locator": "平均値と中央値と最頻値の違い",
+     "quote": "中央値は、データを並べてちょうど真ん中にくる値なので、外れ値が増えても、多くの場合はそれほど影響ありません。"
+    },
+    {
+     "ref": "stats:naruhodo-chushin",
+     "title": "なるほど統計学園「中心的な傾向を捉える」",
+     "url": "https://www.stat.go.jp/naruhodo/5_tokucho/chushin.html",
+     "locator": "平均値と中央値と最頻値の違い",
+     "quote": "あるデータに外れ値が加わった場合、平均値は三つの指標の中で最も影響を受けるデータといってもよいでしょう。"
+    },
+    {
+     "ref": "stats:naruhodo-chirabari-shokyu",
+     "title": "なるほど統計学園「データの散らばりを捉える」",
+     "url": "https://www.stat.go.jp/naruhodo/5_tokucho/chirabari.html",
+     "locator": "範囲、最大値、最小値",
+     "quote": "具体的には、変量の中の最大値と最小値の差で求めます。"
+    }
+   ],
+   "asOf": "総務省統計局 なるほど統計学園（2026-11取得）",
+   "origin": {
+    "batch": "L06",
+    "key": "lg-06-00",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（統計）で修正",
+     "修正後の再監査は未実施",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L06（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L06a（統計）",
+     "reauditor": null
+    },
+    "log": "bank/audit/legacy-L06a.audit.json#lg-06-00",
+    "notes": "naruhodo-chushin「平均値と中央値と最頻値の違い」、chirabari-shokyu「範囲」で確認。キーは正しい。"
+   }
+  },
+  {
+   "id": "lg-06-01",
+   "legacy": {
+    "key": "6_1",
+    "chapter": 6,
+    "chapterName": "医療統計I（基礎統計学）",
+    "index": 1,
+    "hash": "de563ff453ce8d60"
+   },
+   "subject": "S06",
+   "subtopic": "確率分布",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "正規分布で平均±1SDに含まれるデータは約何%か。",
+   "choices": [
+    "約68%",
+    "約95%",
+    "約99.7%",
+    "約50%"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "正規分布では，平均±1SDの範囲に約68%（68.3%），±2SDに約95%（95.5%），±3SDに約99.7%のデータが含まれる。",
+    "choiceNotes": [
+     null,
+     "約95%は平均±2SDの範囲（ちょうど95.0%になるのは±1.96SD）。",
+     "約99.7%は平均±3SDの範囲。",
+     "正規分布は平均を中心に左右対称なので，約50%は平均より上（または下）の片側に含まれる割合であり，±1SDの範囲の割合ではない。"
+    ],
+    "point": "±1SD≒68%，±2SD≒95%，±3SD≒99.7%（±1.96SDでちょうど95%）。"
+   },
+   "sources": [
+    {
+     "ref": "x-legacy-L06a:cdc-poe-l2s7",
+     "title": "Principles of Epidemiology in Public Health Practice, 3rd ed. Lesson 2 Section 7: Measures of Spread",
+     "url": "https://archive.cdc.gov/www_cdc_gov/csels/dsepd/ss1978/lesson2/section7.html",
+     "locator": "Lesson 2 Section 7: Normal distribution",
+     "quote": "approximately two-thirds (68.3%, to be exact) of the data fall within one standard deviation of either side of the mean"
+    },
+    {
+     "ref": "x-legacy-L06a:cdc-poe-l2s7",
+     "title": "Principles of Epidemiology in Public Health Practice, 3rd ed. Lesson 2 Section 7: Measures of Spread",
+     "url": "https://archive.cdc.gov/www_cdc_gov/csels/dsepd/ss1978/lesson2/section7.html",
+     "locator": "Lesson 2 Section 7: Normal distribution",
+     "quote": "95.5% of the data fall within two standard deviations of the mean; and 99.7% of the data fall within three standard deviations"
+    },
+    {
+     "ref": "x-legacy-L06a:cdc-poe-l2s7",
+     "title": "Principles of Epidemiology in Public Health Practice, 3rd ed. Lesson 2 Section 7: Measures of Spread",
+     "url": "https://archive.cdc.gov/www_cdc_gov/csels/dsepd/ss1978/lesson2/section7.html",
+     "locator": "Lesson 2 Section 7: Normal distribution",
+     "quote": "The mean is at the center, and data are equally distributed on either side of this mean."
+    }
+   ],
+   "asOf": "CDC Principles of Epidemiology 3rd ed.（2026-11取得）",
+   "origin": {
+    "batch": "L06",
+    "key": "lg-06-01",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（統計）で修正",
+     "修正後の再監査は未実施",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L06（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L06a（統計）",
+     "reauditor": null
+    },
+    "log": "bank/audit/legacy-L06a.audit.json#lg-06-01",
+    "notes": "CDC Lesson2 Sec7で±1SD=68.3%、±2SD=95.5%、±3SD=99.7%、±1.96SD=95.0%を確認。キーは正しい。"
+   }
+  },
+  {
+   "id": "lg-06-02",
+   "legacy": {
+    "key": "6_2",
+    "chapter": 6,
+    "chapterName": "医療統計I（基礎統計学）",
+    "index": 2,
+    "hash": "55cacb32842d00f8"
+   },
+   "subject": "S06",
+   "subtopic": "仮説検定",
+   "format": "knowledge",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "2群の差について，有意水準を0.05として仮説検定を行ったところ，p値が0.05未満であった。この結果の解釈として正しいものはどれか。",
+   "choices": [
+    "帰無仮説を採択し，差はないと判断する",
+    "臨床的にも必ず意味のある大きさの差があると判断する",
+    "対立仮説が100%正しいことが証明されたと判断する",
+    "帰無仮説を棄却し，統計学的に有意な差があると判断する"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "p値が事前に定めた有意水準（0.05）より小さいときは，帰無仮説のもとで観察された結果が起こることは非常にまれであると判断し，帰無仮説を棄却して対立仮説を採択する（統計学的に有意な差あり）。",
+    "choiceNotes": [
+     "p値が有意水準より小さいときは帰無仮説を棄却する。なお，棄却できなかった場合でも「差がない」と積極的にいえるわけではない。",
+     "p値は帰無仮説のもとで観察結果が起こる確率にもとづく判断であり，差が臨床的に意味のある大きさかどうかは示さない。",
+     "仮説検定は確率にもとづいて帰無仮説を棄却するかを判断する方法であり，対立仮説が100%正しいことを証明するものではない。",
+     null
+    ],
+    "point": "p値＜有意水準 → 帰無仮説を棄却（統計学的に有意）。統計学的有意≠臨床的に重要。"
+   },
+   "sources": [
+    {
+     "ref": "stats:naruhodo-kentei",
+     "title": "なるほど統計学園「統計的推定と統計的仮説検定」",
+     "url": "https://www.stat.go.jp/naruhodo/11_tokusei/kentei.html",
+     "locator": "②有意水準を決定する",
+     "quote": "有意水準とは、帰無仮説が間違っていると判断する（帰無仮説を棄却する）基準となる確率のことです。"
+    },
+    {
+     "ref": "stats:naruhodo-kentei",
+     "title": "なるほど統計学園「統計的推定と統計的仮説検定」",
+     "url": "https://www.stat.go.jp/naruhodo/11_tokusei/kentei.html",
+     "locator": "統計的仮説検定の手順（結論）",
+     "quote": "仮説検定では帰無仮説が棄却されれば、帰無仮説とは相反する対立仮説を採択することになります。"
+    },
+    {
+     "ref": "stats:mhlw-tokei-yougo-rr-or",
+     "title": "有効性・安全性に関する統計用語集",
+     "url": "https://www.mhlw.go.jp/www1/houdou/1106/h0602-3_c_15.html",
+     "locator": "信頼区間",
+     "quote": "積極的に否定することはできなくなり（同じ、ということではない）"
+    }
+   ],
+   "asOf": "総務省統計局 なるほど統計学園（2026-11取得）",
+   "origin": {
+    "batch": "L06",
+    "key": "lg-06-02",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（統計）で修正",
+     "修正後の再監査は未実施",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L06（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L06a（統計）",
+     "reauditor": null
+    },
+    "log": "bank/audit/legacy-L06a.audit.json#lg-06-02",
+    "notes": "naruhodo-kentei（有意水準・P値・帰無仮説の棄却）、mhlw統計用語集（棄却できない＝同じではない）で確認。キーは正しい。"
+   }
+  },
+  {
+   "id": "lg-06-03",
+   "legacy": {
+    "key": "6_3",
+    "chapter": 6,
+    "chapterName": "医療統計I（基礎統計学）",
+    "index": 3,
+    "hash": "ef7718bbf09b034d"
+   },
+   "subject": "S06",
+   "subtopic": "スクリーニング指標",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "感度の定義はどれか。",
+   "choices": [
+    "疾患がない人で検査陰性の割合",
+    "疾患がある人で検査陽性の割合",
+    "検査陽性で実際に疾患ありの割合",
+    "検査陰性で実際に疾患なしの割合"
+   ],
+   "answer": 1,
+   "explanation": {
+    "correct": "感度＝真陽性÷（真陽性＋偽陰性）。疾患者を正しく陽性と判定する割合。",
+    "choiceNotes": [
+     "それは特異度。",
+     null,
+     "それは陽性的中率。",
+     "それは陰性的中率。"
+    ],
+    "point": "感度＝病気→陽性。特異度＝健康→陰性。セットで覚える。"
+   },
+   "sources": [
+    {
+     "ref": "x-legacy-L06a:msd-kensa",
+     "title": "MSDマニュアル プロフェッショナル版「医学的検査および検査結果の理解」",
+     "url": "https://www.msdmanuals.com/ja-jp/professional/24-その他のトピック/臨床的意思決定/医学的検査および検査結果の理解",
+     "locator": "感度，特異度，適中率",
+     "quote": "感度（sensitivity）とは，疾患のある患者において検査結果が陽性となる可能性である（真陽性率）。"
+    },
+    {
+     "ref": "x-legacy-L06a:msd-kensa",
+     "title": "MSDマニュアル プロフェッショナル版「医学的検査および検査結果の理解」",
+     "url": "https://www.msdmanuals.com/ja-jp/professional/24-その他のトピック/臨床的意思決定/医学的検査および検査結果の理解",
+     "locator": "感度，特異度，適中率",
+     "quote": "特異度（specificity）とは，疾患のない患者において検査結果が陰性となる可能性である（真陰性率）。"
+    },
+    {
+     "ref": "x-legacy-L06a:msd-kensa",
+     "title": "MSDマニュアル プロフェッショナル版「医学的検査および検査結果の理解」",
+     "url": "https://www.msdmanuals.com/ja-jp/professional/24-その他のトピック/臨床的意思決定/医学的検査および検査結果の理解",
+     "locator": "感度，特異度，適中率",
+     "quote": "陽性適中率（positive predictive value：PPV）とは，検査で陽性と判定された患者のうち実際に疾患を有している患者の割合である。"
+    }
+   ],
+   "asOf": "MSDマニュアル プロフェッショナル版（2024年11月最終更新）",
+   "origin": {
+    "batch": "L06",
+    "key": "lg-06-03",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "領域監査（統計）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L06（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L06a（統計）"
+    },
+    "log": "bank/audit/legacy-L06a.audit.json#lg-06-03",
+    "notes": "MSD「感度，特異度，適中率」で感度・特異度・PPV・NPVの定義を確認（NPVも同節）。mhlw-kenshin-kando-tokuido の感度=A/(A+B)とも一致。解説も正しい。"
+   }
+  },
+  {
+   "id": "lg-06-04",
+   "legacy": {
+    "key": "6_4",
+    "chapter": 6,
+    "chapterName": "医療統計I（基礎統計学）",
+    "index": 4,
+    "hash": "71747b305102e424"
+   },
+   "subject": "S06",
+   "subtopic": "スクリーニング指標",
+   "format": "knowledge",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "ROC曲線の曲線下面積（AUC）が1.0に近い検査について，正しいものはどれか。",
+   "choices": [
+    "疾患のある人とない人を識別する性能が低い",
+    "疾患のある人とない人を識別する性能が高い",
+    "検査を受けた集団の有病率が高いことを示す",
+    "感度を上げるようにカットオフ値を変えると特異度も上がる"
+   ],
+   "answer": 1,
+   "explanation": {
+    "correct": "ROC曲線は，一連のカットオフ値ごとに偽陽性の割合（1−特異度）を横軸，真陽性の割合（感度）を縦軸にとって描く。ROC曲線下面積が大きい（1.0に近い）ほど，疾患のある人とない人をより良好に識別できる。",
+    "choiceNotes": [
+     "ROC曲線下面積が大きいほど識別性能は高い。",
+     null,
+     "ROC曲線は感度と特異度から描かれ，感度・特異度は一般に検査自体の特性で患者集団とは無関係とみなされる。有病率によって変わるのは適中率である。",
+     "カットオフ値を動かすと感度と特異度は反対方向に変化する（トレードオフ）。ROC曲線はこのトレードオフを表したものである。"
+    ],
+    "point": "ROC曲線＝縦軸 感度，横軸 1−特異度。曲線下面積が大きいほど識別能が高い。"
+   },
+   "sources": [
+    {
+     "ref": "x-legacy-L06a:msd-kensa",
+     "title": "MSDマニュアル プロフェッショナル版「医学的検査および検査結果の理解」",
+     "url": "https://www.msdmanuals.com/ja-jp/professional/24-その他のトピック/臨床的意思決定/医学的検査および検査結果の理解",
+     "locator": "ROC曲線",
+     "quote": "ROC曲線下面積が大きいほど，その検査は疾患のある患者と疾患のない患者をより良好に識別することができる。"
+    },
+    {
+     "ref": "x-legacy-L06a:msd-kensa",
+     "title": "MSDマニュアル プロフェッショナル版「医学的検査および検査結果の理解」",
+     "url": "https://www.msdmanuals.com/ja-jp/professional/24-その他のトピック/臨床的意思決定/医学的検査および検査結果の理解",
+     "locator": "感度，特異度，適中率",
+     "quote": "感度および特異度は一般に，検査自体の特性であり，患者集団とは無関係であるとみなされている。"
+    },
+    {
+     "ref": "x-legacy-L06a:msd-kensa",
+     "title": "MSDマニュアル プロフェッショナル版「医学的検査および検査結果の理解」",
+     "url": "https://www.msdmanuals.com/ja-jp/professional/24-その他のトピック/臨床的意思決定/医学的検査および検査結果の理解",
+     "locator": "検査結果の分布",
+     "quote": "カットオフ基準を移動させることで感度と特異度が変化するが，それぞれ反対の方向に変化する"
+    }
+   ],
+   "asOf": "MSDマニュアル プロフェッショナル版（2024年11月最終更新）",
+   "origin": {
+    "batch": "L06",
+    "key": "lg-06-04",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（統計）で修正",
+     "修正後の再監査は未実施",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L06（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L06a（統計）",
+     "reauditor": null
+    },
+    "log": "bank/audit/legacy-L06a.audit.json#lg-06-04",
+    "notes": "MSD「ROC曲線」「感度，特異度，適中率」で確認。キー（識別性能が高い）は正しい。"
+   }
+  },
+  {
+   "id": "lg-06-05",
+   "legacy": {
+    "key": "6_5",
+    "chapter": 6,
+    "chapterName": "医療統計I（基礎統計学）",
+    "index": 5,
+    "hash": "d4854d722a11e1bc"
+   },
+   "subject": "S06",
+   "subtopic": "疫学指標",
+   "format": "knowledge",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "オッズ比の説明として正しいのはどれか。",
+   "choices": [
+    "疾患の罹患率そのもの",
+    "曝露群と非曝露群の疾患発生オッズの比",
+    "治療効果の絶対的な大きさ",
+    "標本サイズの適切さ"
+   ],
+   "answer": 1,
+   "explanation": {
+    "correct": "オッズ比は，曝露群の疾患オッズと非曝露群の疾患オッズの比である。1より大きければ曝露により発症が増加，1より小さければ減少したことを示し，1なら関連なし。症例対照研究で用いられることが多く，発症率が低い場合は相対リスクの近似値となる。",
+    "choiceNotes": [
+     "オッズ比は2群のオッズの比であり，罹患率そのものではない。",
+     null,
+     "オッズ比は比で表す相対的な指標であり，絶対的な大きさ（差）を示すものではない。絶対的な差を示すのはリスク差（寄与リスク）である。",
+     "オッズ比は曝露と疾患の関連の強さを表す指標であり，標本サイズの適切さを示すものではない。"
+    ],
+    "point": "OR＝曝露群の疾患オッズ÷非曝露群の疾患オッズ。OR＝1で関連なし。症例対照研究で多用。"
+   },
+   "sources": [
+    {
+     "ref": "stats:mhlw-tokei-yougo-rr-or",
+     "title": "有効性・安全性に関する統計用語集",
+     "url": "https://www.mhlw.go.jp/www1/houdou/1106/h0602-3_c_15.html",
+     "locator": "相対リスクとオッズ比",
+     "quote": "ＯＣ非使用者群と比べた場合の、ＯＣ使用者群の疾患オッズの比 ｐ ３ ／ｐ ４ を、 オッズ比 という。"
+    },
+    {
+     "ref": "x-legacy-L06a:minds-glossary-2020",
+     "title": "Minds診療ガイドライン作成マニュアル2020 ver.3.0 重要用語集",
+     "url": "https://minds.jcqhc.or.jp/docs/methods/cpg-development/minds-manual/pdf/glossary_manual_2020.pdf",
+     "locator": "オッズ比（odds ratio：OR）",
+     "quote": "症例対照研究や横断研究で用いることが多い。"
+    },
+    {
+     "ref": "stats:env-soutai-kiyo-risk",
+     "title": "放射線による健康影響等に関する統一的な基礎資料（令和７年度版）第3章 放射線による健康影響 スライド3.4 リスク（相対リスクと寄与リスク）",
+     "url": "https://www.env.go.jp/chemi/rhm/current/attach/slide-03-04.pdf",
+     "locator": "スライド3.4 リスク（相対リスクと寄与リスク）",
+     "quote": "寄与リスク ＝要因ばく露群の罹患リスク ― 要因非ばく露群の罹患リスク"
+    }
+   ],
+   "asOf": "厚生労働省「有効性・安全性に関する統計用語集」、Minds 2020 ver.3.0",
+   "origin": {
+    "batch": "L06",
+    "key": "lg-06-05",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（統計）で修正",
+     "修正後の再監査は未実施",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L06（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L06a（統計）",
+     "reauditor": null
+    },
+    "log": "bank/audit/legacy-L06a.audit.json#lg-06-05",
+    "notes": "mhlw統計用語集（疾患オッズの比、1との比較）、Minds（症例対照研究で多用）、環境省資料（寄与リスク＝差）で確認。キーは正しい。"
+   }
+  },
+  {
+   "id": "lg-06-06",
+   "legacy": {
+    "key": "6_6",
+    "chapter": 6,
+    "chapterName": "医療統計I（基礎統計学）",
+    "index": 6,
+    "hash": "5ff25d3368a72d50"
+   },
+   "subject": "S06",
+   "subtopic": "研究デザイン",
+   "format": "knowledge",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "高血圧治療ガイドライン2014（日本高血圧学会）の治療・診断に関するエビデンスレベルの分類で，最も高いレベル（レベルⅠ）とされるものはどれか。",
+   "choices": [
+    "ランダム化比較試験",
+    "システマティック・レビューやランダム化比較試験のメタアナリシス",
+    "非ランダム化比較試験",
+    "疫学研究（コホート研究，コホート研究のメタアナリシス）",
+    "記述研究（症例報告やケースシリーズ）"
+   ],
+   "answer": 1,
+   "explanation": {
+    "correct": "同分類では，Ⅰ＝システマティック・レビューやランダム化比較試験のメタアナリシス，Ⅱ＝ランダム化比較試験，Ⅲ＝非ランダム化比較試験，Ⅳa＝疫学研究（コホート研究，コホート研究のメタアナリシス），Ⅳb＝疫学研究（症例対照研究，横断研究），Ⅴ＝記述研究，Ⅵ＝専門委員会や専門家の意見である。",
+    "choiceNotes": [
+     "ランダム化比較試験はレベルⅡである。",
+     null,
+     "非ランダム化比較試験はレベルⅢである。",
+     "コホート研究はメタアナリシスであってもレベルⅣaである。メタアナリシスなら何でも最上位というわけではない。",
+     "記述研究（症例報告やケースシリーズ）はレベルⅤである。"
+    ],
+    "point": "SR・RCTのメタアナリシス＞RCT＞非ランダム化比較試験＞コホート＞症例対照・横断＞記述研究＞専門家の意見。分類の細部はガイドラインごとに異なる。"
+   },
+   "sources": [
+    {
+     "ref": "x-legacy-L06a:mhlw-ev-level",
+     "title": "各疾患ガイドラインにおけるエビデンスレベルの記載等（食事摂取基準策定検討会 参考資料1）",
+     "url": "https://www.mhlw.go.jp/content/10904750/001564280.pdf",
+     "locator": "３．高血圧治療ガイドライン2014 治療・診断に関するエビデンスレベルの分類",
+     "quote": "Ⅰ システマティック・レビューやランダム化比較試験のメタアナリシス"
+    },
+    {
+     "ref": "x-legacy-L06a:mhlw-ev-level",
+     "title": "各疾患ガイドラインにおけるエビデンスレベルの記載等（食事摂取基準策定検討会 参考資料1）",
+     "url": "https://www.mhlw.go.jp/content/10904750/001564280.pdf",
+     "locator": "３．高血圧治療ガイドライン2014 治療・診断に関するエビデンスレベルの分類",
+     "quote": "Ⅳa 疫学研究（コホート研究、コホート研究のメタアナリシス）"
+    },
+    {
+     "ref": "x-legacy-L06a:mhlw-ev-level",
+     "title": "各疾患ガイドラインにおけるエビデンスレベルの記載等（食事摂取基準策定検討会 参考資料1）",
+     "url": "https://www.mhlw.go.jp/content/10904750/001564280.pdf",
+     "locator": "１．動脈硬化性疾患予防ガイドライン2017 治療・診断に関するエビデンスレベルの分類",
+     "quote": "1+ 質の高い RCT＊およびそれらの MA/SR"
+    }
+   ],
+   "asOf": "高血圧治療ガイドライン2014の分類（厚生労働省 食事摂取基準策定検討会 参考資料1, H30.11.9 による）",
+   "origin": {
+    "batch": "L06",
+    "key": "lg-06-06",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（統計）で修正",
+     "修正後の再監査は未実施",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L06（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L06a（統計）",
+     "reauditor": null
+    },
+    "log": "bank/audit/legacy-L06a.audit.json#lg-06-06",
+    "notes": "mhlw-ev-level：JSH2014分類（Ⅰ=SR/RCTのMA、Ⅱ=RCT、Ⅲ=非ランダム化比較試験、Ⅳa=コホート、Ⅳb=症例対照・横断、Ⅴ=記述研究、Ⅵ=専門家意見）を確認。"
+   }
+  },
+  {
+   "id": "lg-06-07",
+   "legacy": {
+    "key": "6_7",
+    "chapter": 6,
+    "chapterName": "医療統計I（基礎統計学）",
+    "index": 7,
+    "hash": "6a46cde628812530"
+   },
+   "subject": "S06",
+   "subtopic": "疫学指標",
+   "format": "knowledge",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "NNTの説明として正しいのはどれか。",
+   "choices": [
+    "臨床試験に必要な最小の研究対象者数",
+    "治療によって副作用が発生する確率",
+    "費用の増加分を効果の増加分で割った指標",
+    "1人のイベント発生を防ぐために治療が必要な患者数"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "NNT（number needed to treat，治療必要人数）は，1人のイベント発生を抑制するのに何人の治療が必要かを示す指標で，絶対リスク減少（リスク差）の絶対値の逆数である。小さいほど治療効果は大きい。",
+    "choiceNotes": [
+     "サンプルサイズは研究対象者の数のことであり，NNTとは別の概念である。",
+     "NNTは治療が必要な人数で表す指標であり，副作用の発生確率ではない。",
+     "費用の増加分を効果の増加分で割った指標は増分費用効果比（医療経済評価の指標）であり，NNTとは異なる。",
+     null
+    ],
+    "point": "NNT＝1÷|絶対リスク減少|。小さいほど治療効果が大きい。"
+   },
+   "sources": [
+    {
+     "ref": "x-legacy-L06a:minds-glossary-2020",
+     "title": "Minds診療ガイドライン作成マニュアル2020 ver.3.0 重要用語集",
+     "url": "https://minds.jcqhc.or.jp/docs/methods/cpg-development/minds-manual/pdf/glossary_manual_2020.pdf",
+     "locator": "NNT（number needed to treat）",
+     "quote": "一人のイベント発生を抑制するのに何人の治療が必要かを示す指標。"
+    },
+    {
+     "ref": "x-legacy-L06a:minds-glossary-2020",
+     "title": "Minds診療ガイドライン作成マニュアル2020 ver.3.0 重要用語集",
+     "url": "https://minds.jcqhc.or.jp/docs/methods/cpg-development/minds-manual/pdf/glossary_manual_2020.pdf",
+     "locator": "NNT（number needed to treat）",
+     "quote": "小さいほど治療の効果は大きい。絶対リスク減少（率差あるいはリスク差）の絶対値の逆数。"
+    },
+    {
+     "ref": "x-legacy-L06a:minds-glossary-2020",
+     "title": "Minds診療ガイドライン作成マニュアル2020 ver.3.0 重要用語集",
+     "url": "https://minds.jcqhc.or.jp/docs/methods/cpg-development/minds-manual/pdf/glossary_manual_2020.pdf",
+     "locator": "増分費用効果比（ICER）",
+     "quote": "「費用の増加分」 を「効果の増加分」 で除して求められる医療経済評価の指"
+    }
+   ],
+   "asOf": "Minds診療ガイドライン作成マニュアル2020 ver.3.0 重要用語集",
+   "origin": {
+    "batch": "L06",
+    "key": "lg-06-07",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（統計）で修正",
+     "修正後の再監査は未実施",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L06（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L06a（統計）",
+     "reauditor": null
+    },
+    "log": "bank/audit/legacy-L06a.audit.json#lg-06-07",
+    "notes": "Minds重要用語集「NNT」「サンプルサイズ」「増分費用効果比」で確認。キーは正しい。"
+   }
+  },
+  {
+   "id": "lg-06-08",
+   "legacy": {
+    "key": "6_8",
+    "chapter": 6,
+    "chapterName": "医療統計I（基礎統計学）",
+    "index": 8,
+    "hash": "daea4e7d11707d8d"
+   },
+   "subject": "S06",
+   "subtopic": "仮説検定",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "カイ二乗（χ2）検定が用いられる場面として，正しいものはどれか。",
+   "choices": [
+    "2群の母平均が等しいかどうかの検定",
+    "3群以上の平均値の比較",
+    "2つのカテゴリ（質的）変数の関連（独立性）の検定",
+    "2つの量的変数の相関係数の検定"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "カイ二乗（χ2）検定は，2つの質問項目間（例：薬の使用の有無と疾患発症の有無）の関連を検討する検定方法の一つで，クロス集計表（分割表）の度数を用いる。",
+    "choiceNotes": [
+     "2つの母平均が等しいかを調べるのは2標本t検定である。",
+     "平均値の比較は量的データの平均を比べるものであり，カテゴリ別の度数を扱うカイ二乗検定の対象ではない。",
+     null,
+     "相関係数は2つの量的変数の比例的な関係を表すもので，カテゴリ変数の関連をみるカイ二乗検定とは対象が異なる。"
+    ],
+    "point": "カイ二乗検定＝カテゴリ×カテゴリ（分割表）の関連。2群の平均の比較＝t検定。"
+   },
+   "sources": [
+    {
+     "ref": "stats:mhlw-tokei-yougo-rr-or",
+     "title": "有効性・安全性に関する統計用語集",
+     "url": "https://www.mhlw.go.jp/www1/houdou/1106/h0602-3_c_15.html",
+     "locator": "χ２検定",
+     "quote": "２つの質問項目間（例えば、ＯＣ使用の有無と乳癌発症の有無）の関連について検討する際の検定方法の一つである。"
+    },
+    {
+     "ref": "stats:nist-two-sample-t-test",
+     "title": "NIST/SEMATECH e-Handbook of Statistical Methods, 1.3.5.3. Two-Sample t -Test for Equal Means",
+     "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda353.htm",
+     "locator": "1.3.5.3 Two-Sample t-Test",
+     "quote": "is used to determine if two population means are equal"
+    }
+   ],
+   "asOf": "厚生労働省「有効性・安全性に関する統計用語集」、NIST e-Handbook",
+   "origin": {
+    "batch": "L06",
+    "key": "lg-06-08",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（統計）で修正",
+     "修正後の再監査は未実施",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L06（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L06a（統計）",
+     "reauditor": null
+    },
+    "log": "bank/audit/legacy-L06a.audit.json#lg-06-08",
+    "notes": "mhlw統計用語集「χ2検定」（2項目間の関連）、NIST 1.3.5.3（2標本t検定）で確認。キーは正しい。"
+   }
+  },
+  {
+   "id": "lg-06-09",
+   "legacy": {
+    "key": "6_9",
+    "chapter": 6,
+    "chapterName": "医療統計I（基礎統計学）",
+    "index": 9,
+    "hash": "4d602d04220ba7e3"
+   },
+   "subject": "S06",
+   "subtopic": "研究デザイン",
+   "format": "knowledge",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "症例対照研究で特に問題となりやすいバイアスはどれか。",
+   "choices": [
+    "出版（報告）バイアス",
+    "実行バイアス",
+    "思い出しバイアス",
+    "症例減少バイアス"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "症例対照研究では，調査票などで過去の曝露状況を思い出してもらい症例と対照で比較するため，記憶に偏りが生じ，曝露と疾病の関連を過大評価したり過小評価したりする危険性がある（思い出しバイアス）。",
+    "choiceNotes": [
+     "出版（報告）バイアスは研究が選択的に出版（報告）されることで生じ，システマティックレビューやメタアナリシスで問題となる。",
+     "実行バイアスは比較される群間で介入・ケアの実行に系統的な差がある場合に生じるもので，介入を行わない症例対照研究に特有の問題ではない。",
+     null,
+     "症例減少バイアスは比較される群間で解析対象となる症例の減少に系統的な差がある場合に生じる。症例対照研究は追跡調査を必要としない。"
+    ],
+    "point": "症例対照研究の弱点＝思い出しバイアス（関連を過大にも過小にも評価しうる）。"
+   },
+   "sources": [
+    {
+     "ref": "x-legacy-L06a:mhlw-edc-epi",
+     "title": "内分泌かく乱化学物質の健康影響に関する検討会 中間報告書追補その２ 別冊（疫学研究の方法の解説を含む）",
+     "url": "https://www.mhlw.go.jp/shingi/2005/03/dl/s0331-9b1.pdf",
+     "locator": "症例対照研究の解説",
+     "quote": "過去の暴露状況を思い出してもらって調査するため、記憶に偏りが生じ、暴露と疾病の関連を過大評価したり、反対に過小評価したりする危険性がある（思い出しバイアス）"
+    },
+    {
+     "ref": "x-legacy-L06a:minds-glossary-2020",
+     "title": "Minds診療ガイドライン作成マニュアル2020 ver.3.0 重要用語集",
+     "url": "https://minds.jcqhc.or.jp/docs/methods/cpg-development/minds-manual/pdf/glossary_manual_2020.pdf",
+     "locator": "実行バイアス（performance bias）",
+     "quote": "比較される群間で，介入・ケアの実行に系統的な差がある場合に生じるバイアス。"
+    },
+    {
+     "ref": "x-legacy-L06a:minds-glossary-2020",
+     "title": "Minds診療ガイドライン作成マニュアル2020 ver.3.0 重要用語集",
+     "url": "https://minds.jcqhc.or.jp/docs/methods/cpg-development/minds-manual/pdf/glossary_manual_2020.pdf",
+     "locator": "症例減少バイアス（attrition bias）",
+     "quote": "比較される群間で解析対象となる症例の減少に系統的な差がある場合に生じるバイアス。"
+    }
+   ],
+   "asOf": "厚生労働省 内分泌かく乱化学物質検討会報告書別冊（平成17年）、Minds 2020 ver.3.0",
+   "origin": {
+    "batch": "L06",
+    "key": "lg-06-09",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（統計）で修正",
+     "修正後の再監査は未実施",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L06（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L06a（統計）",
+     "reauditor": null
+    },
+    "log": "bank/audit/legacy-L06a.audit.json#lg-06-09",
+    "notes": "mhlw-edc-epi（症例対照研究の短所＝思い出しバイアス、追跡不要）、Minds（出版・実行・症例減少バイアス）で確認。"
+   }
+  },
+  {
+   "id": "lg-06-10",
+   "legacy": {
+    "key": "6_10",
+    "chapter": 6,
+    "chapterName": "医療統計I（基礎統計学）",
+    "index": 10,
+    "hash": "3b64c12ff23e40b7"
+   },
+   "subject": "S06",
+   "subtopic": "疫学指標",
+   "format": "knowledge",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "Kaplan-Meier法の説明として，正しいものはどれか。",
+   "choices": [
+    "中途打ち切り例を扱いながら生存率を推定する方法",
+    "2群の平均値の差を検定する方法",
+    "回帰式を用いて将来の値を予測する方法",
+    "検査の感度と特異度を算出する方法"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "Kaplan-Meier法は実測生存率の計算方法の一つで，観察期間を一定の期間に区切らず，死亡が1例ずつ起きた時点でその時点の生存率を逐次計算する。中途打ち切り例は，それが発生した時点で観察人数から除外する。",
+    "choiceNotes": [
+     null,
+     "2群の平均値の差の検定には2標本t検定などを用いる。",
+     "回帰による予測ではなく，死亡が起きるたびに生存率を逐次計算する方法である。",
+     "感度・特異度は検査結果（陽性・陰性）と疾患の有無の2×2表から算出する指標であり，Kaplan-Meier法とは関係しない。"
+    ],
+    "point": "Kaplan-Meier法＝死亡が起きるごとに生存率を逐次計算。打ち切り例はその時点で観察人数から除く。"
+   },
+   "sources": [
+    {
+     "ref": "stats:ganjoho-kapuranmaiyahou",
+     "title": "がん統計の用語集「Kaplan-Meier法」",
+     "url": "https://ganjoho.jp/reg_stat/statistics/qa_words/word/kapuranmaiyahou.html",
+     "locator": "Kaplan-Meier法",
+     "quote": "死亡が１例ずつ起きた時点でその時点の生存率を逐次計算する方法。"
+    },
+    {
+     "ref": "stats:ganjoho-kapuranmaiyahou",
+     "title": "がん統計の用語集「Kaplan-Meier法」",
+     "url": "https://ganjoho.jp/reg_stat/statistics/qa_words/word/kapuranmaiyahou.html",
+     "locator": "Kaplan-Meier法",
+     "quote": "中途打ち切り例は、それが発生した時点で観察人数から除外します。"
+    },
+    {
+     "ref": "stats:nist-two-sample-t-test",
+     "title": "NIST/SEMATECH e-Handbook of Statistical Methods, 1.3.5.3. Two-Sample t -Test for Equal Means",
+     "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda353.htm",
+     "locator": "1.3.5.3 Two-Sample t-Test",
+     "quote": "is used to determine if two population means are equal"
+    }
+   ],
+   "asOf": "国立がん研究センター がん統計用語集（2018-01-26更新）",
+   "origin": {
+    "batch": "L06",
+    "key": "lg-06-10",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（統計）で修正",
+     "修正後の再監査は未実施",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L06（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L06a（統計）",
+     "reauditor": null
+    },
+    "log": "bank/audit/legacy-L06a.audit.json#lg-06-10",
+    "notes": "ganjoho「Kaplan-Meier法」（実測生存率の計算法、打ち切り例の扱い）、NIST 1.3.5.3で確認。キーは正しい。"
+   }
+  },
+  {
+   "id": "lg-06-11",
+   "legacy": {
+    "key": "6_11",
+    "chapter": 6,
+    "chapterName": "医療統計I（基礎統計学）",
+    "index": 11,
+    "hash": "7778a2438032cf73"
+   },
+   "subject": "S06",
+   "subtopic": "相関と回帰",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "相関係数r=-0.9の解釈はどれか。",
+   "choices": [
+    "相関なし",
+    "強い正の相関",
+    "強い負の相関",
+    "弱い負の相関"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "相関係数は−1から1の値をとり，負の相関が強いほど−1に近づく。r＝−0.9は−1に近いので，強い負の相関（一方が増えると他方が減る傾向）を示す。",
+    "choiceNotes": [
+     "相関がないといえるのは相関係数が0の付近の場合である。",
+     "正の相関では相関係数は正の値をとり，強いほど1に近づく。",
+     null,
+     "−0.9は−1に近く，弱い相関ではない。"
+    ],
+    "point": "符号は向き（正・負），絶対値が1に近いほど強い相関。相関係数は比例的な関係の指標で，因果関係は示さない。"
+   },
+   "sources": [
+    {
+     "ref": "stats:naruhodo-hukusu",
+     "title": "なるほど統計学園「複数の変数の関係性を見る」",
+     "url": "https://www.stat.go.jp/naruhodo/10_tokucho/hukusu.html",
+     "locator": "相関係数",
+     "quote": "相関係数は-1から1までの値を取り、以下のような特徴を持ちます。"
+    },
+    {
+     "ref": "stats:naruhodo-hukusu",
+     "title": "なるほど統計学園「複数の変数の関係性を見る」",
+     "url": "https://www.stat.go.jp/naruhodo/10_tokucho/hukusu.html",
+     "locator": "相関係数",
+     "quote": "負の相関が強いと相関係数が-1に近づく"
+    },
+    {
+     "ref": "stats:naruhodo-hukusu",
+     "title": "なるほど統計学園「複数の変数の関係性を見る」",
+     "url": "https://www.stat.go.jp/naruhodo/10_tokucho/hukusu.html",
+     "locator": "相関係数",
+     "quote": "相関係数が0の付近は相関がないといえる"
+    }
+   ],
+   "asOf": "総務省統計局 なるほど統計学園（2026-11取得）",
+   "origin": {
+    "batch": "L06",
+    "key": "lg-06-11",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（統計）で修正",
+     "修正後の再監査は未実施",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L06（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L06a（統計）",
+     "reauditor": null
+    },
+    "log": "bank/audit/legacy-L06a.audit.json#lg-06-11",
+    "notes": "naruhodo-hukusu「相関係数」の特徴(1)〜(4)で確認。キーは正しい。"
+   }
+  },
+  {
+   "id": "lg-06-12",
+   "legacy": {
+    "key": "6_12",
+    "chapter": 6,
+    "chapterName": "医療統計I（基礎統計学）",
+    "index": 12,
+    "hash": "d5103cb20ae5c5ad"
+   },
+   "subject": "S06",
+   "subtopic": "研究デザイン",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "交絡因子の説明として正しいのはどれか。",
+   "choices": [
+    "曝露と結果の両方に関連し関係を歪める第三の因子",
+    "測定方法の不正確さによって生じる測定値の誤差",
+    "標本サイズが小さいことによって生じる偶然の誤差",
+    "研究で採用した研究デザインの種類（例：コホート研究）"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "交絡因子は，要因曝露（介入）とアウトカムの両方に関係がある第三の因子で，真の関係とは異なった観察結果をもたらす。疫学では性別や年齢を交絡因子として扱う。",
+    "choiceNotes": [
+     null,
+     "測定の誤差は測定の正確さの問題であり，曝露と結果の両方に関係する第三の因子ではない。",
+     "標本サイズが小さいことによる偶然誤差は偶然の変動であり，交絡とは別の問題である。",
+     "交絡因子は研究デザインの種類ではなく，曝露とアウトカムの両方に関係する因子である。"
+    ],
+    "point": "交絡の制御＝計画段階でランダム化・限定・マッチング，解析段階で層化・数学的モデリング（多変量解析）。"
+   },
+   "sources": [
+    {
+     "ref": "x-legacy-L06a:minds-glossary-2020",
+     "title": "Minds診療ガイドライン作成マニュアル2020 ver.3.0 重要用語集",
+     "url": "https://minds.jcqhc.or.jp/docs/methods/cpg-development/minds-manual/pdf/glossary_manual_2020.pdf",
+     "locator": "交絡因子（confounding factor）",
+     "quote": "要因曝露や介入と疾病／病態発生の観察に影響を与え， 真の関係とは異なった観察結果をもたらす第"
+    },
+    {
+     "ref": "x-legacy-L06a:minds-glossary-2020",
+     "title": "Minds診療ガイドライン作成マニュアル2020 ver.3.0 重要用語集",
+     "url": "https://minds.jcqhc.or.jp/docs/methods/cpg-development/minds-manual/pdf/glossary_manual_2020.pdf",
+     "locator": "交絡因子（confounding factor）",
+     "quote": "交絡因子は要因曝露や介入とアウトカムの両方に関係がある因子である。"
+    },
+    {
+     "ref": "x-legacy-L06a:minds-glossary-2020",
+     "title": "Minds診療ガイドライン作成マニュアル2020 ver.3.0 重要用語集",
+     "url": "https://minds.jcqhc.or.jp/docs/methods/cpg-development/minds-manual/pdf/glossary_manual_2020.pdf",
+     "locator": "交絡因子（confounding factor）",
+     "quote": "統計解析段階では層化（stratification），数学的モデリング（mathematical modeling）を行"
+    }
+   ],
+   "asOf": "Minds診療ガイドライン作成マニュアル2020 ver.3.0 重要用語集",
+   "origin": {
+    "batch": "L06",
+    "key": "lg-06-12",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（統計）で修正",
+     "修正後の再監査は未実施",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L06（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L06a（統計）",
+     "reauditor": null
+    },
+    "log": "bank/audit/legacy-L06a.audit.json#lg-06-12",
+    "notes": "Minds重要用語集「交絡因子」で定義と制御法（ランダム化・限定・マッチング／層化・数学的モデリング）を確認。キーは正しい。"
+   }
+  },
+  {
+   "id": "lg-06-13",
+   "legacy": {
+    "key": "6_13",
+    "chapter": 6,
+    "chapterName": "医療統計I（基礎統計学）",
+    "index": 13,
+    "hash": "6f0eb5b070baf01e"
+   },
+   "subject": "S06",
+   "subtopic": "疫学指標",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "寄与リスクの説明として正しいのはどれか。",
+   "choices": [
+    "曝露群の罹患率から非曝露群の罹患率を引いた差",
+    "曝露群の罹患率を非曝露群の罹患率で割った比",
+    "曝露群と非曝露群の罹患率の比から1を引いた値",
+    "曝露群と非曝露群のそれぞれのオッズの比"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "寄与リスク＝曝露群の罹患率（罹患リスク）−非曝露群の罹患率。曝露によって集団の罹患率がどれだけ増えるかを示す絶対的な差の指標である。",
+    "choiceNotes": [
+     null,
+     "罹患率の比は相対リスクであり，曝露によって何倍罹患しやすくなるかを示す。",
+     "相対リスクから1を引いた値は過剰相対リスクであり，リスクの増加分を比で表す。",
+     "2つのオッズの比はオッズ比である。"
+    ],
+    "point": "寄与リスク＝差，相対リスク＝比，過剰相対リスク＝相対リスク−1。"
+   },
+   "sources": [
+    {
+     "ref": "stats:env-soutai-kiyo-risk",
+     "title": "放射線による健康影響等に関する統一的な基礎資料（令和７年度版）第3章 放射線による健康影響 スライド3.4 リスク（相対リスクと寄与リスク）",
+     "url": "https://www.env.go.jp/chemi/rhm/current/attach/slide-03-04.pdf",
+     "locator": "スライド3.4 リスク（相対リスクと寄与リスク）",
+     "quote": "寄与リスク ＝要因ばく露群の罹患リスク ― 要因非ばく露群の罹患リスク"
+    },
+    {
+     "ref": "stats:env-soutai-kiyo-risk",
+     "title": "放射線による健康影響等に関する統一的な基礎資料（令和７年度版）第3章 放射線による健康影響 スライド3.4 リスク（相対リスクと寄与リスク）",
+     "url": "https://www.env.go.jp/chemi/rhm/current/attach/slide-03-04.pdf",
+     "locator": "スライド3.4 リスク（相対リスクと寄与リスク）",
+     "quote": "相対リスクから１を引いた"
+    },
+    {
+     "ref": "x-legacy-L06a:minds-glossary-2020",
+     "title": "Minds診療ガイドライン作成マニュアル2020 ver.3.0 重要用語集",
+     "url": "https://minds.jcqhc.or.jp/docs/methods/cpg-development/minds-manual/pdf/glossary_manual_2020.pdf",
+     "locator": "オッズ比（odds ratio：OR）",
+     "quote": "オッズ比とは 2 つ のオッズの比のことである。"
+    }
+   ],
+   "asOf": "環境省 放射線による健康影響等に関する統一的な基礎資料（令和７年度版）、Minds 2020 ver.3.0",
+   "origin": {
+    "batch": "L06",
+    "key": "lg-06-13",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（統計）で修正",
+     "修正後の再監査は未実施",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L06（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L06a（統計）",
+     "reauditor": null
+    },
+    "log": "bank/audit/legacy-L06a.audit.json#lg-06-13",
+    "notes": "環境省スライド3.4で寄与リスク＝ばく露群の罹患リスク−非ばく露群の罹患リスク、相対リスク＝比、過剰相対リスク＝相対リスク−1を確認。Mindsでオッズ比を確認。キーは正しい。lg-06-23（L06b）と同じ問いで、そちらが重複候補。"
+   }
+  },
+  {
+   "id": "lg-06-14",
+   "legacy": {
+    "key": "6_14",
+    "chapter": 6,
+    "chapterName": "医療統計I（基礎統計学）",
+    "index": 14,
+    "hash": "5c6aeedb5484f46b"
+   },
+   "subject": "S06",
+   "subtopic": "疫学指標",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "2×2分割表で、a＝曝露あり・疾病あり、b＝曝露あり・疾病なし、c＝曝露なし・疾病あり、d＝曝露なし・疾病なしの人数とする。オッズ比の計算式はどれか。",
+   "choices": [
+    "(a×c)／(b×d)",
+    "(a×d)／(b×c)",
+    "(a＋b)／(c＋d)",
+    "a／(a＋b)",
+    "{a／(a＋b)}／{c／(c＋d)}"
+   ],
+   "answer": 1,
+   "explanation": {
+    "correct": "曝露群の疾病オッズはa／b、非曝露群の疾病オッズはc／dであり、オッズ比はその比(a／b)／(c／d)＝(a×d)／(b×c)となる（対角の積の比）。",
+    "choiceNotes": [
+     "(a×c)／(b×d)は2つのオッズの比になっておらず、オッズ比ではない。",
+     null,
+     "(a＋b)／(c＋d)は曝露群と非曝露群の人数の比であり、疾病の発生とは関係しない。",
+     "a／(a＋b)は曝露群における発症率（リスク）である。",
+     "{a／(a＋b)}／{c／(c＋d)}は曝露群と非曝露群の発症率の比で、相対リスク（リスク比）である。"
+    ],
+    "point": "オッズ比＝(a／b)／(c／d)＝ad／bc。症例対照研究で多く用いられ、発症率が低いときは相対リスクの近似値となる。"
+   },
+   "sources": [
+    {
+     "ref": "stats:mhlw-tokei-yougo-rr-or",
+     "title": "有効性・安全性に関する統計用語集",
+     "url": "https://www.mhlw.go.jp/www1/houdou/1106/h0602-3_c_15.html",
+     "locator": "相対リスク（Relative risk）とオッズ比（Odds ratio）",
+     "quote": "ＯＣ非使用者群と比べた場合の、ＯＣ使用者群の疾患オッズの比 ｐ ３ ／ｐ ４ を、 オッズ比 という。"
+    },
+    {
+     "ref": "stats:mhlw-tokei-yougo-rr-or",
+     "title": "有効性・安全性に関する統計用語集",
+     "url": "https://www.mhlw.go.jp/www1/houdou/1106/h0602-3_c_15.html",
+     "locator": "相対リスク（Relative risk）とオッズ比（Odds ratio）",
+     "quote": "２つの発症率の比ｐ １ ／ｐ ２ を 相対リスク といい"
+    },
+    {
+     "ref": "x-legacy-L06b:minds-glossary-2020",
+     "title": "Minds診療ガイドライン作成マニュアル2020 ver.3.0 用語集",
+     "url": "https://minds.jcqhc.or.jp/docs/methods/cpg-development/minds-manual/pdf/glossary_manual_2020.pdf",
+     "locator": "オッズ比（odds ratio：OR）",
+     "quote": "のオッズの比のことである。 症例対照研究や横断研究で用いることが多い。"
+    }
+   ],
+   "asOf": "統計理論の定義（時点に依存しない）",
+   "origin": {
+    "batch": "L06",
+    "key": "lg-06-14",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（統計）で修正",
+     "修正後の再監査は未実施",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L06（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L06b（統計）",
+     "reauditor": null
+    },
+    "log": "bank/audit/legacy-L06b.audit.json#lg-06-14",
+    "notes": "OR=(A/B)/(C/D) は stats:mhlw-tokei-yougo-rr-or（相対リスクとオッズ比）、症例対照研究での使用は Minds用語集「オッズ比」。solver=0 一致。"
+   }
+  },
+  {
+   "id": "lg-06-15",
+   "legacy": {
+    "key": "6_15",
+    "chapter": 6,
+    "chapterName": "医療統計I（基礎統計学）",
+    "index": 15,
+    "hash": "bc01be2ab0a8022f"
+   },
+   "subject": "S06",
+   "subtopic": "散布度",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "分散について正しい説明はどれか。",
+   "choices": [
+    "各データと中央値との差の合計",
+    "各データの偏差（平均値との差）の2乗の平均",
+    "データの最大値と最小値の差",
+    "データの平均値そのもの",
+    "偏差の2乗の平均の正の平方根"
+   ],
+   "answer": 1,
+   "explanation": {
+    "correct": "分散は、各データの偏差（平均値との差）を2乗して合計した偏差二乗和の平均であり、データの散らばりの程度を表す。",
+    "choiceNotes": [
+     "分散は平均値からの偏差を2乗して求める。中央値との差の合計ではない（なお、平均値との偏差をそのまま平均すると必ず0になるため、2乗して用いる）。",
+     null,
+     "最大値と最小値の差は範囲（レンジ）である。",
+     "平均値はデータの中心的な傾向を表す代表値であり、散らばりの指標ではない。",
+     "分散の正の平方根は標準偏差である。"
+    ],
+    "point": "分散＝偏差の2乗の平均。標準偏差＝分散の正の平方根（もとのデータと単位がそろう）。範囲＝最大値−最小値。"
+   },
+   "sources": [
+    {
+     "ref": "stats:naruhodo-chirabari-jyokyu",
+     "title": "なるほど統計学園「データの散らばりを見る」",
+     "url": "https://www.stat.go.jp/naruhodo/10_tokucho/chirabari.html",
+     "locator": "分散",
+     "quote": "全てを足し合わせた値（偏差二乗和）の平均を求めることで、データの散らばりの程度を図ります。これを「分散」と言います。"
+    },
+    {
+     "ref": "stats:naruhodo-chirabari-jyokyu",
+     "title": "なるほど統計学園「データの散らばりを見る」",
+     "url": "https://www.stat.go.jp/naruhodo/10_tokucho/chirabari.html",
+     "locator": "標準偏差と分散",
+     "quote": "分散の正の平方根をとり、その値を標準偏差と言います。"
+    },
+    {
+     "ref": "stats:naruhodo-chirabari-shokyu",
+     "title": "なるほど統計学園「データの散らばりを捉える」",
+     "url": "https://www.stat.go.jp/naruhodo/5_tokucho/chirabari.html",
+     "locator": "範囲、最大値、最小値",
+     "quote": "具体的には、変量の中の最大値と最小値の差で求めます。"
+    }
+   ],
+   "asOf": "統計理論の定義（時点に依存しない）",
+   "origin": {
+    "batch": "L06",
+    "key": "lg-06-15",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（統計）で修正",
+     "修正後の再監査は未実施",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L06（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L06b（統計）",
+     "reauditor": null
+    },
+    "log": "bank/audit/legacy-L06b.audit.json#lg-06-15",
+    "notes": "stats:naruhodo-chirabari-jyokyu（分散・標準偏差）、stats:naruhodo-chirabari-shokyu（範囲）。solver=1 一致。"
+   }
+  },
+  {
+   "id": "lg-06-16",
+   "legacy": {
+    "key": "6_16",
+    "chapter": 6,
+    "chapterName": "医療統計I（基礎統計学）",
+    "index": 16,
+    "hash": "71280f97e26d15c4"
+   },
+   "subject": "S06",
+   "subtopic": "標本抽出と推定",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "母集団と標本の関係について正しいのはどれか。",
+   "choices": [
+    "標本は母集団より常に大きい",
+    "母集団のすべてを調べる調査を標本調査という",
+    "標本サイズが大きいほど推定精度は低下する",
+    "標本から母集団の特性を推測することを統計的推測（推測統計）という"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "推測統計（統計的推測）とは、母集団から抽出した標本の情報を用いて、母集団の情報を推測することである。",
+    "choiceNotes": [
+     "標本は母集団の一部を抽出したものであり、母集団より大きくなることはない。",
+     "母集団のすべてを調べるのは全数調査である。標本調査は母集団の一部を抽出して調べる方法。",
+     "標本規模を大きくすると標本誤差が小さくなり、推定の精度は高まる。",
+     null
+    ],
+    "point": "統計的推測＝標本→母集団の推測。全数調査＝母集団の全て、標本調査＝一部。標本サイズが大きいほど標本誤差は小さい。"
+   },
+   "sources": [
+    {
+     "ref": "stats:naruhodo-suisoku",
+     "title": "なるほど統計学園「推測統計」",
+     "url": "https://www.stat.go.jp/naruhodo/11_tokusei/suisoku.html",
+     "locator": "推測統計",
+     "quote": "推測統計とは、母集団から抽出した標本の情報を用いて、母集団の情報を推測することです。"
+    },
+    {
+     "ref": "stats:naruhodo-zensu",
+     "title": "なるほど統計学園「全数調査・標本調査」",
+     "url": "https://www.stat.go.jp/naruhodo/7_shurui/zensu.html",
+     "locator": "全数調査・標本調査",
+     "quote": "全数調査は、母集団の全てを調べる方法です。標本調査は、母集団の一部を抽出して調べる方法です。"
+    },
+    {
+     "ref": "stats:datastart-hyohon-gosa",
+     "title": "Data StaRt EBPM活用塾 ゼミナール編（２）2-1-3 標本誤差の計算",
+     "url": "https://www.stat.go.jp/dstart/point/seminar/02/2-1-3.html",
+     "locator": "標本誤差の計算",
+     "quote": "もし、標本誤差をより小さくしたければ、標本規模を大きくするのがよいでしょう。"
+    }
+   ],
+   "asOf": "統計理論の定義（時点に依存しない）",
+   "origin": {
+    "batch": "L06",
+    "key": "lg-06-16",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（統計）で修正",
+     "修正後の再監査は未実施",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L06（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L06b（統計）",
+     "reauditor": null
+    },
+    "log": "bank/audit/legacy-L06b.audit.json#lg-06-16",
+    "notes": "stats:naruhodo-suisoku（推測統計）、stats:naruhodo-zensu、stats:datastart-hyohon-gosa（標本規模と標本誤差）。solver=1 一致。"
+   }
+  },
+  {
+   "id": "lg-06-17",
+   "legacy": {
+    "key": "6_17",
+    "chapter": 6,
+    "chapterName": "医療統計I（基礎統計学）",
+    "index": 17,
+    "hash": "4d43815a89c34bbe"
+   },
+   "subject": "S06",
+   "subtopic": "仮説検定",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "帰無仮説について正しい説明はどれか。",
+   "choices": [
+    "研究者が証明したい仮説",
+    "常に棄却される仮説",
+    "対立仮説と同じ意味",
+    "差がない（効果がない）とする仮説"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "帰無仮説（H₀）は「差がない」「効果がない」とする仮説。これを検定で棄却することにより対立仮説を採択する。",
+    "choiceNotes": [
+     "研究者が証明したい仮説は対立仮説（H₁）。",
+     "帰無仮説は棄却されることもあれば棄却されないこともある。",
+     "帰無仮説と対立仮説は互いに排反する仮説。",
+     null
+    ],
+    "point": "H₀＝帰無仮説（差なし）、H₁＝対立仮説（差あり）。P値で判定。"
+   },
+   "sources": [
+    {
+     "ref": "x-legacy-L06b:mext-joho1-ch4",
+     "title": "高等学校情報科「情報Ⅰ」教員研修用教材（本編）第4章 情報通信ネットワークとデータの活用・巻末",
+     "url": "https://www.mext.go.jp/content/20200722-mxt_jogai02-100013300_006.pdf",
+     "locator": "第4章 学習（仮説検定の手順）",
+     "quote": "対の仮説（効果がない，差がない，等）を帰無仮説Ｈ0 と呼ぶ。"
+    },
+    {
+     "ref": "stats:naruhodo-kentei",
+     "title": "なるほど統計学園「統計的推定と統計的仮説検定」",
+     "url": "https://www.stat.go.jp/naruhodo/11_tokusei/kentei.html",
+     "locator": "統計的仮説検定",
+     "quote": "このように、仮説検定では帰無仮説が棄却されれば、帰無仮説とは相反する対立仮説を採択することになります。"
+    },
+    {
+     "ref": "stats:nist-statistical-tests",
+     "title": "NIST/SEMATECH e-Handbook of Statistical Methods, 7.1.3. What are statistical tests?",
+     "url": "https://www.itl.nist.gov/div898/handbook/prc/section1/prc13.htm",
+     "locator": "What is meant by a statistical test?",
+     "quote": "Not rejecting may be a good result"
+    }
+   ],
+   "asOf": "統計理論の定義（時点に依存しない）",
+   "origin": {
+    "batch": "L06",
+    "key": "lg-06-17",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "領域監査（統計）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L06（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L06b（統計）"
+    },
+    "log": "bank/audit/legacy-L06b.audit.json#lg-06-17",
+    "notes": "帰無仮説＝効果がない・差がない（x-legacy-L06b:mext-joho1-ch4、検証したい仮説＝対立仮説H1）、棄却で対立仮説を採択・相反する仮説（stats:naruhodo-kentei）、棄却されないこともある（stats:nist-statistical-tests）。solver=1 一致。"
+   }
+  },
+  {
+   "id": "lg-06-18",
+   "legacy": {
+    "key": "6_18",
+    "chapter": 6,
+    "chapterName": "医療統計I（基礎統計学）",
+    "index": 18,
+    "hash": "e498c1d3ef3c9501"
+   },
+   "subject": "S06",
+   "subtopic": "仮説検定",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "第1種の過誤（αエラー）とは何か。",
+   "choices": [
+    "帰無仮説が誤りなのに棄却しない誤り",
+    "標本サイズの計算を誤ること",
+    "帰無仮説が正しいのに棄却してしまう誤り",
+    "データ入力のミス"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "第1種の過誤は帰無仮説が正しい（差がない）のにそれを棄却して「差がある」と判断してしまう誤り。有意水準αで制御。",
+    "choiceNotes": [
+     "帰無仮説が誤りなのに棄却しないのは第2種の過誤（βエラー）。",
+     "標本サイズの計算誤りは統計的過誤の分類には含まれない。",
+     null,
+     "データ入力ミスは統計的過誤ではなく人為的エラー。"
+    ],
+    "point": "第1種＝偽陽性（αエラー）。第2種＝偽陰性（βエラー）。検出力＝1-β。"
+   },
+   "sources": [
+    {
+     "ref": "x-legacy-L06b:mext-joho1-ch4",
+     "title": "高等学校情報科「情報Ⅰ」教員研修用教材（本編）第4章 情報通信ネットワークとデータの活用・巻末",
+     "url": "https://www.mext.go.jp/content/20200722-mxt_jogai02-100013300_006.pdf",
+     "locator": "第4章 学習（仮説検定の手順）",
+     "quote": "検定には帰無仮説が正しいのに棄却してしまう誤り（第１種の過誤α），対立仮説が正しく帰無"
+    },
+    {
+     "ref": "x-legacy-L06b:mext-joho1-ch4",
+     "title": "高等学校情報科「情報Ⅰ」教員研修用教材（本編）第4章 情報通信ネットワークとデータの活用・巻末",
+     "url": "https://www.mext.go.jp/content/20200722-mxt_jogai02-100013300_006.pdf",
+     "locator": "第4章 学習（仮説検定の手順）",
+     "quote": "仮説が誤りなのに棄却されない誤り（第 2 種の過誤β）の 2 種類の誤りがある。"
+    },
+    {
+     "ref": "stats:nist-statistical-tests",
+     "title": "NIST/SEMATECH e-Handbook of Statistical Methods, 7.1.3. What are statistical tests?",
+     "url": "https://www.itl.nist.gov/div898/handbook/prc/section1/prc13.htm",
+     "locator": "Significance levels",
+     "quote": "The test procedure is constructed so that the risk of rejecting the null hypothesis, when it is in fact true, is small."
+    }
+   ],
+   "asOf": "統計理論の定義（時点に依存しない）",
+   "origin": {
+    "batch": "L06",
+    "key": "lg-06-18",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "領域監査（統計）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L06（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L06b（統計）"
+    },
+    "log": "bank/audit/legacy-L06b.audit.json#lg-06-18",
+    "notes": "第1種の過誤α・第2種の過誤βの定義と有意水準（x-legacy-L06b:mext-joho1-ch4 第4章 仮説検定、stats:nist-statistical-tests Significance levels）。solver=0 一致。"
+   }
+  },
+  {
+   "id": "lg-06-19",
+   "legacy": {
+    "key": "6_19",
+    "chapter": 6,
+    "chapterName": "医療統計I（基礎統計学）",
+    "index": 19,
+    "hash": "082cf439b95f5380"
+   },
+   "subject": "S06",
+   "subtopic": "相関と回帰",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "複数の説明変数（独立変数）から1つの目的変数（従属変数）を予測する分析手法はどれか。",
+   "choices": [
+    "主成分分析",
+    "クラスタリング（クラスター分析）",
+    "重回帰分析",
+    "単回帰分析"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "重回帰分析は、目的変数Yを複数（p個）の説明変数X1,…,Xpの重み付きの合計で説明・予測するモデルを用いる。",
+    "choiceNotes": [
+     "主成分分析は、多数の変数をまとめて少数の主成分（新しい特徴量）に要約する次元削減の手法で、目的変数を予測する手法ではない。",
+     "クラスタリングは、正解を与えずに似ているデータをまとめてグループ（クラスタ）に分ける手法で、目的変数を予測する手法ではない。",
+     null,
+     "単回帰分析は、目的変数を1つの説明変数で説明する回帰であり、説明変数が複数ではない。"
+    ],
+    "point": "目的変数1つを説明変数1つで説明＝単回帰、複数で説明＝重回帰。主成分分析は次元削減、クラスタリングはグループ分け。"
+   },
+   "sources": [
+    {
+     "ref": "x-legacy-L06b:mext-joho2-ch3a",
+     "title": "高等学校情報科「情報Ⅱ」教員研修用教材（本編）第3章 情報とデータサイエンス 前半",
+     "url": "https://www.mext.go.jp/content/20200702-mxt_jogai01-000007843_004.pdf",
+     "locator": "学習13 重回帰分析とモデルの決定 2 予測のための重回帰モデルと重回帰分析",
+     "quote": "目的変数 Y を p 個の説明変数 X1,…, Xp で説明する"
+    },
+    {
+     "ref": "stats:naruhodo-hukusu",
+     "title": "なるほど統計学園「複数の変数の関係性を見る」",
+     "url": "https://www.stat.go.jp/naruhodo/10_tokucho/hukusu.html",
+     "locator": "回帰分析",
+     "quote": "被説明変数が一つの説明変数によって説明される回帰を単回帰といいます。"
+    },
+    {
+     "ref": "x-legacy-L06b:mext-joho2-ch3a",
+     "title": "高等学校情報科「情報Ⅱ」教員研修用教材（本編）第3章 情報とデータサイエンス 前半",
+     "url": "https://www.mext.go.jp/content/20200702-mxt_jogai01-000007843_004.pdf",
+     "locator": "学習14 主成分分析とは？",
+     "quote": "このことを次元削減（次元縮約）"
+    }
+   ],
+   "asOf": "統計理論の定義（時点に依存しない）",
+   "origin": {
+    "batch": "L06",
+    "key": "lg-06-19",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（統計）で修正",
+     "修正後の再監査は未実施",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L06（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L06b（統計）",
+     "reauditor": null
+    },
+    "log": "bank/audit/legacy-L06b.audit.json#lg-06-19",
+    "notes": "重回帰＝目的変数Yをp個の説明変数で説明（x-legacy-L06b:mext-joho2-ch3a 学習13）、単回帰（stats:naruhodo-hukusu）、主成分分析＝次元削減（同 学習14）、クラスタリング＝似ているデータをグループに分ける（文科省 情報Ⅱ教材 第3章後半 学習16 で確認）。solver=1 一致。"
+   }
+  },
+  {
+   "id": "lg-06-20",
+   "legacy": {
+    "key": "6_20",
+    "chapter": 6,
+    "chapterName": "医療統計I（基礎統計学）",
+    "index": 20,
+    "hash": "94333ee1b1ffd4e0"
+   },
+   "subject": "S06",
+   "subtopic": "疫学指標",
+   "format": "knowledge",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "ハザード比について正しいのはどれか。",
+   "choices": [
+    "観察期間全体の累積発症率（リスク）の2群間の比",
+    "ある一時点における有病率の2群間の比",
+    "観察期間中に死亡した人数の2群間の比",
+    "ある時点における瞬間的なイベント発生率の2群間の比"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "ハザード比はある時点での瞬間的なイベント（死亡等）発生率の比。生存分析（Cox比例ハザードモデル）で用いる。",
+    "choiceNotes": [
+     "累積発症率（リスク）の比はリスク比（相対リスク）である。",
+     "有病率の比は有病率比（prevalence ratio）であり、ハザード比ではない。",
+     "死亡数の比は単純な人数の比で、観察人数や時間を考慮していない。",
+     null
+    ],
+    "point": "ハザード比＝瞬間的リスクの比。Cox回帰で算出。生存分析の重要指標。"
+   },
+   "sources": [
+    {
+     "ref": "x-legacy-L06b:minds-glossary-2020",
+     "title": "Minds診療ガイドライン作成マニュアル2020 ver.3.0 用語集",
+     "url": "https://minds.jcqhc.or.jp/docs/methods/cpg-development/minds-manual/pdf/glossary_manual_2020.pdf",
+     "locator": "ハザード比（hazard ratio：HR）",
+     "quote": "ハザードは時間 t における瞬間的な死亡確率を示す。 ハザード比は 2 群のハザードの比のこと。"
+    },
+    {
+     "ref": "x-legacy-L06b:minds-glossary-2020",
+     "title": "Minds診療ガイドライン作成マニュアル2020 ver.3.0 用語集",
+     "url": "https://minds.jcqhc.or.jp/docs/methods/cpg-development/minds-manual/pdf/glossary_manual_2020.pdf",
+     "locator": "リスク比（risk ratio：RR）",
+     "quote": "2 つのリスクの比，すなわちイベント発生率の比。"
+    },
+    {
+     "ref": "x-legacy-L06b:cdc-ss1978-l3s2",
+     "title": "Principles of Epidemiology in Public Health Practice, 3rd ed. Lesson 3 Section 2: Morbidity Frequency Measures",
+     "url": "https://archive.cdc.gov/www_cdc_gov/csels/dsepd/ss1978/lesson3/section2.html",
+     "locator": "Incidence proportion or risk",
+     "quote": "Synonyms include attack rate, risk, probability of getting disease, and cumulative incidence."
+    }
+   ],
+   "asOf": "統計理論の定義（時点に依存しない）",
+   "origin": {
+    "batch": "L06",
+    "key": "lg-06-20",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（統計）で修正",
+     "修正後の再監査は未実施",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L06（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L06b（統計）",
+     "reauditor": null
+    },
+    "log": "bank/audit/legacy-L06b.audit.json#lg-06-20",
+    "notes": "ハザード比＝2群の瞬間的な死亡確率（ハザード）の比・生存時間分析で使用（Minds用語集 ハザード比）、累積発症率＝リスク（CDC Lesson3 Sec2）とリスク比（Minds）。solver=0 一致。"
+   }
+  },
+  {
+   "id": "lg-06-21",
+   "legacy": {
+    "key": "6_21",
+    "chapter": 6,
+    "chapterName": "医療統計I（基礎統計学）",
+    "index": 21,
+    "hash": "dc8a5be11900a6fc"
+   },
+   "subject": "S06",
+   "subtopic": "疫学指標",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "累積発症率の計算式として正しいのはどれか。",
+   "choices": [
+    "ある時点の有病者数÷その時点の人口",
+    "ある疾病による死亡者数÷その疾病と診断された者の数",
+    "観察期間中の新規発症者数÷観察開始時の対象者数",
+    "観察期間中の新規発症者数÷観察人年の合計"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "累積発症率（累積罹患率、incidence proportion、リスク）は、観察開始時に疾病のなかった集団のうち、一定期間に新たに発症した者の割合で、分母は観察開始時の対象者数である。割合なので0〜1の値をとる。",
+    "choiceNotes": [
+     "ある時点の有病者数をその時点の人口で割ったものは（時点）有病率である。",
+     "ある疾病と診断された人のうちその疾病で死亡した人の割合は致命率（致死率）である。",
+     null,
+     "新規発症者数を観察人年（人時間）で割ったものは罹患率（発症密度、incidence rate）である。"
+    ],
+    "point": "累積発症率＝新規発症者数÷観察開始時の人数。罹患率（人年法）＝新規発症者数÷観察人年。分母が異なる。"
+   },
+   "sources": [
+    {
+     "ref": "x-legacy-L06b:cdc-ss1978-l3s2",
+     "title": "Principles of Epidemiology in Public Health Practice, 3rd ed. Lesson 3 Section 2: Morbidity Frequency Measures",
+     "url": "https://archive.cdc.gov/www_cdc_gov/csels/dsepd/ss1978/lesson3/section2.html",
+     "locator": "Incidence proportion or risk",
+     "quote": "Synonyms include attack rate, risk, probability of getting disease, and cumulative incidence."
+    },
+    {
+     "ref": "x-legacy-L06b:cdc-ss1978-l3s2",
+     "title": "Principles of Epidemiology in Public Health Practice, 3rd ed. Lesson 3 Section 2: Morbidity Frequency Measures",
+     "url": "https://archive.cdc.gov/www_cdc_gov/csels/dsepd/ss1978/lesson3/section2.html",
+     "locator": "Properties and uses of incidence proportions",
+     "quote": "The denominator is the number of persons in the population at the start of the observation period."
+    },
+    {
+     "ref": "x-legacy-L06b:cdc-ss1978-l3s2",
+     "title": "Principles of Epidemiology in Public Health Practice, 3rd ed. Lesson 3 Section 2: Morbidity Frequency Measures",
+     "url": "https://archive.cdc.gov/www_cdc_gov/csels/dsepd/ss1978/lesson3/section2.html",
+     "locator": "Incidence rate or person-time rate",
+     "quote": "Incidence rate or person-time rate is a measure of incidence that incorporates time directly into the denominator."
+    }
+   ],
+   "asOf": "統計理論の定義（時点に依存しない）",
+   "origin": {
+    "batch": "L06",
+    "key": "lg-06-21",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（統計）で修正",
+     "修正後の再監査は未実施",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L06（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L06b（統計）",
+     "reauditor": null
+    },
+    "log": "bank/audit/legacy-L06b.audit.json#lg-06-21",
+    "notes": "累積発症率＝incidence proportion（cumulative incidence）、分母＝観察開始時の人数、人年法の罹患率（x-legacy-L06b:cdc-ss1978-l3s2）。致命率は stats:ganjoho-timeiritu、時点有病率は stats:ganjoho-yuubyouritu で確認。solver=0 一致。"
+   }
+  },
+  {
+   "id": "lg-06-22",
+   "legacy": {
+    "key": "6_22",
+    "chapter": 6,
+    "chapterName": "医療統計I（基礎統計学）",
+    "index": 22,
+    "hash": "25d07a905a4907bc"
+   },
+   "subject": "S06",
+   "subtopic": "疫学指標",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "罹患率と有病率の違いについて正しいのはどれか。",
+   "choices": [
+    "罹患率は既存患者を含むが、有病率は新規患者のみを数える",
+    "罹患率と有病率は同じ指標である",
+    "有病率は罹患率と関係がなく、有病期間だけで決まる",
+    "罹患率は一定期間の新規発症のみを数え、有病率はある時点の全患者（新規と既存）を数える"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "罹患率は一定期間に新たに発症（診断）した数をもとにした指標で、有病率はある時点で疾病を有する全患者（新規と既存の両方）の割合である。",
+    "choiceNotes": [
+     "説明が逆である。罹患率は新規のみ、有病率は既存の患者も含む。",
+     "罹患率（新規発症）と有病率（ある時点の全患者）は異なる指標である。",
+     "有病率は罹患率と有病期間（病気の持続期間）の両方の影響を受ける。",
+     null
+    ],
+    "point": "罹患率＝新規発症（フロー）。有病率＝ある時点の全患者（ストック）。有病率は罹患率と有病期間の両方に左右される。"
+   },
+   "sources": [
+    {
+     "ref": "stats:ganjoho-rikanritu",
+     "title": "がん統計の用語集「罹患率」",
+     "url": "https://ganjoho.jp/reg_stat/statistics/qa_words/word/rikanritu.html",
+     "locator": "罹患率",
+     "quote": "ある集団で新たに診断されたがんの数を、その集団のその期間の人口で割った値。"
+    },
+    {
+     "ref": "x-legacy-L06b:cdc-ss1978-l3s2",
+     "title": "Principles of Epidemiology in Public Health Practice, 3rd ed. Lesson 3 Section 2: Morbidity Frequency Measures",
+     "url": "https://archive.cdc.gov/www_cdc_gov/csels/dsepd/ss1978/lesson3/section2.html",
+     "locator": "Prevalence",
+     "quote": "prevalence includes all cases, both new and preexisting, in the population at the specified time"
+    },
+    {
+     "ref": "x-legacy-L06b:cdc-ss1978-l3s2",
+     "title": "Principles of Epidemiology in Public Health Practice, 3rd ed. Lesson 3 Section 2: Morbidity Frequency Measures",
+     "url": "https://archive.cdc.gov/www_cdc_gov/csels/dsepd/ss1978/lesson3/section2.html",
+     "locator": "Properties and uses of prevalence",
+     "quote": "Prevalence is based on both incidence and duration of illness."
+    }
+   ],
+   "asOf": "統計理論の定義（時点に依存しない）",
+   "origin": {
+    "batch": "L06",
+    "key": "lg-06-22",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（統計）で修正",
+     "修正後の再監査は未実施",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L06（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L06b（統計）",
+     "reauditor": null
+    },
+    "log": "bank/audit/legacy-L06b.audit.json#lg-06-22",
+    "notes": "罹患率（stats:ganjoho-rikanritu、有病率との違い）、有病率は新規＋既存・罹患率と有病期間の両方に依存（x-legacy-L06b:cdc-ss1978-l3s2 Prevalence）。solver=1 一致。"
+   }
+  },
+  {
+   "id": "lg-06-23",
+   "legacy": {
+    "key": "6_23",
+    "chapter": 6,
+    "chapterName": "医療統計I（基礎統計学）",
+    "index": 23,
+    "hash": "42f45014783a9a96"
+   },
+   "subject": "S06",
+   "subtopic": "疫学指標",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "リスク差（寄与リスク）の意味として正しいのはどれか。",
+   "choices": [
+    "曝露群の罹患率から非曝露群の罹患率を引いた差",
+    "曝露群の罹患率を非曝露群の罹患率で割った比",
+    "曝露群の疾病オッズを非曝露群の疾病オッズで割った比",
+    "ある一時点における曝露群の有病率"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "リスク差（寄与リスク）＝曝露群の罹患率−非曝露群の罹患率。曝露によって増加した疾病リスクの絶対量を示す。",
+    "choiceNotes": [
+     null,
+     "罹患率の比は相対リスク（リスク比）である。",
+     "疾病オッズの比はオッズ比であり、リスク差ではない。",
+     "有病率はある時点の患者の割合で、2群の差をとる指標ではない。"
+    ],
+    "point": "リスク差＝差（絶対指標）。リスク比＝比（相対指標）。両方の理解が重要。"
+   },
+   "sources": [
+    {
+     "ref": "stats:env-soutai-kiyo-risk",
+     "title": "放射線による健康影響等に関する統一的な基礎資料（令和７年度版）第3章 放射線による健康影響 スライド3.4 リスク（相対リスクと寄与リスク）",
+     "url": "https://www.env.go.jp/chemi/rhm/current/attach/slide-03-04.pdf",
+     "locator": "スライド3.4 相対リスクと寄与リスク",
+     "quote": "寄与リスク ＝要因ばく露群の罹患リスク ― 要因非ばく露群の罹患リスク"
+    },
+    {
+     "ref": "x-legacy-L06b:minds-glossary-2020",
+     "title": "Minds診療ガイドライン作成マニュアル2020 ver.3.0 用語集",
+     "url": "https://minds.jcqhc.or.jp/docs/methods/cpg-development/minds-manual/pdf/glossary_manual_2020.pdf",
+     "locator": "リスク差（risk difference：RD）",
+     "quote": "2 つのリスクの差，すなわちイベント発生率の差。"
+    },
+    {
+     "ref": "x-legacy-L06b:minds-glossary-2020",
+     "title": "Minds診療ガイドライン作成マニュアル2020 ver.3.0 用語集",
+     "url": "https://minds.jcqhc.or.jp/docs/methods/cpg-development/minds-manual/pdf/glossary_manual_2020.pdf",
+     "locator": "オッズ比（odds ratio：OR）",
+     "quote": "のオッズの比のことである。 症例対照研究や横断研究で用いることが多い。"
+    }
+   ],
+   "asOf": "統計理論の定義（時点に依存しない）",
+   "origin": {
+    "batch": "L06",
+    "key": "lg-06-23",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（統計）で修正",
+     "修正後の再監査は未実施",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L06（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L06b（統計）",
+     "reauditor": null
+    },
+    "log": "bank/audit/legacy-L06b.audit.json#lg-06-23",
+    "notes": "寄与リスク＝ばく露群罹患リスク−非ばく露群罹患リスク、相対リスク＝比（stats:env-soutai-kiyo-risk）、リスク差＝発生率の差（Minds用語集）。solver=1 一致。"
+   }
+  },
+  {
+   "id": "lg-06-24",
+   "legacy": {
+    "key": "6_24",
+    "chapter": 6,
+    "chapterName": "医療統計I（基礎統計学）",
+    "index": 24,
+    "hash": "b3454fb745137ab5"
+   },
+   "subject": "S06",
+   "subtopic": "研究デザイン",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "層別化の目的として正しいのはどれか。",
+   "choices": [
+    "標本サイズを増やすこと",
+    "データの入力ミスを防ぐこと",
+    "検定の有意水準を変更すること",
+    "交絡因子の影響を制御すること"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "層別化は交絡因子の影響を除去するため、交絡因子の各カテゴリ（層）ごとに解析を行う方法。",
+    "choiceNotes": [
+     "層別化は標本サイズを増やす手法ではない。むしろ各層のサイズは小さくなる。",
+     "データ入力ミスの防止は層別化の目的ではない。",
+     "有意水準は研究者が事前に設定するもので層別化とは無関係。",
+     null
+    ],
+    "point": "交絡の制御法＝層別化・マッチング・多変量解析・ランダム化。"
+   },
+   "sources": [
+    {
+     "ref": "x-legacy-L06b:minds-glossary-2020",
+     "title": "Minds診療ガイドライン作成マニュアル2020 ver.3.0 用語集",
+     "url": "https://minds.jcqhc.or.jp/docs/methods/cpg-development/minds-manual/pdf/glossary_manual_2020.pdf",
+     "locator": "交絡因子（confounding factor）",
+     "quote": "統計解析段階では層化（stratification），数学的モデリング（mathematical modeling）を行"
+    },
+    {
+     "ref": "x-legacy-L06b:minds-glossary-2020",
+     "title": "Minds診療ガイドライン作成マニュアル2020 ver.3.0 用語集",
+     "url": "https://minds.jcqhc.or.jp/docs/methods/cpg-development/minds-manual/pdf/glossary_manual_2020.pdf",
+     "locator": "交絡因子（confounding factor）",
+     "quote": "研究計画段階ではランダム化（randomization）， 限定（restriction）， マッチング（matching） を"
+    },
+    {
+     "ref": "x-legacy-L06b:mext-joho1-ch4",
+     "title": "高等学校情報科「情報Ⅰ」教員研修用教材（本編）第4章 情報通信ネットワークとデータの活用・巻末",
+     "url": "https://www.mext.go.jp/content/20200722-mxt_jogai02-100013300_006.pdf",
+     "locator": "第4章 学習（仮説検定の手順）",
+     "quote": "第１種の過誤αを予め有意水準（検"
+    }
+   ],
+   "asOf": "統計理論の定義（時点に依存しない）",
+   "origin": {
+    "batch": "L06",
+    "key": "lg-06-24",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "領域監査（統計）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L06（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L06b（統計）"
+    },
+    "log": "bank/audit/legacy-L06b.audit.json#lg-06-24",
+    "notes": "交絡因子の制御：計画段階＝ランダム化・限定・マッチング、解析段階＝層化・数学的モデリング（Minds用語集 交絡因子）。有意水準は予め定める（x-legacy-L06b:mext-joho1-ch4）。solver=1 一致。"
+   }
+  },
+  {
+   "id": "lg-06-25",
+   "legacy": {
+    "key": "6_25",
+    "chapter": 6,
+    "chapterName": "医療統計I（基礎統計学）",
+    "index": 25,
+    "hash": "1d1dfccd363ceff4"
+   },
+   "subject": "S06",
+   "subtopic": "研究デザイン",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "マッチングについて正しい説明はどれか。",
+   "choices": [
+    "無作為に症例群と対照群を割り付ける方法",
+    "症例群と対照群で交絡因子の分布を揃える方法",
+    "すべての変数を一致させる方法",
+    "コホート研究でのみ使用される方法"
+   ],
+   "answer": 1,
+   "explanation": {
+    "correct": "マッチングは症例対照研究等で、症例群と対照群の交絡因子（年齢・性別等）の分布を意図的に揃えることで交絡を制御する方法。",
+    "choiceNotes": [
+     "無作為割り付けはランダム化であり、マッチングとは異なる。",
+     null,
+     "すべての変数を一致させることは現実的に不可能。主要な交絡因子について行う。",
+     "症例対照研究でも使用される。コホート研究限定ではない。"
+    ],
+    "point": "マッチング＝交絡因子を症例と対照で揃える。個別マッチングと頻度マッチングがある。"
+   },
+   "sources": [
+    {
+     "ref": "x-legacy-L06b:mhlw-s0331-9b1",
+     "title": "内分泌かく乱化学物質の健康影響に関する検討会 中間報告書追補その２ 別冊",
+     "url": "https://www.mhlw.go.jp/shingi/2005/03/dl/s0331-9b1.pdf",
+     "locator": "4）症例対照研究",
+     "quote": "ことが多い。これを「マッチング」   （matching）という。"
+    },
+    {
+     "ref": "x-legacy-L06b:mhlw-s0331-9b1",
+     "title": "内分泌かく乱化学物質の健康影響に関する検討会 中間報告書追補その２ 別冊",
+     "url": "https://www.mhlw.go.jp/shingi/2005/03/dl/s0331-9b1.pdf",
+     "locator": "4）症例対照研究",
+     "quote": "症例全体と対照全体で特性の分布をそろえる場合がある。"
+    },
+    {
+     "ref": "x-legacy-L06b:minds-glossary-2020",
+     "title": "Minds診療ガイドライン作成マニュアル2020 ver.3.0 用語集",
+     "url": "https://minds.jcqhc.or.jp/docs/methods/cpg-development/minds-manual/pdf/glossary_manual_2020.pdf",
+     "locator": "交絡因子（confounding factor）",
+     "quote": "研究計画段階ではランダム化（randomization）， 限定（restriction）， マッチング（matching） を"
+    }
+   ],
+   "asOf": "統計理論の定義（時点に依存しない）",
+   "origin": {
+    "batch": "L06",
+    "key": "lg-06-25",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "領域監査（統計）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L06（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L06b（統計）"
+    },
+    "log": "bank/audit/legacy-L06b.audit.json#lg-06-25",
+    "notes": "症例対照研究で性・年齢などの特性を症例と対照でそろえる＝マッチング（個人・頻度）（x-legacy-L06b:mhlw-s0331-9b1 4）症例対照研究）、交絡の制御法としてのマッチングとランダム化の区別（Minds用語集 交絡因子・ランダム化）。solver=0 一致。"
+   }
+  },
+  {
+   "id": "lg-06-26",
+   "legacy": {
+    "key": "6_26",
+    "chapter": 6,
+    "chapterName": "医療統計I（基礎統計学）",
+    "index": 26,
+    "hash": "ba11c3c0b931984a"
+   },
+   "subject": "S06",
+   "subtopic": "研究デザイン",
+   "format": "knowledge",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "従来の疫学理論で用いられる交絡因子の条件（必要条件）として正しいものはどれか。",
+   "choices": [
+    "曝露と関連があり、疾病のリスク因子であり、曝露と疾病の間の中間因子ではない",
+    "曝露と関連があり、疾病とは関連がなく、曝露と疾病の間の中間因子である",
+    "曝露とは関連がなく、疾病のリスク因子である",
+    "曝露の結果として生じ、疾病のリスク因子である"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "従来の疫学理論では、交絡因子の条件として①母集団において曝露と関連している、②アウトカム（疾病）のリスクファクターである、③曝露やアウトカムの影響を受けるものではなく、特に曝露とアウトカムの間の中間因子ではない、の3点が用いられてきた。",
+    "choiceNotes": [
+     null,
+     "疾病と関連がない因子は交絡因子にならず、中間因子であってもならない。",
+     "曝露と関連がない因子は交絡因子にならない。",
+     "曝露の結果として生じる因子は曝露の影響を受けており、中間因子にあたるため交絡因子ではない。"
+    ],
+    "point": "交絡因子の3条件：曝露と関連、疾病のリスク因子、中間因子でない。なお②は実際に発症の原因である必要はなく、発症を予測できればよい。"
+   },
+   "sources": [
+    {
+     "ref": "x-legacy-L06b:jjh-64-796",
+     "title": "医学における因果推論 第二部―交絡要因の選択とバイアスの整理および仮説の具体化に役立つDirected Acyclic Graph―（日本衛生学雑誌 64巻 796-805, 2009 総説）",
+     "url": "https://www.jstage.jst.go.jp/article/jjh/64/4/64_4_796/_pdf",
+     "locator": "2-8．DAG における交絡因子の定義",
+     "quote": "①交絡因子は，母集団において曝露と関連している。"
+    },
+    {
+     "ref": "x-legacy-L06b:jjh-64-796",
+     "title": "医学における因果推論 第二部―交絡要因の選択とバイアスの整理および仮説の具体化に役立つDirected Acyclic Graph―（日本衛生学雑誌 64巻 796-805, 2009 総説）",
+     "url": "https://www.jstage.jst.go.jp/article/jjh/64/4/64_4_796/_pdf",
+     "locator": "2-8．DAG における交絡因子の定義",
+     "quote": "②交絡因子は，アウトカムのリスクファクターでなけれ"
+    },
+    {
+     "ref": "x-legacy-L06b:jjh-64-796",
+     "title": "医学における因果推論 第二部―交絡要因の選択とバイアスの整理および仮説の具体化に役立つDirected Acyclic Graph―（日本衛生学雑誌 64巻 796-805, 2009 総説）",
+     "url": "https://www.jstage.jst.go.jp/article/jjh/64/4/64_4_796/_pdf",
+     "locator": "2-8．DAG における交絡因子の定義",
+     "quote": "の中間因子であってはならない。"
+    }
+   ],
+   "asOf": "統計理論の定義（時点に依存しない）",
+   "origin": {
+    "batch": "L06",
+    "key": "lg-06-26",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（統計）で修正",
+     "修正後の再監査は未実施",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L06（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L06b（統計）",
+     "reauditor": null
+    },
+    "log": "bank/audit/legacy-L06b.audit.json#lg-06-26",
+    "notes": "交絡因子の3条件（x-legacy-L06b:jjh-64-796 2-8、①曝露と関連 ②アウトカムのリスクファクター ③中間因子でない）。solver=0 一致。"
+   }
+  },
+  {
+   "id": "lg-07-10",
+   "legacy": {
+    "key": "7_10",
+    "chapter": 7,
+    "chapterName": "医療統計II（保健統計・人口統計）",
+    "index": 10,
+    "hash": "c8fcfa0d8f815bcb"
+   },
+   "subject": "S06",
+   "subtopic": "疫学指標",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "罹患率と有病率の違いとして正しいのはどれか。",
+   "choices": [
+    "罹患率はある時点の患者の割合、有病率は一定期間の新規発生",
+    "罹患率は一定期間の新規発生、有病率はある時点の患者の割合",
+    "罹患率の分母は観察集団の患者数である",
+    "有病率は罹病期間が長い疾患ほど低くなる",
+    "罹患率は慢性疾患だけに用いる指標である"
+   ],
+   "answer": 1,
+   "explanation": {
+    "correct": "罹患率は一定期間に新たに診断（発生）した数をその集団の人口で割った値、有病率はある一時点の患者数をその時点でその疾患を患う可能性のある人口で割った値である。",
+    "choiceNotes": [
+     "定義が逆である。罹患率が新規発生、有病率がある時点の患者の割合。",
+     null,
+     "罹患率の分母は観察集団の人口であり、患者数ではない。",
+     "有病率は罹患率と罹病期間の両方の影響を受け、治癒しないまま長く生存する疾患では高くなる。",
+     "罹患率は慢性疾患に限った指標ではない。"
+    ],
+    "point": "罹患率＝新規発生、有病率＝ある時点の既存患者。有病率は罹患率と罹病期間の両方の影響を受ける。"
+   },
+   "sources": [
+    {
+     "ref": "stats:ganjoho-rikanritu",
+     "title": "がん統計の用語集「罹患率」",
+     "url": "https://ganjoho.jp/reg_stat/statistics/qa_words/word/rikanritu.html",
+     "locator": "罹患率",
+     "quote": "ある集団で新たに診断されたがんの数を、その集団のその期間の人口で割った値。"
+    },
+    {
+     "ref": "stats:ganjoho-yuubyouritu",
+     "title": "がん統計の用語集「有病率」",
+     "url": "https://ganjoho.jp/reg_stat/statistics/qa_words/word/yuubyouritu.html",
+     "locator": "有病率",
+     "quote": "ある一時点で、特定の疾患（がん全体や、胃がん・肺がんなどの特定のがん、循環器疾患など）の全患者の数を、その時点でその疾患を患う可能性のある人口で割ったもの。"
+    },
+    {
+     "ref": "x-legacy-L06b:cdc-ss1978-l3s2",
+     "title": "Principles of Epidemiology in Public Health Practice, 3rd ed. Lesson 3 Section 2: Morbidity Frequency Measures",
+     "url": "https://archive.cdc.gov/www_cdc_gov/csels/dsepd/ss1978/lesson3/section2.html",
+     "locator": "Lesson 3 Section 2 Prevalence",
+     "quote": "High prevalence of a disease within a population might reflect high incidence or prolonged survival without cure or both."
+    }
+   ],
+   "asOf": "国立がん研究センター がん統計用語集（2018-01-26更新）・CDC Principles of Epidemiology 3rd ed.",
+   "origin": {
+    "batch": "L07",
+    "key": "lg-07-10",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（統計）で修正",
+     "修正後の再監査は未実施",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L07（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L07a（統計）",
+     "reauditor": null
+    },
+    "log": "bank/audit/legacy-L07a.audit.json#lg-07-10",
+    "notes": "がん統計用語集「罹患率」「有病率」、CDC Lesson3 §2（prevalence は incidence と duration に依存）で確認。罹患率・有病率は疫学指標のためS06へ再分類。"
+   }
+  },
+  {
+   "id": "lg-07-14",
+   "legacy": {
+    "key": "7_14",
+    "chapter": 7,
+    "chapterName": "医療統計II（保健統計・人口統計）",
+    "index": 14,
+    "hash": "7bb51290ed9c2880"
+   },
+   "subject": "S06",
+   "subtopic": "疫学指標",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "致命率（致死率）の定義として正しいものはどれか。",
+   "choices": [
+    "一定期間の死亡数をその期間の人口で割った割合",
+    "特定の年齢階級の人口に対するその年齢階級の死亡数の割合",
+    "1年間の死亡者数そのもの",
+    "ある疾患と診断された人のうち、その疾患で死亡した人の割合",
+    "ある時点でその疾患を有する患者数を人口で割った割合"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "致命率は、ある疾患と診断された人のうち、その疾患で死亡した人の割合で、致命率が高い疾患ほど命にかかわる疾患といえる。分母は人口ではなく、その疾患の患者（診断された人）である。",
+    "choiceNotes": [
+     "死亡数を人口で割ったものは粗死亡率で、分母が人口全体である。",
+     "特定年齢階級の死亡数をその年齢階級の人口で割ったものは年齢階級別死亡率である。",
+     "死亡者数は実数（絶対数）であり、割合ではない。",
+     null,
+     "ある時点の患者数を人口で割ったものは有病率である。"
+    ],
+    "point": "致命率＝その疾患の患者のうち、その疾患で死亡した割合（分母は患者）。粗死亡率・有病率は分母が人口。"
+   },
+   "sources": [
+    {
+     "ref": "stats:ganjoho-timeiritu",
+     "title": "がん統計の用語集「致命率」",
+     "url": "https://ganjoho.jp/reg_stat/statistics/qa_words/word/timeiritu.html",
+     "locator": "用語集「致命率」",
+     "quote": "ある病気と診断された人のうち、その病気で死亡した人の割合。"
+    },
+    {
+     "ref": "stats:ganjoho-sosibouritu",
+     "title": "がん統計の用語集「粗死亡率」",
+     "url": "https://ganjoho.jp/reg_stat/statistics/qa_words/word/sosibouritu.html",
+     "locator": "用語集「粗死亡率」",
+     "quote": "一定期間の死亡数を単純にその期間の人口で割った死亡率"
+    },
+    {
+     "ref": "stats:ganjoho-yuubyouritu",
+     "title": "がん統計の用語集「有病率」",
+     "url": "https://ganjoho.jp/reg_stat/statistics/qa_words/word/yuubyouritu.html",
+     "locator": "用語集「有病率」",
+     "quote": "ある一時点で、特定の疾患（がん全体や、胃がん・肺がんなどの特定のがん、循環器疾患など）の全患者の数を"
+    }
+   ],
+   "asOf": "国立がん研究センター がん統計用語集（2018年1月更新）",
+   "origin": {
+    "batch": "L07",
+    "key": "lg-07-14",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（統計）で修正",
+     "修正後の再監査は未実施",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L07（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L07b（統計）",
+     "reauditor": null
+    },
+    "log": "bank/audit/legacy-L07b.audit.json#lg-07-14",
+    "notes": "ganjoho 致命率 定義; 粗死亡率・有病率の定義で誤肢を確認"
+   }
+  }
+ ]
+}

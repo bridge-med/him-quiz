@@ -1,0 +1,1751 @@
+{
+ "subject": "S03",
+ "questions": [
+  {
+   "id": "lg-02-00",
+   "legacy": {
+    "key": "2_0",
+    "chapter": 2,
+    "chapterName": "医療保険制度",
+    "index": 0,
+    "hash": "6df6a52abeae31fc"
+   },
+   "subject": "S03",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "国民皆保険制度が達成された年はどれか。",
+   "choices": [
+    "1961年",
+    "1945年",
+    "1975年",
+    "2000年"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "1961年（昭和36年）に国民健康保険法の改正により全国民がいずれかの公的医療保険に加入することが義務付けられた。",
+    "choiceNotes": [
+     null,
+     "1945年は終戦の年。",
+     "1975年は皆保険達成とは異なる。",
+     "2000年は介護保険制度の開始年。"
+    ],
+    "point": "国民皆保険＝1961年。介護保険＝2000年。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L02",
+    "key": "lg-02-00",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L02.audit.json#lg-02-00",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-02-01",
+   "legacy": {
+    "key": "2_1",
+    "chapter": 2,
+    "chapterName": "医療保険制度",
+    "index": 1,
+    "hash": "71c8ff785537c5af"
+   },
+   "subject": "S03",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "診療報酬の1点の単価と改定頻度について正しいのはどれか。",
+   "choices": [
+    "1点＝10円で原則2年に1回改定",
+    "1点＝1円で毎年改定",
+    "1点＝10円で5年に1回改定",
+    "1点＝100円で2年に1回改定"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "診療報酬は1点＝10円で原則2年に1回改定。中医協での議論を経て厚労大臣が告示。",
+    "choiceNotes": [
+     null,
+     "1点＝10円であり改定は2年に1回。",
+     "改定は5年ではなく2年に1回。",
+     "1点＝10円であり100円ではない。"
+    ],
+    "point": "診療報酬＝1点10円・2年改定。介護報酬＝3年改定。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L02",
+    "key": "lg-02-01",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L02.audit.json#lg-02-01",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-02-02",
+   "legacy": {
+    "key": "2_2",
+    "chapter": 2,
+    "chapterName": "医療保険制度",
+    "index": 2,
+    "hash": "e56b362b0cfb23ef"
+   },
+   "subject": "S03",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "高額療養費制度の説明として正しいのはどれか。",
+   "choices": [
+    "年間100万円超で全額免除される制度",
+    "月間の自己負担が上限額を超えた場合に超過分が払い戻される制度",
+    "入院費用のみが対象の制度",
+    "70歳以上のみが対象の制度"
+   ],
+   "answer": 1,
+   "explanation": {
+    "correct": "同一月の自己負担額が上限（所得に応じて設定）を超えた場合に超過分が保険者から払い戻される。",
+    "choiceNotes": [
+     "月単位で上限を超えた分が払い戻される仕組み。",
+     null,
+     "入院・外来ともに対象。",
+     "全年齢が対象。"
+    ],
+    "point": "高額療養費＝月単位・所得に応じた上限。限度額適用認定証で窓口軽減可能。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L02",
+    "key": "lg-02-02",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L02.audit.json#lg-02-02",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-02-03",
+   "legacy": {
+    "key": "2_3",
+    "chapter": 2,
+    "chapterName": "医療保険制度",
+    "index": 3,
+    "hash": "90c2a99dff80acff"
+   },
+   "subject": "S03",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "後期高齢者医療制度の対象年齢はどれか。",
+   "choices": [
+    "75歳以上",
+    "65歳以上",
+    "70歳以上",
+    "80歳以上"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "後期高齢者医療制度は75歳以上（および65〜74歳で一定障害あり）を対象とする独立した医療保険制度。2008年創設。",
+    "choiceNotes": [
+     null,
+     "65歳以上は前期高齢者に該当。",
+     "70歳以上は高齢受給者証の対象年齢。",
+     "80歳以上の区分は存在しない。"
+    ],
+    "point": "後期高齢者＝75歳以上。前期高齢者＝65〜74歳。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L02",
+    "key": "lg-02-03",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L02.audit.json#lg-02-03",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-02-04",
+   "legacy": {
+    "key": "2_4",
+    "chapter": 2,
+    "chapterName": "医療保険制度",
+    "index": 4,
+    "hash": "aebd2464d2a50862"
+   },
+   "subject": "S03",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "介護保険の被保険者について正しいのはどれか。",
+   "choices": [
+    "第1号は65歳以上、第2号は40〜64歳",
+    "第1号は75歳以上、第2号は65〜74歳",
+    "すべての国民が被保険者",
+    "20歳以上が被保険者"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "第1号被保険者＝65歳以上（原因不問）、第2号被保険者＝40〜64歳の医療保険加入者（特定疾病のみ）。",
+    "choiceNotes": [
+     null,
+     "75歳は後期高齢者の区分。介護保険の第1号は65歳以上。",
+     "40歳以上であり全国民ではない。",
+     "40歳以上が被保険者。"
+    ],
+    "point": "介護保険＝40歳から。第1号＝65歳以上、第2号＝40〜64歳。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L02",
+    "key": "lg-02-04",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L02.audit.json#lg-02-04",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-02-05",
+   "legacy": {
+    "key": "2_5",
+    "chapter": 2,
+    "chapterName": "医療保険制度",
+    "index": 5,
+    "hash": "dd471f742fbbd43e"
+   },
+   "subject": "S03",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "混合診療の禁止について正しいのはどれか。",
+   "choices": [
+    "公立と私立の混合利用が禁止",
+    "内科と外科の混合受診が禁止",
+    "保険診療と自由診療を同時に行うことが原則禁止",
+    "入院と外来の同日利用が禁止"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "保険診療と自由診療を同一疾病について同時に行う混合診療は原則禁止。保険外併用療養費制度が例外。",
+    "choiceNotes": [
+     "病院設置主体の混合ではない。",
+     "診療科の混合とは無関係。",
+     null,
+     "入院・外来の同日利用は混合診療ではない。"
+    ],
+    "point": "混合診療禁止の例外＝保険外併用療養費（評価療養・選定療養・患者申出療養）。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L02",
+    "key": "lg-02-05",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L02.audit.json#lg-02-05",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-02-06",
+   "legacy": {
+    "key": "2_6",
+    "chapter": 2,
+    "chapterName": "医療保険制度",
+    "index": 6,
+    "hash": "69de84c8908f4b69"
+   },
+   "subject": "S03",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "保険外併用療養費の区分として正しいのはどれか。",
+   "choices": [
+    "応急療養・計画療養・予防療養",
+    "基本療養・特別療養・先進療養",
+    "評価療養・選定療養・患者申出療養",
+    "入院療養・外来療養・在宅療養"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "評価療養（先進医療・治験等）、選定療養（差額ベッド等）、患者申出療養（2016年創設）の3区分。",
+    "choiceNotes": [
+     "そのような法的区分は存在しない。",
+     "正式な分類ではない。",
+     null,
+     "療養の場の区分であり保険外併用療養費の区分ではない。"
+    ],
+    "point": "患者申出療養は2016年から追加された新しい類型。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L02",
+    "key": "lg-02-06",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L02.audit.json#lg-02-06",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-02-07",
+   "legacy": {
+    "key": "2_7",
+    "chapter": 2,
+    "chapterName": "医療保険制度",
+    "index": 7,
+    "hash": "f8b30a8e6634b24e"
+   },
+   "subject": "S03",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "審査支払機関として正しい組み合わせはどれか。",
+   "choices": [
+    "厚生労働省と財務省",
+    "社会保険診療報酬支払基金と国民健康保険団体連合会",
+    "日本医師会と日本看護協会",
+    "都道府県と市区町村"
+   ],
+   "answer": 1,
+   "explanation": {
+    "correct": "支払基金（社保）と国保連（国保）がレセプト審査と支払いを行う。",
+    "choiceNotes": [
+     "行政機関であり審査支払機関ではない。",
+     null,
+     "職能団体であり審査支払業務は行わない。",
+     "保険者であって審査支払機関ではない。"
+    ],
+    "point": "支払基金＝社保。国保連＝国保。2つをセットで。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L02",
+    "key": "lg-02-07",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L02.audit.json#lg-02-07",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-02-08",
+   "legacy": {
+    "key": "2_8",
+    "chapter": 2,
+    "chapterName": "医療保険制度",
+    "index": 8,
+    "hash": "4ce194806fe7212d"
+   },
+   "subject": "S03",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "DPC/PDPSの包括払いについて正しいのはどれか。",
+   "choices": [
+    "入院1日当たりの定額を診断群分類に基づき算定",
+    "すべての医療費を1回の入院で定額とする方式",
+    "外来診療にも適用される",
+    "医療機関の規模に関わらず同一点数"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "DPC/PDPSは入院1日当たりの包括点数を診断群分類に基づき算定。手術等は出来高。",
+    "choiceNotes": [
+     null,
+     "手術料等は出来高で別途算定。",
+     "入院のみが対象。",
+     "医療機関別係数があり病院ごとに異なる。"
+    ],
+    "point": "DPC＝入院1日定額。手術・麻酔は出来高。医療機関別係数あり。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L02",
+    "key": "lg-02-08",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L02.audit.json#lg-02-08",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-02-09",
+   "legacy": {
+    "key": "2_9",
+    "chapter": 2,
+    "chapterName": "医療保険制度",
+    "index": 9,
+    "hash": "f6e9a46e277a443b"
+   },
+   "subject": "S03",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "出来高払い方式の説明として正しいのはどれか。",
+   "choices": [
+    "実施した診療行為ごとに点数を積み上げて算定",
+    "1日あたりの定額で算定",
+    "月額の定額で算定",
+    "年間総額を事前に決定"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "出来高払い（Fee-for-Service）は個々の診療行為に対して点数を積み上げて算定する方式。",
+    "choiceNotes": [
+     null,
+     "1日定額はDPCの包括払い。",
+     "月額定額は人頭払いに近い概念。",
+     "年間総額決定は総額予算制。"
+    ],
+    "point": "出来高＝やった分だけ。包括＝1日定額。外来＝出来高、入院＝DPCが主流。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L02",
+    "key": "lg-02-09",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L02.audit.json#lg-02-09",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-02-10",
+   "legacy": {
+    "key": "2_10",
+    "chapter": 2,
+    "chapterName": "医療保険制度",
+    "index": 10,
+    "hash": "d87bb853a9da9211"
+   },
+   "subject": "S03",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "レセプトの説明として正しいのはどれか。",
+   "choices": [
+    "患者が保険料を支払うための請求書",
+    "審査支払機関が医療機関を評価する報告書",
+    "医療機関が保険者に診療報酬を請求するための明細書",
+    "厚労省が医療費を集計する統計表"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "レセプトは医療機関が審査支払機関を通じて保険者に診療報酬を請求する明細書。患者ごと月ごとに作成。",
+    "choiceNotes": [
+     "患者の保険料支払い書類ではない。",
+     "請求書であり評価報告書ではない。",
+     null,
+     "本来の目的は請求。二次的に統計利用される。"
+    ],
+    "point": "レセプト＝医療機関→審査支払機関→保険者。月単位作成。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L02",
+    "key": "lg-02-10",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L02.audit.json#lg-02-10",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-02-11",
+   "legacy": {
+    "key": "2_11",
+    "chapter": 2,
+    "chapterName": "医療保険制度",
+    "index": 11,
+    "hash": "b39058c6c05acb32"
+   },
+   "subject": "S03",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "negative",
+   "question": "公費負担医療に該当しないのはどれか。",
+   "choices": [
+    "生活保護法の医療扶助",
+    "自立支援医療",
+    "民間の医療保険による給付",
+    "感染症法の入院医療"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "公費負担医療は国・地方公共団体が公費で負担する制度。民間医療保険は公費ではない。",
+    "choiceNotes": [
+     "医療扶助は代表的な公費負担医療。",
+     "自立支援医療は公費負担医療に含まれる。",
+     null,
+     "感染症法の入院医療費は公費負担対象。"
+    ],
+    "point": "公費負担医療＝法律に基づき国・自治体が負担。民間保険は公費ではない。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L02",
+    "key": "lg-02-11",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L02.audit.json#lg-02-11",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-02-12",
+   "legacy": {
+    "key": "2_12",
+    "chapter": 2,
+    "chapterName": "医療保険制度",
+    "index": 12,
+    "hash": "e8b1001f42abdaa6"
+   },
+   "subject": "S03",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "労災保険の説明として正しいのはどれか。",
+   "choices": [
+    "業務上の事由または通勤による傷病に対して給付",
+    "すべての傷病に適用",
+    "被保険者が保険料を全額負担",
+    "65歳以上のみが対象"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "労災保険は業務災害・通勤災害が対象。保険料は全額事業主負担。",
+    "choiceNotes": [
+     null,
+     "業務災害・通勤災害のみが対象。",
+     "保険料は全額事業主負担。",
+     "年齢制限はない。"
+    ],
+    "point": "労災＝業務上・通勤途上。保険料は全額事業主負担。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L02",
+    "key": "lg-02-12",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L02.audit.json#lg-02-12",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-02-13",
+   "legacy": {
+    "key": "2_13",
+    "chapter": 2,
+    "chapterName": "医療保険制度",
+    "index": 13,
+    "hash": "817cdaf813b86926"
+   },
+   "subject": "S03",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "療養担当規則について正しいのはどれか。",
+   "choices": [
+    "患者が療養中に守るべき規則",
+    "保険者が保険料を徴収する規則",
+    "保険医療機関及び保険医が保険診療で遵守すべき規則",
+    "製薬会社が薬価を決定する規則"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "療養担当規則は保険医療機関と保険医が保険診療で遵守すべき事項を定めた厚労省令。",
+    "choiceNotes": [
+     "医療提供側の規則であり患者のルールではない。",
+     "保険料徴収の規則ではない。",
+     null,
+     "薬価決定とは異なる。"
+    ],
+    "point": "療担規則＝保険医療機関・保険医の義務。保険診療のルールブック。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L02",
+    "key": "lg-02-13",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L02.audit.json#lg-02-13",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-02-14",
+   "legacy": {
+    "key": "2_14",
+    "chapter": 2,
+    "chapterName": "医療保険制度",
+    "index": 14,
+    "hash": "7fd2314d7bdf45f0"
+   },
+   "subject": "S03",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "特定健診の対象年齢として正しいのはどれか。",
+   "choices": [
+    "20歳以上すべて",
+    "65〜74歳",
+    "75歳以上",
+    "40〜74歳"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "特定健診は40〜74歳の医療保険加入者が対象。メタボリックシンドロームに着目。2008年開始。",
+    "choiceNotes": [
+     "40〜74歳が対象。",
+     "65歳からではなく40歳から。",
+     "75歳以上は後期高齢者医療制度。",
+     null
+    ],
+    "point": "特定健診＝40〜74歳。メタボ健診。2008年開始。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L02",
+    "key": "lg-02-14",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L02.audit.json#lg-02-14",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-02-15",
+   "legacy": {
+    "key": "2_15",
+    "chapter": 2,
+    "chapterName": "医療保険制度",
+    "index": 15,
+    "hash": "3d39facdd5e3c34d"
+   },
+   "subject": "S03",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "negative",
+   "question": "国民医療費に含まれないのはどれか。",
+   "choices": [
+    "正常分娩の費用",
+    "入院医療費",
+    "外来医療費",
+    "調剤医療費"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "国民医療費は傷病治療に要する費用の推計。正常分娩・健診・予防接種・差額ベッド代は含まれない。",
+    "choiceNotes": [
+     null,
+     "入院医療費は含まれる。",
+     "外来医療費は含まれる。",
+     "調剤医療費は含まれる。"
+    ],
+    "point": "国民医療費に含まれない＝正常分娩・健診・予防接種・差額ベッド。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L02",
+    "key": "lg-02-15",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L02.audit.json#lg-02-15",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-02-16",
+   "legacy": {
+    "key": "2_16",
+    "chapter": 2,
+    "chapterName": "医療保険制度",
+    "index": 16,
+    "hash": "155fe078dc1b29e9"
+   },
+   "subject": "S03",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "診療報酬請求の流れとして正しいのはどれか。",
+   "choices": [
+    "医療機関→保険者→審査支払機関→医療機関",
+    "医療機関→審査支払機関→保険者→審査支払機関→医療機関",
+    "患者→保険者→医療機関→審査支払機関",
+    "保険者→医療機関→患者→審査支払機関"
+   ],
+   "answer": 1,
+   "explanation": {
+    "correct": "①医療機関がレセプトを審査支払機関に提出→②審査し保険者に送付→③保険者が支払い→④医療機関に支払い。",
+    "choiceNotes": [
+     "直接保険者に請求するのではなく審査支払機関を介する。",
+     null,
+     "患者が起点ではない。",
+     "保険者から始まるのではない。"
+    ],
+    "point": "審査支払機関が中間に入る。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L02",
+    "key": "lg-02-16",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L02.audit.json#lg-02-16",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-02-17",
+   "legacy": {
+    "key": "2_17",
+    "chapter": 2,
+    "chapterName": "医療保険制度",
+    "index": 17,
+    "hash": "eafe1a40dce28ff2"
+   },
+   "subject": "S03",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "保険医と保険医療機関の登録・指定について正しいのはどれか。",
+   "choices": [
+    "ともに都道府県知事が指定",
+    "保険医は日本医師会が認定",
+    "保険医療機関は市区町村長が指定",
+    "保険医は厚生労働大臣の登録、保険医療機関は地方厚生局長の指定"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "保険医は厚労大臣の登録、保険医療機関は地方厚生局長の指定を受ける。",
+    "choiceNotes": [
+     "都道府県知事ではない。",
+     "日本医師会は職能団体であり登録機関ではない。",
+     "市区町村長に指定権限はない。",
+     null
+    ],
+    "point": "保険医＝厚労大臣「登録」。保険医療機関＝地方厚生局長「指定」。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L02",
+    "key": "lg-02-17",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L02.audit.json#lg-02-17",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-02-18",
+   "legacy": {
+    "key": "2_18",
+    "chapter": 2,
+    "chapterName": "医療保険制度",
+    "index": 18,
+    "hash": "a64a928b82d7eaea"
+   },
+   "subject": "S03",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "70〜74歳の自己負担割合として原則正しいのはどれか。",
+   "choices": [
+    "1割",
+    "3割",
+    "2割",
+    "5割"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "70〜74歳の高齢受給者は原則2割。現役並み所得者は3割。",
+    "choiceNotes": [
+     "1割は75歳以上の原則。",
+     "3割は70歳未満または現役並み所得者。",
+     null,
+     "5割の自己負担は存在しない。"
+    ],
+    "point": "〜6歳＝2割、〜69歳＝3割、70〜74歳＝2割、75歳〜＝1割。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L02",
+    "key": "lg-02-18",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L02.audit.json#lg-02-18",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-02-19",
+   "legacy": {
+    "key": "2_19",
+    "chapter": 2,
+    "chapterName": "医療保険制度",
+    "index": 19,
+    "hash": "0056199364e6a999"
+   },
+   "subject": "S03",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "訪問看護療養費について正しいのはどれか。",
+   "choices": [
+    "病院内の看護に対する費用",
+    "訪問看護ステーションからの訪問看護に対して支払われる療養費",
+    "通院付き添い看護の費用",
+    "看護師研修費の補助制度"
+   ],
+   "answer": 1,
+   "explanation": {
+    "correct": "訪問看護ステーションの看護師が居宅訪問して行う療養上の世話に対する保険給付。医師の指示書が必要。",
+    "choiceNotes": [
+     "病院内看護は入院基本料に含まれる。",
+     null,
+     "通院付き添いは対象外。",
+     "研修費補助ではない。"
+    ],
+    "point": "訪問看護療養費＝訪問看護ステーション。医師の指示書が必要。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L02",
+    "key": "lg-02-19",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L02.audit.json#lg-02-19",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-02-20",
+   "legacy": {
+    "key": "2_20",
+    "chapter": 2,
+    "chapterName": "医療保険制度",
+    "index": 20,
+    "hash": "b49ff0bfeaf6dd7a"
+   },
+   "subject": "S03",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "国保と社保の違いとして正しいのはどれか。",
+   "choices": [
+    "国保は会社員、社保は自営業者が加入",
+    "国保と社保は同一の保険者が運営",
+    "国保は任意加入で社保は強制加入",
+    "国保は自営業者等で市区町村が保険者、社保は被用者で協会けんぽ等が保険者"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "国保＝自営業者等・市区町村が保険者。社保＝会社員等・協会けんぽ等が保険者。",
+    "choiceNotes": [
+     "加入者が逆。",
+     "異なる保険者がそれぞれ運営。",
+     "ともに強制加入。",
+     null
+    ],
+    "point": "国保＝自営業・市区町村。社保＝被用者・協会けんぽ/健保組合。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L02",
+    "key": "lg-02-20",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L02.audit.json#lg-02-20",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-02-21",
+   "legacy": {
+    "key": "2_21",
+    "chapter": 2,
+    "chapterName": "医療保険制度",
+    "index": 21,
+    "hash": "69b8937866ddb215"
+   },
+   "subject": "S03",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "入院時食事療養費について正しいのはどれか。",
+   "choices": [
+    "入院中の食事代は全額自己負担",
+    "入院中の食事は保険給付対象で患者は標準負担額を自己負担",
+    "入院中の食事代は全額保険給付",
+    "外来患者にも適用される"
+   ],
+   "answer": 1,
+   "explanation": {
+    "correct": "入院時食事療養費は保険給付対象。患者は標準負担額（一般460円/食）を自己負担し残りが保険給付。",
+    "choiceNotes": [
+     "全額自己負担ではなく標準負担額を超える分は保険給付。",
+     null,
+     "全額保険給付ではなく標準負担額は自己負担。",
+     "入院患者のみが対象。"
+    ],
+    "point": "入院食事＝標準負担額460円/食は自己負担、残りは保険給付。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L02",
+    "key": "lg-02-21",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L02.audit.json#lg-02-21",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-02-22",
+   "legacy": {
+    "key": "2_22",
+    "chapter": 2,
+    "chapterName": "医療保険制度",
+    "index": 22,
+    "hash": "bb91ef0c86535949"
+   },
+   "subject": "S03",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "保険者の役割として正しいのはどれか。",
+   "choices": [
+    "保険料の徴収と保険給付の実施",
+    "診療行為の直接的な提供",
+    "診療報酬点数表の作成",
+    "医師国家試験の実施"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "保険者は保険料の徴収、被保険者証の交付、保険給付の実施が主な役割。",
+    "choiceNotes": [
+     null,
+     "診療行為の提供は医療機関の役割。",
+     "点数表は中医協の議論を経て厚労大臣が告示。",
+     "国家試験は厚労省の所管。"
+    ],
+    "point": "保険者＝保険料徴収・被保険者証交付・保険給付。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L02",
+    "key": "lg-02-22",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L02.audit.json#lg-02-22",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-02-23",
+   "legacy": {
+    "key": "2_23",
+    "chapter": 2,
+    "chapterName": "医療保険制度",
+    "index": 23,
+    "hash": "fe317d25592c6b40"
+   },
+   "subject": "S03",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "健康保険の保険料率の決定について正しいのはどれか。",
+   "choices": [
+    "全国一律で厚生労働大臣が決定する",
+    "各医療機関が独自に設定する",
+    "都道府県単位で協会けんぽが決定する",
+    "被保険者の年齢のみで決定する"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "協会けんぽの保険料率は都道府県単位で設定される。地域の医療費水準を反映するため都道府県ごとに異なる。",
+    "choiceNotes": [
+     "全国一律ではなく都道府県単位。組合健保は組合ごとに設定。",
+     "医療機関は保険料率の設定には関与しない。",
+     null,
+     "保険料率は年齢ではなく標準報酬月額に基づく。"
+    ],
+    "point": "協会けんぽ＝都道府県単位の保険料率。組合健保＝組合ごとに設定。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L02",
+    "key": "lg-02-23",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L02.audit.json#lg-02-23",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-02-24",
+   "legacy": {
+    "key": "2_24",
+    "chapter": 2,
+    "chapterName": "医療保険制度",
+    "index": 24,
+    "hash": "087699f47be32993"
+   },
+   "subject": "S03",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "健康保険の被扶養者の認定要件として正しいのはどれか。",
+   "choices": [
+    "年収130万円未満かつ被保険者の年収の2分の1未満",
+    "年収200万円未満であること",
+    "年齢が60歳未満であること",
+    "同一世帯に居住していること（例外なし）"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "被扶養者は原則として年収130万円未満かつ被保険者の年収の1/2未満が認定要件。60歳以上・障害者は180万円未満。",
+    "choiceNotes": [
+     null,
+     "基準は200万円ではなく130万円（60歳以上は180万円）。",
+     "年齢制限は75歳未満（後期高齢者医療制度移行）。60歳は収入基準の変更点。",
+     "直系尊属・配偶者・子等は別居でも認定可能な場合がある。"
+    ],
+    "point": "被扶養者認定＝年収130万円未満＋被保険者年収の1/2未満。60歳以上は180万円。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L02",
+    "key": "lg-02-24",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L02.audit.json#lg-02-24",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-02-25",
+   "legacy": {
+    "key": "2_25",
+    "chapter": 2,
+    "chapterName": "医療保険制度",
+    "index": 25,
+    "hash": "0c43d34418d8ce13"
+   },
+   "subject": "S03",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "negative",
+   "question": "療養の給付の範囲に含まれないものはどれか。",
+   "choices": [
+    "診察",
+    "正常分娩",
+    "薬剤の支給",
+    "入院時の食事"
+   ],
+   "answer": 1,
+   "explanation": {
+    "correct": "正常分娩は疾病ではないため療養の給付の対象外。出産育児一時金として別途支給される。",
+    "choiceNotes": [
+     "診察は療養の給付の基本的な内容に含まれる。",
+     null,
+     "薬剤の支給は治療に必要な給付に含まれる。",
+     "入院時の食事は入院時食事療養費として給付される。"
+    ],
+    "point": "療養の給付＝診察・薬剤・処置・手術・入院等。正常分娩・美容整形は対象外。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L02",
+    "key": "lg-02-25",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L02.audit.json#lg-02-25",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-02-26",
+   "legacy": {
+    "key": "2_26",
+    "chapter": 2,
+    "chapterName": "医療保険制度",
+    "index": 26,
+    "hash": "4eb68c2d8bca1b27"
+   },
+   "subject": "S03",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "入院時生活療養費の対象となるのはどれか。",
+   "choices": [
+    "一般病床に入院する65歳未満の者",
+    "療養病床に入院する65歳以上の者",
+    "すべての入院患者",
+    "外来通院中の患者"
+   ],
+   "answer": 1,
+   "explanation": {
+    "correct": "入院時生活療養費は療養病床に入院する65歳以上の患者が対象。食費と居住費について生活療養標準負担額を自己負担する。",
+    "choiceNotes": [
+     "一般病床の65歳未満は入院時食事療養費の対象。",
+     null,
+     "すべてではなく療養病床の65歳以上に限定。",
+     "外来患者は入院時生活療養費の対象外。"
+    ],
+    "point": "入院時生活療養費＝療養病床＋65歳以上。食費＋居住費の自己負担。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L02",
+    "key": "lg-02-26",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L02.audit.json#lg-02-26",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-02-27",
+   "legacy": {
+    "key": "2_27",
+    "chapter": 2,
+    "chapterName": "医療保険制度",
+    "index": 27,
+    "hash": "d815dcb514cc849f"
+   },
+   "subject": "S03",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "傷病手当金の支給期間として正しいのはどれか。",
+   "choices": [
+    "支給開始日から通算して1年6か月",
+    "支給開始日から通算して1年",
+    "支給開始日から連続して2年",
+    "支給開始日から連続して3年"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "傷病手当金は2022年1月から支給開始日から通算して1年6か月に改正された（従来は連続1年6か月）。",
+    "choiceNotes": [
+     null,
+     "1年ではなく1年6か月。",
+     "2年ではなく1年6か月。また2022年改正で「連続」から「通算」に変更。",
+     "3年ではなく1年6か月。"
+    ],
+    "point": "傷病手当金＝通算1年6か月（2022年改正）。支給額＝標準報酬日額の2/3。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L02",
+    "key": "lg-02-27",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L02.audit.json#lg-02-27",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-02-28",
+   "legacy": {
+    "key": "2_28",
+    "chapter": 2,
+    "chapterName": "医療保険制度",
+    "index": 28,
+    "hash": "8ffa261f12142da5"
+   },
+   "subject": "S03",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "出産育児一時金の支給額として正しいのはどれか（2023年4月以降）。",
+   "choices": [
+    "42万円",
+    "48.8万円",
+    "50万円",
+    "55万円"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "出産育児一時金は2023年4月から50万円に引き上げられた（従来は42万円）。",
+    "choiceNotes": [
+     "42万円は2023年3月までの金額。",
+     "48.8万円は産科医療補償制度加算込みの旧金額に近いが正確ではない。",
+     null,
+     "55万円は現行の支給額ではない。"
+    ],
+    "point": "出産育児一時金＝50万円（2023年4月〜）。旧額42万円からの増額。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L02",
+    "key": "lg-02-28",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L02.audit.json#lg-02-28",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-02-29",
+   "legacy": {
+    "key": "2_29",
+    "chapter": 2,
+    "chapterName": "医療保険制度",
+    "index": 29,
+    "hash": "5b3ba0d632065b83"
+   },
+   "subject": "S03",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "埋葬料（埋葬費）について正しいのはどれか。",
+   "choices": [
+    "健康保険では一律10万円が支給される",
+    "国民健康保険では全国一律の金額が定められている",
+    "健康保険では一律5万円が支給される",
+    "労災保険から支給される"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "健康保険の埋葬料は被保険者が死亡した場合に5万円が支給される。被扶養者死亡の場合は家族埋葬料として同額。",
+    "choiceNotes": [
+     "10万円ではなく5万円。",
+     "国民健康保険の葬祭費は市区町村により金額が異なる。",
+     null,
+     "業務上の死亡は労災だが、埋葬料は健康保険の給付。"
+    ],
+    "point": "埋葬料＝5万円（健康保険）。国保の葬祭費は自治体により異なる。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L02",
+    "key": "lg-02-29",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L02.audit.json#lg-02-29",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-02-30",
+   "legacy": {
+    "key": "2_30",
+    "chapter": 2,
+    "chapterName": "医療保険制度",
+    "index": 30,
+    "hash": "d8176e021fc99a67"
+   },
+   "subject": "S03",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "国民医療費の財源構成で最も大きい割合を占めるのはどれか。",
+   "choices": [
+    "公費（国庫＋地方）",
+    "患者負担（自己負担）",
+    "事業主負担",
+    "保険料（被保険者負担）"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "国民医療費の財源は公費（国庫負担＋地方負担）が約38%で最大。保険料が約49%（事業主＋被保険者）、患者負担が約12%。",
+    "choiceNotes": [
+     null,
+     "患者負担は約12%で最も小さい。",
+     "事業主負担は保険料の一部で約21%程度。",
+     "被保険者の保険料負担は約28%程度で公費より小さい。"
+    ],
+    "point": "国民医療費の財源＝保険料約49%＞公費約38%＞患者負担約12%。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L02",
+    "key": "lg-02-30",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L02.audit.json#lg-02-30",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-02-31",
+   "legacy": {
+    "key": "2_31",
+    "chapter": 2,
+    "chapterName": "医療保険制度",
+    "index": 31,
+    "hash": "b9a186fe913d670c"
+   },
+   "subject": "S03",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "negative",
+   "question": "社会保障制度の4つの柱に含まれないものはどれか。",
+   "choices": [
+    "医療提供",
+    "社会保険",
+    "公的扶助",
+    "社会福祉"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "社会保障制度の4つの柱は社会保険・公的扶助・社会福祉・公衆衛生。医療提供は社会保障の柱には含まれない。",
+    "choiceNotes": [
+     null,
+     "社会保険（医療・年金・介護・雇用・労災）は社会保障の中核。",
+     "公的扶助は生活保護法に基づく制度。",
+     "社会福祉は児童・障害者・高齢者等への福祉サービス。"
+    ],
+    "point": "社会保障4本柱＝社会保険・公的扶助・社会福祉・公衆衛生。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L02",
+    "key": "lg-02-31",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L02.audit.json#lg-02-31",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-03-09",
+   "legacy": {
+    "key": "3_9",
+    "chapter": 3,
+    "chapterName": "医療関連法規",
+    "index": 9,
+    "hash": "7337e363bfa5dc24"
+   },
+   "subject": "S03",
+   "subtopic": "保険医療機関と療養担当規則",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "処方箋の使用期間として原則正しいのはどれか。",
+   "choices": [
+    "交付日含め4日以内",
+    "交付日含め7日以内",
+    "14日以内",
+    "30日以内"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "処方箋の使用期間は交付の日を含めて4日以内（療養担当規則）。",
+    "choiceNotes": [
+     null,
+     "7日以内ではなく4日以内。",
+     "14日以内ではない。",
+     "30日以内ではない。"
+    ],
+    "point": "処方箋有効期限＝交付日含め4日。"
+   },
+   "sources": [
+    {
+     "ref": "law:保険医療機関及び保険医療養担当規則",
+     "title": "保険医療機関及び保険医療養担当規則",
+     "url": "https://laws.e-gov.go.jp/law/332M50000100015",
+     "locator": "第20条第3号イ",
+     "quote": "処方箋の使用期間は、交付の日を含めて四日以内とする。ただし、長期の旅行等特殊の事情があると認められる場合は、この限りでない。"
+    }
+   ],
+   "asOf": "2026-11 e-Gov現行法令",
+   "origin": {
+    "batch": "L03",
+    "key": "lg-03-09",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "領域監査（法令・制度）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L03（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L03a（法令・制度）"
+    },
+    "log": "bank/audit/legacy-L03a.audit.json#lg-03-09",
+    "notes": "療担20条3号イ（2026-06-01施行版）を確認。設問の「原則」で例外にも対応。"
+   }
+  },
+  {
+   "id": "lg-09-29",
+   "legacy": {
+    "key": "9_29",
+    "chapter": 9,
+    "chapterName": "診療情報管理II（コーディング）",
+    "index": 29,
+    "hash": "902862ec862dc760"
+   },
+   "subject": "S03",
+   "subtopic": "診療報酬制度",
+   "format": "knowledge",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "医科診療報酬点数表において、同一手術野又は同一病巣につき2以上の手術を同時に行った場合の算定の原則として、正しいものはどれか。",
+   "choices": [
+    "すべての手術の所定点数を合算する",
+    "所定点数の最も低い手術のみを算定する",
+    "いずれの手術も算定しない",
+    "主たる手術の所定点数のみにより算定する"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "手術の通則14により、同一手術野又は同一病巣につき2以上の手術を同時に行った場合は、主たる手術の所定点数のみにより算定する。「主たる手術」とは、所定点数及び注による加算点数を合算した点数の高い手術をいう。ただし「複数手術に係る費用の特例」に該当する組合せは、主たる手術の所定点数に従たる手術（1つに限る）の所定点数の100分の50を加えて算定する。",
+    "choiceNotes": [
+     "原則として合算しない。例外（複数手術の特例）でも、従たる手術1つの100分の50の加算にとどまる。",
+     "主たる手術は点数の高い方であり、低い方ではない。",
+     "実施した手術は算定する。原則は主たる手術の所定点数のみによる算定である。",
+     null
+    ],
+    "point": "同一手術野・同一病巣の2以上の手術＝主たる手術（点数の高い方）のみ算定。特例は従たる手術1つの50/100を加算。"
+   },
+   "sources": [
+    {
+     "ref": "ins:r08-ika-tensuhyo",
+     "title": "診療報酬の算定方法の一部を改正する件（令和８年厚生労働省告示第69号）別表第一 医科診療報酬点数表",
+     "url": "https://www.mhlw.go.jp/content/12400000/001686842.pdf",
+     "locator": "第2章第10部 手術 通則14",
+     "quote": "同一手術野又は同一病巣につき、２以上の手術を同時に行った場合の費用の算定は、主たる 手術の所定点数のみにより算定する。"
+    },
+    {
+     "ref": "ins:r08-ika-ryuijiko",
+     "title": "診療報酬の算定方法の一部改正に伴う実施上の留意事項について（令和８年３月５日保医発0305第６号）別添１ 医科診療報酬点数表に関する事項",
+     "url": "https://www.mhlw.go.jp/content/12400000/001757385.pdf",
+     "locator": "第2章第10部 手術 通則19(1)",
+     "quote": "「主たる手術」とは、所 定点数及び注による加算点数を合算した点数の高い手術をいう。"
+    },
+    {
+     "ref": "ins:r08-ika-ryuijiko",
+     "title": "診療報酬の算定方法の一部改正に伴う実施上の留意事項について（令和８年３月５日保医発0305第６号）別添１ 医科診療報酬点数表に関する事項",
+     "url": "https://www.mhlw.go.jp/content/12400000/001757385.pdf",
+     "locator": "第2章第10部 手術 通則19(3)",
+     "quote": "主たる手術の所定点数に、従たる手術（１ つに限る。）の所定点数の 100 分の 50 に相当する額を加えた点数により算定する。"
+    }
+   ],
+   "asOf": "令和8年度診療報酬改定（令和8年6月1日適用）",
+   "origin": {
+    "batch": "L09",
+    "key": "lg-09-29",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（ICD-10専門）で修正",
+     "修正後の再監査は未実施",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L09（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L09b（ICD-10専門）",
+     "reauditor": null
+    },
+    "log": "bank/audit/legacy-L09b.audit.json#lg-09-29",
+    "notes": "ins:r08-ika-tensuhyo 第2章第10部手術 通則14；ins:r08-ika-ryuijiko 第10部手術 通則19(1)（主たる手術＝所定点数及び注加算の合算が高い手術）・(3)（複数手術の特例：従たる手術1つの100分の50）。"
+   }
+  }
+ ]
+}

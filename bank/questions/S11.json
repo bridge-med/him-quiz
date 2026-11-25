@@ -1,0 +1,2149 @@
+{
+ "subject": "S11",
+ "questions": [
+  {
+   "id": "lg-09-00",
+   "legacy": {
+    "key": "9_0",
+    "chapter": 9,
+    "chapterName": "診療情報管理II（コーディング）",
+    "index": 0,
+    "hash": "086088d764f244d0"
+   },
+   "subject": "S11",
+   "subtopic": "ICD-10の構成",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "ICD-10（2013年版）の分類コードの構成として正しいものはどれか。",
+   "choices": [
+    "数字のみの3桁コードを基本とし、小数点の後の第4桁で細分する",
+    "アルファベット1文字＋数字2文字の3桁分類項目を基本とする",
+    "アルファベット3文字のコードを基本とする",
+    "数字2文字＋アルファベット1文字の3桁分類項目を基本とする",
+    "数字のみの5桁コードを基本とする"
+   ],
+   "answer": 1,
+   "explanation": {
+    "correct": "ICD-10の分類項目は、3桁分類（アルファベット1文字＋数字2文字）と、より詳細な4桁分類（アルファベット1文字＋数字3文字）からなる。第1桁がアルファベット、第2〜4桁が数字の英数字コードで、第4桁は小数点の後に続く（例：A00.0）。",
+    "choiceNotes": [
+     "数字のみのコーディング・システムはICD-9の方式。ICD-10では第1桁にアルファベットを用いる。",
+     null,
+     "アルファベットは第1桁の1文字だけで、第2・3桁は数字である。",
+     "アルファベットは末尾ではなく第1桁に置かれる。",
+     "数字のみの5桁コードではない。3桁分類項目と、小数点の後の第4桁による4桁細分類項目からなる。"
+    ],
+    "point": "ICD-10＝アルファベット1文字＋数字2文字（3桁分類）、小数点の後の第4桁で細分（例：A00.0）。"
+   },
+   "sources": [
+    {
+     "ref": "icd:rikai",
+     "title": "疾病、傷害及び死因の統計分類の正しい理解と普及に向けて（ICD-10（2013年版）準拠）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/ICD-10_2013_2802.pdf",
+     "locator": "2 ICDの構成",
+     "quote": "３桁分類（アルファベット １文字＋数字２文字）と、より詳細な分類である４桁分類（アルファベット１文字＋数字３ 文字）からなっています"
+    },
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "2.4 ICD分類の基本構造及び基本原則",
+     "quote": "ICD-9 の純粋に数字だけの コーディング・システムの代わりに、ICD-10 では、第１桁にアルファベット文字、 第２、３及び４桁に数字からなる英数字コードが使われている。第４桁は、小数点の 後に続いている。"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "origin": {
+    "batch": "L09",
+    "key": "lg-09-00",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（ICD-10専門）で修正",
+     "修正後の再監査は未実施",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L09（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L09a（ICD-10専門）",
+     "reauditor": null
+    },
+    "log": "bank/audit/legacy-L09a.audit.json#lg-09-00",
+    "notes": "icd:rikai（3桁/4桁分類の構成）・icd:instruction 2.4で確認。"
+   }
+  },
+  {
+   "id": "lg-09-01",
+   "legacy": {
+    "key": "9_1",
+    "chapter": 9,
+    "chapterName": "診療情報管理II（コーディング）",
+    "index": 1,
+    "hash": "7cb280c01cf9c6cf"
+   },
+   "subject": "S11",
+   "subtopic": "ICD-10の構成",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "ICD-10（2013年版）の内容例示表は、いくつの章で構成されているか。",
+   "choices": [
+    "17章",
+    "21章",
+    "22章",
+    "24章",
+    "26章"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "現行のICD-10（2013年版）は22の章から構成されている。発効当初のICD-10は21章であったが、セカンドエディション以降は第ⅩⅩⅡ章「特殊目的用コード」を加えた22章となっている。",
+    "choiceNotes": [
+     "17章はICD-9の内容例示表の章構成。ICD-10で21章に拡大された。",
+     "21章はICD-10発効当初の章構成。セカンドエディションから22章になっている。",
+     null,
+     "現行のICD-10は22章構成であり、24章ではない。",
+     "現行のICD-10は22章構成であり、26章ではない。"
+    ],
+    "point": "ICD-10（2013年版）＝22章。第ⅩⅩⅡ章は特殊目的用コード。"
+   },
+   "sources": [
+    {
+     "ref": "icd:rikai",
+     "title": "疾病、傷害及び死因の統計分類の正しい理解と普及に向けて（ICD-10（2013年版）準拠）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/ICD-10_2013_2802.pdf",
+     "locator": "ICD-10の分類の構成",
+     "quote": "現行の ICD-10 は、22 の章から構成されており"
+    },
+    {
+     "ref": "icd:rikai",
+     "title": "疾病、傷害及び死因の統計分類の正しい理解と普及に向けて（ICD-10（2013年版）準拠）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/ICD-10_2013_2802.pdf",
+     "locator": "ICDの改訂の歴史（第10回）",
+     "quote": "内容例示表の章構成が 17 章から 21 章＊に拡大し"
+    },
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "2.4.1 書籍",
+     "quote": "４桁レベルの詳細な分類をすべて含んでいる内容例示表は、 22 章に分けられている。"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "origin": {
+    "batch": "L09",
+    "key": "lg-09-01",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（ICD-10専門）で修正",
+     "修正後の再監査は未実施",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L09（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L09a（ICD-10専門）",
+     "reauditor": null
+    },
+    "log": "bank/audit/legacy-L09a.audit.json#lg-09-01",
+    "notes": "icd:rikai（22の章／17章→21章、セカンドエディションから22章）・icd:instruction 2.4.1で確認。ソルバーも21章を誤りと指摘。"
+   }
+  },
+  {
+   "id": "lg-09-04",
+   "legacy": {
+    "key": "9_4",
+    "chapter": 9,
+    "chapterName": "診療情報管理II（コーディング）",
+    "index": 4,
+    "hash": "5d23c3c36a376e86"
+   },
+   "subject": "S11",
+   "subtopic": "剣印・星印分類",
+   "format": "knowledge",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "ICD-10の剣印（†）及び星印（＊）システムについて、正しいものはどれか。",
+   "choices": [
+    "剣印は症状発現、星印は原疾患（基礎疾患）に対するコードである",
+    "星印コードは単独で一次コードとして使用できる",
+    "剣印は原疾患（基礎疾患）、星印は症状発現に対するコードである",
+    "剣印コードは任意的追加コードであり、省略してよい",
+    "剣印と星印は同じ意味で、どちらを付けてもよい"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "剣印（†）は原疾患（基礎疾患）に対する一次コード、星印（＊）は特定の臓器又は部位における症状発現に対する任意的追加コードである。剣印コードは常に使用しなければならず、星印コードは決して単独で使用してはならない。",
+    "choiceNotes": [
+     "逆である。剣印が原疾患、星印が症状発現。",
+     "コーディングには、星印コードは決して単独で使用してはならない。",
+     null,
+     "任意的追加コードなのは星印コード。剣印コードは一次コードで、常に使用しなければならない。",
+     "剣印と星印は役割が異なる（原疾患と症状発現）。"
+    ],
+    "point": "†＝原疾患（一次コード・常に使用）、＊＝症状発現（任意的追加コード・単独使用不可）。"
+   },
+   "sources": [
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "3.1.3 病態に対する二つのコード（剣印及び星印システム）",
+     "quote": "一次コードは、原疾患（基礎疾患）に対するものであり、剣印（†）が付けられて いる；症状発現に対する任意的追加コードには、星印（＊）が付けられている。"
+    },
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "3.1.3 病態に対する二つのコード（剣印及び星印システム）",
+     "quote": "剣印コードが一次コードであって、剣印コードを常に使用しな ければならないというのが ICD の原則である。コーディングには、星印コードは決 して単独で使用してはならない。"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "origin": {
+    "batch": "L09",
+    "key": "lg-09-04",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（ICD-10専門）で修正",
+     "修正後の再監査は未実施",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L09（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L09a（ICD-10専門）",
+     "reauditor": null
+    },
+    "log": "bank/audit/legacy-L09a.audit.json#lg-09-04",
+    "notes": "icd:instruction「剣印及び星印」システム（l.1024-1048）で確認。"
+   }
+  },
+  {
+   "id": "lg-09-09",
+   "legacy": {
+    "key": "9_9",
+    "chapter": 9,
+    "chapterName": "診療情報管理II（コーディング）",
+    "index": 9,
+    "hash": "78aa078c734bee94"
+   },
+   "subject": "S11",
+   "subtopic": "ICD-11・ICF・ICD-O",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "ICD-O（国際疾病分類－腫瘍学）について、正しいものはどれか。",
+   "choices": [
+    "局在（部位）のみを1軸でコード化する分類である",
+    "名称の「O」は眼科（Ophthalmology）を意味する",
+    "精神及び行動の障害を詳細にコード化する分類である",
+    "局在（部位）と形態（組織型）の2軸でコード化する分類である",
+    "生活機能と障害をコード化する分類である"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "ICD-O（International Classification of Diseases for Oncology）は、局在（部位）及び形態（組織型）の両者によるコーディング・システムをもった2軸分類で、がん登録などで用いられる。",
+    "choiceNotes": [
+     "局在だけでなく形態（組織型）もコード化する2軸分類である。",
+     "「O」はOncology（腫瘍学）を意味する。",
+     "ICD-Oは腫瘍（新生物）をコード化する分類で、精神及び行動の障害の分類ではない。",
+     null,
+     "生活機能と障害を分類するのはICF（国際生活機能分類）。ICD-Oは腫瘍の分類である。"
+    ],
+    "point": "ICD-O＝腫瘍学（Oncology）の分類。局在（部位）＋形態（組織型）の2軸。がん登録で使用。"
+   },
+   "sources": [
+    {
+     "ref": "cancer:glossary-kokusaisippeibunruisyuyougaku",
+     "title": "がん統計の用語集：国際疾病分類-腫瘍学［ICD-O］",
+     "url": "https://ganjoho.jp/reg_stat/statistics/qa_words/word/kokusaisippeibunruisyuyougaku.html",
+     "locator": "用語解説",
+     "quote": "がん（新生物）の登録に使用されるコード。部位（局在）や組織型（形態）をコード化するために整理されたもので、ICD-O と略します（OはOncology腫瘍学）。"
+    },
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "2.2.1 診断関連分類（腫瘍学）",
+     "quote": "ICD-O は、局在及び形態の両者によるコーディング・システムをもっ た２軸分類である。"
+    }
+   ],
+   "asOf": "ICD-O第3版（ICD-O-3）・ICD-10（2013年版）準拠インストラクションマニュアル",
+   "origin": {
+    "batch": "L09",
+    "key": "lg-09-09",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（ICD-10専門）で修正",
+     "修正後の再監査は未実施",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L09（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L09a（ICD-10専門）",
+     "reauditor": null
+    },
+    "log": "bank/audit/legacy-L09a.audit.json#lg-09-09",
+    "notes": "cancer:glossary-kokusaisippeibunruisyuyougaku（がん登録用、部位（局在）・組織型（形態）、O＝Oncology）・icd:instruction 腫瘍学の項（局在及び形態の2軸分類、がん登録で使用）で確認。"
+   }
+  },
+  {
+   "id": "lg-09-12",
+   "legacy": {
+    "key": "9_12",
+    "chapter": 9,
+    "chapterName": "診療情報管理II（コーディング）",
+    "index": 12,
+    "hash": "3c57276bc0412d8f"
+   },
+   "subject": "S11",
+   "subtopic": "死因統計と原死因の選択",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "死因統計における「原死因」の定義（⒜疾病又は損傷に関する部分）として、正しいものはどれか。",
+   "choices": [
+    "死亡直前に存在し、直接に死亡を引き起こした疾病又は病態",
+    "直接に死亡を引き起こした一連の事象の起因となった疾病又は損傷",
+    "死亡時に存在した疾病のうち、最も罹病期間が長かった疾病",
+    "死亡に至る経過中に最後に診断された疾病又は合併症"
+   ],
+   "answer": 1,
+   "explanation": {
+    "correct": "原死因は、⒜直接に死亡を引き起こした一連の事象の起因となった疾病又は損傷、⒝致命傷を負わせた事故又は暴力の状況、と定義されている。死亡の防止という公衆衛生の観点から、一次製表の死因として用いる。",
+    "choiceNotes": [
+     "直接に死亡を引き起こした病態は、一連の事象の終点（直接死因）であり、原死因はその起因となった疾病又は損傷。",
+     null,
+     "罹病期間の長さは原死因の定義に含まれない。",
+     "最後に診断されたかどうかは原死因の定義に含まれない。"
+    ],
+    "point": "原死因＝死亡に至る一連の事象の起点となった疾病又は損傷（⒜）、又は致命傷を負わせた事故・暴力の状況（⒝）。"
+   },
+   "sources": [
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "4.1.2 原死因",
+     "quote": "直接に死亡を引き起こした一連の事象の起因となった疾病又は損傷"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "origin": {
+    "batch": "L09",
+    "key": "lg-09-12",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（ICD-10専門）で修正",
+     "修正後の再監査は未実施",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L09（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L09a（ICD-10専門）",
+     "reauditor": null
+    },
+    "log": "bank/audit/legacy-L09a.audit.json#lg-09-12",
+    "notes": "icd:instruction 4.1.2 原死因の定義（⒜疾病又は損傷、⒝致命傷を負わせた事故又は暴力の状況）で確認。"
+   }
+  },
+  {
+   "id": "lg-09-15",
+   "legacy": {
+    "key": "9_15",
+    "chapter": 9,
+    "chapterName": "診療情報管理II（コーディング）",
+    "index": 15,
+    "hash": "a2c34241f9fee213"
+   },
+   "subject": "S11",
+   "subtopic": "索引表の使い方",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "ICD-10の索引表（第3巻）と内容例示表（第1巻）を用いたコーディングの手順として、正しいものはどれか。",
+   "choices": [
+    "索引表で疾患名からコードを検索し、内容例示表で確認する",
+    "内容例示表で疾患名からコードを検索し、索引表で確認する",
+    "索引表に記載されたコードは、内容例示表を確認せずにそのまま用いる",
+    "内容例示表だけを用い、索引表は使用しない",
+    "索引表と内容例示表は同一の内容で、どちらか一方を参照すればよい"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "索引表は診断書の記載をコードする場合に最初に参照するべきもので、選ばれたコード番号が適切かどうかを内容例示表で確かめる。コードを付ける前に索引表及び内容例示表の両方を参照しなければならない。",
+    "choiceNotes": [
+     null,
+     "順序が逆。最初に索引表を参照し、内容例示表で確認する。",
+     "選ばれたコード番号が適切かどうか、内容例示表を参照して確かめる（包含・除外の指示にも従う）。",
+     "索引表は内容例示表に含まれていない多くの用語を含んでおり、両方を参照しなければならない。",
+     "両者は別の巻で内容も異なる（第1巻＝内容例示表、第3巻＝索引表）。両方を参照する。"
+    ],
+    "point": "コーディング手順＝索引表（第3巻）で検索→内容例示表（第1巻）で確認。必ず両方を参照する。"
+   },
+   "sources": [
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "3.3 基本的コーディング・ガイドライン",
+     "quote": "コーディングする場合は、コードを付ける前に索引表及び内容例示表の両方を参照しなけ ればならない。"
+    },
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "3.3 基本的コーディング・ガイドライン（手順6）",
+     "quote": "選ばれたコード番号が適切であるかどうかを確かめるために、内容例示表を参 照する。"
+    },
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "3.1.2 包含用語の例示及び４桁細分類項目の利用",
+     "quote": "索引表は、示された診断書の記載をコードする場合には、最初に参照するべき である。"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "origin": {
+    "batch": "L09",
+    "key": "lg-09-15",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（ICD-10専門）で修正",
+     "修正後の再監査は未実施",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L09（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L09a（ICD-10専門）",
+     "reauditor": null
+    },
+    "log": "bank/audit/legacy-L09a.audit.json#lg-09-15",
+    "notes": "icd:instruction 3.3（索引表を先に参照→手順6で内容例示表で確認、両方を参照）、2.4.1（第1巻＝内容例示表、第3巻＝索引）、3.1.2（索引表は最初に参照するべき）で確認。"
+   }
+  },
+  {
+   "id": "lg-09-18",
+   "legacy": {
+    "key": "9_18",
+    "chapter": 9,
+    "chapterName": "診療情報管理II（コーディング）",
+    "index": 18,
+    "hash": "bbfa9304665d2ab1"
+   },
+   "subject": "S11",
+   "subtopic": "ICD-11・ICF・ICD-O",
+   "format": "knowledge",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "ICD-11について正しいものはどれか。",
+   "choices": [
+    "1990年の第43回世界保健総会で採択された。",
+    "WHOにおける発効日は2027年1月1日である。",
+    "日本国内の統計のためだけに作成された分類である。",
+    "2019年5月の第72回世界保健総会で採択された。",
+    "紙媒体での利用を前提として設計されている。"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "ICD-11は2018年6月に公表され、2019年5月の第72回世界保健総会（決議WHA72.15）で採択され、2022年1月1日に発効した。",
+    "choiceNotes": [
+     "1990年の第43回世界保健総会で採択されたのはICD-10である。",
+     "WHOにおけるICD-11の発効は2022年1月1日である。2027年1月1日は、わが国でICD-11準拠の統計分類（令和8年総務省告示第11号）が施行される日である。",
+     "ICD-11は世界保健総会で採択されたWHOの国際分類である。",
+     null,
+     "ICD-11は電子カルテ等のデジタル環境での利用を前提に設計されている。"
+    ],
+    "point": "ICD-11＝2019年5月WHA72で採択・2022年1月1日発効。ICD-10＝1990年WHA43で採択。"
+   },
+   "sources": [
+    {
+     "ref": "icdbg:mhlw-icd11-overview",
+     "title": "ICD-11の概要",
+     "url": "https://www.mhlw.go.jp/content/10700000/001642765.pdf",
+     "locator": "ICD-11の概要（改訂の経緯）",
+     "quote": "2019年 ５月 第72回WHO世界保健総会（WHA）で採択 2022年 1月 ICD-11 発効"
+    },
+    {
+     "ref": "who:wha72-15",
+     "title": "WHA72.15 Eleventh revision of the International Classification of Diseases",
+     "url": "https://cdn.who.int/media/docs/default-source/classification/icd/icd11/a72_29-en_icd-11-adoption.pdf?sfvrsn=d10b6c4_10&download=true",
+     "locator": "WHA72.15 前文",
+     "quote": "Forty-third World Health Assembly on 17 May 1990, adopting the tenth revision of the International Classification of Diseases"
+    },
+    {
+     "ref": "who:icd11-fact-sheet-2026",
+     "title": "ICD-11 Fact Sheet",
+     "url": "https://cdn.who.int/media/docs/default-source/classification/icd/icd11/icd11_fact_sheet_2026.pdf?sfvrsn=fa9749d0_9&download=true",
+     "locator": "Fact sheet（Digitally native）",
+     "quote": "ICD-11 is designed for integration into electronic health records"
+    }
+   ],
+   "asOf": "2026-11（WHO決議・ファクトシート、厚生労働省資料）",
+   "origin": {
+    "batch": "L09",
+    "key": "lg-09-18",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（ICD-10専門）で修正",
+     "修正後の再監査は未実施",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L09（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L09b（ICD-10専門）",
+     "reauditor": null
+    },
+    "log": "bank/audit/legacy-L09b.audit.json#lg-09-18",
+    "notes": "icdbg:mhlw-icd11-overview 年表（2019年5月 WHA72採択、2022年1月発効）；who:wha72-15 前文（1990年 第43回WHAでICD-10採択）；who:icd11-fact-sheet-2026（Digitally native）；icdbg:soumu-kokuji-r08-11（令和9年1月1日施行）も確認。"
+   }
+  },
+  {
+   "id": "lg-09-26",
+   "legacy": {
+    "key": "9_26",
+    "chapter": 9,
+    "chapterName": "診療情報管理II（コーディング）",
+    "index": 26,
+    "hash": "97c0be34d2af8923"
+   },
+   "subject": "S11",
+   "subtopic": "疾病統計と主要病態の選択",
+   "format": "knowledge",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "ICD-10（2013年版）の疾病統計（単一病態分析）における主要病態の選択について、正しいものはどれか。",
+   "choices": [
+    "保健ケアのエピソードの最初に診断された病態を選択する",
+    "該当する病態が多数ある場合は、最も医療資源が使われた病態を選択する",
+    "該当する病態が多数ある場合は、最も軽症の病態を選択する",
+    "該当する病態が多数ある場合は、コード番号が最も小さい病態を選択する",
+    "診断がつかなかった場合は、主要病態を記載しない"
+   ],
+   "answer": 1,
+   "explanation": {
+    "correct": "主要病態は、主として患者の治療又は検査に対する必要性にもとづく、保健ケアのエピソードの最後に診断された病態と定義され、そのような病態が多数ある場合には、最も医療資源が使われた病態を選択する。",
+    "choiceNotes": [
+     "主要病態はエピソードの最後に診断された病態であり、最初に診断された病態ではない。",
+     null,
+     "重症度の軽さは選択基準ではなく、最も医療資源が使われた病態を選択する。",
+     "コード番号の大小は選択基準ではない。",
+     "診断がなされなかった場合は、主要症状又は異常な所見もしくは問題を主要病態として選択する。"
+    ],
+    "point": "主要病態＝エピソードの最後に診断／治療・検査の必要性の主因／複数なら最も医療資源が使われたもの／未診断なら主要症状・異常所見。"
+   },
+   "sources": [
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "4.4.1 主要病態の定義",
+     "quote": "保健ケアのエピソードの最後に診断された病態であると定 義される"
+    },
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "4.4.1 主要病態の定義",
+     "quote": "もしそのような病態が多数ある場合には、もっとも医療資源が使われた病 態を選択すべきである。もし診断がなされなかった場合は、主要症状又は異常な所見 もしくは問題を主要病態として選択すべきである。"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "origin": {
+    "batch": "L09",
+    "key": "lg-09-26",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（ICD-10専門）で修正",
+     "修正後の再監査は未実施",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L09（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L09b（ICD-10専門）",
+     "reauditor": null
+    },
+    "log": "bank/audit/legacy-L09b.audit.json#lg-09-26",
+    "notes": "icd:instruction 4.4.1（主要病態の定義：エピソードの最後に診断、多数あれば最も医療資源が使われた病態、未診断なら主要症状・異常所見）。"
+   }
+  },
+  {
+   "id": "lg-09-27",
+   "legacy": {
+    "key": "9_27",
+    "chapter": 9,
+    "chapterName": "診療情報管理II（コーディング）",
+    "index": 27,
+    "hash": "e7743d26fb9c6128"
+   },
+   "subject": "S11",
+   "subtopic": "分類の規約と用語",
+   "format": "icd",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "ICD-10（2013年版）で、「…の続発・後遺症」を示す分類項目はどれか。",
+   "choices": [
+    "I63",
+    "I69",
+    "G81",
+    "Z54",
+    "T14"
+   ],
+   "answer": 1,
+   "explanation": {
+    "correct": "続発・後遺症の分類項目は、B90－B94，E64.-，E68，G09，I69.-，O97，T90－T98，Y85－Y89で、もはや活動期にはない病態の続発・後遺症を示す。I69は脳血管疾患の続発・後遺症である。なお疾病コーディングでは、主要病態の優先コードは続発・後遺症それ自身の性質（例：片麻痺）のコードで、「…の続発・後遺症」のコードは任意的追加コードとして使用してよい。",
+    "choiceNotes": [
+     "I63は脳梗塞で、活動期の病態を分類する。",
+     null,
+     "G81は片麻痺で、続発・後遺症の性質を示すコードにはなりうるが、「…の続発・後遺症」の分類項目ではない。",
+     "Z54は回復期で、続発・後遺症の分類項目ではない。",
+     "T14は部位不明の損傷である。損傷の続発・後遺症はT90－T98に分類する。"
+    ],
+    "point": "続発・後遺症＝B90－B94，E64，E68，G09，I69，O97，T90－T98，Y85－Y89。疾病では後遺症そのものの性質を優先コードとする。"
+   },
+   "sources": [
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "3.1.6 続発・後遺症の分類項目",
+     "quote": "下記の分類項目は、もはや活動期にはない病態の続発・後遺症である： B90 － B94，E64.-，E68，G09，I69.-，O97，T90 － T98，Y85 － Y89"
+    },
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "4.4.2 病態の続発・後遺症のコーディング",
+     "quote": "しかし、「主要病態」に対する優先コードは、続発・後遺症それ自身 の性質に対するコードであり"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "origin": {
+    "batch": "L09",
+    "key": "lg-09-27",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（ICD-10専門）で修正",
+     "修正後の再監査は未実施",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L09（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L09b（ICD-10専門）",
+     "reauditor": null
+    },
+    "log": "bank/audit/legacy-L09b.audit.json#lg-09-27",
+    "notes": "icd:instruction 3.1.6 続発・後遺症の分類項目（B90－B94，E64.-，E68，G09，I69.-，O97，T90－T98，Y85－Y89）、4.4.2 病態の続発・後遺症のコーディング（主要病態の優先コードは続発・後遺症それ自身の性質）。"
+   }
+  },
+  {
+   "id": "lg-09-31",
+   "legacy": {
+    "key": "9_31",
+    "chapter": 9,
+    "chapterName": "診療情報管理II（コーディング）",
+    "index": 31,
+    "hash": "964816ecbde4f18e"
+   },
+   "subject": "S11",
+   "subtopic": "剣印・星印分類",
+   "format": "knowledge",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "ICD-10の剣印（†）及び星印（＊）システムについて、正しいものはどれか。",
+   "choices": [
+    "一つの病態には、常に一つのコードのみを付与する",
+    "原疾患に剣印コード、臓器・部位の症状発現に星印コードを付与する",
+    "星印コードは、死亡統計の原死因コーディングに用いられる",
+    "剣印コードは、必要に応じて付ける任意的な追加コードである",
+    "星印コードは、剣印コードを伴わずに単独で使用してよい"
+   ],
+   "answer": 1,
+   "explanation": {
+    "correct": "剣印及び星印システムでは、原因となる全身疾患（原疾患）に対する一次コードに剣印（†）が、特定の臓器又は部位における症状発現に対する任意的追加コードに星印（＊）が付けられる。例：2型糖尿病による糖尿病性腎症＝E11.2†＋N08.3*。",
+    "choiceNotes": [
+     "剣印及び星印システムは、一つの病態に二つのコードを用いる仕組みである。",
+     null,
+     "星印コードは死亡コーディングには使用されない。",
+     "剣印コードが一次コードであり、常に使用しなければならない。任意的追加コードは星印コードである。",
+     "星印コードは決して単独で使用してはならない（疾病コーディングで症状発現が診療の主たる対象である場合に剣印と星印を逆転させることは認められている）。"
+    ],
+    "point": "†＝原疾患の一次コード（必須）、＊＝症状発現の任意的追加コード（単独使用不可・死亡コーディングに使わない）。例：E11.2†＋N08.3*。"
+   },
+   "sources": [
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "3.1.3 病態に対する二つのコード（剣印及び星印システム）",
+     "quote": "一次コードは、原疾患（基礎疾患）に対するものであり、剣印（†）が付けられて いる；症状発現に対する任意的追加コードには、星印（＊）が付けられている。"
+    },
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "3.1.3 病態に対する二つのコード（剣印及び星印システム）",
+     "quote": "コーディングには、星印コードは決 して単独で使用してはならない。"
+    },
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "4.1 表２ 死亡コーディングには使用されないコードの表（注）",
+     "quote": "星印コードに加えて死亡コーディングに使用されないもの（3.1.3 節を参照）"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "origin": {
+    "batch": "L09",
+    "key": "lg-09-31",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（ICD-10専門）で修正",
+     "修正後の再監査は未実施",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L09（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L09b（ICD-10専門）",
+     "reauditor": null
+    },
+    "log": "bank/audit/legacy-L09b.audit.json#lg-09-31",
+    "notes": "icd:instruction 3.1.3 剣印及び星印システム（剣印＝一次コード・原疾患、星印＝症状発現の任意的追加コード、星印は単独使用不可、疾病では逆転可）、4.1 表2注（星印コードは死亡コーディングに使用しない）；tools/icd.mjs E11.2†・N08.3*。"
+   }
+  },
+  {
+   "id": "lg-10-00",
+   "legacy": {
+    "key": "10_0",
+    "chapter": 10,
+    "chapterName": "国際統計分類I（ICD総論・コーディング実践）",
+    "index": 0,
+    "hash": "4bb28f4e2e0f4efa"
+   },
+   "subject": "S11",
+   "subtopic": "ICDの歴史とWHO-FIC",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "ICD（国際疾病分類）の正式な英語名称はどれか。",
+   "choices": [
+    "International Statistical Classification of Diseases and Related Health Problems",
+    "International Classification of Functioning, Disability and Health",
+    "International Classification of Health Interventions",
+    "International Statistical Classification of Diagnoses and Related Medical Procedures"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "ICDはInternational Statistical Classification of Diseases and Related Health Problemsの略で、WHOにおいて定められた分類であり、正式には「疾病及び関連保健問題の国際統計分類」という。",
+    "choiceNotes": [
+     null,
+     "ICF（国際生活機能分類）の英語名称である。",
+     "ICHI（医療行為の分類。WHO-FICの中心分類として開発中）の英語名称である。",
+     "ICDの名称は「Diseases and Related Health Problems（疾病及び関連保健問題）」であり、DiagnosesやMedical Proceduresではない。"
+    ],
+    "point": "ICD＝International Statistical Classification of Diseases and Related Health Problems（疾病及び関連保健問題の国際統計分類）。"
+   },
+   "sources": [
+    {
+     "ref": "icd:rikai",
+     "title": "疾病、傷害及び死因の統計分類の正しい理解と普及に向けて（ICD-10（2013年版）準拠）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/ICD-10_2013_2802.pdf",
+     "locator": "１ ICDとは",
+     "quote": "ICD：International Statistical Classification of Diseases and Related Health Problems とは"
+    },
+    {
+     "ref": "icd:rikai",
+     "title": "疾病、傷害及び死因の統計分類の正しい理解と普及に向けて（ICD-10（2013年版）準拠）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/ICD-10_2013_2802.pdf",
+     "locator": "１ ICDとは",
+     "quote": "世界保健機関（WHO）において定められた分類であり、正式には「疾病及び関連保健問題の国際統計分類」といい"
+    },
+    {
+     "ref": "icdbg:mhlw-icf-ja-2002",
+     "title": "「国際生活機能分類－国際障害分類改訂版－」（日本語版）の厚生労働省ホームページ掲載について",
+     "url": "https://www.mhlw.go.jp/houdou/2002/08/h0805-1.html",
+     "locator": "本文",
+     "quote": "国際生活機能分類：国際障害分類改定版（International Classification of Functioning, Disability and Health, ICF）"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "origin": {
+    "batch": "L10",
+    "key": "lg-10-00",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（ICD-10専門）で修正",
+     "修正後の再監査は未実施",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L10（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L10a（ICD-10専門）",
+     "reauditor": null
+    },
+    "log": "bank/audit/legacy-L10a.audit.json#lg-10-00",
+    "notes": "icd:rikai「１ ICDとは」で英名と正式名称「疾病及び関連保健問題の国際統計分類」を確認。誤答肢の ICF・ICHI の英名は icdbg:mhlw-icf-ja-2002、icdbg:whofic-japan-about で確認。"
+   }
+  },
+  {
+   "id": "lg-10-01",
+   "legacy": {
+    "key": "10_1",
+    "chapter": 10,
+    "chapterName": "国際統計分類I（ICD総論・コーディング実践）",
+    "index": 1,
+    "hash": "082a679d07c8797c"
+   },
+   "subject": "S11",
+   "subtopic": "ICDの歴史とWHO-FIC",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "negative",
+   "question": "WHO-FIC（国際分類ファミリー）に含まれないのはどれか。",
+   "choices": [
+    "ICD",
+    "ICF",
+    "ICHI",
+    "DPC"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "WHO国際統計分類（WHO-FIC）は「中心分類」「派生分類」「関連分類」の3グループから成り、中核の中心分類はICD、ICFと現在開発中のICHIである。DPCは診断群分類（Diagnosis Procedure Combination）及びそれに基づく1日当たり定額報酬算定制度を指すわが国の制度上の呼称で、WHO-FICには含まれない。",
+    "choiceNotes": [
+     "ICD（疾病及び関連保健問題の国際統計分類）はWHO-FICの中心分類の一つ。",
+     "ICF（国際生活機能分類）はWHO-FICの中心分類の一つ。",
+     "ICHI（医療行為の分類）は現在開発中のWHO-FICの中心分類。",
+     null
+    ],
+    "point": "WHO-FICの中心分類＝ICD・ICF・ICHI（開発中）。DPCはわが国の診断群分類・支払制度でWHO-FICではない。"
+   },
+   "sources": [
+    {
+     "ref": "icdbg:whofic-japan-about",
+     "title": "WHO-FICについて",
+     "url": "http://who-fic-japan.mhlw.go.jp/about03.html",
+     "locator": "WHO-FIC（WHO Family of International Classifications）",
+     "quote": "大きくは「中心分類」「派生分類」「関連分類」の3つのグループから成り、その中核をなす「中心分類」はICD、ICFと現在開発中のICHIです。"
+    },
+    {
+     "ref": "ins:dpc-gaiyo-kangaekata",
+     "title": "DPC制度（DPC/PDPS）の概要と基本的な考え方",
+     "url": "https://www.mhlw.go.jp/file/05-Shingikai-12404000-Hokenkyoku-Iryouka/0000142247.pdf",
+     "locator": "冒頭の注記（※「DPC」という呼称について）",
+     "quote": "①診断群分類に基づく１日当たり定額報酬算定 制度を意味する場合と、②患者分類としての診断群分類を意味する場合とが混在"
+    }
+   ],
+   "asOf": "日本WHO国際統計分類協力センター「WHO-FICについて」（2026-11取得）",
+   "origin": {
+    "batch": "L10",
+    "key": "lg-10-01",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（ICD-10専門）で修正",
+     "修正後の再監査は未実施",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L10（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L10a（ICD-10専門）",
+     "reauditor": null
+    },
+    "log": "bank/audit/legacy-L10a.audit.json#lg-10-01",
+    "notes": "icdbg:whofic-japan-about（中心分類はICD・ICF・開発中のICHI）、icd:rikai のWHO-FIC図（医療行為の分類（ICHI）作成中）、ins:dpc-gaiyo-kangaekata（DPC＝診断群分類）で確認。"
+   }
+  },
+  {
+   "id": "lg-10-02",
+   "legacy": {
+    "key": "10_2",
+    "chapter": 10,
+    "chapterName": "国際統計分類I（ICD総論・コーディング実践）",
+    "index": 2,
+    "hash": "29eeddd728417e6f"
+   },
+   "subject": "S11",
+   "subtopic": "索引表の使い方",
+   "format": "knowledge",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "ICD-10（2013年版）の索引表（第３巻）における「見出し用語」の説明として、正しいものはどれか。",
+   "choices": [
+    "見出し用語の下に字下げして置かれ、コーディングに影響を与える種類、部位又は周囲の状況を示す語である。",
+    "見出し用語の後ろの括弧内に示され、コード番号に影響を与えない語である。",
+    "索引表の他の箇所を参照するよう指示する「～を参照」「～も参照」の語である。",
+    "欄の左端に置かれる語で、疾病及び損傷では通常、病理学的病態を表す名詞が用いられる。",
+    "内容例示表の項目のタイトルに付け加えられ、その項目に分類される診断的記述を例示する語である。"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "索引は欄の左端に置かれた「見出し用語」と、その下に字下げされた修飾語・限定語から成る。コーディングでは見出し用語を探すことから始め、疾病及び損傷については通常、病理学的病態に対する名詞が見出し用語となっている（形容詞や地名・発見者名のついた病態が見出し用語のこともある）。",
+    "choiceNotes": [
+     "見出し用語の下に字下げされた修飾語又は限定語の説明。第Ⅰ編では通常、種類・部位・周囲の状況を示し、コード番号に影響する可能性がある。",
+     "見出し用語の後ろの括弧で囲まれた限定語の説明。これらはコード番号に影響を与えない。",
+     "相互参照の説明。索引表の中での不必要な重複を避けるために使われる。",
+     null,
+     "内容例示表の「包含用語」の説明であり、索引表の見出し用語ではない。"
+    ],
+    "point": "索引表：左端の見出し用語（通常は病態の名詞）→字下げの修飾語・限定語（コードに影響しうる）。括弧内の限定語はコードに影響しない。"
+   },
+   "sources": [
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "3.2.2 索引の構造",
+     "quote": "索引は、欄の左端に置かれている「見出し用語」を含み、それらの下には異なるレベルに字下げされた位置にその他の語句（「修飾語」又は「限定語」）を伴っている。"
+    },
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "3.3 コーダーのための基本的なガイドライン 手順２・４",
+     "quote": "疾病及び損傷については、通常は病理学的病態に対する名詞が見出し用語となっている。"
+    },
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "3.3 コーダーのための基本的なガイドライン 手順４",
+     "quote": "見出し用語の後ろの括弧で囲まれた用語（これらの限定語は、コード番号に影響を与えない）"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "origin": {
+    "batch": "L10",
+    "key": "lg-10-02",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（ICD-10専門）で修正",
+     "修正後の再監査は未実施",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L10（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L10a（ICD-10専門）",
+     "reauditor": null
+    },
+    "log": "bank/audit/legacy-L10a.audit.json#lg-10-02",
+    "notes": "icd:instruction 3.2.2（索引の構造：見出し用語と修飾語・限定語）、3.3 の手順2・4（見出し用語は通常病理学的病態の名詞、括弧内の限定語はコードに影響しない）、3.1.2（包含用語）で確認。"
+   }
+  },
+  {
+   "id": "lg-10-03",
+   "legacy": {
+    "key": "10_3",
+    "chapter": 10,
+    "chapterName": "国際統計分類I（ICD総論・コーディング実践）",
+    "index": 3,
+    "hash": "c4271e6356c41e19"
+   },
+   "subject": "S11",
+   "subtopic": "分類の規約と用語",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "内容例示表の「包含（includes）」の意味はどれか。",
+   "choices": [
+    "そのコードに含まれない用語",
+    "コードの略称",
+    "そのコードに含まれる用語の例示",
+    "医学的に否定された用語"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "包含（includes）はそのコードに分類される用語・状態の例を示す。除外（excludes）はそのコードに含まれず別のコードに分類される用語。",
+    "choiceNotes": [
+     "含まれない用語は「除外（excludes）」。",
+     "コードの略称ではない。",
+     null,
+     "否定された用語ではない。"
+    ],
+    "point": "包含＝そのコードに含む。除外＝別コードに分類。コーディングの重要ルール。"
+   },
+   "sources": [
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "3.1.2 包含用語の例示及び４桁細分類項目の利用（包含用語）",
+     "quote": "これらは「包含用語」であり、その項目に分類される診断的記述の例示としてタイトルに付け加えられている。"
+    },
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "3.1.2（除外用語）",
+     "quote": "それらがそこに分類されるはずであるということを項目のタイトルが示唆するかもしれないが、実際は他に分類される用語である。"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "origin": {
+    "batch": "L10",
+    "key": "lg-10-03",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L10（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L10a（ICD-10専門）"
+    },
+    "log": "bank/audit/legacy-L10a.audit.json#lg-10-03",
+    "notes": "icd:instruction 3.1.2「包含用語」「除外用語」で、包含用語＝その項目に分類される診断的記述の例示、除外用語＝実際は他に分類される用語であることを確認。lg-10-26（L10b）と同主題のため、重複整理は L10b 側で判断。"
+   }
+  },
+  {
+   "id": "lg-10-04",
+   "legacy": {
+    "key": "10_4",
+    "chapter": 10,
+    "chapterName": "国際統計分類I（ICD総論・コーディング実践）",
+    "index": 4,
+    "hash": "f50ea13f017bbc84"
+   },
+   "subject": "S11",
+   "subtopic": "疾病統計と主要病態の選択",
+   "format": "knowledge",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "ICD-10（2013年版）にもとづく疾病統計の「主要病態」について、正しいものはどれか。",
+   "choices": [
+    "保健ケアのエピソードの開始時（入院時）に最初に疑われた病態であり、その後の診断にかかわらず変更しない。",
+    "治療又は検査の必要性の原因となった病態が多数ある場合は、診療録に最初に記載された病態を選ぶ。",
+    "診断がなされなかった場合は、主要病態を記録しない。",
+    "保健ケアのエピソードの最後に診断された病態のうち、主として治療又は検査の必要性の原因となったものであり、そのような病態が多数ある場合は最も医療資源が使われた病態を選ぶ。",
+    "治療又は検査の必要性の原因となった病態が多数ある場合は、ICDコードの番号が最も小さい病態を選ぶ。"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "主要病態とは、主として患者の治療又は検査に対する必要性にもとづく、保健ケアのエピソードの最後に診断された病態と定義される。そのような病態が多数ある場合には、もっとも医療資源が使われた病態を選択する。診断がなされなかった場合は、主要症状又は異常な所見もしくは問題を主要病態として選択する。",
+    "choiceNotes": [
+     "主要病態はエピソードの最後に診断された病態であり、入院時に疑われた病態に固定するものではない。",
+     "該当する病態が多数ある場合は、記載順ではなく最も医療資源が使われた病態を選ぶ。",
+     "診断がなされなかった場合は、主要症状又は異常な所見もしくは問題を主要病態として選ぶ。",
+     null,
+     "コード番号の大小は選択の基準ではない。最も医療資源が使われた病態を選ぶ。"
+    ],
+    "point": "主要病態＝エピソードの最後に診断された、治療・検査の主な理由の病態。複数なら最も医療資源を使った病態。診断なしなら主要症状・異常所見。"
+   },
+   "sources": [
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "4.4.1 疾病データ（単一病因分析）",
+     "quote": "主要病態とは、主として、患者の治療又は検査に対する必要性にもとづく、保健ケアのエピソードの最後に診断された病態であると定義される。"
+    },
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "4.4.1 疾病データ（単一病因分析）",
+     "quote": "もしそのような病態が多数ある場合には、もっとも医療資源が使われた病態を選択すべきである。もし診断がなされなかった場合は、主要症状又は異常な所見もしくは問題を主要病態として選択すべきである。"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "origin": {
+    "batch": "L10",
+    "key": "lg-10-04",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（ICD-10専門）で修正",
+     "修正後の再監査は未実施",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L10（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L10a（ICD-10専門）",
+     "reauditor": null
+    },
+    "log": "bank/audit/legacy-L10a.audit.json#lg-10-04",
+    "notes": "icd:instruction 4.4.1（主要病態の定義：エピソードの最後に診断された病態、多数ある場合は最も医療資源が使われた病態、診断なしは主要症状等）で確認。"
+   }
+  },
+  {
+   "id": "lg-10-08",
+   "legacy": {
+    "key": "10_8",
+    "chapter": 10,
+    "chapterName": "国際統計分類I（ICD総論・コーディング実践）",
+    "index": 8,
+    "hash": "543694f05e46845b"
+   },
+   "subject": "S11",
+   "subtopic": "死因統計と原死因の選択",
+   "format": "knowledge",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "ICD-10（2013年版）の原死因選択における「一般原則」として、正しいものはどれか。",
+   "choices": [
+    "死亡診断書に多数の病態が記載されている場合、Ⅰ欄の最下欄に記載された病態を、上欄の病態との因果関係の有無にかかわらず選ぶ。",
+    "死亡診断書に多数の病態が記載されている場合、Ⅰ欄の最上欄に記載された病態を選ぶ。",
+    "死亡診断書に最初に記載された病態に帰着する上下の因果関係がある場合には、この上下の因果関係の起因を選ぶ。",
+    "死亡診断書に多数の病態が記載されている場合、Ⅰ欄の最下欄に単独で記載された病態が、その上欄に記載されたすべての病態を引き起こす可能性がある場合に限り、その病態を選ぶ。",
+    "死亡診断書に多数の病態が記載されている場合、Ⅱ欄に記載された病態のうち最も重篤なものを選ぶ。"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "一般原則：死亡診断書に多数の病態が記載されている場合には、Ⅰ欄の最下欄に単独で記載された病態が、その上欄に記載されたすべての病態を引き起こす可能性がある場合に限り、その病態を選ぶ。一般原則が適用できない場合は選択ルール（ルール1〜3）を適用する。",
+    "choiceNotes": [
+     "最下欄の病態が上欄のすべての病態を引き起こす可能性がある場合に限られる。条件を欠く。",
+     "一般原則はⅠ欄の最下欄に単独で記載された病態について定めたもので、最上欄の病態を選ぶものではない。",
+     "これは一般原則が適用できない場合の選択ルール１の内容である。",
+     null,
+     "一般原則はⅠ欄の最下欄の病態について定めたもので、Ⅱ欄の病態の重篤度で選ぶものではない。"
+    ],
+    "point": "一般原則＝Ⅰ欄最下欄に単独記載の病態が上欄すべての原因となりうるときだけ、それを選ぶ。適用できなければルール1〜3。"
+   },
+   "sources": [
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "4.1.6 一般原則",
+     "quote": "死亡診断書に多数の病態が記載されている場合には、Ⅰ欄の最下欄に単独で記載された病態が、その上欄に記載されたすべての病態を引き起こす可能性がある場合に限り、その病態を選ぶ。"
+    },
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "4.1.6 選択ルール ルール１",
+     "quote": "一般原則が適用できず、死亡診断書に最初に記載された病態に帰着する"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "origin": {
+    "batch": "L10",
+    "key": "lg-10-08",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（ICD-10専門）で修正",
+     "修正後の再監査は未実施",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L10（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L10a（ICD-10専門）",
+     "reauditor": null
+    },
+    "log": "bank/audit/legacy-L10a.audit.json#lg-10-08",
+    "notes": "icd:instruction 4.1.6「一般原則」「選択ルール」（ルール1〜3）で確認。lg-10-22（L10b）と同主題。"
+   }
+  },
+  {
+   "id": "lg-10-12",
+   "legacy": {
+    "key": "10_12",
+    "chapter": 10,
+    "chapterName": "国際統計分類I（ICD総論・コーディング実践）",
+    "index": 12,
+    "hash": "18e2cd4e05fea229"
+   },
+   "subject": "S11",
+   "subtopic": "分類の規約と用語",
+   "format": "knowledge",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "ICD-10（2013年版）の内容例示表及び索引表で用いられる略語「NOS」の意味として、正しいものはどれか。",
+   "choices": [
+    "他に分類されないもの（NEC）",
+    "診断が確定していない疑い病名であること",
+    "剣印（†）と星印（*）の二重分類の対象であること",
+    "他に記載のないもの（詳細不明）"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "NOSは「他に記載のないもの（not otherwise specified）」の略語で、「詳細不明」又は「限定されていない」という意味を含む。ただし限定されない用語でも、より特定された型の項目に分類されることがあり（例：「僧帽弁狭窄症」はリウマチ性として分類）、他により特異的な項目への分類を可能とする情報が全くないことが明白な場合を除いて、単純に詳細不明としてコードしないよう注意する。",
+    "choiceNotes": [
+     "「他に分類されないもの」はNEC（not elsewhere classified）であり、NOSとは別の略語・意味である。",
+     "NOSは詳細不明・限定されていないことを示す略語で、疑い病名を示すものではない。",
+     "NOSは二重分類を示す記号ではない。二重分類は剣印（†）と星印（*）で示される。",
+     null
+    ],
+    "point": "NOS＝他に記載のないもの（詳細不明）。NEC＝他に分類されないもの。NOSでも、より特異的な項目に分類される場合がある。"
+   },
+   "sources": [
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "3.1.4「NOS」",
+     "quote": "「他に記載のないもの（not otherwise specified）」の略語であり、"
+    },
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "3.1.4「NOS」",
+     "quote": "「詳細不明」又は「限定されていない」という意味を含んでいる。"
+    },
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "3.1.4「NOS」",
+     "quote": "他により特異的な項目への分類を 可能とする情報が全くないことが明白である場合を除いては、一つの用語を単純に 詳細不明としてコードしてしまわないよう注意しなければならない。"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "origin": {
+    "batch": "L10",
+    "key": "lg-10-12",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（ICD-10専門）で修正",
+     "修正後の再監査は未実施",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L10（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L10a（ICD-10専門）",
+     "reauditor": null
+    },
+    "log": "bank/audit/legacy-L10a.audit.json#lg-10-12",
+    "notes": "icd:instruction 3.1.4「NOS」「他に分類されないもの＜NEC＞」で確認。lg-10-16（L10b）は同一主題の重複（本問を残し、NECとの区別を誤答肢に取り込んだ）。"
+   }
+  },
+  {
+   "id": "lg-10-14",
+   "legacy": {
+    "key": "10_14",
+    "chapter": 10,
+    "chapterName": "国際統計分類I（ICD総論・コーディング実践）",
+    "index": 14,
+    "hash": "6c01193a989854bd"
+   },
+   "subject": "S11",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "多数回コーディングが必要な場面はどれか。",
+   "choices": [
+    "入院中に複数の傷病について治療を行った場合",
+    "1つの傷病のみで入院した場合",
+    "外来受診の場合",
+    "退院後のフォローアップの場合"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "入院中に複数の傷病（主傷病＋合併症・併存症）について検査・治療を行った場合は多数回コーディングが必要。",
+    "choiceNotes": [
+     null,
+     "1つの傷病のみなら多数回は不要。",
+     "外来でも必要な場合はあるが、入院で特に重要。",
+     "退院後フォローアップは入院コーディングとは別。"
+    ],
+    "point": "多数回コーディング＝主傷病＋合併症＋併存症。すべて記録して正確な情報を残す。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "rejected",
+   "origin": {
+    "batch": "L10",
+    "key": "lg-10-14",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（ICD-10専門）で除外"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L10（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L10b（ICD-10専門）"
+    },
+    "log": "bank/audit/legacy-L10b.audit.json#lg-10-14",
+    "notes": "除外理由: ambiguous 「多数回コーディング」はICD-10（2013年版）の用語として存在せず、何を指すか不明（ブラインド解答者も曖昧と指摘）。外来でも主要病態とその他の病態を記録するため選択肢「外来受診の場合」も否定できず、正答を一意に裏付ける出典がない。｜icd:instruction 4.4.1-4.4.2（主要病態及びその他の病態の記録）を確認。「多数回コーディング」という用語は2013年版インストラクションマニュアルにない。"
+   }
+  },
+  {
+   "id": "lg-10-15",
+   "legacy": {
+    "key": "10_15",
+    "chapter": 10,
+    "chapterName": "国際統計分類I（ICD総論・コーディング実践）",
+    "index": 15,
+    "hash": "90f755414ee77429"
+   },
+   "subject": "S11",
+   "subtopic": "索引表の使い方",
+   "format": "knowledge",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "ICD-10（2013年版）の索引表（第3巻）で用いられる相互参照「～も参照」（see also）の意味として正しいものはどれか。",
+   "choices": [
+    "記述にその他の情報が含まれる場合は、索引表の他の箇所も参照せよ",
+    "示されたコードをそのまま使用し、内容例示表は参照しなくてよい",
+    "その病態は統計上コーディングの対象外であることを示す",
+    "その用語は索引表に記載されておらず、内容例示表にのみあることを示す"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "「～も参照」（see also）は、コード付けをしている記述がその他の情報を含んでおり、その情報が当該用語の下に書かれていない場合に、索引表の他の箇所を参照するよう指示する相互参照である（第2巻 3.2.4節 相互参照）。",
+    "choiceNotes": [
+     null,
+     "コードの使用だけを指示する表記ではない。相互参照は索引表の不必要な重複を避けるためのもので、「～を参照」（see）はその他の用語を参照することを求め、「～も参照」は他の箇所も参照するよう指示する。なお、コードを付ける前には索引表と内容例示表の両方を参照する。",
+     "コーディングの対象外を示す表記ではない。より適切なコードを見つけるための参照指示である。",
+     "索引表の用語に付けられて他の箇所の参照を指示する表記であり、索引表に記載がないことを示すものではない。"
+    ],
+    "point": "相互参照：「～を参照」（see）＝その他の用語を参照せよ。「～も参照」（see also）＝記述に他の情報があれば索引表の他の箇所も参照せよ。"
+   },
+   "sources": [
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "3.2.4節 相互参照",
+     "quote": "相互参照は索引表の中での不必要な重複を避けるために使用されている。"
+    },
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "3.2.4節 相互参照",
+     "quote": "という語句は、もし、コード付けをしている記述が、その他の情報を含んでおり、その情報が「～も参照」という語句が付いている用語の下に書かれていない場合は、コーダーに索引表の他の箇所を参照するように指示している。"
+    },
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "3.3節",
+     "quote": "コードを付ける前に索引表及び内容例示表の両方を参照しなければならない。"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "origin": {
+    "batch": "L10",
+    "key": "lg-10-15",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（ICD-10専門）で修正",
+     "修正後の再監査は未実施",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L10（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L10b（ICD-10専門）",
+     "reauditor": null
+    },
+    "log": "bank/audit/legacy-L10b.audit.json#lg-10-15",
+    "notes": "icd:instruction 3.2.4節「相互参照」（～を参照／～も参照の定義）で確認。キーは正しい。"
+   }
+  },
+  {
+   "id": "lg-10-16",
+   "legacy": {
+    "key": "10_16",
+    "chapter": 10,
+    "chapterName": "国際統計分類I（ICD総論・コーディング実践）",
+    "index": 16,
+    "hash": "61de4a6de081d300"
+   },
+   "subject": "S11",
+   "subtopic": "分類の規約と用語",
+   "format": "knowledge",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "ICD-10（2013年版）の索引表で用いられる「NEC」（他に分類されないもの）の意味として正しいものはどれか。",
+   "choices": [
+    "同じ用語を含むその他の病態が他に分類されており、索引表の適切な場所により正確な用語があることを示す",
+    "「他に記載のないもの」の略語で、「詳細不明」又は「限定されていない」という意味を含む",
+    "その項目が細分類されており、第4桁は内容例示表を参照して見つけることを示す",
+    "その用語の下に書かれていない情報がある場合、索引表の他の箇所を参照するよう指示する",
+    "星印（＊）コードであり、単独では使用しないことを示す"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "NEC（他に分類されないもの）は、同じ用語を含むその他の病態が他に分類され、索引表中の適切な場所により正確な用語があることを示す（第2巻 3.2.4節）。内容例示表の3桁分類項目のタイトルで使われた場合も、当該病態のある特定の別型が別の場所に分類されている可能性を示す（3.1.4節）。",
+    "choiceNotes": [
+     null,
+     "これはNOS（not otherwise specified：他に記載のないもの）の説明である（3.1.4節）。",
+     "これは第4桁のダッシュ（例：O03.-）の意味である（3.2.3節）。",
+     "これは相互参照「～も参照」（see also）の説明である（3.2.4節）。",
+     "星印（＊）は症状発現に対する任意的追加コードを示す記号で、NECとは別の取り決めである（3.1.3節）。"
+    ],
+    "point": "NEC＝他に分類されないもの（より特定の型が別の場所にある）。NOS＝他に記載のないもの（詳細不明）。"
+   },
+   "sources": [
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "3.2.4節「NEC」",
+     "quote": "NEC（他に分類されないもの）は、同じ用語を含むその他の病態が他に分類され、索引表中の適切な場所により正確な用語があることを示している。"
+    },
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "3.1.4節「NOS」",
+     "quote": "「詳細不明」又は「限定されていない」という意味を含んでいる。"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "origin": {
+    "batch": "L10",
+    "key": "lg-10-16",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（ICD-10専門）で修正",
+     "修正後の再監査は未実施",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L10（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L10b（ICD-10専門）",
+     "reauditor": null
+    },
+    "log": "bank/audit/legacy-L10b.audit.json#lg-10-16",
+    "notes": "icd:instruction 3.1.4節（NOS・NEC）、3.2.3節（第4桁のダッシュ）・3.2.4節（NEC・相互参照）で確認。"
+   }
+  },
+  {
+   "id": "lg-10-17",
+   "legacy": {
+    "key": "10_17",
+    "chapter": 10,
+    "chapterName": "国際統計分類I（ICD総論・コーディング実践）",
+    "index": 17,
+    "hash": "70772e09985603a2"
+   },
+   "subject": "S11",
+   "subtopic": "分類の規約と用語",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "ICD-10の内容例示表における「除外」（Excludes）の意味はどれか。",
+   "choices": [
+    "そのカテゴリに含まれることを示す",
+    "コーディングが不要であることを示す",
+    "治療が不要であることを示す",
+    "そのカテゴリには分類されず別の箇所に分類されることを示す"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "除外（Excludes）はその病態がそのカテゴリではなく別のカテゴリに分類されることを示す。正しい分類先への誘導。",
+    "choiceNotes": [
+     "含まれることを示すのは「包含」（Includes）。",
+     "コーディング自体は必要で、別の箇所でコーディングする。",
+     "治療の必要性とは無関係のコーディング上の概念。",
+     null
+    ],
+    "point": "包含＝含まれる。除外＝別の箇所に分類。索引表と内容例示表の確認が必要。"
+   },
+   "sources": [
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "3.1.2節「除外用語」",
+     "quote": "これらの用語は、それらがそこに分類されるはずであるということを項目のタイトルが示唆するかもしれないが、実際は他に分類される用語である。"
+    },
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "3.1.2節「除外用語」",
+     "quote": "各除外用語の後の括弧内は、分類内の他の分類項目又は細分類項目のコードで、除外された用語が分類されるべきコードを示している。"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "origin": {
+    "batch": "L10",
+    "key": "lg-10-17",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "領域監査（ICD-10専門）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L10（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L10b（ICD-10専門）"
+    },
+    "log": "bank/audit/legacy-L10b.audit.json#lg-10-17",
+    "notes": "icd:instruction 3.1.2節「除外用語」「包含用語」で確認。キー・解説とも正しい。lg-10-03（包含）とは観点が異なる。"
+   }
+  },
+  {
+   "id": "lg-10-18",
+   "legacy": {
+    "key": "10_18",
+    "chapter": 10,
+    "chapterName": "国際統計分類I（ICD総論・コーディング実践）",
+    "index": 18,
+    "hash": "3d13128764fd7049"
+   },
+   "subject": "S11",
+   "subtopic": "剣印・星印分類",
+   "format": "icd",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "ICD-10（2013年版）で、剣印（†）・星印（＊）システムによる二重分類（原疾患のコードと症状発現のコード）の組み合わせとして正しいものはどれか。",
+   "choices": [
+    "本態性（原発性＜一次性＞）高血圧（症）（I10）と頭痛（R51）",
+    "大腿骨頚部骨折（S72.0）と大腿の挫傷（S70.1）",
+    "１型糖尿病，合併症を伴わないもの（E10.9）と２型糖尿病，合併症を伴わないもの（E11.9）",
+    "結核性髄膜炎（A17.0）と他に分類される細菌性疾患における髄膜炎（G01）",
+    "細菌性髄膜炎，詳細不明（G00.9）と結核性髄膜炎（A17.0）"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "結核性髄膜炎はA17.0†（原疾患：結核）とG01*（症状発現：他に分類される細菌性疾患における髄膜炎）の組み合わせで分類される。剣印コードが一次コードで、星印コードは単独で使用してはならない。",
+    "choiceNotes": [
+     "I10・R51はいずれも剣印・星印の付く項目ではなく、二重分類の関係にない。",
+     "S72.0・S70.1は別々の損傷のコードで、剣印・星印の付く項目ではない。",
+     "E10.9・E11.9は糖尿病の病型による別項目であり、二重分類の組み合わせではない。",
+     null,
+     "G00.9は星印項目ではない。A17.0†に対応する星印コードはG01*である。"
+    ],
+    "point": "二重分類の例：結核性髄膜炎 A17.0†＋G01*、２型糖尿病の腎合併症 E11.2†＋N08.3*。剣印＝原疾患（一次コード）、星印＝症状発現（単独使用不可）。"
+   },
+   "sources": [
+    {
+     "ref": "icd:naiyou01",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第1章 感染症及び寄生虫症（A00-B99）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou01.pdf",
+     "locator": "A17.0",
+     "quote": "Ａ17．0†   結核性髄膜炎（Ｇ01＊）"
+    },
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "3.1.3節 剣印及び星印システム",
+     "quote": "一次コードは、原疾患（基礎疾患）に対するものであり、剣印（†）が付けられている；症状発現に対する任意的追加コードには、星印（＊）が付けられている。"
+    },
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "3.1.3節",
+     "quote": "コーディングには、星印コードは決して単独で使用してはならない。"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "origin": {
+    "batch": "L10",
+    "key": "lg-10-18",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（ICD-10専門）で修正",
+     "修正後の再監査は未実施",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L10（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L10b（ICD-10専門）",
+     "reauditor": null
+    },
+    "log": "bank/audit/legacy-L10b.audit.json#lg-10-18",
+    "notes": "icd:naiyou01 A17.0†（G01*）、tools/icd.mjs で A17.0†・G01*・E11.2†・N08.3* の存在と剣星区分を確認。icd:instruction 3.1.3節で†＝原疾患・＊＝症状発現を確認。 キーは正しい。"
+   }
+  },
+  {
+   "id": "lg-10-19",
+   "legacy": {
+    "key": "10_19",
+    "chapter": 10,
+    "chapterName": "国際統計分類I（ICD総論・コーディング実践）",
+    "index": 19,
+    "hash": "53712c5599d20bb5"
+   },
+   "subject": "S11",
+   "subtopic": "ICD-11・ICF・ICD-O",
+   "format": "knowledge",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "ICD-10（2013年版）の第1巻（内容例示表）及び第3巻（索引表）で用いられる新生物＜腫瘍＞の形態コードの構成として正しいものはどれか。",
+   "choices": [
+    "M＋4桁の数字＋/＋1桁の性状コード",
+    "M＋4桁の組織型コードのみで、性状は表さない",
+    "C＋3桁の数字で、部位と組織型を表す",
+    "D＋4桁の数字で、組織型と性状を表す"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "形態コードは5桁で、始めの4桁が組織学的な型を、第5桁が新生物＜腫瘍＞の性状（悪性、上皮内、良性等）を表し、「M8000/3」（がん）のようにM＋4桁＋/＋性状コード1桁で示される。性状コードは、/0＝良性、/1＝良性か悪性か不詳、/2＝上皮内、/3＝悪性（原発部位）など。",
+    "choiceNotes": [
+     null,
+     "組織型の4桁だけでは足りず、性状を表す第5桁（/と性状コード）が必要である。",
+     "Cで始まるコードはICD-10第Ⅱ章の悪性新生物＜腫瘍＞の部位による分類（C00－C97）であり、形態コードではない。",
+     "D00－D48は上皮内・良性・性状不詳又は不明の新生物＜腫瘍＞の部位による分類であり、形態コードではない。"
+    ],
+    "point": "形態コード＝M＋組織型4桁＋/＋性状コード1桁（例：M8000/3）。/0良性、/1性状不詳、/2上皮内、/3悪性。"
+   },
+   "sources": [
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "2.2.1節 腫瘍学（ICD-O）",
+     "quote": "ドは５桁で；始めの４桁は組織学的な型を分類し、第５桁は新生物＜腫瘍＞の性状"
+    },
+    {
+     "ref": "icd:rikai",
+     "title": "疾病、傷害及び死因の統計分類の正しい理解と普及に向けて（ICD-10（2013年版）準拠）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/ICD-10_2013_2802.pdf",
+     "locator": "第3巻索引表の検索例",
+     "quote": "がん＜Cancer＞（M8000/3）－新生物，悪性も参照"
+    },
+    {
+     "ref": "icd:naiyou02",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第2章 新生物＜腫瘍＞（C00-D48）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou02.pdf",
+     "locator": "D37-D48 注",
+     "quote": "これらの新生物＜腫瘍＞には新生物＜腫瘍＞の形態分類で性状コード／１が付けられている。"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "origin": {
+    "batch": "L10",
+    "key": "lg-10-19",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（ICD-10専門）で修正",
+     "修正後の再監査は未実施",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L10（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L10b（ICD-10専門）",
+     "reauditor": null
+    },
+    "log": "bank/audit/legacy-L10b.audit.json#lg-10-19",
+    "notes": "icd:instruction 2.2.1節（形態コードは5桁：4桁組織型＋第5桁性状）、icd:rikai（M8000/3の表記）、icd:naiyou02 D00-D09/D10-D36/D37-D48 の包含・注（性状コード/2・/0・/1）で確認。"
+   }
+  },
+  {
+   "id": "lg-10-22",
+   "legacy": {
+    "key": "10_22",
+    "chapter": 10,
+    "chapterName": "国際統計分類I（ICD総論・コーディング実践）",
+    "index": 22,
+    "hash": "b87b51721bda5b31"
+   },
+   "subject": "S11",
+   "subtopic": "死因統計と原死因の選択",
+   "format": "knowledge",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "死因統計における原死因の選択で、「一般原則」の内容として正しいものはどれか。",
+   "choices": [
+    "Ⅰ欄に記載された病態のうち、最も重症と考えられる病態を、因果関係にかかわらず選ぶ",
+    "Ⅰ欄の最上欄に記載された直接死因を、記載された病態の数にかかわらず常に選ぶ",
+    "Ⅰ欄の最下欄に単独で記載された病態が、その上欄に記載されたすべての病態を引き起こす可能性がある場合に限り、その病態を選ぶ",
+    "Ⅱ欄に記載された病態がある場合は、Ⅰ欄の記載よりもそれを優先して選ぶ",
+    "記載された病態のうち、最も最近に発症した病態を、発症時期の記載に基づいて選ぶ"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "一般原則：死亡診断書に多数の病態が記載されている場合には、Ⅰ欄の最下欄に単独で記載された病態が、その上欄に記載されたすべての病態を引き起こす可能性がある場合に限り、その病態を選ぶ。一般原則が適用できない場合は選択ルール1・2を、さらにルール3を適用し、その後に修正ルールの適用を検討する。",
+    "choiceNotes": [
+     "重症度ではなく、記載された病態の因果関係に基づいて選ぶ。",
+     "最上欄の直接死因ではなく、一連の事象の起因となった病態（原死因）を選ぶのが原則である。",
+     null,
+     "Ⅱ欄の病態を優先する規定はない。一般原則はⅠ欄の最下欄に単独で記載された病態について定めている。",
+     "発症時期の新しさではなく、因果関係の起点となる病態を選ぶ。"
+    ],
+    "point": "一般原則＝Ⅰ欄最下欄に単独で記載された病態が、上欄のすべての病態を引き起こしうるときに限りそれを選ぶ。適用できなければ選択ルール1〜3。"
+   },
+   "sources": [
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "4.1.5節 一般原則",
+     "quote": "死亡診断書に多数の病態が記載されている場合には、Ⅰ欄の最下欄に単独で記載された病態が、その上欄に記載されたすべての病態を引き起こす可能性がある場合に限り、その病態を選ぶ。"
+    },
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "4.1.5節 選択ルール1",
+     "quote": "一般原則が適用できず、死亡診断書に最初に記載された病態に帰着する"
+    },
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "4.1.2節 原死因",
+     "quote": "直接に死亡を引き起こした一連の事象の起因となった疾病又は損傷"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "origin": {
+    "batch": "L10",
+    "key": "lg-10-22",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（ICD-10専門）で修正",
+     "修正後の再監査は未実施",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L10（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L10b（ICD-10専門）",
+     "reauditor": null
+    },
+    "log": "bank/audit/legacy-L10b.audit.json#lg-10-22",
+    "notes": "icd:instruction 4.1.5節（一般原則・選択ルール1〜3）、4.1.2節（原死因の定義）、4.1.4節（修正ルールへの流れ）で確認。同章 lg-10-08 も一般原則を扱うため、L10a側の判定と突き合わせて重複を整理すること。"
+   }
+  },
+  {
+   "id": "lg-10-23",
+   "legacy": {
+    "key": "10_23",
+    "chapter": 10,
+    "chapterName": "国際統計分類I（ICD総論・コーディング実践）",
+    "index": 23,
+    "hash": "9f1c54395892421d"
+   },
+   "subject": "S11",
+   "subtopic": "死因統計と原死因の選択",
+   "format": "knowledge",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "死因統計の原死因選択で用いる修正ルールの目的として正しいものはどれか。",
+   "choices": [
+    "Ⅱ欄に記載された病態を、Ⅰ欄の病態よりも優先して原死因とするための手順である",
+    "選択ルールで起点とされた死因を、製表上より相応しい分類項目に置き換えるためのものである",
+    "軽い病態による死亡を除き、死亡数を少なく集計するための統計処理である",
+    "コーダーが死亡診断書の記載内容を医師に書き直させるための手続きである"
+   ],
+   "answer": 1,
+   "explanation": {
+    "correct": "一般原則又は選択ルール1〜3で起点となる先行原因を決めた後、ICDは、それを製表にあたって原死因を示すためにより相応しい分類項目に置き換えることを認めている（複合病態の分類項目がある場合や、疫学上の理由から別の病態を優先する場合）。これを取り扱うのが修正ルールで、2013年版ではルールA（老衰及びその他の診断名不明確な病態）、B（軽微な病態）、C（連鎖）、D（特異性）の4つである。",
+    "choiceNotes": [
+     "Ⅱ欄の病態を必ず原死因とする規定はない。修正ルールは起点となった死因をより相応しい分類項目に置き換えるかどうかを判断するものである。",
+     null,
+     "修正ルールは原死因として集計する分類項目を決めるもので、死亡数そのものは変わらない。",
+     "修正ルールはコーディング上の製表手順であり、医師に診断書を書き直させる手続きではない。"
+    ],
+    "point": "修正ルール（2013年版はA〜D）＝起点となる先行原因を、製表上より相応しい分類項目に置き換えるためのルール。"
+   },
+   "sources": [
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "4.1.4節",
+     "quote": "ICD は、起点とされた死因を、製表にあたって原死因を示すためにより相応しいと考えられる分類項目に置き換えることを認めている。"
+    },
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "4.1.4節",
+     "quote": "それゆえ、次の段階は、上記の状況を取り扱う修正ルール A から D（4.1.9 節を参照）のうち一つ以上のものが、適用されるかどうかを決定することである。"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "origin": {
+    "batch": "L10",
+    "key": "lg-10-23",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（ICD-10専門）で修正",
+     "修正後の再監査は未実施",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L10（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L10b（ICD-10専門）",
+     "reauditor": null
+    },
+    "log": "bank/audit/legacy-L10b.audit.json#lg-10-23",
+    "notes": "icd:instruction 4.1.4節（修正ルールの位置づけ、A〜D）、4.1.9節（ルールA 老衰及びその他の診断名不明確な病態、B 軽微な病態、C 連鎖、D 特異性）で確認。"
+   }
+  },
+  {
+   "id": "lg-10-24",
+   "legacy": {
+    "key": "10_24",
+    "chapter": 10,
+    "chapterName": "国際統計分類I（ICD総論・コーディング実践）",
+    "index": 24,
+    "hash": "993150347d301650"
+   },
+   "subject": "S11",
+   "subtopic": "死因統計と原死因の選択",
+   "format": "knowledge",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "死因統計における複数死因コーディング（multiple cause coding）について、正しいものはどれか。",
+   "choices": [
+    "原死因にだけコードを付与し、その他の病態にはコードを付与しない",
+    "複数死因を記録すれば、原死因を選択して記録する必要はなくなる",
+    "死亡診断書のⅡ欄に記載された病態だけを集計の対象とする",
+    "死亡診断書に記載されたすべての病態にコードを付与し、死因のより詳細な分析を可能にする"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "死亡診断書に記載されたすべての病態にコードを付与することを複数死因コーディングといい、併存病態の影響など死因の詳細な分析を可能にする。ICD-10（2013年版）も、多重原因コーディングでは捉えうるすべての詳細を保持すべきとし、周産期死亡統計では記載されたすべての病態の複合原因解析が最も有用としている。",
+    "choiceNotes": [
+     "原死因だけでなく、記載されたすべての病態にコードを付与する。",
+     "原死因と複数死因の両方を記録すべきとされている。",
+     "Ⅰ欄・Ⅱ欄を問わず、記載されたすべての病態が対象である。",
+     null
+    ],
+    "point": "複数死因コーディング＝記載された全病態にコード付与→死因の詳細な分析。原死因統計を置き換えるものではなく、原死因と両方を記録する。"
+   },
+   "sources": [
+    {
+     "ref": "icdbg:mhlw-icd11-reference-guide-ja",
+     "title": "ICD-11 死亡及び疾病統計のための国際疾病分類 第11回改訂版 レファレンスガイド（日本語訳）",
+     "url": "https://www.mhlw.go.jp/content/10700000/001637950.pdf",
+     "locator": "第2部 2.17節",
+     "quote": "記載されたすべての病態にコード付けを行うことを複数死因コーディング（multiple cause coding）と呼ぶ。"
+    },
+    {
+     "ref": "icdbg:mhlw-icd11-reference-guide-ja",
+     "title": "ICD-11 死亡及び疾病統計のための国際疾病分類 第11回改訂版 レファレンスガイド（日本語訳）",
+     "url": "https://www.mhlw.go.jp/content/10700000/001637950.pdf",
+     "locator": "第2部 2.17.1節",
+     "quote": "そのため、死亡コーディングでは、原死因及び複数死因の両方を記録すべきである。"
+    },
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "4.1.9節 ルールC",
+     "quote": "多重原因コーディングにおいては、捉えうるすべての詳細を保持するようにするべきである。"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠（複数死因コーディングの定義はICD-11レファレンスガイド日本語訳 2026年版で補足）",
+   "origin": {
+    "batch": "L10",
+    "key": "lg-10-24",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（ICD-10専門）で修正",
+     "修正後の再監査は未実施",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L10（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L10b（ICD-10専門）",
+     "reauditor": null
+    },
+    "log": "bank/audit/legacy-L10b.audit.json#lg-10-24",
+    "notes": "icdbg:mhlw-icd11-reference-guide-ja 2.17節・2.17.1節（定義・目的・原死因と両方記録）、icd:instruction 4.1.9節ルールC（多重原因コーディング）・4.3.3節（周産期の複合原因解析）で確認。"
+   }
+  },
+  {
+   "id": "lg-10-25",
+   "legacy": {
+    "key": "10_25",
+    "chapter": 10,
+    "chapterName": "国際統計分類I（ICD総論・コーディング実践）",
+    "index": 25,
+    "hash": "429cc236864bcd03"
+   },
+   "subject": "S11",
+   "subtopic": "索引表の使い方",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "ICD-10の索引表で「−」（ダッシュ）が4桁目に付いている場合の意味はどれか。",
+   "choices": [
+    "その項目は細分類されており、第4桁は内容例示表を参照して決める",
+    "その項目は細分類されておらず、3桁コードのままで使用する",
+    "そのコードは2013年版で廃止されており、使用できない",
+    "その用語は星印（＊）コードであり、単独では使用できない"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "索引表で第4桁がダッシュ（例：O03.-）の3桁項目は、その項目が細分類されていることを示し、第4桁は内容例示表（第1巻）を参照して見つける。索引表だけでコーディングを終えない。",
+    "choiceNotes": [
+     null,
+     "コードが3桁しかない場合は細分類されないと推測されるが、第4桁のダッシュは細分類があることを示す。",
+     "廃止を意味する表記ではない。",
+     "星印（＊）は症状発現に対する任意的追加コードを示す別の記号であり、ダッシュとは無関係である。"
+    ],
+    "point": "索引表の「.-」＝4桁細分類あり→必ず内容例示表で第4桁を確認。"
+   },
+   "sources": [
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "3.2.3節",
+     "quote": "第４桁のダッシュ（たとえば O03.-）は、その項目が細分類され、４桁目は内容例示表を参照することにより、見つけることかできることを意味している。"
+    },
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "3.3節 基本的コーディング・ガイドライン6",
+     "quote": "索引で、第４桁にダッシュを持った３桁項目は、第１巻に記載されている４桁項目がある、ということを意味することに注意する。"
+    },
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "3.2.3節",
+     "quote": "もし、コードが３桁しかない場合は、その項目は、細分類されないと推測される。"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠",
+   "origin": {
+    "batch": "L10",
+    "key": "lg-10-25",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（ICD-10専門）で修正",
+     "修正後の再監査は未実施",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L10（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L10b（ICD-10専門）",
+     "reauditor": null
+    },
+    "log": "bank/audit/legacy-L10b.audit.json#lg-10-25",
+    "notes": "icd:instruction 3.2.3節（第4桁のダッシュ、3桁のみは細分類なし）、3.3節ガイドライン6で確認。キーは正しい。"
+   }
+  },
+  {
+   "id": "lg-10-26",
+   "legacy": {
+    "key": "10_26",
+    "chapter": 10,
+    "chapterName": "国際統計分類I（ICD総論・コーディング実践）",
+    "index": 26,
+    "hash": "4a271f7e04c98654"
+   },
+   "subject": "S11",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "ICD-10の包含注記（Includes note）の機能として正しいのはどれか。",
+   "choices": [
+    "そのカテゴリから除外される病態を示す",
+    "4桁目の分類を示す",
+    "治療法を示す",
+    "そのカテゴリに分類される具体例を示す"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "包含注記はそのカテゴリに含まれる病態の具体例・類義語を示し、正しいコーディングの判断を助ける。",
+    "choiceNotes": [
+     "除外される病態を示すのはExcludes（除外注記）。",
+     "4桁目の分類は内容例示表の細分類で示される。",
+     "ICD-10は分類であり治療法の記載はない。",
+     null
+    ],
+    "point": "Includes＝含まれる例示。Excludes＝除外。両方確認してコーディング。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "rejected",
+   "origin": {
+    "batch": "L10",
+    "key": "lg-10-26",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（ICD-10専門）で除外"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L10（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L10b（ICD-10専門）"
+    },
+    "log": "bank/audit/legacy-L10b.audit.json#lg-10-26",
+    "notes": "除外理由: duplicate 同章 lg-10-03（内容例示表の「包含（includes）」の意味）と同一の知識を同じ形式で問う重複。除外注記は lg-10-17 で扱われる。｜icd:instruction 3.1.2節「包含用語」で内容自体は正しいことを確認。"
+   }
+  }
+ ]
+}

@@ -1,0 +1,1012 @@
+{
+ "subject": "S09",
+ "questions": [
+  {
+   "id": "lg-01-08",
+   "legacy": {
+    "key": "1_8",
+    "chapter": 1,
+    "chapterName": "医療管理総論",
+    "index": 8,
+    "hash": "87e1a25a134c00a4"
+   },
+   "subject": "S09",
+   "subtopic": "クリニカルパスと質指標",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "クリニカルパスについて正しいのはどれか。",
+   "choices": [
+    "医師の裁量を制限し、標準からの逸脱を認めない規則",
+    "診療報酬の請求のために作成する書類",
+    "標準的な診療計画を時間軸に沿って示したもの",
+    "単一の職種が作成し運用する計画"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "日本クリニカルパス学会の定義（2026）では、クリニカルパスは病態や疾患の診断・治療を対象に、患者目標（アウトカム）を明確にし、その達成に必要な医療・ケアを時間軸に沿って示した標準診療計画であり、多職種協働により作成・運用される。",
+    "choiceNotes": [
+     "標準的な経過からのずれ（バリアンス）は記録・分析の対象であり、その分析がパスの改訂と診療プロセスの改善につながる。逸脱を認めない規則ではない。",
+     "パスは標準診療計画であり、保険請求のための書類ではない。",
+     null,
+     "パスは多職種協働により作成・運用される。"
+    ],
+    "point": "パス＝時間軸に沿った標準診療計画。バリアンス分析で継続的に改善する。"
+   },
+   "sources": [
+    {
+     "ref": "x-legacy-L01a:jscp-about",
+     "title": "学会概要（日本クリニカルパス学会）—クリニカルパスの定義（2026）",
+     "url": "http://www.jscp.gr.jp/about.html",
+     "locator": "クリニカルパス（略名：パス）の定義（2026）",
+     "quote": "その達成に必要な医療・ケアを時間軸に沿って示した標準診療計画である。多職種協働により作成・運用され"
+    },
+    {
+     "ref": "him:jhim-gyomu-shishin-2026",
+     "title": "診療情報管理士業務指針 2026",
+     "url": "https://jhim-e.com/pdf/2026/guideline2026.pdf",
+     "locator": "5-13（2）バリアンス分析の意義とデータの活用",
+     "quote": "個々の症例における標準的な経過（達成目標）からの ずれを可視化し、診療プロセスの改善につなげる質改善ツール"
+    }
+   ],
+   "asOf": "日本クリニカルパス学会 クリニカルパスの定義（2026）／診療情報管理士業務指針2026",
+   "origin": {
+    "batch": "L01",
+    "key": "lg-01-08",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（医療管理・情報）で修正",
+     "修正後の再監査は未実施",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L01（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L01a（医療管理・情報）",
+     "reauditor": null
+    },
+    "log": "bank/audit/legacy-L01a.audit.json#lg-01-08",
+    "notes": "日本クリニカルパス学会 定義（2026）、業務指針2026 5-13(2)を確認。key正、solver一致。"
+   }
+  },
+  {
+   "id": "lg-04-02",
+   "legacy": {
+    "key": "4_2",
+    "chapter": 4,
+    "chapterName": "医学用語・医学略語",
+    "index": 2,
+    "hash": "cc345a1f6c2712cd"
+   },
+   "subject": "S09",
+   "subtopic": "診療記録の構成とPOS",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "SOAP形式の「S」の意味はどれか。",
+   "choices": [
+    "Structure（構造）",
+    "Surgery（手術）",
+    "Subjective（主観的情報）",
+    "Symptom（症状）"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "SOAPのSはSubjective Data（主観的情報）で、患者の主訴、受診目的、症状経過、既往歴などを記載する。",
+    "choiceNotes": [
+     "Structure（構造）はSOAPの要素ではない。",
+     "Surgery（手術）はSOAPの要素ではない。",
+     null,
+     "症状経過はSに記載する情報の一つだが、SはSubjective（主観的情報）の頭文字であり、Symptomではない。"
+    ],
+    "point": "SOAP＝S（Subjective：主観的情報）・O（Objective：客観的情報）・A（Assessment：評価）・P（Plan：計画）。"
+   },
+   "sources": [
+    {
+     "ref": "him:kobeu-shinryoroku-manual-2023",
+     "title": "診療録記載マニュアル（2023年7月改訂）",
+     "url": "https://www.med.kobe-u.ac.jp/gakumu/gakunai/ccs3/1file/shinryoroku_manual1.pdf",
+     "locator": "POS・SOAPの項",
+     "quote": "ＳＯＡＰとは、ＰＯＳの考え方によって得られたデータを内容ごとに分類・整理した上 で、下記のようにＳ、Ｏ、Ａ、Ｐの４つの項目に分けて考える分析手法である。"
+    },
+    {
+     "ref": "him:kobeu-shinryoroku-manual-2023",
+     "title": "診療録記載マニュアル（2023年7月改訂）",
+     "url": "https://www.med.kobe-u.ac.jp/gakumu/gakunai/ccs3/1file/shinryoroku_manual1.pdf",
+     "locator": "SOAPの項（S）",
+     "quote": "Ｓ（Subjective Data）：患者の主訴、受診目的、症状経過、既往歴"
+    },
+    {
+     "ref": "him:kobeu-shinryoroku-manual-2023",
+     "title": "診療録記載マニュアル（2023年7月改訂）",
+     "url": "https://www.med.kobe-u.ac.jp/gakumu/gakunai/ccs3/1file/shinryoroku_manual1.pdf",
+     "locator": "SOAPの項（O）",
+     "quote": "Ｏ（Objective Data）：医師の診察所見（理学的、局所的）、検査結果等の客観的情報"
+    }
+   ],
+   "asOf": "神戸大学医学部附属病院 診療録記載マニュアル（2023年7月改訂）",
+   "origin": {
+    "batch": "L04",
+    "key": "lg-04-02",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（医学用語）で修正",
+     "修正後の再監査は未実施",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L04（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L04a（医学用語）",
+     "reauditor": null
+    },
+    "log": "bank/audit/legacy-L04a.audit.json#lg-04-02",
+    "notes": "神戸大学病院 診療録記載マニュアル SOAPの項: S=Subjective Data（主訴・症状経過等の主観的情報）、O=Objective Data、A=Assessment、P=Plan。院内マニュアルだが定義は一般的なPOSの整理。"
+   }
+  },
+  {
+   "id": "lg-08-02",
+   "legacy": {
+    "key": "8_2",
+    "chapter": 8,
+    "chapterName": "診療情報管理I（法令・諸規則）",
+    "index": 2,
+    "hash": "218749fe12fdbf0a"
+   },
+   "subject": "S09",
+   "subtopic": "診療記録の構成とPOS",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "negative",
+   "question": "POMR（問題志向型診療録）の構成要素に含まれないのはどれか。",
+   "choices": [
+    "会計データ",
+    "基礎データ",
+    "問題リスト",
+    "初期計画"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "POMR＝基礎データ、問題リスト、初期計画、経過記録（SOAP）の4要素。会計データは含まれない。",
+    "choiceNotes": [
+     null,
+     "基礎データはPOMRの構成要素。",
+     "問題リストはPOMRの中核。",
+     "初期計画はPOMRの構成要素。"
+    ],
+    "point": "POMR＝基礎データ＋問題リスト＋初期計画＋経過記録（SOAP）。"
+   },
+   "sources": [
+    {
+     "ref": "x-legacy-L08:kwtan-pomr-1981",
+     "title": "POMRの実際（中島行正・草信正志・上田智・武田好子・山神英子）川崎医療短期大学紀要 第1号 pp.115-129",
+     "url": "https://kwtan.repo.nii.ac.jp/record/640/files/kwjckiyo_1_pp115-130_1981.pdf",
+     "locator": "p.115付近「POMRの構成」",
+     "quote": "Weedは診療記録の 4つの基本的要素と して， ①データベ ース， ②問題 リスト， ③初期計画，"
+    }
+   ],
+   "asOf": "Weedが提唱したPOMRの基本要素（文献：1981年）",
+   "origin": {
+    "batch": "L08",
+    "key": "lg-08-02",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "領域監査（法令・制度）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L08（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L08a（法令・制度）"
+    },
+    "log": "bank/audit/legacy-L08a.audit.json#lg-08-02",
+    "notes": "x-legacy-L08:kwtan-pomr-1981（Weedの4つの基本的要素：データベース・問題リスト・初期計画・経過記録）。基礎データ＝データベース。"
+   }
+  },
+  {
+   "id": "lg-08-03",
+   "legacy": {
+    "key": "8_3",
+    "chapter": 8,
+    "chapterName": "診療情報管理I（法令・諸規則）",
+    "index": 3,
+    "hash": "f2923ff15f88dd6e"
+   },
+   "subject": "S09",
+   "subtopic": "退院時要約",
+   "format": "knowledge",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "日本診療情報管理学会「退院サマリー作成に関するガイダンス」で、退院サマリーの必須記載項目ではなく推奨記載項目とされているものはどれか。",
+   "choices": [
+    "退院時診断",
+    "手術・処置情報",
+    "入院経過",
+    "アレルギー・不適応反応",
+    "退院時方針"
+   ],
+   "answer": 1,
+   "explanation": {
+    "correct": "ガイダンスの退院サマリーの構造では、〔手術・処置情報〕は「退院サマリー推奨記載項目（手術・処置で記載すべきものがある場合）」とされている。",
+    "choiceNotes": [
+     "〔退院時診断〕は退院サマリー必須記載項目である。",
+     null,
+     "〔入院経過〕は退院サマリー必須記載項目である。",
+     "〔アレルギー・不適応反応〕は退院サマリー必須記載項目である。",
+     "〔退院時方針〕は退院サマリー必須記載項目である。"
+    ],
+    "point": "推奨記載項目＝デバイス情報、手術・処置情報（該当がある場合）。診断・入院経過・退院時状況・退院時使用薬剤・退院時方針などは必須。"
+   },
+   "sources": [
+    {
+     "ref": "him:jhim-discharge-summary-guidance-2019",
+     "title": "退院サマリー作成に関するガイダンス",
+     "url": "https://jhim-e.com/pdf/guidance.pdf",
+     "locator": "＜退院サマリーの構造＞ 8)",
+     "quote": "〔手術・処置情報〕 ・・・退院サマリー推奨記載項目（手術・処置で記載すべきものがある場合）"
+    },
+    {
+     "ref": "him:jhim-discharge-summary-guidance-2019",
+     "title": "退院サマリー作成に関するガイダンス",
+     "url": "https://jhim-e.com/pdf/guidance.pdf",
+     "locator": "＜退院サマリーの構造＞ 7)",
+     "quote": "〔入院経過〕 ・・・退院サマリー必須記載項目"
+    },
+    {
+     "ref": "him:jhim-discharge-summary-guidance-2019",
+     "title": "退院サマリー作成に関するガイダンス",
+     "url": "https://jhim-e.com/pdf/guidance.pdf",
+     "locator": "＜退院サマリーの構造＞ 2)〜3)",
+     "quote": "〔退院時診断〕 ---- 退院サマリー必須記載項目"
+    }
+   ],
+   "asOf": "日本診療情報管理学会「退院サマリー作成に関するガイダンス」（2019年9月）",
+   "origin": {
+    "batch": "L08",
+    "key": "lg-08-03",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（法令・制度）で修正",
+     "修正後の再監査は未実施",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L08（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L08a（法令・制度）",
+     "reauditor": null
+    },
+    "log": "bank/audit/legacy-L08a.audit.json#lg-08-03",
+    "notes": "him:jhim-discharge-summary-guidance-2019 ＜退院サマリーの構造＞（必須記載項目／推奨記載項目の区分）。"
+   }
+  },
+  {
+   "id": "lg-08-04",
+   "legacy": {
+    "key": "8_4",
+    "chapter": 8,
+    "chapterName": "診療情報管理I（法令・諸規則）",
+    "index": 4,
+    "hash": "0df2161f54370786"
+   },
+   "subject": "S09",
+   "subtopic": "診療録管理体制加算",
+   "format": "knowledge",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "令和8年度診療報酬改定後の診療録管理体制加算の施設基準に含まれるものはどれか。",
+   "choices": [
+    "電子カルテの導入義務",
+    "専任の診療記録管理者の配置",
+    "全患者への診療録の開示",
+    "病床数500床以上"
+   ],
+   "answer": 1,
+   "explanation": {
+    "correct": "令和8年度の施設基準では、加算1は年間退院患者数2,000名ごとに1名以上の専任の常勤診療記録管理者（うち1名以上が専従）、加算2は1名以上の専任の診療記録管理者の配置を求めている。退院時要約を全患者について作成することも要件である。",
+    "choiceNotes": [
+     "加算1は退院患者の情報を含む電子的な一覧表による検索・抽出を求めるが、電子カルテの導入は要件として挙げられていない。",
+     null,
+     "要件は「患者に対し診療情報の提供が現に行われていること」であり、全患者への診療録の開示ではない。",
+     "病床数の要件はない（加算1の配置基準は年間の退院患者数で定められる）。"
+    ],
+    "point": "診療録管理体制加算（令和8年度）＝加算1：専任常勤の診療記録管理者（退院2,000名ごとに1名、うち1名専従）／加算2：専任1名以上。全患者の退院時要約作成。"
+   },
+   "sources": [
+    {
+     "ref": "ins:r08-kihon-shisetsukijun-tsuchi",
+     "title": "基本診療料の施設基準等及びその届出に関する手続きの取扱いについて（令和８年３月５日保医発0305第７号）",
+     "url": "https://www.mhlw.go.jp/content/12400000/001757361.pdf",
+     "locator": "第4 1(5)",
+     "quote": "年間の退院患者数 2,000 名ごとに１名以上の専任の常勤診療記録管理者が配置されており、うち１名以上が専従であること。"
+    },
+    {
+     "ref": "ins:r08-kihon-shisetsukijun-tsuchi",
+     "title": "基本診療料の施設基準等及びその届出に関する手続きの取扱いについて（令和８年３月５日保医発0305第７号）",
+     "url": "https://www.mhlw.go.jp/content/12400000/001757361.pdf",
+     "locator": "第4 2(2)",
+     "quote": "１名以上の専任の診療記録管理者が配置されていること。"
+    },
+    {
+     "ref": "ins:r08-kihon-shisetsukijun-tsuchi",
+     "title": "基本診療料の施設基準等及びその届出に関する手続きの取扱いについて（令和８年３月５日保医発0305第７号）",
+     "url": "https://www.mhlw.go.jp/content/12400000/001757361.pdf",
+     "locator": "第4 1(9)",
+     "quote": "患者に対し診療情報の提供が現に行われていること。"
+    }
+   ],
+   "asOf": "令和8年度診療報酬改定（令和8年3月5日 保医発0305第7号）",
+   "origin": {
+    "batch": "L08",
+    "key": "lg-08-04",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（法令・制度）で修正",
+     "修正後の再監査は未実施",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L08（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L08a（法令・制度）",
+     "reauditor": null
+    },
+    "log": "bank/audit/legacy-L08a.audit.json#lg-08-04",
+    "notes": "ins:r08-kihon-shisetsukijun-tsuchi 第4 1(5)・(7)・(9)、2(2)（令和8年度：加算1は専任常勤＋うち1名専従、加算2は専任1名以上）。病床数・電子カルテの要件なし。"
+   }
+  },
+  {
+   "id": "lg-08-06",
+   "legacy": {
+    "key": "8_6",
+    "chapter": 8,
+    "chapterName": "診療情報管理I（法令・諸規則）",
+    "index": 6,
+    "hash": "15fdfb2adfcea934"
+   },
+   "subject": "S09",
+   "subtopic": "クリニカルパスと質指標",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "クリニカルパスにおけるバリアンスの説明として正しいものはどれか。",
+   "choices": [
+    "クリニカルパスが適用された患者の割合",
+    "パスで達成を目標とする患者の状態",
+    "個々の症例で、パスに定めた標準的な経過（達成目標）からずれること",
+    "パスの適用が想定される症例にパスが適用されているかの確認"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "業務指針は、バリアンスの記録と分析を「個々の症例における標準的な経過（達成目標）からのずれ」を可視化し、診療プロセスの改善につなげる質改善ツールとしている。",
+    "choiceNotes": [
+     "パスが適用された患者の割合は適用率であり、バリアンス発生率とは別の指標である。",
+     "達成を目標とする状態そのもの（アウトカム）であり、そこからのずれであるバリアンスではない。",
+     null,
+     "適用すべき症例にパスが適用されているかの確認は、量的点検で確認する対象であり、バリアンスではない。"
+    ],
+    "point": "バリアンス＝標準的な経過（達成目標）からのずれ。分析してパスの改訂・診療プロセスの改善につなげる。"
+   },
+   "sources": [
+    {
+     "ref": "him:jhim-gyomu-shishin-2026",
+     "title": "診療情報管理士業務指針 2026",
+     "url": "https://jhim-e.com/pdf/2026/guideline2026.pdf",
+     "locator": "5-13(2) バリアンス分析の意義とデータの活用",
+     "quote": "バリアンスの記録と分析は、個々の症例における標準的な経過（達成目標）からの ずれを可視化し、診療プロセスの改善につなげる質改善ツールである。"
+    },
+    {
+     "ref": "him:jhim-gyomu-shishin-2026",
+     "title": "診療情報管理士業務指針 2026",
+     "url": "https://jhim-e.com/pdf/2026/guideline2026.pdf",
+     "locator": "5-13(3) クリニカルパスの適用状況の管理",
+     "quote": "クリニカルパスの適用率、バリアンス発生率等を疾病統計・医療統計の一環として 把握し"
+    },
+    {
+     "ref": "him:jhim-gyomu-shishin-2026",
+     "title": "診療情報管理士業務指針 2026",
+     "url": "https://jhim-e.com/pdf/2026/guideline2026.pdf",
+     "locator": "5-13(3)",
+     "quote": "量的点検においては、パスの適用が想定される症例にパスが適用されているか"
+    }
+   ],
+   "asOf": "日本診療情報管理学会「診療情報管理士業務指針 2026」（2026年8月改訂）",
+   "origin": {
+    "batch": "L08",
+    "key": "lg-08-06",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（法令・制度）で修正",
+     "修正後の再監査は未実施",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L08（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L08a（法令・制度）",
+     "reauditor": null
+    },
+    "log": "bank/audit/legacy-L08a.audit.json#lg-08-06",
+    "notes": "him:jhim-gyomu-shishin-2026 5-13(2)（標準的な経過〈達成目標〉からのずれ）・(3)（適用率・量的点検）。"
+   }
+  },
+  {
+   "id": "lg-08-17",
+   "legacy": {
+    "key": "8_17",
+    "chapter": 8,
+    "chapterName": "診療情報管理I（法令・諸規則）",
+    "index": 17,
+    "hash": "dfd3fe135b7e641b"
+   },
+   "subject": "S09",
+   "subtopic": "診療情報管理士の役割",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "negative",
+   "question": "診療情報管理士の主な業務に含まれないのはどれか。",
+   "choices": [
+    "診療録の管理・点検",
+    "コーディング（ICD等）",
+    "がん登録",
+    "処方箋の調剤"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "診療情報管理士は診療録管理、コーディング、がん登録、DPCデータ管理等が主業務。調剤は薬剤師の業務。",
+    "choiceNotes": [
+     "診療録の管理・点検は中核業務。",
+     "ICDコーディングは重要業務。",
+     "がん登録は診療情報管理士の業務範囲。",
+     null
+    ],
+    "point": "診療情報管理士＝診療録管理・コーディング・がん登録・DPC。調剤は薬剤師。"
+   },
+   "sources": [
+    {
+     "ref": "him:jhim-gyomu-shishin-2026",
+     "title": "診療情報管理士業務指針 2026",
+     "url": "https://jhim-e.com/pdf/2026/guideline2026.pdf",
+     "locator": "5-12 レジストリ業務と関連する登録業務",
+     "quote": "がん登録や NCD 等のレジストリ業務をはじめ、診療情報管理士が関与する登録業務"
+    },
+    {
+     "ref": "him:jhim-gyomu-shishin-2026",
+     "title": "診療情報管理士業務指針 2026",
+     "url": "https://jhim-e.com/pdf/2026/guideline2026.pdf",
+     "locator": "4-6 診療情報の適正な ICD・DPC コーディング",
+     "quote": "入院・外来を問わずコーディングの精度を確保する。"
+    },
+    {
+     "ref": "law:薬剤師法",
+     "title": "薬剤師法",
+     "url": "https://laws.e-gov.go.jp/law/335AC0000000146",
+     "locator": "第19条",
+     "quote": "薬剤師でない者は、販売又は授与の目的で調剤してはならない。"
+    }
+   ],
+   "asOf": "日本診療情報管理学会 診療情報管理士業務指針2026（2026年8月改訂）／2026-11 e-Gov現行法令",
+   "origin": {
+    "batch": "L08",
+    "key": "lg-08-17",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "領域監査（法令・制度）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L08（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L08b（法令・制度）"
+    },
+    "log": "bank/audit/legacy-L08b.audit.json#lg-08-17",
+    "notes": "him:jhim-gyomu-shishin-2026 4-6（ICD・DPCコーディング）・5-3（量的点検）・5-12（がん登録等のレジストリ業務）、law:薬剤師法 第19条（薬剤師でない者の調剤禁止）で確認。ブラインド解答一致。"
+   }
+  },
+  {
+   "id": "lg-08-19",
+   "legacy": {
+    "key": "8_19",
+    "chapter": 8,
+    "chapterName": "診療情報管理I（法令・諸規則）",
+    "index": 19,
+    "hash": "3375689d49fb04a4"
+   },
+   "subject": "S09",
+   "subtopic": "診療記録の構成とPOS",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "negative",
+   "question": "POMRの4つの構成要素に含まれないものはどれか。",
+   "choices": [
+    "基礎データ",
+    "問題リスト",
+    "初期計画",
+    "患者満足度調査"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "Weedは診療記録（POMR）の4つの基本的要素として、①基礎データ（データベース）、②問題リスト、③初期計画、④経過記録を挙げている。患者満足度調査は含まれない。",
+    "choiceNotes": [
+     "基礎データ（データベース）は患者から最初に集める情報で、POMRの構成要素。",
+     "問題リストはデータベースから抽出した問題を番号（＃）を付けて列挙するもので、POMRの構成要素。",
+     "初期計画は問題ごとに診断計画（Dx）・治療計画（Rx）・教育計画（Ex）を記載するもので、POMRの構成要素。",
+     null
+    ],
+    "point": "POMR＝基礎データ（データベース）＋問題リスト＋初期計画＋経過記録（SOAP）。Weedが提唱。"
+   },
+   "sources": [
+    {
+     "ref": "x-legacy-L08:kwtan-pomr-1981",
+     "title": "POMRの実際（中島行正・草信正志・上田智・武田好子・山神英子）川崎医療短期大学紀要 第1号 pp.115-129",
+     "url": "https://kwtan.repo.nii.ac.jp/record/640/files/kwjckiyo_1_pp115-130_1981.pdf",
+     "locator": "p.116「1 Weedのいう POMR とは」",
+     "quote": "Weedは診療記録の 4つの基本的要素と して， ①データベ ース， ②問題 リスト， ③初期計画，"
+    },
+    {
+     "ref": "x-legacy-L08:kwtan-pomr-1981",
+     "title": "POMRの実際（中島行正・草信正志・上田智・武田好子・山神英子）川崎医療短期大学紀要 第1号 pp.115-129",
+     "url": "https://kwtan.repo.nii.ac.jp/record/640/files/kwjckiyo_1_pp115-130_1981.pdf",
+     "locator": "「4 初期計画」",
+     "quote": "初期計画は，先ず基本的な計画を書き，ついで各問題ととに診断計画 (Dx)，治療計画 ("
+    }
+   ],
+   "asOf": "POMRの基本構成（Weed）。出典：川崎医療短期大学紀要 第1号（1981年度）",
+   "origin": {
+    "batch": "L08",
+    "key": "lg-08-19",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（法令・制度）で修正",
+     "修正後の再監査は未実施",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L08（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L08b（法令・制度）",
+     "reauditor": null
+    },
+    "log": "bank/audit/legacy-L08b.audit.json#lg-08-19",
+    "notes": "x-legacy-L08:kwtan-pomr-1981 p.116（Weedの4つの基本的要素：データベース・問題リスト・初期計画・経過記録）、初期計画のDx/Rx/Ex、問題への番号（＃）付与を確認。ブラインド解答一致。"
+   }
+  },
+  {
+   "id": "lg-08-21",
+   "legacy": {
+    "key": "8_21",
+    "chapter": 8,
+    "chapterName": "診療情報管理I（法令・諸規則）",
+    "index": 21,
+    "hash": "2ffd95c6af1fcfaa"
+   },
+   "subject": "S09",
+   "subtopic": "退院時要約",
+   "format": "knowledge",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "「退院サマリー作成に関するガイダンス」（2019年）において、退院サマリー必須記載項目とされているものはどれか。",
+   "choices": [
+    "デバイス情報",
+    "手術・処置情報",
+    "退院時診断",
+    "家族の年収"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "ガイダンスの＜退院サマリーの構造＞では、退院時診断、アレルギー・不適応反応、主訴または入院理由、入院までの経過、入院経過、退院時状況、退院時使用薬剤情報、退院時方針が必須記載項目とされている。",
+    "choiceNotes": [
+     "デバイス情報は推奨記載項目（デバイス装着がある場合）であり、必須記載項目ではない。",
+     "手術・処置情報は推奨記載項目（記載すべきものがある場合）であり、必須記載項目ではない。",
+     null,
+     "家族の年収はガイダンスの記載項目に含まれない。"
+    ],
+    "point": "退院サマリーの必須記載項目の中核は退院時診断。デバイス情報・手術処置情報は推奨記載項目。診療録管理体制加算1では退院日の翌日から起算して14日以内の作成・提出が毎月9割以上。"
+   },
+   "sources": [
+    {
+     "ref": "him:jhim-discharge-summary-guidance-2019",
+     "title": "退院サマリー作成に関するガイダンス",
+     "url": "https://jhim-e.com/pdf/guidance.pdf",
+     "locator": "＜退院サマリーの構造＞2)",
+     "quote": "2) 〔退院時診断〕 ---- 退院サマリー必須記載項目"
+    },
+    {
+     "ref": "him:jhim-discharge-summary-guidance-2019",
+     "title": "退院サマリー作成に関するガイダンス",
+     "url": "https://jhim-e.com/pdf/guidance.pdf",
+     "locator": "＜退院サマリーの構造＞4)",
+     "quote": "4) 〔デバイス情報〕 ---- 退院サマリー推奨記載項目（デバイス装着がある場合）"
+    },
+    {
+     "ref": "ins:r08-kihon-shisetsukijun-tsuchi",
+     "title": "基本診療料の施設基準等及びその届出に関する手続きの取扱いについて（令和８年３月５日保医発0305第７号）",
+     "url": "https://www.mhlw.go.jp/content/12400000/001757361.pdf",
+     "locator": "第4 1(8)（診療録管理体制加算１）",
+     "quote": "退院日の翌日から起算して 14 日以内に退院時要約が作成されて中央病歴管理"
+    }
+   ],
+   "asOf": "退院サマリー作成に関するガイダンス（2019年9月）／令和8年度診療報酬改定（保医発0305第7号）",
+   "origin": {
+    "batch": "L08",
+    "key": "lg-08-21",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（法令・制度）で修正",
+     "修正後の再監査は未実施",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L08（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L08b（法令・制度）",
+     "reauditor": null
+    },
+    "log": "bank/audit/legacy-L08b.audit.json#lg-08-21",
+    "notes": "him:jhim-discharge-summary-guidance-2019＜退院サマリーの構造＞（退院時診断＝必須、デバイス情報・手術処置情報＝推奨）、ins:r08-kihon-shisetsukijun-tsuchi 第4（診療録管理体制加算1(8)：退院日の翌日から起算して14日以内の作成・提出が毎月9割以上）を確認。"
+   }
+  },
+  {
+   "id": "lg-08-22",
+   "legacy": {
+    "key": "8_22",
+    "chapter": 8,
+    "chapterName": "診療情報管理I（法令・諸規則）",
+    "index": 22,
+    "hash": "5f0077d8e10ab0cb"
+   },
+   "subject": "S09",
+   "subtopic": "診療記録の記載原則",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "説明と同意に関する文書（同意書）の取扱いについて、日本診療情報管理学会の指針に照らして適切なものはどれか。",
+   "choices": [
+    "同意書は診療記録とは別に扱い、手術や検査が終了すれば破棄してよい。",
+    "同意書の原本は患者が保管し、医療機関には何も残さない。",
+    "同意書には患者本人の署名があれば足り、説明者の署名は要しない。",
+    "同意書は当該患者の診療記録の一部として保管し、量的点検の対象とする。"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "診療情報管理士業務指針2026では、量的点検の対象を診療の過程で発生する記録全般とし、説明と同意に関する文書を含めている。同意書は当該患者の診療記録として保管・点検する。",
+    "choiceNotes": [
+     "説明と同意に関する文書は診療記録として量的点検の対象であり、終了後に破棄してよいものではない。",
+     "記録指針は入院同意書等を入院時文書・書類として整備すべきものに挙げており、医療機関が診療記録として保管する。",
+     "記録指針は説明と同意の文書について、説明者と患者本人の署名・押印の徹底を求めている。",
+     null
+    ],
+    "point": "同意書＝診療記録の一部として保管し量的点検の対象。説明者と患者本人の署名・押印を徹底（診療情報の記録指針2024）。"
+   },
+   "sources": [
+    {
+     "ref": "him:jhim-gyomu-shishin-2026",
+     "title": "診療情報管理士業務指針 2026",
+     "url": "https://jhim-e.com/pdf/2026/guideline2026.pdf",
+     "locator": "5-3(1) 点検対象項目",
+     "quote": "初診・入院時の基本情報の記録、診療経過の記録、説明と同意に関する文書、手術・"
+    },
+    {
+     "ref": "him:jhim-kiroku-shishin-2024",
+     "title": "診療情報の記録指針 2024",
+     "url": "https://jhim-e.com/pdf/data2024/recording_guide2024.pdf",
+     "locator": "4(3)③ 説明と同意文書の共通化",
+     "quote": "様式の適用、説明者と患者本人の署名・押印の徹底"
+    },
+    {
+     "ref": "him:jhim-kiroku-shishin-2024",
+     "title": "診療情報の記録指針 2024",
+     "url": "https://jhim-e.com/pdf/data2024/recording_guide2024.pdf",
+     "locator": "4(2)⑧ 入院時文書・書類の整備",
+     "quote": "、入院同意書・誓約書、DPC 説明書、ACP および紹介元からの"
+    }
+   ],
+   "asOf": "日本診療情報管理学会 診療情報の記録指針2024（2024年8月）／診療情報管理士業務指針2026（2026年8月改訂）",
+   "origin": {
+    "batch": "L08",
+    "key": "lg-08-22",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（法令・制度）で修正",
+     "修正後の再監査は未実施",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L08（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L08b（法令・制度）",
+     "reauditor": null
+    },
+    "log": "bank/audit/legacy-L08b.audit.json#lg-08-22",
+    "notes": "him:jhim-gyomu-shishin-2026 5-3（量的点検の対象に説明と同意に関する文書を含む）、him:jhim-kiroku-shishin-2024 4(2)⑧・(3)③（入院同意書等の整備、説明者と患者本人の署名・押印の徹底）を確認。"
+   }
+  },
+  {
+   "id": "lg-08-25",
+   "legacy": {
+    "key": "8_25",
+    "chapter": 8,
+    "chapterName": "診療情報管理I（法令・諸規則）",
+    "index": 25,
+    "hash": "a67f106f10dbff53"
+   },
+   "subject": "S09",
+   "subtopic": "診療記録の記載原則",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "診療録の記録の修正方法として正しいのはどれか。",
+   "choices": [
+    "修正液で消して書き直す",
+    "修正箇所を切り取って貼り直す",
+    "二重線で消し修正日・修正者名を記入する",
+    "元の記録を完全に削除して新たに記載する"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "診療録の訂正は、訂正前の文字が見えるように二重線で行い、訂正の日時や訂正者（理由等）を併記する。原記録を残すことで記録の真正性を保つ。",
+    "choiceNotes": [
+     "修正液は訂正前の記載を判読できなくするため不適切。",
+     "切り取りは原記録が残らず、訂正前の内容を確認できないため不適切。",
+     null,
+     "元の記録を削除すると原記録が残らず不適切。訂正は原記録を残して行う。"
+    ],
+    "point": "記録の訂正＝二重線（訂正前が読める）＋日時・訂正者・理由等。電子カルテでは修正・削除の履歴を残す。"
+   },
+   "sources": [
+    {
+     "ref": "him:tohoku-shinryoroku-kisai-2023",
+     "title": "診療録の記載について～保険診療における診療録の適切な記載方法～（保険診療と個別指導（医科） 参考資料 第2回）",
+     "url": "https://kouseikyoku.mhlw.go.jp/tohoku/news/000269416.pdf",
+     "locator": "診療録記載時の留意事項",
+     "quote": "訂正は訂正前の文字が見えるように二重線で行う。"
+    },
+    {
+     "ref": "him:jhim-kiroku-shishin-2024",
+     "title": "診療情報の記録指針 2024",
+     "url": "https://jhim-e.com/pdf/data2024/recording_guide2024.pdf",
+     "locator": "3(3) 開示請求の対象となる公的文書であることを踏まえた原則",
+     "quote": "原記録は残して別に追 記・訂正し、その日時・理由等を併記する。"
+    },
+    {
+     "ref": "him:kobeu-shinryoroku-manual-2023",
+     "title": "診療録記載マニュアル（2023年7月改訂）",
+     "url": "https://www.med.kobe-u.ac.jp/gakumu/gakunai/ccs3/1file/shinryoroku_manual1.pdf",
+     "locator": "記載の原則",
+     "quote": "加筆や修正、削除等を行う場合は、その履歴を残す。"
+    }
+   ],
+   "asOf": "日本診療情報管理学会 診療情報の記録指針2024／東北厚生局 参考資料（2023年3月）",
+   "origin": {
+    "batch": "L08",
+    "key": "lg-08-25",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（法令・制度）で修正",
+     "修正後の再監査は未実施",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L08（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L08b（法令・制度）",
+     "reauditor": null
+    },
+    "log": "bank/audit/legacy-L08b.audit.json#lg-08-25",
+    "notes": "him:tohoku-shinryoroku-kisai-2023（訂正は訂正前の文字が見えるように二重線）、him:jhim-kiroku-shishin-2024 3(3)（原記録を残し日時・理由等を併記）、him:kobeu-shinryoroku-manual-2023（修正・削除の履歴を残す）を確認。ブラインド解答一致。"
+   }
+  },
+  {
+   "id": "lg-08-28",
+   "legacy": {
+    "key": "8_28",
+    "chapter": 8,
+    "chapterName": "診療情報管理I（法令・諸規則）",
+    "index": 28,
+    "hash": "56147c1e0ef7aa5d"
+   },
+   "subject": "S09",
+   "subtopic": "量的点検・質的点検",
+   "format": "knowledge",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "「診療情報管理士業務指針2026」における診療情報の「監査」の説明として、正しいものはどれか。",
+   "choices": [
+    "診療報酬の請求額を減らすことを主な目的として、請求内容を見直す活動",
+    "体制・運用が定められた基準に適合しているかを評価し、医療の質の改善につなげる活動",
+    "個々の診療記録の記載内容を日常的に確認し、不備の検出と是正を行う活動",
+    "新しい治療法を開発するために、蓄積された診療データを解析する活動"
+   ],
+   "answer": 1,
+   "explanation": {
+    "correct": "業務指針2026の4-3は、監査を「診療情報管理の体制・運用が定められた基準に適合しているかを評価し、医療の質の改善につなげる活動」と定義し、診療情報管理士は点検と監査の双方を主体的に担うとしている。",
+    "choiceNotes": [
+     "監査は基準への適合を評価し医療の質の改善につなげる活動であり、請求額の削減を目的とするものではない。",
+     null,
+     "個々の診療記録を日常的に確認し不備を検出・是正する活動は「点検」と定義されている。",
+     "治療法の開発は研究活動であり、監査の定義にあたらない。"
+    ],
+    "point": "点検＝個々の記録の日常的な確認と不備の是正。監査＝体制・運用が基準に適合しているかの評価と医療の質の改善（業務指針2026 4-3）。"
+   },
+   "sources": [
+    {
+     "ref": "him:jhim-gyomu-shishin-2026",
+     "title": "診療情報管理士業務指針 2026",
+     "url": "https://jhim-e.com/pdf/2026/guideline2026.pdf",
+     "locator": "4-3 診療情報の点検と監査",
+     "quote": "監査とは、診療情報管理の体制・運用が定められた基準に適合しているかを 評価し、医療の質の改善につなげる活動である。"
+    },
+    {
+     "ref": "him:jhim-gyomu-shishin-2026",
+     "title": "診療情報管理士業務指針 2026",
+     "url": "https://jhim-e.com/pdf/2026/guideline2026.pdf",
+     "locator": "4-3 診療情報の点検と監査",
+     "quote": "点検とは、個々の診療記録の記載内容を日常的に確認し、不備の検出と是正を行う活"
+    }
+   ],
+   "asOf": "日本診療情報管理学会 診療情報管理士業務指針2026（2026年8月改訂）",
+   "origin": {
+    "batch": "L08",
+    "key": "lg-08-28",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（法令・制度）で修正",
+     "修正後の再監査は未実施",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L08（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L08b（法令・制度）",
+     "reauditor": null
+    },
+    "log": "bank/audit/legacy-L08b.audit.json#lg-08-28",
+    "notes": "him:jhim-gyomu-shishin-2026 4-3（点検＝個々の記録の日常的確認・不備の是正、監査＝体制・運用が基準に適合しているかを評価し医療の質の改善につなげる活動）を確認。"
+   }
+  },
+  {
+   "id": "lg-08-31",
+   "legacy": {
+    "key": "8_31",
+    "chapter": 8,
+    "chapterName": "診療情報管理I（法令・諸規則）",
+    "index": 31,
+    "hash": "593eef84ad979268"
+   },
+   "subject": "S09",
+   "subtopic": "診療記録の構成とPOS",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "POS（問題志向型システム）の経過記録で用いるSOAPのAが意味するのはどれか。",
+   "choices": [
+    "主観的データ",
+    "客観的データ",
+    "評価",
+    "計画"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "SOAPのAはAssessment（評価）。S（主観的データ）とO（客観的データ）に基づき病態を評価・判断する部分。",
+    "choiceNotes": [
+     "主観的データはS（Subjective）。",
+     "客観的データはO（Objective）。",
+     null,
+     "計画はP（Plan）。"
+    ],
+    "point": "SOAP＝S（主観）＋O（客観）＋A（評価）＋P（計画）。経過記録の基本フォーマット。"
+   },
+   "sources": [
+    {
+     "ref": "x-legacy-L08:kwtan-pomr-1981",
+     "title": "POMRの実際（中島行正・草信正志・上田智・武田好子・山神英子）川崎医療短期大学紀要 第1号 pp.115-129",
+     "url": "https://kwtan.repo.nii.ac.jp/record/640/files/kwjckiyo_1_pp115-130_1981.pdf",
+     "locator": "p.116「1 Weedのいう POMR とは」",
+     "quote": "評価 (assessment,A)として，"
+    },
+    {
+     "ref": "x-legacy-L08:kwtan-pomr-1981",
+     "title": "POMRの実際（中島行正・草信正志・上田智・武田好子・山神英子）川崎医療短期大学紀要 第1号 pp.115-129",
+     "url": "https://kwtan.repo.nii.ac.jp/record/640/files/kwjckiyo_1_pp115-130_1981.pdf",
+     "locator": "p.116「1 Weedのいう POMR とは」",
+     "quote": "Weedは診療記録の 4つの基本的要素と して， ①データベ ース， ②問題 リスト， ③初期計画，"
+    }
+   ],
+   "asOf": "POMRの基本構成（Weed）。出典：川崎医療短期大学紀要 第1号（1981年度）",
+   "origin": {
+    "batch": "L08",
+    "key": "lg-08-31",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "領域監査（法令・制度）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L08（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L08b（法令・制度）"
+    },
+    "log": "bank/audit/legacy-L08b.audit.json#lg-08-31",
+    "notes": "x-legacy-L08:kwtan-pomr-1981 p.116（S＝主観的情報、O＝客観的情報、A＝評価〈assessment〉、P＝計画）を確認。ブラインド解答一致。"
+   }
+  }
+ ]
+}

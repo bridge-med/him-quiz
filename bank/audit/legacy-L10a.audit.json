@@ -1,0 +1,964 @@
+{
+ "verdicts": [
+  {
+   "id": "lg-10-00",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:rikai「１ ICDとは」で英名と正式名称「疾病及び関連保健問題の国際統計分類」を確認。誤答肢の ICF・ICHI の英名は icdbg:mhlw-icf-ja-2002、icdbg:whofic-japan-about で確認。",
+   "detail": "誤答肢が短く、正答だけが長い正式名称で語の手がかりから解けたため、同程度の長さの紛らわしい誤答肢（ICF・ICHIの英名、語を入れ替えた名称）に差し替えた。",
+   "question": {
+    "id": "lg-10-00",
+    "legacy": {
+     "key": "10_0",
+     "chapter": 10,
+     "chapterName": "国際統計分類I（ICD総論・コーディング実践）",
+     "index": 0,
+     "hash": "4bb28f4e2e0f4efa"
+    },
+    "subject": "S11",
+    "subtopic": "ICDの歴史とWHO-FIC",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "ICD（国際疾病分類）の正式な英語名称はどれか。",
+    "choices": [
+     "International Statistical Classification of Diseases and Related Health Problems",
+     "International Classification of Functioning, Disability and Health",
+     "International Classification of Health Interventions",
+     "International Statistical Classification of Diagnoses and Related Medical Procedures"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "ICDはInternational Statistical Classification of Diseases and Related Health Problemsの略で、WHOにおいて定められた分類であり、正式には「疾病及び関連保健問題の国際統計分類」という。",
+     "choiceNotes": [
+      null,
+      "ICF（国際生活機能分類）の英語名称である。",
+      "ICHI（医療行為の分類。WHO-FICの中心分類として開発中）の英語名称である。",
+      "ICDの名称は「Diseases and Related Health Problems（疾病及び関連保健問題）」であり、DiagnosesやMedical Proceduresではない。"
+     ],
+     "point": "ICD＝International Statistical Classification of Diseases and Related Health Problems（疾病及び関連保健問題の国際統計分類）。"
+    },
+    "sources": [
+     {
+      "ref": "icd:rikai",
+      "title": "疾病、傷害及び死因の統計分類の正しい理解と普及に向けて（ICD-10（2013年版）準拠）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/ICD-10_2013_2802.pdf",
+      "locator": "１ ICDとは",
+      "quote": "ICD：International Statistical Classification of Diseases and Related Health Problems とは"
+     },
+     {
+      "ref": "icd:rikai",
+      "title": "疾病、傷害及び死因の統計分類の正しい理解と普及に向けて（ICD-10（2013年版）準拠）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/ICD-10_2013_2802.pdf",
+      "locator": "１ ICDとは",
+      "quote": "世界保健機関（WHO）において定められた分類であり、正式には「疾病及び関連保健問題の国際統計分類」といい"
+     },
+     {
+      "ref": "icdbg:mhlw-icf-ja-2002",
+      "title": "「国際生活機能分類－国際障害分類改訂版－」（日本語版）の厚生労働省ホームページ掲載について",
+      "url": "https://www.mhlw.go.jp/houdou/2002/08/h0805-1.html",
+      "locator": "本文",
+      "quote": "国際生活機能分類：国際障害分類改定版（International Classification of Functioning, Disability and Health, ICF）"
+     }
+    ],
+    "asOf": "ICD-10（2013年版）準拠"
+   }
+  },
+  {
+   "id": "lg-10-01",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icdbg:whofic-japan-about（中心分類はICD・ICF・開発中のICHI）、icd:rikai のWHO-FIC図（医療行為の分類（ICHI）作成中）、ins:dpc-gaiyo-kangaekata（DPC＝診断群分類）で確認。",
+   "detail": "ICHIの和名「国際保健介入分類」は出典になく、厚労省資料では「医療行為の分類（ICHI）」で現在開発中。WHO-FICの構成（中心分類・派生分類・関連分類）と、DPCが診断群分類に基づくわが国の支払制度である旨を出典どおりに修正。",
+   "question": {
+    "id": "lg-10-01",
+    "legacy": {
+     "key": "10_1",
+     "chapter": 10,
+     "chapterName": "国際統計分類I（ICD総論・コーディング実践）",
+     "index": 1,
+     "hash": "082a679d07c8797c"
+    },
+    "subject": "S11",
+    "subtopic": "ICDの歴史とWHO-FIC",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "negative",
+    "question": "WHO-FIC（国際分類ファミリー）に含まれないのはどれか。",
+    "choices": [
+     "ICD",
+     "ICF",
+     "ICHI",
+     "DPC"
+    ],
+    "answer": 3,
+    "explanation": {
+     "correct": "WHO国際統計分類（WHO-FIC）は「中心分類」「派生分類」「関連分類」の3グループから成り、中核の中心分類はICD、ICFと現在開発中のICHIである。DPCは診断群分類（Diagnosis Procedure Combination）及びそれに基づく1日当たり定額報酬算定制度を指すわが国の制度上の呼称で、WHO-FICには含まれない。",
+     "choiceNotes": [
+      "ICD（疾病及び関連保健問題の国際統計分類）はWHO-FICの中心分類の一つ。",
+      "ICF（国際生活機能分類）はWHO-FICの中心分類の一つ。",
+      "ICHI（医療行為の分類）は現在開発中のWHO-FICの中心分類。",
+      null
+     ],
+     "point": "WHO-FICの中心分類＝ICD・ICF・ICHI（開発中）。DPCはわが国の診断群分類・支払制度でWHO-FICではない。"
+    },
+    "sources": [
+     {
+      "ref": "icdbg:whofic-japan-about",
+      "title": "WHO-FICについて",
+      "url": "http://who-fic-japan.mhlw.go.jp/about03.html",
+      "locator": "WHO-FIC（WHO Family of International Classifications）",
+      "quote": "大きくは「中心分類」「派生分類」「関連分類」の3つのグループから成り、その中核をなす「中心分類」はICD、ICFと現在開発中のICHIです。"
+     },
+     {
+      "ref": "ins:dpc-gaiyo-kangaekata",
+      "title": "DPC制度（DPC/PDPS）の概要と基本的な考え方",
+      "url": "https://www.mhlw.go.jp/file/05-Shingikai-12404000-Hokenkyoku-Iryouka/0000142247.pdf",
+      "locator": "冒頭の注記（※「DPC」という呼称について）",
+      "quote": "①診断群分類に基づく１日当たり定額報酬算定 制度を意味する場合と、②患者分類としての診断群分類を意味する場合とが混在"
+     }
+    ],
+    "asOf": "日本WHO国際統計分類協力センター「WHO-FICについて」（2026-11取得）"
+   }
+  },
+  {
+   "id": "lg-10-02",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:instruction 3.2.2（索引の構造：見出し用語と修飾語・限定語）、3.3 の手順2・4（見出し用語は通常病理学的病態の名詞、括弧内の限定語はコードに影響しない）、3.1.2（包含用語）で確認。",
+   "detail": "2013年版提要の用語は「見出し用語」（「主導語」の語は出典にない）。選択肢が「患者の氏名」「医師の署名」など学習上無意味だったため、索引・内容例示表の構造（修飾語・限定語・相互参照・包含用語）から紛らわしい誤答肢に作り直した。",
+   "question": {
+    "id": "lg-10-02",
+    "legacy": {
+     "key": "10_2",
+     "chapter": 10,
+     "chapterName": "国際統計分類I（ICD総論・コーディング実践）",
+     "index": 2,
+     "hash": "29eeddd728417e6f"
+    },
+    "subject": "S11",
+    "subtopic": "索引表の使い方",
+    "format": "knowledge",
+    "difficulty": "standard",
+    "polarity": "positive",
+    "question": "ICD-10（2013年版）の索引表（第３巻）における「見出し用語」の説明として、正しいものはどれか。",
+    "choices": [
+     "欄の左端に置かれる語で、疾病及び損傷では通常、病理学的病態を表す名詞が用いられる。",
+     "見出し用語の下に字下げして置かれ、コーディングに影響を与える種類、部位又は周囲の状況を示す語である。",
+     "見出し用語の後ろの括弧内に示され、コード番号に影響を与えない語である。",
+     "索引表の他の箇所を参照するよう指示する「～を参照」「～も参照」の語である。",
+     "内容例示表の項目のタイトルに付け加えられ、その項目に分類される診断的記述を例示する語である。"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "索引は欄の左端に置かれた「見出し用語」と、その下に字下げされた修飾語・限定語から成る。コーディングでは見出し用語を探すことから始め、疾病及び損傷については通常、病理学的病態に対する名詞が見出し用語となっている（形容詞や地名・発見者名のついた病態が見出し用語のこともある）。",
+     "choiceNotes": [
+      null,
+      "見出し用語の下に字下げされた修飾語又は限定語の説明。第Ⅰ編では通常、種類・部位・周囲の状況を示し、コード番号に影響する可能性がある。",
+      "見出し用語の後ろの括弧で囲まれた限定語の説明。これらはコード番号に影響を与えない。",
+      "相互参照の説明。索引表の中での不必要な重複を避けるために使われる。",
+      "内容例示表の「包含用語」の説明であり、索引表の見出し用語ではない。"
+     ],
+     "point": "索引表：左端の見出し用語（通常は病態の名詞）→字下げの修飾語・限定語（コードに影響しうる）。括弧内の限定語はコードに影響しない。"
+    },
+    "sources": [
+     {
+      "ref": "icd:instruction",
+      "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+      "locator": "3.2.2 索引の構造",
+      "quote": "索引は、欄の左端に置かれている「見出し用語」を含み、それらの下には異なるレベルに字下げされた位置にその他の語句（「修飾語」又は「限定語」）を伴っている。"
+     },
+     {
+      "ref": "icd:instruction",
+      "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+      "locator": "3.3 コーダーのための基本的なガイドライン 手順２・４",
+      "quote": "疾病及び損傷については、通常は病理学的病態に対する名詞が見出し用語となっている。"
+     },
+     {
+      "ref": "icd:instruction",
+      "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+      "locator": "3.3 コーダーのための基本的なガイドライン 手順４",
+      "quote": "見出し用語の後ろの括弧で囲まれた用語（これらの限定語は、コード番号に影響を与えない）"
+     }
+    ],
+    "asOf": "ICD-10（2013年版）準拠"
+   }
+  },
+  {
+   "id": "lg-10-03",
+   "verdict": "pass",
+   "contentChanged": false,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:instruction 3.1.2「包含用語」「除外用語」で、包含用語＝その項目に分類される診断的記述の例示、除外用語＝実際は他に分類される用語であることを確認。lg-10-26（L10b）と同主題のため、重複整理は L10b 側で判断。",
+   "question": {
+    "id": "lg-10-03",
+    "legacy": {
+     "key": "10_3",
+     "chapter": 10,
+     "chapterName": "国際統計分類I（ICD総論・コーディング実践）",
+     "index": 3,
+     "hash": "c4271e6356c41e19"
+    },
+    "subject": "S11",
+    "subtopic": "分類の規約と用語",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "内容例示表の「包含（includes）」の意味はどれか。",
+    "choices": [
+     "そのコードに含まれる用語の例示",
+     "そのコードに含まれない用語",
+     "コードの略称",
+     "医学的に否定された用語"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "包含（includes）はそのコードに分類される用語・状態の例を示す。除外（excludes）はそのコードに含まれず別のコードに分類される用語。",
+     "choiceNotes": [
+      null,
+      "含まれない用語は「除外（excludes）」。",
+      "コードの略称ではない。",
+      "否定された用語ではない。"
+     ],
+     "point": "包含＝そのコードに含む。除外＝別コードに分類。コーディングの重要ルール。"
+    },
+    "sources": [
+     {
+      "ref": "icd:instruction",
+      "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+      "locator": "3.1.2 包含用語の例示及び４桁細分類項目の利用（包含用語）",
+      "quote": "これらは「包含用語」であり、その項目に分類される診断的記述の例示としてタイトルに付け加えられている。"
+     },
+     {
+      "ref": "icd:instruction",
+      "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+      "locator": "3.1.2（除外用語）",
+      "quote": "それらがそこに分類されるはずであるということを項目のタイトルが示唆するかもしれないが、実際は他に分類される用語である。"
+     }
+    ],
+    "asOf": "ICD-10（2013年版）準拠"
+   }
+  },
+  {
+   "id": "lg-10-04",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:instruction 4.4.1（主要病態の定義：エピソードの最後に診断された病態、多数ある場合は最も医療資源が使われた病態、診断なしは主要症状等）で確認。",
+   "detail": "正答肢「入院中に最も医療資源を投入した病態」は定義の一部（該当病態が多数ある場合の選び方）だけで不正確。用語を提要の「主要病態」に合わせ、定義全体を正答とし、定義の各要素に対応する誤答肢に作り直した。",
+   "question": {
+    "id": "lg-10-04",
+    "legacy": {
+     "key": "10_4",
+     "chapter": 10,
+     "chapterName": "国際統計分類I（ICD総論・コーディング実践）",
+     "index": 4,
+     "hash": "f50ea13f017bbc84"
+    },
+    "subject": "S11",
+    "subtopic": "疾病統計と主要病態の選択",
+    "format": "knowledge",
+    "difficulty": "standard",
+    "polarity": "positive",
+    "question": "ICD-10（2013年版）にもとづく疾病統計の「主要病態」について、正しいものはどれか。",
+    "choices": [
+     "保健ケアのエピソードの最後に診断された病態のうち、主として治療又は検査の必要性の原因となったものであり、そのような病態が多数ある場合は最も医療資源が使われた病態を選ぶ。",
+     "保健ケアのエピソードの開始時（入院時）に最初に疑われた病態であり、その後の診断にかかわらず変更しない。",
+     "治療又は検査の必要性の原因となった病態が多数ある場合は、診療録に最初に記載された病態を選ぶ。",
+     "診断がなされなかった場合は、主要病態を記録しない。",
+     "治療又は検査の必要性の原因となった病態が多数ある場合は、ICDコードの番号が最も小さい病態を選ぶ。"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "主要病態とは、主として患者の治療又は検査に対する必要性にもとづく、保健ケアのエピソードの最後に診断された病態と定義される。そのような病態が多数ある場合には、もっとも医療資源が使われた病態を選択する。診断がなされなかった場合は、主要症状又は異常な所見もしくは問題を主要病態として選択する。",
+     "choiceNotes": [
+      null,
+      "主要病態はエピソードの最後に診断された病態であり、入院時に疑われた病態に固定するものではない。",
+      "該当する病態が多数ある場合は、記載順ではなく最も医療資源が使われた病態を選ぶ。",
+      "診断がなされなかった場合は、主要症状又は異常な所見もしくは問題を主要病態として選ぶ。",
+      "コード番号の大小は選択の基準ではない。最も医療資源が使われた病態を選ぶ。"
+     ],
+     "point": "主要病態＝エピソードの最後に診断された、治療・検査の主な理由の病態。複数なら最も医療資源を使った病態。診断なしなら主要症状・異常所見。"
+    },
+    "sources": [
+     {
+      "ref": "icd:instruction",
+      "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+      "locator": "4.4.1 疾病データ（単一病因分析）",
+      "quote": "主要病態とは、主として、患者の治療又は検査に対する必要性にもとづく、保健ケアのエピソードの最後に診断された病態であると定義される。"
+     },
+     {
+      "ref": "icd:instruction",
+      "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+      "locator": "4.4.1 疾病データ（単一病因分析）",
+      "quote": "もしそのような病態が多数ある場合には、もっとも医療資源が使われた病態を選択すべきである。もし診断がなされなかった場合は、主要症状又は異常な所見もしくは問題を主要病態として選択すべきである。"
+     }
+    ],
+    "asOf": "ICD-10（2013年版）準拠"
+   }
+  },
+  {
+   "id": "lg-10-05",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou02 C80（C80.0 原発部位不明と記載されたもの）、D37-D48の注、icd:naiyou21 Z03（Z03.1）で確認。icd.mjs で C80/C34/D48/Z03 の存在と名称を確認。",
+   "detail": "選択肢の名称を2013年版の項目名に修正（C80「悪性新生物＜腫瘍＞，部位が明示されていないもの」、C34「気管支及び肺の…」、D48「その他及び部位不明の性状不詳又は不明の…」、Z03「疾病及び病態の疑いに対する医学的観察及び評価」）。D48・Z03の注と要点の「疑い＝Z03」を出典どおり正確化。",
+   "question": {
+    "id": "lg-10-05",
+    "legacy": {
+     "key": "10_5",
+     "chapter": 10,
+     "chapterName": "国際統計分類I（ICD総論・コーディング実践）",
+     "index": 5,
+     "hash": "5b4715ea2d5ca15e"
+    },
+    "subject": "S12",
+    "subtopic": "新生物（第Ⅱ章）",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "ICD-10（2013年版）で、「原発部位不明」と記載された悪性新生物＜腫瘍＞が分類される３桁分類項目はどれか。",
+    "choices": [
+     "C80 悪性新生物＜腫瘍＞，部位が明示されていないもの",
+     "C34 気管支及び肺の悪性新生物＜腫瘍＞",
+     "D48 その他及び部位不明の性状不詳又は不明の新生物＜腫瘍＞",
+     "Z03 疾病及び病態の疑いに対する医学的観察及び評価"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "C80「悪性新生物＜腫瘍＞，部位が明示されていないもの」の4桁細分類C80.0が「悪性新生物＜腫瘍＞，原発部位不明と記載されたもの」であり、包含用語に「原発部位不明」がある。",
+     "choiceNotes": [
+      null,
+      "C34は原発部位が気管支及び肺と明示された悪性新生物＜腫瘍＞の項目。",
+      "D37-D48は悪性か良性か確定できない性状不詳又は不明の新生物＜腫瘍＞の部位による分類で、D48はその他及び部位不明のもの。性状が悪性と分かっている場合には用いない。",
+      "Z03は疾病及び病態の疑いに対する医学的観察及び評価（Z03.1は悪性新生物＜腫瘍＞の疑いに対する観察）で、悪性新生物と診断された場合には用いない。"
+     ],
+     "point": "原発部位不明の悪性新生物＝C80（C80.0）。性状不詳又は不明＝D37-D48。悪性新生物の疑いに対する観察＝Z03.1。"
+    },
+    "sources": [
+     {
+      "ref": "icd:naiyou02",
+      "title": "ICD-10（2013年版）準拠 内容例示表 第2章 新生物＜腫瘍＞（C00-D48）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou02.pdf",
+      "locator": "C80",
+      "quote": "C80．0   悪性新生物＜腫瘍＞，原発部位不明と記載されたもの 原発部位不明"
+     },
+     {
+      "ref": "icd:naiyou02",
+      "title": "ICD-10（2013年版）準拠 内容例示表 第2章 新生物＜腫瘍＞（C00-D48）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou02.pdf",
+      "locator": "D37-D48 注",
+      "quote": "注：項目Ｄ37－Ｄ48 は性状不詳又は不明の新生物＜腫瘍＞， すなわち悪性か良性 か確定できない新生物＜腫瘍＞の部位による分類である。"
+     },
+     {
+      "ref": "icd:naiyou21",
+      "title": "ICD-10（2013年版）準拠 内容例示表 第21章 健康状態に影響を及ぼす要因及び保健サービスの利用（Z00-Z99）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou21.pdf",
+      "locator": "Z03",
+      "quote": "Ｚ03．1   悪性新生物＜腫瘍＞の疑いに対する観察"
+     }
+    ],
+    "asOf": "ICD-10（2013年版）準拠"
+   }
+  },
+  {
+   "id": "lg-10-06",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou20 章冒頭の注（他章のコードに追加して使用、病態の性質はほとんどⅩⅨ章、死因で単一コードならⅩⅩ章優先）、icd:instruction 4.4.4 第ⅩⅩ章（主要病態コードとして使用しない、任意的追加コード）で確認。",
+   "detail": "疾病統計で第ⅩⅩ章のコードは「任意的追加コード」であり「必要な追加コード」は不正確。死因統計では単一コード集計の場合に第ⅩⅩ章を優先する点も補った。誤答肢を他章の名称・範囲に改め、5肢化。",
+   "question": {
+    "id": "lg-10-06",
+    "legacy": {
+     "key": "10_6",
+     "chapter": 10,
+     "chapterName": "国際統計分類I（ICD総論・コーディング実践）",
+     "index": 6,
+     "hash": "600cda5d2d1a1655"
+    },
+    "subject": "S12",
+    "subtopic": "外因（第ⅩⅩ章）",
+    "format": "knowledge",
+    "difficulty": "standard",
+    "polarity": "positive",
+    "question": "ICD-10（2013年版）で、第ⅩⅨ章（S00-T98）に分類される損傷や中毒について、その原因となった周囲の状況やできごとを示すために追加して用いるコードはどれか。",
+    "choices": [
+     "第ⅩⅩ章 傷病及び死亡の外因（V01-Y98）",
+     "第Ⅰ章 感染症及び寄生虫症（A00-B99）",
+     "第ⅩⅧ章 症状，徴候及び異常臨床所見・異常検査所見で他に分類されないもの（R00-R99）",
+     "第ⅩⅩⅠ章 健康状態に影響を及ぼす要因及び保健サービスの利用（Z00-Z99）",
+     "第ⅩⅥ章 周産期に発生した病態（P00-P96）"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "第ⅩⅩ章は損傷，中毒及びその他の有害作用の原因としての周囲の状況及びできごとを分類し、病態の性質を示す他章のコード（ほとんどの場合ⅩⅨ章）に追加するものとして使用する。疾病統計では第ⅩⅩ章のコードは主要病態コードとして使用せず任意的追加コードとし、死因統計で単一のコードのみで集計する場合は第ⅩⅩ章のコードを優先する。",
+     "choiceNotes": [
+      null,
+      "第Ⅰ章は感染症及び寄生虫症の章で、損傷の原因となった状況・できごとを示すものではない。",
+      "第ⅩⅧ章は症状・徴候・異常所見で他に分類されないものの章で、外因を示すものではない。",
+      "第ⅩⅩⅠ章は健康状態に影響を及ぼす要因及び保健サービスの利用の章で、外因を示すものではない。",
+      "第ⅩⅥ章は周産期に発生した病態の章で、外因を示すものではない。"
+     ],
+     "point": "損傷・中毒＝ⅩⅨ章（性質）＋ⅩⅩ章（外因）。疾病統計ではⅩⅩ章は任意的追加コード、死因の単一コード集計ではⅩⅩ章優先。"
+    },
+    "sources": [
+     {
+      "ref": "icd:naiyou20",
+      "title": "ICD-10（2013年版）準拠 内容例示表 第20章 傷病及び死亡の外因（V01-Y98）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou20.pdf",
+      "locator": "第ⅩⅩ章 冒頭の注",
+      "quote": "本章のコードを使用する場合は， 本分類の 病態の性質を示す他章のコードに追加するものとして使用する。 ほとんどの場合， 病態の性質はⅩⅨ 章の 「損傷， 中毒及びその他の外因の影響（Ｓ00－Ｔ98）」 に分類可能である。"
+     },
+     {
+      "ref": "icd:naiyou20",
+      "title": "ICD-10（2013年版）準拠 内容例示表 第20章 傷病及び死亡の外因（V01-Y98）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou20.pdf",
+      "locator": "第ⅩⅩ章 冒頭の注",
+      "quote": "単一のコードのみでしか集計しない場合には ⅩⅩ章のコードを優先して使用する。"
+     },
+     {
+      "ref": "icd:instruction",
+      "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+      "locator": "4.4.4 章ごとの注釈 第ⅩⅩ章",
+      "quote": "本章のコードは「主要病態」コードとして使用しない。これらは任意的追加コード として第ⅩⅨ章に分類される病態の外因を特定するための使用を意図したもの"
+     }
+    ],
+    "asOf": "ICD-10（2013年版）準拠"
+   }
+  },
+  {
+   "id": "lg-10-07",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou15 章タイトル（O00-O99）と章の注、icd.mjs chapter 1/9/19 で各章の名称・範囲を確認。",
+   "detail": "要点の「Obstetrics（産科）のOと対応」は出典のない語呂合わせのため削除し、章の注（妊娠・分娩・産じょくに関連する又はそれによって悪化する病態に使用）に置き換えた。choiceNotesを章の正式名称にした。",
+   "question": {
+    "id": "lg-10-07",
+    "legacy": {
+     "key": "10_7",
+     "chapter": 10,
+     "chapterName": "国際統計分類I（ICD総論・コーディング実践）",
+     "index": 7,
+     "hash": "211ac181c8cc7228"
+    },
+    "subject": "S12",
+    "subtopic": "妊娠・分娩・産じょく（第ⅩⅤ章）",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "産科コーディングで使用されるICD-10の章はどれか。",
+    "choices": [
+     "第ⅩⅤ章（O00-O99）",
+     "第Ⅰ章（A00-B99）",
+     "第Ⅸ章（I00-I99）",
+     "第ⅩⅨ章（S00-T98）"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "妊娠，分娩及び産じょく＜褥＞は第ⅩⅤ章（O00-O99）に分類される。本章のコードは、妊娠，分娩又は産じょく＜褥＞に関連する又はそれによって悪化する病態に使用する。",
+     "choiceNotes": [
+      null,
+      "第Ⅰ章（A00-B99）は感染症及び寄生虫症。",
+      "第Ⅸ章（I00-I99）は循環器系の疾患。",
+      "第ⅩⅨ章（S00-T98）は損傷，中毒及びその他の外因の影響。"
+     ],
+     "point": "第ⅩⅤ章＝妊娠，分娩及び産じょく＜褥＞（O00-O99）。"
+    },
+    "sources": [
+     {
+      "ref": "icd:naiyou15",
+      "title": "ICD-10（2013年版）準拠 内容例示表 第15章 妊娠，分娩及び産じょく＜褥＞（O00-O99）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou15.pdf",
+      "locator": "第ⅩⅤ章 章タイトル・注",
+      "quote": "本章に含まれているコードは、妊娠，分娩又は産じょく＜褥＞（母体又は産科的な原因）に関連する又 はそれによって悪化する病態に使用する。"
+     }
+    ],
+    "asOf": "ICD-10（2013年版）準拠"
+   }
+  },
+  {
+   "id": "lg-10-08",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:instruction 4.1.6「一般原則」「選択ルール」（ルール1〜3）で確認。lg-10-22（L10b）と同主題。",
+   "detail": "正答肢「最下欄に記載された病態が原死因」は、『Ⅰ欄の最下欄に単独で記載され、上欄のすべての病態を引き起こす可能性がある場合に限り』という条件が欠け不正確（ソルバーも曖昧と指摘）。条件を備えた定義を正答とし、条件を欠いた記述とルール1を誤答肢にした。「最上欄は直接死因」など出典を確認していない説明を削除。",
+   "question": {
+    "id": "lg-10-08",
+    "legacy": {
+     "key": "10_8",
+     "chapter": 10,
+     "chapterName": "国際統計分類I（ICD総論・コーディング実践）",
+     "index": 8,
+     "hash": "543694f05e46845b"
+    },
+    "subject": "S11",
+    "subtopic": "死因統計と原死因の選択",
+    "format": "knowledge",
+    "difficulty": "standard",
+    "polarity": "positive",
+    "question": "ICD-10（2013年版）の原死因選択における「一般原則」として、正しいものはどれか。",
+    "choices": [
+     "死亡診断書に多数の病態が記載されている場合、Ⅰ欄の最下欄に単独で記載された病態が、その上欄に記載されたすべての病態を引き起こす可能性がある場合に限り、その病態を選ぶ。",
+     "死亡診断書に多数の病態が記載されている場合、Ⅰ欄の最下欄に記載された病態を、上欄の病態との因果関係の有無にかかわらず選ぶ。",
+     "死亡診断書に多数の病態が記載されている場合、Ⅰ欄の最上欄に記載された病態を選ぶ。",
+     "死亡診断書に最初に記載された病態に帰着する上下の因果関係がある場合には、この上下の因果関係の起因を選ぶ。",
+     "死亡診断書に多数の病態が記載されている場合、Ⅱ欄に記載された病態のうち最も重篤なものを選ぶ。"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "一般原則：死亡診断書に多数の病態が記載されている場合には、Ⅰ欄の最下欄に単独で記載された病態が、その上欄に記載されたすべての病態を引き起こす可能性がある場合に限り、その病態を選ぶ。一般原則が適用できない場合は選択ルール（ルール1〜3）を適用する。",
+     "choiceNotes": [
+      null,
+      "最下欄の病態が上欄のすべての病態を引き起こす可能性がある場合に限られる。条件を欠く。",
+      "一般原則はⅠ欄の最下欄に単独で記載された病態について定めたもので、最上欄の病態を選ぶものではない。",
+      "これは一般原則が適用できない場合の選択ルール１の内容である。",
+      "一般原則はⅠ欄の最下欄の病態について定めたもので、Ⅱ欄の病態の重篤度で選ぶものではない。"
+     ],
+     "point": "一般原則＝Ⅰ欄最下欄に単独記載の病態が上欄すべての原因となりうるときだけ、それを選ぶ。適用できなければルール1〜3。"
+    },
+    "sources": [
+     {
+      "ref": "icd:instruction",
+      "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+      "locator": "4.1.6 一般原則",
+      "quote": "死亡診断書に多数の病態が記載されている場合には、Ⅰ欄の最下欄に単独で記載された病態が、その上欄に記載されたすべての病態を引き起こす可能性がある場合に限り、その病態を選ぶ。"
+     },
+     {
+      "ref": "icd:instruction",
+      "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+      "locator": "4.1.6 選択ルール ルール１",
+      "quote": "一般原則が適用できず、死亡診断書に最初に記載された病態に帰着する"
+     }
+    ],
+    "asOf": "ICD-10（2013年版）準拠"
+   }
+  },
+  {
+   "id": "lg-10-09",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou21 章冒頭の注（Z00-Z99はA00-Y89以外の状況、予防接種・健診等）、icd.mjs chapter 2/1/9 で確認。",
+   "detail": "choiceNotesの「感染症はA-B章」「循環器系はI章」は第Ⅰ章（感染症）と紛らわしく不正確なため、章番号と範囲（第Ⅱ章C00-D48、第Ⅰ章A00-B99、第Ⅸ章I00-I99）で書き直した。解説に、本章が原死因コーディングには使用されない点を出典どおり追加。",
+   "question": {
+    "id": "lg-10-09",
+    "legacy": {
+     "key": "10_9",
+     "chapter": 10,
+     "chapterName": "国際統計分類I（ICD総論・コーディング実践）",
+     "index": 9,
+     "hash": "ca3b4a63531a0e7a"
+    },
+    "subject": "S12",
+    "subtopic": "保健サービスの利用（第ⅩⅩⅠ章）",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "ICD-10（2013年版）で、Zで始まるコード（Z00-Z99）が分類するものはどれか。",
+    "choices": [
+     "健康状態に影響を及ぼす要因及び保健サービスの利用（健診・予防接種等）",
+     "原発性及び続発性の悪性新生物＜腫瘍＞",
+     "細菌・ウイルス等による感染症及び寄生虫症",
+     "心疾患・脳血管疾患などの循環器系の疾患"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "第ⅩⅩⅠ章（Z00-Z99）は、A00-Y89に分類される疾病，損傷又は外因以外の状況が「診断名」又は「問題」として記載された場合のための項目で、予防接種、集団健診で発見される要因、悪性新生物の既往歴（Z85）などを分類する。本章は国際比較及び原死因コーディングには使用しない。",
+     "choiceNotes": [
+      null,
+      "悪性新生物＜腫瘍＞は第Ⅱ章（C00-D48）のC00-C97に分類される。",
+      "感染症は第Ⅰ章（A00-B99）に分類される。",
+      "循環器系の疾患は第Ⅸ章（I00-I99）に分類される。"
+     ],
+     "point": "Zコード＝第ⅩⅩⅠ章。疾病・損傷以外の受診理由や健康状態に影響する要因（健診・予防接種・既往歴等）。原死因には使用しない。"
+    },
+    "sources": [
+     {
+      "ref": "icd:naiyou21",
+      "title": "ICD-10（2013年版）準拠 内容例示表 第21章 健康状態に影響を及ぼす要因及び保健サービスの利用（Z00-Z99）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou21.pdf",
+      "locator": "第ⅩⅩⅠ章 冒頭の注",
+      "quote": "項目Ｚ00－Ｚ99 は項目Ａ00－Ｙ89 に分類される疾病， 損傷又は外因以外の状況が 「診断名」 又は 「問題」として記載された場合のために設置された項目である。"
+     },
+     {
+      "ref": "icd:naiyou21",
+      "title": "ICD-10（2013年版）準拠 内容例示表 第21章 健康状態に影響を及ぼす要因及び保健サービスの利用（Z00-Z99）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou21.pdf",
+      "locator": "第ⅩⅩⅠ章 冒頭の注",
+      "quote": "注：本章は国際比較及び原死因コーディングには使用しない。"
+     }
+    ],
+    "asOf": "ICD-10（2013年版）準拠"
+   }
+  },
+  {
+   "id": "lg-10-10",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:dpc-coding-text-v7 Ⅰ-2「適切なコーディングのための望ましい体制」1)〜3)、Ⅰ-3（問い合わせ先）、適切なコーディングに関する委員会の設置と年4回以上の開催がDPC参加要件である旨の記載で確認。",
+   "detail": "旧問は出典がなく、誤答肢（暗記テスト・暗唱・患者への報告）が学習上無意味だった。コーディングの質確保の内容を、DPC/PDPS傷病名コーディングテキスト第7版が示す体制（委員会・決定者・差額分析の注意・問い合わせ先）の問題に作り直し、科目をS10へ移した。",
+   "question": {
+    "id": "lg-10-10",
+    "legacy": {
+     "key": "10_10",
+     "chapter": 10,
+     "chapterName": "国際統計分類I（ICD総論・コーディング実践）",
+     "index": 10,
+     "hash": "99839a7444cd828f"
+    },
+    "subject": "S10",
+    "subtopic": "DPCのコーディング",
+    "format": "knowledge",
+    "difficulty": "standard",
+    "polarity": "positive",
+    "question": "「DPC/PDPS傷病名コーディングテキスト」（第7版）が示す適切なコーディングのための体制について、正しいものはどれか。",
+    "choices": [
+     "「適切なコーディングに関する委員会」の設置と年4回以上の委員会開催がDPC参加の要件とされている。",
+     "DPCコーディングの最終的な決定者は診療情報管理士である。",
+     "傷病名の選択は診療報酬請求部門の専権事項である。",
+     "包括で算定した場合の点数と出来高で算定した場合の点数との差額が小さいことは、適切なDPCコーディングであることの根拠となる。",
+     "個別事例のDPCコーディングに係る問い合わせ先は、厚生労働省保険局医療課である。"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "コーディングテキストは、主治医の診断名表記だけでは適切なICDコーディングに必要な情報がそろわない現状を改善するため、「適切なコーディングに関する委員会」の設置と年4回以上の委員会開催がDPC参加の要件とされたと述べ、診療情報管理部門による診療録等の確認などの支援体制の構築を求めている。",
+     "choiceNotes": [
+      null,
+      "DPCコーディングの最終的な決定者は主治医である。診療情報管理部門や診療報酬請求部門が適切に関与することが望ましいとされる。",
+      "傷病名の選択は主治医の専権事項である。",
+      "差額が小さいことは、適切なDPCコーディングであることの根拠にはならないことに留意するとされている。",
+      "個別事例のDPCコーディング・診療報酬請求に係る問い合わせ先は地方厚生（支）局である。厚生労働省保険局医療課は本書の改定に係る要望等の窓口。"
+     ],
+     "point": "DPCコーディングの最終決定者＝主治医。適切なコーディングに関する委員会（年4回以上）がDPC参加要件。点数差額が小さいことは適切さの根拠にならない。"
+    },
+    "sources": [
+     {
+      "ref": "ins:dpc-coding-text-v7",
+      "title": "DPC／PDPS 傷病名コーディングテキスト 改定版（第７版）",
+      "url": "https://www.mhlw.go.jp/content/12400000/001684575.pdf",
+      "locator": "Ⅳ（ICDコーディングのための情報と傷病名の表記）",
+      "quote": "このような現状を 改善するために「適切なコーディングに関する委員会」の設置と年 4 回以上の委員会開催 が DPC 参加の要件とされたところであり"
+     },
+     {
+      "ref": "ins:dpc-coding-text-v7",
+      "title": "DPC／PDPS 傷病名コーディングテキスト 改定版（第７版）",
+      "url": "https://www.mhlw.go.jp/content/12400000/001684575.pdf",
+      "locator": "Ⅰ-2-1) コーディングに係る体制",
+      "quote": "DPC コーディングの最終的な決定者は主治医であるが、このほか、診療情報管理士を中心 とする診療情報管理部門や診療報酬請求担当職員を中心とする診療報酬請求部門が適切に 関与していくことが望ましい。"
+     },
+     {
+      "ref": "ins:dpc-coding-text-v7",
+      "title": "DPC／PDPS 傷病名コーディングテキスト 改定版（第７版）",
+      "url": "https://www.mhlw.go.jp/content/12400000/001684575.pdf",
+      "locator": "Ⅰ-2-3) 適切な DPC コーディングに関する委員会について",
+      "quote": "差額が小さいことが、 適切な DPC コーディングであることの根拠にはならないことに留意すること。"
+     }
+    ],
+    "asOf": "DPC/PDPS傷病名コーディングテキスト第7版（令和8年6月）"
+   }
+  },
+  {
+   "id": "lg-10-11",
+   "verdict": "pass",
+   "contentChanged": false,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou02 第Ⅱ章の中間分類項目一覧（C00-C97 悪性、D00-D09 上皮内、D10-D36 良性、D37-D48 性状不詳又は不明）と icd.mjs で Z85「悪性新生物＜腫瘍＞の既往歴」を確認。",
+   "question": {
+    "id": "lg-10-11",
+    "legacy": {
+     "key": "10_11",
+     "chapter": 10,
+     "chapterName": "国際統計分類I（ICD総論・コーディング実践）",
+     "index": 11,
+     "hash": "b9dd9fab867e230b"
+    },
+    "subject": "S12",
+    "subtopic": "新生物（第Ⅱ章）",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "新生物のコーディングで「良性新生物」のコード範囲はどれか。",
+    "choices": [
+     "D10-D36",
+     "C00-C97",
+     "D37-D48",
+     "Z85"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "良性新生物はD10-D36に分類。悪性はC00-C97、性状不詳はD37-D48。",
+     "choiceNotes": [
+      null,
+      "C00-C97は悪性新生物。",
+      "D37-D48は性状不詳の新生物。",
+      "Z85はがんの既往歴。"
+     ],
+     "point": "悪性＝C、良性＝D10-D36、性状不詳＝D37-D48。"
+    },
+    "sources": [
+     {
+      "ref": "icd:naiyou02",
+      "title": "ICD-10（2013年版）準拠 内容例示表 第2章 新生物＜腫瘍＞（C00-D48）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou02.pdf",
+      "locator": "第Ⅱ章 中間分類項目一覧",
+      "quote": "Ｃ00－Ｃ97 悪性新生物＜腫瘍＞"
+     },
+     {
+      "ref": "icd:naiyou02",
+      "title": "ICD-10（2013年版）準拠 内容例示表 第2章 新生物＜腫瘍＞（C00-D48）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou02.pdf",
+      "locator": "第Ⅱ章 中間分類項目一覧",
+      "quote": "Ｄ00－Ｄ09 上皮内新生物＜腫瘍＞ Ｄ10－Ｄ36 良性新生物＜腫瘍＞ Ｄ37－Ｄ48 性状不詳又は不明の新生物＜腫瘍＞"
+     }
+    ],
+    "asOf": "ICD-10（2013年版）準拠"
+   }
+  },
+  {
+   "id": "lg-10-12",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:instruction 3.1.4「NOS」「他に分類されないもの＜NEC＞」で確認。lg-10-16（L10b）は同一主題の重複（本問を残し、NECとの区別を誤答肢に取り込んだ）。",
+   "detail": "正答肢の訳語を提要の「他に記載のないもの（not otherwise specified）」＝「詳細不明」「限定されていない」に合わせた。「診療録に詳細情報がない場合に使用される修飾語」は不正確（内容例示表・索引表で用いる略語）。誤答肢を学習価値のあるもの（NEC、疑い病名、二重分類）に差し替え、NOSでも他に特異的な項目へ分類されることがある注意を解説に加えた。",
+   "question": {
+    "id": "lg-10-12",
+    "legacy": {
+     "key": "10_12",
+     "chapter": 10,
+     "chapterName": "国際統計分類I（ICD総論・コーディング実践）",
+     "index": 12,
+     "hash": "18e2cd4e05fea229"
+    },
+    "subject": "S11",
+    "subtopic": "分類の規約と用語",
+    "format": "knowledge",
+    "difficulty": "standard",
+    "polarity": "positive",
+    "question": "ICD-10（2013年版）の内容例示表及び索引表で用いられる略語「NOS」の意味として、正しいものはどれか。",
+    "choices": [
+     "他に記載のないもの（詳細不明）",
+     "他に分類されないもの（NEC）",
+     "診断が確定していない疑い病名であること",
+     "剣印（†）と星印（*）の二重分類の対象であること"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "NOSは「他に記載のないもの（not otherwise specified）」の略語で、「詳細不明」又は「限定されていない」という意味を含む。ただし限定されない用語でも、より特定された型の項目に分類されることがあり（例：「僧帽弁狭窄症」はリウマチ性として分類）、他により特異的な項目への分類を可能とする情報が全くないことが明白な場合を除いて、単純に詳細不明としてコードしないよう注意する。",
+     "choiceNotes": [
+      null,
+      "「他に分類されないもの」はNEC（not elsewhere classified）であり、NOSとは別の略語・意味である。",
+      "NOSは詳細不明・限定されていないことを示す略語で、疑い病名を示すものではない。",
+      "NOSは二重分類を示す記号ではない。二重分類は剣印（†）と星印（*）で示される。"
+     ],
+     "point": "NOS＝他に記載のないもの（詳細不明）。NEC＝他に分類されないもの。NOSでも、より特異的な項目に分類される場合がある。"
+    },
+    "sources": [
+     {
+      "ref": "icd:instruction",
+      "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+      "locator": "3.1.4「NOS」",
+      "quote": "「他に記載のないもの（not otherwise specified）」の略語であり、"
+     },
+     {
+      "ref": "icd:instruction",
+      "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+      "locator": "3.1.4「NOS」",
+      "quote": "「詳細不明」又は「限定されていない」という意味を含んでいる。"
+     },
+     {
+      "ref": "icd:instruction",
+      "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+      "locator": "3.1.4「NOS」",
+      "quote": "他により特異的な項目への分類を 可能とする情報が全くないことが明白である場合を除いては、一つの用語を単純に 詳細不明としてコードしてしまわないよう注意しなければならない。"
+     }
+    ],
+    "asOf": "ICD-10（2013年版）準拠"
+   }
+  },
+  {
+   "id": "lg-10-13",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou05 章タイトル、icd.mjs chapter 5（中間分類）、code F00（F00* アルツハイマー病の認知症（G30.-†））・F20 で確認。",
+   "detail": "解説の「F00＝アルツハイマー型認知症」は2013年版の項目名・剣星表示と異なるため「F00* アルツハイマー＜Alzheimer＞病の認知症（G30.-†）」に修正。要点の中間分類名を正式名称に合わせた。choiceNotesを章の正式名称にした。",
+   "question": {
+    "id": "lg-10-13",
+    "legacy": {
+     "key": "10_13",
+     "chapter": 10,
+     "chapterName": "国際統計分類I（ICD総論・コーディング実践）",
+     "index": 13,
+     "hash": "133b149eb67ddb13"
+    },
+    "subject": "S12",
+    "subtopic": "精神・神経・感覚器（第Ⅴ〜Ⅷ章）",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "ICD-10で精神疾患が分類される章はどれか。",
+    "choices": [
+     "第Ⅴ章（F00-F99）",
+     "第Ⅰ章（A00-B99）",
+     "第Ⅹ章（J00-J99）",
+     "第ⅩⅤ章（O00-O99）"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "精神及び行動の障害は第Ⅴ章（F00-F99）に分類される。たとえばF00*はアルツハイマー＜Alzheimer＞病の認知症（G30.-†）、F20は統合失調症である。",
+     "choiceNotes": [
+      null,
+      "第Ⅰ章（A00-B99）は感染症及び寄生虫症。",
+      "第Ⅹ章（J00-J99）は呼吸器系の疾患。",
+      "第ⅩⅤ章（O00-O99）は妊娠，分娩及び産じょく＜褥＞。"
+     ],
+     "point": "第Ⅴ章＝精神及び行動の障害（F00-F99）。F00-F09 症状性を含む器質性精神障害、F10-F19 精神作用物質使用による障害、F20-F29 統合失調症，統合失調症型障害及び妄想性障害など。"
+    },
+    "sources": [
+     {
+      "ref": "icd:naiyou05",
+      "title": "ICD-10（2013年版）準拠 内容例示表 第5章 精神及び行動の障害（F00-F99）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou05.pdf",
+      "locator": "第Ⅴ章 章タイトル",
+      "quote": "第Ⅴ章 精神及び行動の障害（F00－F99） Mental and behavioural disorders"
+     }
+    ],
+    "asOf": "ICD-10（2013年版）準拠"
+   }
+  }
+ ]
+}

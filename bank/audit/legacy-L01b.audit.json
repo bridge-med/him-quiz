@@ -1,0 +1,1115 @@
+{
+ "verdicts": [
+  {
+   "id": "lg-01-16",
+   "verdict": "pass",
+   "contentChanged": false,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:r08-ika-ryuijiko A233-2(1)（多職種チーム・入院基本料等加算）、ins:r08-kihon-shisetsukijun-tsuchi 第19 1(1)（医師・看護師・薬剤師・管理栄養士）。solver=0一致。",
+   "question": {
+    "id": "lg-01-16",
+    "legacy": {
+     "key": "1_16",
+     "chapter": 1,
+     "chapterName": "医療管理総論",
+     "index": 16,
+     "hash": "540ddc9af2431ad9"
+    },
+    "subject": "S01",
+    "subtopic": "医療従事者と資格法",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "NSTの説明として正しいのはどれか。",
+    "choices": [
+     "多職種で構成され入院患者の栄養管理を行うチーム",
+     "看護師のみで構成される栄養管理チーム",
+     "栄養士が単独で行う食事指導",
+     "外来患者のみを対象とした栄養相談"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "NST（Nutrition Support Team）は医師・看護師・管理栄養士・薬剤師等の多職種で入院患者の栄養療法を提供。",
+     "choiceNotes": [
+      null,
+      "多職種で構成される。",
+      "チームアプローチであり単独ではない。",
+      "主に入院患者が対象。"
+     ],
+     "point": "NST＝多職種チーム。栄養サポートチーム加算の要件にも。"
+    },
+    "sources": [
+     {
+      "ref": "ins:r08-ika-ryuijiko",
+      "title": "診療報酬の算定方法の一部改正に伴う実施上の留意事項について（令和8年3月5日）",
+      "url": "https://www.mhlw.go.jp/content/12400000/001757385.pdf",
+      "locator": "A233-2 栄養サポートチーム加算 (1)",
+      "quote": "栄養管理に係る専門的知識を有した多職種からなるチーム（以下「栄養サポートチーム」という。）が診療することを評価したもの"
+     },
+     {
+      "ref": "ins:r08-kihon-shisetsukijun-tsuchi",
+      "title": "基本診療料の施設基準等及びその届出に関する手続きの取扱いについて（令和8年3月5日）",
+      "url": "https://www.mhlw.go.jp/content/12400000/001757361.pdf",
+      "locator": "第19 栄養サポートチーム加算 1(1)",
+      "quote": "栄養管理に係る所定の研修を修了した専任の常勤管理栄養士"
+     }
+    ],
+    "asOf": "令和8年度診療報酬改定（令和8年3月5日通知）"
+   }
+  },
+  {
+   "id": "lg-01-17",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "mgmt:iryou-taiwa-shishin-r8 Ⅰ2・Ⅰ3（対話促進が業務）。solver=0一致。",
+   "question": {
+    "id": "lg-01-17",
+    "legacy": {
+     "key": "1_17",
+     "chapter": 1,
+     "chapterName": "医療管理総論",
+     "index": 17,
+     "hash": "eb9cc651114359cf"
+    },
+    "subject": "S04",
+    "subtopic": "医療安全管理体制",
+    "format": "knowledge",
+    "difficulty": "standard",
+    "polarity": "positive",
+    "question": "厚生労働省の「医療対話推進者の業務指針及び養成のための研修プログラム作成指針」（令和8年1月改定）が示す医療対話推進者の業務として正しいものはどれか。",
+    "choices": [
+     "患者・家族からの相談に対応し、患者・家族と職員との対話を促進する",
+     "医療過誤の有無を裁定し、損害賠償額を決定する",
+     "医療事故に関与した職員の懲戒処分を決定する",
+     "保険会社に代わって患者・家族との示談交渉を行う"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "同指針は、医療対話推進者を「患者・家族と職員との対話を促進することを業務とする」者と位置付けている。業務として、患者・家族支援体制の構築、職員への教育・研修、患者・家族からの相談対応と対話促進、相談事例の収集・分析、患者対応に関わる職員の支援、医療事故等の申し出への対応を挙げ、これらを通じて説明と対話の文化の醸成を推進するとしている。",
+     "choiceNotes": [
+      null,
+      "医療対話推進者の業務は相談対応と対話の促進であり、過誤の有無や賠償額を裁定する業務は指針に挙げられていない。",
+      "職員の処分は指針の業務に含まれない。指針はむしろ患者対応に関わる職員の支援を業務に挙げている。",
+      "示談交渉の代行は指針の業務に含まれない。"
+     ],
+     "point": "医療対話推進者＝患者・家族と職員との対話を促進する役割。目標は「説明と対話の文化の醸成」。"
+    },
+    "sources": [
+     {
+      "ref": "mgmt:iryou-taiwa-shishin-r8",
+      "title": "医療対話推進者の業務指針及び養成のための研修プログラム作成指針（令和8年1月改定）",
+      "url": "https://www.mhlw.go.jp/content/10800000/001665437.pdf",
+      "locator": "Ⅰ 2．本指針の位置付け",
+      "quote": "本指針は患者・家族と職員との対話を促進することを業務とする医療対話推進者のための業務指針"
+     },
+     {
+      "ref": "mgmt:iryou-taiwa-shishin-r8",
+      "title": "医療対話推進者の業務指針及び養成のための研修プログラム作成指針（令和8年1月改定）",
+      "url": "https://www.mhlw.go.jp/content/10800000/001665437.pdf",
+      "locator": "Ⅰ 3．医療対話推進者の業務",
+      "quote": "３）患者・家族からの相談対応と患者・家族と職員との対話促進"
+     }
+    ],
+    "asOf": "令和8年1月改定の医療対話推進者業務指針"
+   },
+   "detail": "旧問の「医療メディエーション（中立的な第三者が対話を促進）」の定義は公的資料で確認できず、重複気味のADR問(lg-01-23)とも近いため、公的指針のある医療対話推進者の業務を問う形に改めた。"
+  },
+  {
+   "id": "lg-01-18",
+   "verdict": "pass",
+   "contentChanged": false,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "医療法施行規則 別表第一（主治医以外の医師による助言）、ins:r08-ika-ryuijiko B010(1)（診療を担う医師が情報提供＝主治医は変わらない）。solver=0一致。",
+   "question": {
+    "id": "lg-01-18",
+    "legacy": {
+     "key": "1_18",
+     "chapter": 1,
+     "chapterName": "医療管理総論",
+     "index": 18,
+     "hash": "fa2315694b1f636a"
+    },
+    "subject": "S01",
+    "subtopic": "医療の概念と倫理",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "セカンドオピニオンについて正しいのはどれか。",
+    "choices": [
+     "主治医以外の医師に意見を求めること",
+     "主治医を変更すること",
+     "複数の病院で同時に治療を受けること",
+     "苦情申立のこと"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "主治医の診断・治療方針について別の医師に意見を求めること。転医とは異なる。",
+     "choiceNotes": [
+      null,
+      "転医ではなく第二の意見を聞くこと。",
+      "同時治療ではない。",
+      "苦情申立は患者相談窓口の役割。"
+     ],
+     "point": "セカンドオピニオン≠転医。主治医はそのまま。"
+    },
+    "sources": [
+     {
+      "ref": "law:医療法施行規則",
+      "title": "医療法施行規則",
+      "url": "https://laws.e-gov.go.jp/law/323M40000100050",
+      "locator": "別表第一（第一条の二の二関係）",
+      "quote": "主治医以外の医師による助言（以下「セカンドオピニオン」という。）"
+     },
+     {
+      "ref": "ins:r08-ika-ryuijiko",
+      "title": "診療報酬の算定方法の一部改正に伴う実施上の留意事項について（令和8年3月5日）",
+      "url": "https://www.mhlw.go.jp/content/12400000/001757385.pdf",
+      "locator": "B010 診療情報提供料(Ⅱ) (1)",
+      "quote": "診療を担う医師がセカンド・オピニオンを求める患者又はその家族からの申し出に基づき"
+     }
+    ],
+    "asOf": "2026-10 e-Gov現行法令／令和8年度診療報酬改定"
+   }
+  },
+  {
+   "id": "lg-01-19",
+   "verdict": "pass",
+   "contentChanged": false,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "x-legacy-L01b:anzeninfo-heinrich（1件の重い災害:29の軽傷:300の傷害のない事故、ヒヤリハット把握の重要性）。solver=0一致。",
+   "question": {
+    "id": "lg-01-19",
+    "legacy": {
+     "key": "1_19",
+     "chapter": 1,
+     "chapterName": "医療管理総論",
+     "index": 19,
+     "hash": "37ab669b4c670d4b"
+    },
+    "subject": "S04",
+    "subtopic": "医療安全の基本概念",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "ハインリッヒの法則の説明として正しいのはどれか。",
+    "choices": [
+     "1件の重大事故の背景に29件の軽微な事故と300件のヒヤリ・ハットがある",
+     "1件の報告に29件の改善と300件の研修が必要",
+     "事故原因は1つの重大要因と29の中間要因からなる",
+     "年間の許容事故件数は300件以内とする法則"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "1:29:300の比率で重大事故・軽微な事故・ヒヤリハットが存在するという経験則。",
+     "choiceNotes": [
+      null,
+      "改善件数の比率ではない。",
+      "原因数の法則ではない。",
+      "許容件数を定める法則ではない。"
+     ],
+     "point": "1:29:300＝重大:軽微:ヒヤリ・ハット。インシデント報告の重要性の根拠。"
+    },
+    "sources": [
+     {
+      "ref": "x-legacy-L01b:anzeninfo-heinrich",
+      "title": "ハインリッヒの法則（1:29:300の法則）［安全衛生キーワード］",
+      "url": "https://anzeninfo.mhlw.go.jp/yougo/yougo24_1.html",
+      "locator": "ハインリッヒの法則（1:29:300の法則）",
+      "quote": "29回の軽傷（応急手当だけですむかすり傷）、傷害のない事故（傷害や物損の可能性があるもの）を300回起こしている"
+     },
+     {
+      "ref": "x-legacy-L01b:anzeninfo-heinrich",
+      "title": "ハインリッヒの法則（1:29:300の法則）［安全衛生キーワード］",
+      "url": "https://anzeninfo.mhlw.go.jp/yougo/yougo24_1.html",
+      "locator": "ハインリッヒの法則（1:29:300の法則）",
+      "quote": "ヒヤリハット等の情報をできるだけ把握し、迅速、的確にその対応策を講ずることが必要"
+     }
+    ],
+    "asOf": "厚生労働省 職場のあんぜんサイト（2026-11-24取得）"
+   }
+  },
+  {
+   "id": "lg-01-20",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "x-legacy-L01b:rinri-shishin-r0808 第2(22)・第17 1(1)。solver=0一致。",
+   "question": {
+    "id": "lg-01-20",
+    "legacy": {
+     "key": "1_20",
+     "chapter": 1,
+     "chapterName": "医療管理総論",
+     "index": 20,
+     "hash": "201cc856d4686fbb"
+    },
+    "subject": "S01",
+    "subtopic": "医療の概念と倫理",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "「人を対象とする生命科学・医学系研究に関する倫理指針」における倫理審査委員会の主な役割はどれか。",
+    "choices": [
+     "研究の実施の適否を審査すること",
+     "医療事故に関与した職員を処分すること",
+     "診療報酬の査定を行うこと",
+     "医師国家試験を実施すること"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "倫理指針は、倫理審査委員会を「研究の実施又は継続の適否その他研究に関し必要な事項について、倫理的及び科学的な観点から調査審議するために設置された合議制の機関」と定義している。研究責任者から意見を求められたときは、中立的かつ公正に審査を行い、意見を述べる。",
+     "choiceNotes": [
+      null,
+      "倫理審査委員会は研究の適否を審査する合議制の機関であり、職員の処分を行う機関ではない。",
+      "診療報酬の審査・査定は倫理審査委員会の役割ではない。",
+      "医師国家試験の実施は倫理審査委員会の役割ではない。"
+     ],
+     "point": "倫理審査委員会＝研究の実施・継続の適否を倫理的・科学的観点から中立的・公正に審査する合議制の機関。"
+    },
+    "sources": [
+     {
+      "ref": "x-legacy-L01b:rinri-shishin-r0808",
+      "title": "人を対象とする生命科学・医学系研究に関する倫理指針（令和8年8月27日一部改正）",
+      "url": "https://www.mhlw.go.jp/content/001743409.pdf",
+      "locator": "第2 (22) 倫理審査委員会",
+      "quote": "研究の実施又は継続の適否その他研究に関し必要な事項について、倫理的及び科学的な観点から調査審議するために設置された合議制の機関をいう。"
+     },
+     {
+      "ref": "x-legacy-L01b:rinri-shishin-r0808",
+      "title": "人を対象とする生命科学・医学系研究に関する倫理指針（令和8年8月27日一部改正）",
+      "url": "https://www.mhlw.go.jp/content/001743409.pdf",
+      "locator": "第17 1(1)",
+      "quote": "倫理的観点及び科学的観点から、当該研究に係る研究機関及び研究者等の利益相反に関する情報も含めて中立的かつ公正に審査を行い"
+     }
+    ],
+    "asOf": "人を対象とする生命科学・医学系研究に関する倫理指針（令和8年8月27日一部改正）"
+   },
+   "detail": "「倫理委員会（IRB）」は呼称が不正確（IRBは治験審査委員会等にも用いる）のため指針上の倫理審査委員会に統一。choiceNotesの「事故の責任追及は医療安全管理部門の役割」は誤り（医療安全部門は責任追及の部門ではない）のため修正。"
+  },
+  {
+   "id": "lg-01-21",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "mgmt:jqhyouka-summary（中立的見地・訪問審査・4領域）、mgmt:jqhyouka-guidebook（受審申込→認定、5年ごと更新）。solver=0一致。",
+   "question": {
+    "id": "lg-01-21",
+    "legacy": {
+     "key": "1_21",
+     "chapter": 1,
+     "chapterName": "医療管理総論",
+     "index": 21,
+     "hash": "338d00d3a67a3c32"
+    },
+    "subject": "S02",
+    "subtopic": "病院機能評価と第三者評価",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "病院機能評価について正しいのはどれか。",
+    "choices": [
+     "日本医療機能評価機構が第三者として評価する",
+     "厚生労働省が直接全病院を毎年評価する",
+     "自己申告のみで認定される",
+     "病床数のみで判断される"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "病院機能評価は、公益財団法人日本医療機能評価機構が中立的、科学的・専門的な見地から病院組織全体の運営管理と提供される医療を評価する第三者評価である。病院の受審申込に始まり、サーベイヤーによる訪問審査など所定の審査を経て認定となる。",
+     "choiceNotes": [
+      null,
+      "実施主体は厚生労働省ではなく日本医療機能評価機構であり、評価は病院の受審申込に始まる。認定後は5年ごとに更新審査が行われる。",
+      "各専門領域の知識と経験を有するサーベイヤーがチームで病院を訪問し審査を行う。",
+      "4つの評価対象領域から構成される評価項目を用いて評価する。"
+     ],
+     "point": "病院機能評価＝日本医療機能評価機構による第三者評価。受審申込→訪問審査→認定（5年ごとに更新審査）。"
+    },
+    "sources": [
+     {
+      "ref": "mgmt:jqhyouka-summary",
+      "title": "病院機能評価とは",
+      "url": "https://www.jq-hyouka.jcqhc.or.jp/about/summary/",
+      "locator": "病院機能評価とは",
+      "quote": "当機構が中立的、科学的・専門的な見地から評価を行います。"
+     },
+     {
+      "ref": "mgmt:jqhyouka-summary",
+      "title": "病院機能評価とは",
+      "url": "https://www.jq-hyouka.jcqhc.or.jp/about/summary/",
+      "locator": "評価調査者（サーベイヤー）とは",
+      "quote": "サーベイヤーがチームで病院を訪問し、審査を行います。"
+     },
+     {
+      "ref": "mgmt:jqhyouka-guidebook",
+      "title": "病院機能評価ガイドブック（第4版）",
+      "url": "https://www.jq-hyouka.jcqhc.or.jp/wp-content/uploads/2024/12/866cd580e7cc0f3f080c891544910e08.pdf",
+      "locator": "病院機能評価の全体のながれ",
+      "quote": "病院機能評価は、受審申込に始まり、所定の審査を経て認定となります。"
+     }
+    ],
+    "asOf": "日本医療機能評価機構 病院機能評価ガイドブック第4版（2024年12月）"
+   },
+   "detail": "解説の「任意」「自主的に申請」は出典で確認できず、出典の表現（受審申込に始まる）に改め、更新審査・評価領域を出典に沿って補った。"
+  },
+  {
+   "id": "lg-01-22",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:医療法 法令番号（昭和23年法律第205号）、x-legacy-L03:mhlw-iryoukeikaku-shiryou1-h25（改正経緯表）。solver=0一致。",
+   "question": {
+    "id": "lg-01-22",
+    "legacy": {
+     "key": "1_22",
+     "chapter": 1,
+     "chapterName": "医療管理総論",
+     "index": 22,
+     "hash": "cde1babf09435b53"
+    },
+    "subject": "S01",
+    "subtopic": "社会保障と医療政策の動向",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "医療法の制定年はどれか。",
+    "choices": [
+     "1948年",
+     "1985年",
+     "1992年",
+     "2000年",
+     "2006年"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "医療法は昭和23年（1948年）法律第205号として制定された。その後、昭和60年（1985年）の第一次改正で医療計画制度が導入され、平成4年（1992年）の第二次改正で特定機能病院が制度化されるなど、改正が重ねられている。",
+     "choiceNotes": [
+      null,
+      "1985年（昭和60年）は第一次改正（医療計画制度の導入）の年。",
+      "1992年（平成4年）は第二次改正（特定機能病院・療養型病床群の制度化）の年。",
+      "2000年（平成12年）は第四次改正（療養病床・一般病床の創設）の年。",
+      "2006年（平成18年）は第五次改正（医療計画制度の見直し等）の年。"
+     ],
+     "point": "医療法制定＝昭和23年（1948年）。第一次改正（1985年）で医療計画制度を導入。"
+    },
+    "sources": [
+     {
+      "ref": "law:医療法",
+      "title": "医療法",
+      "url": "https://laws.e-gov.go.jp/law/323AC0000000205",
+      "locator": "題名（法令番号）",
+      "quote": "昭和二十三年法律第二百五号医療法目次"
+     },
+     {
+      "ref": "x-legacy-L03:mhlw-iryoukeikaku-shiryou1-h25",
+      "title": "医療計画について（資料１）",
+      "url": "https://www.mhlw.go.jp/stf/shingi/2r98520000036ff1-att/2r98520000036fkg.pdf",
+      "locator": "医療法の改正の主な経緯について",
+      "quote": "昭和６０年    医療施設の量的整備が全国的にほぼ達成されたことに伴    ○医療計画制度の導入"
+     },
+     {
+      "ref": "x-legacy-L03:mhlw-iryoukeikaku-shiryou1-h25",
+      "title": "医療計画について（資料１）",
+      "url": "https://www.mhlw.go.jp/stf/shingi/2r98520000036ff1-att/2r98520000036fkg.pdf",
+      "locator": "医療法の改正の主な経緯について",
+      "quote": "平成１２年    高齢化の進展等に伴う疾病構造の変化等を踏まえ、良質    ○療養病床、一般病床の創設"
+     }
+    ],
+    "asOf": "2026-10 e-Gov現行法令（医療法）／改正経緯は平成25年厚生労働省資料"
+   },
+   "detail": "解説の「第1次〜第8次の大改正」と「1961年＝国民皆保険」は出典で確認できず差し替え。選択肢を改正経緯表で裏づけられる年に置き換え5択化。"
+  },
+  {
+   "id": "lg-01-23",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "x-legacy-L01b:ADR法 第1条（定義）・第3条（自主性の尊重）。solver=0一致。",
+   "question": {
+    "id": "lg-01-23",
+    "legacy": {
+     "key": "1_23",
+     "chapter": 1,
+     "chapterName": "医療管理総論",
+     "index": 23,
+     "hash": "460fb1a2475a3ab7"
+    },
+    "subject": "S04",
+    "subtopic": "医療安全の基本概念",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "医療ADR（裁判外紛争解決手続）について正しいものはどれか。",
+    "choices": [
+     "訴訟手続によらず、公正な第三者が関与して医療紛争の解決を図る手続",
+     "訴訟を提起し、裁判所の判決によって紛争を解決する手続",
+     "医療機関側だけが申し立てることのできる手続",
+     "医療過誤に対する刑事上の処罰を決定する手続"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "裁判外紛争解決手続の利用の促進に関する法律（ADR法）第1条は、裁判外紛争解決手続を「訴訟手続によらずに民事上の紛争の解決をしようとする紛争の当事者のため、公正な第三者が関与して、その解決を図る手続」と定義している。医療ADRはこれを医療紛争に用いるもので、第3条は紛争の当事者の自主的な紛争解決の努力を尊重することを基本理念としている。",
+     "choiceNotes": [
+      null,
+      "ADRは訴訟手続によらずに解決を図る手続であり、判決による解決は訴訟である。",
+      "ADRは紛争の当事者のための手続であり、患者側も利用できる。",
+      "ADRの対象は民事上の紛争であり、刑事上の処罰を決める手続ではない。"
+     ],
+     "point": "ADR＝訴訟によらず、公正な第三者が関与して民事上の紛争の解決を図る手続（ADR法第1条）。"
+    },
+    "sources": [
+     {
+      "ref": "x-legacy-L01b:ADR法",
+      "title": "裁判外紛争解決手続の利用の促進に関する法律",
+      "url": "https://laws.e-gov.go.jp/law/416AC0000000151",
+      "locator": "第1条",
+      "quote": "訴訟手続によらずに民事上の紛争の解決をしようとする紛争の当事者のため、公正な第三者が関与して、その解決を図る手続をいう。"
+     },
+     {
+      "ref": "x-legacy-L01b:ADR法",
+      "title": "裁判外紛争解決手続の利用の促進に関する法律",
+      "url": "https://laws.e-gov.go.jp/law/416AC0000000151",
+      "locator": "第3条第1項",
+      "quote": "紛争の当事者の自主的な紛争解決の努力を尊重しつつ"
+     }
+    ],
+    "asOf": "2026-11 e-Gov現行法令（ADR法、2025-10-01施行版）"
+   },
+   "detail": "選択肢D「結果には常に法的拘束力がある」とその解説（手続の種類による）は出典で裏づけにくいため、ADR法の定義で明確に否定できる選択肢に差し替え、解説に条文根拠を付けた。"
+  },
+  {
+   "id": "lg-01-24",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:医療法 第6条の3第1項（定義）・第4条の2第1項第2号、mgmt:iryoukeikaku-taisei-tsuchi（第三次救急）。solver=1一致。",
+   "question": {
+    "id": "lg-01-24",
+    "legacy": {
+     "key": "1_24",
+     "chapter": 1,
+     "chapterName": "医療管理総論",
+     "index": 24,
+     "hash": "820e78e237300c90"
+    },
+    "subject": "S01",
+    "subtopic": "医療提供体制と病床区分",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "医療法に定める「かかりつけ医機能」として正しいものはどれか。",
+    "choices": [
+     "第三次救急医療の提供",
+     "日常的な診療や疾病の予防",
+     "高度の医療技術の開発",
+     "介護保険施設の運営"
+    ],
+    "answer": 1,
+    "explanation": {
+     "correct": "医療法第6条の3第1項は、かかりつけ医機能を「医療を受ける者が身近な地域における日常的な診療、疾病の予防のための措置その他の医療の提供を行う機能」と定めている。",
+     "choiceNotes": [
+      "第三次救急医療は救命救急医療機関（第三次救急医療機関）が担う機能であり、かかりつけ医機能の定義には含まれない。",
+      null,
+      "高度の医療技術の開発及び評価を行う能力は、医療法第4条の2で特定機能病院の承認要件とされているものであり、かかりつけ医機能ではない。",
+      "介護保険施設の運営は、医療法第6条の3のかかりつけ医機能の定義に含まれない。"
+     ],
+     "point": "かかりつけ医機能＝身近な地域における日常的な診療、疾病の予防のための措置等（医療法第6条の3）。"
+    },
+    "sources": [
+     {
+      "ref": "law:医療法",
+      "title": "医療法",
+      "url": "https://laws.e-gov.go.jp/law/323AC0000000205",
+      "locator": "第6条の3第1項",
+      "quote": "身近な地域における日常的な診療、疾病の予防のための措置その他の医療の提供を行う機能（以下「かかりつけ医機能」という。）"
+     },
+     {
+      "ref": "law:医療法",
+      "title": "医療法",
+      "url": "https://laws.e-gov.go.jp/law/323AC0000000205",
+      "locator": "第4条の2第1項第2号",
+      "quote": "高度の医療技術の開発及び評価を行う能力を有すること。"
+     },
+     {
+      "ref": "mgmt:iryoukeikaku-taisei-tsuchi",
+      "title": "疾病・事業及び在宅医療に係る医療体制について",
+      "url": "https://www.mhlw.go.jp/content/001103126.pdf",
+      "locator": "救急医療の体制構築に係る指針",
+      "quote": "救命救急医療機関（第三次救急医療機関）"
+     }
+    ],
+    "asOf": "2026-10 e-Gov現行法令（医療法）"
+   },
+   "detail": "解説が法令の定義に基づいておらず（専門医紹介などは定義にない）、choiceNotesに出典のない記述があったため、医療法第6条の3の定義に沿って問題・選択肢・解説を改めた。"
+  },
+  {
+   "id": "lg-01-25",
+   "verdict": "pass",
+   "contentChanged": false,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "x-legacy-L01b:chiiki-houkatsu-4jo（4助の定義：自助＝セルフケア・市場サービス、互助＝ボランティア等、公助＝税・生活保護等）、law:生活保護法 第11条（生活扶助等）。solver=2一致。",
+   "question": {
+    "id": "lg-01-25",
+    "legacy": {
+     "key": "1_25",
+     "chapter": 1,
+     "chapterName": "医療管理総論",
+     "index": 25,
+     "hash": "b62203c989c07853"
+    },
+    "subject": "S01",
+    "subtopic": "地域包括ケアと医療介護連携",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "negative",
+    "question": "地域包括ケアシステムの4つの「助」に含まれないものはどれか。",
+    "choices": [
+     "自助",
+     "互助",
+     "扶助",
+     "公助"
+    ],
+    "answer": 2,
+    "explanation": {
+     "correct": "地域包括ケアシステムは「自助・互助・共助・公助」の4つの助で構成される。「扶助」は生活保護法の用語。",
+     "choiceNotes": [
+      "自助は自ら健康管理を行うことであり4つの助に含まれる。",
+      "互助はボランティアや地域活動など住民同士の支え合い。",
+      null,
+      "公助は生活保護や社会福祉など行政による支援。"
+     ],
+     "point": "4つの助＝自助・互助・共助・公助。「共助」（社会保険）と「扶助」を混同しないこと。"
+    },
+    "sources": [
+     {
+      "ref": "x-legacy-L01b:chiiki-houkatsu-4jo",
+      "title": "地域包括ケアシステムの５つの構成要素と「自助・互助・共助・公助」",
+      "url": "https://www.mhlw.go.jp/seisakunitsuite/bunya/hukushi_kaigo/kaigo_koureisha/chiiki-houkatsu/dl/link1-3.pdf",
+      "locator": "「自助・互助・共助・公助」からみた地域包括ケアシステム",
+      "quote": "「公助」は税による公の負担、「共助」は介護保険などリスクを共有する仲間（被保険者）の負担であり"
+     },
+     {
+      "ref": "x-legacy-L01b:chiiki-houkatsu-4jo",
+      "title": "地域包括ケアシステムの５つの構成要素と「自助・互助・共助・公助」",
+      "url": "https://www.mhlw.go.jp/seisakunitsuite/bunya/hukushi_kaigo/kaigo_koureisha/chiiki-houkatsu/dl/link1-3.pdf",
+      "locator": "「自助・互助・共助・公助」からみた地域包括ケアシステム",
+      "quote": "「互助」は相互に支え合っているという意味で「共助」と共通点があるが"
+     },
+     {
+      "ref": "law:生活保護法",
+      "title": "生活保護法",
+      "url": "https://laws.e-gov.go.jp/law/325AC0000000144",
+      "locator": "第11条第1項第1号",
+      "quote": "保護の種類は、次のとおりとする。"
+     }
+    ],
+    "asOf": "地域包括ケア研究会報告書（平成25年3月、厚生労働省掲載資料）"
+   }
+  },
+  {
+   "id": "lg-01-26",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:医療法 第6条の10第1項（管理者・報告先・医療事故の定義）、第6条の13（医療安全支援センター）。solver=2一致。",
+   "question": {
+    "id": "lg-01-26",
+    "legacy": {
+     "key": "1_26",
+     "chapter": 1,
+     "chapterName": "医療管理総論",
+     "index": 26,
+     "hash": "8b25c1c0f3625e2f"
+    },
+    "subject": "S04",
+    "subtopic": "医療事故調査制度",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "医療事故調査制度において、病院等の管理者が医療事故の発生を報告する先はどれか。",
+    "choices": [
+     "厚生労働大臣",
+     "都道府県等が設置する医療安全支援センター",
+     "医療事故調査・支援センター",
+     "日本医師会",
+     "所在地を管轄する保健所"
+    ],
+    "answer": 2,
+    "explanation": {
+     "correct": "医療法第6条の10第1項により、病院等の管理者は、医療事故（当該病院等に勤務する医療従事者が提供した医療に起因し、又は起因すると疑われる死亡又は死産であって、管理者が予期しなかったもの）が発生した場合、遅滞なく医療事故調査・支援センターに報告しなければならない。",
+     "choiceNotes": [
+      "報告先は厚生労働大臣ではなく、医療法第6条の15第1項の医療事故調査・支援センターである。",
+      "医療安全支援センターは医療法第6条の13に基づき都道府県等が設ける相談等の窓口であり、医療法第6条の10の報告先ではない。",
+      null,
+      "日本医師会は報告先として定められていない。",
+      "保健所は医療法第6条の10の報告先として定められていない。"
+     ],
+     "point": "医療事故（医療に起因し管理者が予期しなかった死亡・死産）→ 管理者が医療事故調査・支援センターへ報告（医療法第6条の10）。"
+    },
+    "sources": [
+     {
+      "ref": "law:医療法",
+      "title": "医療法",
+      "url": "https://laws.e-gov.go.jp/law/323AC0000000205",
+      "locator": "第6条の10第1項",
+      "quote": "当該医療事故の日時、場所及び状況その他厚生労働省令で定める事項を第六条の十五第一項の医療事故調査・支援センターに報告しなければならない。"
+     },
+     {
+      "ref": "law:医療法",
+      "title": "医療法",
+      "url": "https://laws.e-gov.go.jp/law/323AC0000000205",
+      "locator": "第6条の10第1項",
+      "quote": "当該病院等に勤務する医療従事者が提供した医療に起因し、又は起因すると疑われる死亡又は死産であつて、当該管理者が当該死亡又は死産を予期しなかつたもの"
+     },
+     {
+      "ref": "law:医療法",
+      "title": "医療法",
+      "url": "https://laws.e-gov.go.jp/law/323AC0000000205",
+      "locator": "第6条の13第2項",
+      "quote": "都道府県等は、前項の規定により医療安全支援センターを設けたときは、その名称及び所在地を公示しなければならない。"
+     }
+    ],
+    "asOf": "2026-10 e-Gov現行法令（医療法）"
+   },
+   "detail": "法令上は「届出」ではなく「報告」、義務者は「医療機関」ではなく病院等の管理者。解説の「予期しない死亡・死産」は「医療に起因（疑いを含む）」の要件が欠けていたため補正。選択肢B（都道府県知事、解説「医療法の別の規定による」は根拠不明）を紛らわしい医療安全支援センターに差し替え。"
+  },
+  {
+   "id": "lg-01-27",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "mgmt:ianzen-sougou-taisaku-h14 第1章（個人の責任追及より原因究明・人は誤りを犯す・安全文化）、mgmt:jikocho-qa（非懲罰性）。solver=1一致。",
+   "question": {
+    "id": "lg-01-27",
+    "legacy": {
+     "key": "1_27",
+     "chapter": 1,
+     "chapterName": "医療管理総論",
+     "index": 27,
+     "hash": "4bf9078d9bb092f3"
+    },
+    "subject": "S04",
+    "subtopic": "医療安全の基本概念",
+    "format": "knowledge",
+    "difficulty": "standard",
+    "polarity": "positive",
+    "question": "「医療安全推進総合対策」（平成14年）が示す「安全文化」の醸成の考え方に最も合致するものはどれか。",
+    "choices": [
+     "誤りを起こした個人の責任追及を徹底する",
+     "起こった誤りを報告でき、原因を究明して防止策に生かせる非懲罰的な環境を整える",
+     "医療従事者が誤りを犯さないことを前提に対策を立てる",
+     "医療事故発生時の訴訟対応の迅速化を最優先する"
+    ],
+    "answer": 1,
+    "explanation": {
+     "correct": "医療安全推進総合対策は、「人は誤りを犯す」ことを前提とした組織的対策を講じる必要があるとし、事故の予防には「誤り」に対する個人の責任追及よりも、起こった「誤り」の原因を究明し防止策を立てることが極めて重要とした。そのうえで、患者の安全を最優先に考える「安全文化」の醸成を求めている。学習を目的とした報告システムには、懲罰を伴わないこと（非懲罰性）が必要とされる。",
+     "choiceNotes": [
+      "総合対策は、個人の責任追及よりも原因の究明と防止策を重視するとしている。",
+      null,
+      "総合対策は「人は誤りを犯す」ことを前提とした組織的対策を求めている。",
+      "安全文化は患者の安全を最優先に考える態度・考え方であり、訴訟対応の迅速化を最優先とするものではない。"
+     ],
+     "point": "安全文化＝患者の安全を最優先。「人は誤りを犯す」前提、個人の責任追及より原因究明（報告しやすい非懲罰的な仕組み）。"
+    },
+    "sources": [
+     {
+      "ref": "mgmt:ianzen-sougou-taisaku-h14",
+      "title": "医療安全推進総合対策 〜医療事故を未然に防止するために〜",
+      "url": "https://www.mhlw.go.jp/topics/2001/0110/dl/tp1030-1c.pdf",
+      "locator": "第1章（1）医療安全の確保",
+      "quote": "「誤り」に対する個人の責任追及よりも、むしろ、起こった「誤り」に対して原因を究明し"
+     },
+     {
+      "ref": "mgmt:ianzen-sougou-taisaku-h14",
+      "title": "医療安全推進総合対策 〜医療事故を未然に防止するために〜",
+      "url": "https://www.mhlw.go.jp/topics/2001/0110/dl/tp1030-1c.pdf",
+      "locator": "第1章（1）医療安全の確保",
+      "quote": "「人は誤りを犯す」ことを前提とした組織的対策"
+     },
+     {
+      "ref": "mgmt:jikocho-qa",
+      "title": "医療事故調査制度に関するQ&A（全体版）",
+      "url": "https://www.mhlw.go.jp/content/10800000/001732095.pdf",
+      "locator": "Q1 参考（WHOドラフトガイドライン）",
+      "quote": "懲罰を伴わないこと（非懲罰性）"
+     }
+    ],
+    "asOf": "医療安全推進総合対策（平成14年4月17日）"
+   },
+   "detail": "「最も重要な要素」は基準が不明確なため出典を明示した問いに変更。解説の「Just Culture」等は出典で確認できず削除。選択肢C（事故ゼロ）は出典の「人は誤りを犯す前提」で明確に否定できる形に改めた。"
+  },
+  {
+   "id": "lg-01-28",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "mgmt:byouinhoukoku-yougo 平均在院日数の算式（一般・療養・介護療養）。solver=1（ambiguous指摘）→病院報告と明示して解消。",
+   "question": {
+    "id": "lg-01-28",
+    "legacy": {
+     "key": "1_28",
+     "chapter": 1,
+     "chapterName": "医療管理総論",
+     "index": 28,
+     "hash": "7784bdc17a6d331c"
+    },
+    "subject": "S07",
+    "subtopic": "平均在院日数と病床利用率",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "病院報告における一般病床の平均在院日数の算式として正しいものはどれか。なお、各数値は同一期間（年間または月間）のものとする。",
+    "choices": [
+     "在院患者延数÷退院患者数",
+     "在院患者延数÷｛（新入院患者数＋退院患者数）÷2｝",
+     "（新入院患者数＋退院患者数）÷2÷在院患者延数",
+     "在院患者延数÷（新入院患者数＋退院患者数）"
+    ],
+    "answer": 1,
+    "explanation": {
+     "correct": "病院報告では、平均在院日数＝年（月）間在院患者延数÷｛1/2×（年（月）間新入院患者数＋年（月）間退院患者数）｝で算出する。分母には新入院患者数と退院患者数の平均を用いる。なお、療養病床と介護療養病床は、同一医療機関内の他の病床との間で移った患者数も加えた別の式による。",
+     "choiceNotes": [
+      "病院報告の算式では、分母に退院患者数だけでなく、新入院患者数と退院患者数の平均を用いる。",
+      null,
+      "正しい式の分子と分母が逆であり、平均在院日数にはならない。",
+      "分母を新入院患者数と退院患者数の和のままとしており、2で割って平均にしていないため誤り。"
+     ],
+     "point": "平均在院日数（病院報告）＝在院患者延数÷｛（新入院患者数＋退院患者数）÷2｝。療養病床は病床間の移動患者数を加える。"
+    },
+    "sources": [
+     {
+      "ref": "mgmt:byouinhoukoku-yougo",
+      "title": "用語の解説（医療施設調査・病院報告）",
+      "url": "https://www.mhlw.go.jp/toukei/list/dl/12yougo.pdf",
+      "locator": "平均在院日数",
+      "quote": "1/2 ×(年(月)間新入院患者数 ＋ 年(月)間退院患者数)"
+     },
+     {
+      "ref": "mgmt:byouinhoukoku-yougo",
+      "title": "用語の解説（医療施設調査・病院報告）",
+      "url": "https://www.mhlw.go.jp/toukei/list/dl/12yougo.pdf",
+      "locator": "平均在院日数（療養病床）",
+      "quote": "療養病床については、次式による。"
+     }
+    ],
+    "asOf": "病院報告 用語の解説（厚生労働省、2026-09更新PDF）"
+   },
+   "detail": "解説の算式「在院患者延数÷（1/2）×（…）」が数式として誤り。選択肢Bの「÷（…）×2」は演算順で読みが割れるため括弧で明確化し、出典（病院報告）を問題文に明示。選択肢C・Dの「回転率・入院率に近い」は根拠がなく削除。"
+  },
+  {
+   "id": "lg-01-29",
+   "verdict": "pass",
+   "contentChanged": false,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:医療法 第7条第2項第1〜5号（精神・感染症・結核・療養・一般病床の定義。悪性新生物に固有の病床区分はなく一般病床は残余区分）。solver=2一致。",
+   "question": {
+    "id": "lg-01-29",
+    "legacy": {
+     "key": "1_29",
+     "chapter": 1,
+     "chapterName": "医療管理総論",
+     "index": 29,
+     "hash": "507a985a3a210e2a"
+    },
+    "subject": "S01",
+    "subtopic": "医療提供体制と病床区分",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "病床区分のうち、精神病床の対象となる疾患はどれか。",
+    "choices": [
+     "結核",
+     "感染症法の一類感染症",
+     "精神疾患",
+     "悪性新生物"
+    ],
+    "answer": 2,
+    "explanation": {
+     "correct": "精神病床は精神疾患を有する者を入院させるための病床で、医療法に基づき区分される。",
+     "choiceNotes": [
+      "結核は結核病床に入院させる。",
+      "一類感染症は感染症病床の対象。",
+      null,
+      "悪性新生物は一般病床で対応する。"
+     ],
+     "point": "病床5区分＝一般・療養・精神・感染症・結核。それぞれ対象疾患が異なる。"
+    },
+    "sources": [
+     {
+      "ref": "law:医療法",
+      "title": "医療法",
+      "url": "https://laws.e-gov.go.jp/law/323AC0000000205",
+      "locator": "第7条第2項第1号",
+      "quote": "精神病床（病院の病床のうち、精神疾患を有する者を入院させるためのものをいう。以下同じ。）"
+     },
+     {
+      "ref": "law:医療法",
+      "title": "医療法",
+      "url": "https://laws.e-gov.go.jp/law/323AC0000000205",
+      "locator": "第7条第2項第2号",
+      "quote": "第六条第二項に規定する一類感染症、同条第三項に規定する二類感染症（結核を除く。）"
+     },
+     {
+      "ref": "law:医療法",
+      "title": "医療法",
+      "url": "https://laws.e-gov.go.jp/law/323AC0000000205",
+      "locator": "第7条第2項第3号",
+      "quote": "結核病床（病院の病床のうち、結核の患者を入院させるためのものをいう。以下同じ。）"
+     }
+    ],
+    "asOf": "2026-10 e-Gov現行法令（医療法）"
+   }
+  },
+  {
+   "id": "lg-01-30",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "x-legacy-L01b:jnet21-sonekibunkiten（利益ゼロ＝売上高＝総費用、変動費・固定費の定義）。solver=0（low/ambiguous）→正答肢を修正して解消。",
+   "question": {
+    "id": "lg-01-30",
+    "legacy": {
+     "key": "1_30",
+     "chapter": 1,
+     "chapterName": "医療管理総論",
+     "index": 30,
+     "hash": "aa9380f6cb63ce80"
+    },
+    "subject": "S02",
+    "subtopic": "経営管理と経営指標",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "損益分岐点の説明として正しいものはどれか。",
+    "choices": [
+     "売上高と総費用が等しくなる点",
+     "売上高と固定費が等しくなる点",
+     "変動費がゼロになる点",
+     "売上高が最大になる点"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "損益分岐点とは、利益がゼロ（売上高＝総費用）となる売上規模をいう。総費用は、売上規模に応じて増減する変動費と、売上規模に関係なく一定額発生する固定費に分けられる。実際の売上高が損益分岐点売上高を上回れば利益が得られ、下回れば損失が発生する。",
+     "choiceNotes": [
+      null,
+      "固定費だけでなく、変動費を含めた総費用と売上高が等しくなる点である。",
+      "変動費は売上規模に応じて増減する費用であり、損益分岐点は変動費がゼロになる点ではない。",
+      "損益分岐点は利益がゼロとなる売上規模であり、売上高が最大となる点ではない。"
+     ],
+     "point": "損益分岐点＝売上高＝総費用（固定費＋変動費）で利益ゼロ。上回れば利益、下回れば損失。"
+    },
+    "sources": [
+     {
+      "ref": "x-legacy-L01b:jnet21-sonekibunkiten",
+      "title": "損益分岐点の計算方法と経営改善に向けた活用方法を教えてください。（J-Net21 ビジネスQ&A）",
+      "url": "https://j-net21.smrj.go.jp/solution/qa/accounting/Q0240.html",
+      "locator": "回答",
+      "quote": "損益分岐点とは、利益がゼロ（売上高＝総費用）となる売上規模（販売量）を意味し"
+     },
+     {
+      "ref": "x-legacy-L01b:jnet21-sonekibunkiten",
+      "title": "損益分岐点の計算方法と経営改善に向けた活用方法を教えてください。（J-Net21 ビジネスQ&A）",
+      "url": "https://j-net21.smrj.go.jp/solution/qa/accounting/Q0240.html",
+      "locator": "回答",
+      "quote": "売上規模（販売量）に応じて金額が増減する費用＝変動費と、売上規模に関係なく一定金額が発生する費用＝固定費とがあります。"
+     },
+     {
+      "ref": "x-legacy-L01b:jnet21-sonekibunkiten",
+      "title": "損益分岐点の計算方法と経営改善に向けた活用方法を教えてください。（J-Net21 ビジネスQ&A）",
+      "url": "https://j-net21.smrj.go.jp/solution/qa/accounting/Q0240.html",
+      "locator": "回答",
+      "quote": "実際の売上高が損益分岐点売上高を上回れば利益が得られますが、下回れば損失が発生することになります。"
+     }
+    ],
+    "asOf": "中小企業基盤整備機構 J-Net21（2026-11-24取得）"
+   },
+   "detail": "旧正答肢「売上高が固定費と変動費の合計を上回る点」は誤り（損益分岐点は売上高＝総費用となる点で、上回ると利益が出る）。正答肢を「等しくなる点」に修正し、選択肢の表現をそろえた。"
+  },
+  {
+   "id": "lg-01-31",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:医療法施行規則 第19条第2項第2号・第3号。solver=1一致（診療所の規則21条の2を根拠としていたが病院は19条）。",
+   "question": {
+    "id": "lg-01-31",
+    "legacy": {
+     "key": "1_31",
+     "chapter": 1,
+     "chapterName": "医療管理総論",
+     "index": 31,
+     "hash": "da91a52ac5c7922d"
+    },
+    "subject": "S01",
+    "subtopic": "医療提供体制と病床区分",
+    "format": "knowledge",
+    "difficulty": "standard",
+    "polarity": "positive",
+    "question": "医療法施行規則に定める病院の看護師及び准看護師の員数の基準において、療養病床は入院患者何人に対して1人か。",
+    "choices": [
+     "3人に1人",
+     "4人に1人",
+     "7人に1人",
+     "10人に1人"
+    ],
+    "answer": 1,
+    "explanation": {
+     "correct": "医療法施行規則第19条第2項第2号は、病院の看護師及び准看護師の員数の基準を、療養病床・精神病床・結核病床の入院患者数を4で除した数と、感染症病床・一般病床の入院患者数を3で除した数とを加えた数としている（都道府県が条例を定めるに当たって従うべき基準）。したがって療養病床は入院患者4人に1人、一般病床は3人に1人である。",
+     "choiceNotes": [
+      "3人に1人は感染症病床及び一般病床の基準である。",
+      null,
+      "医療法施行規則第19条の看護師及び准看護師の員数の基準に7人に1人という区分はない。",
+      "医療法施行規則第19条の看護師及び准看護師の員数の基準に10人に1人という区分はない。"
+     ],
+     "point": "病院の看護師等（規則第19条第2項）：療養・精神・結核病床＝4：1、一般・感染症病床＝3：1。療養病床は看護補助者も4：1。"
+    },
+    "sources": [
+     {
+      "ref": "law:医療法施行規則",
+      "title": "医療法施行規則",
+      "url": "https://laws.e-gov.go.jp/law/323M40000100050",
+      "locator": "第19条第2項第2号",
+      "quote": "看護師及び准看護師療養病床、精神病床及び結核病床に係る病室の入院患者の数を四をもつて除した数と、感染症病床及び一般病床に係る病室の入院患者（入院している新生児を含む。）の数を三をもつて除した数"
+     },
+     {
+      "ref": "law:医療法施行規則",
+      "title": "医療法施行規則",
+      "url": "https://laws.e-gov.go.jp/law/323M40000100050",
+      "locator": "第19条第2項第3号",
+      "quote": "看護補助者療養病床に係る病室の入院患者の数が四又はその端数を増すごとに一"
+     }
+    ],
+    "asOf": "2026-10 e-Gov現行法令（医療法施行規則）"
+   },
+   "detail": "choiceNotesの「7:1は看護配置加算に関する基準」「10:1は介護施設等の基準」は誤り・根拠不明のため修正。問題文を病院・医療法施行規則の基準と明示。"
+  }
+ ]
+}

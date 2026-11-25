@@ -1,0 +1,228 @@
+{
+ "answers": [
+  {
+   "key": "lg-01-00",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "一般知識"
+  },
+  {
+   "key": "lg-01-01",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "一般知識"
+  },
+  {
+   "key": "lg-01-02",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "一般知識"
+  },
+  {
+   "key": "lg-01-03",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "一般知識"
+  },
+  {
+   "key": "lg-01-04",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "一般知識"
+  },
+  {
+   "key": "lg-01-05",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "一般知識"
+  },
+  {
+   "key": "lg-01-06",
+   "answer": 3,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "一般知識"
+  },
+  {
+   "key": "lg-01-07",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "一般知識"
+  },
+  {
+   "key": "lg-01-08",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "一般知識"
+  },
+  {
+   "key": "lg-01-09",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "一般知識"
+  },
+  {
+   "key": "lg-01-10",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "一般知識"
+  },
+  {
+   "key": "lg-01-11",
+   "answer": 3,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "一般知識"
+  },
+  {
+   "key": "lg-01-12",
+   "answer": 3,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "一般知識"
+  },
+  {
+   "key": "lg-01-13",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "一般知識"
+  },
+  {
+   "key": "lg-01-14",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "病院の定義に特定機能病院は400床以上。選択肢は妥当"
+  },
+  {
+   "key": "lg-01-15",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "一般知識"
+  },
+  {
+   "key": "lg-01-16",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "一般知識"
+  },
+  {
+   "key": "lg-01-17",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "一般知識"
+  },
+  {
+   "key": "lg-01-18",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "一般知識"
+  },
+  {
+   "key": "lg-01-19",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "一般知識"
+  },
+  {
+   "key": "lg-01-20",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "一般知識"
+  },
+  {
+   "key": "lg-01-21",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "一般知識"
+  },
+  {
+   "key": "lg-01-22",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "一般知識"
+  },
+  {
+   "key": "lg-01-23",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "一般知識"
+  },
+  {
+   "key": "lg-01-24",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "一般知識"
+  },
+  {
+   "key": "lg-01-25",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "一般知識"
+  },
+  {
+   "key": "lg-01-26",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "一般知識"
+  },
+  {
+   "key": "lg-01-27",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "一般知識"
+  },
+  {
+   "key": "lg-01-28",
+   "answer": 1,
+   "confidence": "medium",
+   "ambiguous": true,
+   "note": "選択肢0は簡略式、1は数式として正しい標準式（延数/((新入院+退院)/2)）で、どちらも主張可能"
+  },
+  {
+   "key": "lg-01-29",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "一般知識"
+  },
+  {
+   "key": "lg-01-30",
+   "answer": 0,
+   "confidence": "low",
+   "ambiguous": true,
+   "note": "損益分岐点は売上=総費用の点。選択肢0は『上回る点』で厳密には不正確、他は更に誤りなので最良として選択"
+  },
+  {
+   "key": "lg-01-31",
+   "answer": 1,
+   "confidence": "medium",
+   "ambiguous": false,
+   "note": "一般知識。31は医療法施行規則21条の2（診療所）の4:1に準拠、病院も同様と判断"
+  }
+ ]
+}

@@ -1,0 +1,193 @@
+{
+ "answers": [
+  {
+   "key": "lg-10-00",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": ""
+  },
+  {
+   "key": "lg-10-01",
+   "answer": 3,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": ""
+  },
+  {
+   "key": "lg-10-02",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": ""
+  },
+  {
+   "key": "lg-10-03",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": ""
+  },
+  {
+   "key": "lg-10-04",
+   "answer": 0,
+   "confidence": "medium",
+   "ambiguous": false,
+   "note": "日本の主たる病態の選定基準（医療資源を最も投入）"
+  },
+  {
+   "key": "lg-10-05",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": ""
+  },
+  {
+   "key": "lg-10-06",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": ""
+  },
+  {
+   "key": "lg-10-07",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": ""
+  },
+  {
+   "key": "lg-10-08",
+   "answer": 0,
+   "confidence": "medium",
+   "ambiguous": true,
+   "note": "一般原則は『I欄の最下行の病態が上の病態すべての原因となり得る場合それを原死因』。選択肢0は簡略化で不正確、最上欄は誤り"
+  },
+  {
+   "key": "lg-10-09",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": ""
+  },
+  {
+   "key": "lg-10-10",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": ""
+  },
+  {
+   "key": "lg-10-11",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": ""
+  },
+  {
+   "key": "lg-10-12",
+   "answer": 0,
+   "confidence": "medium",
+   "ambiguous": false,
+   "note": "Q16と重複"
+  },
+  {
+   "key": "lg-10-13",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": ""
+  },
+  {
+   "key": "lg-10-14",
+   "answer": 0,
+   "confidence": "medium",
+   "ambiguous": true,
+   "note": "『多数回コーディング』は表現が曖昧"
+  },
+  {
+   "key": "lg-10-15",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": ""
+  },
+  {
+   "key": "lg-10-16",
+   "answer": 1,
+   "confidence": "medium",
+   "ambiguous": false,
+   "note": "NOS=特定不能。他に分類されないものはNEC。Q12と重複"
+  },
+  {
+   "key": "lg-10-17",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": ""
+  },
+  {
+   "key": "lg-10-18",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": ""
+  },
+  {
+   "key": "lg-10-19",
+   "answer": 1,
+   "confidence": "medium",
+   "ambiguous": false,
+   "note": "形態コードはM+4桁+/+性状1桁（5桁）"
+  },
+  {
+   "key": "lg-10-20",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": ""
+  },
+  {
+   "key": "lg-10-21",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": ""
+  },
+  {
+   "key": "lg-10-22",
+   "answer": 1,
+   "confidence": "medium",
+   "ambiguous": true,
+   "note": "選択肢1が一般原則の正確な記述。選択肢0は簡略化で不正確"
+  },
+  {
+   "key": "lg-10-23",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": ""
+  },
+  {
+   "key": "lg-10-24",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": ""
+  },
+  {
+   "key": "lg-10-25",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": ""
+  },
+  {
+   "key": "lg-10-26",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": ""
+  }
+ ]
+}

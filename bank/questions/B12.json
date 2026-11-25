@@ -1,0 +1,1478 @@
+{
+ "subject": "B12",
+ "questions": [
+  {
+   "id": "lg-04-00",
+   "legacy": {
+    "key": "4_0",
+    "chapter": 4,
+    "chapterName": "医学用語・医学略語",
+    "index": 0,
+    "hash": "025195675c91fc6f"
+   },
+   "subject": "B12",
+   "subtopic": "医学略語",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "MIの正式名称はどれか。",
+   "choices": [
+    "Mitral insufficiency（僧帽弁閉鎖不全）",
+    "Myocardial infarction（心筋梗塞）",
+    "Multiple infection（多発感染）",
+    "Medical indication（医学的適応）"
+   ],
+   "answer": 1,
+   "explanation": {
+    "correct": "MIはMyocardial infarction（心筋梗塞）の略語である。急性心筋梗塞は、冠動脈の急性閉塞により心筋壊死が引き起こされる疾患である。",
+    "choiceNotes": [
+     "Mitral insufficiency（僧帽弁閉鎖不全）はMIの正式名称ではない。略語としてのMIはMyocardial infarctionを指す。",
+     null,
+     "Multiple infection（多発感染）はMIの正式名称ではない。",
+     "Medical indication（医学的適応）はMIの正式名称ではない。"
+    ],
+    "point": "MI＝Myocardial infarction＝心筋梗塞。冠動脈の急性閉塞による心筋壊死。"
+   },
+   "sources": [
+    {
+     "ref": "x-legacy-L04a:medlineplus-appendixb",
+     "title": "MedlinePlus Appendix B: Some Common Abbreviations",
+     "url": "https://medlineplus.gov/appendixb.html",
+     "locator": "Appendix B「MI」",
+     "quote": "MI Myocardial infarction"
+    },
+    {
+     "ref": "x-legacy-L04a:msd-ja-ami",
+     "title": "MSDマニュアル プロフェッショナル版「急性心筋梗塞」",
+     "url": "https://www.msdmanuals.com/ja-jp/professional/04-心血管疾患/冠動脈疾患/急性心筋梗塞",
+     "locator": "急性心筋梗塞 冒頭（定義）",
+     "quote": "急性心筋梗塞は，冠動脈の急性閉塞により心筋壊死が引き起こされる疾患である。"
+    },
+    {
+     "ref": "x-legacy-L04a:msd-ja-ami",
+     "title": "MSDマニュアル プロフェッショナル版「急性心筋梗塞」",
+     "url": "https://www.msdmanuals.com/ja-jp/professional/04-心血管疾患/冠動脈疾患/急性心筋梗塞",
+     "locator": "症状と徴候（無症候性心筋梗塞）",
+     "quote": "無症候性心筋梗塞（silent myocardial infarction）"
+    }
+   ],
+   "asOf": "MedlinePlus Appendix B（2026-11取得）・MSDマニュアル プロフェッショナル版「急性心筋梗塞」（2024年7月更新）",
+   "origin": {
+    "batch": "L04",
+    "key": "lg-04-00",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（医学用語）で修正",
+     "修正後の再監査は未実施",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L04（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L04a（医学用語）",
+     "reauditor": null
+    },
+    "log": "bank/audit/legacy-L04a.audit.json#lg-04-00",
+    "notes": "MedlinePlus App.B: MI=Myocardial infarction。MSD 急性心筋梗塞の定義・silent myocardial infarction=無症候性心筋梗塞で訳語確認。"
+   }
+  },
+  {
+   "id": "lg-04-01",
+   "legacy": {
+    "key": "4_1",
+    "chapter": 4,
+    "chapterName": "医学用語・医学略語",
+    "index": 1,
+    "hash": "bfa8b947c2a0e042"
+   },
+   "subject": "B12",
+   "subtopic": "医学略語",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "COPDの正式名称はどれか。",
+   "choices": [
+    "Chronic Obstructive Pulmonary Disease",
+    "Congenital Obstructive Pulmonary Disorder",
+    "Chronic Organic Peripheral Disease",
+    "Cardiac Output Pressure Deficiency"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "COPDはChronic Obstructive Pulmonary Disease（慢性閉塞性肺疾患）の略語である。毒素の吸入（しばしばタバコ煙）に対する炎症反応によって引き起こされる気流制限である。",
+    "choiceNotes": [
+     null,
+     "COPDのCはChronic（慢性）であり、Congenital（先天性）ではない。DもDisorderではなくDisease。",
+     "COPDのOPはObstructive Pulmonary（閉塞性・肺）であり、Organic Peripheral（器質性・末梢）ではない。",
+     "COPDは肺疾患（Pulmonary Disease）の略語であり、心臓（Cardiac）に関する用語ではない。"
+    ],
+    "point": "COPD＝慢性閉塞性肺疾患。大半の国で喫煙が第一の危険因子。"
+   },
+   "sources": [
+    {
+     "ref": "x-legacy-L04a:medlineplus-appendixb",
+     "title": "MedlinePlus Appendix B: Some Common Abbreviations",
+     "url": "https://medlineplus.gov/appendixb.html",
+     "locator": "Appendix B「COPD」",
+     "quote": "COPD Chronic obstructive pulmonary disease"
+    },
+    {
+     "ref": "x-legacy-L04a:msd-ja-copd",
+     "title": "MSDマニュアル プロフェッショナル版「慢性閉塞性肺疾患（COPD）」",
+     "url": "https://www.msdmanuals.com/ja-jp/professional/05-肺疾患/慢性閉塞性肺疾患および関連疾患/慢性閉塞性肺疾患-copd",
+     "locator": "COPD 冒頭（定義）",
+     "quote": "慢性閉塞性肺疾患（COPD）は，毒素の吸入（しばしばタバコ煙）に対する炎症反応によって引き起こされる気流制限である。"
+    },
+    {
+     "ref": "x-legacy-L04a:msd-ja-copd",
+     "title": "MSDマニュアル プロフェッショナル版「慢性閉塞性肺疾患（COPD）」",
+     "url": "https://www.msdmanuals.com/ja-jp/professional/05-肺疾患/慢性閉塞性肺疾患および関連疾患/慢性閉塞性肺疾患-copd",
+     "locator": "病因",
+     "quote": "大半の国において喫煙が第一の危険因子となっている"
+    }
+   ],
+   "asOf": "MedlinePlus Appendix B（2026-11取得）・MSDマニュアル プロフェッショナル版「慢性閉塞性肺疾患（COPD）」（2024年9月更新）",
+   "origin": {
+    "batch": "L04",
+    "key": "lg-04-01",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（医学用語）で修正",
+     "修正後の再監査は未実施",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L04（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L04a（医学用語）",
+     "reauditor": null
+    },
+    "log": "bank/audit/legacy-L04a.audit.json#lg-04-01",
+    "notes": "MedlinePlus App.B: COPD=Chronic obstructive pulmonary disease。MSD COPD 定義（タバコ煙に対する炎症反応による気流制限）・病因（喫煙が第一の危険因子）。"
+   }
+  },
+  {
+   "id": "lg-04-04",
+   "legacy": {
+    "key": "4_4",
+    "chapter": 4,
+    "chapterName": "医学用語・医学略語",
+    "index": 4,
+    "hash": "b5bfb5a9a92d15c8"
+   },
+   "subject": "B12",
+   "subtopic": "医学用語",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "「-ectomy」の意味はどれか。",
+   "choices": [
+    "炎症",
+    "切除術",
+    "検査",
+    "形成術"
+   ],
+   "answer": 1,
+   "explanation": {
+    "correct": "-ectomy＝切除術。例：gastrectomy＝胃切除術。",
+    "choiceNotes": [
+     "炎症は-itis。",
+     null,
+     "検査は-scopy。",
+     "形成術は-plasty。"
+    ],
+    "point": "-ectomy＝切除、-itis＝炎症、-scopy＝鏡視、-plasty＝形成。"
+   },
+   "sources": [
+    {
+     "ref": "x-legacy-L04a:medlineplus-appendixa",
+     "title": "MedlinePlus Appendix A: Word Parts and What They Mean",
+     "url": "https://medlineplus.gov/appendixa.html",
+     "locator": "Appendix A Procedures, Diagnosis and Surgery「-ectomy」",
+     "quote": "-ectomy cut out, removal"
+    },
+    {
+     "ref": "x-legacy-L04a:medlineplus-appendixa",
+     "title": "MedlinePlus Appendix A: Word Parts and What They Mean",
+     "url": "https://medlineplus.gov/appendixa.html",
+     "locator": "Appendix A Body Parts and Disorders「-itis」",
+     "quote": "-ites, -itis inflammation"
+    },
+    {
+     "ref": "x-legacy-L04a:medlineplus-appendixa",
+     "title": "MedlinePlus Appendix A: Word Parts and What They Mean",
+     "url": "https://medlineplus.gov/appendixa.html",
+     "locator": "Appendix A Procedures「-plasty」「-scopy」",
+     "quote": "-plasty surgical reconstruction radio- radiation, radius -rrhaphy suture -scope, -scopy examine, for examining"
+    }
+   ],
+   "asOf": "MedlinePlus Appendix A/B（2026-11取得）",
+   "origin": {
+    "batch": "L04",
+    "key": "lg-04-04",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "領域監査（医学用語）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L04（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L04a（医学用語）"
+    },
+    "log": "bank/audit/legacy-L04a.audit.json#lg-04-04",
+    "notes": "MedlinePlus App.A: -ectomy=cut out, removal（切除）、-itis=inflammation、-plasty=surgical reconstruction（形成）、-scope/-scopy=examine。gastr-=stomach（例のgastrectomy）。"
+   }
+  },
+  {
+   "id": "lg-04-05",
+   "legacy": {
+    "key": "4_5",
+    "chapter": 4,
+    "chapterName": "医学用語・医学略語",
+    "index": 5,
+    "hash": "a66a306e385248e6"
+   },
+   "subject": "B12",
+   "subtopic": "医学略語",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "CABGの意味はどれか。",
+   "choices": [
+    "冠動脈バイパス術",
+    "心臓バイパスカテーテル",
+    "中心動脈血ガス",
+    "慢性腹部腸管ガス"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "CABGはCoronary Artery Bypass Graft（冠動脈バイパス術）の略語である。グラフトとして左内胸動脈や下肢の伏在静脈などを用いる外科手術である。",
+    "choiceNotes": [
+     null,
+     "CABGはカテーテルの名称ではなく、グラフトを用いる外科手術（冠動脈バイパス術）を指す。",
+     "CABGのCはCoronary（冠動脈）、GはGraft（グラフト）であり、血液ガスの略語ではない。",
+     "CABGのCはCoronary（冠動脈）であり、腹部・腸管ガスとは無関係である。"
+    ],
+    "point": "CABG＝Coronary Artery Bypass Graft＝冠動脈バイパス術。"
+   },
+   "sources": [
+    {
+     "ref": "x-legacy-L04a:medlineplus-appendixb",
+     "title": "MedlinePlus Appendix B: Some Common Abbreviations",
+     "url": "https://medlineplus.gov/appendixb.html",
+     "locator": "Appendix B「CABG」",
+     "quote": "CABG Coronary artery bypass graft"
+    },
+    {
+     "ref": "x-legacy-L04a:msd-ja-cabg",
+     "title": "MSDマニュアル プロフェッショナル版「冠動脈バイパス術（CABG）」",
+     "url": "https://www.msdmanuals.com/ja-jp/professional/04-心血管疾患/冠動脈疾患/冠動脈バイパス術-cabg",
+     "locator": "冠動脈バイパス術 見出し",
+     "quote": "冠動脈バイパス術（CABG）"
+    },
+    {
+     "ref": "x-legacy-L04a:msd-ja-cabg",
+     "title": "MSDマニュアル プロフェッショナル版「冠動脈バイパス術（CABG）」",
+     "url": "https://www.msdmanuals.com/ja-jp/professional/04-心血管疾患/冠動脈疾患/冠動脈バイパス術-cabg",
+     "locator": "従来法によるCABG",
+     "quote": "左前下行枝には，典型的には左内胸動脈を有茎グラフトとして使用する。"
+    }
+   ],
+   "asOf": "MedlinePlus Appendix B（2026-11取得）・MSDマニュアル プロフェッショナル版「冠動脈バイパス術（CABG）」（2024年2月更新）",
+   "origin": {
+    "batch": "L04",
+    "key": "lg-04-05",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（医学用語）で修正",
+     "修正後の再監査は未実施",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L04（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L04a（医学用語）",
+     "reauditor": null
+    },
+    "log": "bank/audit/legacy-L04a.audit.json#lg-04-05",
+    "notes": "MedlinePlus App.B: CABG=Coronary artery bypass graft。MSD CABG 見出し・従来法（左内胸動脈・伏在静脈をグラフトに使用）。"
+   }
+  },
+  {
+   "id": "lg-04-08",
+   "legacy": {
+    "key": "4_8",
+    "chapter": 4,
+    "chapterName": "医学用語・医学略語",
+    "index": 8,
+    "hash": "4c7a7796a548eb37"
+   },
+   "subject": "B12",
+   "subtopic": "医学略語",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "「p.o.」の意味はどれか。",
+   "choices": [
+    "経口投与",
+    "静脈注射",
+    "筋肉注射",
+    "皮下注射"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "p.o.はper os（by mouth：経口）の略で、経口投与を表す。なお per os と書くと os が左眼（OS）と誤読されることがあるため、PO または by mouth と書くことが推奨されている。",
+    "choiceNotes": [
+     null,
+     "静脈注射はi.v.（IV：Intravenous）。",
+     "筋肉注射はi.m.（IM：Intramuscular）。",
+     "皮下注射はs.c.（SC：Subcutaneous）。SCはSL（舌下）と誤読されやすく、SUBQ等の表記が推奨されている。"
+    ],
+    "point": "p.o.＝経口、i.v.＝静脈内、i.m.＝筋肉内、s.c.＝皮下。"
+   },
+   "sources": [
+    {
+     "ref": "x-legacy-L04a:ismp-error-prone-2024",
+     "title": "ISMP List of Error-Prone Abbreviations, Symbols, and Dose Designations (2024)",
+     "url": "https://online.ecri.org/hubfs/ISMP/Resources/ISMP_ErrorProneAbbreviation_List.pdf",
+     "locator": "Table 1「Per os」",
+     "quote": "Per os By mouth, orally The os mistaken as left eye Use PO, by mouth, or orally"
+    },
+    {
+     "ref": "x-legacy-L04a:ismp-error-prone-2024",
+     "title": "ISMP List of Error-Prone Abbreviations, Symbols, and Dose Designations (2024)",
+     "url": "https://online.ecri.org/hubfs/ISMP/Resources/ISMP_ErrorProneAbbreviation_List.pdf",
+     "locator": "Table 1「SC, SQ, sq, or sub q」",
+     "quote": "SC, SQ, sq, or sub q† Subcutaneous(ly)"
+    },
+    {
+     "ref": "x-legacy-L04a:medlineplus-appendixb",
+     "title": "MedlinePlus Appendix B: Some Common Abbreviations",
+     "url": "https://medlineplus.gov/appendixb.html",
+     "locator": "Appendix B「IM」「IV」",
+     "quote": "IM Intramuscular A type of injection IUD Intrauterine device A type of birth control for women IV Intravenous"
+    }
+   ],
+   "asOf": "ISMP List of Error-Prone Abbreviations（2024）・MedlinePlus Appendix B（2026-11取得）",
+   "origin": {
+    "batch": "L04",
+    "key": "lg-04-08",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（医学用語）で修正",
+     "修正後の再監査は未実施",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L04（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L04a（医学用語）",
+     "reauditor": null
+    },
+    "log": "bank/audit/legacy-L04a.audit.json#lg-04-08",
+    "notes": "ISMP 2024: Per os=By mouth, orally（PO推奨）、SC/SQ=Subcutaneous。MedlinePlus App.B: IM=Intramuscular、IV=Intravenous。"
+   }
+  },
+  {
+   "id": "lg-04-09",
+   "legacy": {
+    "key": "4_9",
+    "chapter": 4,
+    "chapterName": "医学用語・医学略語",
+    "index": 9,
+    "hash": "b933f672d8500d44"
+   },
+   "subject": "B12",
+   "subtopic": "医学略語",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "MRSAの正式名称はどれか。",
+   "choices": [
+    "Methicillin-Resistant Staphylococcus Aureus",
+    "Multi-Resistant Streptococcus Aureus",
+    "Methicillin-Responsive Staphylococcus Aureus",
+    "Minimal Resistance Staphylococcus Aureus"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "MRSAはMethicillin-Resistant Staphylococcus Aureus（メチシリン耐性黄色ブドウ球菌）の略語である。院内感染率が高い医療施設では、入院患者に対してMRSAのスクリーニングが行われることがある。",
+    "choiceNotes": [
+     null,
+     "MRSAのMはMethicillin（メチシリン）、SはStaphylococcus（ブドウ球菌）であり、Multi-やStreptococcusではない。",
+     "MRSAのRはResistant（耐性）であり、Responsive（反応性）ではない。",
+     "MRSAのRはResistant（耐性）であり、Minimal Resistanceではない。"
+    ],
+    "point": "MRSA＝メチシリン耐性黄色ブドウ球菌（Methicillin-Resistant Staphylococcus Aureus）。"
+   },
+   "sources": [
+    {
+     "ref": "x-legacy-L04a:medlineplus-appendixb",
+     "title": "MedlinePlus Appendix B: Some Common Abbreviations",
+     "url": "https://medlineplus.gov/appendixb.html",
+     "locator": "Appendix B「MRSA」",
+     "quote": "MRSA Methicillin-resistant Staphylococcus aureus"
+    },
+    {
+     "ref": "x-legacy-L04a:msd-ja-staph",
+     "title": "MSDマニュアル プロフェッショナル版「ブドウ球菌感染症」",
+     "url": "https://www.msdmanuals.com/ja-jp/professional/13-感染性疾患/グラム陽性球菌/ブドウ球菌感染症",
+     "locator": "略語",
+     "quote": "MRSA = メチシリン耐性黄色ブドウ球菌（ Staphylococcus aureus ）。"
+    },
+    {
+     "ref": "x-legacy-L04a:msd-ja-staph",
+     "title": "MSDマニュアル プロフェッショナル版「ブドウ球菌感染症」",
+     "url": "https://www.msdmanuals.com/ja-jp/professional/13-感染性疾患/グラム陽性球菌/ブドウ球菌感染症",
+     "locator": "予防（医療施設におけるMRSAサーベイランス）",
+     "quote": "メチシリン耐性黄色ブドウ球菌（ S. aureus ）（MRSA）の院内感染率が高い一部の医療施設では，鼻腔拭い液検体による迅速診断により，入院患者に対してMRSAのスクリーニング"
+    }
+   ],
+   "asOf": "MedlinePlus Appendix B（2026-11取得）・MSDマニュアル プロフェッショナル版「ブドウ球菌感染症」（2024年6月更新）",
+   "origin": {
+    "batch": "L04",
+    "key": "lg-04-09",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（医学用語）で修正",
+     "修正後の再監査は未実施",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L04（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L04a（医学用語）",
+     "reauditor": null
+    },
+    "log": "bank/audit/legacy-L04a.audit.json#lg-04-09",
+    "notes": "MedlinePlus App.B: MRSA=Methicillin-resistant Staphylococcus aureus。MSD ブドウ球菌感染症: MRSA=メチシリン耐性黄色ブドウ球菌、院内感染率の高い施設でのスクリーニング。"
+   }
+  },
+  {
+   "id": "lg-04-10",
+   "legacy": {
+    "key": "4_10",
+    "chapter": 4,
+    "chapterName": "医学用語・医学略語",
+    "index": 10,
+    "hash": "45f6c879ea217e10"
+   },
+   "subject": "B12",
+   "subtopic": "医学略語",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "ERCPの意味はどれか。",
+   "choices": [
+    "緊急蘇生心肺プロトコル",
+    "外部放射線化学療法",
+    "内視鏡的逆行性胆管膵管造影",
+    "内視鏡的根治癌処置"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "ERCP＝Endoscopic Retrograde Cholangiopancreatography。十二指腸から胆管・膵管を造影。",
+    "choiceNotes": [
+     "救急のプロトコルではない。",
+     "放射線治療ではない。",
+     null,
+     "癌処置ではない。"
+    ],
+    "point": "ERCP＝内視鏡的逆行性胆管膵管造影。"
+   },
+   "sources": [
+    {
+     "ref": "x-legacy-L04a:medlineplus-appendixb",
+     "title": "MedlinePlus Appendix B: Some Common Abbreviations",
+     "url": "https://medlineplus.gov/appendixb.html",
+     "locator": "Appendix B「ERCP」",
+     "quote": "ERCP Endoscopic retrograde cholangiopancreatography"
+    },
+    {
+     "ref": "x-legacy-L04a:msd-ja-hbimaging",
+     "title": "MSDマニュアル プロフェッショナル版「肝臓および胆嚢の画像検査」",
+     "url": "https://www.msdmanuals.com/ja-jp/professional/02-肝胆道疾患/肝胆道疾患の検査/肝臓および胆嚢の画像検査",
+     "locator": "内視鏡的逆行性胆道膵管造影（ERCP）",
+     "quote": "ERCP では，十二指腸下行部を介した内視鏡検査とともに胆管および膵管の造影検査を行う。"
+    }
+   ],
+   "asOf": "MedlinePlus Appendix B（2026-11取得）・MSDマニュアル プロフェッショナル版「肝臓および胆嚢の画像検査」（2023年8月更新）",
+   "origin": {
+    "batch": "L04",
+    "key": "lg-04-10",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "領域監査（医学用語）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L04（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L04a（医学用語）"
+    },
+    "log": "bank/audit/legacy-L04a.audit.json#lg-04-10",
+    "notes": "MedlinePlus App.B: ERCP=Endoscopic retrograde cholangiopancreatography。MSD: 十二指腸下行部から内視鏡で胆管・膵管を造影（MSDの訳語は「胆道膵管造影」、「胆管膵管造影」も同義の訳）。"
+   }
+  },
+  {
+   "id": "lg-04-11",
+   "legacy": {
+    "key": "4_11",
+    "chapter": 4,
+    "chapterName": "医学用語・医学略語",
+    "index": 11,
+    "hash": "dca88e36e47ae730"
+   },
+   "subject": "B12",
+   "subtopic": "医学略語",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "PETの正式名称はどれか。",
+   "choices": [
+    "Percutaneous Endoscopic Treatment",
+    "Positron Emission Tomography",
+    "Pulmonary Embolism Test",
+    "Peripheral Extremity Thermography"
+   ],
+   "answer": 1,
+   "explanation": {
+    "correct": "PETはPositron Emission Tomography（陽電子放出断層撮影）の略語で、核医学検査の一種である。グルコースのアナログであるFDGが最も頻用され、その取り込みはグルコース代謝率に比例する。臨床ではがんの病期分類・評価などに多く用いられる。",
+    "choiceNotes": [
+     "PETは核医学検査（撮影）であり、経皮的内視鏡治療ではない。",
+     null,
+     "PETは肺塞栓の検査名の略語ではない。",
+     "PETは陽電子を用いる断層撮影であり、四肢の温度記録（サーモグラフィ）ではない。"
+    ],
+    "point": "PET＝陽電子放出断層撮影。FDGの糖代謝を利用し、がんの評価に多く用いる。"
+   },
+   "sources": [
+    {
+     "ref": "x-legacy-L04a:medlineplus-appendixb",
+     "title": "MedlinePlus Appendix B: Some Common Abbreviations",
+     "url": "https://medlineplus.gov/appendixb.html",
+     "locator": "Appendix B「PET」",
+     "quote": "PET Positron emission tomography"
+    },
+    {
+     "ref": "x-legacy-L04a:msd-ja-pet",
+     "title": "MSDマニュアル プロフェッショナル版「PET」",
+     "url": "https://www.msdmanuals.com/ja-jp/professional/24-その他のトピック/放射線学的検査の原則/pet",
+     "locator": "PET 冒頭",
+     "quote": "PET（陽電子放出断層撮影）は， 核医学検査 の一種"
+    },
+    {
+     "ref": "x-legacy-L04a:msd-ja-pet",
+     "title": "MSDマニュアル プロフェッショナル版「PET」",
+     "url": "https://www.msdmanuals.com/ja-jp/professional/24-その他のトピック/放射線学的検査の原則/pet",
+     "locator": "PET 冒頭・PETの使用",
+     "quote": "FDGはグルコースのアナログであり，その取り込みはグルコース代謝率に比例する。"
+    }
+   ],
+   "asOf": "MedlinePlus Appendix B（2026-11取得）・MSDマニュアル プロフェッショナル版「PET」（2023年11月更新）",
+   "origin": {
+    "batch": "L04",
+    "key": "lg-04-11",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（医学用語）で修正",
+     "修正後の再監査は未実施",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L04（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L04a（医学用語）",
+     "reauditor": null
+    },
+    "log": "bank/audit/legacy-L04a.audit.json#lg-04-11",
+    "notes": "MedlinePlus App.B: PET=Positron emission tomography。MSD PET: 陽電子放出断層撮影、核医学検査、FDG（グルコースアナログ）、がんが使用の80％。"
+   }
+  },
+  {
+   "id": "lg-04-12",
+   "legacy": {
+    "key": "4_12",
+    "chapter": 4,
+    "chapterName": "医学用語・医学略語",
+    "index": 12,
+    "hash": "3a6586e726609e57"
+   },
+   "subject": "B12",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "「s/o」の意味はどれか。",
+   "choices": [
+    "〜を除外（strike off）",
+    "〜の手術",
+    "〜の疑い（suspect of）",
+    "〜を中止"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "s/o＝suspect of（疑い）。確定診断前の疑い病名に使用。",
+    "choiceNotes": [
+     "除外はr/o（rule out）。",
+     "手術にs/oは使わない。",
+     null,
+     "中止にs/oは使わない。"
+    ],
+    "point": "s/o＝疑い、r/o＝除外診断、c/c＝主訴。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "rejected",
+   "origin": {
+    "batch": "L04",
+    "key": "lg-04-12",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（医学用語）で除外"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L04（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L04a（医学用語）"
+    },
+    "log": "bank/audit/legacy-L04a.audit.json#lg-04-12",
+    "notes": "除外理由: unsupported s/o（suspect of／suspicion of）、r/o、c/c は施設ごとに運用が異なる院内略語で、正式な定義を示す公的資料を確認できない。誤答「〜を除外（strike off）」も r/o の用法と紛らわしい。｜キャッシュ内に s/o を定義する資料なし（DPCコーディングテキスト第7版 Ⅲ に「S/O 脳梗塞」の用例はあるが略語の定義はない）。Web検索でも公的資料の定義は見つからなかった。"
+   }
+  },
+  {
+   "id": "lg-04-13",
+   "legacy": {
+    "key": "4_13",
+    "chapter": 4,
+    "chapterName": "医学用語・医学略語",
+    "index": 13,
+    "hash": "f0e9ef7d620ad50c"
+   },
+   "subject": "B12",
+   "subtopic": "医学略語",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "CPRの正式名称はどれか。",
+   "choices": [
+    "Cardiopulmonary Resuscitation",
+    "Cardiac Pressure Recovery",
+    "Central Pulse Regulation",
+    "Chest Pain Relief"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "CPRはCardiopulmonary Resuscitation（心肺蘇生）の略語である。胸骨圧迫および人工呼吸による一次救命処置が基本となる。",
+    "choiceNotes": [
+     null,
+     "CPRのPRはPulmonary Resuscitation（肺・蘇生）であり、Pressure Recovery（圧回復）ではない。",
+     "CPRのCはCardio（心）であり、Central Pulse Regulation（中枢の脈拍調整）ではない。",
+     "CPRは胸痛の緩和（Chest Pain Relief）ではなく、心停止に対する蘇生処置を指す。"
+    ],
+    "point": "CPR＝心肺蘇生。成人では胸骨圧迫を1分間に100〜120回の速さで行う。"
+   },
+   "sources": [
+    {
+     "ref": "x-legacy-L04a:medlineplus-appendixb",
+     "title": "MedlinePlus Appendix B: Some Common Abbreviations",
+     "url": "https://medlineplus.gov/appendixb.html",
+     "locator": "Appendix B「CPR」",
+     "quote": "CPR Cardiopulmonary resuscitation"
+    },
+    {
+     "ref": "x-legacy-L04a:msd-ja-cpr",
+     "title": "MSDマニュアル プロフェッショナル版「成人における心肺蘇生（CPR）」",
+     "url": "https://www.msdmanuals.com/ja-jp/professional/21-救命医療/心停止と心肺蘇生-cpr/成人における心肺蘇生-cpr",
+     "locator": "成人における心肺蘇生（CPR）",
+     "quote": "胸骨圧迫および人工呼吸による一次救命処置"
+    },
+    {
+     "ref": "x-legacy-L04a:msd-ja-cpr",
+     "title": "MSDマニュアル プロフェッショナル版「成人における心肺蘇生（CPR）」",
+     "url": "https://www.msdmanuals.com/ja-jp/professional/21-救命医療/心停止と心肺蘇生-cpr/成人における心肺蘇生-cpr",
+     "locator": "一次救命処置",
+     "quote": "1分間に100～120回の速さで胸骨圧迫を30回"
+    }
+   ],
+   "asOf": "MedlinePlus Appendix B（2026-11取得）・MSDマニュアル プロフェッショナル版「成人における心肺蘇生（CPR）」（2025年6月更新）",
+   "origin": {
+    "batch": "L04",
+    "key": "lg-04-13",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（医学用語）で修正",
+     "修正後の再監査は未実施",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L04（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L04a（医学用語）",
+     "reauditor": null
+    },
+    "log": "bank/audit/legacy-L04a.audit.json#lg-04-13",
+    "notes": "MedlinePlus App.B: CPR=Cardiopulmonary resuscitation。MSD 成人CPR: 胸骨圧迫および人工呼吸による一次救命処置、100～120回/分、ACLS=二次救命処置。"
+   }
+  },
+  {
+   "id": "lg-04-14",
+   "legacy": {
+    "key": "4_14",
+    "chapter": 4,
+    "chapterName": "医学用語・医学略語",
+    "index": 14,
+    "hash": "5545e0d7479dbd2c"
+   },
+   "subject": "B12",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "DMの日本語名はどれか。",
+   "choices": [
+    "糖尿病",
+    "心筋梗塞",
+    "脳卒中",
+    "高血圧症"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "DM＝Diabetes Mellitus（糖尿病）。1型と2型に大別。",
+    "choiceNotes": [
+     null,
+     "心筋梗塞はMI。",
+     "脳卒中はCVA。",
+     "高血圧はHT。"
+    ],
+    "point": "DM＝糖尿病、HT＝高血圧、MI＝心筋梗塞、CVA＝脳卒中。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L04",
+    "key": "lg-04-14",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L04.audit.json#lg-04-14",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-04-15",
+   "legacy": {
+    "key": "4_15",
+    "chapter": 4,
+    "chapterName": "医学用語・医学略語",
+    "index": 15,
+    "hash": "39042993e9b6d562"
+   },
+   "subject": "B12",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "「b.i.d.」の意味はどれか。",
+   "choices": [
+    "1日1回",
+    "1日2回",
+    "1日3回",
+    "食前"
+   ],
+   "answer": 1,
+   "explanation": {
+    "correct": "b.i.d.＝bis in die（1日2回）。処方の投薬回数指示。",
+    "choiceNotes": [
+     "1日1回はq.d.。",
+     null,
+     "1日3回はt.i.d.。",
+     "食前はa.c.。"
+    ],
+    "point": "q.d.＝1回、b.i.d.＝2回、t.i.d.＝3回。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L04",
+    "key": "lg-04-15",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L04.audit.json#lg-04-15",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-04-16",
+   "legacy": {
+    "key": "4_16",
+    "chapter": 4,
+    "chapterName": "医学用語・医学略語",
+    "index": 16,
+    "hash": "0ef976a6a150f11e"
+   },
+   "subject": "B12",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "BNPが指標となる疾患はどれか。",
+   "choices": [
+    "腎不全",
+    "肝不全",
+    "呼吸不全",
+    "心不全"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "BNP＝脳性ナトリウム利尿ペプチド。心不全の診断・重症度評価に使用。",
+    "choiceNotes": [
+     "腎不全はBUN・Cr。",
+     "肝不全はAST・ALT。",
+     "呼吸不全は血液ガス。",
+     null
+    ],
+    "point": "BNP＝心不全マーカー。「Brain」だが主に心室で産生。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L04",
+    "key": "lg-04-16",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L04.audit.json#lg-04-16",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-04-17",
+   "legacy": {
+    "key": "4_17",
+    "chapter": 4,
+    "chapterName": "医学用語・医学略語",
+    "index": 17,
+    "hash": "2e594f5b355526b9"
+   },
+   "subject": "B12",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "CBCの正式名称はどれか。",
+   "choices": [
+    "Complete Blood Count",
+    "Cardiac Bypass Catheter",
+    "Central Blood Culture",
+    "Cerebral Blood Circulation"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "CBC＝全血球計算（血算）。WBC・RBC・Hb・Ht・PLTを測定する基本血液検査。",
+    "choiceNotes": [
+     null,
+     "CBCとは異なる。",
+     "血液培養はBC。",
+     "CBCではない。"
+    ],
+    "point": "CBC＝血算。入院時ルーチン検査。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L04",
+    "key": "lg-04-17",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L04.audit.json#lg-04-17",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-04-18",
+   "legacy": {
+    "key": "4_18",
+    "chapter": 4,
+    "chapterName": "医学用語・医学略語",
+    "index": 18,
+    "hash": "085c4da5c551f1a2"
+   },
+   "subject": "B12",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "SpO2の意味はどれか。",
+   "choices": [
+    "経皮的動脈血酸素飽和度",
+    "収縮期血圧",
+    "血清蛋白量",
+    "脊椎の第2レベル"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "SpO2＝経皮的動脈血酸素飽和度。パルスオキシメーターで非侵襲的に測定。正常96%以上。",
+    "choiceNotes": [
+     null,
+     "収縮期血圧はSBP。",
+     "血清蛋白量はTP。",
+     "脊椎レベルの略語ではない。"
+    ],
+    "point": "SpO2＝酸素飽和度。パルスオキシメーターで測定。正常96%以上。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L04",
+    "key": "lg-04-18",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L04.audit.json#lg-04-18",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-04-19",
+   "legacy": {
+    "key": "4_19",
+    "chapter": 4,
+    "chapterName": "医学用語・医学略語",
+    "index": 19,
+    "hash": "7ab9f5189fdf9e16"
+   },
+   "subject": "B12",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "PCIの正式名称はどれか。",
+   "choices": [
+    "Percutaneous Coronary Intervention（経皮的冠動脈インターベンション）",
+    "Primary Care Institution",
+    "Peripheral Circulation Index",
+    "Pulmonary Capillary Insufficiency"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "PCI＝経皮的冠動脈インターベンション。カテーテルを用いた冠動脈治療。ステント留置等。",
+    "choiceNotes": [
+     null,
+     "PCIは冠動脈治療の略語。",
+     "末梢循環指数ではない。",
+     "肺毛細血管不全ではない。"
+    ],
+    "point": "PCI＝カテーテルによる冠動脈治療。CABG＝外科的バイパス術。対比で覚える。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L04",
+    "key": "lg-04-19",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L04.audit.json#lg-04-19",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-04-20",
+   "legacy": {
+    "key": "4_20",
+    "chapter": 4,
+    "chapterName": "医学用語・医学略語",
+    "index": 20,
+    "hash": "bbb4ee97b2e304c2"
+   },
+   "subject": "B12",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "ICU（Intensive Care Unit）の日本語名称として正しいのはどれか。",
+   "choices": [
+    "冠疾患集中治療室",
+    "新生児集中治療室",
+    "集中治療室",
+    "高度治療室"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "ICUはIntensive Care Unitの略で集中治療室を意味する。重症患者の集中的な治療・看護を行う。",
+    "choiceNotes": [
+     "冠疾患集中治療室はCCU（Coronary Care Unit）。",
+     "新生児集中治療室はNICU（Neonatal ICU）。",
+     null,
+     "高度治療室はHCU（High Care Unit）。"
+    ],
+    "point": "ICU＝集中治療室、CCU＝冠疾患、NICU＝新生児、HCU＝高度治療室。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L04",
+    "key": "lg-04-20",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L04.audit.json#lg-04-20",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-04-21",
+   "legacy": {
+    "key": "4_21",
+    "chapter": 4,
+    "chapterName": "医学用語・医学略語",
+    "index": 21,
+    "hash": "45ad65ff4f0847d2"
+   },
+   "subject": "B12",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "NSAIDsの正式名称はどれか。",
+   "choices": [
+    "Non-Specific Anti-Infective Drugs",
+    "Non-Steroidal Anti-Inflammatory Drugs",
+    "Neuro-Stimulating Anti-Inflammatory Drugs",
+    "Non-Steroidal Anti-Infective Drugs"
+   ],
+   "answer": 1,
+   "explanation": {
+    "correct": "NSAIDsはNon-Steroidal Anti-Inflammatory Drugs（非ステロイド性抗炎症薬）の略。ロキソプロフェン、イブプロフェン等が該当。",
+    "choiceNotes": [
+     "Anti-Infective（抗感染）ではなくAnti-Inflammatory（抗炎症）。",
+     null,
+     "Neuro-Stimulatingは神経刺激の意味で無関係。",
+     "Anti-InfectiveではなくAnti-Inflammatoryが正しい。"
+    ],
+    "point": "NSAIDs＝非ステロイド性抗炎症薬。PPI＝プロトンポンプ阻害薬。SSRI＝選択的セロトニン再取り込み阻害薬。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L04",
+    "key": "lg-04-21",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L04.audit.json#lg-04-21",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-04-22",
+   "legacy": {
+    "key": "4_22",
+    "chapter": 4,
+    "chapterName": "医学用語・医学略語",
+    "index": 22,
+    "hash": "2e6819e2c7e1a030"
+   },
+   "subject": "B12",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "PPIが意味する薬剤分類はどれか。",
+   "choices": [
+    "プロテアーゼ阻害薬",
+    "血小板凝集阻害薬",
+    "プロトンポンプ阻害薬",
+    "ホスホジエステラーゼ阻害薬"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "PPIはProton Pump Inhibitor（プロトンポンプ阻害薬）の略。胃酸分泌を抑制する薬剤で、オメプラゾール等が代表的。",
+    "choiceNotes": [
+     "プロテアーゼ阻害薬はPI（Protease Inhibitor）。",
+     "血小板凝集阻害薬は抗血小板薬に分類される。",
+     null,
+     "ホスホジエステラーゼ阻害薬はPDE阻害薬。"
+    ],
+    "point": "PPI＝プロトンポンプ阻害薬（胃酸抑制）。H2ブロッカーとの違いも把握。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L04",
+    "key": "lg-04-22",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L04.audit.json#lg-04-22",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-04-23",
+   "legacy": {
+    "key": "4_23",
+    "chapter": 4,
+    "chapterName": "医学用語・医学略語",
+    "index": 23,
+    "hash": "a5221e833fe2bb5b"
+   },
+   "subject": "B12",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "血液検査でHbA1cが示す臨床的意義はどれか。",
+   "choices": [
+    "過去1〜2か月の平均血糖値の指標",
+    "肝機能の指標",
+    "腎機能の指標",
+    "炎症反応の指標"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "HbA1cはグリコヘモグロビンで、過去1〜2か月間の平均血糖コントロール状態を反映する。糖尿病の診断・管理に用いる。",
+    "choiceNotes": [
+     null,
+     "肝機能の指標はAST・ALT・γ-GTP等。",
+     "腎機能の指標はBUN・クレアチニン・eGFR等。",
+     "炎症反応の指標はCRP・赤沈等。"
+    ],
+    "point": "HbA1c＝過去1-2か月の血糖。基準値6.5%未満。糖尿病診断の重要指標。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L04",
+    "key": "lg-04-23",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L04.audit.json#lg-04-23",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-04-24",
+   "legacy": {
+    "key": "4_24",
+    "chapter": 4,
+    "chapterName": "医学用語・医学略語",
+    "index": 24,
+    "hash": "1303c69e0654d7fe"
+   },
+   "subject": "B12",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "ROMが意味するリハビリテーション用語はどれか。",
+   "choices": [
+    "日常生活動作",
+    "機能的自立度評価",
+    "関節可動域",
+    "運動負荷試験"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "ROMはRange of Motion（関節可動域）の略。リハビリテーションにおいて関節の動く範囲を評価する重要な指標。",
+    "choiceNotes": [
+     "日常生活動作はADL（Activities of Daily Living）。",
+     "機能的自立度評価はFIM（Functional Independence Measure）。",
+     null,
+     "運動負荷試験はExercise Stress Test。"
+    ],
+    "point": "ROM＝関節可動域、ADL＝日常生活動作、FIM＝機能的自立度評価法。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L04",
+    "key": "lg-04-24",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L04.audit.json#lg-04-24",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-04-25",
+   "legacy": {
+    "key": "4_25",
+    "chapter": 4,
+    "chapterName": "医学用語・医学略語",
+    "index": 25,
+    "hash": "a3489191923dbcb0"
+   },
+   "subject": "B12",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "FIMの評価項目の総数はどれか。",
+   "choices": [
+    "10項目",
+    "13項目",
+    "18項目",
+    "25項目"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "FIM（機能的自立度評価法）は運動項目13項目と認知項目5項目の計18項目で構成される。各項目1〜7点で評価。",
+    "choiceNotes": [
+     "10項目はBarthel Indexの評価項目数。",
+     "13項目は運動項目のみの数。",
+     null,
+     "25項目はFIMの項目数ではない。"
+    ],
+    "point": "FIM＝18項目（運動13＋認知5）。1〜7点×18＝最高126点、最低18点。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L04",
+    "key": "lg-04-25",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L04.audit.json#lg-04-25",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-04-26",
+   "legacy": {
+    "key": "4_26",
+    "chapter": 4,
+    "chapterName": "医学用語・医学略語",
+    "index": 26,
+    "hash": "115734408fb28999"
+   },
+   "subject": "B12",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "SSRIが適応となる主な疾患はどれか。",
+   "choices": [
+    "高血圧症",
+    "糖尿病",
+    "うつ病",
+    "骨粗鬆症"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "SSRIはSelective Serotonin Reuptake Inhibitor（選択的セロトニン再取り込み阻害薬）で、うつ病・パニック障害等の治療に用いる。",
+    "choiceNotes": [
+     "高血圧にはCa拮抗薬・ARB・ACE阻害薬等を使用。",
+     "糖尿病にはインスリン・経口血糖降下薬等を使用。",
+     null,
+     "骨粗鬆症にはビスホスホネート等を使用。"
+    ],
+    "point": "SSRI＝うつ病の第一選択薬。SNRI・NaSSA等の抗うつ薬との違いも重要。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L04",
+    "key": "lg-04-26",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L04.audit.json#lg-04-26",
+    "notes": "未監査"
+   }
+  },
+  {
+   "id": "lg-04-27",
+   "legacy": {
+    "key": "4_27",
+    "chapter": 4,
+    "chapterName": "医学用語・医学略語",
+    "index": 27,
+    "hash": "6b516ebed9b10b7b"
+   },
+   "subject": "B12",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "TPN（Total Parenteral Nutrition）の日本語訳はどれか。",
+   "choices": [
+    "経腸栄養",
+    "経口栄養",
+    "半消化態栄養",
+    "完全静脈栄養"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "TPNはTotal Parenteral Nutrition（完全静脈栄養/中心静脈栄養）の略。経口摂取や経腸栄養が不可能な患者に対して中心静脈から栄養を投与する方法。",
+    "choiceNotes": [
+     "経腸栄養はEN（Enteral Nutrition）。経管栄養とも呼ばれる。",
+     "経口栄養は通常の食事摂取のこと。",
+     "半消化態栄養は経腸栄養剤の一種で、TPNとは異なる。",
+     null
+    ],
+    "point": "TPN＝完全静脈栄養（中心静脈栄養）。PPN＝末梢静脈栄養。EN＝経腸栄養。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "provisional",
+   "origin": {
+    "batch": "L04",
+    "key": "lg-04-27",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-25",
+    "method": [],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）"
+    },
+    "log": "bank/audit/legacy-L04.audit.json#lg-04-27",
+    "notes": "未監査"
+   }
+  }
+ ]
+}

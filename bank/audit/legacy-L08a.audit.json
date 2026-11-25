@@ -1,0 +1,1097 @@
+{
+ "verdicts": [
+  {
+   "id": "lg-08-00",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:医師法 第24条第2項（5年・管理者/医師が保存）; law:保険医療機関及び保険医療養担当規則 第9条（帳簿書類3年・診療録は完結の日から5年）; law:医療法施行規則 第20条第10号（諸記録 過去2年間）。",
+   "detail": "choiceNote「3年の規定はない」は誤り（療担規則第9条で帳簿・書類等は3年）。「起算日は最終診療日」は条文にない表現で、療担規則は「完結の日から」。stemの根拠法を明示。",
+   "question": {
+    "id": "lg-08-00",
+    "legacy": {
+     "key": "8_0",
+     "chapter": 8,
+     "chapterName": "診療情報管理I（法令・諸規則）",
+     "index": 0,
+     "hash": "8753923c3fc365a9"
+    },
+    "subject": "S08",
+    "subtopic": "診療録の保存義務",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "医師法に定める診療録の保存期間はどれか。",
+    "choices": [
+     "5年間",
+     "2年間",
+     "10年間",
+     "3年間"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "医師法第24条第2項により、診療録は5年間保存しなければならない（病院・診療所に勤務する医師の診療録はその管理者が、それ以外はその医師が保存する）。療担規則第9条も、保険診療の診療録は「その完結の日から五年間」としている。",
+     "choiceNotes": [
+      null,
+      "2年は、医療法施行規則第20条第10号の「診療に関する諸記録」（過去2年間の病院日誌、処方せん、看護記録等）の期間である。",
+      "10年とする医師法の規定はない。",
+      "3年は、療担規則第9条の療養の給付の担当に関する帳簿・書類その他の記録の保存期間であり、診療録（5年）とは異なる。"
+     ],
+     "point": "診療録＝5年（医師法24条2項）。療担規則の帳簿・書類＝3年、医療法の諸記録＝2年。"
+    },
+    "sources": [
+     {
+      "ref": "law:医師法",
+      "title": "医師法",
+      "url": "https://laws.e-gov.go.jp/law/323AC0000000201",
+      "locator": "第24条第2項",
+      "quote": "その病院又は診療所の管理者において、その他の診療に関するものは、その医師において、五年間これを保存しなければならない。"
+     },
+     {
+      "ref": "law:保険医療機関及び保険医療養担当規則",
+      "title": "保険医療機関及び保険医療養担当規則",
+      "url": "https://laws.e-gov.go.jp/law/332M50000100015",
+      "locator": "第9条",
+      "quote": "療養の給付の担当に関する帳簿及び書類その他の記録をその完結の日から三年間保存しなければならない。ただし、患者の診療録にあつては、その完結の日から五年間とする。"
+     },
+     {
+      "ref": "law:医療法施行規則",
+      "title": "医療法施行規則",
+      "url": "https://laws.e-gov.go.jp/law/323M40000100050",
+      "locator": "第20条第10号",
+      "quote": "診療に関する諸記録は、過去二年間の病院日誌、各科診療日誌、処方せん、手術記録、看護記録"
+     }
+    ],
+    "asOf": "2026-11 e-Gov現行法令"
+   }
+  },
+  {
+   "id": "lg-08-01",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "info:mhlw-ebunsho-shiko-tsuchi 第二2(3)（見読性・真正性・保存性の三条件）; info:mhlw-anzen-gl7-gaisetsu 4.2（機密性・完全性・可用性＝情報セキュリティの要素）。",
+   "detail": "「電子カルテの3原則」は通知上の用語でない。通知の表現（診療録等を電子媒体に保存する場合の三条件）に合わせ、解説の各要素の説明を通知の文言に合わせた。",
+   "question": {
+    "id": "lg-08-01",
+    "legacy": {
+     "key": "8_1",
+     "chapter": 8,
+     "chapterName": "診療情報管理I（法令・諸規則）",
+     "index": 1,
+     "hash": "c9a30cc341595a44"
+    },
+    "subject": "S05",
+    "subtopic": "電子保存の三基準と外部保存",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "法令で保存義務のある診療録等を電子媒体に保存する場合に満たさなければならない三条件はどれか。",
+    "choices": [
+     "真正性・見読性・保存性",
+     "機密性・完全性・可用性",
+     "安全性・効率性・正確性",
+     "利便性・経済性・互換性"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "e-文書法の施行通知は、電子媒体に保存する場合の三条件として、見読性（必要に応じ直ちに明瞭かつ整然とした形式で表示・書面化できる）、真正性（改変・消去の有無を確認でき、作成の責任の所在が明らか）、保存性（保存すべき期間中、復元可能な状態で保存）の確保を挙げている。",
+     "choiceNotes": [
+      null,
+      "機密性・完全性・可用性は、安全管理ガイドラインが示す情報セキュリティの要素であり、電子保存の三条件ではない。",
+      "電子保存の三条件として示されたものではない。",
+      "電子保存の三条件として示されたものではない。"
+     ],
+     "point": "電子保存の三条件＝真正性・見読性・保存性。情報セキュリティの3要素（機密性・完全性・可用性）と混同しない。"
+    },
+    "sources": [
+     {
+      "ref": "info:mhlw-ebunsho-shiko-tsuchi",
+      "title": "民間事業者等が行う書面の保存等における情報通信の技術の利用に関する法律等の施行等について〔医療法〕",
+      "url": "https://www.mhlw.go.jp/web/t_doc?dataId=00tb2663&dataType=1&pageNo=1",
+      "locator": "第二 2(3)",
+      "quote": "電磁的記録による保存を行うことができる文書等に記録された情報を電子媒体に保存する場合は次の三条件を満たさなければならない。"
+     },
+     {
+      "ref": "info:mhlw-ebunsho-shiko-tsuchi",
+      "title": "民間事業者等が行う書面の保存等における情報通信の技術の利用に関する法律等の施行等について〔医療法〕",
+      "url": "https://www.mhlw.go.jp/web/t_doc?dataId=00tb2663&dataType=1&pageNo=1",
+      "locator": "別添 医療情報システムの安全管理に関するガイドライン（策定時）",
+      "quote": "書類の内容、性格に応じた電子データの真正性、見読性及び保存性の確保措置を講ずる必要がある。"
+     },
+     {
+      "ref": "info:mhlw-anzen-gl7-gaisetsu",
+      "title": "医療情報システムの安全管理に関するガイドライン 第7.0版 概説編",
+      "url": "https://www.mhlw.go.jp/content/10808000/001716290.pdf",
+      "locator": "4.2 医療情報システムの安全管理に必要な要素",
+      "quote": "「機密性（Confidentiality）」は、情報資産に対して、許可された者のみがアクセスできることを指す。"
+     }
+    ],
+    "asOf": "平成17年医政発第0331009号等（平成28年一部改正）・安全管理GL第7.0版（令和8年6月）"
+   }
+  },
+  {
+   "id": "lg-08-02",
+   "verdict": "pass",
+   "contentChanged": false,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "x-legacy-L08:kwtan-pomr-1981（Weedの4つの基本的要素：データベース・問題リスト・初期計画・経過記録）。基礎データ＝データベース。",
+   "question": {
+    "id": "lg-08-02",
+    "legacy": {
+     "key": "8_2",
+     "chapter": 8,
+     "chapterName": "診療情報管理I（法令・諸規則）",
+     "index": 2,
+     "hash": "218749fe12fdbf0a"
+    },
+    "subject": "S09",
+    "subtopic": "診療記録の構成とPOS",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "negative",
+    "question": "POMR（問題志向型診療録）の構成要素に含まれないのはどれか。",
+    "choices": [
+     "基礎データ",
+     "問題リスト",
+     "初期計画",
+     "会計データ"
+    ],
+    "answer": 3,
+    "explanation": {
+     "correct": "POMR＝基礎データ、問題リスト、初期計画、経過記録（SOAP）の4要素。会計データは含まれない。",
+     "choiceNotes": [
+      "基礎データはPOMRの構成要素。",
+      "問題リストはPOMRの中核。",
+      "初期計画はPOMRの構成要素。",
+      null
+     ],
+     "point": "POMR＝基礎データ＋問題リスト＋初期計画＋経過記録（SOAP）。"
+    },
+    "sources": [
+     {
+      "ref": "x-legacy-L08:kwtan-pomr-1981",
+      "title": "POMRの実際（中島行正・草信正志・上田智・武田好子・山神英子）川崎医療短期大学紀要 第1号 pp.115-129",
+      "url": "https://kwtan.repo.nii.ac.jp/record/640/files/kwjckiyo_1_pp115-130_1981.pdf",
+      "locator": "p.115付近「POMRの構成」",
+      "quote": "Weedは診療記録の 4つの基本的要素と して， ①データベ ース， ②問題 リスト， ③初期計画，"
+     }
+    ],
+    "asOf": "Weedが提唱したPOMRの基本要素（文献：1981年）"
+   }
+  },
+  {
+   "id": "lg-08-03",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "him:jhim-discharge-summary-guidance-2019 ＜退院サマリーの構造＞（必須記載項目／推奨記載項目の区分）。",
+   "detail": "旧版は誤答3つが「〜のみ」で語尾だけで解ける自明な問題で、pointの「診療情報管理士の重要業務」も作成主体（主治医等）と食い違う。学会ガイダンスの必須／推奨記載項目を問う形に作り直した。",
+   "question": {
+    "id": "lg-08-03",
+    "legacy": {
+     "key": "8_3",
+     "chapter": 8,
+     "chapterName": "診療情報管理I（法令・諸規則）",
+     "index": 3,
+     "hash": "f2923ff15f88dd6e"
+    },
+    "subject": "S09",
+    "subtopic": "退院時要約",
+    "format": "knowledge",
+    "difficulty": "standard",
+    "polarity": "positive",
+    "question": "日本診療情報管理学会「退院サマリー作成に関するガイダンス」で、退院サマリーの必須記載項目ではなく推奨記載項目とされているものはどれか。",
+    "choices": [
+     "退院時診断",
+     "入院経過",
+     "アレルギー・不適応反応",
+     "手術・処置情報",
+     "退院時方針"
+    ],
+    "answer": 3,
+    "explanation": {
+     "correct": "ガイダンスの退院サマリーの構造では、〔手術・処置情報〕は「退院サマリー推奨記載項目（手術・処置で記載すべきものがある場合）」とされている。",
+     "choiceNotes": [
+      "〔退院時診断〕は退院サマリー必須記載項目である。",
+      "〔入院経過〕は退院サマリー必須記載項目である。",
+      "〔アレルギー・不適応反応〕は退院サマリー必須記載項目である。",
+      null,
+      "〔退院時方針〕は退院サマリー必須記載項目である。"
+     ],
+     "point": "推奨記載項目＝デバイス情報、手術・処置情報（該当がある場合）。診断・入院経過・退院時状況・退院時使用薬剤・退院時方針などは必須。"
+    },
+    "sources": [
+     {
+      "ref": "him:jhim-discharge-summary-guidance-2019",
+      "title": "退院サマリー作成に関するガイダンス",
+      "url": "https://jhim-e.com/pdf/guidance.pdf",
+      "locator": "＜退院サマリーの構造＞ 8)",
+      "quote": "〔手術・処置情報〕 ・・・退院サマリー推奨記載項目（手術・処置で記載すべきものがある場合）"
+     },
+     {
+      "ref": "him:jhim-discharge-summary-guidance-2019",
+      "title": "退院サマリー作成に関するガイダンス",
+      "url": "https://jhim-e.com/pdf/guidance.pdf",
+      "locator": "＜退院サマリーの構造＞ 7)",
+      "quote": "〔入院経過〕 ・・・退院サマリー必須記載項目"
+     },
+     {
+      "ref": "him:jhim-discharge-summary-guidance-2019",
+      "title": "退院サマリー作成に関するガイダンス",
+      "url": "https://jhim-e.com/pdf/guidance.pdf",
+      "locator": "＜退院サマリーの構造＞ 2)〜3)",
+      "quote": "〔退院時診断〕 ---- 退院サマリー必須記載項目"
+     }
+    ],
+    "asOf": "日本診療情報管理学会「退院サマリー作成に関するガイダンス」（2019年9月）"
+   }
+  },
+  {
+   "id": "lg-08-04",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:r08-kihon-shisetsukijun-tsuchi 第4 1(5)・(7)・(9)、2(2)（令和8年度：加算1は専任常勤＋うち1名専従、加算2は専任1名以上）。病床数・電子カルテの要件なし。",
+   "detail": "改定年度を明示。choiceNote「紙でも算定可能」は通知に直接の記載がないため、要件の内容（電子的な一覧表・診療情報の提供）に即した説明に修正。",
+   "question": {
+    "id": "lg-08-04",
+    "legacy": {
+     "key": "8_4",
+     "chapter": 8,
+     "chapterName": "診療情報管理I（法令・諸規則）",
+     "index": 4,
+     "hash": "0df2161f54370786"
+    },
+    "subject": "S09",
+    "subtopic": "診療録管理体制加算",
+    "format": "knowledge",
+    "difficulty": "standard",
+    "polarity": "positive",
+    "question": "令和8年度診療報酬改定後の診療録管理体制加算の施設基準に含まれるものはどれか。",
+    "choices": [
+     "専任の診療記録管理者の配置",
+     "電子カルテの導入義務",
+     "全患者への診療録の開示",
+     "病床数500床以上"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "令和8年度の施設基準では、加算1は年間退院患者数2,000名ごとに1名以上の専任の常勤診療記録管理者（うち1名以上が専従）、加算2は1名以上の専任の診療記録管理者の配置を求めている。退院時要約を全患者について作成することも要件である。",
+     "choiceNotes": [
+      null,
+      "加算1は退院患者の情報を含む電子的な一覧表による検索・抽出を求めるが、電子カルテの導入は要件として挙げられていない。",
+      "要件は「患者に対し診療情報の提供が現に行われていること」であり、全患者への診療録の開示ではない。",
+      "病床数の要件はない（加算1の配置基準は年間の退院患者数で定められる）。"
+     ],
+     "point": "診療録管理体制加算（令和8年度）＝加算1：専任常勤の診療記録管理者（退院2,000名ごとに1名、うち1名専従）／加算2：専任1名以上。全患者の退院時要約作成。"
+    },
+    "sources": [
+     {
+      "ref": "ins:r08-kihon-shisetsukijun-tsuchi",
+      "title": "基本診療料の施設基準等及びその届出に関する手続きの取扱いについて（令和８年３月５日保医発0305第７号）",
+      "url": "https://www.mhlw.go.jp/content/12400000/001757361.pdf",
+      "locator": "第4 1(5)",
+      "quote": "年間の退院患者数 2,000 名ごとに１名以上の専任の常勤診療記録管理者が配置されており、うち１名以上が専従であること。"
+     },
+     {
+      "ref": "ins:r08-kihon-shisetsukijun-tsuchi",
+      "title": "基本診療料の施設基準等及びその届出に関する手続きの取扱いについて（令和８年３月５日保医発0305第７号）",
+      "url": "https://www.mhlw.go.jp/content/12400000/001757361.pdf",
+      "locator": "第4 2(2)",
+      "quote": "１名以上の専任の診療記録管理者が配置されていること。"
+     },
+     {
+      "ref": "ins:r08-kihon-shisetsukijun-tsuchi",
+      "title": "基本診療料の施設基準等及びその届出に関する手続きの取扱いについて（令和８年３月５日保医発0305第７号）",
+      "url": "https://www.mhlw.go.jp/content/12400000/001757361.pdf",
+      "locator": "第4 1(9)",
+      "quote": "患者に対し診療情報の提供が現に行われていること。"
+     }
+    ],
+    "asOf": "令和8年度診療報酬改定（令和8年3月5日 保医発0305第7号）"
+   }
+  },
+  {
+   "id": "lg-08-05",
+   "verdict": "pass",
+   "contentChanged": false,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:がん登録等の推進に関する法律 第6条第1項（病院等の管理者の届出義務）・第5条（厚生労働大臣がデータベースを整備）; cancer:glossary-zenkokugantouroku（国で1つにまとめて集計・2016年から登録開始）。",
+   "question": {
+    "id": "lg-08-05",
+    "legacy": {
+     "key": "8_5",
+     "chapter": 8,
+     "chapterName": "診療情報管理I（法令・諸規則）",
+     "index": 5,
+     "hash": "b077fda00dbac65b"
+    },
+    "subject": "S08",
+    "subtopic": "がん登録推進法と統計法",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "がん登録推進法に基づく全国がん登録の説明として正しいのはどれか。",
+    "choices": [
+     "すべての病院に届出が義務付けられている",
+     "200床以上の病院のみが対象",
+     "届出は任意である",
+     "都道府県単位でのみ集計"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "全国がん登録（2016年開始）はすべての病院にがんの届出を義務付けている。国が一元管理。",
+     "choiceNotes": [
+      null,
+      "病床数に関わらず全病院が対象。",
+      "届出は義務であり任意ではない。",
+      "国が一元的に管理し全国集計を行う。"
+     ],
+     "point": "全国がん登録＝全病院に届出義務。2016年開始。国が一元管理。"
+    },
+    "sources": [
+     {
+      "ref": "law:がん登録等の推進に関する法律",
+      "title": "がん登録等の推進に関する法律",
+      "url": "https://laws.e-gov.go.jp/law/425AC0100000111",
+      "locator": "第6条第1項",
+      "quote": "病院又は次項の規定により指定された診療所（以下この章において「病院等」という。）の管理者は、原発性のがんについて、当該病院等における初回の診断が行われたとき"
+     },
+     {
+      "ref": "cancer:glossary-zenkokugantouroku",
+      "title": "がん統計の用語集：全国がん登録",
+      "url": "https://ganjoho.jp/reg_stat/statistics/qa_words/word/zenkokugantouroku.html",
+      "locator": "全国がん登録",
+      "quote": "日本でがんと診断されたすべての人のデータを、国で1つにまとめて集計・分析・管理する仕組み。この仕組みで、2016年から登録が開始されています。"
+     }
+    ],
+    "asOf": "2026-11 e-Gov現行法令／国立がん研究センター用語集（2021年確認）"
+   }
+  },
+  {
+   "id": "lg-08-06",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "him:jhim-gyomu-shishin-2026 5-13(2)（標準的な経過〈達成目標〉からのずれ）・(3)（適用率・量的点検）。",
+   "detail": "誤答が「作成費用」「著作権」等で自明。pointの正・負のバリアンスは出典で確認できないため削除。同じ指針の適用率・量的点検・アウトカムを使った紛らわしい誤答に差し替え。",
+   "question": {
+    "id": "lg-08-06",
+    "legacy": {
+     "key": "8_6",
+     "chapter": 8,
+     "chapterName": "診療情報管理I（法令・諸規則）",
+     "index": 6,
+     "hash": "15fdfb2adfcea934"
+    },
+    "subject": "S09",
+    "subtopic": "クリニカルパスと質指標",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "クリニカルパスにおけるバリアンスの説明として正しいものはどれか。",
+    "choices": [
+     "クリニカルパスが適用された患者の割合",
+     "個々の症例で、パスに定めた標準的な経過（達成目標）からずれること",
+     "パスで達成を目標とする患者の状態",
+     "パスの適用が想定される症例にパスが適用されているかの確認"
+    ],
+    "answer": 1,
+    "explanation": {
+     "correct": "業務指針は、バリアンスの記録と分析を「個々の症例における標準的な経過（達成目標）からのずれ」を可視化し、診療プロセスの改善につなげる質改善ツールとしている。",
+     "choiceNotes": [
+      "パスが適用された患者の割合は適用率であり、バリアンス発生率とは別の指標である。",
+      null,
+      "達成を目標とする状態そのもの（アウトカム）であり、そこからのずれであるバリアンスではない。",
+      "適用すべき症例にパスが適用されているかの確認は、量的点検で確認する対象であり、バリアンスではない。"
+     ],
+     "point": "バリアンス＝標準的な経過（達成目標）からのずれ。分析してパスの改訂・診療プロセスの改善につなげる。"
+    },
+    "sources": [
+     {
+      "ref": "him:jhim-gyomu-shishin-2026",
+      "title": "診療情報管理士業務指針 2026",
+      "url": "https://jhim-e.com/pdf/2026/guideline2026.pdf",
+      "locator": "5-13(2) バリアンス分析の意義とデータの活用",
+      "quote": "バリアンスの記録と分析は、個々の症例における標準的な経過（達成目標）からの ずれを可視化し、診療プロセスの改善につなげる質改善ツールである。"
+     },
+     {
+      "ref": "him:jhim-gyomu-shishin-2026",
+      "title": "診療情報管理士業務指針 2026",
+      "url": "https://jhim-e.com/pdf/2026/guideline2026.pdf",
+      "locator": "5-13(3) クリニカルパスの適用状況の管理",
+      "quote": "クリニカルパスの適用率、バリアンス発生率等を疾病統計・医療統計の一環として 把握し"
+     },
+     {
+      "ref": "him:jhim-gyomu-shishin-2026",
+      "title": "診療情報管理士業務指針 2026",
+      "url": "https://jhim-e.com/pdf/2026/guideline2026.pdf",
+      "locator": "5-13(3)",
+      "quote": "量的点検においては、パスの適用が想定される症例にパスが適用されているか"
+     }
+    ],
+    "asOf": "日本診療情報管理学会「診療情報管理士業務指針 2026」（2026年8月改訂）"
+   }
+  },
+  {
+   "id": "lg-08-07",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "info:ppc-iryoukaigo-guidance（令和8年4月改正）安全管理措置：組織的、人的、物理的及び技術的安全管理措置; info:mhlw-anzen-gl7-gaisetsu 4.2（CIA）; info:mhlw-ebunsho-shiko-tsuchi（三条件）。",
+   "detail": "旧版は「安全管理GLの3つの安全対策＝組織的・物理的・技術的」としたが、現行の安全管理GL第7.0版はこの3分類で構成されておらず、人的対策も欠けていた（ブラインドも指摘）。4分類を明記している個人情報ガイダンスの安全管理措置を問う形に修正。",
+   "question": {
+    "id": "lg-08-07",
+    "legacy": {
+     "key": "8_7",
+     "chapter": 8,
+     "chapterName": "診療情報管理I（法令・諸規則）",
+     "index": 7,
+     "hash": "d4f7d2a03cce86db"
+    },
+    "subject": "S08",
+    "subtopic": "個人情報保護法",
+    "format": "knowledge",
+    "difficulty": "standard",
+    "polarity": "positive",
+    "question": "「医療・介護関係事業者における個人情報の適切な取扱いのためのガイダンス」で、医療・介護関係事業者が個人データの安全管理のために講じなければならないとされている安全管理措置の組合せはどれか。",
+    "choices": [
+     "機密性・完全性・可用性の確保",
+     "組織的・人的・物理的・技術的安全管理措置",
+     "真正性・見読性・保存性の確保",
+     "法的・倫理的・経済的安全管理措置",
+     "予防的・発見的・是正的安全管理措置"
+    ],
+    "answer": 1,
+    "explanation": {
+     "correct": "ガイダンスは、医療・介護関係事業者は個人データの漏えい、滅失又は毀損の防止その他の安全管理のため、組織的、人的、物理的及び技術的安全管理措置等を講じなければならないとしている。",
+     "choiceNotes": [
+      "機密性・完全性・可用性は、安全管理ガイドラインが示す情報セキュリティの要素であり、ガイダンスの安全管理措置の区分ではない。",
+      null,
+      "真正性・見読性・保存性は、法定保存文書を電子媒体に保存する場合の三条件である。",
+      "ガイダンスが示す安全管理措置の区分ではない。",
+      "ガイダンスが示す安全管理措置の区分ではない。"
+     ],
+     "point": "個人データの安全管理措置＝組織的・人的・物理的・技術的の4区分。CIA（情報セキュリティの要素）、電子保存の三条件と区別する。"
+    },
+    "sources": [
+     {
+      "ref": "info:ppc-iryoukaigo-guidance",
+      "title": "医療・介護関係事業者における個人情報の適切な取扱いのためのガイダンス",
+      "url": "https://www.ppc.go.jp/files/pdf/260401_iryoukaigo_guidance.pdf",
+      "locator": "Ⅳ 10(1)① 安全管理措置",
+      "quote": "個人データの安全管理のため、組織的、人的、物理的及び技術的安全管理措 置等を講じなければならない。"
+     },
+     {
+      "ref": "info:mhlw-anzen-gl7-gaisetsu",
+      "title": "医療情報システムの安全管理に関するガイドライン 第7.0版 概説編",
+      "url": "https://www.mhlw.go.jp/content/10808000/001716290.pdf",
+      "locator": "4.2 医療情報システムの安全管理に必要な要素",
+      "quote": "「機密性（Confidentiality）」は、情報資産に対して、許可された者のみがアクセスできることを指す。"
+     },
+     {
+      "ref": "info:mhlw-ebunsho-shiko-tsuchi",
+      "title": "民間事業者等が行う書面の保存等における情報通信の技術の利用に関する法律等の施行等について〔医療法〕",
+      "url": "https://www.mhlw.go.jp/web/t_doc?dataId=00tb2663&dataType=1&pageNo=1",
+      "locator": "第二 2(3)",
+      "quote": "書類の内容、性格に応じた電子データの真正性、見読性及び保存性の確保措置を講ずる必要がある。"
+     }
+    ],
+    "asOf": "医療・介護関係事業者における個人情報の適切な取扱いのためのガイダンス（令和8年4月一部改正）"
+   }
+  },
+  {
+   "id": "lg-08-08",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:dpc-chosa-setsumei-2026 提出データの概要（様式1＝患者属性や病態等の情報、様式4＝医科保険診療以外、Hファイル＝日ごとの患者情報、EF統合ファイル＝出来高情報）・様式1(2)（主傷病名、入院の目的、手術術式等）。",
+   "detail": "調査の現行名称（DPCの評価・検証等に係る調査）を反映。誤答が財務・年収・勤務時間で自明だったため、同じ調査の他ファイル（様式4・Hファイル・EF統合ファイル）の内容に差し替え。",
+   "question": {
+    "id": "lg-08-08",
+    "legacy": {
+     "key": "8_8",
+     "chapter": 8,
+     "chapterName": "診療情報管理I（法令・諸規則）",
+     "index": 8,
+     "hash": "dbb67e9b7c2d5cc9"
+    },
+    "subject": "S10",
+    "subtopic": "DPCデータ",
+    "format": "knowledge",
+    "difficulty": "standard",
+    "polarity": "positive",
+    "question": "2026年度「DPCの評価・検証等に係る調査（退院患者調査）」で提出する様式1の内容として正しいものはどれか。",
+    "choices": [
+     "入院診療患者の医科点数表に基づく出来高情報",
+     "医科保険診療以外の診療情報",
+     "主傷病名・入院の目的・手術術式等の患者属性や病態等の情報",
+     "重症度、医療・看護必要度の評価票の各評価項目の日ごとの点数"
+    ],
+    "answer": 2,
+    "explanation": {
+     "correct": "実施説明資料の提出データ一覧で、様式1は「患者属性や病態等の情報」とされ、必要となる情報として主傷病名、入院の目的、手術術式等が挙げられている（退院時サマリーのイメージ）。",
+     "choiceNotes": [
+      "医科点数表に基づく出来高情報は入院EF統合ファイルの内容である。",
+      "医科保険診療以外の診療情報は様式4の内容である。",
+      null,
+      "重症度、医療・看護必要度の評価票の点数を日ごとに入力するのはHファイルである。"
+     ],
+     "point": "様式1＝患者属性・病態（主傷病名・入院の目的・手術術式等）／様式4＝保険診療以外／EF統合＝出来高／H＝日ごとの患者情報（看護必要度）。"
+    },
+    "sources": [
+     {
+      "ref": "ins:dpc-chosa-setsumei-2026",
+      "title": "2026年度 DPCの評価・検証等に係る調査（退院患者調査）実施説明資料",
+      "url": "https://www.mhlw.go.jp/content/12400000/001679918.pdf",
+      "locator": "4 提出データの概要【DPC調査提出データ一覧】",
+      "quote": "患者属性や病態等の情報 様式1"
+     },
+     {
+      "ref": "ins:dpc-chosa-setsumei-2026",
+      "title": "2026年度 DPCの評価・検証等に係る調査（退院患者調査）実施説明資料",
+      "url": "https://www.mhlw.go.jp/content/12400000/001679918.pdf",
+      "locator": "様式1 (2) 必要となる情報（抜粋）",
+      "quote": "主傷病名、入院の目的、手術術式等（「入力要領」参照）で匿名化された情報。"
+     },
+     {
+      "ref": "ins:dpc-chosa-setsumei-2026",
+      "title": "2026年度 DPCの評価・検証等に係る調査（退院患者調査）実施説明資料",
+      "url": "https://www.mhlw.go.jp/content/12400000/001679918.pdf",
+      "locator": "Hファイル (2) 必要とする情報（抜粋）",
+      "quote": "重症度、医療・看護必要度に係る評価票の各評価項目の点数。"
+     }
+    ],
+    "asOf": "2026年度 DPCの評価・検証等に係る調査（退院患者調査）実施説明資料（2026年3月25日時点）"
+   }
+  },
+  {
+   "id": "lg-08-09",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "info:jami-ssmix2（厚生労働省標準規格HS026）; info:helics-hs026-ssmix2-report（厚生労働省電子的診療情報交換事業の成果物をベース、地域医療連携・二次利用）。",
+   "detail": "解説の英語名称は出典で確認できないため削除。誤答（手術手技マニュアル・薬剤混合規格）が自明だったため、DICOM・FHIR記述仕様・レセプト電子フォーマットに差し替え。",
+   "question": {
+    "id": "lg-08-09",
+    "legacy": {
+     "key": "8_9",
+     "chapter": 8,
+     "chapterName": "診療情報管理I（法令・諸規則）",
+     "index": 9,
+     "hash": "4ee5a532f0c65196"
+    },
+    "subject": "S05",
+    "subtopic": "医療情報の標準化",
+    "format": "knowledge",
+    "difficulty": "standard",
+    "polarity": "positive",
+    "question": "SS-MIX2の説明として正しいものはどれか。",
+    "choices": [
+     "医用画像の保存と通信のための国際標準規格",
+     "診療報酬請求（レセプト）を電子的に提出するためのフォーマット",
+     "診療情報提供書をHL7 FHIRで記述するための仕様",
+     "診療データを標準化された形式で蓄積するストレージの仕様"
+    ],
+    "answer": 3,
+    "explanation": {
+     "correct": "SS-MIX2ストレージは、厚生労働省電子的診療情報交換事業の成果物「SS-MIX標準化ストレージ仕様書」をベースとした、標準化された診療データ利用の仕組みであり、その仕様書は厚生労働省標準規格（HS026）として認定されている。地域医療連携や多施設での二次利用に用いられる。",
+     "choiceNotes": [
+      "医用画像の保存と通信の規格はDICOM（HS011）である。",
+      "レセプトの電子請求の様式であり、診療データを蓄積するストレージの仕様であるSS-MIX2とは異なる。",
+      "診療情報提供書のHL7 FHIR記述仕様（HS038）であり、SS-MIX2ではない。",
+      null
+     ],
+     "point": "SS-MIX2＝標準化ストレージの仕様（厚生労働省標準規格HS026）。地域医療連携・データの二次利用に活用。"
+    },
+    "sources": [
+     {
+      "ref": "info:jami-ssmix2",
+      "title": "SS-MIX2仕様書・ガイドライン",
+      "url": "https://www.jami.jp/jamistd/ss-mix2/",
+      "locator": "SS-MIX2仕様書・ガイドライン",
+      "quote": "本書は厚生労働省標準規格（HS026）として認定されています。"
+     },
+     {
+      "ref": "info:helics-hs026-ssmix2-report",
+      "title": "HS026 医療情報標準化レポート SS-MIX2ストレージ仕様書および構築ガイドライン",
+      "url": "https://square.umin.ac.jp/helics/html/files/HS026/HS026_rep20180428_JAMI.pdf",
+      "locator": "概要",
+      "quote": "標準化された診療データ利用の仕組み である SS-MIX2 ストレージ（標準お よび拡張）の実装の普及が期待されて います。"
+     },
+     {
+      "ref": "info:helics-hs011-dicom-report",
+      "title": "HS011 医療情報標準化レポート 医療におけるデジタル画像と通信（DICOM）",
+      "url": "https://square.umin.ac.jp/helics/html/files/HS011/HS011_rep20180428_JIRA.pdf",
+      "locator": "表題",
+      "quote": "医療におけるデジタル画像と通信"
+     }
+    ],
+    "asOf": "JAMI SS-MIX2仕様書・ガイドライン掲載ページ（2026年8月 Ver.1.2j）"
+   }
+  },
+  {
+   "id": "lg-08-10",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "x-legacy-L08:mhlw-grants-hl7-allergy（医療情報交換のための標準規約、Health Level Seven、ISO-OSI第7層アプリケーション層に由来）; info:helics-hs011-dicom-report; info:jami-ssmix2。",
+   "detail": "正答・pointは出典どおりだが、誤答（病院の階層構造・医療安全の7原則）が自明だったため、DICOM・SS-MIX2の説明に差し替え。解説の「国際標準規格」を出典の表現に合わせた。",
+   "question": {
+    "id": "lg-08-10",
+    "legacy": {
+     "key": "8_10",
+     "chapter": 8,
+     "chapterName": "診療情報管理I（法令・諸規則）",
+     "index": 10,
+     "hash": "146d8f8ce347019a"
+    },
+    "subject": "S05",
+    "subtopic": "医療情報の標準化",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "HL7の説明として正しいものはどれか。",
+    "choices": [
+     "医療情報システム間で医療データを交換するための標準規約",
+     "医用画像の保存と通信のための規格",
+     "診療データを標準化された形式で蓄積するストレージの仕様",
+     "患者の重症度を7段階で分類する基準"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "HL7（Health Level Seven）は医療情報交換のための標準規約で、名称は「医療情報システム間のISO-OSI第7層アプリケーション層」に由来する。患者管理、オーダ、検査報告、患者紹介などの情報交換を扱う。",
+     "choiceNotes": [
+      null,
+      "医用画像の保存と通信の規格はDICOMである。",
+      "標準化ストレージの仕様はSS-MIX2である。",
+      "「7」はOSI参照モデルの第7層に由来し、重症度の段階ではない。"
+     ],
+     "point": "HL7＝医療情報交換の標準規約（7＝OSI第7層アプリケーション層）。画像はDICOM、標準化ストレージはSS-MIX2。"
+    },
+    "sources": [
+     {
+      "ref": "x-legacy-L08:mhlw-grants-hl7-allergy",
+      "title": "厚生労働科学研究 研究報告書（課題番号201325030B）分冊0006「電子情報としてのアレルギー情報」（HL7の説明を含む）",
+      "url": "https://mhlw-grants.niph.go.jp/system/files/2013/134011/201325030B_upload/201325030B0006.pdf",
+      "locator": "２．１）HL7",
+      "quote": "医療情報交換のための標準規約。Health Level Seven の略で、"
+     },
+     {
+      "ref": "x-legacy-L08:mhlw-grants-hl7-allergy",
+      "title": "厚生労働科学研究 研究報告書（課題番号201325030B）分冊0006「電子情報としてのアレルギー情報」（HL7の説明を含む）",
+      "url": "https://mhlw-grants.niph.go.jp/system/files/2013/134011/201325030B_upload/201325030B0006.pdf",
+      "locator": "２．１）HL7",
+      "quote": "の ISO‑OSI 第７層アプリケーション層」に由来する。"
+     },
+     {
+      "ref": "info:helics-hs011-dicom-report",
+      "title": "HS011 医療情報標準化レポート 医療におけるデジタル画像と通信（DICOM）",
+      "url": "https://square.umin.ac.jp/helics/html/files/HS011/HS011_rep20180428_JIRA.pdf",
+      "locator": "表題",
+      "quote": "医療におけるデジタル画像と通信"
+     }
+    ],
+    "asOf": "厚生労働科学研究報告書（2013年度）・HELICS標準化レポート"
+   }
+  },
+  {
+   "id": "lg-08-11",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:個人情報の保護に関する法律 第33条第2項（遅滞なく開示・不開示事由）・第37条第3項（代理人による請求）; info:mhlw-shinryojoho-teikyo-shishin 7(1)（原則として応じる）・8（拒む場合は文書で理由）。",
+   "detail": "誤答「医師の判断のみで開示範囲を決定してよい」は、指針が検討委員会等での検討を「望ましい」とするにとどまり明確に誤りと言えないため、「理由を示す必要はない」に差し替え。解説に条文の根拠を明記。",
+   "question": {
+    "id": "lg-08-11",
+    "legacy": {
+     "key": "8_11",
+     "chapter": 8,
+     "chapterName": "診療情報管理I（法令・諸規則）",
+     "index": 11,
+     "hash": "2a357d27d223aaa7"
+    },
+    "subject": "S08",
+    "subtopic": "診療情報の提供と開示",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "診療記録（カルテ）の開示請求への対応として正しいものはどれか。",
+    "choices": [
+     "患者本人からの請求には原則として応じなければならない",
+     "すべての開示請求を拒否してよい",
+     "開示を拒む場合でも、申立人に理由を示す必要はない",
+     "弁護士からの請求は常に拒否してよい"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "個人情報保護法第33条第2項は、本人から保有個人データの開示請求を受けたときは遅滞なく開示しなければならないとし、不開示は同項ただし書の場合（本人又は第三者の権利利益を害するおそれ等）に限られる。診療情報の提供等に関する指針も、患者等が診療記録の開示を求めた場合には原則として応じなければならないとしている。",
+     "choiceNotes": [
+      null,
+      "開示請求には原則として応じる義務があり、拒めるのは法の定める不開示事由に当たる場合等に限られる。",
+      "指針は、開示の申立ての全部又は一部を拒む場合には、原則として申立人に文書で理由を示さなければならないとしている。",
+      "開示等の請求は代理人によってもすることができる（個人情報保護法第37条第3項）。本人から委任を受けた弁護士の請求を一律に拒むことはできない。"
+     ],
+     "point": "カルテ開示＝本人の請求には原則応じる（法33条）。拒む場合は文書で理由を示す（指針）。代理人による請求も可。"
+    },
+    "sources": [
+     {
+      "ref": "law:個人情報の保護に関する法律",
+      "title": "個人情報の保護に関する法律",
+      "url": "https://laws.e-gov.go.jp/law/415AC0000000057",
+      "locator": "第33条第2項",
+      "quote": "個人情報取扱事業者は、前項の規定による請求を受けたときは、本人に対し"
+     },
+     {
+      "ref": "info:mhlw-shinryojoho-teikyo-shishin",
+      "title": "診療情報の提供等に関する指針の策定について〔医師法〕（別添: 診療情報の提供等に関する指針）",
+      "url": "https://www.mhlw.go.jp/web/t_doc?dataId=00tb3403&dataType=1&pageNo=1",
+      "locator": "7(1) 診療記録の開示に関する原則",
+      "quote": "医療従事者等は、患者等が患者の診療記録の開示を求めた場合には、原則としてこれに応じなければならない。"
+     },
+     {
+      "ref": "info:mhlw-shinryojoho-teikyo-shishin",
+      "title": "診療情報の提供等に関する指針の策定について〔医師法〕（別添: 診療情報の提供等に関する指針）",
+      "url": "https://www.mhlw.go.jp/web/t_doc?dataId=00tb3403&dataType=1&pageNo=1",
+      "locator": "8 診療情報の提供を拒み得る場合",
+      "quote": "診療記録の開示の申立ての全部又は一部を拒む場合には、原則として、申立人に対して文書によりその理由を示さなければならない。"
+     }
+    ],
+    "asOf": "2026-11 e-Gov現行法令／診療情報の提供等に関する指針（令和5年1月改正反映）"
+   }
+  },
+  {
+   "id": "lg-08-12",
+   "verdict": "reject",
+   "contentChanged": true,
+   "checks": {
+    "answer": false,
+    "distractors": false,
+    "stem": false,
+    "explanations": false,
+    "sources": false,
+    "asOf": true,
+    "domain": false
+   },
+   "notes": "info:mhlw-shinryojoho-teikyo-shishin（診療情報・診療記録の定義）を確認したが「3階層」の区分は見当たらない。",
+   "reason": "unsupported",
+   "detail": "「診療情報の3階層＝診療録・診療諸記録・診療情報」は法令・指針で確認できない独自の整理で、選択肢2〜4を誤りとする根拠もない（ブラインドも曖昧と指摘）。pointの「その他情報」も不明確。"
+  },
+  {
+   "id": "lg-08-13",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "x-legacy-L08:ncd-about（2010年、外科系10学会が専門医制度を支える手術症例データベースとして設立した一般社団法人）; x-legacy-L08:ncd-business（医療の質向上に資する分析）; law:がん登録等の推進に関する法律 第5条（国のデータベース）。",
+   "detail": "誤答（食事・看護教育・薬価）が自明だったため、全国がん登録データベース・法令による登録義務と混同させる誤答に差し替え。",
+   "question": {
+    "id": "lg-08-13",
+    "legacy": {
+     "key": "8_13",
+     "chapter": 8,
+     "chapterName": "診療情報管理I（法令・諸規則）",
+     "index": 13,
+     "hash": "66214eeae25ab283"
+    },
+    "subject": "S04",
+    "subtopic": "医療の質の評価",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "NCD（National Clinical Database）の説明として正しいものはどれか。",
+    "choices": [
+     "がん登録推進法に基づき厚生労働大臣が整備する全国がん登録のデータベース",
+     "外科系学会が専門医制度を支える手術症例データベースとして設立し、医療の質向上に資する分析を行う",
+     "厚生労働省令により全病院に登録が義務付けられた入院患者のデータベース",
+     "薬価基準に収載された医薬品のデータベース"
+    ],
+    "answer": 1,
+    "explanation": {
+     "correct": "NCDは2010年に専門医制度を支える手術症例データベースとして外科系10学会が参画して設立された一般社団法人で、臨床現場の医療情報を体系的に把握し、医療の質向上に資する分析を行うことを目的とする。",
+     "choiceNotes": [
+      "全国がん登録のデータベースは、がん登録推進法第5条により厚生労働大臣が整備するもので、NCDではない。",
+      null,
+      "NCDは学会が参画して設立した一般社団法人のデータベースであり、省令で全病院に登録を義務付けたものではない。",
+      "NCDは手術症例のデータベースであり、医薬品のデータベースではない。"
+     ],
+     "point": "NCD＝外科系学会が設立した手術症例データベース（2010年）。専門医制度と連携し、医療の質向上に活用。"
+    },
+    "sources": [
+     {
+      "ref": "x-legacy-L08:ncd-about",
+      "title": "代表理事ごあいさつ（NCDについて）",
+      "url": "https://www.ncd.or.jp/about/",
+      "locator": "代表理事ごあいさつ",
+      "quote": "2010年に専門医制度を支える手術症例データベースとして"
+     },
+     {
+      "ref": "x-legacy-L08:ncd-business",
+      "title": "事業概要（NCDについて）",
+      "url": "https://www.ncd.or.jp/about/business.html",
+      "locator": "事業概要",
+      "quote": "臨床現場の医療情報を体系的に把握し、医療の質向上に資する分析を行うことで"
+     },
+     {
+      "ref": "law:がん登録等の推進に関する法律",
+      "title": "がん登録等の推進に関する法律",
+      "url": "https://laws.e-gov.go.jp/law/425AC0100000111",
+      "locator": "第5条",
+      "quote": "厚生労働大臣は、次節の定めるところにより収集される情報に基づき、原発性のがんごとに"
+     }
+    ],
+    "asOf": "NCDウェブサイト（2024年4月現在の記載）"
+   }
+  },
+  {
+   "id": "lg-08-14",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "mgmt:quality-outcome-process-h23 1(1)（構造・過程・結果。アウトカム指標の例：死亡率・回復率・再入院率・患者満足度、プロセス指標の例：早期リハビリテーション開始率・糖尿病患者での血糖コントロール）。",
+   "detail": "旧版は「立地条件」を選ぶだけの自明な問題で、褥瘡発生率の分類説明（プロセス/アウトカム）も出典で確認できない。厚労省資料のアウトカム指標／プロセス指標の区別を問う形に修正。",
+   "question": {
+    "id": "lg-08-14",
+    "legacy": {
+     "key": "8_14",
+     "chapter": 8,
+     "chapterName": "診療情報管理I（法令・諸規則）",
+     "index": 14,
+     "hash": "dbd97d1799f8dc0c"
+    },
+    "subject": "S04",
+    "subtopic": "医療の質の評価",
+    "format": "knowledge",
+    "difficulty": "standard",
+    "polarity": "positive",
+    "question": "医療の質を評価する指標のうち、アウトカム指標に該当するものはどれか。",
+    "choices": [
+     "早期リハビリテーション開始率",
+     "再入院率",
+     "糖尿病患者での血糖コントロール",
+     "病院の立地条件"
+    ],
+    "answer": 1,
+    "explanation": {
+     "correct": "厚生労働省の資料は、アウトカム指標を診療後の患者の状態など「医療の結果・成果」を表す指標とし、具体例に死亡率、回復率、再入院率、患者満足度を挙げている。",
+     "choiceNotes": [
+      "早期リハビリテーション開始率は、実際に行われた診療の適切さを表すプロセス指標の例である。",
+      null,
+      "糖尿病患者での血糖コントロールは、プロセス指標の例として挙げられている。",
+      "立地条件は医療の質を評価する指標ではない。"
+     ],
+     "point": "アウトカム指標＝結果・成果（死亡率・回復率・再入院率・患者満足度）。プロセス指標＝過程（早期リハ開始率・血糖コントロール）。"
+    },
+    "sources": [
+     {
+      "ref": "mgmt:quality-outcome-process-h23",
+      "title": "医療の成果に関する指標（アウトカム指標）及び過程に関する指標（プロセス指標）の取扱い（医療情報の提供のあり方等に関する検討会〈第8回〉資料1）",
+      "url": "https://www.mhlw.go.jp/stf/shingi/2r9852000001u0or-att/2r9852000001u0tr.pdf",
+      "locator": "1(1) 定義",
+      "quote": "アウトカム指標：診療後の患者の状態など「医療の結果・成果」を表す指標"
+     },
+     {
+      "ref": "mgmt:quality-outcome-process-h23",
+      "title": "医療の成果に関する指標（アウトカム指標）及び過程に関する指標（プロセス指標）の取扱い（医療情報の提供のあり方等に関する検討会〈第8回〉資料1）",
+      "url": "https://www.mhlw.go.jp/stf/shingi/2r9852000001u0or-att/2r9852000001u0tr.pdf",
+      "locator": "1(1) 定義",
+      "quote": "（具体例）：死亡率、回復率、再入院率、患者満足度 等"
+     },
+     {
+      "ref": "mgmt:quality-outcome-process-h23",
+      "title": "医療の成果に関する指標（アウトカム指標）及び過程に関する指標（プロセス指標）の取扱い（医療情報の提供のあり方等に関する検討会〈第8回〉資料1）",
+      "url": "https://www.mhlw.go.jp/stf/shingi/2r9852000001u0or-att/2r9852000001u0tr.pdf",
+      "locator": "1(1) 定義",
+      "quote": "（具体例）：早期リハビリテーション開始率、糖尿病患者での血糖コントロー"
+     }
+    ],
+    "asOf": "厚生労働省 医療情報の提供のあり方等に関する検討会 資料（平成23年11月）"
+   }
+  },
+  {
+   "id": "lg-08-15",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "info:mhlw-ebunsho-shiko-tsuchi 第二1(1)（他の法令で書面保存とされるものは電磁的記録により保存を行うことができる）・2(1)一（医師法第24条の診療録）・前文（平成11年通知で既に電子保存が認められていた）。",
+   "detail": "誤答（日記・新聞・書籍）が自明で問題として機能しないため、e-文書法の性格（義務でなく容認・民間事業者等全般が対象・平成11年通知との関係）を問う形に修正。",
+   "question": {
+    "id": "lg-08-15",
+    "legacy": {
+     "key": "8_15",
+     "chapter": 8,
+     "chapterName": "診療情報管理I（法令・諸規則）",
+     "index": 15,
+     "hash": "48a95c0b803888c9"
+    },
+    "subject": "S08",
+    "subtopic": "診療記録の電子保存",
+    "format": "knowledge",
+    "difficulty": "standard",
+    "polarity": "positive",
+    "question": "いわゆるe-文書法（民間事業者等が行う書面の保存等における情報通信の技術の利用に関する法律）と診療録の電子保存について、正しいものはどれか。",
+    "choices": [
+     "e-文書法の施行により、診療録の電子媒体による保存が初めて認められた",
+     "医師法第24条の診療録は、書面に代えて電磁的記録により保存できる文書に含まれる",
+     "e-文書法は、医療機関が作成する書面だけを対象とする法律である",
+     "e-文書法により、医療機関は診療録を電子媒体で保存することが義務付けられた"
+    ],
+    "answer": 1,
+    "explanation": {
+     "correct": "e-文書法により、民間事業者等は他の法令で書面による保存が求められているものについて、書面に代えて電磁的記録により保存を行うことができる。厚生労働省令でその対象文書が定められ、医師法第24条の診療録が含まれている。",
+     "choiceNotes": [
+      "診療録等の電子媒体による保存は、平成11年の通知（健政発第517号等）によりすでに一定の条件の下で認められていた。",
+      null,
+      "対象は「民間事業者等」が他の法令の規定により保存すべき書面であり、医療機関に限られない（医療分野の対象文書は厚生労働省令で定める）。",
+      "e-文書法は電磁的記録により保存を「行うことができる」とするもので、電子保存を義務付けるものではない。"
+     ],
+     "point": "e-文書法＝法定保存文書の電子保存を容認（義務ではない）。診療録は対象。電子保存自体は平成11年通知から。"
+    },
+    "sources": [
+     {
+      "ref": "info:mhlw-ebunsho-shiko-tsuchi",
+      "title": "民間事業者等が行う書面の保存等における情報通信の技術の利用に関する法律等の施行等について〔医療法〕",
+      "url": "https://www.mhlw.go.jp/web/t_doc?dataId=00tb2663&dataType=1&pageNo=1",
+      "locator": "第二 1(1)",
+      "quote": "民間事業者等は、他の法令の規定により書面により保存しなければならないとされているものについては、書面に代えて電磁的記録により保存を行うことができること。"
+     },
+     {
+      "ref": "info:mhlw-ebunsho-shiko-tsuchi",
+      "title": "民間事業者等が行う書面の保存等における情報通信の技術の利用に関する法律等の施行等について〔医療法〕",
+      "url": "https://www.mhlw.go.jp/web/t_doc?dataId=00tb2663&dataType=1&pageNo=1",
+      "locator": "第二 2(1) 一",
+      "quote": "一 医師法(昭和23年法律第201号)第24条の診療録"
+     },
+     {
+      "ref": "info:mhlw-ebunsho-shiko-tsuchi",
+      "title": "民間事業者等が行う書面の保存等における情報通信の技術の利用に関する法律等の施行等について〔医療法〕",
+      "url": "https://www.mhlw.go.jp/web/t_doc?dataId=00tb2663&dataType=1&pageNo=1",
+      "locator": "前文",
+      "quote": "一定の条件の下に電子媒体による保存が認められているところである。"
+     }
+    ],
+    "asOf": "平成17年3月31日 医政発第0331009号等（平成28年一部改正）"
+   }
+  }
+ ]
+}

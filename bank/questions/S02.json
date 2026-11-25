@@ -1,0 +1,248 @@
+{
+ "subject": "S02",
+ "questions": [
+  {
+   "id": "lg-01-21",
+   "legacy": {
+    "key": "1_21",
+    "chapter": 1,
+    "chapterName": "医療管理総論",
+    "index": 21,
+    "hash": "338d00d3a67a3c32"
+   },
+   "subject": "S02",
+   "subtopic": "病院機能評価と第三者評価",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "病院機能評価について正しいのはどれか。",
+   "choices": [
+    "日本医療機能評価機構が第三者として評価する",
+    "厚生労働省が直接全病院を毎年評価する",
+    "自己申告のみで認定される",
+    "病床数のみで判断される"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "病院機能評価は、公益財団法人日本医療機能評価機構が中立的、科学的・専門的な見地から病院組織全体の運営管理と提供される医療を評価する第三者評価である。病院の受審申込に始まり、サーベイヤーによる訪問審査など所定の審査を経て認定となる。",
+    "choiceNotes": [
+     null,
+     "実施主体は厚生労働省ではなく日本医療機能評価機構であり、評価は病院の受審申込に始まる。認定後は5年ごとに更新審査が行われる。",
+     "各専門領域の知識と経験を有するサーベイヤーがチームで病院を訪問し審査を行う。",
+     "4つの評価対象領域から構成される評価項目を用いて評価する。"
+    ],
+    "point": "病院機能評価＝日本医療機能評価機構による第三者評価。受審申込→訪問審査→認定（5年ごとに更新審査）。"
+   },
+   "sources": [
+    {
+     "ref": "mgmt:jqhyouka-summary",
+     "title": "病院機能評価とは",
+     "url": "https://www.jq-hyouka.jcqhc.or.jp/about/summary/",
+     "locator": "病院機能評価とは",
+     "quote": "当機構が中立的、科学的・専門的な見地から評価を行います。"
+    },
+    {
+     "ref": "mgmt:jqhyouka-summary",
+     "title": "病院機能評価とは",
+     "url": "https://www.jq-hyouka.jcqhc.or.jp/about/summary/",
+     "locator": "評価調査者（サーベイヤー）とは",
+     "quote": "サーベイヤーがチームで病院を訪問し、審査を行います。"
+    },
+    {
+     "ref": "mgmt:jqhyouka-guidebook",
+     "title": "病院機能評価ガイドブック（第4版）",
+     "url": "https://www.jq-hyouka.jcqhc.or.jp/wp-content/uploads/2024/12/866cd580e7cc0f3f080c891544910e08.pdf",
+     "locator": "病院機能評価の全体のながれ",
+     "quote": "病院機能評価は、受審申込に始まり、所定の審査を経て認定となります。"
+    }
+   ],
+   "asOf": "日本医療機能評価機構 病院機能評価ガイドブック第4版（2024年12月）",
+   "origin": {
+    "batch": "L01",
+    "key": "lg-01-21",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（医療管理・情報）で修正",
+     "修正後の再監査は未実施",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L01（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L01b（医療管理・情報）",
+     "reauditor": null
+    },
+    "log": "bank/audit/legacy-L01b.audit.json#lg-01-21",
+    "notes": "mgmt:jqhyouka-summary（中立的見地・訪問審査・4領域）、mgmt:jqhyouka-guidebook（受審申込→認定、5年ごと更新）。solver=0一致。"
+   }
+  },
+  {
+   "id": "lg-01-30",
+   "legacy": {
+    "key": "1_30",
+    "chapter": 1,
+    "chapterName": "医療管理総論",
+    "index": 30,
+    "hash": "aa9380f6cb63ce80"
+   },
+   "subject": "S02",
+   "subtopic": "経営管理と経営指標",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "損益分岐点の説明として正しいものはどれか。",
+   "choices": [
+    "売上高と固定費が等しくなる点",
+    "変動費がゼロになる点",
+    "売上高が最大になる点",
+    "売上高と総費用が等しくなる点"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "損益分岐点とは、利益がゼロ（売上高＝総費用）となる売上規模をいう。総費用は、売上規模に応じて増減する変動費と、売上規模に関係なく一定額発生する固定費に分けられる。実際の売上高が損益分岐点売上高を上回れば利益が得られ、下回れば損失が発生する。",
+    "choiceNotes": [
+     "固定費だけでなく、変動費を含めた総費用と売上高が等しくなる点である。",
+     "変動費は売上規模に応じて増減する費用であり、損益分岐点は変動費がゼロになる点ではない。",
+     "損益分岐点は利益がゼロとなる売上規模であり、売上高が最大となる点ではない。",
+     null
+    ],
+    "point": "損益分岐点＝売上高＝総費用（固定費＋変動費）で利益ゼロ。上回れば利益、下回れば損失。"
+   },
+   "sources": [
+    {
+     "ref": "x-legacy-L01b:jnet21-sonekibunkiten",
+     "title": "損益分岐点の計算方法と経営改善に向けた活用方法を教えてください。（J-Net21 ビジネスQ&A）",
+     "url": "https://j-net21.smrj.go.jp/solution/qa/accounting/Q0240.html",
+     "locator": "回答",
+     "quote": "損益分岐点とは、利益がゼロ（売上高＝総費用）となる売上規模（販売量）を意味し"
+    },
+    {
+     "ref": "x-legacy-L01b:jnet21-sonekibunkiten",
+     "title": "損益分岐点の計算方法と経営改善に向けた活用方法を教えてください。（J-Net21 ビジネスQ&A）",
+     "url": "https://j-net21.smrj.go.jp/solution/qa/accounting/Q0240.html",
+     "locator": "回答",
+     "quote": "売上規模（販売量）に応じて金額が増減する費用＝変動費と、売上規模に関係なく一定金額が発生する費用＝固定費とがあります。"
+    },
+    {
+     "ref": "x-legacy-L01b:jnet21-sonekibunkiten",
+     "title": "損益分岐点の計算方法と経営改善に向けた活用方法を教えてください。（J-Net21 ビジネスQ&A）",
+     "url": "https://j-net21.smrj.go.jp/solution/qa/accounting/Q0240.html",
+     "locator": "回答",
+     "quote": "実際の売上高が損益分岐点売上高を上回れば利益が得られますが、下回れば損失が発生することになります。"
+    }
+   ],
+   "asOf": "中小企業基盤整備機構 J-Net21（2026-11-24取得）",
+   "origin": {
+    "batch": "L01",
+    "key": "lg-01-30",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（医療管理・情報）で修正",
+     "修正後の再監査は未実施",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L01（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L01b（医療管理・情報）",
+     "reauditor": null
+    },
+    "log": "bank/audit/legacy-L01b.audit.json#lg-01-30",
+    "notes": "x-legacy-L01b:jnet21-sonekibunkiten（利益ゼロ＝売上高＝総費用、変動費・固定費の定義）。solver=0（low/ambiguous）→正答肢を修正して解消。"
+   }
+  },
+  {
+   "id": "lg-03-15",
+   "legacy": {
+    "key": "3_15",
+    "chapter": 3,
+    "chapterName": "医療関連法規",
+    "index": 15,
+    "hash": "34321abdd53514c1"
+   },
+   "subject": "S02",
+   "subtopic": "医療広告と病院の情報発信",
+   "format": "knowledge",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "医療広告規制について正しいのはどれか。",
+   "choices": [
+    "医療機関は自由に広告できる",
+    "原則として、法令で定められた事項以外は広告してはならない",
+    "患者の主観に基づく治療効果の体験談を広告できる",
+    "他の病院と比較して優良である旨を広告できる"
+   ],
+   "answer": 1,
+   "explanation": {
+    "correct": "医療法第6条の5第3項により、厚生労働省令で定める場合（広告可能事項の限定解除）を除き、同項各号に掲げる事項以外の広告をしてはならない。広告の規制は「文書その他いかなる方法によるを問わず」及ぶ（同条第1項）。",
+    "choiceNotes": [
+     "広告は虚偽広告の禁止（第6条の5第1項）や広告可能事項の限定（同条第3項）などで規制されている。",
+     null,
+     "患者等の主観又は伝聞に基づく治療等の内容・効果の体験談の広告は禁止（医療法施行規則第1条の9第1号）。",
+     "他の病院又は診療所と比較して優良である旨の広告はしてはならない（医療法第6条の5第2項第1号）。"
+    ],
+    "point": "医療広告＝原則として広告可能事項に限る（限定解除あり）。比較優良広告・誇大広告・体験談は禁止。"
+   },
+   "sources": [
+    {
+     "ref": "law:医療法",
+     "title": "医療法",
+     "url": "https://laws.e-gov.go.jp/law/323AC0000000205",
+     "locator": "第6条の5第3項",
+     "quote": "次に掲げる事項以外の広告をしてはならない。"
+    },
+    {
+     "ref": "law:医療法",
+     "title": "医療法",
+     "url": "https://laws.e-gov.go.jp/law/323AC0000000205",
+     "locator": "第6条の5第2項第1号",
+     "quote": "他の病院又は診療所と比較して優良である旨の広告をしないこと。"
+    },
+    {
+     "ref": "law:医療法施行規則",
+     "title": "医療法施行規則",
+     "url": "https://laws.e-gov.go.jp/law/323M40000100050",
+     "locator": "第1条の9第1号",
+     "quote": "の主観又は伝聞に基づく、治療等の内容又は効果に関する体験談の広告をしては"
+    }
+   ],
+   "asOf": "2026-11 e-Gov現行法令",
+   "origin": {
+    "batch": "L03",
+    "key": "lg-03-15",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "provisional",
+   "verification": {
+    "date": "2026-11-25",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（法令・制度）で修正",
+     "修正後の再監査は未実施",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L03（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L03a（法令・制度）",
+     "reauditor": null
+    },
+    "log": "bank/audit/legacy-L03a.audit.json#lg-03-15",
+    "notes": "医療法6条の5第1〜3項、施行規則1条の9第1号を確認。"
+   }
+  }
+ ]
+}
