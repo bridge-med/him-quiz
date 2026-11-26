@@ -1,0 +1,16 @@
+{"answers":[
+{"key":"G4-S11-HIS-01","answer":2,"confidence":"high","ambiguous":false,"note":"1893年シカゴ、Bertillon委員長の死因分類（ベルティヨン分類）"},
+{"key":"G4-S11-HIS-02","answer":4,"confidence":"high","ambiguous":false,"note":"剣印星印はICD-9から（ICD-10_2013_2802の第10回の変更点に含まれない）。他は同資料p18に一致"},
+{"key":"G4-S11-HIS-03","answer":3,"confidence":"high","ambiguous":false,"note":"平成28年1月1日適用（ICD-10_2013_2802）"},
+{"key":"G4-S11-HIS-04","answer":1,"confidence":"high","ambiguous":false,"note":"instruction_all 派生分類にICD-O-3。ICF=中心、他は関連分類"},
+{"key":"G4-S11-HIS-05","answer":0,"confidence":"high","ambiguous":false,"note":"instruction_all 中心分類・派生分類の記述。cは派生の説明、dは関連分類の説明、eは誤り"},
+{"key":"G4-S11-HIS-06","answer":2,"confidence":"high","ambiguous":false,"note":"ICD-10_2013_2802 p16-17：索引は基本分類表に影響を与えず毎年改正"},
+{"key":"G4-S11-HIS-07","answer":3,"confidence":"high","ambiguous":false,"note":"instruction_all 2.4.1：記録及びコーディングのガイドラインは第2巻の内容"},
+{"key":"G4-S11-HIS-08","answer":2,"confidence":"high","ambiguous":false,"note":"instruction_all 2.4.2：DとH"},
+{"key":"G4-S11-HIS-09","answer":1,"confidence":"high","ambiguous":false,"note":"D69.3は第Ⅲ章(D50-D89)。他は第Ⅱ章"},
+{"key":"G4-S11-HIS-10","answer":2,"confidence":"high","ambiguous":false,"note":"第Ⅶ章はH00-H59（H60-H95は第Ⅷ章）"},
+{"key":"G4-S11-HIS-11","answer":0,"confidence":"high","ambiguous":false,"note":"U：特殊目的用コード（第ⅩⅫ章）"},
+{"key":"G4-S11-HIS-12","answer":1,"confidence":"high","ambiguous":false,"note":"instruction_all 2.4.5：国際レベルの報告では必須ではない"},
+{"key":"G4-S11-HIS-13","answer":0,"confidence":"high","ambiguous":false,"note":"instruction_all 2.4.3：第Ⅰ章の二つの軸。第Ⅱ章の第1軸は性状"},
+{"key":"G4-S11-HIS-14","answer":3,"confidence":"high","ambiguous":false,"note":"instruction_all 2.4.2：aとdが正。bはⅩⅨ、eはⅩⅧ、cはⅩⅩが疾病にも使用"}
+]}

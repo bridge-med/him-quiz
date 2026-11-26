@@ -1,0 +1,15 @@
+{"answers":[
+{"key":"G4-S09-AUD-01","answer":1,"confidence":"high","ambiguous":false,"note":"根拠: 医療法施行規則 診療に関する諸記録は過去二年間（特定機能病院）"},
+{"key":"G4-S09-AUD-02","answer":1,"confidence":"high","ambiguous":false,"note":"根拠: ガイダンス 意義『入院診療の主治医の責任において作成』"},
+{"key":"G4-S09-AUD-03","answer":4,"confidence":"high","ambiguous":false,"note":"根拠: ガイダンス 基本情報 住所・電話番号は任意。他は必須"},
+{"key":"G4-S09-AUD-04","answer":3,"confidence":"high","ambiguous":false,"note":"根拠: 記載心得8 退院後の自科外来の予定のみを記載してはならない"},
+{"key":"G4-S09-AUD-05","answer":1,"confidence":"high","ambiguous":false,"note":"根拠: 施設基準通知 第4 1(8) aとdが正。bは毎月、cは中央病歴管理室へ提出、eは前月退院"},
+{"key":"G4-S09-AUD-06","answer":2,"confidence":"high","ambiguous":false,"note":"根拠: 第4 2 加算2に14日以内9割の要件はない（加算1(8)のみ）"},
+{"key":"G4-S09-AUD-07","answer":4,"confidence":"high","ambiguous":false,"note":"根拠: 業務指針2026 5-4(1) 完成期限は量的点検（5-3）の事項"},
+{"key":"G4-S09-AUD-08","answer":2,"confidence":"high","ambiguous":false,"note":"根拠: 業務指針2026 5-4 診療情報管理士が主導し他職種が相互チェックに参加する体制"},
+{"key":"G4-S09-AUD-09","answer":1,"confidence":"high","ambiguous":false,"note":"根拠: 業務指針2026 5-5(4)"},
+{"key":"G4-S09-AUD-10","answer":1,"confidence":"high","ambiguous":false,"note":"根拠: 業務指針2026 5-3(1) 外来手術・侵襲性の高い処置も入院と同等の記録管理が必要"},
+{"key":"G4-S09-AUD-11","answer":1,"confidence":"high","ambiguous":false,"note":"根拠: 業務指針2026 5-4(2) 記録者への確認と影響範囲確認、医療安全管理部門と連携"},
+{"key":"G4-S09-AUD-12","answer":3,"confidence":"high","ambiguous":false,"note":"根拠: 業務指針2026 5-3(3)"},
+{"key":"G4-S09-AUD-13","answer":1,"confidence":"high","ambiguous":false,"note":"根拠: ガイダンス 監査 外面的評価=期間内記載・指導医の承認。他はチェックリスト項目（質）"}
+]}

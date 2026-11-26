@@ -1,0 +1,271 @@
+{
+ "verdicts": [
+  {
+   "key": "G4-S12-INJ-01",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou19 章冒頭（除外：P10-P15、M80.-／S節・T節の構成文）を確認。熱傷及び腐食（T20-T32）はS節10中間分類すべての除外に記載。盲検一致。"
+  },
+  {
+   "key": "G4-S12-INJ-02",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou19 S82（包含：果、除外：S92.-）、S82.4 除外：外果（S82.6）、S82.5 内果、S82.6 外果（腓骨 足首・果）、S92 除外：足首・果（S82.-）、S93.4 を確認。全コード実在。盲検一致。"
+  },
+  {
+   "key": "G4-S12-INJ-03",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou19 S02・S72・S82・T02 の注（0 閉鎖性／1 開放性、記載なしは閉鎖性、複合コーディングが不可能又は不必要な場合に必要に応じて選択）を確認。T14.2＝部位不明の骨折。盲検一致。"
+  },
+  {
+   "key": "G4-S12-INJ-04",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou19 章冒頭「伴う＜with＞は両方の部位、及び＜and＞はどちらか一方又は両方」を確認。T00.0 名称も一致。盲検一致。"
+  },
+  {
+   "key": "G4-S12-INJ-05",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou19 T02.2 包含（一側上肢のS42.-,S52.-,S62.-,T10）、T02.4（両側性と明示）、T02.6、S42.7、S52.7、S42.3、S52.5 を確認。icd:instruction 4.4.4 第ⅩⅨ章（異なる部位の同じ型＝T00-T05、個々の損傷は任意的追加コード）と一致。盲検一致。"
+  },
+  {
+   "key": "G4-S12-INJ-06",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:instruction 4.4.4 第ⅩⅨ章の例外4項目（内部損傷／頭蓋内損傷／頭蓋内出血／同部位の開放創を伴う骨折）と多発性損傷項目・任意的追加コードの記述を確認。誤りは選択肢Bのみ。盲検一致。"
+  },
+  {
+   "key": "G4-S12-INJ-07",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou19 T20-T32 包含（熱湯傷）、T20-T25 包含（第2度［水疱形成］）、T23 包含（手掌）、T23.1/T23.2/T23.6、T22（手首及び手のみはT23.-へ除外）、T30.2 を確認。盲検一致。"
+  },
+  {
+   "key": "G4-S12-INJ-08",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou19 T20-T32 包含（電気・摩擦）・除外（日焼け L55.-）、T20-T25 標題、T29 包含、T31 注（部位不明の場合のみ一次コード、部位明示時は補助コード）を確認。誤りはDのみ。盲検一致（確信度 中だが根拠はT31注で明確）。"
+  },
+  {
+   "key": "G4-S12-INJ-09",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou19 T84.0/T84.5/T84.6、T85.7、T81.4 除外（プロステーシス等による感染症 T84.5-T84.7 ほか）を確認。全コード実在・名称一致。盲検一致。"
+  },
+  {
+   "key": "G4-S12-INJ-10",
+   "verdict": "fix",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": false,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou19 T36-T50 包含（過量投与、過失による誤った薬物の摂取又は投与）・除外（F55、適正投与の有害作用、酩酊 F10-F19、胎児・新生児 P00-P96）を確認。icd:naiyou05 F1x.0 急性中毒（酩酊、除外：poisoningの意味はT36-T50）、L27、T42 も確認。正答・解説は正しい。盲検一致。",
+   "detail": "設問文の「中毒」という語が正答の選択肢だけに現れ、語句から正答が推測できた。除外注の原文に合わせて選択肢B・Dにも「中毒」を入れ、対応する解説とpointを調整（正答・出典は変更なし）。",
+   "fixed": {
+    "key": "G4-S12-INJ-10",
+    "subject": "S12",
+    "subtopic": "損傷・中毒（第ⅩⅨ章）",
+    "format": "knowledge",
+    "difficulty": "standard",
+    "polarity": "positive",
+    "question": "ICD-10（2013年版）で、T36－T50「薬物，薬剤及び生物学的製剤による中毒」に分類されるものはどれか。",
+    "choices": [
+     "医師の処方どおりに服用した抗菌薬による薬疹",
+     "酩酊を意味するアルコールの急性中毒",
+     "依存を生じない物質の乱用",
+     "母体が使用した薬物による胎児・新生児の中毒",
+     "幼児が家族の睡眠薬を誤って飲んだことによる中毒"
+    ],
+    "answer": 4,
+    "explanation": {
+     "correct": "T36－T50には、過量投与及び過失による誤った薬物の摂取又は投与が含まれる。適正な薬物が適正に投与された場合の有害作用は、T36－T50ではなく有害作用の性質（皮膚炎、血液障害、腎症など）により分類する。",
+     "choiceNotes": [
+      "適正な薬物が適正に投与された場合の有害作用であり、有害作用の性質（摂取物質による皮膚炎 L27.- など）により分類する。",
+      "酩酊＜inebriation＞を意味する中毒＜intoxication＞はT36－T50から除外され、F10－F19（アルコールはF10.0 急性中毒）に分類する。",
+      "依存を生じない物質の乱用はT36－T50から除外され、F55に分類する。",
+      "胎児及び新生児に影響する薬物反応及び中毒はT36－T50から除外され、P00－P96に分類する。",
+      null
+     ],
+     "point": "T36－T50＝過量投与・誤った薬物の摂取又は投与。適正使用による有害作用は症状（性質）のコード＋Y40－Y59。酩酊はF10－F19、胎児・新生児への影響はP00－P96。"
+    },
+    "sources": [
+     {
+      "ref": "icd:naiyou19",
+      "title": "ICD-10（2013年版）準拠 内容例示表 第19章 損傷，中毒及びその他の外因の影響（S00-T98）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou19.pdf",
+      "locator": "T36－T50 包含",
+      "quote": "過失による誤った薬物の摂取又は投与"
+     },
+     {
+      "ref": "icd:naiyou19",
+      "title": "ICD-10（2013年版）準拠 内容例示表 第19章 損傷，中毒及びその他の外因の影響（S00-T98）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou19.pdf",
+      "locator": "T36－T50 除外",
+      "quote": "酩酊＜inebration＞を意味する中毒＜intoxication＞（Ｆ10－Ｆ19）"
+     }
+    ],
+    "asOf": "ICD-10（2013年版）準拠"
+   }
+  },
+  {
+   "key": "G4-S12-INJ-11",
+   "verdict": "fix",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": false,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou19 T36-T50 除外（アスピリン胃炎 K29.-、詳細不明の有害作用 T88.7）、icd:instruction 4.4.2 疾病の外因のコーディング（第ⅩⅩ章は任意的追加コード）・4.4.4 第ⅩⅩ章（主要病態に使用しない）、icd:naiyou20 Y45.1・X40 を確認。T39.0/T88.7/K29/Y45.1/X40 実在・名称一致。正答・解説は正しい。盲検一致。",
+   "detail": "正答の選択肢だけ文末が「追加できる」で、他の4肢の「追加する」と形が違い、語句から正答が推測できた。文末を「追加する」に統一（任意的追加コードである旨は解説に記載済み。正答・出典は変更なし）。",
+   "fixed": {
+    "key": "G4-S12-INJ-11",
+    "subject": "S12",
+    "subtopic": "損傷・中毒（第ⅩⅨ章）",
+    "format": "coding",
+    "difficulty": "advanced",
+    "polarity": "positive",
+    "question": "医師の処方どおりにアスピリンを服用していた患者が、アスピリンによる胃炎と診断され入院した（過量服用や誤薬はない）。ICD-10（2013年版）による疾病コーディングとして、正しいものはどれか。",
+    "choices": [
+     "T39.0（サリチル酸誘導体による中毒）を「主要病態」とし、X40を追加する。",
+     "Y45.1（サリチル酸類）を「主要病態」とし、K29.-を追加する。",
+     "T88.7（薬物及び薬剤の詳細不明の有害作用）を「主要病態」とし、Y45.1を追加する。",
+     "K29.-（胃炎及び十二指腸炎）を「主要病態」とし、Y45.1を追加する。",
+     "T39.0（サリチル酸誘導体による中毒）を「主要病態」とし、Y45.1を追加する。"
+    ],
+    "answer": 3,
+    "explanation": {
+     "correct": "適正な薬物が適正に投与された場合の有害作用は、T36－T50（中毒）ではなく有害作用の性質により分類し、アスピリン胃炎はK29.-とされている。原因薬剤は、治療上の使用により有害作用を引き起こした薬物（Y40－Y59）のY45.1（サリチル酸類）で示すことができるが、第ⅩⅩ章のコードは「主要病態」には使用せず、任意的追加コードとして用いる。",
+     "choiceNotes": [
+      "T39.0は過量投与や誤った薬物の摂取による中毒に用いる。X40は不慮の中毒の外因で、適正使用による有害作用には当たらない。",
+      "第ⅩⅩ章のコードは「主要病態」コードとして使用しない。Y45.1は任意的追加コードである。",
+      "T88.7は有害作用の内容が詳細不明の場合の項目。胃炎と明示された有害作用はその性質（K29.-）で分類する。",
+      null,
+      "適正に投与された薬物の有害作用は、中毒（T36－T50）には分類しない。"
+     ],
+     "point": "適正使用の有害作用＝症状（性質）のコードが主要病態＋Y40－Y59を追加。過量・誤薬＝T36－T50。"
+    },
+    "sources": [
+     {
+      "ref": "icd:naiyou19",
+      "title": "ICD-10（2013年版）準拠 内容例示表 第19章 損傷，中毒及びその他の外因の影響（S00-T98）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou19.pdf",
+      "locator": "T36－T50 除外",
+      "quote": "・アスピリン胃炎（Ｋ29.-）"
+     },
+     {
+      "ref": "icd:instruction",
+      "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+      "locator": "4.4.2 疾病の外因のコーディング",
+      "quote": "外因を分類する第ⅩⅩ章からのコードは、任意的追加コードとして使用する。"
+     },
+     {
+      "ref": "icd:naiyou20",
+      "title": "ICD-10（2013年版）準拠 内容例示表 第20章 傷病及び死亡の外因（V01-Y98）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou20.pdf",
+      "locator": "Y45.1",
+      "quote": "Ｙ45．1   サリチル酸類"
+     }
+    ],
+    "asOf": "ICD-10（2013年版）準拠"
+   }
+  },
+  {
+   "key": "G4-S12-INJ-12",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou19 T80-T88 冒頭の注（追加外因コード、B95-B97）と除外（胃手術後症候群 K91.1、乳房切除後リンパ浮腫症候群 I97.2）、T80.3、T86.0（移植片対宿主反応又は病）を確認。誤りはCのみ。盲検一致。参考：I97.2 の分類表上の名称は「乳房切断後リンパ浮腫症候群」で、解説の表記はT80-T88除外の原文どおり。"
+  }
+ ]
+}

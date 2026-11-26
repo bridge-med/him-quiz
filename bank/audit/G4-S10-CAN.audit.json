@@ -1,0 +1,285 @@
+{
+ "verdicts": [
+  {
+   "key": "G4-S10-CAN-01",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:がん登録等の推進に関する法律 第6条第1項（所在地の都道府県知事）、第8条・第9条・第11条第1項・第23条で各誤答の根拠を確認。blind一致。"
+  },
+  {
+   "key": "G4-S10-CAN-02",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "cancer:zenkoku-todokede-manual-2026 p.10（診断年の翌年末・推奨時期8/9月末）と付録の施行規則第10条（法第6条第1項第3号の日の属する年の翌年12月31日）を確認。blind一致。"
+  },
+  {
+   "key": "G4-S10-CAN-03",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "届出マニュアル2026 p.6「初回の診断とは」注記の全文を確認（転移・再発段階でも原発性のがんの情報を届出、既届出がんの転移・再発は不要、多重がんは要届出）。blind一致。"
+  },
+  {
+   "key": "G4-S10-CAN-04",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "法第35条（開示・訂正・消去等を求めることができない）、届出マニュアル2026 p.8 の質問例3件（同意不要と理由、削除不可、開示不可、診療録開示は各病院の方法）を確認。blind一致。"
+  },
+  {
+   "key": "G4-S10-CAN-05",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "法第6条第1項・第2項（病院又は開設者の同意を得て知事が指定した診療所）、届出マニュアル p.7「病院には例外なく届出義務」を確認。blind一致。"
+  },
+  {
+   "key": "G4-S10-CAN-06",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "法第11条第1項〜第3項（市町村長→保健所の長→都道府県知事→厚生労働大臣）、第12条第1項、第23条第1項第1号を確認。blind一致。"
+  },
+  {
+   "key": "G4-S10-CAN-07",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "法第28条第7項・第55条（六月以下の拘禁刑又は五十万円以下の罰金）、第52条・第53条・第54条・第56条（第38条第2項・第3項の命令違反）・第58条を現行条文（2026-10-01施行版）で確認。blind一致。"
+  },
+  {
+   "key": "G4-S10-CAN-08",
+   "verdict": "fix",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": false,
+    "explanations": false,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "法第44条第1項・第7条・第6条第2項を確認。キー(1)は正しく、他の選択肢は明確に誤り。blind一致。",
+   "detail": "正答選択肢と point が「病院等」と表記していた。法では「病院等」は第2章の定義語（病院又は指定診療所、第6条第1項）で、第44条の名宛人は「病院」のみ。診療所も努力義務の対象と覚えさせるおそれがあるため、選択肢を「病院の開設者及び管理者」に、point を条文どおりの範囲に修正。キー・出典は不変。",
+   "fixed": {
+    "key": "G4-S10-CAN-08",
+    "subject": "S10",
+    "subtopic": "院内がん登録",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "がん登録等の推進に関する法律第44条に定める院内がん登録の実施について、正しいものはどれか。",
+    "choices": [
+     "すべての病院の管理者は、都道府県知事の定める基準に即して院内がん登録を実施しなければならない。",
+     "専門的ながん医療の提供を行う病院の開設者及び管理者は、厚生労働大臣が定める指針に即して実施するよう努めるものとされている。",
+     "都道府県知事が指定した診療所の管理者は、国立がん研究センターの定める指針に即して院内がん登録を実施しなければならない。",
+     "院内がん登録を実施していない病院の管理者に対して、都道府県知事は勧告を行い、従わないときは公表することができる。",
+     "院内がん登録は、特定機能病院の開設者に限って実施が義務づけられている。"
+    ],
+    "answer": 1,
+    "explanation": {
+     "correct": "第44条第1項は、専門的ながん医療の提供を行う病院その他の地域におけるがん医療の確保について重要な役割を担う病院の開設者及び管理者が、厚生労働大臣が定める指針に即して院内がん登録を実施するよう「努めるものとする」と定めている（努力義務）。",
+     "choiceNotes": [
+      "すべての病院に課される義務ではなく、即するのも都道府県知事の基準ではなく厚生労働大臣が定める指針である。すべての病院に義務があるのは全国がん登録の届出である。",
+      null,
+      "第44条第1項の対象は病院の開設者及び管理者であり、即するのは厚生労働大臣が定める指針である。指定された診療所は全国がん登録の届出を行う施設（第6条第2項）であって、院内がん登録の実施義務を負うものではない。",
+      "勧告・公表は、病院の管理者が全国がん登録の届出義務（第6条第1項）に違反した場合の規定（第7条）である。",
+      "特定機能病院に限定する規定ではなく、義務でもない（努めるものとされている）。"
+     ],
+     "point": "院内がん登録（第44条）＝専門的ながん医療の提供を行う病院その他の地域のがん医療の確保に重要な役割を担う病院の開設者・管理者の努力義務。厚生労働大臣が定める指針に即して実施。"
+    },
+    "sources": [
+     {
+      "ref": "law:がん登録等の推進に関する法律",
+      "title": "がん登録等の推進に関する法律",
+      "url": "https://laws.e-gov.go.jp/law/425AC0100000111",
+      "locator": "第44条第1項",
+      "quote": "病院の開設者及び管理者は、厚生労働大臣が定める指針に即して院内がん登録を実施するよう努めるものとする。"
+     }
+    ],
+    "asOf": "2026-11 e-Gov現行法令（2026-10-01施行版）"
+   }
+  },
+  {
+   "key": "G4-S10-CAN-09",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "cancer:mhlw-hcr-guideline 第二 一（責任部署・機関の設置）、二（実務者1名以上・有資格者に限定する必要はない）、三（1）（標準的な登録様式に準拠・項目追加可）を確認。blind一致。"
+  },
+  {
+   "key": "G4-S10-CAN-10",
+   "verdict": "fix",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": false,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "標準登録様式2016 p.3「登録の方法」（2016年1月1日以降の新規診断症例から1腫瘍1登録、従来は1入院1登録等を変換可能な形で許容）、p.11 [110]重複番号 ※多重がんについて を確認。キー(0)は正しい。blind一致。",
+   "detail": "出典2の locator が「[30] 重複番号」となっていたが、2016年版の項目番号は [110] 重複番号（11ページ）。locator のみ修正。",
+   "fixed": {
+    "key": "G4-S10-CAN-10",
+    "subject": "S10",
+    "subtopic": "院内がん登録",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "院内がん登録 標準登録様式2016年版で、平成28（2016）年1月1日以降の新規診断症例について定められている登録の単位はどれか。",
+    "choices": [
+     "1腫瘍1登録",
+     "1患者1登録",
+     "1入院1登録",
+     "1診療科1登録",
+     "1治療1登録"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "標準登録様式2016年版は、平成28（2016）年1月1日以降の新規診断症例から「1腫瘍1登録」となるように登録することとしている。同一患者に多重がん（独立した複数の原発腫瘍）がある場合は、腫瘍ごとに別々に登録・集計する。",
+     "choiceNotes": [
+      null,
+      "患者単位ではなく腫瘍単位で登録票を作成する。同一患者に多重がんがあれば複数の登録となる。",
+      "1入院1登録などの形は、従来は集計時に1腫瘍1登録へ変換できることを条件に許容されていたが、2016年以降の新規診断症例では1腫瘍1登録の構造をとる。",
+      "診療科ごとに登録する方式は定められていない。複数の診療科が関与しても同一腫瘍は1登録である。",
+      "治療ごとに登録する方式は定められていない。初回治療の内容は1つの腫瘍の登録の中に記録する。"
+     ],
+     "point": "院内がん登録（2016年版）＝1腫瘍1登録。多重がんは腫瘍ごとに別登録。"
+    },
+    "sources": [
+     {
+      "ref": "cancer:hcr-standard-format-2016",
+      "title": "がん診療連携拠点病院等 院内がん登録 標準登録様式 2016年版",
+      "url": "https://ganjoho.jp/med_pro/cancer_control/can_reg/registration_hospital/pdf/2016manual.pdf",
+      "locator": "【院内がん登録の登録対象】登録の方法（3ページ）",
+      "quote": "以降の新規診断症例の登録からは、1 腫瘍 1 登録となるように登録することとする。"
+     },
+     {
+      "ref": "cancer:hcr-standard-format-2016",
+      "title": "がん診療連携拠点病院等 院内がん登録 標準登録様式 2016年版",
+      "url": "https://ganjoho.jp/med_pro/cancer_control/can_reg/registration_hospital/pdf/2016manual.pdf",
+      "locator": "[110] 重複番号 ※多重がんについて（11ページ）",
+      "quote": "患者単位ではなく、腫瘍単位に登録票を作成する"
+     }
+    ],
+    "asOf": "院内がん登録 標準登録様式2016年版（2026年4月更新版）"
+   }
+  },
+  {
+   "key": "G4-S10-CAN-11",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "cancer:hcr-standard-format-2016 [400]診断施設（根拠となった検査が自施設受診前＝他施設診断）、[420]症例区分のコード表・対応表（p.35）で 2他施設診断×2初回治療開始＝30 を確認。10/20/21/40 の定義も原文どおり。blind一致。"
+  },
+  {
+   "key": "G4-S10-CAN-12",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "標準登録様式2016 [370]自施設診断日（p.30）：根拠となった検査を行った日（検体採取日）、病理報告書発行日ではない、組織診が重み付け1。症例の日付は一意に4月8日。blind一致。"
+  },
+  {
+   "key": "G4-S10-CAN-13",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "法第2条第2項〜第4項、指針 第一（全国がん登録情報よりも詳細な治療の状況を含む情報）、届出マニュアル p.7（病院には例外なく届出義務）を確認。blind一致。"
+  },
+  {
+   "key": "G4-S10-CAN-14",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "法第20条（当該病院等から届出がされたがんに係る都道府県がん情報＝生存確認情報等、請求先は都道府県知事）、指針 第二 三（4）、法第11条を確認。blind一致。"
+  }
+ ]
+}

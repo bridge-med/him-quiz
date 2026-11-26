@@ -1,0 +1,109 @@
+{
+ "answers": [
+  {
+   "key": "G4-S08-REC-01",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "医師法24条1項「遅滞なく」"
+  },
+  {
+   "key": "G4-S08-REC-02",
+   "answer": 3,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "医師法施行規則23条2号"
+  },
+  {
+   "key": "G4-S08-REC-03",
+   "answer": 4,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "医師法33条の3 50万円以下の罰金"
+  },
+  {
+   "key": "G4-S08-REC-04",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "規則23条1号住所・4号診療年月日"
+  },
+  {
+   "key": "G4-S08-REC-05",
+   "answer": 3,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "診療録の様式は医師法施行規則に定めなし(様式第一号は療養担当規則側)"
+  },
+  {
+   "key": "G4-S08-REC-06",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "医師法24条2項 病院管理者"
+  },
+  {
+   "key": "G4-S08-REC-07",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "医師法24条2項 その他は医師本人5年"
+  },
+  {
+   "key": "G4-S08-REC-08",
+   "answer": 3,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "療養担当規則9条 完結の日から起算"
+  },
+  {
+   "key": "G4-S08-REC-09",
+   "answer": 3,
+   "confidence": "medium",
+   "ambiguous": true,
+   "note": "歯科医師法23条2項 診療所勤務でも管理者が保存。なお法律名は実在しない(ambiguous弱)"
+  },
+  {
+   "key": "G4-S08-REC-10",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "医師法24条2項"
+  },
+  {
+   "key": "G4-S08-REC-11",
+   "answer": 4,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "規則21条の5第2号に紹介状あり、20条10号になし"
+  },
+  {
+   "key": "G4-S08-REC-12",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "医療法21条1項 病院"
+  },
+  {
+   "key": "G4-S08-REC-13",
+   "answer": 4,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "規則9条の18 閲覧対象は帳簿のみ、手術記録等は含まれない"
+  },
+  {
+   "key": "G4-S08-REC-14",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "医療法22条の3 臨床研究中核病院"
+  },
+  {
+   "key": "G4-S08-REC-15",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "規則20条10号 手術記録・エックス線写真"
+  }
+ ]
+}

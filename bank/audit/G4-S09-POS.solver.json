@@ -1,0 +1,15 @@
+{"answers":[
+{"key":"G4-S09-POS-01","answer":2,"confidence":"high","ambiguous":false,"note":"Weed POMR: 基礎データ→問題リスト→初期計画→経過記録"},
+{"key":"G4-S09-POS-02","answer":3,"confidence":"high","ambiguous":false,"note":"系統別質問(review of systems)"},
+{"key":"G4-S09-POS-03","answer":1,"confidence":"high","ambiguous":false,"note":"問題リストは症状・検査異常・心理社会的問題も含む"},
+{"key":"G4-S09-POS-04","answer":0,"confidence":"high","ambiguous":false,"note":"鑑別のためのCTは診断計画であり治療計画ではない"},
+{"key":"G4-S09-POS-05","answer":3,"confidence":"medium","ambiguous":false,"note":"Weedの経過記録=叙述的記録・フローシート・退院時要約"},
+{"key":"G4-S09-POS-06","answer":4,"confidence":"high","ambiguous":false,"note":"フローシート"},
+{"key":"G4-S09-POS-07","answer":1,"confidence":"high","ambiguous":false,"note":"記録指針2024 一般病棟入院記録を基本形、l.280-286"},
+{"key":"G4-S09-POS-08","answer":0,"confidence":"high","ambiguous":false,"note":"記録指針2024 l.188 外国語・略語は一般的に使用される範囲"},
+{"key":"G4-S09-POS-09","answer":4,"confidence":"high","ambiguous":false,"note":"記録指針2024 l.192 備忘録・私的メモは記録しない"},
+{"key":"G4-S09-POS-10","answer":2,"confidence":"high","ambiguous":false,"note":"記録指針2024 l.655-657 仮記録の削除は不適切"},
+{"key":"G4-S09-POS-11","answer":3,"confidence":"high","ambiguous":false,"note":"記録指針2024 l.244 事実を時系列で正確に、推測を記録しない"},
+{"key":"G4-S09-POS-12","answer":2,"confidence":"high","ambiguous":false,"note":"東北厚生局資料 l.114-119 鉛筆不可、診察ごとに署名、傷病名は整理"},
+{"key":"G4-S09-POS-13","answer":0,"confidence":"high","ambiguous":false,"note":"記録指針2024 指示記録 ③ l.412"}
+]}

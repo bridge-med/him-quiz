@@ -1,0 +1,111 @@
+{
+ "verdicts": [
+  {
+   "key": "lg-09-26",
+   "verdict": "pass",
+   "blindAnswer": 1,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "blind一致。icd:instruction 4.4 疾病統計 導入部（instruction_all.txt L6848-6853）で定義（エピソードの最後に診断／多数なら最も医療資源／診断なしは主要症状・異常所見）を確認。4.4見出しL6836、4.4.1見出しL6870で、両locator「4.4 疾病統計」は正しい＝前回指摘は解消。「単一病態分析」は4.4.1見出し・L6863の用語。validate 0 errors。なお lg-10-04 と同一論点（下記）。"
+  },
+  {
+   "key": "lg-09-27",
+   "verdict": "pass",
+   "blindAnswer": 1,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "blind一致。icd:instruction 3.1.5 共通の特徴を持った分類項目（見出しL1298、小見出し「続発・後遺症の分類項目」L1342-1344、3.2はL1357）で一覧 B90-B94,E64.-,E68,G09,I69.-,O97,T90-T98,Y85-Y89 を確認＝locator修正は正しく前回指摘は解消。4.4.2「病態の続発・後遺症のコーディング」L7194-7199（優先コードは続発・後遺症それ自身の性質、…の続発・後遺症は任意的追加コード）確認。icd.mjs: I63脳梗塞/I69脳血管疾患の続発・後遺症/G81片麻痺/Z54回復期/T14部位不明の損傷。"
+  },
+  {
+   "key": "lg-09-29",
+   "verdict": "pass",
+   "blindAnswer": 1,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "blind一致。ins:r08-ika-tensuhyo 第10部 通則14（L14792-14801）本文＝主たる手術の所定点数のみ、ただし書＝神経移植術・骨移植術・植皮術等と他の手術の同時実施等は「それぞれの所定点数を合算して算定」。ins:r08-ika-ryuijiko 第10部 通則19(1)（L24979-24983 主たる手術＝所定点数及び注加算の合算が高い手術）・(3)（L25007-25009 複数手術特例＝従たる手術1つの100分の50）確認。correct・choiceNotes[0]・point はただし書の合算例外を正しく反映し、旧記述（例外でも50/100にとどまる）は削除済み＝前回指摘は解消。設問は「原則として」で一意。"
+  },
+  {
+   "key": "lg-10-04",
+   "verdict": "provisional",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true,
+    "quality": false
+   },
+   "notes": "blind一致。内容は icd:instruction 4.4 疾病統計 L6848-6853 と一致し、key・全choiceNotes・point は正しい。両locatorは「4.4 疾病統計」に修正済み（4.4.1見出しはL6870）＝前回指摘は解消。validate 0 errors。",
+   "detail": "正誤の問題はないが品質面が残る：(1) 同じファイルの lg-09-26 と同一論点（主要病態の定義・同じ出典箇所・誤答3つの発想が共通：最初の病態／コード番号最小／診断なしは記載しない）で近似重複。dup-check方式のJaccardは0.34で機械検出の閾値0.5を下回るため、重複・品質監査で人手の判断が要る（片方を残すなら lg-09-26）。(2) 正答の選択肢が84字で他（25〜51字）より目立って長く、長さで当てられる（common.md Content rules）。"
+  },
+  {
+   "key": "lg-10-07",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "blind一致。icd:naiyou15 L1「第ⅩⅤ章 妊娠，分娩及び産じょく＜褥＞（O00－O99）」、L5-6の章注（引用文）を確認。icd.mjs chapter 1/9/19＝感染症及び寄生虫症（A00-B99）／循環器系の疾患（I00-I99）／損傷，中毒及びその他の外因の影響（S00-T98）。問いが章名で特定する形になり年版も明記されたので、除外注（A34・S00-T88.1等）による第Ⅰ章・第ⅩⅨ章の曖昧さは消えた＝前回指摘は解消。basic の章名想起問題として成立。"
+  },
+  {
+   "key": "lg-10-08",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "blind一致。icd:instruction 4.1.5 起点となる先行原因選択のルール（見出しL1658）内の一般原則 L1751-1756、ルール1 L1762-1765 を確認。4.1.6「選択ルールについての留意事項」はL1777から＝両locatorの4.1.5への修正は正しく前回指摘は解消。選択肢Dはルール1の本文で一般原則ではない。L1636-1637（一般原則又は選択ルール1,2,3を適用）で correct の補足も確認。"
+  },
+  {
+   "key": "lg-10-10",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "blind一致。ins:dpc-coding-text-v7：L986-988（委員会の設置と年4回以上の開催がDPC参加の要件）は Ⅲ．DPCコーディングの基本的な考え方（L694〜）２．（L723）（７）（L927）②（L979）にあり、ⅣはL1065から＝sources[0] locator修正は正しく前回指摘は解消。L165 最終決定者は主治医、L192 傷病名の選択は主治医の専権事項、L216-218 差額は根拠にならない、L222-224 個別事例の問い合わせは地方厚生（支）局・改定要望は保険局医療課。設問は「コーディングテキスト（第7版）が示す」と出典を限定しており時点も明確。"
+  }
+ ]
+}

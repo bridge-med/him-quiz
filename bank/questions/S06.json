@@ -1918,7 +1918,7 @@
     "key": "lg-06-23",
     "by": "旧版（v2・AI作成）"
    },
-   "status": "verified",
+   "status": "rejected",
    "verification": {
     "date": "2026-11-26",
     "method": [
@@ -1926,7 +1926,8 @@
      "領域監査（統計）で修正",
      "修正後の独立再監査（pass）",
      "引用の機械照合（一次資料キャッシュ）",
-     "スキーマ・ICDコード・計算の機械検査"
+     "スキーマ・ICDコード・計算の機械検査",
+     "重複・品質監査で除外"
     ],
     "roles": {
      "author": "旧版（AI作成・出典なし）",
@@ -1935,7 +1936,7 @@
      "reauditor": "reaudit:L06b"
     },
     "log": "bank/audit/legacy-L06b.audit.json#lg-06-23",
-    "notes": "再監査: stats:env-soutai-kiyo-risk スライド3.4 (寄与リスク=ばく露群罹患リスク−非ばく露群罹患リスク); Minds glossary リスク差/オッズ比. Distractors = RR, OR, prevalence. Blind matched. Validator: 0 errors.｜寄与リスク＝ばく露群罹患リスク−非ばく露群罹患リスク、相対リスク＝比（stats:env-soutai-kiyo-risk）、リスク差＝発生率の差（Minds用語集）。solver=1 一致。"
+    "notes": "除外理由: duplicate 寄与リスクの定義を問う同一問題（残す問題: lg-06-13）｜再監査: stats:env-soutai-kiyo-risk スライド3.4 (寄与リスク=ばく露群罹患リスク−非ばく露群罹患リスク); Minds glossary リスク差/オッズ比. Distractors = RR, OR, prevalence. Blind matched. Validator: 0 errors.｜寄与リスク＝ばく露群罹患リスク−非ばく露群罹患リスク、相対リスク＝比（stats:env-soutai-kiyo-risk）、リスク差＝発生率の差（Minds用語集）。solver=1 一致。"
    }
   },
   {

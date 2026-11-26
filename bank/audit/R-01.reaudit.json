@@ -1,0 +1,185 @@
+{
+ "verdicts": [
+  {
+   "key": "G3-S07-OTH-09",
+   "verdict": "pass",
+   "blindAnswer": 2,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "盲検一致。icd:shiin2013 l.70-89 を通読：09100 高血圧性疾患 I10－I15／09101 高血圧性心疾患及び心腎疾患 I11，I13／09200 心疾患（高血圧性を除く）I01－I02.0，I05－I09，I20－I25，I27，I30－I52（内訳 09201 I05－I09、09202 I21－I22、09206 I44－I49、09207 I50）／09400 大動脈瘤及び解離 I71（独立項目）。総務省告示（平成27年第35号）の死因分類表 l.26206- も同一。I71・I52 は tools/icd.mjs で実在確認。前回指摘（point の 09100/09101 の対応）は「高血圧性疾患（09100）のうち高血圧性心疾患及び心腎疾患（09101）」に直っており解消。validate 0 errors。"
+  },
+  {
+   "key": "lg-01-03",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "盲検一致。mgmt:ianzen-sougou-taisaku-h14 l.340-386：第1章本文の後・第2章（l.400）の前に置かれた【参考】（概念整理及び用語の整理）の項目３「アクシデントとインシデント」に引用2文とも存在。アクシデント＝医療事故、インシデント＝実施前に発見／実施されたが患者に影響を及ぼすに至らなかったもの（ヒヤリ・ハット）。前回指摘の locator は「第1章【参考】３ アクシデントとインシデント」に直っており解消。選択肢Aは原文の簡略化だが唯一妥当、B〜Dは明確に誤り。"
+  },
+  {
+   "key": "lg-01-10",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "盲検一致。ins:dpc-coding-text-v7 Ⅲ（1）l.749「医療資源＝ヒト・モノ・カネの総体」、Ⅲ（2）l.754-767「１入院期間を対象として退院時に１つ決定」・①複数病態は最も投入した病態で判断・③退院時点の判断、Ⅱ. DPC の基本構造 １．DPC の構造 の（注）l.277-278「主傷病名は…必ずしも医療資源の投入量に基づいて決定されたものである必要はない」。前回指摘の3件目 locator は「Ⅱ １．DPC の構造（注）」に直っており解消。"
+  },
+  {
+   "key": "lg-02-07",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "盲検一致。law:健康保険法（2026-10-01施行版）第76条第5項 l.773：審査及び支払に関する事務を医療情報基盤・診療報酬審査支払機構（基盤機構）又は国民健康保険団体連合会（国保連合会）に委託することができる。第4条 l.102：保険者は全国健康保険協会及び健康保険組合。ins:hpdx-kaiso l.37・l.51：2026年（令和8年）10月1日に改組。前回指摘（文字量だけで解ける不自然な誤答）は、旧名称／保険者との区別を問う2×2の組合せに差し替えられ解消。語句の出現回数からも正答は割れない。設問に時点（2026年11月時点）あり。validate 警告なし。"
+  },
+  {
+   "key": "lg-02-22",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "盲検一致。law:健康保険法 第39条第1項 l.473（保険者等＝協会管掌は厚生労働大臣、組合管掌は当該健康保険組合）、第155条第1項・第2項 l.1322-1323、第5条第2項 l.106（保険料の徴収〔任意継続を除く〕は厚生労働大臣）、第52条 l.605-615、第76条第2項 l.770、第82条第1項 l.813（中医協に諮問）、law:国民健康保険法 第76条第1項・第2項 l.591-592（市町村・組合が保険料を徴収）、law:医師法 第10条第1項 l.83 を原文確認。前回指摘（「保険者は…保険料を徴収し（第155条）」の不正確さ）は条文どおりの書き分けに直っており解消。軽微な所見（合否に影響なし）：出典1の引用「保険者等は、健康保険事業に要する費用」は第155条第1項の書き出しだけで、述語「…に充てるため、保険料を徴収する。」を含まない。条文としては主張を裏づけるが、引用単独では裏づけが弱いので、次に触れる機会があれば「に充てるため、保険料を徴収する。」への差し替えを勧める。"
+  },
+  {
+   "key": "lg-02-29",
+   "verdict": "pass",
+   "blindAnswer": 1,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "盲検一致。law:健康保険法 第100条第1項 l.946（埋葬料として政令で定める金額）・第2項 l.947（埋葬費＝同項の金額の範囲内で実費相当）、第52条第3号・第7号、ins:wagakuni-iryouhoken l.373-374・l.383（健康保険・共済組合は定額5万円、国保・後期高齢者医療は条例又は規約の定める額＝葬祭費）、law:国民健康保険法 第58条第1項 l.458 を確認。金額は令和6年6月時点の資料に依るため、現行の健康保険法施行令を e-Gov から取得して独自に確認（revision 215IO0000000243_20261001_508CO0000000276、第35条「法第百条第一項の政令で定める金額は、五万円とする。」）。労災保険の給付は葬祭料（law:労働者災害補償保険法 l.113・l.197、同法に「埋葬料」の語なし）。前回指摘（設問文の「（埋葬費）」併記）は削除されており解消。補足：施行令はキャッシュ未登録のため出典には入っていない（asOf に資料時点の明記あり）。"
+  },
+  {
+   "key": "lg-03-05",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "盲検一致。info:mhlw-anzen-gl7-gaisetsu ４．３ 医療情報システムの安全管理に関連する法令（見出し l.282、引用 l.310-311「当該情報の真正性・見読性・保存性が確保されている必要がある」）、４．２（l.257-270）機密性・完全性・可用性＝情報セキュリティの要素。前回指摘の1件目 locator は「４．３」に直っており解消。"
+  },
+  {
+   "key": "lg-03-25",
+   "verdict": "pass",
+   "blindAnswer": 1,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "盲検一致。law:医療法（2026-10-01施行版）第4条の2第1項 l.87-96（柱書：厚生労働大臣の承認、第1号：高度の医療を提供する能力、第2〜4号、第5号診療科名、第6号病床数）、第4条 l.77（地域医療支援病院は都道府県知事の承認）、law:医療法施行規則 第6条の2 l.485（二百、ただし書あり＝原則）、第6条の4 l.522（内科、外科、精神科、小児科…）、第6条の5 l.530（四百）、mgmt:tokutei-kinou-gaiyou l.14（400床以上）・l.28（原則定められた21の診療科）・l.30（特定機能病院Bは別途要件）。前回指摘（locator 第1号と引用が柱書で不一致）は、引用を柱書末尾〜第1号本文に広げ locator を「第4条の2第1項（柱書・第1号）」としたことで解消。"
+  },
+  {
+   "key": "lg-05-06",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "盲検一致。x-legacy-L05a:msd-hip-fracture l.20（高齢患者〔特に骨粗鬆症の高齢者〕で最も多く、通常は平坦な地面での転倒）、l.28（ごくわずかに見える力で骨折に至ることがある）、l.62（大多数は外科的に治療、長期間の床上安静の合併症）、l.80。前回指摘（choiceNotes[1] が「高齢者で最多の骨折」とも読める）は「この骨折は高齢患者…で最も多く起こるものであり、小児に多い骨折ではない」に直っており解消。軽微な所見（合否に影響なし）：出典2の locator「病因」は原ページに同名の見出しがなく、該当文は冒頭の概説部分（目次の直後）にある。引用自体は逐語で主張を直接裏づける。"
+  },
+  {
+   "key": "lg-05-13",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "盲検一致。x-legacy-L04a:msd-ja-dm「糖尿病の治療」内「薬物療法の概要」l.206（血漿血糖値の上昇が軽度の2型→食事療法および運動療法、不十分ならインスリン以外の血糖降下薬〔多くはメトホルミン〕）、l.209（妊娠中・HHS/DKA等は初期治療としてインスリンが適応、HbA1C＞10％かつ血糖値≥300mg/dL等は考慮すべき）。前回指摘（choiceNotes[1] の「著しい高血糖＝初期治療」の言い過ぎ）は『適応』と『考慮』に書き分けられ解消。"
+  },
+  {
+   "key": "lg-05-25",
+   "verdict": "pass",
+   "blindAnswer": 1,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "盲検一致。新規登録の x-repair-R-01:jsbmr-osteo-shindan-2012 を通読（表2 l.83-97：I 脆弱性骨折あり 1.椎体骨折または大腿骨近位部骨折あり／2.その他の脆弱性骨折＋骨密度YAMの80％未満、II 脆弱性骨折なし 骨密度YAMの70％以下または－2.5SD以下、YAM：若年成人平均値、前提＝低骨量をきたす他疾患・続発性骨粗鬆症を認めない l.84）。登録URL（jsbmr.umin.jp/guide/pdf/g-guideline.pdf）を再取得し、PDF（200, 389,735 bytes）の本文がキャッシュと一致することを確認。DXA法は x-legacy-L05b:tyojyu-osteo-shindan l.42。前回指摘（簡略版の基準を等式的に提示、YAM の語が出典にない、一次資料未確認）は一次資料に基づく書き直しで解消。asOf に版（2012年度改訂版）の明記あり。"
+  },
+  {
+   "key": "lg-08-07",
+   "verdict": "provisional",
+   "blindAnswer": 1,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": false,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "盲検一致。info:ppc-iryoukaigo-guidance（令和8年4月一部改正）Ⅳ ７．安全管理措置、従業者の監督及び委託先の監督（l.1467）（１）①（l.1486-1490）「組織的、人的、物理的及び技術的安全管理措置等を講じなければならない」を確認。前回指摘（1件目 locator Ⅳ10→Ⅳ7(1)①）は解消。info:mhlw-anzen-gl7-gaisetsu ４．２ l.259-270（機密性・完全性・可用性）も正しい。正答・誤答・解説・asOf は正確。validate 0 errors。",
+   "detail": "3件目の出典（info:mhlw-ebunsho-shiko-tsuchi）の locator と引用が食い違う。引用「書類の内容、性格に応じた電子データの真正性、見読性及び保存性の確保措置を講ずる必要がある。」はキャッシュ l.576 にあり、これは通知本体ではなく後半に結合された当時の安全管理ガイドライン本文の【参考1】証拠能力・証明力について（訴訟での証拠能力・証明力の確保の文脈）の一文。locator の「第二 2(3)」（l.202-204 電磁的記録の保存を行う場合の基準として講じなければならない措置）にこの文はない。choiceNotes[2]「法定保存文書を電子媒体に保存する場合の三条件」を直接裏づけるのは l.204「電磁的記録による保存を行うことができる文書等に記録された情報を電子媒体に保存する場合は次の三条件を満たさなければならない。」（続く①見読性の確保 ②真正性の確保 ③保存性の確保）なので、引用をこの文に差し替えれば locator「第二 2(3)」のままで合格相当。前回の再監査はこの出典を正しいとしていたが、引用箇所の位置までは確認されていなかった。正答・解説の内容には影響しない。"
+  }
+ ]
+}

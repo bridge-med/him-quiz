@@ -38,7 +38,7 @@
      "ref": "info:mhlw-anzen-gl7-gaisetsu",
      "title": "医療情報システムの安全管理に関するガイドライン 第7.0版 概説編",
      "url": "https://www.mhlw.go.jp/content/10808000/001716290.pdf",
-     "locator": "４．２",
+     "locator": "４．３ 医療情報システムの安全管理に関連する法令",
      "quote": "当該情報の真正性・見読性・保存性が確保され"
     },
     {
@@ -55,7 +55,7 @@
     "key": "lg-03-05",
     "by": "旧版（v2・AI作成）"
    },
-   "status": "provisional",
+   "status": "verified",
    "verification": {
     "date": "2026-11-26",
     "method": [
@@ -63,16 +63,19 @@
      "領域監査（法令・制度）で修正",
      "修正後の独立再監査（provisional）",
      "引用の機械照合（一次資料キャッシュ）",
-     "スキーマ・ICDコード・計算の機械検査"
+     "スキーマ・ICDコード・計算の機械検査",
+     "再監査の指摘に沿って再修正し、別エージェントの再監査（ブラインド解答一致）で合格"
     ],
     "roles": {
      "author": "旧版（AI作成・出典なし）",
      "solver": "solve:L03（別モデル・正答を見ずに解答）",
      "auditor": "audit:L03a（法令・制度）",
-     "reauditor": "reaudit:L03a"
+     "reauditor": "reaudit:L03a",
+     "repair": "repair:R-01",
+     "reauditor2": "reaudit:R-01"
     },
     "log": "bank/audit/legacy-L03a.audit.json#lg-03-05",
-    "notes": "再監査: info:mhlw-anzen-gl7-gaisetsu: 4.2 lists 機密性・完全性・可用性 as 情報セキュリティの要素 (l.259-270); 真正性・見読性・保存性 sentence is at l.308-311. Key and all notes correct; validator 0 errors.｜GL7.0概説編4.2で三基準とCIAを確認。"
+    "notes": "再修正: 1件目の出典のlocatorを「４．２」→「４．３ 医療情報システムの安全管理に関連する法令」に修正（info:mhlw-anzen-gl7-gaisetsu：４．３の見出し l.282、引用文 l.310）。2件目（機密性の定義 l.263）は４．２（l.259〜）で正しいので変更なし。｜再監査: info:mhlw-anzen-gl7-gaisetsu: 4.2 lists 機密性・完全性・可用性 as 情報セキュリティの要素 (l.259-270); 真正性・見読性・保存性 sentence is at l.308-311. Key and all notes correct; validator 0 errors.｜GL7.0概説編4.2で三基準とCIAを確認。"
    }
   },
   {

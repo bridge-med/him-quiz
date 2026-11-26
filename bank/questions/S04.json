@@ -112,14 +112,14 @@
      "ref": "mgmt:ianzen-sougou-taisaku-h14",
      "title": "医療安全推進総合対策 〜医療事故を未然に防止するために〜",
      "url": "https://www.mhlw.go.jp/topics/2001/0110/dl/tp1030-1c.pdf",
-     "locator": "第1章 2 ３ アクシデントとインシデント",
+     "locator": "第1章【参考】３ アクシデントとインシデント",
      "quote": "「アクシデント」は通常、医療事故に相当する用語として用いる。"
     },
     {
      "ref": "mgmt:ianzen-sougou-taisaku-h14",
      "title": "医療安全推進総合対策 〜医療事故を未然に防止するために〜",
      "url": "https://www.mhlw.go.jp/topics/2001/0110/dl/tp1030-1c.pdf",
-     "locator": "第1章 2 ３ アクシデントとインシデント",
+     "locator": "第1章【参考】３ アクシデントとインシデント",
      "quote": "結果として患者に影響を及ぼすに至らなかったものをいう。"
     }
    ],
@@ -129,7 +129,7 @@
     "key": "lg-01-03",
     "by": "旧版（v2・AI作成）"
    },
-   "status": "provisional",
+   "status": "verified",
    "verification": {
     "date": "2026-11-26",
     "method": [
@@ -137,16 +137,19 @@
      "領域監査（医療管理・情報）で修正",
      "修正後の独立再監査（provisional）",
      "引用の機械照合（一次資料キャッシュ）",
-     "スキーマ・ICDコード・計算の機械検査"
+     "スキーマ・ICDコード・計算の機械検査",
+     "再監査の指摘に沿って再修正し、別エージェントの再監査（ブラインド解答一致）で合格"
     ],
     "roles": {
      "author": "旧版（AI作成・出典なし）",
      "solver": "solve:L01（別モデル・正答を見ずに解答）",
      "auditor": "audit:L01a（医療管理・情報）",
-     "reauditor": "reaudit:L01a"
+     "reauditor": "reaudit:L01a",
+     "repair": "repair:R-01",
+     "reauditor2": "reaudit:R-01"
     },
     "log": "bank/audit/legacy-L01a.audit.json#lg-01-03",
-    "notes": "再監査: mgmt:ianzen-sougou-taisaku-h14 p.10【参考】３ アクシデントとインシデント：アクシデント＝医療事故、インシデント＝患者に実施される前に発見／実施されたが患者に影響を及ぼすに至らなかったもの（ヒヤリ・ハット）。key 0 は妥当、B〜Dは誤り。｜mgmt:ianzen-sougou-taisaku-h14「３ アクシデントとインシデント」で定義確認。key正、solver一致。"
+    "notes": "再修正: 2件の出典のlocatorを「第1章 2 ３」→「第1章【参考】３ アクシデントとインシデント」に修正（mgmt:ianzen-sougou-taisaku-h14：1−3（5）の後・第2章の前に置かれた【参考】（概念整理及び用語の整理）の項目３。引用2文とも同項にあることを確認）。他は変更なし。｜再監査: mgmt:ianzen-sougou-taisaku-h14 p.10【参考】３ アクシデントとインシデント：アクシデント＝医療事故、インシデント＝患者に実施される前に発見／実施されたが患者に影響を及ぼすに至らなかったもの（ヒヤリ・ハット）。key 0 は妥当、B〜Dは誤り。｜mgmt:ianzen-sougou-taisaku-h14「３ アクシデントとインシデント」で定義確認。key正、solver一致。"
    }
   },
   {
@@ -2420,13 +2423,13 @@
     "key": "G3-S04-INC-03",
     "by": "gen:G3-S04-INC"
    },
-   "status": "provisional",
+   "status": "verified",
    "verification": {
     "date": "2026-11-26",
     "method": [
      "独立ブラインド解答（別モデル）",
      "領域監査（医療管理・情報）で修正",
-     "修正後の再監査は未実施",
+     "修正後の独立再監査（pass）",
      "引用の機械照合（一次資料キャッシュ）",
      "スキーマ・ICDコード・計算の機械検査"
     ],
@@ -2434,10 +2437,10 @@
      "author": "gen:G3-S04-INC",
      "solver": "solve:G3-S04-INC（別モデル・正答を見ずに解答）",
      "auditor": "audit:G3-S04-INC（医療管理・情報）",
-     "reauditor": null
+     "reauditor": "reaudit:G3-S04-INC"
     },
     "log": "bank/audit/G3-S04-INC.audit.json#G3-S04-INC-03",
-    "notes": "mgmt:ianzen-kanrisha-shishin-r2 Ⅰ3.3)(2) の3群（業務フロー／事故発生後の原因分析／危険箇所の予測と発生予防）を原文で確認。正答・誤答肢・解説は正しい。"
+    "notes": "再監査: 盲検解答D=キー一致。mgmt:ianzen-kanrisha-shishin-r2 Ⅰ3.3)(2)を原文確認：【危険箇所の予測と事故の発生予防】はFMEAのみ、RCA・SHEL・4M-4Eは【事故発生後の原因分析】、特性要因図作成は【業務フローの現状と問題点の分析】。修正されたlocator（Ⅰ 3．3）（2））は目次・本文見出し（107行 ３．／172行 ３）／206行（２））と一致。設問が令和2年3月改定と版を明示。validate 0 errors。｜mgmt:ianzen-kanrisha-shishin-r2 Ⅰ3.3)(2) の3群（業務フロー／事故発生後の原因分析／危険箇所の予測と発生予防）を原文で確認。正答・誤答肢・解説は正しい。"
    }
   },
   {
@@ -2489,13 +2492,13 @@
     "key": "G3-S04-INC-04",
     "by": "gen:G3-S04-INC"
    },
-   "status": "provisional",
+   "status": "verified",
    "verification": {
     "date": "2026-11-26",
     "method": [
      "独立ブラインド解答（別モデル）",
      "領域監査（医療管理・情報）で修正",
-     "修正後の再監査は未実施",
+     "修正後の独立再監査（pass）",
      "引用の機械照合（一次資料キャッシュ）",
      "スキーマ・ICDコード・計算の機械検査"
     ],
@@ -2503,10 +2506,10 @@
      "author": "gen:G3-S04-INC",
      "solver": "solve:G3-S04-INC（別モデル・正答を見ずに解答）",
      "auditor": "audit:G3-S04-INC（医療管理・情報）",
-     "reauditor": null
+     "reauditor": "reaudit:G3-S04-INC"
     },
     "log": "bank/audit/G3-S04-INC.audit.json#G3-S04-INC-04",
-    "notes": "mgmt:ianzen-kanrisha-shishin-r2 Ⅰ3.3)(2) の3群（業務フロー／事故発生後の原因分析／危険箇所の予測と発生予防）を原文で確認。正答・誤答肢・解説は正しい。"
+    "notes": "再監査: 盲検解答「a と c と e」=キー一致。同指針 Ⅰ3.3)(2)：事故発生後の原因分析＝RCA・SHELモデル・4M-4E。b(FMEA)は予測・予防群、d(業務フロー（工程）図作成)は業務フロー分析群で、a・c・e以外の組合せは成立しない。locator修正は正しい。03と同じ表だが形式・正答が異なり重複とはしない。｜mgmt:ianzen-kanrisha-shishin-r2 Ⅰ3.3)(2) の3群（業務フロー／事故発生後の原因分析／危険箇所の予測と発生予防）を原文で確認。正答・誤答肢・解説は正しい。"
    }
   },
   {
@@ -2625,13 +2628,13 @@
     "key": "G3-S04-INC-06",
     "by": "gen:G3-S04-INC"
    },
-   "status": "provisional",
+   "status": "verified",
    "verification": {
     "date": "2026-11-26",
     "method": [
      "独立ブラインド解答（別モデル）",
      "領域監査（医療管理・情報）で修正",
-     "修正後の再監査は未実施",
+     "修正後の独立再監査（pass）",
      "引用の機械照合（一次資料キャッシュ）",
      "スキーマ・ICDコード・計算の機械検査"
     ],
@@ -2639,10 +2642,10 @@
      "author": "gen:G3-S04-INC",
      "solver": "solve:G3-S04-INC（別モデル・正答を見ずに解答）",
      "auditor": "audit:G3-S04-INC（医療管理・情報）",
-     "reauditor": null
+     "reauditor": "reaudit:G3-S04-INC"
     },
     "log": "bank/audit/G3-S04-INC.audit.json#G3-S04-INC-06",
-    "notes": "mgmt:ianzen-kanrisha-shishin-r2 Ⅰ3.3)(1)。院内情報①②④⑤と院外情報②（各種メディアの報道）を原文で確認。"
+    "notes": "再監査: 盲検解答E=キー一致。同指針 Ⅰ3.3)(1)：【医療機関内の情報】①事故・ヒヤリ・ハット報告 ②相談や苦情 ④各種委員会の議事録 ⑤院内巡視の結果、【医療機関外の情報】②各種メディアの報道（新聞やテレビ、雑誌、インターネット）。choiceNotesの番号（①②④⑤）も原文どおり。locator修正は正しい。｜mgmt:ianzen-kanrisha-shishin-r2 Ⅰ3.3)(1)。院内情報①②④⑤と院外情報②（各種メディアの報道）を原文で確認。"
    }
   },
   {
@@ -2835,13 +2838,13 @@
     "key": "G3-S04-INC-09",
     "by": "gen:G3-S04-INC"
    },
-   "status": "provisional",
+   "status": "verified",
    "verification": {
     "date": "2026-11-26",
     "method": [
      "独立ブラインド解答（別モデル）",
      "領域監査（医療管理・情報）で修正",
-     "修正後の再監査は未実施",
+     "修正後の独立再監査（pass）",
      "引用の機械照合（一次資料キャッシュ）",
      "スキーマ・ICDコード・計算の機械検査"
     ],
@@ -2849,10 +2852,10 @@
      "author": "gen:G3-S04-INC",
      "solver": "solve:G3-S04-INC（別モデル・正答を見ずに解答）",
      "auditor": "audit:G3-S04-INC（医療管理・情報）",
-     "reauditor": null
+     "reauditor": "reaudit:G3-S04-INC"
     },
     "log": "bank/audit/G3-S04-INC.audit.json#G3-S04-INC-09",
-    "notes": "mgmt:innai-kansen-tsuchi-h26 別記 3-3(1)(3)。4週間以内・同一病棟・同一菌種・計3例以上→アウトブレイクの判断にかかわらず準じて対策。保健所報告は10名以上又は関連が否定できない死亡。正答は正しい。"
+    "notes": "再監査: 盲検解答A=キー一致。mgmt:innai-kansen-tsuchi-h26 別記3-3(1)：1例目から4週間以内・同一病棟・同一菌種の発病計3例以上で、アウトブレイクの判断にかかわらず準じた対策。5種類（CRE・VRSA・MDRP・VRE・多剤耐性アシネトバクター属）は保菌含め1例目からの特則。保健所への速やかな報告は3-3(3)の目安10名以上又は因果関係を否定できない死亡者（至らない時点の報告・相談は「望ましい」）でDは誤り。3-1(1)がアウトブレイクを多剤耐性菌想定としており、修正後の設問（多剤耐性菌と明示）とCの解説は通知と整合。mgmt:innai-kansen-pageで同｜mgmt:innai-kansen-tsuchi-h26 別記 3-3(1)(3)。4週間以内・同一病棟・同一菌種・計3例以上→アウトブレイクの判断にかかわらず準じて対策。保健所報告は10名以上又は関連が否定できない死亡。正答は正しい。"
    }
   },
   {

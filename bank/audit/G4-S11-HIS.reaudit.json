@@ -1,0 +1,8 @@
+{"verdicts":[
+{"key":"G4-S11-HIS-03","verdict":"pass","blindAnswer":4,
+ "checks":{"answer":true,"distractors":true,"stem":true,"explanations":true,"sources":true,"asOf":true,"domain":true},
+ "notes":"盲検解答=キー(平成29年)。icd:abc_r07 74-78行「平成７年…1990年版、平成18年…2003年版、平成28年１月から2013年版（人口動態統計は、平成29年１月分から適用開始）」、icd:rikai ２(１) 125-127行（平成28年1月1日適用・平成27年2月13日総務省告示第35号）および155-157行（人口動態統計は平成29年1月から）で正答・全誤答肢の解説を確認。修正後の設問文は両時期の違いを明示しており一意。validate 0 errors。"},
+{"key":"G4-S11-HIS-07","verdict":"pass","blindAnswer":3,
+ "checks":{"answer":true,"distractors":true,"stem":true,"explanations":true,"sources":true,"asOf":true,"domain":true},
+ "notes":"盲検解答=キー(記録及びコーディングのガイドライン)。icd:instruction 2.4.1 書籍（781-819行）で第1巻=内容例示表＋特定製表用リスト・定義（世界保健総会採択）・分類規約・新生物＜腫瘍＞の形態を確認、1.はじめに（170-174行）でガイドラインは第2巻（総論）と確認。同資料5.3節（8280行）の「特定製表用リストが第２巻（総論）にあり」は2.2.1（351行）・2.4.1・5.4（8288行）と食い違うが、設問文が2.4.1の説明に限定しているため一意性は保たれる。設問文の「第２巻の全３巻の構成に関する説明」はやや硬いが誤読の余地なし。validate 0 errors。"}
+]}

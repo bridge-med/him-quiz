@@ -214,6 +214,22 @@ for (const a of plan) {
   }
 }
 
+// ================= 重複・品質監査の反映 =================
+const ov = readJson(path.join(ROOT, 'bank', 'overrides.json'), { reject: {} });
+let dupRejected = 0;
+for (const q of out) {
+  const o = ov.reject[q.id];
+  if (!o) continue;
+  for (const grp of [counts.legacy, counts.gen]) { /* 集計は下で取り直す */ }
+  if (q.status !== 'rejected') dupRejected++;
+  q.status = 'rejected';
+  q.verification.method.push('重複・品質監査で除外');
+  q.verification.notes = `除外理由: ${o.reason} ${o.detail}（残す問題: ${o.of}）｜${q.verification.notes || ''}`;
+  if (q.legacy && !changes.some((c) => c.id === q.id && c.action === 'reject')) changes.push({ id: q.id, legacyKey: q.legacy.key, action: 'reject', reason: o.reason, detail: `${o.detail}（${o.of} を残す）`, before: { question: q.question } });
+}
+fs.writeFileSync(path.join(WORK, 'dup-review.json'), JSON.stringify({ rejected: Object.keys(ov.reject).length, threshold: 0.6 }));
+for (const k of ['legacy', 'gen']) for (const s2 of ['verified', 'provisional', 'rejected']) counts[k][s2] = out.filter((q) => (k === 'legacy') === !!q.legacy && q.status === s2).length;
+
 // ================= 書き出し =================
 const bySubj = {};
 for (const q of out) (bySubj[q.subject] = bySubj[q.subject] || []).push(q);

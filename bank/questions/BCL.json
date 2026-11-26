@@ -699,7 +699,7 @@
    "explanation": {
     "correct": "股関節骨折は大腿骨の骨頭・頸部・転子部・転子下に起こる骨折で、高齢患者（特に骨粗鬆症の高齢者）で最も多く、通常は平坦な地面での転倒により起こる。",
     "choiceNotes": [
-     "高齢患者（特に骨粗鬆症の高齢者）で最も多い骨折である。",
+     "この骨折は高齢患者（特に骨粗鬆症の高齢者）で最も多く起こるものであり、小児に多い骨折ではない。",
      null,
      "大多数は外科的に治療する。非外科的治療では長期間の床上安静が必要となり、深部静脈血栓症・褥瘡・肺炎などのリスクが高まる。",
      "骨粗鬆症の高齢者では、寝返りや椅子から立ち上がるなどのごくわずかな力でも骨折に至ることがある。"
@@ -735,7 +735,7 @@
     "key": "lg-05-06",
     "by": "旧版（v2・AI作成）"
    },
-   "status": "provisional",
+   "status": "verified",
    "verification": {
     "date": "2026-11-26",
     "method": [
@@ -743,16 +743,19 @@
      "領域監査（臨床医学）で修正",
      "修正後の独立再監査（provisional）",
      "引用の機械照合（一次資料キャッシュ）",
-     "スキーマ・ICDコード・計算の機械検査"
+     "スキーマ・ICDコード・計算の機械検査",
+     "再監査の指摘に沿って再修正し、別エージェントの再監査（ブラインド解答一致）で合格"
     ],
     "roles": {
      "author": "旧版（AI作成・出典なし）",
      "solver": "solve:L05（別モデル・正答を見ずに解答）",
      "auditor": "audit:L05a（臨床医学）",
-     "reauditor": "reaudit:L05a"
+     "reauditor": "reaudit:L05a",
+     "repair": "repair:R-01",
+     "reauditor2": "reaudit:R-01"
     },
     "log": "bank/audit/legacy-L05a.audit.json#lg-05-06",
-    "notes": "再監査: x-legacy-L05a:msd-hip-fracture l.20(高齢患者・特に骨粗鬆症で最も多く平地転倒で起こる), l.28(ごくわずかな力で骨折), l.62(大多数は外科的治療、長期臥床でDVT・褥瘡・肺炎)。key・distractorsは正しい。｜x-legacy-L05a:msd-hip-fracture 概要・病因・治療（骨粗鬆症の高齢者の転倒、大多数は外科的治療）。"
+    "notes": "再修正: choiceNotes[1]を出典の主張（この骨折は高齢患者で最も多く起こる）の範囲に収まる表現に修正。「高齢者で最多の骨折」とも読める言い回しを解消（x-legacy-L05a:msd-hip-fracture l.20）。他は変更なし。｜再監査: x-legacy-L05a:msd-hip-fracture l.20(高齢患者・特に骨粗鬆症で最も多く平地転倒で起こる), l.28(ごくわずかな力で骨折), l.62(大多数は外科的治療、長期臥床でDVT・褥瘡・肺炎)。key・distractorsは正しい。｜x-legacy-L05a:msd-hip-fracture 概要・病因・治療（骨粗鬆症の高齢者の転倒、大多数は外科的治療）。"
    }
   },
   {
@@ -1257,7 +1260,7 @@
    "explanation": {
     "correct": "血漿血糖値の上昇が軽度である2型糖尿病患者には、まず食事療法と運動療法を試み、生活習慣の改善で不十分であれば、インスリン以外の血糖降下薬（多くの場合メトホルミン）を1つ処方する。",
     "choiceNotes": [
-     "インスリンは、妊娠中や高浸透圧性高血糖状態・糖尿病性ケトアシドーシスなどの急性代謝代償不全、著しい高血糖などの場合に初期治療となるが、血糖上昇が軽度であればまず食事療法と運動療法を行う。",
+     "インスリンは、2型糖尿病を有する妊娠中の女性や、高浸透圧性高血糖状態・糖尿病性ケトアシドーシスなどの急性代謝代償不全を呈する患者では初期治療として適応となり、HbA1c値が10％を超えかつ血糖値が300mg/dL以上の患者などでは考慮されるが、血糖上昇が軽度であればまず食事療法と運動療法を行う。",
      "透析は進行した腎不全に対する腎代替療法であり、糖尿病の初期治療ではない。",
      "手術療法は血糖上昇が軽度の2型糖尿病の初期治療ではない。",
      null
@@ -1286,7 +1289,7 @@
     "key": "lg-05-13",
     "by": "旧版（v2・AI作成）"
    },
-   "status": "provisional",
+   "status": "verified",
    "verification": {
     "date": "2026-11-26",
     "method": [
@@ -1294,16 +1297,19 @@
      "領域監査（臨床医学）で修正",
      "修正後の独立再監査（provisional）",
      "引用の機械照合（一次資料キャッシュ）",
-     "スキーマ・ICDコード・計算の機械検査"
+     "スキーマ・ICDコード・計算の機械検査",
+     "再監査の指摘に沿って再修正し、別エージェントの再監査（ブラインド解答一致）で合格"
     ],
     "roles": {
      "author": "旧版（AI作成・出典なし）",
      "solver": "solve:L05（別モデル・正答を見ずに解答）",
      "auditor": "audit:L05a（臨床医学）",
-     "reauditor": "reaudit:L05a"
+     "reauditor": "reaudit:L05a",
+     "repair": "repair:R-01",
+     "reauditor2": "reaudit:R-01"
     },
     "log": "bank/audit/legacy-L05a.audit.json#lg-05-13",
-    "notes": "再監査: x-legacy-L04a:msd-ja-dm 治療 l.(血糖上昇が軽度の2型→食事・運動療法、不十分ならメトホルミン等), l.209(妊娠・HHS/DKAは初期治療としてインスリン)。key・distractorsは正しい。｜x-legacy-L04a:msd-ja-dm 治療（血糖上昇が軽度の2型は食事・運動療法→メトホルミン等、急性代謝代償不全等ではインスリンを初期治療）。"
+    "notes": "再修正: choiceNotes[1]で「著しい高血糖」を初期治療の適応と同列に書いていた点を、出典どおり『妊娠中・急性代謝代償不全＝初期治療として適応』『HbA1c＞10％かつ血糖≥300mg/dL等＝考慮すべき』に書き分けた（x-legacy-L04a:msd-ja-dm l.209）。他は変更なし。｜再監査: x-legacy-L04a:msd-ja-dm 治療 l.(血糖上昇が軽度の2型→食事・運動療法、不十分ならメトホルミン等), l.209(妊娠・HHS/DKAは初期治療としてインスリン)。key・distractorsは正しい。｜x-legacy-L04a:msd-ja-dm 治療（血糖上昇が軽度の2型は食事・運動療法→メトホルミン等、急性代謝代償不全等ではインスリンを初期治療）。"
    }
   },
   {
@@ -2136,29 +2142,29 @@
    ],
    "answer": 0,
    "explanation": {
-    "correct": "骨粗鬆症の診断は脆弱性骨折の有無と骨密度に基づく。骨密度が若年成人平均値（YAM）の70％以下，または70〜80％（骨量減少）で脆弱性骨折の既往がある場合に骨粗鬆症と診断される。骨密度はDXA法などで測定する。",
+    "correct": "原発性骨粗鬆症の診断基準（2012年度改訂版）は，脆弱性骨折の有無と骨密度に基づく。椎体骨折または大腿骨近位部骨折があれば骨粗鬆症と診断し，その他の脆弱性骨折がある場合は骨密度が若年成人平均値（YAM）の80％未満，脆弱性骨折がない場合は骨密度がYAMの70％以下または−2.5SD以下のときに診断する（低骨量をきたす他の疾患や続発性骨粗鬆症を認めないことが前提）。骨密度はDXA法などで測定する。",
     "choiceNotes": [
      null,
      "BMIは体格（肥満度）の指標であり，骨粗鬆症の診断基準の指標ではない。",
      "血糖値は糖代謝（糖尿病）の指標であり，骨粗鬆症の診断基準の指標ではない。",
      "CRPは炎症の指標であり，骨粗鬆症の診断基準の指標ではない。"
     ],
-    "point": "骨粗鬆症＝骨密度YAM70％以下，またはYAM70〜80％（骨量減少）＋脆弱性骨折。"
+    "point": "原発性骨粗鬆症の診断（2012年度改訂版）：椎体・大腿骨近位部の脆弱性骨折あり／その他の脆弱性骨折＋骨密度YAM80％未満／脆弱性骨折なしは骨密度YAM70％以下または−2.5SD以下。YAM＝若年成人平均値。"
    },
    "sources": [
     {
-     "ref": "x-legacy-L05b:tyojyu-osteo-shindan",
-     "title": "骨粗鬆症の診断（健康長寿ネット）",
-     "url": "https://www.tyojyu.or.jp/net/byouki/kotsu-soshoushou/chiryo.html",
-     "locator": "骨粗鬆症の診断基準",
-     "quote": "骨密度が若年成人平均値の70%以下"
+     "ref": "x-repair-R-01:jsbmr-osteo-shindan-2012",
+     "title": "原発性骨粗鬆症の診断基準（2012年度改訂版）",
+     "url": "https://jsbmr.umin.jp/guide/pdf/g-guideline.pdf",
+     "locator": "表2 II．脆弱性骨折なし",
+     "quote": "骨密度（注4）が YAM の 70％以下または－2.5SD 以下 YAM： 若年成人平均値（腰椎では 20～44 歳，大腿骨近位部では 20～29 歳）"
     },
     {
-     "ref": "x-legacy-L05b:tyojyu-osteo-shindan",
-     "title": "骨粗鬆症の診断（健康長寿ネット）",
-     "url": "https://www.tyojyu.or.jp/net/byouki/kotsu-soshoushou/chiryo.html",
-     "locator": "骨粗鬆症の診断基準",
-     "quote": "骨密度が若年成人平均値の70%〜80%（骨量減少）で、脆弱性骨折の既往を伴う"
+     "ref": "x-repair-R-01:jsbmr-osteo-shindan-2012",
+     "title": "原発性骨粗鬆症の診断基準（2012年度改訂版）",
+     "url": "https://jsbmr.umin.jp/guide/pdf/g-guideline.pdf",
+     "locator": "表2 I．脆弱性骨折あり",
+     "quote": "1． 椎体骨折（注 2）または大腿骨近位部骨折あり 2． その他の脆弱性骨折（注 3）があり，骨密度（注 4）が YAM の 80％未満"
     },
     {
      "ref": "x-legacy-L05b:tyojyu-osteo-shindan",
@@ -2168,13 +2174,13 @@
      "quote": "レントゲン（DXA法またはMD法）"
     }
    ],
-   "asOf": "健康長寿ネット「骨粗鬆症の診断」2019年6月更新時点の記載（原発性骨粗鬆症の診断基準に基づく）",
+   "asOf": "原発性骨粗鬆症の診断基準（2012年度改訂版）（日本骨代謝学会・日本骨粗鬆症学会）",
    "origin": {
     "batch": "L05",
     "key": "lg-05-25",
     "by": "旧版（v2・AI作成）"
    },
-   "status": "provisional",
+   "status": "verified",
    "verification": {
     "date": "2026-11-26",
     "method": [
@@ -2182,16 +2188,19 @@
      "領域監査（臨床医学）で修正",
      "修正後の独立再監査（provisional）",
      "引用の機械照合（一次資料キャッシュ）",
-     "スキーマ・ICDコード・計算の機械検査"
+     "スキーマ・ICDコード・計算の機械検査",
+     "再監査の指摘に沿って再修正し、別エージェントの再監査（ブラインド解答一致）で合格"
     ],
     "roles": {
      "author": "旧版（AI作成・出典なし）",
      "solver": "solve:L05（別モデル・正答を見ずに解答）",
      "auditor": "audit:L05b（臨床医学）",
-     "reauditor": "reaudit:L05b"
+     "reauditor": "reaudit:L05b",
+     "repair": "repair:R-01",
+     "reauditor2": "reaudit:R-01"
     },
     "log": "bank/audit/legacy-L05b.audit.json#lg-05-25",
-    "notes": "再監査: x-legacy-L05b:tyojyu-osteo-shindan L42 DXA法, L48-50 診断基準（YAM70%以下／70〜80%＋脆弱性骨折）。キーは確実、blind一致。｜tyojyu 診断基準; MSD(DXA, WHO Tスコア)とも整合. Solver agrees."
+    "notes": "再修正: 解説・pointが健康長寿ネットの簡略版（YAM70％以下／70〜80％＋脆弱性骨折）を等式的に示していた点を、一次資料で解消。日本骨代謝学会・日本骨粗鬆症学会「原発性骨粗鬆症の診断基準（2012年度改訂版）」を取得・登録（x-repair-R-01:jsbmr-osteo-shindan-2012）し、表2どおりに correct・point を書き直した（椎体骨折または大腿骨近位部骨折あり／そ｜再監査: x-legacy-L05b:tyojyu-osteo-shindan L42 DXA法, L48-50 診断基準（YAM70%以下／70〜80%＋脆弱性骨折）。キーは確実、blind一致。｜tyojyu 診断基準; MSD(DXA, WHO Tスコア)とも整合. Solver agrees."
    }
   },
   {

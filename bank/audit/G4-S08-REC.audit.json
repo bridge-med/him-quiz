@@ -1,0 +1,214 @@
+{
+ "verdicts": [
+  {
+   "key": "G4-S08-REC-01",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:医師法 第24条第1項（175-176行）で「遅滞なく」を確認。日数・請求時期の定めは同条になし。版の施行日2026-05-21。"
+  },
+  {
+   "key": "G4-S08-REC-02",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:医師法施行規則 第23条第2号の括弧書き（現行版 施行日2026-10-01）を確認。費用・写真・職業・製造販売業者名は第23条各号になし。設問文は「第2号は…事項はどれか」とやや硬いが一義的。"
+  },
+  {
+   "key": "G4-S08-REC-03",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:医師法 第33条の3柱書・第1号（第24条違反＝50万円以下の罰金）、第31条（3年以下の拘禁刑／100万円）、第33条の2（第17条の3違反＝6月以下の拘禁刑又は10万円）を確認。同法に過料の規定なし。"
+  },
+  {
+   "key": "G4-S08-REC-04",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:医師法施行規則 第23条第1〜4号を確認。a住所・c診療の年月日のみ該当、生年月日・費用・医師氏名はなし。組合せは一意。"
+  },
+  {
+   "key": "G4-S08-REC-05",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:医師法施行規則 第23条は記載事項のみで、同規則の書式（第一号〜第五号書式）に診療録の様式はない。様式第一号は law:保険医療機関及び保険医療養担当規則 第22条。law:歯科医師法 第23条第1項も確認。"
+  },
+  {
+   "key": "G4-S08-REC-06",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:医師法 第24条第2項：勤務医の診療に関する診療録は「その病院又は診療所の管理者」が5年間保存。開設者・記載医師ではない。"
+  },
+  {
+   "key": "G4-S08-REC-07",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:医師法 第24条第2項「その他の診療に関するものは、その医師において、五年間」。2年は law:医療法施行規則 第20条第10号（過去二年間）。"
+  },
+  {
+   "key": "G4-S08-REC-08",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:保険医療機関及び保険医療養担当規則 第9条（完結の日から3年／診療録5年、主語は保険医療機関）、第8条（他の診療録と区別して整備）を確認。誤りはDのみ。"
+  },
+  {
+   "key": "G4-S08-REC-09",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:医師法 第24条第2項、law:歯科医師法 第23条第2項、law:保健師助産師看護師法 第42条第2項を確認。誤りはDのみ。solverのambiguous指摘（法律名）は根拠なし：3法とも実在し条文どおり。"
+  },
+  {
+   "key": "G4-S08-REC-10",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:医師法 第24条第2項の対象は第1項の診療録。手術記録・看護記録・検査所見記録・病院日誌は law:医療法施行規則 第20条第10号（過去二年間）。"
+  },
+  {
+   "key": "G4-S08-REC-11",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:医療法施行規則 第20条第10号と第21条の5第2号を対照。紹介状は後者のみ。処方せん・各科診療日誌・検査所見記録・入院診療計画書は両方。特定機能病院（第22条の3第2号）も同文で、pointも正しい。"
+  },
+  {
+   "key": "G4-S08-REC-12",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:医療法 第21条第1項柱書・第9号（主語は病院、記録を備えて置く）、第2項（療養病床を有する診療所は人員及び施設のみ）を確認。"
+  },
+  {
+   "key": "G4-S08-REC-13",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:医療法 第16条の2第1項第4号・第5号、law:医療法施行規則 第9条の16第4号・第5号、第9条の17、第9条の18を確認。閲覧対象は実績の数を明らかにする帳簿のみで、誤りはEのみ。"
+  },
+  {
+   "key": "G4-S08-REC-14",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:医療法 第22条第2・3号、第22条の2第3・4号、第22条の3第3号、第21条第1項第10・11号、law:医療法施行規則 第22条の7第2号を確認。"
+  },
+  {
+   "key": "G4-S08-REC-15",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:医療法施行規則 第20条第10号に手術記録・エックス線写真あり、診療録・助産録・照射録はなし。law:医師法 第24条第2項、law:保健師助産師看護師法 第42条第1項も確認。組合せは一意。"
+  }
+ ]
+}

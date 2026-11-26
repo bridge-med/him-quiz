@@ -1,0 +1,186 @@
+{
+ "verdicts": [
+  {
+   "key": "G4-S08-PRI-01",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:個人情報の保護に関する法律（版の施行日2026-11-02）第16条第3項で個人データの定義を確認。第2条第1項(生存する個人)・第4項(本人)・第5項(仮名加工)・第6項(匿名加工)、第16条第2項ただし書(国の機関・地方公共団体を除外)で誤答4肢を確認。盲検一致。"
+  },
+  {
+   "key": "G4-S08-PRI-02",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "info:ppc-iryoukaigo-guidance Ⅳ２．(2)家族等への病状説明(l.1028-1035)とⅣ９．(2)②の例、法第27条第1項第2号を確認。家族等の確認・必要な範囲・意識回復後の本人説明はいずれも原文どおり。届出はオプトアウト(第27条第2項)の要件で本場面と無関係。盲検一致。"
+  },
+  {
+   "key": "G4-S08-PRI-03",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "法第27条第5項第1号(委託)と ガイダンスⅣ９．(4)①「検査等の業務を委託する場合」(l.2066)を確認。保険会社・職場・学校・マーケティング会社の照会はⅣ９．(1)の「本人の同意を得る必要がある」例(l.1857-1882)。委託先の監督は法第25条。盲検一致。"
+  },
+  {
+   "key": "G4-S08-PRI-04",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "法第27条第2項ただし書(要配慮個人情報はオプトアウト不可)とガイダンスⅡ３．(l.493-497)を確認。千人超は規則第7条第4号(ガイダンスⅣ８．引用)で漏えい等報告の類型。盲検一致。"
+  },
+  {
+   "key": "G4-S08-PRI-05",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "法第26条第1項・第2項、規則第7条第1号(要配慮個人情報を含む個人データ、発生したおそれを含む、人数要件なし、高度な暗号化は除外)をガイダンスⅣ８．(l.1700-1750)で確認。USBメモリー紛失は同所の具体例。設問は暗号化なしと明示しており条件は完全。盲検一致。"
+  },
+  {
+   "key": "G4-S08-PRI-06",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "法第34条第1項〜第3項、第36条(理由説明の努力義務)を条文で確認。評価に関する情報はガイダンスⅣ１５．【法の規定により遵守すべき事項等】①(ｳ)(l.3070-3072)。誤り肢は第34条第3項に反する。盲検一致。"
+  },
+  {
+   "key": "G4-S08-PRI-07",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ガイダンスⅡ２．(l.431-439)で個人識別符号の例(DNA塩基配列、健康保険法に基づく保険者番号や被保険者等記号・番号)を確認。誤答4肢はⅡ３．(l.487-491)の要配慮個人情報の例。盲検一致(medium)だが原文で一意。"
+  },
+  {
+   "key": "G4-S08-PRI-08",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "info:mhlw-shinryojoho-teikyo-shishin 別添7(2)①「満15歳以上の未成年者」を確認。盲検一致。"
+  },
+  {
+   "key": "G4-S08-PRI-09",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "指針7(3)①(書面が望ましい・理由の記載要求と聴取は不適切・オンライン申立て可)、7(3)③(担当医等の意見、速やかに決定・通知、日時場所方法の指定)を確認。オンライン申立ての追加が令和5年1月改正であることはキャッシュ済みの改正通知(医政発0125第7号)新旧対照表(src/info/mhlw_shinryojoho_shishin_r0501kaisei.txt l.41-44)で確認。盲検一致。"
+  },
+  {
+   "key": "G4-S08-PRI-10",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "指針9「患者の配偶者、子、父母及びこれに準ずる者(法定代理人を含む。)」を確認。法定相続人・親等・生前の指定という基準は指針にない。choiceNotes[0]の「これらに準ずる者」は原文「これに準ずる者」の言い換えで内容は誤りでない。盲検一致。"
+  },
+  {
+   "key": "G4-S08-PRI-11",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ガイダンスⅠ８．(l.238-252: 死者の情報は原則対象外、遺族への提供は指針9に従う)、Ⅰ４．(l.173-175: 死亡後も同等の安全管理措置)、指針9(遅滞なく遺族へ提供・7(1)(3)(4)と8の準用・生前の意思と名誉の尊重)を確認。一律に応じないとする肢のみ誤り。盲検一致。"
+  },
+  {
+   "key": "G4-S08-PRI-12",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "指針8末尾「原則として、申立人に対して文書によりその理由を示さなければならない。また、苦情処理の体制についても併せて説明」を確認。拒み得る事由2つ、指針11の医療安全支援センターの位置づけも原文どおり。盲検一致。"
+  },
+  {
+   "key": "G4-S08-PRI-13",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "法第33条第1項・第2項第1号、第37条第3項(令第13条はガイダンスⅣ１６．l.3153-3158, (2) l.3173-3176で確認)、第38条第1項・第2項、第39条第1項(事前の請求・到達後2週間、拒んだときは例外)を確認。誤り肢は第39条に反する。盲検一致。"
+  }
+ ]
+}

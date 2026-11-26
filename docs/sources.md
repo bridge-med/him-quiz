@@ -1,6 +1,6 @@
 # 一次資料の一覧
 
-問題の根拠として取得・照合した資料 580 件（取得日 2026-11-24〜）。本文のテキストはリポジトリに含めず、作業環境のキャッシュで引用を機械照合した。「引用数」は verified の問題がその資料を根拠に挙げている数。
+問題の根拠として取得・照合した資料 581 件（取得日 2026-11-24〜）。本文のテキストはリポジトリに含めず、作業環境のキャッシュで引用を機械照合した。「引用数」は verified の問題がその資料を根拠に挙げている数。
 
 ## 日本病院会（通信教育・認定試験）
 
@@ -19,35 +19,35 @@
 
 | ID | 資料 | 発行 | 基準時点 | 引用数 |
 |---|---|---|---|---:|
-| `law:医療法` | [医療法](https://laws.e-gov.go.jp/law/323AC0000000205) | e-Gov法令検索（デジタル庁） | 2026-10-01 | 52 |
-| `law:医療法施行規則` | [医療法施行規則](https://laws.e-gov.go.jp/law/323M40000100050) | e-Gov法令検索（デジタル庁） | 2026-10-01 | 48 |
-| `law:健康保険法` | [健康保険法](https://laws.e-gov.go.jp/law/211AC0000000070) | e-Gov法令検索（デジタル庁） | 2026-10-01 | 26 |
+| `law:医療法` | [医療法](https://laws.e-gov.go.jp/law/323AC0000000205) | e-Gov法令検索（デジタル庁） | 2026-10-01 | 58 |
+| `law:医療法施行規則` | [医療法施行規則](https://laws.e-gov.go.jp/law/323M40000100050) | e-Gov法令検索（デジタル庁） | 2026-10-01 | 58 |
+| `law:健康保険法` | [健康保険法](https://laws.e-gov.go.jp/law/211AC0000000070) | e-Gov法令検索（デジタル庁） | 2026-10-01 | 31 |
+| `law:個人情報の保護に関する法律` | [個人情報の保護に関する法律](https://laws.e-gov.go.jp/law/415AC0000000057) | e-Gov法令検索（デジタル庁） | 2026-11-02 | 22 |
 | `law:介護保険法` | [介護保険法](https://laws.e-gov.go.jp/law/409AC0000000123) | e-Gov法令検索（デジタル庁） | 2026-10-01 | 21 |
-| `law:保険医療機関及び保険医療養担当規則` | [保険医療機関及び保険医療養担当規則](https://laws.e-gov.go.jp/law/332M50000100015) | e-Gov法令検索（デジタル庁） | 2026-06-01 | 14 |
-| `law:個人情報の保護に関する法律` | [個人情報の保護に関する法律](https://laws.e-gov.go.jp/law/415AC0000000057) | e-Gov法令検索（デジタル庁） | 2026-11-02 | 11 |
+| `law:がん登録等の推進に関する法律` | [がん登録等の推進に関する法律](https://laws.e-gov.go.jp/law/425AC0100000111) | e-Gov法令検索（デジタル庁） | 2026-10-01 | 19 |
+| `law:医師法` | [医師法](https://laws.e-gov.go.jp/law/323AC0000000201) | e-Gov法令検索（デジタル庁） | 2026-05-21 | 19 |
+| `law:保険医療機関及び保険医療養担当規則` | [保険医療機関及び保険医療養担当規則](https://laws.e-gov.go.jp/law/332M50000100015) | e-Gov法令検索（デジタル庁） | 2026-06-01 | 17 |
 | `law:労働基準法` | [労働基準法](https://laws.e-gov.go.jp/law/322AC0000000049) | e-Gov法令検索（デジタル庁） | 2026-07-17 | 9 |
-| `law:医師法` | [医師法](https://laws.e-gov.go.jp/law/323AC0000000201) | e-Gov法令検索（デジタル庁） | 2026-05-21 | 9 |
-| `law:がん登録等の推進に関する法律` | [がん登録等の推進に関する法律](https://laws.e-gov.go.jp/law/425AC0100000111) | e-Gov法令検索（デジタル庁） | 2026-10-01 | 7 |
+| `law:保健師助産師看護師法` | [保健師助産師看護師法](https://laws.e-gov.go.jp/law/323AC0000000203) | e-Gov法令検索（デジタル庁） | 2026-05-21 | 7 |
 | `law:感染症の予防及び感染症の患者に対する医療に関する法律` | [感染症の予防及び感染症の患者に対する医療に関する法律](https://laws.e-gov.go.jp/law/410AC0000000114) | e-Gov法令検索（デジタル庁） | 2026-10-01 | 7 |
+| `law:医師法施行規則` | [医師法施行規則](https://laws.e-gov.go.jp/law/323M40000100047) | e-Gov法令検索（デジタル庁） | 2026-10-01 | 6 |
 | `law:薬剤師法` | [薬剤師法](https://laws.e-gov.go.jp/law/335AC0000000146) | e-Gov法令検索（デジタル庁） | 2026-05-21 | 6 |
-| `law:保健師助産師看護師法` | [保健師助産師看護師法](https://laws.e-gov.go.jp/law/323AC0000000203) | e-Gov法令検索（デジタル庁） | 2026-05-21 | 5 |
 | `law:救急救命士法` | [救急救命士法](https://laws.e-gov.go.jp/law/403AC0000000036) | e-Gov法令検索（デジタル庁） | 2025-06-01 | 4 |
 | `law:介護保険法施行令` | [介護保険法施行令](https://laws.e-gov.go.jp/law/410CO0000000412) | e-Gov法令検索（デジタル庁） | 2026-10-01 | 3 |
 | `law:労働者災害補償保険法` | [労働者災害補償保険法](https://laws.e-gov.go.jp/law/322AC0000000050) | e-Gov法令検索（デジタル庁） | 2026-07-17 | 3 |
+| `law:国民健康保険法` | [国民健康保険法](https://laws.e-gov.go.jp/law/333AC0000000192) | e-Gov法令検索（デジタル庁） | 2026-10-01 | 3 |
 | `law:戸籍法` | [戸籍法](https://laws.e-gov.go.jp/law/322AC0000000224) | e-Gov法令検索（デジタル庁） | 2026-09-03 | 3 |
+| `law:歯科医師法` | [歯科医師法](https://laws.e-gov.go.jp/law/323AC0000000202) | e-Gov法令検索（デジタル庁） | 2026-05-21 | 3 |
 | `law:精神保健及び精神障害者福祉に関する法律` | [精神保健及び精神障害者福祉に関する法律](https://laws.e-gov.go.jp/law/325AC0100000123) | e-Gov法令検索（デジタル庁） | 2026-10-01 | 3 |
 | `law:統計法` | [統計法](https://laws.e-gov.go.jp/law/419AC0000000053) | e-Gov法令検索（デジタル庁） | 2026-06-24 | 3 |
 | `law:薬剤師法施行規則` | [薬剤師法施行規則](https://laws.e-gov.go.jp/law/336M50000100005) | e-Gov法令検索（デジタル庁） | 2026-10-01 | 3 |
 | `law:診療放射線技師法` | [診療放射線技師法](https://laws.e-gov.go.jp/law/326AC0100000226) | e-Gov法令検索（デジタル庁） | 2025-06-01 | 3 |
 | `law:電子署名及び認証業務に関する法律` | [電子署名及び認証業務に関する法律](https://laws.e-gov.go.jp/law/412AC0000000102) | e-Gov法令検索（デジタル庁） | 2025-06-01 | 3 |
 | `law:高齢者の医療の確保に関する法律` | [高齢者の医療の確保に関する法律](https://laws.e-gov.go.jp/law/357AC0000000080) | e-Gov法令検索（デジタル庁） | 2026-10-01 | 3 |
-| `law:医師法施行規則` | [医師法施行規則](https://laws.e-gov.go.jp/law/323M40000100047) | e-Gov法令検索（デジタル庁） | 2026-10-01 | 2 |
 | `law:医薬品、医療機器等の品質、有効性及び安全性の確保等に関する法律` | [医薬品、医療機器等の品質、有効性及び安全性の確保等に関する法律](https://laws.e-gov.go.jp/law/335AC0000000145) | e-Gov法令検索（デジタル庁） | 2026-05-21 | 2 |
-| `law:国民健康保険法` | [国民健康保険法](https://laws.e-gov.go.jp/law/333AC0000000192) | e-Gov法令検索（デジタル庁） | 2026-10-01 | 2 |
 | `law:民間事業者等が行う書面の保存等における情報通信の技術の利用に関する法律` | [民間事業者等が行う書面の保存等における情報通信の技術の利用に関する法律](https://laws.e-gov.go.jp/law/416AC0000000149) | e-Gov法令検索（デジタル庁） | 2026-11-02 | 2 |
 | `law:生活保護法` | [生活保護法](https://laws.e-gov.go.jp/law/325AC0000000144) | e-Gov法令検索（デジタル庁） | 2026-10-01 | 2 |
 | `law:刑法` | [刑法](https://laws.e-gov.go.jp/law/140AC0000000045) | e-Gov法令検索（デジタル庁） | 2026-05-21 | 1 |
-| `law:歯科医師法` | [歯科医師法](https://laws.e-gov.go.jp/law/323AC0000000202) | e-Gov法令検索（デジタル庁） | 2026-05-21 | 1 |
 | `law:障害者の日常生活及び社会生活を総合的に支援するための法律` | [障害者の日常生活及び社会生活を総合的に支援するための法律](https://laws.e-gov.go.jp/law/417AC0000000123) | e-Gov法令検索（デジタル庁） | 2026-10-01 | 1 |
 | `law:予防接種法` | [予防接種法](https://laws.e-gov.go.jp/law/323AC0000000068) | e-Gov法令検索（デジタル庁） | 2026-10-01 | 0 |
 | `law:健康増進法` | [健康増進法](https://laws.e-gov.go.jp/law/414AC0000000103) | e-Gov法令検索（デジタル庁） | 2025-12-12 | 0 |
@@ -76,34 +76,34 @@
 
 | ID | 資料 | 発行 | 基準時点 | 引用数 |
 |---|---|---|---|---:|
-| `icd:instruction` | [疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）](https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf) | 厚生労働省 | ICD-10（2013年版）準拠 | 181 |
+| `icd:instruction` | [疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）](https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf) | 厚生労働省 | ICD-10（2013年版）準拠 | 242 |
+| `icd:naiyou02` | [ICD-10（2013年版）準拠 内容例示表 第2章 新生物＜腫瘍＞（C00-D48）](https://www.mhlw.go.jp/toukei/sippei/dl/naiyou02.pdf) | 厚生労働省 | ICD-10（2013年版）準拠 | 38 |
 | `icd:naiyou09` | [ICD-10（2013年版）準拠 内容例示表 第9章 循環器系の疾患（I00-I99）](https://www.mhlw.go.jp/toukei/sippei/dl/naiyou09.pdf) | 厚生労働省 | ICD-10（2013年版）準拠 | 36 |
-| `icd:naiyou02` | [ICD-10（2013年版）準拠 内容例示表 第2章 新生物＜腫瘍＞（C00-D48）](https://www.mhlw.go.jp/toukei/sippei/dl/naiyou02.pdf) | 厚生労働省 | ICD-10（2013年版）準拠 | 34 |
-| `icd:naiyou04` | [ICD-10（2013年版）準拠 内容例示表 第4章 内分泌，栄養及び代謝疾患（E00-E90）](https://www.mhlw.go.jp/toukei/sippei/dl/naiyou04.pdf) | 厚生労働省 | ICD-10（2013年版）準拠 | 31 |
+| `icd:naiyou04` | [ICD-10（2013年版）準拠 内容例示表 第4章 内分泌，栄養及び代謝疾患（E00-E90）](https://www.mhlw.go.jp/toukei/sippei/dl/naiyou04.pdf) | 厚生労働省 | ICD-10（2013年版）準拠 | 32 |
 | `icd:naiyou10` | [ICD-10（2013年版）準拠 内容例示表 第10章 呼吸器系の疾患（J00-J99）](https://www.mhlw.go.jp/toukei/sippei/dl/naiyou10.pdf) | 厚生労働省 | ICD-10（2013年版）準拠 | 31 |
+| `icd:naiyou19` | [ICD-10（2013年版）準拠 内容例示表 第19章 損傷，中毒及びその他の外因の影響（S00-T98）](https://www.mhlw.go.jp/toukei/sippei/dl/naiyou19.pdf) | 厚生労働省 | ICD-10（2013年版）準拠 | 31 |
+| `icd:naiyou01` | [ICD-10（2013年版）準拠 内容例示表 第1章 感染症及び寄生虫症（A00-B99）](https://www.mhlw.go.jp/toukei/sippei/dl/naiyou01.pdf) | 厚生労働省 | ICD-10（2013年版）準拠 | 30 |
 | `icd:naiyou11` | [ICD-10（2013年版）準拠 内容例示表 第11章 消化器系の疾患（K00-K93）](https://www.mhlw.go.jp/toukei/sippei/dl/naiyou11.pdf) | 厚生労働省 | ICD-10（2013年版）準拠 | 30 |
-| `icd:naiyou01` | [ICD-10（2013年版）準拠 内容例示表 第1章 感染症及び寄生虫症（A00-B99）](https://www.mhlw.go.jp/toukei/sippei/dl/naiyou01.pdf) | 厚生労働省 | ICD-10（2013年版）準拠 | 26 |
-| `icd:naiyou15` | [ICD-10（2013年版）準拠 内容例示表 第15章 妊娠，分娩及び産じょく＜褥＞（O00-O99）](https://www.mhlw.go.jp/toukei/sippei/dl/naiyou15.pdf) | 厚生労働省 | ICD-10（2013年版）準拠 | 19 |
+| `icd:naiyou15` | [ICD-10（2013年版）準拠 内容例示表 第15章 妊娠，分娩及び産じょく＜褥＞（O00-O99）](https://www.mhlw.go.jp/toukei/sippei/dl/naiyou15.pdf) | 厚生労働省 | ICD-10（2013年版）準拠 | 20 |
+| `icd:rikai` | [疾病、傷害及び死因の統計分類の正しい理解と普及に向けて（ICD-10（2013年版）準拠）](https://www.mhlw.go.jp/toukei/sippei/dl/ICD-10_2013_2802.pdf) | 厚生労働省 | ICD-10（2013年版）準拠 | 20 |
+| `icd:naiyou14` | [ICD-10（2013年版）準拠 内容例示表 第14章 腎尿路生殖器系の疾患（N00-N99）](https://www.mhlw.go.jp/toukei/sippei/dl/naiyou14.pdf) | 厚生労働省 | ICD-10（2013年版）準拠 | 16 |
 | `icd:naiyou16` | [ICD-10（2013年版）準拠 内容例示表 第16章 周産期に発生した病態（P00-P96）](https://www.mhlw.go.jp/toukei/sippei/dl/naiyou16.pdf) | 厚生労働省 | ICD-10（2013年版）準拠 | 16 |
-| `icd:naiyou14` | [ICD-10（2013年版）準拠 内容例示表 第14章 腎尿路生殖器系の疾患（N00-N99）](https://www.mhlw.go.jp/toukei/sippei/dl/naiyou14.pdf) | 厚生労働省 | ICD-10（2013年版）準拠 | 14 |
-| `icd:naiyou20` | [ICD-10（2013年版）準拠 内容例示表 第20章 傷病及び死亡の外因（V01-Y98）](https://www.mhlw.go.jp/toukei/sippei/dl/naiyou20.pdf) | 厚生労働省 | ICD-10（2013年版）準拠 | 14 |
+| `icd:naiyou20` | [ICD-10（2013年版）準拠 内容例示表 第20章 傷病及び死亡の外因（V01-Y98）](https://www.mhlw.go.jp/toukei/sippei/dl/naiyou20.pdf) | 厚生労働省 | ICD-10（2013年版）準拠 | 15 |
+| `icd:naiyou03` | [ICD-10（2013年版）準拠 内容例示表 第3章 血液及び造血器の疾患並びに免疫機構の障害（D50-D89）](https://www.mhlw.go.jp/toukei/sippei/dl/naiyou03.pdf) | 厚生労働省 | ICD-10（2013年版）準拠 | 12 |
+| `icd:naiyou13` | [ICD-10（2013年版）準拠 内容例示表 第13章 筋骨格系及び結合組織の疾患（M00-M99）](https://www.mhlw.go.jp/toukei/sippei/dl/naiyou13.pdf) | 厚生労働省 | ICD-10（2013年版）準拠 | 12 |
 | `icd:naiyou18` | [ICD-10（2013年版）準拠 内容例示表 第18章 症状，徴候及び異常臨床所見・異常検査所見で他に分類されないもの（R00-R99）](https://www.mhlw.go.jp/toukei/sippei/dl/naiyou18.pdf) | 厚生労働省 | ICD-10（2013年版）準拠 | 12 |
 | `icd:naiyou21` | [ICD-10（2013年版）準拠 内容例示表 第21章 健康状態に影響を及ぼす要因及び保健サービスの利用（Z00-Z99）](https://www.mhlw.go.jp/toukei/sippei/dl/naiyou21.pdf) | 厚生労働省 | ICD-10（2013年版）準拠 | 12 |
-| `icd:naiyou13` | [ICD-10（2013年版）準拠 内容例示表 第13章 筋骨格系及び結合組織の疾患（M00-M99）](https://www.mhlw.go.jp/toukei/sippei/dl/naiyou13.pdf) | 厚生労働省 | ICD-10（2013年版）準拠 | 11 |
-| `icd:naiyou19` | [ICD-10（2013年版）準拠 内容例示表 第19章 損傷，中毒及びその他の外因の影響（S00-T98）](https://www.mhlw.go.jp/toukei/sippei/dl/naiyou19.pdf) | 厚生労働省 | ICD-10（2013年版）準拠 | 11 |
 | `icd:naiyou17` | [ICD-10（2013年版）準拠 内容例示表 第17章 先天奇形，変形及び染色体異常（Q00-Q99）](https://www.mhlw.go.jp/toukei/sippei/dl/naiyou17.pdf) | 厚生労働省 | ICD-10（2013年版）準拠 | 10 |
-| `icd:naiyou03` | [ICD-10（2013年版）準拠 内容例示表 第3章 血液及び造血器の疾患並びに免疫機構の障害（D50-D89）](https://www.mhlw.go.jp/toukei/sippei/dl/naiyou03.pdf) | 厚生労働省 | ICD-10（2013年版）準拠 | 9 |
 | `icd:naiyou22` | [ICD-10（2013年版）準拠 内容例示表 第22章 特殊目的用コード（U00-U99）](https://www.mhlw.go.jp/toukei/sippei/dl/naiyou22.pdf) | 厚生労働省 | ICD-10（2013年版）準拠 | 9 |
 | `icd:naiyou05` | [ICD-10（2013年版）準拠 内容例示表 第5章 精神及び行動の障害（F00-F99）](https://www.mhlw.go.jp/toukei/sippei/dl/naiyou05.pdf) | 厚生労働省 | ICD-10（2013年版）準拠 | 8 |
+| `icd:naiyou06` | [ICD-10（2013年版）準拠 内容例示表 第6章 神経系の疾患（G00-G99）](https://www.mhlw.go.jp/toukei/sippei/dl/naiyou06.pdf) | 厚生労働省 | ICD-10（2013年版）準拠 | 8 |
 | `icd:kihon2013` | [基本分類表（2013年版）準拠](https://www.mhlw.go.jp/toukei/sippei/xls/kihon2013.xlsx) | 厚生労働省 | ICD-10（2013年版）準拠 | 7 |
 | `icd:naiyou07` | [ICD-10（2013年版）準拠 内容例示表 第7章 眼及び付属器の疾患（H00-H59）](https://www.mhlw.go.jp/toukei/sippei/dl/naiyou07.pdf) | 厚生労働省 | ICD-10（2013年版）準拠 | 6 |
 | `icd:naiyou12` | [ICD-10（2013年版）準拠 内容例示表 第12章 皮膚及び皮下組織の疾患（L00-L99）](https://www.mhlw.go.jp/toukei/sippei/dl/naiyou12.pdf) | 厚生労働省 | ICD-10（2013年版）準拠 | 6 |
-| `icd:rikai` | [疾病、傷害及び死因の統計分類の正しい理解と普及に向けて（ICD-10（2013年版）準拠）](https://www.mhlw.go.jp/toukei/sippei/dl/ICD-10_2013_2802.pdf) | 厚生労働省 | ICD-10（2013年版）準拠 | 6 |
-| `icd:naiyou06` | [ICD-10（2013年版）準拠 内容例示表 第6章 神経系の疾患（G00-G99）](https://www.mhlw.go.jp/toukei/sippei/dl/naiyou06.pdf) | 厚生労働省 | ICD-10（2013年版）準拠 | 5 |
+| `icd:shiin2013` | [死因分類表（2013年版）準拠](https://www.mhlw.go.jp/toukei/sippei/dl/shiin2013.pdf) | 厚生労働省 | ICD-10（2013年版）準拠 | 6 |
 | `icd:shippei2013` | [疾病分類表（2013年版）準拠](https://www.mhlw.go.jp/toukei/sippei/dl/shippei2013.pdf) | 厚生労働省 | ICD-10（2013年版）準拠 | 5 |
-| `icd:shiin2013` | [死因分類表（2013年版）準拠](https://www.mhlw.go.jp/toukei/sippei/dl/shiin2013.pdf) | 厚生労働省 | ICD-10（2013年版）準拠 | 3 |
+| `icd:abc_r07` | [ICDのABC 令和7年度版](https://www.mhlw.go.jp/toukei/sippei/dl/icdabc_r07.pdf) | 厚生労働省 | 令和7年2月20日発行 | 2 |
 | `icd:naiyou08` | [ICD-10（2013年版）準拠 内容例示表 第8章 耳及び乳様突起の疾患（H60-H95）](https://www.mhlw.go.jp/toukei/sippei/dl/naiyou08.pdf) | 厚生労働省 | ICD-10（2013年版）準拠 | 2 |
-| `icd:abc_r07` | [ICDのABC 令和7年度版](https://www.mhlw.go.jp/toukei/sippei/dl/icdabc_r07.pdf) | 厚生労働省 | 令和7年2月20日発行 | 0 |
 | `icd:eikyo2013` | [ICD-10（2013年版）適用による死亡統計への影響](https://www.mhlw.go.jp/toukei/list/dl/icd_2013_eikyo.pdf) | 厚生労働省 | ICD-10（2013年版）準拠 | 0 |
 | `icd:goriyou` | [疾病、傷害及び死因の統計分類（統計の利用ページ）](https://www.mhlw.go.jp/stf/toukei/goriyou/sippei.html) | 厚生労働省 | unknown | 0 |
 | `icd:icd9cmp` | [ICD-10とICD-9の比較](https://www.mhlw.go.jp/toukei/sippei/icd.html) | 厚生労働省 | unknown | 0 |
@@ -113,17 +113,17 @@
 
 | ID | 資料 | 発行 | 基準時点 | 引用数 |
 |---|---|---|---|---:|
-| `icdbg:soumu-kokuji-r08-11` | [統計法第28条の規定に基づき、疾病、傷害及び死因に関する分類を定める件（令和8年総務省告示第11号）](https://www.soumu.go.jp/main_content/001051239.pdf) | 総務省 | 2026-01-19告示、2027-01-01施行 | 9 |
+| `icdbg:mhlw-icf-ja-2002` | [「国際生活機能分類－国際障害分類改訂版－」（日本語版）の厚生労働省ホームページ掲載について](https://www.mhlw.go.jp/houdou/2002/08/h0805-1.html) | 厚生労働省 社会・援護局障害保健福祉部企画課 | 2002-08-05 | 12 |
+| `icdbg:soumu-kokuji-r08-11` | [統計法第28条の規定に基づき、疾病、傷害及び死因に関する分類を定める件（令和8年総務省告示第11号）](https://www.soumu.go.jp/main_content/001051239.pdf) | 総務省 | 2026-01-19告示、2027-01-01施行 | 12 |
+| `icdbg:mhlw-icd11-reference-guide-ja` | [ICD-11 死亡及び疾病統計のための国際疾病分類 第11回改訂版 レファレンスガイド（日本語訳）](https://www.mhlw.go.jp/content/10700000/001637950.pdf) | 厚生労働省 政策統括官（統計・情報システム管理、労使関係担当）（原著：WHO） | 2026-06-02（表紙。原文は2023年公表のICD-11 Reference Guide） | 7 |
+| `icdbg:mhlw-icd11-stat-classification` | [ICD-11準拠の統計分類とは](https://www.mhlw.go.jp/content/10700000/001638023.pdf) | 厚生労働省 | unknown | 3 |
 | `icdbg:soumu-kokuji-h27-35` | [統計法第28条の規定に基づき、疾病、傷害及び死因に関する分類を定める件（平成27年総務省告示第35号。最終改正 令和6年総務省告示第164号）](https://www.soumu.go.jp/main_content/000946283.pdf) | 総務省 | 2015-02-13告示、2016-01-01施行（最終改正 2024-05-15） | 3 |
-| `icdbg:mhlw-icd11-reference-guide-ja` | [ICD-11 死亡及び疾病統計のための国際疾病分類 第11回改訂版 レファレンスガイド（日本語訳）](https://www.mhlw.go.jp/content/10700000/001637950.pdf) | 厚生労働省 政策統括官（統計・情報システム管理、労使関係担当）（原著：WHO） | 2026-06-02（表紙。原文は2023年公表のICD-11 Reference Guide） | 2 |
 | `icdbg:mhlw-icd11-overview` | [ICD-11の概要](https://www.mhlw.go.jp/content/10700000/001642765.pdf) | 厚生労働省 | unknown | 1 |
-| `icdbg:mhlw-icf-ja-2002` | [「国際生活機能分類－国際障害分類改訂版－」（日本語版）の厚生労働省ホームページ掲載について](https://www.mhlw.go.jp/houdou/2002/08/h0805-1.html) | 厚生労働省 社会・援護局障害保健福祉部企画課 | 2002-08-05 | 1 |
+| `icdbg:mhlw-icf-common-language` | [ＩＣＦ（国際生活機能分類）－「生きることの全体像」についての「共通言語」－（第1回社会保障審議会統計分科会生活機能分類専門委員会 参考資料3）](https://www.mhlw.go.jp/stf/shingi/2r9852000002ksqi-att/2r9852000002kswh.pdf) | 厚生労働省（社会保障審議会統計分科会生活機能分類専門委員会資料。作成：国立長寿医療センター研究所 大川弥生） | 2006（第1回委員会参考資料。PDF作成2006-07-25） | 1 |
+| `icdbg:mhlw-sippei-icd11` | [疾病、傷害及び死因の統計分類（ICD-11準拠）](https://www.mhlw.go.jp/stf/toukei/goriyou/sippei.html) | 厚生労働省（政策統括官付参事官付国際分類情報管理室） | unknown（頁に更新日なし。掲載物の最新=2026-06-02。令和8年総務省告示第11号、令和9年1月1日施行予定） | 1 |
 | `icdbg:whofic-japan-about` | [WHO-FICについて](http://who-fic-japan.mhlw.go.jp/about03.html) | 日本WHO国際統計分類協力センター（厚生労働省 国際分類情報管理室） | unknown | 1 |
 | `icdbg:mhlw-icd-bukai7-material1` | [第6回ICD部会以降のICD-10の動向について（第7回社会保障審議会統計分科会疾病、傷害及び死因分類部会 資料1）](https://www.mhlw.go.jp/content/10701000/001437696.pdf) | 厚生労働省 | unknown（本文に2018年6月22日の統計分科会報告の記載） | 0 |
-| `icdbg:mhlw-icd11-stat-classification` | [ICD-11準拠の統計分類とは](https://www.mhlw.go.jp/content/10700000/001638023.pdf) | 厚生労働省 | unknown | 0 |
-| `icdbg:mhlw-icf-common-language` | [ＩＣＦ（国際生活機能分類）－「生きることの全体像」についての「共通言語」－（第1回社会保障審議会統計分科会生活機能分類専門委員会 参考資料3）](https://www.mhlw.go.jp/stf/shingi/2r9852000002ksqi-att/2r9852000002kswh.pdf) | 厚生労働省（社会保障審議会統計分科会生活機能分類専門委員会資料。作成：国立長寿医療センター研究所 大川弥生） | 2006（第1回委員会参考資料。PDF作成2006-07-25） | 0 |
 | `icdbg:mhlw-sippei-icd10` | [「疾病、傷害及び死因の統計分類」（ICD-10準拠）](https://www.mhlw.go.jp/toukei/sippei/) | 厚生労働省（政策統括官付参事官付国際分類情報管理室） | unknown（平成27年総務省告示第35号・令和8年12月31日廃止予定と記載） | 0 |
-| `icdbg:mhlw-sippei-icd11` | [疾病、傷害及び死因の統計分類（ICD-11準拠）](https://www.mhlw.go.jp/stf/toukei/goriyou/sippei.html) | 厚生労働省（政策統括官付参事官付国際分類情報管理室） | unknown（頁に更新日なし。掲載物の最新=2026-06-02。令和8年総務省告示第11号、令和9年1月1日施行予定） | 0 |
 | `icdbg:mhlw-toshin-r070623` | [「疾病及び関連保健問題の国際統計分類」第11回改訂分類（ICD-11）の「疾病、傷害及び死因の統計分類」への適用について（答申）](https://www.mhlw.go.jp/content/10700000/001640308.pdf) | 厚生労働省（社会保障審議会） | 2025-06-23（答申。統計分科会報告2025-06-20、部会報告2025-06-11） | 0 |
 | `icdbg:mhlw-toshin-r071211` | [「疾病及び関連保健問題の国際統計分類」第11回改訂分類（ICD-11）の「疾病、傷害及び死因の統計分類」への適用に係る基本分類表の一部改正について（答申）](https://www.mhlw.go.jp/content/10700000/001640310.pdf) | 厚生労働省（社会保障審議会） | 2025-12-11（答申） | 0 |
 | `icdbg:soumu-statistical-standards` | [統計基準等](https://www.soumu.go.jp/toukei_toukatsu/index/seido/kijun.htm) | 総務省 | 令和8年1月追記（ICD-11準拠の告示） | 0 |
@@ -133,6 +133,7 @@
 
 | ID | 資料 | 発行 | 基準時点 | 引用数 |
 |---|---|---|---|---:|
+| `who:icdo` | [International Classification of Diseases for Oncology, 3rd Edition (ICD-O-3)](https://www.who.int/standards/classifications/other-classifications/international-classification-of-diseases-for-oncology) | World Health Organization (WHO) | unknown（取得時点） | 2 |
 | `who:icd11-fact-sheet-2026` | [ICD-11 Fact Sheet](https://cdn.who.int/media/docs/default-source/classification/icd/icd11/icd11_fact_sheet_2026.pdf?sfvrsn=fa9749d0_9&download=true) | World Health Organization (WHO) | 2026-05（Fact sheet · May 2026） | 1 |
 | `who:wha72-15` | [WHA72.15 Eleventh revision of the International Classification of Diseases](https://cdn.who.int/media/docs/default-source/classification/icd/icd11/a72_29-en_icd-11-adoption.pdf?sfvrsn=d10b6c4_10&download=true) | World Health Organization (WHO) — Seventy-second World Health Assembly | 2019-05-28 | 1 |
 | `who:classifications-whofic` | [Classifications and terminologies (WHO Family of International Classifications)](https://www.who.int/standards/classifications) | World Health Organization (WHO) | unknown（取得時点） | 0 |
@@ -141,7 +142,6 @@
 | `who:icd10-official-updates` | [List of Official ICD-10 updates](https://www.who.int/standards/classifications/classification-of-diseases/list-of-official-icd-10-updates) | World Health Organization (WHO) | unknown（更新リスト1996〜2019） | 0 |
 | `who:icd11-in-effect-2022` | [WHO’s new International Classification of Diseases (ICD-11) comes into effect](https://www.who.int/news/item/11-02-2022-who-s-new-international-classification-of-diseases-(icd-11)-comes-into-effect) | World Health Organization (WHO) | 2022-02-11 | 0 |
 | `who:icd11-release-2018` | [WHO releases new International Classification of Diseases (ICD 11)](https://www.who.int/news/item/18-06-2018-who-releases-new-international-classification-of-diseases-(icd-11)) | World Health Organization (WHO) | 2018-06-18 | 0 |
-| `who:icdo` | [International Classification of Diseases for Oncology, 3rd Edition (ICD-O-3)](https://www.who.int/standards/classifications/other-classifications/international-classification-of-diseases-for-oncology) | World Health Organization (WHO) | unknown（取得時点） | 0 |
 | `who:icf` | [International Classification of Functioning, Disability and Health (ICF)](https://www.who.int/standards/classifications/international-classification-of-functioning-disability-and-health) | World Health Organization (WHO) | unknown（取得時点） | 0 |
 | `who:whofic-network` | [WHO-FIC Family of International Classifications Network](https://www.who.int/standards/classifications/who-fic-maintenance) | World Health Organization (WHO) | unknown（取得時点） | 0 |
 
@@ -149,33 +149,33 @@
 
 | ID | 資料 | 発行 | 基準時点 | 引用数 |
 |---|---|---|---|---:|
-| `ins:dpc-coding-text-v7` | [DPC／PDPS 傷病名コーディングテキスト 改定版（第７版）](https://www.mhlw.go.jp/content/12400000/001684575.pdf) | 厚生労働省保険局医療課 | 令和8年6月（第7版） | 57 |
-| `ins:r08-kihon-shisetsukijun-tsuchi` | [基本診療料の施設基準等及びその届出に関する手続きの取扱いについて（令和８年３月５日保医発0305第７号）](https://www.mhlw.go.jp/content/12400000/001757361.pdf) | 厚生労働省保険局医療課 | 令和8年3月5日（令和8年10月7日訂正反映版「1007訂正後」） | 36 |
+| `ins:dpc-coding-text-v7` | [DPC／PDPS 傷病名コーディングテキスト 改定版（第７版）](https://www.mhlw.go.jp/content/12400000/001684575.pdf) | 厚生労働省保険局医療課 | 令和8年6月（第7版） | 63 |
+| `ins:r08-kihon-shisetsukijun-tsuchi` | [基本診療料の施設基準等及びその届出に関する手続きの取扱いについて（令和８年３月５日保医発0305第７号）](https://www.mhlw.go.jp/content/12400000/001757361.pdf) | 厚生労働省保険局医療課 | 令和8年3月5日（令和8年10月7日訂正反映版「1007訂正後」） | 42 |
 | `ins:r08-kaitei-gaiyo-dpc` | [令和８年度診療報酬改定の概要 ５.入院（DPC/PDPS）](https://www.mhlw.go.jp/content/12400000/001696832.pdf) | 厚生労働省保険局医療課 | unknown（令和8年度改定説明資料。対象病院数は令和8年6月1日時点見込み） | 29 |
 | `ins:dpc-chosa-setsumei-2026` | [2026年度 DPCの評価・検証等に係る調査（退院患者調査）実施説明資料](https://www.mhlw.go.jp/content/12400000/001679918.pdf) | 厚生労働省（令和8年度DPC調査事務局作成） | 2026年3月25日時点 | 20 |
 | `ins:dpc-gaiyo-kangaekata` | [DPC制度（DPC/PDPS）の概要と基本的な考え方](https://www.mhlw.go.jp/file/05-Shingikai-12404000-Hokenkyoku-Iryouka/0000142247.pdf) | 厚生労働省（中央社会保険医療協議会 資料） | 中医協 総-3-1（平成23年1月21日）／診調組 D-2-1（平成28年11月9日） | 18 |
 | `ins:r08-dpc-ryuijiko` | [厚生労働大臣が指定する病院の病棟における療養に要する費用の額の算定方法の一部改正等に伴う実施上の留意事項について（令和８年３月18日保医発0318第４号）](https://www.mhlw.go.jp/content/12400000/001676573.pdf) | 厚生労働省保険局医療課 | 令和8年3月18日（令和8年6月1日適用） | 18 |
-| `ins:r08-ika-ryuijiko` | [診療報酬の算定方法の一部改正に伴う実施上の留意事項について（令和８年３月５日保医発0305第６号）別添１ 医科診療報酬点数表に関する事項](https://www.mhlw.go.jp/content/12400000/001757385.pdf) | 厚生労働省保険局医療課 | 令和8年3月5日（令和8年10月7日訂正反映版「1007訂正後」） | 9 |
+| `ins:r08-ika-ryuijiko` | [診療報酬の算定方法の一部改正に伴う実施上の留意事項について（令和８年３月５日保医発0305第６号）別添１ 医科診療報酬点数表に関する事項](https://www.mhlw.go.jp/content/12400000/001757385.pdf) | 厚生労働省保険局医療課 | 令和8年3月5日（令和8年10月7日訂正反映版「1007訂正後」） | 11 |
 | `ins:hokengai-heiyou-page` | [保険外併用療養費制度について](https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/iryouhoken/sensiniryo/index_00007.html) | 厚生労働省 | unknown（ページに更新日表記なし） | 5 |
 | `ins:kaigo-hoken-gaiyo` | [介護保険制度の概要](https://www.mhlw.go.jp/content/001512842.pdf) | 厚生労働省老健局 | 令和7年7月 | 5 |
+| `ins:wagakuni-iryouhoken` | [我が国の医療保険について（PDF版）](https://www.mhlw.go.jp/content/12400000/001416337.pdf) | 厚生労働省 | unknown（掲載データの最新時点は令和6年6月現在） | 5 |
 | `ins:kaigo-tokutei-shippei` | [特定疾病の選定基準の考え方](https://www.mhlw.go.jp/topics/kaigo/nintei/gaiyo3.html) | 厚生労働省 | unknown（※印は平成18年4月追加・見直し） | 4 |
 | `ins:kokuho-shinsa-seido` | [診療報酬の審査制度](https://www.kokuho.or.jp/inspect/inspect_rezept.html) | 公益社団法人国民健康保険中央会 | unknown（ページに更新日表記なし） | 4 |
-| `ins:wagakuni-iryouhoken` | [我が国の医療保険について（PDF版）](https://www.mhlw.go.jp/content/12400000/001416337.pdf) | 厚生労働省 | unknown（掲載データの最新時点は令和6年6月現在） | 4 |
 | `ins:kaigo-hoken-kaisei-r08` | [社会福祉法等の一部を改正する法律の概要について（令和８年（2026年）介護保険法改正）](https://www.mhlw.go.jp/content/001717214.pdf) | 厚生労働省 | unknown（令和8年法律第51号の概要。施行は原則令和9年4月1日） | 3 |
 | `ins:kougaku-page` | [高額療養費制度を利用される皆さまへ](https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/iryouhoken/juuyou/kougakuiryou/index.html) | 厚生労働省 | 2026-07-31（ページ更新日） | 3 |
+| `ins:hpdx-kaiso` | [令和8年10月より支払基金はDX審査支払機構となりました](https://www.hpdx.or.jp/about/s_kaikaku/dxkikou_oshirase_1.html) | 医療情報基盤・診療報酬審査支払機構 | 2026-10-22（最終更新日） | 1 |
 | `ins:kaigo-nintei-gaiyo` | [要介護認定に係る制度の概要](https://www.mhlw.go.jp/topics/kaigo/nintei/gaiyo1.html) | 厚生労働省 | unknown（ページに更新日表記なし） | 1 |
+| `ins:r08-ika-tensuhyo` | [診療報酬の算定方法の一部を改正する件（令和８年厚生労働省告示第69号）別表第一 医科診療報酬点数表](https://www.mhlw.go.jp/content/12400000/001686842.pdf) | 厚生労働省（厚生労働大臣告示） | 令和8年3月5日告示、令和8年6月1日適用 | 1 |
 | `ins:r08-kisaiyoryo-betten1` | [「診療報酬請求書等の記載要領等について」等の一部改正について（令和８年３月27日保医発0327第２号）別添１](https://www.mhlw.go.jp/content/12400000/001757375.pdf) | 厚生労働省保険局医療課 | 令和8年3月27日（令和8年10月7日訂正反映版「1007訂正後」） | 1 |
 | `ins:hokengai-heiyou-pdf` | [保険外併用療養費制度について（資料）](https://www.mhlw.go.jp/content/12400000/001471580.pdf) | 厚生労働省 | unknown（日付記載なし。選定療養に長期収載品・精子の凍結及び融解を含む版） | 0 |
 | `ins:hpdx-ichiduke` | [ＤＸ審査支払機構の位置づけ](https://www.hpdx.or.jp/about/rinen/soshikigaiyo_01.html) | 医療情報基盤・診療報酬審査支払機構 | 2026-10-01（最終更新日） | 0 |
 | `ins:hpdx-iryoseido` | [医療保険制度について](https://www.hpdx.or.jp/about/rinen/iryoseido/index.html) | 医療情報基盤・診療報酬審査支払機構 | unknown（医療保険の体系図は令和5年4月時点） | 0 |
-| `ins:hpdx-kaiso` | [令和8年10月より支払基金はDX審査支払機構となりました](https://www.hpdx.or.jp/about/s_kaikaku/dxkikou_oshirase_1.html) | 医療情報基盤・診療報酬審査支払機構 | 2026-10-22（最終更新日） | 0 |
 | `ins:iryou-johoka-suishin-gaiyo` | [医療情報化推進方針の概要について](https://www.mhlw.go.jp/content/10808000/001756599.pdf) | 厚生労働省（政策統括官付医療情報基盤担当参事官室） | unknown（2026年9月30日告示・10月1日適用の推進方針（令和8年厚労省告示第370号）を記載） | 0 |
 | `ins:iryouhoken-kaisei-r08-page` | [医療保険制度改正法が成立しました](https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/iryouhoken/newpage_00014.html) | 厚生労働省 | 2026-05-29（ページ更新日、健康保険法等の一部を改正する法律の成立日） | 0 |
 | `ins:iryouhoken-kaisei-r08-point` | [今回の医療保険制度改革のポイント](https://www.mhlw.go.jp/content/12400000/001672604.pdf) | 厚生労働省 | unknown（2026年5月29日成立の健康保険法等改正のポイント） | 0 |
 | `ins:kougaku-minaoshi-r0808` | [高額療養費制度の見直しについて（令和８年８月診療分から）](https://www.mhlw.go.jp/content/001726232.pdf) | 厚生労働省 | 令和8年8月診療分から（令和8年8月～令和9年7月の限度額表） | 0 |
 | `ins:kougaku-sankou` | [高額療養費制度に関する参考資料](https://www.mhlw.go.jp/content/001729632.pdf) | 厚生労働省 | unknown（令和7年12月16日専門委員会資料等を収録、令和8年8月～の限度額表あり） | 0 |
 | `ins:koureisha-iryou-seido` | [高齢者医療制度について](https://www.mhlw.go.jp/content/12400000/001255211.pdf) | 厚生労働省 | unknown（数値は令和6年度予算ベース） | 0 |
-| `ins:r08-ika-tensuhyo` | [診療報酬の算定方法の一部を改正する件（令和８年厚生労働省告示第69号）別表第一 医科診療報酬点数表](https://www.mhlw.go.jp/content/12400000/001686842.pdf) | 厚生労働省（厚生労働大臣告示） | 令和8年3月5日告示、令和8年6月1日適用 | 0 |
 | `ins:r08-kaitei-gaiyo-ika` | [令和８年度診療報酬改定について【医科全体版】](https://www.mhlw.go.jp/content/12400000/001745823.pdf) | 厚生労働省保険局医療課 | 令和8年9月4日版 | 0 |
 | `ins:r08-kaitei-gaiyo-zentai` | [令和８年度診療報酬改定について【全体概要版】](https://www.mhlw.go.jp/content/12400000/001745822.pdf) | 厚生労働省保険局医療課 | 令和8年3月10日版 | 0 |
 | `ins:r08-kaitei-top` | [令和８年度診療報酬改定について](https://www.mhlw.go.jp/stf/newpage_67729.html) | 厚生労働省 | unknown（掲載は令和8年10月29日付通知まで） | 0 |
@@ -187,11 +187,12 @@
 |---|---|---|---|---:|
 | `mgmt:byouinhoukoku-yougo` | [用語の解説（医療施設調査・病院報告）](https://www.mhlw.go.jp/toukei/list/dl/12yougo.pdf) | 厚生労働省 | unknown（PDF更新日 2026-09-08。介護療養病床の算式を含む） | 24 |
 | `mgmt:ianzen-r8-sochi-tsuchi` | [病院等における医療の安全を確保するための措置について（医政発0331第72号）](https://www.mhlw.go.jp/content/10800000/001685651.pdf) | 厚生労働省 | 令和8年3月31日 | 14 |
+| `mgmt:innai-kansen-tsuchi-h26` | [医療機関における院内感染対策について（医政地発1219第1号）](https://www.mhlw.go.jp/content/10800000/000845013.pdf) | 厚生労働省医政局地域医療計画課 | 平成26年12月19日 | 13 |
 | `mgmt:quality-outcome-process-h23` | [医療の成果に関する指標（アウトカム指標）及び過程に関する指標（プロセス指標）の取扱い（医療情報の提供のあり方等に関する検討会〈第8回〉資料1）](https://www.mhlw.go.jp/stf/shingi/2r9852000001u0or-att/2r9852000001u0tr.pdf) | 厚生労働省 | 平成23年11月4日 | 13 |
 | `mgmt:chiiki-shien-h10-tsuchi` | [医療法の一部を改正する法律の施行について（抄）（健政発第639号）](https://www.mhlw.go.jp/content/10800000/000902368.pdf) | 厚生省健康政策局（厚生労働省掲載） | 平成10年5月19日 | 11 |
 | `mgmt:ikisapo-slide-detail` | [医師の働き方改革〜患者さんと医師の未来のために〜（解説スライド 詳細編）](https://iryou-kinmukankyou.mhlw.go.jp/files/Attachment/488/%E5%8C%BB%E5%B8%AB%E3%81%AE%E5%83%8D%E3%81%8D%E6%96%B9%E6%94%B9%E9%9D%A9%E8%A7%A3%E8%AA%AC%E3%82%B9%E3%83%A9%E3%82%A4%E3%83%89%E3%80%8C%E5%8C%BB%E5%B8%AB%E3%81%AE%E5%83%8D%E3%81%8D%E6%96%B9%E6%94%B9%E9%9D%A9%EF%BD%9E%E6%82%A3%E8%80%85%E3%81%95%E3%82%93%E3%81%A8%E5%8C%BB%E5%B8%AB%E3%81%AE%E6%9C%AA%E6%9D%A5%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AB%EF%BD%9E%E3%80%8D_%E8%A9%B3%E7%B4%B0%E7%B7%A8.pdf) | 厚生労働省（いきいき働く医療機関サポートWeb〈いきサポ〉掲載） | unknown（PDF作成日 2023-07-02） | 11 |
-| `mgmt:innai-kansen-tsuchi-h26` | [医療機関における院内感染対策について（医政地発1219第1号）](https://www.mhlw.go.jp/content/10800000/000845013.pdf) | 厚生労働省医政局地域医療計画課 | 平成26年12月19日 | 11 |
-| `mgmt:ianzen-sougou-taisaku-h14` | [医療安全推進総合対策 〜医療事故を未然に防止するために〜](https://www.mhlw.go.jp/topics/2001/0110/dl/tp1030-1c.pdf) | 厚生労働省（医療安全対策検討会議） | 平成14年4月17日 | 6 |
+| `mgmt:ianzen-sougou-taisaku-h14` | [医療安全推進総合対策 〜医療事故を未然に防止するために〜](https://www.mhlw.go.jp/topics/2001/0110/dl/tp1030-1c.pdf) | 厚生労働省（医療安全対策検討会議） | 平成14年4月17日 | 8 |
+| `mgmt:ianzen-kanrisha-shishin-r2` | [医療安全管理者の業務指針および養成のための研修プログラム作成指針 ―医療安全管理者の質の向上のために―](https://www.mhlw.go.jp/content/10800000/000898761.pdf) | 厚生労働省医政局総務課医療安全推進室 | 令和2年3月改定 | 6 |
 | `mgmt:ianzen-r8-shourei-ryuui` | [医療法施行規則の一部を改正する省令の施行に伴う留意事項等について（医政地発0331第1号）](https://www.mhlw.go.jp/content/10800000/001687485.pdf) | 厚生労働省 | 令和8年3月31日 | 4 |
 | `mgmt:ikisapo-outline` | [勤務環境の改善とは（いきいき働く医療機関サポートWeb〈いきサポ〉）](https://iryou-kinmukankyou.mhlw.go.jp/outline/) | 厚生労働省（いきサポ） | unknown | 4 |
 | `mgmt:iryoukeikaku-taisei-tsuchi` | [疾病・事業及び在宅医療に係る医療体制について（医政地発0331第14号）](https://www.mhlw.go.jp/content/001103126.pdf) | 厚生労働省医政局地域医療計画課 | 令和5年3月31日（最終改正 令和8年6月10日 医政地発0610第1号） | 4 |
@@ -199,13 +200,13 @@
 | `mgmt:jikojoho-youkou` | [医療事故情報収集等事業 事業要綱](https://www.med-safe.jp/pdf/youkou_jiko_202604.pdf) | 公益財団法人日本医療機能評価機構 医療事故防止事業部 | 2026年4月（2026年4月1日適用） | 4 |
 | `mgmt:sanka-compensation` | [産科医療補償制度の詳細｜脳性麻痺に対する補償について](http://www.sanka-hp.jcqhc.or.jp/outline/compensation.html) | 公益財団法人日本医療機能評価機構（産科医療補償制度） | unknown | 4 |
 | `mgmt:byouinhoukoku-r07-kekka` | [令和７(2025)年医療施設（動態）調査・病院報告の概況 Ⅱ病院報告](https://www.mhlw.go.jp/toukei/saikin/hw/iryosd/25/dl/03byouin07.pdf) | 厚生労働省政策統括官（総合政策、労使関係担当） | 令和7(2025)年 | 3 |
+| `mgmt:tokutei-kinou-gaiyou` | [特定機能病院制度の概要](https://www.mhlw.go.jp/content/10800000/001018535.pdf) | 厚生労働省 | 承認病院数は令和8年4月24日現在（88病院、うち大学病院本院79） | 3 |
 | `mgmt:chiiki-shien-gaiyou` | [地域医療支援病院制度の概要](https://www.mhlw.go.jp/content/10800000/001350751.pdf) | 厚生労働省 | 承認病院数は令和6年9月現在（707） | 2 |
 | `mgmt:ianzen-keii` | [主な医療安全関連の経緯](https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/iryou/i-anzen/keii/newpage_76186.html) | 厚生労働省 | unknown（年表の最終記載は令和8年4月） | 2 |
 | `mgmt:iryou-taiwa-shishin-r8` | [医療対話推進者の業務指針及び養成のための研修プログラム作成指針 ―説明と対話の文化の醸成のために―](https://www.mhlw.go.jp/content/10800000/001665437.pdf) | 厚生労働省（研究班作成、令和8年1月23日通知別添1） | 令和8年1月改定 | 2 |
 | `mgmt:iryoukeikaku-tsuchi` | [医療計画について（医政発0331第16号、別添「医療計画作成指針」）](https://www.mhlw.go.jp/content/001751758.pdf) | 厚生労働省 | 令和5年3月31日（最終改正 令和8年9月18日 医政発0918第8号） | 2 |
 | `mgmt:jqhyouka-summary` | [病院機能評価とは](https://www.jq-hyouka.jcqhc.or.jp/about/summary/) | 公益財団法人日本医療機能評価機構 | 2025-03-27（ページのmodified_time） | 2 |
 | `mgmt:sanka-system` | [産科医療補償制度の仕組み](http://www.sanka-hp.jcqhc.or.jp/outline/system.html) | 公益財団法人日本医療機能評価機構（産科医療補償制度） | unknown | 2 |
-| `mgmt:tokutei-kinou-gaiyou` | [特定機能病院制度の概要](https://www.mhlw.go.jp/content/10800000/001018535.pdf) | 厚生労働省 | 承認病院数は令和8年4月24日現在（88病院、うち大学病院本院79） | 2 |
 | `mgmt:byoushoukinou-gaiyou-r8` | [医療機関機能・病床機能報告の概要](https://www.mhlw.go.jp/content/001759088.pdf) | 厚生労働省 | unknown（令和8年度報告用の資料） | 1 |
 | `mgmt:chiikikousou-guideline-h29` | [地域医療構想策定ガイドライン（平成29年3月31日付け医政発0331第57号別添）](https://www.mhlw.go.jp/content/10800000/001621958.pdf) | 厚生労働省 | 平成29年3月31日（医政発0331第57号別添。文書内の日付表記なし、日付は掲載ページの記載による） | 1 |
 | `mgmt:chiikikousou-susumekata` | [地域医療構想について（地域医療構想の基本的な進め方について）](https://www.mhlw.go.jp/content/10800000/001621986.pdf) | 厚生労働省 | unknown | 1 |
@@ -219,7 +220,6 @@
 | `mgmt:chiikikousou-guideline-2040` | [地域医療構想策定ガイドライン（令和8年7月3日付け医政発0703第4号別添）](https://www.mhlw.go.jp/content/10800000/001718620.pdf) | 厚生労働省医政局 | 令和8年7月3日（医政発0703第4号別添。文書内の日付表記なし、日付は医政発0805第3号の記載による） | 0 |
 | `mgmt:chiikikousou-keii` | [地域医療構想に関する主な経緯](https://www.mhlw.go.jp/content/10800000/001476721.pdf) | 厚生労働省 | unknown（記載はR6年度まで） | 0 |
 | `mgmt:chiikikousou-sakusei-tsuchi-r8` | [地域医療構想の作成について（医政発0805第3号）](https://www.mhlw.go.jp/content/10800000/001734247.pdf) | 厚生労働省 | 令和8年8月5日 | 0 |
-| `mgmt:ianzen-kanrisha-shishin-r2` | [医療安全管理者の業務指針および養成のための研修プログラム作成指針 ―医療安全管理者の質の向上のために―](https://www.mhlw.go.jp/content/10800000/000898761.pdf) | 厚生労働省医政局総務課医療安全推進室 | 令和2年3月改定 | 0 |
 | `mgmt:ianzen-tsuchi-list` | [法令・通知等（医療安全対策）](https://www.mhlw.go.jp/stf/newpage_03125.html) | 厚生労働省 | unknown（一覧の最新掲載は令和8年10月7日） | 0 |
 | `mgmt:innai-kansen-page` | [院内感染対策について](https://www.mhlw.go.jp/stf/newpage_21747.html) | 厚生労働省 | unknown（ページ内の最新お知らせは2026年10月1日） | 0 |
 | `mgmt:iryoukeikaku-index` | [医療計画](https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/iryou/iryou_keikaku/index.html) | 厚生労働省 | unknown（ページ内の最新記載は令和8年9月18日一部改正） | 0 |
@@ -255,12 +255,13 @@
 | ID | 資料 | 発行 | 基準時点 | 引用数 |
 |---|---|---|---|---:|
 | `info:mhlw-anzen-gl7-unyo` | [医療情報システムの安全管理に関するガイドライン 第7.0版 システム運用編](https://www.mhlw.go.jp/content/10808000/001716295.pdf) | 厚生労働省 | 第7.0版（令和8年6月） | 20 |
-| `info:mhlw-anzen-gl7-gaisetsu` | [医療情報システムの安全管理に関するガイドライン 第7.0版 概説編](https://www.mhlw.go.jp/content/10808000/001716290.pdf) | 厚生労働省 | 第7.0版（令和8年6月） | 13 |
+| `info:mhlw-anzen-gl7-gaisetsu` | [医療情報システムの安全管理に関するガイドライン 第7.0版 概説編](https://www.mhlw.go.jp/content/10808000/001716290.pdf) | 厚生労働省 | 第7.0版（令和8年6月） | 15 |
+| `info:ppc-iryoukaigo-guidance` | [医療・介護関係事業者における個人情報の適切な取扱いのためのガイダンス](https://www.ppc.go.jp/files/pdf/260401_iryoukaigo_guidance.pdf) | 個人情報保護委員会・厚生労働省 | 平成29年4月14日（令和8年4月一部改正） | 14 |
+| `info:mhlw-shinryojoho-teikyo-shishin` | [診療情報の提供等に関する指針の策定について〔医師法〕（別添: 診療情報の提供等に関する指針）](https://www.mhlw.go.jp/web/t_doc?dataId=00tb3403&dataType=1&pageNo=1) | 厚生労働省医政局長通知（厚生労働省法令等データベース） | 平成15年9月12日 医政発第0912001号（DB掲載の現行本文。令和5年1月25日医政発0125第7号の改正を反映） | 13 |
 | `info:mhlw-anzen-gl7-keiei` | [医療情報システムの安全管理に関するガイドライン 第7.0版 経営管理編](https://www.mhlw.go.jp/content/10808000/001716291.pdf) | 厚生労働省 | 第7.0版（令和8年6月） | 11 |
 | `info:mhlw-anzen-gl7-kikaku` | [医療情報システムの安全管理に関するガイドライン 第7.0版 企画管理編](https://www.mhlw.go.jp/content/10808000/001716292.pdf) | 厚生労働省 | 第7.0版（MHLW掲載表記: 令和8年5月） | 10 |
 | `info:mhlw-anzen-gl7-qa` | [医療情報システムの安全管理に関するガイドライン Q&A（第7.0版）](https://www.mhlw.go.jp/content/10808000/001752355.pdf) | 厚生労働省 | 令和8年9月（MHLW掲載表記） | 6 |
 | `info:mhlw-ebunsho-shiko-tsuchi` | [民間事業者等が行う書面の保存等における情報通信の技術の利用に関する法律等の施行等について〔医療法〕](https://www.mhlw.go.jp/web/t_doc?dataId=00tb2663&dataType=1&pageNo=1) | 厚生労働省（医政局長・医薬食品局長・保険局長通知。厚生労働省法令等データベース） | 平成17年3月31日 医政発第0331009号・薬食発第0331020号・保発第0331005号（DB掲載本文。平成28年3月31日改正を反映） | 6 |
-| `info:mhlw-shinryojoho-teikyo-shishin` | [診療情報の提供等に関する指針の策定について〔医師法〕（別添: 診療情報の提供等に関する指針）](https://www.mhlw.go.jp/web/t_doc?dataId=00tb3403&dataType=1&pageNo=1) | 厚生労働省医政局長通知（厚生労働省法令等データベース） | 平成15年9月12日 医政発第0912001号（DB掲載の現行本文。令和5年1月25日医政発0125第7号の改正を反映） | 6 |
 | `info:cao-jisedai-kaisei-iryoukikan` | [改正次世代医療基盤法について（医療機関編）](https://www8.cao.go.jp/iryou/kouhou/pdf/kaisei_jisedaiiryou_iryoukikan.pdf) | 内閣府 健康・医療戦略推進事務局 | 2024年4月 | 4 |
 | `info:helics-hs011-dicom-report` | [HS011 医療情報標準化レポート 医療におけるデジタル画像と通信（DICOM）](https://square.umin.ac.jp/helics/html/files/HS011/HS011_rep20180428_JIRA.pdf) | 医療情報標準化推進協議会（HELICS協議会）／日本画像医療システム工業会（JIRA） | 2018.04 | 3 |
 | `info:mhlw-anzen-gl7-kaitei-gaiyou` | [医療情報システムの安全管理に関するガイドライン第7.0版の概要及び主な改定内容](https://www.mhlw.go.jp/content/10808000/001102596.pdf) | 厚生労働省（医政局 医療情報担当参事官室） | 2026（令和8）年5月29日（第32回 健康・医療・介護情報利活用検討会 医療等情報利活用WG 資料5） | 3 |
@@ -277,7 +278,6 @@
 | `info:jami-ssmix2` | [SS-MIX2仕様書・ガイドライン](https://www.jami.jp/jamistd/ss-mix2/) | 日本医療情報学会（JAMI） | Ver.1.2j（2026.08.14発行） | 1 |
 | `info:mhlw-myna-hokensho` | [マイナンバーカードの健康保険証利用（マイナ保険証）について](https://www.mhlw.go.jp/stf/newpage_08277.html) | 厚生労働省 | 更新情報の最新: 2026年10月27日（取得時点） | 1 |
 | `info:mhlw-online-shinryo-hou-sekou` | [医療法等の一部を改正する法律の一部の施行等について（オンライン診療関係）（医政発0327第5号）](https://www.mhlw.go.jp/content/001681277.pdf) | 厚生労働省医政局長 | 令和8年3月27日 | 1 |
-| `info:ppc-iryoukaigo-guidance` | [医療・介護関係事業者における個人情報の適切な取扱いのためのガイダンス](https://www.ppc.go.jp/files/pdf/260401_iryoukaigo_guidance.pdf) | 個人情報保護委員会・厚生労働省 | 平成29年4月14日（令和8年4月一部改正） | 1 |
 | `info:cao-jisedai-gaiyou` | [次世代医療基盤法について（概要）](https://www8.cao.go.jp/iryou/gaiyou/gaiyou.html) | 内閣府 健康・医療戦略推進事務局 | unknown（取得時点。実績データ2026年9月末へのリンクあり） | 0 |
 | `info:cao-jisedai-hourei` | [次世代医療基盤法 関係法令・ガイドライン・通知・事務連絡](https://www8.cao.go.jp/iryou/hourei/hourei.html) | 内閣府 健康・医療戦略推進事務局 | unknown（ガイドライン最終改定の表示: 令和8年10月1日） | 0 |
 | `info:cao-jisedai-houshin-r0603` | [医療分野の研究開発に資するための匿名加工医療情報及び仮名加工医療情報に関する基本方針](https://www8.cao.go.jp/iryou/hourei/pdf/houshin.pdf) | 内閣府（閣議決定） | 令和6年3月15日閣議決定 | 0 |
@@ -329,16 +329,16 @@
 |---|---|---|---|---:|
 | `stats:iryoshisetsu-byoinhokoku-r7-gaiyou` | [令和７(2025)年医療施設（動態）調査・病院報告の概況　調査の概要](https://www.mhlw.go.jp/toukei/saikin/hw/iryosd/25/dl/01tyousa07.pdf) | 厚生労働省 | 2026-11-10 | 15 |
 | `stats:jinkou-kakutei-r7-cho` | [令和７（2025）年人口動態統計（確定数）の概況　調査の概要](https://www.mhlw.go.jp/toukei/saikin/hw/jinkou/kakutei25/dl/01_cho.pdf) | 厚生労働省 | 2026-09-30 | 12 |
-| `stats:jinkou-kakutei-r7-gaikyou` | [令和７（2025）年人口動態統計（確定数）の概況（概況PDF）](https://www.mhlw.go.jp/toukei/saikin/hw/jinkou/kakutei25/dl/05_gaikyouR07.pdf) | 厚生労働省 | 2026-09-30 | 6 |
 | `stats:mhlw-tokei-yougo-rr-or` | [有効性・安全性に関する統計用語集](https://www.mhlw.go.jp/www1/houdou/1106/h0602-3_c_15.html) | 厚生労働省（旧厚生省） | 1998-11-30 | 5 |
-| `stats:env-soutai-kiyo-risk` | [放射線による健康影響等に関する統一的な基礎資料（令和７年度版）第3章 放射線による健康影響 スライド3.4 リスク（相対リスクと寄与リスク）](https://www.env.go.jp/chemi/rhm/current/attach/slide-03-04.pdf) | 環境省 | 令和７年度版 | 4 |
 | `stats:naruhodo-chirabari-shokyu` | [なるほど統計学園「データの散らばりを捉える」](https://www.stat.go.jp/naruhodo/5_tokucho/chirabari.html) | 総務省統計局 | unknown | 4 |
 | `stats:naruhodo-hukusu` | [なるほど統計学園「複数の変数の関係性を見る」](https://www.stat.go.jp/naruhodo/10_tokucho/hukusu.html) | 総務省統計局 | unknown | 4 |
+| `stats:env-soutai-kiyo-risk` | [放射線による健康影響等に関する統一的な基礎資料（令和７年度版）第3章 放射線による健康影響 スライド3.4 リスク（相対リスクと寄与リスク）](https://www.env.go.jp/chemi/rhm/current/attach/slide-03-04.pdf) | 環境省 | 令和７年度版 | 3 |
 | `stats:ganjoho-emuaihi` | [がん統計の用語集「MI比」](https://ganjoho.jp/reg_stat/statistics/qa_words/word/emuaihi.html) | 国立研究開発法人国立がん研究センター（がん情報サービス） | 2018-01-26 | 3 |
 | `stats:ganjoho-hyouzyunkasibouhi` | [がん統計の用語集「標準化死亡比」](https://ganjoho.jp/reg_stat/statistics/qa_words/word/hyouzyunkasibouhi.html) | 国立研究開発法人国立がん研究センター（がん情報サービス） | 2018-01-26 | 3 |
 | `stats:ganjoho-kapuranmaiyahou` | [がん統計の用語集「Kaplan-Meier法」](https://ganjoho.jp/reg_stat/statistics/qa_words/word/kapuranmaiyahou.html) | 国立研究開発法人国立がん研究センター（がん情報サービス） | 2018-01-26 | 3 |
 | `stats:jinkou-chosa-gaiyo-yougo` | [人口動態調査 調査の概要（用語の解説・利用上の注意）](https://www.mhlw.go.jp/toukei/list/81-1b.html) | 厚生労働省 | unknown | 3 |
 | `stats:jinkou-kakutei-r6-tfr` | [合計特殊出生率について（令和６年（2024）人口動態統計（確定数）の概況 参考資料）](https://www.mhlw.go.jp/toukei/saikin/hw/jinkou/kakutei24/dl/18_tfrR06.pdf) | 厚生労働省 | 2025-09-16 | 3 |
+| `stats:jinkou-kakutei-r7-gaikyou` | [令和７（2025）年人口動態統計（確定数）の概況（概況PDF）](https://www.mhlw.go.jp/toukei/saikin/hw/jinkou/kakutei25/dl/05_gaikyouR07.pdf) | 厚生労働省 | 2026-09-30 | 3 |
 | `stats:kani-seimeihyo-r7-teigi` | [令和７(2025)年簡易生命表の概況　参考資料１ 生命表諸関数の定義](https://www.mhlw.go.jp/toukei/saikin/hw/life/life25/dl/life25-08.pdf) | 厚生労働省 | 2026-07-24 | 3 |
 | `stats:kanja-chosa-r5-gaikyou` | [令和５年(2023)患者調査の概況（概況版）](https://www.mhlw.go.jp/toukei/saikin/hw/kanja/23/dl/kanjya.pdf) | 厚生労働省 | 2024-12-20 | 3 |
 | `stats:kokumin-iryohi-r6-hani` | [令和６(2024)年度 国民医療費の概況　国民医療費の範囲と推計方法の概要](https://www.mhlw.go.jp/toukei/saikin/hw/k-iryohi/24/dl/R06gaiyou.pdf) | 厚生労働省 | 2026-10-30 | 3 |
@@ -416,22 +416,22 @@
 | ID | 資料 | 発行 | 基準時点 | 引用数 |
 |---|---|---|---|---:|
 | `cancer:shibou-manual-r08` | [令和8年度版 死亡診断書（死体検案書）記入マニュアル（付録 出生証明書及び死産証書（死胎検案書）記入マニュアル）](https://www.mhlw.go.jp/toukei/manual/dl/manual_r08.pdf) | 厚生労働省 医政局／政策統括官（統計・情報システム管理、労使関係担当） | 令和8年度版（表紙。掲載頁 https://www.mhlw.go.jp/toukei/manual/ の表題も同じ。PDF内に「二校」「令和7年2月20日発行」「ICDのABC 令和7年度版」等の校正・旧版由来の表記が残存） | 24 |
-| `cancer:hcr-standard-format-2016` | [がん診療連携拠点病院等 院内がん登録 標準登録様式 2016年版](https://ganjoho.jp/med_pro/cancer_control/can_reg/registration_hospital/pdf/2016manual.pdf) | 国立がん研究センター がん対策研究所 がん登録センター | 2026-07-27版（掲載一覧の日付・PDF作成日。表紙の改訂履歴の最終=2026-04-01、各頁「第1版 更新日2026/4」） | 8 |
-| `cancer:zenkoku-todokede-manual-2026` | [全国がん登録 届出マニュアル 2026（ダウンロード版）](https://www.mhlw.go.jp/content/001728039.pdf) | 厚生労働省／国立研究開発法人国立がん研究センター | 2026年版（2026-04-01付事務連絡で改訂、がん情報サービス掲載2026-04-07・更新2026-05-18） | 6 |
-| `cancer:mhlw-hcr-guideline` | [院内がん登録の実施に係る指針（平成27年厚生労働省告示第470号）](https://www.mhlw.go.jp/content/0000108673.pdf) | 厚生労働省 | 2015-12-15告示、2016-01-01適用 | 3 |
+| `cancer:hcr-standard-format-2016` | [がん診療連携拠点病院等 院内がん登録 標準登録様式 2016年版](https://ganjoho.jp/med_pro/cancer_control/can_reg/registration_hospital/pdf/2016manual.pdf) | 国立がん研究センター がん対策研究所 がん登録センター | 2026-07-27版（掲載一覧の日付・PDF作成日。表紙の改訂履歴の最終=2026-04-01、各頁「第1版 更新日2026/4」） | 15 |
+| `cancer:zenkoku-todokede-manual-2026` | [全国がん登録 届出マニュアル 2026（ダウンロード版）](https://www.mhlw.go.jp/content/001728039.pdf) | 厚生労働省／国立研究開発法人国立がん研究センター | 2026年版（2026-04-01付事務連絡で改訂、がん情報サービス掲載2026-04-07・更新2026-05-18） | 14 |
+| `cancer:mhlw-hcr-guideline` | [院内がん登録の実施に係る指針（平成27年厚生労働省告示第470号）](https://www.mhlw.go.jp/content/0000108673.pdf) | 厚生労働省 | 2015-12-15告示、2016-01-01適用 | 8 |
 | `cancer:glossary-innaigantouroku` | [がん統計の用語集：院内がん登録](https://ganjoho.jp/reg_stat/statistics/qa_words/word/innaigantouroku.html) | 国立がん研究センター がん情報サービス（がん統計） | 2018-01-26（更新・確認日） | 2 |
 | `cancer:glossary-kapuranmaiyahou` | [がん統計の用語集：Kaplan-Meier法](https://ganjoho.jp/reg_stat/statistics/qa_words/word/kapuranmaiyahou.html) | 国立がん研究センター がん情報サービス（がん統計） | 2018-01-26（更新・確認日） | 2 |
-| `cancer:glossary-mv` | [がん統計の用語集：MV割合（%）](https://ganjoho.jp/reg_stat/statistics/qa_words/word/mv.html) | 国立がん研究センター がん情報サービス（がん統計） | 2021-07-01（更新・確認日） | 2 |
 | `cancer:glossary-tiikigantouroku` | [がん統計の用語集：地域がん登録](https://ganjoho.jp/reg_stat/statistics/qa_words/word/tiikigantouroku.html) | 国立がん研究センター がん情報サービス（がん統計） | 2018-01-26（更新・確認日） | 2 |
 | `cancer:glossary-yuaisisitexienuemubunrui` | [がん統計の用語集：UICC TNM分類](https://ganjoho.jp/reg_stat/statistics/qa_words/word/yuaisisitexienuemubunrui.html) | 国立がん研究センター がん情報サービス（がん統計） | 2018-01-26（更新・確認日） | 2 |
 | `cancer:glossary-zenkokugantouroku` | [がん統計の用語集：全国がん登録](https://ganjoho.jp/reg_stat/statistics/qa_words/word/zenkokugantouroku.html) | 国立がん研究センター がん情報サービス（がん統計） | 2021-07-01（更新・確認日） | 2 |
-| `cancer:glossary-dexisienu` | [がん統計の用語集：DCN](https://ganjoho.jp/reg_stat/statistics/qa_words/word/dexisienu.html) | 国立がん研究センター がん情報サービス（がん統計） | 2018-01-26（更新・確認日） | 1 |
-| `cancer:glossary-dexisio` | [がん統計の用語集：DCO](https://ganjoho.jp/reg_stat/statistics/qa_words/word/dexisio.html) | 国立がん研究センター がん情報サービス（がん統計） | 2018-01-26（更新・確認日） | 1 |
 | `cancer:glossary-kokusaisippeibunruisyuyougaku` | [がん統計の用語集：国際疾病分類-腫瘍学［ICD-O］](https://ganjoho.jp/reg_stat/statistics/qa_words/word/kokusaisippeibunruisyuyougaku.html) | 国立がん研究センター がん情報サービス（がん統計） | 2018-01-26（更新・確認日） | 1 |
+| `cancer:glossary-mv` | [がん統計の用語集：MV割合（%）](https://ganjoho.jp/reg_stat/statistics/qa_words/word/mv.html) | 国立がん研究センター がん情報サービス（がん統計） | 2021-07-01（更新・確認日） | 1 |
 | `cancer:glossary-tajugan` | [がん統計の用語集：多重がん](https://ganjoho.jp/reg_stat/statistics/qa_words/word/tajugan.html) | 国立がん研究センター がん情報サービス（がん統計） | 2018-01-26（更新・確認日） | 1 |
 | `cancer:mhlw-gan-toroku` | [がん登録（厚生労働省 政策ページ）](https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/kenkou/gan/gan_toroku.html) | 厚生労働省 | unknown（頁に更新日の記載なし。掲載資料の最新日付=令和8年7月31日） | 1 |
 | `cancer:ganjoho-registry-overview` | [がん登録（制度やサービスを知る）](https://ganjoho.jp/public/institution/registry/index.html) | 国立がん研究センター がん情報サービス（一般の方へ） | 2026-06-26（更新・確認日） | 0 |
 | `cancer:ganjoho-statistics-qa` | [がん統計に関するＱ＆Ａ](https://ganjoho.jp/reg_stat/statistics/qa_words/statistics_qa.html) | 国立がん研究センター がん情報サービス（がん統計） | 2025-06-20（更新・確認日） | 0 |
+| `cancer:glossary-dexisienu` | [がん統計の用語集：DCN](https://ganjoho.jp/reg_stat/statistics/qa_words/word/dexisienu.html) | 国立がん研究センター がん情報サービス（がん統計） | 2018-01-26（更新・確認日） | 0 |
+| `cancer:glossary-dexisio` | [がん統計の用語集：DCO](https://ganjoho.jp/reg_stat/statistics/qa_words/word/dexisio.html) | 国立がん研究センター がん情報サービス（がん統計） | 2018-01-26（更新・確認日） | 0 |
 | `cancer:glossary-emuaihi` | [がん統計の用語集：MI比](https://ganjoho.jp/reg_stat/statistics/qa_words/word/emuaihi.html) | 国立がん研究センター がん情報サービス（がん統計） | 2018-01-26（更新・確認日） | 0 |
 | `cancer:glossary-gansinryourenkeikyotenbyouin` | [がん統計の用語集：がん診療連携拠点病院](https://ganjoho.jp/reg_stat/statistics/qa_words/word/gansinryourenkeikyotenbyouin.html) | 国立がん研究センター がん情報サービス（がん統計） | 2018-01-26（更新・確認日） | 0 |
 | `cancer:glossary-gantoriatukaikiyaku` | [がん統計の用語集：がん取扱い規約](https://ganjoho.jp/reg_stat/statistics/qa_words/word/gantoriatukaikiyaku.html) | 国立がん研究センター がん情報サービス（がん統計） | 2018-01-26（更新・確認日） | 0 |
@@ -499,12 +499,12 @@
 
 | ID | 資料 | 発行 | 基準時点 | 引用数 |
 |---|---|---|---|---:|
-| `him:jhim-gyomu-shishin-2026` | [診療情報管理士業務指針 2026](https://jhim-e.com/pdf/2026/guideline2026.pdf) | 日本診療情報管理学会（倫理委員会） | 2026年8月改訂（2026年版。学会サイト公開は2026年9月。初版2011年、改訂2018・2021・2024年） | 31 |
-| `him:jhim-discharge-summary-guidance-2019` | [退院サマリー作成に関するガイダンス](https://jhim-e.com/pdf/guidance.pdf) | 退院時要約等の診療記録に関する標準化推進合同委員会（日本医療情報学会・日本診療情報管理学会） | 2019年9月25日 | 14 |
-| `him:kobeu-shinryoroku-manual-2023` | [診療録記載マニュアル（2023年7月改訂）](https://www.med.kobe-u.ac.jp/gakumu/gakunai/ccs3/1file/shinryoroku_manual1.pdf) | 神戸大学医学部附属病院 診療録センター | 2023年7月改訂（2023-07-12） | 4 |
+| `him:jhim-gyomu-shishin-2026` | [診療情報管理士業務指針 2026](https://jhim-e.com/pdf/2026/guideline2026.pdf) | 日本診療情報管理学会（倫理委員会） | 2026年8月改訂（2026年版。学会サイト公開は2026年9月。初版2011年、改訂2018・2021・2024年） | 49 |
+| `him:jhim-discharge-summary-guidance-2019` | [退院サマリー作成に関するガイダンス](https://jhim-e.com/pdf/guidance.pdf) | 退院時要約等の診療記録に関する標準化推進合同委員会（日本医療情報学会・日本診療情報管理学会） | 2019年9月25日 | 25 |
+| `him:jhim-kiroku-shishin-2024` | [診療情報の記録指針 2024](https://jhim-e.com/pdf/data2024/recording_guide2024.pdf) | 日本診療情報管理学会 | 2024年8月（2024年版。2007年「診療録記載指針」→2017年改題→2021年版→2024年版。学会サイトで現行版として掲載） | 17 |
+| `him:kobeu-shinryoroku-manual-2023` | [診療録記載マニュアル（2023年7月改訂）](https://www.med.kobe-u.ac.jp/gakumu/gakunai/ccs3/1file/shinryoroku_manual1.pdf) | 神戸大学医学部附属病院 診療録センター | 2023年7月改訂（2023-07-12） | 12 |
+| `him:tohoku-shinryoroku-kisai-2023` | [診療録の記載について～保険診療における診療録の適切な記載方法～（保険診療と個別指導（医科） 参考資料 第2回）](https://kouseikyoku.mhlw.go.jp/tohoku/news/000269416.pdf) | 厚生労働省東北厚生局 | 2023年3月24日（シリーズ第2回の初版は2021年4月1日。本文中の安全管理ガイドラインは第5.2版を参照） | 4 |
 | `him:jcqhc-ippan2-3rdg-v3` | [病院機能評価 機能種別版評価項目 3rdG:Ver.3.0 評価項目一覧（主な変更点） 一般病院２](https://www.jq-hyouka.jcqhc.or.jp/wp-content/uploads/2023/04/9984aa7918471999e9556187c27f40a9.pdf) | 公益財団法人日本医療機能評価機構 | 2022年12月15日版（3rdG:Ver.3.0、2023年4月運用開始。2026-11-24時点の機構サイトで現行版として掲載） | 3 |
-| `him:jhim-kiroku-shishin-2024` | [診療情報の記録指針 2024](https://jhim-e.com/pdf/data2024/recording_guide2024.pdf) | 日本診療情報管理学会 | 2024年8月（2024年版。2007年「診療録記載指針」→2017年改題→2021年版→2024年版。学会サイトで現行版として掲載） | 3 |
-| `him:tohoku-shinryoroku-kisai-2023` | [診療録の記載について～保険診療における診療録の適切な記載方法～（保険診療と個別指導（医科） 参考資料 第2回）](https://kouseikyoku.mhlw.go.jp/tohoku/news/000269416.pdf) | 厚生労働省東北厚生局 | 2023年3月24日（シリーズ第2回の初版は2021年4月1日。本文中の安全管理ガイドラインは第5.2版を参照） | 1 |
 | `him:jha-faq-other` | [FAQ【その他】（診療情報管理士の資格と関係団体）](https://jha-e.jp/front-pages/view/95) | 一般社団法人日本病院会 | unknown | 0 |
 | `him:jha-him-toha` | [診療情報管理士とは（日本病院会 診療情報管理士通信教育 トップページ）](https://jha-e.jp/) | 一般社団法人日本病院会 | 2026年（本文の表記は「2026年現在」、募集要項欄は「2026年11月現在」） | 0 |
 | `him:jhim-about` | [日本診療情報管理学会とは（学会概要）](https://jhim-e.com/about) | 日本診療情報管理学会 | unknown | 0 |
@@ -597,8 +597,8 @@
 
 | ID | 資料 | 発行 | 基準時点 | 引用数 |
 |---|---|---|---|---:|
+| `x-legacy-L04a:msd-ja-dm` | [MSDマニュアル プロフェッショナル版「糖尿病」](https://www.msdmanuals.com/ja-jp/professional/10-内分泌疾患と代謝性疾患/糖尿病と糖代謝異常症/糖尿病) | MSD（MSDマニュアル プロフェッショナル版 日本語） | 2024年10月最終更新 | 8 |
 | `x-legacy-L04a:medlineplus-appendixb` | [MedlinePlus Appendix B: Some Common Abbreviations](https://medlineplus.gov/appendixb.html) | U.S. National Library of Medicine (MedlinePlus) | MedlinePlus 2026-11取得時点 | 7 |
-| `x-legacy-L04a:msd-ja-dm` | [MSDマニュアル プロフェッショナル版「糖尿病」](https://www.msdmanuals.com/ja-jp/professional/10-内分泌疾患と代謝性疾患/糖尿病と糖代謝異常症/糖尿病) | MSD（MSDマニュアル プロフェッショナル版 日本語） | 2024年10月最終更新 | 6 |
 | `x-legacy-L04a:msd-ja-copd` | [MSDマニュアル プロフェッショナル版「慢性閉塞性肺疾患（COPD）」](https://www.msdmanuals.com/ja-jp/professional/05-肺疾患/慢性閉塞性肺疾患および関連疾患/慢性閉塞性肺疾患-copd) | MSD（MSDマニュアル プロフェッショナル版 日本語） | 2024年9月最終更新 | 5 |
 | `x-legacy-L04a:medlineplus-appendixa` | [MedlinePlus Appendix A: Word Parts and What They Mean](https://medlineplus.gov/appendixa.html) | U.S. National Library of Medicine (MedlinePlus) | MedlinePlus 2026-11取得時点 | 3 |
 | `x-legacy-L04a:ismp-error-prone-2024` | [ISMP List of Error-Prone Abbreviations, Symbols, and Dose Designations (2024)](https://online.ecri.org/hubfs/ISMP/Resources/ISMP_ErrorProneAbbreviation_List.pdf) | Institute for Safe Medication Practices (ISMP, ECRI) | ©2024 ISMP | 2 |
@@ -641,6 +641,7 @@
 |---|---|---|---|---:|
 | `x-legacy-L05a:msd-af` | [MSDマニュアル プロフェッショナル版「心房細動」](https://www.msdmanuals.com/ja-jp/professional/04-心血管疾患/不整脈の各論/心房細動) | MSD（MSDマニュアル プロフェッショナル版 日本語） | 2024年12月最終更新 | 3 |
 | `x-legacy-L05a:msd-cirrhosis` | [MSDマニュアル プロフェッショナル版「肝硬変」](https://www.msdmanuals.com/ja-jp/professional/02-肝胆道疾患/線維化と肝硬変/肝硬変) | MSD（MSDマニュアル プロフェッショナル版 日本語） | 2024年1月最終更新 | 3 |
+| `x-legacy-L05a:msd-hip-fracture` | [MSDマニュアル プロフェッショナル版「股関節骨折」](https://www.msdmanuals.com/ja-jp/professional/22-外傷と中毒/骨折/股関節骨折) | MSD（MSDマニュアル プロフェッショナル版 日本語） | 2024年7月最終更新 | 3 |
 | `x-legacy-L05a:msd-ra` | [MSDマニュアル プロフェッショナル版「関節リウマチ（RA）」](https://www.msdmanuals.com/ja-jp/professional/06-筋骨格系疾患と結合組織疾患/関節疾患/関節リウマチ-ra) | MSD（MSDマニュアル プロフェッショナル版 日本語） | 2024年4月最終更新 | 3 |
 | `x-legacy-L05a:msd-sah` | [MSDマニュアル プロフェッショナル版「くも膜下出血（SAH）」](https://www.msdmanuals.com/ja-jp/professional/07-神経疾患/脳卒中/くも膜下出血-sah) | MSD（MSDマニュアル プロフェッショナル版 日本語） | 2023年7月最終更新 | 3 |
 | `x-legacy-L05a:msd-shock` | [MSDマニュアル プロフェッショナル版「ショック」](https://www.msdmanuals.com/ja-jp/professional/21-救命医療/ショックおよび輸液蘇生/ショック) | MSD（MSDマニュアル プロフェッショナル版 日本語） | 2024年9月最終更新 | 3 |
@@ -655,7 +656,6 @@
 | `x-legacy-L05a:msd-vascular-dementia` | [MSDマニュアル プロフェッショナル版「血管性認知障害・認知症」](https://www.msdmanuals.com/ja-jp/professional/07-神経疾患/せん妄および認知症/血管性認知障害-認知症) | MSD（MSDマニュアル プロフェッショナル版 日本語） | 2025年2月最終更新 | 1 |
 | `x-legacy-L05a:msd-dementia` | [MSDマニュアル プロフェッショナル版「認知症」](https://www.msdmanuals.com/ja-jp/professional/07-神経疾患/せん妄および認知症/認知症) | MSD（MSDマニュアル プロフェッショナル版 日本語） | 2025年2月最終更新 | 0 |
 | `x-legacy-L05a:msd-gastric-cancer` | [MSDマニュアル プロフェッショナル版「胃癌」](https://www.msdmanuals.com/ja-jp/professional/01-消化管疾患/消化管の腫瘍/胃癌) | MSD（MSDマニュアル プロフェッショナル版 日本語） | 2023年10月最終更新 | 0 |
-| `x-legacy-L05a:msd-hip-fracture` | [MSDマニュアル プロフェッショナル版「股関節骨折」](https://www.msdmanuals.com/ja-jp/professional/22-外傷と中毒/骨折/股関節骨折) | MSD（MSDマニュアル プロフェッショナル版 日本語） | 2024年7月最終更新 | 0 |
 
 ## 監査・生成の途中で追加した資料（x-legacy-L05b）
 
@@ -677,7 +677,7 @@
 | `x-legacy-L05b:msd-hypo` | [MSDマニュアル プロフェッショナル版「甲状腺機能低下症」](https://www.msdmanuals.com/ja-jp/professional/10-内分泌疾患と代謝性疾患/甲状腺疾患/甲状腺機能低下症) | MSD（MSDマニュアル プロフェッショナル版 日本語） | 2024年2月レビュー | 1 |
 | `x-legacy-L05b:msd-panc` | [MSDマニュアル プロフェッショナル版「膵癌」](https://www.msdmanuals.com/ja-jp/professional/01-消化管疾患/消化管の腫瘍/膵癌) | MSD（MSDマニュアル プロフェッショナル版 日本語） | 2023年10月レビュー・2024年5月最終更新 | 1 |
 | `x-legacy-L05b:msd-pca` | [MSDマニュアル プロフェッショナル版「前立腺癌」](https://www.msdmanuals.com/ja-jp/professional/03-泌尿器疾患/泌尿生殖器癌/前立腺癌) | MSD（MSDマニュアル プロフェッショナル版 日本語） | 2025年2月レビュー | 1 |
-| `x-legacy-L05b:tyojyu-osteo-shindan` | [骨粗鬆症の診断（健康長寿ネット）](https://www.tyojyu.or.jp/net/byouki/kotsu-soshoushou/chiryo.html) | 公益財団法人長寿科学振興財団（健康長寿ネット） | 2019年6月11日更新 | 0 |
+| `x-legacy-L05b:tyojyu-osteo-shindan` | [骨粗鬆症の診断（健康長寿ネット）](https://www.tyojyu.or.jp/net/byouki/kotsu-soshoushou/chiryo.html) | 公益財団法人長寿科学振興財団（健康長寿ネット） | 2019年6月11日更新 | 1 |
 
 ## 監査・生成の途中で追加した資料（x-legacy-L06a）
 
@@ -694,8 +694,8 @@
 | ID | 資料 | 発行 | 基準時点 | 引用数 |
 |---|---|---|---|---:|
 | `x-legacy-L06b:mext-joho1-ch4` | [高等学校情報科「情報Ⅰ」教員研修用教材（本編）第4章 情報通信ネットワークとデータの活用・巻末](https://www.mext.go.jp/content/20200722-mxt_jogai02-100013300_006.pdf) | 文部科学省 | 2020-07 | 19 |
-| `x-legacy-L06b:minds-glossary-2020` | [Minds診療ガイドライン作成マニュアル2020 ver.3.0 用語集](https://minds.jcqhc.or.jp/docs/methods/cpg-development/minds-manual/pdf/glossary_manual_2020.pdf) | 公益財団法人日本医療機能評価機構 EBM医療情報部（Minds） | 2021-03（ver.3.0） | 8 |
 | `x-legacy-L06b:cdc-ss1978-l3s2` | [Principles of Epidemiology in Public Health Practice, 3rd ed. Lesson 3 Section 2: Morbidity Frequency Measures](https://archive.cdc.gov/www_cdc_gov/csels/dsepd/ss1978/lesson3/section2.html) | U.S. Centers for Disease Control and Prevention (CDC) | 2012（第3版、CDCアーカイブ） | 7 |
+| `x-legacy-L06b:minds-glossary-2020` | [Minds診療ガイドライン作成マニュアル2020 ver.3.0 用語集](https://minds.jcqhc.or.jp/docs/methods/cpg-development/minds-manual/pdf/glossary_manual_2020.pdf) | 公益財団法人日本医療機能評価機構 EBM医療情報部（Minds） | 2021-03（ver.3.0） | 6 |
 | `x-legacy-L06b:jjh-64-796` | [医学における因果推論 第二部―交絡要因の選択とバイアスの整理および仮説の具体化に役立つDirected Acyclic Graph―（日本衛生学雑誌 64巻 796-805, 2009 総説）](https://www.jstage.jst.go.jp/article/jjh/64/4/64_4_796/_pdf) | 日本衛生学会（J-STAGE） | 2009-09 | 3 |
 | `x-legacy-L06b:mext-joho2-ch3a` | [高等学校情報科「情報Ⅱ」教員研修用教材（本編）第3章 情報とデータサイエンス 前半](https://www.mext.go.jp/content/20200702-mxt_jogai01-000007843_004.pdf) | 文部科学省 | 2020-07 | 2 |
 | `x-legacy-L06b:mhlw-s0331-9b1` | [内分泌かく乱化学物質の健康影響に関する検討会 中間報告書追補その２ 別冊](https://www.mhlw.go.jp/shingi/2005/03/dl/s0331-9b1.pdf) | 厚生労働省医薬食品局化学物質安全対策室 | 2005-03-31 | 2 |
@@ -721,7 +721,7 @@
 
 | ID | 資料 | 発行 | 基準時点 | 引用数 |
 |---|---|---|---|---:|
-| `x-legacy-L08:kwtan-pomr-1981` | [POMRの実際（中島行正・草信正志・上田智・武田好子・山神英子）川崎医療短期大学紀要 第1号 pp.115-129](https://kwtan.repo.nii.ac.jp/record/640/files/kwjckiyo_1_pp115-130_1981.pdf) | 川崎医療短期大学（川崎医療短期大学紀要。川崎医療短期大学学術リポジトリ掲載） | 1981年度（第1号、1982-03-31発行。ファイル名は1981） | 9 |
+| `x-legacy-L08:kwtan-pomr-1981` | [POMRの実際（中島行正・草信正志・上田智・武田好子・山神英子）川崎医療短期大学紀要 第1号 pp.115-129](https://kwtan.repo.nii.ac.jp/record/640/files/kwjckiyo_1_pp115-130_1981.pdf) | 川崎医療短期大学（川崎医療短期大学紀要。川崎医療短期大学学術リポジトリ掲載） | 1981年度（第1号、1982-03-31発行。ファイル名は1981） | 16 |
 | `x-legacy-L08:mhlw-grants-hl7-allergy` | [厚生労働科学研究 研究報告書（課題番号201325030B）分冊0006「電子情報としてのアレルギー情報」（HL7の説明を含む）](https://mhlw-grants.niph.go.jp/system/files/2013/134011/201325030B_upload/201325030B0006.pdf) | 厚生労働科学研究成果データベース（国立保健医療科学院） | 平成25（2013）年度 研究報告書 | 2 |
 | `x-legacy-L08:ncd-about` | [代表理事ごあいさつ（NCDについて）](https://www.ncd.or.jp/about/) | 一般社団法人 National Clinical Database | unknown（本文の最新データ表記は2024年4月現在） | 1 |
 | `x-legacy-L08:ncd-business` | [事業概要（NCDについて）](https://www.ncd.or.jp/about/business.html) | 一般社団法人 National Clinical Database | unknown（取得時点の掲載内容） | 1 |
@@ -751,4 +751,10 @@
 | ID | 資料 | 発行 | 基準時点 | 引用数 |
 |---|---|---|---|---:|
 | `x-reaudit-legacy-L04a:umin-echo-abbr` | [心エコー検査に頻出する英略語(abbreviation)](https://square.umin.ac.jp/kennsa/echocardiography/text/abbreviation.html) | 東京大学医学部附属病院 検査部（UMIN掲載） | 2026-11取得 | 0 |
+
+## 監査・生成の途中で追加した資料（x-repair-R-01）
+
+| ID | 資料 | 発行 | 基準時点 | 引用数 |
+|---|---|---|---|---:|
+| `x-repair-R-01:jsbmr-osteo-shindan-2012` | [原発性骨粗鬆症の診断基準（2012年度改訂版）](https://jsbmr.umin.jp/guide/pdf/g-guideline.pdf) | 日本骨代謝学会・日本骨粗鬆症学会合同 原発性骨粗鬆症診断基準改訂検討委員会（Osteoporosis Japan vol.21 no.1 2013） | 2012年度改訂版（Osteoporosis Japan 21巻1号，2013年） | 2 |
 

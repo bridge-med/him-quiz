@@ -1,0 +1,16 @@
+{"answers":[
+{"key":"G4-S10-CAN-01","answer":2,"confidence":"high","ambiguous":false,"note":"根拠: がん登録推進法6条1項、届出マニュアル2026はじめに（所在地の都道府県知事）"},
+{"key":"G4-S10-CAN-02","answer":4,"confidence":"high","ambiguous":false,"note":"根拠: 届出マニュアル2026 p.10 診断年の翌年12月31日（2026年診断→2027/12/31）"},
+{"key":"G4-S10-CAN-03","answer":2,"confidence":"high","ambiguous":false,"note":"根拠: マニュアル「初回の診断とは」転移・再発段階でも原発性のがんの情報を届け出る"},
+{"key":"G4-S10-CAN-04","answer":3,"confidence":"high","ambiguous":false,"note":"根拠: マニュアル患者さんからの質問・法35条 開示は応じられない"},
+{"key":"G4-S10-CAN-05","answer":1,"confidence":"high","ambiguous":false,"note":"根拠: 法6条1項2項、全病院+開設者同意で指定された診療所"},
+{"key":"G4-S10-CAN-06","answer":0,"confidence":"high","ambiguous":false,"note":"根拠: 法11条1項 市町村長が作成し保健所の長に提出"},
+{"key":"G4-S10-CAN-07","answer":2,"confidence":"high","ambiguous":false,"note":"根拠: 法28条7項・罰則 六月以下の拘禁刑又は五十万円以下の罰金"},
+{"key":"G4-S10-CAN-08","answer":1,"confidence":"high","ambiguous":false,"note":"根拠: 法44条1項 努力義務、厚生労働大臣の指針"},
+{"key":"G4-S10-CAN-09","answer":3,"confidence":"high","ambiguous":false,"note":"根拠: 院内がん登録指針 実務者は有資格者に限定する必要はない"},
+{"key":"G4-S10-CAN-10","answer":0,"confidence":"high","ambiguous":false,"note":"根拠: 標準登録様式2016 平成28年1月1日以降は1腫瘍1登録"},
+{"key":"G4-S10-CAN-11","answer":3,"confidence":"high","ambiguous":false,"note":"根拠: [420]対応表 他施設診断×初回治療開始=30"},
+{"key":"G4-S10-CAN-12","answer":1,"confidence":"high","ambiguous":false,"note":"根拠: [370] 検体採取日（検査日）、病理報告書発行日ではない"},
+{"key":"G4-S10-CAN-13","answer":4,"confidence":"high","ambiguous":false,"note":"根拠: 病院は例外なく届出義務、院内がん登録で免除されない"},
+{"key":"G4-S10-CAN-14","answer":2,"confidence":"high","ambiguous":false,"note":"根拠: 法20条 当該病院等が届け出たがんの都道府県がん情報（生存確認情報等）"}
+]}

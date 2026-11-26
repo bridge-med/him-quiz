@@ -1,0 +1,102 @@
+{
+ "answers": [
+  {
+   "key": "G4-S11-ICF-01",
+   "answer": 3,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "告示r08-11: 令和9年1月1日施行"
+  },
+  {
+   "key": "G4-S11-ICF-02",
+   "answer": 4,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "MHLW towa資料: 疾病分類表は大中小3表から一本化"
+  },
+  {
+   "key": "G4-S11-ICF-03",
+   "answer": 4,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "MHLW towa資料 ※3: 単独使用不可、必ずステムコードと併用"
+  },
+  {
+   "key": "G4-S11-ICF-04",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "Reference Guide: 2桁目は必ずアルファベット"
+  },
+  {
+   "key": "G4-S11-ICF-05",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "睡眠・覚醒障害群はICD-11で新章(第7章)。他はICD-10にも章あり"
+  },
+  {
+   "key": "G4-S11-ICF-06",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "ICFはICIDHの改訂版(2001 WHA)"
+  },
+  {
+   "key": "G4-S11-ICF-07",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "ICFでは個人因子は分類されていない(例示のみ)"
+  },
+  {
+   "key": "G4-S11-ICF-08",
+   "answer": 3,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "b心身機能 s身体構造 e環境因子 d活動/参加"
+  },
+  {
+   "key": "G4-S11-ICF-09",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "実行状況=現在の環境での実行。bは能力(capacity)"
+  },
+  {
+   "key": "G4-S11-ICF-10",
+   "answer": 3,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "役割遂行=参加制約。他は機能障害/活動制限/環境/個人因子"
+  },
+  {
+   "key": "G4-S11-ICF-11",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "形態コード第5桁=性状(/0〜/9)。異型度は第6桁"
+  },
+  {
+   "key": "G4-S11-ICF-12",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "/2=上皮内→D00-D09"
+  },
+  {
+   "key": "G4-S11-ICF-13",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "instruction manual: 局在コードはC00-C80の分類項目と同じ。D10-D36は誤り"
+  },
+  {
+   "key": "G4-S11-ICF-14",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "ICD-10 D45 真正赤血球増加症(icd.mjs確認)"
+  }
+ ]
+}
