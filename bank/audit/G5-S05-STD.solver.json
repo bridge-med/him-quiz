@@ -1,0 +1,15 @@
+{"answers":[
+{"key":"G5-S05-STD-01","answer":1,"confidence":"high","ambiguous":false,"note":"MEDIS概要v25 5.2(1): 5種類の要素コード17桁。材料コードは3桁、結果識別は報告時設定。"},
+{"key":"G5-S05-STD-02","answer":4,"confidence":"high","ambiguous":false,"note":"v25 6.2(1): HOTは体外診断用医薬品を除く医療用医薬品が対象。他は記載どおり。"},
+{"key":"G5-S05-STD-03","answer":3,"confidence":"high","ambiguous":false,"note":"v25 6.1/6.2: HOTは13桁。薬価基準収載・YJは12桁、レセ電算は9桁、JANは13桁。"},
+{"key":"G5-S05-STD-04","answer":1,"confidence":"high","ambiguous":false,"note":"v25 病名管理番号は病名表記と1対1で不変のレコード管理用コード。"},
+{"key":"G5-S05-STD-05","answer":4,"confidence":"high","ambiguous":false,"note":"R7.1.29通知一覧にHS001,HS005,HS014,HS042あり。手術・処置マスターは標準規格番号なし。"},
+{"key":"G5-S05-STD-06","answer":0,"confidence":"high","ambiguous":false,"note":"v25 5.4(2)①: 常に17桁で未確定桁は0埋め。他は不適切。公開は2025年4月からJLACセンター。"},
+{"key":"G5-S05-STD-07","answer":1,"confidence":"high","ambiguous":false,"note":"施行通知 三条件②真正性の確保の文言。"},
+{"key":"G5-S05-STD-08","answer":3,"confidence":"high","ambiguous":false,"note":"GL7運用編: 混同とは患者を取り違えた記録や記録された情報間の関連性の誤り。"},
+{"key":"G5-S05-STD-09","answer":4,"confidence":"high","ambiguous":false,"note":"GL7 Q&A Q9: e文書法令に基づく要件で、3要素とは対立せず相互補完。"},
+{"key":"G5-S05-STD-10","answer":0,"confidence":"high","ambiguous":false,"note":"施行通知: 法及び省令の施行に伴い「診療録等の電子媒体による保存について」は廃止。照射録は法の適用対象外。"},
+{"key":"G5-S05-STD-11","answer":0,"confidence":"high","ambiguous":false,"note":"外部保存通知: a,bは正。cは義務付けでない、dは医療機関の責任、eは直ちに利用できる体制が必要。"},
+{"key":"G5-S05-STD-12","answer":4,"confidence":"high","ambiguous":false,"note":"GL7企画管理編: PマークもISMSもない場合でも、ISMAP等の認証または外部監査で能力確認でき、選定不可とは書かれていない。"},
+{"key":"G5-S05-STD-13","answer":4,"confidence":"high","ambiguous":false,"note":"GL7企画管理編16: 紙を保存し続ける場合の安全管理(⑧)があり、速やかに廃棄とは限らない。真正性を損なうとの記載もない。"}
+]}

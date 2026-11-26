@@ -1,0 +1,95 @@
+{
+ "answers": [
+  {
+   "key": "G5-S05-HIS-01",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "令和5年 400床以上93.7% (fukyu.txt)"
+  },
+  {
+   "key": "G5-S05-HIS-02",
+   "answer": 3,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "unyo 14.3(6) 内容確認を行わず確定してはならない"
+  },
+  {
+   "key": "G5-S05-HIS-03",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "QA Q38 例4"
+  },
+  {
+   "key": "G5-S05-HIS-04",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "工程表 標準型電子カルテ=標準規格準拠クラウドベース"
+  },
+  {
+   "key": "G5-S05-HIS-05",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "グランドデザイン用語集 オーダリングシステム"
+  },
+  {
+   "key": "G5-S05-HIS-06",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "unyo 14 ⑨(2) 装置記録も確定ルール定義が必要"
+  },
+  {
+   "key": "G5-S05-HIS-07",
+   "answer": 4,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "HS039=退院時サマリーHL7 FHIR (r0701)"
+  },
+  {
+   "key": "G5-S05-HIS-08",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "通知: 実装を強制するものではない"
+  },
+  {
+   "key": "G5-S05-HIS-09",
+   "answer": 3,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "MEDIS v25 画像検査マスター=HS017"
+  },
+  {
+   "key": "G5-S05-HIS-10",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "HS038レポート: リソース別記載"
+  },
+  {
+   "key": "G5-S05-HIS-11",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "HS009レポート ユースケース"
+  },
+  {
+   "key": "G5-S05-HIS-12",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "IHE-J概要: 導入前に業務分析しシナリオ構築"
+  },
+  {
+   "key": "G5-S05-HIS-13",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "HS011レポート: 検査依頼・レポートも対象"
+  }
+ ]
+}

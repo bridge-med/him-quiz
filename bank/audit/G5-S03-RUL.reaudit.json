@@ -1,0 +1,7 @@
+{"verdicts":[
+{"key":"G5-S03-RUL-03","verdict":"pass","blindAnswer":3,"checks":{"answer":true,"distractors":true,"stem":true,"explanations":true,"sources":true,"asOf":true,"domain":true},
+ "notes":"Blind=3 matches key. law:保険医療機関及び保険医療養担当規則 (e-Gov版 施行日2026-06-01): 第18条「厚生労働大臣の定めるもののほか行つてはならない」→D正、B(同意で可)・E(定めるものでも不可)誤; 第19条第1項 大臣の定める医薬品以外は施用・処方不可、ただし書は治験等のみ→A誤; 第22条「遅滞なく」記載→C誤。locators・quotes verified; validator 0 errors."},
+{"key":"G5-S03-RUL-06","verdict":"provisional","blindAnswer":1,"checks":{"answer":true,"distractors":true,"stem":true,"explanations":false,"sources":true,"asOf":true,"domain":true},
+ "notes":"Blind=1 matches key. law:健康保険法 (e-Gov版 施行日2026-10-01) 第70条の2第1項第1号(保険医)・第2号(臨床研修修了後 保険医療機関(病院に限る。)で保険医として三年以上); 令和7年法律第87号附則第1条第2号により令和8年4月1日施行; 附則第7条(現管理者3年間適用除外)・同条次項(施行時の臨床研修等修了医師の読替え) confirmed. A(1年)・C(5年)・D(診療所に限る)・E(保険医不要) are wrong per 第70条の2. Validator 0 errors.",
+ "detail":"Key and distractors are sound, but the explanation's absolute sentence 「管理する保険医療機関が病院か診療所かを問わず、経験を積む場が病院に限られる」 (and the D note) overstates: 療担規則第11条の4 (法第70条の2第1項第2号の省令要件) also accepts routes not tied to hospital experience — 専門医資格(第4号), 公務員として5年以上(第5号), 期間合計5年超(第6号), やむを得ない事由(第7号) — and the 附則読替え for physicians already 臨床研修等修了 at 施行 drops the 「病院に限る」 limit (「保険医療機関において保険医として三年以上診療その他管理及び運営に関する業務」). Suggest limiting the statement to the 3-year experience route and citing 療担規則第11条の4. Third source locator 「附則（令和8年4月1日施行分の経過措置）第7条」 does not name the amending law (医療法等の一部を改正する法律 令和7年法律第87号)."}
+]}

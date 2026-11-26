@@ -1,0 +1,214 @@
+{
+ "verdicts": [
+  {
+   "key": "G5-S07-STD-01",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "sibou20_00 L27-30: 平成27年までは昭和60年モデル人口、令和2年から平成27年モデル人口に改訂（遡及計算）。ganjoho-kijunjinko: 国際比較は世界人口(Segi)。他選択肢すべて誤り。"
+  },
+  {
+   "key": "G5-S07-STD-02",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "再計算: (100*800000+2000*200000)/1e6=480。誤答 860=粗死亡率(430/50000*1e5)、1050=単純平均、1620=重み逆、2100=単純和を確認。式は ganjoho-nenreityouseisibouritu L11。"
+  },
+  {
+   "key": "G5-S07-STD-03",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "再計算: 期待死亡数 80+400=480、540/480*100=112.5。誤答 88.9/135.0/675.0/1080.0 の各算式を確認。SMR式 ganjoho-hyouzyunkasibouhi、100超=全国より高い hoken24_death L20-24。"
+  },
+  {
+   "key": "G5-S07-STD-04",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ganjoho-hyouzyunkasibouhi: 年齢階級別死亡率が得られない場合・小集団で偶然変動が大きい場合に用いる。nenreityouseisibouritu: 基準人口で値が変わる。hoken24_death: SMR>100は死亡率が全国より高い（年齢構成ではない）→選択肢4のみ誤り。"
+  },
+  {
+   "key": "G5-S07-STD-05",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "sibou20_00 (3)粗死亡率の年齢調整死亡率に対する比率 L95-118: Ａ年の人口の年齢構成が基準人口とどれぐらい違うかを表す（年齢構成の違い）。他は別概念。"
+  },
+  {
+   "key": "G5-S07-STD-06",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "sibou20_00 L13-24: 当該年死亡数/当該年国勢調査人口、都道府県別は昭和55年から5年ごと、単位人口10万対、全国は平成17年から毎年。L4-6 粗死亡率は年齢構成の影響を受ける。正答のみ合致。"
+  },
+  {
+   "key": "G5-S07-STD-07",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "life25-08 L12-27: Lx=x〜x+n歳の定常人口、Tx=x歳以上の定常人口、ex=Tx/lx。誤答の説明も定義と整合。"
+  },
+  {
+   "key": "G5-S07-STD-08",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "再計算 1760000/88000=20.0。17.6=T/l0、20.1=T/L(20.11)、85.0=65+20、1760=T/d を確認。数値の内部整合（l66=87000→L65≈87500）も可。"
+  },
+  {
+   "key": "G5-S07-STD-09",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "life25-01 L34-48: 簡易生命表（基幹統計）毎年・人口推計＋概数、完全生命表（基幹統計）5年ごと・国勢調査＋確定数。選択肢4のみ誤り。"
+  },
+  {
+   "key": "G5-S07-STD-10",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "life25-08 L36,53: 寿命中位数=lxがl0の半数となる年齢、平均寿命=e0。life25-15 L213-214: 令和7年 男84.13・女90.17、平均寿命を男2.78・女2.84上回る。"
+  },
+  {
+   "key": "G5-S07-STD-11",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "life25-08 L6-7(lx 10万人)、L16-17(Tx=x歳以上の定常人口)、L13-15(Lx=x〜x+n歳)。life25-01 L6 現実の年齢構成に左右されず→c誤、d誤、e誤(Lxの説明)。a,bのみ正。"
+  },
+  {
+   "key": "G5-S07-STD-12",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "kanja23_gaiyou L60 受療率（人口10万対）＝推計患者数／推計人口×100,000。再計算 900.0、誤答は千対9.0・万対90.0・逆数111.1・百万対9000で全て誤り。"
+  },
+  {
+   "key": "G5-S07-STD-13",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "kanja23_gaiyou L9 層化無作為抽出（標本調査）、L21-24 病院10/17-19のうち1日・退院9/1-30。legacy 沿革: 昭和59年から3年に1回、平成5年から二次医療圏別。選択肢4のみ誤り。"
+  },
+  {
+   "key": "G5-S07-STD-14",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "kanja23_gaiyou (1)(2)(5) L44-67: 推計患者数・推計退院患者数の定義、総患者数=継続的受療者（未受療者含む）、算式は再来×平均診療間隔×6/7。正答のみ合致。"
+  },
+  {
+   "key": "G5-S07-STD-15",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "kanja23_kanjya L582-588: 入院945・外来5,850、男893/女995、男5,118/女6,544（女が高い）。L672-676 入院1位Ⅴ171、外来1位ⅩⅠ994。gaiyou L102 人口推計（令和5年10月1日現在）。年次は設問に明示。"
+  }
+ ]
+}

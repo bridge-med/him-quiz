@@ -3182,6 +3182,3965 @@
     "log": "bank/audit/G3-S06-DAT.audit.json#G3-S06-DAT-12",
     "notes": "stats:naruhodo-yougo-a 円グラフ（構成比の内訳を円で）・帯グラフ（長方形で）・折れ線グラフ（経過時間の変化）、stats:naruhodo-yougo-ha 棒グラフ（数量の大小比較）・ヒストグラム・箱ひげ図（分布・ばらつき）を確認。盲検一致。"
    }
+  },
+  {
+   "subject": "S06",
+   "subtopic": "代表値",
+   "format": "calculation",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "ある病棟の退院患者8人の在院日数（日）は、12、3、30、7、5、14、9、6であった。在院日数の中央値はどれか。",
+   "choices": [
+    "6日",
+    "7日",
+    "8日",
+    "9日",
+    "10.75日"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "中央値はデータを大きさの順に並べて中央にくる値。小さい順に並べると3、5、6、7、9、12、14、30。個数8は偶数なので、真ん中の2つ（4番目の7と5番目の9）を加えて2で割る。（7＋9）÷2＝8日。",
+    "choiceNotes": [
+     "並べ替えずに提示順のまま真ん中の2つ（7と5）を平均した値。中央値は大きさの順に並べてから求める。",
+     "並べ替えた4番目の値だけを取った値。偶数個のときは真ん中の2つの平均をとる。",
+     null,
+     "並べ替えた5番目の値だけを取った値。偶数個のときは真ん中の2つの平均をとる。",
+     "平均値（総和86÷8）。30日という大きな値に引っ張られている。"
+    ],
+    "point": "中央値：並べ替えてから。偶数個なら真ん中2つの平均。"
+   },
+   "sources": [
+    {
+     "ref": "stats:naruhodo-chushin",
+     "title": "なるほど統計学園「中心的な傾向を捉える」",
+     "url": "https://www.stat.go.jp/naruhodo/5_tokucho/chushin.html",
+     "locator": "中央値",
+     "quote": "偶数のときは真ん中の2つを加えて2で割った値となります"
+    }
+   ],
+   "asOf": "総務省統計局 なるほど統計学園（2026-11取得時点の掲載内容）",
+   "calc": {
+    "expr": "(7+9)/2",
+    "value": 8
+   },
+   "id": "s06-0013",
+   "origin": {
+    "batch": "G5-S06-CEN",
+    "key": "G5-S06-CEN-01",
+    "by": "gen:G5-S06-CEN"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-26",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（統計）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G5-S06-CEN",
+     "solver": "solve:G5-S06-CEN（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G5-S06-CEN（統計）"
+    },
+    "log": "bank/audit/G5-S06-CEN.audit.json#G5-S06-CEN-01",
+    "notes": "昇順3,5,6,7,9,12,14,30、(7+9)/2=8を再計算。総和86/8=10.75、提示順の4・5番目(7,5)→6も確認。naruhodo-chushin 中央値の偶数規定を文脈で確認。"
+   }
+  },
+  {
+   "subject": "S06",
+   "subtopic": "代表値",
+   "format": "calculation",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "ある外来の患者20人の年齢を、次の度数分布表にまとめた。個々の年齢が分からないため、各階級の階級値を用いて平均値を求めるとき、その値はどれか。\n20歳以上40歳未満：4人\n40歳以上60歳未満：6人\n60歳以上80歳未満：8人\n80歳以上100歳未満：2人",
+   "choices": [
+    "48歳",
+    "58歳",
+    "60歳",
+    "68歳",
+    "70歳"
+   ],
+   "answer": 1,
+   "explanation": {
+    "correct": "階級値は各階級の中央の値（30、50、70、90）。平均値＝（30×4＋50×6＋70×8＋90×2）÷20＝1160÷20＝58歳。",
+    "choiceNotes": [
+     "各階級の下限（20、40、60、80）を用いた値（960÷20）。階級値は階級の中央の値である。",
+     null,
+     "4つの階級値を度数で重み付けせずに単純平均した値（240÷4）。",
+     "各階級の上限（40、60、80、100）を用いた値（1360÷20）。",
+     "最も度数の多い階級の階級値で、最頻値にあたる。"
+    ],
+    "point": "度数分布からの平均＝Σ（階級値×度数）÷総度数。階級値＝階級の中央。"
+   },
+   "sources": [
+    {
+     "ref": "stats:naruhodo-chushin",
+     "title": "なるほど統計学園「中心的な傾向を捉える」",
+     "url": "https://www.stat.go.jp/naruhodo/5_tokucho/chushin.html",
+     "locator": "平均値（算術平均）",
+     "quote": "ヒストグラムの階級値を代用して計算することもできます"
+    },
+    {
+     "ref": "stats:naruhodo-chushin",
+     "title": "なるほど統計学園「中心的な傾向を捉える」",
+     "url": "https://www.stat.go.jp/naruhodo/5_tokucho/chushin.html",
+     "locator": "平均値（算術平均）",
+     "quote": "階級値は、各階級の中央の値の事を指す"
+    }
+   ],
+   "asOf": "総務省統計局 なるほど統計学園（2026-11取得時点の掲載内容）",
+   "calc": {
+    "expr": "(30*4+50*6+70*8+90*2)/20",
+    "value": 58
+   },
+   "id": "s06-0014",
+   "origin": {
+    "batch": "G5-S06-CEN",
+    "key": "G5-S06-CEN-02",
+    "by": "gen:G5-S06-CEN"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-26",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（統計）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G5-S06-CEN",
+     "solver": "solve:G5-S06-CEN（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G5-S06-CEN（統計）"
+    },
+    "log": "bank/audit/G5-S06-CEN.audit.json#G5-S06-CEN-02",
+    "notes": "Σ=120+300+560+180=1160/20=58。下限960/20=48、上限1360/20=68、非加重240/4=60、最多階級の階級値70を確認。naruhodo-chushin 平均値（階級値代用・階級値=中央）。"
+   }
+  },
+  {
+   "subject": "S06",
+   "subtopic": "代表値",
+   "format": "calculation",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "救急外来の受診者40人の待ち時間を、次の度数分布表にまとめた。この度数分布表から求めた最頻値はどれか。\n0分以上10分未満：5人\n10分以上20分未満：9人\n20分以上30分未満：14人\n30分以上40分未満：7人\n40分以上50分未満：5人",
+   "choices": [
+    "14分",
+    "20分",
+    "25分",
+    "30分",
+    "35分"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "度数分布表から最頻値を求めるときは、最も度数の多い階級の階級値をとる。最も度数が多いのは「20分以上30分未満」（14人）で、その階級値は（20＋30）÷2＝25分。",
+    "choiceNotes": [
+     "最も多い階級の度数（人数）であり、最頻値（値）ではない。",
+     "最も度数の多い階級の下限。最頻値には階級値（階級の中央）を用いる。",
+     null,
+     "最も度数の多い階級の上限。最頻値には階級値（階級の中央）を用いる。",
+     "最も度数の多い階級ではなく、その隣の階級「30分以上40分未満」の階級値。"
+    ],
+    "point": "度数分布の最頻値＝度数最大の階級の階級値。"
+   },
+   "sources": [
+    {
+     "ref": "stats:naruhodo-chushin",
+     "title": "なるほど統計学園「中心的な傾向を捉える」",
+     "url": "https://www.stat.go.jp/naruhodo/5_tokucho/chushin.html",
+     "locator": "最頻値（モード）",
+     "quote": "ヒストグラムから最頻値を求める場合には、最も度数の多い階級の階級値となります"
+    }
+   ],
+   "asOf": "総務省統計局 なるほど統計学園（2026-11取得時点の掲載内容）",
+   "calc": {
+    "expr": "(20+30)/2",
+    "value": 25
+   },
+   "id": "s06-0015",
+   "origin": {
+    "batch": "G5-S06-CEN",
+    "key": "G5-S06-CEN-03",
+    "by": "gen:G5-S06-CEN"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-26",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（統計）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G5-S06-CEN",
+     "solver": "solve:G5-S06-CEN（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G5-S06-CEN（統計）"
+    },
+    "log": "bank/audit/G5-S06-CEN.audit.json#G5-S06-CEN-03",
+    "notes": "度数計40、最多階級20〜30分(14人)の階級値25を確認。naruhodo-chushin 最頻値（ヒストグラムから最頻値＝最多階級の階級値）。"
+   }
+  },
+  {
+   "subject": "S06",
+   "subtopic": "代表値",
+   "format": "knowledge",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "データの分布が単峰形で、右側の裾が左側の裾より長い（右に歪んだ）とき、代表値について正しいものはどれか。",
+   "choices": [
+    "平均値は中央値より小さくなる",
+    "平均値と中央値は一致する",
+    "裾の極端な値に最も強く引っ張られるのは中央値である",
+    "平均値は中央値より大きくなる",
+    "分布の形にかかわらず、代表値には常に平均値を用いる"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "歪んだ分布では平均値と中央値は一致せず、平均値は歪みの方向（裾の長い側）に引っ張られる。右の裾が重い分布では、平均値は中央値より大きくなる。",
+    "choiceNotes": [
+     "左側の裾が重い（左に歪んだ）分布の場合である。",
+     "正規分布のような左右対称の分布の場合である。歪んだ分布では一致しない。",
+     "極端な値に引っ張られるのは平均値。中央値は並べたときの中央の値なので、極端な値の影響を受けにくい。",
+     null,
+     "分布の形によっては中央値や最頻値を代表値にする場合もある。"
+    ],
+    "point": "右に裾が長い → 平均値＞中央値（平均は裾の側へ引っ張られる）。"
+   },
+   "sources": [
+    {
+     "ref": "stats:nist-measures-of-location",
+     "title": "NIST/SEMATECH e-Handbook of Statistical Methods, 1.3.5.1. Measures of Location",
+     "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda351.htm",
+     "locator": "Measures of Location（exponential distribution）",
+     "quote": "if the right tail is heavier than the left tail, the mean will be greater than the median."
+    },
+    {
+     "ref": "stats:naruhodo-chushin",
+     "title": "なるほど統計学園「中心的な傾向を捉える」",
+     "url": "https://www.stat.go.jp/naruhodo/5_tokucho/chushin.html",
+     "locator": "冒頭",
+     "quote": "分布の形によっては最頻値や中央値を代表値にする場合もあります"
+    }
+   ],
+   "asOf": "総務省統計局 なるほど統計学園・NIST/SEMATECH e-Handbook of Statistical Methods（2026-11取得時点の掲載内容）",
+   "id": "s06-0016",
+   "origin": {
+    "batch": "G5-S06-CEN",
+    "key": "G5-S06-CEN-04",
+    "by": "gen:G5-S06-CEN"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-26",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（統計）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G5-S06-CEN",
+     "solver": "solve:G5-S06-CEN（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G5-S06-CEN（統計）"
+    },
+    "log": "bank/audit/G5-S06-CEN.audit.json#G5-S06-CEN-04",
+    "notes": "NIST eda351 exponential節『right tail heavier→mean>median』『left tail heavier→mean<median』を文脈で確認。naruhodo-chushin冒頭で選択肢E否定を確認。"
+   }
+  },
+  {
+   "subject": "S06",
+   "subtopic": "代表値",
+   "format": "knowledge",
+   "difficulty": "standard",
+   "polarity": "negative",
+   "question": "代表値について、誤っているものはどれか。",
+   "choices": [
+    "最頻値は、どのようなデータでも必ず1つに定まる",
+    "平均値は、変量の総和を個数で割ったものである",
+    "中央値は、外れ値が加わっても多くの場合それほど大きな影響を受けない",
+    "外れ値が加わったとき、平均値・中央値・最頻値のうち最も影響を受けるのは平均値である",
+    "正規分布では、平均値・中央値・最頻値は一致する"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "最頻値は最も多い度数（頻度）を示す値であり、必ずしも1つに定まらない（度数が最大の値が複数あることもある）。",
+    "choiceNotes": [
+     null,
+     "正しい。平均（算術平均）の定義である。",
+     "正しい。中央値はデータを並べてちょうど真ん中にくる値なので、外れ値が加わっても多くの場合はそれほど影響を受けない。",
+     "正しい。外れ値が加わった場合、平均値は三つの指標の中で最も影響を受ける（最頻値は外れ値の影響をまず受けない）。",
+     "正しい。正規分布は左右対称で、平均値・中央値・最頻値は一致する。"
+    ],
+    "point": "最頻値は一意とは限らない。外れ値に最も弱いのは平均値。"
+   },
+   "sources": [
+    {
+     "ref": "stats:nist-measures-of-location",
+     "title": "NIST/SEMATECH e-Handbook of Statistical Methods, 1.3.5.1. Measures of Location",
+     "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda351.htm",
+     "locator": "mode",
+     "quote": "It is not necessarily unique."
+    },
+    {
+     "ref": "stats:naruhodo-chushin",
+     "title": "なるほど統計学園「中心的な傾向を捉える」",
+     "url": "https://www.stat.go.jp/naruhodo/5_tokucho/chushin.html",
+     "locator": "平均値と中央値と最頻値の違い",
+     "quote": "平均値は三つの指標の中で最も影響を受けるデータといってもよいでしょう。中央値は、データを並べてちょうど真ん中にくる値なので、外れ値が増えても、多くの場合はそれほど影響ありません"
+    },
+    {
+     "ref": "stats:nist-measures-of-location",
+     "title": "NIST/SEMATECH e-Handbook of Statistical Methods, 1.3.5.1. Measures of Location",
+     "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda351.htm",
+     "locator": "Normal Distribution",
+     "quote": "the mean, median, and mode are actually equivalent"
+    }
+   ],
+   "asOf": "総務省統計局 なるほど統計学園・NIST/SEMATECH e-Handbook of Statistical Methods（2026-11取得時点の掲載内容）",
+   "id": "s06-0017",
+   "origin": {
+    "batch": "G5-S06-CEN",
+    "key": "G5-S06-CEN-05",
+    "by": "gen:G5-S06-CEN"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-26",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（統計）で修正",
+     "修正後の独立再監査（pass）",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G5-S06-CEN",
+     "solver": "solve:G5-S06-CEN（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G5-S06-CEN（統計）",
+     "reauditor": "reaudit:G5-S06-CEN"
+    },
+    "log": "bank/audit/G5-S06-CEN.audit.json#G5-S06-CEN-05",
+    "notes": "再監査: Blind answer 3 matches key. D false: NIST eda351 mode 'It is not necessarily unique.' (L48-50). A true: naruhodo-chushin L48 平均の定義. New B true and hedged ('多くの場合'): naruhodo-chushin L81. C true: naruhodo-chushin L81 (平均値は三つの指標の中で最も影響を受ける, モードは外れ値の影響はまず受けません). E true: NIST eda351 L83-84 normal distri｜Key D（最頻値は一意とは限らない）はNIST eda351 mode『not necessarily unique』で正しい。C=naruhodo-chushin、E=NIST eda351 Normal Distributionで確認。"
+   }
+  },
+  {
+   "subject": "S06",
+   "subtopic": "代表値",
+   "format": "calculation",
+   "difficulty": "advanced",
+   "polarity": "positive",
+   "question": "ある病院の内視鏡検査の所要時間の平均値は、午前の20件で30分、午後の30件で20分であった。午前と午後を合わせた50件の所要時間の平均値はどれか。",
+   "choices": [
+    "24分",
+    "25分",
+    "26分",
+    "50分"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "平均値は総和を個数で割ったもの。総和は30×20＋20×30＝1200分、件数は50件なので、1200÷50＝24分。件数の異なる2群の平均値を単純に平均してはならない。",
+    "choiceNotes": [
+     null,
+     "2つの平均値を件数で重み付けせずに単純平均した値（（30＋20）÷2）。",
+     "件数を逆に組み合わせて重み付けした値（（30×30＋20×20）÷50）。",
+     "2つの平均値を足しただけの値で、平均値ではない。"
+    ],
+    "point": "群を合わせた平均＝（各群の平均×件数）の合計÷総件数。"
+   },
+   "sources": [
+    {
+     "ref": "stats:naruhodo-chushin",
+     "title": "なるほど統計学園「中心的な傾向を捉える」",
+     "url": "https://www.stat.go.jp/naruhodo/5_tokucho/chushin.html",
+     "locator": "平均値（算術平均）",
+     "quote": "平均とは変量の総和を個数で割ったものです"
+    }
+   ],
+   "asOf": "総務省統計局 なるほど統計学園（2026-11取得時点の掲載内容）",
+   "calc": {
+    "expr": "(30*20+20*30)/50",
+    "value": 24
+   },
+   "id": "s06-0018",
+   "origin": {
+    "batch": "G5-S06-CEN",
+    "key": "G5-S06-CEN-06",
+    "by": "gen:G5-S06-CEN"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-26",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（統計）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G5-S06-CEN",
+     "solver": "solve:G5-S06-CEN（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G5-S06-CEN（統計）"
+    },
+    "log": "bank/audit/G5-S06-CEN.audit.json#G5-S06-CEN-06",
+    "notes": "(30*20+20*30)/50=24、単純平均25、逆重み1300/50=26を確認。naruhodo-chushin 平均の定義。"
+   }
+  },
+  {
+   "subject": "S06",
+   "subtopic": "散布度",
+   "format": "calculation",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "ある病棟の8日間の新規入院患者数（人）は、2、4、4、4、5、5、7、9であった。分散を「偏差の2乗の平均（偏差平方和をデータの個数8で割る）」として求めるとき、標準偏差はどれか。",
+   "choices": [
+    "1.5人",
+    "2人",
+    "約2.14人",
+    "4人",
+    "7人"
+   ],
+   "answer": 1,
+   "explanation": {
+    "correct": "平均値＝40÷8＝5。偏差は−3、−1、−1、−1、0、0、2、4で、偏差平方和＝9＋1＋1＋1＋0＋0＋4＋16＝32。分散＝32÷8＝4。標準偏差は分散の正の平方根なので√4＝2人。",
+    "choiceNotes": [
+     "偏差の絶対値の平均（12÷8）で、平均絶対偏差にあたる。",
+     null,
+     "偏差平方和を個数−1（7）で割った分散の平方根（√（32÷7））。本問の定義（個数で割る）とは異なる。",
+     "分散の値。標準偏差は分散の正の平方根をとる。",
+     "範囲（最大値9−最小値2）。"
+    ],
+    "point": "分散＝偏差平方和÷n（本問の定義）、標準偏差＝√分散。"
+   },
+   "sources": [
+    {
+     "ref": "stats:naruhodo-chirabari-jyokyu",
+     "title": "なるほど統計学園「データの散らばりを見る」",
+     "url": "https://www.stat.go.jp/naruhodo/10_tokucho/chirabari.html",
+     "locator": "分散",
+     "quote": "偏差二乗和）の平均を求めることで"
+    },
+    {
+     "ref": "stats:naruhodo-chirabari-jyokyu",
+     "title": "なるほど統計学園「データの散らばりを見る」",
+     "url": "https://www.stat.go.jp/naruhodo/10_tokucho/chirabari.html",
+     "locator": "標準偏差",
+     "quote": "分散の正の平方根をとり、その値を標準偏差と言います"
+    }
+   ],
+   "asOf": "総務省統計局 なるほど統計学園（2026-11取得時点の掲載内容）",
+   "calc": {
+    "expr": "sqrt(32/8)",
+    "value": 2
+   },
+   "id": "s06-0019",
+   "origin": {
+    "batch": "G5-S06-CEN",
+    "key": "G5-S06-CEN-07",
+    "by": "gen:G5-S06-CEN"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-26",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（統計）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G5-S06-CEN",
+     "solver": "solve:G5-S06-CEN（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G5-S06-CEN（統計）"
+    },
+    "log": "bank/audit/G5-S06-CEN.audit.json#G5-S06-CEN-07",
+    "notes": "平均5、偏差平方和32、/8=4、SD2。MAD12/8=1.5、√(32/7)≈2.14、範囲7を確認。naruhodo-chirabari-jyokyu 分散・標準偏差（偏差二乗和の平均、正の平方根）。"
+   }
+  },
+  {
+   "subject": "S06",
+   "subtopic": "散布度",
+   "format": "calculation",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "無作為に選んだ退院患者5人について、退院時要約の作成に要した日数（日）は2、4、7、9、13であった。分散を「偏差平方和をデータの個数から1を引いた数（n−1）で割る」と定義するとき、分散はどれか。",
+   "choices": [
+    "約4.30",
+    "11",
+    "14.8",
+    "74",
+    "18.5"
+   ],
+   "answer": 4,
+   "explanation": {
+    "correct": "平均値＝35÷5＝7。偏差は−5、−3、0、2、6で、偏差平方和＝25＋9＋0＋4＋36＝74。n−1＝4で割って分散＝74÷4＝18.5。",
+    "choiceNotes": [
+     "分散18.5の平方根で、標準偏差にあたる。",
+     "範囲（最大値13−最小値2）。",
+     "偏差平方和をデータの個数5で割った値。本問の定義（n−1で割る）とは異なる。",
+     "偏差平方和そのもので、個数で割っていない。",
+     null
+    ],
+    "point": "n−1で割る定義：分散＝偏差平方和÷（n−1）。nで割る定義と混同しない。"
+   },
+   "sources": [
+    {
+     "ref": "stats:nist-measures-of-scale",
+     "title": "NIST/SEMATECH e-Handbook of Statistical Methods, 1.3.5.6. Measures of Scale",
+     "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda356.htm",
+     "locator": "variance",
+     "quote": "s^{2} = \\sum_{i=1}^{N}(Y_{i} - \\bar{Y})^{2}/(N - 1)"
+    }
+   ],
+   "asOf": "NIST/SEMATECH e-Handbook of Statistical Methods・NIST Dataplot Reference Manual（2026-11取得時点の掲載内容）",
+   "calc": {
+    "expr": "74/4",
+    "value": 18.5
+   },
+   "id": "s06-0020",
+   "origin": {
+    "batch": "G5-S06-CEN",
+    "key": "G5-S06-CEN-08",
+    "by": "gen:G5-S06-CEN"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-26",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（統計）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G5-S06-CEN",
+     "solver": "solve:G5-S06-CEN（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G5-S06-CEN（統計）"
+    },
+    "log": "bank/audit/G5-S06-CEN.audit.json#G5-S06-CEN-08",
+    "notes": "平均7、偏差平方和74、/4=18.5、√18.5≈4.30、74/5=14.8、範囲11を確認。NIST eda356 s^2=Σ/(N−1)。asOfにDataplotの記載があるが実害なし。"
+   }
+  },
+  {
+   "subject": "S06",
+   "subtopic": "散布度",
+   "format": "knowledge",
+   "difficulty": "standard",
+   "polarity": "negative",
+   "question": "変動係数について、誤っているものはどれか。",
+   "choices": [
+    "標準偏差を平均値で割った値である",
+    "測定単位に依存しないため、単位や平均値の大きさが異なるデータのばらつきの比較に用いられる",
+    "平均値が0に近いと、平均値のわずかな変化で値が大きく変わる",
+    "摂氏で測った気温のような間隔尺度のデータにも、比尺度のデータと同様に適している",
+    "標準偏差が同じなら、平均値が大きい集団ほど変動係数は小さくなる"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "変動係数は原則として、0に意味がある比尺度のデータに用いる。摂氏や華氏の気温は間隔尺度であり、同じ測定値でも摂氏と華氏で変動係数が異なってしまうため適さない。",
+    "choiceNotes": [
+     "正しい。変動係数＝標準偏差÷平均値。",
+     "正しい。比尺度である限り測定単位に依存しないので、単位や平均値が大きく異なるデータのばらつきの比較に有用である。",
+     "正しい。平均値が0付近では、平均値の小さな変化に敏感である。",
+     null,
+     "正しい。変動係数＝標準偏差÷平均値なので、分子が同じなら分母（平均値）が大きいほど小さくなる。"
+    ],
+    "point": "変動係数＝SD÷平均。単位に依存しない。比尺度に限る。"
+   },
+   "sources": [
+    {
+     "ref": "x-gen-G5-S06-CEN:nist-dataplot-cv",
+     "title": "NIST Dataplot Reference Manual: COEFFICIENT OF VARIATION",
+     "url": "https://www.itl.nist.gov/div898/software/dataplot/refman2/auxillar/coefvari.htm",
+     "locator": "Description",
+     "quote": "The coefficient of variation should typically only be used for data measured on a ratio scale."
+    },
+    {
+     "ref": "x-gen-G5-S06-CEN:nist-dataplot-cv",
+     "title": "NIST Dataplot Reference Manual: COEFFICIENT OF VARIATION",
+     "url": "https://www.itl.nist.gov/div898/software/dataplot/refman2/auxillar/coefvari.htm",
+     "locator": "Description",
+     "quote": "the coefficient of variation on the Celcius scale will be different than the coefficient of variation on the Farenheit scale"
+    },
+    {
+     "ref": "x-gen-G5-S06-CEN:nist-dataplot-cv",
+     "title": "NIST Dataplot Reference Manual: COEFFICIENT OF VARIATION",
+     "url": "https://www.itl.nist.gov/div898/software/dataplot/refman2/auxillar/coefvari.htm",
+     "locator": "Description",
+     "quote": "if the mean value is near zero, the coefficient of variation is sensitive to small changes in the mean"
+    }
+   ],
+   "asOf": "NIST/SEMATECH e-Handbook of Statistical Methods・NIST Dataplot Reference Manual（2026-11取得時点の掲載内容）",
+   "id": "s06-0021",
+   "origin": {
+    "batch": "G5-S06-CEN",
+    "key": "G5-S06-CEN-09",
+    "by": "gen:G5-S06-CEN"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-26",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（統計）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G5-S06-CEN",
+     "solver": "solve:G5-S06-CEN（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G5-S06-CEN（統計）"
+    },
+    "log": "bank/audit/G5-S06-CEN.audit.json#G5-S06-CEN-09",
+    "notes": "NIST Dataplot coefvari（追加ソース、本文を確認）：比尺度に限る、摂氏と華氏でCVが異なる、単位非依存（比尺度の限り）、平均0付近で敏感。Eは定義（平均>0）から自明。"
+   }
+  },
+  {
+   "subject": "S06",
+   "subtopic": "散布度",
+   "format": "calculation",
+   "difficulty": "advanced",
+   "polarity": "positive",
+   "question": "成人の集団Aの体重は平均値60kg、標準偏差9kg、新生児の集団Bの体重は平均値3.0kg、標準偏差0.6kgであった。変動係数（標準偏差÷平均値）を用いて、相対的なばらつきを比較した結果として正しいものはどれか。",
+   "choices": [
+    "Aは0.15、Bは0.2で、Bの方が相対的なばらつきが大きい",
+    "Aは0.15、Bは0.2で、Aの方が相対的なばらつきが大きい",
+    "Aは約6.67、Bは5で、Aの方が相対的なばらつきが大きい",
+    "標準偏差がAは9、Bは0.6なので、Aの方が相対的なばらつきが大きい"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "変動係数はA＝9÷60＝0.15、B＝0.6÷3.0＝0.2。標準偏差そのものはAの方がはるかに大きいが、平均値に対する相対的なばらつきはBの方が大きい。平均値が大きく異なるデータのばらつきの比較には変動係数が有用である。",
+    "choiceNotes": [
+     null,
+     "値は正しいが大小の判断が逆。変動係数が大きい方（B）が相対的なばらつきが大きい。",
+     "平均値÷標準偏差で、変動係数の逆数を計算している。",
+     "標準偏差は平均値の大きさに左右されるため、平均値が大きく異なる集団の相対的なばらつきの比較には適さない。"
+    ],
+    "point": "平均が大きく違う集団のばらつき比較は変動係数（SD÷平均）で。"
+   },
+   "sources": [
+    {
+     "ref": "x-gen-G5-S06-CEN:nist-dataplot-cv",
+     "title": "NIST Dataplot Reference Manual: COEFFICIENT OF VARIATION",
+     "url": "https://www.itl.nist.gov/div898/software/dataplot/refman2/auxillar/coefvari.htm",
+     "locator": "Description",
+     "quote": "the ratio of the standard deviation to the mean"
+    },
+    {
+     "ref": "x-gen-G5-S06-CEN:nist-dataplot-cv",
+     "title": "NIST Dataplot Reference Manual: COEFFICIENT OF VARIATION",
+     "url": "https://www.itl.nist.gov/div898/software/dataplot/refman2/auxillar/coefvari.htm",
+     "locator": "Description",
+     "quote": "When comparing variability between data sets with different measurement scales or very different mean values, the coefficient of variation can be a useful alternative"
+    }
+   ],
+   "asOf": "NIST/SEMATECH e-Handbook of Statistical Methods・NIST Dataplot Reference Manual（2026-11取得時点の掲載内容）",
+   "calc": {
+    "expr": "0.6/3.0",
+    "value": 0.2
+   },
+   "id": "s06-0022",
+   "origin": {
+    "batch": "G5-S06-CEN",
+    "key": "G5-S06-CEN-10",
+    "by": "gen:G5-S06-CEN"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-26",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（統計）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G5-S06-CEN",
+     "solver": "solve:G5-S06-CEN（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G5-S06-CEN（統計）"
+    },
+    "log": "bank/audit/G5-S06-CEN.audit.json#G5-S06-CEN-10",
+    "notes": "9/60=0.15、0.6/3.0=0.2、逆数6.67・5を確認。NIST Dataplot coefvari 定義と『very different mean values』の比較用途。"
+   }
+  },
+  {
+   "subject": "S06",
+   "subtopic": "散布度",
+   "format": "calculation",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "ある病院の退院患者100人の在院日数は、最小値2日、第1四分位数6日、中央値9日、第3四分位数15日、最大値41日であった。範囲と四分位範囲の組み合わせとして正しいものはどれか。",
+   "choices": [
+    "範囲41日、四分位範囲15日",
+    "範囲39日、四分位範囲9日",
+    "範囲39日、四分位範囲6日",
+    "範囲32日、四分位範囲9日",
+    "範囲35日、四分位範囲13日"
+   ],
+   "answer": 1,
+   "explanation": {
+    "correct": "範囲＝最大値−最小値＝41−2＝39日。四分位範囲＝第3四分位数−第1四分位数＝15−6＝9日。",
+    "choiceNotes": [
+     "最大値と第3四分位数をそのまま答えている。",
+     null,
+     "四分位範囲を第3四分位数−中央値（15−9）で求めている。",
+     "範囲を最大値−中央値（41−9）で求めている。",
+     "範囲を最大値−第1四分位数（41−6）、四分位範囲を第3四分位数−最小値（15−2）で求めている。"
+    ],
+    "point": "範囲＝最大−最小、四分位範囲＝Q3−Q1。"
+   },
+   "sources": [
+    {
+     "ref": "stats:naruhodo-chirabari-shokyu",
+     "title": "なるほど統計学園「データの散らばりを捉える」",
+     "url": "https://www.stat.go.jp/naruhodo/5_tokucho/chirabari.html",
+     "locator": "範囲、最大値、最小値",
+     "quote": "変量の中の最大値と最小値の差で求めます"
+    },
+    {
+     "ref": "stats:naruhodo-chirabari-shokyu",
+     "title": "なるほど統計学園「データの散らばりを捉える」",
+     "url": "https://www.stat.go.jp/naruhodo/5_tokucho/chirabari.html",
+     "locator": "四分位範囲",
+     "quote": "（第3四分位数－第1四分位数）の値のことを四分位範囲といい"
+    }
+   ],
+   "asOf": "総務省統計局 なるほど統計学園（2026-11取得時点の掲載内容）",
+   "calc": {
+    "expr": "15-6",
+    "value": 9
+   },
+   "id": "s06-0023",
+   "origin": {
+    "batch": "G5-S06-CEN",
+    "key": "G5-S06-CEN-11",
+    "by": "gen:G5-S06-CEN"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-26",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（統計）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G5-S06-CEN",
+     "solver": "solve:G5-S06-CEN（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G5-S06-CEN（統計）"
+    },
+    "log": "bank/audit/G5-S06-CEN.audit.json#G5-S06-CEN-11",
+    "notes": "41−2=39、15−6=9、各誤答(41/15、39/6、32/9、35/13)の算出根拠を確認。naruhodo-chirabari-shokyu 範囲・四分位範囲。"
+   }
+  },
+  {
+   "subject": "S06",
+   "subtopic": "散布度",
+   "format": "knowledge",
+   "difficulty": "standard",
+   "polarity": "negative",
+   "question": "散布度の指標について、誤っているものはどれか。",
+   "choices": [
+    "範囲は最大値と最小値だけで決まり、中心付近の散らばりは反映されない",
+    "平均値が同じデータでも、散らばりの程度が異なることがある",
+    "平均絶対偏差は偏差を2乗しないため、分散や標準偏差より極端な値の影響を受けにくい",
+    "四分位範囲は最大値と最小値をもとに計算するため、外れ値の影響を強く受ける",
+    "第2四分位数は中央値と同じ値である"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "四分位範囲は第3四分位数−第1四分位数で、データの中央部分だけを用いて中心付近の散らばりをみる指標である。最大値・最小値は用いないので、両端の極端な値の影響を受けにくい。",
+    "choiceNotes": [
+     "正しい。範囲は両端の2つの値だけに基づき、中心付近の散らばりはまったく捉えない。",
+     "正しい。平均値がどれも5でも、散らばりが大きく異なるデータがある。代表値だけでなく散らばりにも着目する必要がある。",
+     "正しい。平均絶対偏差は偏差を2乗しないので、分散・標準偏差より極端な観測値の影響を受けにくい。",
+     null,
+     "正しい。2/4番目のデータである第2四分位数は中央値と同じである。"
+    ],
+    "point": "範囲＝両端だけ、四分位範囲＝中央部分だけを使う。"
+   },
+   "sources": [
+    {
+     "ref": "stats:nist-measures-of-scale",
+     "title": "NIST/SEMATECH e-Handbook of Statistical Methods, 1.3.5.6. Measures of Scale",
+     "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda356.htm",
+     "locator": "Definitions of Variability（summary）",
+     "quote": "the range only uses the two most extreme points and the interquartile range only uses the middle portion of the data"
+    },
+    {
+     "ref": "stats:naruhodo-chirabari-shokyu",
+     "title": "なるほど統計学園「データの散らばりを捉える」",
+     "url": "https://www.stat.go.jp/naruhodo/5_tokucho/chirabari.html",
+     "locator": "四分位範囲",
+     "quote": "中心付近のデータがどのくらい散らばっているかの目安として用います"
+    },
+    {
+     "ref": "stats:nist-measures-of-scale",
+     "title": "NIST/SEMATECH e-Handbook of Statistical Methods, 1.3.5.6. Measures of Scale",
+     "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda356.htm",
+     "locator": "average absolute deviation",
+     "quote": "so it is less affected by extreme observations than are the variance and standard deviation"
+    }
+   ],
+   "asOf": "総務省統計局 なるほど統計学園・NIST/SEMATECH e-Handbook of Statistical Methods（2026-11取得時点の掲載内容）",
+   "id": "s06-0024",
+   "origin": {
+    "batch": "G5-S06-CEN",
+    "key": "G5-S06-CEN-12",
+    "by": "gen:G5-S06-CEN"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-26",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（統計）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G5-S06-CEN",
+     "solver": "solve:G5-S06-CEN（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G5-S06-CEN（統計）"
+    },
+    "log": "bank/audit/G5-S06-CEN.audit.json#G5-S06-CEN-12",
+    "notes": "NIST eda356 summary（range=両端2点、IQR=middle portion）、average absolute deviationは2乗しないため外れ値に頑健、naruhodo-chirabari-shokyu 四分位数（第2四分位数＝中央値）、A・B・C平均5の例を確認。"
+   }
+  },
+  {
+   "subject": "S06",
+   "subtopic": "散布度",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "negative",
+   "question": "分散と標準偏差について、誤っているものはどれか。",
+   "choices": [
+    "偏差の平均は必ず0になるため、偏差を2乗した値の平均で散らばりをみる",
+    "分散の単位は、もとのデータの単位を2乗したものになる",
+    "標準偏差は分散の正の平方根であり、もとのデータと単位がそろう",
+    "分散が大きいほど、データ全体の散らばりが大きい",
+    "偏差を2乗するので、分散は外れ値の影響をほとんど受けない"
+   ],
+   "answer": 4,
+   "explanation": {
+    "correct": "偏差を2乗すると、平均から遠い値ほど大きな重みをもつ（平均から2離れた値は4、10離れた値は100を加える）。そのため分散は裾の極端な値の影響を大きく受ける。",
+    "choiceNotes": [
+     "正しい。偏差の平均は必ず0になるので、2乗してから平均する（偏差二乗和の平均）。",
+     "正しい。分散は単位を2乗したものになる。",
+     "正しい。標準偏差は分散の正の平方根で、もとのデータの単位に戻る。",
+     "正しい。分散が大きければデータ全体の散らばりが大きいことを意味する。",
+     null
+    ],
+    "point": "2乗するから外れ値に弱い。√をとると単位が戻る（標準偏差）。"
+   },
+   "sources": [
+    {
+     "ref": "stats:nist-measures-of-scale",
+     "title": "NIST/SEMATECH e-Handbook of Statistical Methods, 1.3.5.6. Measures of Scale",
+     "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda356.htm",
+     "locator": "variance",
+     "quote": "Squaring the distance from the mean has the effect of giving greater weight to values that are further from the mean."
+    },
+    {
+     "ref": "stats:naruhodo-chirabari-jyokyu",
+     "title": "なるほど統計学園「データの散らばりを見る」",
+     "url": "https://www.stat.go.jp/naruhodo/10_tokucho/chirabari.html",
+     "locator": "分散",
+     "quote": "偏差の平均は必ず０になるので"
+    },
+    {
+     "ref": "stats:nist-measures-of-scale",
+     "title": "NIST/SEMATECH e-Handbook of Statistical Methods, 1.3.5.6. Measures of Scale",
+     "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda356.htm",
+     "locator": "standard deviation",
+     "quote": "(the variance squares the units)"
+    }
+   ],
+   "asOf": "総務省統計局 なるほど統計学園・NIST/SEMATECH e-Handbook of Statistical Methods（2026-11取得時点の掲載内容）",
+   "id": "s06-0025",
+   "origin": {
+    "batch": "G5-S06-CEN",
+    "key": "G5-S06-CEN-13",
+    "by": "gen:G5-S06-CEN"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-26",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（統計）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G5-S06-CEN",
+     "solver": "solve:G5-S06-CEN（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G5-S06-CEN（統計）"
+    },
+    "log": "bank/audit/G5-S06-CEN.audit.json#G5-S06-CEN-13",
+    "notes": "NIST eda356 variance（2乗で遠い値に大きな重み、2→4・10→100）、standard deviation（units）、naruhodo-chirabari-jyokyu（偏差の平均は0、分散大→散らばり大）を確認。"
+   }
+  },
+  {
+   "subject": "S06",
+   "subtopic": "確率分布",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "正規分布の性質として、正しいものはどれか。",
+   "choices": [
+    "平均値±1標準偏差の範囲に全体の約95%が含まれる。",
+    "平均値±2標準偏差の範囲に全体の約68%が含まれる。",
+    "平均値±3標準偏差の範囲に全体の100%が含まれ、その外側の値はとらない。",
+    "歪度が正であり、右に長く裾を引く分布である。",
+    "平均値・中央値・最頻値が一致する。"
+   ],
+   "answer": 4,
+   "explanation": {
+    "correct": "正規分布は平均値を中心に左右対称な釣鐘型の分布で、平均値・中央値・最頻値はいずれも位置パラメータμに一致する。",
+    "choiceNotes": [
+     "平均値±1標準偏差に含まれるのは約68.3%である。約95%は±2標準偏差（95.5%）や±1.96標準偏差（95.0%）の範囲である。",
+     "平均値±2標準偏差に含まれるのは約95.5%である。約68%は±1標準偏差の範囲である。",
+     "平均値±3標準偏差に含まれるのは約99.7%であり100%ではない。正規分布のとりうる値の範囲は−∞から∞までである。",
+     "正規分布は左右対称で、歪度は0である。右に裾を引く（歪度が正の）分布ではない。",
+     null
+    ],
+    "point": "正規分布：平均＝中央値＝最頻値、歪度0。±1SD≒68.3%、±2SD≒95.5%、±3SD≒99.7%。"
+   },
+   "sources": [
+    {
+     "ref": "stats:nist-normal-distribution",
+     "title": "NIST/SEMATECH e-Handbook of Statistical Methods, 1.3.6.6.1. Normal Distribution",
+     "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda3661.htm",
+     "locator": "Common Statistics",
+     "quote": "Median The location parameter μ . Mode The location parameter μ . Range \\(-\\infty\\) to \\(\\infty\\)."
+    },
+    {
+     "ref": "stats:nist-normal-distribution",
+     "title": "NIST/SEMATECH e-Handbook of Statistical Methods, 1.3.6.6.1. Normal Distribution",
+     "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda3661.htm",
+     "locator": "Common Statistics（Skewness）",
+     "quote": "Skewness 0 Kurtosis 3"
+    },
+    {
+     "ref": "x-legacy-L06a:cdc-poe-l2s7",
+     "title": "Principles of Epidemiology in Public Health Practice, 3rd ed. Lesson 2 Section 7: Measures of Spread",
+     "url": "https://archive.cdc.gov/www_cdc_gov/csels/dsepd/ss1978/lesson2/section7.html",
+     "locator": "Properties of the standard deviation（Figure 2.9）",
+     "quote": "approximately two-thirds (68.3%, to be exact) of the data fall within one standard deviation of either side of the mean; 95.5% of the data fall within two standard deviations of the mean; and 99.7% of the data fall within three standard deviations."
+    }
+   ],
+   "asOf": "統計学の定義・性質（時点に依存しない）",
+   "id": "s06-0026",
+   "origin": {
+    "batch": "G5-S06-PRB",
+    "key": "G5-S06-PRB-01",
+    "by": "gen:G5-S06-PRB"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-26",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（統計）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G5-S06-PRB",
+     "solver": "solve:G5-S06-PRB（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G5-S06-PRB（統計）"
+    },
+    "log": "bank/audit/G5-S06-PRB.audit.json#G5-S06-PRB-01",
+    "notes": "NIST eda3661 (median/mode=μ, skewness 0, range −∞〜∞) and CDC PoE L2S7 Fig2.9 (68.3/95.5/99.7%) confirm key C and all distractor notes. Solver agrees."
+   }
+  },
+  {
+   "subject": "S06",
+   "subtopic": "確率分布",
+   "format": "calculation",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "ある検査値が、平均値100、標準偏差10の正規分布に従うとする。平均値±2標準偏差の範囲に全体の約95.5%が含まれることを用いると、検査値が120を超える者の割合は約何%か。",
+   "choices": [
+    "約0.15%",
+    "約4.5%",
+    "約2.25%",
+    "約15.85%",
+    "約47.75%"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "120は平均値＋2標準偏差にあたる。±2標準偏差の外側は100−95.5＝4.5%で、正規分布は左右対称なので上側（120超）はその半分の約2.25%となる。",
+    "choiceNotes": [
+     "約0.15%は平均値＋3標準偏差を超える割合（(100−99.7)÷2）にあたる。120は＋2標準偏差である。",
+     "約4.5%は±2標準偏差の外側の両側の合計である。120を超える側（上側）だけなら半分になる。",
+     null,
+     "約15.85%は平均値＋1標準偏差（110）を超える割合（(100−68.3)÷2）にあたる。",
+     "約47.75%は平均値から＋2標準偏差までの割合（95.5÷2）であり、120を超える割合ではない。"
+    ],
+    "point": "片側の割合＝(100−範囲内の%)÷2。＋2SD超は約2.3%（偏差値70で上位約2.3%）。"
+   },
+   "sources": [
+    {
+     "ref": "x-legacy-L06a:cdc-poe-l2s7",
+     "title": "Principles of Epidemiology in Public Health Practice, 3rd ed. Lesson 2 Section 7: Measures of Spread",
+     "url": "https://archive.cdc.gov/www_cdc_gov/csels/dsepd/ss1978/lesson2/section7.html",
+     "locator": "Figure 2.9",
+     "quote": "±2 SD includes 95.5%"
+    },
+    {
+     "ref": "x-legacy-L06a:cdc-poe-l2s7",
+     "title": "Principles of Epidemiology in Public Health Practice, 3rd ed. Lesson 2 Section 7: Measures of Spread",
+     "url": "https://archive.cdc.gov/www_cdc_gov/csels/dsepd/ss1978/lesson2/section7.html",
+     "locator": "Properties of the standard deviation",
+     "quote": "The mean is at the center, and data are equally distributed on either side of this mean."
+    },
+    {
+     "ref": "stats:naruhodo-chirabari-jyokyu",
+     "title": "なるほど統計学園「データの散らばりを見る」",
+     "url": "https://www.stat.go.jp/naruhodo/10_tokucho/chirabari.html",
+     "locator": "偏差値",
+     "quote": "偏差値が70の場合、集団の中で上から約2.3％のところに位置していることが分かります。"
+    }
+   ],
+   "asOf": "統計学の定義・性質（時点に依存しない）",
+   "calc": {
+    "expr": "(100-95.5)/2",
+    "value": 2.25
+   },
+   "id": "s06-0027",
+   "origin": {
+    "batch": "G5-S06-PRB",
+    "key": "G5-S06-PRB-02",
+    "by": "gen:G5-S06-PRB"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-26",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（統計）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G5-S06-PRB",
+     "solver": "solve:G5-S06-PRB（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G5-S06-PRB（統計）"
+    },
+    "log": "bank/audit/G5-S06-PRB.audit.json#G5-S06-PRB-02",
+    "notes": "Recomputed (100−95.5)/2=2.25; distractors 0.15=(100−99.7)/2, 4.5 two-sided, 15.85=(100−68.3)/2, 47.75=95.5/2 all correct. CDC Fig2.9 symmetry; naruhodo 偏差値70→上位約2.3%. Solver agrees."
+   }
+  },
+  {
+   "subject": "S06",
+   "subtopic": "確率分布",
+   "format": "calculation",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "ある院内研修の確認テストで、受講者全体の平均点が60点、標準偏差が8点であった。得点が72点の受講者の偏差値はどれか。",
+   "choices": [
+    "1.5",
+    "15",
+    "51.5",
+    "62",
+    "65"
+   ],
+   "answer": 4,
+   "explanation": {
+    "correct": "まず標準化する：(72−60)÷8＝1.5。偏差値は標準化した値を10倍して50を加えた値なので、1.5×10＋50＝65となる。",
+    "choiceNotes": [
+     "1.5は標準化した値（平均0、標準偏差1）であり、偏差値に変換する前の値である。",
+     "15は標準化した値を10倍しただけで、50を加えていない。",
+     "51.5は標準化した値に50を加えただけで、10倍していない。",
+     "62は得点と平均点の差（12点）を50に加えたもので、標準偏差で割る標準化をしていない。",
+     null
+    ],
+    "point": "偏差値＝(得点−平均)÷標準偏差×10＋50。平均50、標準偏差10の尺度に変換したもの。"
+   },
+   "sources": [
+    {
+     "ref": "stats:naruhodo-chirabari-jyokyu",
+     "title": "なるほど統計学園「データの散らばりを見る」",
+     "url": "https://www.stat.go.jp/naruhodo/10_tokucho/chirabari.html",
+     "locator": "偏差値",
+     "quote": "自分の得点と平均値との差を標準偏差で割って、平均が0、標準偏差が1になるようにします。これを標準化といいます。"
+    },
+    {
+     "ref": "stats:naruhodo-chirabari-jyokyu",
+     "title": "なるほど統計学園「データの散らばりを見る」",
+     "url": "https://www.stat.go.jp/naruhodo/10_tokucho/chirabari.html",
+     "locator": "偏差値",
+     "quote": "この標準化した値を10倍して、50に加えることにより、平均が50、標準偏差が10の値が得られます。この値が偏差値です。"
+    }
+   ],
+   "asOf": "統計学の定義・性質（時点に依存しない）",
+   "calc": {
+    "expr": "(72-60)/8*10+50",
+    "value": 65
+   },
+   "id": "s06-0028",
+   "origin": {
+    "batch": "G5-S06-PRB",
+    "key": "G5-S06-PRB-03",
+    "by": "gen:G5-S06-PRB"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-26",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（統計）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G5-S06-PRB",
+     "solver": "solve:G5-S06-PRB（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G5-S06-PRB（統計）"
+    },
+    "log": "bank/audit/G5-S06-PRB.audit.json#G5-S06-PRB-03",
+    "notes": "(72−60)/8×10+50=65; distractor derivations 1.5/15/51.5/62 verified. naruhodo-chirabari-jyokyu 偏差値 定義. Solver agrees."
+   }
+  },
+  {
+   "subject": "S06",
+   "subtopic": "確率分布",
+   "format": "knowledge",
+   "difficulty": "standard",
+   "polarity": "negative",
+   "question": "標準化と偏差値について、誤っているものはどれか。ただし、データの分布は正規分布であると仮定する。",
+   "choices": [
+    "標準化では、各値と平均値との差を標準偏差で割る。",
+    "標準化した値の平均は0、標準偏差は1になる。",
+    "偏差値は、標準化した値を10倍して50を加えた値である。",
+    "偏差値70は、平均値＋2標準偏差の位置に相当する。",
+    "偏差値40は、平均値−2標準偏差の位置に相当する。"
+   ],
+   "answer": 4,
+   "explanation": {
+    "correct": "偏差値は平均50、標準偏差10の尺度なので、偏差値40は50−10＝平均値−1標準偏差の位置に相当する。平均値−2標準偏差に相当するのは偏差値30である。",
+    "choiceNotes": [
+     "正しい。値から平均値を引き、標準偏差で割るのが標準化である。",
+     "正しい。標準化すると平均が0、標準偏差が1になる。",
+     "正しい。標準化した値×10＋50が偏差値である。",
+     "正しい。偏差値70は50＋2×10で、μ＋2σに相当する。",
+     null
+    ],
+    "point": "偏差値の10は1標準偏差。60＝＋1SD、70＝＋2SD、40＝−1SD、30＝−2SD。"
+   },
+   "sources": [
+    {
+     "ref": "stats:naruhodo-chirabari-jyokyu",
+     "title": "なるほど統計学園「データの散らばりを見る」",
+     "url": "https://www.stat.go.jp/naruhodo/10_tokucho/chirabari.html",
+     "locator": "偏差値",
+     "quote": "自分の得点と平均値との差を標準偏差で割って、平均が0、標準偏差が1になるようにします。これを標準化といいます。"
+    },
+    {
+     "ref": "stats:naruhodo-chirabari-jyokyu",
+     "title": "なるほど統計学園「データの散らばりを見る」",
+     "url": "https://www.stat.go.jp/naruhodo/10_tokucho/chirabari.html",
+     "locator": "偏差値",
+     "quote": "この標準化した値を10倍して、50に加えることにより、平均が50、標準偏差が10の値が得られます。"
+    },
+    {
+     "ref": "stats:naruhodo-chirabari-jyokyu",
+     "title": "なるほど統計学園「データの散らばりを見る」",
+     "url": "https://www.stat.go.jp/naruhodo/10_tokucho/chirabari.html",
+     "locator": "偏差値",
+     "quote": "偏差値70はμ+2σに相当しますから"
+    }
+   ],
+   "asOf": "統計学の定義・性質（時点に依存しない）",
+   "id": "s06-0029",
+   "origin": {
+    "batch": "G5-S06-PRB",
+    "key": "G5-S06-PRB-04",
+    "by": "gen:G5-S06-PRB"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-26",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（統計）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G5-S06-PRB",
+     "solver": "solve:G5-S06-PRB（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G5-S06-PRB（統計）"
+    },
+    "log": "bank/audit/G5-S06-PRB.audit.json#G5-S06-PRB-04",
+    "notes": "偏差値40=50−10=μ−1σ, so E false; A–D true per naruhodo-chirabari-jyokyu (標準化・×10+50・偏差値70=μ+2σ). Polarity negative matches. Solver agrees."
+   }
+  },
+  {
+   "subject": "S06",
+   "subtopic": "確率分布",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "代表的な確率分布について、正しいものはどれか。",
+   "choices": [
+    "ポアソン分布は、試行回数が少なく、頻繁に起こる現象に当てはまる分布である。",
+    "二項分布は、結果が2つしかない試行をn回繰り返す場合に当てはまる分布である。",
+    "二項分布は、試行ごとに成功の確率が変化することを前提とする分布である。",
+    "二項分布は、試行回数nが小さいほど正規分布に近づく。"
+   ],
+   "answer": 1,
+   "explanation": {
+    "correct": "二項分布は、成功・失敗のように結果が2つしかない試行をn回繰り返すときの分布で、各試行の成功確率pは一定と仮定する。",
+    "choiceNotes": [
+     "ポアソン分布は、二項分布で試行回数nが非常に大きく、かつ、まれな現象である場合に当てはまる分布である。",
+     null,
+     "二項分布は、成功確率pがすべての試行で一定であることを仮定する。",
+     "二項分布は、試行回数nが非常に大きい場合に正規分布に近づく。nが小さいほど近づくのではない。"
+    ],
+    "point": "二項分布＝2択の結果×n回（pは一定）。nが大→正規分布に近づく。nが大でまれな現象→ポアソン分布。"
+   },
+   "sources": [
+    {
+     "ref": "stats:naruhodo-suisoku",
+     "title": "なるほど統計学園「推測統計」",
+     "url": "https://www.stat.go.jp/naruhodo/11_tokusei/suisoku.html",
+     "locator": "代表的な確率分布（表）",
+     "quote": "二項分布の試行回数 n が非常に大きい場合、正規分布に近づく。 | 二項分布 | 何かを行った場合に生じる結果が 2 つしかない試行を n 回繰り返す場合に当てはまる分布。"
+    },
+    {
+     "ref": "stats:naruhodo-suisoku",
+     "title": "なるほど統計学園「推測統計」",
+     "url": "https://www.stat.go.jp/naruhodo/11_tokusei/suisoku.html",
+     "locator": "代表的な確率分布（表）",
+     "quote": "二項分布で、施行回数 n が非常に大きく、かつ、まれな現象である場合に当てはまる分布。"
+    },
+    {
+     "ref": "x-gen-G5-S06-PRB:nist-binomial",
+     "title": "NIST/SEMATECH e-Handbook of Statistical Methods, 1.3.6.6.18. Binomial Distribution",
+     "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda366i.htm",
+     "locator": "Probability Mass Function",
+     "quote": "The binomial distribution assumes that p is fixed for all trials."
+    }
+   ],
+   "asOf": "統計学の定義・性質（時点に依存しない）",
+   "id": "s06-0030",
+   "origin": {
+    "batch": "G5-S06-PRB",
+    "key": "G5-S06-PRB-05",
+    "by": "gen:G5-S06-PRB"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-26",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（統計）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G5-S06-PRB",
+     "solver": "solve:G5-S06-PRB（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G5-S06-PRB（統計）"
+    },
+    "log": "bank/audit/G5-S06-PRB.audit.json#G5-S06-PRB-05",
+    "notes": "naruhodo-suisoku 代表的な確率分布表 (二項: 2結果をn回, n大で正規近似; ポアソン: n大かつまれ), NIST binomial 'p is fixed for all trials'. Key A unique. Solver agrees."
+   }
+  },
+  {
+   "subject": "S06",
+   "subtopic": "確率分布",
+   "format": "calculation",
+   "difficulty": "advanced",
+   "polarity": "positive",
+   "question": "ある検査後に一定の副作用が起こる確率は0.1で、患者ごとに独立に起こるものとする。この検査を100人に行ったとき、副作用が起こる人数は二項分布に従う。その平均（期待値）と標準偏差の組み合わせとして正しいものはどれか。",
+   "choices": [
+    "平均 10人、標準偏差 3人",
+    "平均 9人、標準偏差 3人",
+    "平均 10人、標準偏差 0.9人",
+    "平均 10人、標準偏差 9人",
+    "平均 10人、標準偏差 10人"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "二項分布の平均はnp、標準偏差は√(np(1−p))である。n＝100、p＝0.1より、平均＝100×0.1＝10人、標準偏差＝√(100×0.1×0.9)＝√9＝3人となる。",
+    "choiceNotes": [
+     null,
+     "9はnp(1−p)（分散）の値であり、平均（np＝10）ではない。",
+     "0.9は1−pの値であり、標準偏差は√(np(1−p))＝3である。",
+     "9はnp(1−p)、すなわち分散である。標準偏差はその平方根の3である。",
+     "10は平均npの値であり、標準偏差は√(np(1−p))＝3である。"
+    ],
+    "point": "二項分布：平均＝np、分散＝np(1−p)、標準偏差＝√(np(1−p))。分散と標準偏差を取り違えない。"
+   },
+   "sources": [
+    {
+     "ref": "x-gen-G5-S06-PRB:nist-binomial",
+     "title": "NIST/SEMATECH e-Handbook of Statistical Methods, 1.3.6.6.18. Binomial Distribution",
+     "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda366i.htm",
+     "locator": "Common Statistics（Mean）",
+     "quote": "Common Statistics Mean np Mode"
+    },
+    {
+     "ref": "x-gen-G5-S06-PRB:nist-binomial",
+     "title": "NIST/SEMATECH e-Handbook of Statistical Methods, 1.3.6.6.18. Binomial Distribution",
+     "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda366i.htm",
+     "locator": "Common Statistics（Standard Deviation）",
+     "quote": "Standard Deviation \\( \\sqrt{np(1 - p)} \\)"
+    }
+   ],
+   "asOf": "統計学の定義・性質（時点に依存しない）",
+   "calc": {
+    "expr": "sqrt(100*0.1*0.9)",
+    "value": 3
+   },
+   "id": "s06-0031",
+   "origin": {
+    "batch": "G5-S06-PRB",
+    "key": "G5-S06-PRB-06",
+    "by": "gen:G5-S06-PRB"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-26",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（統計）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G5-S06-PRB",
+     "solver": "solve:G5-S06-PRB（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G5-S06-PRB（統計）"
+    },
+    "log": "bank/audit/G5-S06-PRB.audit.json#G5-S06-PRB-06",
+    "notes": "np=10, sqrt(100×0.1×0.9)=3 (NIST binomial Mean np / SD sqrt(np(1−p))). Each distractor note checked. Solver agrees."
+   }
+  },
+  {
+   "subject": "S06",
+   "subtopic": "標本抽出と推定",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "母集団を構成するすべての人を順番に並べ、スタート番号を無作為に選んだあとは等間隔で標本を選ぶ抽出方法はどれか。",
+   "choices": [
+    "単純無作為抽出法",
+    "層化抽出法",
+    "多段抽出法",
+    "系統抽出法",
+    "全数調査（悉皆調査）"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "系統抽出法は、母集団を順番に並べ、スタート番号を無作為に選び、その後は抽出間隔ごとに等間隔で選ぶ方法で、単純無作為抽出の代用としてよく使われる。",
+    "choiceNotes": [
+     "単純無作為抽出法は、母集団のすべての人から乱数の値にしたがって標本を選ぶ方法で、等間隔に選ぶわけではない。",
+     "層化抽出法は、母集団を年齢や職業などの層に分け、各層からそれぞれ標本を抽出する方法である。",
+     "多段抽出法は、第一段階で地域を、第二段階でその地域の個人を抽出するように、複数の段階に分けて抽出する方法である。",
+     null,
+     "全数調査（悉皆調査）は母集団のすべてを調べる方法であり、標本を抽出しない。"
+    ],
+    "point": "系統抽出＝スタートだけ無作為、あとは等間隔（抽出間隔＝母集団の人数÷標本数）。"
+   },
+   "sources": [
+    {
+     "ref": "stats:datastart-hyohon-chushutsu",
+     "title": "Data StaRt EBPM活用塾 ゼミナール編（２）2-1-2 標本抽出の諸方法",
+     "url": "https://www.stat.go.jp/dstart/point/seminar/02/2-1-2.html",
+     "locator": "系統抽出法",
+     "quote": "母集団を構成するすべての人びとを順番に並べたうえで、スタート番号を無作為に選び、そのあとは等間隔で系統的に標本に含む人を選びます。"
+    },
+    {
+     "ref": "stats:naruhodo-yougo-sa",
+     "title": "なるほど統計学園「１３ 統計用語辞典（さ行）」",
+     "url": "https://www.stat.go.jp/naruhodo/13_yougo/sa-gyo.html",
+     "locator": "層化抽出",
+     "quote": "標本調査を行う場合に、母集団を層（グループ。例えば、年齢や職業など）に分け、各層からそれぞれ標本を抽出すること。"
+    },
+    {
+     "ref": "stats:naruhodo-zensu",
+     "title": "なるほど統計学園「全数調査・標本調査」",
+     "url": "https://www.stat.go.jp/naruhodo/7_shurui/zensu.html",
+     "locator": "全数調査・標本調査",
+     "quote": "全数調査は、母集団の全てを調べる方法です。標本調査は、母集団の一部を抽出して調べる方法です。"
+    }
+   ],
+   "asOf": "統計学の定義・性質（時点に依存しない）",
+   "id": "s06-0032",
+   "origin": {
+    "batch": "G5-S06-PRB",
+    "key": "G5-S06-PRB-07",
+    "by": "gen:G5-S06-PRB"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-26",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（統計）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G5-S06-PRB",
+     "solver": "solve:G5-S06-PRB（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G5-S06-PRB（統計）"
+    },
+    "log": "bank/audit/G5-S06-PRB.audit.json#G5-S06-PRB-07",
+    "notes": "datastart 2-1-2 系統抽出法 (スタート無作為→等間隔), 単純無作為 (乱数), 多段 (地域→個人); naruhodo 層化・全数調査 definitions. Solver agrees."
+   }
+  },
+  {
+   "subject": "S06",
+   "subtopic": "標本抽出と推定",
+   "format": "knowledge",
+   "difficulty": "standard",
+   "polarity": "negative",
+   "question": "無作為抽出の方法について、誤っているものはどれか。",
+   "choices": [
+    "単純無作為抽出法では、母集団を構成するすべての人から、乱数の値にしたがって標本を選ぶ。",
+    "適切に層化すると、地域的な偏りを避けたり、誤差を小さくしたりすることができる。",
+    "二段抽出では、例えば第一段階で地域を無作為抽出し、第二段階でその地域に住む個人を無作為抽出する。",
+    "多段抽出の段数を多くすると、調査のコストを下げられるが、誤差は大きくなる。",
+    "層化抽出法は、母集団を層に分けたうえで、いずれか1つの層だけから標本を抽出する方法である。"
+   ],
+   "answer": 4,
+   "explanation": {
+    "correct": "層化抽出法は、母集団を年齢や職業などの層に分け、各層からそれぞれ標本を抽出する方法である。1つの層だけから抽出すると、母集団を代表する標本にならない。",
+    "choiceNotes": [
+     "正しい。単純無作為抽出法は最も基本的な方法で、乱数にしたがって標本を選ぶ。",
+     "正しい。適切な層化には、地域的な偏りを避け、誤差を小さくできるというメリットがある。",
+     "正しい。地域を抽出し、その地域内の個人を抽出する二段抽出は実践でよく行われる。",
+     "正しい。多段抽出は段数を多くするとコストを下げられるが、代償として誤差が大きくなる。",
+     null
+    ],
+    "point": "層化＝層に分けて「各層から」抽出（誤差を小さくできる）。多段＝段数↑でコスト↓・誤差↑。"
+   },
+   "sources": [
+    {
+     "ref": "stats:naruhodo-yougo-sa",
+     "title": "なるほど統計学園「１３ 統計用語辞典（さ行）」",
+     "url": "https://www.stat.go.jp/naruhodo/13_yougo/sa-gyo.html",
+     "locator": "層化抽出",
+     "quote": "標本調査を行う場合に、母集団を層（グループ。例えば、年齢や職業など）に分け、各層からそれぞれ標本を抽出すること。"
+    },
+    {
+     "ref": "stats:datastart-hyohon-chushutsu",
+     "title": "Data StaRt EBPM活用塾 ゼミナール編（２）2-1-2 標本抽出の諸方法",
+     "url": "https://www.stat.go.jp/dstart/point/seminar/02/2-1-2.html",
+     "locator": "多段抽出",
+     "quote": "多段抽出の段階数を多くすると、調査のコストを下げられるメリットがありますが、代償として誤差が大きくなってしまうデメリットも生じます。"
+    },
+    {
+     "ref": "stats:datastart-hyohon-chushutsu",
+     "title": "Data StaRt EBPM活用塾 ゼミナール編（２）2-1-2 標本抽出の諸方法",
+     "url": "https://www.stat.go.jp/dstart/point/seminar/02/2-1-2.html",
+     "locator": "層化",
+     "quote": "適切に層化がなされれば、地域的な偏りを避けられたり、誤差を小さくすることができるなどのメリットがあります。"
+    }
+   ],
+   "asOf": "統計学の定義・性質（時点に依存しない）",
+   "id": "s06-0033",
+   "origin": {
+    "batch": "G5-S06-PRB",
+    "key": "G5-S06-PRB-08",
+    "by": "gen:G5-S06-PRB"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-26",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（統計）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G5-S06-PRB",
+     "solver": "solve:G5-S06-PRB（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G5-S06-PRB（統計）"
+    },
+    "log": "bank/audit/G5-S06-PRB.audit.json#G5-S06-PRB-08",
+    "notes": "E contradicts naruhodo-yougo 層化抽出 '各層から'; A–D verified in datastart 2-1-2 (乱数, 層化で偏り・誤差減, 二段抽出例, 段数↑でコスト↓誤差↑). Solver agrees."
+   }
+  },
+  {
+   "subject": "S06",
+   "subtopic": "標本抽出と推定",
+   "format": "knowledge",
+   "difficulty": "standard",
+   "polarity": "negative",
+   "question": "標本平均の標準誤差について、誤っているものはどれか。",
+   "choices": [
+    "推定量の標準偏差であり、推定量そのもののばらつきを表す。",
+    "標準偏差を標本サイズの平方根で割って求める。",
+    "標本サイズが大きくなるほど小さくなる。",
+    "個々の観測値が平均値からどの程度ばらついているかを表す指標である。",
+    "母集団の標準偏差が分からないときは、標本から得た不偏分散の正の平方根を用いて推定する。"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "個々の観測値のばらつきを表すのは標準偏差である。標本平均の標準誤差は、同じ母集団から標本を繰り返し取ったときの標本平均のばらつきを表す。",
+    "choiceNotes": [
+     "正しい。標準誤差は推定量の標準偏差で、推定量そのもののばらつきを表す。",
+     "正しい。標本平均の標準誤差は、標準偏差÷√n で求める。",
+     "正しい。標本の大きさが大きくなるほど標準誤差は小さくなる。",
+     null,
+     "正しい。多くの場合、母集団の標準偏差は分からないので、不偏分散の正の平方根sを用いて推定する。"
+    ],
+    "point": "標準偏差＝データのばらつき、標準誤差＝標本平均（推定量）のばらつき＝SD÷√n。"
+   },
+   "sources": [
+    {
+     "ref": "stats:naruhodo-kentei",
+     "title": "なるほど統計学園「統計的推定と統計的仮説検定」",
+     "url": "https://www.stat.go.jp/naruhodo/11_tokusei/kentei.html",
+     "locator": "点推定（標準誤差）",
+     "quote": "標準誤差は推定量の標準偏差であり、標本から得られる推定量そのもののバラつきを表すものです。"
+    },
+    {
+     "ref": "stats:naruhodo-kentei",
+     "title": "なるほど統計学園「統計的推定と統計的仮説検定」",
+     "url": "https://www.stat.go.jp/naruhodo/11_tokusei/kentei.html",
+     "locator": "点推定（標準誤差）",
+     "quote": "多くの場合、母集団の標準偏差は分からないので、標本から得られた不偏分散の正の平方根sを用いて推定します。"
+    },
+    {
+     "ref": "x-legacy-L06a:cdc-poe-l2s7",
+     "title": "Principles of Epidemiology in Public Health Practice, 3rd ed. Lesson 2 Section 7: Measures of Spread",
+     "url": "https://archive.cdc.gov/www_cdc_gov/csels/dsepd/ss1978/lesson2/section7.html",
+     "locator": "Standard error of the mean",
+     "quote": "The standard deviation describes variability in a set of data. The standard error of the mean refers to variability we might expect in the arithmetic means of repeated samples taken from the same population."
+    }
+   ],
+   "asOf": "統計学の定義・性質（時点に依存しない）",
+   "id": "s06-0034",
+   "origin": {
+    "batch": "G5-S06-PRB",
+    "key": "G5-S06-PRB-09",
+    "by": "gen:G5-S06-PRB"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-26",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（統計）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G5-S06-PRB",
+     "solver": "solve:G5-S06-PRB（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G5-S06-PRB（統計）"
+    },
+    "log": "bank/audit/G5-S06-PRB.audit.json#G5-S06-PRB-09",
+    "notes": "naruhodo-kentei 点推定 (SE=推定量の標準偏差, n大で小, 不偏分散の正の平方根で推定); CDC SEM 'SD describes variability in a set of data'. D describes SD → false. Solver agrees."
+   }
+  },
+  {
+   "subject": "S06",
+   "subtopic": "標本抽出と推定",
+   "format": "calculation",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "無作為抽出した標本から標本平均を求める。標本の標準偏差が変わらないものとして、標本サイズを100人から400人に増やすと、標本平均の標準誤差は何倍になるか。",
+   "choices": [
+    "0.25倍",
+    "変わらない",
+    "2倍",
+    "4倍",
+    "0.5倍"
+   ],
+   "answer": 4,
+   "explanation": {
+    "correct": "標本平均の標準誤差は標準偏差÷√nである。nが4倍になると√nは2倍になるので、標準誤差は√100÷√400＝10÷20＝0.5倍になる。",
+    "choiceNotes": [
+     "0.25倍は標準偏差をnそのもので割ると誤解した場合の値である。標準誤差はnの平方根で割る。",
+     "標準誤差は標本サイズに依存し、標本が大きくなるほど小さくなる。",
+     "標本サイズを大きくすると標準誤差は小さくなる。大きくなることはない。",
+     "標本サイズを大きくすると標準誤差は小さくなる。4倍はnの増加比をそのまま当てはめた誤りである。",
+     null
+    ],
+    "point": "標準誤差を半分にするには標本サイズを4倍にする（√nに反比例）。"
+   },
+   "sources": [
+    {
+     "ref": "x-legacy-L06a:cdc-poe-l2s7",
+     "title": "Principles of Epidemiology in Public Health Practice, 3rd ed. Lesson 2 Section 7: Measures of Spread",
+     "url": "https://archive.cdc.gov/www_cdc_gov/csels/dsepd/ss1978/lesson2/section7.html",
+     "locator": "Method for calculating the standard error of the mean",
+     "quote": "Step 2. Divide the standard deviation by the square root of the number of observations (n)."
+    },
+    {
+     "ref": "stats:naruhodo-kentei",
+     "title": "なるほど統計学園「統計的推定と統計的仮説検定」",
+     "url": "https://www.stat.go.jp/naruhodo/11_tokusei/kentei.html",
+     "locator": "点推定（標準誤差）",
+     "quote": "標本の大きさが大きくなるほど標準誤差は小さくなります。"
+    }
+   ],
+   "asOf": "統計学の定義・性質（時点に依存しない）",
+   "calc": {
+    "expr": "sqrt(100)/sqrt(400)",
+    "value": 0.5
+   },
+   "id": "s06-0035",
+   "origin": {
+    "batch": "G5-S06-PRB",
+    "key": "G5-S06-PRB-10",
+    "by": "gen:G5-S06-PRB"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-26",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（統計）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G5-S06-PRB",
+     "solver": "solve:G5-S06-PRB（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G5-S06-PRB（統計）"
+    },
+    "log": "bank/audit/G5-S06-PRB.audit.json#G5-S06-PRB-10",
+    "notes": "SE=SD/√n; √100/√400=0.5 (CDC SEM Step 2, naruhodo-kentei). Distractor notes correct. Solver agrees."
+   }
+  },
+  {
+   "subject": "S06",
+   "subtopic": "標本抽出と推定",
+   "format": "calculation",
+   "difficulty": "advanced",
+   "polarity": "positive",
+   "question": "ある病院の退院患者から無作為に36人を抽出し、在院日数を調べたところ、平均値14.0日、標準偏差6.0日であった。標本サイズが十分に大きいものとして、正規分布にもとづく係数1.96を用いたとき、母平均の95%信頼区間として正しいものはどれか。",
+   "choices": [
+    "2.24〜25.76日",
+    "8.00〜20.00日",
+    "12.04〜15.96日",
+    "13.00〜15.00日",
+    "13.67〜14.33日"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "標準誤差＝標準偏差÷√n＝6.0÷√36＝1.0日。95%信頼区間＝平均値±1.96×標準誤差＝14.0±1.96＝12.04〜15.96日となる。",
+    "choiceNotes": [
+     "平均値±1.96×標準偏差（14.0±11.76）で計算しており、標準誤差を用いていない。これは個々のデータの約95%が含まれる範囲の目安である。",
+     "平均値±1×標準偏差（14.0±6.0）であり、標準誤差も係数1.96も用いていない。",
+     null,
+     "平均値±1×標準誤差（14.0±1.0）であり、係数1.96を掛けていない。",
+     "標準偏差を√nではなくn（36）で割って標準誤差としており（6.0÷36≒0.17）、誤りである。"
+    ],
+    "point": "平均の95%信頼区間＝平均±1.96×SE、SE＝SD÷√n。SDのまま使わない。"
+   },
+   "sources": [
+    {
+     "ref": "x-legacy-L06a:cdc-poe-l2s7",
+     "title": "Principles of Epidemiology in Public Health Practice, 3rd ed. Lesson 2 Section 7: Measures of Spread",
+     "url": "https://archive.cdc.gov/www_cdc_gov/csels/dsepd/ss1978/lesson2/section7.html",
+     "locator": "Method for calculating a 95% confidence interval for a mean",
+     "quote": "Lower limit of the 95% confidence interval = mean minus 1.96 × standard error."
+    },
+    {
+     "ref": "x-legacy-L06a:cdc-poe-l2s7",
+     "title": "Principles of Epidemiology in Public Health Practice, 3rd ed. Lesson 2 Section 7: Measures of Spread",
+     "url": "https://archive.cdc.gov/www_cdc_gov/csels/dsepd/ss1978/lesson2/section7.html",
+     "locator": "Method for calculating the standard error of the mean",
+     "quote": "Step 2. Divide the standard deviation by the square root of the number of observations (n)."
+    },
+    {
+     "ref": "x-legacy-L06a:cdc-poe-l2s7",
+     "title": "Principles of Epidemiology in Public Health Practice, 3rd ed. Lesson 2 Section 7: Measures of Spread",
+     "url": "https://archive.cdc.gov/www_cdc_gov/csels/dsepd/ss1978/lesson2/section7.html",
+     "locator": "Figure 2.9",
+     "quote": "±1.96 SD includes 95.0%"
+    }
+   ],
+   "asOf": "統計学の定義・性質（時点に依存しない）",
+   "calc": {
+    "expr": "14+1.96*6/sqrt(36)",
+    "value": 15.96
+   },
+   "id": "s06-0036",
+   "origin": {
+    "batch": "G5-S06-PRB",
+    "key": "G5-S06-PRB-11",
+    "by": "gen:G5-S06-PRB"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-26",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（統計）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G5-S06-PRB",
+     "solver": "solve:G5-S06-PRB（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G5-S06-PRB（統計）"
+    },
+    "log": "bank/audit/G5-S06-PRB.audit.json#G5-S06-PRB-11",
+    "notes": "SE=6/√36=1; 14±1.96=12.04〜15.96. Distractors: 14±11.76=2.24〜25.76, 14±6, 14±1, 14±1.96×6/36(=±0.33)→13.67〜14.33 all reproduce. Large-sample z condition stated. CDC 95% CI method. Solver agrees. (Note E could mention the 1.96 factor but is not false.)"
+   }
+  },
+  {
+   "subject": "S06",
+   "subtopic": "標本抽出と推定",
+   "format": "knowledge",
+   "difficulty": "standard",
+   "polarity": "negative",
+   "question": "母平均の95%信頼区間について、誤っているものはどれか。",
+   "choices": [
+    "同じ方法で標本抽出と区間の計算を多数回繰り返すと、約95%の区間が母平均を含む。",
+    "ほかの条件が同じなら、標本サイズを大きくすると区間は狭くなる。",
+    "ほかの条件が同じなら、標本の標準偏差が大きいほど区間は広くなる。",
+    "区間が狭いほど、母平均の推定の精度が高いことを示す。",
+    "ある1つの標本から求めた95%信頼区間に母平均が含まれる確率は95%である。"
+   ],
+   "answer": 4,
+   "explanation": {
+    "correct": "母平均は未知だが確定した値なので、1つの標本から求めた区間はそれを含むか含まないかのどちらかである。95%という信頼係数は区間を求める方法に結びついたもので、繰り返したときに約95%の区間が母平均を含むという意味である。",
+    "choiceNotes": [
+     "正しい。これが95%信頼区間の意味である。",
+     "正しい。区間の幅は√nの項によって、nが大きいほど狭くなる。",
+     "正しい。標本の標準偏差が大きいほど信頼区間は広くなる。",
+     "正しい。区間が狭いほど推定は精密である。",
+     null
+    ],
+    "point": "95%信頼区間＝「繰り返すと約95%の区間が母平均を含む」。1つの区間に95%の確率で入る、ではない。"
+   },
+   "sources": [
+    {
+     "ref": "stats:naruhodo-kentei",
+     "title": "なるほど統計学園「統計的推定と統計的仮説検定」",
+     "url": "https://www.stat.go.jp/naruhodo/11_tokusei/kentei.html",
+     "locator": "区間推定",
+     "quote": "母平均は知られていないだけで確定した値なので、得られた標本のもとで母平均がその区間内にある確率が95%という意味ではないことに注意してください。"
+    },
+    {
+     "ref": "stats:nist-confidence-limits-mean",
+     "title": "NIST/SEMATECH e-Handbook of Statistical Methods, 1.3.5.2. Confidence Limits for the Mean",
+     "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda352.htm",
+     "locator": "Definition: Confidence Interval",
+     "quote": "As N increases, the interval gets narrower from the"
+    },
+    {
+     "ref": "stats:nist-confidence-limits-mean",
+     "title": "NIST/SEMATECH e-Handbook of Statistical Methods, 1.3.5.2. Confidence Limits for the Mean",
+     "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda352.htm",
+     "locator": "Confidence limits for the mean",
+     "quote": "The narrower the interval, the more precise is our estimate."
+    }
+   ],
+   "asOf": "統計学の定義・性質（時点に依存しない）",
+   "id": "s06-0037",
+   "origin": {
+    "batch": "G5-S06-PRB",
+    "key": "G5-S06-PRB-12",
+    "by": "gen:G5-S06-PRB"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-26",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（統計）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G5-S06-PRB",
+     "solver": "solve:G5-S06-PRB（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G5-S06-PRB（統計）"
+    },
+    "log": "bank/audit/G5-S06-PRB.audit.json#G5-S06-PRB-12",
+    "notes": "naruhodo-kentei 区間推定 (100回中95回程度; 1つの区間に95%確率ではない) makes B false; NIST eda352 'As N increases, narrower', 'larger sample SD, larger', 'narrower, more precise' support C–E. Solver agrees."
+   }
+  },
+  {
+   "subject": "S06",
+   "subtopic": "標本抽出と推定",
+   "format": "knowledge",
+   "difficulty": "advanced",
+   "polarity": "positive",
+   "question": "比率を調べる標本調査で、目標とする標本誤差から標本規模（調査人数）を見積もるときの考え方として、正しいものはどれか。",
+   "choices": [
+    "回答の比率が事前に分からないときは、ばらつきが最大となる0.5として見積もる。",
+    "回収率が50%と見込まれるときは、計算した標本規模を半分にして抽出する。",
+    "標本誤差を小さくしたいときは、標本規模を小さくする。",
+    "多段抽出で標本を選ぶときは、単純無作為抽出よりも標本誤差が小さくなるため、標本規模を少なく見積もってよい。",
+    "標本誤差は全数調査でも標本調査と同じ大きさで生じるため、調査方法の選択には影響しない。"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "比率の標本誤差は比率Pによって変わり、P＝0.5のときにばらつきが最大となる。事前に比率が分からないときは0.5として見積もるのがよく行われる方法である。",
+    "choiceNotes": [
+     null,
+     "回収率が100%からほど遠いと予想されるときは、計算されたnに回収率の逆数を掛けて多めに抽出する。50%なら2倍にする。",
+     "標本誤差を小さくしたいときは、標本規模を大きくする。",
+     "多段抽出では、概ね段数の平方根に比例して標本誤差が大きくなる。単純無作為抽出を仮定して計算した場合よりも、多くの人を対象としなければならない。",
+     "標本誤差は標本抽出に伴って発生する誤差である。全数調査は母集団のすべてを調べるので、標本誤差は生じない。"
+    ],
+    "point": "比率が不明→P＝0.5で見積もる。回収率の見込みで割り戻して増やす。多段抽出は誤差が大きくなるので増やす。誤差を小さく→標本を大きく。"
+   },
+   "sources": [
+    {
+     "ref": "stats:datastart-hyohon-gosa",
+     "title": "Data StaRt EBPM活用塾 ゼミナール編（２）2-1-3 標本誤差の計算",
+     "url": "https://www.stat.go.jp/dstart/point/seminar/02/2-1-3.html",
+     "locator": "標本誤差の計算（比率の場合）",
+     "quote": "どのような値になるか事前にわからないときは、ばらつきが最大となる0.5として見積もるのがよくなされるやり方です。"
+    },
+    {
+     "ref": "stats:datastart-hyohon-gosa",
+     "title": "Data StaRt EBPM活用塾 ゼミナール編（２）2-1-3 標本誤差の計算",
+     "url": "https://www.stat.go.jp/dstart/point/seminar/02/2-1-3.html",
+     "locator": "標本誤差を考慮し、調査対象人数を見積もる",
+     "quote": "計算されたnに回収率の逆数（例えば50%なら1/0.5=2）を掛けて、さらに多くの人を対象者として抽出しなければならなくなります。"
+    },
+    {
+     "ref": "stats:datastart-hyohon-gosa",
+     "title": "Data StaRt EBPM活用塾 ゼミナール編（２）2-1-3 標本誤差の計算",
+     "url": "https://www.stat.go.jp/dstart/point/seminar/02/2-1-3.html",
+     "locator": "標本誤差を考慮し、調査対象人数を見積もる",
+     "quote": "多段抽出を行うと、概ね段数のルートに比例して標本誤差が大きくなることが知られています。"
+    }
+   ],
+   "asOf": "統計学の定義・性質（時点に依存しない）",
+   "id": "s06-0038",
+   "origin": {
+    "batch": "G5-S06-PRB",
+    "key": "G5-S06-PRB-13",
+    "by": "gen:G5-S06-PRB"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-26",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（統計）で修正",
+     "修正後の独立再監査（pass）",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G5-S06-PRB",
+     "solver": "solve:G5-S06-PRB（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G5-S06-PRB（統計）",
+     "reauditor": "reaudit:G5-S06-PRB"
+    },
+    "log": "bank/audit/G5-S06-PRB.audit.json#G5-S06-PRB-13",
+    "notes": "再監査: Blind answer 0 matches key. stats:datastart-hyohon-gosa (src/stats/statgo/dstart_2-1-3.txt) L55: P unknown -> 0.5 (max variability, P(1-P) max at 0.5); L61: smaller error -> larger n (C wrong); L73: multistage error grows ~ sqrt(stages), more subjects needed (D wrong); L75: multiply n by 1/response ｜datastart 2-1-3: P=0.5で見積もる (A correct), 回収率の逆数を掛ける (B false), 標本規模を大きく (C false), 標本誤差=標本抽出に伴う誤差 (E false), 多段抽出は段数のルートに比例して誤差大 (new D false)."
+   }
+  },
+  {
+   "subject": "S06",
+   "subtopic": "仮説検定",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "仮説検定におけるp値（有意確率）の説明として、正しいものはどれか。",
+   "choices": [
+    "帰無仮説を棄却するかどうかの基準として、検定を行う前にあらかじめ定めておく確率",
+    "帰無仮説が誤りであるのに、帰無仮説が棄却されない誤りを起こす確率",
+    "帰無仮説が正しいと仮定したとき、検定統計量が観測値と同じかそれ以上に対立仮説の方向へずれる確率",
+    "標本から得られる推定量そのもののばらつきを表す指標"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "p値（有意確率）は、帰無仮説上の分布において、検定統計量の観測値が対立仮説の方向にその値以上にずれる確率である。p値があらかじめ定めた有意水準以下であれば帰無仮説を棄却する。",
+    "choiceNotes": [
+     "これは有意水準（第1種の過誤αとしてあらかじめ5%や1%に定める値）の説明である。p値はデータから計算される確率であり、前もって定めるものではない。",
+     "これは第2種の過誤（β）の説明である。",
+     null,
+     "これは標準誤差（推定量の標準偏差）の説明である。"
+    ],
+    "point": "p値＝帰無仮説のもとで観測値以上に極端な結果が出る確率（データから計算）。有意水準＝事前に決める基準。p≦有意水準で棄却。"
+   },
+   "sources": [
+    {
+     "ref": "x-legacy-L06b:mext-joho1-ch4",
+     "title": "高等学校情報科「情報Ⅰ」教員研修用教材（本編）第4章 情報通信ネットワークとデータの活用・巻末",
+     "url": "https://www.mext.go.jp/content/20200722-mxt_jogai02-100013300_006.pdf",
+     "locator": "統計的推測と仮説検定の解説",
+     "quote": "帰無仮説上の分布で検定統計量の観測値が対立仮説の方向にその値以上にずれる確率（有意確率，p 値）が有意水準以下になるとき，「帰無仮説は正しくない」と考え"
+    },
+    {
+     "ref": "x-legacy-L06b:mext-joho1-ch4",
+     "title": "高等学校情報科「情報Ⅰ」教員研修用教材（本編）第4章 情報通信ネットワークとデータの活用・巻末",
+     "url": "https://www.mext.go.jp/content/20200722-mxt_jogai02-100013300_006.pdf",
+     "locator": "統計的推測と仮説検定の解説",
+     "quote": "帰無仮説が正しいのに棄却してしまう誤り（第１種の過誤α），対立仮説が正しく帰無仮説が誤りなのに棄却されない誤り（第 2 種の過誤β）の 2 種類の誤りがある。第１種の過誤αを予め有意水準（検定の危険率）として，5% または 1% で定めておき"
+    },
+    {
+     "ref": "stats:naruhodo-kentei",
+     "title": "なるほど統計学園「統計的推定と統計的仮説検定」",
+     "url": "https://www.stat.go.jp/naruhodo/11_tokusei/kentei.html",
+     "locator": "統計的推定（点推定）",
+     "quote": "標準誤差は推定量の標準偏差であり、標本から得られる推定量そのもののバラつきを表すものです。"
+    }
+   ],
+   "asOf": "統計学の基本概念（時点に依存しない一般的定義）",
+   "id": "s06-0039",
+   "origin": {
+    "batch": "G5-S06-TST",
+    "key": "G5-S06-TST-01",
+    "by": "gen:G5-S06-TST"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-26",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（統計）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G5-S06-TST",
+     "solver": "solve:G5-S06-TST（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G5-S06-TST（統計）"
+    },
+    "log": "bank/audit/G5-S06-TST.audit.json#G5-S06-TST-01",
+    "notes": "p値の定義をmext-joho1-ch4 l.1889-1891で確認。0=有意水準、2=β、3=標準誤差(naruhodo-kentei)。ブラインド一致。"
+   }
+  },
+  {
+   "subject": "S06",
+   "subtopic": "仮説検定",
+   "format": "knowledge",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "仮説検定で、標本の大きさなど他の条件を変えずに、有意水準を0.05から0.01に変更した。このときの変化として、正しいものはどれか。",
+   "choices": [
+    "第1種の過誤を起こす危険は大きくなる。",
+    "第2種の過誤を起こす危険は小さくなる。",
+    "第2種の過誤を起こす危険は大きくなる。",
+    "帰無仮説が正しいときに帰無仮説を棄却してしまう確率は5%になる。",
+    "同じデータであれば、帰無仮説は以前より棄却されやすくなる。"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "有意水準αは、帰無仮説が正しいのに棄却してしまう危険（第1種の過誤）の大きさである。αを小さくすると、帰無仮説が誤りなのに棄却されない危険（第2種の過誤β）は大きくなる（αが減るとβが増える）。",
+    "choiceNotes": [
+     "有意水準は第1種の過誤の確率そのものなので、0.05から0.01に下げると第1種の過誤の危険は小さくなる。",
+     "αとβは一方を小さくすると他方が大きくなる関係にあり、αを下げるとβは大きくなる。",
+     null,
+     "有意水準0.01では、帰無仮説が正しいときに棄却してしまう確率は1%である（0.05なら5%）。",
+     "p値が有意水準以下のときに棄却するので、基準を0.01に厳しくすると帰無仮説は棄却されにくくなる。"
+    ],
+    "point": "αを小さくする→第1種の過誤↓・第2種の過誤β↑・棄却されにくくなる。"
+   },
+   "sources": [
+    {
+     "ref": "stats:nist-statistical-tests",
+     "title": "NIST/SEMATECH e-Handbook of Statistical Methods, 7.1.3. What are statistical tests?",
+     "url": "https://www.itl.nist.gov/div898/handbook/prc/section1/prc13.htm",
+     "locator": "Errors of the second kind",
+     "quote": "Also the risk \\(\\beta\\) increases as the risk \\(\\alpha\\) decreases."
+    },
+    {
+     "ref": "stats:nist-critical-values-p-values",
+     "title": "NIST/SEMATECH e-Handbook of Statistical Methods, 7.1.3.1. Critical values and p values",
+     "url": "https://www.itl.nist.gov/div898/handbook/prc/section1/prc131.htm",
+     "locator": "Determination of critical values",
+     "quote": "implies that the null hypothesis is rejected 5 % of the time when it is in fact true."
+    },
+    {
+     "ref": "x-legacy-L06b:mext-joho1-ch4",
+     "title": "高等学校情報科「情報Ⅰ」教員研修用教材（本編）第4章 情報通信ネットワークとデータの活用・巻末",
+     "url": "https://www.mext.go.jp/content/20200722-mxt_jogai02-100013300_006.pdf",
+     "locator": "統計的推測と仮説検定の解説",
+     "quote": "帰無仮説上の分布で検定統計量の観測値が対立仮説の方向にその値以上にずれる確率（有意確率，p 値）が有意水準以下になるとき，「帰無仮説は正しくない」と考え"
+    }
+   ],
+   "asOf": "統計学の基本概念（時点に依存しない一般的定義）",
+   "id": "s06-0040",
+   "origin": {
+    "batch": "G5-S06-TST",
+    "key": "G5-S06-TST-02",
+    "by": "gen:G5-S06-TST"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-26",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（統計）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G5-S06-TST",
+     "solver": "solve:G5-S06-TST（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G5-S06-TST（統計）"
+    },
+    "log": "bank/audit/G5-S06-TST.audit.json#G5-S06-TST-02",
+    "notes": "NIST prc13 'beta increases as alpha decreases'、prc131 5%の意味、mext p≦αで棄却。全選択肢の正誤確認。ブラインド一致。"
+   }
+  },
+  {
+   "subject": "S06",
+   "subtopic": "仮説検定",
+   "format": "knowledge",
+   "difficulty": "standard",
+   "polarity": "negative",
+   "question": "仮説検定における第1種の過誤と第2種の過誤について、誤っているものはどれか。",
+   "choices": [
+    "第1種の過誤は、帰無仮説が正しいのに帰無仮説を棄却してしまう誤りである。",
+    "第2種の過誤は、帰無仮説が誤りであるのに帰無仮説を棄却しない誤りである。",
+    "有意水準は、第1種の過誤を起こす確率として、検定の前に5%や1%などに定めておく。",
+    "真の値と帰無仮説との隔たりが小さいほど、第2種の過誤は起こりやすい。",
+    "第2種の過誤を起こす確率は、有意水準と同様に、検定を行う者があらかじめ任意の値に定める。"
+   ],
+   "answer": 4,
+   "explanation": {
+    "correct": "第2種の過誤の確率βは、検定を行う者が選ぶものではなく、真の値と帰無仮説との隔たり（差）の大きさによって決まる。隔たりが大きければ検出しやすくβは小さく、小さければ検出しにくくβは大きい。",
+    "choiceNotes": [
+     "第1種の過誤（α）の定義として正しい。",
+     "第2種の過誤（β）の定義として正しい。",
+     "有意水準は第1種の過誤αを予め5%または1%などに定めたものであり、正しい。",
+     "隔たりが小さいほど検出が難しく、第2種の過誤は大きくなるので正しい。",
+     null
+    ],
+    "point": "α＝正しい帰無仮説を棄却（事前に決める）。β＝誤った帰無仮説を棄却しない（真の差の大きさで決まる）。"
+   },
+   "sources": [
+    {
+     "ref": "x-legacy-L06b:mext-joho1-ch4",
+     "title": "高等学校情報科「情報Ⅰ」教員研修用教材（本編）第4章 情報通信ネットワークとデータの活用・巻末",
+     "url": "https://www.mext.go.jp/content/20200722-mxt_jogai02-100013300_006.pdf",
+     "locator": "統計的推測と仮説検定の解説",
+     "quote": "帰無仮説が正しいのに棄却してしまう誤り（第１種の過誤α），対立仮説が正しく帰無仮説が誤りなのに棄却されない誤り（第 2 種の過誤β）の 2 種類の誤りがある。第１種の過誤αを予め有意水準（検定の危険率）として，5% または 1% で定めておき"
+    },
+    {
+     "ref": "stats:nist-statistical-tests",
+     "title": "NIST/SEMATECH e-Handbook of Statistical Methods, 7.1.3. What are statistical tests?",
+     "url": "https://www.itl.nist.gov/div898/handbook/prc/section1/prc13.htm",
+     "locator": "Errors of the second kind",
+     "quote": "is not chosen by the user but is determined, as one might expect, by the magnitude of the real discrepancy."
+    },
+    {
+     "ref": "stats:nist-statistical-tests",
+     "title": "NIST/SEMATECH e-Handbook of Statistical Methods, 7.1.3. What are statistical tests?",
+     "url": "https://www.itl.nist.gov/div898/handbook/prc/section1/prc13.htm",
+     "locator": "Errors of the second kind",
+     "quote": "small discrepancies are more difficult to detect and lead to large errors of the second kind"
+    }
+   ],
+   "asOf": "統計学の基本概念（時点に依存しない一般的定義）",
+   "id": "s06-0041",
+   "origin": {
+    "batch": "G5-S06-TST",
+    "key": "G5-S06-TST-03",
+    "by": "gen:G5-S06-TST"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-26",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（統計）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G5-S06-TST",
+     "solver": "solve:G5-S06-TST（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G5-S06-TST（統計）"
+    },
+    "log": "bank/audit/G5-S06-TST.audit.json#G5-S06-TST-03",
+    "notes": "NIST prc13 l.90-97: βはユーザーが選ばず真の隔たりで決まる・小さい隔たりほどβ大。mext α/βの定義。ブラインド一致。"
+   }
+  },
+  {
+   "subject": "S06",
+   "subtopic": "仮説検定",
+   "format": "knowledge",
+   "difficulty": "advanced",
+   "polarity": "positive",
+   "question": "2群の平均在院日数の差について、各群とも少数例のデータを用い、有意水準0.05で仮説検定を行ったところ、p値は0.21であった。この結果の解釈として、正しいものはどれか。",
+   "choices": [
+    "帰無仮説を棄却する根拠は得られなかったが、標本の大きさが不足して差を検出できなかった可能性もある。",
+    "2群の平均在院日数に差がないこと（帰無仮説）が証明された。",
+    "p値が有意水準を上回ったので、帰無仮説を棄却して対立仮説を採択する。",
+    "結果を見てから有意水準を0.25に変更すれば、有意差ありと結論づけてよい。",
+    "帰無仮説が棄却されなかったので、第1種の過誤を起こしている。"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "p値が有意水準より大きい場合は、帰無仮説が正しいと結論するのではなく、検出力の問題もあるため「今回のデータは帰無仮説を棄却する統計的な証拠にはならない」という判断に留める。サンプルサイズが不足していると、真に差がないのか検出力不足なのかを判別できない。",
+    "choiceNotes": [
+     null,
+     "p値が有意水準より大きいことは帰無仮説が正しいことの証明ではない。棄却する証拠にならないという判断に留める。",
+     "帰無仮説を棄却するのはp値が有意水準以下のときである。0.21は0.05を上回るので棄却しない。",
+     "有意水準（第1種の過誤α）は検定の前にあらかじめ定めておくものであり、結果を見て都合よく変更してはならない。",
+     "第1種の過誤は、正しい帰無仮説を棄却してしまう誤りである。帰無仮説を棄却していないので第1種の過誤は起こりえない。"
+    ],
+    "point": "有意差なし≠差がない。少数例では検出力不足の可能性。有意水準は事前に決める。"
+   },
+   "sources": [
+    {
+     "ref": "x-legacy-L06b:mext-joho1-ch4",
+     "title": "高等学校情報科「情報Ⅰ」教員研修用教材（本編）第4章 情報通信ネットワークとデータの活用・巻末",
+     "url": "https://www.mext.go.jp/content/20200722-mxt_jogai02-100013300_006.pdf",
+     "locator": "統計的推測と仮説検定の解説",
+     "quote": "p 値が有意水準より大きくなる場合は，帰無仮説が正しいというより，検出力の問題もあるので，今回のデータは帰無仮説を棄却する統計的な証拠にはならないという判断に留めることが重要である。"
+    },
+    {
+     "ref": "x-legacy-L06b:mext-joho1-ch4",
+     "title": "高等学校情報科「情報Ⅰ」教員研修用教材（本編）第4章 情報通信ネットワークとデータの活用・巻末",
+     "url": "https://www.mext.go.jp/content/20200722-mxt_jogai02-100013300_006.pdf",
+     "locator": "統計的推測と仮説検定の解説",
+     "quote": "帰無仮説が正しいのに棄却してしまう誤り（第１種の過誤α），対立仮説が正しく帰無仮説が誤りなのに棄却されない誤り（第 2 種の過誤β）の 2 種類の誤りがある。第１種の過誤αを予め有意水準（検定の危険率）として，5% または 1% で定めておき"
+    },
+    {
+     "ref": "x-legacy-L06b:minds-glossary-2020",
+     "title": "Minds診療ガイドライン作成マニュアル2020 ver.3.0 用語集",
+     "url": "https://minds.jcqhc.or.jp/docs/methods/cpg-development/minds-manual/pdf/glossary_manual_2020.pdf",
+     "locator": "サンプルサイズ（sample size）",
+     "quote": "真に差がないのか，サンプルサイズが不足するために有意差が観察されなかったのか（検出力不足）が判別できなくなる。"
+    }
+   ],
+   "asOf": "統計学の基本概念（時点に依存しない一般的定義）",
+   "id": "s06-0042",
+   "origin": {
+    "batch": "G5-S06-TST",
+    "key": "G5-S06-TST-04",
+    "by": "gen:G5-S06-TST"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-26",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（統計）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G5-S06-TST",
+     "solver": "solve:G5-S06-TST（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G5-S06-TST（統計）"
+    },
+    "log": "bank/audit/G5-S06-TST.audit.json#G5-S06-TST-04",
+    "notes": "mext l.1893 p>αは帰無仮説が正しい証明ではない、minds glossary 検出力不足。1・3・4の誤りも確認。ブラインド一致。"
+   }
+  },
+  {
+   "subject": "S06",
+   "subtopic": "仮説検定",
+   "format": "knowledge",
+   "difficulty": "standard",
+   "polarity": "negative",
+   "question": "両側検定と片側検定について、誤っているものはどれか。",
+   "choices": [
+    "両側検定か片側検定かは、対立仮説の方向によって選択する。",
+    "両側検定では、検定統計量の片側の裾の確率をそのままp値とする。",
+    "「平均値は基準値と等しくない」という対立仮説は、大きい側と小さい側の両方へのずれを想定するので両側検定となる。",
+    "「平均値は基準値より小さい」のように、一方向のずれだけを対立仮説とする検定は片側検定である。"
+   ],
+   "answer": 1,
+   "explanation": {
+    "correct": "両側検定では、検定統計量に対応する片側の確率を2倍した値がp値となる。両側か片側かは対立仮説の方向で選び、「等しくない」（反対方向の両方を想定）なら両側、一方向だけなら片側（右または左）である。",
+    "choiceNotes": [
+     "対立仮説の方向によって両側検定、右（左）片側検定を選択するので正しい。",
+     null,
+     "反対方向の両方へのずれを想定する対立仮説（両側対立仮説）なので、両側検定となり正しい。",
+     "一方向（小さい側）のずれだけを想定するので片側（左片側）検定であり正しい。"
+    ],
+    "point": "両側検定のp値＝片側の確率×2。「≠」は両側、「＜」「＞」は片側。"
+   },
+   "sources": [
+    {
+     "ref": "stats:naruhodo-kentei",
+     "title": "なるほど統計学園「統計的推定と統計的仮説検定」",
+     "url": "https://www.stat.go.jp/naruhodo/11_tokusei/kentei.html",
+     "locator": "統計的仮説検定 ③検証する",
+     "quote": "両側検定では2倍した値がP値となる"
+    },
+    {
+     "ref": "x-legacy-L06b:mext-joho1-ch4",
+     "title": "高等学校情報科「情報Ⅰ」教員研修用教材（本編）第4章 情報通信ネットワークとデータの活用・巻末",
+     "url": "https://www.mext.go.jp/content/20200722-mxt_jogai02-100013300_006.pdf",
+     "locator": "統計的推測と仮説検定の解説",
+     "quote": "対立仮説の方向によって，両側検定，右（左）片側検定を選択する。"
+    },
+    {
+     "ref": "stats:nist-statistical-tests",
+     "title": "NIST/SEMATECH e-Handbook of Statistical Methods, 7.1.3. What are statistical tests?",
+     "url": "https://www.itl.nist.gov/div898/handbook/prc/section1/prc13.htm",
+     "locator": "Concept of null hypothesis",
+     "quote": "This is a two-sided alternative because it guards against alternatives in opposite directions"
+    }
+   ],
+   "asOf": "統計学の基本概念（時点に依存しない一般的定義）",
+   "id": "s06-0043",
+   "origin": {
+    "batch": "G5-S06-TST",
+    "key": "G5-S06-TST-05",
+    "by": "gen:G5-S06-TST"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-26",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（統計）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G5-S06-TST",
+     "solver": "solve:G5-S06-TST（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G5-S06-TST（統計）"
+    },
+    "log": "bank/audit/G5-S06-TST.audit.json#G5-S06-TST-05",
+    "notes": "naruhodo-kentei l.128 両側は2倍、mext 対立仮説の方向で選択、NIST two-sided。4択だが問題なし。ブラインド一致。"
+   }
+  },
+  {
+   "subject": "S06",
+   "subtopic": "仮説検定",
+   "format": "calculation",
+   "difficulty": "advanced",
+   "polarity": "positive",
+   "question": "ある検査値の母平均が50であるかを、有意水準0.05の両側検定で調べる。母標準偏差は6で既知とし、検定統計量Z＝（標本平均－50）÷（母標準偏差÷√標本の大きさ）は標準正規分布に従うものとする。無作為に選んだ36人の標本平均が52であった。検定統計量Zの値と判定の組合せとして、正しいものはどれか。",
+   "choices": [
+    "Z＝0.33、帰無仮説を棄却しない",
+    "Z＝2.0、帰無仮説を棄却しない",
+    "Z＝12.0、帰無仮説を棄却する",
+    "Z＝2.0、帰無仮説を棄却する",
+    "Z＝0.056、帰無仮説を棄却しない"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "Z＝（52－50）÷（6÷√36）＝2÷1＝2.0。有意水準0.05の両側検定の境界値は±1.96であり、2.0は1.96より大きいので棄却域に入り、帰無仮説を棄却する。",
+    "choiceNotes": [
+     "（52－50）÷6＝0.33で、標本の大きさの平方根で割ること（6÷√36）を忘れている。",
+     "Zは2.0で正しいが、2.0は境界値1.96を超えるので帰無仮説は棄却される。",
+     "（52－50）×6＝12で、母標準偏差で割るべきところを掛けている。",
+     null,
+     "（52－50）÷36≒0.056で、標準偏差と標本の大きさの扱いを誤っている。"
+    ],
+    "point": "Z＝（x̄－μ0）÷（σ÷√n）。両側5%の境界は±1.96。"
+   },
+   "sources": [
+    {
+     "ref": "stats:nist-test-vs-confidence-interval",
+     "title": "NIST/SEMATECH e-Handbook of Statistical Methods, 7.1.5. What is the relationship between a test and a confidence interval?",
+     "url": "https://www.itl.nist.gov/div898/handbook/prc/section1/prc15.htm",
+     "locator": "Hypothesis test for the mean",
+     "quote": "\\frac{\\bar{Y}-500}{\\sigma / \\sqrt{N}} \\le z_{\\alpha/2}"
+    },
+    {
+     "ref": "stats:naruhodo-kentei",
+     "title": "なるほど統計学園「統計的推定と統計的仮説検定」",
+     "url": "https://www.stat.go.jp/naruhodo/11_tokusei/kentei.html",
+     "locator": "統計的仮説検定 ③検証する",
+     "quote": "有意水準0.05の境界線（-1.96）と等しいかそれより小さな値（Zが正の数の場合には1.96より大きな値）"
+    }
+   ],
+   "asOf": "統計学の基本概念（時点に依存しない一般的定義）",
+   "calc": {
+    "expr": "(52-50)/(6/sqrt(36))",
+    "value": 2
+   },
+   "id": "s06-0044",
+   "origin": {
+    "batch": "G5-S06-TST",
+    "key": "G5-S06-TST-06",
+    "by": "gen:G5-S06-TST"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-26",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（統計）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G5-S06-TST",
+     "solver": "solve:G5-S06-TST（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G5-S06-TST（統計）"
+    },
+    "log": "bank/audit/G5-S06-TST.audit.json#G5-S06-TST-06",
+    "notes": "Z=(52-50)/(6/√36)=2.0>1.96で棄却を再計算（calc一致）。誤答の計算0.33/12/0.056も確認。naruhodo-kentei l.124 境界±1.96。"
+   }
+  },
+  {
+   "subject": "S06",
+   "subtopic": "仮説検定",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "2標本t検定について、正しいものはどれか。",
+   "choices": [
+    "2つの質的な項目間（例：喫煙の有無と疾病発症の有無）の関連を調べる検定である。",
+    "量が増えるにつれて発症が増加する傾向がみられるかどうかを調べる検定である。",
+    "2つの標本の大きさ（例数）が等しくなければ用いることができない。",
+    "2つの母集団の平均が等しいかどうかを調べる検定である。"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "2標本t検定は、2つの母平均が等しいかどうかを判断するために用いる検定である。対応のないデータでは、2つの標本の大きさは等しくても等しくなくてもよい。",
+    "choiceNotes": [
+     "2つの質問項目間（有無と有無など）の関連を調べるのはχ2検定である。",
+     "量の増加に伴って発症が増える傾向を調べるのは傾向性の検定である。",
+     "対応のないデータでは、2つの標本の大きさは等しくなくてもよく、例数が異なる2群にも用いることができる。",
+     null
+    ],
+    "point": "t検定＝2群の平均の比較（対応あり／なし）。χ2検定＝質的項目間の関連。"
+   },
+   "sources": [
+    {
+     "ref": "stats:nist-two-sample-t-test",
+     "title": "NIST/SEMATECH e-Handbook of Statistical Methods, 1.3.5.3. Two-Sample t -Test for Equal Means",
+     "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda353.htm",
+     "locator": "Purpose",
+     "quote": "is used to determine if two population means are equal."
+    },
+    {
+     "ref": "stats:nist-two-sample-t-test",
+     "title": "NIST/SEMATECH e-Handbook of Statistical Methods, 1.3.5.3. Two-Sample t -Test for Equal Means",
+     "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda353.htm",
+     "locator": "Purpose",
+     "quote": "For unpaired samples, the sample sizes for the two samples may or may not be equal."
+    },
+    {
+     "ref": "stats:mhlw-tokei-yougo-rr-or",
+     "title": "有効性・安全性に関する統計用語集",
+     "url": "https://www.mhlw.go.jp/www1/houdou/1106/h0602-3_c_15.html",
+     "locator": "χ２検定／傾向性の検定",
+     "quote": "２つの質問項目間（例えば、ＯＣ使用の有無と乳癌発症の有無）の関連について検討する際の検定方法の一つである。 傾向性の検定 例えば、タバコの本数が増えるにつれて、肺癌の発症が増加する傾向がみられるかどうかについて検定する方法である。"
+    }
+   ],
+   "asOf": "統計学の基本概念（時点に依存しない一般的定義）",
+   "id": "s06-0045",
+   "origin": {
+    "batch": "G5-S06-TST",
+    "key": "G5-S06-TST-07",
+    "by": "gen:G5-S06-TST"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-26",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（統計）で修正",
+     "修正後の独立再監査（pass）",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G5-S06-TST",
+     "solver": "solve:G5-S06-TST（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G5-S06-TST（統計）",
+     "reauditor": "reaudit:G5-S06-TST"
+    },
+    "log": "bank/audit/G5-S06-TST.audit.json#G5-S06-TST-07",
+    "notes": "再監査: Blind=3 (key=3). stats:nist-two-sample-t-test eda353 Purpose (l.20-22 'is used to determine if two population means are equal') supports D; l.38-39 'For unpaired samples, the sample sizes ... may or may not be equal' refutes C (unequal n allowed). stats:mhlw-tokei-yougo-rr-or χ２検定 (l.80) refutes A, ｜正答3はNIST eda353 Purposeで確認。choice 2（対応のあるデータには用いることができない）はNISTでは誤りだが、国内では『2標本t検定』を独立2標本の意味で使い（対応のある場合は『対応のあるt検定』・Excelの『一対の標本』）正と読める余地があるため差し替え。"
+   }
+  },
+  {
+   "subject": "S06",
+   "subtopic": "相関と回帰",
+   "format": "knowledge",
+   "difficulty": "standard",
+   "polarity": "negative",
+   "question": "相関係数について、誤っているものはどれか。",
+   "choices": [
+    "相関係数が0であれば、2つの変量の間には何の関係もないといえる。",
+    "相関係数は−1から1までの値をとる。",
+    "相関係数が1または−1のときは完全相関という。",
+    "負の相関が強いほど、相関係数は−1に近づく。",
+    "相関係数は、2つの変量の間の比例的な関係の強さを表す指標である。"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "相関係数はどれくらい「比例的な」関係を持っているかを計る指標であり、相関係数が0でも（例えば曲線的な関係など）2つの変量に関係が無いとはいい切れない。",
+    "choiceNotes": [
+     null,
+     "相関係数は−1から1までの値をとるので正しい。",
+     "相関係数が1または−1のときを完全相関というので正しい。",
+     "負の相関が強いと相関係数が−1に近づくので正しい。",
+     "相関係数は比例的な（直線的な）関係を計る指標であり正しい。"
+    ],
+    "point": "相関係数＝比例的関係の指標（−1〜1）。r＝0でも無関係とは限らない。散布図で確認する。"
+   },
+   "sources": [
+    {
+     "ref": "stats:naruhodo-hukusu",
+     "title": "なるほど統計学園「複数の変数の関係性を見る」",
+     "url": "https://www.stat.go.jp/naruhodo/10_tokucho/hukusu.html",
+     "locator": "相関係数",
+     "quote": "相関係数は-1から1までの値を取り、以下のような特徴を持ちます。"
+    },
+    {
+     "ref": "stats:naruhodo-hukusu",
+     "title": "なるほど統計学園「複数の変数の関係性を見る」",
+     "url": "https://www.stat.go.jp/naruhodo/10_tokucho/hukusu.html",
+     "locator": "相関係数（特徴(2)(3)）",
+     "quote": "(2)　負の相関が強いと相関係数が-1に近づく (3)　相関係数が1又は-1のときは完全相関という"
+    },
+    {
+     "ref": "stats:naruhodo-hukusu",
+     "title": "なるほど統計学園「複数の変数の関係性を見る」",
+     "url": "https://www.stat.go.jp/naruhodo/10_tokucho/hukusu.html",
+     "locator": "相関係数（注意点）",
+     "quote": "相関係数はあくまでどれくらい「比例的な」関係を持っているかを計る指標です。相関係数が0であるからといって、必ずしも2つの変量に関係が無いとはいい切れません。"
+    }
+   ],
+   "asOf": "統計学の基本概念（時点に依存しない一般的定義）",
+   "id": "s06-0046",
+   "origin": {
+    "batch": "G5-S06-TST",
+    "key": "G5-S06-TST-08",
+    "by": "gen:G5-S06-TST"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-26",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（統計）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G5-S06-TST",
+     "solver": "solve:G5-S06-TST（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G5-S06-TST（統計）"
+    },
+    "log": "bank/audit/G5-S06-TST.audit.json#G5-S06-TST-08",
+    "notes": "naruhodo-hukusu l.47-63: −1〜1、完全相関、比例的関係、r=0でも無関係とはいい切れない。ブラインド一致。"
+   }
+  },
+  {
+   "subject": "S06",
+   "subtopic": "相関と回帰",
+   "format": "knowledge",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "ある地域の月別データで、清涼飲料水の販売量と熱中症による救急搬送者数との間に強い正の相関（相関係数0.9）がみられた。この結果の解釈として、正しいものはどれか。",
+   "choices": [
+    "清涼飲料水の販売量が増えることが、熱中症の原因であると結論づけられる。",
+    "清涼飲料水の販売量を減らせば、熱中症による搬送者数も減ると判断できる。",
+    "2つの量の間に関係性がみられることは分かるが、これだけで因果関係があるとは結論づけられない。",
+    "相関係数が1に近いので、偶然に関係があるように見える「見せかけの相関」である可能性は否定される。",
+    "正の相関なので、販売量が多い月ほど搬送者数は少ない傾向にある。"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "相関関係（散布図や相関係数）から分かるのは2つの量の間に関係性があるかどうかだけで、どちらかが原因となってもう一方が起こるという因果関係を示すものではない。気温のような背後の要因も含め、理論や知識を総合して検討する必要がある。",
+    "choiceNotes": [
+     "相関関係は因果関係を示すものではないため、原因とは結論づけられない。",
+     "因果関係を前提とした判断であり、相関関係だけからはいえない。",
+     null,
+     "相関係数が1に近くても、必ずしも2つの変量に関係性があるとはいい切れず、見せかけの相関の可能性は残る。",
+     "正の相関は、一方が増えると他方も増える傾向である。"
+    ],
+    "point": "相関≠因果。相関係数が大きくても見せかけの相関（背後の第3の要因）に注意。"
+   },
+   "sources": [
+    {
+     "ref": "stats:naruhodo-sanpu",
+     "title": "なるほど統計学園「散布図」",
+     "url": "https://www.stat.go.jp/naruhodo/9_graph/jyokyu/sanpu.html",
+     "locator": "相関関係と因果関係",
+     "quote": "因果関係（どちらかが原因となって、もう一方が起こる）をも示すものではないということです。"
+    },
+    {
+     "ref": "stats:naruhodo-hukusu",
+     "title": "なるほど統計学園「複数の変数の関係性を見る」",
+     "url": "https://www.stat.go.jp/naruhodo/10_tokucho/hukusu.html",
+     "locator": "相関係数（注意点）",
+     "quote": "相関係数が1あるいは-1に近い値を示したからといって、必ずしも2つの変量に関係性があるともいい切れません。"
+    },
+    {
+     "ref": "stats:naruhodo-yougo-sa",
+     "title": "なるほど統計学園「１３ 統計用語辞典（さ行）」",
+     "url": "https://www.stat.go.jp/naruhodo/13_yougo/sa-gyo.html",
+     "locator": "相関（そうかん）",
+     "quote": "一つの変数が増えるともう一つも増える傾向がみられる場合は「正の相関がある」といい"
+    }
+   ],
+   "asOf": "統計学の基本概念（時点に依存しない一般的定義）",
+   "id": "s06-0047",
+   "origin": {
+    "batch": "G5-S06-TST",
+    "key": "G5-S06-TST-09",
+    "by": "gen:G5-S06-TST"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-26",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（統計）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G5-S06-TST",
+     "solver": "solve:G5-S06-TST（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G5-S06-TST（統計）"
+    },
+    "log": "bank/audit/G5-S06-TST.audit.json#G5-S06-TST-09",
+    "notes": "naruhodo-sanpu 相関≠因果、naruhodo-hukusu l.63 見せかけの相関、yougo 正の相関の定義。ブラインド一致。"
+   }
+  },
+  {
+   "subject": "S06",
+   "subtopic": "相関と回帰",
+   "format": "calculation",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "単回帰分析で、説明変数と被説明変数の相関係数が−0.8であった。決定係数（R²）の値はどれか。",
+   "choices": [
+    "−1.6",
+    "−0.64",
+    "0.64",
+    "0.36",
+    "0.89"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "決定係数は相関係数を二乗した値で、0から1の間をとる。（−0.8）²＝0.64。",
+    "choiceNotes": [
+     "−0.8×2で、二乗ではなく2倍している。決定係数は負の値をとらない。",
+     "二乗すれば負の符号は消える。決定係数は0以上1以下である。",
+     null,
+     "1−0.64の値で、決定係数ではない。",
+     "0.8の平方根（約0.89）であり、二乗ではない。"
+    ],
+    "point": "R²＝r²（0〜1）。r＝−0.8でもR²＝0.64。"
+   },
+   "sources": [
+    {
+     "ref": "stats:naruhodo-hukusu",
+     "title": "なるほど統計学園「複数の変数の関係性を見る」",
+     "url": "https://www.stat.go.jp/naruhodo/10_tokucho/hukusu.html",
+     "locator": "回帰式の当てはまり",
+     "quote": "決定係数は相関係数を二乗した値で、１から０の間をとる数値です。"
+    }
+   ],
+   "asOf": "統計学の基本概念（時点に依存しない一般的定義）",
+   "calc": {
+    "expr": "(-0.8)^2",
+    "value": 0.64
+   },
+   "id": "s06-0048",
+   "origin": {
+    "batch": "G5-S06-TST",
+    "key": "G5-S06-TST-10",
+    "by": "gen:G5-S06-TST"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-26",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（統計）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G5-S06-TST",
+     "solver": "solve:G5-S06-TST（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G5-S06-TST（統計）"
+    },
+    "log": "bank/audit/G5-S06-TST.audit.json#G5-S06-TST-10",
+    "notes": "(−0.8)^2=0.64（calc一致）。単回帰でR²=r²、naruhodo-hukusu 0〜1。誤答の由来も正しい。"
+   }
+  },
+  {
+   "subject": "S06",
+   "subtopic": "相関と回帰",
+   "format": "calculation",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "ある病院で、1日の退院患者数x（人）と、その日の退院時要約の点検に要した時間y（分）の関係を単回帰分析したところ、回帰式 y＝12x＋30 が得られた。この回帰式を用いると、退院患者数が5人の日の点検時間の予測値は何分か。",
+   "choices": [
+    "42分",
+    "60分",
+    "150分",
+    "210分",
+    "90分"
+   ],
+   "answer": 4,
+   "explanation": {
+    "correct": "単回帰の回帰式 Y＝aX＋b に x＝5 を代入すると、y＝12×5＋30＝90（分）となる。回帰式を用いると、説明変数の値に対応する被説明変数のおおよその値を推測できる。",
+    "choiceNotes": [
+     "12＋30＝42で、xに5を代入していない。",
+     "12×5＝60で、定数項30を加えていない。",
+     "30×5＝150で、係数と定数項を取り違えている。",
+     "（12＋30）×5＝210で、定数項にもxを掛けている。",
+     null
+    ],
+    "point": "予測値は回帰式にxを代入：y＝a×x＋b。"
+   },
+   "sources": [
+    {
+     "ref": "stats:naruhodo-hukusu",
+     "title": "なるほど統計学園「複数の変数の関係性を見る」",
+     "url": "https://www.stat.go.jp/naruhodo/10_tokucho/hukusu.html",
+     "locator": "回帰分析の考え方",
+     "quote": "線形の単回帰は以下の式で表されることができます。 Y＝aX＋b"
+    },
+    {
+     "ref": "stats:naruhodo-hukusu",
+     "title": "なるほど統計学園「複数の変数の関係性を見る」",
+     "url": "https://www.stat.go.jp/naruhodo/10_tokucho/hukusu.html",
+     "locator": "回帰分析の考え方",
+     "quote": "仮に床面積120m 2 のマンションがあったらどのような価格になるかという推測ができるようになります。"
+    }
+   ],
+   "asOf": "統計学の基本概念（時点に依存しない一般的定義）",
+   "calc": {
+    "expr": "12*5+30",
+    "value": 90
+   },
+   "id": "s06-0049",
+   "origin": {
+    "batch": "G5-S06-TST",
+    "key": "G5-S06-TST-11",
+    "by": "gen:G5-S06-TST"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-26",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（統計）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G5-S06-TST",
+     "solver": "solve:G5-S06-TST（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G5-S06-TST（統計）"
+    },
+    "log": "bank/audit/G5-S06-TST.audit.json#G5-S06-TST-11",
+    "notes": "12×5+30=90（calc一致）。naruhodo-hukusu Y=aX+bと推測の記述。誤答の由来確認。"
+   }
+  },
+  {
+   "subject": "S06",
+   "subtopic": "相関と回帰",
+   "format": "knowledge",
+   "difficulty": "standard",
+   "polarity": "negative",
+   "question": "回帰分析について、誤っているものはどれか。",
+   "choices": [
+    "回帰式の左辺には被説明変数を、右辺には説明変数と係数を置く。",
+    "被説明変数が一つの説明変数によって説明される回帰を単回帰という。",
+    "最小二乗法では、実測値と予測値の差（誤差）を2乗せずにそのまま合計した値が最小になるように回帰式を決める。",
+    "回帰線を引くことで、データにない説明変数の値に対応する被説明変数のおおよその値を推測できる。",
+    "実測値から予測値を引いた誤差には、負の値になるものがある。"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "実測値－予測値をそのまま合計すると正負が打ち消し合うため、最小二乗法では各誤差を2乗した値を足し合わせた和（誤差平方和）が最小になるように回帰式を決定する。",
+    "choiceNotes": [
+     "回帰式は左辺に説明される値（被説明変数）、右辺に説明変数と各係数を置くので正しい。",
+     "被説明変数が一つの説明変数で説明される回帰を単回帰というので正しい。",
+     null,
+     "回帰線が引けることで、例えば仮の説明変数の値に対する被説明変数の推測ができるので正しい。",
+     "単純に実測値－予測値を計算すると負の誤差が出るので正しい（だから2乗する）。"
+    ],
+    "point": "最小二乗法＝誤差の二乗和を最小に。左辺＝被説明変数、右辺＝説明変数。"
+   },
+   "sources": [
+    {
+     "ref": "stats:naruhodo-hukusu",
+     "title": "なるほど統計学園「複数の変数の関係性を見る」",
+     "url": "https://www.stat.go.jp/naruhodo/10_tokucho/hukusu.html",
+     "locator": "回帰分析（最小二乗法）",
+     "quote": "単純に実測値-予測値を行うと、負の誤差が出て来てしまいます。そこで、各誤差を2乗した値を使用し、これを全て足し合わせた和（誤差平方和又は偏差平方和）が最小になる様に回帰式を決定する"
+    },
+    {
+     "ref": "stats:naruhodo-hukusu",
+     "title": "なるほど統計学園「複数の変数の関係性を見る」",
+     "url": "https://www.stat.go.jp/naruhodo/10_tokucho/hukusu.html",
+     "locator": "回帰分析（回帰式）",
+     "quote": "回帰式は左辺に説明される値（被説明変数：Y「A市のマンション価格と床面積」ではマンション価格）をおき、右辺にYを説明するための値（説明変数：X「A市のマンション価格と床面積」では床面積）と各係数を置きます。被説明変数が一つの説明変数によって説明される回帰を単回帰といいます。"
+    },
+    {
+     "ref": "stats:naruhodo-hukusu",
+     "title": "なるほど統計学園「複数の変数の関係性を見る」",
+     "url": "https://www.stat.go.jp/naruhodo/10_tokucho/hukusu.html",
+     "locator": "回帰分析の考え方",
+     "quote": "仮に床面積120m 2 のマンションがあったらどのような価格になるかという推測ができるようになります。"
+    }
+   ],
+   "asOf": "統計学の基本概念（時点に依存しない一般的定義）",
+   "id": "s06-0050",
+   "origin": {
+    "batch": "G5-S06-TST",
+    "key": "G5-S06-TST-12",
+    "by": "gen:G5-S06-TST"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-26",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（統計）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G5-S06-TST",
+     "solver": "solve:G5-S06-TST（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G5-S06-TST（統計）"
+    },
+    "log": "bank/audit/G5-S06-TST.audit.json#G5-S06-TST-12",
+    "notes": "naruhodo-hukusu 最小二乗法(誤差平方和)、回帰式の左辺・右辺、単回帰の定義、推測。ブラインド一致。"
+   }
+  },
+  {
+   "subject": "S06",
+   "subtopic": "相関と回帰",
+   "format": "combination",
+   "difficulty": "advanced",
+   "polarity": "positive",
+   "question": "相関係数と決定係数に関する次の記述a〜eのうち、正しいものの組合せはどれか。\na　相関係数は、xとyの共分散を、xの標準偏差とyの標準偏差の積で割った値である。\nb　回帰式の当てはまり具合を見る場合には、決定係数ではなく相関係数を使う。\nc　相関係数が0.7のとき決定係数は0.49となり、相関関係はありそうでも回帰式の説明力は高いとはいえない。\nd　決定係数は、相関係数と同じく−1から1までの値をとる。\ne　決定係数が0に近いほど、回帰直線の説明力があることを意味する。",
+   "choices": [
+    "a と b",
+    "a と c",
+    "b と d",
+    "c と e",
+    "d と e"
+   ],
+   "answer": 1,
+   "explanation": {
+    "correct": "a：相関係数は共分散を両変数の標準偏差の積で割ったもの（正）。c：決定係数は相関係数の2乗なので0.7²＝0.49で、相関はありそうでも回帰式の説明力は良くない（正）。",
+    "choiceNotes": [
+     "bは誤り。相関関係を見る場合は相関係数、回帰式の当てはまり具合を見る場合は決定係数を使う。",
+     null,
+     "b・dとも誤り。決定係数は相関係数の2乗であり0以上1以下の値をとる。",
+     "eは誤り。決定係数は1に近いほど回帰直線の説明力がある。",
+     "d・eとも誤り。決定係数は0〜1で、1に近いほど説明力がある。"
+    ],
+    "point": "相関を見る→相関係数（−1〜1）。当てはまりを見る→決定係数（＝r²、0〜1、1に近いほど良い）。"
+   },
+   "sources": [
+    {
+     "ref": "stats:naruhodo-hukusu",
+     "title": "なるほど統計学園「複数の変数の関係性を見る」",
+     "url": "https://www.stat.go.jp/naruhodo/10_tokucho/hukusu.html",
+     "locator": "相関係数",
+     "quote": "相関係数はxとyの共分散をxの標準偏差とyの標準偏差をかけあわせた値で割ったものであり"
+    },
+    {
+     "ref": "stats:naruhodo-hukusu",
+     "title": "なるほど統計学園「複数の変数の関係性を見る」",
+     "url": "https://www.stat.go.jp/naruhodo/10_tokucho/hukusu.html",
+     "locator": "【参考】決定係数と相関係数",
+     "quote": "・相関関係を見る場合には相関係数を使う ・回帰式の当てはまり具合を見る場合は決定係数を使う 例えば、相関係数0.7というと強い正の相関があると言えそうですが、 決定係数で考えると0.7を2乗するので0.49になります。"
+    },
+    {
+     "ref": "stats:naruhodo-hukusu",
+     "title": "なるほど統計学園「複数の変数の関係性を見る」",
+     "url": "https://www.stat.go.jp/naruhodo/10_tokucho/hukusu.html",
+     "locator": "回帰式の当てはまり",
+     "quote": "決定係数は相関係数を二乗した値で、１から０の間をとる数値です。決定係数が１に近いほど回帰直線の説明力があることを意味します。"
+    }
+   ],
+   "asOf": "統計学の基本概念（時点に依存しない一般的定義）",
+   "id": "s06-0051",
+   "origin": {
+    "batch": "G5-S06-TST",
+    "key": "G5-S06-TST-13",
+    "by": "gen:G5-S06-TST"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-26",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（統計）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G5-S06-TST",
+     "solver": "solve:G5-S06-TST（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G5-S06-TST（統計）"
+    },
+    "log": "bank/audit/G5-S06-TST.audit.json#G5-S06-TST-13",
+    "notes": "naruhodo-hukusu l.140-152: 相関係数の定義、目的の違い、0.7→0.49で『回帰式の当てはまり具合（説明力）は良くない』を確認しcは出典どおり。決定係数0〜1、1に近いほど説明力。ブラインド一致。"
+   }
+  },
+  {
+   "subject": "S06",
+   "subtopic": "疫学指標",
+   "format": "calculation",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "ある地域の住民10,000人を5年間追跡したところ、胃がんを新たに発症した者が60人であった。観察人年は「対象者数×観察年数」で求めるものとする。この集団における胃がんの罹患率（対10万人年）はどれか。",
+   "choices": [
+    "120（対10万人年）",
+    "12（対10万人年）",
+    "60（対10万人年）",
+    "600（対10万人年）",
+    "1,200（対10万人年）"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "罹患率は「一定期間に新たに発生した患者数÷集団の観察人年」で表す。観察人年は10,000人×5年＝50,000人年なので、60÷50,000×100,000＝120（対10万人年）となる。",
+    "choiceNotes": [
+     null,
+     "分母を500,000人年（10倍）とした誤り。正しい観察人年は50,000人年である。",
+     "発症者数60人をそのまま率としたもので、観察人年で割っていない。",
+     "観察年数を考慮せず、観察開始時の人数10,000人を分母とした値（10万人あたりに換算した5年累積罹患率）である。人年当たりの罹患率ではない。",
+     "分母を5,000人年とした計算誤り。"
+    ],
+    "point": "罹患率＝新規発生数÷観察人年。2人×5年も5人×2年も10人年。分母が観察開始時の人数なら累積罹患率。"
+   },
+   "sources": [
+    {
+     "ref": "x-legacy-L06a:mhlw-edc-epi",
+     "title": "内分泌かく乱化学物質の健康影響に関する検討会 中間報告書追補その２ 別冊（疫学研究の方法の解説を含む）",
+     "url": "https://www.mhlw.go.jp/shingi/2005/03/dl/s0331-9b1.pdf",
+     "locator": "Ⅱ-１ 疾病頻度の指標（罹患率と死亡率）",
+     "quote": "２人を５年間観察すれば 10 人年、５人を２年間観察しても 10 人年に相当する。"
+    },
+    {
+     "ref": "x-legacy-L06a:mhlw-edc-epi",
+     "title": "内分泌かく乱化学物質の健康影響に関する検討会 中間報告書追補その２ 別冊（疫学研究の方法の解説を含む）",
+     "url": "https://www.mhlw.go.jp/shingi/2005/03/dl/s0331-9b1.pdf",
+     "locator": "Ⅱ-１ 疾病頻度の指標（罹患率と死亡率）",
+     "quote": "ある１万人の集団を 10 年間観察したところ 160 人の胃がん患者が発生したとすれば、この集団における胃がんの罹患率は 160（対 10 万人年）となる。"
+    },
+    {
+     "ref": "x-legacy-L06a:mhlw-edc-epi",
+     "title": "内分泌かく乱化学物質の健康影響に関する検討会 中間報告書追補その２ 別冊（疫学研究の方法の解説を含む）",
+     "url": "https://www.mhlw.go.jp/shingi/2005/03/dl/s0331-9b1.pdf",
+     "locator": "Ⅱ-１ 疾病頻度の指標（累積罹患率）",
+     "quote": "罹患率や死亡率の分母として、観察人年ではなく、観察開始時の集団の人数を用いる場合がある。これを累積罹患率・累積死亡率と呼ぶ。"
+    }
+   ],
+   "asOf": "疫学・臨床検査の定義（時点に依存しない）",
+   "calc": {
+    "expr": "60/(10000*5)*100000",
+    "value": 120
+   },
+   "id": "s06-0052",
+   "origin": {
+    "batch": "G5-S06-EPI",
+    "key": "G5-S06-EPI-01",
+    "by": "gen:G5-S06-EPI"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-26",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（統計）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G5-S06-EPI",
+     "solver": "solve:G5-S06-EPI（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G5-S06-EPI（統計）"
+    },
+    "log": "bank/audit/G5-S06-EPI.audit.json#G5-S06-EPI-01",
+    "notes": "Recomputed 60/(10000*5)*1e5=120; distractors 12(÷500000),60,600(60/10000=5年累積罹患率),1200(÷5000) all verified. mhlw-edc-epi Ⅱ-1 l.586-592 (人年・累積罹患率) in context."
+   }
+  },
+  {
+   "subject": "S06",
+   "subtopic": "疫学指標",
+   "format": "calculation",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "あるコホート研究で、要因に曝露した群2,000人のうち60人、曝露していない群3,000人のうち30人が観察期間中に疾病Xを発症した。疾病Xについての寄与危険（寄与リスク）はどれか。",
+   "choices": [
+    "1,000人あたり10人",
+    "1,000人あたり20人",
+    "1,000人あたり30人",
+    "1,000人あたり40人",
+    "3.0"
+   ],
+   "answer": 1,
+   "explanation": {
+    "correct": "寄与危険（寄与リスク）は「曝露群の罹患リスク－非曝露群の罹患リスク」である。曝露群60/2,000＝0.03（1,000人あたり30人）、非曝露群30/3,000＝0.01（1,000人あたり10人）なので、差は0.02＝1,000人あたり20人となる。",
+    "choiceNotes": [
+     "非曝露群の罹患リスク（30/3,000）であり、差をとっていない。",
+     null,
+     "曝露群の罹患リスク（60/2,000）そのものであり、非曝露群のリスクを差し引いていない。",
+     "曝露群と非曝露群のリスクを足した値で、寄与危険ではない。",
+     "曝露群のリスクを非曝露群のリスクで割った相対危険（0.03÷0.01＝3.0）である。寄与危険は差、相対危険は比。"
+    ],
+    "point": "寄与危険＝曝露群リスク－非曝露群リスク（差）。相対危険＝曝露群リスク÷非曝露群リスク（比）。"
+   },
+   "sources": [
+    {
+     "ref": "stats:env-soutai-kiyo-risk",
+     "title": "放射線による健康影響等に関する統一的な基礎資料（令和７年度版）第3章 放射線による健康影響 スライド3.4 リスク（相対リスクと寄与リスク）",
+     "url": "https://www.env.go.jp/chemi/rhm/current/attach/slide-03-04.pdf",
+     "locator": "スライド「相対リスクと寄与リスク」",
+     "quote": "寄与リスク ＝要因ばく露群の罹患リスク ― 要因非ばく露群の罹患リスク"
+    },
+    {
+     "ref": "stats:env-soutai-kiyo-risk",
+     "title": "放射線による健康影響等に関する統一的な基礎資料（令和７年度版）第3章 放射線による健康影響 スライド3.4 リスク（相対リスクと寄与リスク）",
+     "url": "https://www.env.go.jp/chemi/rhm/current/attach/slide-03-04.pdf",
+     "locator": "スライド「相対リスクと寄与リスク」",
+     "quote": "要因ばく露によってその集団の罹患率がどれだけ増えるのか"
+    }
+   ],
+   "asOf": "疫学・臨床検査の定義（時点に依存しない）",
+   "calc": {
+    "expr": "(60/2000-30/3000)*1000",
+    "value": 20
+   },
+   "id": "s06-0053",
+   "origin": {
+    "batch": "G5-S06-EPI",
+    "key": "G5-S06-EPI-02",
+    "by": "gen:G5-S06-EPI"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-26",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（統計）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G5-S06-EPI",
+     "solver": "solve:G5-S06-EPI（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G5-S06-EPI（統計）"
+    },
+    "log": "bank/audit/G5-S06-EPI.audit.json#G5-S06-EPI-02",
+    "notes": "AR=0.03-0.01=0.02=20/1000; 10,30,40(和),3.0(RR) verified. stats:env-soutai-kiyo-risk 寄与リスク定義 supports."
+   }
+  },
+  {
+   "subject": "S06",
+   "subtopic": "疫学指標",
+   "format": "calculation",
+   "difficulty": "advanced",
+   "polarity": "positive",
+   "question": "ある疾患の症例200人と対照200人について過去の曝露歴を調べたところ、曝露ありは症例で60人、対照で30人であった。この症例対照研究で求められるオッズ比として最も近いものはどれか。",
+   "choices": [
+    "約0.41",
+    "約2.4",
+    "約2.0",
+    "算出できない"
+   ],
+   "answer": 1,
+   "explanation": {
+    "correct": "症例における曝露ありのオッズは60/140、対照における曝露ありのオッズは30/170であり、オッズ比は(60/140)÷(30/170)＝(60×170)÷(140×30)≒2.43となる。",
+    "choiceNotes": [
+     "分子と分母を逆にした値（対照のオッズ÷症例のオッズ）である。",
+     null,
+     "曝露割合の比（60/200÷30/200）であり、オッズ（曝露あり÷曝露なし）の比ではない。",
+     "症例対照研究では罹患率を直接測定できないが、オッズ比は算出でき、関連の指標として用いられる。"
+    ],
+    "point": "症例対照研究のオッズ比＝(症例の曝露あり/曝露なし)÷(対照の曝露あり/曝露なし)＝ad/bc。"
+   },
+   "sources": [
+    {
+     "ref": "x-legacy-L06a:mhlw-edc-epi",
+     "title": "内分泌かく乱化学物質の健康影響に関する検討会 中間報告書追補その２ 別冊（疫学研究の方法の解説を含む）",
+     "url": "https://www.mhlw.go.jp/shingi/2005/03/dl/s0331-9b1.pdf",
+     "locator": "Ⅱ-３ 関連性の指標（オッズ比）",
+     "quote": "肺がん患者における喫煙ありのオッズは 80/20=4、対照におけるそれは 50/50=1 となり、両オッズの比（オッズ比）は、4/1=4 となる。"
+    },
+    {
+     "ref": "x-legacy-L06a:mhlw-edc-epi",
+     "title": "内分泌かく乱化学物質の健康影響に関する検討会 中間報告書追補その２ 別冊（疫学研究の方法の解説を含む）",
+     "url": "https://www.mhlw.go.jp/shingi/2005/03/dl/s0331-9b1.pdf",
+     "locator": "Ⅱ-３ 関連性の指標（オッズ比）",
+     "quote": "オッズ比は、罹患率を直接測定できない症例対照研究や、罹患率ではなく有病率を疾病頻度の指標とする断面研究で用いられる。"
+    }
+   ],
+   "asOf": "疫学・臨床検査の定義（時点に依存しない）",
+   "calc": {
+    "expr": "(60/140)/(30/170)",
+    "value": 2.43
+   },
+   "id": "s06-0054",
+   "origin": {
+    "batch": "G5-S06-EPI",
+    "key": "G5-S06-EPI-03",
+    "by": "gen:G5-S06-EPI"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-26",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（統計）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G5-S06-EPI",
+     "solver": "solve:G5-S06-EPI（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G5-S06-EPI（統計）"
+    },
+    "log": "bank/audit/G5-S06-EPI.audit.json#G5-S06-EPI-03",
+    "notes": "OR=(60*170)/(140*30)=2.43≈2.4; 0.41=逆数, 2.0=曝露割合比. mhlw-edc-epi Ⅱ-3 オッズ比 (l.670) supports 算出可能・症例対照で使用."
+   }
+  },
+  {
+   "subject": "S06",
+   "subtopic": "疫学指標",
+   "format": "knowledge",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "ある疾患の有病率を低下させる方向に働くものはどれか。",
+   "choices": [
+    "新たに発症する人が増える。",
+    "治癒はしないが延命できる治療が普及し、患者の生存期間が延びる。",
+    "短期間で治癒させる治療法が普及する。",
+    "罹患率は変わらず、平均罹病期間が長くなる。"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "有病率はある時点で疾病にかかっている人（新規と既存の患者）の割合で、罹患率と罹病期間の両方に左右される。速やかに治癒すると患者でいる期間が短くなり、有病率は低下する。",
+    "choiceNotes": [
+     "罹患率の上昇であり、有病率を高める方向に働く。",
+     "治癒しないまま生存期間が延びると有病者が蓄積し、有病率は上昇する。",
+     null,
+     "罹病期間の延長は有病率を高める方向に働く。"
+    ],
+    "point": "有病率は罹患率と罹病期間で決まる。罹患↑・延命（治癒なし）↑→有病率↑、速やかな治癒・急速な致死→有病率↓。"
+   },
+   "sources": [
+    {
+     "ref": "x-legacy-L06b:cdc-ss1978-l3s2",
+     "title": "Principles of Epidemiology in Public Health Practice, 3rd ed. Lesson 3",
+     "url": "https://archive.cdc.gov/www_cdc_gov/csels/dsepd/ss1978/lesson3/section2.html",
+     "locator": "Prevalence（Properties and uses of prevalence）",
+     "quote": "High prevalence of a disease within a population might reflect high incidence or prolonged survival without cure or both. Conversely, low prevalence might indicate low incidence, a rapidly fatal process, or rapid recovery."
+    },
+    {
+     "ref": "x-legacy-L06a:mhlw-edc-epi",
+     "title": "内分泌かく乱化学物質の健康影響に関する検討会 中間報告書追補その２ 別冊（疫学研究の方法の解説を含む）",
+     "url": "https://www.mhlw.go.jp/shingi/2005/03/dl/s0331-9b1.pdf",
+     "locator": "Ⅱ-１ 疾病頻度の指標（有病率）",
+     "quote": "罹患率が集団の観察期間を考慮に入れた指標であるのに対して、有病率はある一時点での有病者の割合を示している。"
+    }
+   ],
+   "asOf": "疫学・臨床検査の定義（時点に依存しない）",
+   "id": "s06-0055",
+   "origin": {
+    "batch": "G5-S06-EPI",
+    "key": "G5-S06-EPI-04",
+    "by": "gen:G5-S06-EPI"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-26",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（統計）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G5-S06-EPI",
+     "solver": "solve:G5-S06-EPI（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G5-S06-EPI（統計）"
+    },
+    "log": "bank/audit/G5-S06-EPI.audit.json#G5-S06-EPI-04",
+    "notes": "有病率=罹患×罹病期間の関係; CDC ss1978 L3S2 quote (rapid recovery→low prevalence; prolonged survival without cure→high) supports key and notes."
+   }
+  },
+  {
+   "subject": "S06",
+   "subtopic": "疫学指標",
+   "format": "knowledge",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "標準化死亡比（SMR）について、正しいものはどれか。",
+   "choices": [
+    "観察集団の年齢階級別死亡率を、基準人口の年齢構成に当てはめて求める。",
+    "年齢構成の違いを調整しない粗死亡率どうしの比である。",
+    "観察集団の実際の死亡数を、基準集団の年齢階級別死亡率から計算した期待死亡数で割って求める。",
+    "全国を基準とした都道府県比較で値が1より小さい場合、その県の死亡率は全国平均より高いことを意味する。",
+    "観察集団の年齢階級別死亡率が安定して得られる大きな集団でなければ用いることができない。"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "SMRは、観察集団で実際に観察された死亡数が、基準集団の年齢階級別死亡率を観察集団の年齢階級別人口に当てはめて得られる期待死亡数の何倍かを示す指標で、人口構成の違いを除去して比較するために用いる。",
+    "choiceNotes": [
+     "基準人口の年齢構成に合わせて求めるのは年齢調整死亡率（直接法）である。SMRは期待死亡数との比で求める（間接法）。",
+     "SMRは人口構成の違いを除去して死亡率を比較するための指標であり、粗死亡率の比ではない。",
+     null,
+     "全国を基準とした場合、1より小さければ全国平均より死亡率が低いことを意味する（100倍して表示する場合は100が基準）。",
+     "SMRは、年齢階級別死亡率が得られない場合や、人口規模が小さく年齢階級別死亡率の偶然変動が大きい場合の年齢調整の手法として用いられる。"
+    ],
+    "point": "SMR＝実際の死亡数÷期待死亡数（間接法）。小集団・年齢階級別死亡率不明でも使える。1（100）より大なら基準より高い。"
+   },
+   "sources": [
+    {
+     "ref": "stats:ganjoho-hyouzyunkasibouhi",
+     "title": "がん統計の用語集「標準化死亡比」",
+     "url": "https://ganjoho.jp/reg_stat/statistics/qa_words/word/hyouzyunkasibouhi.html",
+     "locator": "標準化死亡比",
+     "quote": "ある集団で実際に観察された死亡数が、もしその集団の死亡率が基準となる集団の死亡率と同じだった場合に予想される死亡数（期待死亡数）の何倍であるか、という形で求められます。"
+    },
+    {
+     "ref": "stats:ganjoho-hyouzyunkasibouhi",
+     "title": "がん統計の用語集「標準化死亡比」",
+     "url": "https://ganjoho.jp/reg_stat/statistics/qa_words/word/hyouzyunkasibouhi.html",
+     "locator": "標準化死亡比",
+     "quote": "そのようなデータが得られない場合や、人口規模の小さい集団で年齢階級別死亡率の偶然変動が大きい場合の年齢調整の手法として、用いられます。"
+    },
+    {
+     "ref": "stats:ganjoho-nenreityouseisibouritu",
+     "title": "がん統計の用語集「年齢調整死亡率」",
+     "url": "https://ganjoho.jp/reg_stat/statistics/qa_words/word/nenreityouseisibouritu.html",
+     "locator": "年齢調整死亡率",
+     "quote": "年齢調整死亡率は、集団全体の死亡率を、基準となる集団の年齢構成（ 基準人口 ）に合わせた形で求められます。"
+    }
+   ],
+   "asOf": "疫学・臨床検査の定義（時点に依存しない）",
+   "id": "s06-0056",
+   "origin": {
+    "batch": "G5-S06-EPI",
+    "key": "G5-S06-EPI-05",
+    "by": "gen:G5-S06-EPI"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-26",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（統計）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G5-S06-EPI",
+     "solver": "solve:G5-S06-EPI（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G5-S06-EPI（統計）"
+    },
+    "log": "bank/audit/G5-S06-EPI.audit.json#G5-S06-EPI-05",
+    "notes": "ganjoho 標準化死亡比 (観察/期待死亡数, 小集団で使用) and 年齢調整死亡率 (基準人口に合わせる=直接法) support key and each distractor note."
+   }
+  },
+  {
+   "subject": "S06",
+   "subtopic": "疫学指標",
+   "format": "knowledge",
+   "difficulty": "standard",
+   "polarity": "negative",
+   "question": "相対危険（相対リスク）とオッズ比について、誤っているものはどれか。",
+   "choices": [
+    "症例対照研究では各群の罹患率を直接測定できるため、関連の指標として通常は相対危険を用いる。",
+    "相対危険は、曝露群の罹患リスクを非曝露群の罹患リスクで割った値である。",
+    "相対危険が1より大きいことは、曝露によって罹患リスクが増えていることを意味する。",
+    "発症率が低い疾患では、オッズ比は相対危険に近い値を示す。",
+    "相対危険やオッズ比の95%信頼区間が1を含まなければ、統計学的に有意であることを示す。"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "症例対照研究は、すでに疾病にかかった症例と対照を選んで過去の曝露を比較するため、罹患率を直接測定できない。このため関連の指標にはオッズ比を用いる。相対危険は罹患率を直接測定できる無作為割付臨床試験や前向きコホート研究で用いられる。",
+    "choiceNotes": [
+     null,
+     "正しい。相対危険＝曝露群の罹患リスク÷非曝露群の罹患リスク。",
+     "正しい。1より大きければ曝露によりリスクが増えている。",
+     "正しい。発症率が低い（稀な疾病の）場合、オッズ比は相対危険の近似値として用いられる。",
+     "正しい。信頼区間が1を挟まなければ統計学的に有意である。"
+    ],
+    "point": "コホート・RCT→相対危険、症例対照・横断→オッズ比。稀な疾病ならOR≒RR。"
+   },
+   "sources": [
+    {
+     "ref": "x-legacy-L06a:mhlw-edc-epi",
+     "title": "内分泌かく乱化学物質の健康影響に関する検討会 中間報告書追補その２ 別冊（疫学研究の方法の解説を含む）",
+     "url": "https://www.mhlw.go.jp/shingi/2005/03/dl/s0331-9b1.pdf",
+     "locator": "Ⅱ-３ 関連性の指標（相対危険度・オッズ比）",
+     "quote": "相対危険度は、二つ以上の集団の罹患率を直接測定することができる無作為割付臨床試験や前向きコホート研究で使われる。"
+    },
+    {
+     "ref": "x-legacy-L06a:mhlw-edc-epi",
+     "title": "内分泌かく乱化学物質の健康影響に関する検討会 中間報告書追補その２ 別冊（疫学研究の方法の解説を含む）",
+     "url": "https://www.mhlw.go.jp/shingi/2005/03/dl/s0331-9b1.pdf",
+     "locator": "Ⅱ-３ 関連性の指標（オッズ比）",
+     "quote": "オッズ比は、罹患率を直接測定できない症例対照研究や、罹患率ではなく有病率を疾病頻度の指標とする断面研究で用いられる。"
+    },
+    {
+     "ref": "stats:mhlw-tokei-yougo-rr-or",
+     "title": "有効性・安全性に関する統計用語集",
+     "url": "https://www.mhlw.go.jp/www1/houdou/1106/h0602-3_c_15.html",
+     "locator": "相対リスクとオッズ比",
+     "quote": "発症率が低い場合、オッズ比と相対リスクは近似した値を示す。"
+    }
+   ],
+   "asOf": "疫学・臨床検査の定義（時点に依存しない）",
+   "id": "s06-0057",
+   "origin": {
+    "batch": "G5-S06-EPI",
+    "key": "G5-S06-EPI-06",
+    "by": "gen:G5-S06-EPI"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-26",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（統計）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G5-S06-EPI",
+     "solver": "solve:G5-S06-EPI（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G5-S06-EPI（統計）"
+    },
+    "log": "bank/audit/G5-S06-EPI.audit.json#G5-S06-EPI-06",
+    "notes": "mhlw-edc-epi Ⅱ-3 (RR=RCT/前向きコホート; OR=症例対照) and tokei-yougo (稀なら近似); choice 4 (CI excludes 1→有意) confirmed in stats:mhlw-tokei-yougo-rr-or l.49 「信頼区間（CI）が１を挟まなければ、統計的に有意」(implicitly 5% level). Only key is false."
+   }
+  },
+  {
+   "subject": "S06",
+   "subtopic": "スクリーニング指標",
+   "format": "calculation",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "あるがん検診を10,000人が受診した。精密検査等により、がんありと確定した者は50人で、そのうち検診結果が陽性（要精検）であった者は40人であった。がんのない9,950人のうち、検診結果が陽性であった者は460人であった。この検診の陽性反応適中度はどれか。",
+   "choices": [
+    "0.4%",
+    "5.0%",
+    "8.0%",
+    "80.0%",
+    "95.4%"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "陽性反応適中度は、検査陽性者のうち実際に疾患を有する者の割合である。陽性者は40＋460＝500人で、そのうちがんありは40人なので、40÷500×100＝8.0%となる。",
+    "choiceNotes": [
+     "がん発見率（がんありで陽性の40人÷受診者10,000人）である。",
+     "要精検率（陽性者500人÷受診者10,000人）である。",
+     null,
+     "感度（がんありで陽性の40人÷がんあり50人）である。",
+     "特異度（がんなしで陰性の9,490人÷がんなし9,950人）である。"
+    ],
+    "point": "2×2表（A=真陽性, B=偽陰性, C=偽陽性, D=真陰性）で 感度A/(A+B)、特異度D/(C+D)、陽性反応適中度A/(A+C)、要精検率(A+C)/全体、がん発見率A/全体。"
+   },
+   "sources": [
+    {
+     "ref": "stats:mhlw-kenshin-kando-tokuido",
+     "title": "第34回がん検診のあり方に関する検討会 資料1-3「レセプト情報による新規がん診断判定ロジックの妥当性研究と職域における新プロセス指標（感度、特異度、精検受診率、がん有病割合）測定」",
+     "url": "https://www.mhlw.go.jp/content/10901000/000892488.pdf",
+     "locator": "スライド1「がん検診精度管理におけるプロセス指標の考え方」",
+     "quote": "陽性反応適中度 = A/(A+C)"
+    },
+    {
+     "ref": "stats:mhlw-kenshin-kando-tokuido",
+     "title": "第34回がん検診のあり方に関する検討会 資料1-3「レセプト情報による新規がん診断判定ロジックの妥当性研究と職域における新プロセス指標（感度、特異度、精検受診率、がん有病割合）測定」",
+     "url": "https://www.mhlw.go.jp/content/10901000/000892488.pdf",
+     "locator": "スライド1「がん検診精度管理におけるプロセス指標の考え方」",
+     "quote": "要精検率 = (A+C)/(A+B+C+D)"
+    },
+    {
+     "ref": "stats:mhlw-kenshin-kando-tokuido",
+     "title": "第34回がん検診のあり方に関する検討会 資料1-3「レセプト情報による新規がん診断判定ロジックの妥当性研究と職域における新プロセス指標（感度、特異度、精検受診率、がん有病割合）測定」",
+     "url": "https://www.mhlw.go.jp/content/10901000/000892488.pdf",
+     "locator": "スライド1「がん検診精度管理におけるプロセス指標の考え方」",
+     "quote": "がん発見率 = A/(A+B+C+D)"
+    }
+   ],
+   "asOf": "疫学・臨床検査の定義（時点に依存しない）",
+   "calc": {
+    "expr": "40/(40+460)*100",
+    "value": 8
+   },
+   "id": "s06-0058",
+   "origin": {
+    "batch": "G5-S06-EPI",
+    "key": "G5-S06-EPI-07",
+    "by": "gen:G5-S06-EPI"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-26",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（統計）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G5-S06-EPI",
+     "solver": "solve:G5-S06-EPI（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G5-S06-EPI（統計）"
+    },
+    "log": "bank/audit/G5-S06-EPI.audit.json#G5-S06-EPI-07",
+    "notes": "PPV=40/500=8.0%; 0.4%=発見率, 5.0%=要精検率, 80%=感度, 95.4%=9490/9950 verified. kenshin-kando-tokuido slide1 2x2 (A=真陽性,B=偽陰性,C=偽陽性,D=真陰性) matches point."
+   }
+  },
+  {
+   "subject": "S06",
+   "subtopic": "スクリーニング指標",
+   "format": "calculation",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "ある市のがん検診の実績は、受診者20,000人、要精検者1,200人、精検受診者1,020人、がんであった者30人であった。この検診の精検受診率はどれか。",
+   "choices": [
+    "0.15%",
+    "2.5%",
+    "5.1%",
+    "6.0%",
+    "85.0%"
+   ],
+   "answer": 4,
+   "explanation": {
+    "correct": "精検受診率は「精検受診者数÷要精検者数×100」で求める。1,020÷1,200×100＝85.0%となる。",
+    "choiceNotes": [
+     "がん発見率（がんであった者30人÷受診者20,000人×100）である。",
+     "陽性反応適中度（がんであった者30人÷要精検者1,200人×100）である。",
+     "精検受診者数を受診者数で割った値で、精検受診率の計算式ではない（分母は要精検者数）。",
+     "要精検率（要精検者1,200人÷受診者20,000人×100）である。",
+     null
+    ],
+    "point": "精検受診率＝精検受診者数/要精検者数×100（分母は要精検者）。要精検率・がん発見率の分母は受診者数。"
+   },
+   "sources": [
+    {
+     "ref": "stats:mhlw-kenshin-process-shihyo",
+     "title": "第37回がん検診のあり方に関する検討会 資料3-2「がん検診事業の評価について」",
+     "url": "https://www.mhlw.go.jp/content/10901000/001046964.pdf",
+     "locator": "スライド7「がん検診のプロセス指標の計算式」",
+     "quote": "精検受診率 精検受診者数/要精検者数 x100"
+    },
+    {
+     "ref": "stats:mhlw-kenshin-process-shihyo",
+     "title": "第37回がん検診のあり方に関する検討会 資料3-2「がん検診事業の評価について」",
+     "url": "https://www.mhlw.go.jp/content/10901000/001046964.pdf",
+     "locator": "スライド7「がん検診のプロセス指標の計算式」",
+     "quote": "要精検率 要精検者数/受診者数 X100"
+    }
+   ],
+   "asOf": "がん検診のあり方に関する検討会 資料（2023年1月）のプロセス指標の定義",
+   "calc": {
+    "expr": "1020/1200*100",
+    "value": 85
+   },
+   "id": "s06-0059",
+   "origin": {
+    "batch": "G5-S06-EPI",
+    "key": "G5-S06-EPI-08",
+    "by": "gen:G5-S06-EPI"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-26",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（統計）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G5-S06-EPI",
+     "solver": "solve:G5-S06-EPI（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G5-S06-EPI（統計）"
+    },
+    "log": "bank/audit/G5-S06-EPI.audit.json#G5-S06-EPI-08",
+    "notes": "1020/1200=85.0%; 0.15%,2.5%,5.1%,6.0% each verified. kenshin-process-shihyo slide7 formulas l.160."
+   }
+  },
+  {
+   "subject": "S06",
+   "subtopic": "スクリーニング指標",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "negative",
+   "question": "検査の感度・特異度・適中率について、誤っているものはどれか。",
+   "choices": [
+    "陽性適中率は検査自体の特性であり、検査を受ける集団の有病率によらず一定である。",
+    "感度は、疾患のある者のうち検査結果が陽性となる者の割合（真陽性率）である。",
+    "特異度は、疾患のない者のうち検査結果が陰性となる者の割合（真陰性率）である。",
+    "感度と偽陰性率の和は100%になる。",
+    "特異度と偽陽性率の和は100%になる。"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "適中率は、疾患の有無が判明していない集団での検査の挙動を表す指標で、検査を受けた集団における疾患の有病率に応じて変化する。検査自体の特性とみなされるのは感度・特異度である。",
+    "choiceNotes": [
+     null,
+     "正しい。感度は真陽性率である。",
+     "正しい。特異度は真陰性率である。",
+     "正しい。感度は偽陰性率の補数である。",
+     "正しい。特異度は偽陽性率の補数である。"
+    ],
+    "point": "感度・特異度＝検査の特性。適中率＝有病率で変わる。感度＋偽陰性率＝100%、特異度＋偽陽性率＝100%。"
+   },
+   "sources": [
+    {
+     "ref": "x-legacy-L06a:msd-kensa",
+     "title": "MSDマニュアル プロフェッショナル版「医学的検査および検査結果の理解」",
+     "url": "https://www.msdmanuals.com/ja-jp/professional/24-その他のトピック/臨床的意思決定/医学的検査および検査結果の理解",
+     "locator": "感度，特異度，適中率",
+     "quote": "ある検査の適中率は，検査を受けた患者集団における疾患の有病率に応じて変化する。"
+    },
+    {
+     "ref": "x-legacy-L06a:msd-kensa",
+     "title": "MSDマニュアル プロフェッショナル版「医学的検査および検査結果の理解」",
+     "url": "https://www.msdmanuals.com/ja-jp/professional/24-その他のトピック/臨床的意思決定/医学的検査および検査結果の理解",
+     "locator": "感度，特異度，適中率",
+     "quote": "感度は偽陰性率の補数である（すなわち，偽陰性率と感度の和は100％となる）。"
+    },
+    {
+     "ref": "x-legacy-L06a:msd-kensa",
+     "title": "MSDマニュアル プロフェッショナル版「医学的検査および検査結果の理解」",
+     "url": "https://www.msdmanuals.com/ja-jp/professional/24-その他のトピック/臨床的意思決定/医学的検査および検査結果の理解",
+     "locator": "感度，特異度，適中率",
+     "quote": "特異度（specificity）とは，疾患のない患者において検査結果が陰性となる可能性である（真陰性率）。"
+    }
+   ],
+   "asOf": "MSDマニュアル プロフェッショナル版（2024年11月最終更新）の定義",
+   "id": "s06-0060",
+   "origin": {
+    "batch": "G5-S06-EPI",
+    "key": "G5-S06-EPI-09",
+    "by": "gen:G5-S06-EPI"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-26",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（統計）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G5-S06-EPI",
+     "solver": "solve:G5-S06-EPI（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G5-S06-EPI（統計）"
+    },
+    "log": "bank/audit/G5-S06-EPI.audit.json#G5-S06-EPI-09",
+    "notes": "msd-kensa: 適中率は有病率で変化; 感度=偽陰性率の補数; 特異度=真陰性率. Single false statement."
+   }
+  },
+  {
+   "subject": "S06",
+   "subtopic": "スクリーニング指標",
+   "format": "calculation",
+   "difficulty": "advanced",
+   "polarity": "positive",
+   "question": "感度90%、特異度95%の検査を、有病率1%の集団10,000人に実施した。この集団での陽性適中率として最も近いものはどれか。",
+   "choices": [
+    "15.4%",
+    "66.7%",
+    "90.0%",
+    "95.0%",
+    "99.9%"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "有病者は10,000×1%＝100人で、真陽性は100×0.90＝90人。非有病者9,900人のうち偽陽性は9,900×(1－0.95)＝495人。陽性適中率＝90÷(90＋495)≒15.4%となる。感度・特異度が同じでも、有病率が低い集団では陽性適中率は低くなる。",
+    "choiceNotes": [
+     null,
+     "同じ検査を有病率10%の集団に実施した場合の陽性適中率（真陽性900人÷(900＋偽陽性450人)）である。",
+     "感度であり、陽性者のうち疾患を有する者の割合ではない。",
+     "特異度であり、陽性適中率ではない。",
+     "陰性適中率（真陰性9,405人÷陰性者9,415人）である。"
+    ],
+    "point": "陽性適中率＝真陽性÷(真陽性＋偽陽性)。同じ検査でも有病率が低いと偽陽性の比重が増え、陽性適中率は下がる。"
+   },
+   "sources": [
+    {
+     "ref": "x-legacy-L06a:msd-kensa",
+     "title": "MSDマニュアル プロフェッショナル版「医学的検査および検査結果の理解」",
+     "url": "https://www.msdmanuals.com/ja-jp/professional/24-その他のトピック/臨床的意思決定/医学的検査および検査結果の理解",
+     "locator": "感度，特異度，適中率",
+     "quote": "陽性適中率（positive predictive value：PPV）とは，検査で陽性と判定された患者のうち実際に疾患を有している患者の割合である。"
+    },
+    {
+     "ref": "x-legacy-L06a:msd-kensa",
+     "title": "MSDマニュアル プロフェッショナル版「医学的検査および検査結果の理解」",
+     "url": "https://www.msdmanuals.com/ja-jp/professional/24-その他のトピック/臨床的意思決定/医学的検査および検査結果の理解",
+     "locator": "感度，特異度，適中率",
+     "quote": "特異度は偽陽性率の補数である。"
+    },
+    {
+     "ref": "x-legacy-L06a:msd-kensa",
+     "title": "MSDマニュアル プロフェッショナル版「医学的検査および検査結果の理解」",
+     "url": "https://www.msdmanuals.com/ja-jp/professional/24-その他のトピック/臨床的意思決定/医学的検査および検査結果の理解",
+     "locator": "感度，特異度，適中率",
+     "quote": "陰性適中率（negative predictive value：NPV）とは，検査で陰性と判定された患者のうち実際に疾患を有していない患者の割合である。"
+    }
+   ],
+   "asOf": "MSDマニュアル プロフェッショナル版（2024年11月最終更新）の定義",
+   "calc": {
+    "expr": "(10000*0.01*0.9)/((10000*0.01*0.9)+(10000*0.99*0.05))*100",
+    "value": 15.38
+   },
+   "id": "s06-0061",
+   "origin": {
+    "batch": "G5-S06-EPI",
+    "key": "G5-S06-EPI-10",
+    "by": "gen:G5-S06-EPI"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-26",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（統計）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G5-S06-EPI",
+     "solver": "solve:G5-S06-EPI（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G5-S06-EPI（統計）"
+    },
+    "log": "bank/audit/G5-S06-EPI.audit.json#G5-S06-EPI-10",
+    "notes": "TP=90, FP=495, PPV=90/585=15.38%; 66.7%=900/1350 (有病率10%), 99.9%=NPV 9405/9415 verified. msd-kensa definitions."
+   }
+  },
+  {
+   "subject": "S06",
+   "subtopic": "スクリーニング指標",
+   "format": "knowledge",
+   "difficulty": "standard",
+   "polarity": "negative",
+   "question": "がん検診のプロセス指標について、誤っているものはどれか。",
+   "choices": [
+    "要精検率は、要精検者数を受診者数で割って求める。",
+    "精検受診率は高いほど良く、100%が望ましい。",
+    "精検受診率が低い場合、がん発見率や陽性反応適中度の評価はできない。",
+    "要精検率は、高すぎても低すぎても望ましくない。",
+    "陽性反応適中度は、がんであった者の数を受診者数で割って求める。"
+   ],
+   "answer": 4,
+   "explanation": {
+    "correct": "陽性反応適中度は「がんであった者÷要精検者数×100」で求める。がんであった者を受診者数で割るのはがん発見率である。",
+    "choiceNotes": [
+     "正しい。要精検率＝要精検者数/受診者数×100。",
+     "正しい。精検受診率は高いほど良く、100%が望ましいとされる。",
+     "正しい。精検受診率が低いと、精検を受けていない要精検者の中のがんが把握されないため、発見率・陽性反応適中度は評価できない。",
+     "正しい。要精検率・がん発見率・陽性反応適中度は高すぎても低すぎても望ましくないとされる。",
+     null
+    ],
+    "point": "陽性反応適中度の分母は要精検者数、がん発見率・要精検率の分母は受診者数。精検受診率は100%が理想。"
+   },
+   "sources": [
+    {
+     "ref": "stats:mhlw-kenshin-process-shihyo",
+     "title": "第37回がん検診のあり方に関する検討会 資料3-2「がん検診事業の評価について」",
+     "url": "https://www.mhlw.go.jp/content/10901000/001046964.pdf",
+     "locator": "スライド7「がん検診のプロセス指標の計算式」",
+     "quote": "陽性反応適中度 がんであった者/要精検者数 x100"
+    },
+    {
+     "ref": "stats:mhlw-kenshin-process-shihyo",
+     "title": "第37回がん検診のあり方に関する検討会 資料3-2「がん検診事業の評価について」",
+     "url": "https://www.mhlw.go.jp/content/10901000/001046964.pdf",
+     "locator": "スライド8「プロセス指標の解釈（１）」",
+     "quote": "精検受診率が低い場合、「発見率」「陽性反応適中度」の評価はできない"
+    },
+    {
+     "ref": "stats:mhlw-kenshin-process-shihyo",
+     "title": "第37回がん検診のあり方に関する検討会 資料3-2「がん検診事業の評価について」",
+     "url": "https://www.mhlw.go.jp/content/10901000/001046964.pdf",
+     "locator": "スライド9「プロセス指標の解釈（2）」",
+     "quote": "要精検率、がん発見率、陽性反応適中度 ・高すぎても低すぎても×"
+    }
+   ],
+   "asOf": "がん検診のあり方に関する検討会 資料（2023年1月）のプロセス指標の定義",
+   "id": "s06-0062",
+   "origin": {
+    "batch": "G5-S06-EPI",
+    "key": "G5-S06-EPI-11",
+    "by": "gen:G5-S06-EPI"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-26",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（統計）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G5-S06-EPI",
+     "solver": "solve:G5-S06-EPI（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G5-S06-EPI（統計）"
+    },
+    "log": "bank/audit/G5-S06-EPI.audit.json#G5-S06-EPI-11",
+    "notes": "kenshin-process-shihyo slide7 PPV=がん/要精検者 (key false); slide8 l.181 精検受診率 高いほど良い(100%が望ましい), l.188 評価不可; slide9 高すぎても低すぎても×. Verified."
+   }
+  },
+  {
+   "subject": "S06",
+   "subtopic": "スクリーニング指標",
+   "format": "knowledge",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "疾患のある者とない者とで検査値の分布が重なる定量検査について、潜在的な疾患を見逃さないことを目的とするスクリーニングでのカットオフ値の設定として、正しいものはどれか。",
+   "choices": [
+    "感度と特異度がともに高くなる値に設定する。",
+    "感度が高く、特異度が低くなる値に設定する。",
+    "感度が低く、特異度が高くなる値に設定する。",
+    "感度と特異度がともに低くなる値に設定する。",
+    "カットオフ値を動かしても感度・特異度は変わらないため、有病率に応じて設定する。"
+   ],
+   "answer": 1,
+   "explanation": {
+    "correct": "分布が重なる検査では、カットオフ値を動かすと感度と特異度は反対方向に変化する。疾患のある者をより多く拾う（感度を高くする）方向にすると偽陽性が増え特異度は低くなる。スクリーニングでは感度が高く特異度が低くなるカットオフ値を設定する。",
+    "choiceNotes": [
+     "分布が重なる場合、カットオフ値の移動で感度と特異度は反対方向に変化するため、両方を同時に高めることはできない。",
+     null,
+     "疾患の確定を目的とする検査で用いる設定であり、スクリーニングの目的とは逆である。",
+     "感度と特異度は反対方向に変化するため、カットオフ値の移動で両方が同時に低くなることはない。",
+     "カットオフ値を動かすと感度と特異度は変化する。ROC曲線はこのトレードオフを表す。"
+    ],
+    "point": "カットオフ値の移動で感度と特異度はトレードオフ。スクリーニング＝感度重視、確定診断＝特異度重視。"
+   },
+   "sources": [
+    {
+     "ref": "x-legacy-L06a:msd-kensa",
+     "title": "MSDマニュアル プロフェッショナル版「医学的検査および検査結果の理解」",
+     "url": "https://www.msdmanuals.com/ja-jp/professional/24-その他のトピック/臨床的意思決定/医学的検査および検査結果の理解",
+     "locator": "検査結果の分布とカットオフ値",
+     "quote": "疾患のある患者をより多く同定する（検査の感度を高くする）ためにカットオフ値を調整するならば，偽陽性の数も増加し（特異度が低くなり），"
+    },
+    {
+     "ref": "x-legacy-L06a:msd-kensa",
+     "title": "MSDマニュアル プロフェッショナル版「医学的検査および検査結果の理解」",
+     "url": "https://www.msdmanuals.com/ja-jp/professional/24-その他のトピック/臨床的意思決定/医学的検査および検査結果の理解",
+     "locator": "ROC曲線",
+     "quote": "潜在的な疾患のスクリーニングを目的とする検査の場合，感度が高く，特異度が低くなるカットオフ値を設定する。"
+    }
+   ],
+   "asOf": "MSDマニュアル プロフェッショナル版（2024年11月最終更新）の記述",
+   "id": "s06-0063",
+   "origin": {
+    "batch": "G5-S06-EPI",
+    "key": "G5-S06-EPI-12",
+    "by": "gen:G5-S06-EPI"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-26",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（統計）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G5-S06-EPI",
+     "solver": "solve:G5-S06-EPI（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G5-S06-EPI（統計）"
+    },
+    "log": "bank/audit/G5-S06-EPI.audit.json#G5-S06-EPI-12",
+    "notes": "msd-kensa l.41: スクリーニング→感度高・特異度低; 確定目的→特異度高・感度低; cutoff移動で偽陽性増加. Key unique."
+   }
+  },
+  {
+   "subject": "S06",
+   "subtopic": "研究デザイン",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "negative",
+   "question": "観察研究に該当しないものはどれか。",
+   "choices": [
+    "コホート研究",
+    "症例対照研究",
+    "ランダム化比較試験",
+    "横断研究",
+    "生態学的研究"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "ランダム化比較試験は、研究者が対象者を介入群と対照群にランダムに割り付けて介入を行う介入研究である。観察研究は要因曝露に人為的に介入せずに観察する研究で、分析疫学研究として生態学的研究・横断研究・コホート研究・症例対照研究などがある。",
+    "choiceNotes": [
+     "曝露群と非曝露群を追跡する観察研究（分析疫学研究）である。",
+     "症例群と対照群の過去の曝露を比較する観察研究（分析疫学研究）である。",
+     null,
+     "曝露と疾病の有無を同時に調べる観察研究（分析疫学研究）である。",
+     "集団を単位として曝露と疾病頻度の関連をみる観察研究（分析疫学研究）である。"
+    ],
+    "point": "研究者が介入する→介入研究（RCTなど）。介入しない→観察研究（生態学的・横断・コホート・症例対照）。"
+   },
+   "sources": [
+    {
+     "ref": "x-legacy-L06a:minds-glossary-2020",
+     "title": "Minds診療ガイドライン作成マニュアル2020 ver.3.0 重要用語集",
+     "url": "https://minds.jcqhc.or.jp/docs/methods/cpg-development/minds-manual/pdf/glossary_manual_2020.pdf",
+     "locator": "重要用語集「観察研究」",
+     "quote": "分析疫学研究はさらに， 生態学的研究，横断研究，コホート研究，症例対照研究などに分類される。"
+    },
+    {
+     "ref": "x-legacy-L06a:minds-glossary-2020",
+     "title": "Minds診療ガイドライン作成マニュアル2020 ver.3.0 重要用語集",
+     "url": "https://minds.jcqhc.or.jp/docs/methods/cpg-development/minds-manual/pdf/glossary_manual_2020.pdf",
+     "locator": "重要用語集「ランダム化比較試験」",
+     "quote": "介入群と対照群にランダム割り付けを行い， 介入の実施後， アウトカムを観察することで， 介入群と対照群を比較する研究方法。"
+    }
+   ],
+   "asOf": "Minds診療ガイドライン作成マニュアル2020 ver.3.0 の用語定義",
+   "id": "s06-0064",
+   "origin": {
+    "batch": "G5-S06-EPI",
+    "key": "G5-S06-EPI-13",
+    "by": "gen:G5-S06-EPI"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-26",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（統計）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G5-S06-EPI",
+     "solver": "solve:G5-S06-EPI（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G5-S06-EPI（統計）"
+    },
+    "log": "bank/audit/G5-S06-EPI.audit.json#G5-S06-EPI-13",
+    "notes": "minds-glossary-2020 観察研究 (分析疫学=生態学的・横断・コホート・症例対照) and RCT definition. OK."
+   }
+  },
+  {
+   "subject": "S06",
+   "subtopic": "研究デザイン",
+   "format": "knowledge",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "47都道府県について、既存の統計資料から1人当たり食塩摂取量の平均値と脳血管疾患の年齢調整死亡率を集め、両者の関連を分析した。この研究デザインはどれか。",
+   "choices": [
+    "横断研究（断面研究）",
+    "地域相関研究（生態学的研究）",
+    "前向きコホート研究",
+    "症例対照研究",
+    "ランダム化比較試験"
+   ],
+   "answer": 1,
+   "explanation": {
+    "correct": "複数の人口集団（国・都道府県・地域など）を単位として、暴露要因の平均値と疾病の罹患率・死亡率の関連を調べるのは地域相関研究（生態学的研究）である。既存資料で比較的簡便に行えるが、集団の結果をそのまま個人に当てはめられるとは限らず、交絡の制御も難しい。",
+    "choiceNotes": [
+     "横断研究は個人について曝露と疾病の有無を同時に調べる。分析単位が集団（都道府県の平均値）ではない。",
+     null,
+     "前向きコホート研究は個人の曝露状況を調べた集団を長期間追跡して罹患を把握する。",
+     "症例対照研究は症例と対照を選び、過去の曝露を個人ごとに比較する。",
+     "研究者が介入を割り付けていないので介入研究ではない。"
+    ],
+    "point": "分析の単位が「集団の平均値」なら地域相関（生態学的）研究。結果を個人に当てはめられるとは限らない。"
+   },
+   "sources": [
+    {
+     "ref": "x-legacy-L06a:mhlw-edc-epi",
+     "title": "内分泌かく乱化学物質の健康影響に関する検討会 中間報告書追補その２ 別冊（疫学研究の方法の解説を含む）",
+     "url": "https://www.mhlw.go.jp/shingi/2005/03/dl/s0331-9b1.pdf",
+     "locator": "Ⅱ-４ 研究デザイン ７）地域相関研究",
+     "quote": "複数の人口集団（国・都道府県・地域など）を対象として、暴露要因の平均値と、疾病の罹患率や死亡率との関連を調査する。"
+    },
+    {
+     "ref": "x-legacy-L06a:mhlw-edc-epi",
+     "title": "内分泌かく乱化学物質の健康影響に関する検討会 中間報告書追補その２ 別冊（疫学研究の方法の解説を含む）",
+     "url": "https://www.mhlw.go.jp/shingi/2005/03/dl/s0331-9b1.pdf",
+     "locator": "Ⅱ-４ 研究デザイン ７）地域相関研究",
+     "quote": "集団を対象とした研究の結果をそのまま個人に適用できるとは限らないという問題点がある。"
+    }
+   ],
+   "asOf": "疫学・臨床検査の定義（時点に依存しない）",
+   "id": "s06-0065",
+   "origin": {
+    "batch": "G5-S06-EPI",
+    "key": "G5-S06-EPI-14",
+    "by": "gen:G5-S06-EPI"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-26",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（統計）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G5-S06-EPI",
+     "solver": "solve:G5-S06-EPI（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G5-S06-EPI（統計）"
+    },
+    "log": "bank/audit/G5-S06-EPI.audit.json#G5-S06-EPI-14",
+    "notes": "mhlw-edc-epi Ⅱ-4 7)地域相関研究 l.863-875 (集団単位, 既存資料で簡便, 個人に適用できない, 交絡制御困難) supports key and explanation."
+   }
+  },
+  {
+   "subject": "S06",
+   "subtopic": "研究デザイン",
+   "format": "knowledge",
+   "difficulty": "standard",
+   "polarity": "negative",
+   "question": "疫学の研究デザインの特徴について、誤っているものはどれか。",
+   "choices": [
+    "前向きコホート研究は、疾病に罹患する前に曝露状況を調べるため、思い出しバイアスを回避できる。",
+    "症例対照研究は、まれな疾病の研究に威力を発揮しやすい。",
+    "横断研究は、曝露と疾病を同時に調べるため、関連が認められても時間的前後関係を評価できない場合がある。",
+    "前向きコホート研究は、少人数を短期間追跡すれば済むため、費用が少なくて済む。",
+    "ランダム化比較試験では、ランダム割り付けにより、測定できない因子も含めて介入以外の因子のバランスをとることができる。"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "前向きコホート研究は、多数の集団（数万から数十万）を長期間（数年から十数年）追跡する必要があり、多大な手間と費用がかかることが欠点である。",
+    "choiceNotes": [
+     "正しい。罹患前に曝露を調べるので、症例対照研究で問題となる思い出しバイアスを回避できる。",
+     "正しい。症例対照研究はまれな疾病や時間経過の長い因果推論に威力を発揮しやすい。",
+     "正しい。曝露（原因）と有病（結果）を同時に調べるため、時間的前後関係を正しく評価できない場合がある。",
+     null,
+     "正しい。ランダム割り付けにより測定できない因子も含めてバランスがとれ、バイアスを減らせる。"
+    ],
+    "point": "コホート：思い出しバイアスなし・大規模長期で高コスト。症例対照：まれな疾病向き・バイアスが入りやすい。横断：時間的前後関係が弱点。"
+   },
+   "sources": [
+    {
+     "ref": "x-legacy-L06a:mhlw-edc-epi",
+     "title": "内分泌かく乱化学物質の健康影響に関する検討会 中間報告書追補その２ 別冊（疫学研究の方法の解説を含む）",
+     "url": "https://www.mhlw.go.jp/shingi/2005/03/dl/s0331-9b1.pdf",
+     "locator": "Ⅱ-４ 研究デザイン ２）前向きコホート研究",
+     "quote": "多数の集団（数万から数十万）を長期間（数年から十数年）追跡しなければならないため、多大な手間と費用がかかるのが欠点である。"
+    },
+    {
+     "ref": "x-legacy-L06a:minds-glossary-2020",
+     "title": "Minds診療ガイドライン作成マニュアル2020 ver.3.0 重要用語集",
+     "url": "https://minds.jcqhc.or.jp/docs/methods/cpg-development/minds-manual/pdf/glossary_manual_2020.pdf",
+     "locator": "重要用語集「症例対照研究」",
+     "quote": "まれな疾病や時間経過の長い因果推論に威力を発揮しやすい一方，過去のデータ測定のあいまいさやバイアスの影響が入りやすいことが欠点である。"
+    },
+    {
+     "ref": "x-legacy-L06a:minds-glossary-2020",
+     "title": "Minds診療ガイドライン作成マニュアル2020 ver.3.0 重要用語集",
+     "url": "https://minds.jcqhc.or.jp/docs/methods/cpg-development/minds-manual/pdf/glossary_manual_2020.pdf",
+     "locator": "重要用語集「介入研究」",
+     "quote": "介入研究ではランダム割り付けを実施することで測定できない因子も含め， 介入以外の因子のバランスをとることが可能になるため， バイアスを減らすことができる。"
+    }
+   ],
+   "asOf": "疫学・臨床検査の定義（時点に依存しない）。Minds診療ガイドライン作成マニュアル2020 ver.3.0 の用語定義",
+   "id": "s06-0066",
+   "origin": {
+    "batch": "G5-S06-EPI",
+    "key": "G5-S06-EPI-15",
+    "by": "gen:G5-S06-EPI"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-26",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（統計）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G5-S06-EPI",
+     "solver": "solve:G5-S06-EPI（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G5-S06-EPI（統計）"
+    },
+    "log": "bank/audit/G5-S06-EPI.audit.json#G5-S06-EPI-15",
+    "notes": "mhlw-edc-epi Ⅱ-4: 前向きコホート 大規模長期高費用 / 思い出しバイアス回避 (l.754); 断面研究 時間的前後関係 (l.858); minds 症例対照・介入研究. Only choice 1 false."
+   }
+  },
+  {
+   "subject": "S06",
+   "subtopic": "研究デザイン",
+   "format": "knowledge",
+   "difficulty": "advanced",
+   "polarity": "positive",
+   "question": "ある病院で、まれな腫瘍と診断された患者80人を選び、同じ病院に他の疾患で入院している患者から性・年齢をそろえた160人を選んだ。両群に面接を行い、過去の職業上の化学物質への曝露歴を比較した。この研究について、正しいものはどれか。",
+   "choices": [
+    "研究デザインは前向きコホート研究である。",
+    "対照の選び方は住民対照にあたる。",
+    "曝露と腫瘍との関連の指標としては、オッズ比を用いる。",
+    "この研究から、腫瘍の罹患率を曝露の有無別に直接求めることができる。",
+    "過去の曝露を思い出して答えてもらうが、記憶の偏りによるバイアスは生じない。"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "すでに疾病にかかった症例と対照を選んで過去の曝露を比較する症例対照研究である。罹患率を直接測定できないため、関連の指標にはオッズ比を用いる（まれな疾病ではコホート研究の相対危険度の良い推定値となる）。",
+    "choiceNotes": [
+     "疾病の有無で対象を選び、過去にさかのぼって曝露を調べているので症例対照研究である。前向きコホート研究は健康人の曝露を調べて追跡する。",
+     "症例と同じ病院の入院患者から選ぶ対照は病院対照である。住民対照は同じ地域に住む健康な住民から選ぶ。",
+     null,
+     "症例対照研究では罹患率を直接測定できない。",
+     "過去の曝露を思い出してもらうため記憶に偏りが生じ、関連を過大評価・過小評価する危険がある（思い出しバイアス）。"
+    ],
+    "point": "疾病の有無で選んで過去の曝露を比べる＝症例対照研究→オッズ比。対照は住民対照・病院対照。思い出しバイアスに注意。"
+   },
+   "sources": [
+    {
+     "ref": "x-legacy-L06a:mhlw-edc-epi",
+     "title": "内分泌かく乱化学物質の健康影響に関する検討会 中間報告書追補その２ 別冊（疫学研究の方法の解説を含む）",
+     "url": "https://www.mhlw.go.jp/shingi/2005/03/dl/s0331-9b1.pdf",
+     "locator": "Ⅱ-４ 研究デザイン ４）症例対照研究",
+     "quote": "対照は、症例と同じ地域に住む健康な住民から選ばれる場合と、症例と同じ病院に入院している患者から選ばれる場合がある。前者を「住民対照」  （population control）といい、後者と「病院対照」"
+    },
+    {
+     "ref": "x-legacy-L06a:mhlw-edc-epi",
+     "title": "内分泌かく乱化学物質の健康影響に関する検討会 中間報告書追補その２ 別冊（疫学研究の方法の解説を含む）",
+     "url": "https://www.mhlw.go.jp/shingi/2005/03/dl/s0331-9b1.pdf",
+     "locator": "Ⅱ-３ 関連性の指標（オッズ比）",
+     "quote": "オッズ比は、罹患率を直接測定できない症例対照研究や、罹患率ではなく有病率を疾病頻度の指標とする断面研究で用いられる。"
+    },
+    {
+     "ref": "x-legacy-L06a:mhlw-edc-epi",
+     "title": "内分泌かく乱化学物質の健康影響に関する検討会 中間報告書追補その２ 別冊（疫学研究の方法の解説を含む）",
+     "url": "https://www.mhlw.go.jp/shingi/2005/03/dl/s0331-9b1.pdf",
+     "locator": "Ⅱ-４ 研究デザイン ４）症例対照研究",
+     "quote": "過去の暴露状況を思い出してもらって調査するため、記憶に偏りが生じ、暴露と疾病の関連を過大評価したり、反対に過小評価したりする危険性がある（思い出しバイアス）"
+    }
+   ],
+   "asOf": "疫学・臨床検査の定義（時点に依存しない）",
+   "id": "s06-0067",
+   "origin": {
+    "batch": "G5-S06-EPI",
+    "key": "G5-S06-EPI-16",
+    "by": "gen:G5-S06-EPI"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-26",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "生成者と別の領域監査（統計）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "gen:G5-S06-EPI",
+     "solver": "solve:G5-S06-EPI（別モデル・正答を見ずに解答）",
+     "auditor": "audit:G5-S06-EPI（統計）"
+    },
+    "log": "bank/audit/G5-S06-EPI.audit.json#G5-S06-EPI-16",
+    "notes": "mhlw-edc-epi Ⅱ-4 4)症例対照研究: 住民対照/病院対照, 思い出しバイアス (l.809-816); OR used where 罹患率 not measurable. Key unique. Note: overlaps conceptually with EPI-06/03 but tests different facets (対照の種類・バイアス)."
+   }
   }
  ]
 }

@@ -1,0 +1,423 @@
+{
+ "verdicts": [
+  {
+   "key": "G5-S05-NET-01",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "info:mhlw-online-shinryo-shishin Ⅲ1 用語の定義（オンライン受診勧奨・遠隔健康医療相談（医師/医師以外）・診療前相談）と対象表の具体例（発疹＋呼吸器症状→アナフィラキシーの可能性で受診勧奨）で確認。blind一致。"
+  },
+  {
+   "key": "G5-S05-NET-02",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "同指針 Ⅲ1（遠隔医療の定義、オンライン受診勧奨で一般用医薬品の具体的使用の指示は不可、オンライン診療支援者）、Ⅲ2ⅳ（遠隔健康医療相談は対象外）、対象表（#8000事業）で確認。blind一致。"
+  },
+  {
+   "key": "G5-S05-NET-03",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "同指針 Ⅴ2(3)①〜③（予測範囲内の補助行為、新たな症状時の追加検査指示は可、医師は原則訪問診療等を定期的に行う医師、看護師等は同一医療機関又は訪問看護指示を受けた者、最低限遵守事項に則る）で確認。blind一致。"
+  },
+  {
+   "key": "G5-S05-NET-04",
+   "verdict": "fix",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": false,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "同指針 Ⅴ1(2)②ⅲ（原則かかりつけ、PHR等で把握でき医師が可能と判断すれば可、事前情報を診療録に記載）、Ⅲ1 診療前相談（映像を用いたリアルタイム、診断・処方含まず、診療録記載が必要）で確認。key正しい、blind一致。",
+   "detail": "pointの「診療前相談（映像・処方なし）」は『映像を用いない』とも読め、指針（映像を用いたリアルタイムのやりとり）と逆の誤読を招くため明確化した。",
+   "fixed": {
+    "key": "G5-S05-NET-04",
+    "subject": "S05",
+    "subtopic": "地域医療連携・PHR・遠隔医療",
+    "format": "knowledge",
+    "difficulty": "advanced",
+    "polarity": "positive",
+    "question": "「オンライン診療の適切な実施に関する指針」（令和8年4月改訂）における初診からのオンライン診療と診療前相談について、正しいものはどれか。",
+    "choices": [
+     "初診からのオンライン診療は、かかりつけの医師であっても、いかなる場合も認められない。",
+     "かかりつけの医師以外でも、PHR 等から必要な医学的情報を把握でき、医師が可能と判断すれば実施できる。",
+     "診療前相談の段階で、医師は患者の症状を確認したうえで処方を行うことができる。",
+     "診療前相談は、映像を用いず、音声のみの電話によるやりとりで行うこととされている。",
+     "診療前相談を経てオンライン診療を実施した場合でも、診療前相談で得た情報を診療録に記載する必要はない。"
+    ],
+    "answer": 1,
+    "explanation": {
+     "correct": "初診からのオンライン診療は原則として「かかりつけの医師」が行うが、既往歴・服薬歴・アレルギー歴等の医学的情報を過去の診療録、診療情報提供書、健康診断の結果、地域医療情報ネットワーク、お薬手帳、PHR 等から把握でき、患者の症状と合わせて医師が可能と判断した場合にも実施できる（事前に得た情報は診療録に記載する）。",
+     "choiceNotes": [
+      "原則として「かかりつけの医師」が行うとされ、一定の場合には実施できるので、一律に認められないわけではない。",
+      null,
+      "診療前相談は、診断、処方その他の診療行為は含まない行為とされている。",
+      "診療前相談は、医師－患者間で映像を用いたリアルタイムのやりとりを行う行為とされている。",
+      "オンライン診療を実施する場合には、診療前相談で得た情報を診療録に記載する必要があるとされている。"
+     ],
+     "point": "初診オンライン：原則かかりつけの医師。例外は PHR・地域医療情報ネットワーク等で必要な医学的情報を把握できる場合、または診療前相談（映像を用いたリアルタイムのやりとり。診断・処方は含まない）を経た場合。"
+    },
+    "sources": [
+     {
+      "ref": "info:mhlw-online-shinryo-shishin",
+      "title": "オンライン診療の適切な実施に関する指針",
+      "url": "https://www.mhlw.go.jp/content/001685701.pdf",
+      "locator": "Ⅴ１(2)②ⅲ",
+      "quote": "初診からのオンライン診療は、原則として「かかりつけの医師」が行うこと。"
+     },
+     {
+      "ref": "info:mhlw-online-shinryo-shishin",
+      "title": "オンライン診療の適切な実施に関する指針",
+      "url": "https://www.mhlw.go.jp/content/001685701.pdf",
+      "locator": "Ⅴ１(2)②ⅲ",
+      "quote": "下「PHR」という。）等から把握でき、患者の症状と合わせて医師が可能と判断"
+     },
+     {
+      "ref": "info:mhlw-online-shinryo-shishin",
+      "title": "オンライン診療の適切な実施に関する指針",
+      "url": "https://www.mhlw.go.jp/content/001685701.pdf",
+      "locator": "Ⅲ１ 用語の定義（診療前相談）",
+      "quote": "なお、診療前相談は、診断、処方その他の診療行為は含まない行為である。"
+     }
+    ],
+    "asOf": "オンライン診療の適切な実施に関する指針（平成30年3月策定・令和8年4月改訂）"
+   }
+  },
+  {
+   "key": "G5-S05-NET-05",
+   "verdict": "fix",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": false,
+    "sources": false,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:医療法（2026-10-01版）第2条の2第2項・第3条第4項・第8条第2項、info:mhlw-online-shinryo-hou-sekou（医政発0327第5号）第2の2（診療所等の開設がなくとも可、郵便局・公民館）・第2の4(1)（設置後10日以内届出）、施行日令和8年4月1日で確認。key正しい、blind一致。",
+   "detail": "施行通知の locator が「第1の2」「第1の4(1)」となっていたが、通知では「第２ 改正の主な内容」の２・４(1)。sources の locator と choiceNotes の参照を第2の2・第2の4(1)に訂正。",
+   "fixed": {
+    "key": "G5-S05-NET-05",
+    "subject": "S05",
+    "subtopic": "地域医療連携・PHR・遠隔医療",
+    "format": "knowledge",
+    "difficulty": "standard",
+    "polarity": "negative",
+    "question": "医療法の改正（令和7年法律第87号、オンライン診療関係は令和8年4月1日施行）により規定された「オンライン診療受診施設」について、誤っているものはどれか。",
+    "choices": [
+     "当該施設の設置者が、業として、オンライン診療を行う医師又は歯科医師の勤務する病院、診療所等に対して、患者がオンライン診療を受ける場所として提供する施設である。",
+     "設置者は、設置後10日以内に、施設の所在地の都道府県知事等に届け出なければならない。",
+     "オンライン診療受診施設でないものは、これにオンライン診療受診施設に紛らわしい名称を付けてはならない。",
+     "医師が当該施設でオンライン診療のみを行う場合であっても、当該施設に診療所を開設しなければならない。",
+     "へき地等において、郵便局や公民館などを活用して設置されることが期待されている。"
+    ],
+    "answer": 3,
+    "explanation": {
+     "correct": "施行通知は、改正法の施行後は、オンライン診療を受ける場所がオンライン診療受診施設であって医師又は歯科医師が当該場所でオンライン診療のみを行う場合は、診療所等の開設がなくとも、当該医師等及びその勤務する診療所等の責任のもとでオンライン診療を行うことが可能になるとしている。",
+     "choiceNotes": [
+      "医療法第2条の2第2項の定義どおりである（対象は病院、診療所、介護老人保健施設又は介護医療院）。",
+      "施行通知（第2の4(1)）に、設置後10日以内に所在地の都道府県知事等に届け出なければならないとある（医療法第8条第2項）。",
+      "医療法第3条第4項の名称使用制限どおりである。",
+      null,
+      "施行通知（第2の2）に、へき地等において住民にとって身近な郵便局や公民館などを活用して設置されることが期待されるとある。"
+     ],
+     "point": "オンライン診療受診施設：診療所の開設なしで受診場所を提供できる施設。設置後10日以内に都道府県知事等へ届出。"
+    },
+    "sources": [
+     {
+      "ref": "law:医療法",
+      "title": "医療法",
+      "url": "https://laws.e-gov.go.jp/law/323AC0000000205",
+      "locator": "第2条の2第2項",
+      "quote": "業として、オンライン診療を行う医師又は歯科医師の勤務する病院、診療所、介護老人保健施設又は介護医療院に対して"
+     },
+     {
+      "ref": "info:mhlw-online-shinryo-hou-sekou",
+      "title": "医療法等の一部を改正する法律の一部の施行等について（オンライン診療関係）（医政発0327第5号）",
+      "url": "https://www.mhlw.go.jp/content/001681277.pdf",
+      "locator": "第2の2 オンライン診療受診施設について",
+      "quote": "診療所等の開設がなくとも、当該医師又は歯科医師及びその勤務する診療所等の責任のもと"
+     },
+     {
+      "ref": "info:mhlw-online-shinryo-hou-sekou",
+      "title": "医療法等の一部を改正する法律の一部の施行等について（オンライン診療関係）（医政発0327第5号）",
+      "url": "https://www.mhlw.go.jp/content/001681277.pdf",
+      "locator": "第2の4(1) 設置に係る届出等",
+      "quote": "オンライン診療受診施設の設置者は、設置後 10 日以内に、オンライン診療受診施設の所"
+     }
+    ],
+    "asOf": "2026-11 e-Gov現行法令／医政発0327第5号（令和8年3月27日）"
+   }
+  },
+  {
+   "key": "G5-S05-NET-06",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "info:mhlw-denkaru-gaiyou-annai-v21：退院時サマリーは診療情報提供書の添付情報として送受信可、送付前に口頭同意、主な見直し(1)すべての傷病名を共有・(2)重篤なアレルギー等（まずアナフィラキシー）・(3)感染症は登録直後は患者に非表示、で確認。blind一致。"
+  },
+  {
+   "key": "G5-S05-NET-07",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "info:mhlw-anzen-gl7-gaisetsu ２．２ 医療情報・文書の範囲（個人識別情報を含む情報、患者指示で事業者に直接提供→2省GL＋PHR指針の可能性、患者の管理に委ねた場合は対象外、PHR指針は総務・厚労・経産）で確認。第7.0版で時点も適切。blind一致。"
+  },
+  {
+   "key": "G5-S05-NET-08",
+   "verdict": "fix",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": false,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "x-gen-G5-S05-NET:mext-joho1-ch3 学習11（1）：5装置、制御装置と演算装置を合わせてCPU、CPUは記憶装置から命令・データを取り出す、で確認。blind一致。",
+   "detail": "locator の節名「（1）コンピュータの構成」は原文では「学習11 コンピュータの仕組み（１）構成要素」。locator を訂正。",
+   "fixed": {
+    "key": "G5-S05-NET-08",
+    "subject": "S05",
+    "subtopic": "情報の基礎",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "コンピュータを構成する5つの装置（制御装置、演算装置、記憶装置、入力装置、出力装置）のうち、合わせて CPU（中央処理装置）と呼ばれるものはどれか。",
+    "choices": [
+     "制御装置と演算装置",
+     "演算装置と記憶装置",
+     "制御装置と記憶装置",
+     "入力装置と出力装置",
+     "記憶装置と出力装置"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "コンピュータは制御装置、演算装置、記憶装置、入力装置、出力装置の5つで構成され、制御装置と演算装置を合わせて CPU という。CPU は記憶装置から命令やデータを取り出して処理を行う。",
+     "choiceNotes": [
+      null,
+      "記憶装置（メモリ等）は CPU が命令やデータを取り出す相手であり、CPU には含まれない。",
+      "記憶装置は CPU に含まれない。CPU を構成するのは制御装置と演算装置である。",
+      "入力装置・出力装置は CPU に含まれず、これらを含めすべてを制御するのが制御装置である。",
+      "記憶装置・出力装置はいずれも CPU に含まれない。"
+     ],
+     "point": "CPU＝制御装置＋演算装置。メモリは CPU の作業場所。"
+    },
+    "sources": [
+     {
+      "ref": "x-gen-G5-S05-NET:mext-joho1-ch3",
+      "title": "高等学校情報科「情報Ⅰ」教員研修用教材（本編）第3章 コンピュータとプログラミング",
+      "url": "https://www.mext.go.jp/content/20200722-mxt_jogai02-100013300_005.pdf",
+      "locator": "学習11 コンピュータの仕組み（1）構成要素",
+      "quote": "制御装置と演算装置を合わせて CPU（Central Processing Unit）という。"
+     }
+    ],
+    "asOf": "文部科学省「情報Ⅰ」教員研修用教材（2020年7月掲載）"
+   }
+  },
+  {
+   "key": "G5-S05-NET-09",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "x-gen-G5-S05-NET:mext-joho1-ch3 学習11（２）論理演算：and=論理積（1 and 0=0）、or=論理和（0 or 1=1）、not 1=0 を確認。blind一致。"
+  },
+  {
+   "key": "G5-S05-NET-10",
+   "verdict": "fix",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": false,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "x-legacy-L06b:mext-joho1-ch4 の（１）リレーショナルデータベース：選択＝条件を満たすレコード抽出、射影＝一部のフィールドを取り出す、結合＝複数テーブルを1つの表に、レコード＝1つの行、テーブル分割で冗長・変更漏れを避ける、を確認。blind一致。",
+   "detail": "locator「学習17（1）」は誤り。当該節は「21 さまざまな形式のデータとその表現形式」の（１）。学習21（1）に訂正。",
+   "fixed": {
+    "key": "G5-S05-NET-10",
+    "subject": "S05",
+    "subtopic": "情報の基礎",
+    "format": "knowledge",
+    "difficulty": "standard",
+    "polarity": "positive",
+    "question": "病院の患者情報をリレーショナルデータベース（関係データベース）で管理している。リレーショナルデータベースの用語と操作について、正しいものはどれか。",
+    "choices": [
+     "選択は、複数のテーブルを1つの表にする操作である。",
+     "結合は、テーブルから条件を満たすレコードを抽出する操作である。",
+     "射影は、テーブルから一部のフィールドを取り出す操作である。",
+     "1件分のデータはフィールドと呼ばれ、テーブルの列で表す。",
+     "テーブルを分けると、データが冗長になり、変更漏れが起こりやすくなる。"
+    ],
+    "answer": 2,
+    "explanation": {
+     "correct": "リレーショナルデータベースの関係演算のうち、射影はテーブルから一部のフィールド（列）を取り出す操作である（例：患者テーブルから氏名と生年月日の列だけを取り出す）。",
+     "choiceNotes": [
+      "複数のテーブルを1つの表にする操作は結合である。選択は条件を満たすレコードを抽出する操作である。",
+      "条件を満たすレコードを抽出する操作は選択である。結合は複数のテーブルを1つの表にする操作である。",
+      null,
+      "1件分のデータはレコードといわれ、1つの行で表す。フィールドは列に割り当てる項目である。",
+      "教材は、テーブルを分けることにより、データが冗長になることを避けることができ、変更漏れも防げるとしている。"
+     ],
+     "point": "選択＝行（レコード）を条件で抽出、射影＝列（フィールド）を取り出す、結合＝複数テーブルを1つに。"
+    },
+    "sources": [
+     {
+      "ref": "x-legacy-L06b:mext-joho1-ch4",
+      "title": "高等学校情報科「情報Ⅰ」教員研修用教材（本編）第4章 情報通信ネットワークとデータの活用・巻末",
+      "url": "https://www.mext.go.jp/content/20200722-mxt_jogai02-100013300_006.pdf",
+      "locator": "学習21（1）リレーショナルデータベース",
+      "quote": "射影はテーブルから一部のフィールドを取り出す操作である。"
+     },
+     {
+      "ref": "x-legacy-L06b:mext-joho1-ch4",
+      "title": "高等学校情報科「情報Ⅰ」教員研修用教材（本編）第4章 情報通信ネットワークとデータの活用・巻末",
+      "url": "https://www.mext.go.jp/content/20200722-mxt_jogai02-100013300_006.pdf",
+      "locator": "学習21（1）リレーショナルデータベース",
+      "quote": "はテーブルから条件を満たすレコードを抽出する操作である。"
+     },
+     {
+      "ref": "x-legacy-L06b:mext-joho1-ch4",
+      "title": "高等学校情報科「情報Ⅰ」教員研修用教材（本編）第4章 情報通信ネットワークとデータの活用・巻末",
+      "url": "https://www.mext.go.jp/content/20200722-mxt_jogai02-100013300_006.pdf",
+      "locator": "学習21（1）リレーショナルデータベース",
+      "quote": "１件分のデータはレコードといわれる１つの行で表す。"
+     }
+    ],
+    "asOf": "文部科学省「情報Ⅰ」教員研修用教材（2020年7月掲載）"
+   }
+  },
+  {
+   "key": "G5-S05-NET-11",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "x-legacy-L06b:mext-joho1-ch4 学習22（量的データの分析）：質的＝名義・順序、量的＝間隔・比例、性別・成績評価・気温・身長体重の例と差/比の意味を確認。blind一致。"
+  },
+  {
+   "key": "G5-S05-NET-12",
+   "verdict": "fix",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": false,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "x-legacy-L06b:mext-joho1-ch4（２）有線 LAN と無線 LAN の違い：電波で傍受容易、共通鍵暗号は暗号化・復号で同じキー、キーが分かれば安全な通信不可、WEPは脆弱、暗号化方式未設定のアクセスポイントも多い、を確認。blind一致。",
+   "detail": "locator「学習16（2）」は誤り。当該節は「18 情報通信ネットワークの仕組み」の（２）。学習18（2）に訂正。",
+   "fixed": {
+    "key": "G5-S05-NET-12",
+    "subject": "S05",
+    "subtopic": "情報の基礎",
+    "format": "knowledge",
+    "difficulty": "standard",
+    "polarity": "negative",
+    "question": "無線 LAN と暗号化について、誤っているものはどれか。",
+    "choices": [
+     "無線 LAN は空気中を電波でデータを伝送するため、有線 LAN に比べて傍受が容易である。",
+     "共通鍵暗号方式では、暗号化と復号に異なる鍵を用いる。",
+     "共通鍵暗号方式を使う無線 LAN では、鍵がわかってしまえば安全な通信はできない。",
+     "WEP は脆弱な暗号であることが知られている。",
+     "公衆無線 LAN には、暗号化方式を設定していないアクセスポイントも多くある。"
+    ],
+    "answer": 1,
+    "explanation": {
+     "correct": "共通鍵暗号方式は、暗号化と復号の両方で同じ鍵（キー）を使う方式である。そのため鍵が知られると安全な通信はできなくなる。",
+     "choiceNotes": [
+      "有線 LAN はケーブルでデータを転送するのに対し、無線 LAN は電波で伝送するため傍受が容易であることがデメリットとされている。",
+      null,
+      "同じ鍵を使うため、キーがわかってしまえば安全な通信はできないとされている。",
+      "WEP はフリーウェアで暗号化キーが数秒で解読されるほど脆弱な暗号であることが知られている。",
+      "公衆無線 LAN には、暗号化方式を設定していない無線アクセスポイントも多くあるとされている。"
+     ],
+     "point": "共通鍵暗号＝暗号化と復号に同じ鍵。鍵の管理が安全性の要。"
+    },
+    "sources": [
+     {
+      "ref": "x-legacy-L06b:mext-joho1-ch4",
+      "title": "高等学校情報科「情報Ⅰ」教員研修用教材（本編）第4章 情報通信ネットワークとデータの活用・巻末",
+      "url": "https://www.mext.go.jp/content/20200722-mxt_jogai02-100013300_006.pdf",
+      "locator": "学習18（2）有線 LAN と無線 LAN の違い",
+      "quote": "共通鍵暗号ならば，暗号化，復号の両方で同じキーを使う"
+     },
+     {
+      "ref": "x-legacy-L06b:mext-joho1-ch4",
+      "title": "高等学校情報科「情報Ⅰ」教員研修用教材（本編）第4章 情報通信ネットワークとデータの活用・巻末",
+      "url": "https://www.mext.go.jp/content/20200722-mxt_jogai02-100013300_006.pdf",
+      "locator": "学習18（2）有線 LAN と無線 LAN の違い",
+      "quote": "空気中を電波でデータを伝送するために，傍受することが容易である"
+     },
+     {
+      "ref": "x-legacy-L06b:mext-joho1-ch4",
+      "title": "高等学校情報科「情報Ⅰ」教員研修用教材（本編）第4章 情報通信ネットワークとデータの活用・巻末",
+      "url": "https://www.mext.go.jp/content/20200722-mxt_jogai02-100013300_006.pdf",
+      "locator": "学習18（2）有線 LAN と無線 LAN の違い",
+      "quote": "も暗号化方式を設定していない無線アクセスポイントも多くある"
+     }
+    ],
+    "asOf": "文部科学省「情報Ⅰ」教員研修用教材（2020年7月掲載）"
+   }
+  }
+ ]
+}

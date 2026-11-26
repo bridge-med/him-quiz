@@ -1,0 +1,15 @@
+{"answers":[
+{"key":"G5-S01-SYS-01","answer":2,"confidence":"high","ambiguous":false,"note":"医療法7条2項: 結核病床は病院の病床。精神・感染症は病院のみ、療養・一般は病院又は診療所"},
+{"key":"G5-S01-SYS-02","answer":2,"confidence":"high","ambiguous":false,"note":"医療法7条2項2号: 三類は含まれない"},
+{"key":"G5-S01-SYS-03","answer":0,"confidence":"high","ambiguous":false,"note":"施行規則30条の30: 療養・一般は二次医療圏、精神・結核・感染症は都道府県"},
+{"key":"G5-S01-SYS-04","answer":0,"confidence":"high","ambiguous":false,"note":"guideline-2040: 従来の回復期機能を併せて包括期機能"},
+{"key":"G5-S01-SYS-05","answer":4,"confidence":"high","ambiguous":false,"note":"医療法30条の4第2項5号: がん医療は5疾病側"},
+{"key":"G5-S01-SYS-06","answer":1,"confidence":"high","ambiguous":false,"note":"医療法7条の2第1項1号・5項: 都道府県医療審議会の意見を聴いて不許可可能"},
+{"key":"G5-S01-SYS-07","answer":1,"confidence":"high","ambiguous":false,"note":"4条(地域医療支援病院は知事承認・医療審議会)、4条の2・4条の3(社保審)。a,cが正"},
+{"key":"G5-S01-SYS-08","answer":0,"confidence":"high","ambiguous":false,"note":"施行規則: 地域医療支援病院200、特定機能400、臨床研究中核400"},
+{"key":"G5-S01-SYS-09","answer":2,"confidence":"high","ambiguous":false,"note":"医療法4条の3第1項4号"},
+{"key":"G5-S01-SYS-10","answer":0,"confidence":"high","ambiguous":false,"note":"医政発0424第9号: 特定機能病院Aは大学病院本院。他は誤り"},
+{"key":"G5-S01-SYS-11","answer":3,"confidence":"high","ambiguous":false,"note":"医療法7条3項: 診療所の病床設置は原則許可が必要"},
+{"key":"G5-S01-SYS-12","answer":1,"confidence":"high","ambiguous":false,"note":"精神科病院は精神病床のみの病院。他は一般病院"},
+{"key":"G5-S01-SYS-13","answer":3,"confidence":"high","ambiguous":false,"note":"医療法1条の5第2項: 診療所はオンライン診療受診施設を除く"}
+]}

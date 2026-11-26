@@ -1,0 +1,95 @@
+{
+ "answers": [
+  {
+   "key": "G5-S07-VIT-01",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "自然増減率=(1100-2700)/200000×1000=-8.0"
+  },
+  {
+   "key": "G5-S07-VIT-02",
+   "answer": 3,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "統計 利用上の注意: 速報は外国人・外国における日本人を含む"
+  },
+  {
+   "key": "G5-S07-VIT-03",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "概況 調査の概要5: 死産は母の住所"
+  },
+  {
+   "key": "G5-S07-VIT-04",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "調査の概要: 市区町村長が届書に基づき調査票作成"
+  },
+  {
+   "key": "G5-S07-VIT-05",
+   "answer": 4,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "概況: 死産率22.3で前年21.8より上昇"
+  },
+  {
+   "key": "G5-S07-VIT-06",
+   "answer": 3,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "800/250000×10万=320.0"
+  },
+  {
+   "key": "G5-S07-VIT-07",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "(60+20)/(4000+60)×1000=19.7"
+  },
+  {
+   "key": "G5-S07-VIT-08",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "160/(9700+300)×1000=16.0"
+  },
+  {
+   "key": "G5-S07-VIT-09",
+   "answer": 3,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "死産率・周産期死亡率の分母に死産数"
+  },
+  {
+   "key": "G5-S07-VIT-10",
+   "answer": 3,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "提要5.8.4 分母は出産数又は出生数"
+  },
+  {
+   "key": "G5-S07-VIT-11",
+   "answer": 3,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "早期新生児死亡は生後1週未満。母子保健法18条は現行で市町村届出"
+  },
+  {
+   "key": "G5-S07-VIT-12",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "提要: 低出産体重は極低・超低を含む(重複定義)"
+  },
+  {
+   "key": "G5-S07-VIT-13",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "人口動態調査 用語: 母体内生存確実+人工的処置、妊娠満12週以後"
+  }
+ ]
+}

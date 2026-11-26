@@ -1,0 +1,4 @@
+{"verdicts":[
+{"key":"G5-S03-INS-10","verdict":"pass","blindAnswer":1,"checks":{"answer":true,"distractors":true,"stem":true,"explanations":true,"sources":true,"asOf":true,"domain":true},"notes":"law:健康保険法 (e-Gov 2026-10-01施行版) 第37条第1項 20日以内(ただし書あり)=B正。A: 第3条第4項 継続して二月以上; C: 第38条第1号 二年; D: 第38条第7号 申出受理月の末日到来で翌日喪失→2年前でも可; E: 第38条柱書括弧書き 第4〜6号はその日に喪失(第6号 後期高齢者医療)。choiceNotes・point・locator いずれも条文と一致。validate 0 errors。"},
+{"key":"G5-S03-INS-11","verdict":"pass","blindAnswer":1,"checks":{"answer":true,"distractors":true,"stem":true,"explanations":true,"sources":true,"asOf":true,"domain":true},"notes":"ins:wagakuni-iryouhoken 被用者保険者の概要: 共済組合=共済各法に基づき国家公務員・地方公務員・私立学校教職員等(B正)、協会けんぽ=自ら健保組合設立困難な中小・零細企業の労働者と家族(A誤)、市町村国保=他の医療保険に加入していない全ての住民(D誤)、単一700人以上/総合3,000人以上(point)。law:国民健康保険法 第13条第1項 国保組合=同種の事業又は業務に従事する者(C誤)。E=被用者保険の対象で誤。数値(保険者数等)は判定に用いず、asOf記載妥当。validate 0 errors。"}
+]}

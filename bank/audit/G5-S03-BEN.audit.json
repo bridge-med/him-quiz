@@ -1,0 +1,239 @@
+{
+ "verdicts": [
+  {
+   "key": "G5-S03-BEN-01",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:健康保険法 第52条1〜9号（版施行2026-10-01）で移送費・傷病手当金・出産手当金・高額介護合算療養費を確認。休業補償給付は law:労働者災害補償保険法 第14条第1項。"
+  },
+  {
+   "key": "G5-S03-BEN-02",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:健康保険法 第74条第1項第1〜3号：70歳到達月以前30/100、翌月以後20/100（現役並み30/100）。各誤肢の注記も条文どおり。"
+  },
+  {
+   "key": "G5-S03-BEN-03",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:健康保険法 第110条第1項（被保険者に支給）・第2項第1号イ70/ロ80/ハ80/ニ70。a・e正、b・c・d誤を確認。"
+  },
+  {
+   "key": "G5-S03-BEN-04",
+   "verdict": "fix",
+   "checks": {
+    "answer": true,
+    "distractors": false,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:高齢者の医療の確保に関する法律 第67条第1項第1〜3号（10/100・20/100・30/100、版施行2026-10-01）。キーは正しい。",
+   "detail": "選択肢C「原則百分の十、所得の額が政令で定める額以上の場合は百分の二十」は第3号を欠くだけで、記述として一部は正しく『より不完全な選択肢』にとどまる（ブラインド回答者も medium・『Cは30を欠くためDが最良』）。Cを『…政令で定める額以上の場合は百分の三十の2区分』（第2号の20/100区分の存在で明確に誤り）に差し替え、注記と第2号の出典を追加。",
+   "fixed": {
+    "key": "G5-S03-BEN-04",
+    "subject": "S03",
+    "subtopic": "保険給付と自己負担",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "高齢者の医療の確保に関する法律第67条に定める後期高齢者医療の療養の給付に係る一部負担金の割合として、正しいものはどれか。",
+    "choices": [
+     "原則百分の二十、所得の額が政令で定める額以上の場合は百分の三十",
+     "所得にかかわらず一律に百分の十",
+     "原則百分の十、所得の額が政令で定める額以上の場合は百分の三十の2区分",
+     "原則百分の十、所得の額に応じて百分の二十又は百分の三十",
+     "原則百分の三十、所得の額が政令で定める額未満の場合は百分の十"
+    ],
+    "answer": 3,
+    "explanation": {
+     "correct": "第67条第1項は、原則（第1号）百分の十、所得の額が政令で定める額以上の場合（第2号）百分の二十、さらにそれを超える政令で定める額以上の場合（第3号）百分の三十の3区分を定める。",
+     "choiceNotes": [
+      "原則2割・現役並み3割は、健康保険法第74条の70歳到達月の翌月以後の区分であり、後期高齢者医療の区分ではない。",
+      "所得に応じて百分の二十・百分の三十の区分があり、一律ではない。",
+      "第2号に百分の二十の区分（政令で定める額以上で第3号に該当しない場合）もあり、2区分ではなく3区分である。",
+      null,
+      "原則は百分の三十ではなく百分の十である（第1号）。"
+     ],
+     "point": "後期高齢者医療の窓口負担：原則1割・一定以上所得2割・現役並み所得3割の3区分。"
+    },
+    "sources": [
+     {
+      "ref": "law:高齢者の医療の確保に関する法律",
+      "title": "高齢者の医療の確保に関する法律",
+      "url": "https://laws.e-gov.go.jp/law/357AC0000000080",
+      "locator": "第67条第1項第1号",
+      "quote": "一 次号及び第三号に掲げる場合以外の場合百分の十"
+     },
+     {
+      "ref": "law:高齢者の医療の確保に関する法律",
+      "title": "高齢者の医療の確保に関する法律",
+      "url": "https://laws.e-gov.go.jp/law/357AC0000000080",
+      "locator": "第67条第1項第2号",
+      "quote": "政令で定めるところにより算定した所得の額が政令で定める額以上である場合（次号に掲げる場合を除く。）百分の二十"
+     },
+     {
+      "ref": "law:高齢者の医療の確保に関する法律",
+      "title": "高齢者の医療の確保に関する法律",
+      "url": "https://laws.e-gov.go.jp/law/357AC0000000080",
+      "locator": "第67条第1項第3号",
+      "quote": "所得の額が前号の政令で定める額を超える政令で定める額以上である場合百分の三十"
+     }
+    ],
+    "asOf": "2026-11 e-Gov現行法令"
+   }
+  },
+  {
+   "key": "G5-S03-BEN-05",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:健康保険法 第74条第1・2項、第75条（5円未満切捨・5円以上切上）、第75条の2第1項、第76条第1項で全肢確認。"
+  },
+  {
+   "key": "G5-S03-BEN-06",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:健康保険法 第87条第1〜3項（やむを得ないと認めるとき・実費上限・一部負担割合控除）、第56条第1項（その都度）・第2項、第115条第1項（著しく高額）を確認。"
+  },
+  {
+   "key": "G5-S03-BEN-07",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "23,450×0.3=7,035→第75条で7,040。誤肢4,690(2割)・7,030(切捨)・7,035(未処理)・16,415(7割)を再計算。law:健康保険法 第74条第1項第1号・第75条。"
+  },
+  {
+   "key": "G5-S03-BEN-08",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:健康保険法 第63条第4項（厚生労働大臣に臨床研究中核病院開設者の意見書）。ins:hokengai-heiyou-page 患者申出療養（平成28年度創設）。"
+  },
+  {
+   "key": "G5-S03-BEN-09",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:hokengai-heiyou-page 評価療養の種類（薬事承認後保険収載前の医薬品・医療機器等）と選定療養の類型一覧（差額ベッド・大病院初診・180日以上入院・長期収載品）を確認。"
+  },
+  {
+   "key": "G5-S03-BEN-10",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:hokengai-heiyou-pdf 先進医療（基礎的部分は保険適用）、ins:hokengai-heiyou-page 3分類、law:健康保険法 第63条第2項第3号「次号の患者申出療養を除く」・第86条第2項第1号を確認。"
+  },
+  {
+   "key": "G5-S03-BEN-11",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:kougaku-page（更新2026-07-31）※1：直近12か月で3か月以上→4か月目以降。令和8年8月見直しで据え置き。"
+  },
+  {
+   "key": "G5-S03-BEN-12",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:kougaku-page ※2（年間＝8月〜翌年7月、還付）、ins:kougaku-minaoshi-r0808（1）多数回該当据え置き・（2）月単位限度額に到達しない者にも年間上限。"
+  },
+  {
+   "key": "G5-S03-BEN-13",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:kougaku-minaoshi-r0808 令和8年8月〜令和9年7月表：標報28万〜50万円 85,800＋(医療費−286,000)×1%→87,940。令和9年8月以降表では36万円は別区分だが令和8年9月診療分なので第1表で正しい。誤肢82,430（旧式 ins:kougaku-sankou）・92,940・44,400・150,000を再計算。"
+  }
+ ]
+}

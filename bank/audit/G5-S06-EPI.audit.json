@@ -1,0 +1,228 @@
+{
+ "verdicts": [
+  {
+   "key": "G5-S06-EPI-01",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "Recomputed 60/(10000*5)*1e5=120; distractors 12(÷500000),60,600(60/10000=5年累積罹患率),1200(÷5000) all verified. mhlw-edc-epi Ⅱ-1 l.586-592 (人年・累積罹患率) in context."
+  },
+  {
+   "key": "G5-S06-EPI-02",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "AR=0.03-0.01=0.02=20/1000; 10,30,40(和),3.0(RR) verified. stats:env-soutai-kiyo-risk 寄与リスク定義 supports."
+  },
+  {
+   "key": "G5-S06-EPI-03",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "OR=(60*170)/(140*30)=2.43≈2.4; 0.41=逆数, 2.0=曝露割合比. mhlw-edc-epi Ⅱ-3 オッズ比 (l.670) supports 算出可能・症例対照で使用."
+  },
+  {
+   "key": "G5-S06-EPI-04",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "有病率=罹患×罹病期間の関係; CDC ss1978 L3S2 quote (rapid recovery→low prevalence; prolonged survival without cure→high) supports key and notes."
+  },
+  {
+   "key": "G5-S06-EPI-05",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ganjoho 標準化死亡比 (観察/期待死亡数, 小集団で使用) and 年齢調整死亡率 (基準人口に合わせる=直接法) support key and each distractor note."
+  },
+  {
+   "key": "G5-S06-EPI-06",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "mhlw-edc-epi Ⅱ-3 (RR=RCT/前向きコホート; OR=症例対照) and tokei-yougo (稀なら近似); choice 4 (CI excludes 1→有意) confirmed in stats:mhlw-tokei-yougo-rr-or l.49 「信頼区間（CI）が１を挟まなければ、統計的に有意」(implicitly 5% level). Only key is false."
+  },
+  {
+   "key": "G5-S06-EPI-07",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "PPV=40/500=8.0%; 0.4%=発見率, 5.0%=要精検率, 80%=感度, 95.4%=9490/9950 verified. kenshin-kando-tokuido slide1 2x2 (A=真陽性,B=偽陰性,C=偽陽性,D=真陰性) matches point."
+  },
+  {
+   "key": "G5-S06-EPI-08",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "1020/1200=85.0%; 0.15%,2.5%,5.1%,6.0% each verified. kenshin-process-shihyo slide7 formulas l.160."
+  },
+  {
+   "key": "G5-S06-EPI-09",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "msd-kensa: 適中率は有病率で変化; 感度=偽陰性率の補数; 特異度=真陰性率. Single false statement."
+  },
+  {
+   "key": "G5-S06-EPI-10",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "TP=90, FP=495, PPV=90/585=15.38%; 66.7%=900/1350 (有病率10%), 99.9%=NPV 9405/9415 verified. msd-kensa definitions."
+  },
+  {
+   "key": "G5-S06-EPI-11",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "kenshin-process-shihyo slide7 PPV=がん/要精検者 (key false); slide8 l.181 精検受診率 高いほど良い(100%が望ましい), l.188 評価不可; slide9 高すぎても低すぎても×. Verified."
+  },
+  {
+   "key": "G5-S06-EPI-12",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "msd-kensa l.41: スクリーニング→感度高・特異度低; 確定目的→特異度高・感度低; cutoff移動で偽陽性増加. Key unique."
+  },
+  {
+   "key": "G5-S06-EPI-13",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "minds-glossary-2020 観察研究 (分析疫学=生態学的・横断・コホート・症例対照) and RCT definition. OK."
+  },
+  {
+   "key": "G5-S06-EPI-14",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "mhlw-edc-epi Ⅱ-4 7)地域相関研究 l.863-875 (集団単位, 既存資料で簡便, 個人に適用できない, 交絡制御困難) supports key and explanation."
+  },
+  {
+   "key": "G5-S06-EPI-15",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "mhlw-edc-epi Ⅱ-4: 前向きコホート 大規模長期高費用 / 思い出しバイアス回避 (l.754); 断面研究 時間的前後関係 (l.858); minds 症例対照・介入研究. Only choice 1 false."
+  },
+  {
+   "key": "G5-S06-EPI-16",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "mhlw-edc-epi Ⅱ-4 4)症例対照研究: 住民対照/病院対照, 思い出しバイアス (l.809-816); OR used where 罹患率 not measurable. Key unique. Note: overlaps conceptually with EPI-06/03 but tests different facets (対照の種類・バイアス)."
+  }
+ ]
+}

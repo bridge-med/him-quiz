@@ -1,0 +1,15 @@
+{"answers":[
+{"key":"G5-S06-TST-01","answer":1,"confidence":"high","ambiguous":false,"note":"p値の定義。0は有意水準、2はβ"},
+{"key":"G5-S06-TST-02","answer":0,"confidence":"high","ambiguous":false,"note":"αを下げるとβ増大、棄却されにくい"},
+{"key":"G5-S06-TST-03","answer":3,"confidence":"high","ambiguous":false,"note":"第2種の過誤確率は任意に定められない"},
+{"key":"G5-S06-TST-04","answer":2,"confidence":"high","ambiguous":false,"note":"棄却できない=差がないの証明ではない"},
+{"key":"G5-S06-TST-05","answer":0,"confidence":"high","ambiguous":false,"note":"両側検定は両側の裾の確率"},
+{"key":"G5-S06-TST-06","answer":2,"confidence":"high","ambiguous":false,"note":"Z=2/(6/6)=2.0>1.96で棄却"},
+{"key":"G5-S06-TST-07","answer":3,"confidence":"high","ambiguous":false,"note":"2標本t検定は母平均の差の検定"},
+{"key":"G5-S06-TST-08","answer":4,"confidence":"high","ambiguous":false,"note":"r=0は直線的関係なしで、非線形関係はありうる"},
+{"key":"G5-S06-TST-09","answer":1,"confidence":"high","ambiguous":false,"note":"相関は因果を示さない（気温が交絡）"},
+{"key":"G5-S06-TST-10","answer":3,"confidence":"high","ambiguous":false,"note":"R2=r^2=0.64"},
+{"key":"G5-S06-TST-11","answer":3,"confidence":"high","ambiguous":false,"note":"12*5+30=90"},
+{"key":"G5-S06-TST-12","answer":1,"confidence":"high","ambiguous":false,"note":"最小二乗法は誤差を2乗して合計"},
+{"key":"G5-S06-TST-13","answer":1,"confidence":"medium","ambiguous":false,"note":"aは正、cは正（やや主観的）、bdeは誤"}
+]}

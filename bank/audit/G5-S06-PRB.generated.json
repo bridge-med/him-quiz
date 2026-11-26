@@ -1,0 +1,447 @@
+{
+ "questions": [
+  {
+   "key": "G5-S06-PRB-01",
+   "subject": "S06",
+   "subtopic": "確率分布",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "正規分布の性質として、正しいものはどれか。",
+   "choices": [
+    "平均値±1標準偏差の範囲に全体の約95%が含まれる。",
+    "平均値±2標準偏差の範囲に全体の約68%が含まれる。",
+    "平均値・中央値・最頻値が一致する。",
+    "平均値±3標準偏差の範囲に全体の100%が含まれ、その外側の値はとらない。",
+    "歪度が正であり、右に長く裾を引く分布である。"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "正規分布は平均値を中心に左右対称な釣鐘型の分布で、平均値・中央値・最頻値はいずれも位置パラメータμに一致する。",
+    "choiceNotes": [
+     "平均値±1標準偏差に含まれるのは約68.3%である。約95%は±2標準偏差（95.5%）や±1.96標準偏差（95.0%）の範囲である。",
+     "平均値±2標準偏差に含まれるのは約95.5%である。約68%は±1標準偏差の範囲である。",
+     null,
+     "平均値±3標準偏差に含まれるのは約99.7%であり100%ではない。正規分布のとりうる値の範囲は−∞から∞までである。",
+     "正規分布は左右対称で、歪度は0である。右に裾を引く（歪度が正の）分布ではない。"
+    ],
+    "point": "正規分布：平均＝中央値＝最頻値、歪度0。±1SD≒68.3%、±2SD≒95.5%、±3SD≒99.7%。"
+   },
+   "sources": [
+    {"ref": "stats:nist-normal-distribution", "title": "NIST/SEMATECH e-Handbook of Statistical Methods, 1.3.6.6.1. Normal Distribution", "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda3661.htm", "locator": "Common Statistics", "quote": "Median The location parameter μ . Mode The location parameter μ . Range \\(-\\infty\\) to \\(\\infty\\)."},
+    {"ref": "stats:nist-normal-distribution", "title": "NIST/SEMATECH e-Handbook of Statistical Methods, 1.3.6.6.1. Normal Distribution", "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda3661.htm", "locator": "Common Statistics（Skewness）", "quote": "Skewness 0 Kurtosis 3"},
+    {"ref": "x-legacy-L06a:cdc-poe-l2s7", "title": "Principles of Epidemiology in Public Health Practice, 3rd ed. Lesson 2 Section 7: Measures of Spread", "url": "https://archive.cdc.gov/www_cdc_gov/csels/dsepd/ss1978/lesson2/section7.html", "locator": "Properties of the standard deviation（Figure 2.9）", "quote": "approximately two-thirds (68.3%, to be exact) of the data fall within one standard deviation of either side of the mean; 95.5% of the data fall within two standard deviations of the mean; and 99.7% of the data fall within three standard deviations."}
+   ],
+   "asOf": "統計学の定義・性質（時点に依存しない）"
+  },
+  {
+   "key": "G5-S06-PRB-02",
+   "subject": "S06",
+   "subtopic": "確率分布",
+   "format": "calculation",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "ある検査値が、平均値100、標準偏差10の正規分布に従うとする。平均値±2標準偏差の範囲に全体の約95.5%が含まれることを用いると、検査値が120を超える者の割合は約何%か。",
+   "choices": [
+    "約0.15%",
+    "約2.25%",
+    "約4.5%",
+    "約15.85%",
+    "約47.75%"
+   ],
+   "answer": 1,
+   "explanation": {
+    "correct": "120は平均値＋2標準偏差にあたる。±2標準偏差の外側は100−95.5＝4.5%で、正規分布は左右対称なので上側（120超）はその半分の約2.25%となる。",
+    "choiceNotes": [
+     "約0.15%は平均値＋3標準偏差を超える割合（(100−99.7)÷2）にあたる。120は＋2標準偏差である。",
+     null,
+     "約4.5%は±2標準偏差の外側の両側の合計である。120を超える側（上側）だけなら半分になる。",
+     "約15.85%は平均値＋1標準偏差（110）を超える割合（(100−68.3)÷2）にあたる。",
+     "約47.75%は平均値から＋2標準偏差までの割合（95.5÷2）であり、120を超える割合ではない。"
+    ],
+    "point": "片側の割合＝(100−範囲内の%)÷2。＋2SD超は約2.3%（偏差値70で上位約2.3%）。"
+   },
+   "sources": [
+    {"ref": "x-legacy-L06a:cdc-poe-l2s7", "title": "Principles of Epidemiology in Public Health Practice, 3rd ed. Lesson 2 Section 7: Measures of Spread", "url": "https://archive.cdc.gov/www_cdc_gov/csels/dsepd/ss1978/lesson2/section7.html", "locator": "Figure 2.9", "quote": "±2 SD includes 95.5%"},
+    {"ref": "x-legacy-L06a:cdc-poe-l2s7", "title": "Principles of Epidemiology in Public Health Practice, 3rd ed. Lesson 2 Section 7: Measures of Spread", "url": "https://archive.cdc.gov/www_cdc_gov/csels/dsepd/ss1978/lesson2/section7.html", "locator": "Properties of the standard deviation", "quote": "The mean is at the center, and data are equally distributed on either side of this mean."},
+    {"ref": "stats:naruhodo-chirabari-jyokyu", "title": "なるほど統計学園「データの散らばりを見る」", "url": "https://www.stat.go.jp/naruhodo/10_tokucho/chirabari.html", "locator": "偏差値", "quote": "偏差値が70の場合、集団の中で上から約2.3％のところに位置していることが分かります。"}
+   ],
+   "asOf": "統計学の定義・性質（時点に依存しない）",
+   "calc": {"expr": "(100-95.5)/2", "value": 2.25}
+  },
+  {
+   "key": "G5-S06-PRB-03",
+   "subject": "S06",
+   "subtopic": "確率分布",
+   "format": "calculation",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "ある院内研修の確認テストで、受講者全体の平均点が60点、標準偏差が8点であった。得点が72点の受講者の偏差値はどれか。",
+   "choices": [
+    "1.5",
+    "15",
+    "51.5",
+    "62",
+    "65"
+   ],
+   "answer": 4,
+   "explanation": {
+    "correct": "まず標準化する：(72−60)÷8＝1.5。偏差値は標準化した値を10倍して50を加えた値なので、1.5×10＋50＝65となる。",
+    "choiceNotes": [
+     "1.5は標準化した値（平均0、標準偏差1）であり、偏差値に変換する前の値である。",
+     "15は標準化した値を10倍しただけで、50を加えていない。",
+     "51.5は標準化した値に50を加えただけで、10倍していない。",
+     "62は得点と平均点の差（12点）を50に加えたもので、標準偏差で割る標準化をしていない。",
+     null
+    ],
+    "point": "偏差値＝(得点−平均)÷標準偏差×10＋50。平均50、標準偏差10の尺度に変換したもの。"
+   },
+   "sources": [
+    {"ref": "stats:naruhodo-chirabari-jyokyu", "title": "なるほど統計学園「データの散らばりを見る」", "url": "https://www.stat.go.jp/naruhodo/10_tokucho/chirabari.html", "locator": "偏差値", "quote": "自分の得点と平均値との差を標準偏差で割って、平均が0、標準偏差が1になるようにします。これを標準化といいます。"},
+    {"ref": "stats:naruhodo-chirabari-jyokyu", "title": "なるほど統計学園「データの散らばりを見る」", "url": "https://www.stat.go.jp/naruhodo/10_tokucho/chirabari.html", "locator": "偏差値", "quote": "この標準化した値を10倍して、50に加えることにより、平均が50、標準偏差が10の値が得られます。この値が偏差値です。"}
+   ],
+   "asOf": "統計学の定義・性質（時点に依存しない）",
+   "calc": {"expr": "(72-60)/8*10+50", "value": 65}
+  },
+  {
+   "key": "G5-S06-PRB-04",
+   "subject": "S06",
+   "subtopic": "確率分布",
+   "format": "knowledge",
+   "difficulty": "standard",
+   "polarity": "negative",
+   "question": "標準化と偏差値について、誤っているものはどれか。ただし、データの分布は正規分布であると仮定する。",
+   "choices": [
+    "標準化では、各値と平均値との差を標準偏差で割る。",
+    "標準化した値の平均は0、標準偏差は1になる。",
+    "偏差値は、標準化した値を10倍して50を加えた値である。",
+    "偏差値70は、平均値＋2標準偏差の位置に相当する。",
+    "偏差値40は、平均値−2標準偏差の位置に相当する。"
+   ],
+   "answer": 4,
+   "explanation": {
+    "correct": "偏差値は平均50、標準偏差10の尺度なので、偏差値40は50−10＝平均値−1標準偏差の位置に相当する。平均値−2標準偏差に相当するのは偏差値30である。",
+    "choiceNotes": [
+     "正しい。値から平均値を引き、標準偏差で割るのが標準化である。",
+     "正しい。標準化すると平均が0、標準偏差が1になる。",
+     "正しい。標準化した値×10＋50が偏差値である。",
+     "正しい。偏差値70は50＋2×10で、μ＋2σに相当する。",
+     null
+    ],
+    "point": "偏差値の10は1標準偏差。60＝＋1SD、70＝＋2SD、40＝−1SD、30＝−2SD。"
+   },
+   "sources": [
+    {"ref": "stats:naruhodo-chirabari-jyokyu", "title": "なるほど統計学園「データの散らばりを見る」", "url": "https://www.stat.go.jp/naruhodo/10_tokucho/chirabari.html", "locator": "偏差値", "quote": "自分の得点と平均値との差を標準偏差で割って、平均が0、標準偏差が1になるようにします。これを標準化といいます。"},
+    {"ref": "stats:naruhodo-chirabari-jyokyu", "title": "なるほど統計学園「データの散らばりを見る」", "url": "https://www.stat.go.jp/naruhodo/10_tokucho/chirabari.html", "locator": "偏差値", "quote": "この標準化した値を10倍して、50に加えることにより、平均が50、標準偏差が10の値が得られます。"},
+    {"ref": "stats:naruhodo-chirabari-jyokyu", "title": "なるほど統計学園「データの散らばりを見る」", "url": "https://www.stat.go.jp/naruhodo/10_tokucho/chirabari.html", "locator": "偏差値", "quote": "偏差値70はμ+2σに相当しますから"}
+   ],
+   "asOf": "統計学の定義・性質（時点に依存しない）"
+  },
+  {
+   "key": "G5-S06-PRB-05",
+   "subject": "S06",
+   "subtopic": "確率分布",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "代表的な確率分布について、正しいものはどれか。",
+   "choices": [
+    "二項分布は、結果が2つしかない試行をn回繰り返す場合に当てはまる分布である。",
+    "ポアソン分布は、試行回数が少なく、頻繁に起こる現象に当てはまる分布である。",
+    "二項分布は、試行ごとに成功の確率が変化することを前提とする分布である。",
+    "二項分布は、試行回数nが小さいほど正規分布に近づく。"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "二項分布は、成功・失敗のように結果が2つしかない試行をn回繰り返すときの分布で、各試行の成功確率pは一定と仮定する。",
+    "choiceNotes": [
+     null,
+     "ポアソン分布は、二項分布で試行回数nが非常に大きく、かつ、まれな現象である場合に当てはまる分布である。",
+     "二項分布は、成功確率pがすべての試行で一定であることを仮定する。",
+     "二項分布は、試行回数nが非常に大きい場合に正規分布に近づく。nが小さいほど近づくのではない。"
+    ],
+    "point": "二項分布＝2択の結果×n回（pは一定）。nが大→正規分布に近づく。nが大でまれな現象→ポアソン分布。"
+   },
+   "sources": [
+    {"ref": "stats:naruhodo-suisoku", "title": "なるほど統計学園「推測統計」", "url": "https://www.stat.go.jp/naruhodo/11_tokusei/suisoku.html", "locator": "代表的な確率分布（表）", "quote": "二項分布の試行回数 n が非常に大きい場合、正規分布に近づく。 | 二項分布 | 何かを行った場合に生じる結果が 2 つしかない試行を n 回繰り返す場合に当てはまる分布。"},
+    {"ref": "stats:naruhodo-suisoku", "title": "なるほど統計学園「推測統計」", "url": "https://www.stat.go.jp/naruhodo/11_tokusei/suisoku.html", "locator": "代表的な確率分布（表）", "quote": "二項分布で、施行回数 n が非常に大きく、かつ、まれな現象である場合に当てはまる分布。"},
+    {"ref": "x-gen-G5-S06-PRB:nist-binomial", "title": "NIST/SEMATECH e-Handbook of Statistical Methods, 1.3.6.6.18. Binomial Distribution", "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda366i.htm", "locator": "Probability Mass Function", "quote": "The binomial distribution assumes that p is fixed for all trials."}
+   ],
+   "asOf": "統計学の定義・性質（時点に依存しない）"
+  },
+  {
+   "key": "G5-S06-PRB-06",
+   "subject": "S06",
+   "subtopic": "確率分布",
+   "format": "calculation",
+   "difficulty": "advanced",
+   "polarity": "positive",
+   "question": "ある検査後に一定の副作用が起こる確率は0.1で、患者ごとに独立に起こるものとする。この検査を100人に行ったとき、副作用が起こる人数は二項分布に従う。その平均（期待値）と標準偏差の組み合わせとして正しいものはどれか。",
+   "choices": [
+    "平均 9人、標準偏差 3人",
+    "平均 10人、標準偏差 0.9人",
+    "平均 10人、標準偏差 3人",
+    "平均 10人、標準偏差 9人",
+    "平均 10人、標準偏差 10人"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "二項分布の平均はnp、標準偏差は√(np(1−p))である。n＝100、p＝0.1より、平均＝100×0.1＝10人、標準偏差＝√(100×0.1×0.9)＝√9＝3人となる。",
+    "choiceNotes": [
+     "9はnp(1−p)（分散）の値であり、平均（np＝10）ではない。",
+     "0.9は1−pの値であり、標準偏差は√(np(1−p))＝3である。",
+     null,
+     "9はnp(1−p)、すなわち分散である。標準偏差はその平方根の3である。",
+     "10は平均npの値であり、標準偏差は√(np(1−p))＝3である。"
+    ],
+    "point": "二項分布：平均＝np、分散＝np(1−p)、標準偏差＝√(np(1−p))。分散と標準偏差を取り違えない。"
+   },
+   "sources": [
+    {"ref": "x-gen-G5-S06-PRB:nist-binomial", "title": "NIST/SEMATECH e-Handbook of Statistical Methods, 1.3.6.6.18. Binomial Distribution", "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda366i.htm", "locator": "Common Statistics（Mean）", "quote": "Common Statistics Mean np Mode"},
+    {"ref": "x-gen-G5-S06-PRB:nist-binomial", "title": "NIST/SEMATECH e-Handbook of Statistical Methods, 1.3.6.6.18. Binomial Distribution", "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda366i.htm", "locator": "Common Statistics（Standard Deviation）", "quote": "Standard Deviation \\( \\sqrt{np(1 - p)} \\)"}
+   ],
+   "asOf": "統計学の定義・性質（時点に依存しない）",
+   "calc": {"expr": "sqrt(100*0.1*0.9)", "value": 3}
+  },
+  {
+   "key": "G5-S06-PRB-07",
+   "subject": "S06",
+   "subtopic": "標本抽出と推定",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "母集団を構成するすべての人を順番に並べ、スタート番号を無作為に選んだあとは等間隔で標本を選ぶ抽出方法はどれか。",
+   "choices": [
+    "単純無作為抽出法",
+    "系統抽出法",
+    "層化抽出法",
+    "多段抽出法",
+    "全数調査（悉皆調査）"
+   ],
+   "answer": 1,
+   "explanation": {
+    "correct": "系統抽出法は、母集団を順番に並べ、スタート番号を無作為に選び、その後は抽出間隔ごとに等間隔で選ぶ方法で、単純無作為抽出の代用としてよく使われる。",
+    "choiceNotes": [
+     "単純無作為抽出法は、母集団のすべての人から乱数の値にしたがって標本を選ぶ方法で、等間隔に選ぶわけではない。",
+     null,
+     "層化抽出法は、母集団を年齢や職業などの層に分け、各層からそれぞれ標本を抽出する方法である。",
+     "多段抽出法は、第一段階で地域を、第二段階でその地域の個人を抽出するように、複数の段階に分けて抽出する方法である。",
+     "全数調査（悉皆調査）は母集団のすべてを調べる方法であり、標本を抽出しない。"
+    ],
+    "point": "系統抽出＝スタートだけ無作為、あとは等間隔（抽出間隔＝母集団の人数÷標本数）。"
+   },
+   "sources": [
+    {"ref": "stats:datastart-hyohon-chushutsu", "title": "Data StaRt EBPM活用塾 ゼミナール編（２）2-1-2 標本抽出の諸方法", "url": "https://www.stat.go.jp/dstart/point/seminar/02/2-1-2.html", "locator": "系統抽出法", "quote": "母集団を構成するすべての人びとを順番に並べたうえで、スタート番号を無作為に選び、そのあとは等間隔で系統的に標本に含む人を選びます。"},
+    {"ref": "stats:naruhodo-yougo-sa", "title": "なるほど統計学園「１３ 統計用語辞典（さ行）」", "url": "https://www.stat.go.jp/naruhodo/13_yougo/sa-gyo.html", "locator": "層化抽出", "quote": "標本調査を行う場合に、母集団を層（グループ。例えば、年齢や職業など）に分け、各層からそれぞれ標本を抽出すること。"},
+    {"ref": "stats:naruhodo-zensu", "title": "なるほど統計学園「全数調査・標本調査」", "url": "https://www.stat.go.jp/naruhodo/7_shurui/zensu.html", "locator": "全数調査・標本調査", "quote": "全数調査は、母集団の全てを調べる方法です。標本調査は、母集団の一部を抽出して調べる方法です。"}
+   ],
+   "asOf": "統計学の定義・性質（時点に依存しない）"
+  },
+  {
+   "key": "G5-S06-PRB-08",
+   "subject": "S06",
+   "subtopic": "標本抽出と推定",
+   "format": "knowledge",
+   "difficulty": "standard",
+   "polarity": "negative",
+   "question": "無作為抽出の方法について、誤っているものはどれか。",
+   "choices": [
+    "単純無作為抽出法では、母集団を構成するすべての人から、乱数の値にしたがって標本を選ぶ。",
+    "適切に層化すると、地域的な偏りを避けたり、誤差を小さくしたりすることができる。",
+    "二段抽出では、例えば第一段階で地域を無作為抽出し、第二段階でその地域に住む個人を無作為抽出する。",
+    "多段抽出の段数を多くすると、調査のコストを下げられるが、誤差は大きくなる。",
+    "層化抽出法は、母集団を層に分けたうえで、いずれか1つの層だけから標本を抽出する方法である。"
+   ],
+   "answer": 4,
+   "explanation": {
+    "correct": "層化抽出法は、母集団を年齢や職業などの層に分け、各層からそれぞれ標本を抽出する方法である。1つの層だけから抽出すると、母集団を代表する標本にならない。",
+    "choiceNotes": [
+     "正しい。単純無作為抽出法は最も基本的な方法で、乱数にしたがって標本を選ぶ。",
+     "正しい。適切な層化には、地域的な偏りを避け、誤差を小さくできるというメリットがある。",
+     "正しい。地域を抽出し、その地域内の個人を抽出する二段抽出は実践でよく行われる。",
+     "正しい。多段抽出は段数を多くするとコストを下げられるが、代償として誤差が大きくなる。",
+     null
+    ],
+    "point": "層化＝層に分けて「各層から」抽出（誤差を小さくできる）。多段＝段数↑でコスト↓・誤差↑。"
+   },
+   "sources": [
+    {"ref": "stats:naruhodo-yougo-sa", "title": "なるほど統計学園「１３ 統計用語辞典（さ行）」", "url": "https://www.stat.go.jp/naruhodo/13_yougo/sa-gyo.html", "locator": "層化抽出", "quote": "標本調査を行う場合に、母集団を層（グループ。例えば、年齢や職業など）に分け、各層からそれぞれ標本を抽出すること。"},
+    {"ref": "stats:datastart-hyohon-chushutsu", "title": "Data StaRt EBPM活用塾 ゼミナール編（２）2-1-2 標本抽出の諸方法", "url": "https://www.stat.go.jp/dstart/point/seminar/02/2-1-2.html", "locator": "多段抽出", "quote": "多段抽出の段階数を多くすると、調査のコストを下げられるメリットがありますが、代償として誤差が大きくなってしまうデメリットも生じます。"},
+    {"ref": "stats:datastart-hyohon-chushutsu", "title": "Data StaRt EBPM活用塾 ゼミナール編（２）2-1-2 標本抽出の諸方法", "url": "https://www.stat.go.jp/dstart/point/seminar/02/2-1-2.html", "locator": "層化", "quote": "適切に層化がなされれば、地域的な偏りを避けられたり、誤差を小さくすることができるなどのメリットがあります。"}
+   ],
+   "asOf": "統計学の定義・性質（時点に依存しない）"
+  },
+  {
+   "key": "G5-S06-PRB-09",
+   "subject": "S06",
+   "subtopic": "標本抽出と推定",
+   "format": "knowledge",
+   "difficulty": "standard",
+   "polarity": "negative",
+   "question": "標本平均の標準誤差について、誤っているものはどれか。",
+   "choices": [
+    "推定量の標準偏差であり、推定量そのもののばらつきを表す。",
+    "標準偏差を標本サイズの平方根で割って求める。",
+    "標本サイズが大きくなるほど小さくなる。",
+    "個々の観測値が平均値からどの程度ばらついているかを表す指標である。",
+    "母集団の標準偏差が分からないときは、標本から得た不偏分散の正の平方根を用いて推定する。"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "個々の観測値のばらつきを表すのは標準偏差である。標本平均の標準誤差は、同じ母集団から標本を繰り返し取ったときの標本平均のばらつきを表す。",
+    "choiceNotes": [
+     "正しい。標準誤差は推定量の標準偏差で、推定量そのもののばらつきを表す。",
+     "正しい。標本平均の標準誤差は、標準偏差÷√n で求める。",
+     "正しい。標本の大きさが大きくなるほど標準誤差は小さくなる。",
+     null,
+     "正しい。多くの場合、母集団の標準偏差は分からないので、不偏分散の正の平方根sを用いて推定する。"
+    ],
+    "point": "標準偏差＝データのばらつき、標準誤差＝標本平均（推定量）のばらつき＝SD÷√n。"
+   },
+   "sources": [
+    {"ref": "stats:naruhodo-kentei", "title": "なるほど統計学園「統計的推定と統計的仮説検定」", "url": "https://www.stat.go.jp/naruhodo/11_tokusei/kentei.html", "locator": "点推定（標準誤差）", "quote": "標準誤差は推定量の標準偏差であり、標本から得られる推定量そのもののバラつきを表すものです。"},
+    {"ref": "stats:naruhodo-kentei", "title": "なるほど統計学園「統計的推定と統計的仮説検定」", "url": "https://www.stat.go.jp/naruhodo/11_tokusei/kentei.html", "locator": "点推定（標準誤差）", "quote": "多くの場合、母集団の標準偏差は分からないので、標本から得られた不偏分散の正の平方根sを用いて推定します。"},
+    {"ref": "x-legacy-L06a:cdc-poe-l2s7", "title": "Principles of Epidemiology in Public Health Practice, 3rd ed. Lesson 2 Section 7: Measures of Spread", "url": "https://archive.cdc.gov/www_cdc_gov/csels/dsepd/ss1978/lesson2/section7.html", "locator": "Standard error of the mean", "quote": "The standard deviation describes variability in a set of data. The standard error of the mean refers to variability we might expect in the arithmetic means of repeated samples taken from the same population."}
+   ],
+   "asOf": "統計学の定義・性質（時点に依存しない）"
+  },
+  {
+   "key": "G5-S06-PRB-10",
+   "subject": "S06",
+   "subtopic": "標本抽出と推定",
+   "format": "calculation",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "無作為抽出した標本から標本平均を求める。標本の標準偏差が変わらないものとして、標本サイズを100人から400人に増やすと、標本平均の標準誤差は何倍になるか。",
+   "choices": [
+    "0.25倍",
+    "0.5倍",
+    "変わらない",
+    "2倍",
+    "4倍"
+   ],
+   "answer": 1,
+   "explanation": {
+    "correct": "標本平均の標準誤差は標準偏差÷√nである。nが4倍になると√nは2倍になるので、標準誤差は√100÷√400＝10÷20＝0.5倍になる。",
+    "choiceNotes": [
+     "0.25倍は標準偏差をnそのもので割ると誤解した場合の値である。標準誤差はnの平方根で割る。",
+     null,
+     "標準誤差は標本サイズに依存し、標本が大きくなるほど小さくなる。",
+     "標本サイズを大きくすると標準誤差は小さくなる。大きくなることはない。",
+     "標本サイズを大きくすると標準誤差は小さくなる。4倍はnの増加比をそのまま当てはめた誤りである。"
+    ],
+    "point": "標準誤差を半分にするには標本サイズを4倍にする（√nに反比例）。"
+   },
+   "sources": [
+    {"ref": "x-legacy-L06a:cdc-poe-l2s7", "title": "Principles of Epidemiology in Public Health Practice, 3rd ed. Lesson 2 Section 7: Measures of Spread", "url": "https://archive.cdc.gov/www_cdc_gov/csels/dsepd/ss1978/lesson2/section7.html", "locator": "Method for calculating the standard error of the mean", "quote": "Step 2. Divide the standard deviation by the square root of the number of observations (n)."},
+    {"ref": "stats:naruhodo-kentei", "title": "なるほど統計学園「統計的推定と統計的仮説検定」", "url": "https://www.stat.go.jp/naruhodo/11_tokusei/kentei.html", "locator": "点推定（標準誤差）", "quote": "標本の大きさが大きくなるほど標準誤差は小さくなります。"}
+   ],
+   "asOf": "統計学の定義・性質（時点に依存しない）",
+   "calc": {"expr": "sqrt(100)/sqrt(400)", "value": 0.5}
+  },
+  {
+   "key": "G5-S06-PRB-11",
+   "subject": "S06",
+   "subtopic": "標本抽出と推定",
+   "format": "calculation",
+   "difficulty": "advanced",
+   "polarity": "positive",
+   "question": "ある病院の退院患者から無作為に36人を抽出し、在院日数を調べたところ、平均値14.0日、標準偏差6.0日であった。標本サイズが十分に大きいものとして、正規分布にもとづく係数1.96を用いたとき、母平均の95%信頼区間として正しいものはどれか。",
+   "choices": [
+    "2.24〜25.76日",
+    "8.00〜20.00日",
+    "12.04〜15.96日",
+    "13.00〜15.00日",
+    "13.67〜14.33日"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "標準誤差＝標準偏差÷√n＝6.0÷√36＝1.0日。95%信頼区間＝平均値±1.96×標準誤差＝14.0±1.96＝12.04〜15.96日となる。",
+    "choiceNotes": [
+     "平均値±1.96×標準偏差（14.0±11.76）で計算しており、標準誤差を用いていない。これは個々のデータの約95%が含まれる範囲の目安である。",
+     "平均値±1×標準偏差（14.0±6.0）であり、標準誤差も係数1.96も用いていない。",
+     null,
+     "平均値±1×標準誤差（14.0±1.0）であり、係数1.96を掛けていない。",
+     "標準偏差を√nではなくn（36）で割って標準誤差としており（6.0÷36≒0.17）、誤りである。"
+    ],
+    "point": "平均の95%信頼区間＝平均±1.96×SE、SE＝SD÷√n。SDのまま使わない。"
+   },
+   "sources": [
+    {"ref": "x-legacy-L06a:cdc-poe-l2s7", "title": "Principles of Epidemiology in Public Health Practice, 3rd ed. Lesson 2 Section 7: Measures of Spread", "url": "https://archive.cdc.gov/www_cdc_gov/csels/dsepd/ss1978/lesson2/section7.html", "locator": "Method for calculating a 95% confidence interval for a mean", "quote": "Lower limit of the 95% confidence interval = mean minus 1.96 × standard error."},
+    {"ref": "x-legacy-L06a:cdc-poe-l2s7", "title": "Principles of Epidemiology in Public Health Practice, 3rd ed. Lesson 2 Section 7: Measures of Spread", "url": "https://archive.cdc.gov/www_cdc_gov/csels/dsepd/ss1978/lesson2/section7.html", "locator": "Method for calculating the standard error of the mean", "quote": "Step 2. Divide the standard deviation by the square root of the number of observations (n)."},
+    {"ref": "x-legacy-L06a:cdc-poe-l2s7", "title": "Principles of Epidemiology in Public Health Practice, 3rd ed. Lesson 2 Section 7: Measures of Spread", "url": "https://archive.cdc.gov/www_cdc_gov/csels/dsepd/ss1978/lesson2/section7.html", "locator": "Figure 2.9", "quote": "±1.96 SD includes 95.0%"}
+   ],
+   "asOf": "統計学の定義・性質（時点に依存しない）",
+   "calc": {"expr": "14+1.96*6/sqrt(36)", "value": 15.96}
+  },
+  {
+   "key": "G5-S06-PRB-12",
+   "subject": "S06",
+   "subtopic": "標本抽出と推定",
+   "format": "knowledge",
+   "difficulty": "standard",
+   "polarity": "negative",
+   "question": "母平均の95%信頼区間について、誤っているものはどれか。",
+   "choices": [
+    "同じ方法で標本抽出と区間の計算を多数回繰り返すと、約95%の区間が母平均を含む。",
+    "ある1つの標本から求めた95%信頼区間に母平均が含まれる確率は95%である。",
+    "ほかの条件が同じなら、標本サイズを大きくすると区間は狭くなる。",
+    "ほかの条件が同じなら、標本の標準偏差が大きいほど区間は広くなる。",
+    "区間が狭いほど、母平均の推定の精度が高いことを示す。"
+   ],
+   "answer": 1,
+   "explanation": {
+    "correct": "母平均は未知だが確定した値なので、1つの標本から求めた区間はそれを含むか含まないかのどちらかである。95%という信頼係数は区間を求める方法に結びついたもので、繰り返したときに約95%の区間が母平均を含むという意味である。",
+    "choiceNotes": [
+     "正しい。これが95%信頼区間の意味である。",
+     null,
+     "正しい。区間の幅は√nの項によって、nが大きいほど狭くなる。",
+     "正しい。標本の標準偏差が大きいほど信頼区間は広くなる。",
+     "正しい。区間が狭いほど推定は精密である。"
+    ],
+    "point": "95%信頼区間＝「繰り返すと約95%の区間が母平均を含む」。1つの区間に95%の確率で入る、ではない。"
+   },
+   "sources": [
+    {"ref": "stats:naruhodo-kentei", "title": "なるほど統計学園「統計的推定と統計的仮説検定」", "url": "https://www.stat.go.jp/naruhodo/11_tokusei/kentei.html", "locator": "区間推定", "quote": "母平均は知られていないだけで確定した値なので、得られた標本のもとで母平均がその区間内にある確率が95%という意味ではないことに注意してください。"},
+    {"ref": "stats:nist-confidence-limits-mean", "title": "NIST/SEMATECH e-Handbook of Statistical Methods, 1.3.5.2. Confidence Limits for the Mean", "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda352.htm", "locator": "Definition: Confidence Interval", "quote": "As N increases, the interval gets narrower from the"},
+    {"ref": "stats:nist-confidence-limits-mean", "title": "NIST/SEMATECH e-Handbook of Statistical Methods, 1.3.5.2. Confidence Limits for the Mean", "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda352.htm", "locator": "Confidence limits for the mean", "quote": "The narrower the interval, the more precise is our estimate."}
+   ],
+   "asOf": "統計学の定義・性質（時点に依存しない）"
+  },
+  {
+   "key": "G5-S06-PRB-13",
+   "subject": "S06",
+   "subtopic": "標本抽出と推定",
+   "format": "knowledge",
+   "difficulty": "advanced",
+   "polarity": "positive",
+   "question": "比率を調べる標本調査で、目標とする標本誤差から標本規模（調査人数）を見積もるときの考え方として、正しいものはどれか。",
+   "choices": [
+    "回答の比率が事前に分からないときは、ばらつきが最大となる0.5として見積もる。",
+    "回収率が50%と見込まれるときは、計算した標本規模を半分にして抽出する。",
+    "標本誤差を小さくしたいときは、標本規模を小さくする。",
+    "比率の標本誤差の計算式には、母集団の規模（人数）は含まれない。",
+    "標本誤差は全数調査でも標本調査と同じ大きさで生じるため、調査方法の選択には影響しない。"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "比率の標本誤差は比率Pによって変わり、P＝0.5のときにばらつきが最大となる。事前に比率が分からないときは0.5として見積もるのがよく行われる方法である。",
+    "choiceNotes": [
+     null,
+     "回収率が100%からほど遠いと予想されるときは、計算されたnに回収率の逆数を掛けて多めに抽出する。50%なら2倍にする。",
+     "標本誤差を小さくしたいときは、標本規模を大きくする。",
+     "比率の標本誤差の計算式には、母集団の規模（人数）、標本の規模、比率、誤差の幅を表す係数が含まれる。",
+     "標本誤差は標本抽出に伴って生じる誤差である。全数調査は母集団のすべてを調べるので標本誤差は生じない。"
+    ],
+    "point": "比率が不明→P＝0.5で見積もる。回収率の見込みで割り戻して増やす。誤差を小さく→標本を大きく。"
+   },
+   "sources": [
+    {"ref": "stats:datastart-hyohon-gosa", "title": "Data StaRt EBPM活用塾 ゼミナール編（２）2-1-3 標本誤差の計算", "url": "https://www.stat.go.jp/dstart/point/seminar/02/2-1-3.html", "locator": "標本誤差の計算（比率の場合）", "quote": "どのような値になるか事前にわからないときは、ばらつきが最大となる0.5として見積もるのがよくなされるやり方です。"},
+    {"ref": "stats:datastart-hyohon-gosa", "title": "Data StaRt EBPM活用塾 ゼミナール編（２）2-1-3 標本誤差の計算", "url": "https://www.stat.go.jp/dstart/point/seminar/02/2-1-3.html", "locator": "標本誤差を考慮し、調査対象人数を見積もる", "quote": "計算されたnに回収率の逆数（例えば50%なら1/0.5=2）を掛けて、さらに多くの人を対象者として抽出しなければならなくなります。"},
+    {"ref": "stats:datastart-hyohon-gosa", "title": "Data StaRt EBPM活用塾 ゼミナール編（２）2-1-3 標本誤差の計算", "url": "https://www.stat.go.jp/dstart/point/seminar/02/2-1-3.html", "locator": "標本誤差とは", "quote": "標本抽出に伴って発生する誤差のことを、標本誤差と呼びます。"}
+   ],
+   "asOf": "統計学の定義・性質（時点に依存しない）"
+  }
+ ],
+ "cases": []
+}

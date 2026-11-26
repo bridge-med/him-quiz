@@ -1,0 +1,186 @@
+{
+ "verdicts": [
+  {
+   "key": "G5-S07-VIT-01",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "stats:jinkou-kakutei-r7-cho 6比率の解説（自然増減率）で算式確認。(1100-2700)/200000*1000=-8.0。誤答5.5(出生率)・13.5(死亡率)・-0.8(百分率)・8.0(符号)を再計算し一致。"
+  },
+  {
+   "key": "G5-S07-VIT-02",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "stats:jinkou-kakutei-r7-cho 利用上の注意1 及び jinkou_81-1b 利用上の注意で速報(外国人等含む・約2か月後)、月報(約5か月後)、月報年計(翌年6月上旬)、年報(日本における日本人・翌年9月、報告書翌々年3月)を確認。正答は速報のみ。"
+  },
+  {
+   "key": "G5-S07-VIT-03",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "stats:jinkou-kakutei-r7-cho 利用上の注意5：死産は母の住所。他4肢は原文どおり正しい。"
+  },
+  {
+   "key": "G5-S07-VIT-04",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "stats:jinkou-kakutei-r7-cho 4調査の方法・5報告の系統、jinkou_81-1b 調査の対象及び客体・調査票送付ア〜エ(保健所長→都道府県知事→厚生労働大臣)・回収率の項で全肢確認。"
+  },
+  {
+   "key": "G5-S07-VIT-05",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "stats:jinkou-kakutei-r7-gaikyou 結果の概要1〜4：出生数67万1270人(1899年以来最少)、TFR1.14(前年1.15)、死亡数1万5845人減(5年ぶり)、自然増減△91万8263人(19年連続)、死産率22.3(前年21.8)上昇。誤りは死産率低下のみ。"
+  },
+  {
+   "key": "G5-S07-VIT-06",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "stats:jinkou-kakutei-r7-cho 6死因別死亡率×100,000。800/250000*1e5=320.0。誤答3.2(千対)・26.7(構成割合)・32.0(1万対)・1200.0(全死因10万対)を再計算し一致。"
+  },
+  {
+   "key": "G5-S07-VIT-07",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "stats:jinkou-kakutei-r7-cho 6周産期死亡率・22週以後死産率。80/4060*1000=19.70。誤答14.8(60/4060)・20.0(80/4000)・22.7(92/4060)・41.0(170/4150)を再計算し一致。平成7年の分母変更は gaikyou 第1表注6で確認。"
+  },
+  {
+   "key": "G5-S07-VIT-08",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "stats:jinkou-kakutei-r7-cho 6死産率(総数・自然・人工)分母=出産数。160/10000*1000=16.0。誤答14.0・16.2(160/9860)・16.5(160/9700)・30.0を再計算し一致。"
+  },
+  {
+   "key": "G5-S07-VIT-09",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "stats:jinkou-kakutei-r7-gaikyou 第1表注1：乳児・新生児・早期新生児死亡率は出生千対、死産率・周産期死亡率は出産千対。c と d のみ。"
+  },
+  {
+   "key": "G5-S07-VIT-10",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "jinkou_81-1b 用語の解説(妊産婦死亡：妊娠中又は妊娠終了後満42日未満・不慮又は偶発を除く／後発妊産婦死亡：満42日以降1年未満)、stats:jinkou-houkokusho-r6 比率の解説(7)で分母=出産数(又は出生数)×100,000を確認。母子保健法6条の妊産婦定義も確認。"
+  },
+  {
+   "key": "G5-S07-VIT-11",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:母子保健法(版施行日2026-10-01) 第6条第1項・第2項、第18条(現在地の市町村へ保護者が届出)を確認。stats:jinkou-kakutei-r7-cho 利用上の注意3：早期新生児死亡は生後1週(7日)未満。"
+  },
+  {
+   "key": "G5-S07-VIT-12",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:instruction 5.7.1 定義(p.199付近)：生後1時間以内に測定、500g階級で記録すべきでない、低<2500g(2499gまで)、極低<1500g、超低<1000g、定義は重複。正答は c のみ。"
+  },
+  {
+   "key": "G5-S07-VIT-13",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "jinkou_81-1b 用語の解説(死産：妊娠満12週以後、自然死産と人工死産、なお書き(1)出生目的(2)生死不明・死亡は自然死産)で全肢確認。10週は死産に非該当。"
+  }
+ ]
+}

@@ -1,0 +1,15 @@
+{"answers":[
+{"key":"G5-S05-PRI-01","answer":2,"confidence":"high","ambiguous":false,"note":"個情法20条2項・27条2項ただし書: 要配慮個人情報はオプトアウト提供不可。他の選択肢は例外規定・定義に反する"},
+{"key":"G5-S05-PRI-02","answer":2,"confidence":"high","ambiguous":false,"note":"要配慮個人情報を含む漏えい等は件数に関わらず報告対象(施行規則7条)、本人通知も必要(法26条)。紛失は漏えいのおそれ"},
+{"key":"G5-S05-PRI-03","answer":2,"confidence":"high","ambiguous":false,"note":"ガイダンス: 民間保険会社からの照会は本人同意なく回答不可。委託・病院機能評価は第三者に非該当、同一法人内は第三者提供に当たらない"},
+{"key":"G5-S05-PRI-04","answer":3,"confidence":"high","ambiguous":false,"note":"ガイダンス: 同意及び留保は患者の申出によりいつでも変更可能"},
+{"key":"G5-S05-PRI-05","answer":0,"confidence":"high","ambiguous":false,"note":"法2条5項。eは匿名加工情報、cは仮名加工情報には26条適用なし、dは仮名加工情報に開示請求等の規定は適用除外"},
+{"key":"G5-S05-PRI-06","answer":2,"confidence":"medium","ambiguous":false,"note":"次世代医療基盤法52条(匿名)と57条(仮名)は別の通知・届出。停止求めには応じる必要、遺族も求められる、書面同意は不要"},
+{"key":"G5-S05-PRI-07","answer":3,"confidence":"high","ambiguous":false,"note":"電子カルテ情報共有サービス概要案内: 健診文書登録・閲覧サービス(本人・全国の医療機関等・医療保険者等)。同意項目のみ閲覧、重篤なアレルギー等のみ、疑い含む"},
+{"key":"G5-S05-PRI-08","answer":3,"confidence":"high","ambiguous":false,"note":"3文書は診療情報提供書・退院時サマリー・健康診断結果報告書。処方箋は電子処方箋で別サービス"},
+{"key":"G5-S05-PRI-09","answer":3,"confidence":"high","ambiguous":false,"note":"mhlw_denshi_shohousen: 調剤済み処方箋の保存サービスは希望制の有償サービス"},
+{"key":"G5-S05-PRI-10","answer":1,"confidence":"high","ambiguous":false,"note":"全体像図: 公費助成の紙の受給者証持参不要、介護基盤・二次利用基盤・救急時閲覧も含まれる"},
+{"key":"G5-S05-PRI-11","answer":1,"confidence":"high","ambiguous":false,"note":"6情報: 傷病名・アレルギー・薬剤禁忌・感染症・検査情報・処方情報。a,c,d"},
+{"key":"G5-S05-PRI-12","answer":0,"confidence":"high","ambiguous":false,"note":"方針(4): 2026年10月1日〜2030年3月31日の3年半。目標は療養病床中心を除く200床以上病院、2030年末、ノンカスタマイズ"},
+{"key":"G5-S05-PRI-13","answer":2,"confidence":"high","ambiguous":false,"note":"mhlw_online_shikaku: 災害時医療情報閲覧機能(災害時モード)で氏名・生年月日等から薬剤情報等を閲覧可。義務化は令和5年4月、診療報酬でも評価あり"}
+]}

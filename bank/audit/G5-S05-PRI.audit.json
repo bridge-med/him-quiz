@@ -1,0 +1,232 @@
+{
+ "verdicts": [
+  {
+   "key": "G5-S05-PRI-01",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:個人情報の保護に関する法律（2026-11-02施行版）第2条第3項（病歴・犯罪被害の事実）、第20条第2項第1号・第2号（取得の例外）、第27条第2項ただし書（要配慮個人情報はオプトアウト不可）を本文で確認。Dは第2条第6項の匿名加工情報側の定義。blind一致。"
+  },
+  {
+   "key": "G5-S05-PRI-02",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "info:ppc-iryoukaigo-guidance Ⅳ８（p.42〜43）：規則第7条第1号（要配慮個人情報・おそれを含む）、第4号（千人超は別類型）、USBメモリー紛失の例で委員会報告＋本人通知、委託時は原則双方が報告義務・委託先は通知で免除を確認。法第26条第1項・第2項も確認。blind一致。"
+  },
+  {
+   "key": "G5-S05-PRI-03",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "info:ppc-iryoukaigo-guidance Ⅳ９(1)（民間保険会社からの照会は同意必要）、Ⅳ９(4)①（検査等の業務委託・日本医療機能評価機構の病院機能評価は第三者に該当しない）、②（院内他科・同一事業者が開設する複数施設間）を確認。blind一致。"
+  },
+  {
+   "key": "G5-S05-PRI-04",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "info:ppc-iryoukaigo-guidance Ⅳ９(3)①（院内掲示＋明示的留保なし＝黙示の同意、(ｴ)家族等への病状説明）、②（範囲は医療サービス提供に必要な範囲、(ｳ)同意及び留保はいつでも変更可能）、紹介状を本人が持参する例を確認。誤りはDのみ。blind一致。"
+  },
+  {
+   "key": "G5-S05-PRI-05",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:個人情報の保護に関する法律 第2条第5項（仮名加工情報の定義）・第6項（匿名加工情報）、第41条第6項（第27条第1項・第2項にかかわらず第三者提供不可）、第41条第9項（第26条・第32〜39条適用除外、第33条を含む）を確認。blind一致。"
+  },
+  {
+   "key": "G5-S05-PRI-06",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:次世代医療基盤法（2026-10-01施行版）第52条第1項・第57条第1項（本人又はその遺族の求めで提供停止・あらかじめ通知）、第36条第1項（認定仮名加工医療情報利用事業者に限り提供）を確認。info:cao-jisedai-kaisei-iryoukikan p.20（匿名加工の通知のみでは仮名加工医療情報の作成に利用不可・一の通知可）を確認。現行法第57条も仮名加工の通知を別に要求しており2024年資料の内容は現行と整合。blind medium→一致。"
+  },
+  {
+   "key": "G5-S05-PRI-07",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "info:mhlw-denkaru-gaiyou-annai-v21：「出来ること」（同意した項目に限る・利用目的外の閲覧不可）、②健診文書登録・閲覧サービス（本人・全国の医療機関等・医療保険者等）、改訂概要(2)（重篤なアレルギー等、アナフィラキシー（疑いを含む））を確認。blind一致。"
+  },
+  {
+   "key": "G5-S05-PRI-08",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "info:mhlw-denkaru-kyouyuu「電子カルテ情報共有サービスとは」（提供書＋退院時サマリー添付、各種健診結果）、概要案内2.1.0版の①診療情報提供書②退院時サマリー③健康診断結果報告書・Q&A（取り扱う情報は提供書・退院時サマリー・健診報告書・臨床情報のみ）で処方箋が含まれないことを確認。blind一致。"
+  },
+  {
+   "key": "G5-S05-PRI-09",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "info:mhlw-denshi-shohousen：○院内処方（令和7年1月23日〜院内処方等情報登録機能）、○調剤済み処方箋の保存サービス（令和6年7月開始、5年間、希望制の有償、紙処方箋の調剤結果も対象）、○医療扶助（令和6年4月〜）を確認。誤りはDのみ。blind一致。"
+  },
+  {
+   "key": "G5-S05-PRI-10",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "info:mhlw-zenkoku-iryojoho-platform：介護情報基盤、ユースケース1（意識不明時の薬剤情報把握・医療介護の共有）、2（紙の受給者証の持参不要）、3（予診票・接種券のデジタル化）、4（二次利用、NDB・介護DB・DPC）を図中で確認。blind一致。"
+  },
+  {
+   "key": "G5-S05-PRI-11",
+   "verdict": "fix",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": false,
+    "sources": true,
+    "asOf": false,
+    "domain": true
+   },
+   "notes": "info:mhlw-zenkoku-iryojoho-platform の図中「*傷病名、アレルギー、薬剤禁忌 感染症、検査情報、処方情報」で鍵a・c・dを確認（blind一致）。ただし現行のinfo:mhlw-denkaru-gaiyou-annai-v21（令和8年7月）では臨床情報が傷病名・感染症・薬剤アレルギー等・その他アレルギー等・検査に整理されている（p.1図・Q&A）。",
+   "detail": "出題資料（令和5年資料の一部改変）の6情報を現行仕様として覚えさせると、概要案内2.1.0版の整理（薬剤禁忌→薬剤アレルギー等、処方情報は共有サービスの臨床情報に含まれない）と食い違う。解説とpointに現行版の整理を併記し、出典とasOfに概要案内2.1.0版を追加。鍵・選択肢は変更なし。",
+   "fixed": {
+    "key": "G5-S05-PRI-11",
+    "subject": "S05",
+    "subtopic": "医療DX",
+    "format": "combination",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "厚生労働省の「全国医療情報プラットフォームの全体像（イメージ）」で、電子カルテ情報として共有する情報（いわゆる6情報）に示されているものの組合せはどれか。\na 傷病名\nb 手術記録\nc 薬剤禁忌\nd 検査情報\ne 看護記録",
+    "choices": [
+     "a、b、c",
+     "a、c、d",
+     "a、d、e",
+     "b、c、e",
+     "b、d、e"
+    ],
+    "answer": 1,
+    "explanation": {
+     "correct": "全体像（イメージ）では、電子カルテ情報として「傷病名、アレルギー、薬剤禁忌、感染症、検査情報、処方情報」の6情報が示されている。a 傷病名、c 薬剤禁忌、d 検査情報が該当する。なお、現行の「電子カルテ情報共有サービス 概要案内 2.1.0版」（令和8年7月）では、本サービスで取り扱う臨床情報は傷病名・感染症・アレルギー等（薬剤アレルギー等・その他アレルギー等）・検査として整理されている。手術記録や看護記録は、いずれの資料でも共有する情報に含まれていない。",
+     "choiceNotes": [
+      "b 手術記録は6情報に含まれていない。",
+      null,
+      "e 看護記録は6情報に含まれていない。",
+      "b 手術記録、e 看護記録は6情報に含まれていない。",
+      "b 手術記録、e 看護記録は6情報に含まれていない。"
+     ],
+     "point": "全体像（イメージ）の6情報＝傷病名・アレルギー・薬剤禁忌・感染症・検査・処方（概要案内2.1.0版では臨床情報を傷病名・感染症・アレルギー等・検査と整理）。3文書（提供書・退院時サマリー・健診結果）と区別する。"
+    },
+    "sources": [
+     {
+      "ref": "info:mhlw-zenkoku-iryojoho-platform",
+      "title": "全国医療情報プラットフォームの全体像（イメージ）",
+      "url": "https://www.mhlw.go.jp/content/12600000/001332014.pdf",
+      "locator": "電子カルテ情報共有サービス（カルテ情報）",
+      "quote": "*傷病名、アレルギー、薬剤禁忌 感染症、検査情報、処方情報"
+     },
+     {
+      "ref": "info:mhlw-denkaru-gaiyou-annai-v21",
+      "title": "電子カルテ情報共有サービス 概要案内 2.1.0版【医療機関、薬局の方々へ】",
+      "url": "https://www.mhlw.go.jp/content/10800000/001457777.pdf",
+      "locator": "Q&A 電子カルテ情報共有サービスについて",
+      "quote": "退院時サマリー、健康診断報告書、臨床情報(傷病名・感染症"
+     }
+    ],
+    "asOf": "全国医療情報プラットフォームの全体像（イメージ）（第4回「医療DX令和ビジョン2030」厚生労働省推進チーム資料の一部改変、2026-11取得）、電子カルテ情報共有サービス 概要案内 2.1.0版（令和8年7月）"
+   }
+  },
+  {
+   "key": "G5-S05-PRI-12",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "info:mhlw-iryojohoka-suishin-houshin（令和8年告示第370号）第1(4)（2026.10.1〜2030.3.31の3年半、2028年度：未導入200床以上病院（療養病床等中心を除く）100％、2030年末：普及率約100％）、第2 1(2)（ノンカスタマイズのパッケージ版）を確認。blind一致。"
+  },
+  {
+   "key": "G5-S05-PRI-13",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "info:mhlw-online-shikaku：災害時・障害時の対応（災害時モード、カードなしでも氏名等で薬剤・診療・特定健診情報閲覧）、原則義務化（保険医療機関・薬局は令和5年4月、訪問看護は保険証廃止時期＝令和6年12月2日から義務化・経過措置あり）、診療報酬での評価を確認。blind一致。"
+  }
+ ]
+}

@@ -1,0 +1,95 @@
+{
+ "answers": [
+  {
+   "key": "G5-S06-PRB-01",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "正規分布は左右対称で平均=中央値=最頻値"
+  },
+  {
+   "key": "G5-S06-PRB-02",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "(1-0.955)/2=2.25%"
+  },
+  {
+   "key": "G5-S06-PRB-03",
+   "answer": 4,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "50+10*(12/8)=65"
+  },
+  {
+   "key": "G5-S06-PRB-04",
+   "answer": 4,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "偏差値40は-1SD"
+  },
+  {
+   "key": "G5-S06-PRB-05",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "二項分布の定義。ポアソンは稀な事象"
+  },
+  {
+   "key": "G5-S06-PRB-06",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "np=10, sqrt(npq)=3"
+  },
+  {
+   "key": "G5-S06-PRB-07",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "系統抽出"
+  },
+  {
+   "key": "G5-S06-PRB-08",
+   "answer": 4,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "層化は全層から抽出"
+  },
+  {
+   "key": "G5-S06-PRB-09",
+   "answer": 3,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "Dは標準偏差の説明で誤り"
+  },
+  {
+   "key": "G5-S06-PRB-10",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "SEはsqrt(n)に反比例、1/2倍"
+  },
+  {
+   "key": "G5-S06-PRB-11",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "SE=6/6=1, 14±1.96"
+  },
+  {
+   "key": "G5-S06-PRB-12",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "Bは信頼区間の典型的誤解"
+  },
+  {
+   "key": "G5-S06-PRB-13",
+   "answer": 0,
+   "confidence": "medium",
+   "ambiguous": false,
+   "note": "p=0.5で最大。Dは有限母集団補正の議論の余地があるがAが明確に正しい"
+  }
+ ]
+}

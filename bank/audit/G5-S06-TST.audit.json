@@ -1,0 +1,237 @@
+{
+ "verdicts": [
+  {
+   "key": "G5-S06-TST-01",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "p値の定義をmext-joho1-ch4 l.1889-1891で確認。0=有意水準、2=β、3=標準誤差(naruhodo-kentei)。ブラインド一致。"
+  },
+  {
+   "key": "G5-S06-TST-02",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "NIST prc13 'beta increases as alpha decreases'、prc131 5%の意味、mext p≦αで棄却。全選択肢の正誤確認。ブラインド一致。"
+  },
+  {
+   "key": "G5-S06-TST-03",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "NIST prc13 l.90-97: βはユーザーが選ばず真の隔たりで決まる・小さい隔たりほどβ大。mext α/βの定義。ブラインド一致。"
+  },
+  {
+   "key": "G5-S06-TST-04",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "mext l.1893 p>αは帰無仮説が正しい証明ではない、minds glossary 検出力不足。1・3・4の誤りも確認。ブラインド一致。"
+  },
+  {
+   "key": "G5-S06-TST-05",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "naruhodo-kentei l.128 両側は2倍、mext 対立仮説の方向で選択、NIST two-sided。4択だが問題なし。ブラインド一致。"
+  },
+  {
+   "key": "G5-S06-TST-06",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "Z=(52-50)/(6/√36)=2.0>1.96で棄却を再計算（calc一致）。誤答の計算0.33/12/0.056も確認。naruhodo-kentei l.124 境界±1.96。"
+  },
+  {
+   "key": "G5-S06-TST-07",
+   "verdict": "fix",
+   "checks": {
+    "answer": true,
+    "distractors": false,
+    "stem": true,
+    "explanations": false,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "正答3はNIST eda353 Purposeで確認。choice 2（対応のあるデータには用いることができない）はNISTでは誤りだが、国内では『2標本t検定』を独立2標本の意味で使い（対応のある場合は『対応のあるt検定』・Excelの『一対の標本』）正と読める余地があるため差し替え。",
+   "detail": "choice 2を『2つの標本の大きさ（例数）が等しくなければ用いることができない。』に変更（NIST eda353: For unpaired samples, the sample sizes ... may or may not be equal）。correct・choiceNotes[2]・2番目の出典を整合させた。",
+   "fixed": {
+    "subject": "S06",
+    "subtopic": "仮説検定",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "2標本t検定について、正しいものはどれか。",
+    "choices": [
+     "2つの質的な項目間（例：喫煙の有無と疾病発症の有無）の関連を調べる検定である。",
+     "量が増えるにつれて発症が増加する傾向がみられるかどうかを調べる検定である。",
+     "2つの標本の大きさ（例数）が等しくなければ用いることができない。",
+     "2つの母集団の平均が等しいかどうかを調べる検定である。"
+    ],
+    "answer": 3,
+    "explanation": {
+     "correct": "2標本t検定は、2つの母平均が等しいかどうかを判断するために用いる検定である。対応のないデータでは、2つの標本の大きさは等しくても等しくなくてもよい。",
+     "choiceNotes": [
+      "2つの質問項目間（有無と有無など）の関連を調べるのはχ2検定である。",
+      "量の増加に伴って発症が増える傾向を調べるのは傾向性の検定である。",
+      "対応のないデータでは、2つの標本の大きさは等しくなくてもよく、例数が異なる2群にも用いることができる。",
+      null
+     ],
+     "point": "t検定＝2群の平均の比較（対応あり／なし）。χ2検定＝質的項目間の関連。"
+    },
+    "sources": [
+     {
+      "ref": "stats:nist-two-sample-t-test",
+      "title": "NIST/SEMATECH e-Handbook of Statistical Methods, 1.3.5.3. Two-Sample t -Test for Equal Means",
+      "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda353.htm",
+      "locator": "Purpose",
+      "quote": "is used to determine if two population means are equal."
+     },
+     {
+      "ref": "stats:nist-two-sample-t-test",
+      "title": "NIST/SEMATECH e-Handbook of Statistical Methods, 1.3.5.3. Two-Sample t -Test for Equal Means",
+      "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda353.htm",
+      "locator": "Purpose",
+      "quote": "For unpaired samples, the sample sizes for the two samples may or may not be equal."
+     },
+     {
+      "ref": "stats:mhlw-tokei-yougo-rr-or",
+      "title": "有効性・安全性に関する統計用語集",
+      "url": "https://www.mhlw.go.jp/www1/houdou/1106/h0602-3_c_15.html",
+      "locator": "χ２検定／傾向性の検定",
+      "quote": "２つの質問項目間（例えば、ＯＣ使用の有無と乳癌発症の有無）の関連について検討する際の検定方法の一つである。 傾向性の検定 例えば、タバコの本数が増えるにつれて、肺癌の発症が増加する傾向がみられるかどうかについて検定する方法である。"
+     }
+    ],
+    "asOf": "統計学の基本概念（時点に依存しない一般的定義）",
+    "key": "G5-S06-TST-07"
+   }
+  },
+  {
+   "key": "G5-S06-TST-08",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "naruhodo-hukusu l.47-63: −1〜1、完全相関、比例的関係、r=0でも無関係とはいい切れない。ブラインド一致。"
+  },
+  {
+   "key": "G5-S06-TST-09",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "naruhodo-sanpu 相関≠因果、naruhodo-hukusu l.63 見せかけの相関、yougo 正の相関の定義。ブラインド一致。"
+  },
+  {
+   "key": "G5-S06-TST-10",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "(−0.8)^2=0.64（calc一致）。単回帰でR²=r²、naruhodo-hukusu 0〜1。誤答の由来も正しい。"
+  },
+  {
+   "key": "G5-S06-TST-11",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "12×5+30=90（calc一致）。naruhodo-hukusu Y=aX+bと推測の記述。誤答の由来確認。"
+  },
+  {
+   "key": "G5-S06-TST-12",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "naruhodo-hukusu 最小二乗法(誤差平方和)、回帰式の左辺・右辺、単回帰の定義、推測。ブラインド一致。"
+  },
+  {
+   "key": "G5-S06-TST-13",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "naruhodo-hukusu l.140-152: 相関係数の定義、目的の違い、0.7→0.49で『回帰式の当てはまり具合（説明力）は良くない』を確認しcは出典どおり。決定係数0〜1、1に近いほど説明力。ブラインド一致。"
+  }
+ ]
+}
