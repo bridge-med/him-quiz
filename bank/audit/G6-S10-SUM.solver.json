@@ -1,0 +1,14 @@
+{"answers":[
+{"key":"G6-S10-SUM-01","answer":2,"confidence":"high","ambiguous":false,"note":"主傷病=肺炎球菌性肺炎、最も医療資源投入 → J13"},
+{"key":"G6-S10-SUM-02","answer":3,"confidence":"high","ambiguous":false,"note":"糖尿病・認知症は入院時併存、尿路感染は第8病日発症"},
+{"key":"G6-S10-SUM-03","answer":1,"confidence":"high","ambiguous":false,"note":"dpc-coding-text-v7 図表7: 2番目の傷病名は入院時併存症名又は入院後発症疾患名のいずれかに必ず入力する(重ねて入力しないのではない)"},
+{"key":"G6-S10-SUM-04","answer":4,"confidence":"high","ambiguous":false,"note":"肝転移に対する肝部分切除術 → C78.7"},
+{"key":"G6-S10-SUM-05","answer":1,"confidence":"medium","ambiguous":false,"note":"原発巣は治療済で今回は治療対象外、他選択肢は不適。併存症(既往)扱いが最も妥当"},
+{"key":"G6-S10-SUM-06","answer":3,"confidence":"high","ambiguous":false,"note":"術後4日目発症のため入院後発症疾患であり入院時併存症ではない"},
+{"key":"G6-S10-SUM-07","answer":1,"confidence":"high","ambiguous":false,"note":"hcr_2016manual [370][380]: 組織診の検体採取日(5/11)。病理報告日ではない"},
+{"key":"G6-S10-SUM-08","answer":0,"confidence":"high","ambiguous":false,"note":"自施設診断・自施設初回治療開始は20。30は他施設診断"},
+{"key":"G6-S10-SUM-09","answer":2,"confidence":"high","ambiguous":false,"note":"臨床的に領域リンパ節転移、肝病変は判定不能で採用しない → 420"},
+{"key":"G6-S10-SUM-10","answer":3,"confidence":"high","ambiguous":false,"note":"B病院の原発巣組織診(2/24採取)が最も確からしい検査、他施設の細胞診より優先 → 自施設診断日"},
+{"key":"G6-S10-SUM-11","answer":4,"confidence":"high","ambiguous":false,"note":"自施設診断・自施設治療開始 = 20"},
+{"key":"G6-S10-SUM-12","answer":2,"confidence":"high","ambiguous":false,"note":"治療前420、術前化学療法後の手術のため術後病理学的は660"}
+]}

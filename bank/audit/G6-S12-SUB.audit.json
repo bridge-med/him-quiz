@@ -1,0 +1,381 @@
+{
+ "verdicts": [
+  {
+   "key": "G6-S12-SUB-01",
+   "verdict": "fix",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": false,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "E05.0=びまん性甲状腺腫を伴う甲状腺中毒症（バセドウ病）naiyou04確認、全選択肢コード実在。主要病態定義は instruction 4.4 疾病統計。",
+   "detail": "主要病態の定義の引用は4.4.1ではなく4.4（疾病統計）冒頭にあるため locator を修正。",
+   "fixed": {
+    "key": "G6-S12-SUB-01",
+    "subject": "S12",
+    "subtopic": "退院時要約からのコーディング",
+    "format": "summary",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "caseId": "case-g6-s12-sub-01",
+    "question": "次の退院時要約（架空症例）を読み、「主要病態」に付与するコードとして正しいものはどれか。",
+    "choices": [
+     "E05.2",
+     "E05.9",
+     "E05.0",
+     "E89.0",
+     "E05.1"
+    ],
+    "answer": 2,
+    "explanation": {
+     "correct": "主要病態は、今回の入院で治療（甲状腺全摘術）の必要性のもとになったバセドウ病である。術後の血腫や副甲状腺機能低下症は入院中に生じたその他の病態であり、主要病態を置き換えない。バセドウ病は内容例示表で E05.0（びまん性甲状腺腫を伴う甲状腺中毒症）に分類される。",
+     "choiceNotes": [
+      "E05.2 は中毒性多結節性甲状腺腫を伴う甲状腺中毒症で、びまん性甲状腺腫のバセドウ病とは型が異なる。",
+      "E05.9 は甲状腺中毒症，詳細不明である。本症例はバセドウ病と病型が明示されているので詳細不明コードは用いない。",
+      null,
+      "E89.0 は治療後（術後・照射後）甲状腺機能低下症で、本症例で手術の対象となった病態ではない。",
+      "E05.1 は中毒性単発性甲状腺結節を伴う甲状腺中毒症で、結節性の病型である。"
+     ],
+     "point": "バセドウ病（グレーブス病）＝E05.0。単発結節性＝E05.1、多結節性＝E05.2。主要病態は治療の必要性のもとになった病態。"
+    },
+    "sources": [
+     {
+      "ref": "icd:naiyou04",
+      "title": "ICD-10（2013年版）準拠 内容例示表 第4章 内分泌，栄養及び代謝疾患（E00-E90）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou04.pdf",
+      "locator": "E05.0",
+      "quote": "Ｅ05．0   びまん性甲状腺腫を伴う甲状腺中毒症 ※ バセドウ＜Basedow＞病"
+     },
+     {
+      "ref": "icd:instruction",
+      "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+      "locator": "4.4 疾病統計（主要病態の定義）",
+      "quote": "主要病態とは、主として、患者の治療又は検査に対する必要性にもとづく、保健ケアのエピソードの最後に診断された病態であると定義される。"
+     }
+    ],
+    "asOf": "ICD-10（2013年版）準拠"
+   }
+  },
+  {
+   "key": "G6-S12-SUB-02",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "E20 除外に処置後副甲状腺機能低下症（E89.2）、E89.2 実在（naiyou04）。instruction 4.4.2 処置後病態の記述確認。T81 は他に分類される明示された合併症を除外。"
+  },
+  {
+   "key": "G6-S12-SUB-03",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "T81.0 包含「処置の結果による各部位の出血」・除外 O90.2、T80－T88 冒頭の追加外因コード注（naiyou19）、instruction 4.4.2 例23（T81.0）確認。"
+  },
+  {
+   "key": "G6-S12-SUB-04",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "instruction 4.4.4 第ⅩⅨ章：表在損傷及び／又は開放創のみを伴う内部損傷は内部損傷を主要病態。S39.7=同じ部位の異なる型の多発性損傷。S36.1 実在（日本版5桁細分あり、選択肢は4桁で統一のため可）。"
+  },
+  {
+   "key": "G6-S12-SUB-05",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "naiyou20 V10－V18 共通4桁 .4 路上交通事故運転者、.0 路上外、.5 同乗者。V13 見出し確認。instruction 4.4.2 外因は任意的追加コード。"
+  },
+  {
+   "key": "G6-S12-SUB-06",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "R57 除外「外傷性（T79.4）」naiyou18、T79.4 包含「損傷に続発するショック」naiyou19、instruction 4.4.4 第ⅩⅨ章例外・第ⅩⅩ章の注確認。4択だが規則上可。"
+  },
+  {
+   "key": "G6-S12-SUB-07",
+   "verdict": "fix",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": false,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "Blind は O82.0 を選択。instruction 4.4.4 O80－O84：主要病態への使用は唯一の情報が分娩の記述又は方法の場合に限定（例23 試験分娩不成功→O66.4、O82.9 追加）。分娩理由（子宮瘢痕）が明記→O34.2 が正。naiyou15 O34.2 包含・除外確認。",
+   "detail": "key は正しい。ただし O82.0 を任意的追加コードとして使えるのは「分娩の方法又は型が個別のデータ項目又は処置の分類で示されていない場合に限る」（instruction 同所）ので、correct と choiceNotes[0] の無条件の記述を条件付きに修正。",
+   "fixed": {
+    "key": "G6-S12-SUB-07",
+    "subject": "S12",
+    "subtopic": "退院時要約からのコーディング",
+    "format": "summary",
+    "difficulty": "advanced",
+    "polarity": "positive",
+    "caseId": "case-g6-s12-sub-03",
+    "question": "次の退院時要約（架空症例）を読み、「主要病態」に付与するコードとして正しいものはどれか。",
+    "choices": [
+     "O82.0",
+     "O75.7",
+     "O34.2",
+     "O80.0",
+     "Z37.0"
+    ],
+    "answer": 2,
+    "explanation": {
+     "correct": "O80－O84（分娩）を主要病態に用いるのは、記載されている唯一の情報が分娩の記述又は分娩方法である場合に限られる。本症例は既往帝王切開による子宮瘢痕のために選択的帝王切開を行っており、その理由である O34.2（既往手術による子宮瘢痕による母体ケア）を主要病態とする。O82.0 は、分娩の方法が個別のデータ項目又は処置の分類で示されていない場合に限り、分娩方法を示す任意的追加コードとして使用できる。",
+     "choiceNotes": [
+      "O82.0 は選択的帝王切開による分娩（反復帝王切開 NOS を含む）だが、分娩の理由（子宮瘢痕）が記載されているため主要病態には用いない。",
+      "O75.7 は既往帝王切開後の経腟分娩で、本症例は帝王切開で分娩しており、O34.2 の除外にも挙げられている。",
+      null,
+      "O80.0 は自然頭位分娩で、本症例の分娩方法（帝王切開）と異なる。",
+      "Z37.0 は単胎出生で、母体の記録に分娩の結果を示す追加コードであり、主要病態には用いない。"
+     ],
+     "point": "分娩の理由（合併症・母体ケア）が書かれていれば主要病態はその理由。O80－O84 は「分娩の記述のみ」の場合に限る。"
+    },
+    "sources": [
+     {
+      "ref": "icd:instruction",
+      "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+      "locator": "4.4.4 第ⅩⅤ章 O80－O84",
+      "quote": "「主要病態」を記述するためのこれらのコードの使用は、記載されている唯一の情報が分娩の記述又は分娩方法である場合に限定されるべきである。"
+     },
+     {
+      "ref": "icd:naiyou15",
+      "title": "ICD-10（2013年版）準拠 内容例示表 第15章 妊娠，分娩及び産じょく＜褥＞（O00-O99）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou15.pdf",
+      "locator": "O34.2",
+      "quote": "Ｏ34．2   既往手術による子宮瘢痕による母体ケア 既往帝王切開による瘢痕のための母体ケア 除外： 既往帝王切開後の経腟分娩（Ｏ75．7）"
+     },
+     {
+      "ref": "icd:naiyou21",
+      "title": "ICD-10（2013年版）準拠 内容例示表 第21章 健康状態に影響を及ぼす要因及び保健サービスの利用（Z00-Z99）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou21.pdf",
+      "locator": "Z37 注",
+      "quote": "注：本項目は母の診療録に記載された分娩の結果を分類するための追加コードとして使 用するものである。"
+     }
+    ],
+    "asOf": "ICD-10（2013年版）準拠"
+   }
+  },
+  {
+   "key": "G6-S12-SUB-08",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "instruction 4.4.4 O98－O99：第ⅩⅤ章以外より優先し、他章コードは任意的追加。O99.0=D50－D64、O99.1=D65－D89（naiyou15）。第ⅩⅤ章冒頭除外に貧血なし。"
+  },
+  {
+   "key": "G6-S12-SUB-09",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "T80－T88 除外「妊娠，分娩及び産じょく中の外科的処置の合併症」、T81.4 除外「産科的手術創の感染症（O86.0）」、O86.0 包含「帝王切開創」、O90.0=帝王切開創の離開（naiyou15/19）。"
+  },
+  {
+   "key": "G6-S12-SUB-10",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "instruction 4.4.4 第Ⅱ章：原発・転移に関らずケアの中心を主要病態、以前に除去された原発→続発部位、例7（C78.0+Z85.3）、C80 の使用条件。C22 除外 C78.7（naiyou02）。"
+  },
+  {
+   "key": "G6-S12-SUB-11",
+   "verdict": "fix",
+   "checks": {
+    "answer": false,
+    "distractors": false,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "Z85.0=消化器（C15－C26）の悪性新生物の既往歴（naiyou21）。instruction 4.4.4 第Ⅱ章・例7確認。",
+   "detail": "旧選択肢 Z90.4（消化管のその他の部位の後天性欠損）は Z90 包含「身体の一部の手術後欠損」により S状結腸切除後の状態として任意的追加コードに使い得るため、「使用できるもの」の正解が一つに定まらない。Z86.0（D00－D48 の既往歴、悪性 Z85.- を除外）に差し替え、出典に naiyou21 Z85.0・Z86.0 を追加。",
+   "fixed": {
+    "key": "G6-S12-SUB-11",
+    "subject": "S12",
+    "subtopic": "退院時要約からのコーディング",
+    "format": "summary",
+    "difficulty": "standard",
+    "polarity": "positive",
+    "caseId": "case-g6-s12-sub-04",
+    "question": "次の退院時要約（架空症例）を読み、2年前に切除したS状結腸癌について、任意的追加コードとして使用できるものはどれか。",
+    "choices": [
+     "Z80.0",
+     "Z08.0",
+     "Z85.0",
+     "Z86.0",
+     "C18.7"
+    ],
+    "answer": 2,
+    "explanation": {
+     "correct": "原発巣が以前のエピソードで除去されている場合、新生物の既往歴は第ⅩⅪ章の適当なコードを任意的追加コードとして使用できる。消化器（C15－C26）の悪性新生物の既往歴は Z85.0 である（インストラクションマニュアル例7 では乳癌の既往に Z85.3 を用いている）。",
+     "choiceNotes": [
+      "Z80.0 は消化器の悪性新生物の家族歴で、患者本人の既往を表すものではない。",
+      "Z08.0 は悪性新生物の術後の経過観察検査で、経過観察検査そのものが入院目的の場合の主要病態に用いる。本症例は肝転移の治療入院である。",
+      null,
+      "Z86.0 はその他の新生物＜腫瘍＞の既往歴（D00－D48 に分類される病態）で、悪性新生物（Z85.-）を除外している。S状結腸癌（腺癌）は悪性新生物である。",
+      "C18.7 はS状結腸の悪性新生物で、既に切除され存在しない原発巣に対して用いるコードではない。"
+     ],
+     "point": "切除済みの原発巣の既往＝Z85.-（消化器は Z85.0）。D00－D48 の新生物の既往は Z86.0、家族歴は Z80.-、術後経過観察検査は Z08.0。"
+    },
+    "sources": [
+     {
+      "ref": "icd:instruction",
+      "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+      "locator": "4.4.4 第Ⅱ章",
+      "quote": "新生物＜腫瘍＞の既往歴については第ⅩⅪ章の適当なコードを任意的追加コードとして使用することができる。"
+     },
+     {
+      "ref": "icd:naiyou21",
+      "title": "ICD-10（2013年版）準拠 内容例示表 第21章 健康状態に影響を及ぼす要因及び保健サービスの利用（Z00-Z99）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou21.pdf",
+      "locator": "Z85.0",
+      "quote": "Ｚ85．0   消化器の悪性新生物＜腫瘍＞の既往歴 Ｃ15－Ｃ26 に分類される病態"
+     },
+     {
+      "ref": "icd:naiyou21",
+      "title": "ICD-10（2013年版）準拠 内容例示表 第21章 健康状態に影響を及ぼす要因及び保健サービスの利用（Z00-Z99）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou21.pdf",
+      "locator": "Z86.0",
+      "quote": "Ｚ86．0   その他の新生物＜腫瘍＞の既往歴 Ｄ00－Ｄ48 に分類される病態 除外： 悪性新生物＜腫瘍＞（Ｚ85.-）"
+     }
+    ],
+    "asOf": "ICD-10（2013年版）準拠"
+   }
+  },
+  {
+   "key": "G6-S12-SUB-12",
+   "verdict": "fix",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": false,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "D01.0=結腸の上皮内癌、第Ⅱ章注「性状の分類に次いで部位を優先」（naiyou02）。C18.4/D12.3/D37.4/C78.5 実在・定義確認。",
+   "detail": "locator「D01.0」に対し引用が D01 見出しのみで .0=結腸を裏付けていなかったため、D01.0 の行を引用に追加（D01 見出しは別出典として保持）。",
+   "fixed": {
+    "key": "G6-S12-SUB-12",
+    "subject": "S12",
+    "subtopic": "退院時要約からのコーディング",
+    "format": "summary",
+    "difficulty": "standard",
+    "polarity": "positive",
+    "caseId": "case-g6-s12-sub-04",
+    "question": "次の退院時要約（架空症例）を読み、横行結腸の病変を「その他の病態」としてコードする場合、正しいものはどれか。",
+    "choices": [
+     "C18.4",
+     "D12.3",
+     "D37.4",
+     "D01.0",
+     "C78.5"
+    ],
+    "answer": 3,
+    "explanation": {
+     "correct": "第Ⅱ章の新生物は性状（悪性原発・続発、上皮内、良性、性状不詳）で大きく分け、次に部位で分類する。横行結腸の上皮内癌は上皮内新生物（D00－D09）のうち D01（その他及び部位不明の消化器の上皮内癌）の D01.0（結腸）に分類する。",
+     "choiceNotes": [
+      "C18.4 は横行結腸の悪性新生物（浸潤性の原発癌）で、病理診断が上皮内癌である本病変には用いない。",
+      "D12.3 は横行結腸の良性新生物で、癌（上皮内癌）には当たらない。",
+      "D37.4 は結腸の性状不詳又は不明の新生物で、性状（上皮内癌）が確定している本病変には用いない。",
+      null,
+      "C78.5 は大腸及び直腸の続発性悪性新生物で、本病変は転移ではなく上皮内癌である。"
+     ],
+     "point": "新生物は「性状→部位」の順で分類。上皮内癌＝D00－D09（結腸＝D01.0）、良性＝D10－D36、性状不詳＝D37－D48。"
+    },
+    "sources": [
+     {
+      "ref": "icd:naiyou02",
+      "title": "ICD-10（2013年版）準拠 内容例示表 第2章 新生物＜腫瘍＞（C00-D48）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou02.pdf",
+      "locator": "第Ⅱ章 冒頭の注",
+      "quote": "第Ⅱ章における新生物＜腫瘍＞の配置は良性又は悪性等の性状の分類に次いで部位を優 先する。"
+     },
+     {
+      "ref": "icd:naiyou02",
+      "title": "ICD-10（2013年版）準拠 内容例示表 第2章 新生物＜腫瘍＞（C00-D48）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou02.pdf",
+      "locator": "D01.0",
+      "quote": "Ｄ01．0   結腸 除外： 直腸Ｓ状結腸移行部（Ｄ01．1）"
+     },
+     {
+      "ref": "icd:naiyou02",
+      "title": "ICD-10（2013年版）準拠 内容例示表 第2章 新生物＜腫瘍＞（C00-D48）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou02.pdf",
+      "locator": "D01",
+      "quote": "Ｄ01     その他及び部位不明の消化器の上皮内癌"
+     }
+    ],
+    "asOf": "ICD-10（2013年版）準拠"
+   }
+  }
+ ]
+}

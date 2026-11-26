@@ -1,0 +1,88 @@
+{
+ "answers": [
+  {
+   "key": "G6-S12-SUB-01",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "E05.0びまん性甲状腺腫を伴う甲状腺中毒症"
+  },
+  {
+   "key": "G6-S12-SUB-02",
+   "answer": 3,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "E89.2 治療後副甲状腺機能低下症"
+  },
+  {
+   "key": "G6-S12-SUB-03",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "術後血腫はT81.0。S10-S19は誤り"
+  },
+  {
+   "key": "G6-S12-SUB-04",
+   "answer": 2,
+   "confidence": "medium",
+   "ambiguous": false,
+   "note": "肝損傷S36.1。多発外傷の最重症部位"
+  },
+  {
+   "key": "G6-S12-SUB-05",
+   "answer": 3,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "V13.4 自転車運転者・路上交通事故"
+  },
+  {
+   "key": "G6-S12-SUB-06",
+   "answer": 2,
+   "confidence": "medium",
+   "ambiguous": false,
+   "note": "R57は外傷性ショックT79.4を除外。R57.1は誤り"
+  },
+  {
+   "key": "G6-S12-SUB-07",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "O82.0 選択的帝王切開"
+  },
+  {
+   "key": "G6-S12-SUB-08",
+   "answer": 1,
+   "confidence": "medium",
+   "ambiguous": false,
+   "note": "O99.0妊娠に合併する貧血+D50.9追加"
+  },
+  {
+   "key": "G6-S12-SUB-09",
+   "answer": 3,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "O86.0 産科的手術創の感染症"
+  },
+  {
+   "key": "G6-S12-SUB-10",
+   "answer": 3,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "主要病態は転移巣C78.7。C18.7主要は誤り"
+  },
+  {
+   "key": "G6-S12-SUB-11",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "Z85.0 既往歴"
+  },
+  {
+   "key": "G6-S12-SUB-12",
+   "answer": 3,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "上皮内癌D01.0"
+  }
+ ]
+}

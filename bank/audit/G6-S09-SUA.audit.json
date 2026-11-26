@@ -1,0 +1,360 @@
+{
+ "verdicts": [
+  {
+   "key": "G6-S09-SUA-01",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "him:jhim-discharge-summary-guidance-2019 4)デバイス情報※（体内デバイスは既存症、入院までの経過の既往歴に記載すべきでない）、6)<既往歴>（過去完了→既往歴）、5)主訴なし例、2)#順序。Bのみ誤り。solver一致。",
+   "verdict": "pass"
+  },
+  {
+   "key": "G6-S09-SUA-02",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "guidance 2)退院時診断※発生時期: 2008年頃→2008/00/00、2012年3月頃→2012/03/00、不詳→0000/00/00。2016/05/00で一意。solver一致。",
+   "verdict": "pass"
+  },
+  {
+   "key": "G6-S09-SUA-03",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "guidance 3)アレルギー c.（申告から有意味→あり）、本文（あり→発生時期・症状・確認方法、なし/不詳を必ず記載）、PPI流し込み前提。solver一致。",
+   "verdict": "pass"
+  },
+  {
+   "key": "G6-S09-SUA-04",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": false,
+    "domain": true
+   },
+   "notes": "ins:dpc-coding-text-v7 Ⅲ(6)副傷病名の定義、Ⅱ③傷病情報欄（入院の契機）で確認。key正。asOfが無関係の退院サマリーガイダンスになっていたため修正。",
+   "verdict": "fix",
+   "detail": "asOfが問題の根拠と無関係な『退院サマリー作成に関するガイダンス（2019）』になっていた。実際の根拠文書の時点に差し替え（他は変更なし）。",
+   "fixed": {
+    "subject": "S09",
+    "subtopic": "退院時要約からの情報抽出",
+    "format": "summary",
+    "difficulty": "standard",
+    "polarity": "positive",
+    "question": "次の退院時要約（架空症例）を読み，DPC/PDPS傷病名コーディングテキストにおける副傷病名の区分に従うと，2型糖尿病と術後創部感染の区分の組合せとして正しいものはどれか。",
+    "choices": [
+     "2型糖尿病：入院時併存症　術後創部感染：入院後発症疾患",
+     "2型糖尿病：入院後発症疾患　術後創部感染：入院時併存症",
+     "2型糖尿病：入院時併存症　術後創部感染：入院時併存症",
+     "2型糖尿病：入院の契機となった傷病名　術後創部感染：入院後発症疾患",
+     "2型糖尿病：入院後発症疾患　術後創部感染：入院後発症疾患"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "コーディングテキストは、入院時併存症を「入院時点で、入院の契機となった傷病や医療資源病名とは別に既に存在した傷病」、入院後発症疾患を「入院期間中に発生した傷病」としている。2型糖尿病は入院前から治療中なので入院時併存症、術後創部感染は入院中（術後4日目）に発生したので入院後発症疾患である。",
+     "choiceNotes": [
+      null,
+      "区分が逆である。2型糖尿病は入院前から存在し、創部感染は入院中に発生している。",
+      "術後創部感染は入院時点では存在せず、入院期間中に発生した傷病なので入院時併存症ではない。",
+      "入院の契機となった傷病名は、今回入院し治療する必要があると判断する根拠となった傷病名で、本例では急性胆嚢炎である。",
+      "2型糖尿病は約10年前に診断され入院前から内服加療中であり、入院中に発生した傷病ではない。"
+     ],
+     "point": "入院時点で既にあった別の傷病＝入院時併存症、入院中に新たに起きた傷病（術後合併症など）＝入院後発症疾患。"
+    },
+    "sources": [
+     {
+      "ref": "ins:dpc-coding-text-v7",
+      "title": "DPC/PDPS傷病名コーディングテキスト（第7版）",
+      "url": "https://www.mhlw.go.jp/content/12400000/001684575.pdf",
+      "locator": "Ⅲ（６）副傷病名の選択について",
+      "quote": "源病名とは別に既に存在した傷病であり、「入院後発症疾患（入院後発症傷病名）」は入院"
+     },
+     {
+      "ref": "ins:dpc-coding-text-v7",
+      "title": "DPC/PDPS傷病名コーディングテキスト（第7版）",
+      "url": "https://www.mhlw.go.jp/content/12400000/001684575.pdf",
+      "locator": "Ⅱ 図表６ DPCレセプトの作成に必要な傷病名の一覧",
+      "quote": "今回入院し治療する必要があると判断する根拠となっ"
+     }
+    ],
+    "asOf": "令和8年6月 DPC/PDPS傷病名コーディングテキスト（第7版）",
+    "caseId": "case-g6-s09-sua-02",
+    "key": "G6-S09-SUA-04"
+   }
+  },
+  {
+   "key": "G6-S09-SUA-05",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": false,
+    "domain": true
+   },
+   "notes": "mgmt:byouinhoukoku-yougo 在院患者=毎日24時現在在院。10/28-31=4日、11/1-3=3日。key正。asOfが退院サマリーガイダンスになっていたため病院報告用語の解説に修正。",
+   "verdict": "fix",
+   "detail": "asOfが問題の根拠と無関係な『退院サマリー作成に関するガイダンス（2019）』になっていた。実際の根拠文書の時点に差し替え（他は変更なし）。",
+   "fixed": {
+    "subject": "S09",
+    "subtopic": "退院時要約からの情報抽出",
+    "format": "summary",
+    "difficulty": "advanced",
+    "polarity": "positive",
+    "question": "次の退院時要約（架空症例）を読み，病院報告の「在院患者」の定義に従って在院患者延数を数えるとき，この患者が10月と11月の月間在院患者延数にそれぞれ計上される日数の組合せとして正しいものはどれか。",
+    "choices": [
+     "10月：4日　11月：3日",
+     "10月：4日　11月：4日",
+     "10月：3日　11月：4日",
+     "10月：5日　11月：3日",
+     "10月：3日　11月：3日"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "病院報告の「在院患者」は「毎日24時現在在院している患者」である。本例は10月28日18時30分に入院し11月4日10時に退院しているので、24時現在に在院していたのは10月28日・29日・30日・31日（10月：4日）と11月1日・2日・3日（11月：3日）である。退院した11月4日の24時には在院していないので計上されない（合計7日で、退院日から入院日を差し引いた日数と一致する）。",
+     "choiceNotes": [
+      null,
+      "11月4日は10時に退院しており、同日24時には在院していないため11月は3日である。",
+      "入院日の10月28日は24時現在在院しているので10月に計上され、10月は4日となる。退院日の11月4日は計上されない。",
+      "10月は28日〜31日の4日間である。10月27日以前は入院していない。",
+      "入院日の10月28日を計上し忘れている。入院当日も24時に在院していれば在院患者に含まれる。"
+     ],
+     "point": "在院患者＝毎日24時現在の在院者。入院日は数え、日中に退院した退院日は数えない（延数＝退院日−入院日）。"
+    },
+    "sources": [
+     {
+      "ref": "mgmt:byouinhoukoku-yougo",
+      "title": "用語の解説（医療施設調査・病院報告）",
+      "url": "https://www.mhlw.go.jp/toukei/list/dl/12yougo.pdf",
+      "locator": "在院患者",
+      "quote": "毎日24時現在在院している患者"
+     }
+    ],
+    "asOf": "医療施設調査・病院報告 用語の解説（厚生労働省、2026-11時点掲載版）",
+    "caseId": "case-g6-s09-sua-02",
+    "key": "G6-S09-SUA-05"
+   }
+  },
+  {
+   "key": "G6-S09-SUA-06",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "guidance 6)入院までの経過 <患者プロフィール><現病歴><既往歴><嗜好 Brinkman><入院時身体所見 vital signs>。⑤子宮全摘（以後通院なし）は過去完了→既往歴で、既存症ではない。solver一致。",
+   "verdict": "pass"
+  },
+  {
+   "key": "G6-S09-SUA-07",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": false,
+    "domain": true
+   },
+   "notes": "him:kobeu-shinryoroku-manual-2023 ※※SOAPとは: A=評価（鑑別診断・診断とその結果）、O=診察所見・検査結果、P=治療計画・追加検査計画。エ・オ=A。key正。asOfを神戸大マニュアルに修正。",
+   "verdict": "fix",
+   "detail": "asOfが問題の根拠と無関係な『退院サマリー作成に関するガイダンス（2019）』になっていた。実際の根拠文書の時点に差し替え（他は変更なし）。",
+   "fixed": {
+    "subject": "S09",
+    "subtopic": "退院時要約からの情報抽出",
+    "format": "summary",
+    "difficulty": "advanced",
+    "polarity": "positive",
+    "question": "次の退院時要約（架空症例）を読み，入院3日目の経過記録ア〜キのうち，SOAPの「A（Assessment）」に分類されるものの組合せとして正しいものはどれか。なお，SOAPの区分は神戸大学医学部附属病院「診療録記載マニュアル」の定義による。",
+    "choices": [
+     "ウ と エ",
+     "エ と オ",
+     "オ と カ",
+     "イ と オ",
+     "エ と カ"
+    ],
+    "answer": 1,
+    "explanation": {
+     "correct": "同マニュアルはAを「S」及び「O」の情報についての評価とし、情報分析の経緯（鑑別診断、対象疾患のリストアップを含む）と診断とその結果（傷病名）を含むとしている。エ（肺炎球菌性肺炎と診断）は診断とその結果、オ（心不全の合併は否定的）は鑑別診断の検討であり、いずれもAに分類される。",
+     "choiceNotes": [
+      "ウ（喀痰培養の結果）は検査結果であり、客観的情報（O）である。",
+      null,
+      "カ（抗菌薬の継続と再検査の予定）は、評価をもとにした今後の計画（治療計画・追加検査の計画）でPである。",
+      "イ（体温・SpO2・聴診所見）は診察所見・測定値であり、客観的情報（O）である。",
+      "カは今後の治療・追加検査の計画でありPである。"
+     ],
+     "point": "A＝S・Oの評価：鑑別診断の検討や「〜と診断する」はA。検査結果そのものはO、再検査の予定はP。"
+    },
+    "sources": [
+     {
+      "ref": "him:kobeu-shinryoroku-manual-2023",
+      "title": "診療録記載マニュアル（2023年7月改訂）",
+      "url": "https://www.med.kobe-u.ac.jp/gakumu/gakunai/ccs3/1file/shinryoroku_manual1.pdf",
+      "locator": "※※ＳＯＡＰとは",
+      "quote": "①収集情報の精度の検討、②情報分析の経緯（鑑別診断、対象疾患"
+     },
+     {
+      "ref": "him:kobeu-shinryoroku-manual-2023",
+      "title": "診療録記載マニュアル（2023年7月改訂）",
+      "url": "https://www.med.kobe-u.ac.jp/gakumu/gakunai/ccs3/1file/shinryoroku_manual1.pdf",
+      "locator": "※※ＳＯＡＰとは",
+      "quote": "のリストアップを含む）、③診断とその結果（傷病名）"
+     },
+     {
+      "ref": "him:kobeu-shinryoroku-manual-2023",
+      "title": "診療録記載マニュアル（2023年7月改訂）",
+      "url": "https://www.med.kobe-u.ac.jp/gakumu/gakunai/ccs3/1file/shinryoroku_manual1.pdf",
+      "locator": "※※ＳＯＡＰとは",
+      "quote": "画、追加検査の計画等）"
+     }
+    ],
+    "asOf": "2023年7月改訂 神戸大学医学部附属病院「診療録記載マニュアル」",
+    "caseId": "case-g6-s09-sua-03",
+    "key": "G6-S09-SUA-07"
+   }
+  },
+  {
+   "key": "G6-S09-SUA-08",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": false,
+    "domain": true
+   },
+   "notes": "kobeu manual SOAP: S=主訴・症状経過・既往歴・生活歴・社会歴等の主観的情報。キ=S。key正。asOfを神戸大マニュアルに修正。",
+   "verdict": "fix",
+   "detail": "asOfが問題の根拠と無関係な『退院サマリー作成に関するガイダンス（2019）』になっていた。実際の根拠文書の時点に差し替え（他は変更なし）。",
+   "fixed": {
+    "subject": "S09",
+    "subtopic": "退院時要約からの情報抽出",
+    "format": "summary",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "次の退院時要約（架空症例）を読み，経過記録キ（本人が述べた降圧薬の服用歴）は，SOAPのどれに分類されるか。なお，SOAPの区分は神戸大学医学部附属病院「診療録記載マニュアル」の定義による。",
+    "choices": [
+     "S（Subjective Data）",
+     "O（Objective Data）",
+     "A（Assessment）",
+     "P（Plan）",
+     "SOAPのいずれにも分類されない"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "同マニュアルはSを「患者の主訴、受診目的、症状経過、既往歴、生活歴、社会歴等の主観的情報」としている。キは患者本人が述べた既往歴・服薬歴であり、Sに分類される。",
+     "choiceNotes": [
+      null,
+      "Oは医師の診察所見や検査結果等の客観的情報である。キは診察や検査で得た情報ではなく本人の申告である。",
+      "AはS・Oの情報についての評価（鑑別診断、診断とその結果等）であり、本人の申告そのものはAではない。",
+      "Pは評価をもとにした今後の計画（治療計画、追加検査の計画等）であり、キは計画ではない。",
+      "既往歴や生活歴も、患者から得た主観的情報としてSに含まれると定義されている。"
+     ],
+     "point": "S＝患者から得た主観的情報（主訴・症状経過だけでなく既往歴・生活歴・社会歴も含む）。"
+    },
+    "sources": [
+     {
+      "ref": "him:kobeu-shinryoroku-manual-2023",
+      "title": "診療録記載マニュアル（2023年7月改訂）",
+      "url": "https://www.med.kobe-u.ac.jp/gakumu/gakunai/ccs3/1file/shinryoroku_manual1.pdf",
+      "locator": "※※ＳＯＡＰとは",
+      "quote": "患者の主訴、受診目的、症状経過、既往歴、生活歴、社会歴等の主"
+     },
+     {
+      "ref": "him:kobeu-shinryoroku-manual-2023",
+      "title": "診療録記載マニュアル（2023年7月改訂）",
+      "url": "https://www.med.kobe-u.ac.jp/gakumu/gakunai/ccs3/1file/shinryoroku_manual1.pdf",
+      "locator": "※※ＳＯＡＰとは",
+      "quote": "医師の診察所見（理学的、局所的）、検査結果等の客観的情報"
+     }
+    ],
+    "asOf": "2023年7月改訂 神戸大学医学部附属病院「診療録記載マニュアル」",
+    "caseId": "case-g6-s09-sua-03",
+    "key": "G6-S09-SUA-08"
+   }
+  },
+  {
+   "key": "G6-S09-SUA-09",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "guidance 10)退院時使用薬剤情報（以後当座利用されるすべての薬剤）、記載心得7・8、構造9)退院時状況=必須。Cのみ適切。solver一致。",
+   "verdict": "pass"
+  },
+  {
+   "key": "G6-S09-SUA-10",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "guidance 1)基本情報: 承認サマリーか否か（必須）、その他（任意）に住所・保険・血液型、何回目の入院か（任意）。solver一致。",
+   "verdict": "pass"
+  },
+  {
+   "key": "G6-S09-SUA-11",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "guidance 2)退院時診断※: ICD codeは必須登録だが表示不要（印刷モードでは非表示が通常）、登録日≠発生時期、不詳0000/00/00、軽快は治癒を含む、コメント全角100字程度。Dのみ誤り。solver一致。",
+   "verdict": "pass"
+  },
+  {
+   "key": "G6-S09-SUA-12",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "guidance 構造: 4)デバイス=推奨（装着時）、8)手術・処置=推奨、8)※別枠なし→入院経過内にtext、記載心得2（必須9・推奨2）。Bのみ正。solver一致。",
+   "verdict": "pass"
+  }
+ ]
+}

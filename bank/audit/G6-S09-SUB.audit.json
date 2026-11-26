@@ -1,0 +1,172 @@
+{
+ "verdicts": [
+  {
+   "key": "G6-S09-SUB-01",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:dpc-chosa-setsumei-2026 A000030②退院先 定義表（1=当院の外来のみ、2=他院外来の指示を含む）＋Q&A「自院、他院の両方の外来診療を受診予定…「2」」（l.2739-2742）で鍵2を確認。症例の退院時方針に近医内科への通院継続が明記され、Q&Aは今回入院疾患に限定していない。ブラインドの1（今回疾患は自院のみ）はQ&Aに反するため鍵が正しい。0/3/7の注記も定義表どおり。"
+  },
+  {
+   "key": "G6-S09-SUB-02",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "him:jhim-gyomu-shishin-2026 5-4(1)の視点「傷病名と処方・処置・手術等との整合性」、5-3(3)「記録項目の有無」を文脈で確認。ガイダンス1)基本情報でversion情報は必須、記載心得9で略語は初出で説明、2)転帰は軽快・不変・悪化・死亡から選択。メトホルミン（糖尿病）に対応する診断名がない点のみが整合性の問題。ブラインドと一致。"
+  },
+  {
+   "key": "G6-S09-SUB-03",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:r08-kihon-shisetsukijun-tsuchi 第4 1(8)（翌日起算14日以内・毎月9割以上・30日以内は望ましい）、2(1)(5)（加算2は1の(1)〜(4)(9)と全患者作成のみ）を原文で確認。9/12起算で9/25は14日目。ブラインドと一致。"
+  },
+  {
+   "key": "G6-S09-SUB-04",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "him:jhim-discharge-summary-guidance-2019 6)入院までの経過の推奨項目「<免疫情報>（予防接種歴など）--小児科入院などで重要となり得る」、<嗜好>・<常用薬情報>（処方医療機関）・<患者プロフィール>の記述、1)基本情報※（婚姻状態・職業）を確認。ブラインドと一致。"
+  },
+  {
+   "key": "G6-S09-SUB-05",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:dpc-chosa-setsumei-2026 ③退院時転帰 区分表（9 その他（検査入院含む））、転帰定義（不変は検査のみ目的には適用しない）、Q&A「加療はなく検査のみ…「9 その他」」を確認。症例は負荷試験のみで治療なし。ブラインドと一致。"
+  },
+  {
+   "key": "G6-S09-SUB-06",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ガイダンス3)アレルギー・不適応反応：登録者と登録日を明らかにし、ありの場合は発生時期・症状・確認方法を記載、c.で「“コメント”欄記載は任意」を確認。誤りはEのみ。ブラインドと一致。"
+  },
+  {
+   "key": "G6-S09-SUB-07",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:dpc-chosa-setsumei-2026 ②退院先（4〜8・aを優先、5=介護老人保健施設、7に老健は含まない＝参考表）、Q&A（老健入所で外来フォローでも5）、⑥復帰の有無（転院患者は連続する入院の前の生活の場）を確認。自宅独居→老健で0。ブラインドと一致。"
+  },
+  {
+   "key": "G6-S09-SUB-08",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ガイダンス11)退院時方針（必須記載項目、既存症全体を俯瞰、自科外来予定のみは不可）、10)退院時使用薬剤情報、記載心得7・8・10（A4判1枚）を確認。症例の方針はリハ科外来のみ。ブラインドと一致。"
+  },
+  {
+   "key": "G6-S09-SUB-09",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ガイダンス4)デバイス情報（体内デバイスは既存症に包摂、既往歴として記載すべきでない）、6)<既往歴>（介入継続中の傷病は診断名列、過去完了は既往歴）、2)#の順序を確認。誤りはEのみ。ブラインドと一致。"
+  },
+  {
+   "key": "G6-S09-SUB-10",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:dpc-chosa-setsumei-2026 ②退院先 8=終了（死亡等）・9=それ以外、③転帰 6/7の区分、5=増悪を確認。医療資源病名=膵頭部癌でその進行による死亡なので8・6。ブラインドと一致。"
+  },
+  {
+   "key": "G6-S09-SUB-11",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ガイダンス1)基本情報（advance directiveはその他（任意）、患者基本情報内に登録されることはほぼなく、患者プロフィールとして入院までの経過欄にfree text）、2)コメントの内容を確認。ブラインドと一致。"
+  },
+  {
+   "key": "G6-S09-SUB-12",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "him:jhim-gyomu-shishin-2026 5-4(1)（説明と同意・チーム医療記録・合同カンファレンス記録の視点）、5-4(2)（曖昧な病名・不整合は記録者へ確認しなければならない）、him:jhim-kiroku-shishin-2024 記録の原則(3)（原記録は残して別に追記・訂正）を確認。誤りはEのみ。ブラインドと一致。"
+  }
+ ]
+}

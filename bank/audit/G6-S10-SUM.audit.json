@@ -1,0 +1,226 @@
+{
+ "verdicts": [
+  {
+   "key": "G6-S10-SUM-01",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "dpc-coding-text-v7 Ⅲ（４）(原疾患明らかなら臓器不全病名を選択しない・肺炎をJ96$とする例は不適切)、Ⅲ（７）①(原因菌が明確)。icd.mjs: J13 肺炎連鎖球菌による肺炎、J96.0/J18.9/E11.9/N39.0実在。blind一致。"
+  },
+  {
+   "key": "G6-S10-SUM-02",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "dpc-coding-text-v7 Ⅲ（６）入院時併存症/入院後発症疾患の定義、Ⅲ（５）認知症は直接の診療行為がなくても管理に影響する例。糖尿病・認知症=入院前から存在、尿路感染症=第8病日発症。blind一致。"
+  },
+  {
+   "key": "G6-S10-SUM-03",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "dpc-coding-text-v7 図表７(様式１: 主傷病名=退院時サマリー主傷病欄、2番目の傷病名は入院時併存症名又は入院後発症疾患名のいずれかに必ず入力)、図表６(入院の契機1つ、併存/発症は診断群分類に影響しなくても重要なら記載・最大4)、Ⅲ（６）(レセプト最大4、様式１最大10)。B のみ誤り。blind一致。"
+  },
+  {
+   "key": "G6-S10-SUM-04",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "dpc-coding-text-v7 Ⅳ８．（４）②(原発・転移に関わらず治療の中心を選択、原発切除後は続発部位)、付録060050③(C787)。icd.mjs C78.7/C18.7/C22.0/T81.4/Z85.0 実在。060050③は本来『原発部位と共に』治療する場面の記載だが、C787を医療資源病名とする結論はⅣ８．（４）②でも支持される。blind一致。"
+  },
+  {
+   "key": "G6-S10-SUM-05",
+   "verdict": "fix",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": false,
+    "sources": false,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "dpc-coding-text-v7 Ⅳ８．（４）②・Ⅳ８．（１）①・Ⅲ（６）で確認。キー(B)は維持。blind一致(confidence medium)。",
+   "detail": "解説と出典が付録060050③に依拠していたが、③は『原発部位と共に肝の転移部位の治療を行った場合』の記載で、原発巣が2年前に切除済みの本症例には直接当たらない。根拠をⅣ８．（４）②(原発切除後は続発部位を医療資源病名／過去の腫瘍の性質を明示する必要がある時は副傷病名として追加（胃癌の肝臓転移等）)に差し替え、選択肢A・Eの解説とpointを修正。",
+   "fixed": {
+    "subject": "S10",
+    "subtopic": "DPCのコーディング",
+    "format": "summary",
+    "difficulty": "advanced",
+    "polarity": "positive",
+    "caseId": "case-g6-s10-sum-02",
+    "question": "次の退院時要約（架空症例）を読み、この入院におけるS状結腸癌の取扱いとして、正しいものはどれか。",
+    "choices": [
+     "肝転移の原発巣であるため、医療資源病名として選択する。",
+     "医療資源病名とはせず、入院時併存症名として記載する。",
+     "今回の入院中に転移が確定したため、入院後発症疾患名として記載する。",
+     "「S状結腸癌術後」という傷病名で医療資源病名として選択する。",
+     "過去の入院で治療を終えた疾病であるため、副傷病名を含め一切記載しない。"
+    ],
+    "answer": 1,
+    "explanation": {
+     "correct": "原発部位の腫瘍が手術による切除後等で長期に存在しない場合は、現在の治療の中心となる続発部位の腫瘍（本症例では肝転移）を医療資源病名とする（コーディングテキストⅣ８．（４）②）。そのうえで、過去の腫瘍の性質を明示する必要があるときは、医療資源病名とせずに副傷病名として追加する（例として「胃癌の肝臓転移等」が示されている）。S状結腸癌は入院時点で既に診断されていた傷病なので、副傷病名のうち入院時併存症名として記載する。",
+     "choiceNotes": [
+      "原発部位の腫瘍が切除後で長期に存在しない場合は、現在の治療の中心である続発部位の腫瘍を医療資源病名とする。今回の治療対象は肝転移であり、S状結腸癌を医療資源病名とするのは誤り。",
+      null,
+      "S状結腸癌は入院前から診断されており、入院時点で既に存在した傷病である。入院期間中に発生した傷病ではないので入院後発症疾患にはならない。",
+      "いわゆるレセプト病名として使われる「○○術後」等の傷病名は選択しない。",
+      "今回の入院は肝転移（S状結腸癌の転移）の治療であり、過去の腫瘍の性質を明示する必要があるときは副傷病名として追加するとされている。過去に治療した疾病であることを理由に一切記載しないのは誤り。"
+     ],
+     "point": "原発巣切除後の転移巣治療入院では、転移部位を医療資源病名とし、原発部位の癌は副傷病名（入院時併存症名）として追加する。「○○術後」は選択しない。"
+    },
+    "sources": [
+     {
+      "ref": "ins:dpc-coding-text-v7",
+      "title": "DPC／PDPS 傷病名コーディングテキスト 改定版（第７版）",
+      "url": "https://www.mhlw.go.jp/content/12400000/001684575.pdf",
+      "locator": "Ⅳ ８．（４）②「C00－D48 新生物＜腫瘍＞」",
+      "quote": "原発部位の腫瘍が手術による切除後等で長期に存在しない場合は、現在の治療において治療や検査の中心となる続発部位の腫瘍"
+     },
+     {
+      "ref": "ins:dpc-coding-text-v7",
+      "title": "DPC／PDPS 傷病名コーディングテキスト 改定版（第７版）",
+      "url": "https://www.mhlw.go.jp/content/12400000/001684575.pdf",
+      "locator": "Ⅳ ８．（４）②「C00－D48 新生物＜腫瘍＞」",
+      "quote": "遺残病態として過去の腫瘍の性質や既往等を明示する必要がある時は医療資源病名とせずに副傷病名として追加（胃癌の肝臓転移等）すること。"
+     },
+     {
+      "ref": "ins:dpc-coding-text-v7",
+      "title": "DPC／PDPS 傷病名コーディングテキスト 改定版（第７版）",
+      "url": "https://www.mhlw.go.jp/content/12400000/001684575.pdf",
+      "locator": "Ⅳ ８．（１）今回の入院に関連しない傷病名について",
+      "quote": "①いわゆるレセプト病名として使用される「○○術後」等の傷病名は選択しない。"
+     }
+    ],
+    "asOf": "DPC/PDPS傷病名コーディングテキスト第7版（令和8年6月）・ICD-10（2013年版）準拠",
+    "key": "G6-S10-SUM-05"
+   }
+  },
+  {
+   "key": "G6-S10-SUM-06",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "dpc-coding-text-v7 Ⅳ６．(T80-T88を医療資源病名とする条件、術後/処置後と明らかにわかる記載)、Ⅲ（６）定義。D(入院時併存症)のみ誤り。blind一致。"
+  },
+  {
+   "key": "G6-S10-SUM-07",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "hcr_2016manual ［380］［370］: 治療方針決定前の陽性検査のうち最も番号の小さい検査の検体採取日、病理報告日ではない。5/11生検(重み1)、自施設初診後→自施設診断日。blind一致。"
+  },
+  {
+   "key": "G6-S10-SUM-08",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "hcr_2016manual ［420］対応表(診断施設1×治療施設2=20)、［450］〈例〉慢性疾患受診中の発見=30、［460］3 他疾患経過観察中の偶然発見、［400］、［330］1原発巣の組織診。A(30)のみ誤り。blind一致。"
+  },
+  {
+   "key": "G6-S10-SUM-09",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "hcr_2016manual ［580］コード定義(420)と摘要(判定できない場合はより低い区分)。肝S6は治療前判定不能→440としない。blind一致。"
+  },
+  {
+   "key": "G6-S10-SUM-10",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "hcr_2016manual ［380］(診断施設1なら自施設診断日)、［370］(自施設受診後の検査日)、［400］重み付け: A病院細胞診(3)<B病院組織診(1, 2/24採取)。blind一致。"
+  },
+  {
+   "key": "G6-S10-SUM-11",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "hcr_2016manual ［400］(最も確からしい検査が自施設受診後→自施設診断)、［410］2初回治療開始、［420］コード定義・対応表→20。各distractorの定義も［420］どおり。blind一致。"
+  },
+  {
+   "key": "G6-S10-SUM-12",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "hcr_2016manual ［580］(同側肺門=領域リンパ節転移→420)、［680］コード660『手術なし または術前治療後』と摘要(術前の切除的でない治療で標本が影響→660)。blind一致。"
+  }
+ ]
+}

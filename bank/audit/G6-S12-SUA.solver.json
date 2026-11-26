@@ -1,0 +1,14 @@
+{"answers":[
+{"key":"G6-S12-SUA-01","answer":2,"confidence":"high","ambiguous":false,"note":"根拠: I22 28日以内の再梗塞。16日前の下壁梗塞後、今回は前壁→I22.0"},
+{"key":"G6-S12-SUA-02","answer":3,"confidence":"high","ambiguous":false,"note":"根拠: I23.6 急性心筋梗塞の続発合併症としての心室血栓症"},
+{"key":"G6-S12-SUA-03","answer":4,"confidence":"high","ambiguous":false,"note":"根拠: 虚血性心疾患(I21)は高血圧性心疾患I11に分類しない。他は妥当"},
+{"key":"G6-S12-SUA-04","answer":2,"confidence":"medium","ambiguous":false,"note":"根拠: 症状R06.0は再選択、COPD急性増悪+急性下気道感染はJ44.0。J96.0との競合はやや残る"},
+{"key":"G6-S12-SUA-05","answer":1,"confidence":"high","ambiguous":false,"note":"根拠: J44.0の追加コードで B96.3 により病原体を示す"},
+{"key":"G6-S12-SUA-06","answer":0,"confidence":"high","ambiguous":false,"note":"根拠: J96.0 急性呼吸不全"},
+{"key":"G6-S12-SUA-07","answer":4,"confidence":"high","ambiguous":false,"note":"根拠: 指示マニュアル 細分類.7 は多発合併症が主要病態のとき。E11.7"},
+{"key":"G6-S12-SUA-08","answer":1,"confidence":"high","ambiguous":false,"note":"根拠: 糖尿病網膜症は E11.3† と H36.0*（H28.0は糖尿病性白内障）"},
+{"key":"G6-S12-SUA-09","answer":2,"confidence":"high","ambiguous":false,"note":"根拠: E89.0 治療後甲状腺機能低下症（手術後）"},
+{"key":"G6-S12-SUA-10","answer":1,"confidence":"high","ambiguous":false,"note":"根拠: 高血圧性腎疾患+腎不全 I12.0（N18.5は追加）"},
+{"key":"G6-S12-SUA-11","answer":3,"confidence":"high","ambiguous":false,"note":"根拠: D63.8* 他に分類される慢性疾患における貧血（N18.-†）"},
+{"key":"G6-S12-SUA-12","answer":3,"confidence":"high","ambiguous":false,"note":"根拠: 透析を導入していないためZ99.2は付与しない"}
+]}

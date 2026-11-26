@@ -1,0 +1,6 @@
+{"verdicts":[
+{"key":"G6-S11-SUM-03","verdict":"pass","blindAnswer":4,"checks":{"answer":true,"distractors":true,"stem":true,"explanations":true,"sources":true,"asOf":true,"domain":true},
+"notes":"Blind=key(4). icd:instruction 4.4 疾病統計 前文（主要病態の定義、その他の病態の定義、以前のエピソードの病態は記載してはいけない）→A,B,C正しい。4.4.2 一般的事項：不十分な主要病態は発生源に戻し明確に（D正しい）、たとえ単一原因分析であってもその他の病態の記録を推奨（E誤り）。修正点（第2出典locatorを4.4 疾病統計に）は正しい。説明中のMB4言及も4.4.3 MB4（特異性：心臓弁膜症→大動脈弁狭窄症）と整合。validate 0 errors。"},
+{"key":"G6-S11-SUM-06","verdict":"pass","blindAnswer":3,"checks":{"answer":true,"distractors":true,"stem":true,"explanations":true,"sources":true,"asOf":true,"domain":true},
+"notes":"Blind=key(3). icd:instruction 4.4.3：MB1はより重要な病態が「その他の病態」欄に記載された場合（本例はその他の病態が空欄→非該当、D誤り）。MB2は一緒にコードできない複数病態が主要病態欄（処置・専門科目から右鼠径ヘルニア選択、A正しい）。MB3（症状・徴候）・MB5（「又は」の選択肢）非該当でB,C正しい。前文『保健ケアの実施者から、明確にできる情報を得ることが不可能な場合は、下記のルールの一つが適用され』でE正しい。修正点（第3出典locatorを4.4.3前文に）は正しい。validate 0 errors。"}
+]}

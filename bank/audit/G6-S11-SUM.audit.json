@@ -1,0 +1,280 @@
+{
+ "verdicts": [
+  {
+   "key": "G6-S11-SUM-01",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:instruction 4.4.3 MB1-MB5 本文確認。主要病態「心臓弁膜症」は一般的用語、その他の病態に部位・性質を明確にする「大動脈弁狭窄症（非リウマチ性）」→MB4。MB1/2/3/5の不適用理由も本文と一致。blind一致。"
+  },
+  {
+   "key": "G6-S11-SUM-02",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "naiyou09 I35除外（I06.-リウマチ性明示、I08.0原因不明で僧帽弁疾患記載、Q23先天性）確認。I35.0/I35.2/I06.0/I08.0/I38の名称はicd.mjsで確認。非リウマチ性・加齢性・AR/僧帽弁異常なし→I35.0一意。blind一致。"
+  },
+  {
+   "key": "G6-S11-SUM-03",
+   "verdict": "fix",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": false,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:instruction 4.4（主要病態・その他の病態の定義、以前のエピソードの病態は記載しない）と4.4.2一般的事項（発生源に戻す、単一原因分析でもその他の病態を記録推奨）を確認。キー正しい。第2出典のlocator「4 疾病の単一病態分析…」は実際には4.4 疾病統計の本文なので修正。",
+   "detail": "第2出典のlocatorが「4 疾病の単一病態分析…」となっていたが、引用箇所は4.4 疾病統計の前文（4.4.1の前）。locatorのみ修正。",
+   "fixed": {
+    "key": "G6-S11-SUM-03",
+    "subject": "S11",
+    "subtopic": "疾病統計と主要病態の選択",
+    "format": "summary",
+    "difficulty": "standard",
+    "polarity": "negative",
+    "question": "次の退院時要約（架空症例）を読み、この症例の病態の記録について、ICD-10（2013年版）第2巻の疾病データの単一病態分析のガイドラインに照らして誤っているものはどれか。",
+    "choices": [
+     "主要病態は、主として治療又は検査の必要性にもとづき、保健ケアのエピソードの最後に診断された病態として記録する。",
+     "2型糖尿病は、入院中に並存して患者管理に影響を与えたので、その他の病態として記録する。",
+     "15年前の虫垂炎は、今回のエピソードに関連しない以前のエピソードの病態なので、その他の病態として記載しない。",
+     "明らかに不十分な主要病態を含む記録は、可能であれば発生源（主治医）に戻して明確にするべきである。",
+     "単一病態分析では主要病態だけを集計に用いるので、その他の病態は記録しなくてよい。"
+    ],
+    "answer": 4,
+    "explanation": {
+     "correct": "第2巻は、たとえ単一原因分析であっても、エピソードに関連する「その他の病態」を主要病態に加えて記録することを推奨している。その他の病態の情報は、主要病態に対する正しいコードの選択にも役立つ（本例でもその他の病態の記載がMB4の適用を可能にしている）。",
+     "choiceNotes": [
+      "正しい。第2巻は主要病態を、主として患者の治療又は検査に対する必要性にもとづく、エピソードの最後に診断された病態と定義している。",
+      "正しい。その他の病態は、エピソードの間に並存し又は悪化して患者管理に影響を与えた病態と定義される。周術期にインスリンで血糖管理した2型糖尿病はこれに当たる。",
+      "正しい。現在のエピソードに関連しない以前のエピソードに関連する病態は、記載してはいけないとされている。",
+      "正しい。第2巻は、明らかに不十分又は不正確に記録された主要病態を含む記録は、可能ならば発生源に戻し明確にするべきとしている。",
+      null
+     ],
+     "point": "単一病態分析でも「その他の病態」は記録する（主要病態のコード選択の助けになる）。以前のエピソードの病態は書かない。"
+    },
+    "sources": [
+     {
+      "ref": "icd:instruction",
+      "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+      "locator": "4.4.2 一般的事項",
+      "quote": "たとえ単一原因分析であっても、ケアのエピソードに関連する「その他の病態」を、主要病態に加えて記録することが推奨される。"
+     },
+     {
+      "ref": "icd:instruction",
+      "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+      "locator": "4.4 疾病統計（主要病態・その他の病態の定義）",
+      "quote": "その他の病態とは、保健ケアのエピソードの間に並存し、又はその間に悪化して、患者管理に影響を与えた病態と定義される。現在のエピソードに関連しない以前のエピソードに関連する病態は、記載してはいけない。"
+     },
+     {
+      "ref": "icd:instruction",
+      "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+      "locator": "4.4.2 一般的事項",
+      "quote": "可能であるならばいつでも、明らかに不十分であるか不正確に記録された主要病態を含む記録は、発生源に戻し明確にするべきである。"
+     }
+    ],
+    "asOf": "ICD-10（2013年版）準拠",
+    "caseId": "case-g6-s11-sum-01"
+   }
+  },
+  {
+   "key": "G6-S11-SUM-04",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "MB2本文（4.4.3）とnaiyou11 K40.2/K40.3（閉塞性・かん頓性・非還納性・絞扼性を包含）/K40.9（一側性NOS）確認。処置・専門科目から鼠径ヘルニアがケア対象→K40.9。blind一致。"
+  },
+  {
+   "key": "G6-S11-SUM-05",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "MB2「そうでなければ、最初に記載された病態を選択する」確認。詳細記載がない仮定→初筆の心房細動。R69=原因不明及び詳細不明の疾病（icd.mjs）。blind一致（medium）だが根拠明確。"
+  },
+  {
+   "key": "G6-S11-SUM-06",
+   "verdict": "fix",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": false,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "MB1は重要な病態が「その他の病態」欄にある場合（4.4.3本文）。本例はその他の病態が空欄→MB1は誤り。他選択肢はMB2/MB3/MB5本文、4.4.3前文と一致。第3出典のlocatorを4.4.2→4.4.3前文に修正。",
+   "detail": "第3出典の引用『保健ケアの実施者から、明確にできる情報を得ることが不可能な場合は…』は4.4.2一般的事項ではなく4.4.3の前文にある。locatorのみ修正。",
+   "fixed": {
+    "key": "G6-S11-SUM-06",
+    "subject": "S11",
+    "subtopic": "疾病統計と主要病態の選択",
+    "format": "summary",
+    "difficulty": "standard",
+    "polarity": "negative",
+    "question": "次の退院時要約（架空症例）を読み、この症例への主要病態の再選択ルールの適用について、誤っているものはどれか。",
+    "choices": [
+     "一緒にコードできない複数の病態が「主要病態」欄に記載されているので、ルールMB2を適用する。",
+     "「主要病態」欄に症状や徴候が記載されているわけではないので、ルールMB3は適用しない。",
+     "病態が「又は」で結ばれた選択肢として記載されているわけではないので、ルールMB5は適用しない。",
+     "心房細動は長期間続いている病態なので、ルールMB1により右鼠径ヘルニアを再選択する。",
+     "主治医から明確にできる情報を得られなかったので、再選択ルールを用いて主要病態を選択する。"
+    ],
+    "answer": 3,
+    "explanation": {
+     "correct": "ルールMB1は、重要でない病態や長期間続いた病態が「主要病態」として記載され、より重要な病態が「その他の病態」として記載されている場合に後者を再選択するルールである。本例は「その他の病態」が空欄で、右鼠径ヘルニアは「主要病態」欄に並んで記載されているので、MB1ではなくMB2を適用する。",
+     "choiceNotes": [
+      "正しい。MB2は一緒にコードできないいくつかの病態が「主要病態」として記載された場合のルールである。",
+      "正しい。MB3は主要病態に記載された症状・徴候等が、他に記載された診断病態の症状である場合のルールである。",
+      "正しい。MB5は症状が「ある病態又は他の病態による」と記載された場合や、複数の病態が選択肢として記載された場合のルールである。",
+      null,
+      "正しい。第2巻では、保健ケアの実施者から明確にできる情報を得ることが不可能な場合に、再選択ルールの一つが適用され主要病態が選択される。"
+     ],
+     "point": "MB1＝より重要な病態が「その他の病態」欄にある場合。同じ「主要病態」欄に並ぶならMB2。"
+    },
+    "sources": [
+     {
+      "ref": "icd:instruction",
+      "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+      "locator": "4.4.3 ルールMB1",
+      "quote": "「その他の病態」として記載されている場合は、後者を「主要病態」として再選択する。"
+     },
+     {
+      "ref": "icd:instruction",
+      "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+      "locator": "4.4.3 ルールMB2",
+      "quote": "それらの病態のうちの一つが、患者がケアを受けた「主要病態」であると判る場合は、その病態を選択する。そうでなければ、最初に記載された病態を選択する。"
+     },
+     {
+      "ref": "icd:instruction",
+      "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+      "locator": "4.4.3 主要病態が正確に記載されていない場合の再選択ルール（前文）",
+      "quote": "保健ケアの実施者から、明確にできる情報を得ることが不可能な場合は、下記のルールの一つが適用され"
+     }
+    ],
+    "asOf": "ICD-10（2013年版）準拠",
+    "caseId": "case-g6-s11-sum-02"
+   }
+  },
+  {
+   "key": "G6-S11-SUM-07",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:instruction 4.1.5一般原則・ルール1〜3、4.1.6留意事項（ルール1は最初の病態に帰着する因果関係がある場合のみ）、4.1.7 J69.0は嚥下機能に影響を与える疾患の結果と考えるべき、を確認。最下欄の脳梗塞→一般原則。blind一致。"
+  },
+  {
+   "key": "G6-S11-SUM-08",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "一般原則で脳梗塞、修正ルールA〜Dで変更要素なし。4.1.11にI63と本例の他病態との連鎖注なし。naiyou09 I69注（続発・後遺症と記載又は発生後1年以上）確認。E11.9/I63.9/I69.3/J69.0/J96.9名称確認。I63.9一意。"
+  },
+  {
+   "key": "G6-S11-SUM-09",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "4.1.6ルール3は明確な因果関係が認められる場合のみ（l.1827-1830）、4.1.7の糖尿病の結果と考えるべき病態の列挙にI63なし（l.2052-2075）、4.1.9ルールA列挙にJ96.0/J96.9、4.1.8修正ルールは選択後、4.1.6『軽々しく無視するべきではない』確認。キー（E）が唯一の誤り。"
+  },
+  {
+   "key": "G6-S11-SUM-10",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "Ⅰ欄最下欄の高血圧症が上欄のうっ血性心不全を引き起こし得る→一般原則（4.1.5）。修正ルールは選択後（4.1.8）。4択は可。blind一致。"
+  },
+  {
+   "key": "G6-S11-SUM-11",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "4.1.9ルールC本文、4.1.11 I10注「下記の記載を伴うもの：I50.-（心不全）、I11.0にコードする」、ルールAの診断名不明確な病態の列挙、ルールB（付録7.1 死亡を引き起こす可能性の低い病態のリスト）を確認。キーC正しい。"
+  },
+  {
+   "key": "G6-S11-SUM-12",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "4.1.11 I10注→I11.0、『下記の記載を伴うもの』の定義（l.2793）、naiyou09 I11包含・I11.0/I11.9/I13.0名称確認。腎疾患記載なし→I13不可。blind一致。"
+  }
+ ]
+}
