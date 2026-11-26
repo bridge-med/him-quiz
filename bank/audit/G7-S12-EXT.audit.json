@@ -1,0 +1,281 @@
+{
+ "verdicts": [
+  {
+   "key": "G7-S12-EXT-01",
+   "verdict": "fix",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": false,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": false
+   },
+   "notes": "W01.5 exists; スーパーマーケット in 発生場所コード5 (icd:naiyou20). W01 除外 W00. Solver agreed.",
+   "detail": "Stem 「床の段差につまずき」: a 段差 (step/curb) can be read as ステップ → W10 (falls on steps/curb are indexed to W10), so the W10 distractor is only excluded by the added phrase 同一平面上. Changed scenario to slipping on a wet floor (unambiguous W01 スリップ), updated explanation/choiceNotes 3-4, added W01 title source.",
+   "fixed": {
+    "subject": "S12",
+    "subtopic": "外因（第ⅩⅩ章）",
+    "format": "icd",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "ICD-10（2013年版）で、スーパーマーケットの店内で濡れた床に足を滑らせ、同一平面上で転倒して受傷した場合、外因を示す第ⅩⅩ章の3桁分類項目と発生場所を示す4桁目の組み合わせとして正しいものはどれか。",
+    "choices": [
+     "W01（4桁目 .2）",
+     "W01（4桁目 .4）",
+     "W01（4桁目 .5）",
+     "W00（4桁目 .5）",
+     "W10（4桁目 .5）"
+    ],
+    "answer": 2,
+    "explanation": {
+     "correct": "床で滑ったことによる同一平面上での転倒はW01（スリップ，つまづき及びよろめきによる同一平面上での転倒）に分類する。W00－Y34の4桁目は発生場所を示し、スーパーマーケットは発生場所コード「.5 商業及びサービス施設」に含まれるため、W01の4桁目は.5となる。",
+     "choiceNotes": [
+      "4桁目.2は「学校，施設及び公共の地域」（病院・図書館など）。スーパーマーケットは.5「商業及びサービス施設」に含まれる。",
+      "4桁目.4は「街路及びハイウェイ」（道路・歩道など）。店内は該当しない。",
+      null,
+      "W00は「氷及び雪による同一平面上での転倒」。濡れた床で滑った転倒は氷雪によるものではなく、W01（W01は氷又は雪による転倒を除外）。",
+      "W10は「階段及びステップからの転落及びその上での転倒」。本例は同一平面上での転倒である。"
+     ],
+     "point": "外因コードの4桁目＝発生場所。.0家（庭）、.1居住施設、.2学校・施設・公共の地域、.3スポーツ施設、.4街路、.5商業・サービス施設。"
+    },
+    "sources": [
+     {
+      "ref": "icd:kihon2013",
+      "title": "基本分類表（2013年版）準拠",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/xls/kihon2013.xlsx",
+      "locator": "W01.5",
+      "quote": "W01.5\tスリップ，つまづき及びよろめきによる同一平面上での転倒；商業及びサービス施設"
+     },
+     {
+      "ref": "icd:naiyou20",
+      "title": "ICD-10（2013年版）準拠 内容例示表 第20章 傷病及び死亡の外因（V01-Y98）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou20.pdf",
+      "locator": "W01",
+      "quote": "Ｗ01   スリップ， つまづき及びよろめきによる同一平面上での転倒"
+     },
+     {
+      "ref": "icd:naiyou20",
+      "title": "ICD-10（2013年版）準拠 内容例示表 第20章 傷病及び死亡の外因（V01-Y98）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou20.pdf",
+      "locator": "発生場所コード 5 商業及びサービス施設",
+      "quote": "商店街 駅（バス）（鉄道） 小売店 スーパーマーケット 倉庫"
+     }
+    ],
+    "asOf": "ICD-10（2013年版）準拠",
+    "key": "G7-S12-EXT-01"
+   }
+  },
+  {
+   "key": "G7-S12-EXT-02",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "Place codes verified in icd:naiyou20 発生場所コード: 老人ホーム=.1, 病院=.2, スーパー=.5, 公衆用水泳プール=.3, 私邸の庭園=.0, .8に海岸・廃屋・山岳. All codes exist (icd.mjs); solver agreed."
+  },
+  {
+   "key": "G7-S12-EXT-03",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou20 X85－Y09 除外(法的介入Y35.-・戦争行為Y36.-), X60－X84 包含(自殺(未遂)), Y10－Y34 注. Only choice 2 wrong. All codes exist (icd.mjs); solver agreed."
+  },
+  {
+   "key": "G7-S12-EXT-04",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou20 Y40－Y84 包含/除外, X40－X49 除外, Y60－Y69 除外(Y70－Y82, Y83－Y84), Y60 title(意図しない穿孔). Key Y83－Y84 correct. All codes exist (icd.mjs); solver agreed."
+  },
+  {
+   "key": "G7-S12-EXT-05",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:instruction 疾病の外因のコーディング(例13類似): 主要病態=損傷の性質; W00.4/S52.5 exist (icd.mjs); 歩道=.4 (naiyou20 発生場所コード4); W01 excludes 氷雪. All codes exist (icd.mjs); solver agreed."
+  },
+  {
+   "key": "G7-S12-EXT-06",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:instruction 第ⅩⅩ章: 主要病態コードとして使用しない; naiyou20 章序: 単一コード集計ではⅩⅩ章優先, Y85－Y89. Only choice 4 wrong. All codes exist (icd.mjs); solver agreed."
+  },
+  {
+   "key": "G7-S12-EXT-07",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou20 Y85－Y89 注(1年以上・慢性中毒には使用せず現在の中毒にコード), Y85/Y86/Y87.0/Y88.0 titles verified. Solver medium but same answer. All codes exist (icd.mjs); solver agreed."
+  },
+  {
+   "key": "G7-S12-EXT-08",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou20 X40－X49 包含(事故か故意か明示されない自為的中毒), Y10－Y34 注; X41.0 exists, 鎮静・催眠薬 in X41 title; T42.7 is ch.XIX. All codes exist (icd.mjs); solver agreed."
+  },
+  {
+   "key": "G7-S12-EXT-09",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou21 章注(国際比較及び原死因コーディングには使用しない), 序(a), Z00－Z13 注・除外 (R70－R94, Z30－Z36/Z39). All codes exist (icd.mjs); solver agreed."
+  },
+  {
+   "key": "G7-S12-EXT-10",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou21 Z00 除外 Z02.-(applies to Z00.0), Z02.1 除外 Z10.0, Z02.4 運転免許, Z04.8 鑑定人の証言. All codes exist (icd.mjs); solver agreed."
+  },
+  {
+   "key": "G7-S12-EXT-11",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:instruction 4.4.1 Z03.- applies to ruled-out suspicion; naiyou21 Z03 包含; Z03.1 exists. Distractors C34.9/D38.1/Z85.1/Z08.9 verified. All codes exist (icd.mjs); solver agreed."
+  },
+  {
+   "key": "G7-S12-EXT-12",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:instruction 第Ⅱ章新生物 (以前のエピソードで除去→第ⅩⅪ章), 例8 Z08.0; naiyou21 Z09 (非悪性), Z85 除外 Z08, Z51.1. All codes exist (icd.mjs); solver agreed."
+  },
+  {
+   "key": "G7-S12-EXT-13",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou21 Z08.1 除外 Z51.0, Z08.2, Z09.4, Z51.1, Z51.5 緩和ケア verified. Only Z08.1 pairing wrong. All codes exist (icd.mjs); solver agreed."
+  },
+  {
+   "key": "G7-S12-EXT-14",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou21 Z23.2 BCG; Z03.0, Z11.1, Z27.1 DTP, Z28.0 verified via icd.mjs; instruction 病気以外の理由(予防接種). All codes exist (icd.mjs); solver agreed."
+  },
+  {
+   "key": "G7-S12-EXT-15",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou21 Z85.0 (C15－C26), Z86.0 除外 Z85.-, Z87.1 (K00－K93), Z85 除外 Z08.-; instruction 既往歴は任意的追加コード. All codes exist (icd.mjs); solver agreed."
+  },
+  {
+   "key": "G7-S12-EXT-16",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou21 Z95 除外 T82.-, Z95.0 (ペースメーカー; 除外 Z45.0), Z45.0 点検検査, Z95.5 (冠血管形成術後状態), Z86.7 除外 I25.2. All codes exist (icd.mjs); solver agreed."
+  }
+ ]
+}

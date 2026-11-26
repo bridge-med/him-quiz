@@ -1,0 +1,200 @@
+{
+ "verdicts": [
+  {
+   "key": "G7-S02-MGT-01",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:医療法 第16条（管理者の宿直義務・ただし書は省令委任）、law:医療法施行規則 第9条の15の2（管理者があらかじめ所在地の都道府県知事に認められた場合）を確認。2026-10-01施行版。"
+  },
+  {
+   "key": "G7-S02-MGT-02",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:医療法 第14条の2第1項第1〜4号、施行規則 第9条の3（掲示場所）・第9条の4（建物の内部に関する案内・病院に限る）。施行規則の他の掲示規定にも開設者氏名の掲示義務なし。"
+  },
+  {
+   "key": "G7-S02-MGT-03",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:医療法 第15条の3第1項（検体検査）・第2項、law:医療法施行令 第4条の8第1〜7号を確認。医事業務は含まれない。"
+  },
+  {
+   "key": "G7-S02-MGT-04",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:医療法施行規則 第1条の11第1項柱書ただし書（第2号委員会・第5号医療安全管理者は病院・有床診療所・入所施設のある助産所に限る）、第1〜6号を確認。"
+  },
+  {
+   "key": "G7-S02-MGT-05",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:医療法 第46条の7第1〜3項、第46条の5第8項、第46条の8第3号を確認。重要な資産の処分及び譲受けは理事に委任不可。"
+  },
+  {
+   "key": "G7-S02-MGT-06",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "x-audit-G3-S02-ORG:mhlw-keieikanri-h15 p.10-11 参考BSC：革新と学習（起点）→業務プロセス→顧客→財務（結果）を原文で確認。"
+  },
+  {
+   "key": "G7-S02-MGT-07",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "同報告書 p.43-44 原価計算：伝統的手法（直接作業時間等で便宜配分）とABC（因果関係のある活動で間接費配分）を確認。BSC・損益分岐点（x-legacy-L01b:jnet21-sonekibunkiten）の誤肢も定義と矛盾しない。"
+  },
+  {
+   "key": "G7-S02-MGT-08",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "同報告書 p.44 ABM・品質コスト分析：予防コスト割合↑・失敗コスト↓、アクティビティに品質情報付与、治療より予防を確認。"
+  },
+  {
+   "key": "G7-S02-MGT-09",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "x-gen-G3-S02-ORG:jnet21-swot-Q0910 l.357-360：外部環境＝統制不可能（機会・脅威）、内部環境＝統制可能（強み・弱み）、S/W/O/Tに分類されない条件も拾う、を確認。"
+  },
+  {
+   "key": "G7-S02-MGT-10",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "x-gen-G3-S02-ORG:jnet21-swot-manga l.94, l.138-145：4パターン（弱み×機会＝改善）とプラス/マイナス要因の定義を確認。"
+  },
+  {
+   "key": "G7-S02-MGT-11",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "mgmt:jqhyouka-type 表：一般病院1・2・3、リハ、慢性期の説明を確認（3rdG:Ver.3.0）。"
+  },
+  {
+   "key": "G7-S02-MGT-12",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "mgmt:jqhyouka-guidebook 1-8 表（2024年4月現在、一部抜粋）：2002〜2024年の掲載事項を確認。正答のみ掲載、他は非掲載。"
+  },
+  {
+   "key": "G7-S02-MGT-13",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "mgmt:jqhyouka-guidebook 3-2 書面審査：現況調査票①〜④、病院資料例、自己評価調査票（中項目の評点付け）、提出期限（2か月前の1日・1か月前の1日）を確認。"
+  },
+  {
+   "key": "G7-S02-MGT-14",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "mgmt:jqhyouka-guidebook 3-1 表（初回随時、更新は申込1年半前〜半年前・訪問1年前〜前月末日）、有効期間5年間、期中の確認3年目、審査体制区分＝許可病床数で確認。"
+  }
+ ]
+}

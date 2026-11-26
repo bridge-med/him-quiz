@@ -1,0 +1,4 @@
+{"verdicts":[
+{"key":"G7-S10-DPC-01","verdict":"pass","blindAnswer":2,"checks":{"answer":true,"distractors":true,"stem":true,"explanations":true,"sources":true,"asOf":true,"domain":true},"notes":"Blind=key. ins:dpc-chosa-setsumei-2026 p145 様式4: 「医科保険診療以外のある診療情報」(A)、様式1・EFは医科保険診療の実績に限定→自賠責・正常分娩・歯科併用等で特異値→識別のため収集(B, fixed correct文の因果も資料どおり)、1.調査対象「全ての退院症例（自費のみの症例を含む。）」(Cが誤り; p7 様式4(1)対象範囲も同旨)、「退院時点での確定情報で、データを作成する」(D)、レイアウト5項目(E)。quotes verbatim, validate 0 errors."},
+{"key":"G7-S10-DPC-05","verdict":"pass","blindAnswer":4,"checks":{"answer":true,"distractors":true,"stem":true,"explanations":true,"sources":true,"asOf":true,"domain":true},"notes":"Blind=key. ins:dpc-chosa-setsumei-2026 Ⅰ 提出スケジュール等 1.提出期限(1)初回提出ファイル (p11): 4・5月分 配送2026年7月22日/オンライン7月23日12時(A)、6〜9月分 配送2026年10月22日/オンライン10月23日12時まで→「月ごとに翌月末日」は誤り(E)、※一括提出(B)、※施設コード年度途中変更でも変更前コード(C; Q&A「本年度調査開始当初のコード」と整合)、※オンラインはアップロード日時で遅延判定(D)。fixed pointの文言は資料に一致。validate 0 errors."}
+]}

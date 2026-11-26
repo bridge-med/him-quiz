@@ -1,0 +1,267 @@
+{
+ "verdicts": [
+  {
+   "key": "G7-S08-LAW-01",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:刑法 第134条第1項（主体の列挙に薬剤師・助産師、看護師・技師等なし）を確認。保助看法42条の2、診療放射線技師法29条、PT/OT法16条、臨床検査技師等法19条の条番号も確認。全て2026-11 e-Gov版。"
+  },
+  {
+   "key": "G7-S08-LAW-02",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "保助看法42条の2（保健師・看護師・准看護師のみ、なくなった後も同様）、44条の4第2項（親告罪）、刑法134条1項（助産師）を確認。キー3が唯一の誤り。"
+  },
+  {
+   "key": "G7-S08-LAW-03",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "保助看法44条の4第1項（6月/10万）、刑法134条1項（6月/10万）、診療放射線技師法35条1項（50万円以下の罰金のみ）、薬剤師法に秘密条項なし（grep）を確認。キー1のみ職種・根拠法・刑の三者が一致。"
+  },
+  {
+   "key": "G7-S08-LAW-04",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "刑法134条1項（6月/10万、元職者、正当な理由がないのに）、134条2項（宗教・祈祷・祭祀）、135条（親告罪）を確認。"
+  },
+  {
+   "key": "G7-S08-LAW-05",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "感染症法73条1項（1年/100万）、74条1項（6月/50万）、刑法134条1項を確認（版施行日2026-10-01）。"
+  },
+  {
+   "key": "G7-S08-LAW-06",
+   "verdict": "fix",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": false,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "刑法135条、保助看法44条の4第2項、PT/OT法21条2項に告訴要件あり。感染症法・がん登録推進法（28条7項→55条）には「告訴」の語なし（grep）。キーa・b・dは正しい。",
+   "detail": "point の「資格法の守秘義務違反（刑法134条を含む）は親告罪」は刑法を資格法に含める不正確な一般化で、全資格法を確認した根拠もない。確認した条文に限定した記述に修正（キー・選択肢・出典は変更なし）。",
+   "fixed": {
+    "subject": "S08",
+    "subtopic": "守秘義務",
+    "format": "combination",
+    "difficulty": "advanced",
+    "polarity": "positive",
+    "question": "次のa〜eの秘密漏示の罪のうち、告訴がなければ公訴を提起することができない（親告罪とされている）ものの組合せはどれか。\na　刑法第134条第1項の医師による秘密漏示\nb　保健師助産師看護師法第42条の2に違反した看護師による秘密漏示\nc　感染症法第73条第1項の医師による秘密漏示\nd　理学療法士及び作業療法士法第16条に違反した理学療法士による秘密漏示\ne　がん登録等の推進に関する法律第28条第7項に違反した、病院で届出業務に従事する者による秘密漏示",
+    "choices": [
+     "a と b と c",
+     "a と b と d",
+     "a と c と e",
+     "b と d と e",
+     "c と d と e"
+    ],
+    "answer": 1,
+    "explanation": {
+     "correct": "刑法第135条（刑法第134条の罪）、保健師助産師看護師法第44条の4第2項、理学療法士及び作業療法士法第21条第2項は、いずれも「告訴がなければ公訴を提起することができない」と定めており、a・b・dは親告罪である。感染症法第73条・第74条及びがん登録等の推進に関する法律第55条には告訴を要件とする規定がなく、c・eは親告罪ではない。",
+     "choiceNotes": [
+      "cの感染症法第73条第1項の罪には告訴を要件とする規定がなく、また親告罪であるdが含まれていない。",
+      null,
+      "c（感染症法）とe（がん登録推進法第55条）には告訴を要件とする規定がなく、親告罪であるb・dが含まれていない。",
+      "eのがん登録推進法第55条の罪には告訴を要件とする規定がなく、また親告罪であるaが含まれていない。",
+      "c・eは親告罪ではなく、親告罪であるa・bが含まれていない。"
+     ],
+     "point": "刑法134条（135条）・保助看法（44条の4第2項）・理学療法士及び作業療法士法（21条2項）の秘密漏示罪は親告罪。感染症法73条・がん登録推進法55条には告訴の要件がない。"
+    },
+    "sources": [
+     {
+      "ref": "law:刑法",
+      "title": "刑法",
+      "url": "https://laws.e-gov.go.jp/law/140AC0000000045",
+      "locator": "第135条",
+      "quote": "この章の罪は、告訴がなければ公訴を提起することができない。"
+     },
+     {
+      "ref": "law:保健師助産師看護師法",
+      "title": "保健師助産師看護師法",
+      "url": "https://laws.e-gov.go.jp/law/323AC0000000203",
+      "locator": "第44条の4第2項",
+      "quote": "前項の罪は、告訴がなければ公訴を提起することができない。"
+     },
+     {
+      "ref": "law:理学療法士及び作業療法士法",
+      "title": "理学療法士及び作業療法士法",
+      "url": "https://laws.e-gov.go.jp/law/340AC0000000137",
+      "locator": "第21条第2項",
+      "quote": "前項の罪は、告訴がなければ公訴を提起することができない。"
+     }
+    ],
+    "asOf": "2026-11 e-Gov現行法令",
+    "key": "G7-S08-LAW-06"
+   }
+  },
+  {
+   "key": "G7-S08-LAW-07",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "info:mhlw-ebunsho-shiko-tsuchi 第二2(3)（三条件=見読性・真正性・保存性）、GL7.0概説編4.3、平成11年通知別添2（説明・管理・結果責任）を確認。"
+  },
+  {
+   "key": "G7-S08-LAW-08",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "施行通知第二2(3)②(ア)(イ)、①(ア)(イ)、③の文言を照合。GL7.0システム運用編14.3の「混同とは」を確認（locator「14」は節内で可）。"
+  },
+  {
+   "key": "G7-S08-LAW-09",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "info:mhlw-hozonbasho-tsuchi 前文（義務付けない・紙媒体のままの外部保存も第2の2の基準で可）、第1の1（医師法24条の診療録）、第2の1(2)(4)・2(3)を確認。"
+  },
+  {
+   "key": "G7-S08-LAW-10",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "GL7.0概説編3（5編構成）、3.1.2〜3.1.5（経営層／企画管理者／実務担当／全委託なら概説編+保守委託機関編のみで遵守とみなす）、改定概要（保守委託機関編を策定）を確認。"
+  },
+  {
+   "key": "G7-S08-LAW-11",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "施行通知第二2(4)②なお書（院内処方せんのスキャナ保存）、2(5)（電子署名法2条1項）、第二3（照射録は保存義務なしだが電磁的作成・保存・署名を認める）、GL7.0運用編16遵守事項①・16.2を確認。"
+  },
+  {
+   "key": "G7-S08-LAW-12",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "がん登録推進法6条1項（病院等の所在地の都道府県知事）、届出マニュアル2026（翌年末＝施行規則10条、9月末は協力依頼）を確認。"
+  },
+  {
+   "key": "G7-S08-LAW-13",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "同法6条1項（転移・再発段階の初回診断を含む）、28条7項（従事していた者も）、35条（開示・訂正・削除等を求められない）、届出マニュアル（本人同意不要・削除に応じられない）を確認。"
+  },
+  {
+   "key": "G7-S08-LAW-14",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "統計法2条3項・4項（国勢統計・国民経済計算は法定）・7項（一般統計調査=行政機関が行う）・9項、令和7年人口動態統計 調査の概要（基幹統計）を確認。"
+  },
+  {
+   "key": "G7-S08-LAW-15",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "統計法28条1〜3項、令和8年総務省告示11号本文（2027-01-01施行、平成27年告示35号は令和8年12月31日限り廃止）を確認。"
+  }
+ ]
+}

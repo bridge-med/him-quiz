@@ -1,0 +1,200 @@
+{
+ "verdicts": [
+  {
+   "key": "G7-S04-CTL-01",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "who-psc-jpn PartB T5 RCA節（l.12317-12355）: システム焦点・非難処罰でなく未然防止・定義特徴4項目を確認。選択肢EはT7 l.14896の記述。"
+  },
+  {
+   "key": "G7-S04-CTL-02",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "who-psc-jpn T5 l.12264-12273（匿名報告・適時フィードバック・ニアミス報告の有用性）、T6 l.13033-13046（非難目的で利用されない信頼、組織が行動を起こす信頼）を確認。"
+  },
+  {
+   "key": "G7-S04-CTL-03",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:dpc-chosa-setsumei-2026 A004040③（l.3678-3730）の影響度分類表で3b=濃厚な処置（手術・骨折等）、3a=消毒・湿布・縫合・鎮痛剤、2=観察強化、1=実害なしを確認。正答は骨折＋手術のみ。"
+  },
+  {
+   "key": "G7-S04-CTL-04",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "同表レベル0「エラー…が見られたが、患者には実施されなかった」を確認。投与前発見＝0で一意。"
+  },
+  {
+   "key": "G7-S04-CTL-05",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "mgmt:ianzen-kanrisha-shishin-r2 Ⅰ2（2）l.216-225で3分類を確認。R8留意事項通知（mgmt:ianzen-r8-shourei-ryuui）も同指針を別紙3として参照しており、問題は令和2年3月改定版に限定しているため時点も適切。"
+  },
+  {
+   "key": "G7-S04-CTL-06",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "mgmt:innai-kansen-tsuchi-h26 別記3-3（1）（3）で5種類の多剤耐性菌は保菌含め1例目から厳重対策、10名以上は保健所報告の目安を確認。選択肢Dは医療法第6条の10（予期しなかった死亡・死産）で誤りと確認。"
+  },
+  {
+   "key": "G7-S04-CTL-07",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "同通知3-3（2）（新規例〈5菌種は保菌者含む〉→地域ネットワークの専門家に支援依頼）、3-3（3）（10名以上又は因果関係否定できない死亡→保健所に速やかに報告、それ以前も相談が望ましい）、3-2（1）（1週間以内）を確認。a・cのみ正。"
+  },
+  {
+   "key": "G7-S04-CTL-08",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "同通知2-2（1）〜（3）を確認。選択肢Bは2-2（2）に反し誤り、他は原文どおり。"
+  },
+  {
+   "key": "G7-S04-CTL-09",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "同通知2-1（2）履物交換一律不要、2-4（3）頻回接触面清拭、2-4（5）粘着マット不使用、2-4（6）環境微生物検査は必要時限定、2-5（2）中央部門一括洗浄・密閉搬送を確認。b・eのみ沿う。出典2のlocatorは引用部が（5）（軽微）。"
+  },
+  {
+   "key": "G7-S04-CTL-10",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "同通知2-1（1）: 標準予防策＝全ての患者、感染経路別予防策＝空気・飛沫・接触、易感染患者の環境整備を確認。"
+  },
+  {
+   "key": "G7-S04-CTL-11",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "who-psc-jpn T7 CPI法（l.14768-14830）の5フェーズの記述を確認。問題の価値判断・情報収集・関係者の期待理解＝診断フェーズで一意。"
+  },
+  {
+   "key": "G7-S04-CTL-12",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "who-psc-jpn T7 フローチャート（l.15090-15151）: 多職種ほど正確、公式見解と食い違っても実際の行為を記載、2種類、不利益ステップ特定、新しい形態設計の基盤を確認。"
+  },
+  {
+   "key": "G7-S04-CTL-13",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "who-psc-jpn T7 影響・適用フェーズ（全影響評価・ランチャートと統計手法）、維持・改善フェーズ（モニタリング計画・標準化・文書化）、改善を維持するための戦略（l.15371-15374）を確認。b・dのみ正。"
+  },
+  {
+   "key": "G7-S04-CTL-14",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "who-psc-jpn T7 ヒストグラム（l.15365-15368）、パレート図（l.15239-15241）、ランチャート、特性要因図（l.15169-15172）を確認。分布の棒グラフ＝ヒストグラムで一意。"
+  }
+ ]
+}

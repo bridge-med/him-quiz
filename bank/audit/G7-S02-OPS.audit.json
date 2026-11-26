@@ -1,0 +1,267 @@
+{
+ "verdicts": [
+  {
+   "key": "G7-S02-OPS-01",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:労働基準法 36条3〜5項・6項2〜3号・37条1項ただし書を確認。限度時間=月45・年360（変形1年・3か月超は42/320）。全注記一致。"
+  },
+  {
+   "key": "G7-S02-OPS-02",
+   "verdict": "fix",
+   "checks": {
+    "answer": true,
+    "distractors": false,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "mgmt:ishi-hatarakikata-gaiyou の表（一般則 原則360/例外720、A 960、連携B 1,860（各院960）、B・C-1・C-2 1,860、C-1=臨床研修・専攻医、C-2=高度技能）を確認。キー0は正しい。",
+   "detail": "選択肢4「一般則では年の上限時間は原則として720時間」は、上限規制の文脈で720時間を一般則の年上限と読む余地があり、ブラインド解答者も二つ正解と判定した。例外（特別条項）を含めても360時間とする明確な誤文に差し替え、労働基準法第36条第5項（720時間）を出典に追加。注記・pointを更新。",
+   "fixed": {
+    "subject": "S02",
+    "subtopic": "人事・労務管理",
+    "format": "knowledge",
+    "difficulty": "standard",
+    "polarity": "positive",
+    "question": "2024年4月から適用された医師の時間外・休日労働の上限規制（年の上限時間）について、正しいものはどれか。",
+    "choices": [
+     "Ａ水準の年の上限時間は、960時間である。",
+     "Ｂ水準の年の上限時間は、960時間である。",
+     "C-1水準は、高度な技能の修得のために長時間労働が必要な医師に適用される水準である。",
+     "連携Ｂ水準では、派遣先を含む各医療機関での年の上限時間がそれぞれ1,860時間とされる。",
+     "医師以外の労働者に適用される一般則では、例外（特別条項）の場合も含めて、年の上限時間は360時間である。"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "厚生労働省の制度概要では、臨時的に長時間労働が必要な場合の原則的な水準であるＡ水準の年の上限時間を960時間としている。地域医療の確保のためのＢ水準・連携Ｂ水準、研修のためのC-1・C-2水準は1,860時間である。",
+     "choiceNotes": [
+      null,
+      "Ｂ水準（地域医療の確保のため）の年の上限時間は1,860時間であり、960時間ではない。",
+      "C-1水準は臨床研修・専攻医の研修のための水準であり、高度な技能の修得のための水準はC-2水準である。",
+      "連携Ｂ水準は派遣先の労働時間を通算して1,860時間とする水準で、各院での上限は960時間である。",
+      "一般則の年の上限は原則360時間であるが、臨時的な特別の事情がある例外（特別条項）の場合は720時間を超えない範囲とされており（労働基準法第36条第5項）、例外の場合も360時間とするのは誤り。"
+     ],
+     "point": "医師の年上限：Ａ＝960時間、Ｂ・連携Ｂ・C-1・C-2＝1,860時間（連携Ｂは各院960時間）。一般則は原則360時間・例外720時間。"
+    },
+    "sources": [
+     {
+      "ref": "mgmt:ishi-hatarakikata-gaiyou",
+      "title": "医師に対する時間外・休日労働の上限規制と健康確保措置の適用（2024年4月〜）",
+      "url": "https://www.mhlw.go.jp/content/10800000/001727403.pdf",
+      "locator": "2024年4月以降の制度概要（表）",
+      "quote": "（臨時的に長時間労働が必要な場合の原則的な水準）     960時間"
+     },
+     {
+      "ref": "mgmt:ishi-hatarakikata-gaiyou",
+      "title": "医師に対する時間外・休日労働の上限規制と健康確保措置の適用（2024年4月〜）",
+      "url": "https://www.mhlw.go.jp/content/10800000/001727403.pdf",
+      "locator": "2024年4月以降の制度概要（表）",
+      "quote": "地域医療の確保のため、派遣先の労働時間を通算する     1,860時間"
+     },
+     {
+      "ref": "law:労働基準法",
+      "title": "労働基準法",
+      "url": "https://laws.e-gov.go.jp/law/322AC0000000049",
+      "locator": "第36条第5項",
+      "quote": "一年について労働時間を延長して労働させることができる時間（同号に関して協定した時間を含め七百二十時間を超えない範囲内に限る。）"
+     }
+    ],
+    "asOf": "厚生労働省「医師に対する時間外・休日労働の上限規制と健康確保措置の適用（2024年4月〜）」（2026年11月時点掲載）",
+    "key": "G7-S02-OPS-02"
+   }
+  },
+  {
+   "key": "G7-S02-OPS-03",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:労働基準法 39条4項2号(5日以内)・5項(時季変更権)・6項(5日を超える部分)・7項(年5日)・8項を確認。キー2が唯一の誤り。"
+  },
+  {
+   "key": "G7-S02-OPS-04",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:労働基準法 65条1項(6週・多胎14週・請求)・2項(産後8週、6週経過後請求+医師)を確認。"
+  },
+  {
+   "key": "G7-S02-OPS-05",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:労働基準法 20条1・2項、109条(5年)、143条(当分の間3年)、115条(災害補償2年)を確認。a,c正。"
+  },
+  {
+   "key": "G7-S02-OPS-06",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "x-audit-G3-S02-ORG:mhlw-keieikanri-h15 第2部②SPD本文・脚注17（薬事法で事業者在庫不可）・図表2-6-9メリットを確認。報告書の記述として問う形で時点明示あり。"
+  },
+  {
+   "key": "G7-S02-OPS-07",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "同報告書「資産の効率（回転率）」棚卸資産回転率=医業収益/棚卸資産、売上債権回転率=医業収益/医業未収金を確認。36/1.5=24.0、誤答 2.4・5.5(36/6.5)・7.2(36/5)・0.04 も注記どおり。"
+  },
+  {
+   "key": "G7-S02-OPS-08",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:医療法施行規則(2026-10-01版) 1条の11第1項2号、2項1号イ・2号ロ・3号イ〜ハ・3号の2イを確認。"
+  },
+  {
+   "key": "G7-S02-OPS-09",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:医療法施行令 4条の8（7業務）、law:医療法 15条の3第1・2項を確認。医事業務は含まれない。"
+  },
+  {
+   "key": "G7-S02-OPS-10",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:医療法施行規則 9条の13第1〜6号（資格+3年、資器材、標準作業書、業務案内書、研修）を確認。"
+  },
+  {
+   "key": "G7-S02-OPS-11",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "x-gen-G3-S02-ACC:byouin-kaikei-jyunsoku-h16 第7〜12・注4を確認。継続性の原則の文言一致、他は他原則の内容または原文と逆。"
+  },
+  {
+   "key": "G7-S02-OPS-12",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "同準則 第35第2項（医業費用の区分に研究研修費）、第36（医業外費用）、第38（固定資産除却損=臨時費用）を確認。"
+  },
+  {
+   "key": "G7-S02-OPS-13",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "同準則 注10の1・3・4・5・6、第19第2項(1)を確認。1年超の預金のみ固定資産。"
+  },
+  {
+   "key": "G7-S02-OPS-14",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "同準則 第19第3項(4)（非償却資産分は純資産、他は負債・耐用年数で配分）、注15（医業外収益）を確認。"
+  },
+  {
+   "key": "G7-S02-OPS-15",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "同準則 注11の1〜3、注12、第19第2項(2)（建設仮勘定=有形固定資産）を確認。キー4が唯一の誤り。"
+  }
+ ]
+}

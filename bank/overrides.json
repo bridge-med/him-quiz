@@ -1,10 +1,41 @@
 {
  "note": "重複・品質監査の結果（tools/dup-check.mjs で抽出した類似ペアを確認）。merge-results.mjs が最後に適用する。",
  "reject": {
-  "lg-07-17": {"reason": "duplicate", "of": "lg-07-05", "detail": "同じ年次の死因順位第1位を問う同一問題"},
-  "lg-06-23": {"reason": "duplicate", "of": "lg-06-13", "detail": "寄与リスクの定義を問う同一問題"},
-  "lg-11-27": {"reason": "duplicate", "of": "lg-11-09", "detail": "DCO%の定義を問う同一問題"},
-  "s12-0106": {"reason": "duplicate", "of": "s11-0012", "detail": "修正ルールAの対象外（R95）を問う同一問題"},
-  "lg-10-04": {"reason": "duplicate", "of": "lg-09-26", "detail": "主要病態の定義を問う近似重複（再監査の指摘）"}
- }
+  "lg-07-17": {
+   "reason": "duplicate",
+   "of": "lg-07-05",
+   "detail": "同じ年次の死因順位第1位を問う同一問題"
+  },
+  "lg-06-23": {
+   "reason": "duplicate",
+   "of": "lg-06-13",
+   "detail": "寄与リスクの定義を問う同一問題"
+  },
+  "lg-11-27": {
+   "reason": "duplicate",
+   "of": "lg-11-09",
+   "detail": "DCO%の定義を問う同一問題"
+  },
+  "s12-0106": {
+   "reason": "duplicate",
+   "of": "s11-0012",
+   "detail": "修正ルールAの対象外（R95）を問う同一問題"
+  },
+  "lg-10-04": {
+   "reason": "duplicate",
+   "of": "lg-09-26",
+   "detail": "主要病態の定義を問う近似重複（再監査の指摘）"
+  },
+  "s10-0009": {
+   "reason": "duplicate",
+   "of": "s10-0066",
+   "detail": "ほぼ同じ架空症例で医療資源病名J13を問う同一問題（重複・品質監査）"
+  },
+  "s09-0097": {
+   "reason": "duplicate",
+   "of": "s07-0001",
+   "detail": "同じ数値で平均在院日数を計算する同一問題（重複・品質監査）"
+  }
+ },
+ "reviewLog": "2026-11-26 類似度0.55以上の43組を重複・品質監査担当が確認（/bank/audit/dup-review-result.json）。2組を重複と判定"
 }

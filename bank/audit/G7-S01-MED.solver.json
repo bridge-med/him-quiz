@@ -1,0 +1,95 @@
+{
+ "answers": [
+  {
+   "key": "G7-S01-MED-01",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "診療放射線技師法第24条 業務独占"
+  },
+  {
+   "key": "G7-S01-MED-02",
+   "answer": 4,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "MRI等は第24条の2、医師等以外でも診療放射線技師が指示の下に可。MRIは照射でない"
+  },
+  {
+   "key": "G7-S01-MED-03",
+   "answer": 4,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "保助看法31条1項ただし書、保健師助産師は看護師免許不要"
+  },
+  {
+   "key": "G7-S01-MED-04",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "臨検法20条の2(具体的指示で採血)、診放法24条の2(指示の下)、救命士は具体的指示必須"
+  },
+  {
+   "key": "G7-S01-MED-05",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "医師法21条 妊娠4月以上・24時間以内・警察署"
+  },
+  {
+   "key": "G7-S01-MED-06",
+   "answer": 4,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "医師法22条 覚醒剤を投与する場合は処方箋交付義務の例外(七)"
+  },
+  {
+   "key": "G7-S01-MED-07",
+   "answer": 3,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "薬剤師法19条ただし書(患者の希望) ; 調剤録保存は3年"
+  },
+  {
+   "key": "G7-S01-MED-08",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "国民医療費概況 R6 48兆8,100億円 +1.5%、対GDP比7.60%(前年7.76%)"
+  },
+  {
+   "key": "G7-S01-MED-09",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "概況: 先進医療等は含まず、保険外併用療養費分は含む"
+  },
+  {
+   "key": "G7-S01-MED-10",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "概況 用語の説明 薬局調剤医療費の定義"
+  },
+  {
+   "key": "G7-S01-MED-11",
+   "answer": 3,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "後期高齢者17.9兆<医療保険等21.4兆のため誤り"
+  },
+  {
+   "key": "G7-S01-MED-12",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "809.8/222.3=3.64"
+  },
+  {
+   "key": "G7-S01-MED-13",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "概況 傷病分類 総数は循環器、65歳未満は新生物"
+  }
+ ]
+}

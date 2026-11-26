@@ -1,0 +1,17 @@
+{"answers":[
+{"key":"G7-S02-OPS-01","answer":1,"confidence":"high","ambiguous":false,"note":"労基法36条4項: 月45時間・年360時間"},
+{"key":"G7-S02-OPS-02","answer":0,"confidence":"medium","ambiguous":true,"note":"A水準は年960時間で正しい。一般則の年720時間(選択肢5)も正しく二つ正解。C-1は臨床研修医等、連携Bは各院960(通算1860)で誤り"},
+{"key":"G7-S02-OPS-03","answer":2,"confidence":"high","ambiguous":false,"note":"労基法39条6項: 計画的付与は5日を超える部分のみ。「すべて」は誤り"},
+{"key":"G7-S02-OPS-04","answer":0,"confidence":"high","ambiguous":false,"note":"労基法65条1項。多胎は14週、産後は6週後に請求+医師認可で就業可"},
+{"key":"G7-S02-OPS-05","answer":1,"confidence":"high","ambiguous":false,"note":"a正(20条)、b誤(同条2項で短縮可)、c正(109条・附則143条1項)、d誤(115条: 災害補償は2年)"},
+{"key":"G7-S02-OPS-06","answer":3,"confidence":"high","ambiguous":false,"note":"報告書注17: 薬剤は事業者が在庫を持つ方法は採用できない"},
+{"key":"G7-S02-OPS-07","answer":3,"confidence":"high","ambiguous":false,"note":"棚卸資産回転率=医業収益/棚卸資産=36/1.5=24.0"},
+{"key":"G7-S02-OPS-08","answer":0,"confidence":"high","ambiguous":false,"note":"施行規則1条の11第2項第2号 医療機器の保守点検計画の策定及び実施"},
+{"key":"G7-S02-OPS-09","answer":4,"confidence":"high","ambiguous":false,"note":"医事業務は施行令4条の8に定めなし"},
+{"key":"G7-S02-OPS-10","answer":0,"confidence":"high","ambiguous":false,"note":"施行規則9条の13第1号 3年以上の経験"},
+{"key":"G7-S02-OPS-11","answer":0,"confidence":"high","ambiguous":false,"note":"継続性の原則の記述が正しい。他は定義が異なる"},
+{"key":"G7-S02-OPS-12","answer":2,"confidence":"high","ambiguous":false,"note":"準則 医業費用に研究研修費。他は医業外費用または臨時損失"},
+{"key":"G7-S02-OPS-13","answer":3,"confidence":"medium","ambiguous":false,"note":"1年超の定期預金は投資その他の資産(固定資産)。他は流動資産"},
+{"key":"G7-S02-OPS-14","answer":0,"confidence":"high","ambiguous":false,"note":"準則第26(4)・注15: 償却資産の補助金は負債、耐用年数で配分"},
+{"key":"G7-S02-OPS-15","answer":4,"confidence":"high","ambiguous":false,"note":"注11-1: 販売ソフトの研究開発終了までの原価は期間費用"}
+]}

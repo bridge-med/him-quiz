@@ -1,0 +1,348 @@
+{
+ "pairs": [
+  {
+   "a": "s11-0025",
+   "b": "s11-0099",
+   "decision": "keep_both",
+   "drop": null,
+   "keep": null,
+   "reason": "別症例（胆石胆のう炎K80.0 vs 鼠径ヘルニアK40.9）で適用ルール（MB1/MB2）も正答も異なる"
+  },
+  {
+   "a": "s11-0025",
+   "b": "s11-0026",
+   "decision": "keep_both",
+   "drop": null,
+   "keep": null,
+   "reason": "別症例（MB1→K80.0 vs MB3→J13）で正答が異なる"
+  },
+  {
+   "a": "s11-0026",
+   "b": "s11-0097",
+   "decision": "keep_both",
+   "drop": null,
+   "keep": null,
+   "reason": "別症例（MB3→J13 vs MB4→I35.0）で正答が異なる"
+  },
+  {
+   "a": "s11-0026",
+   "b": "s11-0099",
+   "decision": "keep_both",
+   "drop": null,
+   "keep": null,
+   "reason": "別症例（MB3→J13 vs MB2→K40.9）で正答が異なる"
+  },
+  {
+   "a": "s11-0025",
+   "b": "s11-0097",
+   "decision": "keep_both",
+   "drop": null,
+   "keep": null,
+   "reason": "別症例（MB1→K80.0 vs MB4→I35.0）で正答が異なる"
+  },
+  {
+   "a": "s11-0097",
+   "b": "s11-0099",
+   "decision": "keep_both",
+   "drop": null,
+   "keep": null,
+   "reason": "別症例（MB4→I35.0 vs MB2→K40.9）で正答が異なる"
+  },
+  {
+   "a": "s11-0103",
+   "b": "s11-0107",
+   "decision": "keep_both",
+   "drop": null,
+   "keep": null,
+   "reason": "別症例の原死因（一般原則→I63.9 vs 連鎖で高血圧＋心不全→I11.0）で論点が異なる"
+  },
+  {
+   "a": "s12-0031",
+   "b": "s12-0180",
+   "decision": "keep_both",
+   "drop": null,
+   "keep": null,
+   "reason": "別症例（大腿骨頚部骨折S72.0 vs 表在損傷を伴う内部損傷S36.1）で論点が異なる"
+  },
+  {
+   "a": "s12-0177",
+   "b": "s12-0183",
+   "decision": "keep_both",
+   "drop": null,
+   "keep": null,
+   "reason": "別症例（バセドウ病E05.0 vs 既往帝切の子宮瘢痕O34.2）で論点が異なる"
+  },
+  {
+   "a": "s10-0072",
+   "b": "s10-0075",
+   "decision": "keep_both",
+   "drop": null,
+   "keep": null,
+   "reason": "診断日の決定で、自施設のみの症例と他施設の細胞診が先行する症例という異なる判断を問う"
+  },
+  {
+   "a": "s12-0034",
+   "b": "s12-0165",
+   "decision": "keep_both",
+   "drop": null,
+   "keep": null,
+   "reason": "別症例（回腸瘻閉鎖Z43.2 vs 28日以内の再発性心筋梗塞I22.0）"
+  },
+  {
+   "a": "s10-0009",
+   "b": "s10-0066",
+   "decision": "duplicate",
+   "drop": "s10-0009",
+   "keep": "s10-0066",
+   "reason": "同一シナリオ（肺炎球菌性肺炎＋2型糖尿病＋入院後尿路感染症）で正答J13、誤肢3つ（J18.9/E11.9/N39.0）も共通。s10-0066は正式名称の設問文と臓器不全（J96.0）を選ばない論点を加えており上位互換"
+  },
+  {
+   "a": "s11-0007",
+   "b": "s11-0008",
+   "decision": "keep_both",
+   "drop": null,
+   "keep": null,
+   "reason": "同じ設問型だが、選択ルール1（脳出血）と認められない因果関係→ルール2（胃癌）で適用ルールも正答も異なる"
+  },
+  {
+   "a": "s12-0034",
+   "b": "s12-0171",
+   "decision": "keep_both",
+   "drop": null,
+   "keep": null,
+   "reason": "別症例（Z43.2 vs 糖尿病多発合併症E11.7）"
+  },
+  {
+   "a": "s12-0143",
+   "b": "s12-0148",
+   "decision": "keep_both",
+   "drop": null,
+   "keep": null,
+   "reason": "同一症例の別診断（既存2型糖尿病O24.1 vs 早産O60.1）を問う"
+  },
+  {
+   "a": "s12-0031",
+   "b": "s12-0034",
+   "decision": "keep_both",
+   "drop": null,
+   "keep": null,
+   "reason": "別症例（S72.0 vs Z43.2）"
+  },
+  {
+   "a": "s07-0004",
+   "b": "s09-0098",
+   "decision": "keep_both",
+   "drop": null,
+   "keep": null,
+   "reason": "療養病床の算式だが数値・正答（175.0日 vs 90.0日）と誤肢の誤り方が異なり、科目も別。計算練習として両方に価値がある"
+  },
+  {
+   "a": "s11-0006",
+   "b": "s11-0008",
+   "decision": "keep_both",
+   "drop": null,
+   "keep": null,
+   "reason": "一般原則（前立腺肥大）と認められない因果関係→ルール2（胃癌）で適用も正答も異なる"
+  },
+  {
+   "a": "s12-0040",
+   "b": "s12-0177",
+   "decision": "keep_both",
+   "drop": null,
+   "keep": null,
+   "reason": "別症例（薬疹L27.0 vs バセドウ病E05.0）"
+  },
+  {
+   "a": "s12-0040",
+   "b": "s12-0183",
+   "decision": "keep_both",
+   "drop": null,
+   "keep": null,
+   "reason": "別症例（薬疹L27.0 vs 子宮瘢痕O34.2）"
+  },
+  {
+   "a": "s02-0070",
+   "b": "s04-0048",
+   "decision": "keep_both",
+   "drop": null,
+   "keep": null,
+   "reason": "正答の記述は同じだが、s02は他の責任者（医薬品・院内感染・放射線）の業務との区別、s04は第3号に無い事項（指針・委員会・手順書）との区別を問い、誤肢の論点が異なる。科目も別"
+  },
+  {
+   "a": "s07-0014",
+   "b": "s07-0075",
+   "decision": "keep_both",
+   "drop": null,
+   "keep": null,
+   "reason": "紹介率と逆紹介率で求める指標が異なる"
+  },
+  {
+   "a": "s10-0009",
+   "b": "s10-0011",
+   "decision": "keep_both",
+   "drop": null,
+   "keep": null,
+   "reason": "別症例（肺炎J13 vs 原疾患が明らかな心不全→拡張型心筋症I42.0）"
+  },
+  {
+   "a": "s12-0165",
+   "b": "s12-0171",
+   "decision": "keep_both",
+   "drop": null,
+   "keep": null,
+   "reason": "別症例（I22.0 vs E11.7）"
+  },
+  {
+   "a": "s08-0039",
+   "b": "s09-0093",
+   "decision": "keep_both",
+   "drop": null,
+   "keep": null,
+   "reason": "正答の記述は共通だが、s09は費用徴収・補足説明者・第三者の利益など別の指針規定を誤肢で問う。科目も別"
+  },
+  {
+   "a": "s12-0031",
+   "b": "s12-0165",
+   "decision": "keep_both",
+   "drop": null,
+   "keep": null,
+   "reason": "別症例（S72.0 vs I22.0）"
+  },
+  {
+   "a": "s12-0034",
+   "b": "s12-0180",
+   "decision": "keep_both",
+   "drop": null,
+   "keep": null,
+   "reason": "別症例（Z43.2 vs S36.1）"
+  },
+  {
+   "a": "s10-0066",
+   "b": "s10-0069",
+   "decision": "keep_both",
+   "drop": null,
+   "keep": null,
+   "reason": "別症例（肺炎J13 vs 転移性肝癌C78.7）"
+  },
+  {
+   "a": "s11-0006",
+   "b": "s11-0007",
+   "decision": "keep_both",
+   "drop": null,
+   "keep": null,
+   "reason": "一般原則（前立腺肥大）と選択ルール1（脳出血）で適用も正答も異なる"
+  },
+  {
+   "a": "s12-0031",
+   "b": "s12-0174",
+   "decision": "keep_both",
+   "drop": null,
+   "keep": null,
+   "reason": "別症例（S72.0 vs 複合分類I12.0）"
+  },
+  {
+   "a": "s12-0185",
+   "b": "s12-0188",
+   "decision": "keep_both",
+   "drop": null,
+   "keep": null,
+   "reason": "別病変（帝王切開創感染O86.0 vs 横行結腸上皮内癌D01.0）"
+  },
+  {
+   "a": "s10-0041",
+   "b": "s10-0097",
+   "decision": "keep_both",
+   "drop": null,
+   "keep": null,
+   "reason": "合算か乗算かの論点は共通だが、否定形と肯定形で、残りの選択肢は基礎係数・救急補正係数・包括評価の算式 vs 機能評価係数Ⅰの算定範囲・激変緩和係数と別の知識を問う"
+  },
+  {
+   "a": "s11-0024",
+   "b": "s11-0096",
+   "decision": "keep_both",
+   "drop": null,
+   "keep": null,
+   "reason": "別症例で適用ルールが異なる（MB1 vs MB4）"
+  },
+  {
+   "a": "s12-0031",
+   "b": "s12-0171",
+   "decision": "keep_both",
+   "drop": null,
+   "keep": null,
+   "reason": "別症例（S72.0 vs E11.7）"
+  },
+  {
+   "a": "s12-0034",
+   "b": "s12-0174",
+   "decision": "keep_both",
+   "drop": null,
+   "keep": null,
+   "reason": "別症例（Z43.2 vs I12.0）"
+  },
+  {
+   "a": "s12-0037",
+   "b": "s12-0177",
+   "decision": "keep_both",
+   "drop": null,
+   "keep": null,
+   "reason": "別症例（糖尿病性腎症E11.2 vs バセドウ病E05.0）"
+  },
+  {
+   "a": "s02-0015",
+   "b": "s02-0074",
+   "decision": "keep_both",
+   "drop": null,
+   "keep": null,
+   "reason": "医業外収益と医業費用で区分も正答も異なる（収益側と費用側）"
+  },
+  {
+   "a": "s07-0001",
+   "b": "s09-0097",
+   "decision": "duplicate",
+   "drop": "s09-0097",
+   "keep": "s07-0001",
+   "reason": "一般病床の平均在院日数の基本算式で、在院延数36,000・分母2,400・正答15.0日まで同一、誤肢の型（1/2忘れ・新入院のみ・退院のみ）も同じ。s07-0001は本来の科目で、1日平均在院患者数との混同を問う誤肢もある"
+  },
+  {
+   "a": "lg-03-08",
+   "b": "s11-0028",
+   "decision": "keep_both",
+   "drop": null,
+   "keep": null,
+   "reason": "正答の記述は同じだが、lg-03-08は作成者（医師のみ・警察官ではない）と診療中でも関連のない死亡、s11-0028は異状の届出と24時間ルールを誤肢で問う。科目も別（S08法規 vs S11）"
+  },
+  {
+   "a": "s12-0001",
+   "b": "s12-0087",
+   "decision": "keep_both",
+   "drop": null,
+   "keep": null,
+   "reason": "高血圧性心疾患I11.0と高血圧性腎疾患I12.0で別コード"
+  },
+  {
+   "a": "s12-0034",
+   "b": "s12-0177",
+   "decision": "keep_both",
+   "drop": null,
+   "keep": null,
+   "reason": "別症例（Z43.2 vs E05.0）"
+  },
+  {
+   "a": "s12-0034",
+   "b": "s12-0183",
+   "decision": "keep_both",
+   "drop": null,
+   "keep": null,
+   "reason": "別症例（Z43.2 vs O34.2）"
+  },
+  {
+   "a": "s12-0178",
+   "b": "s12-0188",
+   "decision": "keep_both",
+   "drop": null,
+   "keep": null,
+   "reason": "別症例・別病態（術後副甲状腺機能低下症E89.2 vs 上皮内癌D01.0）"
+  }
+ ]
+}

@@ -1,0 +1,186 @@
+{
+ "verdicts": [
+  {
+   "key": "G7-S01-MED-01",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:診療放射線技師法 第24条（業務独占）・第25条（名称）、law:臨床検査技師等に関する法律 第20条・第20条の2、law:理学療法士及び作業療法士法 第15条・第17条を確認（版の施行日2025-06-01）。臨検・PT・OTに業務独占規定なし。solver一致。"
+  },
+  {
+   "key": "G7-S01-MED-02",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:診療放射線技師法 第2条第2項（撮影を含み体内挿入を除く）・第24条の2第1号（MRI・超音波は指示の下の診療の補助）・第26条第1項（具体的な指示）を確認。MRIは照射に当たらない。solver一致。"
+  },
+  {
+   "key": "G7-S01-MED-03",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:保健師助産師看護師法 第5条・第6条・第7条第1項〜第3項・第31条第2項を確認（版の施行日2026-05-21）。保健師・助産師は31条2項で看護師の業を行える。choiceNotes[0]の大臣免許の部分は第7条が根拠だが記述は正しい。solver一致。"
+  },
+  {
+   "key": "G7-S01-MED-04",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:臨床検査技師等に関する法律 第20条の2第1項（1・2・4号は具体的な指示）、law:診療放射線技師法 第24条の2第1号（指示の下）、law:救急救命士法 第44条第1項を確認。a・dのみ正。solver一致。"
+  },
+  {
+   "key": "G7-S01-MED-05",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:医師法 第21条（死体又は妊娠四月以上の死産児・二十四時間以内・所轄警察署）を確認（版の施行日2026-05-21）。solver一致。"
+  },
+  {
+   "key": "G7-S01-MED-06",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:医師法 第20条ただし書、第22条第1項ただし書・第1〜8号（第7号 覚醒剤を投与する場合）を確認。solver一致。"
+  },
+  {
+   "key": "G7-S01-MED-07",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:薬剤師法 第19条本文・ただし書・第1号（患者の希望）、第28条第3項（調剤録3年）を確認。医師法24条2項の診療録5年も正。solver一致。"
+  },
+  {
+   "key": "G7-S01-MED-08",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "stats:kokumin-iryohi-r6-kekka 結果の概要1・表1：48兆8,100億円（+1.5％）、一人当たり39万4,300円、対GDP比7.60％（前年度7.76％）を確認。solver一致。"
+  },
+  {
+   "key": "G7-S01-MED-09",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "stats:kokumin-iryohi-r6-hani 1 国民医療費の範囲（評価療養（先進医療等）は含まない）・注2）（保険外併用療養費分は含む）・2(3)全額自費の定義を確認。solver一致。"
+  },
+  {
+   "key": "G7-S01-MED-10",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "stats:kokumin-iryohi-r6-hani 3 用語の説明(2) 診療種類別：薬局調剤医療費・入院時食事・生活医療費・訪問看護医療費・療養費等の定義を確認。solver一致。"
+  },
+  {
+   "key": "G7-S01-MED-11",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "stats:kokumin-iryohi-r6-kekka 2〜5：医療保険等給付分21兆4,480億円（43.9％）＞後期高齢者17兆9,432億円（36.8％）、医科71.5％、入院37.6％＞入院外33.9％、65歳以上60.1％、患者等負担12.2％を確認。solver一致。"
+  },
+  {
+   "key": "G7-S01-MED-12",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "stats:kokumin-iryohi-r6-kekka 5：65歳未満22万2,300円・65歳以上80万9,800円。809800/222300=3.643→3.6。誤答の乗算値も再計算し正しい。solver一致。"
+  },
+  {
+   "key": "G7-S01-MED-13",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "stats:kokumin-iryohi-r6-kekka 6・表（上位5傷病）：総数 循環器18.2％＞新生物15.2％…呼吸器5位7.6％、65歳未満 新生物13.7％1位、65歳以上 循環器22.8％1位を確認。solver一致。"
+  }
+ ]
+}

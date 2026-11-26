@@ -1,0 +1,239 @@
+{
+ "verdicts": [
+  {
+   "key": "G7-S10-STA-01",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "cancer:glossary-yuubyouritu 定義と一致。rikanritu・sibouritu（致命率の記述含む）で誤肢を確認。blind一致。"
+  },
+  {
+   "key": "G7-S10-STA-02",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "glossary-soutaiseizonritu「死因について正確な情報がない場合にも用いることができます」でC誤り確定。A=zixtusoku、B/D=soutai（コホート生存率表）、E=geninbetu で正。blind一致。"
+  },
+  {
+   "key": "G7-S10-STA-03",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "glossary-soutaiseizonritu「分母の過小評価、つまり相対生存率の過大評価…純生存率」。C/D はピリオド法（piriodohou）の目的と混同。blind一致。"
+  },
+  {
+   "key": "G7-S10-STA-04",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "glossary-nenreityouseirikanritu 算出式。再計算 (50*60000+800*40000)/100000=350.0。誤肢275(粗率)/425/500/850の算出も確認。blind一致。"
+  },
+  {
+   "key": "G7-S10-STA-05",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "glossary-kijunjinko、mhlw-incidence-2023-report 比率の解説（2022年報告より平成27年モデル日本人口採用）で確認。世界人口=国際比較。blind一致。"
+  },
+  {
+   "key": "G7-S10-STA-06",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "glossary-hyouzyunkasibouhi 全文で各肢確認（1より大＝全国平均より高い）。blind一致。"
+  },
+  {
+   "key": "G7-S10-STA-07",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "glossary-dexisienu（D正）、mv（MV=細胞診or組織診、HV=組織診断の裏付け）、dexisio（DCO低≠漏れ少、10%以下）。blind一致。"
+  },
+  {
+   "key": "G7-S10-STA-08",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "piriodohou（a正、e誤=主に長期）、sabaibaseizonritu（b誤=診断から合計6年後）、tyuutoutikirirei（c正、d誤）。blind一致。"
+  },
+  {
+   "key": "G7-S10-STA-09",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "cancer:mhlw-hcr-guideline 第一（全国がん登録情報よりも詳細な治療の状況を含む情報）、第二三（4）で選択肢C注記確認、glossary-innaigantouroku。blind一致。"
+  },
+  {
+   "key": "G7-S10-STA-10",
+   "verdict": "fix",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": false,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "指針第一 二で国立がん研究センターが全国規模で収集。key・誤肢・解説は正しい。blind一致。",
+   "detail": "sources[0]（指針第一 二）のquoteが「において、院内がん情報等を…」から始まり、問われている主体（国立がん研究センター）を含まず、quote自体が根拠になっていなかった。主体を含む逐語引用に差し替え（他は変更なし）。",
+   "fixed": {
+    "key": "G7-S10-STA-10",
+    "subject": "S10",
+    "subtopic": "院内がん登録",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "「院内がん登録の実施に係る指針」（平成27年厚生労働省告示第470号）が院内がん登録の意義として示す効果のうち、院内がん情報等を全国規模で収集し、それを基にがん統計等の算出等を行う主体として示されているのはどれか。",
+    "choices": [
+     "都道府県知事",
+     "厚生労働大臣",
+     "国立研究開発法人国立がん研究センター",
+     "医療情報基盤・診療報酬審査支払機構",
+     "地域がん診療連携拠点病院"
+    ],
+    "answer": 2,
+    "explanation": {
+     "correct": "指針第一の二は、国立がん研究センターにおいて院内がん情報等を全国規模で収集し、がん統計等の算出等を行うことにより、専門的ながん医療を提供する医療機関の実態把握に資することを挙げている。実務上も、院内がん登録実施施設は国立がん研究センターの院内がん登録症例集計へ提出を行う。",
+     "choiceNotes": [
+      "都道府県知事は、法第20条に基づき病院の管理者の請求に応じて都道府県がん情報を提供する立場で、院内がん情報の全国集計の主体ではない。",
+      "厚生労働大臣はこの指針を告示で定めた者で、指針は院内がん情報の全国規模の収集を国立がん研究センターが行うとしている。",
+      null,
+      "医療情報基盤・診療報酬審査支払機構は診療報酬の審査支払等を担う機関で、院内がん情報の収集主体として指針に示されていない。",
+      "個々の病院は院内がん情報を提出する側であり、全国規模で収集する主体は国立がん研究センターである。"
+     ],
+     "point": "院内がん情報の全国集計（院内がん登録症例集計）＝国立がん研究センター。都道府県知事は法第20条の生存確認情報の提供元。"
+    },
+    "sources": [
+     {
+      "ref": "cancer:mhlw-hcr-guideline",
+      "title": "院内がん登録の実施に係る指針（平成27年厚生労働省告示第470号）",
+      "url": "https://www.mhlw.go.jp/content/0000108673.pdf",
+      "locator": "第一 二",
+      "quote": "国立研究開発法人国立がん研究センター（以下「国立がん研究センター」という。）において、院内がん情報等を全国規模で収集し、当該情報を基にしたがん統計等の算出等を行う"
+     },
+     {
+      "ref": "cancer:mhlw-hcr-guideline",
+      "title": "院内がん登録の実施に係る指針（平成27年厚生労働省告示第470号）",
+      "url": "https://www.mhlw.go.jp/content/0000108673.pdf",
+      "locator": "第二 三（4）",
+      "quote": "病院の管理者は、法第二十条に基づき、都道府県知事に対し、当該病院が届け出たがんに係る都道府県がん情報の提供を請求することができる"
+     },
+     {
+      "ref": "cancer:operations-manual-v2",
+      "title": "病院等におけるがん登録運用マニュアル 第2版",
+      "url": "https://ganjoho.jp/med_pro/cancer_control/can_reg/pdf/hcr_operationsmanual_vol.2.pdf",
+      "locator": "7. 都道府県への届出および症例集計への提出",
+      "quote": "院内がん登録を実施する施設は、指針第一の二に基づき、国立がん研究センターがん対策研究所がん登録センターが実施する院内がん登録症例集計へ提出を行う。"
+     }
+    ],
+    "asOf": "平成27年厚生労働省告示第470号（2016-01-01適用）／がん登録運用マニュアル第2版（2026-08-31）"
+   }
+  },
+  {
+   "key": "G7-S10-STA-11",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "指針第二 三（1）「各病院において、登録項目を追加することができる」でC誤り。A/B=（2）、D=（3）、E=第二三本文で確認。blind一致。"
+  },
+  {
+   "key": "G7-S10-STA-12",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "operations-manual-v2 4.（1）（悉皆性・比較可能性、病名・病理必須）、表1注記（表2も検索範囲、全病態が対象ではない）、表1にD00-D09上皮内癌。blind一致。"
+  },
+  {
+   "key": "G7-S10-STA-13",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "operations-manual-v2 7.（届出先に修正依頼、症例集計は再提出・修正不可で自施設のみ修正、値の相違に留意）。blind一致。"
+  }
+ ]
+}

@@ -1,0 +1,200 @@
+{
+ "verdicts": [
+  {
+   "key": "G7-S11-ADV-01",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "cancer:shibou-manual-r08 p.13 ⑤望ましい記入例（（ア）術後肺炎（イ）右肺上葉扁平上皮癌＝医療行為の合併症→原因傷病を（イ））、p.14 Ⅱ欄定義で確認。DMは主治医判断で原因でない→Ⅱ欄、白内障は無関係で記入しない。唯一解。quote1は表の断片で読みにくいが逐語。"
+  },
+  {
+   "key": "G7-S11-ADV-02",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "shibou-manual-r08 p.14 手術①（Ⅰ・Ⅱ欄の傷病に関係する手術のみ）②（2有＋術式＋所見：部位・性状・広がり）、手術年月日①で確認。白内障手術は無関係で除外。"
+  },
+  {
+   "key": "G7-S11-ADV-03",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "shibou-manual-r08 p.14 期間①（（ア）〜（エ）及びⅡ欄の各傷病）②（年月日単位、発症年月日は書かない）④（不明でも空白不可）。症例の13日・約4か月・約8年と整合。"
+  },
+  {
+   "key": "G7-S11-ADV-04",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "shibou-manual-r08 p.14 期間①〜④を照合。④「不明」又は「不詳」と記入し空白は避ける→Dが誤り。他4肢は本文どおり。"
+  },
+  {
+   "key": "G7-S11-ADV-05",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "shibou-manual-r08 p.13 ⑤表：誤肢4つはいずれも「不適当な記入例」そのもの、穿孔性胃潰瘍は望ましい記入例。唯一解。"
+  },
+  {
+   "key": "G7-S11-ADV-06",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "shibou-manual-r08 p.11 Ⅰ欄①（多臓器不全等も原因記入）②（原則1傷病、欄不足は（エ）欄に複数）④（不詳（検索中）／詳細不明・不詳）で確認。Bが誤り。2番目のquoteのlocatorは厳密にはⅠ欄④だが特定可能。"
+  },
+  {
+   "key": "G7-S11-ADV-07",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icdbg:soumu-kokuji-h27-35 前文・4（章22・疾病分類表85/148/374・死因133、3桁目と4桁目の間に小数点、従前の例はH28.12.31まで）、icdbg:soumu-kokuji-r08-11 前文・4（章25・疾病151・死因134、4桁目と5桁目の間、当分の間）で全肢確認。"
+  },
+  {
+   "key": "G7-S11-ADV-08",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:統計法 第28条第2項・第3項（2026-06-24施行版）、icdbg:mhlw-toshin-r071211（R7.11.25厚労大臣諮問→統計分科会→疾病、傷害及び死因分類部会付議、1E71 改正後エムポックス／改正前サル痘）で確認。a・bのみ正。"
+  },
+  {
+   "key": "G7-S11-ADV-09",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:統計法 第2条第3項（地方公共団体の統計も公的統計）、icdbg:soumu-kokuji-r08-11 前文（R9.1.1施行・同日以後作成の公的統計に適用、H27告示はR8.12.31限り廃止、より難い場合に限り当分の間従前の例）で確認。"
+  },
+  {
+   "key": "G7-S11-ADV-10",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icdbg:soumu-statistical-standards：分類に関する統計基準（産業・疾病傷害死因・職業）、経済指標の2基準、日本標準商品分類は「統計基準以外の技術的な基準…」に掲載で確認。"
+  },
+  {
+   "key": "G7-S11-ADV-11",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:instruction 6.6（第6回：国際様式承認・原死因採用・疾病死亡の包括的リスト・1948年世界保健規則No.1）、6.8（第9回：疾病統計製表の単一原因選択ルールが初めて紹介、剣印星印）で確認。"
+  },
+  {
+   "key": "G7-S11-ADV-12",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:instruction 6.7（第7回は主要部分の変更と誤り修正のみ、第8回は病因学原理を維持）、6.8（第9回は基本構造維持）、6.9（10年ごとは短すぎ、1985予定を1989へ延期）で全肢確認。"
+  },
+  {
+   "key": "G7-S11-ADV-13",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icdbg:whofic-japan-centre（2011年9月9日WPRO事務局長指定、1期4年、3期目以降は国際分類情報管理室が単独、日病・日本診療情報管理学会は協力ネットワーク）、icdbg:whofic-japan-about（WHO-FICネットワーク1970年設立、WHO協力センターとNGO・専門家）で確認。"
+  },
+  {
+   "key": "G7-S11-ADV-14",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icdbg:whofic-japan-about（中心分類＝ICD、ICF、開発中のICHI）、icd:instruction 2.2（派生分類ICD-O-3、関連分類ICPC-2・ICECI・ISO9999）で確認。センターの説明に限定した設問で唯一解。"
+  }
+ ]
+}

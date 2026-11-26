@@ -1,0 +1,16 @@
+{"answers":[
+{"key":"G7-S04-CTL-01","answer":2,"confidence":"high","ambiguous":false,"note":"RCAは個人の処分でなくシステム改善が目的（WHOガイド）"},
+{"key":"G7-S04-CTL-02","answer":3,"confidence":"high","ambiguous":false,"note":"匿名報告とフィードバック。他は非懲罰原則に反する"},
+{"key":"G7-S04-CTL-03","answer":4,"confidence":"high","ambiguous":false,"note":"3bは濃厚な処置・手術・骨折。dpc_chosa_jisshi_setsumei 表。選択肢2・3は3a"},
+{"key":"G7-S04-CTL-04","answer":0,"confidence":"high","ambiguous":false,"note":"レベル0=エラーはあったが患者には実施されなかった"},
+{"key":"G7-S04-CTL-05","answer":2,"confidence":"high","ambiguous":false,"note":"指針r2: 業務フロー分析目的に特性要因図作成"},
+{"key":"G7-S04-CTL-06","answer":2,"confidence":"high","ambiguous":false,"note":"通知3-3(1) CREは保菌含め1例目で厳重対策"},
+{"key":"G7-S04-CTL-07","answer":0,"confidence":"high","ambiguous":false,"note":"a=3-3(2), c=3-3(3)。dは1週間、保健所報告目安は10名"},
+{"key":"G7-S04-CTL-08","answer":1,"confidence":"high","ambiguous":false,"note":"2-2(2) 必要に応じ石けん手洗い"},
+{"key":"G7-S04-CTL-09","answer":3,"confidence":"high","ambiguous":false,"note":"b=2-4(3), e=2-5(2)。粘着マット・一律環境微生物検査は不可"},
+{"key":"G7-S04-CTL-10","answer":3,"confidence":"high","ambiguous":false,"note":"標準予防策は全患者対象"},
+{"key":"G7-S04-CTL-11","answer":1,"confidence":"high","ambiguous":false,"note":"WHOガイド CPI診断フェーズの記述"},
+{"key":"G7-S04-CTL-12","answer":1,"confidence":"high","ambiguous":false,"note":"WHOガイド: 公式見解と食い違っても実際の行為を記載"},
+{"key":"G7-S04-CTL-13","answer":3,"confidence":"high","ambiguous":false,"note":"b=影響・適用フェーズ, d=維持・改善フェーズ"},
+{"key":"G7-S04-CTL-14","answer":1,"confidence":"high","ambiguous":false,"note":"ヒストグラムは度数分布の棒グラフ"}
+]}

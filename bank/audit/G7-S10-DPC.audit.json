@@ -1,0 +1,264 @@
+{
+ "verdicts": [
+  {
+   "key": "G7-S10-DPC-01",
+   "verdict": "fix",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": false,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:dpc-chosa-setsumei-2026 様式4 概要・1.調査対象(p.144-145): 全退院症例（自費のみ含む）が対象、目的・5項目・退院時点の確定情報を確認。キー正。",
+   "detail": "correct の文が「それらだけでは特異値となる症例を識別するために様式4を集める」と因果が崩れており、資料の趣旨（特異値となってしまうため識別データを収集）に沿う文へ修正。",
+   "fixed": {
+    "key": "G7-S10-DPC-01",
+    "subject": "S10",
+    "subtopic": "DPCデータ",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "negative",
+    "question": "2026年度「DPCの評価・検証等に係る調査（退院患者調査）」の様式4について、誤っているものはどれか。",
+    "choices": [
+     "様式4は「医科保険診療以外のある診療情報」である。",
+     "自賠責や正常分娩など他の支払方法に基づいた診療との併用、歯科診療との組み合わせ等がある入院症例を識別するために収集する。",
+     "様式4は医科保険診療の実績データのみを対象とするため、自費のみの症例は対象外である。",
+     "入院を通してどのような支払いがなされたのかの実績について、退院時点での確定情報でデータを作成する。",
+     "施設コード、データ識別番号、入院年月日、退院年月日、医療保険外との組合せを入力する。"
+    ],
+    "answer": 2,
+    "explanation": {
+     "correct": "様式4の調査対象は「全ての退院症例（自費のみの症例を含む。）」が原則である。医科保険診療の実績データに限定して収集しているのは様式1や診療報酬請求情報（EFファイル等）の側であり、それらだけでは他の支払方法との併用等がある症例の在院日数や診療報酬が特異値となってしまうため、そのような症例を識別する目的で様式4を収集する。",
+     "choiceNotes": [
+      "実施説明資料のとおり、様式4は「医科保険診療以外のある診療情報」と定義されている。",
+      "様式4の目的として示されている内容（在院日数や診療報酬が特異値となる症例の識別）である。",
+      null,
+      "「退院時点での確定情報で、データを作成する」とされている。",
+      "ファイルレイアウト例・入力方法に示された5項目である。"
+     ],
+     "point": "様式4＝医科保険診療以外の診療情報。対象は自費のみを含む全退院症例。"
+    },
+    "sources": [
+     {
+      "ref": "ins:dpc-chosa-setsumei-2026",
+      "title": "2026年度 DPCの評価・検証等に係る調査（退院患者調査）実施説明資料",
+      "url": "https://www.mhlw.go.jp/content/12400000/001679918.pdf",
+      "locator": "様式4 1.調査対象",
+      "quote": "全ての退院症例（自費のみの症例を含む。）が原則として対象となる。"
+     },
+     {
+      "ref": "ins:dpc-chosa-setsumei-2026",
+      "title": "2026年度 DPCの評価・検証等に係る調査（退院患者調査）実施説明資料",
+      "url": "https://www.mhlw.go.jp/content/12400000/001679918.pdf",
+      "locator": "様式4 概要",
+      "quote": "様式1、診療報酬請求情報（EFファイル等）は医科保険診療の実績データに限定して収集することにしており"
+     }
+    ],
+    "asOf": "2026年度DPCの評価・検証等に係る調査（退院患者調査）実施説明資料（2026年3月25日時点）"
+   }
+  },
+  {
+   "key": "G7-S10-DPC-02",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:dpc-chosa-setsumei-2026 様式4 2.入力方法: コード3＝他制度（公害・労災・自賠責）のみ、4＝それらと医科レセプトの組合せ。労災のみ→3。各選択肢注記も表どおり。"
+  },
+  {
+   "key": "G7-S10-DPC-03",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:dpc-chosa-setsumei-2026 様式1 A006040/A006050(p.29-30): 併存症＝入院時点で既に存在、続発症＝入院中に発生。キー・各注記正。"
+  },
+  {
+   "key": "G7-S10-DPC-04",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:dpc-chosa-setsumei-2026 A000080 再入院調査(p.58-60): 再入院種別は前回退院時に決定していたか否か、計画外⑤の具体例が胃がん術後の縫合部感染。4週以内・一般病棟の条件も満たす。"
+  },
+  {
+   "key": "G7-S10-DPC-05",
+   "verdict": "fix",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": false,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:dpc-chosa-setsumei-2026 Ⅰ提出スケジュール等 1.(1)(p.11): 4・5月分7/22、6〜9月分10/22（配送）、一括提出、施設コード、アップロード日時を確認。E が誤りで一意。",
+   "detail": "point の「四半期程度の単位」は資料にない表現で、4・5月分（2か月）・6〜9月分（4か月）とずれるため、資料の「原則として対象となる月分を一括して」に置換。",
+   "fixed": {
+    "key": "G7-S10-DPC-05",
+    "subject": "S10",
+    "subtopic": "DPCデータ",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "negative",
+    "question": "2026年度「DPCの評価・検証等に係る調査（退院患者調査）」の初回提出ファイルの提出について、誤っているものはどれか。",
+    "choices": [
+     "2026年4、5月の各月の提出用データの配送による提出期限は、2026年7月22日である。",
+     "原則として、対象となる月分を一括して提出スケジュールの提出期限までに提出する。",
+     "施設コードが年度途中で変更となった場合でも、当年度内のデータ提出は変更前の施設コードを使用する。",
+     "オンラインによる提出の場合、データ提出する際の「アップロード日時」が提出期限を過ぎると遅延扱いとなる。",
+     "2026年6月から9月までの各月の提出用データは、月ごとに翌月末日までに提出する。"
+    ],
+    "answer": 4,
+    "explanation": {
+     "correct": "2026年6、7、8、9月の各月の提出用データは、まとめて配送では2026年10月22日まで（オンラインでは10月23日12時まで）に提出する。月ごとに翌月末日までという期限ではない。",
+     "choiceNotes": [
+      "提出スケジュールのとおり、4、5月分の配送による提出期限は2026年7月22日（オンラインは7月23日12時まで）である。",
+      "「原則として対象となる月分を一括して」提出するとされている。",
+      "年度途中で施設コードが変わっても、当年度内は変更前の施設コードを使用する。",
+      "オンライン提出の遅延はアップロード日時で判定される。",
+      null
+     ],
+     "point": "初回提出ファイルは、原則として対象となる月分を一括して提出期限までに提出する（月ごとではない）。6〜9月分は2026年10月22日（配送）。"
+    },
+    "sources": [
+     {
+      "ref": "ins:dpc-chosa-setsumei-2026",
+      "title": "2026年度 DPCの評価・検証等に係る調査（退院患者調査）実施説明資料",
+      "url": "https://www.mhlw.go.jp/content/12400000/001679918.pdf",
+      "locator": "Ⅰ 提出スケジュール等 1.提出期限(1)",
+      "quote": "2026年6、7、8、9月の各月の提出用データ 2026年10月22日（木）"
+     },
+     {
+      "ref": "ins:dpc-chosa-setsumei-2026",
+      "title": "2026年度 DPCの評価・検証等に係る調査（退院患者調査）実施説明資料",
+      "url": "https://www.mhlw.go.jp/content/12400000/001679918.pdf",
+      "locator": "Ⅰ 提出スケジュール等 1.提出期限(1)",
+      "quote": "※原則として対象となる月分を一括して提出スケジュールの提出期限までにデータを提出する。"
+     }
+    ],
+    "asOf": "2026年度DPCの評価・検証等に係る調査（退院患者調査）実施説明資料（2026年3月25日時点）"
+   }
+  },
+  {
+   "key": "G7-S10-DPC-06",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:dpc-chosa-setsumei-2026 A000070 ②(p.58): MDC同一かつ予定外で前回退院年月日、①と同日でも入力、初回・予定入院等は99999999、不明00000000。"
+  },
+  {
+   "key": "G7-S10-DPC-07",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:r08-dpc-ryuijiko 第3 1(1)(2): 医療機関別係数は5係数を合算、機能評価係数ⅠはDPC算定対象とならない病棟の届出診療料は算定不可; ins:r08-kaitei-gaiyo-dpc 5.激変緩和係数: 改定年度1年・該当機関のみ。"
+  },
+  {
+   "key": "G7-S10-DPC-08",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:r08-dpc-ryuijiko 第3 1(2) 機能評価係数Ⅰの算定方法: 月末までの受理→翌月1日、月の最初の開庁日の受理→当該月1日。適用日が別扱いの加算は stem で除外済み。"
+  },
+  {
+   "key": "G7-S10-DPC-09",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:r08-kaitei-gaiyo-dpc 基礎係数の見直し(p.19) 標準病院群1の要件①〜④を確認。250人・520件のみ②を満たし、他は全て不該当（離島条件は stem で除外）。"
+  },
+  {
+   "key": "G7-S10-DPC-10",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:r08-dpc-ryuijiko 第2 2(1): 入院期間Ⅱ＝入院日Ⅰ超〜入院日Ⅱ以下 → 5〜9日目。"
+  },
+  {
+   "key": "G7-S10-DPC-11",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:r08-kaitei-gaiyo-dpc 機能評価係数Ⅱ等の評価内容①②(p.22-23): カバー率指数のみ包括対象・対象外の全支払分類が計算対象、効率性・複雑性は包括対象のみ、定量評価指数の算式と医療圏を確認。"
+  },
+  {
+   "key": "G7-S10-DPC-12",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:r08-dpc-ryuijiko 第3 1(7)①ア: 7日以内・入院契機病名の上2桁が前回医療資源病名と同一→一連、起算日は初回入院日、退院期間は不算入; ②化学療法除外は stem で排除。通算7日目＝再入院3日目、calc正。各誤答の注記も再計算で整合。"
+  }
+ ]
+}

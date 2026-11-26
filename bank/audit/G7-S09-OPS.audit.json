@@ -1,0 +1,200 @@
+{
+ "verdicts": [
+  {
+   "key": "G7-S09-OPS-01",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "info:mhlw-shinryojoho-teikyo-shishin 7(3)① 理由欄・理由を尋ねることは不適切; 書面望ましい・オンライン申立て(7(3)①後段)、③管理者決定・日時指定を確認。"
+  },
+  {
+   "key": "G7-S09-OPS-02",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "指針7(2)①(満15歳以上)・③(代理権を与えられた親族)・④、9(遺族範囲・7(3)準用→②証明)を確認。a,dのみ正。"
+  },
+  {
+   "key": "G7-S09-OPS-03",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "指針8(文書で理由+苦情処理体制)、7(4)(費用徴収可・実費勘案)、7(1)(担当の医師等が説明)、8①想定事例を確認。"
+  },
+  {
+   "key": "G7-S09-OPS-04",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "医療法16条の3第1項6号(正当の理由除き・秘密を害しないもの)、規則9条の21(国・地公体・歯科医師)、9条の22(閲覧実績含む)、9条の20第5号(場所の掲示)を確認。pointの地域医療支援病院(規則: 地公体・歯科医師のみ)も確認。"
+  },
+  {
+   "key": "G7-S09-OPS-05",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "info:mhlw-anzen-gl7-unyo 7.遵守事項①②③⑦、him:jhim-gyomu-shishin-2026 5-9(1)を確認。"
+  },
+  {
+   "key": "G7-S09-OPS-06",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "stats:iryoshisetsu-byoinhokoku-r7-gaiyou 用語の説明(6)(7)(9)(11)(12)を確認。(7)当日退院も含む。"
+  },
+  {
+   "key": "G7-S09-OPS-07",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "用語の説明(12) 36000/2400=15.0。誤答7.5/14.4/15.7/30.0の算出も再計算で一致。"
+  },
+  {
+   "key": "G7-S09-OPS-08",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "用語の説明(12)療養病床式 18000/200=90.0。45.0/62.1/94.7/124.1も再計算で一致。"
+  },
+  {
+   "key": "G7-S09-OPS-09",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "用語の説明(8) 新来・再来・往診・巡回を合計、複数科で診療録作成なら科ごと。30+250+5+10=295。"
+  },
+  {
+   "key": "G7-S09-OPS-10",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "業務指針2026 4-7(発生源にさかのぼる精度管理)、5-15本文(格納対象)・(1)(教材も範囲検討・匿名化)・(2)(利用基準、委員会と連携し策定に関与)を確認。"
+  },
+  {
+   "key": "G7-S09-OPS-11",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "him:jhim-update-summary-guidance-2024 p1(6情報列挙、合同委員会・2024-03-11)を確認。"
+  },
+  {
+   "key": "G7-S09-OPS-12",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "同ガイダンス p2(高血圧症は既存症、既存症をすべて列記、資源投入疾患のみ登録への注意)、p5(虫垂切除既往は既往歴)、p6(治療中感染症はPLFにも登録、HCV治癒既往は「入院までの経過」へ)を確認。"
+  },
+  {
+   "key": "G7-S09-OPS-13",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "同ガイダンス p6(コメント欄除き必須、副作用含む不適応反応、患者プロフィール情報フレームに登録し退院時サマリーへ自動流し込み)を確認。"
+  },
+  {
+   "key": "G7-S09-OPS-14",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "同ガイダンス p7(検査情報のコピー流し込み、退院時サマリー要約の流用可、JLAC10、処方は全科・他院分を含める)を確認。"
+  }
+ ]
+}

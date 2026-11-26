@@ -1,0 +1,218 @@
+{
+ "verdicts": [
+  {
+   "key": "G7-S05-BAS-01",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "mext-joho1-ch2 l.194-200 学習7(4): 標本化→量子化→符号化の順を確認。誤肢・解説とも原文と整合。"
+  },
+  {
+   "key": "G7-S05-BAS-02",
+   "verdict": "fix",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": false,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "mext-joho1-ch2 l.308-317 ファイル形式表（GIF可逆・JPEG非可逆・PNG可逆・BMP無圧縮）、l.359-360 可逆圧縮＝ランレングス法・ハフマン法を確認。キー・誤肢は正しい。",
+   "detail": "point が「可逆＝GIF・PNG（ランレングス法・ハフマン法）」と、GIF・PNG がランレングス法・ハフマン法で圧縮されるかのように読める（教材は形式と圧縮方法を結び付けておらず、GIF は実際には LZW）。形式の分類と圧縮方法の例を分けて記述するよう point のみ修正。",
+   "fixed": {
+    "key": "G7-S05-BAS-02",
+    "subject": "S05",
+    "subtopic": "情報の基礎",
+    "format": "knowledge",
+    "difficulty": "standard",
+    "polarity": "negative",
+    "question": "画像ファイル形式とデータの圧縮について、誤っているものはどれか。",
+    "choices": [
+     "GIF は、256色以下に減色してから圧縮する可逆圧縮の画像ファイル形式である。",
+     "JPEG は、デジタルカメラで一般的に使われている非可逆圧縮の画像ファイル形式である。",
+     "PNG は、非可逆圧縮の画像ファイル形式であり、圧縮後は元の画像に完全には戻せない。",
+     "BMP は、無圧縮のため画質の劣化がない画像ファイル形式である。",
+     "ランレングス法やハフマン法は、可逆圧縮の方法である。"
+    ],
+    "answer": 2,
+    "explanation": {
+     "correct": "PNG は可逆圧縮の画像ファイル形式であり、圧縮したものを元に戻すことができる。完全には元に戻せない代わりにファイルサイズをより小さくできるのは非可逆圧縮（例：JPEG）である。",
+     "choiceNotes": [
+      "教材の表のとおり、GIF は256色以下に減色してから圧縮する可逆圧縮の形式であり、正しい。",
+      "JPEG はデジタルカメラで一般的に使われる非可逆圧縮の形式であり、正しい。",
+      null,
+      "BMP は Windows における標準的な画像ファイル形式で、無圧縮のため画質の劣化がないとされており、正しい。",
+      "可逆圧縮の方法としてランレングス法やハフマン法が挙げられており、正しい。"
+     ],
+     "point": "可逆圧縮の形式＝GIF・PNG、非可逆圧縮の形式＝JPEG、無圧縮＝BMP。可逆圧縮の方法の例＝ランレングス法・ハフマン法。"
+    },
+    "sources": [
+     {
+      "ref": "x-gen-G7-S05-BAS:mext-joho1-ch2",
+      "title": "高等学校情報科「情報Ⅰ」教員研修用教材（本編）第2章 コミュニケーションと情報デザイン",
+      "url": "https://www.mext.go.jp/content/20200928-mxt_jogai01-100013300_001.pdf",
+      "locator": "学習7（8）ファイル形式",
+      "quote": "PNG        可逆圧縮の画像ファイル形式。"
+     },
+     {
+      "ref": "x-gen-G7-S05-BAS:mext-joho1-ch2",
+      "title": "高等学校情報科「情報Ⅰ」教員研修用教材（本編）第2章 コミュニケーションと情報デザイン",
+      "url": "https://www.mext.go.jp/content/20200928-mxt_jogai01-100013300_001.pdf",
+      "locator": "学習7（9）ファイルの圧縮",
+      "quote": "このような圧縮方法を可逆圧縮といい，ラ ンレングス法やハフマン法などがある。"
+     }
+    ],
+    "asOf": "文部科学省 高等学校情報科「情報Ⅰ」教員研修用教材（令和2年）"
+   }
+  },
+  {
+   "key": "G7-S05-BAS-03",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "calc 6/18*100=33.3 を再計算。教材 l.363-366 A5B5=40% の例と同じ考え方。誤肢の算出根拠も正しい。"
+  },
+  {
+   "key": "G7-S05-BAS-04",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "16^3=4096 を再計算。教材 l.270-273 8bit×3=24bit=16,777,216色。誤肢の説明（48=16×3、256=16^2、65536=2^16）も正しい。"
+  },
+  {
+   "key": "G7-S05-BAS-05",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "教材 l.213-243: ラスタ＝ビットマップ・写真向き・拡大縮小に不適、解像度が高いほど滑らか；ベクタ＝拡大縮小しても画質維持。キー一意。"
+  },
+  {
+   "key": "G7-S05-BAS-06",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "mext-joho1-ch4 l.172-194: プロトコル定義、4層、上位→下位で手順付加・NI層で物理通信、有線/無線の違いは物理的。誤肢すべて原文で否定可能。"
+  },
+  {
+   "key": "G7-S05-BAS-07",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "medis-master-gaiyou-v25 l.567-569 2.6メンテナンス「原則年２回の更新（１月、６月）」。誤肢はいずれも原文と矛盾。"
+  },
+  {
+   "key": "G7-S05-BAS-08",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "medis v25 l.310-330 2.1: 病名表記＝傷病名基本名称が完全一致、同一時期・同一内容更新、独自項目あり、同義語は同一コードで請求可；l.562 診療報酬情報提供サービスから入手。キー一意。"
+  },
+  {
+   "key": "G7-S05-BAS-09",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "medis v25 l.211-218 1.2: 委託5マスター（病名・手術処置・HOT・看護実践用語・歯科病名）。臨床検査マスターは含まれない（l.1500,1506 JLAC10/HS014）。"
+  },
+  {
+   "key": "G7-S05-BAS-10",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "medis v25 l.938-950 4.1: レセ電コード＋9CMコード付与、J/K/L収載；表1-1(l.188)で手術・処置マスターに標準規格番号なし；HS017=JJ1017指針(l.4229-4237, mhlw-hs-standards-r0701 l.65)。"
+  },
+  {
+   "key": "G7-S05-BAS-11",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "medis v25 l.2580-2598 7.1: 行為編＋観察編、観察編＝観察項目と結果表記、温度板・看護指示オーダで利用、HS024；HS014＝臨床検査マスター(表1-1)。"
+  },
+  {
+   "key": "G7-S05-BAS-12",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "medis v25 l.4434-4460 12.1-12.2: FDI/ISO対応、歯式マスター包含・完全一致、HS033、4パート（歯種4桁・状態1桁・部分1桁・予備3桁）；HS013＝標準歯科病名マスター。"
+  }
+ ]
+}

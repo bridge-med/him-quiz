@@ -1,0 +1,16 @@
+{"answers":[
+{"key":"G7-S02-MGT-01","answer":2,"confidence":"high","ambiguous":false,"note":"医療法16条＋施行規則(病院の医師が速やかに診療できる体制として管理者があらかじめ知事に認められた場合)。義務主体は管理者"},
+{"key":"G7-S02-MGT-02","answer":4,"confidence":"high","ambiguous":false,"note":"法14条の2第1項1〜3号＋規則9条の4(建物内部の案内)。開設者の氏名は含まれない"},
+{"key":"G7-S02-MGT-03","answer":4,"confidence":"high","ambiguous":false,"note":"施行令4条の8の1〜7号。受付・請求事務は含まれない"},
+{"key":"G7-S02-MGT-04","answer":2,"confidence":"high","ambiguous":false,"note":"規則1条の11第1項柱書: 第二号(委員会)・第五号(医療安全管理者)のみ病院等限定"},
+{"key":"G7-S02-MGT-05","answer":2,"confidence":"high","ambiguous":false,"note":"法46条の7第3項: 重要な資産の処分及び譲受けは理事に委任できない"},
+{"key":"G7-S02-MGT-06","answer":0,"confidence":"high","ambiguous":false,"note":"H15報告書: 革新と学習→業務プロセス→顧客→財務"},
+{"key":"G7-S02-MGT-07","answer":1,"confidence":"high","ambiguous":false,"note":"H15報告書 ABC: 因果関係のある活動を基準に割り振る"},
+{"key":"G7-S02-MGT-08","answer":0,"confidence":"high","ambiguous":false,"note":"H15報告書 品質コスト分析: 予防コスト割合を高め失敗コスト削減"},
+{"key":"G7-S02-MGT-09","answer":0,"confidence":"high","ambiguous":false,"note":"J-Net21: 外部環境は統制不可能な条件、内部は統制可能"},
+{"key":"G7-S02-MGT-10","answer":2,"confidence":"high","ambiguous":false,"note":"J-Net21: 弱み×機会=改善戦略"},
+{"key":"G7-S02-MGT-11","answer":2,"confidence":"high","ambiguous":false,"note":"機能評価 機能種別 一般病院3"},
+{"key":"G7-S02-MGT-12","answer":2,"confidence":"high","ambiguous":false,"note":"ガイドブック第4版表: 2018年 緩和ケア病棟入院料1・2"},
+{"key":"G7-S02-MGT-13","answer":4,"confidence":"high","ambiguous":false,"note":"現況調査票は書面審査で訪問審査の2ヶ月前の1日までに提出"},
+{"key":"G7-S02-MGT-14","answer":1,"confidence":"high","ambiguous":false,"note":"a,cが正。bは申込受付期間の記述で訪問審査実施可能期間は1年前〜前月末。dは認定3年目。eは許可病床数による区分"}
+]}

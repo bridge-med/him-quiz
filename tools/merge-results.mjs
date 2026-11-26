@@ -227,7 +227,7 @@ for (const q of out) {
   q.verification.notes = `除外理由: ${o.reason} ${o.detail}（残す問題: ${o.of}）｜${q.verification.notes || ''}`;
   if (q.legacy && !changes.some((c) => c.id === q.id && c.action === 'reject')) changes.push({ id: q.id, legacyKey: q.legacy.key, action: 'reject', reason: o.reason, detail: `${o.detail}（${o.of} を残す）`, before: { question: q.question } });
 }
-fs.writeFileSync(path.join(WORK, 'dup-review.json'), JSON.stringify({ rejected: Object.keys(ov.reject).length, threshold: 0.6 }));
+fs.writeFileSync(path.join(WORK, 'dup-review.json'), JSON.stringify({ rejected: Object.keys(ov.reject).length, threshold: 0.55 }));
 for (const k of ['legacy', 'gen']) for (const s2 of ['verified', 'provisional', 'rejected']) counts[k][s2] = out.filter((q) => (k === 'legacy') === !!q.legacy && q.status === s2).length;
 
 // ================= 書き出し =================

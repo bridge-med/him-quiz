@@ -1,0 +1,16 @@
+{"answers":[
+{"key":"G7-S07-POP-01","answer":2,"confidence":"high","ambiguous":false,"note":"28000/60000×100=46.7"},
+{"key":"G7-S07-POP-02","answer":2,"confidence":"high","ambiguous":false,"note":"老年化指数は65歳以上/15歳未満。選択肢の定義は老年人口指数"},
+{"key":"G7-S07-POP-03","answer":1,"confidence":"high","ambiguous":false,"note":"1.25^(1/5)=1.0456→4.6%"},
+{"key":"G7-S07-POP-04","answer":4,"confidence":"high","ambiguous":false,"note":"住基人口は2012年7月以降外国人住民も対象"},
+{"key":"G7-S07-POP-05","answer":2,"confidence":"high","ambiguous":false,"note":"性比=男/女×100=94.2"},
+{"key":"G7-S07-POP-06","answer":1,"confidence":"high","ambiguous":false,"note":"ktyosa25_07/04注：分母の世帯人員には入院者を含む→5000/20000=250.0。255.1は罠"},
+{"key":"G7-S07-POP-07","answer":0,"confidence":"high","ambiguous":false,"note":"ktyosa25_01：1986年初年、3年ごと大規模、2025年は14回目の大規模調査。長期入院者は除外"},
+{"key":"G7-S07-POP-08","answer":0,"confidence":"high","ambiguous":false,"note":"ktyosa25_04：男女とも腰痛が最高。通院者は高血圧症、有訴者率は女が高く255.7"},
+{"key":"G7-S07-POP-09","answer":4,"confidence":"high","ambiguous":false,"note":"入院時食事・生活医療費は含まれる。他は対象外"},
+{"key":"G7-S07-POP-10","answer":4,"confidence":"high","ambiguous":false,"note":"R06kekka：最多は循環器系18.2%、新生物は2位"},
+{"key":"G7-S07-POP-11","answer":3,"confidence":"high","ambiguous":false,"note":"33600/600000×100000=5600"},
+{"key":"G7-S07-POP-12","answer":2,"confidence":"high","ambiguous":false,"note":"20+10+70×14×6/7=870"},
+{"key":"G7-S07-POP-13","answer":0,"confidence":"high","ambiguous":false,"note":"kanja23_gaiyou 注(5)：入院患者は調査日現在入院の理由となっている傷病"},
+{"key":"G7-S07-POP-14","answer":3,"confidence":"high","ambiguous":false,"note":"ktyosa25_07 用語22：通院者にはあんま・はり・きゅう・柔道整復師に通う者を含む"}
+]}

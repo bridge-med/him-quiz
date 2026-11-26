@@ -1,0 +1,102 @@
+{
+ "answers": [
+  {
+   "key": "G7-S06-INF-01",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "計算・定義で確認"
+  },
+  {
+   "key": "G7-S06-INF-02",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "計算・定義で確認"
+  },
+  {
+   "key": "G7-S06-INF-03",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "計算・定義で確認"
+  },
+  {
+   "key": "G7-S06-INF-04",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "計算・定義で確認"
+  },
+  {
+   "key": "G7-S06-INF-05",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "40-80は±2SDで約95.5%"
+  },
+  {
+   "key": "G7-S06-INF-06",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "計算・定義で確認"
+  },
+  {
+   "key": "G7-S06-INF-07",
+   "answer": 4,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "計算・定義で確認"
+  },
+  {
+   "key": "G7-S06-INF-08",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "計算・定義で確認"
+  },
+  {
+   "key": "G7-S06-INF-09",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "a,cが正。b誤(規模を大きく)、d誤(回収率で割る)、e誤"
+  },
+  {
+   "key": "G7-S06-INF-10",
+   "answer": 4,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "計算・定義で確認"
+  },
+  {
+   "key": "G7-S06-INF-11",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "計算・定義で確認"
+  },
+  {
+   "key": "G7-S06-INF-12",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "計算・定義で確認"
+  },
+  {
+   "key": "G7-S06-INF-13",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "計算・定義で確認"
+  },
+  {
+   "key": "G7-S06-INF-14",
+   "answer": 3,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "B選択肢は表現がやや曖昧だが、Dが明確に逆"
+  }
+ ]
+}

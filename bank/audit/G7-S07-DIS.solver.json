@@ -1,0 +1,14 @@
+{"answers":[
+{"key":"G7-S07-DIS-01","answer":3,"confidence":"high","ambiguous":false,"note":"死因分類表 09400 大動脈瘤及び解離 I71 (icd:shiin2013)"},
+{"key":"G7-S07-DIS-02","answer":1,"confidence":"high","ambiguous":false,"note":"02105 C19-C20; 疾病分類表 a-0202 C18-C20"},
+{"key":"G7-S07-DIS-03","answer":2,"confidence":"high","ambiguous":false,"note":"11301はK74.3-K74.6。K70.3は11302(その他の肝疾患)"},
+{"key":"G7-S07-DIS-04","answer":3,"confidence":"high","ambiguous":false,"note":"09200はI27,I30-I52等でI26を含まない。09500 I00-I99の残り"},
+{"key":"G7-S07-DIS-05","answer":1,"confidence":"high","ambiguous":false,"note":"a-0902 虚血性心疾患 I20-I25"},
+{"key":"G7-S07-DIS-06","answer":1,"confidence":"high","ambiguous":false,"note":"a,dが正。bはI10-I15、cはJ45-J46、eはJ41-J44"},
+{"key":"G7-S07-DIS-07","answer":3,"confidence":"high","ambiguous":false,"note":"b-1402 腎不全はa-1401に集計(shippei2013)"},
+{"key":"G7-S07-DIS-08","answer":1,"confidence":"high","ambiguous":false,"note":"1100/2500=44.0% 逆紹介率=逆紹介患者数/初診患者数"},
+{"key":"G7-S07-DIS-09","answer":1,"confidence":"high","ambiguous":false,"note":"病院経営管理指標の病床利用率の分母は稼働病床数: 252/280=90.0%"},
+{"key":"G7-S07-DIS-10","answer":1,"confidence":"high","ambiguous":false,"note":"(2,920,000+80,000)/(58,000+2,000)=50.0"},
+{"key":"G7-S07-DIS-11","answer":2,"confidence":"high","ambiguous":false,"note":"630/(40+5)=14.0 (参考1 指標一覧)"},
+{"key":"G7-S07-DIS-12","answer":2,"confidence":"high","ambiguous":false,"note":"経営管理指標の病床利用率の分母は稼働病床数(許可病床数ではない)。他は用語解説・指標一覧と一致"}
+]}

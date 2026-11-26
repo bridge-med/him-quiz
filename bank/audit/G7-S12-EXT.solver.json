@@ -1,0 +1,116 @@
+{
+ "answers": [
+  {
+   "key": "G7-S12-EXT-01",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "W01つまづき+.5商業施設(スーパーマーケット)"
+  },
+  {
+   "key": "G7-S12-EXT-02",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "老人ホーム=.1居住施設。病院.2,プール.3,私邸庭園.0"
+  },
+  {
+   "key": "G7-S12-EXT-03",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "法的介入はY35-Y36。X85-Y09の除外に明記"
+  },
+  {
+   "key": "G7-S12-EXT-04",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "Y83-Y84は処置時に事故記載なし。Y60=意図しない穿孔,Y70-82=器具"
+  },
+  {
+   "key": "G7-S12-EXT-05",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "氷=W00,歩道=.4,S52.5主要病態"
+  },
+  {
+   "key": "G7-S12-EXT-06",
+   "answer": 4,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "主要病態はXIX章の損傷コード。XX章は任意追加"
+  },
+  {
+   "key": "G7-S12-EXT-07",
+   "answer": 3,
+   "confidence": "medium",
+   "ambiguous": false,
+   "note": "章注:事件後1年以上の後遺症を含む。慢性中毒は使用しない"
+  },
+  {
+   "key": "G7-S12-EXT-08",
+   "answer": 1,
+   "confidence": "medium",
+   "ambiguous": false,
+   "note": "意図不明は不慮扱い X41.0(自宅)"
+  },
+  {
+   "key": "G7-S12-EXT-09",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "XXI章注:国際比較及び原死因コーディングには使用しない"
+  },
+  {
+   "key": "G7-S12-EXT-10",
+   "answer": 3,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "Z02.1就職前の検査"
+  },
+  {
+   "key": "G7-S12-EXT-11",
+   "answer": 4,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "Z03.1悪性新生物の疑いに対する観察"
+  },
+  {
+   "key": "G7-S12-EXT-12",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "Z08.0術後の経過観察"
+  },
+  {
+   "key": "G7-S12-EXT-13",
+   "answer": 3,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "Z08.1は放射線治療後であり施行中ではない"
+  },
+  {
+   "key": "G7-S12-EXT-14",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "Z23.2 BCG"
+  },
+  {
+   "key": "G7-S12-EXT-15",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "Z85.0消化器の悪性新生物の既往歴"
+  },
+  {
+   "key": "G7-S12-EXT-16",
+   "answer": 3,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "陳旧性心筋梗塞はI25.2。Z86.7除外"
+  }
+ ]
+}

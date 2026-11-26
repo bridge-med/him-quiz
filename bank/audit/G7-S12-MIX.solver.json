@@ -1,0 +1,17 @@
+{"answers":[
+{"key":"G7-S12-MIX-01","answer":1,"confidence":"high","ambiguous":false,"note":"D51.0 ビタミンB12欠乏性貧血，内因子欠乏"},
+{"key":"G7-S12-MIX-02","answer":2,"confidence":"high","ambiguous":false,"note":"出血性障害はD68.3、Z92.1は既往歴"},
+{"key":"G7-S12-MIX-03","answer":3,"confidence":"high","ambiguous":false,"note":"M31.1 血栓性微小血管障害(TTP)"},
+{"key":"G7-S12-MIX-04","answer":0,"confidence":"high","ambiguous":false,"note":"D59.0 薬物誘発性自己免疫性溶血性貧血"},
+{"key":"G7-S12-MIX-05","answer":2,"confidence":"high","ambiguous":false,"note":"D86.8†+H22.1*"},
+{"key":"G7-S12-MIX-06","answer":1,"confidence":"high","ambiguous":false,"note":"P13.4"},
+{"key":"G7-S12-MIX-07","answer":3,"confidence":"high","ambiguous":false,"note":"P70.0 妊娠性糖尿病母体の児の症候群"},
+{"key":"G7-S12-MIX-08","answer":2,"confidence":"high","ambiguous":false,"note":"P55.1 ABO同種免疫"},
+{"key":"G7-S12-MIX-09","answer":1,"confidence":"high","ambiguous":false,"note":"離脱症状はP96.1、P04.4ではない"},
+{"key":"G7-S12-MIX-10","answer":2,"confidence":"high","ambiguous":false,"note":"b=P61.0, c=P61.1, e=P61.2; a,d正"},
+{"key":"G7-S12-MIX-11","answer":3,"confidence":"medium","ambiguous":false,"note":"P81.9 新生児の体温調節機能障害，詳細不明"},
+{"key":"G7-S12-MIX-12","answer":2,"confidence":"high","ambiguous":false,"note":"R73.0 耐糖能障害/糖尿病前症 (naiyou18)"},
+{"key":"G7-S12-MIX-13","answer":1,"confidence":"high","ambiguous":false,"note":"心臓性突然死はI46.1"},
+{"key":"G7-S12-MIX-14","answer":2,"confidence":"high","ambiguous":false,"note":"R03.0"},
+{"key":"G7-S12-MIX-15","answer":3,"confidence":"high","ambiguous":false,"note":"修正ルールA、R95は含まれない"}
+]}

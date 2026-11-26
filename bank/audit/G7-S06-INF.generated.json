@@ -1,0 +1,687 @@
+{
+ "questions": [
+  {
+   "subject": "S06",
+   "subtopic": "確率分布",
+   "format": "calculation",
+   "difficulty": "advanced",
+   "polarity": "positive",
+   "question": "ある検査値は、平均値100、標準偏差15の正規分布に従うとする。正規分布では平均値±1標準偏差の範囲に全体の約68.3%、平均値±2標準偏差の範囲に約95.5%が含まれることを用いると、検査値が85以上130以下の者の割合は約何%か。",
+   "choices": [
+    "約13.6%",
+    "約68.3%",
+    "約81.9%",
+    "約84.1%",
+    "約95.5%"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "85は平均値−1標準偏差、130は平均値＋2標準偏差である。正規分布は平均値を中心に左右対称なので、85〜100には68.3%の半分の34.15%、100〜130には95.5%の半分の47.75%が含まれ、合計は約81.9%となる。",
+    "choiceNotes": [
+     "約13.6%は、47.75%−34.15%で求めた「平均値＋1標準偏差から＋2標準偏差まで（115〜130）」の割合であり、85〜130の割合ではない。",
+     "約68.3%は平均値±1標準偏差（85〜115）の割合であり、115〜130の部分が含まれていない。",
+     null,
+     "約84.1%は、平均値＋1標準偏差（115）以下の割合（50%＋約34.1%）であり、85未満の部分を含み、115〜130の部分を含んでいない。",
+     "約95.5%は平均値±2標準偏差（70〜130）の割合であり、70〜85の部分まで含んでしまっている。"
+    ],
+    "point": "左右非対称な範囲は、平均値で左右に分けて「±1SDの半分（34.15%）」と「±2SDの半分（47.75%）」を足す。"
+   },
+   "sources": [
+    {
+     "ref": "x-legacy-L06a:cdc-poe-l2s7",
+     "title": "Principles of Epidemiology in Public Health Practice, 3rd ed. Lesson 2 Section 7: Measures of Spread",
+     "url": "https://archive.cdc.gov/www_cdc_gov/csels/dsepd/ss1978/lesson2/section7.html",
+     "locator": "Properties of the standard deviation（Figure 2.9）",
+     "quote": "approximately two-thirds (68.3%, to be exact) of the data fall within one standard deviation of either side of the mean; 95.5% of the data fall within two standard deviations of the mean"
+    },
+    {
+     "ref": "stats:naruhodo-suisoku",
+     "title": "なるほど統計学園「推測統計」",
+     "url": "https://www.stat.go.jp/naruhodo/11_tokusei/suisoku.html",
+     "locator": "正規分布",
+     "quote": "左右対称の釣鐘型をしていますが"
+    }
+   ],
+   "asOf": "統計学の一般的な定義（基準時点の影響を受けない）",
+   "calc": {
+    "expr": "68.3/2+95.5/2",
+    "value": 81.9
+   },
+   "key": "G7-S06-INF-01"
+  },
+  {
+   "subject": "S06",
+   "subtopic": "確率分布",
+   "format": "calculation",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "ある処置の後に合併症が起こる確率は0.2で、患者ごとに独立に起こるものとする。この処置を3人の患者に行ったとき、合併症が起こる人数は二項分布に従う。ちょうど1人に合併症が起こる確率はどれか。",
+   "choices": [
+    "0.096",
+    "0.128",
+    "0.384",
+    "0.488",
+    "0.600"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "二項分布で、試行回数n回のうちちょうどx回起こる確率は nCx × p^x × (1−p)^(n−x) である。n＝3、x＝1、p＝0.2 では、3C1 × 0.2 × 0.8² ＝ 3 × 0.2 × 0.64 ＝ 0.384 となる。",
+    "choiceNotes": [
+     "0.096は、3 × 0.2² × 0.8 で求めた「ちょうど2人に起こる確率」である。",
+     "0.128は、0.2 × 0.8² で「特定の1人だけに起こる」並び方1通りの確率であり、誰が合併症を起こすかの組合せ数（3C1＝3）を掛けていない。",
+     null,
+     "0.488は、1−0.8³ で求めた「少なくとも1人に起こる確率」であり、2人・3人に起こる場合も含む。",
+     "0.600は、3 × 0.2 で求めた合併症が起こる人数の平均（期待値 np）であり、確率ではない。"
+    ],
+    "point": "二項分布の確率＝（組合せ数）× p^x ×（1−p）^(n−x)。組合せ数の掛け忘れに注意。"
+   },
+   "sources": [
+    {
+     "ref": "x-gen-G5-S06-PRB:nist-binomial",
+     "title": "NIST/SEMATECH e-Handbook of Statistical Methods, 1.3.6.6.18. Binomial Distribution",
+     "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda366i.htm",
+     "locator": "Probability Mass Function",
+     "quote": "The binomial distribution is used to obtain the probability of observing x successes in N trials, with the probability of success on a single trial denoted by p."
+    },
+    {
+     "ref": "x-gen-G5-S06-PRB:nist-binomial",
+     "title": "NIST/SEMATECH e-Handbook of Statistical Methods, 1.3.6.6.18. Binomial Distribution",
+     "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda366i.htm",
+     "locator": "Probability Mass Function",
+     "quote": "The binomial distribution assumes that p is fixed for all trials."
+    }
+   ],
+   "asOf": "統計学の一般的な定義（基準時点の影響を受けない）",
+   "calc": {
+    "expr": "3*0.2*0.8^2",
+    "value": 0.384
+   },
+   "key": "G7-S06-INF-02"
+  },
+  {
+   "subject": "S06",
+   "subtopic": "確率分布",
+   "format": "calculation",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "ある病棟で1日に報告される転倒・転落の件数Xについて、過去のデータから次の確率分布を想定した。「X＝0件：0.50、X＝1件：0.30、X＝2件：0.15、X＝3件以上：p」。確率分布の性質から、pの値はどれか。",
+   "choices": [
+    "0.05",
+    "0.15",
+    "0.20",
+    "0.50",
+    "0.95"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "確率分布では、確率変数がとりうるすべての値の確率の合計は1になる。したがって p ＝ 1 −（0.50＋0.30＋0.15）＝ 0.05 である。",
+    "choiceNotes": [
+     null,
+     "0.15は「X＝2件」の確率をそのまま当てはめたもので、合計を1にする条件を使っていない。",
+     "0.20は 0.50−0.30 のように一部の確率どうしの差をとった値で、合計が1になる条件を満たさない（合計1.15になる）。",
+     "0.50は「X＝0件」の確率をそのまま当てはめたもので、合計が1.45となり確率分布にならない。",
+     "0.95は 0.50＋0.30＋0.15 の合計そのものであり、これを1から引いた残りがpである。"
+    ],
+    "point": "確率分布の確率は合計すると必ず1。残り1つの確率は「1−（他の確率の和）」で求める。"
+   },
+   "sources": [
+    {
+     "ref": "stats:naruhodo-suisoku",
+     "title": "なるほど統計学園「推測統計」",
+     "url": "https://www.stat.go.jp/naruhodo/11_tokusei/suisoku.html",
+     "locator": "（１）確率変数と確率分布",
+     "quote": "確率分布とは、確率変数がとる値ごとの確率を表したものです。確率変数ごとの確率の合計は、1となります。"
+    }
+   ],
+   "asOf": "統計学の一般的な定義（基準時点の影響を受けない）",
+   "calc": {
+    "expr": "1-(0.50+0.30+0.15)",
+    "value": 0.05
+   },
+   "key": "G7-S06-INF-03"
+  },
+  {
+   "subject": "S06",
+   "subtopic": "確率分布",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "母集団の分布の形がどのようなものであっても、偏りのない方法で抽出した標本の大きさを大きくするほど、標本平均の分布が近似的に正規分布に従うという性質を何というか。",
+   "choices": [
+    "大数の法則",
+    "中心極限定理",
+    "最小二乗法",
+    "完全相関",
+    "系統抽出法"
+   ],
+   "answer": 1,
+   "explanation": {
+    "correct": "標本平均の標本分布は、母集団の分布の形によらず、標本サイズnが大きくなるほど近似的に正規分布に従う。この性質を中心極限定理という。母平均の信頼区間を正規分布の係数（1.96など）で求められるのはこの性質による。",
+    "choiceNotes": [
+     "大数の法則は、標本の大きさが大きくなるほど標本平均が母平均に近づくという性質であり、標本平均の分布の形（正規分布に近づくこと）を述べたものではない。",
+     null,
+     "最小二乗法は、実測値と予測値の誤差の二乗和が最小になるように回帰式を決める方法である。",
+     "完全相関は、相関係数が1または−1になる状態をいう。",
+     "系統抽出法は、母集団を順番に並べ、無作為に選んだスタート番号から等間隔で標本を選ぶ抽出方法である。"
+    ],
+    "point": "中心極限定理＝標本平均の「分布の形」が正規分布に近づく。大数の法則＝標本平均の「値」が母平均に近づく。"
+   },
+   "sources": [
+    {
+     "ref": "stats:naruhodo-suisoku",
+     "title": "なるほど統計学園「推測統計」",
+     "url": "https://www.stat.go.jp/naruhodo/11_tokusei/suisoku.html",
+     "locator": "標本分布",
+     "quote": "母集団の分布の形がどのようなものであっても、抽出方法に偏りがなく、標本サイズ 𝑛 が大きくなるほど、標本平均は近似的に正規分布に従うと考えられます。この性質を 中心極限定理 といいます。"
+    },
+    {
+     "ref": "stats:naruhodo-kentei",
+     "title": "なるほど統計学園「統計的推定と統計的仮説検定」",
+     "url": "https://www.stat.go.jp/naruhodo/11_tokusei/kentei.html",
+     "locator": "点推定",
+     "quote": "大数の法則から標本の大きさが大きくなるほど、標本の平均は母平均に近づくため"
+    }
+   ],
+   "asOf": "統計学の一般的な定義（基準時点の影響を受けない）",
+   "key": "G7-S06-INF-04"
+  },
+  {
+   "subject": "S06",
+   "subtopic": "確率分布",
+   "format": "knowledge",
+   "difficulty": "standard",
+   "polarity": "negative",
+   "question": "ある検査値が、平均値60、標準偏差10の正規分布に従うとする。この検査値の分布について、誤っているものはどれか。",
+   "choices": [
+    "50以上70以下の範囲に、全体の約68.3%が含まれる。",
+    "30以上90以下の範囲に、全体の約99.7%が含まれる。",
+    "40以上80以下の範囲に含まれるのは、全体の約68.3%である。",
+    "分布は平均値60を中心とした左右対称の釣鐘型である。",
+    "40.4以上79.6以下の範囲に、全体の約95.0%が含まれる。"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "40以上80以下は平均値±2標準偏差の範囲であり、全体の約95.5%が含まれる。約68.3%が含まれるのは平均値±1標準偏差（50以上70以下）である。",
+    "choiceNotes": [
+     "50〜70は平均値±1標準偏差であり、約68.3%が含まれるので正しい。",
+     "30〜90は平均値±3標準偏差であり、約99.7%が含まれるので正しい。",
+     null,
+     "正規分布は中央（平均値の位置）が最も高い左右対称の釣鐘型であるので正しい。",
+     "40.4〜79.6は平均値±1.96標準偏差（60±19.6）であり、ちょうど95.0%が含まれるので正しい。"
+    ],
+    "point": "±1SD≒68.3%、±1.96SD＝95.0%、±2SD≒95.5%、±3SD≒99.7%。"
+   },
+   "sources": [
+    {
+     "ref": "x-legacy-L06a:cdc-poe-l2s7",
+     "title": "Principles of Epidemiology in Public Health Practice, 3rd ed. Lesson 2 Section 7: Measures of Spread",
+     "url": "https://archive.cdc.gov/www_cdc_gov/csels/dsepd/ss1978/lesson2/section7.html",
+     "locator": "Properties of the standard deviation（Figure 2.9）",
+     "quote": "95.5% of the data fall within two standard deviations of the mean; and 99.7% of the data fall within three standard deviations. Exactly 95.0% of the data fall within 1.96 standard deviations of the mean."
+    },
+    {
+     "ref": "x-legacy-L06a:cdc-poe-l2s7",
+     "title": "Principles of Epidemiology in Public Health Practice, 3rd ed. Lesson 2 Section 7: Measures of Spread",
+     "url": "https://archive.cdc.gov/www_cdc_gov/csels/dsepd/ss1978/lesson2/section7.html",
+     "locator": "Figure 2.9",
+     "quote": "±1 SD includes 68.3%"
+    },
+    {
+     "ref": "stats:naruhodo-suisoku",
+     "title": "なるほど統計学園「推測統計」",
+     "url": "https://www.stat.go.jp/naruhodo/11_tokusei/suisoku.html",
+     "locator": "正規分布",
+     "quote": "左右対称の釣鐘型をしていますが、正規分布の場合、この中央の一番高い位置に平均値がきます。"
+    }
+   ],
+   "asOf": "統計学の一般的な定義（基準時点の影響を受けない）",
+   "key": "G7-S06-INF-05"
+  },
+  {
+   "subject": "S06",
+   "subtopic": "標本抽出と推定",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "全国の病院の入院患者を対象とする調査で、第一段階として病院を無作為に抽出し、第二段階として選ばれた病院の入院患者の中から調査対象者を無作為に抽出した。この標本抽出の方法はどれか。",
+   "choices": [
+    "系統抽出法",
+    "多段抽出（二段抽出）",
+    "層化抽出",
+    "単純無作為抽出法",
+    "有意抽出"
+   ],
+   "answer": 1,
+   "explanation": {
+    "correct": "無作為抽出を複数回の段階に分けて行う方法を多段抽出という。第一段階で地域（ここでは病院）を、第二段階でその中の個人を無作為に抽出するのは二段抽出の典型例である。",
+    "choiceNotes": [
+     "系統抽出法は、母集団を順番に並べ、無作為に選んだスタート番号から等間隔で選ぶ方法であり、段階を分けて抽出する方法ではない。",
+     null,
+     "層化抽出は、母集団を年齢や職業などの層に分け、各層からそれぞれ標本を抽出する方法であり、抽出前に層分けした記述はない。",
+     "単純無作為抽出法は、母集団を構成するすべての人から乱数に従って直接標本を選ぶ方法であり、病院を選んでから患者を選ぶ2段階の手続きはとらない。",
+     "有意抽出は、母集団の様々なカテゴリから割合を見ながら作為的に標本をとる方法であり、無作為抽出ではない。"
+    ],
+    "point": "地域（施設）→個人のように段階を分けて無作為抽出＝多段抽出。事前の層分けは「層化」。"
+   },
+   "sources": [
+    {
+     "ref": "stats:datastart-hyohon-chushutsu",
+     "title": "Data StaRt EBPM活用塾 ゼミナール編（２）2-1-2 標本抽出の諸方法",
+     "url": "https://www.stat.go.jp/dstart/point/seminar/02/2-1-2.html",
+     "locator": "多段抽出",
+     "quote": "複数回の段階に分けて抽出することを、多段抽出といいます。"
+    },
+    {
+     "ref": "stats:datastart-hyohon-chushutsu",
+     "title": "Data StaRt EBPM活用塾 ゼミナール編（２）2-1-2 標本抽出の諸方法",
+     "url": "https://www.stat.go.jp/dstart/point/seminar/02/2-1-2.html",
+     "locator": "多段抽出",
+     "quote": "第一段階で地域を無作為抽出し、第二段階でその地域に居住する個人をさらに無作為抽出する"
+    }
+   ],
+   "asOf": "統計学の一般的な定義（基準時点の影響を受けない）",
+   "key": "G7-S06-INF-06"
+  },
+  {
+   "subject": "S06",
+   "subtopic": "標本抽出と推定",
+   "format": "knowledge",
+   "difficulty": "standard",
+   "polarity": "negative",
+   "question": "統計的推定について、誤っているものはどれか。",
+   "choices": [
+    "点推定は、母集団の平均や分散などの特性値を1つの値で推定する方法である。",
+    "区間推定では、母平均などをある区間（幅）で推定し、その区間を信頼区間とよぶ。",
+    "母平均の点推定には、標本平均が用いられる。",
+    "標準誤差は推定量の標準偏差であり、推定量そのもののばらつきを表す。",
+    "区間推定は、母集団に関する仮説が統計学的に成り立つか否かを、標本のデータを用いて判断する方法である。"
+   ],
+   "answer": 4,
+   "explanation": {
+    "correct": "母集団に関する仮説が成り立つか否かを標本のデータで判断するのは統計的仮説検定（検定）である。区間推定は、母平均などの特性値を1つの値ではなく区間（幅）で推定する方法である。",
+    "choiceNotes": [
+     "点推定は母集団の特性値を1つの値で推定する方法であるので正しい。",
+     "区間推定では推定する区間を信頼区間とよび、90%・95%・99%信頼区間などで求めるので正しい。",
+     "大数の法則により標本が大きくなるほど標本平均は母平均に近づくため、標本平均が母平均の推定値となるので正しい。",
+     "標準誤差は推定量の標準偏差であり、推定量のばらつきを表すので正しい。",
+     null
+    ],
+    "point": "推定＝母数の値（点）や範囲（区間）を求める。検定＝仮説が成り立つか否かを判断する。"
+   },
+   "sources": [
+    {
+     "ref": "stats:naruhodo-kentei",
+     "title": "なるほど統計学園「統計的推定と統計的仮説検定」",
+     "url": "https://www.stat.go.jp/naruhodo/11_tokusei/kentei.html",
+     "locator": "推定の方法",
+     "quote": "点推定で推定するのは1つの値で、区間推定ではある区間（幅）をもって値を推定します。"
+    },
+    {
+     "ref": "stats:naruhodo-kentei",
+     "title": "なるほど統計学園「統計的推定と統計的仮説検定」",
+     "url": "https://www.stat.go.jp/naruhodo/11_tokusei/kentei.html",
+     "locator": "点推定",
+     "quote": "標準誤差は推定量の標準偏差であり、標本から得られる推定量そのもののバラつきを表すものです。"
+    },
+    {
+     "ref": "stats:naruhodo-kentei",
+     "title": "なるほど統計学園「統計的推定と統計的仮説検定」",
+     "url": "https://www.stat.go.jp/naruhodo/11_tokusei/kentei.html",
+     "locator": "統計的仮説検定",
+     "quote": "検定は、母集団に関するある仮説が統計学的に成り立つか否かを、標本のデータを用いて判断すること"
+    }
+   ],
+   "asOf": "統計学の一般的な定義（基準時点の影響を受けない）",
+   "key": "G7-S06-INF-07"
+  },
+  {
+   "subject": "S06",
+   "subtopic": "標本抽出と推定",
+   "format": "calculation",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "ある病院の外来患者から無作為に64人を抽出し、待ち時間を調べたところ、平均値30.0分、標準偏差8.0分であった。標本サイズが十分に大きいものとして、信頼水準99%の係数2.58を用いたとき、母平均の99%信頼区間として正しいものはどれか。",
+   "choices": [
+    "22.00分〜38.00分",
+    "27.42分〜32.58分",
+    "28.04分〜31.96分",
+    "29.68分〜30.32分",
+    "9.36分〜50.64分"
+   ],
+   "answer": 1,
+   "explanation": {
+    "correct": "標本平均の標準誤差は、標準偏差を標本サイズの平方根で割って求める：8.0÷√64＝1.0分。99%信頼区間は「平均値±2.58×標準誤差」なので、30.0±2.58＝27.42分〜32.58分となる。",
+    "choiceNotes": [
+     "22.00〜38.00分は平均値±1標準偏差（30.0±8.0）であり、標準誤差も係数も用いていない。",
+     null,
+     "28.04〜31.96分は係数1.96を用いた95%信頼区間（30.0±1.96）であり、99%信頼区間ではない。",
+     "29.68〜30.32分は、標準偏差を標本サイズ64そのもので割った値（0.125）に2.58を掛けたもので、平方根をとっていない。",
+     "9.36〜50.64分は、標準誤差ではなく標準偏差8.0に2.58を掛けたもの（30.0±20.64）である。"
+    ],
+    "point": "母平均の信頼区間＝標本平均±係数×（SD÷√n）。係数は95%で1.96、99%で2.58。"
+   },
+   "sources": [
+    {
+     "ref": "x-legacy-L06a:cdc-poe-l2s7",
+     "title": "Principles of Epidemiology in Public Health Practice, 3rd ed. Lesson 2 Section 7: Measures of Spread",
+     "url": "https://archive.cdc.gov/www_cdc_gov/csels/dsepd/ss1978/lesson2/section7.html",
+     "locator": "Method for calculating the standard error of the mean",
+     "quote": "Divide the standard deviation by the square root of the number of observations (n)."
+    },
+    {
+     "ref": "x-legacy-L06b:mext-joho2-ch3a",
+     "title": "高等学校情報科「情報Ⅱ」教員研修用教材（本編）第3章 情報とデータサイエンス 前半",
+     "url": "https://www.mext.go.jp/content/20200702-mxt_jogai01-000007843_004.pdf",
+     "locator": "（2）母集団と調査",
+     "quote": "※信頼水準99%では1.96の代わりに2.58を使う。"
+    },
+    {
+     "ref": "x-legacy-L06a:cdc-poe-l2s7",
+     "title": "Principles of Epidemiology in Public Health Practice, 3rd ed. Lesson 2 Section 7: Measures of Spread",
+     "url": "https://archive.cdc.gov/www_cdc_gov/csels/dsepd/ss1978/lesson2/section7.html",
+     "locator": "Method for calculating a 95% confidence interval for a mean",
+     "quote": "Lower limit of the 95% confidence interval = mean minus 1.96 × standard error."
+    }
+   ],
+   "asOf": "統計学の一般的な定義（基準時点の影響を受けない）",
+   "calc": {
+    "expr": "30-2.58*8/sqrt(64)",
+    "value": 27.42
+   },
+   "key": "G7-S06-INF-08"
+  },
+  {
+   "subject": "S06",
+   "subtopic": "標本抽出と推定",
+   "format": "combination",
+   "difficulty": "advanced",
+   "polarity": "positive",
+   "question": "標本誤差に関する次の記述a〜eのうち、正しいものの組合せはどれか。\na　標本誤差とは、標本抽出に伴って発生する誤差である。\nb　標本誤差をより小さくしたい場合には、標本規模を小さくするとよい。\nc　多段抽出の段階数を多くすると、調査のコストを下げられる一方で、誤差が大きくなる。\nd　回収率が100%から程遠いと予想されるときは、計算で求めた標本規模に回収率を掛けた人数を対象者として抽出する。\ne　二段抽出では、単純無作為抽出よりも標本誤差が小さくなるため、対象者数を減らすことができる。",
+   "choices": [
+    "a と c",
+    "a と d",
+    "b と c",
+    "b と e",
+    "d と e"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "a：標本誤差は標本抽出に伴って発生する誤差である（正）。c：多段抽出は段階数を多くするとコストを下げられるが、誤差が大きくなる（正）。b：標本誤差を小さくするには標本規模を大きくする（誤）。d：回収率が低いと予想されるときは、計算されたnに回収率の逆数を掛けて、より多くの人を対象とする（誤）。e：多段抽出では概ね段数のルートに比例して標本誤差が大きくなるため、より多くの人を対象としなければならない（誤）。",
+    "choiceNotes": [
+     null,
+     "dは誤り。回収率を掛けると対象者が減ってしまう。回収率の逆数（例：50%なら2）を掛けて対象者を増やす。",
+     "bは誤り。標本誤差を小さくしたいときは標本規模を大きくする。",
+     "bとeはどちらも誤り。",
+     "dとeはどちらも誤り。eについて、二段抽出では標本誤差が大きくなるので対象者を増やす必要がある。"
+    ],
+    "point": "標本誤差↓には標本規模↑。多段抽出は安いが誤差↑。回収率が低ければ「÷回収率」で対象者を増やす。"
+   },
+   "sources": [
+    {
+     "ref": "stats:datastart-hyohon-gosa",
+     "title": "Data StaRt EBPM活用塾 ゼミナール編（２）2-1-3 標本誤差の計算",
+     "url": "https://www.stat.go.jp/dstart/point/seminar/02/2-1-3.html",
+     "locator": "標本誤差とは",
+     "quote": "標本抽出に伴って発生する誤差のことを、標本誤差と呼びます。"
+    },
+    {
+     "ref": "stats:datastart-hyohon-chushutsu",
+     "title": "Data StaRt EBPM活用塾 ゼミナール編（２）2-1-2 標本抽出の諸方法",
+     "url": "https://www.stat.go.jp/dstart/point/seminar/02/2-1-2.html",
+     "locator": "多段抽出",
+     "quote": "多段抽出の段階数を多くすると、調査のコストを下げられるメリットがありますが、代償として誤差が大きくなってしまうデメリットも生じます。"
+    },
+    {
+     "ref": "stats:datastart-hyohon-gosa",
+     "title": "Data StaRt EBPM活用塾 ゼミナール編（２）2-1-3 標本誤差の計算",
+     "url": "https://www.stat.go.jp/dstart/point/seminar/02/2-1-3.html",
+     "locator": "標本誤差を考慮し、調査対象人数を見積もる",
+     "quote": "計算されたnに回収率の逆数（例えば50%なら1/0.5=2）を掛けて、さらに多くの人を対象者として抽出しなければならなくなります。"
+    }
+   ],
+   "asOf": "統計学の一般的な定義（基準時点の影響を受けない）",
+   "key": "G7-S06-INF-09"
+  },
+  {
+   "subject": "S06",
+   "subtopic": "標本抽出と推定",
+   "format": "knowledge",
+   "difficulty": "standard",
+   "polarity": "negative",
+   "question": "全数調査と標本調査について、誤っているものはどれか。",
+   "choices": [
+    "全数調査は、対象となるものを全て調べる調査であり、悉皆調査ともよばれる。",
+    "全数調査は誤差なく正確な結果が得られる反面、膨大な費用や手間がかかる。",
+    "標本調査は、全数調査に比べて手間や費用を省くことができるが、標本誤差が生じる。",
+    "標本調査では、標本の偏りをなるべく小さくして、母集団を代表するように標本を抽出する必要がある。",
+    "有意抽出は、調査実施者の主観的判断が入らないよう、くじ引きのような方法で標本を選ぶ方法である。"
+   ],
+   "answer": 4,
+   "explanation": {
+    "correct": "調査実施者の主観的判断が全く入らないよう、くじ引きのような方法で抽出するのは無作為抽出である。有意抽出は、母集団の様々なカテゴリから適切な割合を見ながら作為的に標本をとる方法である。",
+    "choiceNotes": [
+     "全数調査（悉皆調査）は対象となるものを全て調べる調査であるので正しい。",
+     "全数調査は誤差なく正確な結果が得られる反面、膨大な費用や手間がかかるので正しい。",
+     "標本調査は手間や費用を省けるが標本誤差が生じるので正しい。",
+     "標本抽出は、標本の偏りをなるべく小さくし、母集団を代表するように行う必要があるので正しい。",
+     null
+    ],
+    "point": "無作為抽出＝くじ引きのように主観を入れない。有意抽出＝作為的に選ぶ。"
+   },
+   "sources": [
+    {
+     "ref": "stats:naruhodo-zensu",
+     "title": "なるほど統計学園「全数調査・標本調査」",
+     "url": "https://www.stat.go.jp/naruhodo/7_shurui/zensu.html",
+     "locator": "全数調査・標本調査",
+     "quote": "全数調査（悉皆調査）とは対象となるものを全て調べる調査の事です。全数調査は、誤差なく正確な結果が得られる反面、膨大な費用や手間がかかるという欠点もあります。"
+    },
+    {
+     "ref": "stats:naruhodo-yougo-ma",
+     "title": "なるほど統計学園「１３ 統計用語辞典（ま行）」",
+     "url": "https://www.stat.go.jp/naruhodo/13_yougo/ma-gyo.html",
+     "locator": "無作為抽出",
+     "quote": "調査実施者の主観的判断が全く入らないよう、くじ引きのような方法で抽出することを無作為抽出という。"
+    },
+    {
+     "ref": "x-legacy-L06b:mext-joho2-ch3a",
+     "title": "高等学校情報科「情報Ⅱ」教員研修用教材（本編）第3章 情報とデータサイエンス 前半",
+     "url": "https://www.mext.go.jp/content/20200702-mxt_jogai01-000007843_004.pdf",
+     "locator": "（2）母集団と調査（有意抽出）",
+     "quote": "なカテゴリから適切な割合を見ながら作為的に標本を"
+    }
+   ],
+   "asOf": "統計学の一般的な定義（基準時点の影響を受けない）",
+   "key": "G7-S06-INF-10"
+  },
+  {
+   "subject": "S06",
+   "subtopic": "相関と回帰",
+   "format": "calculation",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "ある病院の入院患者について、在院日数xと入院医療費yを調べたところ、xとyの共分散が24、xの標準偏差が4、yの標準偏差が10であった。xとyの相関係数はどれか。",
+   "choices": [
+    "0.015",
+    "0.36",
+    "0.6",
+    "2.4",
+    "6.0"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "相関係数は、xとyの共分散を、xの標準偏差とyの標準偏差を掛け合わせた値で割って求める：24÷（4×10）＝0.6。",
+    "choiceNotes": [
+     "0.015は、共分散を標準偏差の積ではなく分散の積（16×100）で割った値である。",
+     "0.36は、相関係数0.6を2乗した値であり、決定係数に当たる。",
+     null,
+     "2.4は、共分散を標準偏差の積ではなく、yの標準偏差（10）だけで割った値である。相関係数は−1から1の範囲の値をとるので、1を超える値にはならない。",
+     "6.0は、共分散をxの標準偏差（4）だけで割った値であり、−1から1の範囲を超えるので相関係数にはならない。"
+    ],
+    "point": "相関係数＝共分散÷（xの標準偏差×yの標準偏差）。値は必ず−1〜1。"
+   },
+   "sources": [
+    {
+     "ref": "stats:naruhodo-hukusu",
+     "title": "なるほど統計学園「複数の変数の関係性を見る」",
+     "url": "https://www.stat.go.jp/naruhodo/10_tokucho/hukusu.html",
+     "locator": "相関係数",
+     "quote": "相関係数はxとyの共分散をxの標準偏差とyの標準偏差をかけあわせた値で割ったものであり"
+    },
+    {
+     "ref": "stats:naruhodo-hukusu",
+     "title": "なるほど統計学園「複数の変数の関係性を見る」",
+     "url": "https://www.stat.go.jp/naruhodo/10_tokucho/hukusu.html",
+     "locator": "相関係数",
+     "quote": "相関係数は-1から1までの値を取り"
+    }
+   ],
+   "asOf": "統計学の一般的な定義（基準時点の影響を受けない）",
+   "calc": {
+    "expr": "24/(4*10)",
+    "value": 0.6
+   },
+   "key": "G7-S06-INF-11"
+  },
+  {
+   "subject": "S06",
+   "subtopic": "相関と回帰",
+   "format": "knowledge",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "ある病院で、1日の退院患者数x（人）と、その日の診療情報管理部門の退院時要約の点検件数y（件）の関係を単回帰分析したところ、回帰式 y＝2.5x＋4 が得られた。この回帰式の解釈として正しいものはどれか。",
+   "choices": [
+    "xが1人増えるごとに、yの予測値は2.5件増える。",
+    "xが1人増えるごとに、yの予測値は4件増える。",
+    "xが2倍になると、yの予測値も2倍になる。",
+    "回帰式の傾きが正であるので、xとyの相関係数は負である。",
+    "xとyの相関係数は2.5である。"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "単回帰直線 y＝αx＋β の傾き（回帰係数）αは、xが1単位増えたときのyの予測値（xが与えられたときのyの条件付平均値）の増加量を表す。この式では傾きが2.5なので、xが1人増えるごとにyの予測値は2.5件増える。",
+    "choiceNotes": [
+     null,
+     "4は切片であり、x＝0のときの予測値である。xが1増えたときの増加量は傾きの2.5である。",
+     "切片が0ではないため比例関係ではない。例えばx＝4では14件、x＝8では24件であり、2倍にはならない。",
+     "相関係数の符号は直線傾向の傾きに対応するので、傾きが正なら相関係数も正である。",
+     "相関係数は−1から1の値をとるため、2.5にはならない。回帰係数（傾き）と相関係数は別の指標である。"
+    ],
+    "point": "回帰係数（傾き）＝xが1増えたときのyの予測値の変化量。切片＝x＝0のときの予測値。"
+   },
+   "sources": [
+    {
+     "ref": "x-legacy-L06b:mext-joho1-ch4",
+     "title": "高等学校情報科「情報Ⅰ」教員研修用教材（本編）第4章 情報通信ネットワークとデータの活用・巻末",
+     "url": "https://www.mext.go.jp/content/20200722-mxt_jogai02-100013300_006.pdf",
+     "locator": "（３）単回帰分析を用いた値の推測",
+     "quote": "単回帰直線（変量ｘの値が与えられたときの変量ｙの条件付平均値を表す直線）"
+    },
+    {
+     "ref": "x-legacy-L06b:mext-joho1-ch4",
+     "title": "高等学校情報科「情報Ⅰ」教員研修用教材（本編）第4章 情報通信ネットワークとデータの活用・巻末",
+     "url": "https://www.mext.go.jp/content/20200722-mxt_jogai02-100013300_006.pdf",
+     "locator": "（２）相関関係",
+     "quote": "相関係数は -1 から 1 の値を取り，符号が直線傾向の傾きに対応する。"
+    }
+   ],
+   "asOf": "統計学の一般的な定義（基準時点の影響を受けない）",
+   "key": "G7-S06-INF-12"
+  },
+  {
+   "subject": "S06",
+   "subtopic": "相関と回帰",
+   "format": "calculation",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "ある病院で、1日の退院患者数x（人）と、その日のコーディング作業時間y（分）の関係を単回帰分析し、回帰式 y＝0.8x＋20 を得た。ある日の退院患者数は50人、実際のコーディング作業時間は66分であった。この日の残差（実測値−予測値）は何分か。",
+   "choices": [
+    "6",
+    "26",
+    "40",
+    "46",
+    "60"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "x＝50のときの予測値は 0.8×50＋20＝60分である。残差は実測値と予測値の差なので、66−60＝6分となる。",
+    "choiceNotes": [
+     null,
+     "26は、切片20を加え忘れた予測値40を実測値66から引いた値である。",
+     "40は、切片20を加え忘れた予測値（0.8×50）である。",
+     "46は、実測値66から切片20だけを引いた値である。",
+     "60は予測値（理論値）そのものであり、残差ではない。"
+    ],
+    "point": "予測値＝回帰式にxを代入した値。残差＝実測値−予測値。"
+   },
+   "sources": [
+    {
+     "ref": "stats:naruhodo-hukusu",
+     "title": "なるほど統計学園「複数の変数の関係性を見る」",
+     "url": "https://www.stat.go.jp/naruhodo/10_tokucho/hukusu.html",
+     "locator": "回帰分析の考え方",
+     "quote": "実測値と予測値の差である「誤差（残差）」の合計が最も小さくなる線ということになります。"
+    }
+   ],
+   "asOf": "統計学の一般的な定義（基準時点の影響を受けない）",
+   "calc": {
+    "expr": "66-(0.8*50+20)",
+    "value": 6
+   },
+   "key": "G7-S06-INF-13"
+  },
+  {
+   "subject": "S06",
+   "subtopic": "相関と回帰",
+   "format": "knowledge",
+   "difficulty": "advanced",
+   "polarity": "negative",
+   "question": "単回帰分析と最小二乗法について、誤っているものはどれか。",
+   "choices": [
+    "回帰直線は、実測値と予測値の差（残差）を2乗した値の総和が最小になるように決定される。",
+    "残差を2乗して合計するのは、実測値−予測値を単純に計算すると負の値が出てくるためである。",
+    "すべてのデータ点が回帰直線上にあり、残差がすべて0となる場合、決定係数は1となる。",
+    "回帰式 Y＝aX＋b では、左辺のYを説明変数、右辺のXを被説明変数という。",
+    "被説明変数が1つの説明変数によって説明される回帰を単回帰という。"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "回帰式では、左辺に説明される値（被説明変数、目的変数）Yを、右辺にYを説明するための値（説明変数）Xを置く。記述は両者を逆にしている。",
+    "choiceNotes": [
+     "誤差の二乗和を最小にするように回帰式を決める方法が最小二乗法であるので正しい。",
+     "単純に実測値−予測値を合計すると負の誤差が出てくるため、各誤差を2乗した値を合計するので正しい。",
+     "データ点がすべて直線上にのり残差がすべて0の状態では決定係数は1となるので正しい。",
+     null,
+     "被説明変数が一つの説明変数によって説明される回帰を単回帰というので正しい。説明変数が複数あれば重回帰である。"
+    ],
+    "point": "Y（左辺）＝被説明変数（目的変数）、X（右辺）＝説明変数。最小二乗法＝残差の二乗和を最小化。"
+   },
+   "sources": [
+    {
+     "ref": "stats:naruhodo-hukusu",
+     "title": "なるほど統計学園「複数の変数の関係性を見る」",
+     "url": "https://www.stat.go.jp/naruhodo/10_tokucho/hukusu.html",
+     "locator": "回帰分析の考え方",
+     "quote": "単純に実測値-予測値を行うと、負の誤差が出て来てしまいます。そこで、各誤差を2乗した値を使用し"
+    },
+    {
+     "ref": "stats:naruhodo-hukusu",
+     "title": "なるほど統計学園「複数の変数の関係性を見る」",
+     "url": "https://www.stat.go.jp/naruhodo/10_tokucho/hukusu.html",
+     "locator": "回帰分析の考え方",
+     "quote": "回帰式は左辺に説明される値（被説明変数：Y「A市のマンション価格と床面積」ではマンション価格）をおき、右辺にYを説明するための値（説明変数：X"
+    },
+    {
+     "ref": "x-legacy-L06b:mext-joho1-ch4",
+     "title": "高等学校情報科「情報Ⅰ」教員研修用教材（本編）第4章 情報通信ネットワークとデータの活用・巻末",
+     "url": "https://www.mext.go.jp/content/20200722-mxt_jogai02-100013300_006.pdf",
+     "locator": "（３）単回帰分析を用いた値の推測",
+     "quote": "データ点がすべて直線上にのっている状態，残差がすべて０となる状態では決定係数１となる。"
+    }
+   ],
+   "asOf": "統計学の一般的な定義（基準時点の影響を受けない）",
+   "key": "G7-S06-INF-14"
+  }
+ ],
+ "cases": []
+}
