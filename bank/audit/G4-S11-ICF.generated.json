@@ -1,0 +1,696 @@
+{
+ "questions": [
+  {
+   "key": "G4-S11-ICF-01",
+   "subject": "S11",
+   "subtopic": "ICD-11・ICF・ICD-O",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "ICD-11に準拠した「疾病、傷害及び死因の統計分類」（令和8年総務省告示第11号）が施行される日はどれか。",
+   "choices": [
+    "令和4年（2022年）1月1日",
+    "令和8年（2026年）1月19日",
+    "令和8年（2026年）12月31日",
+    "令和9年（2027年）1月1日",
+    "令和9年（2027年）4月1日"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "令和8年総務省告示第11号は、統計法第28条第1項に基づく統計基準として分類を定め、令和9年1月1日から施行し、同日以後に作成する公的統計の表示に適用するとしている。",
+    "choiceNotes": [
+     "ICD-11そのものがWHOで発効した日であり、日本の統計基準の施行日ではない。",
+     "告示第11号が告示された日（令和8年1月19日）であり、施行日ではない。",
+     "ICD-10（2013年版）準拠の平成27年総務省告示第35号が廃止される日である。",
+     null,
+     "告示は年度始めではなく暦年の始め（令和9年1月1日）からの施行を定めている。"
+    ],
+    "point": "WHOでの発効＝2022年1月1日。日本の統計基準は告示＝2026年1月19日、旧告示廃止＝2026年12月31日、ICD-11準拠の施行＝2027年1月1日。"
+   },
+   "sources": [
+    {
+     "ref": "icdbg:soumu-kokuji-r08-11",
+     "title": "統計法第28条の規定に基づき、疾病、傷害及び死因に関する分類を定める件（令和8年総務省告示第11号）",
+     "url": "https://www.soumu.go.jp/main_content/001051239.pdf",
+     "locator": "前文",
+     "quote": "令和９年１月１日から施行し、同日以後に作成する公的統計"
+    },
+    {
+     "ref": "icdbg:soumu-kokuji-r08-11",
+     "title": "統計法第28条の規定に基づき、疾病、傷害及び死因に関する分類を定める件（令和8年総務省告示第11号）",
+     "url": "https://www.soumu.go.jp/main_content/001051239.pdf",
+     "locator": "前文",
+     "quote": "平成 27 年総務省告示第 35 号は、令和８年 12 月 31 日限り廃止する。"
+    },
+    {
+     "ref": "icdbg:mhlw-sippei-icd11",
+     "title": "疾病、傷害及び死因の統計分類（ICD-11準拠）",
+     "url": "https://www.mhlw.go.jp/stf/toukei/goriyou/sippei.html",
+     "locator": "２．ICD-11の概要",
+     "quote": "世界保健総会で令和元（2019）年5月に採択、同年６月18日に公表、令和4（2022）年1月1日に発効しました"
+    }
+   ],
+   "asOf": "令和8年総務省告示第11号（2026-01-19告示、2027-01-01施行）"
+  },
+  {
+   "key": "G4-S11-ICF-02",
+   "subject": "S11",
+   "subtopic": "ICD-11・ICF・ICD-O",
+   "format": "knowledge",
+   "difficulty": "advanced",
+   "polarity": "negative",
+   "question": "令和9年1月1日に施行されるICD-11準拠の「疾病、傷害及び死因の統計分類」（令和8年総務省告示第11号）の構成について、誤っているものはどれか。",
+   "choices": [
+    "基本分類表、疾病分類表及び死因分類表の3種類の分類表で構成される。",
+    "基本分類表は、ICD-11の死亡・疾病統計用分類（MMS）の第1章から第25章までのコードをそのまま用いる。",
+    "MMSの第26章（伝統医学）、V章（生活機能評価）及びX章（エクステンションコード）は、基本分類表の範囲に含まれない。",
+    "疾病分類表と死因分類表は、日本独自のものとして作成されている。",
+    "疾病分類表は、ICD-10準拠のときと同様に大分類・中分類・小分類の3つの表に分かれている。"
+   ],
+   "answer": 4,
+   "explanation": {
+    "correct": "ICD-10準拠では疾病分類表に大・中・小の3分類表があったが、ICD-11準拠では一本化され、疾病分類表は151項目の1表となった。したがって「3つの表に分かれている」は誤りである。",
+    "choiceNotes": [
+     "正しい。告示は基本分類表（章分類25項目、基本分類17,106項目）、疾病分類表（151項目）、死因分類表（134項目）で構成するとしている。",
+     "正しい。基本分類表は2023年1月公表のMMS収載コードをそのまま使用する（1-25章のみ）。",
+     "正しい。告示の対象とするICD-11の範囲は第1章～第25章であり、第26章～X章は今後の対応を検討するとされている。",
+     "正しい。疾病分類表と死因分類表は、わが国の疾病及び死因の状況を概括するため日本独自のものとして作成される。",
+     null
+    ],
+    "point": "ICD-11準拠の統計分類＝基本分類表（MMS第1～25章）＋疾病分類表（151項目・一本化）＋死因分類表（134項目）。第26章・V章・X章は対象外。"
+   },
+   "sources": [
+    {
+     "ref": "icdbg:mhlw-icd11-stat-classification",
+     "title": "ICD-11準拠の統計分類とは",
+     "url": "https://www.mhlw.go.jp/content/10700000/001638023.pdf",
+     "locator": "ICD-11準拠の「疾病、傷害及び死因の統計分類」の概要",
+     "quote": "これまでは疾病分類表は大中小の３分類表が存在したものを一本化"
+    },
+    {
+     "ref": "icdbg:mhlw-icd11-stat-classification",
+     "title": "ICD-11準拠の統計分類とは",
+     "url": "https://www.mhlw.go.jp/content/10700000/001638023.pdf",
+     "locator": "第11回ICD部会における審議結果の要点 １",
+     "quote": "対象とするICD-11の範囲については、第１章～第25章とする。"
+    },
+    {
+     "ref": "icdbg:soumu-kokuji-r08-11",
+     "title": "統計法第28条の規定に基づき、疾病、傷害及び死因に関する分類を定める件（令和8年総務省告示第11号）",
+     "url": "https://www.soumu.go.jp/main_content/001051239.pdf",
+     "locator": "４ 構成及び分類符号の表記",
+     "quote": "基本分類表（章分類25項目、基本分類17,106項目）"
+    }
+   ],
+   "asOf": "令和8年総務省告示第11号（2026-01-19告示、2027-01-01施行）"
+  },
+  {
+   "key": "G4-S11-ICF-03",
+   "subject": "S11",
+   "subtopic": "ICD-11・ICF・ICD-O",
+   "format": "knowledge",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "ICD-11のエクステンションコードについて、正しいものはどれか。",
+   "choices": [
+    "「V」から始まるコードで、生活機能評価のための補助セクションに収載されている。",
+    "内容例示表の中で単独で使うことのできるコードである。",
+    "第26章に収載され、伝統医学の病態を表すコードである。",
+    "ステムコードに付加するときは、スラッシュ（/）で連結する。",
+    "統計分類の中では単独で使用せず、必ずステムコードと併せて使用する。"
+   ],
+   "answer": 4,
+   "explanation": {
+    "correct": "エクステンションコードは、解剖学、病因、組織病理等のコード群から成り、ステムコードに詳細な情報を付加するために使う。統計分類の中では単独で使用してはならず、必ずステムコードと合わせて使用する。",
+    "choiceNotes": [
+     "エクステンションコードは「X」から始まるコード（X章）である。V章は生活機能評価のための補助セクションで別のものである。",
+     "単独で使うことのできるコードはステムコードである。",
+     "第26章（伝統医学）はステムコードの章であり、エクステンションコードの章（X章）ではない。",
+     "ステムコードとエクステンションコードの間はアンパサンド（&）で連結する。スラッシュ（/）は2つのステムコードの間に用いる。",
+     null
+    ],
+    "point": "ステムコード＝単独使用可。エクステンションコード＝「X」で始まり単独使用不可、ステムコードに「&」で付加。ステムコード同士は「/」で連結（クラスター）。"
+   },
+   "sources": [
+    {
+     "ref": "icdbg:mhlw-icd11-reference-guide-ja",
+     "title": "ICD-11 死亡及び疾病統計のための国際疾病分類 第11回改訂版 レファレンスガイド（日本語訳）",
+     "url": "https://www.mhlw.go.jp/content/10700000/001637950.pdf",
+     "locator": "1.2.4.5 エクステンションコード及びポストコーディネーション",
+     "quote": "エクステンションコードは、統計分類の中では単独で使用してはならず、必ずステムコードと合わせて使用される。"
+    },
+    {
+     "ref": "icdbg:mhlw-icd11-reference-guide-ja",
+     "title": "ICD-11 死亡及び疾病統計のための国際疾病分類 第11回改訂版 レファレンスガイド（日本語訳）",
+     "url": "https://www.mhlw.go.jp/content/10700000/001637950.pdf",
+     "locator": "1.2.4.1 コード体系",
+     "quote": "「X」から始まるコードは、エクステンションコード（extension code）である"
+    },
+    {
+     "ref": "icdbg:mhlw-icd11-reference-guide-ja",
+     "title": "ICD-11 死亡及び疾病統計のための国際疾病分類 第11回改訂版 レファレンスガイド（日本語訳）",
+     "url": "https://www.mhlw.go.jp/content/10700000/001637950.pdf",
+     "locator": "2.10 プレコーディネーション及びポストコーディネーション",
+     "quote": "2 つのステムコードの間にはフォワードスラッシュ（/）を、ステムコードとエクステンションコードとの間にはアンパサンド（&）を使用して連結する。"
+    }
+   ],
+   "asOf": "ICD-11 Reference Guide（2023年公表版）日本語訳（厚生労働省 2026-06-02掲載）"
+  },
+  {
+   "key": "G4-S11-ICF-04",
+   "subject": "S11",
+   "subtopic": "ICD-11・ICF・ICD-O",
+   "format": "knowledge",
+   "difficulty": "standard",
+   "polarity": "negative",
+   "question": "ICD-11のステムコードのコード体系について、誤っているものはどれか。",
+   "choices": [
+    "コードはアルファベットと数字で構成される。",
+    "1桁目は章を示し、数字の場合とアルファベットの場合がある。",
+    "2桁目には必ず数字が入る。",
+    "3桁目には数字が入る。",
+    "数字との混同を避けるため、「O」と「I」の文字は使用しない。"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "ICD-11のコードでは、2桁目の位置には必ずアルファベットの文字が入る。これはICD-11のコードをICD-10のコード（2桁目が数字）から区別するためである。",
+    "choiceNotes": [
+     "正しい。ICD-11のコードはアルファベット及び数字で構成され、範囲は1A00.00からZZ9Z.ZZまでである。",
+     "正しい。1桁目の字は必ず章の番号を示し、数字又はアルファベットの場合がある。",
+     null,
+     "正しい。3桁目には強制的に数字を入れており、「不適切な言葉」が生じないようにしている。",
+     "正しい。「O」及び「I」は数字の「0」及び「1」との混同を避けるために使用しない。"
+    ],
+    "point": "ICD-11のコード：1桁目＝章（数字又は英字）、2桁目＝必ず英字（ICD-10と区別）、3桁目＝数字、OとIは不使用。"
+   },
+   "sources": [
+    {
+     "ref": "icdbg:mhlw-icd11-reference-guide-ja",
+     "title": "ICD-11 死亡及び疾病統計のための国際疾病分類 第11回改訂版 レファレンスガイド（日本語訳）",
+     "url": "https://www.mhlw.go.jp/content/10700000/001637950.pdf",
+     "locator": "1.2.4.1 コード体系",
+     "quote": "2 桁目の位置には必ずアルファベットの文字が入る。"
+    },
+    {
+     "ref": "icdbg:mhlw-icd11-reference-guide-ja",
+     "title": "ICD-11 死亡及び疾病統計のための国際疾病分類 第11回改訂版 レファレンスガイド（日本語訳）",
+     "url": "https://www.mhlw.go.jp/content/10700000/001637950.pdf",
+     "locator": "1.2.4.1 コード体系",
+     "quote": "「O」及び「I」の文字は、数字の「0」及び「1」との混同を避けるために使用"
+    }
+   ],
+   "asOf": "ICD-11 Reference Guide（2023年公表版）日本語訳（厚生労働省 2026-06-02掲載）"
+  },
+  {
+   "key": "G4-S11-ICF-05",
+   "subject": "S11",
+   "subtopic": "ICD-11・ICF・ICD-O",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "ICD-10には独立した章がなく、ICD-11の死亡・疾病統計用分類（MMS）で新たに独立した章として設けられたものはどれか。",
+   "choices": [
+    "睡眠・覚醒障害群",
+    "神経系の疾患",
+    "呼吸器系の疾患",
+    "腎尿路生殖器系の疾患",
+    "特殊目的用コード"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "ICD-11では、血液又は造血器の疾患、免疫系の疾患、睡眠・覚醒障害、性の健康に関連する状態群が新たな章として追加された。睡眠・覚醒障害群はMMSの第07章である。",
+    "choiceNotes": [
+     null,
+     "ICD-10の第Ⅵ章にあり、ICD-11でも第08章として存在する。",
+     "ICD-10の第Ⅹ章にあり、ICD-11でも第12章として存在する。",
+     "ICD-10の第ⅩⅣ章にあり、ICD-11でも第16章として存在する。",
+     "ICD-10の第ⅩⅩⅡ章にあり、ICD-11でも第25章として存在する。"
+    ],
+    "point": "ICD-11で新設された章：血液又は造血器の疾患（03）、免疫系の疾患（04）、睡眠・覚醒障害群（07）、性の健康に関連する状態群（17）。"
+   },
+   "sources": [
+    {
+     "ref": "icdbg:mhlw-icd11-stat-classification",
+     "title": "ICD-11準拠の統計分類とは",
+     "url": "https://www.mhlw.go.jp/content/10700000/001638023.pdf",
+     "locator": "疾病分類表及び死因分類表作成に当たっての基本的な考え方 ３（３）注",
+     "quote": "新たな章（血液又は造血器の疾患、免疫系の疾患、睡眠・覚醒障害、性の健康に関連する状態群）の追加"
+    }
+   ],
+   "asOf": "ICD-11 MMS（2023年1月公表版）と ICD-10（2013年版）の章構成の比較"
+  },
+  {
+   "key": "G4-S11-ICF-06",
+   "subject": "S11",
+   "subtopic": "ICD-11・ICF・ICD-O",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "2001年に世界保健機関（WHO）の総会で採択された国際生活機能分類（ICF）は、ある分類の改訂版である。その分類はどれか。",
+   "choices": [
+    "国際障害分類（ICIDH）",
+    "国際疾病分類－腫瘍学（ICD-O）",
+    "医療行為の分類（ICHI）",
+    "プライマリケアに対する国際分類（ICPC）",
+    "外因に対する国際分類（ICECI）"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "WHOは1980年に国際疾病分類（ICD）の補助としてWHO国際障害分類（ICIDH）を発表し、2001年5月の第54回総会でその改訂版としてICFを採択した。ICFはICIDHに取って代わった。",
+    "choiceNotes": [
+     null,
+     "ICDを腫瘍学の領域に適応させた派生分類であり、ICFの前身ではない。",
+     "WHO-FICの中心分類の一つとして作成中とされている医療行為の分類であり、ICFの前身ではない。",
+     "WHO-FICの関連分類の一つであり、ICFの前身ではない。",
+     "WHO-FICの関連分類の一つであり、ICFの前身ではない。"
+    ],
+    "point": "ICIDH（1980年）→ ICF（2001年5月、第54回WHO総会で採択）。"
+   },
+   "sources": [
+    {
+     "ref": "icdbg:mhlw-icf-ja-2002",
+     "title": "「国際生活機能分類－国際障害分類改訂版－」（日本語版）の厚生労働省ホームページ掲載について",
+     "url": "https://www.mhlw.go.jp/houdou/2002/08/h0805-1.html",
+     "locator": "１ ＩＣＦについて",
+     "quote": "その改訂版として「ＩＣＦ（International Classification of Functioning, Disability and Health）」を採択した。"
+    },
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "2.2.2 非診断的分類 国際生活機能分類（ICF）",
+     "quote": "ICF は、国際障害分類（ICIDH）に取って代わった。"
+    },
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "2.2 疾病及び保健関連の分類の「ファミリー」の概念 図1",
+     "quote": "World Health Organization Family of International Classifications（WHO-FIC）"
+    }
+   ],
+   "asOf": "ICF（2001年WHO総会採択）／ICD-10（2013年版）準拠 第2巻"
+  },
+  {
+   "key": "G4-S11-ICF-07",
+   "subject": "S11",
+   "subtopic": "ICD-11・ICF・ICD-O",
+   "format": "knowledge",
+   "difficulty": "standard",
+   "polarity": "negative",
+   "question": "国際生活機能分類（ICF）について、誤っているものはどれか。",
+   "choices": [
+    "「生活機能」は、心身機能・身体構造、活動、参加を包括する用語である。",
+    "背景因子のうち個人因子にも、環境因子と同様に分類項目が設けられている。",
+    "健康状態を分類するICDとは相互補完的な関係にあり、併せて利用することが勧められている。",
+    "人間を分類単位とするものではなく、人の状況を健康領域や健康関連領域の中で記述する。",
+    "環境因子は、生活機能と障害のすべての構成要素に影響を及ぼす。"
+   ],
+   "answer": 1,
+   "explanation": {
+    "correct": "個人因子は背景因子の構成要素であるが、社会的・文化的に大きな相違があるため、ICFでは分類されていない。分類項目（リスト）があるのは環境因子である。",
+    "choiceNotes": [
+     "正しい。生活機能（functioning）は心身機能、身体構造、活動及び参加を示す包括用語である。",
+     null,
+     "正しい。ICD-10とICFとは相互補完的であり、2つを一緒に利用することが奨められている。",
+     "正しい。ICFは人々を分類するものではなく、それぞれの人の状況を健康領域や健康関連領域の中で整理して記述する。",
+     "正しい。環境因子は生活機能と障害の全ての構成要素に影響を及ぼすものとされている。"
+    ],
+    "point": "ICFの背景因子＝環境因子（分類あり）＋個人因子（分類されていない）。ICDとは相互補完的。"
+   },
+   "sources": [
+    {
+     "ref": "icdbg:mhlw-icf-ja-2002",
+     "title": "「国際生活機能分類－国際障害分類改訂版－」（日本語版）の厚生労働省ホームページ掲載について",
+     "url": "https://www.mhlw.go.jp/houdou/2002/08/h0805-1.html",
+     "locator": "序論 3-2 ICFの視野（背景因子の構成要素）",
+     "quote": "個人因子も背景因子の構成要素である。しかし，社会的・文化的に大きな相違があるために，ICFでは分類されていない。"
+    },
+    {
+     "ref": "icdbg:mhlw-icf-ja-2002",
+     "title": "「国際生活機能分類－国際障害分類改訂版－」（日本語版）の厚生労働省ホームページ掲載について",
+     "url": "https://www.mhlw.go.jp/houdou/2002/08/h0805-1.html",
+     "locator": "序論 3-3 分類の単位",
+     "quote": "ICFは人間を分類単位としていないことに留意することが大切である。"
+    },
+    {
+     "ref": "icdbg:mhlw-icf-ja-2002",
+     "title": "「国際生活機能分類－国際障害分類改訂版－」（日本語版）の厚生労働省ホームページ掲載について",
+     "url": "https://www.mhlw.go.jp/houdou/2002/08/h0805-1.html",
+     "locator": "序論 1 背景",
+     "quote": "ICD-10とICFとは相互補完的であり"
+    }
+   ],
+   "asOf": "ICF日本語版（厚生労働省 2002-08-05掲載）"
+  },
+  {
+   "key": "G4-S11-ICF-08",
+   "subject": "S11",
+   "subtopic": "ICD-11・ICF・ICD-O",
+   "format": "knowledge",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "国際生活機能分類（ICF）のコードの先頭に付くアルファベットと、それが意味する構成要素の組合せで正しいものはどれか。",
+   "choices": [
+    "b ― 身体構造",
+    "s ― 心身機能",
+    "e ― 個人因子",
+    "d ― 活動／参加"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "ICFは最初のローマ文字と数字を組み合わせた方式を用い、b、s、d、eはそれぞれ心身機能、身体構造、活動／参加、環境因子を意味する。",
+    "choiceNotes": [
+     "bは心身機能（body functions）を意味する。身体構造はsである。",
+     "sは身体構造（body structures）を意味する。心身機能はbである。",
+     "eは環境因子（environmental factors）を意味する。個人因子はICFでは分類されておらず、コードがない。",
+     null
+    ],
+    "point": "ICFのコード：b＝心身機能、s＝身体構造、d＝活動／参加、e＝環境因子（個人因子はコードなし）。"
+   },
+   "sources": [
+    {
+     "ref": "icdbg:mhlw-icf-ja-2002",
+     "title": "「国際生活機能分類－国際障害分類改訂版－」（日本語版）の厚生労働省ホームページ掲載について",
+     "url": "https://www.mhlw.go.jp/houdou/2002/08/h0805-1.html",
+     "locator": "序論 6 ICFの使用（２）",
+     "quote": "文字のｂ，ｓ，ｄ，ｅはそれぞれ心身機能，身体構造，活動／参加，環境因子を意味するために使用される。"
+    },
+    {
+     "ref": "icdbg:mhlw-icf-ja-2002",
+     "title": "「国際生活機能分類－国際障害分類改訂版－」（日本語版）の厚生労働省ホームページ掲載について",
+     "url": "https://www.mhlw.go.jp/houdou/2002/08/h0805-1.html",
+     "locator": "序論 3-2 ICFの視野（背景因子の構成要素）",
+     "quote": "個人因子も背景因子の構成要素である。しかし，社会的・文化的に大きな相違があるために，ICFでは分類されていない。"
+    }
+   ],
+   "asOf": "ICF日本語版（厚生労働省 2002-08-05掲載）"
+  },
+  {
+   "key": "G4-S11-ICF-09",
+   "subject": "S11",
+   "subtopic": "ICD-11・ICF・ICD-O",
+   "format": "knowledge",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "国際生活機能分類（ICF）の「活動と参加」に用いられる評価点のうち、「実行状況（performance）」が表すものはどれか。",
+   "choices": [
+    "個人が現在の環境のもとで行っている活動／参加",
+    "標準化された環境で発揮される、課題や行為を遂行する個人の能力",
+    "生理的システムや解剖学的構造の変化の程度",
+    "環境が促進因子として働く程度",
+    "個人因子が生活機能に及ぼす影響の程度"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "実行状況（performance）の評価点は、個人が現在の環境のもとで行っている活動／参加を表す。現在の環境には社会的状況が含まれる。",
+    "choiceNotes": [
+     null,
+     "これは「能力（capacity）」の評価点の説明である。能力は、ある課題や行為を遂行する個人の能力を表し、環境の影響を中立化させた標準化された環境で評価する。",
+     "これは心身機能・身体構造の評価の考え方であり、活動と参加の評価点ではない。",
+     "促進因子・阻害因子の程度は環境因子の評価点で示すものであり、実行状況ではない。",
+     "個人因子はICFでは分類されておらず、評価点の対象になっていない。"
+    ],
+    "point": "活動と参加の評価点：実行状況＝現在の環境で「している」こと、能力＝標準化された環境で「できる」こと。"
+   },
+   "sources": [
+    {
+     "ref": "icdbg:mhlw-icf-ja-2002",
+     "title": "「国際生活機能分類－国際障害分類改訂版－」（日本語版）の厚生労働省ホームページ掲載について",
+     "url": "https://www.mhlw.go.jp/houdou/2002/08/h0805-1.html",
+     "locator": "序論 4-2 活動と参加／活動制限と参加制約（２）",
+     "quote": "実行状況（performance）の評価点とは，個人が現在の環境のもとで行っている活動／参加を表すものである。"
+    },
+    {
+     "ref": "icdbg:mhlw-icf-ja-2002",
+     "title": "「国際生活機能分類－国際障害分類改訂版－」（日本語版）の厚生労働省ホームページ掲載について",
+     "url": "https://www.mhlw.go.jp/houdou/2002/08/h0805-1.html",
+     "locator": "序論 4-2 活動と参加／活動制限と参加制約（３）",
+     "quote": "能力（capacity）の評価点とは，ある課題や行為を遂行する個人の能力を表すものである。"
+    },
+    {
+     "ref": "icdbg:mhlw-icf-ja-2002",
+     "title": "「国際生活機能分類－国際障害分類改訂版－」（日本語版）の厚生労働省ホームページ掲載について",
+     "url": "https://www.mhlw.go.jp/houdou/2002/08/h0805-1.html",
+     "locator": "序論 3-2 ICFの視野",
+     "quote": "心身機能・構造は，生理的システムや解剖学的構造の変化によって評価される。"
+    }
+   ],
+   "asOf": "ICF日本語版（厚生労働省 2002-08-05掲載）"
+  },
+  {
+   "key": "G4-S11-ICF-10",
+   "subject": "S11",
+   "subtopic": "ICD-11・ICF・ICD-O",
+   "format": "knowledge",
+   "difficulty": "advanced",
+   "polarity": "positive",
+   "question": "70歳代男性（架空症例）。脳梗塞の発症後、自宅で生活している。国際生活機能分類（ICF）の考え方に照らして、この男性の「参加制約」に当たるものはどれか。",
+   "choices": [
+    "右上下肢の筋力が低下している。",
+    "一人で浴槽をまたいで入浴することが難しい。",
+    "自宅の玄関に高い段差がある。",
+    "長年務めてきた町内会の役員としての役割を果たせなくなった。",
+    "人に頼ることを好まない性格である。"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "参加とは生活・人生場面への関わり（家庭や社会に関与し、そこで役割を果たすこと）であり、参加制約とは個人が生活・人生場面に関わるときに経験する難しさである。町内会の役員という社会的役割を果たせないことは参加制約に当たる。",
+    "choiceNotes": [
+     "筋力の低下は心身機能上の問題であり、機能障害に当たる。",
+     "入浴という生活行為（課題や行為の個人による遂行）の難しさであり、活動制限に当たる。",
+     "物的な環境であり、環境因子（阻害因子）に当たる。",
+     null,
+     "性格は健康状態以外のその人の特徴であり、個人因子に当たる。"
+    ],
+    "point": "機能障害＝心身機能・身体構造の問題、活動制限＝行為の遂行の難しさ、参加制約＝生活・人生場面への関わりの難しさ。環境因子・個人因子は背景因子。"
+   },
+   "sources": [
+    {
+     "ref": "icdbg:mhlw-icf-ja-2002",
+     "title": "「国際生活機能分類－国際障害分類改訂版－」（日本語版）の厚生労働省ホームページ掲載について",
+     "url": "https://www.mhlw.go.jp/houdou/2002/08/h0805-1.html",
+     "locator": "序論 4 ICF構成要素の概観（定義）",
+     "quote": "参加制約（participation restrictions）とは，個人が何らかの生活・人生場面に関わるときに経験する難しさのことである。"
+    },
+    {
+     "ref": "icdbg:mhlw-icf-ja-2002",
+     "title": "「国際生活機能分類－国際障害分類改訂版－」（日本語版）の厚生労働省ホームページ掲載について",
+     "url": "https://www.mhlw.go.jp/houdou/2002/08/h0805-1.html",
+     "locator": "序論 4 ICF構成要素の概観（定義）",
+     "quote": "活動制限（activity limitations）とは，個人が活動を行うときに生じる難しさのことである。"
+    },
+    {
+     "ref": "icdbg:mhlw-icf-common-language",
+     "title": "ＩＣＦ（国際生活機能分類）－「生きることの全体像」についての「共通言語」－（第1回社会保障審議会統計分科会生活機能分類専門委員会 参考資料3）",
+     "url": "https://www.mhlw.go.jp/stf/shingi/2r9852000002ksqi-att/2r9852000002kswh.pdf",
+     "locator": "４．「生活機能」とは（３）参加",
+     "quote": "家庭や社会に関与し、そこで役割を果たすことである。"
+    }
+   ],
+   "asOf": "ICF日本語版（厚生労働省 2002-08-05掲載）"
+  },
+  {
+   "key": "G4-S11-ICF-11",
+   "subject": "S11",
+   "subtopic": "ICD-11・ICF・ICD-O",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "国際疾病分類－腫瘍学（ICD-O）第3版の形態コードは、斜線（/）の前の4桁の数字と、斜線の後の数字で表される。斜線の直後の第5桁が表すものはどれか。",
+   "choices": [
+    "腫瘍の原発部位（局在）",
+    "新生物の性状",
+    "組織学的な型",
+    "異型度（分化度）",
+    "進展度（病期）"
+   ],
+   "answer": 1,
+   "explanation": {
+    "correct": "ICD-Oの形態コードは、始めの4桁が組織学的な型を分類し、斜線の後の第5桁が新生物の性状（悪性、上皮内、良性等）を表す。",
+    "choiceNotes": [
+     "部位は局在コードで表す。ICD-Oは局在と形態を別々のコードで表す2軸分類である。",
+     null,
+     "組織学的な型は、形態コードの始めの4桁で表す。",
+     "異型度（分化度）は、性状コードとは別の1桁のコードで表す。",
+     "ICD-Oは局在、形態、性状及び異型度を分類するものであり、病期を表すコードは含まれない。"
+    ],
+    "point": "ICD-Oの形態コード＝組織型4桁＋「/」＋性状1桁（＋異型度・分化度1桁）。"
+   },
+   "sources": [
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "2.2.1 診断関連分類 腫瘍学",
+     "quote": "始めの４桁は組織学的な型を分類し、第５桁は新生物＜腫瘍＞の性状"
+    },
+    {
+     "ref": "who:icdo",
+     "title": "International Classification of Diseases for Oncology, 3rd Edition (ICD-O-3)",
+     "url": "https://www.who.int/standards/classifications/other-classifications/international-classification-of-diseases-for-oncology",
+     "locator": "Classification structure",
+     "quote": "The fifth digit after the slash (/) is the behaviour code"
+    },
+    {
+     "ref": "who:icdo",
+     "title": "International Classification of Diseases for Oncology, 3rd Edition (ICD-O-3)",
+     "url": "https://www.who.int/standards/classifications/other-classifications/international-classification-of-diseases-for-oncology",
+     "locator": "Classification structure",
+     "quote": "A separate one-digit code is also provided for histologic grading (differentiation)."
+    }
+   ],
+   "asOf": "ICD-O第3版（ICD-10（2013年版）準拠 第2巻の記載、WHOウェブサイト 2026-11取得）"
+  },
+  {
+   "key": "G4-S11-ICF-12",
+   "subject": "S11",
+   "subtopic": "ICD-11・ICF・ICD-O",
+   "format": "knowledge",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "ICD-Oの性状コード／2が付く形態の新生物が、ICD-10（2013年版）第Ⅱ章で分類される中間分類項目はどれか。",
+   "choices": [
+    "悪性新生物＜腫瘍＞（C00－C97）",
+    "部位不明確，続発部位及び部位不明の悪性新生物＜腫瘍＞（C76－C80）",
+    "上皮内新生物＜腫瘍＞（D00－D09）",
+    "良性新生物＜腫瘍＞（D10－D36）",
+    "性状不詳又は不明の新生物＜腫瘍＞（D37－D48）"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "性状コード／2は上皮内を表す。内容例示表では、上皮内新生物＜腫瘍＞（D00－D09）の包含として「性状コード／2を伴う形態コード」が示されている。",
+    "choiceNotes": [
+     "悪性新生物の項目である。悪性の性状コードは3であり、上皮内（性状コード2）ではない。",
+     "悪性新生物（C00－C97）の中の、部位不明確・続発部位・部位不明を分類する項目であり、上皮内新生物の項目ではない。",
+     null,
+     "良性新生物＜腫瘍＞（D10－D36）には「性状コード／0を伴う形態コード」が包含される。",
+     "性状不詳又は不明の新生物＜腫瘍＞（D37－D48）には、形態分類で性状コード／1が付けられた新生物が分類される。"
+    ],
+    "point": "性状コードと第Ⅱ章：／0＝良性（D10－D36）、／1＝性状不詳又は不明（D37－D48）、／2＝上皮内（D00－D09）、／3＝悪性。"
+   },
+   "sources": [
+    {
+     "ref": "icd:naiyou02",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第2章 新生物＜腫瘍＞（C00-D48）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou02.pdf",
+     "locator": "上皮内新生物＜腫瘍＞（D00－D09）包含",
+     "quote": "性状コード／２を伴う形態コード"
+    },
+    {
+     "ref": "icd:naiyou02",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第2章 新生物＜腫瘍＞（C00-D48）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou02.pdf",
+     "locator": "性状不詳又は不明の新生物＜腫瘍＞（D37－D48）注",
+     "quote": "は新生物＜腫瘍＞の形態分類で性状コード／１が付けられている。"
+    },
+    {
+     "ref": "cancer:zenkoku-todokede-manual-2026",
+     "title": "全国がん登録 届出マニュアル 2026（ダウンロード版）",
+     "url": "https://www.mhlw.go.jp/content/001728039.pdf",
+     "locator": "がん登録の運用における悪性新生物その他の政令で定める疾病とは",
+     "quote": "性（性状コード 3）又は上皮内（性状コード 2）に分類された腫瘍"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠"
+  },
+  {
+   "key": "G4-S11-ICF-13",
+   "subject": "S11",
+   "subtopic": "ICD-11・ICF・ICD-O",
+   "format": "knowledge",
+   "difficulty": "standard",
+   "polarity": "negative",
+   "question": "ICD-10（2013年版）第2巻（インストラクションマニュアル）の記載に照らして、国際疾病分類－腫瘍学（ICD-O）について誤っているものはどれか。",
+   "choices": [
+    "がん登録並びに病理学及びがん専門のその他の部門で使われることが想定されている。",
+    "局在コードは、ICD-10の良性新生物＜腫瘍＞（D10－D36）の分類項目を、すべての新生物に対して用いる。",
+    "WHO国際分類ファミリー（WHO-FIC）では、派生分類に位置づけられている。",
+    "形態コードは、ICD-10の第1巻（内容例示表）及び第3巻（索引表）にも使用されている。",
+    "局在及び形態の両者によるコーディング・システムをもつ2軸分類である。"
+   ],
+   "answer": 1,
+   "explanation": {
+    "correct": "ICD-Oの局在コードは、ほとんどの新生物に対して、ICD-10の悪性新生物＜腫瘍＞（C00－C80）で使用されている3桁及び4桁の分類項目と同じものを用いる。良性新生物の項目を用いるのではない。このためICD-Oの方がICD-10よりも非悪性新生物の部位特異性をはっきりさせることができる。",
+    "choiceNotes": [
+     "正しい。ICD-O第3版は、がん登録並びに病理学及びがん専門のその他の部門で使われることを想定している。",
+     null,
+     "正しい。派生分類はICF及びICDを各専門領域に適応させたもので、ICD-O-3はその例として挙げられている。",
+     "正しい。ICD-Oの形態コードはICD-10の第1巻（内容例示表）及び第3巻（索引表）にも使用されている。",
+     "正しい。ICD-Oは局在及び形態の両者によるコーディング・システムをもった2軸分類である。"
+    ],
+    "point": "ICD-Oの局在コード＝ICD-10の悪性新生物（C00－C80）の項目をすべての新生物に流用。WHO-FICでは派生分類。"
+   },
+   "sources": [
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "2.2.1 診断関連分類 腫瘍学",
+     "quote": "局在コードは、ほとんどの新生物＜腫瘍＞に対して、ICD-10 の悪性新生物＜腫瘍＞（項目 C00 － C80）で使用されている３桁及び４桁の分類項目と同じである。"
+    },
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "2.2 疾病及び保健関連の分類の「ファミリー」の概念（派生分類）",
+     "quote": "WHO-FIC の中で、派生分類は ICF 及び ICD を各専門領域に適応させている。"
+    },
+    {
+     "ref": "icd:instruction",
+     "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+     "locator": "2.2.1 診断関連分類 腫瘍学",
+     "quote": "ICD-O の形態コードは、ICD-10 の第１巻（内容例示表）及び第３巻（索引表）にも使用されている。"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠"
+  },
+  {
+   "key": "G4-S11-ICF-14",
+   "subject": "S11",
+   "subtopic": "ICD-11・ICF・ICD-O",
+   "format": "icd",
+   "difficulty": "advanced",
+   "polarity": "positive",
+   "question": "真正赤血球増加症＜多血症＞は、ICD-O第3版では悪性コードに再分類されている。ICD-10（2013年版）でこの疾患に用いるコードはどれか。",
+   "choices": [
+    "C92.1",
+    "C94.0",
+    "D45",
+    "D47.1",
+    "D75.1"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "内容例示表のD45（真正赤血球増加症＜多血症＞）の注に、ICD-O第3版では悪性コードに再分類されたが、D45のコードは引き続き性状不詳又は不明の新生物＜腫瘍＞の中で使用し、分類の修正はICDの改訂まで保留するとある。",
+    "choiceNotes": [
+     "C92.1は慢性骨髄性白血病［CML］，BCR/ABL陽性である。",
+     "C94.0は急性赤白血病である。ICD-Oで悪性に再分類されても、ICD-10では悪性新生物の項目に移さない。",
+     null,
+     "D47.1は慢性骨髄増殖性疾患（慢性好中球性白血病、骨髄増殖性疾患，詳細不明）であり、真正赤血球増加症には独立した3桁項目D45がある。",
+     "D75.1は第Ⅲ章の続発性＜二次性＞赤血球増加症＜多血症＞で、除外として真正（D45）が示されている。"
+    ],
+    "point": "真正赤血球増加症＜多血症＞＝D45（性状不詳又は不明の新生物）。ICD-O-3で悪性でもICD-10（2013年版）のコードは変えない。続発性はD75.1。"
+   },
+   "sources": [
+    {
+     "ref": "icd:naiyou02",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第2章 新生物＜腫瘍＞（C00-D48）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou02.pdf",
+     "locator": "D45 注",
+     "quote": "真性赤血球増加症＜多血症＞は，ICD-O 第 3 版では悪性コードに再分類されたが，D45 のコードは，引き続き性状不詳又は不明の新生物＜腫瘍＞の章で使用する。"
+    },
+    {
+     "ref": "icd:naiyou03",
+     "title": "ICD-10（2013年版）準拠 内容例示表 第3章 血液及び造血器の疾患並びに免疫機構の障害（D50-D89）",
+     "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou03.pdf",
+     "locator": "D75.1",
+     "quote": "続発性＜二次性＞赤血球増加症＜多血症＞"
+    }
+   ],
+   "asOf": "ICD-10（2013年版）準拠"
+  }
+ ],
+ "cases": []
+}

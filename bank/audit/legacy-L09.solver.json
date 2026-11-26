@@ -1,0 +1,228 @@
+{
+ "answers": [
+  {
+   "key": "lg-09-00",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "知識に基づく（出典未確認）"
+  },
+  {
+   "key": "lg-09-01",
+   "answer": 0,
+   "confidence": "low",
+   "ambiguous": true,
+   "note": "ICD-10(2013年版)は22章。選択肢に22章がなく21章が最近似"
+  },
+  {
+   "key": "lg-09-02",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "知識に基づく（出典未確認）"
+  },
+  {
+   "key": "lg-09-03",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "知識に基づく（出典未確認）"
+  },
+  {
+   "key": "lg-09-04",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "知識に基づく（出典未確認）"
+  },
+  {
+   "key": "lg-09-05",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "知識に基づく（出典未確認）"
+  },
+  {
+   "key": "lg-09-06",
+   "answer": 0,
+   "confidence": "medium",
+   "ambiguous": false,
+   "note": "知識に基づく（出典未確認）"
+  },
+  {
+   "key": "lg-09-07",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "知識に基づく（出典未確認）"
+  },
+  {
+   "key": "lg-09-08",
+   "answer": 0,
+   "confidence": "medium",
+   "ambiguous": false,
+   "note": "知識に基づく（出典未確認）"
+  },
+  {
+   "key": "lg-09-09",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "知識に基づく（出典未確認）"
+  },
+  {
+   "key": "lg-09-10",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "知識に基づく（出典未確認）"
+  },
+  {
+   "key": "lg-09-11",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "知識に基づく（出典未確認）"
+  },
+  {
+   "key": "lg-09-12",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "知識に基づく（出典未確認）"
+  },
+  {
+   "key": "lg-09-13",
+   "answer": 3,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "知識に基づく（出典未確認）"
+  },
+  {
+   "key": "lg-09-14",
+   "answer": 0,
+   "confidence": "medium",
+   "ambiguous": true,
+   "note": "ほぼ自明だが問題として曖昧"
+  },
+  {
+   "key": "lg-09-15",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "知識に基づく（出典未確認）"
+  },
+  {
+   "key": "lg-09-16",
+   "answer": 0,
+   "confidence": "medium",
+   "ambiguous": false,
+   "note": "知識に基づく（出典未確認）"
+  },
+  {
+   "key": "lg-09-17",
+   "answer": 0,
+   "confidence": "medium",
+   "ambiguous": true,
+   "note": "文意が曖昧"
+  },
+  {
+   "key": "lg-09-18",
+   "answer": 0,
+   "confidence": "medium",
+   "ambiguous": false,
+   "note": "知識に基づく（出典未確認）"
+  },
+  {
+   "key": "lg-09-19",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "知識に基づく（出典未確認）"
+  },
+  {
+   "key": "lg-09-20",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "知識に基づく（出典未確認）"
+  },
+  {
+   "key": "lg-09-21",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "知識に基づく（出典未確認）"
+  },
+  {
+   "key": "lg-09-22",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "知識に基づく（出典未確認）"
+  },
+  {
+   "key": "lg-09-23",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "知識に基づく（出典未確認）"
+  },
+  {
+   "key": "lg-09-24",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "知識に基づく（出典未確認）"
+  },
+  {
+   "key": "lg-09-25",
+   "answer": 1,
+   "confidence": "medium",
+   "ambiguous": false,
+   "note": "知識に基づく（出典未確認）"
+  },
+  {
+   "key": "lg-09-26",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "知識に基づく（出典未確認）"
+  },
+  {
+   "key": "lg-09-27",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "知識に基づく（出典未確認）"
+  },
+  {
+   "key": "lg-09-28",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "知識に基づく（出典未確認）"
+  },
+  {
+   "key": "lg-09-29",
+   "answer": 1,
+   "confidence": "medium",
+   "ambiguous": true,
+   "note": "手術料の併施規定は手術の通則に依存"
+  },
+  {
+   "key": "lg-09-30",
+   "answer": 1,
+   "confidence": "medium",
+   "ambiguous": true,
+   "note": "指標として一般的ではない"
+  },
+  {
+   "key": "lg-09-31",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "知識に基づく（出典未確認）"
+  }
+ ]
+}

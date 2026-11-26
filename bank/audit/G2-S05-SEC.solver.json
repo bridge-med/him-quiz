@@ -1,0 +1,14 @@
+{"answers":[
+{"key":"#0","answer":1,"confidence":"high","ambiguous":false,"note":"概説編4.2 完全性が確保されない場合、情報が欠落・不正確に表示"},
+{"key":"#1","answer":4,"confidence":"high","ambiguous":false,"note":"概説編3.1.5 保守委託機関編の対象は概説編と保守委託機関編のみで遵守とみなす"},
+{"key":"#2","answer":0,"confidence":"high","ambiguous":false,"note":"概説編 図3-1 ※2 契約書等に記載がある場合にのみYES可能。他は不明確時は医療機関責任の可能性等で誤り"},
+{"key":"#3","answer":4,"confidence":"high","ambiguous":false,"note":"システム運用編 パスワードの定期的な変更は不要とする"},
+{"key":"#4","answer":1,"confidence":"high","ambiguous":false,"note":"システム運用編14.1.1 ⑤ サーバはOSでの二要素認証。経過措置あり、OS一要素+アプリ一要素は不可"},
+{"key":"#5","answer":2,"confidence":"high","ambiguous":false,"note":"概説編2.1〜2.3 bとcが正。aは保存義務を問わない、dは含まない、eは対象外"},
+{"key":"#6","answer":3,"confidence":"high","ambiguous":false,"note":"経営管理編2.2.1 主なリスク管理方針はリスクの低減、継続的にリスク評価"},
+{"key":"#7","answer":0,"confidence":"high","ambiguous":false,"note":"概説編 MDS/SDS チェックリスト（HS040）"},
+{"key":"#8","answer":1,"confidence":"high","ambiguous":false,"note":"経営管理編 委託先の過失でも医療機関等は責任を免れない"},
+{"key":"#9","answer":1,"confidence":"high","ambiguous":false,"note":"Q&A Q18 保存されないことが担保されていれば国内法適用外サーバも利用可能。企画管理編は国内法適用及び執行の及ぶ範囲を求める(Dは誤)"},
+{"key":"#10","answer":4,"confidence":"high","ambiguous":false,"note":"企画管理編 バックアップの設計は発生原因によって異なる"},
+{"key":"#11","answer":1,"confidence":"high","ambiguous":false,"note":"システム運用編 少なくとも3世代、3世代目以降は書込不可"}
+]}

@@ -1,0 +1,14 @@
+{"answers":[
+{"key":"G3-S12-PER-01","answer":2,"confidence":"high","ambiguous":false,"note":"第XVI章包含：周産期後に発病・死亡でも原因が周産期病態なら含む。先天奇形Q・新生児破傷風A33・新生物は除外"},
+{"key":"G3-S12-PER-02","answer":1,"confidence":"high","ambiguous":false,"note":"P00.0はO10-O11,O13-O16の母体病態（O14.1含む）。O14.1は母の分類"},
+{"key":"G3-S12-PER-03","answer":2,"confidence":"high","ambiguous":false,"note":"臍帯頚部巻絡はP02.5（P02.5包含）。P03.1ではない。他は正しい"},
+{"key":"G3-S12-PER-04","answer":3,"confidence":"high","ambiguous":false,"note":"P07注：出産体重と妊娠期間の両方の記載があれば出産体重優先。950g=P07.0（999g以下）"},
+{"key":"G3-S12-PER-05","answer":1,"confidence":"high","ambiguous":false,"note":"IM 4.3.5 一般死亡の選択ルールは周産期死亡診断書には適用しない。4.3.4で他は正しい"},
+{"key":"G3-S12-PER-06","answer":2,"confidence":"high","ambiguous":false,"note":"IM ルールP1：未熟(P07)が⒜欄で⒝欄に他病態があれば、その病態(RDS P22.0)を⒜にコード、未熟は⒝"},
+{"key":"G3-S12-PER-07","answer":3,"confidence":"high","ambiguous":false,"note":"第XVII章冒頭の除外：先天代謝異常(E70-E90)"},
+{"key":"G3-S12-PER-08","answer":2,"confidence":"medium","ambiguous":false,"note":"Q66.6は先天(性)外反変形。後天性外反はM21.0系。他の組合せはI51.0, M43.1, M43.0, M21.1の分類表と整合"},
+{"key":"G3-S12-PER-09","answer":3,"confidence":"high","ambiguous":false,"note":"Q25.0動脈管開存（症）ボタロー管開存"},
+{"key":"G3-S12-PER-10","answer":4,"confidence":"high","ambiguous":false,"note":"Q90.2 21トリソミー，転座"},
+{"key":"G3-S12-PER-11","answer":1,"confidence":"high","ambiguous":false,"note":"Q86.0胎児アルコール症候群（異形性）。P04.3は母体飲酒の影響"},
+{"key":"G3-S12-PER-12","answer":3,"confidence":"high","ambiguous":false,"note":"IM 4.2.10：4週未満の心疾患NOS・水頭症NOSは先天性と考えてよい。4.2.9(k)先天奇形は未熟による、でない；染色体異常による、とは考える"}
+]}

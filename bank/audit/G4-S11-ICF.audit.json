@@ -1,0 +1,253 @@
+{
+ "verdicts": [
+  {
+   "key": "G4-S11-ICF-01",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icdbg:soumu-kokuji-r08-11 前文で「令和９年１月１日から施行」「平成27年総務省告示第35号は令和８年12月31日限り廃止」、告示日=令和8年1月19日を確認。WHO発効2022-01-01はicdbg:mhlw-sippei-icd11 ２．で確認。盲検一致。"
+  },
+  {
+   "key": "G4-S11-ICF-02",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icdbg:mhlw-icd11-stat-classification（概要頁・第11回ICD部会要点）で3種類構成、MMS収載コードをそのまま使用（1-25章のみ）、疾病・死因分類表は日本独自、疾病分類表は大中小3表を一本化を確認。告示４で章分類25・基本分類17,106・疾病151・死因134を確認。ICD-10準拠の大・中・小はicdbg:soumu-kokuji-h27-35で確認。盲検一致。"
+  },
+  {
+   "key": "G4-S11-ICF-03",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icdbg:mhlw-icd11-reference-guide-ja 1.2.4.1（Xで始まる）、1.2.4.4（単独使用はステムコード）、1.2.4.5（統計分類内では単独使用不可）、2.9、2.10.1末尾（ステム間は/、ステムとエクステンションは&）を確認。第26章がステムコードであることは2.8とMHLW資料で確認。盲検一致。"
+  },
+  {
+   "key": "G4-S11-ICF-04",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icdbg:mhlw-icd11-reference-guide-ja 1.2.4.1で、1桁目=章（数字又は英字）、2桁目=必ず英字、3桁目=数字、O・I不使用、範囲1A00.00〜ZZ9Z.ZZを確認。盲検一致。"
+  },
+  {
+   "key": "G4-S11-ICF-05",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icdbg:mhlw-icd11-stat-classification の章対照表（ICD-10 Ⅵ/Ⅹ/ⅩⅣ/ⅩⅩⅡ ⇔ ICD-11 08/12/16/25、07=睡眠・覚醒障害群）と「新たな章」の注を確認。盲検一致。"
+  },
+  {
+   "key": "G4-S11-ICF-06",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icdbg:mhlw-icf-ja-2002 １（1980年ICIDH→2001年5月第54回総会でICFを改訂版として採択）、icd:instruction 2.2 図1（ICPC・ICECI=関連分類、ICD-O-3=派生分類、ICHI=中心分類欄・作成中）と2.2.2（ICFはICIDHに取って代わった）を確認。盲検一致。"
+  },
+  {
+   "key": "G4-S11-ICF-07",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icdbg:mhlw-icf-ja-2002 序論1（ICD-10と相互補完的）、3-2（環境因子は全ての構成要素に影響、個人因子は分類されていない、生活機能は包括用語）、3-3（人間を分類単位としない）を確認。盲検一致。"
+  },
+  {
+   "key": "G4-S11-ICF-08",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icdbg:mhlw-icf-ja-2002 序論6（２）でb=心身機能、s=身体構造、d=活動／参加、e=環境因子を確認。個人因子にコードがないことは3-2で確認。盲検一致。"
+  },
+  {
+   "key": "G4-S11-ICF-09",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icdbg:mhlw-icf-ja-2002 序論4-2（２）実行状況、（３）能力（標準化された環境）、3-2（心身機能・構造は生理的システムや解剖学的構造の変化で評価）を確認。盲検一致。"
+  },
+  {
+   "key": "G4-S11-ICF-10",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icdbg:mhlw-icf-ja-2002 序論4 定義（機能障害・活動・参加・活動制限・参加制約・環境因子）とicdbg:mhlw-icf-common-language ４（活動=生活行為、参加=家庭や社会に関与し役割を果たす）、５（阻害因子・個人因子）を確認。役員としての役割=参加制約が唯一。盲検一致。"
+  },
+  {
+   "key": "G4-S11-ICF-11",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:instruction 2.2.1 腫瘍学（始めの4桁=組織学的な型、第5桁=性状）、who:icdo Classification structure（fifth digit after the slash=behaviour、異型度は別の1桁、site/morphology/behaviour/gradingの多軸で病期なし）を確認。icd:naiyou02 第Ⅱ章注とも整合。盲検一致。"
+  },
+  {
+   "key": "G4-S11-ICF-12",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou02 D00－D09包含「性状コード／２を伴う形態コード」、D10－D36包含「／０」、D37－D48注「／１」を確認。中間分類名はicd.mjs blockで一致。がん登録マニュアルの「悪性（性状コード3）又は上皮内（性状コード2）」も文脈確認。盲検一致。"
+  },
+  {
+   "key": "G4-S11-ICF-13",
+   "verdict": "fix",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": false,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:instruction 2.2.1 腫瘍学（がん登録・病理等で使用、2軸分類、局在コードは「ほとんどの新生物」に対しC00－C80の3桁・4桁項目と同じ、形態コードは第1巻・第3巻にも使用）、2.2 派生分類（ICD-O-3）を確認。キー・誤答肢とも正しい。pointのみ出典の「ほとんどの新生物」と不一致の「すべての新生物」だったため修正。盲検一致。",
+   "detail": "explanation.point が「すべての新生物に流用」となっており、設問が根拠とする第2巻 2.2.1 の記載「ほとんどの新生物＜腫瘍＞に対して」と一致しない。pointを出典の表現に合わせた（他は変更なし）。",
+   "fixed": {
+    "key": "G4-S11-ICF-13",
+    "subject": "S11",
+    "subtopic": "ICD-11・ICF・ICD-O",
+    "format": "knowledge",
+    "difficulty": "standard",
+    "polarity": "negative",
+    "question": "ICD-10（2013年版）第2巻（インストラクションマニュアル）の記載に照らして、国際疾病分類－腫瘍学（ICD-O）について誤っているものはどれか。",
+    "choices": [
+     "がん登録並びに病理学及びがん専門のその他の部門で使われることが想定されている。",
+     "局在コードは、ICD-10の良性新生物＜腫瘍＞（D10－D36）の分類項目を、すべての新生物に対して用いる。",
+     "WHO国際分類ファミリー（WHO-FIC）では、派生分類に位置づけられている。",
+     "形態コードは、ICD-10の第1巻（内容例示表）及び第3巻（索引表）にも使用されている。",
+     "局在及び形態の両者によるコーディング・システムをもつ2軸分類である。"
+    ],
+    "answer": 1,
+    "explanation": {
+     "correct": "ICD-Oの局在コードは、ほとんどの新生物に対して、ICD-10の悪性新生物＜腫瘍＞（C00－C80）で使用されている3桁及び4桁の分類項目と同じものを用いる。良性新生物の項目を用いるのではない。このためICD-Oの方がICD-10よりも非悪性新生物の部位特異性をはっきりさせることができる。",
+     "choiceNotes": [
+      "正しい。ICD-O第3版は、がん登録並びに病理学及びがん専門のその他の部門で使われることを想定している。",
+      null,
+      "正しい。派生分類はICF及びICDを各専門領域に適応させたもので、ICD-O-3はその例として挙げられている。",
+      "正しい。ICD-Oの形態コードはICD-10の第1巻（内容例示表）及び第3巻（索引表）にも使用されている。",
+      "正しい。ICD-Oは局在及び形態の両者によるコーディング・システムをもった2軸分類である。"
+     ],
+     "point": "ICD-Oの局在コード＝ほとんどの新生物に対して、ICD-10の悪性新生物（C00－C80）の3桁・4桁の分類項目と同じものを用いる。WHO-FICでは派生分類。"
+    },
+    "sources": [
+     {
+      "ref": "icd:instruction",
+      "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+      "locator": "2.2.1 診断関連分類 腫瘍学",
+      "quote": "局在コードは、ほとんどの新生物＜腫瘍＞に対して、ICD-10 の悪性新生物＜腫瘍＞（項目 C00 － C80）で使用されている３桁及び４桁の分類項目と同じである。"
+     },
+     {
+      "ref": "icd:instruction",
+      "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+      "locator": "2.2 疾病及び保健関連の分類の「ファミリー」の概念（派生分類）",
+      "quote": "WHO-FIC の中で、派生分類は ICF 及び ICD を各専門領域に適応させている。"
+     },
+     {
+      "ref": "icd:instruction",
+      "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+      "locator": "2.2.1 診断関連分類 腫瘍学",
+      "quote": "ICD-O の形態コードは、ICD-10 の第１巻（内容例示表）及び第３巻（索引表）にも使用されている。"
+     }
+    ],
+    "asOf": "ICD-10（2013年版）準拠"
+   }
+  },
+  {
+   "key": "G4-S11-ICF-14",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd.mjsでC92.1・C94.0・D45・D47.1・D75.1の存在と名称を確認。icd:naiyou02 D45注（ICD-O第3版で悪性に再分類、D45を引き続き使用）、D47.1の包含、icd:naiyou03 D75.1の除外「真正（D45）」を確認。盲検一致。"
+  }
+ ]
+}

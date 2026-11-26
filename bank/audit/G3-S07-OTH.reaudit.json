@@ -1,0 +1,9 @@
+{"verdicts":[
+{"key":"G3-S07-OTH-02","verdict":"pass","blindAnswer":2,
+ "checks":{"answer":true,"distractors":true,"stem":true,"explanations":true,"sources":true,"asOf":true,"domain":true},
+ "notes":"盲検一致(50.0%)。x-gen-G2-S02-MGT:keiei-kanri-shihyou-r04 【参考１】指標一覧【機能性】(機能性はP.103開始、紹介率・逆紹介率はP.104)で 紹介率=(紹介患者数+救急患者数)/初診患者数、逆紹介率=逆紹介患者数/初診患者数 を確認(単位は本編の表で%)。再計算: (700+300)/2000=50.0%、誤答 500/2000=25.0、700/2000=35.0、1200/2000=60.0、1500/2000=75.0 はいずれも注記どおり。追加されたpointの対比は mgmt:chiiki-shien-h10-tsuchi 三(一)①ア) 「地域医療支援病院紹介率＝(紹介患者の数／初診患者の数)×一〇〇」(平成26年改正後の80%/65%+40%/50%+70%要件を反映した本文)で裏づけ。validate 0 errors。同一ファイル内の重複なし。"},
+{"key":"G3-S07-OTH-09","verdict":"provisional","blindAnswer":2,
+ "checks":{"answer":true,"distractors":true,"stem":true,"explanations":false,"sources":true,"asOf":true,"domain":true},
+ "notes":"盲検一致(大動脈瘤及び解離)。icd:shiin2013 (３)死因分類表 09100〜09500 を通読: 09200=I01－I02.0，I05－I09，I20－I25，I27，I30－I52、内訳 09201 慢性リウマチ性心疾患 I05－I09 / 09202 急性心筋梗塞 I21－I22 / 09206 不整脈及び伝導障害 I44－I49 / 09207 心不全 I50、09400 大動脈瘤及び解離 I71 は独立項目。icdbg 総務省告示(平成27年第35号)の死因分類表でも同一。I71・I11 は tools/icd.mjs で実在・名称確認。正答・誤答・設問文・出典引用・asOf は問題なし。validate 0 errors。設問文に正答を示す語句なし。",
+ "detail":"explanation.point の「高血圧性心疾患（I11）は高血圧性疾患（09101）で」は項目名とコードの対応が不正確。死因分類表では 高血圧性疾患=09100、09101 は「高血圧性心疾患及び心腎疾患（I11，I13）」(同問の3件目の引用どおり)。趣旨(I11は09200に含まれない)は正しく正答には影響しないが、「高血圧性疾患（09100）のうち高血圧性心疾患及び心腎疾患（09101）」等への1語句修正が必要。それ以外は全項目確認済み。"}
+]}

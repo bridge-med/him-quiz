@@ -1,0 +1,102 @@
+{
+ "answers": [
+  {
+   "key": "G7-S01-ETH-01",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "医療法1条の4第2項"
+  },
+  {
+   "key": "G7-S01-ETH-02",
+   "answer": 3,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "倫理指針 用語(26) インフォームド・アセント"
+  },
+  {
+   "key": "G7-S01-ETH-03",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "倫理指針 第9の1(1)イ(ア)"
+  },
+  {
+   "key": "G7-S01-ETH-04",
+   "answer": 4,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "診療情報提供指針6: 知らないでいたい希望を尊重"
+  },
+  {
+   "key": "G7-S01-ETH-05",
+   "answer": 3,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "リスボン宣言4b"
+  },
+  {
+   "key": "G7-S01-ETH-06",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "地域包括ケア研究会報告書: 共助=被保険者の負担"
+  },
+  {
+   "key": "G7-S01-ETH-07",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "介護保険法115条の46第8項: 職にあった者も"
+  },
+  {
+   "key": "G7-S01-ETH-08",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "介護保険法115条の45第3項第1号(2項ではない)"
+  },
+  {
+   "key": "G7-S01-ETH-09",
+   "answer": 4,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "総合確保法4条3項。2項/5項/6条(国は3分の2)に注意"
+  },
+  {
+   "key": "G7-S01-ETH-10",
+   "answer": 3,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "ins:kaigo-hoken-kaisei-r08: ケアマネ更新制廃止"
+  },
+  {
+   "key": "G7-S01-ETH-11",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "医療保険制度改正法: 年間上限の新設"
+  },
+  {
+   "key": "G7-S01-ETH-12",
+   "answer": 4,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "hpdx-kaiso: 理事会に代えて運営会議。中期計画は厚労大臣認可"
+  },
+  {
+   "key": "G7-S01-ETH-13",
+   "answer": 3,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "電子カルテ情報共有サービス: 紹介先への送付は口頭同意が必要"
+  },
+  {
+   "key": "G7-S01-ETH-14",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "資格確認書 2026年8月資料: 無償・申請によらず交付"
+  }
+ ]
+}

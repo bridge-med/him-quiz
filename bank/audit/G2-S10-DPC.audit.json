@@ -1,0 +1,172 @@
+{
+ "verdicts": [
+  {
+   "key": "G2-S10-DPC-01",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:dpc-coding-text-v7 L489-490 図表5注: 医療資源病名はA～T、R・Z・Uは一部除き不可。S(S00-T98)・Q可。Qの「先天性」表記はⅣ.8.(4)L1563で確認。solver一致。"
+  },
+  {
+   "key": "G2-S10-DPC-02",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "Ⅳ.2 L1229-1240 Rコード例外列挙(R040/R042/R048/R049/R560/R610/R611/R619/R730)にR56.0あり、R50.9/R06.0/R13/R55なし。R13はⅣ.2④L1220。ICDコード名称確認済。solver一致。"
+  },
+  {
+   "key": "G2-S10-DPC-03",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "Ⅳ.1.(5)L1135-1140、Ⅳ.2 L1244-1247 喀血→右下葉肺癌の未修正例。C34.3=下葉,気管支又は肺(icd.mjs)。C78.0続発性。solver一致。"
+  },
+  {
+   "key": "G2-S10-DPC-04",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "Ⅲ.2 L732-736 退院時確定・退院後変更しない。Ⅳ.2 L1171-1174 疑い/Rコード限定的。Ⅳ.2 L1185-1188 胃癌疑い未修正例。solver一致。"
+  },
+  {
+   "key": "G2-S10-DPC-05",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "Ⅳ.8.(5) L1574-1604、Ⅱ.4.(2) L646-651 噴門部→C16.0、尺骨→S52.2(誤:C16.9/T14.2)。solver一致。"
+  },
+  {
+   "key": "G2-S10-DPC-06",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "Ⅳ.6 L1424-1458 T80-T88の条件(資源量明らかに大・本来処置終了)、例①T81.3表記と再入院も同様、例②E89.0・甲状腺癌術後は選択しない。solver一致。"
+  },
+  {
+   "key": "G2-S10-DPC-07",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "Ⅳ.3 L1274-1297 重要なポイント(「○○を伴う」情報を含む)、ダブルコーディング・†優先不採用・†*添付しない、複合分類例① I120 L1306-1308。solver一致。"
+  },
+  {
+   "key": "G2-S10-DPC-08",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "Ⅴ付録 060040 L2220-2236: Rs=C19, Ra/Rb=C20, Z433は医療資源病名不可・造設原因の傷病名。Z93.3はZコード(図表5注)。コード確認済。solver一致。"
+  },
+  {
+   "key": "G2-S10-DPC-09",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "Ⅲ.2.(2)① L759-760 最も資源投入した病態、Ⅳ.1重要なポイント L1070-1072 最も精緻、Ⅳ.1.(5)。症例は肺炎球菌確定→J13。solver一致。"
+  },
+  {
+   "key": "G2-S10-DPC-10",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "Ⅲ.2.(5) L879-900(以前のエピソード不記載、在院日数延長に限らず診療行為発生を含む)、Ⅲ.2.(6) L913-916 併存症/入院後発症の定義。症例と整合。solver一致(medium)だが鍵は一意。"
+  },
+  {
+   "key": "G2-S10-DPC-11",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "Ⅳ.1.(1) L1079-1083 原疾患(心筋症)が明らかなら心不全として処理しない→I42.0。Ⅳ.4 L1356-1361 続発・後遺症は相応の根拠要。solver一致。"
+  },
+  {
+   "key": "G2-S10-DPC-12",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "Ⅳ.4 L1356-1366 患者管理に明らかに影響あれば入院時併存症として追加、全く影響なければ副傷病名にもならない。Ⅲ.2.(6)定義。症例(移動介助・転倒予防・PT)と整合。solver一致。"
+  }
+ ]
+}

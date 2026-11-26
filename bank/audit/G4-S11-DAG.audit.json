@@ -1,0 +1,246 @@
+{
+ "verdicts": [
+  {
+   "key": "G4-S11-DAG-01",
+   "verdict": "fix",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": false,
+    "sources": false,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:instruction 3.1.3（1066-1067行）で「83の特別な星印項目…関連する章のはじめに記載」を確認。星印分類項目の一覧（1307-1319行、D63*〜P75*、数えて83）は3.1.5にある。正答・誤答肢は原文どおり。盲検一致。",
+   "detail": "第2出典のlocatorが誤り（一覧は3.1.3ではなく3.1.5「共通の特徴を持った分類項目」）。pointの「各章のはじめに一覧」は全章にあるように読め選択肢0の解説と食い違うため、原文どおり「関連する章のはじめに記載」に修正。選択肢0の解説に節番号と第Ⅱ章の範囲を補記。キー・選択肢・設問文は変更なし。",
+   "fixed": {
+    "key": "G4-S11-DAG-01",
+    "subject": "S11",
+    "subtopic": "剣印・星印分類",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "ICD-10（2013年版）で、剣印及び星印システムのために設けられている星印項目について、正しいものはどれか。",
+    "choices": [
+     "全22章のすべてに、1項目以上設けられている。",
+     "4桁細分類項目にだけ設けられ、3桁分類項目にはない。",
+     "第Ⅰ章（感染症及び寄生虫症）に最も多く設けられている。",
+     "分類全体で83項目あり、関連する章のはじめに記載されている。",
+     "死亡コーディングでは、剣印コードに代えて単独で使用する。"
+    ],
+    "answer": 3,
+    "explanation": {
+     "correct": "第2巻3.1.3は、剣印及び星印システムが使用される分類の範囲は限られており、分類全体を通して83の特別な星印項目があって、それらは関連する章のはじめに記載されているとしている。",
+     "choiceNotes": [
+      "システムが使用される範囲は限られている。第2巻3.1.5の星印分類項目の一覧はD63*からP75*までで、第Ⅰ章（A・B）や第Ⅱ章（C00－D48）などには星印項目がない。",
+      "星印コードは3桁分類項目に使用されている（例：G22*）。",
+      "第Ⅰ章には星印項目がない（一覧はD63*から始まる）。第Ⅰ章にあるのは、原疾患を示す剣印（†）の付いた項目・用語（例：A17.0†）である。",
+      null,
+      "星印分類項目は単独では使用されず、常に剣印コードに付加して使用する。"
+     ],
+     "point": "星印項目は全体で83、3桁分類項目のレベル、関連する章のはじめに記載。単独使用は不可。"
+    },
+    "sources": [
+     {
+      "ref": "icd:instruction",
+      "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+      "locator": "3.1.3 病態に対する二つのコード",
+      "quote": "83 の特別な星印項目があり、それらは関連する章のはじめに記載されている。"
+     },
+     {
+      "ref": "icd:instruction",
+      "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+      "locator": "3.1.5 共通の特徴を持った分類項目（星印分類項目）",
+      "quote": "下記の星印分類項目は、単独では使用されない；それらは常に、剣印コードに付加"
+     }
+    ],
+    "asOf": "ICD-10（2013年版）準拠"
+   }
+  },
+  {
+   "key": "G4-S11-DAG-02",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:instruction 6.8 第9回改訂（9450-9454行）で「第９回改訂には…任意的選択的方法が加えられた…第10回改訂でも維持」を確認。3.1.3冒頭「ICD-9で導入」とも一致。盲検一致。"
+  },
+  {
+   "key": "G4-S11-DAG-03",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:instruction 3.1.3 三つの形式⑴〜⑶を通読。⑴=全用語が同じ星印、選択肢0は⑵、選択肢3は⑶、選択肢4は一次コード=剣印の原則に反する。icd:naiyou01 A17.0†（G01*）と包含用語を確認。盲検一致。"
+  },
+  {
+   "key": "G4-S11-DAG-04",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou01 A54.8（1005-1017行）: タイトル無印、・肺炎†（J17.0*）、・敗血症（無印）を確認。icd:instruction 3.1.3 ⑶と一致。J17.0*の名称もicd.mjsで確認。盲検一致。"
+  },
+  {
+   "key": "G4-S11-DAG-05",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:instruction 3.1.3「G22*の梅毒性パーキンソン症候群…剣印コードはA52.1†」、icd:naiyou01 A52.1 包含「梅毒性パーキンソン症候群†（G22*）」、icd:naiyou06 G22* を確認。G20/G21.9の名称もicd.mjsで確認。盲検一致。"
+  },
+  {
+   "key": "G4-S11-DAG-06",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:instruction 3.1.3（剣印=一次コード・星印は決して単独使用不可・疾病コーディングでは逆転可）、4.1.12 表2（注）「星印コードに加えて死亡コーディングに使用されないもの」、5.5.1（剣印/星印どちらを基礎にしたか示す）を確認。誤りは選択肢3のみ。盲検一致。"
+  },
+  {
+   "key": "G4-S11-DAG-07",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:instruction 4.4.2「剣印及び星印コードの両者が主要病態」、icd:naiyou04 E10-E14共通4桁 .2† 糖尿病性腎症（N08.3*）、icd:naiyou14 N08.3*・N16.3* を確認。E11.2†/E14.2†/E11.9/N18.9の名称もicd.mjsで確認。盲検一致。"
+  },
+  {
+   "key": "G4-S11-DAG-08",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou14 N30 の注（B95-B97の追加コード）、icd:instruction 3.1.3 その他の任意の二重コーディング⑴、icd:naiyou01 A17.0†(G01*)・B01.1†(G05.1*)・B05.3†(H67.1*)・B26.1†(G02.0*) を確認。N30.0/B96.2は無印。盲検一致。"
+  },
+  {
+   "key": "G4-S11-DAG-09",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:instruction 3.2.1（第Ⅰ編=Ⅰ〜ⅩⅨ章+ⅩⅩⅠ章、第Ⅱ編=外因、第Ⅲ編=薬物及び化学物質の表）と3.3 １.（第ⅩⅩ章は第Ⅱ編を参照）を確認。誤りは選択肢2のみ。盲検一致。"
+  },
+  {
+   "key": "G4-S11-DAG-10",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:instruction 3.2.1 第Ⅲ編の記載（第ⅩⅨ章のコード+事故/故意（自傷）/不明を示す第ⅩⅩ章のコード）を確認。盲検一致。"
+  },
+  {
+   "key": "G4-S11-DAG-11",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:instruction 3.3 ４.（括弧内=コードに影響しない、字下げ=影響しうる）、3.2.2（見出し用語は欄の左端）、icd:rikai ＜例２＞の索引表記を確認。盲検一致。"
+  },
+  {
+   "key": "G4-S11-DAG-12",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:instruction 3.2.3（3桁のみ=細分類されないと推測、剣印星印は両コード指示）、3.2.4（括弧・相互参照）、3.3 ６.（補助的な桁の細分類は索引に示されていない）を確認。誤りは選択肢4のみ。盲検一致。"
+  },
+  {
+   "key": "G4-S11-DAG-13",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:rikai ＜例１＞（がん→新生物，悪性も参照、胃 C16.9／噴門 C16.0、内容例示表で確認）、icd:instruction 3.3 ５.６. を確認。C16.0/C16.9/C80.9/Z03.1の名称はicd.mjs、Z03の包含はicd:naiyou21、形態コードの位置づけはicd:naiyou02 冒頭注で確認。盲検一致。"
+  },
+  {
+   "key": "G4-S11-DAG-14",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:rikai ＜例２＞（化膿性（各部位）M00.9→内容例示表でM00.0）、icd:naiyou13 M00.0 を確認。M00.1/M00.8/M00.9/A49.0の名称はicd.mjsで確認。設問は4桁コードを問うており5桁目（部位）とは衝突しない。盲検一致。"
+  }
+ ]
+}

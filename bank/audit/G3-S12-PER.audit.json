@@ -1,0 +1,225 @@
+{
+ "verdicts": [
+  {
+   "key": "G3-S12-PER-01",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou16 章冒頭の包含注・除外注（Q00-Q99, E00-E90, S00-T98, C00-D48, A33）を確認。キーは包含注どおりで、他4肢は除外注等で明確に誤り。"
+  },
+  {
+   "key": "G3-S12-PER-02",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou16 P00.0（O10-O11,O13-O16を含む）、P01.9/P02.2/P03.8の内容、O14.1の名称（icd.mjs）、icd:instruction 4.3.5 例2・例3（重症子かん前症→P00.0）を確認。"
+  },
+  {
+   "key": "G3-S12-PER-03",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou16 P01.1, P02.0, P02.5（臍帯頚部巻絡を例示）, P03.1, P03.2, P04.2 を確認。誤りの組合せはキーのみ。"
+  },
+  {
+   "key": "G3-S12-PER-04",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou16 P07 注（出産体重優先）と P07.0-P07.3 の範囲、P07の除外（P05.-）を確認。設問が『P07でコードする場合・それ以上の説明なし』と限定しておりP05.0は排除できる。"
+  },
+  {
+   "key": "G3-S12-PER-05",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:instruction 4.3.4（P00-P04は⒞⒟欄、⒜⒞は1コード・⒝⒟は病態数、⒠は通常コード不要）と 4.3.5 冒頭（一般死亡の選択ルールは不適用）、ルールP1〜P4の存在を確認。"
+  },
+  {
+   "key": "G3-S12-PER-06",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:instruction 4.3.5 ルールP1本文・例1（未熟→⒝欄P07.3）、ルールP3（P96.9）、icd:naiyou16 P22.0・P28.0（未熟肺NOS）・P01.1 を確認。"
+  },
+  {
+   "key": "G3-S12-PER-07",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou17 章冒頭の除外（先天代謝異常 E70-E90）と中間分類 Q35-Q37, Q65-Q79, Q80-Q89, Q90-Q99、Q65・Q80 の名称を確認。"
+  },
+  {
+   "key": "G3-S12-PER-08",
+   "verdict": "fix",
+   "checks": {
+    "answer": true,
+    "distractors": false,
+    "stem": true,
+    "explanations": false,
+    "sources": false,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou17 Q21除外(I51.0)、Q66除外(M21.0/M21.1)、Q76.2除外(M43.1/M43.0)、icd:naiyou13 M21.0/M21.1/M21.5、naiyou09 I51.0 を確認。キー(2)は正しい。",
+   "detail": "(1) 選択肢に原文にない『足の』を付けたため、『足の内反変形（後天性）― M21.1』が M21.5（後天性…内反足）と紛れうる。除外注の原文どおり『外反変形（後天性）』『内反変形（後天性）』に戻し、設問文を除外注に基づく形にした。(2) 脊椎すべり症・分離症（後天性）の除外注は Q76 ではなく Q76.2 に付いているので、解説と locator を Q76.2 に訂正。キーは変更なし。",
+   "fixed": {
+    "key": "G3-S12-PER-08",
+    "subject": "S12",
+    "subtopic": "先天奇形（第ⅩⅦ章）",
+    "format": "icd",
+    "difficulty": "standard",
+    "polarity": "negative",
+    "question": "ICD-10（2013年版）第ⅩⅦ章の除外注に「後天性」として示されている病態と、その分類先の組合せとして、誤っているものはどれか。",
+    "choices": [
+     "後天性心（臓）中隔欠損（症） ― I51.0",
+     "脊椎すべり症（後天性） ― M43.1",
+     "外反変形（後天性） ― Q66.6",
+     "脊椎分離症（後天性） ― M43.0",
+     "内反変形（後天性） ― M21.1"
+    ],
+    "answer": 2,
+    "explanation": {
+     "correct": "Q66（足の先天（性）変形）の除外注に「外反変形（後天性）（M21.0）」とある。後天性の外反変形は第ⅩⅢ章のM21.0（外反変形，他に分類されないもの）に分類し、Q66.6（足のその他の先天（性）外反変形）は用いない。第ⅩⅦ章の各項目には、このように後天性のものを他章へ振り分ける除外注が置かれている。",
+     "choiceNotes": [
+      "Q21（心（臓）中隔の先天奇形）の除外注に、後天性心（臓）中隔欠損（症）はI51.0とある。正しい組合せ。",
+      "Q76.2（先天性脊椎すべり症）の除外注に、脊椎すべり症（後天性）はM43.1とある。正しい組合せ。",
+      null,
+      "Q76.2の除外注に、脊椎分離症（後天性）はM43.0とある。正しい組合せ。",
+      "Q66の除外注に、内反変形（後天性）はM21.1とある。正しい組合せ。"
+     ],
+     "point": "Q章の除外注は「後天性」を他章へ：心中隔欠損→I51.0、外反変形/内反変形→M21.0/M21.1、脊椎すべり症/分離症→M43.1/M43.0。"
+    },
+    "sources": [
+     {
+      "ref": "icd:naiyou17",
+      "title": "ICD-10（2013年版）準拠 内容例示表 第17章 先天奇形，変形及び染色体異常（Q00-Q99）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou17.pdf",
+      "locator": "Q66 除外",
+      "quote": "外反変形（後天性）（Ｍ21．0） 内反変形（後天性）（Ｍ21．1）"
+     },
+     {
+      "ref": "icd:naiyou17",
+      "title": "ICD-10（2013年版）準拠 内容例示表 第17章 先天奇形，変形及び染色体異常（Q00-Q99）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou17.pdf",
+      "locator": "Q21 除外",
+      "quote": "後天性心（臓）中隔欠損（症）（Ｉ51．0）"
+     },
+     {
+      "ref": "icd:naiyou17",
+      "title": "ICD-10（2013年版）準拠 内容例示表 第17章 先天奇形，変形及び染色体異常（Q00-Q99）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou17.pdf",
+      "locator": "Q76.2 除外",
+      "quote": "脊椎すべり症（後天性）（Ｍ43．1） 脊椎分離症（後天性）（Ｍ43．0）"
+     }
+    ],
+    "asOf": "ICD-10（2013年版）準拠"
+   }
+  },
+  {
+   "key": "G3-S12-PER-09",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou17 Q25.0（ボタロー管開存・動脈管遺残）, Q25.1, Q21.0, Q21.1（卵円孔開存を含む）、icd:naiyou16 P29.3（動脈管の閉鎖遅延）を確認。"
+  },
+  {
+   "key": "G3-S12-PER-10",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou17 Q90.0/Q90.1/Q90.2/Q90.9, Q91.0-Q91.7, Q92 除外注（13,18,21トリソミー）を確認。"
+  },
+  {
+   "key": "G3-S12-PER-11",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou16 P04 包含・除外、P04.3 除外（Q86.0）、P04.4、icd:naiyou17 Q86.0/Q86.1/Q86.2/Q86.8, Q87.0 を確認。"
+  },
+  {
+   "key": "G3-S12-PER-12",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:instruction 4.2.10（1歳未満／4週未満の列挙）と 4.2.2 A ⒦ 先天奇形（未熟を含む他の疾病によるとしない；染色体異常・先天奇形症候群によるとはする）を確認。"
+  }
+ ]
+}

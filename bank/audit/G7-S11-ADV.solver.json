@@ -1,0 +1,102 @@
+{
+ "answers": [
+  {
+   "key": "G7-S11-ADV-01",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "Ⅰ(ア)術後肺炎(イ)S状結腸癌、Ⅱ糖尿病。マニュアル Ⅰ欄・Ⅱ欄の記入"
+  },
+  {
+   "key": "G7-S11-ADV-02",
+   "answer": 3,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "手術欄: 術式+診断名と関連する所見(転移なし等)+手術年月日 (マニュアル 手術欄②④)"
+  },
+  {
+   "key": "G7-S11-ADV-03",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "各傷病名の期間をそれぞれ記入。肺炎13日・癌約4か月・糖尿病約8年(マニュアル 期間欄①)"
+  },
+  {
+   "key": "G7-S11-ADV-04",
+   "answer": 3,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "期間不明は「不明」又は「不詳」と記入し空白は避ける(期間欄④)"
+  },
+  {
+   "key": "G7-S11-ADV-05",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "望ましい例は穿孔性胃潰瘍。他は不適当な記入例(マニュアル 死亡の原因⑤)"
+  },
+  {
+   "key": "G7-S11-ADV-06",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "欄不足は(エ)欄に複数記入(Ⅱ欄ではない)。マニュアル Ⅰ欄②"
+  },
+  {
+   "key": "G7-S11-ADV-07",
+   "answer": 3,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "(ICD-11告示)小数点は4桁目と5桁目、ICD-10告示は3桁目と4桁目。章22→25、死因134、疾病分類表はH27が3区分/R8は151項目、従前の例は当分の間はR8のみ"
+  },
+  {
+   "key": "G7-S11-ADV-08",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "aは統計法28条、bは令和7年社保審統計分科会部会報告。dは改正前がサル痘、改正後がエムポックスで逆。c・eは誤り"
+  },
+  {
+   "key": "G7-S11-ADV-09",
+   "answer": 3,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "R8告示: 令和9年1月1日以後作成の公的統計に適用、により難い場合に限り当分の間従前の例可"
+  },
+  {
+   "key": "G7-S11-ADV-10",
+   "answer": 4,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "日本標準商品分類は統計基準でない(統計基準は産業・職業・疾病分類・指数基準時・季節調整)。総務省統計基準等ページ"
+  },
+  {
+   "key": "G7-S11-ADV-11",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "第9回改訂で単一原因選択ルールが初めて紹介(ICD-10第2巻6.8)"
+  },
+  {
+   "key": "G7-S11-ADV-12",
+   "answer": 3,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "第10回改訂会議は1985年予定から1989年へ延期(第2巻6.9)"
+  },
+  {
+   "key": "G7-S11-ADV-13",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "日本協力センターは2011年9月WHO西太平洋地域事務局長から指定、1期4年(whofic_japan_index)"
+  },
+  {
+   "key": "G7-S11-ADV-14",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "中心分類はICD・ICF・ICHI(whofic_japan_about03)"
+  }
+ ]
+}

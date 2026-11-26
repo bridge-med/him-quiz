@@ -1,0 +1,95 @@
+{
+ "answers": [
+  {
+   "key": "lg-02-17",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": ""
+  },
+  {
+   "key": "lg-02-18",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": ""
+  },
+  {
+   "key": "lg-02-19",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": ""
+  },
+  {
+   "key": "lg-02-20",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": ""
+  },
+  {
+   "key": "lg-02-21",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": ""
+  },
+  {
+   "key": "lg-02-22",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": ""
+  },
+  {
+   "key": "lg-02-23",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": ""
+  },
+  {
+   "key": "lg-02-24",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": ""
+  },
+  {
+   "key": "lg-02-25",
+   "answer": 3,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": ""
+  },
+  {
+   "key": "lg-02-27",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": ""
+  },
+  {
+   "key": "lg-02-28",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": ""
+  },
+  {
+   "key": "lg-02-29",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": ""
+  },
+  {
+   "key": "lg-02-30",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "R06kekka 表3: 公費37.4% > 被保険者28.5% > 事業主21.9% > 患者負担11.8%"
+  }
+ ]
+}

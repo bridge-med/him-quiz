@@ -1,0 +1,320 @@
+{
+ "verdicts": [
+  {
+   "key": "G2-S04-SAF-01",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "規則1条の11第1項柱書ただし書（e-Gov 2026-10-01版）で第2号・第5号は病院・有床診・入所施設有助産所に限る→無床診が対象外。経緯資料 令和8年3月の項（一部を除き令和8年4月1日施行）も確認。"
+  },
+  {
+   "key": "G2-S04-SAF-02",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "留意事項通知 医政地発0331第1号 第2の1（十分な知識の常勤職員・資格不問）、第2の2（病院は管理者兼務不可、他役職兼務可、診療所・助産所は管理者兼務可）を原文で確認。"
+  },
+  {
+   "key": "G2-S04-SAF-03",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "医政発0331第72号 記1⑵①「月１回程度開催」、記1⑶「年２回程度」(choiceNote D) を確認。"
+  },
+  {
+   "key": "G2-S04-SAF-04",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "同通知 記1⑶（職種横断的が望ましい・年2回程度・日時/出席者/研修項目の記録・無床診等は院外研修で代用可）、規則1条の11第1項第5号ロ（管理者が指示した場合に限り全部又は一部）を確認。"
+  },
+  {
+   "key": "G2-S04-SAF-05",
+   "verdict": "fix",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": false,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "同通知 記1⑴①〜⑧を確認。a・c・dが掲記事項、b・eは無し。解答正。",
+   "detail": "sources[1]（⑦の引用）の locator が「記1⑴⑥⑦」で不正確→「記1⑴⑦」に修正。内容の変更なし。",
+   "fixed": {
+    "key": "G2-S04-SAF-05",
+    "subject": "S04",
+    "subtopic": "医療安全管理体制",
+    "format": "combination",
+    "difficulty": "standard",
+    "polarity": "positive",
+    "question": "医療法施行規則第1条の11第1項第1号の「医療に係る安全管理のための指針」に文書化する事項として、厚生労働省通知（令和8年3月31日医政発0331第72号）が明示的に掲げているものの組合せはどれか。\na　当該病院等における安全管理に関する基本的考え方\nb　医療事故の当事者となった従業者の個人責任を追及するための手順\nc　患者からの相談への対応に関する基本方針\nd　医療従事者と患者との間の情報の共有に関する基本方針\ne　従業者の人事考課に関する基本方針",
+    "choices": [
+     "a と b と c",
+     "a と b と e",
+     "b と d と e",
+     "c と d と e",
+     "a と c と d"
+    ],
+    "answer": 4,
+    "explanation": {
+     "correct": "通知1⑴は指針に文書化する事項として、①安全管理に関する基本的考え方、②委員会その他の組織に関する基本的事項、③研修の基本方針、④事故報告等の改善方策の基本方針、⑤医療事故等発生時の対応に関する基本方針、⑥医療従事者と患者との間の情報の共有に関する基本方針（指針の閲覧を含む）、⑦患者からの相談への対応に関する基本方針、⑧その他の基本方針を掲げる。a・c・dが該当する。",
+     "choiceNotes": [
+      "bは掲げられていない。原因の調査・分析は構造的な原因を分析するもので、個人の責任追及を行うものではないとされている（通知1⑵④）。",
+      "b・eは掲げられていない。",
+      "b・eは掲げられていない。dのみ該当する。",
+      "eは掲げられていない。c・dは該当するがaが欠けている。",
+      null
+     ],
+     "point": "指針の8項目：基本的考え方／組織／研修／事故報告等／事故等発生時の対応／情報共有（指針の閲覧）／患者相談／その他。"
+    },
+    "sources": [
+     {
+      "ref": "mgmt:ianzen-r8-sochi-tsuchi",
+      "title": "病院等における医療の安全を確保するための措置について（医政発0331第72号）",
+      "url": "https://www.mhlw.go.jp/content/10800000/001685651.pdf",
+      "locator": "記1⑴①",
+      "quote": "① 当該病院等における安全管理に関する基本的考え方"
+     },
+     {
+      "ref": "mgmt:ianzen-r8-sochi-tsuchi",
+      "title": "病院等における医療の安全を確保するための措置について（医政発0331第72号）",
+      "url": "https://www.mhlw.go.jp/content/10800000/001685651.pdf",
+      "locator": "記1⑴⑦",
+      "quote": "⑦ 患者からの相談への対応に関する基本方針"
+     },
+     {
+      "ref": "mgmt:ianzen-r8-sochi-tsuchi",
+      "title": "病院等における医療の安全を確保するための措置について（医政発0331第72号）",
+      "url": "https://www.mhlw.go.jp/content/10800000/001685651.pdf",
+      "locator": "記1⑴⑥",
+      "quote": "⑥ 医療従事者と患者との間の情報の共有に関する基本方針"
+     }
+    ],
+    "asOf": "令和8年3月31日通知"
+   }
+  },
+  {
+   "key": "G2-S04-SAF-06",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "同通知 記1⑵①②③④⑥を各選択肢と照合。C（個人の責任追及目的）のみ誤り。"
+  },
+  {
+   "key": "G2-S04-SAF-07",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "同通知 記1⑴⑤ア（別表1は含める／別表2は努める）、別表1②異物遺残、別表2④⑦⑩⑪を確認。"
+  },
+  {
+   "key": "G2-S04-SAF-08",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "同通知 記1⑷①（特定機能病院等は医療安全管理部門への報告で可）③④⑤を確認。"
+  },
+  {
+   "key": "G2-S04-SAF-09",
+   "verdict": "fix",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": false,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "医療法6条の10第1項の定義、Q&A Q2回答（過誤の有無は問わない・遺族が報告する仕組みではない）、施行通知（人工死産は対象としない）を確認。解答D正、ブラインド一致。",
+   "detail": "sources[2] の引用が「｢人工死産｣は対象」で切れており、原文「対象としない」と逆の意味に読める（-layout抽出で段組みが分断）。同一PDFを段組みなしで再抽出し x-audit-G2-S04-SAF:jikocho-sekou-tsuchi-h27-raw として登録、引用を「…｢人工死産｣は対象としない。」に差し替え。",
+   "fixed": {
+    "key": "G2-S04-SAF-09",
+    "subject": "S04",
+    "subtopic": "医療事故調査制度",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "医療事故調査制度で報告の対象となる医療法第6条の10の「医療事故」について、正しいものはどれか。",
+    "choices": [
+     "医療に過誤があったと認められる死亡に限られる。",
+     "死亡又は死産に至らない重篤な後遺障害も対象に含まれる。",
+     "遺族が医療事故であると判断して、医療事故調査・支援センターに報告することができる。",
+     "医療に起因し（疑いを含む）、管理者が予期しなかった死亡又は死産が対象となる。",
+     "人口動態統計の分類における人工死産も対象に含まれる。"
+    ],
+    "answer": 3,
+    "explanation": {
+     "correct": "医療法第6条の10は、医療事故を「当該病院等に勤務する医療従事者が提供した医療に起因し、又は起因すると疑われる死亡又は死産であつて、当該管理者が当該死亡又は死産を予期しなかつたもの」（省令で定めるもの）と定義している。2つの要件をともに満たすものが対象である。",
+     "choiceNotes": [
+      "厚生労働省Q&Aのとおり、過誤の有無は問わない。",
+      "法の定義は「死亡又は死産」であり、死亡に至らない後遺障害は対象外である。",
+      "Q&Aのとおり、医療事故の判断と最初の報告は管理者が行い、遺族が医療事故としてセンターに報告する仕組みにはなっていない。",
+      null,
+      "施行通知のとおり、人口動態統計の分類における人工死産は対象としない。"
+     ],
+     "point": "医療事故＝「医療に起因（疑い含む）」×「管理者が予期しなかった」死亡・死産。過誤の有無は問わない。判断・報告は管理者。"
+    },
+    "sources": [
+     {
+      "ref": "law:医療法",
+      "title": "医療法",
+      "url": "https://laws.e-gov.go.jp/law/323AC0000000205",
+      "locator": "第6条の10第1項",
+      "quote": "当該病院等に勤務する医療従事者が提供した医療に起因し、又は起因すると疑われる死亡又は死産であつて、当該管理者が当該死亡又は死産を予期しなかつたもの"
+     },
+     {
+      "ref": "mgmt:jikocho-qa",
+      "title": "医療事故調査制度に関するQ&A（全体版）",
+      "url": "https://www.mhlw.go.jp/content/10800000/001732095.pdf",
+      "locator": "Q2回答",
+      "quote": "遺族が「医療事故」として医療事故調査・支援センターに報告する仕組みとはなっていません。"
+     },
+     {
+      "ref": "x-audit-G2-S04-SAF:jikocho-sekou-tsuchi-h27-raw",
+      "title": "地域における医療及び介護の総合的な確保を推進するための関係法律の整備等に関する法律の一部の施行（医療事故調査制度）について（医政発0508第1号）",
+      "url": "https://www.mhlw.go.jp/content/10800000/001732075.pdf",
+      "locator": "別添 1．医療事故の定義について（死産について・通知欄）",
+      "quote": "人口動態統計の分類における｢人工死産｣は対象としない。"
+     }
+    ],
+    "asOf": "2026-11 e-Gov現行法令／平成27年5月8日施行通知・Q&A（平成27年9月28日更新）"
+   }
+  },
+  {
+   "key": "G2-S04-SAF-10",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "規則1条の10の2の2第1項第1〜3号（e-Gov現行。旧1条の10の2から条番号移動済み）を確認。E=第2号。過誤の有無はQ&A Q2。"
+  },
+  {
+   "key": "G2-S04-SAF-11",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "医療法6条の10第2項（事前説明・ただし書）、規則1条の10の3第1項（祖父母）、Q&A A8（同意不要・申出があっても報告義務）、A10（遺族側の代表者に説明）を確認。"
+  },
+  {
+   "key": "G2-S04-SAF-12",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "施行通知 センターへの報告期限欄「具体的な期限は設けず、「遅滞なく」報告」、医療法6条の11第4項を確認。"
+  },
+  {
+   "key": "G2-S04-SAF-13",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "医療法6条の11第1・2・5項、規則1条の10の4第1項（必要な範囲内で選択・第1号診療録確認）・第2項（識別できないよう加工）を確認。"
+  },
+  {
+   "key": "G2-S04-SAF-14",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "医療法6条の15第1項（大臣が一般社団/財団法人を申請により指定）、6条の13第1項（医療安全支援センター・都道府県等の努力義務・苦情相談）、6条の17第1項・第5項（管理者又は遺族の依頼、結果は管理者及び遺族へ）を確認。"
+  },
+  {
+   "key": "G2-S04-SAF-15",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "留意事項通知 第1の1（病院は件数不問、有床診・助産所は年間120件以上）、第1の2（管理者受講困難時は判断に携わる者の受講で可）、経緯資料（研修義務化は令和11年4月1日施行）を確認。e-Gov現行版に1条の10の6が未収載なのも施行前で整合。"
+  }
+ ]
+}

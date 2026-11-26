@@ -1,0 +1,14 @@
+{"answers":[
+{"key":"lg-10-00","answer":0,"confidence":"high","ambiguous":false,"note":"ICD official name"},
+{"key":"lg-10-01","answer":3,"confidence":"high","ambiguous":false,"note":"DPC is Japanese payment system, not WHO-FIC"},
+{"key":"lg-10-02","answer":0,"confidence":"high","ambiguous":false,"note":"lead term definition, vol.3"},
+{"key":"lg-10-04","answer":0,"confidence":"high","ambiguous":false,"note":"main condition definition"},
+{"key":"lg-10-05","answer":0,"confidence":"high","ambiguous":false,"note":"C80"},
+{"key":"lg-10-06","answer":0,"confidence":"high","ambiguous":false,"note":"Chapter XX external causes"},
+{"key":"lg-10-07","answer":0,"confidence":"high","ambiguous":false,"note":"Chapter XV"},
+{"key":"lg-10-08","answer":0,"confidence":"high","ambiguous":false,"note":"general principle; D is rule 1"},
+{"key":"lg-10-09","answer":0,"confidence":"high","ambiguous":false,"note":"Chapter XXI"},
+{"key":"lg-10-10","answer":0,"confidence":"medium","ambiguous":false,"note":"committee 年4回 requirement; verify v7 text"},
+{"key":"lg-10-12","answer":0,"confidence":"high","ambiguous":false,"note":"NOS"},
+{"key":"lg-10-13","answer":0,"confidence":"high","ambiguous":false,"note":"Chapter V"}
+]}

@@ -1,0 +1,116 @@
+{
+ "answers": [
+  {
+   "key": "G3-S04-INC-01",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "h14 総合対策 3"
+  },
+  {
+   "key": "G3-S04-INC-02",
+   "answer": 3,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "h14 総合対策 4 廊下転倒も含む"
+  },
+  {
+   "key": "G3-S04-INC-03",
+   "answer": 3,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "管理者指針 FMEA=危険箇所予測"
+  },
+  {
+   "key": "G3-S04-INC-04",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "RCA,SHEL,4M-4E=事故発生後原因分析"
+  },
+  {
+   "key": "G3-S04-INC-05",
+   "answer": 3,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "ハインリッヒ 1:29:300（一般知識）"
+  },
+  {
+   "key": "G3-S04-INC-06",
+   "answer": 4,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "報道は医療機関外の情報"
+  },
+  {
+   "key": "G3-S04-INC-07",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "通知 はじめに ②"
+  },
+  {
+   "key": "G3-S04-INC-08",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "通知1-2(1) 週1度以上・2名以上"
+  },
+  {
+   "key": "G3-S04-INC-09",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "通知3-3(1) 4週間以内3例以上は準じて対応"
+  },
+  {
+   "key": "G3-S04-INC-10",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "通知3-3(3) 10名以上で保健所報告"
+  },
+  {
+   "key": "G3-S04-INC-11",
+   "answer": 3,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "通知2-1(2) 履物交換等は必ずしも不要"
+  },
+  {
+   "key": "G3-S04-INC-12",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "施行規則1条の11第2項第1号ロ 無床診は委員会除外"
+  },
+  {
+   "key": "G3-S04-INC-13",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "要綱16条 2週間以内"
+  },
+  {
+   "key": "G3-S04-INC-14",
+   "answer": 4,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "要綱24条 障害が残った事例は医療事故情報"
+  },
+  {
+   "key": "G3-S04-INC-15",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "2022年以降は28週以上のみ"
+  },
+  {
+   "key": "G3-S04-INC-16",
+   "answer": 3,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "sankahp_system 原因分析は過失判断せず"
+  }
+ ]
+}

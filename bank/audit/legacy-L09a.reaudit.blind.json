@@ -1,0 +1,16 @@
+{"answers":[
+{"key":"lg-09-00","answer":2,"confidence":"high","ambiguous":false,"note":"英字1+数字2の3桁"},
+{"key":"lg-09-01","answer":2,"confidence":"high","ambiguous":false,"note":"22章"},
+{"key":"lg-09-02","answer":1,"confidence":"high","ambiguous":false,"note":"C00-C97"},
+{"key":"lg-09-04","answer":2,"confidence":"high","ambiguous":false,"note":"剣印=原疾患、星印=症状発現"},
+{"key":"lg-09-05","answer":3,"confidence":"high","ambiguous":false,"note":"第20章 V01-Y98"},
+{"key":"lg-09-06","answer":1,"confidence":"high","ambiguous":false,"note":"1入院で1つ"},
+{"key":"lg-09-07","answer":2,"confidence":"high","ambiguous":false,"note":"14桁"},
+{"key":"lg-09-08","answer":1,"confidence":"high","ambiguous":false,"note":"3段階、Ⅲ超は出来高、点数設定方式A-D"},
+{"key":"lg-09-09","answer":2,"confidence":"high","ambiguous":false,"note":"局在+形態の2軸"},
+{"key":"lg-09-10","answer":3,"confidence":"high","ambiguous":false,"note":"J18"},
+{"key":"lg-09-11","answer":2,"confidence":"high","ambiguous":false,"note":"第19章"},
+{"key":"lg-09-12","answer":1,"confidence":"high","ambiguous":false,"note":"WHO原死因定義(a)"},
+{"key":"lg-09-13","answer":4,"confidence":"high","ambiguous":false,"note":"手術は出来高"},
+{"key":"lg-09-15","answer":1,"confidence":"high","ambiguous":false,"note":"索引→内容例示表で確認"}
+]}

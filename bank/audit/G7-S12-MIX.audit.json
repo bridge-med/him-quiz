@@ -1,0 +1,214 @@
+{
+ "verdicts": [
+  {
+   "key": "G7-S12-MIX-01",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "naiyou03 D51.0 包含（貧血：悪性（先天性））確認; D50.9/D52.0/D53.1 名称・D51除外E53.8・E53除外D51.-確認。解説の「コバラミン」はビタミンB12の言い換え（validatorのB12誤検出回避）で誤りではない。"
+  },
+  {
+   "key": "G7-S12-MIX-02",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "naiyou03 D66包含（血友病NOS/A/古典的）、D67（クリスマス病・血友病B）、D68.0（vWD）、D68.1（血友病C）、D68.3（抗凝固薬長期使用中の出血、除外Z92.1）確認。"
+  },
+  {
+   "key": "G7-S12-MIX-03",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "naiyou03 D69除外「血栓性血小板減少性紫斑病（M31.1）」、naiyou13 M31.1包含確認; D69.3/D69.5/D69.6/D65名称確認。"
+  },
+  {
+   "key": "G7-S12-MIX-04",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "naiyou03 D59.0/D59.1/D59.2、D55除外（薬物誘発性酵素欠損性貧血D59.2）、D61.1確認。"
+  },
+  {
+   "key": "G7-S12-MIX-05",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "naiyou03 D86.8「サルコイドーシスにおける紅彩毛様体炎†（H22.1＊）」（原文誤植は locator に明記）、naiyou07 H22.1＊（D86.8†）確認; D86.0/D86.3/D86.9名称確認。"
+  },
+  {
+   "key": "G7-S12-MIX-06",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "naiyou16 P13.3/P13.4/P14.0/P12.0、naiyou19 章の除外「出産外傷（P10－P15）」確認。"
+  },
+  {
+   "key": "G7-S12-MIX-07",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "naiyou16 P70.0/P70.1/P70.4、naiyou04 章の除外（P70－P74）、E16.2、naiyou15 O24.4確認。"
+  },
+  {
+   "key": "G7-S12-MIX-08",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "naiyou16 P55.0/P55.1、P58除外（同種免疫による黄疸P55－P57）、P59.9包含、naiyou03 D59.1除外（P55.-）確認。"
+  },
+  {
+   "key": "G7-S12-MIX-09",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "naiyou16 P04除外（P58.4）、P04.0包含（アヘン剤）、P04.1包含（がんの化学療法）、P04.2、P04.4除外（離脱症状P96.1）、P96.1確認。"
+  },
+  {
+   "key": "G7-S12-MIX-10",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "naiyou16 P53包含（新生児のビタミンK欠乏症）、P59.9包含（生理的黄疸NOS）、P61.0（母体のITP）、P61.1、P61.2（未熟児の貧血）、naiyou03 D75.1除外（新生児P61.1）確認。a・dが正。"
+  },
+  {
+   "key": "G7-S12-MIX-11",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "naiyou18 章の除外（P00－P96）、R50除外（分娩O75.2・新生児P81.9・産じょく熱NOS O86.4）、R50.8/R50.9、naiyou16 P81.0/P81.9包含（新生児の発熱NOS）、naiyou15 O86.4確認。"
+  },
+  {
+   "key": "G7-S12-MIX-12",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "naiyou18 R73除外（E10－E14）、R73.0包含（耐糖能障害・糖尿病前症）、R73.9、R81確認; E11.9/E14.9 は icd.mjs で名称確認。"
+  },
+  {
+   "key": "G7-S12-MIX-13",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "naiyou18 R95－R99中間分類の除外（P95・O95）、R95.0、R96除外（I46.1）、R98包含（発見死体）、R99包含（死亡NOS）確認。"
+  },
+  {
+   "key": "G7-S12-MIX-14",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "naiyou18 R03.0注、R03.1、icd.mjs I10/I15.9名称確認。4択だが問題なし。"
+  },
+  {
+   "key": "G7-S12-MIX-15",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "instruction_all 4.1.9／4.1.10 ルールA：I46.1・I46.9・I95.9・I99・J96.0・J96.9・P28.5・R00－R94・R96－R99、R95は含まれない、を確認（locator 4.1.10 は例の節に同文あり）。"
+  }
+ ]
+}

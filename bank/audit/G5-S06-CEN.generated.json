@@ -1,0 +1,618 @@
+{
+ "questions": [
+  {
+   "subject": "S06",
+   "subtopic": "代表値",
+   "format": "calculation",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "ある病棟の退院患者8人の在院日数（日）は、12、3、30、7、5、14、9、6であった。在院日数の中央値はどれか。",
+   "choices": [
+    "6日",
+    "7日",
+    "8日",
+    "9日",
+    "10.75日"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "中央値はデータを大きさの順に並べて中央にくる値。小さい順に並べると3、5、6、7、9、12、14、30。個数8は偶数なので、真ん中の2つ（4番目の7と5番目の9）を加えて2で割る。（7＋9）÷2＝8日。",
+    "choiceNotes": [
+     "並べ替えずに提示順のまま真ん中の2つ（7と5）を平均した値。中央値は大きさの順に並べてから求める。",
+     "並べ替えた4番目の値だけを取った値。偶数個のときは真ん中の2つの平均をとる。",
+     null,
+     "並べ替えた5番目の値だけを取った値。偶数個のときは真ん中の2つの平均をとる。",
+     "平均値（総和86÷8）。30日という大きな値に引っ張られている。"
+    ],
+    "point": "中央値：並べ替えてから。偶数個なら真ん中2つの平均。"
+   },
+   "sources": [
+    {
+     "ref": "stats:naruhodo-chushin",
+     "title": "なるほど統計学園「中心的な傾向を捉える」",
+     "url": "https://www.stat.go.jp/naruhodo/5_tokucho/chushin.html",
+     "locator": "中央値",
+     "quote": "偶数のときは真ん中の2つを加えて2で割った値となります"
+    }
+   ],
+   "asOf": "総務省統計局 なるほど統計学園（2026-11取得時点の掲載内容）",
+   "calc": {
+    "expr": "(7+9)/2",
+    "value": 8
+   },
+   "key": "G5-S06-CEN-01"
+  },
+  {
+   "subject": "S06",
+   "subtopic": "代表値",
+   "format": "calculation",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "ある外来の患者20人の年齢を、次の度数分布表にまとめた。個々の年齢が分からないため、各階級の階級値を用いて平均値を求めるとき、その値はどれか。\n20歳以上40歳未満：4人\n40歳以上60歳未満：6人\n60歳以上80歳未満：8人\n80歳以上100歳未満：2人",
+   "choices": [
+    "48歳",
+    "58歳",
+    "60歳",
+    "68歳",
+    "70歳"
+   ],
+   "answer": 1,
+   "explanation": {
+    "correct": "階級値は各階級の中央の値（30、50、70、90）。平均値＝（30×4＋50×6＋70×8＋90×2）÷20＝1160÷20＝58歳。",
+    "choiceNotes": [
+     "各階級の下限（20、40、60、80）を用いた値（960÷20）。階級値は階級の中央の値である。",
+     null,
+     "4つの階級値を度数で重み付けせずに単純平均した値（240÷4）。",
+     "各階級の上限（40、60、80、100）を用いた値（1360÷20）。",
+     "最も度数の多い階級の階級値で、最頻値にあたる。"
+    ],
+    "point": "度数分布からの平均＝Σ（階級値×度数）÷総度数。階級値＝階級の中央。"
+   },
+   "sources": [
+    {
+     "ref": "stats:naruhodo-chushin",
+     "title": "なるほど統計学園「中心的な傾向を捉える」",
+     "url": "https://www.stat.go.jp/naruhodo/5_tokucho/chushin.html",
+     "locator": "平均値（算術平均）",
+     "quote": "ヒストグラムの階級値を代用して計算することもできます"
+    },
+    {
+     "ref": "stats:naruhodo-chushin",
+     "title": "なるほど統計学園「中心的な傾向を捉える」",
+     "url": "https://www.stat.go.jp/naruhodo/5_tokucho/chushin.html",
+     "locator": "平均値（算術平均）",
+     "quote": "階級値は、各階級の中央の値の事を指す"
+    }
+   ],
+   "asOf": "総務省統計局 なるほど統計学園（2026-11取得時点の掲載内容）",
+   "calc": {
+    "expr": "(30*4+50*6+70*8+90*2)/20",
+    "value": 58
+   },
+   "key": "G5-S06-CEN-02"
+  },
+  {
+   "subject": "S06",
+   "subtopic": "代表値",
+   "format": "calculation",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "救急外来の受診者40人の待ち時間を、次の度数分布表にまとめた。この度数分布表から求めた最頻値はどれか。\n0分以上10分未満：5人\n10分以上20分未満：9人\n20分以上30分未満：14人\n30分以上40分未満：7人\n40分以上50分未満：5人",
+   "choices": [
+    "14分",
+    "20分",
+    "25分",
+    "30分",
+    "35分"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "度数分布表から最頻値を求めるときは、最も度数の多い階級の階級値をとる。最も度数が多いのは「20分以上30分未満」（14人）で、その階級値は（20＋30）÷2＝25分。",
+    "choiceNotes": [
+     "最も多い階級の度数（人数）であり、最頻値（値）ではない。",
+     "最も度数の多い階級の下限。最頻値には階級値（階級の中央）を用いる。",
+     null,
+     "最も度数の多い階級の上限。最頻値には階級値（階級の中央）を用いる。",
+     "最も度数の多い階級ではなく、その隣の階級「30分以上40分未満」の階級値。"
+    ],
+    "point": "度数分布の最頻値＝度数最大の階級の階級値。"
+   },
+   "sources": [
+    {
+     "ref": "stats:naruhodo-chushin",
+     "title": "なるほど統計学園「中心的な傾向を捉える」",
+     "url": "https://www.stat.go.jp/naruhodo/5_tokucho/chushin.html",
+     "locator": "最頻値（モード）",
+     "quote": "ヒストグラムから最頻値を求める場合には、最も度数の多い階級の階級値となります"
+    }
+   ],
+   "asOf": "総務省統計局 なるほど統計学園（2026-11取得時点の掲載内容）",
+   "calc": {
+    "expr": "(20+30)/2",
+    "value": 25
+   },
+   "key": "G5-S06-CEN-03"
+  },
+  {
+   "subject": "S06",
+   "subtopic": "代表値",
+   "format": "knowledge",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "データの分布が単峰形で、右側の裾が左側の裾より長い（右に歪んだ）とき、代表値について正しいものはどれか。",
+   "choices": [
+    "平均値は中央値より小さくなる",
+    "平均値と中央値は一致する",
+    "平均値は中央値より大きくなる",
+    "裾の極端な値に最も強く引っ張られるのは中央値である",
+    "分布の形にかかわらず、代表値には常に平均値を用いる"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "歪んだ分布では平均値と中央値は一致せず、平均値は歪みの方向（裾の長い側）に引っ張られる。右の裾が重い分布では、平均値は中央値より大きくなる。",
+    "choiceNotes": [
+     "左側の裾が重い（左に歪んだ）分布の場合である。",
+     "正規分布のような左右対称の分布の場合である。歪んだ分布では一致しない。",
+     null,
+     "極端な値に引っ張られるのは平均値。中央値は並べたときの中央の値なので、極端な値の影響を受けにくい。",
+     "分布の形によっては中央値や最頻値を代表値にする場合もある。"
+    ],
+    "point": "右に裾が長い → 平均値＞中央値（平均は裾の側へ引っ張られる）。"
+   },
+   "sources": [
+    {
+     "ref": "stats:nist-measures-of-location",
+     "title": "NIST/SEMATECH e-Handbook of Statistical Methods, 1.3.5.1. Measures of Location",
+     "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda351.htm",
+     "locator": "Measures of Location（exponential distribution）",
+     "quote": "if the right tail is heavier than the left tail, the mean will be greater than the median."
+    },
+    {
+     "ref": "stats:naruhodo-chushin",
+     "title": "なるほど統計学園「中心的な傾向を捉える」",
+     "url": "https://www.stat.go.jp/naruhodo/5_tokucho/chushin.html",
+     "locator": "冒頭",
+     "quote": "分布の形によっては最頻値や中央値を代表値にする場合もあります"
+    }
+   ],
+   "asOf": "総務省統計局 なるほど統計学園・NIST/SEMATECH e-Handbook of Statistical Methods（2026-11取得時点の掲載内容）",
+   "key": "G5-S06-CEN-04"
+  },
+  {
+   "subject": "S06",
+   "subtopic": "代表値",
+   "format": "knowledge",
+   "difficulty": "standard",
+   "polarity": "negative",
+   "question": "代表値について、誤っているものはどれか。",
+   "choices": [
+    "平均値は、変量の総和を個数で割ったものである",
+    "中央値より大きい値の個数と小さい値の個数は同数となる",
+    "外れ値が加わったとき、平均値・中央値・最頻値のうち最も影響を受けるのは平均値である",
+    "最頻値は、どのようなデータでも必ず1つに定まる",
+    "正規分布では、平均値・中央値・最頻値は一致する"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "最頻値は最も多い度数（頻度）を示す値であり、必ずしも1つに定まらない（度数が最大の値が複数あることもある）。",
+    "choiceNotes": [
+     "正しい。平均（算術平均）の定義である。",
+     "正しい。中央値は分布の中央にくる値で、それより大きい値と小さい値の個数は同数となる。",
+     "正しい。外れ値が加わった場合、平均値は三つの指標の中で最も影響を受ける。",
+     null,
+     "正しい。正規分布は左右対称で、平均値・中央値・最頻値は一致する。"
+    ],
+    "point": "最頻値は一意とは限らない。外れ値に最も弱いのは平均値。"
+   },
+   "sources": [
+    {
+     "ref": "stats:nist-measures-of-location",
+     "title": "NIST/SEMATECH e-Handbook of Statistical Methods, 1.3.5.1. Measures of Location",
+     "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda351.htm",
+     "locator": "mode",
+     "quote": "It is not necessarily unique."
+    },
+    {
+     "ref": "stats:naruhodo-chushin",
+     "title": "なるほど統計学園「中心的な傾向を捉える」",
+     "url": "https://www.stat.go.jp/naruhodo/5_tokucho/chushin.html",
+     "locator": "平均値と中央値と最頻値の違い",
+     "quote": "平均値は三つの指標の中で最も影響を受けるデータといってもよいでしょう"
+    },
+    {
+     "ref": "stats:nist-measures-of-location",
+     "title": "NIST/SEMATECH e-Handbook of Statistical Methods, 1.3.5.1. Measures of Location",
+     "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda351.htm",
+     "locator": "Normal Distribution",
+     "quote": "the mean, median, and mode are actually equivalent"
+    }
+   ],
+   "asOf": "総務省統計局 なるほど統計学園・NIST/SEMATECH e-Handbook of Statistical Methods（2026-11取得時点の掲載内容）",
+   "key": "G5-S06-CEN-05"
+  },
+  {
+   "subject": "S06",
+   "subtopic": "代表値",
+   "format": "calculation",
+   "difficulty": "advanced",
+   "polarity": "positive",
+   "question": "ある病院の内視鏡検査の所要時間の平均値は、午前の20件で30分、午後の30件で20分であった。午前と午後を合わせた50件の所要時間の平均値はどれか。",
+   "choices": [
+    "24分",
+    "25分",
+    "26分",
+    "50分"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "平均値は総和を個数で割ったもの。総和は30×20＋20×30＝1200分、件数は50件なので、1200÷50＝24分。件数の異なる2群の平均値を単純に平均してはならない。",
+    "choiceNotes": [
+     null,
+     "2つの平均値を件数で重み付けせずに単純平均した値（（30＋20）÷2）。",
+     "件数を逆に組み合わせて重み付けした値（（30×30＋20×20）÷50）。",
+     "2つの平均値を足しただけの値で、平均値ではない。"
+    ],
+    "point": "群を合わせた平均＝（各群の平均×件数）の合計÷総件数。"
+   },
+   "sources": [
+    {
+     "ref": "stats:naruhodo-chushin",
+     "title": "なるほど統計学園「中心的な傾向を捉える」",
+     "url": "https://www.stat.go.jp/naruhodo/5_tokucho/chushin.html",
+     "locator": "平均値（算術平均）",
+     "quote": "平均とは変量の総和を個数で割ったものです"
+    }
+   ],
+   "asOf": "総務省統計局 なるほど統計学園（2026-11取得時点の掲載内容）",
+   "calc": {
+    "expr": "(30*20+20*30)/50",
+    "value": 24
+   },
+   "key": "G5-S06-CEN-06"
+  },
+  {
+   "subject": "S06",
+   "subtopic": "散布度",
+   "format": "calculation",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "ある病棟の8日間の新規入院患者数（人）は、2、4、4、4、5、5、7、9であった。分散を「偏差の2乗の平均（偏差平方和をデータの個数8で割る）」として求めるとき、標準偏差はどれか。",
+   "choices": [
+    "1.5人",
+    "2人",
+    "約2.14人",
+    "4人",
+    "7人"
+   ],
+   "answer": 1,
+   "explanation": {
+    "correct": "平均値＝40÷8＝5。偏差は−3、−1、−1、−1、0、0、2、4で、偏差平方和＝9＋1＋1＋1＋0＋0＋4＋16＝32。分散＝32÷8＝4。標準偏差は分散の正の平方根なので√4＝2人。",
+    "choiceNotes": [
+     "偏差の絶対値の平均（12÷8）で、平均絶対偏差にあたる。",
+     null,
+     "偏差平方和を個数−1（7）で割った分散の平方根（√（32÷7））。本問の定義（個数で割る）とは異なる。",
+     "分散の値。標準偏差は分散の正の平方根をとる。",
+     "範囲（最大値9−最小値2）。"
+    ],
+    "point": "分散＝偏差平方和÷n（本問の定義）、標準偏差＝√分散。"
+   },
+   "sources": [
+    {
+     "ref": "stats:naruhodo-chirabari-jyokyu",
+     "title": "なるほど統計学園「データの散らばりを見る」",
+     "url": "https://www.stat.go.jp/naruhodo/10_tokucho/chirabari.html",
+     "locator": "分散",
+     "quote": "偏差二乗和）の平均を求めることで"
+    },
+    {
+     "ref": "stats:naruhodo-chirabari-jyokyu",
+     "title": "なるほど統計学園「データの散らばりを見る」",
+     "url": "https://www.stat.go.jp/naruhodo/10_tokucho/chirabari.html",
+     "locator": "標準偏差",
+     "quote": "分散の正の平方根をとり、その値を標準偏差と言います"
+    }
+   ],
+   "asOf": "総務省統計局 なるほど統計学園（2026-11取得時点の掲載内容）",
+   "calc": {
+    "expr": "sqrt(32/8)",
+    "value": 2
+   },
+   "key": "G5-S06-CEN-07"
+  },
+  {
+   "subject": "S06",
+   "subtopic": "散布度",
+   "format": "calculation",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "無作為に選んだ退院患者5人について、退院時要約の作成に要した日数（日）は2、4、7、9、13であった。分散を「偏差平方和をデータの個数から1を引いた数（n−1）で割る」と定義するとき、分散はどれか。",
+   "choices": [
+    "約4.30",
+    "11",
+    "14.8",
+    "18.5",
+    "74"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "平均値＝35÷5＝7。偏差は−5、−3、0、2、6で、偏差平方和＝25＋9＋0＋4＋36＝74。n−1＝4で割って分散＝74÷4＝18.5。",
+    "choiceNotes": [
+     "分散18.5の平方根で、標準偏差にあたる。",
+     "範囲（最大値13−最小値2）。",
+     "偏差平方和をデータの個数5で割った値。本問の定義（n−1で割る）とは異なる。",
+     null,
+     "偏差平方和そのもので、個数で割っていない。"
+    ],
+    "point": "n−1で割る定義：分散＝偏差平方和÷（n−1）。nで割る定義と混同しない。"
+   },
+   "sources": [
+    {
+     "ref": "stats:nist-measures-of-scale",
+     "title": "NIST/SEMATECH e-Handbook of Statistical Methods, 1.3.5.6. Measures of Scale",
+     "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda356.htm",
+     "locator": "variance",
+     "quote": "s^{2} = \\sum_{i=1}^{N}(Y_{i} - \\bar{Y})^{2}/(N - 1)"
+    }
+   ],
+   "asOf": "NIST/SEMATECH e-Handbook of Statistical Methods・NIST Dataplot Reference Manual（2026-11取得時点の掲載内容）",
+   "calc": {
+    "expr": "74/4",
+    "value": 18.5
+   },
+   "key": "G5-S06-CEN-08"
+  },
+  {
+   "subject": "S06",
+   "subtopic": "散布度",
+   "format": "knowledge",
+   "difficulty": "standard",
+   "polarity": "negative",
+   "question": "変動係数について、誤っているものはどれか。",
+   "choices": [
+    "標準偏差を平均値で割った値である",
+    "測定単位に依存しないため、単位や平均値の大きさが異なるデータのばらつきの比較に用いられる",
+    "摂氏で測った気温のような間隔尺度のデータにも、比尺度のデータと同様に適している",
+    "平均値が0に近いと、平均値のわずかな変化で値が大きく変わる",
+    "標準偏差が同じなら、平均値が大きい集団ほど変動係数は小さくなる"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "変動係数は原則として、0に意味がある比尺度のデータに用いる。摂氏や華氏の気温は間隔尺度であり、同じ測定値でも摂氏と華氏で変動係数が異なってしまうため適さない。",
+    "choiceNotes": [
+     "正しい。変動係数＝標準偏差÷平均値。",
+     "正しい。比尺度である限り測定単位に依存しないので、単位や平均値が大きく異なるデータのばらつきの比較に有用である。",
+     null,
+     "正しい。平均値が0付近では、平均値の小さな変化に敏感である。",
+     "正しい。変動係数＝標準偏差÷平均値なので、分子が同じなら分母（平均値）が大きいほど小さくなる。"
+    ],
+    "point": "変動係数＝SD÷平均。単位に依存しない。比尺度に限る。"
+   },
+   "sources": [
+    {
+     "ref": "x-gen-G5-S06-CEN:nist-dataplot-cv",
+     "title": "NIST Dataplot Reference Manual: COEFFICIENT OF VARIATION",
+     "url": "https://www.itl.nist.gov/div898/software/dataplot/refman2/auxillar/coefvari.htm",
+     "locator": "Description",
+     "quote": "The coefficient of variation should typically only be used for data measured on a ratio scale."
+    },
+    {
+     "ref": "x-gen-G5-S06-CEN:nist-dataplot-cv",
+     "title": "NIST Dataplot Reference Manual: COEFFICIENT OF VARIATION",
+     "url": "https://www.itl.nist.gov/div898/software/dataplot/refman2/auxillar/coefvari.htm",
+     "locator": "Description",
+     "quote": "the coefficient of variation on the Celcius scale will be different than the coefficient of variation on the Farenheit scale"
+    },
+    {
+     "ref": "x-gen-G5-S06-CEN:nist-dataplot-cv",
+     "title": "NIST Dataplot Reference Manual: COEFFICIENT OF VARIATION",
+     "url": "https://www.itl.nist.gov/div898/software/dataplot/refman2/auxillar/coefvari.htm",
+     "locator": "Description",
+     "quote": "if the mean value is near zero, the coefficient of variation is sensitive to small changes in the mean"
+    }
+   ],
+   "asOf": "NIST/SEMATECH e-Handbook of Statistical Methods・NIST Dataplot Reference Manual（2026-11取得時点の掲載内容）",
+   "key": "G5-S06-CEN-09"
+  },
+  {
+   "subject": "S06",
+   "subtopic": "散布度",
+   "format": "calculation",
+   "difficulty": "advanced",
+   "polarity": "positive",
+   "question": "成人の集団Aの体重は平均値60kg、標準偏差9kg、新生児の集団Bの体重は平均値3.0kg、標準偏差0.6kgであった。変動係数（標準偏差÷平均値）を用いて、相対的なばらつきを比較した結果として正しいものはどれか。",
+   "choices": [
+    "Aは0.15、Bは0.2で、Bの方が相対的なばらつきが大きい",
+    "Aは0.15、Bは0.2で、Aの方が相対的なばらつきが大きい",
+    "Aは約6.67、Bは5で、Aの方が相対的なばらつきが大きい",
+    "標準偏差がAは9、Bは0.6なので、Aの方が相対的なばらつきが大きい"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "変動係数はA＝9÷60＝0.15、B＝0.6÷3.0＝0.2。標準偏差そのものはAの方がはるかに大きいが、平均値に対する相対的なばらつきはBの方が大きい。平均値が大きく異なるデータのばらつきの比較には変動係数が有用である。",
+    "choiceNotes": [
+     null,
+     "値は正しいが大小の判断が逆。変動係数が大きい方（B）が相対的なばらつきが大きい。",
+     "平均値÷標準偏差で、変動係数の逆数を計算している。",
+     "標準偏差は平均値の大きさに左右されるため、平均値が大きく異なる集団の相対的なばらつきの比較には適さない。"
+    ],
+    "point": "平均が大きく違う集団のばらつき比較は変動係数（SD÷平均）で。"
+   },
+   "sources": [
+    {
+     "ref": "x-gen-G5-S06-CEN:nist-dataplot-cv",
+     "title": "NIST Dataplot Reference Manual: COEFFICIENT OF VARIATION",
+     "url": "https://www.itl.nist.gov/div898/software/dataplot/refman2/auxillar/coefvari.htm",
+     "locator": "Description",
+     "quote": "the ratio of the standard deviation to the mean"
+    },
+    {
+     "ref": "x-gen-G5-S06-CEN:nist-dataplot-cv",
+     "title": "NIST Dataplot Reference Manual: COEFFICIENT OF VARIATION",
+     "url": "https://www.itl.nist.gov/div898/software/dataplot/refman2/auxillar/coefvari.htm",
+     "locator": "Description",
+     "quote": "When comparing variability between data sets with different measurement scales or very different mean values, the coefficient of variation can be a useful alternative"
+    }
+   ],
+   "asOf": "NIST/SEMATECH e-Handbook of Statistical Methods・NIST Dataplot Reference Manual（2026-11取得時点の掲載内容）",
+   "calc": {
+    "expr": "0.6/3.0",
+    "value": 0.2
+   },
+   "key": "G5-S06-CEN-10"
+  },
+  {
+   "subject": "S06",
+   "subtopic": "散布度",
+   "format": "calculation",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "ある病院の退院患者100人の在院日数は、最小値2日、第1四分位数6日、中央値9日、第3四分位数15日、最大値41日であった。範囲と四分位範囲の組み合わせとして正しいものはどれか。",
+   "choices": [
+    "範囲41日、四分位範囲15日",
+    "範囲39日、四分位範囲6日",
+    "範囲32日、四分位範囲9日",
+    "範囲39日、四分位範囲9日",
+    "範囲35日、四分位範囲13日"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "範囲＝最大値−最小値＝41−2＝39日。四分位範囲＝第3四分位数−第1四分位数＝15−6＝9日。",
+    "choiceNotes": [
+     "最大値と第3四分位数をそのまま答えている。",
+     "四分位範囲を第3四分位数−中央値（15−9）で求めている。",
+     "範囲を最大値−中央値（41−9）で求めている。",
+     null,
+     "範囲を最大値−第1四分位数（41−6）、四分位範囲を第3四分位数−最小値（15−2）で求めている。"
+    ],
+    "point": "範囲＝最大−最小、四分位範囲＝Q3−Q1。"
+   },
+   "sources": [
+    {
+     "ref": "stats:naruhodo-chirabari-shokyu",
+     "title": "なるほど統計学園「データの散らばりを捉える」",
+     "url": "https://www.stat.go.jp/naruhodo/5_tokucho/chirabari.html",
+     "locator": "範囲、最大値、最小値",
+     "quote": "変量の中の最大値と最小値の差で求めます"
+    },
+    {
+     "ref": "stats:naruhodo-chirabari-shokyu",
+     "title": "なるほど統計学園「データの散らばりを捉える」",
+     "url": "https://www.stat.go.jp/naruhodo/5_tokucho/chirabari.html",
+     "locator": "四分位範囲",
+     "quote": "（第3四分位数－第1四分位数）の値のことを四分位範囲といい"
+    }
+   ],
+   "asOf": "総務省統計局 なるほど統計学園（2026-11取得時点の掲載内容）",
+   "calc": {
+    "expr": "15-6",
+    "value": 9
+   },
+   "key": "G5-S06-CEN-11"
+  },
+  {
+   "subject": "S06",
+   "subtopic": "散布度",
+   "format": "knowledge",
+   "difficulty": "standard",
+   "polarity": "negative",
+   "question": "散布度の指標について、誤っているものはどれか。",
+   "choices": [
+    "範囲は最大値と最小値だけで決まり、中心付近の散らばりは反映されない",
+    "四分位範囲は最大値と最小値をもとに計算するため、外れ値の影響を強く受ける",
+    "平均値が同じデータでも、散らばりの程度が異なることがある",
+    "平均絶対偏差は偏差を2乗しないため、分散や標準偏差より極端な値の影響を受けにくい",
+    "第2四分位数は中央値と同じ値である"
+   ],
+   "answer": 1,
+   "explanation": {
+    "correct": "四分位範囲は第3四分位数−第1四分位数で、データの中央部分だけを用いて中心付近の散らばりをみる指標である。最大値・最小値は用いないので、両端の極端な値の影響を受けにくい。",
+    "choiceNotes": [
+     "正しい。範囲は両端の2つの値だけに基づき、中心付近の散らばりはまったく捉えない。",
+     null,
+     "正しい。平均値がどれも5でも、散らばりが大きく異なるデータがある。代表値だけでなく散らばりにも着目する必要がある。",
+     "正しい。平均絶対偏差は偏差を2乗しないので、分散・標準偏差より極端な観測値の影響を受けにくい。",
+     "正しい。2/4番目のデータである第2四分位数は中央値と同じである。"
+    ],
+    "point": "範囲＝両端だけ、四分位範囲＝中央部分だけを使う。"
+   },
+   "sources": [
+    {
+     "ref": "stats:nist-measures-of-scale",
+     "title": "NIST/SEMATECH e-Handbook of Statistical Methods, 1.3.5.6. Measures of Scale",
+     "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda356.htm",
+     "locator": "Definitions of Variability（summary）",
+     "quote": "the range only uses the two most extreme points and the interquartile range only uses the middle portion of the data"
+    },
+    {
+     "ref": "stats:naruhodo-chirabari-shokyu",
+     "title": "なるほど統計学園「データの散らばりを捉える」",
+     "url": "https://www.stat.go.jp/naruhodo/5_tokucho/chirabari.html",
+     "locator": "四分位範囲",
+     "quote": "中心付近のデータがどのくらい散らばっているかの目安として用います"
+    },
+    {
+     "ref": "stats:nist-measures-of-scale",
+     "title": "NIST/SEMATECH e-Handbook of Statistical Methods, 1.3.5.6. Measures of Scale",
+     "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda356.htm",
+     "locator": "average absolute deviation",
+     "quote": "so it is less affected by extreme observations than are the variance and standard deviation"
+    }
+   ],
+   "asOf": "総務省統計局 なるほど統計学園・NIST/SEMATECH e-Handbook of Statistical Methods（2026-11取得時点の掲載内容）",
+   "key": "G5-S06-CEN-12"
+  },
+  {
+   "subject": "S06",
+   "subtopic": "散布度",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "negative",
+   "question": "分散と標準偏差について、誤っているものはどれか。",
+   "choices": [
+    "偏差の平均は必ず0になるため、偏差を2乗した値の平均で散らばりをみる",
+    "分散の単位は、もとのデータの単位を2乗したものになる",
+    "標準偏差は分散の正の平方根であり、もとのデータと単位がそろう",
+    "偏差を2乗するので、分散は外れ値の影響をほとんど受けない",
+    "分散が大きいほど、データ全体の散らばりが大きい"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "偏差を2乗すると、平均から遠い値ほど大きな重みをもつ（平均から2離れた値は4、10離れた値は100を加える）。そのため分散は裾の極端な値の影響を大きく受ける。",
+    "choiceNotes": [
+     "正しい。偏差の平均は必ず0になるので、2乗してから平均する（偏差二乗和の平均）。",
+     "正しい。分散は単位を2乗したものになる。",
+     "正しい。標準偏差は分散の正の平方根で、もとのデータの単位に戻る。",
+     null,
+     "正しい。分散が大きければデータ全体の散らばりが大きいことを意味する。"
+    ],
+    "point": "2乗するから外れ値に弱い。√をとると単位が戻る（標準偏差）。"
+   },
+   "sources": [
+    {
+     "ref": "stats:nist-measures-of-scale",
+     "title": "NIST/SEMATECH e-Handbook of Statistical Methods, 1.3.5.6. Measures of Scale",
+     "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda356.htm",
+     "locator": "variance",
+     "quote": "Squaring the distance from the mean has the effect of giving greater weight to values that are further from the mean."
+    },
+    {
+     "ref": "stats:naruhodo-chirabari-jyokyu",
+     "title": "なるほど統計学園「データの散らばりを見る」",
+     "url": "https://www.stat.go.jp/naruhodo/10_tokucho/chirabari.html",
+     "locator": "分散",
+     "quote": "偏差の平均は必ず０になるので"
+    },
+    {
+     "ref": "stats:nist-measures-of-scale",
+     "title": "NIST/SEMATECH e-Handbook of Statistical Methods, 1.3.5.6. Measures of Scale",
+     "url": "https://www.itl.nist.gov/div898/handbook/eda/section3/eda356.htm",
+     "locator": "standard deviation",
+     "quote": "(the variance squares the units)"
+    }
+   ],
+   "asOf": "総務省統計局 なるほど統計学園・NIST/SEMATECH e-Handbook of Statistical Methods（2026-11取得時点の掲載内容）",
+   "key": "G5-S06-CEN-13"
+  }
+ ],
+ "cases": []
+}

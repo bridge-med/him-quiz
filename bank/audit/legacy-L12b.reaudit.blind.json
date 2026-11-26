@@ -1,0 +1,10 @@
+{"answers":[
+{"key":"lg-12-14","answer":1,"confidence":"high","ambiguous":false,"note":"SS-MIX2 = standardized storage for exchange/secondary use; HS008"},
+{"key":"lg-12-15","answer":2,"confidence":"high","ambiguous":false,"note":"医政医発1219第1号: 医師が最終判断の責任"},
+{"key":"lg-12-19","answer":2,"confidence":"medium","ambiguous":false,"note":"HPKI certs contain qualification info; verify GL7 wording"},
+{"key":"lg-12-20","answer":2,"confidence":"medium","ambiguous":false,"note":"standardisation of outcome terms (BOM etc.)"},
+{"key":"lg-12-23","answer":1,"confidence":"high","ambiguous":false,"note":"個情法2条6項"},
+{"key":"lg-12-24","answer":1,"confidence":"high","ambiguous":false,"note":"2023改正: 仮名加工医療情報・認定利活用者"},
+{"key":"lg-12-25","answer":0,"confidence":"medium","ambiguous":false,"note":"MEDIS-DC maintains; need to confirm '厚労省の委託' wording"},
+{"key":"lg-12-26","answer":1,"confidence":"high","ambiguous":false,"note":"日本医療情報学会認定の民間資格"}
+]}

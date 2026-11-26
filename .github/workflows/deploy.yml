@@ -14,9 +14,22 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      # 生成物（data/bank.js・index.html の読み込み版）が bank/ と乖離していたら公開しない
+      - name: 公開バンクの検査
+        run: node tools/build.mjs --check
+      - name: テスト
+        run: node --test tests/*.test.mjs
+      # 公開するのはアプリ本体だけ（問題の生成元・検証用ツール・テスト・文書は載せない）
+      - name: 公開用ディレクトリを作る
+        run: |
+          mkdir -p _site
+          rsync -a --exclude '.git' --exclude '.github' --exclude '_site' --exclude 'bank' --exclude 'tools' --exclude 'tests' --exclude 'docs' --exclude 'node_modules' ./ _site/
       - uses: actions/configure-pages@v4
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: '.'
+          path: '_site'
       - id: deployment
         uses: actions/deploy-pages@v4

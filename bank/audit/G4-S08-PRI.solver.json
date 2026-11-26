@@ -1,0 +1,15 @@
+{"answers":[
+{"key":"G4-S08-PRI-01","answer":1,"confidence":"high","ambiguous":false,"note":"個情法16条3項。Dは仮名加工情報の定義に近い。"},
+{"key":"G4-S08-PRI-02","answer":3,"confidence":"high","ambiguous":false,"note":"法27条1項2号(生命・身体の保護で同意困難)。"},
+{"key":"G4-S08-PRI-03","answer":2,"confidence":"high","ambiguous":false,"note":"法27条5項1号 委託。"},
+{"key":"G4-S08-PRI-04","answer":4,"confidence":"high","ambiguous":false,"note":"法27条2項 要配慮個人情報はオプトアウト不可。"},
+{"key":"G4-S08-PRI-05","answer":0,"confidence":"high","ambiguous":false,"note":"要配慮個人情報の漏えいおそれは1人でも報告対象(法26条、規則7条)。報告と本人通知の双方。"},
+{"key":"G4-S08-PRI-06","answer":3,"confidence":"high","ambiguous":false,"note":"法34条3項 訂正しない旨の決定も本人へ通知。guidance l.3014"},
+{"key":"G4-S08-PRI-07","answer":2,"confidence":"medium","ambiguous":false,"note":"保険者番号・被保険者記号番号は個人識別符号の例。他は要配慮個人情報等。"},
+{"key":"G4-S08-PRI-08","answer":2,"confidence":"high","ambiguous":false,"note":"診療情報の提供等に関する指針: 満15歳以上。"},
+{"key":"G4-S08-PRI-09","answer":4,"confidence":"high","ambiguous":false,"note":"令和5年改正でオンライン申立てが可能とされた。"},
+{"key":"G4-S08-PRI-10","answer":4,"confidence":"high","ambiguous":false,"note":"指針: 配偶者、子、父母及びこれに準ずる者。"},
+{"key":"G4-S08-PRI-11","answer":3,"confidence":"high","ambiguous":false,"note":"遺族への開示は指針で認められており一律拒否は誤り。Aはガイダンス冒頭の整理(死者情報は原則対象外)と整合。"},
+{"key":"G4-S08-PRI-12","answer":0,"confidence":"high","ambiguous":false,"note":"指針: 拒む場合は原則文書で理由を示し、苦情処理の体制も説明。"},
+{"key":"G4-S08-PRI-13","answer":1,"confidence":"high","ambiguous":false,"note":"法39条: 事前の請求(到達後2週間経過)が訴え提起の前提。"}
+]}

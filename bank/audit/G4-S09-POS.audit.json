@@ -1,0 +1,239 @@
+{
+ "verdicts": [
+  {
+   "key": "G4-S09-POS-01",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "x-legacy-L08:kwtan-pomr-1981 「1 WeedのいうPOMRとは」(l.191-196: 4要素、データベース→問題リスト→初期計画・経過記録)、him:kobeu-shinryoroku-manual-2023 第三章 問題リスト(1)①・初期計画 冒頭(l.432,451)を文脈で確認。順序は一意。盲検一致。"
+  },
+  {
+   "key": "G4-S09-POS-02",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "kobeu 第三章 基礎データ Ⅱ入院理由・Ⅳ既往歴・Ⅴ家族歴・Ⅵ生活歴・Ⅶ系統別質問の※注記(l.389-427)を確認。各choiceNoteは原文どおり。盲検一致。"
+  },
+  {
+   "key": "G4-S09-POS-03",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "kwtan 「3 問題リスト」(l.1618-1620: 傷病名・症状・異常所見・検査異常値・社会的問題)、kobeu 問題リスト(1)①②,(2)①④⑤⑥(l.432-448)を確認。解決日を書いてリストに残す点はkwtan l.1554-1567(resolved欄)とも整合。盲検一致。"
+  },
+  {
+   "key": "G4-S09-POS-04",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "kobeu 第三章 初期計画(1)(2)(3)(l.453-458)を確認。鑑別診断のための検査=診断計画、食事療法・薬物療法=治療計画、病状・予後の説明=教育計画。誤りの組合せはAのみ。盲検一致。"
+  },
+  {
+   "key": "G4-S09-POS-05",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "kwtan 「5 経過記録」l.1688(①叙述的記録②フローシート③退院時要約)、「2 データベース」l.244-250(患者プロフィール・システムレビューはデータベース)を確認。設問文がWeedの4要素の枠組みと明示しており、他の選択肢はすべてd/eを含むため一意。盲検一致(確信度medium、根拠同一)。"
+  },
+  {
+   "key": "G4-S09-POS-06",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "kwtan 「5 経過記録 2)フローシート」l.1751-1760を確認。叙述的記録(l.1690-)の説明も原文と整合。盲検一致。"
+  },
+  {
+   "key": "G4-S09-POS-07",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "him:jhim-kiroku-shishin-2024 4.(1)(l.280-316相当: 基本形=一般病棟入院診療記録、療養・精神も準じることが望ましい、部門記録は一元的に統合、POMR・パスは推奨)を確認。盲検一致。"
+  },
+  {
+   "key": "G4-S09-POS-08",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "jhim 3.(1)『外国語または略語は…日本語が推奨』、3.(2)『相互に理解可能な用語…造語や記号等は使用しない』(l.186-206)を確認。ロケータ正。盲検一致。"
+  },
+  {
+   "key": "G4-S09-POS-09",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "jhim 3.(1)(記録者氏名・職種・日時、事実と経過、備忘録・私的メモは記録しない)、3.(2)(依頼後の実施確認と評価、合同カンファランス)を確認。盲検一致。"
+  },
+  {
+   "key": "G4-S09-POS-10",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "jhim 付属『電子カルテの記録・運用指針』1.(l.639-667: ログイン/ログオフ、代行、仮記録削除は不適切、複写・転用、付箋機能)を確認。誤りはCのみ。盲検一致。"
+  },
+  {
+   "key": "G4-S09-POS-11",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "jhim 3.(3)(原記録は残して追記・訂正、予期せぬ出来事は事実を時系列で・推測は記録しない、改ざん・削除・恣意的不記録の禁止)、3.(1)(診療に関係のない職員の事柄は記録しない)を確認。盲検一致。"
+  },
+  {
+   "key": "G4-S09-POS-12",
+   "verdict": "fix",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": false,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "him:tohoku-shinryoroku-kisai-2023 『診療録記載時の留意事項』l.111-119(都度遅滞なく、インク/ボールペン・鉛筆不可、二重線、診療行為ごとに署名又は記名押印、傷病名は絶えず整理)を確認。正答・解説・出典は正しい。盲検一致。",
+   "detail": "正答の選択肢だけが48字で他(23〜30字)の約2倍あり、文面の長さで正答が推測できた(common.md: 正答を目立って長くしない)。事実内容は変えず、正答を短くし誤答を同程度の長さに整えた。解説・出典・正答番号は変更なし。",
+   "fixed": {
+    "key": "G4-S09-POS-12",
+    "subject": "S09",
+    "subtopic": "診療記録の記載原則",
+    "format": "knowledge",
+    "difficulty": "standard",
+    "polarity": "positive",
+    "question": "厚生労働省東北厚生局の資料「診療録の記載について～保険診療における診療録の適切な記載方法～」が示す診療録記載時の留意事項として、正しいものはどれか。",
+    "choices": [
+     "記載には、後から容易に書き直せるように、鉛筆を用いることが望ましい。",
+     "訂正するときは、訂正前の文字が読めないように塗りつぶしてから書き直す。",
+     "複数の医師が同一患者を診察する場合は、診療行為ごとに診察した医師が署名又は記名押印する。",
+     "傷病名は初診時に所定の様式に記載すれば足り、その後に整理する必要はない。",
+     "記載は月末などにまとめて行えばよく、診療の都度の記載までは求められない。"
+    ],
+    "answer": 2,
+    "explanation": {
+     "correct": "複数の医師が同一の患者を診察する場合は、責任の所在を明確にするため、診療行為を行うごとに診察した医師が署名又は記名押印するとされている。",
+     "choiceNotes": [
+      "記載はインクまたはボールペンで行い、鉛筆は不可とされている。",
+      "訂正は、訂正前の文字が見えるように二重線で行うとされている。",
+      null,
+      "傷病名は所定の様式に記載し、絶えず整理するとされている。",
+      "診療の都度、遅滞なく必要事項の記載を十分に行うとされている。"
+     ],
+     "point": "紙の診療録：インク・ボールペン（鉛筆不可）、訂正は二重線、診療行為ごとに署名又は記名押印、傷病名は絶えず整理。"
+    },
+    "sources": [
+     {
+      "ref": "him:tohoku-shinryoroku-kisai-2023",
+      "title": "診療録の記載について～保険診療における診療録の適切な記載方法～",
+      "url": "https://kouseikyoku.mhlw.go.jp/tohoku/news/000269416.pdf",
+      "locator": "診療録記載：注意点（診療録記載時の留意事項）",
+      "quote": "複数の医師が同一の患者を診察する場合は、責任の所在を明確にするため、診療行為を行うごとに診察した医師の署名又は記名押印する。"
+     },
+     {
+      "ref": "him:tohoku-shinryoroku-kisai-2023",
+      "title": "診療録の記載について～保険診療における診療録の適切な記載方法～",
+      "url": "https://kouseikyoku.mhlw.go.jp/tohoku/news/000269416.pdf",
+      "locator": "診療録記載：注意点（診療録記載時の留意事項）",
+      "quote": "記載はインクまたはボールペン（鉛筆は不可）。"
+     },
+     {
+      "ref": "him:tohoku-shinryoroku-kisai-2023",
+      "title": "診療録の記載について～保険診療における診療録の適切な記載方法～",
+      "url": "https://kouseikyoku.mhlw.go.jp/tohoku/news/000269416.pdf",
+      "locator": "診療録記載：注意点（診療録記載時の留意事項）",
+      "quote": "訂正は訂正前の文字が見えるように二重線で行う。"
+     }
+    ],
+    "asOf": "東北厚生局資料（2023年3月24日版）"
+   }
+  },
+  {
+   "key": "G4-S09-POS-13",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "jhim 4.(4)①②③(l.396-412相当)を確認。代理者は必ず実施前に指示者が確認、指示記録＋経過記録、実施漏れを事後に発見できる記録、非定型的指示は手順書。盲検一致。"
+  }
+ ]
+}

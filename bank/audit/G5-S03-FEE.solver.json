@@ -1,0 +1,15 @@
+{"answers":[
+{"key":"G5-S03-FEE-01","answer":2,"confidence":"high","ambiguous":false,"note":"健保法76条1項 12,500円×7割=8,750円"},
+{"key":"G5-S03-FEE-02","answer":1,"confidence":"high","ambiguous":false,"note":"健保法76条2項・82条1項 中医協に諮問"},
+{"key":"G5-S03-FEE-03","answer":1,"confidence":"high","ambiguous":false,"note":"基本方針は社保審医療保険部会・医療部会 (ins:r08-kaitei-gaiyo-zentai)。他は資料と一致"},
+{"key":"G5-S03-FEE-04","answer":2,"confidence":"high","ambiguous":false,"note":"短期滞在手術等基本料は第1章基本診療料(A400)"},
+{"key":"G5-S03-FEE-05","answer":3,"confidence":"high","ambiguous":false,"note":"DPC概要資料 出来高部分=手術・麻酔・1000点以上処置等"},
+{"key":"G5-S03-FEE-06","answer":3,"confidence":"high","ambiguous":false,"note":"(2800×4+2100×3)×1.2=21,000"},
+{"key":"G5-S03-FEE-07","answer":2,"confidence":"high","ambiguous":false,"note":"健保法76条3項 算定額の範囲内で別段の定め。超える額は誤り"},
+{"key":"G5-S03-FEE-08","answer":2,"confidence":"high","ambiguous":false,"note":"請求命令 翌月十日まで"},
+{"key":"G5-S03-FEE-09","answer":0,"confidence":"high","ambiguous":false,"note":"請求命令 オンライン請求原則・審査支払機関へ。到達は記録時"},
+{"key":"G5-S03-FEE-10","answer":2,"confidence":"medium","ambiguous":false,"note":"機構法1条・18条 審査支払と情報基盤の双方。基金は改組"},
+{"key":"G5-S03-FEE-11","answer":1,"confidence":"medium","ambiguous":false,"note":"国保法87条 連合会に置き都道府県知事が委嘱、3者構成"},
+{"key":"G5-S03-FEE-12","answer":3,"confidence":"high","ambiguous":false,"note":"機構法24条 特別審査委員会を設ける。他は19条と一致"},
+{"key":"G5-S03-FEE-13","answer":1,"confidence":"high","ambiguous":false,"note":"記載要領 第3 1(4) 入院と入院外は別個の明細書"}
+]}

@@ -1,0 +1,958 @@
+{
+ "verdicts": [
+  {
+   "id": "lg-12-00",
+   "verdict": "reject",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": false,
+    "sources": false,
+    "asOf": true,
+    "domain": false
+   },
+   "notes": "キャッシュ（info/him/mgmt/insurance全体）にEMR・EHRの定義・略称を示す公的資料なし。追加調査（Web検索）でも公的定義を確認できず。",
+   "detail": "略語当てのみの低難度問で、解説のEMR/EHRの区別も一次資料で裏づけできない。電子カルテ周辺の用語はPACS（lg-12-01）・オーダリング（lg-12-04）で扱える。",
+   "reason": "unsupported"
+  },
+  {
+   "id": "lg-12-01",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ihej:about本文「医用画像管理システム（PACS）」で正答を確認。DICOMはgl7 QA Q3。",
+   "detail": "choiceNotesの「人事管理は医療情報システムではない」は不正確（病院の情報システムに人事系を含みうる）ため修正。根拠のない「フィルムレス化を実現」を削除。",
+   "question": {
+    "id": "lg-12-01",
+    "legacy": {
+     "key": "12_1",
+     "chapter": 12,
+     "chapterName": "医療情報学（医療情報システム）",
+     "index": 1,
+     "hash": "7ab178e84b56cdc1"
+    },
+    "subject": "S05",
+    "subtopic": "病院情報システム",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "PACSの説明として正しいのはどれか。",
+    "choices": [
+     "医用画像管理システム",
+     "患者アクセス管理システム",
+     "薬剤処方管理システム",
+     "人事管理システム"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "PACSは医用画像管理システムであり、CT・MRI等の医用画像の保存・表示・通信を担う。医用画像の通信・保存の標準規格はDICOMである。",
+     "choiceNotes": [
+      null,
+      "PACSは患者のアクセス管理を行うシステムではない。",
+      "処方の指示はオーダリングシステム等で扱い、PACSの役割ではない。",
+      "人事管理システムは職員の人事情報を扱うもので、医用画像管理システムではない。"
+     ],
+     "point": "PACS＝医用画像管理システム。医用画像の通信・保存の標準規格はDICOM。"
+    },
+    "sources": [
+     {
+      "ref": "info:ihej-about",
+      "title": "日本IHE協会 概要",
+      "url": "https://www.ihe-j.org/about/",
+      "locator": "「日本IHE協会について」本文",
+      "quote": "電子カルテや医用画像管理システム（PACS）などが導入されつつあり"
+     },
+     {
+      "ref": "info:mhlw-anzen-gl7-qa",
+      "title": "医療情報システムの安全管理に関するガイドライン Q&A（第7.0版）",
+      "url": "https://www.mhlw.go.jp/content/10808000/001752355.pdf",
+      "locator": "Q3（データ交換のための国際的な標準規格）",
+      "quote": "HL7 FHIR、DICOM 等があります。用途に応じて、これらの標準規格を採用してください。"
+     }
+    ],
+    "asOf": "2026-11 日本IHE協会概要・医療情報システムの安全管理に関するガイドライン第7.0版（令和8年6月）・同Q&A（令和8年9月）"
+   }
+  },
+  {
+   "id": "lg-12-02",
+   "verdict": "pass",
+   "contentChanged": false,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "HS011【規格の目的】（医用画像の情報交換・媒体保存）、厚労省標準規格一覧にHS011、gl7 QA Q3（国際標準）で確認。誤選択肢は明白。",
+   "question": {
+    "id": "lg-12-02",
+    "legacy": {
+     "key": "12_2",
+     "chapter": 12,
+     "chapterName": "医療情報学（医療情報システム）",
+     "index": 2,
+     "hash": "5ceafa2716d5a627"
+    },
+    "subject": "S05",
+    "subtopic": "医療情報の標準化",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "DICOMの説明として正しいのはどれか。",
+    "choices": [
+     "医用画像の通信規格",
+     "診療報酬の計算規格",
+     "電子カルテの入力規格",
+     "薬剤の分類規格"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "DICOM（Digital Imaging and Communications in Medicine）は医用画像の保存・通信に関する国際標準規格。PACSの基盤技術。",
+     "choiceNotes": [
+      null,
+      "診療報酬の計算規格ではない。",
+      "電子カルテの入力規格ではない。",
+      "薬剤分類ではない。"
+     ],
+     "point": "DICOM＝医用画像通信規格。PACSとセットで覚える。"
+    },
+    "sources": [
+     {
+      "ref": "info:helics-hs011-dicom-report",
+      "title": "HS011 医療情報標準化レポート 医療におけるデジタル画像と通信（DICOM）",
+      "url": "https://square.umin.ac.jp/helics/html/files/HS011/HS011_rep20180428_JIRA.pdf",
+      "locator": "【規格の目的】",
+      "quote": "本規格は、医用画像機器に相互接続運用性を付与するために、①医用画像関連の情報交換を目的に、機器が装備するサービスを定義します。"
+     },
+     {
+      "ref": "info:mhlw-hs-standards-r0701",
+      "title": "「保健医療情報分野の標準規格（厚生労働省標準規格）について」の一部改正について",
+      "url": "https://www.mhlw.go.jp/content/10800000/001389373.pdf",
+      "locator": "厚生労働省標準規格の一覧",
+      "quote": "HS011 医療におけるデジタル画像と通信（DICOM）"
+     },
+     {
+      "ref": "info:mhlw-anzen-gl7-qa",
+      "title": "医療情報システムの安全管理に関するガイドライン Q&A（第7.0版）",
+      "url": "https://www.mhlw.go.jp/content/10808000/001752355.pdf",
+      "locator": "Q3（データ交換のための国際的な標準規格）",
+      "quote": "and Communications in Medicine（DICOM）等があります。"
+     }
+    ],
+    "asOf": "2026-11 HELICS HS011（2018.04）・厚生労働省標準規格（令和7年1月改正）・医療情報システムの安全管理に関するガイドライン第7.0版（令和8年6月）・同Q&A（令和8年9月）"
+   }
+  },
+  {
+   "id": "lg-12-03",
+   "verdict": "pass",
+   "contentChanged": false,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "gl7 QA Q9がCIAと電子保存3基準（真正性・見読性・保存性）の違いをそのまま説明。解説も一致。",
+   "question": {
+    "id": "lg-12-03",
+    "legacy": {
+     "key": "12_3",
+     "chapter": 12,
+     "chapterName": "医療情報学（医療情報システム）",
+     "index": 3,
+     "hash": "3fe62f39df3b15e3"
+    },
+    "subject": "S05",
+    "subtopic": "医療情報システムの安全管理",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "情報セキュリティの3要素はどれか。",
+    "choices": [
+     "機密性・完全性・可用性",
+     "真正性・見読性・保存性",
+     "安全性・効率性・正確性",
+     "速度・容量・信頼性"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "情報セキュリティの3要素（CIA）＝機密性（Confidentiality）、完全性（Integrity）、可用性（Availability）。",
+     "choiceNotes": [
+      null,
+      "真正性・見読性・保存性は電子保存の3基準。",
+      "安全性等はCIAではない。",
+      "速度等はシステム性能指標。"
+     ],
+     "point": "CIA＝機密性・完全性・可用性。電子保存3基準（真正性・見読性・保存性）との混同に注意。"
+    },
+    "sources": [
+     {
+      "ref": "info:mhlw-anzen-gl7-qa",
+      "title": "医療情報システムの安全管理に関するガイドライン Q&A（第7.0版）",
+      "url": "https://www.mhlw.go.jp/content/10808000/001752355.pdf",
+      "locator": "Q9（電子保存の要件と情報セキュリティの3要素の違い）",
+      "quote": "一方、情報セキュリティの 3 要素は「機密性・完全性・可用性」であり、情報セキュリティ全般の原則となります。"
+     },
+     {
+      "ref": "info:mhlw-anzen-gl7-qa",
+      "title": "医療情報システムの安全管理に関するガイドライン Q&A（第7.0版）",
+      "url": "https://www.mhlw.go.jp/content/10808000/001752355.pdf",
+      "locator": "Q9（電子保存の要件と情報セキュリティの3要素の違い）",
+      "quote": "医療情報を電子的に保存する場合は、真正性、見読性及び保存性を確保する必要があります。"
+     }
+    ],
+    "asOf": "医療情報システムの安全管理に関するガイドライン第7.0版（令和8年6月）・同Q&A（令和8年9月）"
+   }
+  },
+  {
+   "id": "lg-12-04",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "総務省 H18情報通信白書（x-legacy-L12a登録）の定義で確認。入力者は「医療従事者」。",
+   "detail": "正答を「医師が…コンピュータで行う」から白書の定義（指示の入力と関連部門への伝達）に合わせた。根拠のない「電子カルテの前段階」を削除（令和8年施設基準は「電子カルテシステム（オーダリングシステムを含む。）」と表記）。5択化。",
+   "question": {
+    "id": "lg-12-04",
+    "legacy": {
+     "key": "12_4",
+     "chapter": 12,
+     "chapterName": "医療情報学（医療情報システム）",
+     "index": 4,
+     "hash": "b4c6f2537ada5d7b"
+    },
+    "subject": "S05",
+    "subtopic": "病院情報システム",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "オーダリングシステムの説明として正しいのはどれか。",
+    "choices": [
+     "検査・処方等の指示を入力し、関連部門に伝達するシステム",
+     "患者が自分で検査を予約するシステム",
+     "会計処理のみを行うシステム",
+     "医師の勤務管理を行うシステム",
+     "医用画像を保存・配信するシステム"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "オーダリングシステムは「検査・処方等に係る情報伝達システム」であり、医療従事者が関連部門に対する指示（オーダ）等を入力し、関連部門に伝達する。これにより、その後の診療や医事会計等の関連業務の迅速化が可能となる。",
+     "choiceNotes": [
+      null,
+      "患者の自己予約システムではない。",
+      "会計処理だけを行うシステムではない。オーダ情報は医事会計等の関連業務の迅速化にもつながる。",
+      "勤務管理は人事・労務管理のシステムで扱う。",
+      "医用画像の保存・配信はPACS（医用画像管理システム）の役割である。"
+     ],
+     "point": "オーダリング＝検査・処方等の指示を入力し関連部門へ伝える情報伝達システム。"
+    },
+    "sources": [
+     {
+      "ref": "x-legacy-L12a:soumu-h18-hakusho-iryou-it",
+      "title": "平成18年版 情報通信白書 第2章第5節3 1 医療分野におけるICTの活用",
+      "url": "https://www.soumu.go.jp/johotsusintokei/whitepaper/ja/h18/html/i2531000.html",
+      "locator": "本文（電子カルテシステムやオーダリングシステム）",
+      "quote": "オーダリングシステムとは、「検査・処方等に係る情報伝達システム」のことである。"
+     },
+     {
+      "ref": "x-legacy-L12a:soumu-h18-hakusho-iryou-it",
+      "title": "平成18年版 情報通信白書 第2章第5節3 1 医療分野におけるICTの活用",
+      "url": "https://www.soumu.go.jp/johotsusintokei/whitepaper/ja/h18/html/i2531000.html",
+      "locator": "本文（電子カルテシステムやオーダリングシステム）",
+      "quote": "医療従事者が関連部門に対する指示やそれに対応する検査内容等をオーダリングシステムに入力し、関連部門に伝達する"
+     },
+     {
+      "ref": "info:ihej-about",
+      "title": "日本IHE協会 概要",
+      "url": "https://www.ihe-j.org/about/",
+      "locator": "「日本IHE協会について」本文",
+      "quote": "電子カルテや医用画像管理システム（PACS）などが導入されつつあり"
+     }
+    ],
+    "asOf": "総務省 平成18年版情報通信白書（用語の説明。導入率等の数値は用いない）"
+   }
+  },
+  {
+   "id": "lg-12-05",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "gl7経営管理編3.4.1（p.11-12）で各選択肢を確認（原因・経営層の判断・訓練・復旧手順の随時自己点検）。",
+   "detail": "旧問は誤選択肢が「保険料を値上げする計画」等で自明すぎ、根拠もなかった。第7.0版経営管理編3.4.1に基づく5択に作り直した。",
+   "question": {
+    "id": "lg-12-05",
+    "legacy": {
+     "key": "12_5",
+     "chapter": 12,
+     "chapterName": "医療情報学（医療情報システム）",
+     "index": 5,
+     "hash": "2578a922944eec65"
+    },
+    "subject": "S05",
+    "subtopic": "医療情報システムの安全管理",
+    "format": "knowledge",
+    "difficulty": "standard",
+    "polarity": "positive",
+    "question": "医療情報システムの安全管理に関するガイドライン第7.0版（経営管理編）における事業継続計画（BCP）について、正しいものはどれか。",
+    "choices": [
+     "非常時に至る主な原因として、災害、サイバー攻撃、システム障害等が想定されている",
+     "BCPは自然災害だけを想定し、サイバー攻撃は対象外とされている",
+     "BCPは策定すれば足り、定期的な訓練・演習は求められていない",
+     "電子カルテが停止した際の業務継続の判断は現場に任せ、経営層は関与しないとされている",
+     "復旧手順は一度定めれば、情報システムの更新・改変時にも点検する必要はないとされている"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "経営管理編3.4.1は、医療情報システムの可用性が損なわれる事態に備えてBCP等を整備することを求め、非常時に至る主な原因として災害、サイバー攻撃、システム障害等を挙げている。",
+     "choiceNotes": [
+      null,
+      "サイバー攻撃も非常時に至る主な原因として明記されている。",
+      "通常時から定期的に訓練・演習を実施し、結果を踏まえて改善を指示する必要がある。",
+      "経営層は、例えば電子カルテ停止時に紙運用で診療を継続するのか等をBCPに応じて判断しなければならない。",
+      "復旧手順は、情報システムの更新・改変時等、随時自己点検を行うよう指示する必要がある。"
+     ],
+     "point": "BCP＝災害・サイバー攻撃・システム障害に備える。経営層が判断し、訓練・演習と復旧手順の点検を続ける。"
+    },
+    "sources": [
+     {
+      "ref": "info:mhlw-anzen-gl7-keiei",
+      "title": "医療情報システムの安全管理に関するガイドライン 第7.0版 経営管理編",
+      "url": "https://www.mhlw.go.jp/content/10808000/001716291.pdf",
+      "locator": "3.4.1 事業継続計画（BCP）の整備と訓練",
+      "quote": "上記の非常時に至る主な原因としては、災害、サイバー攻撃、"
+     },
+     {
+      "ref": "info:mhlw-anzen-gl7-keiei",
+      "title": "医療情報システムの安全管理に関するガイドライン 第7.0版 経営管理編",
+      "url": "https://www.mhlw.go.jp/content/10808000/001716291.pdf",
+      "locator": "3.4.1 事業継続計画（BCP）の整備と訓練",
+      "quote": "経営層はその対応内容について、 BCP に応じて判断しなければならない。"
+     },
+     {
+      "ref": "info:mhlw-anzen-gl7-keiei",
+      "title": "医療情報システムの安全管理に関するガイドライン 第7.0版 経営管理編",
+      "url": "https://www.mhlw.go.jp/content/10808000/001716291.pdf",
+      "locator": "3.4.1 事業継続計画（BCP）の整備と訓練",
+      "quote": "通常時に整備していた BCP が非常時において迅速かつ的確に実施できるよう、定期的に訓練・演習を実施し"
+     }
+    ],
+    "asOf": "医療情報システムの安全管理に関するガイドライン第7.0版（令和8年6月）"
+   }
+  },
+  {
+   "id": "lg-12-06",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "gl7システム運用編13.1.2（p.30）のVPNの説明で確認。",
+   "detail": "正答・解説の「インターネット上に（暗号化された）仮想専用回線」は、通信事業者の閉域網を使うIP-VPNを含まず不正確。ガイドラインの表現に合わせて正答と解説を修正。",
+   "question": {
+    "id": "lg-12-06",
+    "legacy": {
+     "key": "12_6",
+     "chapter": 12,
+     "chapterName": "医療情報学（医療情報システム）",
+     "index": 6,
+     "hash": "f640973b83d4fd5c"
+    },
+    "subject": "S05",
+    "subtopic": "医療情報システムの安全管理",
+    "format": "knowledge",
+    "difficulty": "standard",
+    "polarity": "positive",
+    "question": "VPNの説明として正しいのはどれか。",
+    "choices": [
+     "専用線と同様のサービスを仮想的に実現する仕組み",
+     "病院内の院内LANそのもの",
+     "患者情報をインターネットに公開する技術",
+     "医用画像を圧縮する技術"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "VPN（Virtual Private Network）は、専用線と同様のサービスを仮想的に実現する仕組みである。通信事業者が管理する閉域網を用いるIP-VPNと、インターネットを用いるIPsec＋IKEによるVPNやSSL-VPN（インターネットVPN）がある。",
+     "choiceNotes": [
+      null,
+      "院内LANそのものではない。VPNは拠点間や外部からの接続を、専用線と同様に仮想的に実現する仕組みである。",
+      "患者情報を公開する技術ではない。盗聴防止・なりすまし防止・アクセス管理等により安全性を確保して使う。",
+      "画像圧縮の技術ではない。"
+     ],
+     "point": "VPN＝専用線同様のサービスを仮想的に実現。IP-VPN（閉域網）とインターネットVPN（IPsec、SSL-VPN）がある。"
+    },
+    "sources": [
+     {
+      "ref": "info:mhlw-anzen-gl7-unyo",
+      "title": "医療情報システムの安全管理に関するガイドライン 第7.0版 システム運用編",
+      "url": "https://www.mhlw.go.jp/content/10808000/001716295.pdf",
+      "locator": "13.1.2 選択すべきネットワークのセキュリティ",
+      "quote": "VPN（Virtual Private Network）と呼ばれる専用線同様のサービスを仮想的に実現する仕組みがある。"
+     },
+     {
+      "ref": "info:mhlw-anzen-gl7-unyo",
+      "title": "医療情報システムの安全管理に関するガイドライン 第7.0版 システム運用編",
+      "url": "https://www.mhlw.go.jp/content/10808000/001716295.pdf",
+      "locator": "13.1.2 選択すべきネットワークのセキュリティ",
+      "quote": "IP-VPN は、通信事業者が管理する閉域ネットワークを利用するため、通信事業者以外の侵入のリスクは小さい。"
+     }
+    ],
+    "asOf": "医療情報システムの安全管理に関するガイドライン第7.0版（令和8年6月）"
+   }
+  },
+  {
+   "id": "lg-12-07",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "cas工程表の①（PHRの説明）とマイナポータルの記述で確認。",
+   "detail": "choiceNotesの「病院の診療録はEMR/EHR」は根拠がなく、EHRを施設内記録とする混同も招くため削除。正答を工程表の公的説明に合わせ、5択化。",
+   "question": {
+    "id": "lg-12-07",
+    "legacy": {
+     "key": "12_7",
+     "chapter": 12,
+     "chapterName": "医療情報学（医療情報システム）",
+     "index": 7,
+     "hash": "1b07a754bc33e74a"
+    },
+    "subject": "S05",
+    "subtopic": "地域医療連携・PHR・遠隔医療",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "PHR（Personal Health Record）の説明として正しいのはどれか。",
+    "choices": [
+     "本人が生涯にわたる保健・医療・介護の情報を自分自身で一元的に把握できる仕組み",
+     "医療機関が作成・保存する診療録そのもの",
+     "保険者が審査支払のために管理する診療報酬明細書の記録",
+     "製薬企業が管理する臨床試験のデータ",
+     "医療機関が都道府県に報告する病床機能報告のデータ"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "PHRは、本人が自らの生涯にわたる医療等の情報を経年的に把握できる仕組みである。医療DXの工程表では、生涯にわたる保健・医療・介護の情報をPHRとして自分自身で一元的に把握可能とし、検査結果等をマイナポータルを通じて本人が確認できる仕組みを整備するとしている。",
+     "choiceNotes": [
+      null,
+      "医療機関が作成・保存する診療録は、本人が自ら把握するための仕組みであるPHRそのものではない。",
+      "保険者が管理するレセプトの記録はPHRではない。",
+      "製薬企業の臨床試験データはPHRではない。",
+      "病床機能報告は医療機関が病床の機能を報告する制度であり、PHRではない。"
+     ],
+     "point": "PHR＝本人が生涯の医療等情報を自ら把握・活用する仕組み（マイナポータル等）。"
+    },
+    "sources": [
+     {
+      "ref": "info:cas-iryoudx-kouteihyou",
+      "title": "医療DXの推進に関する工程表",
+      "url": "https://www.cas.go.jp/jp/seisaku/iryou_dx_suishin/pdf/suisin_kouteihyou.pdf",
+      "locator": "本文（2030年度を目途に実現を目指す5点 ①国民の更なる健康増進）",
+      "quote": "誕生から現在までの生涯にわたる保健・医療・介護の情報を PHR（Personal Health Record）として自分自身で一元的に把握可能となり"
+     },
+     {
+      "ref": "info:cas-iryoudx-kouteihyou",
+      "title": "医療DXの推進に関する工程表",
+      "url": "https://www.cas.go.jp/jp/seisaku/iryou_dx_suishin/pdf/suisin_kouteihyou.pdf",
+      "locator": "本文（検査結果等のPHRとしての確認）",
+      "quote": "検査結果等については、PHR として本人がマイナポータルを通じ情報を確認できる仕組みを整備する"
+     }
+    ],
+    "asOf": "医療DXの推進に関する工程表（令和5年6月2日 医療DX推進本部決定）"
+   }
+  },
+  {
+   "id": "lg-12-08",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "gl7システム運用編14.2（p.38）と第14章遵守事項④で各選択肢を確認。",
+   "detail": "「ロールベースアクセス制御」の語・定義はキャッシュの公的資料になく、旧解説の「時間帯制御はRBACの主要概念ではない」等も裏づけられない。第7.0版14.2の役割（業務単位）に応じた権限管理を問う形に作り直した。",
+   "question": {
+    "id": "lg-12-08",
+    "legacy": {
+     "key": "12_8",
+     "chapter": 12,
+     "chapterName": "医療情報学（医療情報システム）",
+     "index": 8,
+     "hash": "13173a7c0bf4ab69"
+    },
+    "subject": "S05",
+    "subtopic": "医療情報システムの安全管理",
+    "format": "knowledge",
+    "difficulty": "standard",
+    "polarity": "positive",
+    "question": "医療情報システムの安全管理に関するガイドライン第7.0版（システム運用編）におけるアクセス権限の管理について、正しいものはどれか。",
+    "choices": [
+     "情報区分ごと、利用者や利用者グループ（業務単位等）ごとに利用権限を規定し、付与する権限は必要最小限とする",
+     "障害時に備え、管理者権限はすべての利用者に付与しておく",
+     "アクセス権限は利用開始時に一度設定すれば、人事異動があっても見直す必要はない",
+     "アクセス権限は、所属部署からの申請によらず、利用者本人の希望に基づいて付与する",
+     "参照・更新等の権限を区別できないシステムのほうが、リスクを低減できる"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "システム運用編14.2は、情報の種別、重要性と利用形態に応じて情報の区分管理を行い、情報区分ごと、組織における利用者や利用者グループ（業務単位等）ごとに利用権限を規定し、付与する権限は必要最小限とすることが重要であるとしている。職務（役割）に応じて権限を設定する考え方である。",
+     "choiceNotes": [
+      null,
+      "付与する権限は必要最小限とすることが重要であり、保守でも不要な管理者権限を付与しないことが求められる。",
+      "アクセス権限は、人事異動等による担当業務の変更等に合わせて適宜更新する必要がある。",
+      "利用者が所属する部署等からの申請などを踏まえて権限を付与し、その結果について申請部署の管理者から確認を得る等の手順を作成する。",
+      "参照、更新、実行、追加等のようにきめ細かな権限設定が可能なシステムを採用し、適切に活用すれば、さらにリスクを低減できる。"
+     ],
+     "point": "アクセス権限＝情報区分×利用者グループ（業務単位）で規定し、必要最小限に。異動時は見直す。"
+    },
+    "sources": [
+     {
+      "ref": "info:mhlw-anzen-gl7-unyo",
+      "title": "医療情報システムの安全管理に関するガイドライン 第7.0版 システム運用編",
+      "url": "https://www.mhlw.go.jp/content/10808000/001716295.pdf",
+      "locator": "14.2 アクセス権限の管理",
+      "quote": "報区分ごと、組織における利用者や利用者グループ（業務単位等）ごとに利用権限を規定する必要がある。また付与する権限は必要最小限とすることが重要である。"
+     },
+     {
+      "ref": "info:mhlw-anzen-gl7-unyo",
+      "title": "医療情報システムの安全管理に関するガイドライン 第7.0版 システム運用編",
+      "url": "https://www.mhlw.go.jp/content/10808000/001716295.pdf",
+      "locator": "14.2 アクセス権限の管理",
+      "quote": "アクセス権限の見直しは、人事異動等による利用者の担当業務の変更等に合わせて適宜更新する必要がある。"
+     },
+     {
+      "ref": "info:mhlw-anzen-gl7-unyo",
+      "title": "医療情報システムの安全管理に関するガイドライン 第7.0版 システム運用編",
+      "url": "https://www.mhlw.go.jp/content/10808000/001716295.pdf",
+      "locator": "第14章 遵守事項④",
+      "quote": "利用者が所属する部署等からの申請などを踏まえて権限を 付与し、その結果について申請部署の管理者からの確認を得る等の手順を作成すること。"
+     }
+    ],
+    "asOf": "医療情報システムの安全管理に関するガイドライン第7.0版（令和8年6月）"
+   }
+  },
+  {
+   "id": "lg-12-09",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "医政発0327第5号 第1・第2の1（医療法第2条の2）、指針（R8.4）Ⅲ1用語の定義、初診はⅤ（かかりつけの医師が原則）で確認。",
+   "detail": "旧解説の「2018年改定でオンライン診療料が新設され保険適用」「2020年以降一部緩和」等は時点が古く、2026年4月の医療法上の位置づけを反映していない。選択肢も自明だったため、現行の指針・改正医療法に基づき作り直した。",
+   "question": {
+    "id": "lg-12-09",
+    "legacy": {
+     "key": "12_9",
+     "chapter": 12,
+     "chapterName": "医療情報学（医療情報システム）",
+     "index": 9,
+     "hash": "82283800f6d8a6cb"
+    },
+    "subject": "S05",
+    "subtopic": "地域医療連携・PHR・遠隔医療",
+    "format": "knowledge",
+    "difficulty": "standard",
+    "polarity": "positive",
+    "question": "オンライン診療について、正しいものはどれか（2026年11月時点）。",
+    "choices": [
+     "改正医療法により「オンライン診療受診施設」が位置づけられた",
+     "オンライン診療は、指針上の遠隔医療には含まれない",
+     "オンライン受診勧奨では、具体的な疾患名を挙げて罹患している旨を伝え、処方を行うことができる",
+     "診療前相談では、診断や処方を行うことができる",
+     "初診からのオンライン診療は、いかなる場合も認められない"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "医療法等の一部を改正する法律（オンライン診療関係は令和8年4月1日施行）により、オンライン診療が医療法に定義されるとともに、医療提供施設の一つとして、患者がオンライン診療を受ける施設である「オンライン診療受診施設」が位置づけられた。",
+     "choiceNotes": [
+      null,
+      "指針の用語の定義では、オンライン診療は遠隔医療のうち、医師－患者間で情報通信機器を通して診察・診断等をリアルタイムに行う行為とされている。",
+      "具体的な疾患名を挙げて罹患している旨を伝えることや処方等はオンライン診療に分類され、オンライン受診勧奨により行ってはならない。",
+      "診療前相談は、診断、処方その他の診療行為は含まない行為である。",
+      "初診からのオンライン診療は原則として「かかりつけの医師」が行うこととされ、必要な医学的情報を把握でき医師が可能と判断した場合等にも実施できる。"
+     ],
+     "point": "オンライン診療は遠隔医療の一類型。令和8年4月から医療法に位置づけ（オンライン診療受診施設）。受診勧奨・診療前相談では診断・処方をしない。"
+    },
+    "sources": [
+     {
+      "ref": "info:mhlw-online-shinryo-hou-sekou",
+      "title": "医療法等の一部を改正する法律の一部の施行等について（オンライン診療関係）（医政発0327第5号）",
+      "url": "https://www.mhlw.go.jp/content/001681277.pdf",
+      "locator": "第1 改正の趣旨",
+      "quote": "医療法上の医療提供施設の一つとして、患者がオンライン診療を受ける施設である「オ ンライン診療受診施設」を位置づけ"
+     },
+     {
+      "ref": "info:mhlw-online-shinryo-shishin",
+      "title": "オンライン診療の適切な実施に関する指針",
+      "url": "https://www.mhlw.go.jp/content/001685701.pdf",
+      "locator": "Ⅲ 1．用語の定義（オンライン診療）",
+      "quote": "遠隔医療のうち、医師－患者間において、情報通信機器を通して、患者の診察及び 診断を行い診断結果の伝達や処方等の診療行為を、リアルタイムにより行う行為。"
+     },
+     {
+      "ref": "info:mhlw-online-shinryo-shishin",
+      "title": "オンライン診療の適切な実施に関する指針",
+      "url": "https://www.mhlw.go.jp/content/001685701.pdf",
+      "locator": "Ⅲ 1．用語の定義（診療前相談）",
+      "quote": "なお、診療前相談は、診断、処方その他の診療行為は含まない行為である。"
+     }
+    ],
+    "asOf": "オンライン診療の適切な実施に関する指針（令和8年4月改訂）・医政発0327第5号（オンライン診療関係は令和8年4月1日施行）"
+   }
+  },
+  {
+   "id": "lg-12-10",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "gl7システム運用編 第7章遵守事項⑧、第8章遵守事項⑥(2)(3)、8.2（製造販売業者との連携）、QA Q17で各選択肢を確認。",
+   "detail": "旧問は誤選択肢（紙カルテ保管、掃除の自動化等）が自明で、正答（ウェアラブルで常時モニタリング）も一次資料で裏づけできなかった。第7.0版のIoT機器の要件を問う形に作り直した。",
+   "question": {
+    "id": "lg-12-10",
+    "legacy": {
+     "key": "12_10",
+     "chapter": 12,
+     "chapterName": "医療情報学（医療情報システム）",
+     "index": 10,
+     "hash": "3b84015d6327d63f"
+    },
+    "subject": "S05",
+    "subtopic": "医療情報システムの安全管理",
+    "format": "knowledge",
+    "difficulty": "standard",
+    "polarity": "positive",
+    "question": "医療情報システムの安全管理に関するガイドライン第7.0版（システム運用編）におけるIoT機器の取扱いについて、正しいものはどれか。",
+    "choices": [
+     "ウェアラブル端末や在宅設置のIoT機器を患者等に貸し出す際は、事前に情報セキュリティ上のリスク等を説明し、同意を得る",
+     "使用を終了したIoT機器は、再利用に備えてネットワークに接続したままにしておく",
+     "IoT機器は資産管理の対象外である",
+     "IoT機器のファームウェアは脆弱性対策の対象とならない",
+     "医療機器であるIoT機器のサイバーセキュリティ対策は、製造販売業者と連携せずに医療機関単独で行う"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "システム運用編第7章遵守事項⑧は、セキュリティ対策を十分に行うことが難しいウェアラブル端末や在宅設置のIoT機器を患者等に貸し出す際は、事前に情報セキュリティ上のリスクと患者等が留意すべきことを説明し、同意を得ることを求めている。",
+     "choiceNotes": [
+      null,
+      "不正な接続を防ぐため、使用を終了または停止したIoT機器をネットワークに接続したまま放置しないこととされている。",
+      "IoT機器も資産管理・認証・更新・監視の対象にする必要がある。",
+      "ファームウェア等の脆弱性リスクに対応するため、セキュリティ上重要なアップデートを適切に実施する方法を検討し、運用することとされている。",
+      "医療機器のサイバーセキュリティ対策は、関連する手引書等を踏まえて製造販売業者と必要な連携を図ることとされている。"
+     ],
+     "point": "IoT機器：貸出時は患者に説明・同意、資産管理の対象、ファームウェア更新、使わない機器は接続したまま放置しない。"
+    },
+    "sources": [
+     {
+      "ref": "info:mhlw-anzen-gl7-unyo",
+      "title": "医療情報システムの安全管理に関するガイドライン 第7.0版 システム運用編",
+      "url": "https://www.mhlw.go.jp/content/10808000/001716295.pdf",
+      "locator": "第7章 遵守事項⑧",
+      "quote": "ウェアラブル端末や在宅設置の IoT 機器を患者等に貸し出す際 は、事前に、情報セキュリティ上のリスクと、患者等が留意すべきことについて患者等へ説明し、同意を得ること。"
+     },
+     {
+      "ref": "info:mhlw-anzen-gl7-unyo",
+      "title": "医療情報システムの安全管理に関するガイドライン 第7.0版 システム運用編",
+      "url": "https://www.mhlw.go.jp/content/10808000/001716295.pdf",
+      "locator": "第8章 遵守事項⑥(3)",
+      "quote": "使用を終了、又は停止した IoT 機器をネットワークに接続したまま放置しないこ と。"
+     },
+     {
+      "ref": "info:mhlw-anzen-gl7-qa",
+      "title": "医療情報システムの安全管理に関するガイドライン Q&A（第7.0版）",
+      "url": "https://www.mhlw.go.jp/content/10808000/001752355.pdf",
+      "locator": "Q17（IoT機器に対する安全対策の留意事項）",
+      "quote": "IoT 機器も、資産管理・認証・更新・監視の対象にする必要があります。"
+     }
+    ],
+    "asOf": "医療情報システムの安全管理に関するガイドライン第7.0版（令和8年6月）・同Q&A（令和8年9月）"
+   }
+  },
+  {
+   "id": "lg-12-11",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "内閣府「改正次世代医療基盤法について（医療機関編）」p.5〜（法の概要・認定作成事業者・改正概要）と施行通知（令和6年4月1日施行・題名改正）で確認。L12bのlg-12-24（目的を問う同趣旨問）と近いが、本問は改正（仮名加工医療情報）まで問う形に改めたため区別可能。",
+   "detail": "旧解説の「2018年施行」「認定匿名加工医療情報作成事業者が処理」は2024年4月の改正（仮名加工医療情報の創設・題名変更・認定作成事業者の区分）を反映しておらず古い。改正後の制度で作り直した。",
+   "question": {
+    "id": "lg-12-11",
+    "legacy": {
+     "key": "12_11",
+     "chapter": 12,
+     "chapterName": "医療情報学（医療情報システム）",
+     "index": 11,
+     "hash": "aa64be25945a5924"
+    },
+    "subject": "S05",
+    "subtopic": "個人情報保護と二次利用",
+    "format": "knowledge",
+    "difficulty": "standard",
+    "polarity": "positive",
+    "question": "次世代医療基盤法（医療分野の研究開発に資するための匿名加工医療情報及び仮名加工医療情報に関する法律）について、正しいものはどれか。",
+    "choices": [
+     "国が認定した作成事業者が医療機関等から医療情報を収集し、加工した情報を医療分野の研究開発に提供する仕組みを定めている",
+     "医療情報を加工せずに、研究機関や製薬企業へ提供する仕組みを定めている",
+     "2024年4月の改正法施行後も、作成・提供できるのは匿名加工医療情報に限られる",
+     "仮名加工医療情報は、国の認定を受けていない事業者にも自由に提供できる",
+     "医療機関の統廃合を推進するための法律である"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "次世代医療基盤法は、医療分野の研究開発に役立てるための匿名加工医療情報・仮名加工医療情報に関し、作成事業を行う者の認定や情報の取扱いを定めた法律である。国が認定した認定作成事業者が、協力する医療機関等から医療情報を収集し、研究開発に必要な情報のみを研究機関や製薬企業などに提供する。",
+     "choiceNotes": [
+      null,
+      "認定作成事業者が匿名加工または仮名加工した情報のうち、研究開発に必要な情報のみを提供する。",
+      "改正法（令和6年4月1日施行）により、匿名加工医療情報に加えて仮名加工医療情報を作成・提供する仕組みが創設され、法の題名も改められた。",
+      "仮名加工医療情報は、国が認定した利活用者（認定仮名加工医療情報利用事業者）に限り提供できる。",
+      "医療分野の研究開発のための医療情報の加工・提供を定める法律であり、医療機関の統廃合とは関係がない。"
+     ],
+     "point": "次世代医療基盤法＝認定作成事業者が医療情報を匿名加工・仮名加工して研究開発に提供。仮名加工は2024年4月施行の改正で創設。"
+    },
+    "sources": [
+     {
+      "ref": "info:cao-jisedai-kaisei-iryoukikan",
+      "title": "改正次世代医療基盤法について（医療機関編）",
+      "url": "https://www8.cao.go.jp/iryou/kouhou/pdf/kaisei_jisedaiiryou_iryoukikan.pdf",
+      "locator": "「次世代医療基盤法とは？」",
+      "quote": "匿名加工医療情報・仮名加工医療情報の作成事業を行う者の認定、匿名加工医療情報等及び 仮名加工医療情報等の取扱いについて定めた法律です。"
+     },
+     {
+      "ref": "info:cao-jisedai-kaisei-iryoukikan",
+      "title": "改正次世代医療基盤法について（医療機関編）",
+      "url": "https://www8.cao.go.jp/iryou/kouhou/pdf/kaisei_jisedaiiryou_iryoukikan.pdf",
+      "locator": "「次世代医療基盤法改正の概要」",
+      "quote": "認定仮名加工医療情報作成事業者は、安全管理等の基準に基づき国が認定した利活用者に限り、仮名加工医療情報を 提供することができる。"
+     },
+     {
+      "ref": "info:cao-jisedai-sekou-r0604",
+      "title": "医療分野の研究開発に資するための匿名加工医療情報及び仮名加工医療情報に関する法律等の施行について（通知）",
+      "url": "https://www8.cao.go.jp/iryou/hourei/pdf/sekou.pdf",
+      "locator": "前文（改正法の施行）",
+      "quote": "本年４月 １日から施行されました"
+     }
+    ],
+    "asOf": "2026-11 内閣府資料（改正次世代医療基盤法：令和6年4月1日施行）"
+   }
+  },
+  {
+   "id": "lg-12-12",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "mhlw-online-shikaku（原則義務化・定義）、mhlw-myna-hokensho（新規発行終了・有効期限・資格確認書）、dekirukoto（同意のもとで閲覧）で確認。",
+   "detail": "旧pointの「2024年12月から原則義務化」は誤り（導入の原則義務化は令和5年4月。2024年12月2日は従来の保険証の新規発行終了）。正答の「…として利用できるオンライン資格確認制度」も不正確な表現で、選択肢も自明だったため作り直した。",
+   "question": {
+    "id": "lg-12-12",
+    "legacy": {
+     "key": "12_12",
+     "chapter": 12,
+     "chapterName": "医療情報学（医療情報システム）",
+     "index": 12,
+     "hash": "d1e8de8ebfe6c440"
+    },
+    "subject": "S05",
+    "subtopic": "医療DX",
+    "format": "knowledge",
+    "difficulty": "standard",
+    "polarity": "positive",
+    "question": "マイナンバーカードの健康保険証利用（マイナ保険証）とオンライン資格確認について、正しいものはどれか（2026年11月時点）。",
+    "choices": [
+     "保険医療機関・薬局には、令和5年4月からオンライン資格確認の導入が原則として義務付けられた",
+     "オンライン資格確認は、マイナンバーカードのICチップによる方法に限られ、資格確認書の記号番号等では行えない",
+     "従来の健康保険証は、現在も新たに発行されている",
+     "マイナ保険証を保有していない者は、保険診療を受けることができない",
+     "マイナンバーカードを用いれば、患者の同意がなくても医療機関が薬剤情報等を閲覧できる"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "オンライン資格確認は医療DXの基盤であることを踏まえ、保険医療機関・薬局に、令和5年4月からその導入が原則として義務付けられた。",
+     "choiceNotes": [
+      null,
+      "オンライン資格確認は、マイナンバーカードのICチップまたは資格確認書の記号番号等により、オンラインで資格情報を確認できる仕組みである。",
+      "従来の健康保険証は2024年12月2日以降新たに発行されなくなり、有効期限も2025年12月1日で終了している。",
+      "マイナ保険証を保有していない者等には資格確認書が交付され、受付で資格確認書を提示して受診できる。",
+      "診療情報・薬剤情報・特定健診等情報の閲覧は、患者の持参したマイナンバーカードでの同意のもとで行われる。"
+     ],
+     "point": "オンライン資格確認の導入原則義務化＝令和5年4月。従来の保険証は2024年12月2日以降新規発行なし。マイナ保険証がなければ資格確認書。"
+    },
+    "sources": [
+     {
+      "ref": "info:mhlw-online-shikaku",
+      "title": "オンライン資格確認について（医療機関・施術所等、システムベンダ向け）",
+      "url": "https://www.mhlw.go.jp/stf/newpage_08280.html",
+      "locator": "オンライン資格確認の導入の原則義務化（1）保険医療機関・薬局",
+      "quote": "保険医療機関・薬局に、令和５年４月からその導入を原則として義務付けることとされました。"
+     },
+     {
+      "ref": "info:mhlw-online-shikaku",
+      "title": "オンライン資格確認について（医療機関・施術所等、システムベンダ向け）",
+      "url": "https://www.mhlw.go.jp/stf/newpage_08280.html",
+      "locator": "オンライン資格確認とは",
+      "quote": "オンライン資格確認は、マイナンバーカードのICチップまたは資格確認書の記号番号等により、オンラインで資格情報の確認ができる仕組みです。"
+     },
+     {
+      "ref": "info:mhlw-myna-hokensho",
+      "title": "マイナンバーカードの健康保険証利用（マイナ保険証）について",
+      "url": "https://www.mhlw.go.jp/stf/newpage_08277.html",
+      "locator": "本文（従来の健康保険証の取扱い）",
+      "quote": "従来の健康保険証は、2024年12月２日以降新たに発行されなくなり"
+     }
+    ],
+    "asOf": "2026-11 厚生労働省 マイナ保険証・オンライン資格確認ページ（取得時点）"
+   }
+  },
+  {
+   "id": "lg-12-13",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "医療情報化推進方針(1)①〜③と、gl7システム運用編の責任分界（表3-2の直前）で確認。",
+   "detail": "旧問は誤選択肢（通信速度の低下、永久無料化等）が自明で、正答（初期投資の軽減とスケーラビリティ）も一次資料で裏づけできなかった。現行の医療情報化推進方針に基づき作り直した。",
+   "question": {
+    "id": "lg-12-13",
+    "legacy": {
+     "key": "12_13",
+     "chapter": 12,
+     "chapterName": "医療情報学（医療情報システム）",
+     "index": 13,
+     "hash": "fa689738fea039d4"
+    },
+    "subject": "S05",
+    "subtopic": "医療DX",
+    "format": "knowledge",
+    "difficulty": "standard",
+    "polarity": "positive",
+    "question": "医療情報化推進方針（令和8年厚生労働省告示第370号）が、医療機関の情報システムのクラウドへの移行により実現を図るとしている事項として、正しいものはどれか。",
+    "choices": [
+     "サーバ等の管理強化やサイバー攻撃に対する監視の効率化によるセキュリティ対策の強化",
+     "各医療機関が独自仕様のオンプレミス型システムを維持し、他の医療機関とのデータ連携を行わないこと",
+     "医療等情報の二次利用を禁止すること",
+     "AIを活用した業務効率化ツールの導入を制限すること",
+     "クラウドサービス事業者との責任分界の取決めを不要にすること"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "医療情報化推進方針は、クラウドへの移行により①業務効率化・生産性向上、②セキュリティ対策（サーバ等の管理強化やサイバー攻撃に対する監視を効率的に実施し、サイバーセキュリティ対策を強化）、③データの共有の3点の実現を図るとしている。",
+     "choiceNotes": [
+      null,
+      "方針は「オンプレミスのたこつぼ化を越え、クラウドで基盤をつなぎ直す」とし、相互接続が可能なクラウド型基盤への再構築とデータ連携を進めるとしている。",
+      "データ連携基盤の構築により、創薬や医療デジタルサービスの開発等のためのデータの二次利用を促進するとしている。",
+      "クラウド化によりAI－Readyなデータ環境を構築し、AIを活用した業務効率化ツール等の導入を容易にするとしている。",
+      "安全管理ガイドライン第7.0版は、クラウドサービスを利用する場合も責任分界を設定し、契約やSLA等で取り決めることを求めている。"
+     ],
+     "point": "クラウド移行で目指す3点＝業務効率化・生産性向上／セキュリティ対策／データの共有。責任分界とSLAの取決めは引き続き必要。"
+    },
+    "sources": [
+     {
+      "ref": "info:mhlw-iryojohoka-suishin-houshin",
+      "title": "医療情報化推進方針（令和8年厚生労働省告示第370号）",
+      "url": "https://www.mhlw.go.jp/content/12600000/001756943.pdf",
+      "locator": "(1) ＤＸサービス利用のための基盤整備としてクラウドへの移行 ②セキュリティ対策",
+      "quote": "サーバ等の管理強化やサイバー攻 撃に対する監視を効率的に実施することにより、サイバーセキュリティ対策を強化する"
+     },
+     {
+      "ref": "info:mhlw-iryojohoka-suishin-houshin",
+      "title": "医療情報化推進方針（令和8年厚生労働省告示第370号）",
+      "url": "https://www.mhlw.go.jp/content/12600000/001756943.pdf",
+      "locator": "(1) ＤＸサービス利用のための基盤整備としてクラウドへの移行",
+      "quote": "「オンプレミスのたこつぼ化を越え、クラウドで基盤をつなぎ直す。」"
+     },
+     {
+      "ref": "info:mhlw-anzen-gl7-unyo",
+      "title": "医療情報システムの安全管理に関するガイドライン 第7.0版 システム運用編",
+      "url": "https://www.mhlw.go.jp/content/10808000/001716295.pdf",
+      "locator": "第3章（クラウドサービスの責任分界）",
+      "quote": "責任分界を設定し、契約や SLA（Service Level Agreement：サービス品質保証、サービスレベル合意書）などにおいて取り決めること。"
+     }
+    ],
+    "asOf": "医療情報化推進方針（令和8年9月30日告示・10月1日適用）・医療情報システムの安全管理に関するガイドライン第7.0版（令和8年6月）"
+   }
+  }
+ ]
+}

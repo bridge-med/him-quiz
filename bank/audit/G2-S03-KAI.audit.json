@@ -1,0 +1,275 @@
+{
+ "verdicts": [
+  {
+   "key": "G2-S03-KAI-01",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:介護保険法 第3条1項（市町村及び特別区）・第14条（認定審査会は市町村）・第184条（保険審査会は各都道府県）を確認。"
+  },
+  {
+   "key": "G2-S03-KAI-02",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:介護保険法 第9条・第10条（該当するに至った日から取得）・第11条1項ただし書・2項（その日から喪失）を確認。"
+  },
+  {
+   "key": "G2-S03-KAI-03",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:介護保険法 第7条3項2号、law:介護保険法施行令 第2条1号（がんは回復見込みなしに限る）・13号（脳血管疾患）。外傷・統合失調症は列記なし。"
+  },
+  {
+   "key": "G2-S03-KAI-04",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:介護保険法施行令 第2条の16号を確認（3号ALS・4号後縦靱帯骨化症・10号早老症・15号COPD）。多発性硬化症は列記なし。ins:kaigo-tokutei-shippei 2も一致。"
+  },
+  {
+   "key": "G2-S03-KAI-05",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:kaigo-tokutei-shippei 1の1）2）・2（個別疾病名を列記）で各選択肢を確認。"
+  },
+  {
+   "key": "G2-S03-KAI-06",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:kaigo-nintei-gaiyo（全国一律の基準・一次/二次判定）、ins:kaigo-hoken-gaiyo 要介護認定制度、law:介護保険法 第27条6項を確認。"
+  },
+  {
+   "key": "G2-S03-KAI-07",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:介護保険法 第27条1項・3項・8項（申請日にさかのぼる）・9項・11項（30日以内、延期可）を確認。"
+  },
+  {
+   "key": "G2-S03-KAI-08",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:介護保険法 第28条3項（理由のやんだ日から1月以内）・9項（満了日の翌日にさかのぼる）・4項（27条8項を除き準用）を確認。"
+  },
+  {
+   "key": "G2-S03-KAI-09",
+   "verdict": "fix",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": false,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "key正。law:介護保険法 第49条の2（第一号被保険者のみ、百分の八十/七十）、ins:kaigo-hoken-gaiyo p.4（※）・利用者負担の※１を確認。令和8年改正の登録施設介護支援の利用者負担は居宅介護支援とは別類型で未施行。",
+   "detail": "sources[0]の locator が誤り（引用は「介護保険制度における利用者負担」頁の※１で、「被保険者（加入者）」頁ではない）。sources[1]の locator も原文の注記記号（※）に合わせた。内容・正答は変更なし。",
+   "fixed": {
+    "key": "G2-S03-KAI-09",
+    "subject": "S03",
+    "subtopic": "介護保険制度",
+    "format": "knowledge",
+    "difficulty": "standard",
+    "polarity": "positive",
+    "question": "介護保険の介護給付における利用者負担について、正しいものはどれか。",
+    "choices": [
+     "第2号被保険者も、所得が一定以上であれば3割負担となる。",
+     "居宅介護支援は、全額が保険給付される。",
+     "利用者負担は原則2割であり、低所得者は1割に軽減される。",
+     "一定以上所得者の負担割合は、2割負担が平成30年8月、3割負担が平成27年8月に施行された。",
+     "3割負担の対象者では、居宅介護サービス費等の給付割合は百分の六十となる。"
+    ],
+    "answer": 1,
+    "explanation": {
+     "correct": "介護サービスの利用者負担は原則1割（一定以上所得者は2割・3割）であるが、居宅介護支援（ケアマネジメント）は全額が保険給付される。",
+     "choiceNotes": [
+      "2割・3割負担の特例（第49条の2）の対象は「第一号被保険者」であって所得が一定以上の者。第2号被保険者は対象外。",
+      null,
+      "利用者負担は原則1割で、一定以上所得者が2割または3割。",
+      "施行は2割負担が平成27年8月、3割負担が平成30年8月で、記述は逆。",
+      "3割負担の者は「百分の九十」が「百分の七十」に読み替えられる（第49条の2第2項）。百分の六十ではない。"
+     ],
+     "point": "原則1割、一定以上所得の第1号被保険者は2割（H27.8〜）・3割（H30.8〜）。居宅介護支援は自己負担なし（全額給付）。"
+    },
+    "sources": [
+     {
+      "ref": "ins:kaigo-hoken-gaiyo",
+      "title": "介護保険制度の概要",
+      "url": "https://www.mhlw.go.jp/content/001512842.pdf",
+      "locator": "介護保険制度における利用者負担 ※１",
+      "quote": "居宅介護支援は全額が保険給付される。"
+     },
+     {
+      "ref": "ins:kaigo-hoken-gaiyo",
+      "title": "介護保険制度の概要",
+      "url": "https://www.mhlw.go.jp/content/001512842.pdf",
+      "locator": "介護保険制度の仕組み（※）",
+      "quote": "一定以上所得者については、費用の２割負担（平成２７年８月施行）又は３割負担（平成３０年８月施行）。"
+     },
+     {
+      "ref": "law:介護保険法",
+      "title": "介護保険法",
+      "url": "https://laws.e-gov.go.jp/law/409AC0000000123",
+      "locator": "第49条の2第2項",
+      "quote": "これらの規定中「百分の九十」とあるのは、「百分の七十」とする。"
+     }
+    ],
+    "asOf": "介護保険法（2026-11 e-Gov現行法令）、厚生労働省「介護保険制度の概要」（令和7年7月）"
+   }
+  },
+  {
+   "key": "G2-S03-KAI-10",
+   "verdict": "fix",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": false,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "calc 800*17.5/100=140。law:介護保険法 第121条1項（20/15）・第123条1項（12.5/17.5）・第124条1項（12.5）を確認。",
+   "detail": "choiceNotes[4]「都道府県の負担割合ではない」は、第123条第4項で都道府県が特定地域支援事業支援額の百分の二十五を交付するため不正確。第123条第1項の介護給付の負担割合に限定して書き直した。",
+   "fixed": {
+    "key": "G2-S03-KAI-10",
+    "subject": "S03",
+    "subtopic": "介護保険制度",
+    "format": "calculation",
+    "difficulty": "standard",
+    "polarity": "positive",
+    "question": "ある市町村で、介護保険施設に係る介護給付に要する費用が800億円であった。介護保険法に定める都道府県の負担額（第123条第1項）はどれか。",
+    "choices": [
+     "100億円",
+     "120億円",
+     "140億円",
+     "160億円",
+     "200億円"
+    ],
+    "answer": 2,
+    "explanation": {
+     "correct": "都道府県の負担割合は、介護保険施設及び特定施設入居者生活介護に係る介護給付では100分の17.5（第123条第1項第2号）。800億円×17.5/100＝140億円。",
+     "choiceNotes": [
+      "100分の12.5で計算した値。12.5％は施設等以外の給付に対する都道府県の負担割合（第123条第1項第1号）。",
+      "100分の15で計算した値。15％は施設等給付に対する国の負担割合（第121条第1項第2号）。",
+      null,
+      "100分の20で計算した値。20％は施設等以外の給付に対する国の負担割合（第121条第1項第1号）。",
+      "100分の25で計算した値。第123条第1項に定める介護給付の都道府県負担割合（12.5％・17.5％）のいずれでもない。"
+     ],
+     "point": "施設等給付：国15％・都道府県17.5％。それ以外：国20％・都道府県12.5％。市町村は12.5％。"
+    },
+    "sources": [
+     {
+      "ref": "law:介護保険法",
+      "title": "介護保険法",
+      "url": "https://laws.e-gov.go.jp/law/409AC0000000123",
+      "locator": "第123条第1項第2号",
+      "quote": "介護給付（介護保険施設及び特定施設入居者生活介護に係るものに限る。）及び予防給付（介護予防特定施設入居者生活介護に係るものに限る。）に要する費用百分の十七・五"
+     },
+     {
+      "ref": "law:介護保険法",
+      "title": "介護保険法",
+      "url": "https://laws.e-gov.go.jp/law/409AC0000000123",
+      "locator": "第121条第1項第2号",
+      "quote": "介護給付（介護保険施設及び特定施設入居者生活介護に係るものに限る。）及び予防給付（介護予防特定施設入居者生活介護に係るものに限る。）に要する費用百分の十五"
+     }
+    ],
+    "asOf": "2026-11 e-Gov現行法令（介護保険法：版の施行日2026-10-01）",
+    "calc": {
+     "expr": "800*17.5/100",
+     "value": 140
+    }
+   }
+  },
+  {
+   "key": "G2-S03-KAI-11",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:介護保険法 第125条1・2・4項、第129条4項、第150条（機構が医療保険者から納付金を徴収）を確認。機構=医療情報基盤・診療報酬審査支払機構（法中の定義を確認）。"
+  },
+  {
+   "key": "G2-S03-KAI-12",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:kaigo-hoken-kaisei-r08 p.1（施行日原則R9.4.1、更新制廃止・法定研修見直し）、p.13（定期的な研修は継続）、その他事項（夜間対応型訪問介護を廃止し定期巡回と統合）を確認。"
+  }
+ ]
+}

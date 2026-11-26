@@ -1,0 +1,15 @@
+{"answers": [
+{"key":"G5-S06-CEN-01","answer":2,"confidence":"high","ambiguous":false,"note":"昇順3,5,6,7,9,12,14,30。中央値=(7+9)/2=8"},
+{"key":"G5-S06-CEN-02","answer":1,"confidence":"high","ambiguous":false,"note":"(30*4+50*6+70*8+90*2)/20=1160/20=58"},
+{"key":"G5-S06-CEN-03","answer":2,"confidence":"high","ambiguous":false,"note":"最頻階級20-30分(14人)の階級値25"},
+{"key":"G5-S06-CEN-04","answer":2,"confidence":"high","ambiguous":false,"note":"右に歪むと平均値>中央値"},
+{"key":"G5-S06-CEN-05","answer":3,"confidence":"medium","ambiguous":true,"note":"Dは明確に誤(最頻値は複数または不定)。ただしBも同値が中央値と重複する場合は同数にならず厳密には誤りうる"},
+{"key":"G5-S06-CEN-06","answer":0,"confidence":"high","ambiguous":false,"note":"(20*30+30*20)/50=24"},
+{"key":"G5-S06-CEN-07","answer":1,"confidence":"high","ambiguous":false,"note":"平均5、偏差平方和32、分散4、標準偏差2"},
+{"key":"G5-S06-CEN-08","answer":3,"confidence":"high","ambiguous":false,"note":"平均7、偏差平方和74、74/4=18.5"},
+{"key":"G5-S06-CEN-09","answer":2,"confidence":"high","ambiguous":false,"note":"変動係数は比尺度向き。間隔尺度(摂氏)は原点が任意で不適"},
+{"key":"G5-S06-CEN-10","answer":0,"confidence":"high","ambiguous":false,"note":"A=9/60=0.15、B=0.6/3=0.2でBが大きい"},
+{"key":"G5-S06-CEN-11","answer":3,"confidence":"high","ambiguous":false,"note":"範囲41-2=39、四分位範囲15-6=9"},
+{"key":"G5-S06-CEN-12","answer":1,"confidence":"high","ambiguous":false,"note":"四分位範囲はQ3-Q1で、最大値・最小値は使わず外れ値に頑健"},
+{"key":"G5-S06-CEN-13","answer":3,"confidence":"high","ambiguous":false,"note":"2乗するため分散は外れ値の影響を強く受ける"}
+]}

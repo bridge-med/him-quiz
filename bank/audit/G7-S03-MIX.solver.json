@@ -1,0 +1,16 @@
+{"answers":[
+{"key":"G7-S03-MIX-01","answer":2,"confidence":"high","ambiguous":false,"note":"経済安定機能"},
+{"key":"G7-S03-MIX-02","answer":2,"confidence":"high","ambiguous":false,"note":"生活保護法11条 生業扶助"},
+{"key":"G7-S03-MIX-03","answer":0,"confidence":"high","ambiguous":false,"note":"生活保護法4条2項 補足性"},
+{"key":"G7-S03-MIX-04","answer":1,"confidence":"high","ambiguous":false,"note":"労災+雇用=労働保険"},
+{"key":"G7-S03-MIX-05","answer":2,"confidence":"high","ambiguous":false,"note":"推進法2条は社会保険制度を基本とする。税方式は誤り"},
+{"key":"G7-S03-MIX-06","answer":1,"confidence":"high","ambiguous":false,"note":"記載要領 第1 8(2) 2種の公費で2件"},
+{"key":"G7-S03-MIX-07","answer":3,"confidence":"high","ambiguous":false,"note":"感染症法37条の2第4項 6月で打切り"},
+{"key":"G7-S03-MIX-08","answer":1,"confidence":"medium","ambiguous":false,"note":"95%=19,000から保険給付14,000を控除し5,000(法39条)"},
+{"key":"G7-S03-MIX-09","answer":0,"confidence":"medium","ambiguous":false,"note":"待期3日を除く7日×6,000=42,000"},
+{"key":"G7-S03-MIX-10","answer":2,"confidence":"high","ambiguous":false,"note":"傷病手当金は健保の給付"},
+{"key":"G7-S03-MIX-11","answer":2,"confidence":"high","ambiguous":false,"note":"高齢者医療確保法106条 賦課期日は年度初日"},
+{"key":"G7-S03-MIX-12","answer":2,"confidence":"high","ambiguous":false,"note":"支払基金から新機構へ(2026-10-01)"},
+{"key":"G7-S03-MIX-13","answer":1,"confidence":"high","ambiguous":false,"note":"法51条 生活保護受給世帯は適用除外、医療扶助は現物給付"},
+{"key":"G7-S03-MIX-14","answer":3,"confidence":"high","ambiguous":false,"note":"傷病手当金は条例による任意給付(法86条)"}
+]}

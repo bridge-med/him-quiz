@@ -1,0 +1,200 @@
+{
+ "answers": [
+  {
+   "key": "lg-04-00",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "標準的な医学略語・用語（知識）"
+  },
+  {
+   "key": "lg-04-01",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "標準的な医学略語・用語（知識）"
+  },
+  {
+   "key": "lg-04-02",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "標準的な医学略語・用語（知識）"
+  },
+  {
+   "key": "lg-04-03",
+   "answer": 3,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "血液型はバイタルサインでない"
+  },
+  {
+   "key": "lg-04-04",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "標準的な医学略語・用語（知識）"
+  },
+  {
+   "key": "lg-04-05",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "標準的な医学略語・用語（知識）"
+  },
+  {
+   "key": "lg-04-06",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "HbA1c=過去1〜2か月の平均血糖。lg-04-23と重複"
+  },
+  {
+   "key": "lg-04-07",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "標準的な医学略語・用語（知識）"
+  },
+  {
+   "key": "lg-04-08",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "標準的な医学略語・用語（知識）"
+  },
+  {
+   "key": "lg-04-09",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "標準的な医学略語・用語（知識）"
+  },
+  {
+   "key": "lg-04-10",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "標準的な医学略語・用語（知識）"
+  },
+  {
+   "key": "lg-04-11",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "標準的な医学略語・用語（知識）"
+  },
+  {
+   "key": "lg-04-12",
+   "answer": 0,
+   "confidence": "medium",
+   "ambiguous": false,
+   "note": "s/oはsuspect of（〜の疑い）。略語の流儀により表記揺れあり"
+  },
+  {
+   "key": "lg-04-13",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "標準的な医学略語・用語（知識）"
+  },
+  {
+   "key": "lg-04-14",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "標準的な医学略語・用語（知識）"
+  },
+  {
+   "key": "lg-04-15",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "標準的な医学略語・用語（知識）"
+  },
+  {
+   "key": "lg-04-16",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "標準的な医学略語・用語（知識）"
+  },
+  {
+   "key": "lg-04-17",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "標準的な医学略語・用語（知識）"
+  },
+  {
+   "key": "lg-04-18",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "SpO2は経皮的動脈血酸素飽和度"
+  },
+  {
+   "key": "lg-04-19",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "標準的な医学略語・用語（知識）"
+  },
+  {
+   "key": "lg-04-20",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "標準的な医学略語・用語（知識）"
+  },
+  {
+   "key": "lg-04-21",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "標準的な医学略語・用語（知識）"
+  },
+  {
+   "key": "lg-04-22",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "標準的な医学略語・用語（知識）"
+  },
+  {
+   "key": "lg-04-23",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "lg-04-06と重複"
+  },
+  {
+   "key": "lg-04-24",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "標準的な医学略語・用語（知識）"
+  },
+  {
+   "key": "lg-04-25",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "FIMは運動13+認知5=18項目"
+  },
+  {
+   "key": "lg-04-26",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "標準的な医学略語・用語（知識）"
+  },
+  {
+   "key": "lg-04-27",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "標準的な医学略語・用語（知識）"
+  }
+ ]
+}

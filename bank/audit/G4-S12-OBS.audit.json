@@ -1,0 +1,218 @@
+{
+ "verdicts": [
+  {
+   "key": "G4-S12-OBS-01",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou15 第XV章冒頭 除外に産科破傷風（A34）・E23.0・M83.0・F53.-を確認。O85/O24.4/O90.3/O99.0は章内（icd.mjs code）。O99.4除外にO90.3あり。盲検一致。"
+  },
+  {
+   "key": "G4-S12-OBS-02",
+   "verdict": "fix",
+   "checks": {
+    "answer": true,
+    "distractors": false,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "キー（無症候性HIV感染状態はZ21、O98.7はB20－B24）は icd:naiyou15 O98 除外・O98.7 で確認。A・B・C は icd:naiyou15 O98 包含／O99 注と icd:instruction 第XV章 O98－O99 の注・例26 で確認。盲検一致。",
+   "detail": "選択肢D「それ以外の母体疾患はO99に分類する」は言い過ぎ（糖尿病はO24、高血圧性疾患はO10－O16で、O99.2・O99.4から除外される。同バッチの03・04がその点を問うている）。厳密に読むとDも誤りと取れて正答が二つになるおそれがあるため、3桁項目の名称どおりの記述に直し、解説に除外の例を足した。キー・出典は変更なし。",
+   "fixed": {
+    "key": "G4-S12-OBS-02",
+    "subject": "S12",
+    "subtopic": "妊娠・分娩・産じょく（第ⅩⅤ章）",
+    "asOf": "ICD-10（2013年版）準拠",
+    "format": "knowledge",
+    "difficulty": "standard",
+    "polarity": "negative",
+    "question": "ICD-10（2013年版）のO98－O99（他に分類されるが妊娠，分娩及び産じょくに合併する母体疾患）について、誤っているものはどれか。",
+    "choices": [
+     "妊娠に合併した病態、妊娠により増悪した病態又は産科的ケアの理由となった病態に用いる。",
+     "該当すると診断された場合は、第ⅩⅤ章以外の項目より優先して「主要病態」のコードとする。",
+     "他の章の関連するコードは、病態を明確にするための任意的追加コードとして使用できる。",
+     "O98は母体の感染症及び寄生虫症を、O99はその他の母体疾患を分類する項目である。",
+     "妊娠中の女性の無症候性HIV感染状態は、O98.7に分類する。"
+    ],
+    "answer": 4,
+    "explanation": {
+     "correct": "O98の「除外」に無症候性ヒト免疫不全ウイルス［HIV］感染状態（Z21）が挙げられており、無症候性HIV感染状態はO98.7ではなくZ21に分類する。O98.7は妊娠，分娩及び産じょくに合併するHIV病（B20－B24の病態）である。",
+     "choiceNotes": [
+      "正しい。O98は「妊娠に合併した場合，妊娠により増悪した場合又は産科的ケアによる理由の場合」の病態、O99も同趣旨の注をもつ。",
+      "正しい。インストラクションマニュアルは、これらを第ⅩⅤ章以外の項目より優先的に「主要病態」コードとして使用するべきとしている。",
+      "正しい。他の章の関連コードは任意的追加コードとして使用できる（例：O98.6にB58.9を追加）。",
+      "正しい。O98は「母体の感染症及び寄生虫症」、O99は「その他の母体疾患」で、O99の「除外」に感染症及び寄生虫症（O98.-）がある。なお、糖尿病（O24.-）や高血圧性疾患（O10－O16）のように第ⅩⅤ章に固有の項目がある病態は、O99の各細分類から除外される。",
+      null
+     ],
+     "point": "O98－O99は第ⅩⅤ章以外より優先して主要病態コード。他章のコードは任意的追加。無症候性HIV感染状態はZ21、HIV病（B20－B24）の合併はO98.7。"
+    },
+    "sources": [
+     {
+      "ref": "icd:naiyou15",
+      "title": "ICD-10（2013年版）準拠 内容例示表 第15章 妊娠，分娩及び産じょく＜褥＞（O00-O99）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou15.pdf",
+      "locator": "O98 除外",
+      "quote": "無症候性ヒト免疫不全ウイルス［ＨＩＶ］感染状態（Ｚ21）"
+     },
+     {
+      "ref": "icd:instruction",
+      "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+      "locator": "疾病コーディングの章別の注 第ⅩⅤ章 O98－O99",
+      "quote": "項目を第ⅩⅤ章以外の項目より優先的に「主要病態」コードとして使用するべきであ"
+     }
+    ]
+   }
+  },
+  {
+   "key": "G4-S12-OBS-03",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou15 O24 包含「分娩及び産じょくにおけるもの」、O24.0/O24.1/O24.4、O99.2 除外 糖尿病（O24.-）、icd:naiyou04 E10-E14 除外（O24.-）を確認。症例文と整合。盲検一致。"
+  },
+  {
+   "key": "G4-S12-OBS-04",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou15 O10.0（I10の各病態）、O11 包含、O13 包含（妊娠中の一過性高血圧）、O14.2 HELLP、O99.4 除外 高血圧性疾患（O10－O16）を確認。盲検一致。"
+  },
+  {
+   "key": "G4-S12-OBS-05",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou15 O03－O06の4桁細分類（.1 不全流産・出血、.4、.6）と icd:instruction 章別注 O08.-（主要病態の優先コードにしない）を確認。O06.1・O08.1の名称も icd.mjs で確認。盲検一致。"
+  },
+  {
+   "key": "G4-S12-OBS-06",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:instruction 第XV章 O08.- の注と例21（他施設の流産後の合併症→O08.1、他のコード不要）、icd:naiyou15 O08.0 包含 骨盤腹膜炎、icd:naiyou14 N70-N77側の除外（O08.0）、O85 包含を確認。盲検一致（確信度 中だが根拠は同じ）。"
+  },
+  {
+   "key": "G4-S12-OBS-07",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:instruction 第XV章 O80－O84 の注と例22（O81.0）・例23（O66.4＋O82.9）・例24（O30.0＋O84.0）を確認。設問は第2巻の疾病コーディング規則（「主要病態」）であり DPC 実務の話ではない点は asOf で担保。盲検一致。"
+  },
+  {
+   "key": "G4-S12-OBS-08",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou15 O60（妊娠満37週未満の（自然）分娩開始）、O60.0－O60.3 の包含、O47.0 を確認。症例（満35週2日・自然陣痛・経腟分娩・破水は分娩進行中）と整合し O42 は該当しない。盲検一致。"
+  },
+  {
+   "key": "G4-S12-OBS-09",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou15 O21.0－O21.2（満22週）、O42.0/O42.1（24時間）、O47.0/O47.1（満37週）、O60、O96 を本文で確認。誤りは満28週の選択肢のみ。盲検一致。"
+  },
+  {
+   "key": "G4-S12-OBS-10",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou16 P00－P04 包含、P01.1、P01.2 除外（前期破水による場合 P01.1）、icd:naiyou15 章冒頭、icd:naiyou21 Z37 注を確認。盲検一致。"
+  },
+  {
+   "key": "G4-S12-OBS-11",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou21 Z37 注・Z37.0/Z37.1、Z38、Z39.0（合併症のない場合のケア及び観察）、O80.0 自然頭位分娩（icd.mjs）を確認。症例は単胎・生産。盲検一致。"
+  },
+  {
+   "key": "G4-S12-OBS-12",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:instruction 第XV章 O98－O99 の注と例26、icd:naiyou15 O99.0（D50－D64）、O99.1（D65－D89）、O99.2（E00－E90）、icd:naiyou21 Z33（Pregnant state, incidental）、D50.9 を確認。盲検一致。"
+  }
+ ]
+}

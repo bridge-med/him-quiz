@@ -1,0 +1,1040 @@
+{
+ "verdicts": [
+  {
+   "id": "lg-09-16",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": false,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:dpc-coding-text-v7 用語解説「MDC」・図表3（MDC01〜18）、Ⅱ DPCの基本構造（14桁）；icd:instruction 第1巻の構成（22章）。",
+   "detail": "旧解説・pointが「ICD-10は21章」としていたが2013年版は22章（第ⅩⅩⅡ章 U00－U89）。MDCを「臓器系統別」と言い切っていた（15小児・16外傷・18その他を含む）。科目をS10へ。選択肢を14（DPC桁数）・22（ICD-10章数）など紛らわしい値に差し替え。",
+   "question": {
+    "id": "lg-09-16",
+    "legacy": {
+     "key": "9_16",
+     "chapter": 9,
+     "chapterName": "診療情報管理II（コーディング）",
+     "index": 16,
+     "hash": "c34e80f23b6ef54b"
+    },
+    "subject": "S10",
+    "subtopic": "診断群分類の構造",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "DPC/PDPSにおけるMDC（主要診断群）の数はどれか。",
+    "choices": [
+     "10",
+     "14",
+     "18",
+     "22"
+    ],
+    "answer": 2,
+    "explanation": {
+     "correct": "DPC/PDPS傷病名コーディングテキスト（第7版）では、MDC（Major Diagnostic Category：主要診断群）は「01 神経系疾患」から「18 その他」までの18分類とされ、14桁のDPCコードの上2桁がMDCコードである。",
+     "choiceNotes": [
+      "MDCは01〜18の18分類であり、10ではない。",
+      "14はDPCコードの桁数であり、MDCの数ではない。",
+      null,
+      "22はICD-10（2013年版）の章の数であり、MDCの数ではない。"
+     ],
+     "point": "MDC＝18分類（DPCコード14桁の上2桁）。ICD-10（2013年版）の章は22。"
+    },
+    "sources": [
+     {
+      "ref": "ins:dpc-coding-text-v7",
+      "title": "DPC／PDPS 傷病名コーディングテキスト 改定版（第７版）",
+      "url": "https://www.mhlw.go.jp/content/12400000/001684575.pdf",
+      "locator": "用語解説「MDC」（Ⅱ．DPCの基本構造 図表３）",
+      "quote": "主要診断群のこと。DPC/ PDPS では 18 の MDC に分類されて"
+     },
+     {
+      "ref": "ins:dpc-coding-text-v7",
+      "title": "DPC／PDPS 傷病名コーディングテキスト 改定版（第７版）",
+      "url": "https://www.mhlw.go.jp/content/12400000/001684575.pdf",
+      "locator": "Ⅱ．DPCの基本構造",
+      "quote": "○ DPC は 14 桁の英数字で構成される。"
+     },
+     {
+      "ref": "icd:instruction",
+      "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+      "locator": "2.4 第1巻（内容例示表）の構成",
+      "quote": "分類は 22 章に分けられている。"
+     }
+    ],
+    "asOf": "DPC/PDPS傷病名コーディングテキスト第7版（令和8年6月）；ICD-10（2013年版）準拠"
+   }
+  },
+  {
+   "id": "lg-09-17",
+   "verdict": "reject",
+   "contentChanged": false,
+   "checks": {
+    "answer": false,
+    "distractors": false,
+    "stem": false,
+    "explanations": false,
+    "sources": false,
+    "asOf": true,
+    "domain": false
+   },
+   "notes": "icd:instruction 主要病態・その他の病態の記載（4.4.1）を確認。設問の『合併症と続発症のコーディングルール』に対応する規定はない。",
+   "reason": "ambiguous",
+   "detail": "『合併症・続発症のコーディングルール』が何の分類体系（ICD疾病統計／DPC）の何の規則かが不明で、ICDの『続発・後遺症』とも混同を招く。選択肢『合併症は常に無視する』等は藁人形で、正解『追加コーディングする』もICD（その他の病態は別々に記載）・DPC（単一の医療資源病名を選択しダブルコーディング不採用）のいずれの規定とも一致しない。主要病態の選択は lg-09-26 で扱う。ブラインド解答者も曖昧と指摘。"
+  },
+  {
+   "id": "lg-09-18",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": false,
+    "stem": true,
+    "explanations": false,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icdbg:mhlw-icd11-overview 年表（2019年5月 WHA72採択、2022年1月発効）；who:wha72-15 前文（1990年 第43回WHAでICD-10採択）；who:icd11-fact-sheet-2026（Digitally native）；icdbg:soumu-kokuji-r08-11（令和9年1月1日施行）も確認。",
+   "detail": "旧解説の『26章構成』は資料により26章（ステムコード）／28章（補助章含む）と数え方が分かれ根拠が不安定なため削除。選択肢が『5章構成の簡易版』など明白な誤りばかりだったので、ICD-10採択年・WHO発効日（2027年とわが国の施行日との混同）など紛らわしい誤りに差し替え。科目をS11へ。",
+   "question": {
+    "id": "lg-09-18",
+    "legacy": {
+     "key": "9_18",
+     "chapter": 9,
+     "chapterName": "診療情報管理II（コーディング）",
+     "index": 18,
+     "hash": "bbfa9304665d2ab1"
+    },
+    "subject": "S11",
+    "subtopic": "ICD-11・ICF・ICD-O",
+    "format": "knowledge",
+    "difficulty": "standard",
+    "polarity": "positive",
+    "question": "ICD-11について正しいものはどれか。",
+    "choices": [
+     "2019年5月の第72回世界保健総会で採択された。",
+     "1990年の第43回世界保健総会で採択された。",
+     "WHOにおける発効日は2027年1月1日である。",
+     "日本国内の統計のためだけに作成された分類である。",
+     "紙媒体での利用を前提として設計されている。"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "ICD-11は2018年6月に公表され、2019年5月の第72回世界保健総会（決議WHA72.15）で採択され、2022年1月1日に発効した。",
+     "choiceNotes": [
+      null,
+      "1990年の第43回世界保健総会で採択されたのはICD-10である。",
+      "WHOにおけるICD-11の発効は2022年1月1日である。2027年1月1日は、わが国でICD-11準拠の統計分類（令和8年総務省告示第11号）が施行される日である。",
+      "ICD-11は世界保健総会で採択されたWHOの国際分類である。",
+      "ICD-11は電子カルテ等のデジタル環境での利用を前提に設計されている。"
+     ],
+     "point": "ICD-11＝2019年5月WHA72で採択・2022年1月1日発効。ICD-10＝1990年WHA43で採択。"
+    },
+    "sources": [
+     {
+      "ref": "icdbg:mhlw-icd11-overview",
+      "title": "ICD-11の概要",
+      "url": "https://www.mhlw.go.jp/content/10700000/001642765.pdf",
+      "locator": "ICD-11の概要（改訂の経緯）",
+      "quote": "2019年 ５月 第72回WHO世界保健総会（WHA）で採択 2022年 1月 ICD-11 発効"
+     },
+     {
+      "ref": "who:wha72-15",
+      "title": "WHA72.15 Eleventh revision of the International Classification of Diseases",
+      "url": "https://cdn.who.int/media/docs/default-source/classification/icd/icd11/a72_29-en_icd-11-adoption.pdf?sfvrsn=d10b6c4_10&download=true",
+      "locator": "WHA72.15 前文",
+      "quote": "Forty-third World Health Assembly on 17 May 1990, adopting the tenth revision of the International Classification of Diseases"
+     },
+     {
+      "ref": "who:icd11-fact-sheet-2026",
+      "title": "ICD-11 Fact Sheet",
+      "url": "https://cdn.who.int/media/docs/default-source/classification/icd/icd11/icd11_fact_sheet_2026.pdf?sfvrsn=fa9749d0_9&download=true",
+      "locator": "Fact sheet（Digitally native）",
+      "quote": "ICD-11 is designed for integration into electronic health records"
+     }
+    ],
+    "asOf": "2026-11（WHO決議・ファクトシート、厚生労働省資料）"
+   }
+  },
+  {
+   "id": "lg-09-19",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": false,
+    "stem": true,
+    "explanations": false,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou09 I21 包含・除外（28日、陳旧性I25.2、再発性I22）；icd:kihon2013 I20/I22/I24/I25。",
+   "detail": "旧解説の『I章は循環器系の疾患（第IX章）』は章とコード頭文字を混同した誤記、pointの『I＝Heart』は根拠のない語呂。選択肢が別章（C34・J18・E11）で自明だったため、同じ虚血性心疾患ブロックのI20・I22・I24・I25に差し替え。",
+   "question": {
+    "id": "lg-09-19",
+    "legacy": {
+     "key": "9_19",
+     "chapter": 9,
+     "chapterName": "診療情報管理II（コーディング）",
+     "index": 19,
+     "hash": "96e678fbc23f915b"
+    },
+    "subject": "S12",
+    "subtopic": "循環器（第Ⅸ章）",
+    "format": "icd",
+    "difficulty": "standard",
+    "polarity": "positive",
+    "question": "ICD-10（2013年版）で、急性心筋梗塞を分類する3桁分類項目はどれか。",
+    "choices": [
+     "I20",
+     "I21",
+     "I22",
+     "I24",
+     "I25"
+    ],
+    "answer": 1,
+    "explanation": {
+     "correct": "I21は急性心筋梗塞で、急性と明示された、又は発症から4週（28日）以内と記載された心筋梗塞を含む。第Ⅸ章 循環器系の疾患の「虚血性心疾患（I20－I25）」に属する。",
+     "choiceNotes": [
+      "I20は狭心症である。",
+      null,
+      "I22は再発性心筋梗塞であり、I21の除外に挙げられている。",
+      "I24はその他の急性虚血性心疾患（心筋梗塞後症候群I24.1など）である。",
+      "I25は慢性虚血性心疾患で、陳旧性心筋梗塞（I25.2）や発症から4週を超える心筋梗塞（I25.8）が分類される。"
+     ],
+     "point": "急性心筋梗塞＝I21（発症から28日以内）、再発性＝I22、陳旧性＝I25.2。"
+    },
+    "sources": [
+     {
+      "ref": "icd:naiyou09",
+      "title": "ICD-10（2013年版）準拠 内容例示表 第9章 循環器系の疾患（I00-I99）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou09.pdf",
+      "locator": "I21 急性心筋梗塞 包含",
+      "quote": "急性と明示された， 又は期間が発症から 4 週（28 日）以内と記載された心筋梗塞"
+     },
+     {
+      "ref": "icd:naiyou09",
+      "title": "ICD-10（2013年版）準拠 内容例示表 第9章 循環器系の疾患（I00-I99）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou09.pdf",
+      "locator": "I21 除外",
+      "quote": "心筋梗塞： ・陳旧性（Ｉ25．2）"
+     },
+     {
+      "ref": "icd:kihon2013",
+      "title": "基本分類表（2013年版）準拠",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/xls/kihon2013.xlsx",
+      "locator": "I22",
+      "quote": "I22\t再発性心筋梗塞"
+     }
+    ],
+    "asOf": "ICD-10（2013年版）準拠"
+   }
+  },
+  {
+   "id": "lg-09-20",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": false,
+    "stem": true,
+    "explanations": false,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou04 E10－E14（E11 名称・除外：E12, P70.2, O24.-）；icd:naiyou15 O24.4（妊娠性糖尿病NOS）。",
+   "detail": "旧選択肢『薬物性糖尿病はE13』は内容例示表に記載がなく（E10－E14の注は『薬物誘発性で薬物の分類が必要な場合は追加外因コード（ⅩⅩ章）』）根拠なし。妊娠糖尿病は正確にはO24.4。選択肢を内容例示表の除外で裏付けられるもの（E12・P70.2・O24.4）に差し替え。",
+   "question": {
+    "id": "lg-09-20",
+    "legacy": {
+     "key": "9_20",
+     "chapter": 9,
+     "chapterName": "診療情報管理II（コーディング）",
+     "index": 20,
+     "hash": "9deb02765c42eb4f"
+    },
+    "subject": "S12",
+    "subtopic": "内分泌・代謝（第Ⅳ章）",
+    "format": "icd",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "ICD-10（2013年版）で、3桁分類項目E11に分類されるものはどれか。",
+    "choices": [
+     "1型糖尿病",
+     "2型糖尿病",
+     "妊娠中に発生した糖尿病",
+     "栄養障害に関連する糖尿病",
+     "新生児糖尿病"
+    ],
+    "answer": 1,
+    "explanation": {
+     "correct": "E11は「２型＜インスリン非依存性＞糖尿病＜NIDDM＞」である。E10－E14の4桁目は共通の細分類で、合併症の有無・種類を表す。",
+     "choiceNotes": [
+      "1型糖尿病はE10である。",
+      null,
+      "妊娠中に発生した糖尿病（妊娠性糖尿病NOS）は第ⅩⅤ章のO24.4で、E11の除外に挙げられている。",
+      "栄養障害に関連する糖尿病はE12で、E11の除外に挙げられている。",
+      "新生児糖尿病はP70.2で、E11の除外に挙げられている。"
+     ],
+     "point": "E10＝1型、E11＝2型、E12＝栄養障害に関連、E13＝その他の明示、E14＝詳細不明。妊娠中はO24、新生児はP70.2。"
+    },
+    "sources": [
+     {
+      "ref": "icd:naiyou04",
+      "title": "ICD-10（2013年版）準拠 内容例示表 第4章 内分泌，栄養及び代謝疾患（E00-E90）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou04.pdf",
+      "locator": "E11 名称",
+      "quote": "E11   ２型＜インスリン非依存性＞糖尿病＜NIDDM＞"
+     },
+     {
+      "ref": "icd:naiyou04",
+      "title": "ICD-10（2013年版）準拠 内容例示表 第4章 内分泌，栄養及び代謝疾患（E00-E90）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou04.pdf",
+      "locator": "E11 除外",
+      "quote": "・栄養障害に関連する（E12．-） ・新生児（P70．2） ・妊娠，分娩及び産じょく＜褥＞（O24．-）"
+     },
+     {
+      "ref": "icd:naiyou15",
+      "title": "ICD-10（2013年版）準拠 内容例示表 第15章 妊娠，分娩及び産じょく＜褥＞（O00-O99）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou15.pdf",
+      "locator": "O24.4",
+      "quote": "Ｏ24．4   妊娠中に発生した糖尿病 妊娠性糖尿病 ＮＯＳ"
+     }
+    ],
+    "asOf": "ICD-10（2013年版）準拠"
+   }
+  },
+  {
+   "id": "lg-09-21",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": false,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou04 E10－E14共通4桁細分類（.0昏睡、.2†腎合併症＝糖尿病性腎症 N08.3*、.4†神経、.5末梢循環、.9合併症なし）；tools/icd.mjs で E11.2†/N08.3* 確認。",
+   "detail": "題意（2型糖尿病）が問題文になく、選択肢がE11のみで暗黙の前提に依存していたため問題文に明記。剣印・星印（N08.3*）の併用を解説に追加し、pointに.1・.7・.8を補足。神経合併症（.4）を選択肢に追加。",
+   "question": {
+    "id": "lg-09-21",
+    "legacy": {
+     "key": "9_21",
+     "chapter": 9,
+     "chapterName": "診療情報管理II（コーディング）",
+     "index": 21,
+     "hash": "47d658d638e4eda5"
+    },
+    "subject": "S12",
+    "subtopic": "内分泌・代謝（第Ⅳ章）",
+    "format": "icd",
+    "difficulty": "standard",
+    "polarity": "positive",
+    "question": "2型糖尿病による糖尿病性腎症をICD-10（2013年版）でコーディングするとき、剣印（†）コードとして正しいものはどれか。",
+    "choices": [
+     "E11.0",
+     "E11.2",
+     "E11.4",
+     "E11.5",
+     "E11.9"
+    ],
+    "answer": 1,
+    "explanation": {
+     "correct": "E10－E14共通の4桁細分類「.2†腎合併症を伴うもの」に糖尿病性腎症＜ネフロパシー＞が含まれ、星印コードN08.3*を併用する。2型糖尿病はE11なので、E11.2†（＋N08.3*）となる。",
+     "choiceNotes": [
+      "E11.0は昏睡を伴うものである。",
+      null,
+      "E11.4は神経（学的）合併症を伴うものである。",
+      "E11.5は末梢循環合併症を伴うものである。",
+      "E11.9は合併症を伴わないものである。"
+     ],
+     "point": "4桁目：.0昏睡 .1ケトアシドーシス .2†腎 .3†眼 .4†神経 .5末梢循環 .6その他の明示 .7多発 .8詳細不明 .9合併症なし。"
+    },
+    "sources": [
+     {
+      "ref": "icd:naiyou04",
+      "title": "ICD-10（2013年版）準拠 内容例示表 第4章 内分泌，栄養及び代謝疾患（E00-E90）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou04.pdf",
+      "locator": "E10－E14 共通4桁細分類 .2",
+      "quote": "．2†   腎合併症を伴うもの 糖尿病性腎症＜ネフロパシー＞（Ｎ08．3＊）"
+     },
+     {
+      "ref": "icd:naiyou04",
+      "title": "ICD-10（2013年版）準拠 内容例示表 第4章 内分泌，栄養及び代謝疾患（E00-E90）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou04.pdf",
+      "locator": "E10－E14 共通4桁細分類 .4・.5",
+      "quote": "．4†   神経（学的）合併症を伴うもの"
+     }
+    ],
+    "asOf": "ICD-10（2013年版）準拠"
+   }
+  },
+  {
+   "id": "lg-09-22",
+   "verdict": "pass",
+   "contentChanged": false,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou02 C16（.0噴門 .1胃底部 .2胃体部 .3幽門前庭 .4幽門 .8胃の境界部病巣 .9胃，部位不明）で鍵・選択肢・解説を確認。",
+   "question": {
+    "id": "lg-09-22",
+    "legacy": {
+     "key": "9_22",
+     "chapter": 9,
+     "chapterName": "診療情報管理II（コーディング）",
+     "index": 22,
+     "hash": "089453f79d36f764"
+    },
+    "subject": "S12",
+    "subtopic": "新生物（第Ⅱ章）",
+    "format": "icd",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "悪性新生物で「胃体部」の癌のICD-10コードはどれか。",
+    "choices": [
+     "C16.0",
+     "C16.2",
+     "C16.8",
+     "C16.9"
+    ],
+    "answer": 1,
+    "explanation": {
+     "correct": "C16.2は胃体部の悪性新生物。C16は胃の悪性新生物で4桁目で部位を特定する。",
+     "choiceNotes": [
+      "C16.0は噴門部。",
+      null,
+      "C16.8は胃の境界部病巣。",
+      "C16.9は胃の悪性新生物、部位不明。"
+     ],
+     "point": "C16.0噴門 .1胃底部 .2胃体部 .3幽門前庭部 .4幽門 .9部位不明。"
+    },
+    "sources": [
+     {
+      "ref": "icd:naiyou02",
+      "title": "ICD-10（2013年版）準拠 内容例示表 第2章 新生物＜腫瘍＞（C00-D48）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou02.pdf",
+      "locator": "C16 胃の悪性新生物＜腫瘍＞",
+      "quote": "Ｃ16．1   胃底部 Ｃ16．2   胃体部"
+     },
+     {
+      "ref": "icd:naiyou02",
+      "title": "ICD-10（2013年版）準拠 内容例示表 第2章 新生物＜腫瘍＞（C00-D48）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou02.pdf",
+      "locator": "C16.8",
+      "quote": "Ｃ16．8   胃の境界部病巣"
+     }
+    ],
+    "asOf": "ICD-10（2013年版）準拠"
+   }
+  },
+  {
+   "id": "lg-09-23",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": false,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou19 S72.0（股関節部骨折NOS）、S72.1（転子間・転子部）、S82.0 膝蓋骨骨折、S52.0 尺骨近位端骨折、S42.0 鎖骨骨折。",
+   "detail": "旧choiceNotesが3桁項目の説明にとどまり、選択肢の4桁コード（S82.0＝膝蓋骨骨折、S42.0＝鎖骨骨折、S52.0＝尺骨近位端骨折）の意味と食い違っていた。『高齢者の転倒で頻出』は出典のない記述のため削除。",
+   "question": {
+    "id": "lg-09-23",
+    "legacy": {
+     "key": "9_23",
+     "chapter": 9,
+     "chapterName": "診療情報管理II（コーディング）",
+     "index": 23,
+     "hash": "23c04bb5414d2c08"
+    },
+    "subject": "S12",
+    "subtopic": "損傷・中毒（第ⅩⅨ章）",
+    "format": "icd",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "大腿骨頸部骨折のICD-10コードはどれか。",
+    "choices": [
+     "S72.0",
+     "S82.0",
+     "S42.0",
+     "S52.0"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "S72は大腿骨骨折で、4桁目.0が大腿骨頚部骨折（股関節部骨折NOSを含む）である。転子部・転子間骨折はS72.1（転子貫通骨折）に分類される。",
+     "choiceNotes": [
+      null,
+      "S82.0は膝蓋骨骨折である（S82は下腿の骨折，足首を含む）。",
+      "S42.0は鎖骨骨折である（S42は肩及び上腕の骨折）。",
+      "S52.0は尺骨近位端骨折である（S52は前腕の骨折）。"
+     ],
+     "point": "S72.0＝大腿骨頚部、S72.1＝転子貫通（転子部・転子間）、S72.2＝転子下。"
+    },
+    "sources": [
+     {
+      "ref": "icd:naiyou19",
+      "title": "ICD-10（2013年版）準拠 内容例示表 第19章 損傷，中毒及びその他の外因の影響（S00-T98）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou19.pdf",
+      "locator": "S72 大腿骨骨折",
+      "quote": "Ｓ72．0   大腿骨頚部骨折 股関節部骨折 ＮＯＳ Ｓ72．1   転子貫通骨折"
+     },
+     {
+      "ref": "icd:naiyou19",
+      "title": "ICD-10（2013年版）準拠 内容例示表 第19章 損傷，中毒及びその他の外因の影響（S00-T98）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou19.pdf",
+      "locator": "S82.0",
+      "quote": "Ｓ82．0   膝蓋骨骨折"
+     },
+     {
+      "ref": "icd:naiyou19",
+      "title": "ICD-10（2013年版）準拠 内容例示表 第19章 損傷，中毒及びその他の外因の影響（S00-T98）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou19.pdf",
+      "locator": "S52.0",
+      "quote": "Ｓ52．0   尺骨近位端骨折"
+     }
+    ],
+    "asOf": "ICD-10（2013年版）準拠"
+   }
+  },
+  {
+   "id": "lg-09-24",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": false,
+    "explanations": false,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou20 章題（V01－Y98）・V01－V09 交通事故により受傷した歩行者；icd:instruction 4.4.4 第ⅩⅩ章（主要病態コードとして使用しない・任意的追加コード）、疾病の外因のコーディング。",
+   "detail": "選択肢Bの章名『傷病及び死亡の外因』が問題文の『外因』と一致し語句で正答できたため、選択肢を章番号＋コード範囲に変更。疾病統計では第ⅩⅩ章は任意的追加コードで主要病態にしない点を解説に補足。",
+   "question": {
+    "id": "lg-09-24",
+    "legacy": {
+     "key": "9_24",
+     "chapter": 9,
+     "chapterName": "診療情報管理II（コーディング）",
+     "index": 24,
+     "hash": "3b9e8bf1928958cf"
+    },
+    "subject": "S12",
+    "subtopic": "外因（第ⅩⅩ章）",
+    "format": "icd",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "ICD-10（2013年版）で、交通事故により受傷した歩行者の外因（受傷の状況）を分類するコードが含まれる章はどれか。",
+    "choices": [
+     "第ⅩⅨ章（S00－T98）",
+     "第ⅩⅩ章（V01－Y98）",
+     "第ⅩⅧ章（R00－R99）",
+     "第ⅩⅩⅠ章（Z00－Z99）"
+    ],
+    "answer": 1,
+    "explanation": {
+     "correct": "外因は第ⅩⅩ章「傷病及び死亡の外因」（V01－Y98）に分類され、交通事故により受傷した歩行者はV01－V09である。疾病統計では損傷の性質（第ⅩⅨ章）を主要病態コードとし、第ⅩⅩ章のコードは任意的追加コードとして用いる。",
+     "choiceNotes": [
+      "第ⅩⅨ章「損傷，中毒及びその他の外因の影響」は損傷の性質（部位・種類）を分類する章である。",
+      null,
+      "第ⅩⅧ章は症状，徴候及び異常臨床所見・異常検査所見で他に分類されないものである。",
+      "第ⅩⅩⅠ章は健康状態に影響を及ぼす要因及び保健サービスの利用である。"
+     ],
+     "point": "損傷の性質＝第ⅩⅨ章（S・T）、外因＝第ⅩⅩ章（V－Y）。第ⅩⅩ章は主要病態コードにしない。"
+    },
+    "sources": [
+     {
+      "ref": "icd:naiyou20",
+      "title": "ICD-10（2013年版）準拠 内容例示表 第20章 傷病及び死亡の外因（V01-Y98）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou20.pdf",
+      "locator": "第ⅩⅩ章 章題・中間分類",
+      "quote": "第ⅩⅩ章 傷病及び死亡の外因(V01－Y98)"
+     },
+     {
+      "ref": "icd:naiyou20",
+      "title": "ICD-10（2013年版）準拠 内容例示表 第20章 傷病及び死亡の外因（V01-Y98）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou20.pdf",
+      "locator": "中間分類 V01－V09",
+      "quote": "Ｖ01－Ｖ09    交通事故により受傷した歩行者"
+     },
+     {
+      "ref": "icd:instruction",
+      "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+      "locator": "4.4.4 第ⅩⅩ章：傷病及び死亡の外因",
+      "quote": "本章のコードは「主要病態」コードとして使用しない。"
+     }
+    ],
+    "asOf": "ICD-10（2013年版）準拠"
+   }
+  },
+  {
+   "id": "lg-09-25",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": false,
+    "stem": false,
+    "explanations": false,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou19 T36－T50 除外（適正投与の有害作用は有害作用の性質により分類、T88.7は詳細不明の場合）；icd:instruction 疾病の外因のコーディング 例15（H53.2＋Y43.0任意的追加）・第ⅩⅩ章は主要病態に使わない。",
+   "detail": "旧解説『症状・病態のコード（S/T章等）』は誤り：適正投与の有害作用は中毒（T36－T50）ではなく有害作用の性質（例：アスピリン胃炎K29.-、複視H53.2）で分類する。選択肢が『コーディング不要』等の藁人形だったため、中毒への誤分類・外因コードの主コード化・T88.7への一律分類に差し替え。",
+   "question": {
+    "id": "lg-09-25",
+    "legacy": {
+     "key": "9_25",
+     "chapter": 9,
+     "chapterName": "診療情報管理II（コーディング）",
+     "index": 25,
+     "hash": "18dc096083917785"
+    },
+    "subject": "S12",
+    "subtopic": "損傷・中毒（第ⅩⅨ章）",
+    "format": "coding",
+    "difficulty": "standard",
+    "polarity": "positive",
+    "question": "ICD-10（2013年版）で、適正な薬物を適正に投与したときに生じた有害作用（副作用）の疾病コーディングとして正しいものはどれか。",
+    "choices": [
+     "薬物による中毒（T36－T50）に分類する",
+     "有害作用の性質により分類し、薬物は外因コード（Y40－Y59）で追加して示す",
+     "外因コード（Y40－Y59）を主要病態のコードとして用いる",
+     "有害作用の性質にかかわらず、T88.7（薬物の詳細不明の有害作用）に分類する"
+    ],
+    "answer": 1,
+    "explanation": {
+     "correct": "適正な薬物が適正に投与された場合の有害作用は、T36－T50（中毒）から除外され、有害作用の性質（例：アスピリン胃炎K29.-、複視H53.2）により分類する。原因薬物は第ⅩⅩ章の「治療上の使用により有害作用を引き起こした薬物，薬剤及び生物学的製剤（Y40－Y59）」を任意的追加コードとして用いて示す。",
+     "choiceNotes": [
+      "T36－T50は過量投与や誤った薬物の摂取・投与による中毒で、適正投与の有害作用は除外されている。",
+      null,
+      "第ⅩⅩ章のコードは「主要病態」コードとして使用しない。",
+      "T88.7は有害作用の性質が詳細不明の場合のコードであり、性質が分かれば、その性質により分類する。"
+     ],
+     "point": "副作用（適正投与）＝有害作用の性質でコード＋Y40－Y59（任意的追加）。誤用・過量＝中毒T36－T50。"
+    },
+    "sources": [
+     {
+      "ref": "icd:naiyou19",
+      "title": "ICD-10（2013年版）準拠 内容例示表 第19章 損傷，中毒及びその他の外因の影響（S00-T98）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou19.pdf",
+      "locator": "T36－T50 除外",
+      "quote": "適正な薬物が適正に投与された場合の有害作用 ［過敏症， 反応など］ は， 下記のような有害作用の性質により分類する"
+     },
+     {
+      "ref": "icd:instruction",
+      "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+      "locator": "4.4.2 疾病の外因のコーディング 例15",
+      "quote": "治療上の使用により有害作用 を起こした抗アレルギー薬及び制吐薬に対する外因コード（Y43.0）は、任意 的追加コードとして使用することができる"
+     },
+     {
+      "ref": "icd:instruction",
+      "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+      "locator": "4.4.4 第ⅩⅩ章：傷病及び死亡の外因",
+      "quote": "本章のコードは「主要病態」コードとして使用しない。"
+     }
+    ],
+    "asOf": "ICD-10（2013年版）準拠"
+   }
+  },
+  {
+   "id": "lg-09-26",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": false,
+    "distractors": true,
+    "stem": false,
+    "explanations": false,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:instruction 4.4.1（主要病態の定義：エピソードの最後に診断、多数あれば最も医療資源が使われた病態、未診断なら主要症状・異常所見）。",
+   "detail": "旧正答『入院の主たる理由となった病態』はICD-10（2013年版）の主要病態の定義（エピソードの最後に診断された、治療又は検査の必要性の主な原因となった病態。多数あれば最も医療資源が使われたもの）と一致しない（入院理由基準は別体系の考え方）。旧解説の『WHOの選択ルール』も原死因の選択ルールとの混同を招く。定義の文言に基づく選択肢に作り替え、科目をS11へ。",
+   "question": {
+    "id": "lg-09-26",
+    "legacy": {
+     "key": "9_26",
+     "chapter": 9,
+     "chapterName": "診療情報管理II（コーディング）",
+     "index": 26,
+     "hash": "97c0be34d2af8923"
+    },
+    "subject": "S11",
+    "subtopic": "疾病統計と主要病態の選択",
+    "format": "knowledge",
+    "difficulty": "standard",
+    "polarity": "positive",
+    "question": "ICD-10（2013年版）の疾病統計（単一病態分析）における主要病態の選択について、正しいものはどれか。",
+    "choices": [
+     "保健ケアのエピソードの最初に診断された病態を選択する",
+     "該当する病態が多数ある場合は、最も医療資源が使われた病態を選択する",
+     "該当する病態が多数ある場合は、最も軽症の病態を選択する",
+     "該当する病態が多数ある場合は、コード番号が最も小さい病態を選択する",
+     "診断がつかなかった場合は、主要病態を記載しない"
+    ],
+    "answer": 1,
+    "explanation": {
+     "correct": "主要病態は、主として患者の治療又は検査に対する必要性にもとづく、保健ケアのエピソードの最後に診断された病態と定義され、そのような病態が多数ある場合には、最も医療資源が使われた病態を選択する。",
+     "choiceNotes": [
+      "主要病態はエピソードの最後に診断された病態であり、最初に診断された病態ではない。",
+      null,
+      "重症度の軽さは選択基準ではなく、最も医療資源が使われた病態を選択する。",
+      "コード番号の大小は選択基準ではない。",
+      "診断がなされなかった場合は、主要症状又は異常な所見もしくは問題を主要病態として選択する。"
+     ],
+     "point": "主要病態＝エピソードの最後に診断／治療・検査の必要性の主因／複数なら最も医療資源が使われたもの／未診断なら主要症状・異常所見。"
+    },
+    "sources": [
+     {
+      "ref": "icd:instruction",
+      "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+      "locator": "4.4.1 主要病態の定義",
+      "quote": "保健ケアのエピソードの最後に診断された病態であると定 義される"
+     },
+     {
+      "ref": "icd:instruction",
+      "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+      "locator": "4.4.1 主要病態の定義",
+      "quote": "もしそのような病態が多数ある場合には、もっとも医療資源が使われた病 態を選択すべきである。もし診断がなされなかった場合は、主要症状又は異常な所見 もしくは問題を主要病態として選択すべきである。"
+     }
+    ],
+    "asOf": "ICD-10（2013年版）準拠"
+   }
+  },
+  {
+   "id": "lg-09-27",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": false,
+    "stem": false,
+    "explanations": false,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:instruction 3.1.6 続発・後遺症の分類項目（B90－B94，E64.-，E68，G09，I69.-，O97，T90－T98，Y85－Y89）、4.4.2 病態の続発・後遺症のコーディング（主要病態の優先コードは続発・後遺症それ自身の性質）。",
+   "detail": "旧解説『後遺症は各疾患に対応する後遺症コードを使用』は不正確：疾病コーディングでは主要病態の優先コードは後遺症そのものの性質で、『…の続発・後遺症』コードは任意的追加コード。選択肢『Tカテゴリの.9』は意味不明で、旧注『T.9は詳細不明』も誤導。用語『続発症』を『続発・後遺症』に統一し、コード選択式に作り替え。科目をS11へ。",
+   "question": {
+    "id": "lg-09-27",
+    "legacy": {
+     "key": "9_27",
+     "chapter": 9,
+     "chapterName": "診療情報管理II（コーディング）",
+     "index": 27,
+     "hash": "e7743d26fb9c6128"
+    },
+    "subject": "S11",
+    "subtopic": "分類の規約と用語",
+    "format": "icd",
+    "difficulty": "standard",
+    "polarity": "positive",
+    "question": "ICD-10（2013年版）で、「…の続発・後遺症」を示す分類項目はどれか。",
+    "choices": [
+     "I63",
+     "I69",
+     "G81",
+     "Z54",
+     "T14"
+    ],
+    "answer": 1,
+    "explanation": {
+     "correct": "続発・後遺症の分類項目は、B90－B94，E64.-，E68，G09，I69.-，O97，T90－T98，Y85－Y89で、もはや活動期にはない病態の続発・後遺症を示す。I69は脳血管疾患の続発・後遺症である。なお疾病コーディングでは、主要病態の優先コードは続発・後遺症それ自身の性質（例：片麻痺）のコードで、「…の続発・後遺症」のコードは任意的追加コードとして使用してよい。",
+     "choiceNotes": [
+      "I63は脳梗塞で、活動期の病態を分類する。",
+      null,
+      "G81は片麻痺で、続発・後遺症の性質を示すコードにはなりうるが、「…の続発・後遺症」の分類項目ではない。",
+      "Z54は回復期で、続発・後遺症の分類項目ではない。",
+      "T14は部位不明の損傷である。損傷の続発・後遺症はT90－T98に分類する。"
+     ],
+     "point": "続発・後遺症＝B90－B94，E64，E68，G09，I69，O97，T90－T98，Y85－Y89。疾病では後遺症そのものの性質を優先コードとする。"
+    },
+    "sources": [
+     {
+      "ref": "icd:instruction",
+      "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+      "locator": "3.1.6 続発・後遺症の分類項目",
+      "quote": "下記の分類項目は、もはや活動期にはない病態の続発・後遺症である： B90 － B94，E64.-，E68，G09，I69.-，O97，T90 － T98，Y85 － Y89"
+     },
+     {
+      "ref": "icd:instruction",
+      "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+      "locator": "4.4.2 病態の続発・後遺症のコーディング",
+      "quote": "しかし、「主要病態」に対する優先コードは、続発・後遺症それ自身 の性質に対するコードであり"
+     }
+    ],
+    "asOf": "ICD-10（2013年版）準拠"
+   }
+  },
+  {
+   "id": "lg-09-28",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": false,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:dpc-coding-text-v7 Ⅱ．DPCの基本構造 図表１・２（14桁：疾患コード、病態等分類、年齢・出生時体重等、手術、手術・処置等1・2、副傷病、重症度等）。",
+   "detail": "選択肢『入院時の天候』など明白に無関係なものばかりで判別力がなかったため、もっともらしい非分岐項目（医療保険の種別・入院した曜日）を含む5択に改善。解説を第7版の14桁構成に合わせて整理し、科目をS10へ。",
+   "question": {
+    "id": "lg-09-28",
+    "legacy": {
+     "key": "9_28",
+     "chapter": 9,
+     "chapterName": "診療情報管理II（コーディング）",
+     "index": 28,
+     "hash": "078fbfcf3aa6d11d"
+    },
+    "subject": "S10",
+    "subtopic": "診断群分類の構造",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "DPC（14桁の診断群分類）の分岐に用いられる項目はどれか。",
+    "choices": [
+     "患者の職業",
+     "手術の有無",
+     "患者の血液型",
+     "医療保険の種別",
+     "入院した曜日"
+    ],
+    "answer": 1,
+    "explanation": {
+     "correct": "DPCは14桁の英数字で構成され、傷病名の層（上6桁）に続き、病態等分類、年齢・出生時体重等、手術（9・10桁目）、手術・処置等1・2、副傷病、重症度等によって分岐する。",
+     "choiceNotes": [
+      "患者の職業はDPCの分岐項目ではない。",
+      null,
+      "血液型はDPCの分岐項目ではない。",
+      "医療保険の種別はDPCの分岐項目ではない。",
+      "入院した曜日はDPCの分岐項目ではない。"
+     ],
+     "point": "DPC14桁＝傷病名（上6桁）→病態等分類・年齢等→手術→手術・処置等1・2→副傷病→重症度等。"
+    },
+    "sources": [
+     {
+      "ref": "ins:dpc-coding-text-v7",
+      "title": "DPC／PDPS 傷病名コーディングテキスト 改定版（第７版）",
+      "url": "https://www.mhlw.go.jp/content/12400000/001684575.pdf",
+      "locator": "Ⅱ．DPCの基本構造 図表１",
+      "quote": "○ DPC は 14 桁の英数字で構成される。"
+     },
+     {
+      "ref": "ins:dpc-coding-text-v7",
+      "title": "DPC／PDPS 傷病名コーディングテキスト 改定版（第７版）",
+      "url": "https://www.mhlw.go.jp/content/12400000/001684575.pdf",
+      "locator": "Ⅱ．DPCの基本構造 図表２",
+      "quote": "【２層目：手術の層】 9・10 桁目 【３層目：その他の処置、副傷病名、重傷度等の層】"
+     }
+    ],
+    "asOf": "DPC/PDPS傷病名コーディングテキスト第7版（令和8年6月）"
+   }
+  },
+  {
+   "id": "lg-09-29",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": false,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:r08-ika-tensuhyo 第2章第10部手術 通則14；ins:r08-ika-ryuijiko 第10部手術 通則19(1)（主たる手術＝所定点数及び注加算の合算が高い手術）・(3)（複数手術の特例：従たる手術1つの100分の50）。",
+   "detail": "問題文の『手術コードの選択において』は誤導（コード選択ではなく点数の算定方法）。医科点数表 通則14の文言に合わせて問題文・選択肢を修正、主たる手術の定義と複数手術の特例（50/100）を出典付きで明記。科目をS03へ。",
+   "question": {
+    "id": "lg-09-29",
+    "legacy": {
+     "key": "9_29",
+     "chapter": 9,
+     "chapterName": "診療情報管理II（コーディング）",
+     "index": 29,
+     "hash": "902862ec862dc760"
+    },
+    "subject": "S03",
+    "subtopic": "診療報酬制度",
+    "format": "knowledge",
+    "difficulty": "standard",
+    "polarity": "positive",
+    "question": "医科診療報酬点数表において、同一手術野又は同一病巣につき2以上の手術を同時に行った場合の算定の原則として、正しいものはどれか。",
+    "choices": [
+     "すべての手術の所定点数を合算する",
+     "主たる手術の所定点数のみにより算定する",
+     "所定点数の最も低い手術のみを算定する",
+     "いずれの手術も算定しない"
+    ],
+    "answer": 1,
+    "explanation": {
+     "correct": "手術の通則14により、同一手術野又は同一病巣につき2以上の手術を同時に行った場合は、主たる手術の所定点数のみにより算定する。「主たる手術」とは、所定点数及び注による加算点数を合算した点数の高い手術をいう。ただし「複数手術に係る費用の特例」に該当する組合せは、主たる手術の所定点数に従たる手術（1つに限る）の所定点数の100分の50を加えて算定する。",
+     "choiceNotes": [
+      "原則として合算しない。例外（複数手術の特例）でも、従たる手術1つの100分の50の加算にとどまる。",
+      null,
+      "主たる手術は点数の高い方であり、低い方ではない。",
+      "実施した手術は算定する。原則は主たる手術の所定点数のみによる算定である。"
+     ],
+     "point": "同一手術野・同一病巣の2以上の手術＝主たる手術（点数の高い方）のみ算定。特例は従たる手術1つの50/100を加算。"
+    },
+    "sources": [
+     {
+      "ref": "ins:r08-ika-tensuhyo",
+      "title": "診療報酬の算定方法の一部を改正する件（令和８年厚生労働省告示第69号）別表第一 医科診療報酬点数表",
+      "url": "https://www.mhlw.go.jp/content/12400000/001686842.pdf",
+      "locator": "第2章第10部 手術 通則14",
+      "quote": "同一手術野又は同一病巣につき、２以上の手術を同時に行った場合の費用の算定は、主たる 手術の所定点数のみにより算定する。"
+     },
+     {
+      "ref": "ins:r08-ika-ryuijiko",
+      "title": "診療報酬の算定方法の一部改正に伴う実施上の留意事項について（令和８年３月５日保医発0305第６号）別添１ 医科診療報酬点数表に関する事項",
+      "url": "https://www.mhlw.go.jp/content/12400000/001757385.pdf",
+      "locator": "第2章第10部 手術 通則19(1)",
+      "quote": "「主たる手術」とは、所 定点数及び注による加算点数を合算した点数の高い手術をいう。"
+     },
+     {
+      "ref": "ins:r08-ika-ryuijiko",
+      "title": "診療報酬の算定方法の一部改正に伴う実施上の留意事項について（令和８年３月５日保医発0305第６号）別添１ 医科診療報酬点数表に関する事項",
+      "url": "https://www.mhlw.go.jp/content/12400000/001757385.pdf",
+      "locator": "第2章第10部 手術 通則19(3)",
+      "quote": "主たる手術の所定点数に、従たる手術（１ つに限る。）の所定点数の 100 分の 50 に相当する額を加えた点数により算定する。"
+     }
+    ],
+    "asOf": "令和8年度診療報酬改定（令和8年6月1日適用）"
+   }
+  },
+  {
+   "id": "lg-09-30",
+   "verdict": "reject",
+   "contentChanged": false,
+   "checks": {
+    "answer": false,
+    "distractors": false,
+    "stem": true,
+    "explanations": false,
+    "sources": false,
+    "asOf": true,
+    "domain": false
+   },
+   "notes": "him:jhim-gyomu-shishin-2026（コーディングの精度確保）、ins:dpc-coding-text-v7 等を検索したが『コーディング一致率（Coding Accuracy Rate）』を評価指標と定める記述はキャッシュ内にない。",
+   "reason": "unsupported",
+   "detail": "正答『コーディング一致率（Coding Accuracy Rate）』およびその算出方法（外部監査での専門家との比較）を裏付ける一次資料がない。他の選択肢（食事の提供回数など）も藁人形で判別力が低い。ブラインド解答者も『指標として一般的ではない』と曖昧判定。"
+  },
+  {
+   "id": "lg-09-31",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": false,
+    "explanations": false,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:instruction 3.1.3 剣印及び星印システム（剣印＝一次コード・原疾患、星印＝症状発現の任意的追加コード、星印は単独使用不可、疾病では逆転可）、4.1 表2注（星印コードは死亡コーディングに使用しない）；tools/icd.mjs E11.2†・N08.3*。",
+   "detail": "『連鎖コーディング』はICDの用語ではないため『剣印（†）及び星印（＊）システム』に修正。『臓器障害』を出典の『特定の臓器又は部位における症状発現』に合わせた。星印の単独使用禁止を選択肢に追加し、疾病コーディングでは剣印と星印の逆転が許される点を解説に補足。科目をS11へ。",
+   "question": {
+    "id": "lg-09-31",
+    "legacy": {
+     "key": "9_31",
+     "chapter": 9,
+     "chapterName": "診療情報管理II（コーディング）",
+     "index": 31,
+     "hash": "964816ecbde4f18e"
+    },
+    "subject": "S11",
+    "subtopic": "剣印・星印分類",
+    "format": "knowledge",
+    "difficulty": "standard",
+    "polarity": "positive",
+    "question": "ICD-10の剣印（†）及び星印（＊）システムについて、正しいものはどれか。",
+    "choices": [
+     "一つの病態には、常に一つのコードのみを付与する",
+     "原疾患に剣印コード、臓器・部位の症状発現に星印コードを付与する",
+     "星印コードは、死亡統計の原死因コーディングに用いられる",
+     "剣印コードは、必要に応じて付ける任意的な追加コードである",
+     "星印コードは、剣印コードを伴わずに単独で使用してよい"
+    ],
+    "answer": 1,
+    "explanation": {
+     "correct": "剣印及び星印システムでは、原因となる全身疾患（原疾患）に対する一次コードに剣印（†）が、特定の臓器又は部位における症状発現に対する任意的追加コードに星印（＊）が付けられる。例：2型糖尿病による糖尿病性腎症＝E11.2†＋N08.3*。",
+     "choiceNotes": [
+      "剣印及び星印システムは、一つの病態に二つのコードを用いる仕組みである。",
+      null,
+      "星印コードは死亡コーディングには使用されない。",
+      "剣印コードが一次コードであり、常に使用しなければならない。任意的追加コードは星印コードである。",
+      "星印コードは決して単独で使用してはならない（疾病コーディングで症状発現が診療の主たる対象である場合に剣印と星印を逆転させることは認められている）。"
+     ],
+     "point": "†＝原疾患の一次コード（必須）、＊＝症状発現の任意的追加コード（単独使用不可・死亡コーディングに使わない）。例：E11.2†＋N08.3*。"
+    },
+    "sources": [
+     {
+      "ref": "icd:instruction",
+      "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+      "locator": "3.1.3 病態に対する二つのコード（剣印及び星印システム）",
+      "quote": "一次コードは、原疾患（基礎疾患）に対するものであり、剣印（†）が付けられて いる；症状発現に対する任意的追加コードには、星印（＊）が付けられている。"
+     },
+     {
+      "ref": "icd:instruction",
+      "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+      "locator": "3.1.3 病態に対する二つのコード（剣印及び星印システム）",
+      "quote": "コーディングには、星印コードは決 して単独で使用してはならない。"
+     },
+     {
+      "ref": "icd:instruction",
+      "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+      "locator": "4.1 表２ 死亡コーディングには使用されないコードの表（注）",
+      "quote": "星印コードに加えて死亡コーディングに使用されないもの（3.1.3 節を参照）"
+     }
+    ],
+    "asOf": "ICD-10（2013年版）準拠"
+   }
+  }
+ ]
+}

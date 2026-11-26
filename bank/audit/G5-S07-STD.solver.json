@@ -1,0 +1,17 @@
+{"answers":[
+{"key":"G5-S07-STD-01","answer":1,"confidence":"high","ambiguous":false,"note":"stats:nenrei-chosei-shibouritsu-r2-pref 平成27年モデル人口(平成27年までは昭和60年)"},
+{"key":"G5-S07-STD-02","answer":0,"confidence":"high","ambiguous":false,"note":"100*0.8+2000*0.2=480"},
+{"key":"G5-S07-STD-03","answer":1,"confidence":"high","ambiguous":false,"note":"期待死亡80+400=480; 540/480=112.5"},
+{"key":"G5-S07-STD-04","answer":4,"confidence":"high","ambiguous":false,"note":"SMR>100は年齢構成差ではなく年齢調整後の死亡水準が高いこと"},
+{"key":"G5-S07-STD-05","answer":2,"confidence":"high","ambiguous":false,"note":"sibou20_00 (3) 人口の年齢構成が基準人口とどれぐらい違うか"},
+{"key":"G5-S07-STD-06","answer":0,"confidence":"high","ambiguous":false,"note":"sibou20_00: 当該年死亡数/当該年国勢調査人口。単位10万対、都道府県は5年ごと、全国は平成17年から毎年"},
+{"key":"G5-S07-STD-07","answer":0,"confidence":"high","ambiguous":false,"note":"ex=Tx/lx"},
+{"key":"G5-S07-STD-08","answer":1,"confidence":"high","ambiguous":false,"note":"1,760,000/88,000=20.0"},
+{"key":"G5-S07-STD-09","answer":4,"confidence":"high","ambiguous":false,"note":"life25-01: 簡易生命表(基幹統計)、完全生命表(基幹統計)"},
+{"key":"G5-S07-STD-10","answer":0,"confidence":"high","ambiguous":false,"note":"life25-15 寿命中位数はlxがl0の半数となる年齢; 中位数は平均寿命より長い"},
+{"key":"G5-S07-STD-11","answer":0,"confidence":"high","ambiguous":false,"note":"a,b正; eはLxの説明、c,d誤"},
+{"key":"G5-S07-STD-12","answer":3,"confidence":"high","ambiguous":false,"note":"12600/1400000*100000=900.0"},
+{"key":"G5-S07-STD-13","answer":4,"confidence":"high","ambiguous":false,"note":"患者調査は層化無作為抽出の標本調査で全数調査ではない"},
+{"key":"G5-S07-STD-14","answer":1,"confidence":"high","ambiguous":false,"note":"総患者数は継続的受療者の推計(調整係数6/7、外来患者数×平均診療間隔)"},
+{"key":"G5-S07-STD-15","answer":4,"confidence":"high","ambiguous":false,"note":"kanja23_kanjya: 入院男893女995、外来男5,118女6,544で女が高い"}
+]}

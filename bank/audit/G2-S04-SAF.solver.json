@@ -1,0 +1,109 @@
+{
+ "answers": [
+  {
+   "key": "#0",
+   "answer": 3,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "規則1条の11第1項柱書 第5号は病院・有床診・入所施設有助産所に限る"
+  },
+  {
+   "key": "#1",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "留意事項通知 第2-2 病院は管理者兼務不可"
+  },
+  {
+   "key": "#2",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "医政発0331第72号 (2)① 月1回程度"
+  },
+  {
+   "key": "#3",
+   "answer": 3,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "同(3) 年2回程度・職種横断的が望ましい・院外研修で代用可・記録事項。Eは管理者指示の場合のみ・一部も可"
+  },
+  {
+   "key": "#4",
+   "answer": 4,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "同(1) ①基本的考え方 ⑥情報共有 ⑦相談"
+  },
+  {
+   "key": "#5",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "同(2)④ 個人の責任追及ではない"
+  },
+  {
+   "key": "#6",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "別表1②異物遺残。他は別表2"
+  },
+  {
+   "key": "#7",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "同(4)④ 診療録、看護記録等に基づき作成"
+  },
+  {
+   "key": "#8",
+   "answer": 3,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "医療法6条の10 / 人工死産は対象外"
+  },
+  {
+   "key": "#9",
+   "answer": 4,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "規則1条の10の2の2第1項第2号"
+  },
+  {
+   "key": "#10",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "遺族への説明は報告に先立つが同意不要。祖父母は省令で遺族に含む"
+  },
+  {
+   "key": "#11",
+   "answer": 3,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "施行通知: 具体的期限は設けず遅滞なく"
+  },
+  {
+   "key": "#12",
+   "answer": 4,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "規則1条の10の4第2項 識別不能に加工"
+  },
+  {
+   "key": "#13",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "医療法6条の15第1項"
+  },
+  {
+   "key": "#14",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "地域医療計画課長通知 第1-1 病院は件数に関わらず必要。有床診は120件"
+  }
+ ]
+}

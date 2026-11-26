@@ -1,0 +1,14 @@
+{"answers":[
+{"key":"G6-S09-SUB-01","answer":1,"confidence":"medium","ambiguous":false,"note":"DPC調査説明 退院先: 当院外来継続=1。メトホルミンは別疾患で近医、今回疾患は自院のみ。"},
+{"key":"G6-S09-SUB-02","answer":2,"confidence":"medium","ambiguous":false,"note":"処方と傷病名の対応欠落=整合性。他は様式・記載不備の問題。"},
+{"key":"G6-S09-SUB-03","answer":0,"confidence":"high","ambiguous":false,"note":"施設基準通知 1(8): 退院日の翌日から起算14日以内。9/12が1日目、9/25は14日目。加算1は毎月9割、30日は望ましい。"},
+{"key":"G6-S09-SUB-04","answer":1,"confidence":"high","ambiguous":false,"note":"退院サマリーGL: 免疫情報（予防接種歴など）--小児科入院などで重要となり得る。"},
+{"key":"G6-S09-SUB-05","answer":4,"confidence":"high","ambiguous":false,"note":"様式1 退院時転帰 9=その他（検査入院含む）。負荷試験入院。"},
+{"key":"G6-S09-SUB-06","answer":4,"confidence":"high","ambiguous":false,"note":"GL: コメント欄記載は任意。他は発生時期・症状・確認方法・登録者と登録日が必要。"},
+{"key":"G6-S09-SUB-07","answer":0,"confidence":"high","ambiguous":false,"note":"老健入所=5。入院前自宅独居→生活が変わるため復帰0。"},
+{"key":"G6-S09-SUB-08","answer":0,"confidence":"high","ambiguous":false,"note":"GL: 退院時方針は必須で、既存症全体を俯瞰した管理方針。"},
+{"key":"G6-S09-SUB-09","answer":4,"confidence":"high","ambiguous":false,"note":"GL: 体内デバイス・人工関節は既存症として診断名列に、既往歴として記載すべきでない。"},
+{"key":"G6-S09-SUB-10","answer":0,"confidence":"high","ambiguous":false,"note":"死亡退院=退院先8、最も医療資源を投入した傷病（膵頭部癌）による死亡=6。"},
+{"key":"G6-S09-SUB-11","answer":1,"confidence":"high","ambiguous":false,"note":"GL: 患者プロフィールにadvance directive(living will)を記載。"},
+{"key":"G6-S09-SUB-12","answer":4,"confidence":"high","ambiguous":false,"note":"原記録の書き換えは不可。記録者への確認が適切。"}
+]}

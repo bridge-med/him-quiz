@@ -1,0 +1,14 @@
+{"answers":[
+{"key":"G5-S05-NET-01","answer":1,"confidence":"high","ambiguous":false,"note":"根拠: オンライン診療指針 用語定義 オンライン受診勧奨(疑われる疾患等の判断・受診勧奨、診断確定・処方なし)"},
+{"key":"G5-S05-NET-02","answer":1,"confidence":"high","ambiguous":false,"note":"根拠: 指針 オンライン受診勧奨では一般用医薬品の具体的使用の指示は不可(オンライン診療に分類)"},
+{"key":"G5-S05-NET-03","answer":2,"confidence":"high","ambiguous":false,"note":"根拠: 指針 D to P with N ②予測された範囲内の診療の補助行為。Dは追加検査指示可、Aは訪問看護指示の看護師も含む"},
+{"key":"G5-S05-NET-04","answer":1,"confidence":"high","ambiguous":false,"note":"根拠: 指針 最低限遵守する事項 ⅲ(PHR等から把握できれば可)。診療前相談は映像使用・診療録記載必要・処方含まず"},
+{"key":"G5-S05-NET-05","answer":3,"confidence":"high","ambiguous":false,"note":"根拠: 医療法 第1条の5第2項(診療所から除外)・第6条の5第4項・第8条の2相当(設置後10日以内届出)。診療所開設は不要"},
+{"key":"G5-S05-NET-06","answer":3,"confidence":"high","ambiguous":false,"note":"根拠: 概要案内2.1.0版 退院時サマリーは診療情報提供書の添付情報として送受信可。感染症は登録直後は患者に非表示、紹介は口頭同意が必要"},
+{"key":"G5-S05-NET-07","answer":0,"confidence":"high","ambiguous":false,"note":"根拠: 安全管理GL第7.0版 概説編 2.2 患者の管理に委ねた場合は対象外"},
+{"key":"G5-S05-NET-08","answer":0,"confidence":"high","ambiguous":false,"note":"制御装置+演算装置=CPU"},
+{"key":"G5-S05-NET-09","answer":2,"confidence":"high","ambiguous":false,"note":"NOT 1=0。ANDは論理積、ORは論理和"},
+{"key":"G5-S05-NET-10","answer":2,"confidence":"high","ambiguous":false,"note":"射影=列(フィールド)の取り出し。選択はレコード抽出、結合は表の結合、1件分はレコード(行)"},
+{"key":"G5-S05-NET-11","answer":4,"confidence":"high","ambiguous":false,"note":"名義・順序尺度は質的データ。量的は間隔・比例尺度"},
+{"key":"G5-S05-NET-12","answer":1,"confidence":"high","ambiguous":false,"note":"共通鍵暗号は暗号化と復号に同じ鍵を使う"}
+]}

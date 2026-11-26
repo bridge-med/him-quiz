@@ -1,0 +1,154 @@
+{
+ "verdicts": [
+  {
+   "key": "lg-10-15",
+   "verdict": "pass",
+   "blindAnswer": 1,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:instruction 3.2.4節 相互参照（L1414-1420）で「～も参照」の意味を確認。3.3節で索引表・内容例示表の両方参照。blind一致。"
+  },
+  {
+   "key": "lg-10-16",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:instruction 3.2.4節「NEC」(L1409-1411)、3.1.4節 NOS(L1244)・NEC(L1264)、3.2.3節ダッシュ、3.1.3節星印(L1033)。各誤肢の出典を確認。blind一致。"
+  },
+  {
+   "key": "lg-10-18",
+   "verdict": "pass",
+   "blindAnswer": 1,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "naiyou01 A17.0†（G01＊）、naiyou06 G01＊・G00.9（星印なし）、icd.mjsでE11.2†/N08.3*確認、instruction 3.1.3節。blind一致。"
+  },
+  {
+   "key": "lg-10-19",
+   "verdict": "pass",
+   "blindAnswer": 1,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "instruction 2.2.1節(L384-389)形態コード5桁（4桁組織型＋第5桁性状）、第1巻・第3巻で使用。naiyou02の性状コード／0／2／3の用例、rikai M8000/3。naiyou02 L53のICD-O 6桁（第6桁異型度）記述は選択肢に影響せず。blind一致。"
+  },
+  {
+   "key": "lg-10-20",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "naiyou15 O80包含（最小限の介助・完全な正常例）、O81鉗子・吸引、O82帝王切開、naiyou21 Z37注・Z38タイトル。blind一致。"
+  },
+  {
+   "key": "lg-10-21",
+   "verdict": "pass",
+   "blindAnswer": 2,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "naiyou20 中間分類一覧 V01－V99・W00－W19・X60－X84・Y40－Y59・Y60－Y69 を確認。blind一致。"
+  },
+  {
+   "key": "lg-10-22",
+   "verdict": "pass",
+   "blindAnswer": 1,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "instruction 4.1.5節 一般原則(L1751-1756)、選択ルール1、4.1.2節 原死因定義(L1530)。blind一致。"
+  },
+  {
+   "key": "lg-10-23",
+   "verdict": "pass",
+   "blindAnswer": 1,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "instruction 4.1.4節(L1640-1649)、4.1.9節 ルールA〜Dの名称(L2357-2409)。blind一致。"
+  },
+  {
+   "key": "lg-10-24",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icdbg:mhlw-icd11-reference-guide-ja 2.17節/2.17.1節(L3030-3047)で定義・原死因と複数死因の両方記録を確認。instruction 4.1.9ルールC(L2393)、4.3.3節(L6662)周産期の複合原因解析。asOfにICD-11ガイドで補足と明記。blind一致。"
+  },
+  {
+   "key": "lg-10-25",
+   "verdict": "pass",
+   "blindAnswer": 1,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "instruction 3.2.3節(L1393-1397)第4桁ダッシュ、3.3節ガイドライン6(L1465)。blind一致。"
+  }
+ ]
+}

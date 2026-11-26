@@ -1,0 +1,193 @@
+{
+ "answers": [
+  {
+   "key": "lg-07-00",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "標準的定義"
+  },
+  {
+   "key": "lg-07-01",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "標準的定義"
+  },
+  {
+   "key": "lg-07-02",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "標準的定義"
+  },
+  {
+   "key": "lg-07-03",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "標準的定義"
+  },
+  {
+   "key": "lg-07-04",
+   "answer": 0,
+   "confidence": "medium",
+   "ambiguous": false,
+   "note": "推計値(期間TFR)。やや曖昧だが他選択肢は誤り"
+  },
+  {
+   "key": "lg-07-05",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "令和以降の死因順位第1位は悪性新生物"
+  },
+  {
+   "key": "lg-07-06",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "標準的定義"
+  },
+  {
+   "key": "lg-07-07",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "標準的定義"
+  },
+  {
+   "key": "lg-07-08",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "標準的定義"
+  },
+  {
+   "key": "lg-07-09",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "標準的定義"
+  },
+  {
+   "key": "lg-07-10",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "標準的定義"
+  },
+  {
+   "key": "lg-07-11",
+   "answer": 0,
+   "confidence": "medium",
+   "ambiguous": false,
+   "note": "出産数=出生数+妊娠満22週以後の死産数"
+  },
+  {
+   "key": "lg-07-12",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "標準的定義"
+  },
+  {
+   "key": "lg-07-13",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "標準的定義"
+  },
+  {
+   "key": "lg-07-14",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "標準的定義"
+  },
+  {
+   "key": "lg-07-15",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "標準的定義"
+  },
+  {
+   "key": "lg-07-16",
+   "answer": 1,
+   "confidence": "medium",
+   "ambiguous": false,
+   "note": "死産率=死産数/(出生数+死産数)×1000"
+  },
+  {
+   "key": "lg-07-17",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "死因第1位は悪性新生物"
+  },
+  {
+   "key": "lg-07-18",
+   "answer": 2,
+   "confidence": "medium",
+   "ambiguous": false,
+   "note": "現在の日本はつぼ型"
+  },
+  {
+   "key": "lg-07-19",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "21%超は超高齢社会"
+  },
+  {
+   "key": "lg-07-20",
+   "answer": 0,
+   "confidence": "medium",
+   "ambiguous": false,
+   "note": "従属人口指数=(年少+老年)/生産年齢×100"
+  },
+  {
+   "key": "lg-07-21",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "合計特殊出生率は15〜49歳の年齢別出生率の合計。0は『実際の数』で誤り"
+  },
+  {
+   "key": "lg-07-22",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "標準的定義"
+  },
+  {
+   "key": "lg-07-23",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "標準的定義"
+  },
+  {
+   "key": "lg-07-24",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "医療施設静態調査は3年に1回"
+  },
+  {
+   "key": "lg-07-25",
+   "answer": 2,
+   "confidence": "medium",
+   "ambiguous": true,
+   "note": "最新統計は何かを示さず時点が不明。訪問診療は増加傾向と解釈"
+  },
+  {
+   "key": "lg-07-26",
+   "answer": 1,
+   "confidence": "medium",
+   "ambiguous": false,
+   "note": "結核は3類感染症で全数把握。RSVは定点"
+  }
+ ]
+}

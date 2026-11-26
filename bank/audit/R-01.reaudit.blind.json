@@ -1,0 +1,14 @@
+{"answers":[
+{"key":"G3-S07-OTH-09","answer":2,"confidence":"high","ambiguous":false,"note":"09200 = I01-I02.0,I05-I09,I20-I25,I27,I30-I51; I71 is 09400"},
+{"key":"lg-01-03","answer":0,"confidence":"high","ambiguous":false,"note":"definitions vary by organisation but only A is defensible"},
+{"key":"lg-01-10","answer":0,"confidence":"high","ambiguous":false,"note":""},
+{"key":"lg-02-07","answer":0,"confidence":"high","ambiguous":false,"note":"2026-10-01 reorganisation"},
+{"key":"lg-02-22","answer":0,"confidence":"high","ambiguous":false,"note":""},
+{"key":"lg-02-29","answer":1,"confidence":"high","ambiguous":false,"note":"健保 埋葬料 5万円（施行令35条）; 労災 is 葬祭料 - D could mislead, needs checking"},
+{"key":"lg-03-05","answer":0,"confidence":"high","ambiguous":false,"note":""},
+{"key":"lg-03-25","answer":1,"confidence":"high","ambiguous":false,"note":"医療法4条の2; 400床以上, 厚生労働大臣承認"},
+{"key":"lg-05-06","answer":0,"confidence":"high","ambiguous":false,"note":""},
+{"key":"lg-05-13","answer":0,"confidence":"high","ambiguous":false,"note":""},
+{"key":"lg-05-25","answer":1,"confidence":"high","ambiguous":false,"note":""},
+{"key":"lg-08-07","answer":1,"confidence":"high","ambiguous":false,"note":"ガイダンス: 組織的、人的、物理的及び技術的安全管理措置"}
+]}

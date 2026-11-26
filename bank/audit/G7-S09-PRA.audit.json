@@ -1,0 +1,253 @@
+{
+ "verdicts": [
+  {
+   "key": "G7-S09-PRA-01",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "告示A207（入院初日 1=100点/2=30点）・留意事項A207を確認。旧3区分140/100/30は改定概要Ⅲ-3③で確認。"
+  },
+  {
+   "key": "G7-S09-PRA-02",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "施設基準通知 第4 1(5)：請求事務（DPCコーディングを除く）・受付・経営データ収集・看護補助・物品運搬は業務外。"
+  },
+  {
+   "key": "G7-S09-PRA-03",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "第4 1(5) 2,000名ごと専任常勤・うち1名専従・医師事務作業補助者兼務不可、2(2) 専任1名以上を確認。"
+  },
+  {
+   "key": "G7-S09-PRA-04",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "第4 1(8) 14日以内提出 毎月9割以上・30日以内は望ましい。430/480=89.58%、(430+38)/480=97.5%を再計算。"
+  },
+  {
+   "key": "G7-S09-PRA-05",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "改定概要Ⅲ-3③（旧1削除、旧2→1、旧3→2、200床以上の安全管理責任者要件削除）、施設基準通知 表4（旧1・2→新1、届出不要）を確認。"
+  },
+  {
+   "key": "G7-S09-PRA-06",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "第4 1(2)(3)(4)(9)・2(1)を確認。1(3)は「又は」。"
+  },
+  {
+   "key": "G7-S09-PRA-07",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "JSCP 定義（2026）本文を確認。"
+  },
+  {
+   "key": "G7-S09-PRA-08",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "業務指針2026 5-13(1)(2)を確認。医学的内容は各診療科が主導。"
+  },
+  {
+   "key": "G7-S09-PRA-09",
+   "verdict": "fix",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": false,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "業務指針2026 5-13(3)、記録指針2024の電子クリニカルパスの記述を確認。答え・解説は正しい。",
+   "detail": "記録指針2024の引用箇所のlocator「一般原則」が誤り。実際は巻末「電子カルテの記録・運用指針 ２．電子カルテの構成・記録事項に関する事項」。locatorのみ修正。",
+   "fixed": {
+    "key": "G7-S09-PRA-09",
+    "subject": "S09",
+    "subtopic": "クリニカルパスと質指標",
+    "format": "knowledge",
+    "difficulty": "standard",
+    "polarity": "positive",
+    "question": "クリニカルパスの適用状況の管理と記録について、「診療情報管理士業務指針2026」及び「診療情報の記録指針2024」に照らして正しいものはどれか。",
+    "choices": [
+     "パスの適用率の向上は、診療内容の個別化が進んでいることを反映する指標である。",
+     "バリアンスが発生した症例はパスの対象外となるため、量的点検の対象から除外する。",
+     "量的点検では、パスの適用が想定される症例にパスが適用されているか、パス逸脱時の記録が適切になされているかを確認の対象とする。",
+     "パスの適用率やバリアンス発生率は診療科内の運用事項であり、疾病統計・医療統計とは切り離して扱う。",
+     "電子クリニカルパスでは計画が登録されているため、実施された診療内容をあらためて記録する必要はない。"
+    ],
+    "answer": 2,
+    "explanation": {
+     "correct": "業務指針5-13(3)は、量的点検においてパスの適用が想定される症例にパスが適用されているか、パス逸脱時の記録が適切になされているかを確認の対象とするとしている。",
+     "choiceNotes": [
+      "業務指針5-13(3)は、適用率の向上を診療内容の「標準化」の推進を反映するものとしている。",
+      "業務指針5-13(3)は、パス逸脱時の記録が適切になされているかを量的点検で確認するとしており、除外しない。",
+      null,
+      "業務指針5-13(3)は、適用率・バリアンス発生率等を疾病統計・医療統計の一環として把握し、診療科別・疾患別に分析するとしている。",
+      "記録指針2024は、電子クリニカルパスを利用する場合も、計画されたものを含めて実施された診療内容を記録したうえでアウトカムやバリアンスを分析するとしている。"
+     ],
+     "point": "パス適用率↑＝標準化の推進。量的点検で「適用すべき症例への適用」と「逸脱時の記録」を確認。"
+    },
+    "sources": [
+     {
+      "ref": "him:jhim-gyomu-shishin-2026",
+      "title": "診療情報管理士業務指針 2026",
+      "url": "https://jhim-e.com/pdf/2026/guideline2026.pdf",
+      "locator": "5-13(3)",
+      "quote": "クリニカルパスの適用率、バリアンス発生率等を疾病統計・医療統計の一環として把握し、診療科別・疾患別の動向を分析する。適用率の向上は診療内容の標準化の推進を反映するものであり"
+     },
+     {
+      "ref": "him:jhim-gyomu-shishin-2026",
+      "title": "診療情報管理士業務指針 2026",
+      "url": "https://jhim-e.com/pdf/2026/guideline2026.pdf",
+      "locator": "5-13(3)",
+      "quote": "量的点検においては、パスの適用が想定される症例にパスが適用されているか、パス逸脱時の記録が適切になされているかを確認の対象とする。"
+     },
+     {
+      "ref": "him:jhim-kiroku-shishin-2024",
+      "title": "診療情報の記録指針 2024",
+      "url": "https://jhim-e.com/pdf/data2024/recording_guide2024.pdf",
+      "locator": "電子カルテの記録・運用指針 ２．電子カルテの構成・記録事項に関する事項",
+      "quote": "電子クリニカルパスを利用する場合は、計画されたものを含めて実施された診療内容を記録したうえで、アウトカムやバリアンスを分析する。"
+     }
+    ],
+    "asOf": "診療情報管理士業務指針2026／診療情報の記録指針2024（日本診療情報管理学会）"
+   }
+  },
+  {
+   "key": "G7-S09-PRA-10",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "医療計画資料1(H25) 指標例（a構造/bプロセス/cアウトカム）、施設基準通知 第21(19)エ（d プロセス/e アウトカム）、業務指針5-5(2)を確認。"
+  },
+  {
+   "key": "G7-S09-PRA-11",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "業務指針2026 2.役割と責務：三領域=保健医療情報の管理・情報技術・医療知識。"
+  },
+  {
+   "key": "G7-S09-PRA-12",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "業務指針2026 3-3 脚注1：6情報=傷病名・アレルギー・感染症・薬剤禁忌・検査・処方。手術情報なし。"
+  },
+  {
+   "key": "G7-S09-PRA-13",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "誓い2019 7項目すべてと各選択肢の対応を確認。"
+  },
+  {
+   "key": "G7-S09-PRA-14",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "倫理綱領2019 本文（国際協力・適正利用・患者家族との共有・守秘義務・利益相反配慮）を確認。"
+  }
+ ]
+}

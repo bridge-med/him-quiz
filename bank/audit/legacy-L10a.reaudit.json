@@ -1,0 +1,188 @@
+{
+ "verdicts": [
+  {
+   "key": "lg-10-00",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:rikai L35-36 ICD正式名称確認; ICF名称 icdbg:mhlw-icf-ja-2002; ICHI英語名はcancer/who_classifications_whofic.txt L400でも確認。validate 0 errors。"
+  },
+  {
+   "key": "lg-10-01",
+   "verdict": "pass",
+   "blindAnswer": 3,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icdbg:whofic-japan-about L37 中心分類=ICD・ICF・ICHI(開発中、2026-11取得); ins:dpc-gaiyo-kangaekata 冒頭注記 DPC呼称。否定形と問い方一致。"
+  },
+  {
+   "key": "lg-10-02",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:instruction 3.2.2構造(L1382-1387)、3.3手順2・4(L1446-1456)、3.1.2包含用語(L962-966)、3.2.4相互参照(L1414-1415)で各選択肢を確認。"
+  },
+  {
+   "key": "lg-10-04",
+   "verdict": "provisional",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": false,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:instruction L6849-6853 主要病態の定義・多数の場合は最も医療資源・診断なしは主要症状。内容・誤答の理由は正しい。",
+   "detail": "出典locator「4.4.1 疾病データ（単一病因分析）」は誤り。引用箇所は4.4 疾病統計の導入部（L6836-6853）で、4.4.1（L6870〜）より前にある。locatorを「4.4 疾病統計」に直す必要がある。"
+  },
+  {
+   "key": "lg-10-05",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd.mjs C80/C80.0/C34/D48/Z03.1の名称一致; icd:naiyou02 L1347-1348 C80.0 包含「原発部位不明」、L2409 D37-D48注; icd:naiyou21 L158。"
+  },
+  {
+   "key": "lg-10-06",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou20 第ⅩⅩ章冒頭注 L5-10（他章コードに追加、ほとんどⅩⅨ章、単一コード集計はⅩⅩ章優先）; icd:instruction 4.4.4 第ⅩⅩ章 L8221（主要病態コードに使用しない・任意的追加コード）。章名・範囲はicd.mjs chapterで確認。"
+  },
+  {
+   "key": "lg-10-07",
+   "verdict": "provisional",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": false,
+    "stem": false,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou15 章タイトル・注 L1-7で第ⅩⅤ章（O00-O99）を確認。正答は意図どおりで最良の答え。",
+   "detail": "問い「産科コーディングで使用されるICD-10の章」が緩い。icd:naiyou15 の除外注（L10-16）にあるとおり、妊娠に合併する産科破傷風はA34（第Ⅰ章）、妊娠中の損傷・中毒はS00-T88.1等（第ⅩⅨ章）に分類されるので、誤答の第Ⅰ章・第ⅩⅨ章も産科の症例で使われる。文字どおり読むと誤答が明確に誤りとは言えない。問いを「妊娠，分娩及び産じょく＜褥＞に関連する病態が主として分類される章」などに絞る必要がある。年版（2013年版）も問いにない。"
+  },
+  {
+   "key": "lg-10-08",
+   "verdict": "provisional",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": false,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:instruction L1754-1756 一般原則、L1762-1765 ルール1の文言を確認。正答・誤答の説明はどちらも正しい。",
+   "detail": "2つの出典locator「4.1.6 一般原則」「4.1.6 選択ルール ルール１」は誤り。一般原則と選択ルールは4.1.5「起点となる先行原因選択のルール」（L1658〜）にあり、4.1.6は「選択ルールについての留意事項」（L1777〜）。"
+  },
+  {
+   "key": "lg-10-09",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou21 L6 注（国際比較・原死因に使用しない）、L9-16 Z00-Z99の目的（予防接種・集団健診等）; icd.mjs Z85、第Ⅰ・Ⅱ・Ⅸ章の範囲を確認。"
+  },
+  {
+   "key": "lg-10-10",
+   "verdict": "provisional",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": false,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:dpc-coding-text-v7（令和8年6月）L988 委員会の設置と年4回以上の開催がDPC参加の要件、L165 最終決定者は主治医、L192 傷病名の選択は主治医の専権事項、L216-218 差額は根拠にならない、L222-224 問い合わせ先は地方厚生（支）局、改定要望は医療課。正答は一つに決まる。",
+   "detail": "1つ目の出典locator「Ⅳ（ICDコーディングのための情報と傷病名の表記）」は誤り。引用文（L986-988）はⅢ．DPCコーディングの基本的な考え方（L694〜、Ⅳは L1065〜）にある。2つ目と3つ目のlocator「Ⅰ-2-1)」「Ⅰ-2-3)」は正しい。"
+  },
+  {
+   "key": "lg-10-12",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:instruction 3.1.4（L1156〜）「NOS」L1239-1255、NEC L1264-1265を確認。"
+  },
+  {
+   "key": "lg-10-13",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou05 章タイトル; icd.mjs F00*（G30.-†）・F20、第Ⅰ・Ⅹ・ⅩⅤ章の範囲を確認。"
+  }
+ ]
+}

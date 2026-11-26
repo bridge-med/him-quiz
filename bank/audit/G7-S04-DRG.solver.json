@@ -1,0 +1,14 @@
+{"answers":[
+{"key":"G7-S04-DRG-01","answer":2,"confidence":"high","ambiguous":false,"note":"医療法施行規則1条の11第2項3号ロ。Dは3号の2、他は指針・委員会等で別規定"},
+{"key":"G7-S04-DRG-02","answer":1,"confidence":"high","ambiguous":false,"note":"通知: 病院では管理者との兼務は不可"},
+{"key":"G7-S04-DRG-03","answer":3,"confidence":"high","ambiguous":false,"note":"通知: 医薬品側に臨床工学技士なし、機器側にあり。薬剤師・看護師・助産師・歯科衛生士は両方可（助産師・歯科衛生士は施設条件付き。問いは臨床工学技士のみが機器のみ）"},
+{"key":"G7-S04-DRG-04","answer":3,"confidence":"high","ambiguous":false,"note":"通知 医薬品業務手順書の項目①〜⑥に機器保守点検はない"},
+{"key":"G7-S04-DRG-05","answer":1,"confidence":"high","ambiguous":false,"note":"通知 医療機器(2)① 新規導入時研修と記録。定期研修は特定機能病院"},
+{"key":"G7-S04-DRG-06","answer":2,"confidence":"high","ambiguous":false,"note":"規則1条の11第2項2号ハ(1)〜(3): 未承認・適応外・禁忌"},
+{"key":"G7-S04-DRG-07","answer":3,"confidence":"high","ambiguous":false,"note":"規則1条の11第2項4号 特定機能病院等以外の病院、努めること"},
+{"key":"G7-S04-DRG-08","answer":3,"confidence":"high","ambiguous":false,"note":"事業要綱8条1項五号 病院分院を除く"},
+{"key":"G7-S04-DRG-09","answer":1,"confidence":"high","ambiguous":false,"note":"要綱17条 仮報告3か月。16条は2週間・Web、18条・19条参照"},
+{"key":"G7-S04-DRG-10","answer":4,"confidence":"high","ambiguous":false,"note":"準備一時金600万円＋分割金120万円×20回"},
+{"key":"G7-S04-DRG-11","answer":2,"confidence":"high","ambiguous":false,"note":"申請期間は満1歳〜満5歳（極めて重症は生後6か月から）。Dは生後6か月から可で誤り"},
+{"key":"G7-S04-DRG-12","answer":4,"confidence":"high","ambiguous":false,"note":"原因分析は医学的観点で過失の有無を判断しない"}
+]}

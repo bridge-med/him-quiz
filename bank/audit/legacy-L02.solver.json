@@ -1,0 +1,228 @@
+{
+ "answers": [
+  {
+   "key": "lg-02-00",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "制度の基本事項"
+  },
+  {
+   "key": "lg-02-01",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "制度の基本事項"
+  },
+  {
+   "key": "lg-02-02",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "制度の基本事項"
+  },
+  {
+   "key": "lg-02-03",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "制度の基本事項"
+  },
+  {
+   "key": "lg-02-04",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "制度の基本事項"
+  },
+  {
+   "key": "lg-02-05",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "制度の基本事項"
+  },
+  {
+   "key": "lg-02-06",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "制度の基本事項"
+  },
+  {
+   "key": "lg-02-07",
+   "answer": 0,
+   "confidence": "medium",
+   "ambiguous": true,
+   "note": "社会保険診療報酬支払基金は現行法で医療情報基盤・診療報酬審査支払機構へ改組。選択肢の名称が旧称。他に正解候補なし"
+  },
+  {
+   "key": "lg-02-08",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "制度の基本事項"
+  },
+  {
+   "key": "lg-02-09",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "制度の基本事項"
+  },
+  {
+   "key": "lg-02-10",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "制度の基本事項"
+  },
+  {
+   "key": "lg-02-11",
+   "answer": 3,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "制度の基本事項"
+  },
+  {
+   "key": "lg-02-12",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "制度の基本事項"
+  },
+  {
+   "key": "lg-02-13",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "制度の基本事項"
+  },
+  {
+   "key": "lg-02-14",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "制度の基本事項"
+  },
+  {
+   "key": "lg-02-15",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "制度の基本事項"
+  },
+  {
+   "key": "lg-02-16",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "制度の基本事項"
+  },
+  {
+   "key": "lg-02-17",
+   "answer": 0,
+   "confidence": "medium",
+   "ambiguous": true,
+   "note": "指定は厚生労働大臣(地方厚生局長に委任)と表現が揺れるが選択肢中最良"
+  },
+  {
+   "key": "lg-02-18",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "制度の基本事項"
+  },
+  {
+   "key": "lg-02-19",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "制度の基本事項"
+  },
+  {
+   "key": "lg-02-20",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "制度の基本事項"
+  },
+  {
+   "key": "lg-02-21",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "制度の基本事項"
+  },
+  {
+   "key": "lg-02-22",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "制度の基本事項"
+  },
+  {
+   "key": "lg-02-23",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "制度の基本事項"
+  },
+  {
+   "key": "lg-02-24",
+   "answer": 1,
+   "confidence": "medium",
+   "ambiguous": true,
+   "note": "同一世帯でない場合の要件は仕送り額等、細部が省略。最も近い選択肢"
+  },
+  {
+   "key": "lg-02-25",
+   "answer": 3,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "制度の基本事項"
+  },
+  {
+   "key": "lg-02-26",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "制度の基本事項"
+  },
+  {
+   "key": "lg-02-27",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "制度の基本事項"
+  },
+  {
+   "key": "lg-02-28",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "制度の基本事項"
+  },
+  {
+   "key": "lg-02-29",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": true,
+   "note": "埋葬料は健保で一律5万円。国保は市町村条例で額が異なる"
+  },
+  {
+   "key": "lg-02-30",
+   "answer": 1,
+   "confidence": "low",
+   "ambiguous": true,
+   "note": "最大は公費(約38%)か保険料全体(約5割)か。選択肢上は公費が最大。選択肢に事業主負担・被保険者負担が分割され紛らわしい"
+  },
+  {
+   "key": "lg-02-31",
+   "answer": 3,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "制度の基本事項"
+  }
+ ]
+}

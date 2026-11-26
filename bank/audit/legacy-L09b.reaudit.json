@@ -1,0 +1,202 @@
+{
+ "verdicts": [
+  {
+   "key": "lg-09-16",
+   "verdict": "pass",
+   "blindAnswer": 2,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:dpc-coding-text-v7 図表３ (MDC 01神経系疾患〜18その他) と用語解説「18 の MDC」「DPCコードの上2桁はMDCコード」、14桁構成を確認。icd:instruction 2.4.2「分類は22章」。validate 0 errors。"
+  },
+  {
+   "key": "lg-09-18",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icdbg:mhlw-icd11-overview 改訂の経緯（2018年6月公表・2019年5月WHA72採択・2022年1月発効）、who:wha72-15 前文（WHA43 1990年5月17日にICD-10採択）、who:icd11-fact-sheet-2026（Digitally native, EHR統合前提）を確認。2027-01-01は国内ICD-11準拠分類の施行日（総務省告示令和8年第11号）。"
+  },
+  {
+   "key": "lg-09-19",
+   "verdict": "pass",
+   "blindAnswer": 1,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou09 I21 包含（4週＝28日以内）・除外（陳旧性I25.2、4週超I25.8、再発性I22.-、心筋梗塞後症候群I24.1）、I24.1＝ドレスラー症候群（心筋梗塞後症候群）、I25.8 包含を確認。icd.mjs で全コード存在。"
+  },
+  {
+   "key": "lg-09-20",
+   "verdict": "pass",
+   "blindAnswer": 1,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou04 E11「２型＜インスリン非依存性＞糖尿病＜NIDDM＞」除外：E12.-、P70.2、O24.-。kihon2013 でE10=1型、E12、P70.2新生児糖尿病、icd:naiyou15 O24.4 妊娠中に発生した糖尿病を確認。"
+  },
+  {
+   "key": "lg-09-21",
+   "verdict": "pass",
+   "blindAnswer": 1,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou04 E10－E14共通4桁 .2†腎合併症（糖尿病性腎症 N08.3＊）、.4†神経、.5末梢循環を確認。icd.mjs E11.2†/E11.4† 剣印付き、E11.0昏睡・E11.9合併症なし。"
+  },
+  {
+   "key": "lg-09-23",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou19 S72.0 大腿骨頚部骨折（股関節部骨折NOS）、S72.1 転子貫通骨折。kihon2013 S82.0膝蓋骨骨折・S42.0鎖骨骨折・S52.0尺骨近位端骨折を確認。"
+  },
+  {
+   "key": "lg-09-24",
+   "verdict": "pass",
+   "blindAnswer": 1,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou20 章題 V01－Y98・中間分類 V01－V09 交通事故により受傷した歩行者、icd:instruction 4.4.4 第ⅩⅩ章「本章のコードは『主要病態』コードとして使用しない…任意的追加コード」を確認。"
+  },
+  {
+   "key": "lg-09-25",
+   "verdict": "pass",
+   "blindAnswer": 1,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou19 T36－T50 除外（適正な薬物が適正に投与された場合の有害作用は有害作用の性質により分類）、icd:instruction 4.4.2 例15（複視H53.2を主要病態、Y43.0は任意的追加コード）、4.4.4 第ⅩⅩ章注釈を確認。T88.7=薬物及び薬剤の詳細不明の有害作用。"
+  },
+  {
+   "key": "lg-09-26",
+   "verdict": "provisional",
+   "blindAnswer": 1,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": false,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "内容は icd:instruction 4.4 疾病統計（p.161-162）の主要病態の定義（エピソードの最後に診断／多数なら最も医療資源が使われた病態／未診断なら主要症状・異常所見）と一致し、key・全choiceNotes は正しい。",
+   "detail": "sources[0],[1] の locator「4.4.1 主要病態の定義」が誤り：引用文は 4.4.1 節見出し（instruction_all.txt 6870行）より前の 4.4『疾病統計』本文（6848-6853行）にある。locator を「4.4 疾病統計」に直す必要。"
+  },
+  {
+   "key": "lg-09-27",
+   "verdict": "provisional",
+   "blindAnswer": 1,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": false,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:instruction の続発・後遺症の分類項目一覧（B90－B94，E64.-，E68，G09，I69.-，O97，T90－T98，Y85－Y89）と 4.4.2「病態の続発・後遺症のコーディング」（優先コードは続発・後遺症それ自身の性質）を確認。I63脳梗塞・G81片麻痺・Z54回復期・T14部位不明の損傷（kihon2013）。key は正しい。",
+   "detail": "sources[0] の locator「3.1.6 続発・後遺症の分類項目」が誤り：instruction_all.txt に 3.1.6 節は存在せず（目次は3.1.1〜3.1.5の次が3.2）、当該一覧は 3.1.5『共通の特徴を持った分類項目』内の小見出し（1342-1344行）。locator を 3.1.5 に直す必要。"
+  },
+  {
+   "key": "lg-09-28",
+   "verdict": "pass",
+   "blindAnswer": 1,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:dpc-coding-text-v7 Ⅱ．DPCの基本構造 図表１（14桁）・図表２（傷病名の層上6桁、手術の層9・10桁目、処置・副傷病・重症度等の層）を確認。他選択肢は分岐項目に含まれない。"
+  },
+  {
+   "key": "lg-09-29",
+   "verdict": "provisional",
+   "blindAnswer": 1,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": false,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:r08-ika-tensuhyo 第10部手術 通則14（主たる手術の所定点数のみ）、ins:r08-ika-ryuijiko 通則19(1)（主たる手術＝所定点数及び注加算の合算が高い手術）・(3)（複数手術の特例：従たる手術1つの100分の50）を確認。key（原則）は正しい。",
+   "detail": "choiceNotes[0]「例外（複数手術の特例）でも、従たる手術1つの100分の50の加算にとどまる」は誤り：通則14 ただし書（tensuhyo 14792-14801行）は神経移植術・骨移植術・植皮術等と他の手術の同時実施、大腿骨頭回転骨切り術等と骨盤骨切り術等の同時実施などについて『それぞれの所定点数を合算して算定する』と定めており、合算される例外がある。解説の修正が必要（choiceNotes[0] と correct にただし書の合算例外を反映）。"
+  },
+  {
+   "key": "lg-09-31",
+   "verdict": "pass",
+   "blindAnswer": 1,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:instruction 3.1.3（一次コード＝原疾患に剣印、症状発現の任意的追加コードに星印、剣印は常に使用、星印は決して単独で使用しない、疾病コーディングでは逆転可）、4.1 表２の注（星印コードは死亡コーディングに使用されない）を確認。E11.2†＋N08.3* は naiyou04 で確認。"
+  }
+ ]
+}

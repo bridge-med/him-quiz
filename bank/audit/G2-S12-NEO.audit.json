@@ -1,0 +1,267 @@
+{
+ "verdicts": [
+  {
+   "key": "G2-S12-NEO-01",
+   "verdict": "fix",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": false,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "naiyou02 C78.7・C78、C22除外（肝の続発性→C78.7）で確認。答えC78.7は正、solver一致。",
+   "detail": "choiceNotes[1]がC22.9を「部位（組織型）詳細不明」としていたが、部位（肝）は判明しており不正確。「肝の悪性新生物（組織型の詳細不明）で肝原発のもの」に修正し、C22除外の出典を追加。",
+   "fixed": {
+    "subject": "S12",
+    "subtopic": "新生物（第Ⅱ章）",
+    "format": "icd",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "胃癌の原発巣が判明している患者で、今回の治療対象が肝への転移巣（肝の続発性悪性新生物）であるとき、その肝転移巣を表すICD-10コードはどれか。",
+    "choices": [
+     "C22.0",
+     "C22.9",
+     "C78.7",
+     "C78.8",
+     "C79.8"
+    ],
+    "answer": 2,
+    "explanation": {
+     "correct": "続発性（転移性）の悪性新生物はC77－C79に分類し、肝及び肝内胆管の続発性悪性新生物はC78.7である。",
+     "choiceNotes": [
+      "C22.0は肝細胞癌で、肝原発の悪性新生物である。転移巣には用いない。",
+      "C22.9は肝の悪性新生物（組織型の詳細不明）で、肝原発のものに用いる。肝の続発性悪性新生物はC22から除外され、C78.7に分類される。",
+      null,
+      "C78.8はその他及び部位不明の消化器の続発性悪性新生物で、肝は別にC78.7が設けられている。",
+      "C79.8はその他の明示された部位の続発性悪性新生物で、呼吸器・消化器以外の部位用である。"
+     ],
+     "point": "転移巣はC77－C79。肝転移＝C78.7（肺転移C78.0、骨転移C79.5）。"
+    },
+    "sources": [
+     {
+      "ref": "icd:naiyou02",
+      "title": "ICD-10（2013年版）準拠 内容例示表 第2章 新生物＜腫瘍＞（C00-D48）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou02.pdf",
+      "locator": "C78.7",
+      "quote": "Ｃ78．7   肝及び肝内胆管の続発性悪性新生物＜腫瘍＞"
+     },
+     {
+      "ref": "icd:naiyou02",
+      "title": "ICD-10（2013年版）準拠 内容例示表 第2章 新生物＜腫瘍＞（C00-D48）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou02.pdf",
+      "locator": "C78",
+      "quote": "Ｃ78     呼吸器及び消化器の続発性悪性新生物＜腫瘍＞"
+     },
+     {
+      "ref": "icd:naiyou02",
+      "title": "ICD-10（2013年版）準拠 内容例示表 第2章 新生物＜腫瘍＞（C00-D48）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou02.pdf",
+      "locator": "C22 除外",
+      "quote": "肝の続発性悪性新生物＜腫瘍＞（Ｃ78．7）"
+     }
+    ],
+    "asOf": "ICD-10（2013年版）準拠",
+    "key": "G2-S12-NEO-01"
+   }
+  },
+  {
+   "key": "G2-S12-NEO-02",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "naiyou02 D00-D09包含(/2)・D10-D36包含(/0)・D37-D48注(/1)、C43包含(/3)で確認。solver一致。"
+  },
+  {
+   "key": "G2-S12-NEO-03",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "naiyou02 第Ⅱ章注5「舌尖の癌が舌下面に拡がった場合…C02.1」、C02.1包含に舌尖。他コード名称もicd.mjsで確認。"
+  },
+  {
+   "key": "G2-S12-NEO-04",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "naiyou02 注5「胃と小腸の癌…C26.8」。C16.8/C17.8/C78.4名称確認。"
+  },
+  {
+   "key": "G2-S12-NEO-05",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "naiyou02 注5「食道及び胃の癌（腫）は特にC16.0（噴門）に指示」。C15.5/C15.8名称確認。"
+  },
+  {
+   "key": "G2-S12-NEO-06",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "naiyou02 注4「その他」は.7、注5の定義・膀胱C67.-の例・器官系境界部病巣一覧を確認。"
+  },
+  {
+   "key": "G2-S12-NEO-07",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "instruction 第Ⅱ章注釈C97「二つ以上の独立した原発…どちらが主要ともいえないとき」、追加コード可。C18.2/C64名称確認。"
+  },
+  {
+   "key": "G2-S12-NEO-08",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "instruction 表2(C77-C79→C80.-、C97→C00-C76,C81-C96)、4.2.7.3 B(原発部位不明・他部位無視)、C.(確認不可→選択ルール通常適用、一つの原発が別の原発によると考えない)を確認。"
+  },
+  {
+   "key": "G2-S12-NEO-09",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "instruction 第Ⅱ章注釈（以前除去→続発部位を主要病態、既往歴はⅩⅪ章任意的追加）・例7と同型。C78.7確認。"
+  },
+  {
+   "key": "G2-S12-NEO-10",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "instruction 第Ⅱ章例8（Z08.0）、naiyou21 Z08.0/Z08.9/Z09.0/Z85.0(C15-C26)の名称確認。"
+  },
+  {
+   "key": "G2-S12-NEO-11",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "instruction 第Ⅱ章注釈C79.9（播種性癌腫性・全身性悪性腫瘍で部位記載なし）、例9（C80.9追加可）、naiyou02 C79.9包含確認。"
+  },
+  {
+   "key": "G2-S12-NEO-12",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "naiyou02 C80.0/C80.9包含（がんNOS・癌(腫)NOS・悪性腫瘍NOS・悪性悪液質NOS・多発がんNOS）を確認。"
+  },
+  {
+   "key": "G2-S12-NEO-13",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "naiyou02 C77.0包含に鎖骨上リンパ節、C77除外（原発性はC81-C86,C96.-）確認。"
+  },
+  {
+   "key": "G2-S12-NEO-14",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "naiyou02 D00-D09注（異型度Ⅰ・Ⅱは異形成）、D06包含CINⅢ、naiyou14 N87.0/N87.1/N87.2包含・除外を確認。"
+  },
+  {
+   "key": "G2-S12-NEO-15",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "naiyou02 第Ⅱ章注2（機能的活性・C74+E27.5）、注3（性状→部位、癌腫≠がん）、注6（異所性膵C25.9）を確認。"
+  }
+ ]
+}

@@ -1,0 +1,116 @@
+{
+ "answers": [
+  {
+   "key": "G6-S04-ADV-01",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "WHO PSC: aスリップ,bラプス,cは間違い,dは違反"
+  },
+  {
+   "key": "G6-S04-ADV-02",
+   "answer": 4,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "違反はスリップ/ラプスに細分されない。業務効率違反は上司の例(who_psc l.7131)"
+  },
+  {
+   "key": "G6-S04-ADV-03",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "複数層の欠陥の重なり"
+  },
+  {
+   "key": "G6-S04-ADV-04",
+   "answer": 3,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "手順(ダブルチェック)からの意図的逸脱=違反"
+  },
+  {
+   "key": "G6-S04-ADV-05",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "システムズアプローチ"
+  },
+  {
+   "key": "G6-S04-ADV-06",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "医療安全推進総合対策 l.131: 誤りがあっても障害に至らない仕組=フェールセーフ"
+  },
+  {
+   "key": "G6-S04-ADV-07",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "H23資料別添: 抗菌薬投与率・脳梗塞CT/MRIはプロセス、再入院率・転倒率・死亡退院率はアウトカム"
+  },
+  {
+   "key": "G6-S04-ADV-08",
+   "answer": 4,
+   "confidence": "medium",
+   "ambiguous": false,
+   "note": "実施件数はプロセス指標。他は体制(ストラクチャー)"
+  },
+  {
+   "key": "G6-S04-ADV-09",
+   "answer": 4,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "H23資料: 再入院率はアウトカム指標の具体例"
+  },
+  {
+   "key": "G6-S04-ADV-10",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "R3資料 l.278: 当座はa),b)に焦点"
+  },
+  {
+   "key": "G6-S04-ADV-11",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "通知: 施策の結果=アウトプット"
+  },
+  {
+   "key": "G6-S04-ADV-12",
+   "answer": 4,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "H14議論で広告可は手術件数等5項目。死亡率は継続検討"
+  },
+  {
+   "key": "G6-S04-ADV-13",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "前後比較・分析=Study"
+  },
+  {
+   "key": "G6-S04-ADV-14",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "変化の前後でアウトカムを比較"
+  },
+  {
+   "key": "G6-S04-ADV-15",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "特性要因図・パレート図・ランチャート"
+  },
+  {
+   "key": "G6-S04-ADV-16",
+   "answer": 4,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "後ろ向きに分析する記述はRCA。FMEAは前向き"
+  }
+ ]
+}

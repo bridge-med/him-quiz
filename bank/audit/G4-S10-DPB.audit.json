@@ -1,0 +1,239 @@
+{
+ "verdicts": [
+  {
+   "key": "G4-S10-DPB-01",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:r08-kaitei-gaiyo-dpc p.9 図・箇条書きで第Ⅰ日=25パーセンタイル値、第Ⅱ日=平均在院日数(※2 中央値)、第Ⅲ日=平均在院日数＋2SD以上の30の整数倍を確認。blind一致。"
+  },
+  {
+   "key": "G4-S10-DPB-02",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "同資料「入院期間Ⅱの見直し」(方式A・B・C、変動係数0.6未満、変動率上限10％、平均在院日数→中央値)を原文で確認。誤答4肢はいずれも原文と矛盾。blind一致。"
+  },
+  {
+   "key": "G4-S10-DPB-03",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:r08-dpc-ryuijiko 第3の1(2)「…を合算したもの」、同(1)で点数×医療機関別係数、概要p.8で各係数の説明と包括評価部分の式を確認。blind一致。"
+  },
+  {
+   "key": "G4-S10-DPB-04",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "概要「基礎係数の見直し」及びp.16で医療機関群=大学病院本院群・DPC特定病院群・DPC標準病院群(１／２で基礎係数を区別)を確認。分院群・準備病院群は存在しない。blind一致。"
+  },
+  {
+   "key": "G4-S10-DPB-05",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "概要p.22-23で効率性・複雑性・カバー率・定量評価指数・救急補正係数の各定義を照合、選択肢注記とも一致。blind一致。"
+  },
+  {
+   "key": "G4-S10-DPB-06",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "概要p.16 5.激変緩和係数(改定年度1年間限り・該当医療機関のみ)、4.救急補正係数、1.基礎係数の記載と照合。blind一致。"
+  },
+  {
+   "key": "G4-S10-DPB-07",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:r08-dpc-ryuijiko 第2の2(1)(入院期間Ⅰ=入院日Ⅰ以下、Ⅱ=Ⅰ超Ⅱ以下)、第3の1(1)(点数×係数×日数、月合計の端数四捨五入)で再計算: (3000×5+2200×5)×1.25=32,500。誤答4肢の計算も再現。blind一致。"
+  },
+  {
+   "key": "G4-S10-DPB-08",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:dpc-chosa-setsumei-2026 提出データの概要 6.Hファイル(1)(3)、5.Dファイル(1)、7.Kファイル(2)を確認。対象入院料は限定列挙、産科等もレコード要。blind一致。"
+  },
+  {
+   "key": "G4-S10-DPB-09",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "同 1.様式1(1) 対象となる患者/対象外となる患者の各項目(出来高払いも対象、治験・先進医療、入院年月日不問、ドナー対象外)を原文で確認。blind一致。"
+  },
+  {
+   "key": "G4-S10-DPB-10",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "同 提出データ一覧図と2.様式3(1)(2)(医療機関単位、病床数・加算の算定状況)を確認。blind一致。"
+  },
+  {
+   "key": "G4-S10-DPB-11",
+   "verdict": "fix",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": false,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:dpc-chosa-setsumei-2026 4-1(入院医科保険の全患者・自費のみ対象外)、4-2(1)、5.Dファイル(1)(DPC対象病院のみ)、E/F親子関係・EF統合を原文で確認。正答・誤答・解説は正しい。blind一致。",
+   "detail": "3件目の出典のlocatorのみ修正。引用箇所は「2. ファイル作成方式の基本的方法」で、「1. レセプトデータダウンロード方式の提出データの仕様」は別の節(並列)の見出しだった。問題文・選択肢・正答・解説は無変更。",
+   "fixed": {
+    "key": "G4-S10-DPB-11",
+    "subject": "S10",
+    "subtopic": "DPCデータ",
+    "format": "knowledge",
+    "difficulty": "standard",
+    "polarity": "negative",
+    "question": "2026年度「DPCの評価・検証等に係る調査（退院患者調査）」のEF統合ファイル及びDファイルについて、誤っているものはどれか。",
+    "choices": [
+     "入院EF統合ファイルは、入院医科保険の対象の全患者を対象とする。",
+     "Eファイル（診療明細情報）とFファイル（行為明細情報）は親子の関係にあり、提出にあたって統合する。",
+     "外来EF統合ファイルは、DPC対象病院及びデータ提出加算2に係る届出を行っている医療機関のみが作成する。",
+     "Dファイルは、DPC対象病院及びDPC準備病院が作成し、出来高算定病院は作成不要である。",
+     "自費診療のみの患者は、入院EF統合ファイルの対象外である。"
+    ],
+    "answer": 3,
+    "explanation": {
+     "correct": "Dファイル（包括レセプト情報）はDPC対象病院のみ作成し、それ以外の医療機関（DPC準備病院を含む）は作成不要である。",
+     "choiceNotes": [
+      "正しい。入院EF統合ファイルの対象は入院医科保険の対象の全患者である。",
+      "正しい。E、Fファイルの関係は親子の関係であり、提出にあたりEFファイル統合機能により統合する。",
+      "正しい。外来EF統合ファイルはDPC対象病院及びデータ提出加算2に係る届出を行っている医療機関のみ作成する。",
+      null,
+      "正しい。自費診療のみの患者は対象外となる患者である。"
+     ],
+     "point": "Dファイル＝DPC対象病院のみ。外来EF統合ファイル＝DPC対象病院＋データ提出加算2の届出医療機関のみ。"
+    },
+    "sources": [
+     {
+      "ref": "ins:dpc-chosa-setsumei-2026",
+      "title": "2026年度 DPCの評価・検証等に係る調査（退院患者調査）実施説明資料",
+      "url": "https://www.mhlw.go.jp/content/12400000/001679918.pdf",
+      "locator": "Ⅰ 概要とスケジュール 提出データの概要 5. Dファイル (1) 対象範囲",
+      "quote": "DPC 対象病院のみ作成し、それ以外の医療機関は作成不要。"
+     },
+     {
+      "ref": "ins:dpc-chosa-setsumei-2026",
+      "title": "2026年度 DPCの評価・検証等に係る調査（退院患者調査）実施説明資料",
+      "url": "https://www.mhlw.go.jp/content/12400000/001679918.pdf",
+      "locator": "同 4-2. 外来EF統合ファイル (1) 対象範囲",
+      "quote": "DPC対象病院及びデータ提出加算2に係る届出を行っている医療機関のみ作成し、それ以外の医療機関は作成不要。"
+     },
+     {
+      "ref": "ins:dpc-chosa-setsumei-2026",
+      "title": "2026年度 DPCの評価・検証等に係る調査（退院患者調査）実施説明資料",
+      "url": "https://www.mhlw.go.jp/content/12400000/001679918.pdf",
+      "locator": "「ＤＰＣの評価・検証等に係る調査」に係るレセプトデータダウンロード方式によるレセプト情報データ収集について 2. ファイル作成方式の基本的方法",
+      "quote": "E、Fファイルの関係は親子の関係であり、Eファイルの"
+     }
+    ],
+    "asOf": "2026年度DPC調査 実施説明資料（2026年3月25日時点）"
+   }
+  },
+  {
+   "key": "G4-S10-DPB-12",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "同 提出データ一覧の注記(匿名化・連結可能匿名化・1患者=1匿名ID)、7.Kファイル(2)(3)を原文で確認。blind一致。"
+  },
+  {
+   "key": "G4-S10-DPB-13",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "同 1.様式1(3)(90日目で仮様式1、転棟時点で別作成、一連は追加作成、転科は1入院に集約、ICD-10(2013年版)準拠)と「一連となる7日以内に再入院した場合の様式1の作成」を確認。blind一致。"
+  }
+ ]
+}

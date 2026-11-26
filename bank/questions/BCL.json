@@ -1,0 +1,2733 @@
+{
+ "subject": "BCL",
+ "questions": [
+  {
+   "id": "lg-04-03",
+   "legacy": {
+    "key": "4_3",
+    "chapter": 4,
+    "chapterName": "医学用語・医学略語",
+    "index": 3,
+    "hash": "4620e9da1238bfed"
+   },
+   "subject": "BCL",
+   "subtopic": "臨床医学総論",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "negative",
+   "question": "バイタルサインに含まれないのはどれか。",
+   "choices": [
+    "体温",
+    "血液型",
+    "血圧",
+    "脈拍"
+   ],
+   "answer": 1,
+   "explanation": {
+    "correct": "バイタルサインは、心拍数（脈拍）・呼吸数・体温・血圧など、生命維持に不可欠な身体機能の状態を反映する指標である。血液型は身体機能の状態を測る指標ではなく、バイタルサインに含まれない。",
+    "choiceNotes": [
+     "体温はバイタルサインの基本項目である。",
+     null,
+     "血圧はバイタルサインの基本項目である。",
+     "脈拍（心拍数）はバイタルサインの基本項目である。"
+    ],
+    "point": "バイタルサイン＝体温・脈拍（心拍数）・呼吸数・血圧。"
+   },
+   "sources": [
+    {
+     "ref": "x-legacy-L04a:medlineplus-vitalsigns",
+     "title": "Vital signs (MedlinePlus Medical Encyclopedia)",
+     "url": "https://medlineplus.gov/ency/article/002341.htm",
+     "locator": "Vital signs 本文冒頭",
+     "quote": "Vital signs reflect essential body functions, including your heartbeat rate, breathing rate, temperature, and blood pressure."
+    }
+   ],
+   "asOf": "MedlinePlus Medical Encyclopedia「Vital signs」（Review Date 2025-01-01）",
+   "origin": {
+    "batch": "L04",
+    "key": "lg-04-03",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-26",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（医学用語）で修正",
+     "修正後の独立再監査（pass）",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L04（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L04a（医学用語）",
+     "reauditor": "reaudit:L04a"
+    },
+    "log": "bank/audit/legacy-L04a.audit.json#lg-04-03",
+    "notes": "再監査: x-legacy-L04a:medlineplus-vitalsigns: heartbeat rate, breathing rate, temperature, blood pressure。血液型は含まれない。説明からSpO2削除済みで根拠と一致。｜MedlinePlus Vital signs: heartbeat rate, breathing rate, temperature, blood pressure。血液型は含まれない。"
+   }
+  },
+  {
+   "id": "lg-04-06",
+   "legacy": {
+    "key": "4_6",
+    "chapter": 4,
+    "chapterName": "医学用語・医学略語",
+    "index": 6,
+    "hash": "c0ca601e1fc8a65d"
+   },
+   "subject": "BCL",
+   "subtopic": "血液・代謝・内分泌",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "HbA1cが示す内容はどれか。",
+   "choices": [
+    "採血した時点の血糖値そのものを示す指標",
+    "肝臓の機能障害の程度を反映する指標",
+    "過去の一定期間の平均的な血糖値を反映する指標",
+    "腎臓の糸球体ろ過量を推定する指標"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "HbA1cは糖に化学的に結合したヘモグロビン（糖化ヘモグロビン）の一種で、血糖の増加に伴って増加し、過去の一定期間（MSDマニュアルでは過去3カ月間）の平均血糖値と関係する。糖尿病の診断基準にも用いられる。",
+    "choiceNotes": [
+     "HbA1cは血糖そのものではなく糖化ヘモグロビンの割合で、採血前の一定期間の平均的な血糖を反映する。",
+     "HbA1cは血糖の状態を反映する指標であり、肝機能の指標ではない。",
+     null,
+     "HbA1cは血糖の状態を反映する指標であり、腎機能（糸球体ろ過量）の指標ではない。"
+    ],
+    "point": "HbA1c＝糖化ヘモグロビン。過去の一定期間の平均血糖を反映し、糖尿病の診断基準にも用いられる。"
+   },
+   "sources": [
+    {
+     "ref": "x-legacy-L04a:msd-ja-dm",
+     "title": "MSDマニュアル プロフェッショナル版「糖尿病」",
+     "url": "https://www.msdmanuals.com/ja-jp/professional/10-内分泌疾患と代謝性疾患/糖尿病と糖代謝異常症/糖尿病",
+     "locator": "糖尿病 > 診断 > HbA1c",
+     "quote": "HbA1Cは，糖に化学的に結合したヘモグロビンの一種であり，血糖の増加に伴って増加し，過去3カ月間の平均血糖値との関係が証明されている。"
+    },
+    {
+     "ref": "x-legacy-L04a:msd-ja-dm",
+     "title": "MSDマニュアル プロフェッショナル版「糖尿病」",
+     "url": "https://www.msdmanuals.com/ja-jp/professional/10-内分泌疾患と代謝性疾患/糖尿病と糖代謝異常症/糖尿病",
+     "locator": "糖尿病 > 診断 > HbA1c",
+     "quote": "現在の糖尿病の診断基準には，以下のHbA1C測定値がある"
+    }
+   ],
+   "asOf": "MSDマニュアル プロフェッショナル版「糖尿病」（2024年10月更新）",
+   "origin": {
+    "batch": "L04",
+    "key": "lg-04-06",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-26",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（医学用語）で修正",
+     "修正後の独立再監査（pass）",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L04（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L04a（医学用語）",
+     "reauditor": "reaudit:L04a"
+    },
+    "log": "bank/audit/legacy-L04a.audit.json#lg-04-06",
+    "notes": "再監査: msd-ja-dm 診断: HbA1cは糖化ヘモグロビンで過去3カ月間の平均血糖値と関係、診断基準に使用。期間を断定しない表現で妥当。別バッチ lg-04-23 との重複は採用側で調整（監査人指摘どおり）。｜MSD 糖尿病 診断: HbA1cは糖化ヘモグロビンで過去3カ月間の平均血糖値と関係、診断基準に用いる。lg-04-23（別バッチ）と内容が重複するため、どちらか一方のみ採用を推奨。"
+   }
+  },
+  {
+   "id": "lg-04-07",
+   "legacy": {
+    "key": "4_7",
+    "chapter": 4,
+    "chapterName": "医学用語・医学略語",
+    "index": 7,
+    "hash": "c8a8120b4e8cd76d"
+   },
+   "subject": "BCL",
+   "subtopic": "臨床医学総論",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "CRPが示す内容はどれか。",
+   "choices": [
+    "過去の一定期間の平均血糖を反映する指標",
+    "血液の凝固する能力を評価する指標",
+    "炎症の有無や程度を反映する急性期反応物質",
+    "肝臓の解毒機能を評価する指標"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "CRP（C-reactive protein：C反応性蛋白）は肝臓で産生され、体内に炎症があると上昇する急性期反応物質の一つである。炎症の有無を調べる一般的な検査だが、炎症の部位や原因は特定できない（非特異的）。",
+    "choiceNotes": [
+     "過去の一定期間の平均血糖を反映するのはHbA1cであり、CRPは炎症で上昇する蛋白である。",
+     "CRPは炎症で上昇する急性期反応物質であり、血液凝固能を測る指標ではない。",
+     null,
+     "CRPは肝臓で産生されるが、肝臓の解毒機能を示す指標ではなく、炎症に反応して上昇する。"
+    ],
+    "point": "CRP＝C反応性蛋白。炎症で上昇する急性期反応物質（非特異的な炎症マーカー）。"
+   },
+   "sources": [
+    {
+     "ref": "x-legacy-L04a:medlineplus-crp",
+     "title": "C-reactive protein (MedlinePlus Medical Encyclopedia)",
+     "url": "https://medlineplus.gov/ency/article/003356.htm",
+     "locator": "Information",
+     "quote": "C-reactive protein (CRP) is produced by the liver. The level of CRP rises when there is inflammation in the body."
+    },
+    {
+     "ref": "x-legacy-L04a:msd-ja-dm",
+     "title": "MSDマニュアル プロフェッショナル版「糖尿病」",
+     "url": "https://www.msdmanuals.com/ja-jp/professional/10-内分泌疾患と代謝性疾患/糖尿病と糖代謝異常症/糖尿病",
+     "locator": "糖尿病 > 診断 > HbA1c",
+     "quote": "HbA1Cは，糖に化学的に結合したヘモグロビンの一種であり，血糖の増加に伴って増加し，過去3カ月間の平均血糖値との関係が証明されている。"
+    },
+    {
+     "ref": "x-legacy-L04a:medlineplus-crp",
+     "title": "C-reactive protein (MedlinePlus Medical Encyclopedia)",
+     "url": "https://medlineplus.gov/ency/article/003356.htm",
+     "locator": "Why the Test is Performed",
+     "quote": "The CRP test is a general test to check for inflammation in the body. It is not a specific test."
+    }
+   ],
+   "asOf": "MedlinePlus Medical Encyclopedia「C-reactive protein」（Review Date 2025-01-28）",
+   "origin": {
+    "batch": "L04",
+    "key": "lg-04-07",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-26",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（医学用語）で修正",
+     "修正後の独立再監査（pass）",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L04（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L04a（医学用語）",
+     "reauditor": "reaudit:L04a"
+    },
+    "log": "bank/audit/legacy-L04a.audit.json#lg-04-07",
+    "notes": "再監査: medlineplus-crp: 肝臓で産生、炎症で上昇、acute phase reactants の一つ（48行）、非特異的検査。平均血糖=HbA1c は msd-ja-dm。｜MedlinePlus CRP: 肝臓で産生、炎症で上昇する急性期反応物質（acute phase reactants）、非特異的な炎症の検査。MSD 糖尿病: 平均血糖を反映するのはHbA1c。"
+   }
+  },
+  {
+   "id": "lg-05-00",
+   "legacy": {
+    "key": "5_0",
+    "chapter": 5,
+    "chapterName": "臨床医学",
+    "index": 0,
+    "hash": "fa7847f2ab1801e0"
+   },
+   "subject": "BCL",
+   "subtopic": "循環器・呼吸器",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "急性心筋梗塞の典型的な症状はどれか。",
+   "choices": [
+    "数秒間だけの鋭い胸痛が、日に何度も繰り返し起こる",
+    "運動時にだけ息切れが生じ、安静にすると速やかに消失する",
+    "食後に悪化する上腹部の痛みが、食事のたびに繰り返す",
+    "強い胸痛が長く続き、ニトログリセリンでほとんど軽快しない"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "心筋梗塞の最初の症状は通常、疼痛または圧迫感として表現される胸骨下深部の内臓痛で、背部・下顎・腕・肩に放散することがある。狭心症に似るが、通常はより重度で長く続き、呼吸困難・発汗・悪心・嘔吐を伴うことが多く、安静やニトログリセリンで一時的に軽快するのみか、ほとんど軽快しない。",
+    "choiceNotes": [
+     "数秒間だけの胸痛の反復は、長く続く胸骨下の内臓痛という心筋梗塞の典型像に当たらない。",
+     "運動時にだけ生じ安静で消える症状は、安静でも軽快しにくい心筋梗塞の典型像と異なる。",
+     "食事に関連して悪化する上腹部痛は、心筋梗塞の典型的な症状として挙げられていない。",
+     null
+    ],
+    "point": "急性心筋梗塞＝胸骨下の強い痛み・圧迫感。狭心症に似るが、より重度で長く続き、安静やニトログリセリンでほとんど軽快しない。"
+   },
+   "sources": [
+    {
+     "ref": "x-legacy-L04a:msd-ja-ami",
+     "title": "MSDマニュアル プロフェッショナル版「急性心筋梗塞」",
+     "url": "https://www.msdmanuals.com/ja-jp/professional/04-心血管疾患/冠動脈疾患/急性心筋梗塞",
+     "locator": "症状と徴候",
+     "quote": "通常，心筋梗塞の最初の症状は疼痛または圧迫感として表現される胸骨下深部の内臓痛であり"
+    },
+    {
+     "ref": "x-legacy-L04a:msd-ja-ami",
+     "title": "MSDマニュアル プロフェッショナル版「急性心筋梗塞」",
+     "url": "https://www.msdmanuals.com/ja-jp/professional/04-心血管疾患/冠動脈疾患/急性心筋梗塞",
+     "locator": "症状と徴候",
+     "quote": "疼痛は 狭心症 と類似するが，通常はより重度で時間時間が長く，しばしば呼吸困難，発汗，悪心，嘔吐を伴い，安静やニトログリセリンで一時的に軽快するのみか，ほとんど軽快しない。"
+    }
+   ],
+   "asOf": "MSDマニュアル プロフェッショナル版（日本語）「急性心筋梗塞」（2024年7月最終更新）",
+   "origin": {
+    "batch": "L05",
+    "key": "lg-05-00",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-26",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（臨床医学）で修正",
+     "修正後の独立再監査（pass）",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L05（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L05a（臨床医学）",
+     "reauditor": "reaudit:L05a"
+    },
+    "log": "bank/audit/legacy-L05a.audit.json#lg-05-00",
+    "notes": "再監査: x-legacy-L04a:msd-ja-ami 症状と徴候(l.69): 胸骨下深部の内臓痛、狭心症より重度で長く、安静・ニトログリセリンで一時的軽快のみかほとんど軽快しない。distractorsは典型像に該当しない。｜x-legacy-L04a:msd-ja-ami 症状と徴候（胸骨下深部の内臓痛、狭心症より重度で長く、安静・ニトログリセリンでほとんど軽快しない）。"
+   }
+  },
+  {
+   "id": "lg-05-01",
+   "legacy": {
+    "key": "5_1",
+    "chapter": 5,
+    "chapterName": "臨床医学",
+    "index": 1,
+    "hash": "ace810b7944e3a89"
+   },
+   "subject": "BCL",
+   "subtopic": "循環器・呼吸器",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "COPD（慢性閉塞性肺疾患）の最大の危険因子はどれか。",
+   "choices": [
+    "喫煙",
+    "飲酒",
+    "高血圧",
+    "肥満"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "COPDは毒素の吸入（しばしばタバコ煙）に対する炎症反応によって引き起こされる気流制限である。あらゆる吸入曝露のうち、大半の国において喫煙が第一の危険因子であり、リスクは喫煙期間と累積喫煙量（pack-year）とともに増加する。",
+    "choiceNotes": [
+     null,
+     "飲酒はCOPDの危険因子として挙げられていない（挙げられているのは喫煙、受動喫煙、大気汚染、職業性塵埃・吸入化学物質、低体重、小児期の呼吸器疾患、α1-アンチトリプシン欠乏症など）。",
+     "高血圧はCOPDの危険因子として挙げられていない。",
+     "肥満は危険因子ではない。むしろ低体重がCOPDのリスクに寄与し、重症例では体重減少がみられる。"
+    ],
+    "point": "COPD＝喫煙が第一の危険因子。ほかに受動喫煙・大気汚染・職業性塵埃、遺伝性ではα1-アンチトリプシン欠乏症。"
+   },
+   "sources": [
+    {
+     "ref": "x-legacy-L04a:msd-ja-copd",
+     "title": "MSDマニュアル プロフェッショナル版「慢性閉塞性肺疾患（COPD）」",
+     "url": "https://www.msdmanuals.com/ja-jp/professional/05-肺疾患/慢性閉塞性肺疾患および関連疾患/慢性閉塞性肺疾患-copd",
+     "locator": "病因",
+     "quote": "あらゆる吸入曝露のうち，大半の国において喫煙が第一の危険因子となっている"
+    },
+    {
+     "ref": "x-legacy-L04a:msd-ja-copd",
+     "title": "MSDマニュアル プロフェッショナル版「慢性閉塞性肺疾患（COPD）」",
+     "url": "https://www.msdmanuals.com/ja-jp/professional/05-肺疾患/慢性閉塞性肺疾患および関連疾患/慢性閉塞性肺疾患-copd",
+     "locator": "病因",
+     "quote": "低体重および小児期の呼吸器疾患もCOPDのリスクに寄与する。"
+    }
+   ],
+   "asOf": "MSDマニュアル プロフェッショナル版（日本語）「慢性閉塞性肺疾患（COPD）」（2024年9月最終更新）",
+   "origin": {
+    "batch": "L05",
+    "key": "lg-05-01",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-26",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（臨床医学）で修正",
+     "修正後の独立再監査（pass）",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L05（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L05a（臨床医学）",
+     "reauditor": "reaudit:L05a"
+    },
+    "log": "bank/audit/legacy-L05a.audit.json#lg-05-01",
+    "notes": "再監査: x-legacy-L04a:msd-ja-copd 病因(l.51,53,55): 喫煙が第一の危険因子；受動喫煙・大気汚染・職業性塵埃・低体重・小児期呼吸器疾患・α1-AT欠乏。飲酒・高血圧・肥満は挙げられていない。｜x-legacy-L04a:msd-ja-copd 病因（大半の国で喫煙が第一の危険因子、低体重もリスクに寄与）。"
+   }
+  },
+  {
+   "id": "lg-05-02",
+   "legacy": {
+    "key": "5_2",
+    "chapter": 5,
+    "chapterName": "臨床医学",
+    "index": 2,
+    "hash": "5a84e2dbbf6f79d5"
+   },
+   "subject": "BCL",
+   "subtopic": "血液・代謝・内分泌",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "1型糖尿病と2型糖尿病の違いについて正しいものはどれか。",
+   "choices": [
+    "1型は膵β細胞の自己免疫による破壊でインスリンが欠乏し、2型はインスリン抵抗性とインスリン分泌の不足が関与する",
+    "1型は過食や運動不足などの生活習慣が主な原因で、2型は自己免疫が主な原因である",
+    "1型は30歳以上の発症が最も多く、2型は30歳未満の発症が最も多い",
+    "1型も2型も、診断時から必ずインスリン治療が必要である"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "1型糖尿病では膵β細胞の自己免疫による破壊が原因でインスリン産生が欠如する。2型糖尿病ではインスリンに対する抵抗性が発生しているため、インスリン分泌が不十分な状態となる。",
+    "choiceNotes": [
+     null,
+     "原因が逆である。自己免疫による膵β細胞の破壊は1型の原因であり、2型ではインスリン抵抗性が特徴的である。",
+     "逆である。発症年齢は1型が30歳未満、2型が30歳以上で最も一般的である。",
+     "1型はインスリンを必要とするが、2型の一部は食生活の改善と運動で血糖を維持できれば薬物治療を回避・中止できることがある。"
+    ],
+    "point": "1型＝自己免疫でβ細胞破壊→インスリン欠乏（30歳未満に多い）。2型＝インスリン抵抗性＋分泌不十分（30歳以上に多い）。"
+   },
+   "sources": [
+    {
+     "ref": "x-legacy-L04a:msd-ja-dm",
+     "title": "MSDマニュアル プロフェッショナル版「糖尿病」",
+     "url": "https://www.msdmanuals.com/ja-jp/professional/10-内分泌疾患と代謝性疾患/糖尿病と糖代謝異常症/糖尿病",
+     "locator": "1型糖尿病",
+     "quote": "膵β細胞の自己免疫による破壊が原因で インスリン 産生が欠如しており"
+    },
+    {
+     "ref": "x-legacy-L04a:msd-ja-dm",
+     "title": "MSDマニュアル プロフェッショナル版「糖尿病」",
+     "url": "https://www.msdmanuals.com/ja-jp/professional/10-内分泌疾患と代謝性疾患/糖尿病と糖代謝異常症/糖尿病",
+     "locator": "2型糖尿病",
+     "quote": "患者に インスリン に対する抵抗性が発生しているため， インスリン 分泌が不十分な状態となる。"
+    },
+    {
+     "ref": "x-legacy-L04a:msd-ja-dm",
+     "title": "MSDマニュアル プロフェッショナル版「糖尿病」",
+     "url": "https://www.msdmanuals.com/ja-jp/professional/10-内分泌疾患と代謝性疾患/糖尿病と糖代謝異常症/糖尿病",
+     "locator": "治療",
+     "quote": "1型糖尿病患者は インスリン を必要とする。2型糖尿病患者の一部では，食生活の改善と運動で血漿血糖値を維持できる場合，薬物治療を回避または中止できることがある。"
+    }
+   ],
+   "asOf": "MSDマニュアル プロフェッショナル版（日本語）「糖尿病」（2024年10月最終更新）",
+   "origin": {
+    "batch": "L05",
+    "key": "lg-05-02",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-26",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（臨床医学）で修正",
+     "修正後の独立再監査（pass）",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L05（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L05a（臨床医学）",
+     "reauditor": "reaudit:L05a"
+    },
+    "log": "bank/audit/legacy-L05a.audit.json#lg-05-02",
+    "notes": "再監査: x-legacy-L04a:msd-ja-dm l.52(1型=自己免疫β細胞破壊), 表 l.85-89(発症年齢1型<30歳・2型≥30歳), 治療(2型の一部は生活習慣で薬物回避)。｜x-legacy-L04a:msd-ja-dm 1型・2型糖尿病の項、一般的特徴の表（発症年齢）、治療の項。"
+   }
+  },
+  {
+   "id": "lg-05-03",
+   "legacy": {
+    "key": "5_3",
+    "chapter": 5,
+    "chapterName": "臨床医学",
+    "index": 3,
+    "hash": "e2fbb46bd4bc3fd0"
+   },
+   "subject": "BCL",
+   "subtopic": "新生物",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "UICC TNM分類の「T」が表すものはどれか。",
+   "choices": [
+    "他の臓器への遠隔転移の状況",
+    "原発腫瘍の大きさ・広がり・深さ",
+    "所属リンパ節への転移の状況",
+    "腫瘍細胞の悪性度（異型度・分化度）"
+   ],
+   "answer": 1,
+   "explanation": {
+    "correct": "UICC TNM分類では、原発がんの大きさ・広がり・深さをT、原発がんの所属リンパ節転移の状況をN、他の臓器への遠隔転移状況をMとして区分し、それらを総合して病期（ステージ）を判定する。",
+    "choiceNotes": [
+     "他の臓器への遠隔転移の状況はMで表す。",
+     null,
+     "所属リンパ節転移の状況はNで表す。",
+     "異型度・分化度はTNMの区分ではない。院内がん登録では形態コード（ICD-O）の6桁目として別に扱う。"
+    ],
+    "point": "T＝原発腫瘍（大きさ・広がり・深さ）、N＝所属リンパ節転移、M＝遠隔転移。総合して病期（0〜Ⅳ期）を判定。"
+   },
+   "sources": [
+    {
+     "ref": "cancer:glossary-yuaisisitexienuemubunrui",
+     "title": "がん統計の用語集：UICC TNM分類",
+     "url": "https://ganjoho.jp/reg_stat/statistics/qa_words/word/yuaisisitexienuemubunrui.html",
+     "locator": "用語集「UICC TNM分類」",
+     "quote": "原発がんの大きさ、広がり、深さをT、原発がんの所属リンパ節転移の状況をN、他の臓器への遠隔転移状況をMとして区分し"
+    },
+    {
+     "ref": "cancer:hcr-standard-format-2016",
+     "title": "がん診療連携拠点病院等 院内がん登録 標準登録様式 2016年版",
+     "url": "https://ganjoho.jp/med_pro/cancer_control/can_reg/registration_hospital/pdf/2016manual.pdf",
+     "locator": "形態コード（コードの選択）",
+     "quote": "6 桁目 異型度、分化度、免疫学的表現型"
+    }
+   ],
+   "asOf": "がん情報サービス用語集（2018年1月26日更新）・院内がん登録標準登録様式2016年版",
+   "origin": {
+    "batch": "L05",
+    "key": "lg-05-03",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-26",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（臨床医学）で修正",
+     "修正後の独立再監査（pass）",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L05（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L05a（臨床医学）",
+     "reauditor": "reaudit:L05a"
+    },
+    "log": "bank/audit/legacy-L05a.audit.json#lg-05-03",
+    "notes": "再監査: cancer:glossary-yuaisisitexienuemubunrui: T=原発がんの大きさ・広がり・深さ、N=所属リンパ節、M=遠隔転移。cancer:hcr-standard-format-2016 l.1170: 6桁目=異型度・分化度。｜cancer:glossary-yuaisisitexienuemubunrui（T＝原発がんの大きさ・広がり・深さ、N＝所属リンパ節転移、M＝遠隔転移）; cancer:hcr-standard-format-2016 形態コード6桁目＝異型度・分化度。"
+   }
+  },
+  {
+   "id": "lg-05-04",
+   "legacy": {
+    "key": "5_4",
+    "chapter": 5,
+    "chapterName": "臨床医学",
+    "index": 4,
+    "hash": "b106a584dfe605f5"
+   },
+   "subject": "BCL",
+   "subtopic": "精神・脳神経・感覚器",
+   "format": "knowledge",
+   "difficulty": "standard",
+   "polarity": "negative",
+   "question": "脳梗塞の臨床病型（発症機序による分類）に含まれないものはどれか。",
+   "choices": [
+    "出血性梗塞",
+    "ラクナ梗塞",
+    "アテローム血栓性脳梗塞",
+    "心原性脳塞栓症"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "脳梗塞（虚血性脳卒中）の一般的な原因は、太い動脈のアテローム血栓性閉塞（アテローム血栓性脳梗塞）、心原性血栓などによる脳塞栓症（心原性脳塞栓症）、深部の細い穿通動脈の閉塞（ラクナ梗塞）である。出血性梗塞は梗塞巣に出血が生じる変化（出血性梗塞への変化）で、急性期に抗凝固療法を避ける理由とされる合併症であり、発症機序による病型ではない。",
+    "choiceNotes": [
+     null,
+     "深部の細い穿通動脈の閉塞による小さな梗塞で、病型の一つ。",
+     "太い動脈のアテローム血栓性閉塞による病型の一つ。",
+     "心原性血栓などの塞栓による病型の一つ（心房細動などが塞栓源となる）。"
+    ],
+    "point": "脳梗塞の病型＝アテローム血栓性・心原性脳塞栓・ラクナ（原因不明は潜因性）。出血性梗塞は病型ではなく梗塞後の出血性変化。"
+   },
+   "sources": [
+    {
+     "ref": "x-legacy-L05a:msd-ischemic-stroke",
+     "title": "MSDマニュアル プロフェッショナル版「虚血性脳卒中」",
+     "url": "https://www.msdmanuals.com/ja-jp/professional/07-神経疾患/脳卒中/虚血性脳卒中",
+     "locator": "概要",
+     "quote": "一般的な原因は太い動脈のアテローム血栓性閉塞；脳塞栓症（塞栓性脳梗塞）；深部の細い脳動"
+    },
+    {
+     "ref": "x-legacy-L05a:msd-ischemic-stroke",
+     "title": "MSDマニュアル プロフェッショナル版「虚血性脳卒中」",
+     "url": "https://www.msdmanuals.com/ja-jp/professional/07-神経疾患/脳卒中/虚血性脳卒中",
+     "locator": "治療（抗凝固療法）",
+     "quote": "急性期には出血（出血性梗塞への変化）のリスクがより高いため（特に大きな梗塞の場合），通常は急性期の抗凝固療法は回避する。"
+    }
+   ],
+   "asOf": "MSDマニュアル プロフェッショナル版（日本語）「虚血性脳卒中」（2024年5月最終更新）",
+   "origin": {
+    "batch": "L05",
+    "key": "lg-05-04",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-26",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（臨床医学）で修正",
+     "修正後の独立再監査（pass）",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L05（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L05a（臨床医学）",
+     "reauditor": "reaudit:L05a"
+    },
+    "log": "bank/audit/legacy-L05a.audit.json#lg-05-04",
+    "notes": "再監査: x-legacy-L05a:msd-ischemic-stroke 概要 l.19(アテローム血栓性閉塞・脳塞栓症・ラクナ梗塞), l.64-77(心原性塞栓・ラクナ), 治療 l.469(出血性梗塞への変化=急性期抗凝固回避の理由)。出血性梗塞は機序による病型でない。｜x-legacy-L05a:msd-ischemic-stroke 概要・病因（アテローム血栓性閉塞、塞栓、ラクナ梗塞）、治療（出血性梗塞への変化）。"
+   }
+  },
+  {
+   "id": "lg-05-05",
+   "legacy": {
+    "key": "5_5",
+    "chapter": 5,
+    "chapterName": "臨床医学",
+    "index": 5,
+    "hash": "ee0c8c45a194e918"
+   },
+   "subject": "BCL",
+   "subtopic": "消化器・泌尿器",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "CKD（慢性腎臓病）のステージ分類に用いられる指標はどれか。",
+   "choices": [
+    "GFR（糸球体濾過量）",
+    "血糖値",
+    "血圧値",
+    "BMI"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "CKDのステージはGFR（mL/min/1.73m2）で区分される。ステージ1はGFR正常（90以上）かつ持続性アルブミン尿または既知の構造的・遺伝性腎疾患、ステージ2は60～89、3aは45～59、3bは30～44、4は15～29、5は15未満である。",
+    "choiceNotes": [
+     null,
+     "血糖値は糖尿病の指標であり、CKDのステージ分類には用いない。",
+     "血圧はCKDの管理目標（収縮期血圧の推奨目標値）として扱われるが、ステージはGFRで区分する。",
+     "BMIは体格の指標であり、CKDのステージ分類には用いない。"
+    ],
+    "point": "CKDステージ＝GFRで区分（ステージ5＝GFR 15未満）。ステージ1はGFR正常でもアルブミン尿などの腎障害があるもの。"
+   },
+   "sources": [
+    {
+     "ref": "x-legacy-L05a:msd-ckd",
+     "title": "MSDマニュアル プロフェッショナル版「慢性腎臓病」",
+     "url": "https://www.msdmanuals.com/ja-jp/professional/03-泌尿器疾患/慢性腎臓病/慢性腎臓病",
+     "locator": "慢性腎臓病の病期",
+     "quote": "ステージ1：GFR正常（90mL/min/1.73m2以上）かつ，持続性アルブミン尿または既知の構造的もしくは遺伝性腎疾患"
+    },
+    {
+     "ref": "x-legacy-L05a:msd-ckd",
+     "title": "MSDマニュアル プロフェッショナル版「慢性腎臓病」",
+     "url": "https://www.msdmanuals.com/ja-jp/professional/03-泌尿器疾患/慢性腎臓病/慢性腎臓病",
+     "locator": "慢性腎臓病の病期",
+     "quote": "ステージ5：GFR 15mL/min/1.73m2未満"
+    }
+   ],
+   "asOf": "MSDマニュアル プロフェッショナル版（日本語）「慢性腎臓病」（2025年2月最終更新）",
+   "origin": {
+    "batch": "L05",
+    "key": "lg-05-05",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-26",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（臨床医学）で修正",
+     "修正後の独立再監査（pass）",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L05（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L05a（臨床医学）",
+     "reauditor": "reaudit:L05a"
+    },
+    "log": "bank/audit/legacy-L05a.audit.json#lg-05-05",
+    "notes": "再監査: x-legacy-L05a:msd-ckd 病期 l.138-143: GFRによるステージ1〜5; 血圧はl.168で管理目標。｜x-legacy-L05a:msd-ckd 慢性腎臓病の病期（ステージ1〜5をGFRで区分）。"
+   }
+  },
+  {
+   "id": "lg-05-06",
+   "legacy": {
+    "key": "5_6",
+    "chapter": 5,
+    "chapterName": "臨床医学",
+    "index": 6,
+    "hash": "a99938f4cbc5ff07"
+   },
+   "subject": "BCL",
+   "subtopic": "皮膚・筋骨格",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "大腿骨近位部骨折（股関節骨折）について正しいものはどれか。",
+   "choices": [
+    "小児に最も多い骨折である",
+    "骨粗鬆症のある高齢者の転倒で起こりやすい",
+    "保存療法が第一選択である",
+    "交通事故などの強い外力が加わらなければ起こらない"
+   ],
+   "answer": 1,
+   "explanation": {
+    "correct": "股関節骨折は大腿骨の骨頭・頸部・転子部・転子下に起こる骨折で、高齢患者（特に骨粗鬆症の高齢者）で最も多く、通常は平坦な地面での転倒により起こる。",
+    "choiceNotes": [
+     "この骨折は高齢患者（特に骨粗鬆症の高齢者）で最も多く起こるものであり、小児に多い骨折ではない。",
+     null,
+     "大多数は外科的に治療する。非外科的治療では長期間の床上安静が必要となり、深部静脈血栓症・褥瘡・肺炎などのリスクが高まる。",
+     "骨粗鬆症の高齢者では、寝返りや椅子から立ち上がるなどのごくわずかな力でも骨折に至ることがある。"
+    ],
+    "point": "大腿骨近位部骨折＝骨粗鬆症の高齢者の転倒で多い。長期臥床の合併症を避けるため大多数は手術。"
+   },
+   "sources": [
+    {
+     "ref": "x-legacy-L05a:msd-hip-fracture",
+     "title": "MSDマニュアル プロフェッショナル版「股関節骨折」",
+     "url": "https://www.msdmanuals.com/ja-jp/professional/22-外傷と中毒/骨折/股関節骨折",
+     "locator": "概要",
+     "quote": "この骨折は高齢患者（特に骨粗鬆症の高齢者）で最も多く，通常は平坦な地面での転倒により起こる。"
+    },
+    {
+     "ref": "x-legacy-L05a:msd-hip-fracture",
+     "title": "MSDマニュアル プロフェッショナル版「股関節骨折」",
+     "url": "https://www.msdmanuals.com/ja-jp/professional/22-外傷と中毒/骨折/股関節骨折",
+     "locator": "病因",
+     "quote": "高齢患者では，通常は骨粗鬆症により骨が脆弱になっていることから，ごくわずかに見える力（例，寝床での寝返り，椅子から立ち上がる，歩行）で骨折に至ることがある。"
+    },
+    {
+     "ref": "x-legacy-L05a:msd-hip-fracture",
+     "title": "MSDマニュアル プロフェッショナル版「股関節骨折」",
+     "url": "https://www.msdmanuals.com/ja-jp/professional/22-外傷と中毒/骨折/股関節骨折",
+     "locator": "治療",
+     "quote": "長期間の床上安静を避けるため，外科的に治療する。"
+    }
+   ],
+   "asOf": "MSDマニュアル プロフェッショナル版（日本語）「股関節骨折」（2024年7月最終更新）",
+   "origin": {
+    "batch": "L05",
+    "key": "lg-05-06",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-26",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（臨床医学）で修正",
+     "修正後の独立再監査（provisional）",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査",
+     "再監査の指摘に沿って再修正し、別エージェントの再監査（ブラインド解答一致）で合格"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L05（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L05a（臨床医学）",
+     "reauditor": "reaudit:L05a",
+     "repair": "repair:R-01",
+     "reauditor2": "reaudit:R-01"
+    },
+    "log": "bank/audit/legacy-L05a.audit.json#lg-05-06",
+    "notes": "再修正: choiceNotes[1]を出典の主張（この骨折は高齢患者で最も多く起こる）の範囲に収まる表現に修正。「高齢者で最多の骨折」とも読める言い回しを解消（x-legacy-L05a:msd-hip-fracture l.20）。他は変更なし。｜再監査: x-legacy-L05a:msd-hip-fracture l.20(高齢患者・特に骨粗鬆症で最も多く平地転倒で起こる), l.28(ごくわずかな力で骨折), l.62(大多数は外科的治療、長期臥床でDVT・褥瘡・肺炎)。key・distractorsは正しい。｜x-legacy-L05a:msd-hip-fracture 概要・病因・治療（骨粗鬆症の高齢者の転倒、大多数は外科的治療）。"
+   }
+  },
+  {
+   "id": "lg-05-07",
+   "legacy": {
+    "key": "5_7",
+    "chapter": 5,
+    "chapterName": "臨床医学",
+    "index": 7,
+    "hash": "ffa68887800aadb9"
+   },
+   "subject": "BCL",
+   "subtopic": "感染症",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "市中肺炎の原因菌として最も頻度が高いとされるものはどれか。",
+   "choices": [
+    "肺炎球菌",
+    "緑膿菌",
+    "MRSA（メチシリン耐性黄色ブドウ球菌）",
+    "結核菌"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "市中肺炎は病院の外で獲得した肺炎で、同定される頻度が最も高い病原体として肺炎球菌、インフルエンザ菌、非定型細菌（肺炎クラミジア、肺炎マイコプラズマ、Legionella属）、ウイルスが挙げられ、最も一般的な細菌性の原因の第一は肺炎球菌である。",
+    "choiceNotes": [
+     null,
+     "緑膿菌は院内肺炎で重要な病原体であり、市中肺炎では過去3カ月間の入院や抗菌薬使用、重度のCOPD、免疫抑制などの危険因子がある場合に考慮される。",
+     "MRSAは入院期間が長くなるにつれて院内肺炎で頻度が高くなる病原体である。市中感染型MRSAが重症肺炎を起こすことはまれである。",
+     "肺結核は市中肺炎とは別に扱われ、市中肺炎の最も一般的な原因菌には含まれない。"
+    ],
+    "point": "市中肺炎＝肺炎球菌が代表（ほかにインフルエンザ菌・非定型細菌）。院内肺炎＝緑膿菌などのグラム陰性桿菌、MRSAを含む黄色ブドウ球菌。"
+   },
+   "sources": [
+    {
+     "ref": "x-legacy-L05a:msd-cap",
+     "title": "MSDマニュアル プロフェッショナル版「市中肺炎」",
+     "url": "https://www.msdmanuals.com/ja-jp/professional/05-肺疾患/肺炎/市中肺炎",
+     "locator": "概要",
+     "quote": "同定される頻度が最も高い病原体は，肺炎球菌（Streptococcus pneumoniae），インフルエンザ菌（Haemophilus influenzae），非定型細菌"
+    },
+    {
+     "ref": "x-legacy-L05a:msd-cap",
+     "title": "MSDマニュアル プロフェッショナル版「市中肺炎」",
+     "url": "https://www.msdmanuals.com/ja-jp/professional/05-肺疾患/肺炎/市中肺炎",
+     "locator": "市中肺炎の病因（細菌性の原因）",
+     "quote": "最も一般的な細菌性の原因は以下のものである： 肺炎球菌（S. pneumoniae）"
+    },
+    {
+     "ref": "x-legacy-L05a:msd-hap",
+     "title": "MSDマニュアル プロフェッショナル版「院内肺炎」",
+     "url": "https://www.msdmanuals.com/ja-jp/professional/05-肺疾患/肺炎/院内肺炎",
+     "locator": "病原体",
+     "quote": "入院の期間が長くなるにつれて，緑膿菌（P. aeruginosa），MRSA，およびグラム陰性腸内菌の頻度が高くなる。"
+    }
+   ],
+   "asOf": "MSDマニュアル プロフェッショナル版（日本語）「市中肺炎」（2025年1月最終更新）・「院内肺炎」（2024年2月最終更新）",
+   "origin": {
+    "batch": "L05",
+    "key": "lg-05-07",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-26",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（臨床医学）で修正",
+     "修正後の独立再監査（pass）",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L05（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L05a（臨床医学）",
+     "reauditor": "reaudit:L05a"
+    },
+    "log": "bank/audit/legacy-L05a.audit.json#lg-05-07",
+    "notes": "再監査: x-legacy-L05a:msd-cap l.19,34(肺炎球菌が最も一般的な細菌性原因), l.41-44(CA-MRSAまれ、緑膿菌は危険因子), l.59(結核は別項); msd-hap l.41。｜x-legacy-L05a:msd-cap 概要・細菌性の原因（肺炎球菌が筆頭）、x-legacy-L05a:msd-hap 病原体（緑膿菌・MRSA）。"
+   }
+  },
+  {
+   "id": "lg-05-08",
+   "legacy": {
+    "key": "5_8",
+    "chapter": 5,
+    "chapterName": "臨床医学",
+    "index": 8,
+    "hash": "4d788bf247b75491"
+   },
+   "subject": "BCL",
+   "subtopic": "循環器・呼吸器",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "心房細動の最も重要な合併症はどれか。",
+   "choices": [
+    "心筋梗塞",
+    "肺気腫",
+    "脳塞栓症",
+    "腎不全"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "心房細動では心房収縮の欠如が心房内血栓の形成の素因となり、脳塞栓症のリスクが有意に増大する。脳血管塞栓症の年間リスクは全体で3～5％で、全脳卒中の20～25％が心房細動を原因とする。このため抗凝固療法による血栓塞栓症の予防が治療の柱となる。",
+    "choiceNotes": [
+     "心筋梗塞は冠動脈の閉塞による病態で、心房細動の合併症として挙げられていない。",
+     "肺気腫（COPD）は主に喫煙などの吸入曝露による疾患で、心房細動の合併症ではない。",
+     null,
+     "腎不全は心房細動の合併症として挙げられていない。心房細動の合併症は血栓塞栓症（脳塞栓症）と、心室拍数が高すぎる場合などの心不全である。"
+    ],
+    "point": "心房細動→心房内血栓→脳塞栓症（全脳卒中の20～25％）。抗凝固療法で予防し、CHA2DS2-VAScスコアでリスクを評価する。"
+   },
+   "sources": [
+    {
+     "ref": "x-legacy-L05a:msd-af",
+     "title": "MSDマニュアル プロフェッショナル版「心房細動」",
+     "url": "https://www.msdmanuals.com/ja-jp/professional/04-心血管疾患/不整脈の各論/心房細動",
+     "locator": "概要",
+     "quote": "心房内血栓が形成されることがあり，その場合は脳塞栓症のリスクが有意に増大する。"
+    },
+    {
+     "ref": "x-legacy-L05a:msd-af",
+     "title": "MSDマニュアル プロフェッショナル版「心房細動」",
+     "url": "https://www.msdmanuals.com/ja-jp/professional/04-心血管疾患/不整脈の各論/心房細動",
+     "locator": "心房細動の合併症",
+     "quote": "心房収縮の欠如が血栓形成の素因となり，全体として脳血管塞栓症の年間リスクが3～5％となり，全脳卒中の20～25％が心房細動を原因としている"
+    },
+    {
+     "ref": "x-legacy-L05a:msd-af",
+     "title": "MSDマニュアル プロフェッショナル版「心房細動」",
+     "url": "https://www.msdmanuals.com/ja-jp/professional/04-心血管疾患/不整脈の各論/心房細動",
+     "locator": "心房細動の合併症",
+     "quote": "そのような場合には，心不全を来す可能性がある。"
+    }
+   ],
+   "asOf": "MSDマニュアル プロフェッショナル版（日本語）「心房細動」（2024年12月最終更新）",
+   "origin": {
+    "batch": "L05",
+    "key": "lg-05-08",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-26",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（臨床医学）で修正",
+     "修正後の独立再監査（pass）",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L05（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L05a（臨床医学）",
+     "reauditor": "reaudit:L05a"
+    },
+    "log": "bank/audit/legacy-L05a.audit.json#lg-05-08",
+    "notes": "再監査: x-legacy-L05a:msd-af l.32(心房収縮欠如→血栓→脳血管塞栓年3〜5%、全脳卒中の20〜25%), l.33(心不全), l.35 CHA2DS2-VASc。心筋梗塞・腎不全は合併症として挙げられていない。｜x-legacy-L05a:msd-af 概要・心房細動の合併症（心房内血栓→脳塞栓症、全脳卒中の20～25％）。lg-05-19（L05b）と実質重複のため、どちらか一方のみ採用を推奨（本問を残す想定）。"
+   }
+  },
+  {
+   "id": "lg-05-09",
+   "legacy": {
+    "key": "5_9",
+    "chapter": 5,
+    "chapterName": "臨床医学",
+    "index": 9,
+    "hash": "e3d76fdff98e4009"
+   },
+   "subject": "BCL",
+   "subtopic": "精神・脳神経・感覚器",
+   "format": "knowledge",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "外傷によらない（自発性の）くも膜下出血の原因として最も多いものはどれか。",
+   "choices": [
+    "脳動静脈奇形からの出血",
+    "脳動脈瘤の破裂",
+    "感染性動脈瘤の破裂",
+    "凝固異常などの出血性疾患"
+   ],
+   "answer": 1,
+   "explanation": {
+    "correct": "自発性（一次性）のくも膜下出血は通常、動脈瘤破裂に起因し、約85％の患者では先天性の頭蓋内嚢状動脈瘤が原因である。頭痛は通常重度で数秒以内にピークとなる。なお、くも膜下出血全体では頭部外傷が最も一般的な原因だが、外傷性くも膜下出血は通常、別の疾患とみなされる。",
+    "choiceNotes": [
+     "脳動静脈奇形は自発性くも膜下出血の比較的まれな原因である。",
+     null,
+     "感染性動脈瘤は比較的まれな原因である。",
+     "出血性疾患は比較的まれな原因である。"
+    ],
+    "point": "自発性くも膜下出血＝脳動脈瘤（嚢状動脈瘤）破裂が約85％。数秒でピークに達する突然の激しい頭痛。"
+   },
+   "sources": [
+    {
+     "ref": "x-legacy-L05a:msd-sah",
+     "title": "MSDマニュアル プロフェッショナル版「くも膜下出血（SAH）」",
+     "url": "https://www.msdmanuals.com/ja-jp/professional/07-神経疾患/脳卒中/くも膜下出血-sah",
+     "locator": "病因",
+     "quote": "自発性（一次性）のくも膜下出血は通常，動脈瘤破裂に起因する。約85％の患者では，先天性の頭蓋内嚢状動脈瘤または桑実状動脈瘤（berry aneurysm）が原因である。"
+    },
+    {
+     "ref": "x-legacy-L05a:msd-sah",
+     "title": "MSDマニュアル プロフェッショナル版「くも膜下出血（SAH）」",
+     "url": "https://www.msdmanuals.com/ja-jp/professional/07-神経疾患/脳卒中/くも膜下出血-sah",
+     "locator": "病因",
+     "quote": "比較的まれな原因は，感染性動脈瘤，動静脈奇形，および出血性疾患である。"
+    },
+    {
+     "ref": "x-legacy-L05a:msd-sah",
+     "title": "MSDマニュアル プロフェッショナル版「くも膜下出血（SAH）」",
+     "url": "https://www.msdmanuals.com/ja-jp/professional/07-神経疾患/脳卒中/くも膜下出血-sah",
+     "locator": "病因",
+     "quote": "一般に，頭部外傷はくも膜下出血の最も一般的な原因であるが，外傷性くも膜下出血は通常，別の疾患とみなされる。"
+    }
+   ],
+   "asOf": "MSDマニュアル プロフェッショナル版（日本語）「くも膜下出血（SAH）」（2023年7月最終更新）",
+   "origin": {
+    "batch": "L05",
+    "key": "lg-05-09",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-26",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（臨床医学）で修正",
+     "修正後の独立再監査（pass）",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L05（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L05a（臨床医学）",
+     "reauditor": "reaudit:L05a"
+    },
+    "log": "bank/audit/legacy-L05a.audit.json#lg-05-09",
+    "notes": "再監査: x-legacy-L05a:msd-sah 病因 l.30-31: 自発性SAHは約85%が嚢状動脈瘤破裂；感染性動脈瘤・AVM・出血性疾患は比較的まれ。l.35 数秒以内にピーク。｜x-legacy-L05a:msd-sah 病因（頭部外傷が最も一般的だが外傷性は別扱い、自発性の約85％が嚢状動脈瘤、まれな原因＝感染性動脈瘤・動静脈奇形・出血性疾患）。"
+   }
+  },
+  {
+   "id": "lg-05-10",
+   "legacy": {
+    "key": "5_10",
+    "chapter": 5,
+    "chapterName": "臨床医学",
+    "index": 10,
+    "hash": "7f2ea5ffcae23a4f"
+   },
+   "subject": "BCL",
+   "subtopic": "精神・脳神経・感覚器",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "高齢者の認知症の原因疾患として最も多いものはどれか。",
+   "choices": [
+    "アルツハイマー病",
+    "血管性認知症",
+    "レビー小体型認知症",
+    "前頭側頭型認知症"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "アルツハイマー病は認知症の最も一般的な原因であり、高齢者の認知症の60～80％を占める。",
+    "choiceNotes": [
+     null,
+     "血管性認知障害・認知症は高齢者の認知症で2番目に多い原因である。",
+     "レビー小体型認知症は頻度の高い認知症の病型の一つだが、最多ではない。",
+     "前頭側頭型認知症は頻度の高い認知症の病型の一つだが、最多ではない。"
+    ],
+    "point": "認知症の原因：アルツハイマー病が最多（高齢者の認知症の60～80％）、2番目が血管性認知症。"
+   },
+   "sources": [
+    {
+     "ref": "x-legacy-L05a:msd-alzheimer",
+     "title": "MSDマニュアル プロフェッショナル版「アルツハイマー病」",
+     "url": "https://www.msdmanuals.com/ja-jp/professional/07-神経疾患/せん妄および認知症/アルツハイマー病",
+     "locator": "概要",
+     "quote": "アルツハイマー病は，認知症の最も一般的な原因であり，高齢者の認知症の60～80％を占める。"
+    },
+    {
+     "ref": "x-legacy-L05a:msd-vascular-dementia",
+     "title": "MSDマニュアル プロフェッショナル版「血管性認知障害・認知症」",
+     "url": "https://www.msdmanuals.com/ja-jp/professional/07-神経疾患/せん妄および認知症/血管性認知障害-認知症",
+     "locator": "概要",
+     "quote": "血管性認知障害・認知症は，高齢者の認知症で2番目に多い原因である。"
+    }
+   ],
+   "asOf": "MSDマニュアル プロフェッショナル版（日本語）「アルツハイマー病」「血管性認知障害・認知症」（2025年2月最終更新）",
+   "origin": {
+    "batch": "L05",
+    "key": "lg-05-10",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-26",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（臨床医学）で修正",
+     "修正後の独立再監査（pass）",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L05（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L05a（臨床医学）",
+     "reauditor": "reaudit:L05a"
+    },
+    "log": "bank/audit/legacy-L05a.audit.json#lg-05-10",
+    "notes": "再監査: x-legacy-L05a:msd-alzheimer l.31(認知症の最も一般的な原因、高齢者認知症の60〜80%); msd-vascular-dementia l.29(2番目); msd-dementia l.41-45(レビー小体型・前頭側頭型は頻度の高い病型)。｜x-legacy-L05a:msd-alzheimer（認知症の最も一般的な原因、高齢者の認知症の60～80％）、x-legacy-L05a:msd-vascular-dementia（2番目に多い）。"
+   }
+  },
+  {
+   "id": "lg-05-11",
+   "legacy": {
+    "key": "5_11",
+    "chapter": 5,
+    "chapterName": "臨床医学",
+    "index": 11,
+    "hash": "ba7367e872c24981"
+   },
+   "subject": "BCL",
+   "subtopic": "新生物",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "胃がんの発生要因として、国立がん研究センターがん情報サービスに挙げられている感染はどれか。",
+   "choices": [
+    "ヘリコバクター・ピロリ（ピロリ菌）の感染",
+    "ヒトパピローマウイルス（HPV）の感染",
+    "B型肝炎ウイルスの持続感染",
+    "C型肝炎ウイルスの持続感染"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "がん情報サービスでは、胃がんの発生要因にはピロリ菌の感染と喫煙があり、その他に食塩・高塩分食品の摂取が危険性を高めると報告されているとしている。胃がんではピロリ菌の除菌によって確実に発生リスクが低下することが明らかになっている（ただしゼロにはならない）。",
+    "choiceNotes": [
+     null,
+     "HPVの感染は子宮頸がんの発生の多くに関連する感染であり、胃がんの発生要因としては挙げられていない。",
+     "B型肝炎ウイルスの持続感染は肝細胞がんの主な要因であり、胃がんの発生要因としては挙げられていない。",
+     "C型肝炎ウイルスの持続感染は肝細胞がんの主な要因であり、胃がんの発生要因としては挙げられていない。"
+    ],
+    "point": "胃がんの発生要因＝ピロリ菌感染・喫煙（＋食塩・高塩分食品）。除菌で発生リスクは確実に低下する。HPV→子宮頸がん、B型・C型肝炎ウイルス→肝細胞がん。"
+   },
+   "sources": [
+    {
+     "ref": "x-legacy-L05a:ganjoho-stomach-prevention",
+     "title": "胃がん 予防・検診（がん情報サービス 一般の方へ）",
+     "url": "https://ganjoho.jp/public/cancer/stomach/prevention_screening.html",
+     "locator": "１．発生要因",
+     "quote": "胃がんの発生要因には、ヘリコバクター・ピロリ（ピロリ菌）の感染と喫煙があります。"
+    },
+    {
+     "ref": "x-legacy-L05a:ganjoho-liver-prevention",
+     "title": "肝臓がん（肝細胞がん） 予防・検診（がん情報サービス 一般の方へ）",
+     "url": "https://ganjoho.jp/public/cancer/liver/prevention_screening.html",
+     "locator": "１．発生要因",
+     "quote": "肝細胞がんが発生する主な要因は、B型肝炎ウイルスあるいはC型肝炎ウイルスの持続感染"
+    },
+    {
+     "ref": "x-legacy-L05a:ganjoho-cervix-prevention",
+     "title": "子宮頸がん 予防・検診（がん情報サービス 一般の方へ）",
+     "url": "https://ganjoho.jp/public/cancer/cervix_uteri/prevention_screening.html",
+     "locator": "１．発生要因",
+     "quote": "子宮頸がんの発生には、その多くにヒトパピローマウイルス（HPV：Human Papillomavirus）の感染が関連しています"
+    }
+   ],
+   "asOf": "がん情報サービス（胃がん 2026年1月13日、肝臓がん 2026年8月21日、子宮頸がん 2026年4月23日 更新・確認）",
+   "origin": {
+    "batch": "L05",
+    "key": "lg-05-11",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-26",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（臨床医学）で修正",
+     "修正後の独立再監査（pass）",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L05（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L05a（臨床医学）",
+     "reauditor": "reaudit:L05a"
+    },
+    "log": "bank/audit/legacy-L05a.audit.json#lg-05-11",
+    "notes": "再監査: x-legacy-L05a:ganjoho-stomach-prevention l.217,227(ピロリ菌感染と喫煙、食塩；除菌で確実にリスク低下、ゼロにはならない; 更新2026-01-13); liver l.(B/C型肝炎ウイルス→肝細胞がん); cervix(HPV)。｜x-legacy-L05a:ganjoho-stomach-prevention 発生要因（ピロリ菌感染・喫煙・食塩）; ganjoho-liver-prevention（HBV/HCV→肝細胞がん）; ganjoho-cervix-prevention（HPV→子宮頸がん）。"
+   }
+  },
+  {
+   "id": "lg-05-12",
+   "legacy": {
+    "key": "5_12",
+    "chapter": 5,
+    "chapterName": "臨床医学",
+    "index": 12,
+    "hash": "3fdf2e443acc98a1"
+   },
+   "subject": "BCL",
+   "subtopic": "臨床医学総論",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "negative",
+   "question": "ショックの分類に含まれないのはどれか。",
+   "choices": [
+    "循環血液量減少性ショック",
+    "心原性ショック",
+    "代謝性ショック",
+    "敗血症性ショック"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "ショック分類＝循環血液量減少性・心原性・心外閉塞性・血液分布異常性。代謝性は存在しない。",
+    "choiceNotes": [
+     "出血等で生じるショックの基本型。",
+     "心筋梗塞等でポンプ機能破綻。",
+     null,
+     "感染症による分布異常性ショック。"
+    ],
+    "point": "ショック分類＝循環血液量減少性・心原性・心外閉塞性・血液分布異常性。"
+   },
+   "sources": [
+    {
+     "ref": "x-legacy-L05a:msd-shock",
+     "title": "MSDマニュアル プロフェッショナル版「ショック」",
+     "url": "https://www.msdmanuals.com/ja-jp/professional/21-救命医療/ショックおよび輸液蘇生/ショック",
+     "locator": "ショックの病因と分類",
+     "quote": "循環血液量減少（循環血液量減少性ショック） 血管拡張（血液分布異常性ショック） 心拍出量の一次性低下（心原性ショックおよび閉塞性ショック）"
+    },
+    {
+     "ref": "x-legacy-L05a:msd-shock",
+     "title": "MSDマニュアル プロフェッショナル版「ショック」",
+     "url": "https://www.msdmanuals.com/ja-jp/professional/21-救命医療/ショックおよび輸液蘇生/ショック",
+     "locator": "病態生理",
+     "quote": "敗血症性ショックは血液分布異常性ショックの一種であり"
+    },
+    {
+     "ref": "x-legacy-L05a:msd-shock",
+     "title": "MSDマニュアル プロフェッショナル版「ショック」",
+     "url": "https://www.msdmanuals.com/ja-jp/professional/21-救命医療/ショックおよび輸液蘇生/ショック",
+     "locator": "心原性ショックおよび閉塞性ショック",
+     "quote": "心原性ショックは，一次性心疾患に起因する心拍出量の相対的または絶対的な減少である。"
+    }
+   ],
+   "asOf": "MSDマニュアル プロフェッショナル版（日本語）「ショック」（2024年9月最終更新）",
+   "origin": {
+    "batch": "L05",
+    "key": "lg-05-12",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-26",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "領域監査（臨床医学）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L05（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L05a（臨床医学）"
+    },
+    "log": "bank/audit/legacy-L05a.audit.json#lg-05-12",
+    "notes": "x-legacy-L05a:msd-shock ショックの病因と分類（循環血液量減少性・血液分布異常性・心原性・閉塞性）、敗血症性ショック＝血液分布異常性の一種、出血は循環血液量減少性ショックの一般的な原因、心原性の原因に心筋梗塞。"
+   }
+  },
+  {
+   "id": "lg-05-13",
+   "legacy": {
+    "key": "5_13",
+    "chapter": 5,
+    "chapterName": "臨床医学",
+    "index": 13,
+    "hash": "d9f65665b7ba9840"
+   },
+   "subject": "BCL",
+   "subtopic": "血液・代謝・内分泌",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "血糖値の上昇が軽度の2型糖尿病で、最初に行う治療はどれか。",
+   "choices": [
+    "インスリン注射",
+    "透析療法",
+    "手術療法",
+    "食事療法と運動療法"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "血漿血糖値の上昇が軽度である2型糖尿病患者には、まず食事療法と運動療法を試み、生活習慣の改善で不十分であれば、インスリン以外の血糖降下薬（多くの場合メトホルミン）を1つ処方する。",
+    "choiceNotes": [
+     "インスリンは、2型糖尿病を有する妊娠中の女性や、高浸透圧性高血糖状態・糖尿病性ケトアシドーシスなどの急性代謝代償不全を呈する患者では初期治療として適応となり、HbA1c値が10％を超えかつ血糖値が300mg/dL以上の患者などでは考慮されるが、血糖上昇が軽度であればまず食事療法と運動療法を行う。",
+     "透析は進行した腎不全に対する腎代替療法であり、糖尿病の初期治療ではない。",
+     "手術療法は血糖上昇が軽度の2型糖尿病の初期治療ではない。",
+     null
+    ],
+    "point": "2型糖尿病（血糖上昇が軽度）＝①食事・運動療法→②インスリン以外の血糖降下薬（多くはメトホルミン）→必要に応じて併用・インスリン。"
+   },
+   "sources": [
+    {
+     "ref": "x-legacy-L04a:msd-ja-dm",
+     "title": "MSDマニュアル プロフェッショナル版「糖尿病」",
+     "url": "https://www.msdmanuals.com/ja-jp/professional/10-内分泌疾患と代謝性疾患/糖尿病と糖代謝異常症/糖尿病",
+     "locator": "治療",
+     "quote": "血漿血糖値の上昇が軽度である 2型糖尿病 患者には食事療法および運動療法を試みるよう指示し，生活習慣の改善で不十分であれば，続いて インスリン以外の血糖降下薬 （多くの場合メトホルミン）を1つ処方する。"
+    },
+    {
+     "ref": "x-legacy-L04a:msd-ja-dm",
+     "title": "MSDマニュアル プロフェッショナル版「糖尿病」",
+     "url": "https://www.msdmanuals.com/ja-jp/professional/10-内分泌疾患と代謝性疾患/糖尿病と糖代謝異常症/糖尿病",
+     "locator": "治療",
+     "quote": "2型糖尿病を有する妊娠中の女性，および 高浸透圧性高血糖状態 または 糖尿病性ケトアシドーシス （DKA）などの急性代謝代償不全を呈する患者では，初期治療として インスリン が適応となる。"
+    }
+   ],
+   "asOf": "MSDマニュアル プロフェッショナル版（日本語）「糖尿病」（2024年10月最終更新）",
+   "origin": {
+    "batch": "L05",
+    "key": "lg-05-13",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-26",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（臨床医学）で修正",
+     "修正後の独立再監査（provisional）",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査",
+     "再監査の指摘に沿って再修正し、別エージェントの再監査（ブラインド解答一致）で合格"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L05（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L05a（臨床医学）",
+     "reauditor": "reaudit:L05a",
+     "repair": "repair:R-01",
+     "reauditor2": "reaudit:R-01"
+    },
+    "log": "bank/audit/legacy-L05a.audit.json#lg-05-13",
+    "notes": "再修正: choiceNotes[1]で「著しい高血糖」を初期治療の適応と同列に書いていた点を、出典どおり『妊娠中・急性代謝代償不全＝初期治療として適応』『HbA1c＞10％かつ血糖≥300mg/dL等＝考慮すべき』に書き分けた（x-legacy-L04a:msd-ja-dm l.209）。他は変更なし。｜再監査: x-legacy-L04a:msd-ja-dm 治療 l.(血糖上昇が軽度の2型→食事・運動療法、不十分ならメトホルミン等), l.209(妊娠・HHS/DKAは初期治療としてインスリン)。key・distractorsは正しい。｜x-legacy-L04a:msd-ja-dm 治療（血糖上昇が軽度の2型は食事・運動療法→メトホルミン等、急性代謝代償不全等ではインスリンを初期治療）。"
+   }
+  },
+  {
+   "id": "lg-05-14",
+   "legacy": {
+    "key": "5_14",
+    "chapter": 5,
+    "chapterName": "臨床医学",
+    "index": 14,
+    "hash": "c21173a4c94edfec"
+   },
+   "subject": "BCL",
+   "subtopic": "皮膚・筋骨格",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "関節リウマチの特徴として正しいものはどれか。",
+   "choices": [
+    "高齢男性に多い",
+    "血液検査で異常がみられない",
+    "片側の大関節だけが侵される",
+    "朝のこわばりと対称性の多関節炎がみられる"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "関節リウマチは主に関節を侵す慢性の全身性自己免疫疾患で、手関節や中手指節関節などの末梢関節に対称性に炎症が生じる。関節症状は対称性であることが特徴的で、こわばりは典型的には朝の起床後に60分を超えて続く。",
+    "choiceNotes": [
+     "女性で発生する頻度が男性の2～3倍高く、35歳から50歳の発症が最も多い。",
+     "診断にはリウマトイド因子（RF）、抗CCP抗体、赤沈またはCRPなどの血液検査が用いられ、分類基準にも含まれる。",
+     "手関節・中手指節関節などの末梢関節に対称性の多関節炎が生じるのが特徴である。",
+     null
+    ],
+    "point": "関節リウマチ＝朝のこわばり（典型的には60分超）＋対称性の多関節炎（手関節・中手指節関節など）。女性に2～3倍多く35～50歳に多い。RF・抗CCP抗体・赤沈/CRP。"
+   },
+   "sources": [
+    {
+     "ref": "x-legacy-L05a:msd-ra",
+     "title": "MSDマニュアル プロフェッショナル版「関節リウマチ（RA）」",
+     "url": "https://www.msdmanuals.com/ja-jp/professional/06-筋骨格系疾患と結合組織疾患/関節疾患/関節リウマチ-ra",
+     "locator": "症状と徴候",
+     "quote": "関節症状は対称性であることが特徴的である。典型的にはこわばりは朝の起床後に60分間を超えて続く"
+    },
+    {
+     "ref": "x-legacy-L05a:msd-ra",
+     "title": "MSDマニュアル プロフェッショナル版「関節リウマチ（RA）」",
+     "url": "https://www.msdmanuals.com/ja-jp/professional/06-筋骨格系疾患と結合組織疾患/関節疾患/関節リウマチ-ra",
+     "locator": "疫学",
+     "quote": "女性で発生する頻度が男性の2～3倍高い(2)。年齢を問わず発症する可能性があり，35歳から50歳が最も多い"
+    },
+    {
+     "ref": "x-legacy-L05a:msd-ra",
+     "title": "MSDマニュアル プロフェッショナル版「関節リウマチ（RA）」",
+     "url": "https://www.msdmanuals.com/ja-jp/professional/06-筋骨格系疾患と結合組織疾患/関節疾患/関節リウマチ-ra",
+     "locator": "診断",
+     "quote": "血清中のリウマトイド因子（RF），抗環状シトルリン化ペプチド抗体（抗CCP抗体），および赤血球沈降速度（赤沈）またはC反応性タンパク（CRP）"
+    }
+   ],
+   "asOf": "MSDマニュアル プロフェッショナル版（日本語）「関節リウマチ（RA）」（2024年4月最終更新）",
+   "origin": {
+    "batch": "L05",
+    "key": "lg-05-14",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-26",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（臨床医学）で修正",
+     "修正後の独立再監査（pass）",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L05（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L05a（臨床医学）",
+     "reauditor": "reaudit:L05a"
+    },
+    "log": "bank/audit/legacy-L05a.audit.json#lg-05-14",
+    "notes": "再監査: x-legacy-L05a:msd-ra l.19(末梢関節の対称性炎症), l.29(女性に2〜3倍、35〜50歳), l.60(対称性・朝のこわばり60分超), 診断(RF・抗CCP・赤沈/CRP)。｜x-legacy-L05a:msd-ra 概要・疫学（女性に2～3倍、35～50歳に多い）・症状（対称性、朝のこわばり60分超）・診断（RF・抗CCP抗体・赤沈/CRP）。lg-05-26（L05b）と実質重複のため、どちらか一方のみ採用を推奨（本問を残す想定）。"
+   }
+  },
+  {
+   "id": "lg-05-15",
+   "legacy": {
+    "key": "5_15",
+    "chapter": 5,
+    "chapterName": "臨床医学",
+    "index": 15,
+    "hash": "ac714d278d75ae76"
+   },
+   "subject": "BCL",
+   "subtopic": "消化器・泌尿器",
+   "format": "knowledge",
+   "difficulty": "standard",
+   "polarity": "negative",
+   "question": "肝硬変の代償不全を特徴づける、いわゆる三大合併症に含まれないものはどれか。",
+   "choices": [
+    "食道静脈瘤（破裂による消化管出血）",
+    "腹水",
+    "胆石症",
+    "肝性脳症"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "肝硬変の代償不全は消化管出血（食道・胃静脈瘤などからの出血）、腹水、肝性脳症を特徴とし、これらがいわゆる三大合併症である。静脈瘤と腹水は門脈圧亢進症の合併症、肝性脳症は進行性の肝機能障害の表れである。胆石症は代償不全を特徴づける病態として挙げられていない。",
+    "choiceNotes": [
+     "門脈圧亢進症による静脈瘤からの消化管出血は、代償不全の特徴の一つ。",
+     "腹水は門脈圧亢進症による合併症で、代償不全の特徴の一つ。",
+     null,
+     "肝性脳症は肝機能不全の表れ（羽ばたき振戦、錯乱、肝性昏睡など）で、代償不全の特徴の一つ。"
+    ],
+    "point": "肝硬変の代償不全（三大合併症）＝静脈瘤からの消化管出血・腹水・肝性脳症。前2者は門脈圧亢進症、肝性脳症は肝機能不全による。"
+   },
+   "sources": [
+    {
+     "ref": "x-legacy-L05a:msd-cirrhosis",
+     "title": "MSDマニュアル プロフェッショナル版「肝硬変」",
+     "url": "https://www.msdmanuals.com/ja-jp/professional/02-肝胆道疾患/線維化と肝硬変/肝硬変",
+     "locator": "症状と徴候",
+     "quote": "肝硬変の合併症が発生すると，さらなる代償不全（消化管出血，腹水，または肝性脳症を特徴とする）が起きる可能性が大幅に高くなる。"
+    },
+    {
+     "ref": "x-legacy-L05a:msd-cirrhosis",
+     "title": "MSDマニュアル プロフェッショナル版「肝硬変」",
+     "url": "https://www.msdmanuals.com/ja-jp/professional/02-肝胆道疾患/線維化と肝硬変/肝硬変",
+     "locator": "合併症",
+     "quote": "門脈圧亢進症は，肝硬変の重篤な合併症として最も頻度の高いものであるが，それ自体も以下のような新たな合併症の原因となる： 食道静脈瘤，胃静脈瘤，または直腸静脈瘤からの消化管出血と門脈圧亢進性胃症"
+    },
+    {
+     "ref": "x-legacy-L05a:msd-cirrhosis",
+     "title": "MSDマニュアル プロフェッショナル版「肝硬変」",
+     "url": "https://www.msdmanuals.com/ja-jp/professional/02-肝胆道疾患/線維化と肝硬変/肝硬変",
+     "locator": "合併症",
+     "quote": "進行性の肝構築の喪失は，肝機能の障害から，肝機能不全へと至るが，凝固障害，急性腎障害（肝腎症候群），および肝性脳症として顕在化する。"
+    }
+   ],
+   "asOf": "MSDマニュアル プロフェッショナル版（日本語）「肝硬変」（2024年1月最終更新）",
+   "origin": {
+    "batch": "L05",
+    "key": "lg-05-15",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-26",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（臨床医学）で修正",
+     "修正後の独立再監査（pass）",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L05（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L05a（臨床医学）",
+     "reauditor": "reaudit:L05a"
+    },
+    "log": "bank/audit/legacy-L05a.audit.json#lg-05-15",
+    "notes": "再監査: x-legacy-L05a:msd-cirrhosis 症状と徴候 l.70(代償不全=消化管出血・腹水・肝性脳症)、合併症(門脈圧亢進→静脈瘤出血；肝機能不全→肝性脳症)。胆石症は代償不全の特徴として挙げられていない。「いわゆる三大合併症」は教科書的呼称で、stemの「いわゆる」で限定済み。｜x-legacy-L05a:msd-cirrhosis 合併症（門脈圧亢進症→静脈瘤からの消化管出血・腹水、肝機能不全→肝性脳症）、代償不全（消化管出血・腹水・肝性脳症）。"
+   }
+  },
+  {
+   "id": "lg-05-16",
+   "legacy": {
+    "key": "5_16",
+    "chapter": 5,
+    "chapterName": "臨床医学",
+    "index": 16,
+    "hash": "0cb1883befaf3395"
+   },
+   "subject": "BCL",
+   "subtopic": "循環器・呼吸器",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "気管支喘息の病態として正しいのはどれか。",
+   "choices": [
+    "気管支の不可逆的な拡張と慢性の気道感染",
+    "肺胞中隔の破壊による肺の弾性収縮力の喪失",
+    "気道の慢性炎症と可逆性の気道狭窄",
+    "胸膜の炎症による胸水の貯留"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "喘息は，様々な誘発刺激により部分的または完全に可逆的な気管支収縮を生じる，気道のびまん性炎症疾患である。",
+    "choiceNotes": [
+     "気管支の不可逆的な拡張は気管支拡張症の病態であり，喘息の気道狭窄は可逆的であることが特徴。",
+     "肺胞中隔の破壊（肺実質の破壊）と弾性収縮力の喪失は肺気腫の病態である。",
+     null,
+     "胸膜の炎症は胸膜炎の病態であり，喘息は気道の炎症性疾患である。"
+    ],
+    "point": "喘息＝気道の慢性炎症＋可逆的な気道狭窄。肺胞の破壊は肺気腫（COPD）。"
+   },
+   "sources": [
+    {
+     "ref": "x-legacy-L05b:msd-asthma",
+     "title": "MSDマニュアル プロフェッショナル版「喘息」",
+     "url": "https://www.msdmanuals.com/ja-jp/professional/05-肺疾患/喘息および関連疾患/喘息",
+     "locator": "喘息（概要）",
+     "quote": "部分的または完全に可逆的な気管支収縮を生じさせる気道のびまん性炎症疾患である"
+    },
+    {
+     "ref": "x-legacy-L04a:msd-ja-copd",
+     "title": "MSDマニュアル プロフェッショナル版「慢性閉塞性肺疾患（COPD）」",
+     "url": "https://www.msdmanuals.com/ja-jp/professional/05-肺疾患/慢性閉塞性肺疾患および関連疾患/慢性閉塞性肺疾患-copd",
+     "locator": "COPD 病態生理",
+     "quote": "肺気腫 は，肺実質の破壊であり，弾性収縮力の喪失ならびに肺胞中隔および気道"
+    }
+   ],
+   "asOf": "MSDマニュアル プロフェッショナル版（日本語）2024年9月時点の記載",
+   "origin": {
+    "batch": "L05",
+    "key": "lg-05-16",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-26",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（臨床医学）で修正",
+     "修正後の独立再監査（pass）",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L05（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L05b（臨床医学）",
+     "reauditor": "reaudit:L05b"
+    },
+    "log": "bank/audit/legacy-L05b.audit.json#lg-05-16",
+    "notes": "再監査: x-legacy-L05b:msd-asthma L19「部分的または完全に可逆的な気管支収縮…気道のびまん性炎症疾患」; x-legacy-L04a:msd-ja-copd L35 肺気腫=肺実質破壊・弾性収縮力喪失。B（不可逆）・D（胸膜）は喘息の定義と矛盾。blind一致。｜Key verified: msd-asthma 概要; 肺気腫=肺実質の破壊 (L04a copd). Solver agrees."
+   }
+  },
+  {
+   "id": "lg-05-17",
+   "legacy": {
+    "key": "5_17",
+    "chapter": 5,
+    "chapterName": "臨床医学",
+    "index": 17,
+    "hash": "4b74071a5735ea5d"
+   },
+   "subject": "BCL",
+   "subtopic": "血液・代謝・内分泌",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "甲状腺機能亢進症（バセドウ病）の症状として正しいのはどれか。",
+   "choices": [
+    "徐脈・体重増加・寒がり",
+    "高血糖・多飲多尿",
+    "関節痛・朝のこわばり",
+    "頻脈・体重減少・発汗過多"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "バセドウ病は甲状腺ホルモン過剰により頻脈・体重減少・発汗過多・手指振戦・眼球突出等を呈する。",
+    "choiceNotes": [
+     "徐脈・体重増加は甲状腺機能低下症の症状。",
+     "高血糖・多飲多尿は糖尿病の症状。",
+     "関節痛は関節リウマチの症状。",
+     null
+    ],
+    "point": "亢進症＝頻脈・体重減少・発汗。低下症＝徐脈・体重増加・寒がり。対比で覚える。"
+   },
+   "sources": [
+    {
+     "ref": "x-legacy-L05b:msd-hyperthy",
+     "title": "MSDマニュアル プロフェッショナル版「甲状腺機能亢進症」",
+     "url": "https://www.msdmanuals.com/ja-jp/professional/10-内分泌疾患と代謝性疾患/甲状腺疾患/甲状腺機能亢進症",
+     "locator": "甲状腺機能亢進症 症状と徴候",
+     "quote": "多汗，暑さに対する過敏性，疲労感，食欲亢進，体重減少"
+    },
+    {
+     "ref": "x-legacy-L05b:msd-hyperthy",
+     "title": "MSDマニュアル プロフェッショナル版「甲状腺機能亢進症」",
+     "url": "https://www.msdmanuals.com/ja-jp/professional/10-内分泌疾患と代謝性疾患/甲状腺疾患/甲状腺機能亢進症",
+     "locator": "甲状腺機能亢進症 症状と徴候",
+     "quote": "徴候としては，温かく湿った皮膚，振戦，頻脈，脈圧増大，心房細動などがある。"
+    },
+    {
+     "ref": "x-legacy-L05b:msd-hypo",
+     "title": "MSDマニュアル プロフェッショナル版「甲状腺機能低下症」",
+     "url": "https://www.msdmanuals.com/ja-jp/professional/10-内分泌疾患と代謝性疾患/甲状腺疾患/甲状腺機能低下症",
+     "locator": "甲状腺機能低下症（概要）",
+     "quote": "症状としては，耐寒性低下，疲労感，体重増加などがある。"
+    }
+   ],
+   "asOf": "MSDマニュアル プロフェッショナル版（日本語）2024年3月時点の記載",
+   "origin": {
+    "batch": "L05",
+    "key": "lg-05-17",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-26",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "領域監査（臨床医学）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L05（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L05b（臨床医学）"
+    },
+    "log": "bank/audit/legacy-L05b.audit.json#lg-05-17",
+    "notes": "Verified 頻脈・体重減少・多汗 (msd-hyperthy 症状と徴候), 眼球突出(甲状腺眼症), 低下症=耐寒性低下・体重増加・徐脈 (msd-hypo). Solver agrees."
+   }
+  },
+  {
+   "id": "lg-05-18",
+   "legacy": {
+    "key": "5_18",
+    "chapter": 5,
+    "chapterName": "臨床医学",
+    "index": 18,
+    "hash": "7b530cb52dad8a65"
+   },
+   "subject": "BCL",
+   "subtopic": "新生物",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "大腸がんの好発部位として最も多いのはどれか。",
+   "choices": [
+    "盲腸",
+    "横行結腸",
+    "上行結腸",
+    "S状結腸・直腸"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "大腸癌は全症例の半数以上が直腸およびS状結腸で発生し，95％は腺癌である。",
+    "choiceNotes": [
+     "盲腸を含む右側結腸にも発生するが，直腸・S状結腸ほど多くはない。",
+     "横行結腸の発生は直腸・S状結腸より少ない。",
+     "上行結腸の発生は直腸・S状結腸より少ない。",
+     null
+    ],
+    "point": "大腸癌の好発部位＝直腸・S状結腸（全症例の半数以上）。"
+   },
+   "sources": [
+    {
+     "ref": "x-legacy-L05b:msd-crc",
+     "title": "MSDマニュアル プロフェッショナル版「大腸癌」",
+     "url": "https://www.msdmanuals.com/ja-jp/professional/01-消化管疾患/消化管の腫瘍/大腸癌",
+     "locator": "大腸癌 病理",
+     "quote": "全症例の半数以上が直腸およびS状結腸で発生し，95％は腺癌である。"
+    }
+   ],
+   "asOf": "MSDマニュアル プロフェッショナル版（日本語）2023年10月時点の記載",
+   "origin": {
+    "batch": "L05",
+    "key": "lg-05-18",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-26",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（臨床医学）で修正",
+     "修正後の独立再監査（pass）",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L05（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L05b（臨床医学）",
+     "reauditor": "reaudit:L05b"
+    },
+    "log": "bank/audit/legacy-L05b.audit.json#lg-05-18",
+    "notes": "再監査: x-legacy-L05b:msd-crc L30「全症例の半数以上が直腸およびS状結腸で発生」。blind一致。｜msd-crc 病理: 半数以上が直腸およびS状結腸. Solver agrees."
+   }
+  },
+  {
+   "id": "lg-05-19",
+   "legacy": {
+    "key": "5_19",
+    "chapter": 5,
+    "chapterName": "臨床医学",
+    "index": 19,
+    "hash": "a30f4a136044ca13"
+   },
+   "subject": "BCL",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "心房細動の最も重大な合併症はどれか。",
+   "choices": [
+    "心室中隔欠損",
+    "脳塞栓症",
+    "肺気腫",
+    "腎結石"
+   ],
+   "answer": 1,
+   "explanation": {
+    "correct": "心房細動では心房内に血栓が形成されやすく、それが脳に飛んで脳塞栓症（心原性脳塞栓症）を引き起こすリスクが高い。",
+    "choiceNotes": [
+     "心室中隔欠損は先天性心疾患であり心房細動の合併症ではない。",
+     null,
+     "肺気腫はCOPDの一型であり心房細動とは直接関係しない。",
+     "腎結石は泌尿器系疾患で心房細動の合併症ではない。"
+    ],
+    "point": "心房細動→心房内血栓→脳塞栓症。抗凝固療法（ワルファリン・DOAC）が重要。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "rejected",
+   "origin": {
+    "batch": "L05",
+    "key": "lg-05-19",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-26",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（臨床医学）で除外"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L05（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L05b（臨床医学）"
+    },
+    "log": "bank/audit/legacy-L05b.audit.json#lg-05-19",
+    "notes": "除外理由: duplicate lg-05-08と実質同一の問い（心房細動→脳塞栓症）。内容自体はmsd心房細動で正しいが重複のため除外（lg-05-08が不採用になった場合は復活候補）。｜Same concept as lg-05-08 (心房細動の最も重要な合併症→脳塞栓症), batch L05a. Solver also flagged duplicate."
+   }
+  },
+  {
+   "id": "lg-05-20",
+   "legacy": {
+    "key": "5_20",
+    "chapter": 5,
+    "chapterName": "臨床医学",
+    "index": 20,
+    "hash": "b75d65ecb5b1e93a"
+   },
+   "subject": "BCL",
+   "subtopic": "循環器・呼吸器",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "深部静脈血栓症（DVT）の最も危険な合併症はどれか。",
+   "choices": [
+    "蜂窩織炎",
+    "肺塞栓症",
+    "脳出血",
+    "心筋梗塞"
+   ],
+   "answer": 1,
+   "explanation": {
+    "correct": "DVT（特に大腿部など近位の下肢DVT）では血栓が遊離して肺動脈を閉塞し，肺塞栓症（PE）を引き起こす。DVTは肺塞栓症の第1の原因である。",
+    "choiceNotes": [
+     "蜂窩織炎は皮膚・軟部組織の細菌感染症であり，DVTの血栓が引き起こす合併症ではない。",
+     null,
+     "脳出血は脳内の血管の破綻による出血であり，静脈血栓の遊離による合併症ではない。",
+     "心筋梗塞は主に冠動脈の閉塞によるもので，DVTの代表的な合併症ではない。"
+    ],
+    "point": "DVT→肺塞栓症（PE）。不動（麻痺・ギプス固定・長距離旅行など）は危険因子。"
+   },
+   "sources": [
+    {
+     "ref": "x-legacy-L05b:msd-dvt",
+     "title": "MSDマニュアル プロフェッショナル版「深部静脈血栓症（DVT）」",
+     "url": "https://www.msdmanuals.com/ja-jp/professional/04-心血管疾患/末梢静脈疾患/深部静脈血栓症-dvt",
+     "locator": "DVT（概要）",
+     "quote": "DVTは肺塞栓症の第1の原因である。"
+    },
+    {
+     "ref": "x-legacy-L05b:msd-dvt",
+     "title": "MSDマニュアル プロフェッショナル版「深部静脈血栓症（DVT）」",
+     "url": "https://www.msdmanuals.com/ja-jp/professional/04-心血管疾患/末梢静脈疾患/深部静脈血栓症-dvt",
+     "locator": "DVT 病態生理",
+     "quote": "下肢のDVTは肺塞栓症（PE）を引き起こす可能性がはるかに高く"
+    }
+   ],
+   "asOf": "MSDマニュアル プロフェッショナル版（日本語）2024年1月時点の記載",
+   "origin": {
+    "batch": "L05",
+    "key": "lg-05-20",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-26",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（臨床医学）で修正",
+     "修正後の独立再監査（pass）",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L05（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L05b（臨床医学）",
+     "reauditor": "reaudit:L05b"
+    },
+    "log": "bank/audit/legacy-L05b.audit.json#lg-05-20",
+    "notes": "再監査: x-legacy-L05b:msd-dvt L19「DVTは肺塞栓症の第1の原因」、L31 下肢DVT→PE、L44/L77 不動状態が危険因子。blind一致。｜msd-dvt 概要/病態生理. Solver agrees."
+   }
+  },
+  {
+   "id": "lg-05-21",
+   "legacy": {
+    "key": "5_21",
+    "chapter": 5,
+    "chapterName": "臨床医学",
+    "index": 21,
+    "hash": "a1c6f7198f0a3278"
+   },
+   "subject": "BCL",
+   "subtopic": "新生物",
+   "format": "knowledge",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "膵臓がんの腫瘍マーカーとして最も有用なのはどれか。",
+   "choices": [
+    "AFP",
+    "CEA",
+    "CA19-9",
+    "PSA"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "CA19-9は膵癌で用いられる代表的な腫瘍マーカーで，主に治療後の経過観察に用いられる。ただし感度・特異度は集団スクリーニングに使えるほど高くなく，膵癌でも高値とならない例がある。",
+    "choiceNotes": [
+     "AFP（α-フェトプロテイン）は肝細胞癌の診断に用いられる腫瘍マーカー。",
+     "CEAは大腸癌で用いられる腫瘍マーカー（初期評価や術後の再発モニタリング）。",
+     null,
+     "PSA（前立腺特異抗原）は前立腺癌の腫瘍マーカー。"
+    ],
+    "point": "膵癌＝CA19-9，肝細胞癌＝AFP，大腸癌＝CEA，前立腺癌＝PSA。腫瘍マーカーは主に経過観察に用い，単独では確定診断にならない。"
+   },
+   "sources": [
+    {
+     "ref": "x-legacy-L05b:msd-panc",
+     "title": "MSDマニュアル プロフェッショナル版「膵癌」",
+     "url": "https://www.msdmanuals.com/ja-jp/professional/01-消化管疾患/消化管の腫瘍/膵癌",
+     "locator": "膵癌 診断",
+     "quote": "CA19-9抗原による経過観察（スクリーニング検査ではなく）"
+    },
+    {
+     "ref": "x-legacy-L05b:msd-hcc",
+     "title": "MSDマニュアル プロフェッショナル版「肝細胞癌」",
+     "url": "https://www.msdmanuals.com/ja-jp/professional/02-肝胆道疾患/肝腫瘤および肉芽腫/肝細胞癌",
+     "locator": "肝細胞癌（概要）",
+     "quote": "診断はα-フェトプロテイン（AFP）値と画像検査のほか，ときに肝生検に基づく。"
+    },
+    {
+     "ref": "x-legacy-L05b:msd-pca",
+     "title": "MSDマニュアル プロフェッショナル版「前立腺癌」",
+     "url": "https://www.msdmanuals.com/ja-jp/professional/03-泌尿器疾患/泌尿生殖器癌/前立腺癌",
+     "locator": "前立腺癌（概要）",
+     "quote": "診断は直腸指診（DRE）または前立腺特異抗原（PSA）の測定により示唆され"
+    }
+   ],
+   "asOf": "MSDマニュアル プロフェッショナル版（日本語）2024年5月時点の記載",
+   "origin": {
+    "batch": "L05",
+    "key": "lg-05-21",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-26",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（臨床医学）で修正",
+     "修正後の独立再監査（pass）",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L05（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L05b（臨床医学）",
+     "reauditor": "reaudit:L05b"
+    },
+    "log": "bank/audit/legacy-L05b.audit.json#lg-05-21",
+    "notes": "再監査: msd-panc L39/L42 CA19-9による経過観察・nonproducer・スクリーニング不適; msd-hcc L19 AFP; msd-pca L19 PSA; msd-crc L62/L155 CEA（初期評価・治療後モニタリング）。blind一致。｜msd-panc 診断(CA19-9), msd-hcc(AFP), msd-pca(PSA), msd-crc(CEA 70%で高値). Solver agrees (medium)."
+   }
+  },
+  {
+   "id": "lg-05-22",
+   "legacy": {
+    "key": "5_22",
+    "chapter": 5,
+    "chapterName": "臨床医学",
+    "index": 22,
+    "hash": "5fe2ddc059299352"
+   },
+   "subject": "BCL",
+   "subtopic": "消化器・泌尿器",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "前立腺肥大症の主な症状はどれか。",
+   "choices": [
+    "排尿困難・頻尿・残尿感",
+    "血尿のみ",
+    "腰痛",
+    "下痢"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "前立腺肥大症の症状は下部尿路閉塞の症状である（尿勢低下，排尿遅延，頻尿，夜間頻尿，残尿，終末時滴下など）。",
+    "choiceNotes": [
+     null,
+     "血尿を生じることはあるが，主症状は下部尿路閉塞の症状であり「血尿のみ」ではない。",
+     "腰痛は前立腺肥大症の典型的な症状ではない。",
+     "下痢は消化器症状であり前立腺肥大症の症状ではない。"
+    ],
+    "point": "前立腺肥大症＝下部尿路閉塞の症状（排尿困難・頻尿〈夜間頻尿〉・残尿感など）。"
+   },
+   "sources": [
+    {
+     "ref": "x-legacy-L05b:msd-bph",
+     "title": "MSDマニュアル プロフェッショナル版「前立腺肥大症」",
+     "url": "https://www.msdmanuals.com/ja-jp/professional/03-泌尿器疾患/良性前立腺疾患/前立腺肥大症",
+     "locator": "前立腺肥大症（概要）",
+     "quote": "症状は下部尿路閉塞の症状である（尿勢低下，排尿遅延，頻尿，夜間頻尿，残尿，終末時滴下，溢流性尿失禁，完全尿閉）。"
+    }
+   ],
+   "asOf": "MSDマニュアル プロフェッショナル版（日本語）2025年2月時点の記載",
+   "origin": {
+    "batch": "L05",
+    "key": "lg-05-22",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-26",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（臨床医学）で修正",
+     "修正後の独立再監査（pass）",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L05（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L05b（臨床医学）",
+     "reauditor": "reaudit:L05b"
+    },
+    "log": "bank/audit/legacy-L05b.audit.json#lg-05-22",
+    "notes": "再監査: msd-bph L20 下部尿路閉塞症状（尿勢低下・頻尿・夜間頻尿・残尿…）; L126 血尿を生じることがある→「血尿のみ」は誤り。blind一致。｜msd-bph 概要; 血尿は症状と徴候に記載. Solver agrees."
+   }
+  },
+  {
+   "id": "lg-05-23",
+   "legacy": {
+    "key": "5_23",
+    "chapter": 5,
+    "chapterName": "臨床医学",
+    "index": 23,
+    "hash": "1329392034e0fcac"
+   },
+   "subject": "BCL",
+   "subtopic": "新生物",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "急性白血病の診断に最も重要な検査はどれか。",
+   "choices": [
+    "胸部X線検査",
+    "腹部CT",
+    "骨髄穿刺（骨髄生検）",
+    "心電図"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "急性白血病の確定診断には骨髄検査（骨髄穿刺および針生検）を行い，骨髄中の芽球の割合や細胞の性質を調べる。急性骨髄性白血病では，骨髄芽球が骨髄有核細胞の20％以上であることなどで診断される。",
+    "choiceNotes": [
+     "胸部X線検査は白血病の確定診断には用いない。",
+     "腹部CTは臓器の評価には用いうるが，白血病の確定診断にはならない。",
+     null,
+     "心電図は心臓の電気的活動の検査であり，白血病の診断には用いない。"
+    ],
+    "point": "急性白血病の確定診断＝骨髄検査（骨髄穿刺・生検）。AMLは骨髄芽球20％以上などで診断。"
+   },
+   "sources": [
+    {
+     "ref": "x-legacy-L05b:msd-aml",
+     "title": "MSDマニュアル プロフェッショナル版「急性骨髄性白血病（AML）」",
+     "url": "https://www.msdmanuals.com/ja-jp/professional/11-血液学および腫瘍学/白血病/急性骨髄性白血病-aml",
+     "locator": "AML 診断",
+     "quote": "骨髄検査（穿刺および針生検）がルーチンで実施される。"
+    },
+    {
+     "ref": "x-legacy-L05b:msd-aml",
+     "title": "MSDマニュアル プロフェッショナル版「急性骨髄性白血病（AML）」",
+     "url": "https://www.msdmanuals.com/ja-jp/professional/11-血液学および腫瘍学/白血病/急性骨髄性白血病-aml",
+     "locator": "AML 分類",
+     "quote": "急性骨髄性白血病は，骨髄芽球が骨髄有核細胞の20％以上"
+    }
+   ],
+   "asOf": "MSDマニュアル プロフェッショナル版（日本語）2023年11月時点の記載",
+   "origin": {
+    "batch": "L05",
+    "key": "lg-05-23",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-26",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（臨床医学）で修正",
+     "修正後の独立再監査（pass）",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L05（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L05b（臨床医学）",
+     "reauditor": "reaudit:L05b"
+    },
+    "log": "bank/audit/legacy-L05b.audit.json#lg-05-23",
+    "notes": "再監査: msd-aml L80「骨髄検査（穿刺および針生検）がルーチンで実施」, L74 骨髄芽球20％以上。急性白血病一般への一般化はAMLの記載に基づく（ALLも骨髄検査で診断する標準事実）。blind一致。｜msd-aml 診断/分類. Solver agrees."
+   }
+  },
+  {
+   "id": "lg-05-24",
+   "legacy": {
+    "key": "5_24",
+    "chapter": 5,
+    "chapterName": "臨床医学",
+    "index": 24,
+    "hash": "5e9f5bdeea0c371a"
+   },
+   "subject": "BCL",
+   "subtopic": "新生物",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "悪性リンパ腫の分類として正しいのはどれか。",
+   "choices": [
+    "小細胞癌と非小細胞癌",
+    "T細胞性リンパ腫のみからなる単一疾患",
+    "ホジキンリンパ腫と非ホジキンリンパ腫",
+    "急性リンパ性と慢性リンパ性"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "リンパ腫は網内系およびリンパ系から発生する不均一な腫瘍群であり，ホジキンリンパ腫と非ホジキンリンパ腫に大別される。",
+    "choiceNotes": [
+     "小細胞癌・非小細胞癌は肺癌など癌腫（上皮性腫瘍）の組織型の区分であり，リンパ腫の分類ではない。",
+     "リンパ腫は不均一な腫瘍の一群であり，T細胞性のみからなる単一疾患ではない。",
+     null,
+     "急性リンパ性・慢性リンパ性は白血病の区分であり，リンパ腫の大分類ではない。"
+    ],
+    "point": "リンパ腫＝ホジキンリンパ腫と非ホジキンリンパ腫に大別。"
+   },
+   "sources": [
+    {
+     "ref": "x-legacy-L05b:msd-lymph",
+     "title": "MSDマニュアル プロフェッショナル版「リンパ腫の概要」",
+     "url": "https://www.msdmanuals.com/ja-jp/professional/11-血液学および腫瘍学/リンパ腫/リンパ腫の概要",
+     "locator": "リンパ腫の概要",
+     "quote": "リンパ腫は，網内系およびリンパ系から発生する不均一な一群の腫瘍である。以下に大別される："
+    },
+    {
+     "ref": "x-legacy-L05b:msd-lymph",
+     "title": "MSDマニュアル プロフェッショナル版「リンパ腫の概要」",
+     "url": "https://www.msdmanuals.com/ja-jp/professional/11-血液学および腫瘍学/リンパ腫/リンパ腫の概要",
+     "locator": "リンパ腫の概要",
+     "quote": "ホジキンリンパ腫と非ホジキンリンパ腫の比較"
+    }
+   ],
+   "asOf": "MSDマニュアル プロフェッショナル版（日本語）2024年3月時点の記載",
+   "origin": {
+    "batch": "L05",
+    "key": "lg-05-24",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-26",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（臨床医学）で修正",
+     "修正後の独立再監査（pass）",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L05（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L05b（臨床医学）",
+     "reauditor": "reaudit:L05b"
+    },
+    "log": "bank/audit/legacy-L05b.audit.json#lg-05-24",
+    "notes": "再監査: msd-lymph L20-22「不均一な一群の腫瘍…大別される：ホジキンリンパ腫／非ホジキンリンパ腫」。blind一致。｜msd-lymph 概要. Solver agrees."
+   }
+  },
+  {
+   "id": "lg-05-25",
+   "legacy": {
+    "key": "5_25",
+    "chapter": 5,
+    "chapterName": "臨床医学",
+    "index": 25,
+    "hash": "028e8351c8ed2cd7"
+   },
+   "subject": "BCL",
+   "subtopic": "皮膚・筋骨格",
+   "format": "knowledge",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "骨粗鬆症の診断基準で用いられる指標はどれか。",
+   "choices": [
+    "骨密度（YAM値）",
+    "BMI",
+    "血糖値",
+    "CRP"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "原発性骨粗鬆症の診断基準（2012年度改訂版）は，脆弱性骨折の有無と骨密度に基づく。椎体骨折または大腿骨近位部骨折があれば骨粗鬆症と診断し，その他の脆弱性骨折がある場合は骨密度が若年成人平均値（YAM）の80％未満，脆弱性骨折がない場合は骨密度がYAMの70％以下または−2.5SD以下のときに診断する（低骨量をきたす他の疾患や続発性骨粗鬆症を認めないことが前提）。骨密度はDXA法などで測定する。",
+    "choiceNotes": [
+     null,
+     "BMIは体格（肥満度）の指標であり，骨粗鬆症の診断基準の指標ではない。",
+     "血糖値は糖代謝（糖尿病）の指標であり，骨粗鬆症の診断基準の指標ではない。",
+     "CRPは炎症の指標であり，骨粗鬆症の診断基準の指標ではない。"
+    ],
+    "point": "原発性骨粗鬆症の診断（2012年度改訂版）：椎体・大腿骨近位部の脆弱性骨折あり／その他の脆弱性骨折＋骨密度YAM80％未満／脆弱性骨折なしは骨密度YAM70％以下または−2.5SD以下。YAM＝若年成人平均値。"
+   },
+   "sources": [
+    {
+     "ref": "x-repair-R-01:jsbmr-osteo-shindan-2012",
+     "title": "原発性骨粗鬆症の診断基準（2012年度改訂版）",
+     "url": "https://jsbmr.umin.jp/guide/pdf/g-guideline.pdf",
+     "locator": "表2 II．脆弱性骨折なし",
+     "quote": "骨密度（注4）が YAM の 70％以下または－2.5SD 以下 YAM： 若年成人平均値（腰椎では 20～44 歳，大腿骨近位部では 20～29 歳）"
+    },
+    {
+     "ref": "x-repair-R-01:jsbmr-osteo-shindan-2012",
+     "title": "原発性骨粗鬆症の診断基準（2012年度改訂版）",
+     "url": "https://jsbmr.umin.jp/guide/pdf/g-guideline.pdf",
+     "locator": "表2 I．脆弱性骨折あり",
+     "quote": "1． 椎体骨折（注 2）または大腿骨近位部骨折あり 2． その他の脆弱性骨折（注 3）があり，骨密度（注 4）が YAM の 80％未満"
+    },
+    {
+     "ref": "x-legacy-L05b:tyojyu-osteo-shindan",
+     "title": "骨粗鬆症の診断（健康長寿ネット）",
+     "url": "https://www.tyojyu.or.jp/net/byouki/kotsu-soshoushou/chiryo.html",
+     "locator": "骨密度の測定",
+     "quote": "レントゲン（DXA法またはMD法）"
+    }
+   ],
+   "asOf": "原発性骨粗鬆症の診断基準（2012年度改訂版）（日本骨代謝学会・日本骨粗鬆症学会）",
+   "origin": {
+    "batch": "L05",
+    "key": "lg-05-25",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-26",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（臨床医学）で修正",
+     "修正後の独立再監査（provisional）",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査",
+     "再監査の指摘に沿って再修正し、別エージェントの再監査（ブラインド解答一致）で合格"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L05（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L05b（臨床医学）",
+     "reauditor": "reaudit:L05b",
+     "repair": "repair:R-01",
+     "reauditor2": "reaudit:R-01"
+    },
+    "log": "bank/audit/legacy-L05b.audit.json#lg-05-25",
+    "notes": "再修正: 解説・pointが健康長寿ネットの簡略版（YAM70％以下／70〜80％＋脆弱性骨折）を等式的に示していた点を、一次資料で解消。日本骨代謝学会・日本骨粗鬆症学会「原発性骨粗鬆症の診断基準（2012年度改訂版）」を取得・登録（x-repair-R-01:jsbmr-osteo-shindan-2012）し、表2どおりに correct・point を書き直した（椎体骨折または大腿骨近位部骨折あり／そ｜再監査: x-legacy-L05b:tyojyu-osteo-shindan L42 DXA法, L48-50 診断基準（YAM70%以下／70〜80%＋脆弱性骨折）。キーは確実、blind一致。｜tyojyu 診断基準; MSD(DXA, WHO Tスコア)とも整合. Solver agrees."
+   }
+  },
+  {
+   "id": "lg-05-26",
+   "legacy": {
+    "key": "5_26",
+    "chapter": 5,
+    "chapterName": "臨床医学",
+    "index": 26,
+    "hash": "5046be3f9213febb"
+   },
+   "subject": "BCL",
+   "subtopic": null,
+   "format": "knowledge",
+   "difficulty": null,
+   "polarity": "positive",
+   "question": "関節リウマチの特徴的な症状として正しいのはどれか。",
+   "choices": [
+    "朝のこわばりと手指小関節の対称性腫脹",
+    "大関節の非対称性腫脹",
+    "発熱のみ",
+    "片側の膝関節痛のみ"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "関節リウマチは朝のこわばり（30分以上）と手指などの小関節の対称性多関節炎が特徴。自己免疫疾患である。",
+    "choiceNotes": [
+     null,
+     "大関節の非対称性はむしろ変形性関節症や痛風の特徴。",
+     "発熱は随伴症状であり特徴的症状は関節症状。",
+     "片側のみではなく対称性（左右同時）が特徴。"
+    ],
+    "point": "関節リウマチ＝朝のこわばり＋小関節対称性腫脹。RF・抗CCP抗体が重要。"
+   },
+   "sources": [],
+   "asOf": null,
+   "status": "rejected",
+   "origin": {
+    "batch": "L05",
+    "key": "lg-05-26",
+    "by": "旧版（v2・AI作成）"
+   },
+   "verification": {
+    "date": "2026-11-26",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（臨床医学）で除外"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L05（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L05b（臨床医学）"
+    },
+    "log": "bank/audit/legacy-L05b.audit.json#lg-05-26",
+    "notes": "除外理由: duplicate lg-05-14と実質同一。加えて「朝のこわばり（30分以上）」はMSD（典型的に60分超）とずれる。lg-05-14が不採用になった場合は修正のうえ復活候補。｜Same concept as lg-05-14 (関節リウマチ＝朝のこわばり＋対称性多関節炎), batch L05a. Solver flagged duplicate."
+   }
+  },
+  {
+   "id": "lg-05-27",
+   "legacy": {
+    "key": "5_27",
+    "chapter": 5,
+    "chapterName": "臨床医学",
+    "index": 27,
+    "hash": "9168adb43cc97415"
+   },
+   "subject": "BCL",
+   "subtopic": "精神・脳神経・感覚器",
+   "format": "knowledge",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "てんかんの診断に最も有用な検査はどれか。",
+   "choices": [
+    "脳波検査（EEG）",
+    "頭部MRI",
+    "腰椎穿刺",
+    "血液検査"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "てんかんの診断には脳波検査（EEG）が最も有用。棘波・鋭波などのてんかん性異常波を検出する。",
+    "choiceNotes": [
+     null,
+     "頭部MRIは器質的病変の検索に有用だがてんかんの機能的診断はEEG。",
+     "腰椎穿刺は髄膜炎等の診断に用いる。",
+     "血液検査は鑑別診断に用いるがてんかんの直接的診断にはならない。"
+    ],
+    "point": "てんかん診断＝EEG（脳波）。発作型分類に基づき薬物選択を行う。"
+   },
+   "sources": [
+    {
+     "ref": "x-legacy-L05b:msd-epi",
+     "title": "MSDマニュアル プロフェッショナル版「痙攣性疾患」",
+     "url": "https://www.msdmanuals.com/ja-jp/professional/07-神経疾患/痙攣性疾患/痙攣性疾患",
+     "locator": "痙攣性疾患 診断（脳波検査）",
+     "quote": "脳波検査は，てんかん発作の診断に不可欠であり"
+    },
+    {
+     "ref": "x-legacy-L05b:msd-epi",
+     "title": "MSDマニュアル プロフェッショナル版「痙攣性疾患」",
+     "url": "https://www.msdmanuals.com/ja-jp/professional/07-神経疾患/痙攣性疾患/痙攣性疾患",
+     "locator": "痙攣性疾患 診断（脳波検査）",
+     "quote": "てんかん様異常波形（棘波，鋭波，棘徐波複合，多棘徐波複合）が検出されることがある。"
+    },
+    {
+     "ref": "x-legacy-L05b:msd-epi",
+     "title": "MSDマニュアル プロフェッショナル版「痙攣性疾患」",
+     "url": "https://www.msdmanuals.com/ja-jp/professional/07-神経疾患/痙攣性疾患/痙攣性疾患",
+     "locator": "痙攣性疾患 治療",
+     "quote": "望ましい薬剤は発作型によって異なる"
+    }
+   ],
+   "asOf": "MSDマニュアル プロフェッショナル版（日本語）2024年10月時点の記載",
+   "origin": {
+    "batch": "L05",
+    "key": "lg-05-27",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-26",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "領域監査（臨床医学）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L05（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L05b（臨床医学）"
+    },
+    "log": "bank/audit/legacy-L05b.audit.json#lg-05-27",
+    "notes": "msd-epi: EEG不可欠・棘波鋭波; MRIは器質的病変検索; 腰椎穿刺=髄膜炎/CNS感染; 薬剤は発作型による. Solver agrees (medium)."
+   }
+  },
+  {
+   "id": "lg-05-28",
+   "legacy": {
+    "key": "5_28",
+    "chapter": 5,
+    "chapterName": "臨床医学",
+    "index": 28,
+    "hash": "62945d36da10d093"
+   },
+   "subject": "BCL",
+   "subtopic": "精神・脳神経・感覚器",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "negative",
+   "question": "パーキンソン病の4大症状に含まれないものはどれか。",
+   "choices": [
+    "安静時振戦",
+    "筋強剛（固縮）",
+    "認知症",
+    "無動・寡動"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "パーキンソン病の4大症状は安静時振戦・筋強剛・無動/寡動・姿勢反射障害。認知症は合併することがあるが4大症状には含まれない。",
+    "choiceNotes": [
+     "安静時振戦は4大症状の一つで初発症状として多い。",
+     "筋強剛（固縮）は4大症状の一つ。",
+     null,
+     "無動・寡動は動作緩慢として4大症状の一つ。"
+    ],
+    "point": "パーキンソン4大症状＝振戦・固縮・無動・姿勢反射障害。ドパミン神経の変性が原因。"
+   },
+   "sources": [
+    {
+     "ref": "x-legacy-L05b:msd-pd",
+     "title": "MSDマニュアル プロフェッショナル版「パーキンソン病」",
+     "url": "https://www.msdmanuals.com/ja-jp/professional/07-神経疾患/運動障害疾患および小脳疾患/パーキンソン病",
+     "locator": "パーキンソン病（概要）",
+     "quote": "パーキンソン病は，安静時振戦，筋強剛（固縮），緩徐で減少した動作（動作緩慢）を特徴とし，やがては歩行または姿勢不安定に至る"
+    },
+    {
+     "ref": "x-legacy-L05b:msd-pd",
+     "title": "MSDマニュアル プロフェッショナル版「パーキンソン病」",
+     "url": "https://www.msdmanuals.com/ja-jp/professional/07-神経疾患/運動障害疾患および小脳疾患/パーキンソン病",
+     "locator": "パーキンソン病 症状と徴候",
+     "quote": "一側の手の安静時振戦がしばしば初発症状となる。"
+    },
+    {
+     "ref": "x-legacy-L05b:msd-pd",
+     "title": "MSDマニュアル プロフェッショナル版「パーキンソン病」",
+     "url": "https://www.msdmanuals.com/ja-jp/professional/07-神経疾患/運動障害疾患および小脳疾患/パーキンソン病",
+     "locator": "パーキンソン病 病態生理",
+     "quote": "パーキンソン病では，黒質，青斑，および他の脳幹ドパミン作動性細胞群の色素性ニューロンが変性する。"
+    }
+   ],
+   "asOf": "MSDマニュアル プロフェッショナル版（日本語）2024年6月時点の記載",
+   "origin": {
+    "batch": "L05",
+    "key": "lg-05-28",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-26",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "領域監査（臨床医学）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L05（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L05b（臨床医学）"
+    },
+    "log": "bank/audit/legacy-L05b.audit.json#lg-05-28",
+    "notes": "msd-pd 概要・症状(姿勢反射の消失)・病態生理. 認知症は主要運動症状に含まれない. Solver agrees."
+   }
+  },
+  {
+   "id": "lg-05-29",
+   "legacy": {
+    "key": "5_29",
+    "chapter": 5,
+    "chapterName": "臨床医学",
+    "index": 29,
+    "hash": "beb4ad44435a4f81"
+   },
+   "subject": "BCL",
+   "subtopic": "皮膚・筋骨格",
+   "format": "knowledge",
+   "difficulty": "basic",
+   "polarity": "positive",
+   "question": "褥瘡の好発部位として最も多いのはどれか。",
+   "choices": [
+    "前腕",
+    "腹部",
+    "仙骨部",
+    "前胸部"
+   ],
+   "answer": 2,
+   "explanation": {
+    "correct": "褥瘡は骨突出部に圧迫が加わる部位に生じ，最も一般的な発生部位は仙骨部で，次いで踵部が多い。",
+    "choiceNotes": [
+     "前腕は褥瘡の好発部位ではない。",
+     "腹部は骨突出部ではなく，褥瘡の好発部位ではない。",
+     null,
+     "前胸部は仰臥位で体圧がかかりにくく，褥瘡の好発部位ではない。"
+    ],
+    "point": "褥瘡の好発部位＝仙骨部が最多，次いで踵部。ほかに坐骨結節・大転子部・外果部。"
+   },
+   "sources": [
+    {
+     "ref": "x-legacy-L05b:msd-pu",
+     "title": "MSDマニュアル プロフェッショナル版「褥瘡」",
+     "url": "https://www.msdmanuals.com/ja-jp/professional/14-皮膚疾患/褥瘡-圧迫性損傷/褥瘡",
+     "locator": "褥瘡 診断",
+     "quote": "最も一般的な発生部位は仙骨部で，次いでかかと（踵部）が多い。"
+    },
+    {
+     "ref": "x-legacy-L05b:msd-pu",
+     "title": "MSDマニュアル プロフェッショナル版「褥瘡」",
+     "url": "https://www.msdmanuals.com/ja-jp/professional/14-皮膚疾患/褥瘡-圧迫性損傷/褥瘡",
+     "locator": "褥瘡 病態生理",
+     "quote": "褥瘡は仙骨部，坐骨結節，大転子部，外果部，および踵部に好発するが，あらゆる部位に生じうる。"
+    }
+   ],
+   "asOf": "MSDマニュアル プロフェッショナル版（日本語）2023年9月時点の記載",
+   "origin": {
+    "batch": "L05",
+    "key": "lg-05-29",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-26",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（臨床医学）で修正",
+     "修正後の独立再監査（pass）",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L05（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L05b（臨床医学）",
+     "reauditor": "reaudit:L05b"
+    },
+    "log": "bank/audit/legacy-L05b.audit.json#lg-05-29",
+    "notes": "再監査: msd-pu L155「最も一般的な発生部位は仙骨部で，次いで踵部」, L86 好発部位列挙。blind一致。｜msd-pu 病態生理/診断. Solver agrees."
+   }
+  },
+  {
+   "id": "lg-05-30",
+   "legacy": {
+    "key": "5_30",
+    "chapter": 5,
+    "chapterName": "臨床医学",
+    "index": 30,
+    "hash": "1bf8137464d0da57"
+   },
+   "subject": "BCL",
+   "subtopic": "感染症",
+   "format": "knowledge",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "敗血症の定義として現在（Sepsis-3）正しいのはどれか。",
+   "choices": [
+    "感染症に対する制御不能な宿主反応による臓器障害",
+    "細菌が血液中に存在すること",
+    "38℃以上の発熱があること",
+    "白血球数が増加していること"
+   ],
+   "answer": 0,
+   "explanation": {
+    "correct": "Sepsis-3（2016年）では敗血症を「感染症に対する制御不能な宿主反応に起因する生命を脅かす臓器障害」と定義。SOFAスコアで評価。",
+    "choiceNotes": [
+     null,
+     "菌血症（bacteremia）の定義であり敗血症とは異なる。",
+     "発熱は敗血症の一症状だが定義そのものではない。",
+     "白血球増加は感染の指標だが敗血症の定義ではない。"
+    ],
+    "point": "Sepsis-3＝感染症＋臓器障害。qSOFA（呼吸数・意識・血圧）でスクリーニング。"
+   },
+   "sources": [
+    {
+     "ref": "x-legacy-L05b:msd-sepsis",
+     "title": "MSDマニュアル プロフェッショナル版「敗血症および敗血症性ショック」",
+     "url": "https://www.msdmanuals.com/ja-jp/professional/21-救命医療/敗血症および敗血症性ショック/敗血症および敗血症性ショック",
+     "locator": "敗血症（概要）",
+     "quote": "敗血症は，感染症への反応が制御不能に陥ることで生命を脅かす臓器機能障害が生じる臨床症候群である。"
+    },
+    {
+     "ref": "x-legacy-L05b:msd-sepsis",
+     "title": "MSDマニュアル プロフェッショナル版「敗血症および敗血症性ショック」",
+     "url": "https://www.msdmanuals.com/ja-jp/professional/21-救命医療/敗血症および敗血症性ショック/敗血症および敗血症性ショック",
+     "locator": "敗血症 診断",
+     "quote": "qSOFAスコアは血圧，呼吸数，グラスゴーコーマスケールに基づくもので"
+    },
+    {
+     "ref": "x-legacy-L05b:msd-sepsis",
+     "title": "MSDマニュアル プロフェッショナル版「敗血症および敗血症性ショック」",
+     "url": "https://www.msdmanuals.com/ja-jp/professional/21-救命医療/敗血症および敗血症性ショック/敗血症および敗血症性ショック",
+     "locator": "敗血症 診断",
+     "quote": "以下のqSOFA基準のうち，2つ以上が認められる患者はさらなる臨床的評価と検査が必要である。"
+    }
+   ],
+   "asOf": "MSDマニュアル プロフェッショナル版（日本語）2024年10月時点の記載",
+   "origin": {
+    "batch": "L05",
+    "key": "lg-05-30",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-26",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "領域監査（臨床医学）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L05（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L05b（臨床医学）"
+    },
+    "log": "bank/audit/legacy-L05b.audit.json#lg-05-30",
+    "notes": "msd-sepsis 概要・診断; 定義の出典はSepsis-3(JAMA 2016) 参考文献. Solver agrees."
+   }
+  },
+  {
+   "id": "lg-05-31",
+   "legacy": {
+    "key": "5_31",
+    "chapter": 5,
+    "chapterName": "臨床医学",
+    "index": 31,
+    "hash": "48cc34cd0d4876b3"
+   },
+   "subject": "BCL",
+   "subtopic": "循環器・呼吸器",
+   "format": "knowledge",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "肺塞栓症の確定診断に最も有用な画像検査はどれか。",
+   "choices": [
+    "胸部X線",
+    "造影CT（CTPA）",
+    "心エコー",
+    "腹部超音波"
+   ],
+   "answer": 1,
+   "explanation": {
+    "correct": "造影CT肺動脈造影（CTPA）は肺塞栓症の確定診断に最も有用。肺動脈内の血栓を直接描出できる。",
+    "choiceNotes": [
+     "胸部X線は非特異的所見が多く確定診断には不十分。",
+     null,
+     "心エコーは右心負荷の評価に有用だが血栓の直接描出は困難。",
+     "腹部超音波は肺塞栓の診断には使用しない。"
+    ],
+    "point": "肺塞栓の確定診断＝CTPA。D-dimerは除外診断に有用。"
+   },
+   "sources": [
+    {
+     "ref": "x-legacy-L05b:msd-pe",
+     "title": "MSDマニュアル プロフェッショナル版「肺塞栓症（PE）」",
+     "url": "https://www.msdmanuals.com/ja-jp/professional/05-肺疾患/肺塞栓症-pe/肺塞栓症-pe",
+     "locator": "肺塞栓症 診断",
+     "quote": "CT血管造影は，急性肺塞栓症の診断に望ましい画像手技である。"
+    },
+    {
+     "ref": "x-legacy-L05b:msd-pe",
+     "title": "MSDマニュアル プロフェッショナル版「肺塞栓症（PE）」",
+     "url": "https://www.msdmanuals.com/ja-jp/professional/05-肺疾患/肺塞栓症-pe/肺塞栓症-pe",
+     "locator": "肺塞栓症 診断",
+     "quote": "Dダイマー検査が陰性（< 0.4μg/mL［< 2.2 nmol/L］）であれば，PEではないことを強"
+    },
+    {
+     "ref": "x-legacy-L05b:msd-pe",
+     "title": "MSDマニュアル プロフェッショナル版「肺塞栓症（PE）」",
+     "url": "https://www.msdmanuals.com/ja-jp/professional/05-肺疾患/肺塞栓症-pe/肺塞栓症-pe",
+     "locator": "肺塞栓症 診断",
+     "quote": "心エコー検査は，肺に移動しつつある血栓（clot-in-transit）を特定したり，新たな右室機能障害の所見を見つけたりするのに有用な場合がある。"
+    }
+   ],
+   "asOf": "MSDマニュアル プロフェッショナル版（日本語）2024年11月時点の記載",
+   "origin": {
+    "batch": "L05",
+    "key": "lg-05-31",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-26",
+    "method": [
+     "独立ブラインド解答（別モデル）と正答一致",
+     "領域監査（臨床医学）で合格",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L05（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L05b（臨床医学）"
+    },
+    "log": "bank/audit/legacy-L05b.audit.json#lg-05-31",
+    "notes": "msd-pe 診断: CT血管造影が望ましい・Dダイマー陰性で除外・胸部X線は初期評価. Solver agrees."
+   }
+  },
+  {
+   "id": "lg-11-29",
+   "legacy": {
+    "key": "11_29",
+    "chapter": 11,
+    "chapterName": "国際統計分類II（DPC・がん登録）",
+    "index": 29,
+    "hash": "47af7e7bd84bf61a"
+   },
+   "subject": "BCL",
+   "subtopic": "新生物",
+   "format": "knowledge",
+   "difficulty": "standard",
+   "polarity": "positive",
+   "question": "固形がんの治療効果判定基準（RECIST version 1.1）で、標的病変の効果が「部分奏効（PR）」と判定されるのはどれか。",
+   "choices": [
+    "すべての標的病変が消失した",
+    "経過中の最小の径和に比して、標的病変の径和が20%以上増加し、かつ絶対値でも5mm以上増加した",
+    "経過中の最小の径和に比して、PRに相当する縮小がなく、PDに相当する増大もない",
+    "ベースライン径和に比して、標的病変の径和が30%以上減少した"
+   ],
+   "answer": 3,
+   "explanation": {
+    "correct": "RECIST version 1.1では、ベースライン径和に比して標的病変の径和が30%以上減少した場合を部分奏効（PR）とする。",
+    "choiceNotes": [
+     "すべての標的病変の消失は完全奏効（CR）。",
+     "経過中の最小の径和に比して20%以上増加し、かつ絶対値で5mm以上増加した場合は進行（PD）。",
+     "PRに相当する縮小もPDに相当する増大もない場合は安定（SD）。",
+     null
+    ],
+    "point": "RECIST 1.1：CR＝標的病変の消失、PR＝ベースライン径和から30%以上減少、PD＝最小径和から20%以上かつ5mm以上増加、SD＝そのいずれでもない。"
+   },
+   "sources": [
+    {
+     "ref": "x-legacy-L11b:jcog-recist11-ja",
+     "title": "固形がんの治療効果判定のための新ガイドライン（RECISTガイドライン）改訂版 version 1.1 日本語訳JCOG版 ver.1.0",
+     "url": "https://jcog.jp/assets/RECISTv11J_20100810.pdf",
+     "locator": "4.3.1 標的病変の評価 部分奏効（PR）",
+     "quote": "ベースライン径和に比して、標的病変の径和が 30% 以上減少。"
+    },
+    {
+     "ref": "x-legacy-L11b:jcog-recist11-ja",
+     "title": "固形がんの治療効果判定のための新ガイドライン（RECISTガイドライン）改訂版 version 1.1 日本語訳JCOG版 ver.1.0",
+     "url": "https://jcog.jp/assets/RECISTv11J_20100810.pdf",
+     "locator": "4.3.1 標的病変の評価 進行（PD）",
+     "quote": "的病変の径和が20%以上増加、かつ、径和が絶対値でも"
+    },
+    {
+     "ref": "x-legacy-L11b:jcog-recist11-ja",
+     "title": "固形がんの治療効果判定のための新ガイドライン（RECISTガイドライン）改訂版 version 1.1 日本語訳JCOG版 ver.1.0",
+     "url": "https://jcog.jp/assets/RECISTv11J_20100810.pdf",
+     "locator": "4.3.1 標的病変の評価 安定（SD）",
+     "quote": "経過中の最小の径和に比して、PR に相当する縮小がなくPD に相当する増大がない。"
+    }
+   ],
+   "asOf": "RECIST version 1.1（日本語訳JCOG版 ver.1.0、2010年）",
+   "origin": {
+    "batch": "L11",
+    "key": "lg-11-29",
+    "by": "旧版（v2・AI作成）"
+   },
+   "status": "verified",
+   "verification": {
+    "date": "2026-11-26",
+    "method": [
+     "独立ブラインド解答（別モデル）",
+     "領域監査（実務・DPC・がん登録）で修正",
+     "修正後の独立再監査（pass）",
+     "引用の機械照合（一次資料キャッシュ）",
+     "スキーマ・ICDコード・計算の機械検査"
+    ],
+    "roles": {
+     "author": "旧版（AI作成・出典なし）",
+     "solver": "solve:L11（別モデル・正答を見ずに解答）",
+     "auditor": "audit:L11b（実務・DPC・がん登録）",
+     "reauditor": "reaudit:L11b"
+    },
+    "log": "bank/audit/legacy-L11b.audit.json#lg-11-29",
+    "notes": "再監査: x-legacy-L11b:jcog-recist11-ja 4.3.1（CR/PR 30%以上減少/PD 20%以上かつ5mm以上/SD）を本文で確認。PDFはdl/に実在、登録情報も整合。 盲検回答は正答と一致。validate 0 errors。｜x-legacy-L11b:jcog-recist11-ja 4.3.1（CR/PR/PD/SDの定義）を取得・確認。臨床腫瘍学の知識でS10の範囲外のためBCLへ再分類。"
+   }
+  }
+ ]
+}

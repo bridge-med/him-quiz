@@ -1,0 +1,8 @@
+{"verdicts":[
+{"key":"G4-S10-CAN-08","verdict":"pass","blindAnswer":1,
+"checks":{"answer":true,"distractors":true,"stem":true,"explanations":true,"sources":true,"asOf":true,"domain":true},
+"notes":"law:がん登録等の推進に関する法律（e-Gov 2026-10-01施行版）第44条第1項を原文で確認：名宛人は「病院の開設者及び管理者」、厚生労働大臣が定める指針、努めるものとする（努力義務）。前監査の修正（病院等→病院）は条文どおり（「病院等」は第6条第1項の第2章定義語）。誤答：全病院の届出義務＝第6条第1項、指定診療所＝第6条第2項（都道府県知事が開設者の同意を得て指定）、勧告・公表＝第7条第1・2項（届出違反に対するもの）を確認。盲検解答1＝キー一致。validate 0 errors。バッチ内重複なし（CAN-05は届出義務の範囲、CAN-13は両登録の関係で論点が異なる）。"},
+{"key":"G4-S10-CAN-10","verdict":"pass","blindAnswer":0,
+"checks":{"answer":true,"distractors":true,"stem":true,"explanations":true,"sources":true,"asOf":true,"domain":true},
+"notes":"cancer:hcr-standard-format-2016 【院内がん登録の登録対象】登録の方法（3ページ）「平成28（2016）年1月1日以降の新規診断症例の登録からは、1腫瘍1登録」「従来、1入院1登録などの形であっても…変換できることを許容していた」を文脈で確認。出典2は [110] 重複番号 ※多重がんについて（11ページ）「患者単位ではなく、腫瘍単位に登録票を作成する」で、前監査の locator 修正（[30]→[110]）は目次・本文と一致。頁フッタ「第1版 更新日2026/4」で asOf も整合。盲検解答0＝キー一致。validate 0 errors。"}
+]}

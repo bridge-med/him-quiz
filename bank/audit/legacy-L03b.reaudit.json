@@ -1,0 +1,215 @@
+{
+ "verdicts": [
+  {
+   "key": "lg-03-17",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:医療法 第2条第2項（十人以上の入所施設を有してはならない）、第1条の5第2項（十九人以下）、第19条第1項を本文で確認。版 2026-10-01。"
+  },
+  {
+   "key": "lg-03-18",
+   "verdict": "pass",
+   "blindAnswer": 4,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:薬機法 第1条（医薬品等＝医薬品・医薬部外品・化粧品・医療機器・再生医療等製品）、第2条第5〜7項。x-legacy-L03:mhlw-yakujiho-kaisei-h25-gaiyou Ⅰ3(1)・施行期日 平成26年11月25日を確認。"
+  },
+  {
+   "key": "lg-03-19",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "info:mhlw-shinryojoho-teikyo-shishin 8①②（第三者の利益／心身の状況）、7(3)①（理由を尋ねるのは不適切）、7(4)（実費を勘案した費用徴収）を確認。"
+  },
+  {
+   "key": "lg-03-20",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:保健師助産師看護師法 第5条・第30条・第37条（版 2026-05-21）、医師法 第20条・第22条を確認。"
+  },
+  {
+   "key": "lg-03-21",
+   "verdict": "pass",
+   "blindAnswer": 1,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "x-legacy-L03:高齢者虐待防止法 第21条第1〜3・6・7項、第7条第1項を確認（施設従事者は重大な危険の要件なく速やかに通報義務）。"
+  },
+  {
+   "key": "lg-03-22",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "x-legacy-L03:再生医療等安全性確保法 第1条（迅速かつ安全な提供及び普及の促進）、第2条第7項、薬事法改正概要 3(2)（条件及び期限付承認＝薬機法）を確認。"
+  },
+  {
+   "key": "lg-03-23",
+   "verdict": "pass",
+   "blindAnswer": 1,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "x-legacy-L03:mhlw-iryoukeikaku-shiryou1-h25 改正経緯表：昭和60年第一次＝医療計画・必要病床数、平成4年＝特定機能病院、平成9年＝地域医療支援病院、平成12年＝療養/一般病床・基準病床数へ名称変更、平成18年＝医療対策協議会。"
+  },
+  {
+   "key": "lg-03-24",
+   "verdict": "pass",
+   "blindAnswer": 2,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:医療法 第4条第1項柱書（都道府県知事承認）・第2号（救急医療）、第4条の2第1項第2号；医療法施行規則 第6条の2（二百）。point の紹介率要件は mgmt:chiiki_shien_gaiyou 承認要件で確認。"
+  },
+  {
+   "key": "lg-03-25",
+   "verdict": "provisional",
+   "blindAnswer": 1,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": false,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:医療法 第4条の2第1項第1号（高度の医療を提供する能力）、施行規則 第6条の4・第6条の5（四百）、mgmt:tokutei-kinou-gaiyou（400床以上、原則21の診療科）を確認。",
+   "detail": "内容・鍵は正しいが、1件目の source は locator「第4条の2第1項第1号」に対し quote が第1項柱書（厚生労働大臣の承認を得て特定機能病院と称することができる。）で、locator と引用箇所が一致しない。第1号の本文（高度の医療を提供する能力を有すること。）を引用するか locator を「第4条の2第1項」に直すべき。"
+  },
+  {
+   "key": "lg-03-26",
+   "verdict": "pass",
+   "blindAnswer": 2,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "mgmt:iryoukeikaku-tsuchi 第2 2(1)（5疾病・6事業、最終改正 令和8年9月18日）、shiryou1（平成25年度から精神疾患追加）を確認。"
+  },
+  {
+   "key": "lg-03-27",
+   "verdict": "pass",
+   "blindAnswer": 1,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "mgmt:iryoukeikaku-taisei-tsuchi 救急医療 (3)初期＝独歩軽症の夜間休日外来、(4)第二次＝初期診療と入院治療、(5)第三次＝重篤患者、背景(4)輪番制・共同利用型を確認。"
+  },
+  {
+   "key": "lg-03-28",
+   "verdict": "pass",
+   "blindAnswer": 3,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "x-legacy-L03:mhlw-yakujiho-kaisei-h25-gaiyou 施行期日 平成26年11月25日（公布 平成25年11月27日）、改正後の名称の注記を確認。"
+  },
+  {
+   "key": "lg-03-29",
+   "verdict": "pass",
+   "blindAnswer": 3,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:個人情報保護法 第27条第1項第1〜7号（版 2026-11-02）を確認。経営改善目的は列挙なし、選択肢Eは第7号と一致。"
+  },
+  {
+   "key": "lg-03-31",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:戸籍法 第86条第1項、第87条第1項（第一 同居の親族〜第三 家主等）・第2項（同居の親族以外の親族、後見人等は届出可）を確認（版 2026-09-03）。"
+  }
+ ]
+}

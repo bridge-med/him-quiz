@@ -1,0 +1,16 @@
+{"answers":[
+{"key":"lg-11-16","answer":0,"confidence":"high","ambiguous":false,"note":"地域がん登録=地域住民の全がん"},
+{"key":"lg-11-18","answer":1,"confidence":"high","ambiguous":false,"note":"入院期間I>II>III逓減"},
+{"key":"lg-11-19","answer":3,"confidence":"high","ambiguous":false,"note":"手術は出来高"},
+{"key":"lg-11-20","answer":0,"confidence":"high","ambiguous":false,"note":"ホスピタルフィー的要素"},
+{"key":"lg-11-22","answer":1,"confidence":"medium","ambiguous":false,"note":"7日以内再入院は一連"},
+{"key":"lg-11-23","answer":2,"confidence":"high","ambiguous":false,"note":"入院日III超は出来高"},
+{"key":"lg-11-24","answer":1,"confidence":"high","ambiguous":false,"note":"原発性悪性新生物・上皮内がん"},
+{"key":"lg-11-25","answer":0,"confidence":"high","ambiguous":false,"note":"T=原発腫瘍"},
+{"key":"lg-11-26","answer":2,"confidence":"high","ambiguous":false,"note":"c=臨床, p=病理"},
+{"key":"lg-11-27","answer":0,"confidence":"high","ambiguous":false,"note":"DCO=死亡情報のみ; DはDCN"},
+{"key":"lg-11-28","answer":1,"confidence":"high","ambiguous":false,"note":"異なる部位の独立原発"},
+{"key":"lg-11-29","answer":1,"confidence":"high","ambiguous":false,"note":"PR=30%以上減少"},
+{"key":"lg-11-30","answer":1,"confidence":"high","ambiguous":false,"note":"KM=死亡時点ごとに計算"},
+{"key":"lg-11-31","answer":2,"confidence":"high","ambiguous":false,"note":"5がん: 胃・肺・大腸・乳・子宮頸"}
+]}

@@ -1,0 +1,228 @@
+{
+ "answers": [
+  {
+   "key": "lg-03-00",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": ""
+  },
+  {
+   "key": "lg-03-01",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "医師法24条2項 5年"
+  },
+  {
+   "key": "lg-03-02",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": ""
+  },
+  {
+   "key": "lg-03-03",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": ""
+  },
+  {
+   "key": "lg-03-04",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": ""
+  },
+  {
+   "key": "lg-03-05",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": ""
+  },
+  {
+   "key": "lg-03-06",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": ""
+  },
+  {
+   "key": "lg-03-07",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": ""
+  },
+  {
+   "key": "lg-03-08",
+   "answer": 0,
+   "confidence": "medium",
+   "ambiguous": false,
+   "note": "診療中の患者が診療に関連する傷病で死亡した場合が死亡診断書。表現がやや簡略"
+  },
+  {
+   "key": "lg-03-09",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": ""
+  },
+  {
+   "key": "lg-03-10",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "医療法施行規則:過去二年間(順序に注意:選択肢0が2年間)"
+  },
+  {
+   "key": "lg-03-11",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "医療法施行規則6条の5 16診療科・400床(現行文は診療科列挙+400床)を確認"
+  },
+  {
+   "key": "lg-03-12",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": ""
+  },
+  {
+   "key": "lg-03-13",
+   "answer": 0,
+   "confidence": "medium",
+   "ambiguous": false,
+   "note": "措置入院は指定医2名以上の診察の一致が要件"
+  },
+  {
+   "key": "lg-03-14",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": ""
+  },
+  {
+   "key": "lg-03-15",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": ""
+  },
+  {
+   "key": "lg-03-16",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": ""
+  },
+  {
+   "key": "lg-03-17",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": ""
+  },
+  {
+   "key": "lg-03-18",
+   "answer": 3,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": ""
+  },
+  {
+   "key": "lg-03-19",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": ""
+  },
+  {
+   "key": "lg-03-20",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": ""
+  },
+  {
+   "key": "lg-03-21",
+   "answer": 0,
+   "confidence": "medium",
+   "ambiguous": true,
+   "note": "養護者虐待の通報も一般人に及ぶため『一般市民のみ』等は誤りだが設問が簡略"
+  },
+  {
+   "key": "lg-03-22",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": ""
+  },
+  {
+   "key": "lg-03-23",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": ""
+  },
+  {
+   "key": "lg-03-24",
+   "answer": 2,
+   "confidence": "medium",
+   "ambiguous": true,
+   "note": "紹介率80%以上は要件の一形態(他に65%+逆紹介40%等)で選択肢1もやや紛らわしい。承認は都道府県知事なので3は誤り"
+  },
+  {
+   "key": "lg-03-25",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": ""
+  },
+  {
+   "key": "lg-03-26",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": ""
+  },
+  {
+   "key": "lg-03-27",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": ""
+  },
+  {
+   "key": "lg-03-28",
+   "answer": 3,
+   "confidence": "medium",
+   "ambiguous": false,
+   "note": "薬事法→医薬品医療機器等法は2014年(平成26年)施行"
+  },
+  {
+   "key": "lg-03-29",
+   "answer": 3,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": ""
+  },
+  {
+   "key": "lg-03-30",
+   "answer": 3,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": ""
+  },
+  {
+   "key": "lg-03-31",
+   "answer": 0,
+   "confidence": "medium",
+   "ambiguous": false,
+   "note": "戸籍法87条:同居の親族が第一"
+  }
+ ]
+}

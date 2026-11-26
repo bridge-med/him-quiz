@@ -1,0 +1,15 @@
+{"answers":[
+{"key":"G7-S10-STA-01","answer":1,"confidence":"high","ambiguous":false,"note":"有病率の定義(点有病率)。"},
+{"key":"G7-S10-STA-02","answer":2,"confidence":"high","ambiguous":false,"note":"cancer:glossary-soutaiseizonritu: 死因について正確な情報がない場合にも用いることができる。Cは誤り。"},
+{"key":"G7-S10-STA-03","answer":1,"confidence":"high","ambiguous":false,"note":"soutaiseizonritu: 分母の過小評価=相対生存率の過大評価、解決策は純生存率。"},
+{"key":"G7-S10-STA-04","answer":1,"confidence":"high","ambiguous":false,"note":"50*0.6+800*0.4=350.0(基準人口で重み付け)。"},
+{"key":"G7-S10-STA-05","answer":1,"confidence":"high","ambiguous":false,"note":"glossary-kijunjinko: 2020年以降は平成27年モデル人口。"},
+{"key":"G7-S10-STA-06","answer":2,"confidence":"high","ambiguous":false,"note":"SMR>1は全国平均より死亡が多い。Cは誤り。"},
+{"key":"G7-S10-STA-07","answer":3,"confidence":"high","ambiguous":false,"note":"glossary-dexisienu: DCN%が高ければ登録の完全性が低い。Eは10%以下、HVは組織診のみ(glossary-mv)。"},
+{"key":"G7-S10-STA-08","answer":1,"confidence":"high","ambiguous":false,"note":"a,c正。glossary-tyuutoutikirirei(cは同様に扱う、dは注意が必要)、piriodohou(eは主に長期生存率)。bは1年サバイバーの5年生存率は診断後1年からの条件付き5年生存率で、診断から5年時点ではない可能性があるため不正と判断。"},
+{"key":"G7-S10-STA-09","answer":1,"confidence":"high","ambiguous":false,"note":"mhlw-hcr-guideline 第1: 全国がん登録情報よりも詳細な治療の状況を含む情報。"},
+{"key":"G7-S10-STA-10","answer":2,"confidence":"high","ambiguous":false,"note":"指針 第1 二: 国立がん研究センター。"},
+{"key":"G7-S10-STA-11","answer":2,"confidence":"high","ambiguous":false,"note":"指針 第2三(1): 各病院で登録項目を追加することができる。Cは誤り。"},
+{"key":"G7-S10-STA-12","answer":3,"confidence":"high","ambiguous":false,"note":"運用マニュアル表1に D00～D09 上皮内癌が含まれる。Dは誤り。"},
+{"key":"G7-S10-STA-13","answer":2,"confidence":"high","ambiguous":false,"note":"運用マニュアル: 全国がん登録届出先へ修正依頼、症例集計は再提出・修正不可で自施設の院内がん情報のみ修正。"}
+]}

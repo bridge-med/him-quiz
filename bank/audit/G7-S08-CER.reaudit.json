@@ -1,0 +1,5 @@
+{"verdicts":[
+{"key":"G7-S08-CER-02","verdict":"pass","blindAnswer":2,"checks":{"answer":true,"distractors":true,"stem":true,"explanations":true,"sources":true,"asOf":true,"domain":true},"notes":"Blind=key. cancer:shibou-manual-r08 §3（医師が患者の死亡に立ち会えなかった場合, p.4-5）: 原則死後診察; 例外=24時間以内; 医政医発0831第1号 抄1 で24時間経過後も死後診察で関連死なら死亡診断書（C正）, 抄2・※欄 警察届出は異状時のみ（B誤）. law:医師法 第20条ただし書（2026-05-21施行版, 現行）. A/D/E誤り確認. validate 0 errors."},
+{"key":"G7-S08-CER-04","verdict":"pass","blindAnswer":1,"checks":{"answer":true,"distractors":true,"stem":true,"explanations":true,"sources":true,"asOf":true,"domain":true},"notes":"Blind=key. law:戸籍法（2026-09-03施行版）第49条第1項 14日/国外3箇月（a正）, 第49条第3項 医師→助産師→その他の順（d誤）, 第86条第1項 知った日から7日/国外3箇月（b・e誤）, 第86条第2項 診断書又は検案書添付（c正）. 組合せ a と c のみ。"},
+{"key":"G7-S08-CER-05","verdict":"pass","blindAnswer":4,"checks":{"answer":true,"distractors":true,"stem":true,"explanations":true,"sources":true,"asOf":true,"domain":true},"notes":"Blind=key. law:死産の届出に関する規程 第4条第1項（添付・7日以内・届出人所在地又は死産地の市町村長: A〜C正）, 第7条（父→母→同居人→立会医師…: E誤）, 第2条 妊娠第四月以後. cancer:shibou-manual-r08 付録3（p.33）「妊娠満12週以後の死産」が該当（D正）. 規程の現行版は2021-09-01施行。"}
+]}

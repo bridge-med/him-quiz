@@ -1,0 +1,214 @@
+{
+ "verdicts": [
+  {
+   "key": "lg-09-00",
+   "verdict": "pass",
+   "blindAnswer": 2,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:instruction 2.4 (英字1桁+数字、第4桁は小数点後; ICD-9は数字のみ), icd:rikai ICDの構成で確認。誤肢すべて明確に誤り。 Blind一致。validate 0 errors。"
+  },
+  {
+   "key": "lg-09-01",
+   "verdict": "pass",
+   "blindAnswer": 2,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:rikai l.78 現行22章, l.741-744 17章→21章・セカンドエディションから22章; icd:instruction 2.4.1 22章。 Blind一致。validate 0 errors。"
+  },
+  {
+   "key": "lg-09-02",
+   "verdict": "pass",
+   "blindAnswer": 1,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou02 冒頭中間分類 C00-C97/D00-D09/D10-D36/D37-D48。他肢の章範囲も正しい。 Blind一致。validate 0 errors。"
+  },
+  {
+   "key": "lg-09-04",
+   "verdict": "pass",
+   "blindAnswer": 2,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:instruction 3.1.3 剣印=原疾患の一次コード・常に使用、星印=任意的追加コード・単独使用不可。 Blind一致。validate 0 errors。"
+  },
+  {
+   "key": "lg-09-05",
+   "verdict": "pass",
+   "blindAnswer": 3,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou20 冒頭注（周囲の状況及びできごと、他章コードに追加）; icd.mjs block V01-V99 交通事故, W00-W19 転倒・転落・墜落。 Blind一致。validate 0 errors。"
+  },
+  {
+   "key": "lg-09-06",
+   "verdict": "pass",
+   "blindAnswer": 1,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:dpc-chosa-setsumei-2026 l.4191-4193 一入院で一つ・月で異なっても1入院期間を通して一つ; ins:dpc-coding-text-v7 l.295, l.1285-1290 ダブルコーディング不採用・†*添付しない。 Blind一致。validate 0 errors。"
+  },
+  {
+   "key": "lg-09-07",
+   "verdict": "pass",
+   "blindAnswer": 2,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:dpc-coding-text-v7 l.305 14桁, l.308-330 構成(疾患コード・病態等分類・年齢等・手術・処置等1/2・副傷病・重症度等), l.352 上6桁・上2桁MDC。 Blind一致。validate 0 errors。"
+  },
+  {
+   "key": "lg-09-08",
+   "verdict": "pass",
+   "blindAnswer": 1,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:r08-kaitei-gaiyo-dpc l.245-249 3段階・期間Ⅲ超は出来高・5種類, l.277-278 5つの点数設定方式。令和8年度資料。 Blind一致。validate 0 errors。"
+  },
+  {
+   "key": "lg-09-09",
+   "verdict": "pass",
+   "blindAnswer": 2,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "cancer:glossary-kokusaisippeibunruisyuyougaku (OはOncology, 部位・組織型); icd:instruction l.368-374 局在及び形態の2軸分類。 Blind一致。validate 0 errors。"
+  },
+  {
+   "key": "lg-09-10",
+   "verdict": "pass",
+   "blindAnswer": 3,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd.mjs: J18 肺炎,病原体不詳; J15 細菌性肺炎NEC; J09-J18 インフルエンザ及び肺炎; C34/I21/K70 名称・章とも正しい。 Blind一致。validate 0 errors。"
+  },
+  {
+   "key": "lg-09-11",
+   "verdict": "pass",
+   "blindAnswer": 2,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou19 冒頭除外 M84.4/M80.-/M84.3; icd.mjs S72.0 大腿骨頚部骨折(第XIX章), M84.3/M84.4 第XIII章; icd:naiyou20 注。 Blind一致。validate 0 errors。"
+  },
+  {
+   "key": "lg-09-12",
+   "verdict": "pass",
+   "blindAnswer": 1,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:instruction 4.1.2 (l.1516-1530) 原死因の定義⒜、死亡の防止・公衆衛生の観点の記述も一致。 Blind一致。validate 0 errors。"
+  },
+  {
+   "key": "lg-09-13",
+   "verdict": "pass",
+   "blindAnswer": 4,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:r08-kaitei-gaiyo-dpc l.205-217 包括=入院基本料・検査・画像診断・投薬・注射・1,000点未満処置、出来高=医学管理・手術・麻酔・放射線治療・1,000点以上処置。 Blind一致。validate 0 errors。"
+  },
+  {
+   "key": "lg-09-15",
+   "verdict": "pass",
+   "blindAnswer": 1,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:instruction l.974 索引表を最初に参照, 3.3 l.1426-1427 索引表は第1巻にない多くの用語を含む・両方を参照, 手順6 内容例示表で確認。 Blind一致。validate 0 errors。"
+  }
+ ]
+}

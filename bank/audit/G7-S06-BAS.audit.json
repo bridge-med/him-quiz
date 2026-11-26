@@ -1,0 +1,200 @@
+{
+ "verdicts": [
+  {
+   "key": "G7-S06-BAS-01",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "Recomputed: sum150 (mean15), sorted 8,8,8,10,12,14,15,20,25,30 -> median (12+14)/2=13, mode 8 (freq3). stats:naruhodo-chushin 中央値/最頻値 lines 62ff support even-n rule and mode definition."
+  },
+  {
+   "key": "G7-S06-BAS-02",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "7*5-6*4=11; distractor means 6.2/6.4/6.6/7.2 recomputed. stats:naruhodo-chushin 平均値 definition."
+  },
+  {
+   "key": "G7-S06-BAS-03",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "Key C (度数そのもの≠最頻値) wrong per stats:naruhodo-chushin (histogram mode = 最も度数の多い階級の階級値); A,B(NIST eda351 not necessarily unique),D,E(naruhodo line81 モードは外れ値の影響はまず受けません) all correct."
+  },
+  {
+   "key": "G7-S06-BAS-04",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "Correct sum78 vs erroneous 186: diff108/9=12; median 9 (5th of 9) in both sorted lists. naruhodo-chushin line81 supports outlier sensitivity."
+  },
+  {
+   "key": "G7-S06-BAS-05",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "Cumulative 9,16,21,24,25=25; (25+1)/2=13th falls in 8-15日未満; distractor notes (1-9, 17-21番目) recomputed correctly."
+  },
+  {
+   "key": "G7-S06-BAS-06",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "IQR measures centre spread (NIST eda356 quotes); range/variance/SD/偏差平方和 all tail-sensitive -> unique answer."
+  },
+  {
+   "key": "G7-S06-BAS-07",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "Scale x1000: mean, median, SD x1000, variance x10^6, CV unchanged (NIST Dataplot CV 'independent of the unit...ratio scale'; naruhodo 10_tokucho_chirabari line69 variance unit differs)."
+  },
+  {
+   "key": "G7-S06-BAS-08",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "Adding constant 2: SD 3 unchanged, mean 12, CV 3/12=25%; distractors 3/10=30%, 5/12=41.7%, 3.6/12=30%, 5/10=50% recomputed."
+  },
+  {
+   "key": "G7-S06-BAS-09",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "mean12, SS=40, var8, SD2.828, CV23.57%≈23.6%; A: MAD2.4/12=20%; C: sqrt10/12=26.35%; D 8/12=66.7%; E 10/12=83.3% all verified. Stem fixes divisor n, so unique."
+  },
+  {
+   "key": "G7-S06-BAS-10",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "Range 40-2=38. Q1=5, Q3=12 under Tukey hinges (incl./excl. median), QUARTILE.INC and QUARTILE.EXC alike -> IQR 7 robust (solver medium confidence resolved). stats:naruhodo-chirabari-shokyu lines 73-79."
+  },
+  {
+   "key": "G7-S06-BAS-11",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "Ratio scale only for CV (NIST Dataplot lines 22-27: Celsius interval); MEXT 情報Ⅰ ch4 line1690 体重=比例尺度, line1693 数字で入力された名義尺度の平均. Unique answer D."
+  },
+  {
+   "key": "G7-S06-BAS-12",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "MEXT 情報Ⅰ ch4 line1863 離散型(個数)/連続型(長さ・重さ); 搬送件数 = count -> discrete; others measured lengths/weights."
+  },
+  {
+   "key": "G7-S06-BAS-13",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "MEXT 情報Ⅰ ch4 lines1685-1691: 名義(性別), 順序(成績; 程度の差一致の保障なし), 間隔(気温), 比例(身長・体重). Stage = ordinal; other pairings wrong."
+  },
+  {
+   "key": "G7-S06-BAS-14",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "MEXT 情報Ⅰ ch4: line2222 名義+順序=質的/カテゴリ型, lines1678-1680 時系列/クロスセクション, line1704 空白が0と混同されない注意, line2223 数値でも量的と同様の演算不可. Key D wrong statement; others correct."
+  }
+ ]
+}

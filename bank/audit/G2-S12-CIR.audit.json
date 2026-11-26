@@ -1,0 +1,214 @@
+{
+ "verdicts": [
+  {
+   "key": "G2-S12-CIR-01",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "naiyou09 I11包含・I11.0、I50除外「高血圧（症）によるもの（I11.0）／腎疾患を伴うもの（I13.-）」で確認。全コード実在。blind一致。"
+  },
+  {
+   "key": "G2-S12-CIR-02",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "naiyou09 I13包含（I12.-の病態を伴うI11.-）、I13.0/.1/.2の名称で確認。blind一致。"
+  },
+  {
+   "key": "G2-S12-CIR-03",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "naiyou09 I10-I15ブロック除外（O10-O11,O13-O16／I20-I25／P29.2／I27.0）、I12包含に腎硬化症・除外にI15.-を確認。blind一致。"
+  },
+  {
+   "key": "G2-S12-CIR-04",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "instruction 疾病コーディング 第Ⅸ章 I15.-注（原因記載があってもケアが高血圧自身でなければ主要病態の優先コードとしない、任意的追加コード）、naiyou09 I15除外（脳I60-I69・眼H35.0）、I12除外I15.-を確認。blind一致。"
+  },
+  {
+   "key": "G2-S12-CIR-05",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "naiyou09 I21包含（急性又は4週以内）、I21.0包含に前壁中隔、I22注、I25.2/I25.8の内容を確認。blind一致。"
+  },
+  {
+   "key": "G2-S12-CIR-06",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "naiyou09 I21除外・I22除外（4週超→I25.8）、I25.8包含、I25.2（現在症状なし）、I20-I25注（期間＝発症から治療のための入院）を確認。blind一致。"
+  },
+  {
+   "key": "G2-S12-CIR-07",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "naiyou09 I20-I25注（疾病＝入院まで、死因＝死亡まで）・包含（高血圧記載、追加コード）、I21除外（I22.-、I24.1）を確認。誤り選択肢は「退院まで」のみ。blind一致。"
+  },
+  {
+   "key": "G2-S12-CIR-08",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "naiyou09 I22注（以前の梗塞から28日以内の梗塞をI22）、I22.1包含（下壁）、I21除外（再発性I22.-）、I23は続発合併症で確認。blind一致。"
+  },
+  {
+   "key": "G2-S12-CIR-09",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "naiyou09 I25.2（心電図等で診断された過去の梗塞で現在症状なし）、naiyou21 Z86.7除外（I25.2）を確認。blind一致。"
+  },
+  {
+   "key": "G2-S12-CIR-10",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "naiyou09 I20.0包含（増悪型・初発労作型）、I24.0、I24.1（心筋梗塞後症候群、I21除外）、I25.5虚血性心筋症、I25.4除外Q24.5を確認。正はa,bのみ。blind一致。"
+  },
+  {
+   "key": "G2-S12-CIR-11",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "naiyou09 第Ⅸ章除外・I60-I69除外にG45.-、naiyou06 G45.9、I66（脳梗塞に至らなかったもの）・I67.8（脳虚血（慢性））を確認。blind一致。"
+  },
+  {
+   "key": "G2-S12-CIR-12",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "naiyou09 I60-I69包含（I10及びI15.-の記載）・除外（G45.-、S06.-、F01.-）、I60包含 脳動脈瘤出血、I67.1除外（Q28.-非破裂／I60.-破裂）を確認。blind一致。"
+  },
+  {
+   "key": "G2-S12-CIR-13",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "instruction 病態の続発・後遺症のコーディング（主要病態＝続発・後遺症それ自身の性質、…の続発・後遺症は任意的追加）、第Ⅸ章 I69.-注、同書 例18（脳梗塞後の下肢麻痺で理学療法→G83.1主、I69.3任意）、naiyou06 G81.9、naiyou09 I61除外→I69.1を確認。blind一致。"
+  },
+  {
+   "key": "G2-S12-CIR-14",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "naiyou09 I69注（原因I60-I67.1及びI67.4-I67.9、1年以上存在する病態を含む、慢性脳血管疾患はI60-I67）、naiyou21 Z86.7除外I69.-を確認。G45.-は範囲外。blind一致。"
+  },
+  {
+   "key": "G2-S12-CIR-15",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "naiyou09 I10包含（悪性を含む）、I11.9/I12.0/I15.9/I67.4の名称を確認。blind一致。"
+  }
+ ]
+}

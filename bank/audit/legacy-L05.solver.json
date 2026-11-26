@@ -1,0 +1,228 @@
+{
+ "answers": [
+  {
+   "key": "lg-05-00",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "標準的知識"
+  },
+  {
+   "key": "lg-05-01",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "標準的知識"
+  },
+  {
+   "key": "lg-05-02",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "標準的知識"
+  },
+  {
+   "key": "lg-05-03",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "標準的知識"
+  },
+  {
+   "key": "lg-05-04",
+   "answer": 3,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "出血性梗塞は病型ではなく病態"
+  },
+  {
+   "key": "lg-05-05",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "標準的知識"
+  },
+  {
+   "key": "lg-05-06",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "標準的知識"
+  },
+  {
+   "key": "lg-05-07",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "標準的知識"
+  },
+  {
+   "key": "lg-05-08",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "Q19と実質重複"
+  },
+  {
+   "key": "lg-05-09",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "標準的知識"
+  },
+  {
+   "key": "lg-05-10",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "標準的知識"
+  },
+  {
+   "key": "lg-05-11",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "標準的知識"
+  },
+  {
+   "key": "lg-05-12",
+   "answer": 3,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "標準的知識"
+  },
+  {
+   "key": "lg-05-13",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "標準的知識"
+  },
+  {
+   "key": "lg-05-14",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "Q26と実質重複"
+  },
+  {
+   "key": "lg-05-15",
+   "answer": 3,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "標準的知識"
+  },
+  {
+   "key": "lg-05-16",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "標準的知識"
+  },
+  {
+   "key": "lg-05-17",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "標準的知識"
+  },
+  {
+   "key": "lg-05-18",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "標準的知識"
+  },
+  {
+   "key": "lg-05-19",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "Q8と実質重複"
+  },
+  {
+   "key": "lg-05-20",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "標準的知識"
+  },
+  {
+   "key": "lg-05-21",
+   "answer": 2,
+   "confidence": "medium",
+   "ambiguous": false,
+   "note": "CEAも膵癌で用いるがCA19-9が最も有用"
+  },
+  {
+   "key": "lg-05-22",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "標準的知識"
+  },
+  {
+   "key": "lg-05-23",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "標準的知識"
+  },
+  {
+   "key": "lg-05-24",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "標準的知識"
+  },
+  {
+   "key": "lg-05-25",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "標準的知識"
+  },
+  {
+   "key": "lg-05-26",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "Q14と実質重複"
+  },
+  {
+   "key": "lg-05-27",
+   "answer": 0,
+   "confidence": "medium",
+   "ambiguous": false,
+   "note": "MRIも用いるが脳波が最有用"
+  },
+  {
+   "key": "lg-05-28",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "4大症状は振戦・固縮・無動・姿勢反射障害"
+  },
+  {
+   "key": "lg-05-29",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "標準的知識"
+  },
+  {
+   "key": "lg-05-30",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "標準的知識"
+  },
+  {
+   "key": "lg-05-31",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "標準的知識"
+  }
+ ]
+}

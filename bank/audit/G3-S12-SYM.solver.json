@@ -1,0 +1,16 @@
+{"answers":[
+{"key":"G3-S12-SYM-01","answer":2,"confidence":"high","ambiguous":false,"note":"第XVIII章注 一過性で原因決定不能な徴候"},
+{"key":"G3-S12-SYM-02","answer":0,"confidence":"high","ambiguous":false,"note":"熱性けいれん R56.0"},
+{"key":"G3-S12-SYM-03","answer":2,"confidence":"medium","ambiguous":false,"note":"症状は診断病態を再選択。胆管炎等なしの総胆管結石 K80.5"},
+{"key":"G3-S12-SYM-04","answer":3,"confidence":"high","ambiguous":false,"note":"instruction ルールA: R95は含まれない"},
+{"key":"G3-S12-SYM-05","answer":3,"confidence":"high","ambiguous":false,"note":"R98 立会者のない死亡"},
+{"key":"G3-S12-SYM-06","answer":3,"confidence":"high","ambiguous":false,"note":"確定診断がつけば診断を主要病態とする"},
+{"key":"G3-S12-SYM-07","answer":1,"confidence":"high","ambiguous":false,"note":"naiyou22 U07.2"},
+{"key":"G3-S12-SYM-08","answer":3,"confidence":"high","ambiguous":false,"note":"U09.9は依然COVID-19を呈している場合は使用しない"},
+{"key":"G3-S12-SYM-09","answer":4,"confidence":"high","ambiguous":false,"note":"U00-U49は暫定分類。U82-85は補助コード、SARSはU04、抗結核薬はU84.3"},
+{"key":"G3-S12-SYM-10","answer":2,"confidence":"high","ambiguous":false,"note":"U82.2 ESBL耐性"},
+{"key":"G3-S12-SYM-11","answer":1,"confidence":"high","ambiguous":false,"note":"慢性失血性貧血 D50.0"},
+{"key":"G3-S12-SYM-12","answer":3,"confidence":"high","ambiguous":false,"note":"不応性貧血NOSはD46.4(第II章)"},
+{"key":"G3-S12-SYM-13","answer":0,"confidence":"high","ambiguous":false,"note":"naiyou03 D63.8* 慢性腎臓病における貧血 ≧第3期 N18.3-N18.5†"},
+{"key":"G3-S12-SYM-14","answer":1,"confidence":"high","ambiguous":false,"note":"D65包含 a,c。除外: 新生児P60・分娩O67.0/O72.3・流産O00-O07"}
+]}

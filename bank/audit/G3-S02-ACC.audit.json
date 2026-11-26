@@ -1,0 +1,200 @@
+{
+ "verdicts": [
+  {
+   "key": "G3-S02-ACC-01",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "病院会計準則 第1章 第2〜第5を通読。第4『それぞれの病院を会計単位』で鍵(1)が誤り、他4肢は第3・第5・第2第2項・第2第1項の文言どおり。通知原文(医政発第0819001号)はMHLWのURLで現存確認。"
+  },
+  {
+   "key": "G3-S02-ACC-02",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "第2章 第13(単一性)の条文と設問引用が一致。第6・第9・第11・第12の内容も解説どおり。"
+  },
+  {
+   "key": "G3-S02-ACC-03",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "第36で患者外給食収益=医業外収益。第35第1項(室料差額・受託検査施設利用・保健予防活動=医業収益)、第38(固定資産売却益=臨時収益)確認。"
+  },
+  {
+   "key": "G3-S02-ACC-04",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "第35〜第39で区分確認。50+10+30-20=70を再計算。誤答45(税引前当期純利益)・50・90・110の導出も解説どおり。"
+  },
+  {
+   "key": "G3-S02-ACC-05",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "第18 流動性配列法で鍵(3)が誤り。第19第3項(1)(2)、第19第2項(2)、第15の各文言を確認。"
+  },
+  {
+   "key": "G3-S02-ACC-06",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "第43第2項(施設設備補助金の受入=投資)、第3項(資金調達=財務)、第44(利息の受払=業務)を確認。様式例も利息を業務活動に記載。"
+  },
+  {
+   "key": "G3-S02-ACC-07",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "労基法34条1項(版の施行日2026-07-17)。8時間ちょうどは『超える』に当たらず45分。"
+  },
+  {
+   "key": "G3-S02-ACC-08",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "労基法39条1項・2項の表(六箇月経過日から三年=四労働日)で10+4=14。各誤答の対応年数も表どおり。"
+  },
+  {
+   "key": "G3-S02-ACC-09",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "労基法89条柱書・1号、90条1項(意見を聴く)・2項(意見書添付)を確認。同意は要件でない。"
+  },
+  {
+   "key": "G3-S02-ACC-10",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "労基法36条1項・2項2号(一年間に限る)、37条1項ただし書・4項・5項を確認。中小企業猶予の旧138条は現行本文に存在しないことも確認。"
+  },
+  {
+   "key": "G3-S02-ACC-11",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "医療法施行規則16条1項3号イ(6.4㎡)・ロ(6.3/4.3㎡)を確認(版の施行日2026-10-01)。"
+  },
+  {
+   "key": "G3-S02-ACC-12",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "同16条1項11号イ(1.8m/両側2.7m)・ロ(1.8m/両側2.1m)・ハ(診療所1.2m/1.6m)で5肢すべて判定。満たすのは一般・両側2.1mのみ。"
+  },
+  {
+   "key": "G3-S02-ACC-13",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "同16条1項2号・2号の2・4号・9号イ(1.2m)・12号を確認。鍵(3)の1.0mのみ誤り。"
+  },
+  {
+   "key": "G3-S02-ACC-14",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "病院会計準則 第23(付随費用加算・移動平均法等・時価下落時は時価)、第19第2項(1)と注10の6(流動資産)、注5②(会計方針の例)を確認。"
+  }
+ ]
+}

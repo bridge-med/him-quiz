@@ -1,0 +1,14 @@
+{"answers":[
+{"key":"G4-S11-CON-01","answer":3,"confidence":"high","ambiguous":false,"note":"ポイント・ダッシュは第4桁が存在することを示す"},
+{"key":"G4-S11-CON-02","answer":1,"confidence":"high","ambiguous":false,"note":"角括弧は同義語と4桁細分類の参照。b,dは丸括弧"},
+{"key":"G4-S11-CON-03","answer":0,"confidence":"high","ambiguous":false,"note":"I10に（悪性）が包含 naiyou09"},
+{"key":"G4-S11-CON-04","answer":2,"confidence":"high","ambiguous":false,"note":"コロンは修飾語が必要"},
+{"key":"G4-S11-CON-05","answer":4,"confidence":"high","ambiguous":false,"note":"中括弧: 左右とも単独では不完全"},
+{"key":"G4-S11-CON-06","answer":3,"confidence":"high","ambiguous":false,"note":"J16.0クラミジア肺炎"},
+{"key":"G4-S11-CON-07","answer":1,"confidence":"high","ambiguous":false,"note":"「及び」は「又は」の意味も含む"},
+{"key":"G4-S11-CON-08","answer":0,"confidence":"high","ambiguous":false,"note":"I05.0 僧帽弁狭窄（症）、非リウマチ性はI34.2"},
+{"key":"G4-S11-CON-09","answer":2,"confidence":"high","ambiguous":false,"note":"包含用語は網羅的でない"},
+{"key":"G4-S11-CON-10","answer":1,"confidence":"high","ambiguous":false,"note":"A46除外: 産じょく丹毒(O86.8)"},
+{"key":"G4-S11-CON-11","answer":3,"confidence":"high","ambiguous":false,"note":"両側性・えそ伴う K40.1（閉塞とえそ両方はえそ優先）"},
+{"key":"G4-S11-CON-12","answer":4,"confidence":"medium","ambiguous":false,"note":"解説付用語はコーディング担当者が使用するためのものではない（instruction l.1011）"}
+]}

@@ -1,0 +1,186 @@
+{
+ "verdicts": [
+  {
+   "key": "G4-S09-AUD-01",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:医療法施行規則 第22条の3第2号（1438行）・第21条の5第2号（1421行）とも「過去二年間…退院した患者に係る入院期間中の診療経過の要約」を確認（2026-10-01施行版）。5年=law:医師法 第24条第2項、3年=ins:r08-kihon-shisetsukijun-tsuchi 第4の1(1)を確認。引用3は「保管・」で途切れるが逐語一致（体裁のみ）。 ブラインド解答と一致。"
+  },
+  {
+   "key": "G4-S09-AUD-02",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "him:jhim-discharge-summary-guidance-2019 ＜退院サマリーの意義＞「入院診療の主治医の責任において作成」、基本情報注記（承認者による認証が必須・主治医の登録必須）を確認。引用2は語の途中で終わるが逐語一致（体裁のみ）。 ブラインド解答と一致。"
+  },
+  {
+   "key": "G4-S09-AUD-03",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "同ガイダンス 構造の解説1)基本情報：必須10項目と「その他（任意）」=住所・連絡先（電話番号）等、注記（予定/予定外=必須、version=必須、承認サマリーか否か=必須、住所・電話番号=任意）を確認。 ブラインド解答と一致。"
+  },
+  {
+   "key": "G4-S09-AUD-04",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "同ガイダンス 記載心得3-iv（全角100字程度）、4（上部に記載）、8（自科外来の予定のみは不可）、9（略語は初出部で展開）、10（10ポイント・A4判1枚）を確認。誤りはDのみ。引用2は「原」で途切れるが逐語一致（体裁のみ）。 ブラインド解答と一致。"
+  },
+  {
+   "key": "G4-S09-AUD-05",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:r08-kihon-shisetsukijun-tsuchi 第4の1(8)：全診療科・全患者、前月退院患者・翌日起算14日以内・中央病歴管理室へ提出・毎月9割以上、30日以内が望ましい、を確認。a,dのみ正。 ブラインド解答と一致。"
+  },
+  {
+   "key": "G4-S09-AUD-06",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "同通知 第4の2(1)〜(5)：1の(1)〜(4)及び(9)、専任1名以上、ICD大分類程度以上、疾病別検索・抽出、全診療科・全患者の退院時要約。14日以内9割は1(8)のみで加算2に含まれないことを確認。 ブラインド解答と一致。"
+  },
+  {
+   "key": "G4-S09-AUD-07",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "him:jhim-gyomu-shishin-2026 5-4(1)の6視点を確認（A〜Dは逐語で掲載）。完成の期限は5-3(1)の点検基準の事項。 ブラインド解答と一致。"
+  },
+  {
+   "key": "G4-S09-AUD-08",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "同指針 5-4前文（管理士が主導、他職種の相互チェック体制が望ましい）、5-4(1)（課題選定・重点抽出）、5-3(3)（未完成・遅延の検出=量的点検）、4-3（点検と監査の双方を主体的に担う）を確認。 ブラインド解答と一致。"
+  },
+  {
+   "key": "G4-S09-AUD-09",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "同指針 5-5(4)：質的点検=記録の正確性・整合性、ピアレビュー=診療行為そのものの妥当性（医師等の同僚間）、管理士は症例抽出・準備整理・集計、バリアンス分析は5-13、を確認。 ブラインド解答と一致。"
+  },
+  {
+   "key": "G4-S09-AUD-10",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "同指針 5-3(1)（入院・外来を問わず、外来の手術・侵襲性の高い処置も入院と同等、点検基準の整備、周知事項の反映）、5-3(2)（遅滞は委員会等で組織的対応）を確認。誤りはBのみ。引用3は「記録」の語中から始まるが逐語一致（体裁のみ）。 ブラインド解答と一致。"
+  },
+  {
+   "key": "G4-S09-AUD-11",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "同指針 5-4(2)：記録間の矛盾（部位や左右の不一致等）検知時は記録者への確認が必須、他の診療判断に参照された可能性があれば影響範囲確認＋医療安全管理部門等と連携、を確認。事例は指針の記述だけで解ける。 ブラインド解答と一致。"
+  },
+  {
+   "key": "G4-S09-AUD-12",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "同指針 5-3(3)（記録日時・項目の有無・記録者情報の活用、機能が不十分でもデータ抽出・集計で整備に努める）、5-3(2)（結果を記録者にフィードバック）を確認。 ブラインド解答と一致。"
+  },
+  {
+   "key": "G4-S09-AUD-13",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "him:jhim-discharge-summary-guidance-2019 ＜退院サマリー監査について＞：外面的評価=一定期間内の記載・指導医の承認、他の4肢はチェックリスト1・3・13・17（質の監査）であることを確認。 ブラインド解答と一致。"
+  }
+ ]
+}

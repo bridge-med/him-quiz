@@ -1,0 +1,200 @@
+{
+ "verdicts": [
+  {
+   "key": "G3-S11-CER-01",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "cancer:shibou-manual-r08 2(p.3-4)・3(p.4-5)を通読。キー1は本文どおり。0/3は異状の有無と届出の記載、2は医政医発0831第1号1、4は「担当していなかった医師」の段(図B)で否定を確認。盲検一致。"
+  },
+  {
+   "key": "G3-S11-CER-02",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "同マニュアル4(4)①〜⑤(p.7)と4(1)②(p.6 夜12時=午前０時)を確認。脳死判定は第２回目の検査終了時刻でキー3が唯一の誤り。(確認)(推定)の記載も本文どおり。盲検一致。"
+  },
+  {
+   "key": "G3-S11-CER-03",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "同4(6)一般的注意②③④⑧(p.9-10)を確認。終末期の呼吸不全は記入しない=キー1が誤り。AMI例示、明らかな病態の心不全可、誤嚥性肺炎/老衰の例、12不詳の死を確認。盲検一致。"
+  },
+  {
+   "key": "G3-S11-CER-04",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "同4(6)一般的注意⑥・注2・参考(p.10)を確認。産科的→Ⅰ欄/非産科的→Ⅱ欄、出産当日ゼロ日、42日未満=妊産婦死亡・42日以後1年未満=後発妊産婦死亡、精神疾患等による自殺を含む。盲検一致。"
+  },
+  {
+   "key": "G3-S11-CER-05",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "同4(7)(p.15-16)を確認。自殺は手段によらず９自殺、水上交通機関の事故は交通事故、溺死/てんかん発作=病死、化膿性腹膜炎/腹部刺創=外因死の例。キー1が唯一の誤り。盲検一致。"
+  },
+  {
+   "key": "G3-S11-CER-06",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "事例(最終診察は死亡3日前、死後診察あり、異状なし)と同マニュアル3(p.4-5)・2(p.4)を照合。図Aに該当し死亡診断書。ただし書(24時間以内)は非該当で選択肢2は誤り。盲検一致。"
+  },
+  {
+   "key": "G3-S11-CER-07",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "同4(6)Ⅰ欄①②(p.11)を確認。直接死因を(ア)、原発性悪性新生物を最下欄。肝不全←転移性肝癌←S状結腸癌が唯一適合。呼吸停止は一般的注意③(注)で不可。盲検一致。"
+  },
+  {
+   "key": "G3-S11-CER-08",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "同4(5)本文(p.7)と種別の定義(p.8)を確認。有料老人ホームは５老人ホーム、住民登録があっても６自宅にしない。サ高住(有料老人ホーム除く)・グループホームは６。盲検一致。"
+  },
+  {
+   "key": "G3-S11-CER-09",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icdbg:soumu-kokuji-r08-11 前文を確認。令和9年1月1日施行、告示日は令和8年1月19日、H27告示第35号は令和8年12月31日限り廃止。盲検一致。"
+  },
+  {
+   "key": "G3-S11-CER-10",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:統計法(版の施行日2026-06-24) 第28条1〜3項・第2条9項を確認。総務大臣が統計委員会の意見を聴いて定め公示。盲検一致。"
+  },
+  {
+   "key": "G3-S11-CER-11",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "R8告示第11号 4 構成(章25・基本17,106・疾病151・死因134、計の行も確認)とH27告示第35号 4(章22・基本15,071・死因133)を確認。章22はH27側でキー2が唯一の誤り。盲検一致。"
+  },
+  {
+   "key": "G3-S11-CER-12",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "H27告示第35号 4 分類符号の表記(4桁以上で3桁目と4桁目の間に小数点、疾病分類表はハイフン)とR8告示(5桁以上で4桁目と5桁目)を確認。A00.0はicd.mjsで実在確認。盲検一致。"
+  },
+  {
+   "key": "G3-S11-CER-13",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "両告示の5(留意すべき事項)が同文であることを確認。集約・細分可、最大分類項目と異なる最大分類項目に属する下位項目は集約不可。盲検一致。"
+  },
+  {
+   "key": "G3-S11-CER-14",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "R8告示第11号 前文(廃止・経過措置=当分の間・施行日以後に適用)と3(我が国の疾病構造等にも配慮)を確認。a,bのみ正で組合せは一意。盲検一致。"
+  }
+ ]
+}

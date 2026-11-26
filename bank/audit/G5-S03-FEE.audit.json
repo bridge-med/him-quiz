@@ -1,0 +1,186 @@
+{
+ "verdicts": [
+  {
+   "key": "G5-S03-FEE-01",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "健保法76条1項（2026-10-01版）で請求額=費用額−一部負担金を確認。12,500×0.7=8,750。誤答の算出根拠も再計算で一致。白書資料編で1点10円確認。"
+  },
+  {
+   "key": "G5-S03-FEE-02",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "健保法76条2項（大臣が定める）・82条1項（中医協に諮問）・82条2項（地方協議会=指定・指定取消・登録取消）を本文で確認。"
+  },
+  {
+   "key": "G5-S03-FEE-03",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:r08-kaitei-top 第1（R7.12.9 基本方針=社保審医療保険部会・医療部会、R8.1.14諮問、R8.2.13答申）、ins:r08-kaitei-gaiyo-zentai 大臣折衝事項（1.診療報酬+3.09%・R8年6月施行、2.薬価等は別）で確認。誤りはBのみ。"
+  },
+  {
+   "key": "G5-S03-FEE-04",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:r08-ika-tensuhyo 目次：第1章第2部第4節 短期滞在手術等基本料。医学管理料等=第2章第1部、在宅療養指導管理料=第2部第2節、処方箋料=第5部第5節、リハビリテーション料=第7部第1節を確認。"
+  },
+  {
+   "key": "G5-S03-FEE-05",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:dpc-gaiyo-kangaekata （2）②の図：包括=入院基本料・検査・画像診断・投薬・注射・1,000点未満の処置、出来高=医学管理・手術・麻酔・放射線治療・1,000点以上の処置。資料名を明示した設問で一意。"
+  },
+  {
+   "key": "G5-S03-FEE-06",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "同資料（2）②：1日当たり点数（3段階）×在院日数×医療機関別係数。(2800×4+2100×3)×1.2=21,000。誤答4つの計算根拠も再計算で一致。"
+  },
+  {
+   "key": "G5-S03-FEE-07",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "健保法76条1項・3項（算定される額の範囲内において別段の定め）・77条2項（調査を行うものとする）・77条3項（診療等関連情報の報告義務）を本文で確認。誤りはCのみ。"
+  },
+  {
+   "key": "G5-S03-FEE-08",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "請求命令（e-Gov、2024-04-01施行版）第2条第1項「各月分について翌月十日までに」を確認。"
+  },
+  {
+   "key": "G5-S03-FEE-09",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "請求命令 第1条第1項（審査支払機関と接続した電子情報処理組織による請求）・第2条第2項（ファイルへの記録時に到達とみなす）、ins:kokuho-shinsa-seido（1か月分をまとめたレセプト）で確認。"
+  },
+  {
+   "key": "G5-S03-FEE-10",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:hpdx-ichiduke（R8.10.1改組、審査支払と医療DXの運営母体の双方、民間法人注記）、健保法76条5項（基盤機構又は国保連合会に委託）。機構法でも役員選任は大臣の認可（任命ではない）、18条で審査業務を確認。"
+  },
+  {
+   "key": "G5-S03-FEE-11",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "国保法87条1項（都道府県の区域を区域とする連合会に置く）・88条1項（三者構成）・88条2項（都道府県知事が委嘱、診療側と保険者は同数）を確認。"
+  },
+  {
+   "key": "G5-S03-FEE-12",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "機構法（2026-10-01版）18条1項10号（再審査を含む）・19条2項（理事長が委嘱、同数）・19条3項（所属団体の推薦）・24条1項（主たる事務所に特別審査委員会）を確認。誤りはDのみ。"
+  },
+  {
+   "key": "G5-S03-FEE-13",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:r08-kisaiyoryo-betten1 Ⅱ第3の1(3)（2以上の傷病でも1枚）・(4)（入院・入院外は別個、初診から直ちに入院は入院分のみ）・Ⅱ第1の1（診療年月ごとに請求書、請求遅れ分は例外）を確認。誤りはBのみ。"
+  }
+ ]
+}

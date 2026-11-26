@@ -1,0 +1,4 @@
+{"verdicts":[
+{"key":"G2-S11-MOR-01","verdict":"pass","blindAnswer":2,"checks":{"answer":true,"distractors":true,"stem":true,"explanations":true,"sources":true,"asOf":true,"domain":true},"notes":"Blind=key(2). icd:instruction 4.4 疾病統計 (l.6836, 6848-6853): 主要病態の定義（治療又は検査の必要性・エピソードの最後に診断）、多数なら医療資源最多、診断なしの場合のみ主要症状; l.6856-6861: 以前のエピソードの病態は記載しない（E注記）。Locator fix「4.4 疾病統計」は本文見出しと一致。validate 0 errors."},
+{"key":"G2-S11-MOR-12","verdict":"pass","blindAnswer":2,"checks":{"answer":true,"distractors":true,"stem":true,"explanations":true,"sources":true,"asOf":true,"domain":true},"notes":"Blind=key(2). icd:instruction 4.4 (l.6856-6861) その他の病態の定義・以前のエピソードの病態は記載しない→A,B正; 4.4.2 一般的事項 (l.6976-6979) 不正確な記録は発生源に戻し明確に、できなかった場合MB1-MB5; 4.4.3冒頭 (l.7310-7313) 実施者から明確にできる情報を得ることが不可能な場合にルール適用→Cが誤り; MB3 (l.7339-7350, 例11) 症状（呼吸困難=第XVIII章）が診断病態の症状でケアが後者→D正。Locator 4.4/4.4.3 正しい。validate 0 errors."}
+]}

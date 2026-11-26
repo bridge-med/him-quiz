@@ -1,0 +1,18 @@
+{"answers":[
+{"key":"G5-S06-EPI-01","answer":2,"confidence":"high","ambiguous":false,"note":"60/50000人年=120/10万人年"},
+{"key":"G5-S06-EPI-02","answer":1,"confidence":"high","ambiguous":false,"note":"30/1000-10/1000=20/1000"},
+{"key":"G5-S06-EPI-03","answer":2,"confidence":"high","ambiguous":false,"note":"(60*170)/(140*30)=2.43"},
+{"key":"G5-S06-EPI-04","answer":0,"confidence":"high","ambiguous":false,"note":"有病率=罹患率×平均罹病期間。短期治癒で低下"},
+{"key":"G5-S06-EPI-05","answer":4,"confidence":"high","ambiguous":false,"note":"SMR=観察死亡数/期待死亡数（間接法）"},
+{"key":"G5-S06-EPI-06","answer":3,"confidence":"high","ambiguous":false,"note":"症例対照研究では罹患率を直接測定できずオッズ比を用いる"},
+{"key":"G5-S06-EPI-07","answer":2,"confidence":"high","ambiguous":false,"note":"PPV=40/(40+460)=8.0%"},
+{"key":"G5-S06-EPI-08","answer":4,"confidence":"high","ambiguous":false,"note":"1020/1200=85%"},
+{"key":"G5-S06-EPI-09","answer":1,"confidence":"high","ambiguous":false,"note":"陽性適中率は有病率に依存"},
+{"key":"G5-S06-EPI-10","answer":0,"confidence":"high","ambiguous":false,"note":"TP90,FP495 → 90/585=15.4%"},
+{"key":"G5-S06-EPI-11","answer":0,"confidence":"high","ambiguous":false,"note":"陽性反応適中度=がん数/要精検者数"},
+{"key":"G5-S06-EPI-12","answer":1,"confidence":"high","ambiguous":false,"note":"見逃し防止は高感度（低特異度）"},
+{"key":"G5-S06-EPI-13","answer":4,"confidence":"high","ambiguous":false,"note":"RCTは介入研究"},
+{"key":"G5-S06-EPI-14","answer":3,"confidence":"high","ambiguous":false,"note":"集団単位の地域相関研究"},
+{"key":"G5-S06-EPI-15","answer":1,"confidence":"high","ambiguous":false,"note":"前向きコホートは大規模・長期で費用大"},
+{"key":"G5-S06-EPI-16","answer":3,"confidence":"high","ambiguous":false,"note":"症例対照研究、病院対照、オッズ比、思い出しバイアスあり"}
+]}

@@ -1,0 +1,200 @@
+{
+ "verdicts": [
+  {
+   "key": "G7-S12-CON-01",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "naiyou17 Q21 除外 後天性心中隔欠損(I51.0); naiyou09 I51.0 包含 後天性中隔欠損(陳旧性)心房; I23.1=AMI続発合併症; Q21.0/Q21.2 titles verified (icd.mjs). Solver agrees."
+  },
+  {
+   "key": "G7-S12-CON-02",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "naiyou17 Q98.0=クラインフェルター 47,XXY; Q98.4 詳細不明; Q98.5 47,XYY; Q97.0 47,XXX; Q96.0 45,X (lines 2113-2150). Solver agrees."
+  },
+  {
+   "key": "G7-S12-CON-03",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "naiyou17 Q35/Q36 除外→Q37.-; Q37.5 硬及び軟口蓋裂 片側性唇裂; Q37.4 両側性; Q37.1 硬口蓋のみ; Q36.9 唇裂一側性. Solver agrees."
+  },
+  {
+   "key": "G7-S12-CON-04",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "naiyou17 Q40.0 先天性又は乳児性 幽門の肥大・けいれん・狭窄; naiyou11 K31.1 除外 先天性又は乳児性(Q40.0), K31.3 除外 乳児性(Q40.0); Q40.2 包含 胃位置異常・胃憩室. Solver agrees."
+  },
+  {
+   "key": "G7-S12-CON-05",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "naiyou17 Q33.0 除外 のう胞性肺疾患 後天性又は詳細不明(J98.4); naiyou10 J98.4 包含 のう胞性肺疾患(後天性); Q03 除外 後天性(G91.-); Q61 除外 後天性腎のう胞(N28.1). Key (詳細不明→Q33.0 is wrong) correct. Solver agrees."
+  },
+  {
+   "key": "G7-S12-CON-06",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "naiyou22 U10.9 包含 MIS-C/PIMS/川崎病様症候群(時間的にCOVID-19に関連); U07.1, U08.9 注, U09.9 注 checked; M30.3 title 川崎病. Solver agrees."
+  },
+  {
+   "key": "G7-S12-CON-07",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "naiyou22 U07.0 ベイピングに関連する障害 包含 EVALI, 肺炎等は追加コード; U07.1/U08/U82-U85 distractors verified. Solver agrees."
+  },
+  {
+   "key": "G7-S12-CON-08",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "naiyou22 U82-U85 注(一次コーディングに用いない), U82.1 メチシリン, U82.2 ESBL, U85 包含 難治性癌, U84.7 除外 多剤抗生物質のみ(U83.7). Solver agrees."
+  },
+  {
+   "key": "G7-S12-CON-09",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "naiyou22 U08.9注(死亡の一次製表に使用しない), U09.9注(依然呈している場合使用しない), U11注(国際比較・原死因に使用しない／罹患しているいないにかかわらず), U12注(Y59細分類の外因コード, 性質は他章). Key = choice d (限って) wrong. Solver agrees."
+  },
+  {
+   "key": "G7-S12-CON-10",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "naiyou02 第Ⅱ章 注5 (舌尖の癌が舌下面に拡がった場合 C02.1), C02.1 舌縁 包含 舌尖; C02.8/C02.2/C02.9/C01 titles verified. Solver agrees."
+  },
+  {
+   "key": "G7-S12-CON-11",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "naiyou02 注5 食道及び胃→C16.0, 胃と小腸→C26.8; C16.0 包含 食道及び胃; C15.8/C16.8/C15.5 titles. Solver agrees."
+  },
+  {
+   "key": "G7-S12-CON-12",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "naiyou02 注2 (機能的活性にかかわらず本章、第Ⅳ章から追加コード; C74+E27.5, D35.2+E24.0), 注6 異所性膵→C25.9. Choice d inverts primary/additional = wrong. Solver agrees."
+  },
+  {
+   "key": "G7-S12-CON-13",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "instruction 4.2.7.5 表3 list (脳あり・乳房なし), B⒜ 本文(表3=続発), 注2(唯一・転移性限定なし→原発), B⒝(異なる形態→表3を続発). a,d correct. Solver agrees."
+  },
+  {
+   "key": "G7-S12-CON-14",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "instruction 4.2.7.5 B⒜ (表3の部位=続発、ないもの=原発; 例34/36 parallel), 肝臓 in 表3, 膵 not; ⒜肝がん⒝膵がん → 一般原則で膵がん C25.9 (naiyou02 C25.9). C78.7/C80.9/C26.8 notes correct. Solver agrees."
+  }
+ ]
+}

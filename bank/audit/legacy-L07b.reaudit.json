@@ -1,0 +1,154 @@
+{
+ "verdicts": [
+  {
+   "key": "lg-07-14",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "stats:ganjoho-timeiritu/sosibouritu/yuubyouritu quotes confirm 致命率（分母=診断された人）・粗死亡率・有病率; 年齢階級別死亡率・実数は定義上明白。blind一致。"
+  },
+  {
+   "key": "lg-07-15",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "stats:jinkou-kakutei-r7-cho 比率の解説: 出生率=年間出生数/10月1日現在日本人人口×1,000; R7概況にも同式。blind一致。"
+  },
+  {
+   "key": "lg-07-16",
+   "verdict": "pass",
+   "blindAnswer": 1,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "stats:jinkou-kakutei-r7-cho / r7-gaikyou 比率の解説: 死産率=死産数(妊娠満12週以後)/出産数(出生+死産)×1,000、第1表注3も同旨。blind一致。"
+  },
+  {
+   "key": "lg-07-17",
+   "verdict": "pass",
+   "blindAnswer": 2,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "stats:jinkou-kakutei-r7-gaikyou 本文L215-217（第1位悪性新生物23.8%、第2位心疾患13.9%、第3位老衰13.5%）と第7表（脳血管(4)6.3%、肺炎(5)5.3%）で全順位・割合を確認。年次明記。blind一致。"
+  },
+  {
+   "key": "lg-07-18",
+   "verdict": "pass",
+   "blindAnswer": 2,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "x-legacy-L07b:hyogo-jinko-pyramid 類型の説明でつぼ型の記述が問題文と一致、ひょうたん型は14歳以下も高い・星型は生産年齢が高いので他は該当せず。blind一致。"
+  },
+  {
+   "key": "lg-07-19",
+   "verdict": "pass",
+   "blindAnswer": 2,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "stats:naruhodo-yougo-ka 高齢社会: 7%以上14%未満=高齢化社会、14%超=高齢社会、21%超=超高齢社会。blind一致。"
+  },
+  {
+   "key": "lg-07-21",
+   "verdict": "pass",
+   "blindAnswer": 1,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "stats:jinkou-kakutei-r6-tfr（期間合計特殊出生率の定義）、r7-gaikyou 算出式（年齢別出生数/年齢別女性人口の15-49歳合計）とL202（R7は1.14）を確認。blind一致。"
+  },
+  {
+   "key": "lg-07-23",
+   "verdict": "pass",
+   "blindAnswer": 1,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "stats:naruhodo-yougo-sa 年少0〜14・生産年齢15〜64・老年65以上。blind一致。"
+  },
+  {
+   "key": "lg-07-24",
+   "verdict": "pass",
+   "blindAnswer": 1,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "stats:iryoshisetsu-byoinhokoku-r7-gaiyou (2)沿革: 動態調査毎月・静態調査S50から3年ごと・S59から10月1日現在; (1)対象は病院・診療所; (4)助産所等除く。registry asOf 2026-11-10。blind一致。"
+  },
+  {
+   "key": "lg-07-25",
+   "verdict": "pass",
+   "blindAnswer": 2,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "stats:kanja-chosa-r5-gaikyou (3)在宅医療: 往診40.4・訪問診療166.3・医師歯科医師以外32.4千人（訪問診療が最多）、いずれもH8以降増加傾向。blind一致。"
+  }
+ ]
+}

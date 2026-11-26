@@ -1,0 +1,14 @@
+{"answers":[
+{"key":"#0","answer":1,"confidence":"high","ambiguous":false,"note":"丹毒A46・帯状疱疹B02・伝染性軟属腫B08.1は第Ⅰ章。膿痂疹L01・蜂巣炎L03は第ⅩⅡ章"},
+{"key":"#1","answer":3,"confidence":"high","ambiguous":false,"note":"naiyou12 L89注: ステージ異なる複数部位は最高ステージのコード1つのみ(L89.2)"},
+{"key":"#2","answer":1,"confidence":"high","ambiguous":false,"note":"M80.0 閉経後骨粗しょう症・病的骨折を伴う。M80注に骨粗しょう症性椎骨圧潰を含む"},
+{"key":"#3","answer":2,"confidence":"high","ambiguous":false,"note":"M84.4除外: 骨粗しょう症における病的骨折(M80.-)。誤り"},
+{"key":"#4","answer":2,"confidence":"high","ambiguous":false,"note":"M16.2 形成不全の結果としての股関節症，両側性"},
+{"key":"#5","answer":3,"confidence":"high","ambiguous":false,"note":"M15除外: 単関節で両側の併発(M16-M19)。両膝はM17.-"},
+{"key":"#6","answer":2,"confidence":"high","ambiguous":false,"note":"N18.3 GFRの中度低下(30-59)"},
+{"key":"#7","answer":3,"confidence":"high","ambiguous":false,"note":"N18.5 末期腎臓病・透析中を含む"},
+{"key":"#8","answer":3,"confidence":"high","ambiguous":false,"note":"N18除外: 高血圧を伴う慢性腎不全(I12.0)"},
+{"key":"#9","answer":2,"confidence":"high","ambiguous":false,"note":"N39.0 + B96.2(大腸菌)"},
+{"key":"#10","answer":3,"confidence":"high","ambiguous":false,"note":"N12 急性又は慢性と明示されない尿細管間質性腎炎(腎盂腎炎含む)"},
+{"key":"#11","answer":3,"confidence":"high","ambiguous":false,"note":"腎機能不全NOSはN19に包含。N18.9ではない"}
+]}

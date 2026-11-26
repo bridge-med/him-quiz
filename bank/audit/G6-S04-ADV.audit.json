@@ -1,0 +1,425 @@
+{
+ "verdicts": [
+  {
+   "key": "G6-S04-ADV-01",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "who-psc-jpn T5 l.11914-11945: slip=観察可能な遂行上のエラー(間違ったボタン)、lapse=投与忘れ、mistake=計画の失敗(診断を誤り不適切な治療計画=規則ベース)。d は T1 l.7118 日常的な違反(多忙で手指衛生省略)。key a・b 唯一。solver一致。",
+   "verdict": "pass"
+  },
+  {
+   "key": "G6-S04-ADV-02",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "who-psc-jpn T1 l.7113-7142: 定義・3類型・例(手指衛生=日常的、上司が監督せず学生に任せる=業務効率)・個人特性/組織機能不全の関連付けを確認。T5 l.11844 違反=意図的逸脱。選択肢4はスリップ/ラプスの説明で誤り。solver一致。",
+   "verdict": "pass"
+  },
+  {
+   "key": "G6-S04-ADV-03",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "who-psc-jpn T1 l.6885-6905(1層の欠陥では通常事故にならない・多層の欠陥・監督で誤薬回避)、図B.1.1 l.6916-6918(潜在的要因=組織的なプロセス―業務負荷,手書きの処方箋)、T5 l.11864(エラーの定義に転帰は含まれない)。選択肢2のハインリッヒ1:29:300は extra-legacy-L01b/heinrich_yougo24 で確認。solver一致。",
+   "verdict": "pass"
+  },
+  {
+   "key": "G6-S04-ADV-04",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "case: 手順のダブルチェックを知りつつ省略=T5 l.11844 違反(T1 l.7136 必要に迫られての違反「故意に重要な段階を省く」とも整合)。後知恵バイアス定義 l.11871-11875。solver一致。",
+   "verdict": "pass"
+  },
+  {
+   "key": "G6-S04-ADV-05",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "who-psc-jpn T1 l.6881(「誰のせいか」ではなく「なぜ」)、l.6936-6940(パーソンアプローチ)、T5 l.12270(有害でなかったインシデント「何の代償もなく」)、l.12429-12434(後知恵バイアス・非難の文化が学習の障害)。solver一致。",
+   "verdict": "pass"
+  },
+  {
+   "key": "G6-S04-ADV-06",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": false,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "mgmt:ianzen-sougou-taisaku-h14 l.130-133 フェールセーフ/フールプルーフ・エラープルーフ、l.1106-1113 ヒューマンファクターエンジニアリング。内容・key正しい。locatorが誤り(「第1章 2（1）」→実際は1−1（1）、2点目は2−2（3）①)のため修正。",
+   "verdict": "fix",
+   "detail": "sources locator を本文の見出し構成(第1章 1−1（1）／第2章 2−2（3）①)に修正。設問・選択肢・解説は変更なし。",
+   "fixed": {
+    "key": "G6-S04-ADV-06",
+    "subject": "S04",
+    "subtopic": "医療安全の基本概念",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "厚生労働省「医療安全推進総合対策」（平成14年）が他産業の安全対策の例として挙げる仕組みのうち、エラーが生じても障害に至らないようにする仕組みを指す用語はどれか。",
+    "choices": [
+     "フェールセーフ",
+     "フールプルーフ",
+     "エラープルーフ",
+     "ヒューマンファクターエンジニアリング",
+     "パーソンアプローチ"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "同対策は、原子力業界、航空機業界等における「誤りがあっても障害に至らない仕組（フェールセーフ）」や「誤りが起こりにくい仕組（フールプルーフ、エラープルーフ）」を取り入れたシステムの安全性向上を例に挙げ、「人は誤りを犯す」ことを前提とした組織的対策を参考にすべきとしている。",
+     "choiceNotes": [
+      null,
+      "フールプルーフは「誤りが起こりにくい仕組」を指す。",
+      "エラープルーフはフールプルーフと並べて「誤りが起こりにくい仕組」として示されている。",
+      "同対策では、人間の行動特性を考慮し誤使用しにくい医療用具の設計の考え方を指す用語として用いられている。",
+      "個人の責任を追及する考え方で、安全の仕組みを指す用語ではない（WHO患者安全カリキュラムガイドでは非難の文化と結び付けられている）。"
+     ],
+     "point": "フェールセーフ＝誤っても障害に至らない。フールプルーフ（エラープルーフ）＝誤りが起こりにくい。"
+    },
+    "sources": [
+     {
+      "ref": "mgmt:ianzen-sougou-taisaku-h14",
+      "title": "医療安全推進総合対策 〜医療事故を未然に防止するために〜",
+      "url": "https://www.mhlw.go.jp/topics/2001/0110/dl/tp1030-1c.pdf",
+      "locator": "第1章 1−1（1）医療安全の確保",
+      "quote": "誤りがあっても障害に至らない仕組（フェールセーフ）や誤りが起こりにくい仕組（フールプルーフ、エラープルーフ）"
+     },
+     {
+      "ref": "mgmt:ianzen-sougou-taisaku-h14",
+      "title": "医療安全推進総合対策 〜医療事故を未然に防止するために〜",
+      "url": "https://www.mhlw.go.jp/topics/2001/0110/dl/tp1030-1c.pdf",
+      "locator": "第2章 2−2（3）医療用具における取組 ①人の行動特性、限界を考慮した設計",
+      "quote": "誤使用しにくいような設計の考え方（ヒューマンファクターエンジニアリング）"
+     }
+    ],
+    "asOf": "平成14年4月17日 医療安全推進総合対策（医療安全対策検討会議）"
+   }
+  },
+  {
+   "key": "G6-S04-ADV-07",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "mgmt:quality-outcome-process-h23 l.11-25 定義・具体例、参考表 l.260-303: 予防的抗菌薬投与率・急性脳梗塞CT/MRI施行率=プロセス、死亡退院患者率・転倒転落発生率・退院後6週間以内緊急再入院率=アウトカムの表に掲載。key a・c 唯一。solver一致。",
+   "verdict": "pass"
+  },
+  {
+   "key": "G6-S04-ADV-08",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": false,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "mgmt:iryoukeikaku-taisei-tsuchi l.266-280 指標の定義、別表2 l.8457-8507: 医師数・専用病室・リハ科医師数・リハ実施可能医療機関数=ストラクチャー、リハ実施件数=プロセス行。key正しい。locator「第1 2」は誤り(別紙 第2 内容 2 指標)のため修正。",
+   "verdict": "fix",
+   "detail": "sources locator を「別紙 第2 内容 2 指標」「別表2」に修正。設問・選択肢・解説は変更なし。",
+   "fixed": {
+    "key": "G6-S04-ADV-08",
+    "subject": "S04",
+    "subtopic": "医療の質の評価",
+    "format": "knowledge",
+    "difficulty": "standard",
+    "polarity": "negative",
+    "question": "通知「疾病・事業及び在宅医療に係る医療体制について」（医療計画の作成指針。令和8年6月最終改正）は、指標をアウトカム、プロセス、ストラクチャーに分類して用いるとしている。同通知の脳卒中の指標例のうち、ストラクチャー指標に該当しないものはどれか。",
+    "choices": [
+     "脳神経内科医師数・脳神経外科医師数",
+     "脳卒中の専用病室を有する病院数・病床数",
+     "リハビリテーション科医師数",
+     "脳卒中リハビリテーションが実施可能な医療機関数",
+     "脳卒中患者に対するリハビリテーションの実施件数"
+    ],
+    "answer": 4,
+    "explanation": {
+     "correct": "同通知はストラクチャー指標を「医療サービスを提供する物的資源、人的資源及び組織体制、外部環境並びに対象となる母集団を測る指標」、プロセス指標を「実際にサービスを提供する主体の活動や、他機関との連携体制を測る指標」と定義する。リハビリテーションの実施件数は提供された活動を測るもので、別表2でもプロセス指標に位置付けられている。",
+     "choiceNotes": [
+      "医師数は人的資源を測るストラクチャー指標である。",
+      "専用病室を有する病院数・病床数は物的資源を測るストラクチャー指標である。",
+      "医師数は人的資源を測るストラクチャー指標である。",
+      "実施可能な医療機関数は提供体制（資源）を測るストラクチャー指標である。",
+      null
+     ],
+     "point": "ストラクチャー＝人・物・体制（〜数、〜可能な施設数）、プロセス＝実施した活動（〜の実施件数）、アウトカム＝住民・患者の状態。"
+    },
+    "sources": [
+     {
+      "ref": "mgmt:iryoukeikaku-taisei-tsuchi",
+      "title": "疾病・事業及び在宅医療に係る医療体制について（医政地発0331第14号）",
+      "url": "https://www.mhlw.go.jp/content/001103126.pdf",
+      "locator": "別紙 第2 内容 2 指標（用語の定義）ストラクチャー指標",
+      "quote": "医療サービスを提供する物的資源、人的資源及び組織体制、外部環境並びに対象となる母集団を測る指標"
+     },
+     {
+      "ref": "mgmt:iryoukeikaku-taisei-tsuchi",
+      "title": "疾病・事業及び在宅医療に係る医療体制について（医政地発0331第14号）",
+      "url": "https://www.mhlw.go.jp/content/001103126.pdf",
+      "locator": "別紙 第2 内容 2 指標（用語の定義）プロセス指標",
+      "quote": "実際にサービスを提供する主体の活動や、他機関との連携体制を測る指標"
+     },
+     {
+      "ref": "mgmt:iryoukeikaku-taisei-tsuchi",
+      "title": "疾病・事業及び在宅医療に係る医療体制について（医政地発0331第14号）",
+      "url": "https://www.mhlw.go.jp/content/001103126.pdf",
+      "locator": "別表2 脳卒中の医療体制構築に係る現状把握のための指標例（プロセス）",
+      "quote": "脳卒中患者に対するリハビリテーションの実施件数"
+     }
+    ],
+    "asOf": "令和5年3月31日医政地発0331第14号（最終改正 令和8年6月10日）"
+   }
+  },
+  {
+   "key": "G6-S04-ADV-09",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "mgmt:quality-outcome-process-h23 l.13-25(構造・過程・結果、Donabedian脚注 l.48)、アウトカム具体例に再入院率・患者満足度、プロセス具体例は早期リハ開始率等。key 4 唯一。Q07と再入院率の分類が重なるが問い方が異なり重複ではない。solver一致。",
+   "verdict": "pass"
+  },
+  {
+   "key": "G6-S04-ADV-10",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "mgmt:quality-taiseiseibi-r3 l.244-248(先行事業不参加の医療機関を主対象)、l.265-266(改善支援パッケージ=成果物の総称)、l.272-279(固定化への懸念・4論点を順に・当座はa,b)、l.138-140(QIコンソーシアム=活動の場)。solver一致。",
+   "verdict": "pass"
+  },
+  {
+   "key": "G6-S04-ADV-11",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": false,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "mgmt:iryoukeikaku-taisei-tsuchi l.257-265 用語の定義(アウトカム/アウトプット/インパクト/ロジックモデル)。開催回数・受講者数=アウトプット。key正しい。locator「第1 1」は誤り(別紙 第2 内容 1 医療体制の政策循環)のため修正。",
+   "verdict": "fix",
+   "detail": "sources locator を「別紙 第2 内容 1 医療体制の政策循環（用語の定義）」に修正。設問・選択肢・解説は変更なし。",
+   "fixed": {
+    "key": "G6-S04-ADV-11",
+    "subject": "S04",
+    "subtopic": "医療の質の評価",
+    "format": "case",
+    "difficulty": "standard",
+    "polarity": "positive",
+    "question": "ある県が脳卒中対策として、医療機関の職員向けに地域連携に関する研修会を企画した。通知「疾病・事業及び在宅医療に係る医療体制について」の用語の定義に照らし、「研修会を年4回開催し、延べ200人が受講した」という情報が該当するものはどれか。",
+    "choices": [
+     "成果（アウトカム）",
+     "結果（アウトプット）",
+     "影響（インパクト）",
+     "ロジックモデル"
+    ],
+    "answer": 1,
+    "explanation": {
+     "correct": "同通知は、結果（アウトプット）を「施策や事業を実施したことにより生じる結果」、成果（アウトカム）を「施策や事業が対象にもたらした変化」と定義する。研修会の開催回数や受講者数は事業を実施したことにより生じる結果であり、アウトプットに当たる。",
+     "choiceNotes": [
+      "アウトカムは施策や事業が対象にもたらした変化（例：住民の健康状態や患者の状態の変化）であり、開催回数や受講者数そのものではない。",
+      null,
+      "インパクトは施策や事業のアウトプットによるアウトカムへの寄与の程度をいう。",
+      "ロジックモデルは、施策が目標とする成果を達成するに至るまでの論理的な関係を体系的に図式化したもので、個々の実績値ではない。"
+     ],
+     "point": "アウトプット＝実施した結果（回数・人数）、アウトカム＝対象にもたらした変化、インパクト＝アウトプットのアウトカムへの寄与。"
+    },
+    "sources": [
+     {
+      "ref": "mgmt:iryoukeikaku-taisei-tsuchi",
+      "title": "疾病・事業及び在宅医療に係る医療体制について（医政地発0331第14号）",
+      "url": "https://www.mhlw.go.jp/content/001103126.pdf",
+      "locator": "別紙 第2 内容 1 医療体制の政策循環（用語の定義）",
+      "quote": "結果（アウトプット）施策や事業を実施したことにより生じる結果"
+     },
+     {
+      "ref": "mgmt:iryoukeikaku-taisei-tsuchi",
+      "title": "疾病・事業及び在宅医療に係る医療体制について（医政地発0331第14号）",
+      "url": "https://www.mhlw.go.jp/content/001103126.pdf",
+      "locator": "別紙 第2 内容 1 医療体制の政策循環（用語の定義）",
+      "quote": "成果（アウトカム）施策や事業が対象にもたらした変化"
+     },
+     {
+      "ref": "mgmt:iryoukeikaku-taisei-tsuchi",
+      "title": "疾病・事業及び在宅医療に係る医療体制について（医政地発0331第14号）",
+      "url": "https://www.mhlw.go.jp/content/001103126.pdf",
+      "locator": "別紙 第2 内容 1 医療体制の政策循環（用語の定義）",
+      "quote": "影響（インパクト）施策や事業のアウトプットによるアウトカムへの寄与の程度"
+     }
+    ],
+    "asOf": "令和5年3月31日医政地発0331第14号（最終改正 令和8年6月10日）"
+   }
+  },
+  {
+   "key": "G6-S04-ADV-12",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "mgmt:quality-outcome-process-h23 l.38-45: 手術件数・分娩件数・患者数・平均在院日数・病床利用率=広告可能、死亡率=継続検討。stem は同資料の記述として帰属しており妥当。solver一致。",
+   "verdict": "pass"
+  },
+  {
+   "key": "G6-S04-ADV-13",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": false,
+    "sources": false,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "who-psc-jpn Part A 8 l.3895-3913 PDSA各段階の定義、T7 l.14466-14470 最初の問い。key Study 正しい。locator「Part A 指導方法」が不正確なため Part A 8 に修正。point の「PDCAのCheckに当たるのがStudy」はキャッシュ資料で確認できないため削除。",
+   "verdict": "fix",
+   "detail": "sources locator を Part A 8 に修正。point から出典で確認できない「PDCAのCheckに当たる」を削除。",
+   "fixed": {
+    "key": "G6-S04-ADV-13",
+    "subject": "S04",
+    "subtopic": "質改善の手法",
+    "format": "case",
+    "difficulty": "advanced",
+    "polarity": "positive",
+    "caseId": "case-g6-s04-adv-01",
+    "question": "次のインシデント事例（架空）を読み、この病院では再発防止策として、インスリン指示の手書きを廃止して記載ルールを統一する変更を計画し、1つの病棟で1か月間試行した。現在、指示の読み違いに関するインシデント報告件数を変更の前後で比較し、変更の結果を分析している。この作業は、WHO患者安全カリキュラムガイド多職種版が説明するPDSAサイクルのどの段階に当たるか。",
+    "choices": [
+     "Plan（計画）",
+     "Do（試行）",
+     "Study（評価）",
+     "Act（実行）",
+     "改善のモデルの最初の問い「達成しようとしていることは何か」"
+    ],
+    "answer": 2,
+    "explanation": {
+     "correct": "同ガイドはPDSAサイクルの各段階を、Plan（計画）：変更を計画する、Do（試行）：変更を実践する、Study（評価）：変更の結果を分析する、Act（実行）：改善プロセスを継続する上で次に何が必要かを考える、と定義している。試行後に変更前後のデータを比較して結果を分析するのはStudyである。",
+     "choiceNotes": [
+      "変更の計画はすでに済んでいる段階である。",
+      "1病棟での1か月間の試行（変更の実践）が Do に当たり、すでに終わっている。",
+      null,
+      "Act は分析結果を踏まえ、改善プロセスを継続する上で次に何が必要かを考える段階である（同ガイドの訳語は「実行」）。",
+      "この問いは改善に取り組む領域にチームの意識を集中させるためのもので、試行の結果を分析する作業ではない。"
+     ],
+     "point": "PDSA：Plan 計画→Do 試行（変更を実践）→Study 評価（変更の結果を分析）→Act 次に何が必要かを考える。試行後に前後のデータを比較・分析するのは Study。"
+    },
+    "sources": [
+     {
+      "ref": "x-gen-G6-S04-ADV:who-psc-jpn",
+      "title": "WHO患者安全カリキュラムガイド：多職種版（日本語版）",
+      "url": "https://iris.who.int/bitstream/handle/10665/44641/9789241501958_jpn.pdf",
+      "locator": "Part A 8「患者安全の理解につながる教育活動」改善プロジェクト（PDSAサイクルの定義）",
+      "quote": "Study（評価）：変更の結果を分析する．"
+     },
+     {
+      "ref": "x-gen-G6-S04-ADV:who-psc-jpn",
+      "title": "WHO患者安全カリキュラムガイド：多職種版（日本語版）",
+      "url": "https://iris.who.int/bitstream/handle/10665/44641/9789241501958_jpn.pdf",
+      "locator": "Part A 8「患者安全の理解につながる教育活動」改善プロジェクト（PDSAサイクルの定義）",
+      "quote": "Do（試行）：変更を実践する．"
+     }
+    ],
+    "asOf": "WHO患者安全カリキュラムガイド多職種版（2011年。日本語版）"
+   }
+  },
+  {
+   "key": "G6-S04-ADV-14",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "who-psc-jpn T7 l.14464-14467(質問フェーズ+PDSA)、l.14527-14537(情報量に関係なく単純に・前後比較)、l.14581-14584(何度でも繰り返す)、PDSA定義 l.3908-3911。solver一致。",
+   "verdict": "pass"
+  },
+  {
+   "key": "G6-S04-ADV-15",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "who-psc-jpn T7 l.15096-15098 フローチャート、l.15170-15176 特性要因図、l.15239-15241 パレート図、l.15294-15296 ランチャート。key 0 唯一。solver一致。",
+   "verdict": "pass"
+  },
+  {
+   "key": "G6-S04-ADV-16",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "who-psc-jpn T7 l.14944-14955(未然防止・米国陸軍MIL-P-1629・確率論的)、l.14976-14979(システムの分析)、l.15065-15066(RPN 1〜1000)、T5 l.12305-12315(RCA=事例を後ろ向きに検討)。選択肢4はRCAで誤り。solver一致。",
+   "verdict": "pass"
+  }
+ ]
+}

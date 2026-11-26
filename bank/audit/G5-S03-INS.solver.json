@@ -1,0 +1,14 @@
+{"answers":[
+{"key":"G5-S03-INS-01","answer":1,"confidence":"high","ambiguous":false,"note":"1950勧告: 国家扶助"},
+{"key":"G5-S03-INS-02","answer":3,"confidence":"high","ambiguous":false,"note":"生活保護は税方式"},
+{"key":"G5-S03-INS-03","answer":4,"confidence":"high","ambiguous":false,"note":"社会保険の給付は法律で定まる"},
+{"key":"G5-S03-INS-04","answer":4,"confidence":"high","ambiguous":false,"note":"年金は現役から高齢への移転"},
+{"key":"G5-S03-INS-05","answer":1,"confidence":"high","ambiguous":false,"note":"社会保険は被用者から発足"},
+{"key":"G5-S03-INS-06","answer":0,"confidence":"high","ambiguous":false,"note":"健保法4条"},
+{"key":"G5-S03-INS-07","answer":1,"confidence":"high","ambiguous":false,"note":"国保法3条1項 都道府県も保険者"},
+{"key":"G5-S03-INS-08","answer":4,"confidence":"high","ambiguous":false,"note":"国保法5条・6条"},
+{"key":"G5-S03-INS-09","answer":4,"confidence":"high","ambiguous":false,"note":"国内居住要件には例外あり(3条7項ただし書)"},
+{"key":"G5-S03-INS-10","answer":1,"confidence":"high","ambiguous":false,"note":"健保法37条 20日以内"},
+{"key":"G5-S03-INS-11","answer":1,"confidence":"high","ambiguous":false,"note":"共済組合の対象"},
+{"key":"G5-S03-INS-12","answer":3,"confidence":"high","ambiguous":false,"note":"設立同意は2分の1以上(健保法11条)"}
+]}

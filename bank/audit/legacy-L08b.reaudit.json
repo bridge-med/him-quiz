@@ -1,0 +1,199 @@
+{
+ "verdicts": [
+  {
+   "key": "lg-08-16",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:医療法(版施行2026-10-01) 第6条の4第1項(7日以内は規則・ただし書・3号傷病名及び主要な症状)・第2項(承諾で電磁的提供可); law:医療法施行規則 第1条の5(担当医師又は歯科医師が7日以内に作成・交付・説明)、第1条の6第1号(短期間退院). 主体=管理者の注記も正確。"
+  },
+  {
+   "key": "lg-08-18",
+   "verdict": "pass",
+   "blindAnswer": 3,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:医師法施行規則(版施行2026-10-01) 第23条1〜4号を確認、2号の美容処置の追記も解説に反映。law:医師法 第24条第1項・第2項(5年保存)確認。"
+  },
+  {
+   "key": "lg-08-19",
+   "verdict": "pass",
+   "blindAnswer": 3,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "x-legacy-L08:kwtan-pomr-1981 l.191-192『Weedは診療記録の4つの基本的要素として①データベース②問題リスト③初期計画④経過記録』、初期計画のDx/Rx/Ex記述を確認。"
+  },
+  {
+   "key": "lg-08-21",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "him:jhim-discharge-summary-guidance-2019(2019年9月25日) ＜退院サマリーの構造＞: 2)退院時診断=必須、4)デバイス情報・8)手術・処置情報=推奨。ins:r08-kihon-shisetsukijun-tsuchi 第4 1(8) 加算1: 14日以内作成・毎月9割以上を確認。"
+  },
+  {
+   "key": "lg-08-22",
+   "verdict": "pass",
+   "blindAnswer": 1,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "him:jhim-gyomu-shishin-2026 5-3(1) 量的点検の対象に『説明と同意に関する文書』; him:jhim-kiroku-shishin-2024 4⑵⑧ 入院同意書・誓約書を入院時文書として整備、4⑶③ 説明者と患者本人の署名・押印の徹底。いずれも日本診療情報管理学会。"
+  },
+  {
+   "key": "lg-08-23",
+   "verdict": "pass",
+   "blindAnswer": 1,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:がん登録等の推進に関する法律 第6条第1項第5号(進行度); cancer:zenkoku-todokede-manual-2026 第2章 届出項目一覧(1〜26項目、16・17進展度、喫煙歴・職業・家族歴なし)、l.964 進行度として進展度; cancer:mhlw-gan-toroku 平成28年1月1日施行。"
+  },
+  {
+   "key": "lg-08-24",
+   "verdict": "pass",
+   "blindAnswer": 1,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "mgmt:quality-outcome-process-h23 1.(1)定義(構造・過程・結果、アウトカム指標の例)、別紙 院内感染に関する指標③院内感染症発生頻度を確認。他の選択肢は臨床指標の例にない旨の注記は正確。"
+  },
+  {
+   "key": "lg-08-25",
+   "verdict": "pass",
+   "blindAnswer": 1,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "him:tohoku-shinryoroku-kisai-2023『訂正は訂正前の文字が見えるように二重線で行う』; him:jhim-kiroku-shishin-2024 3⑶ 原記録は残して追記・訂正し日時・理由等を併記; him:kobeu-shinryoroku-manual-2023 【削除・修正】修正箇所・修正者・修正した日時を記載(修正者名の根拠)。"
+  },
+  {
+   "key": "lg-08-26",
+   "verdict": "pass",
+   "blindAnswer": 1,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:電子署名及び認証業務に関する法律 第2条第1項(『いずれにも該当』1号・2号)、第3条(真正に成立したものと推定)、附則 平成13年4月1日施行を確認。"
+  },
+  {
+   "key": "lg-08-27",
+   "verdict": "pass",
+   "blindAnswer": 1,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "info:mhlw-anzen-gl7-kikaku 14.2(存在証明・非改ざん証明)、14 遵守事項2(1)(認定事業者のタイムスタンプ)を確認。企画管理編のMHLW掲載表記は令和8年5月だがcommon.mdの版表記(第7.0版 令和8年6月)と一致し、内容に影響なし。"
+  },
+  {
+   "key": "lg-08-28",
+   "verdict": "pass",
+   "blindAnswer": 1,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "him:jhim-gyomu-shishin-2026 4-3 点検と監査の定義を原文で確認(選択肢1=監査、2=点検)。"
+  },
+  {
+   "key": "lg-08-29",
+   "verdict": "pass",
+   "blindAnswer": 1,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "info:mhlw-anzen-gl7-unyo 17 遵守事項①(ログイン時刻・アクセス時間・操作した医療情報を記録し定期確認)、②ログの改ざん防止、17.1 全アクセスログ収集し不正利用がないことを確認。"
+  },
+  {
+   "key": "lg-08-30",
+   "verdict": "pass",
+   "blindAnswer": 1,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:個人情報の保護に関する法律(版施行2026-11-02) 第33条第1項・第2項ただし書; info:mhlw-shinryojoho-teikyo-shishin 9 遺族への提供・開示を求め得る者の範囲を確認。"
+  }
+ ]
+}

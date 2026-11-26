@@ -1,0 +1,225 @@
+{
+ "verdicts": [
+  {
+   "key": "G3-S12-INF-01",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou01 第Ⅰ章冒頭の除外（インフルエンザ及びその他の急性呼吸器感染症 J00-J22）を確認。A01.0/A15-A16/B02/B37は第Ⅰ章、J09-J11は第Ⅹ章（icd.mjs）。盲検一致。"
+  },
+  {
+   "key": "G3-S12-INF-02",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou01 章除外の括弧書き（新生児破傷風・先天梅毒・周産期淋菌感染症・周産期HIV病）を確認。P37.0/P35.0/P35.1/P36は第XVI章、A50は第Ⅰ章。盲検一致。"
+  },
+  {
+   "key": "G3-S12-INF-03",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou01 A15.0/A15.3/A16.0/A16.1/A16.2の名称とA16.2包含「肺結核…NOS」を確認。盲検一致。"
+  },
+  {
+   "key": "G3-S12-INF-04",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou01 A15-A19除外（P37.0, B20.0, J65, B90.-）とA15.6、icd:naiyou10 J90除外「結核性（A15-A16）」を確認。盲検一致。"
+  },
+  {
+   "key": "G3-S12-INF-05",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:instruction 4.4.4 第Ⅰ章 B95-B97注と例4（N30.0主要病態・B96.2任意的追加）を確認。A04.4/N39.0/A49.8の名称もicd.mjsで確認。盲検一致。"
+  },
+  {
+   "key": "G3-S12-INF-06",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:instruction 4.4.4 第Ⅰ章 例5（A49.9、B95-B97にはコードしない）を確認。A49.8/B96.8/A41.9/B94.9の名称確認。盲検一致。"
+  },
+  {
+   "key": "G3-S12-INF-07",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:instruction 4.4.2 続発・後遺症、4.4.4 B90-B94注・G09注（例15 G40.9）、4.2.4 G09、icd:naiyou01 B94.1、naiyou06 G09注を確認。盲検一致（medium）だが規則上キーのみ成立。"
+  },
+  {
+   "key": "G3-S12-INF-08",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou01 B90-B94注（慢性感染症には使用しない）、B91除外G14、B15-B19除外B94.2、icd:instruction 4.2.4 B94.1（1年以上）を確認。盲検一致。"
+  },
+  {
+   "key": "G3-S12-INF-09",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:instruction 4.4.4 B20-B24（項目をまたぐ場合B22.7、例3）とicd:naiyou01 B20.6/B21.0/B20.7/B21.7/B22.7を確認。盲検一致。"
+  },
+  {
+   "key": "G3-S12-INF-10",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou01 B20-B24除外（Z21, O98.7）、B20除外（B23.0）、B20.0包含、B24包含を確認。盲検一致。"
+  },
+  {
+   "key": "G3-S12-INF-11",
+   "verdict": "fix",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": false,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou01 A40/A41の除外（T81.4, P36, O85, B37.7, O75.3）、A40.3包含、icd:naiyou19 T81.4包含「敗血症 処置後」を確認。キー・誤答肢とも正しい。盲検一致。",
+   "detail": "choiceNotes[3]が「A40・A41の除外に新生児（P36.-）」としていたが、A40の除外表記は「新生児（P36.0－P36.1）」。解説を原文どおりに修正（キー・選択肢・出典は不変）。",
+   "fixed": {
+    "subject": "S12",
+    "subtopic": "感染症（第Ⅰ章）",
+    "format": "icd",
+    "difficulty": "standard",
+    "polarity": "negative",
+    "question": "ICD-10（2013年版）における敗血症の分類について、誤っているものはどれか。",
+    "choices": [
+     "肺炎球菌性敗血症はA40.3に分類される。",
+     "処置後の敗血症はA41.9に分類される。",
+     "カンジダ性敗血症はB37.7に分類される。",
+     "新生児の細菌性敗血症はP36.-に分類される。",
+     "産じょく敗血症はO85に分類される。"
+    ],
+    "answer": 1,
+    "explanation": {
+     "correct": "A41（その他の敗血症）の除外に「処置後（T81.4）」とあり、処置後の敗血症はT81.4（処置に続発する感染症，他に分類されないもの）に分類される。",
+     "choiceNotes": [
+      "正しい。A40.3（肺炎連鎖球菌による敗血症）に肺炎球菌性敗血症が含まれる。",
+      null,
+      "正しい。A41の除外にカンジダ（症）による敗血症（B37.7）とある。",
+      "正しい。A41の除外に新生児（P36.-）、A40の除外に新生児（P36.0－P36.1）とあり、新生児の細菌性敗血症はP36に分類される。",
+      "正しい。A40・A41の除外に産じょく（O85）とある。"
+     ],
+     "point": "敗血症の行き先：新生児P36、産じょくO85、分娩中O75.3、処置後T81.4、カンジダB37.7。"
+    },
+    "sources": [
+     {
+      "ref": "icd:naiyou01",
+      "title": "ICD-10（2013年版）準拠 内容例示表 第1章 感染症及び寄生虫症（A00-B99）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou01.pdf",
+      "locator": "A41 除外",
+      "quote": "・処置後（Ｔ81．4）"
+     },
+     {
+      "ref": "icd:naiyou01",
+      "title": "ICD-10（2013年版）準拠 内容例示表 第1章 感染症及び寄生虫症（A00-B99）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou01.pdf",
+      "locator": "A40.3",
+      "quote": "Ａ40．3   肺炎連鎖球菌による敗血症"
+     },
+     {
+      "ref": "icd:naiyou01",
+      "title": "ICD-10（2013年版）準拠 内容例示表 第1章 感染症及び寄生虫症（A00-B99）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou01.pdf",
+      "locator": "A41 除外",
+      "quote": "・カンジダ（症）（Ｂ37．7）"
+     }
+    ],
+    "asOf": "ICD-10（2013年版）準拠",
+    "key": "G3-S12-INF-11"
+   }
+  },
+  {
+   "key": "G3-S12-INF-12",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou01 章冒頭U82-U84、A40/A41のR57.2注、A41除外 菌血症NOS(A49.9)、A49.9包含、章除外Z22.-、A40=連鎖球菌性・A41.0-A41.2=ブドウ球菌を確認。盲検一致（盲検メモのR78.8は2013年版では不採用、A49.9が正）。"
+  }
+ ]
+}

@@ -1,0 +1,14 @@
+{"answers":[
+{"key":"#0","answer":2,"confidence":"high","ambiguous":false,"note":"第Ⅰ章除外: インフルエンザ及びその他の急性呼吸器感染症(J00-J22)。naiyou01"},
+{"key":"#1","answer":0,"confidence":"high","ambiguous":false,"note":"P35-P39除外の例外=新生児破傷風・先天梅毒・周産期淋菌・周産期HIV。naiyou01"},
+{"key":"#2","answer":4,"confidence":"high","ambiguous":false,"note":"A16.2 細菌学的又は組織学的確認の記載がないもの"},
+{"key":"#3","answer":3,"confidence":"high","ambiguous":false,"note":"確認された結核性胸膜炎はA15.6(第Ⅰ章)。J90ではない"},
+{"key":"#4","answer":2,"confidence":"high","ambiguous":false,"note":"instruction 例4: N30.0主要病態、B96.2任意的追加"},
+{"key":"#5","answer":1,"confidence":"high","ambiguous":false,"note":"instruction 例5: A49.9"},
+{"key":"#6","answer":3,"confidence":"medium","ambiguous":false,"note":"B90-B94は遺残病態の性質記載時は主要病態にせず任意的追加コード。G40.9主、B94.1任意"},
+{"key":"#7","answer":1,"confidence":"high","ambiguous":false,"note":"慢性感染症が持続中なら活動性の感染症コードに分類、B90-B94ではない"},
+{"key":"#8","answer":3,"confidence":"high","ambiguous":false,"note":"B20とB21の複数分類項目に該当→B22.7 (instruction B20-B24, B22.7)"},
+{"key":"#9","answer":2,"confidence":"high","ambiguous":false,"note":"急性HIV感染症候群はB23.0"},
+{"key":"#10","answer":1,"confidence":"medium","ambiguous":false,"note":"処置後敗血症はT81.4(処置後感染症)。A41.9ではない"},
+{"key":"#11","answer":0,"confidence":"high","ambiguous":false,"note":"a,b正。菌血症NOSはR78.8、キャリアはZ22、A40は連鎖球菌"}
+]}

@@ -1,0 +1,228 @@
+{
+ "answers": [
+  {
+   "key": "lg-08-00",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "一般知識。医師法24条2項等。"
+  },
+  {
+   "key": "lg-08-01",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "一般知識。医師法24条2項等。"
+  },
+  {
+   "key": "lg-08-02",
+   "answer": 3,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "一般知識。医師法24条2項等。"
+  },
+  {
+   "key": "lg-08-03",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "一般知識。医師法24条2項等。"
+  },
+  {
+   "key": "lg-08-04",
+   "answer": 0,
+   "confidence": "medium",
+   "ambiguous": false,
+   "note": "診療録管理体制加算は専任の診療記録管理者配置が要件、未確認"
+  },
+  {
+   "key": "lg-08-05",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "一般知識。医師法24条2項等。"
+  },
+  {
+   "key": "lg-08-06",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "一般知識。医師法24条2項等。"
+  },
+  {
+   "key": "lg-08-07",
+   "answer": 0,
+   "confidence": "medium",
+   "ambiguous": false,
+   "note": "GLは人的も含む4分類"
+  },
+  {
+   "key": "lg-08-08",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "一般知識。医師法24条2項等。"
+  },
+  {
+   "key": "lg-08-09",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "一般知識。医師法24条2項等。"
+  },
+  {
+   "key": "lg-08-10",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "一般知識。医師法24条2項等。"
+  },
+  {
+   "key": "lg-08-11",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "一般知識。医師法24条2項等。"
+  },
+  {
+   "key": "lg-08-12",
+   "answer": 0,
+   "confidence": "medium",
+   "ambiguous": true,
+   "note": "診療情報の3階層は出典不明の表現"
+  },
+  {
+   "key": "lg-08-13",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "一般知識。医師法24条2項等。"
+  },
+  {
+   "key": "lg-08-14",
+   "answer": 3,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "一般知識。医師法24条2項等。"
+  },
+  {
+   "key": "lg-08-15",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "一般知識。医師法24条2項等。"
+  },
+  {
+   "key": "lg-08-16",
+   "answer": 0,
+   "confidence": "medium",
+   "ambiguous": true,
+   "note": "入院診療計画書は7日以内の運用だが、法令上は入院に際し交付で、選択肢は粗い"
+  },
+  {
+   "key": "lg-08-17",
+   "answer": 3,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "一般知識。医師法24条2項等。"
+  },
+  {
+   "key": "lg-08-18",
+   "answer": 3,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "一般知識。医師法24条2項等。"
+  },
+  {
+   "key": "lg-08-19",
+   "answer": 3,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "一般知識。医師法24条2項等。"
+  },
+  {
+   "key": "lg-08-20",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "一般知識。医師法24条2項等。"
+  },
+  {
+   "key": "lg-08-21",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "一般知識。医師法24条2項等。"
+  },
+  {
+   "key": "lg-08-22",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "一般知識。医師法24条2項等。"
+  },
+  {
+   "key": "lg-08-23",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "一般知識。医師法24条2項等。"
+  },
+  {
+   "key": "lg-08-24",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "一般知識。医師法24条2項等。"
+  },
+  {
+   "key": "lg-08-25",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "一般知識。医師法24条2項等。"
+  },
+  {
+   "key": "lg-08-26",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "一般知識。医師法24条2項等。"
+  },
+  {
+   "key": "lg-08-27",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "一般知識。医師法24条2項等。"
+  },
+  {
+   "key": "lg-08-28",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "一般知識。医師法24条2項等。"
+  },
+  {
+   "key": "lg-08-29",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "一般知識。医師法24条2項等。"
+  },
+  {
+   "key": "lg-08-30",
+   "answer": 1,
+   "confidence": "medium",
+   "ambiguous": false,
+   "note": "遺族開示はGLで可"
+  },
+  {
+   "key": "lg-08-31",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "一般知識。医師法24条2項等。"
+  }
+ ]
+}

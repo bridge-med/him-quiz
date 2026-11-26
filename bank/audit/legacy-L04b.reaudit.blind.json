@@ -1,0 +1,95 @@
+{
+ "answers": [
+  {
+   "key": "lg-04-14",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": ""
+  },
+  {
+   "key": "lg-04-15",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": ""
+  },
+  {
+   "key": "lg-04-16",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": ""
+  },
+  {
+   "key": "lg-04-17",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": ""
+  },
+  {
+   "key": "lg-04-18",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": ""
+  },
+  {
+   "key": "lg-04-19",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": ""
+  },
+  {
+   "key": "lg-04-20",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": ""
+  },
+  {
+   "key": "lg-04-21",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": ""
+  },
+  {
+   "key": "lg-04-22",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": ""
+  },
+  {
+   "key": "lg-04-24",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": ""
+  },
+  {
+   "key": "lg-04-25",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": ""
+  },
+  {
+   "key": "lg-04-26",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": ""
+  },
+  {
+   "key": "lg-04-27",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": ""
+  }
+ ]
+}

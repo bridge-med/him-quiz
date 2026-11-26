@@ -1,0 +1,253 @@
+{
+ "verdicts": [
+  {
+   "key": "G7-S01-ETH-01",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:医療法 第1条の3・第1条の4第1〜5項（版施行日2026-10-01）で主体と各項を確認。2項=担い手の説明・理解の努力義務、3項=医師・歯科医師の紹介、4項=管理者の退院時連携配慮、5項=開設者及び管理者の施設開放。blind一致。"
+  },
+  {
+   "key": "G7-S01-ETH-02",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "x-legacy-L01b:rinri-shishin-r0808 第2 用語の定義(2)侵襲・(23)IC・(24)代諾者・(25)代諾者等・(26)インフォームド・アセントを本文で確認。各誤肢は他の定義に対応。blind一致。"
+  },
+  {
+   "key": "G7-S01-ETH-03",
+   "verdict": "fix",
+   "checks": {
+    "answer": true,
+    "distractors": false,
+    "stem": true,
+    "explanations": false,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "x-legacy-L01b:rinri-shishin-r0808 第9の1(1)イ(ア)①②・1(3)・2(1)ただし書を本文で確認。キー(2)は正しく、blind一致。",
+   "detail": "誤肢D「情報を親権者等に知らせる必要はない」は、要件が『容易に知り得る状態に置く』（能動的な通知ではない）ため字義上は正しいとも読める。誤肢E「本人からICを受ける場合でも…侵襲を伴わない旨の記載は不要」は、代諾者IC＋本人IC（第9の1(3)）の経路では実際に記載要件がないため誤りと断定できない。D・Eを『代諾者ではなく本人から…』に限定し、Dを『容易に知り得る状態に置く必要はない』に修正。Bの解説（アセントで足りるのは…）を第9の1(3)・2(1)ただし書に即して書き直した。",
+   "fixed": {
+    "key": "G7-S01-ETH-03",
+    "subject": "S01",
+    "subtopic": "医療の概念と倫理",
+    "format": "case",
+    "difficulty": "advanced",
+    "polarity": "positive",
+    "question": "侵襲を伴わないアンケート調査による研究で、16歳の高校生（未成年者）を研究対象者とする。本人は研究を実施されることに関する十分な判断能力を有すると判断されている。「人を対象とする生命科学・医学系研究に関する倫理指針」（令和8年8月27日一部改正）に照らし、同意の手続として正しいものはどれか。",
+    "choices": [
+     "未成年者であるため、親権者等の代諾者からインフォームド・コンセントを受ければ、本人への説明は要しない。",
+     "代諾者からインフォームド・コンセントを受けた場合は、本人からはインフォームド・アセントを得るよう努めれば足りる。",
+     "所定の事項を研究計画書に記載し、倫理審査委員会の意見を聴いて研究機関の長の許可を受けたときは、代諾者ではなく本人から同意を受ける。",
+     "代諾者ではなく本人からインフォームド・コンセントを受ける場合には、研究の実施についての情報を親権者等が容易に知り得る状態に置く必要はない。",
+     "代諾者ではなく本人からインフォームド・コンセントを受ける場合でも、研究計画書に「研究の実施に侵襲を伴わない旨」を記載する必要はない。"
+    ],
+    "answer": 2,
+    "explanation": {
+     "correct": "指針第9の1（1）イ（ア）により、中学校等の課程を修了している又は16歳以上の未成年者で十分な判断能力を有すると判断される場合、①研究の実施に侵襲を伴わない旨、②研究の情報を親権者等が容易に知り得る状態に置き拒否の機会を保障する旨を研究計画書に記載し、倫理審査委員会の意見を聴き研究機関の長の許可を受けたときは、代諾者ではなく本人からインフォームド・コンセントを受ける。",
+     "choiceNotes": [
+      "代諾者から同意を受けた場合でも、16歳以上等で十分な判断能力がある研究対象者からは本人からもインフォームド・コンセントを受けなければならない（第9の1（3））。",
+      "第9の1（3）により、代諾者から同意を受けた場合でも、16歳以上等で十分な判断能力を有する研究対象者からは本人からもインフォームド・コンセントを受けなければならない。この場合はインフォームド・アセントの規定によらない（第9の2（1）ただし書）。",
+      null,
+      "研究の情報を親権者又は未成年後見人等が容易に知り得る状態に置き、拒否できる機会を保障する旨を研究計画書に記載することが要件である（第9の1（1）イ（ア）②）。",
+      "「研究の実施に侵襲を伴わない旨」は研究計画書に記載すべき事項として明記されている（第9の1（1）イ（ア）①）。"
+     ],
+     "point": "中学校等修了又は16歳以上＋十分な判断能力＋非侵襲＋親権者が知り得る・拒否機会＋倫理審査委員会意見＋長の許可→本人からIC。"
+    },
+    "sources": [
+     {
+      "ref": "x-legacy-L01b:rinri-shishin-r0808",
+      "title": "人を対象とする生命科学・医学系研究に関する倫理指針（令和８年８月27日一部改正）",
+      "url": "https://www.mhlw.go.jp/content/001743409.pdf",
+      "locator": "第9の1（1）イ（ア）",
+      "quote": "当該研究の実施について倫理審査委員会の意見を聴き、研究機関の長の許可を受けたときは、代諾者ではなく当該研究対象者からインフォームド・コンセントを受けるものとする。"
+     },
+     {
+      "ref": "x-legacy-L01b:rinri-shishin-r0808",
+      "title": "人を対象とする生命科学・医学系研究に関する倫理指針（令和８年８月27日一部改正）",
+      "url": "https://www.mhlw.go.jp/content/001743409.pdf",
+      "locator": "第9の1（1）イ（ア）①②",
+      "quote": "研究の実施に侵襲を伴わない旨"
+     },
+     {
+      "ref": "x-legacy-L01b:rinri-shishin-r0808",
+      "title": "人を対象とする生命科学・医学系研究に関する倫理指針（令和８年８月27日一部改正）",
+      "url": "https://www.mhlw.go.jp/content/001743409.pdf",
+      "locator": "第9の1（3）",
+      "quote": "当該研究対象者からもインフォームド・コンセントを受けなければならない。"
+     }
+    ],
+    "asOf": "人を対象とする生命科学・医学系研究に関する倫理指針（令和8年8月27日一部改正）"
+   }
+  },
+  {
+   "key": "G7-S01-ETH-04",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "info:mhlw-shinryojoho-teikyo-shishin 6（①〜⑦、知らないでいたい希望の尊重、未成年者等は親権者等へ）を本文で確認。blind一致。"
+  },
+  {
+   "key": "G7-S01-ETH-05",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "x-legacy-L01a:jma-lisbon 原則2b・4b・4c・7d・8aを本文で確認（原則番号も一致）。blind一致。"
+  },
+  {
+   "key": "G7-S01-ETH-06",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "x-legacy-L01b:chiiki-houkatsu-4jo【費用負担による区分】【時代や地域による違い】で公助=税、共助=被保険者負担、自助に市場サービス購入を含む、互助=制度的裏付けなし、都市部以外は互助の役割大を確認。blind一致。"
+  },
+  {
+   "key": "G7-S01-ETH-07",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:介護保険法 第115条の46第2・3・4・8・9項（版施行日2026-10-01）を確認。8項「これらの職にあった者」で退職後も守秘義務。3項の除外（2項4〜6号のみ受託者）も注記どおり。blind一致。"
+  },
+  {
+   "key": "G7-S01-ETH-08",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:介護保険法 第115条の45第2項第1〜7号・第3項第1〜3号を確認。費用適正化は3項1号（できる規定）。他肢は2項1・2・4・6号。blind一致。"
+  },
+  {
+   "key": "G7-S01-ETH-09",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:地域における医療及び介護の総合的な確保の促進に関する法律 第3条（厚労大臣）・第4条第1項（作成することができる）・第3項（整合性）・第5項（厚労大臣に提出）・第6条（3分の2、2項2号ロは全額）を確認。blind一致。"
+  },
+  {
+   "key": "G7-S01-ETH-10",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:kaigo-hoken-kaisei-r08 概要1(3)第二種社会福祉事業、1(4)市町村が地域権利擁護相談支援センター、1(5)都道府県等への登録制、2(3)ケアマネ更新制廃止、介護保険法関係「夜間対応型訪問介護を廃止し…統合」、施行は令和9年4月1日が原則を確認。stemは改正内容（未施行）として問うており時点の扱いも適切。blind一致。"
+  },
+  {
+   "key": "G7-S01-ETH-11",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:iryouhoken-kaisei-r08-page（令和8年5月29日成立、月単位維持＋年間上限新設、出産の標準的費用は追加負担等を除く）とins:iryouhoken-kaisei-r08-point（国保の均等割半減を未就学児から高校生年代へ、金融所得は確定申告の選択にかかわらず）を確認。blind一致。"
+  },
+  {
+   "key": "G7-S01-ETH-12",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:hpdx-kaiso（理事会に代えて運営会議、構成員、中期計画は厚労大臣認可）・ins:hpdx-ichiduke（令和7年12月5日成立・12日公布の医療法等の一部を改正する法律、審査支払と医療DXの双方）を確認。blind一致。"
+  },
+  {
+   "key": "G7-S01-ETH-13",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "info:mhlw-denkaru-kyouyuu（全国医療情報プラットフォームの仕組みの一つ、4サービス）・info:mhlw-denkaru-gaiyou-annai-v21 ①文書送受信サービス（送付前に口頭で患者の同意）を確認。blind一致。"
+  },
+  {
+   "key": "G7-S01-ETH-14",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "info:mhlw-myna-shikakukakuninsho-r0808 資格確認書(1/3)(2/3)：無償・申請によらず交付、単体で受診、最長5年、令和8年8月以降85歳以上は一律交付、該当者は両方保有可を確認。blind一致。"
+  }
+ ]
+}

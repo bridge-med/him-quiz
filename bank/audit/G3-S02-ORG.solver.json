@@ -1,0 +1,88 @@
+{
+ "answers": [
+  {
+   "key": "G3-S02-ORG-01",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "医療法10条1項"
+  },
+  {
+   "key": "G3-S02-ORG-02",
+   "answer": 3,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "医療法12条2項は都道府県知事の許可"
+  },
+  {
+   "key": "G3-S02-ORG-03",
+   "answer": 3,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "医療法16条 宿直(隣接待機の例外)"
+  },
+  {
+   "key": "G3-S02-ORG-04",
+   "answer": 4,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "医療法施行規則7条の2第1項 地域医療支援病院・公的医療機関・国立病院機構等"
+  },
+  {
+   "key": "G3-S02-ORG-05",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "医療法10条の2第2項・施行規則7条の3"
+  },
+  {
+   "key": "G3-S02-ORG-06",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "医療法46条の5第2項 社団は社員総会(評議員会は財団)"
+  },
+  {
+   "key": "G3-S02-ORG-07",
+   "answer": 4,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "SWOT 外部のマイナス=脅威"
+  },
+  {
+   "key": "G3-S02-ORG-08",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "quality_outcome_process_h23 早期リハ開始率=プロセス"
+  },
+  {
+   "key": "G3-S02-ORG-09",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "BSC四視点に競合他社は含まれない"
+  },
+  {
+   "key": "G3-S02-ORG-10",
+   "answer": 4,
+   "confidence": "medium",
+   "ambiguous": false,
+   "note": "BSC 学習と成長=研修参加率。他は視点が不適"
+  },
+  {
+   "key": "G3-S02-ORG-11",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "GL7.0経営管理編2.2.2 医政発0330010号"
+  },
+  {
+   "key": "G3-S02-ORG-12",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "勤務環境改善は義務化の様式一律・毎年報告ではない(ikisapo)"
+  }
+ ]
+}

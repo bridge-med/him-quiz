@@ -1,0 +1,170 @@
+{
+ "verdicts": [
+  {
+   "key": "lg-04-00",
+   "verdict": "reject",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": false,
+    "distractors": false,
+    "stem": false,
+    "explanations": false,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "MedlinePlus App.B: MI=Myocardial infarction は確認。ただし x-reaudit-legacy-L04a:umin-echo-abbr（東大病院検査部 心エコー英略語集）に 'mitral insufficiency MI 僧帽弁閉鎖不全' と 'myocardial infarction MI 心筋梗塞' が併記されている。",
+   "detail": "ambiguous: 選択肢B Mitral insufficiency（僧帽弁閉鎖不全）も MI の正式名称として公的医療機関の略語集に収載されており、正答が一意でない。choiceNotes[1]「MIの正式名称ではない」は誤り。修正前の『MR』記述を削除したことで誤答の根拠もなくなった。Bを別の誤答（例：Mitral stenosis 等の明確に別略語のもの）に替えれば救済可能。"
+  },
+  {
+   "key": "lg-04-01",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "x-legacy-L04a:medlineplus-appendixb「COPD Chronic obstructive pulmonary disease」、msd-ja-copd 定義・病因（喫煙が第一の危険因子）を文脈で確認。誤答の説明は略語の構成要素で妥当。"
+  },
+  {
+   "key": "lg-04-02",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "him:kobeu-shinryoroku-manual-2023 SOAP項: S=Subjective Data（主訴・症状経過等）、O=Objective Data を確認。Symptomの説明も根拠と整合。"
+  },
+  {
+   "key": "lg-04-03",
+   "verdict": "pass",
+   "blindAnswer": 3,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "x-legacy-L04a:medlineplus-vitalsigns: heartbeat rate, breathing rate, temperature, blood pressure。血液型は含まれない。説明からSpO2削除済みで根拠と一致。"
+  },
+  {
+   "key": "lg-04-05",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "medlineplus-appendixb「CABG Coronary artery bypass graft」、msd-ja-cabg 従来法（左内胸動脈を有茎グラフト、下肢の伏在静脈）を30行で確認。"
+  },
+  {
+   "key": "lg-04-06",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "msd-ja-dm 診断: HbA1cは糖化ヘモグロビンで過去3カ月間の平均血糖値と関係、診断基準に使用。期間を断定しない表現で妥当。別バッチ lg-04-23 との重複は採用側で調整（監査人指摘どおり）。"
+  },
+  {
+   "key": "lg-04-07",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "medlineplus-crp: 肝臓で産生、炎症で上昇、acute phase reactants の一つ（48行）、非特異的検査。平均血糖=HbA1c は msd-ja-dm。"
+  },
+  {
+   "key": "lg-04-08",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ismp-error-prone-2024: Per os=By mouth（PO推奨、os=左眼と誤読）、SC/SQ=Subcutaneous（SL=sublingualと誤読、SUBQ推奨）を76-77行で確認。medlineplus-appendixb IM/IV。"
+  },
+  {
+   "key": "lg-04-09",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "medlineplus-appendixb「MRSA Methicillin-resistant Staphylococcus aureus」、msd-ja-staph 略語・MRSAスクリーニングの記述を確認。"
+  },
+  {
+   "key": "lg-04-11",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "medlineplus-appendixb「PET Positron emission tomography」、msd-ja-pet: 陽電子放出断層撮影・核医学検査・FDG、がんの病期分類・評価が使用の80％（29行）。"
+  },
+  {
+   "key": "lg-04-13",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "medlineplus-appendixb「CPR Cardiopulmonary resuscitation」、msd-ja-cpr 成人: 1分間に100～120回の胸骨圧迫（40・58行）。choiceNotes[1]の『PR＝Pulmonary Resuscitation』はCardiopulmonaryの分解としてやや粗いが誤りではない。"
+  }
+ ]
+}

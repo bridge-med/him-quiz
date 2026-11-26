@@ -1,0 +1,14 @@
+{"answers":[
+{"key":"G7-S10-DPC-01","answer":2,"confidence":"high","ambiguous":false,"note":"根拠: dpc-chosa-setsumei 様式4 調査対象「自費のみの症例を含む」"},
+{"key":"G7-S10-DPC-02","answer":2,"confidence":"high","ambiguous":false,"note":"根拠: 様式4 コード3 他制度(労災レセ)のみ=保険請求なし"},
+{"key":"G7-S10-DPC-03","answer":0,"confidence":"high","ambiguous":false,"note":"根拠: 様式1 入院時併存症=入院時点で既存、入院後発症疾患=入院中に発生"},
+{"key":"G7-S10-DPC-04","answer":2,"confidence":"high","ambiguous":false,"note":"根拠: 再入院調査 計画外⑤ 縫合部感染の例示"},
+{"key":"G7-S10-DPC-05","answer":4,"confidence":"high","ambiguous":false,"note":"根拠: 提出スケジュール 6〜9月分は一括で10/22期限、月ごとではない"},
+{"key":"G7-S10-DPC-06","answer":0,"confidence":"high","ambiguous":false,"note":"根拠: 様式1 前回同一傷病 MDC同一かつ予定外の入院"},
+{"key":"G7-S10-DPC-07","answer":0,"confidence":"high","ambiguous":false,"note":"根拠: 留意事項通知 医療機関別係数は合算。激変緩和は改定年度1年限り"},
+{"key":"G7-S10-DPC-08","answer":0,"confidence":"high","ambiguous":false,"note":"根拠: 月の最初の開庁日に受理なら当該月1日から合算"},
+{"key":"G7-S10-DPC-09","answer":1,"confidence":"high","ambiguous":false,"note":"根拠: 標準病院群1要件② 救急200以上かつ全麻500以上"},
+{"key":"G7-S10-DPC-10","answer":1,"confidence":"high","ambiguous":false,"note":"根拠: 通知 入院期間Ⅱ=入院日Ⅰ超〜Ⅱ以下 → 5〜9日目"},
+{"key":"G7-S10-DPC-11","answer":2,"confidence":"high","ambiguous":false,"note":"根拠: r08改定概要 カバー率指数は包括・対象外の両方を対象"},
+{"key":"G7-S10-DPC-12","answer":2,"confidence":"high","ambiguous":false,"note":"根拠: 通知 同一傷病等の再入院は一連、退院期間は算入せず。4日+再入院1,2日=入院日Ⅰ6日、3日目から期間Ⅱ"}
+]}

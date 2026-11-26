@@ -1,0 +1,172 @@
+{
+ "verdicts": [
+  {
+   "key": "G2-S02-MGT-01",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "mgmt:byouinhoukoku-yougo 平均在院日数: 延数÷{1/2×(新入院＋退院)}を確認。54000/3600=15.0。誤答7.5/14.9/15.1/30.0の算出根拠も再計算で一致。solver一致。"
+  },
+  {
+   "key": "G2-S02-MGT-02",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "mgmt:byouinhoukoku-yougo 病床利用率＝年間在院患者延数÷Σ(月間日数×月末病床数)×100、月末病床利用率の式を確認。181/184日は平年で正しい。61344/76680=80.0%、誤答76.4/84.0/86.4/95.0再計算一致。"
+  },
+  {
+   "key": "G2-S02-MGT-03",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "keiei-kanri-shihyou-r04 指標一覧: 病床利用率=1日平均入院患者数/稼働病床数(P.102)、1床当たり医業収益・1床当たり固定資産額の分母=許可病床数(P.103)。病院報告の両式も確認。Dのみ誤り。"
+  },
+  {
+   "key": "G2-S02-MGT-04",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "指標一覧P.102: 償却前医業利益率=(医業利益＋減価償却費)/医業収益、医業利益率・経常利益率・減価償却費比率も同頁で確認。3.2/40=8.0%、誤答3.0/4.0/5.0/9.0一致。"
+  },
+  {
+   "key": "G2-S02-MGT-05",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "指標一覧P.102: 固定費比率=(給与費＋設備関係費＋支払利息)/医業収益、材料費比率確認。18.3/30=61.0%、誤答50/60/65/86再計算一致。"
+  },
+  {
+   "key": "G2-S02-MGT-06",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "指標一覧P.104: 紹介率=(紹介＋救急)/初診、逆紹介率=逆紹介/初診。1200/2000=60.0%、誤答15/45/55/115一致。"
+  },
+  {
+   "key": "G2-S02-MGT-07",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "指標一覧P.104: 患者1人1日当たり入院収益=(入院診療収益＋室料差額等収益)/(在院患者延数＋退院患者数)、室料差額除く版も確認。1.86e9/30000=62,000円、誤答60,000/62,069/64,138/66,429一致。"
+  },
+  {
+   "key": "G2-S02-MGT-08",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "指標一覧P.103(機能性): 1床当たり1日平均外来患者数=外来患者延数/(365日×許可病床数)。1.5人、誤答1.8/2.0/2.4一致。"
+  },
+  {
+   "key": "G2-S02-MGT-09",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "指標一覧P.103(安全性): 借入金比率=長期借入金/医業収益、自己資本比率・固定長期適合率・流動比率、P.102総資本回転率=医業収益/総資本を確認。Dのみ誤り。"
+  },
+  {
+   "key": "G2-S02-MGT-10",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "指標一覧: 自己資本比率は【安全性】(P.103)、医業利益率・人件費比率は【収益性】(P.102)、平均在院日数(P.103)・紹介率(P.104)は【機能性】。"
+  },
+  {
+   "key": "G2-S02-MGT-11",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "mgmt:byouinhoukoku-yougo: 在院患者(毎日24時現在)、新入院・退院(当日退院含む)、外来患者(科ごとに計上)、月末病床利用率、1日平均外来患者数=年間外来患者延数/当該年の年間日数を確認。Eのみ誤り。"
+  },
+  {
+   "key": "G2-S02-MGT-12",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "mgmt:byouinhoukoku-yougo 療養病床の平均在院日数式(他の種別の病床から/へ移された患者数を含む)を確認。12000/80=150.0、誤答75.0/171.4/218.2/266.7再計算一致。"
+  }
+ ]
+}

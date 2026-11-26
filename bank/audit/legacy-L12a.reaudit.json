@@ -1,0 +1,169 @@
+{
+ "verdicts": [
+  {
+   "key": "lg-12-01",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "info:ihej-about L17 「医用画像管理システム（PACS）」; info:mhlw-anzen-gl7-qa Q3 DICOM. Distractors clearly wrong. Blind answer matched key; validate.mjs 0 errors."
+  },
+  {
+   "key": "lg-12-04",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "x-legacy-L12a:soumu-h18-hakusho-iryou-it L333 (registered source opened; Shift_JIS text readable) オーダリング＝検査・処方等に係る情報伝達システム、関連部門に伝達. Definition only, no volatile numbers used. Blind answer matched key; validate.mjs 0 errors."
+  },
+  {
+   "key": "lg-12-05",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "info:mhlw-anzen-gl7-keiei 3.4.1: 原因=災害、サイバー攻撃、システム障害等; 経営層はBCPに応じて判断; 復旧手順は更新・改変時等に随時自己点検; 定期的に訓練・演習. All notes match. Blind answer matched key; validate.mjs 0 errors."
+  },
+  {
+   "key": "lg-12-06",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "info:mhlw-anzen-gl7-unyo 13.1.2: VPN=専用線同様のサービスを仮想的に実現; IP-VPN閉域網; IPsec＋IKE/SSL-VPN. Distractors trivially wrong. Blind answer matched key; validate.mjs 0 errors."
+  },
+  {
+   "key": "lg-12-07",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "info:cas-iryoudx-kouteihyou ①国民の更なる健康増進 (L87) 生涯にわたる保健・医療・介護の情報をPHRとして自分自身で一元的に把握; L281 マイナポータル確認. Blind answer matched key; validate.mjs 0 errors."
+  },
+  {
+   "key": "lg-12-08",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "info:mhlw-anzen-gl7-unyo 14.2 (L1764-1769) 情報区分×利用者グループ、必要最小限、異動時見直し、参照・更新等のきめ細かな設定でリスク低減; 第14章遵守事項④ 部署申請・管理者確認; 保守での不要な管理者権限付与禁止 (L1029). Blind answer matched key; validate.mjs 0 errors."
+  },
+  {
+   "key": "lg-12-09",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "info:mhlw-online-shinryo-hou-sekou 第1 (改正法令和7年法律第87号、R8.4.1施行) オンライン診療受診施設; info:mhlw-online-shinryo-shishin Ⅲ1 用語の定義（オンライン診療=遠隔医療のうち…、受診勧奨で疾患名・処方は不可、診療前相談は診療行為を含まない）; 初診はかかりつけの医師原則・例外あり (L491-494, ⅲ). Blind answer matched key; validate.mjs 0 errors."
+  },
+  {
+   "key": "lg-12-10",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "info:mhlw-anzen-gl7-unyo 第7章遵守事項⑧ (L656) 貸出時説明・同意; 第8章遵守事項⑥(1)-(3) (L822-827) ファームウェア更新・接続放置禁止; L898 製造販売業者と連携; info:mhlw-anzen-gl7-qa Q17 資産管理・認証・更新・監視. Blind answer matched key; validate.mjs 0 errors."
+  },
+  {
+   "key": "lg-12-11",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "info:cao-jisedai-kaisei-iryoukikan L105-117 認定作成事業者が収集・必要な情報のみ提供; L189-190 仮名加工は国が認定した利活用者に限り; info:cao-jisedai-sekou-r0604 R6.4.1施行・題名改正. Blind answer matched key; validate.mjs 0 errors."
+  },
+  {
+   "key": "lg-12-12",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "info:mhlw-online-shikaku L598 令和5年4月から原則義務付け; L522 ICチップまたは資格確認書の記号番号等; info:mhlw-myna-hokensho L468-472 (2024/12/2以降新規発行なし、有効期限2025/12/1終了、資格確認書), L482-498 同意に基づく共有・資格確認書交付. Blind answer matched key; validate.mjs 0 errors."
+  },
+  {
+   "key": "lg-12-13",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "info:mhlw-iryojohoka-suishin-houshin 2(1) ①業務効率化（AI-Ready）②セキュリティ対策（サーバ等の管理強化・サイバー攻撃監視の効率化）③データの共有（二次利用促進）, たこつぼ化; info:mhlw-anzen-gl7-unyo 3.4.2 (L400-401) 責任分界・契約やSLAで取決め. Blind answer matched key; validate.mjs 0 errors."
+  }
+ ]
+}

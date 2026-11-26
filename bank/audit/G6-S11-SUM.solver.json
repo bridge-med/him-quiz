@@ -1,0 +1,14 @@
+{"answers":[
+{"key":"G6-S11-SUM-01","answer":3,"confidence":"high","ambiguous":false,"note":"根拠: 総称的な「心臓弁膜症」に対し、より特異的な大動脈弁狭窄症が別記 → MB4"},
+{"key":"G6-S11-SUM-02","answer":2,"confidence":"high","ambiguous":false,"note":"非リウマチ性大動脈弁狭窄症 I35.0"},
+{"key":"G6-S11-SUM-03","answer":4,"confidence":"high","ambiguous":false,"note":"その他の病態も記録すべき（単一病態分析でも記録対象）"},
+{"key":"G6-S11-SUM-04","answer":3,"confidence":"high","ambiguous":false,"note":"MB2で処置・専門科目から鼠径ヘルニア、片側・閉塞なし K40.9"},
+{"key":"G6-S11-SUM-05","answer":0,"confidence":"medium","ambiguous":false,"note":"MB2 他に情報がなければ最初に記載された病態"},
+{"key":"G6-S11-SUM-06","answer":3,"confidence":"high","ambiguous":false,"note":"MB1は慢性かどうかでなく重要でない病態の場合。誤り"},
+{"key":"G6-S11-SUM-07","answer":0,"confidence":"high","ambiguous":false,"note":"一般原則: 最下欄の脳梗塞"},
+{"key":"G6-S11-SUM-08","answer":1,"confidence":"high","ambiguous":false,"note":"脳梗塞 I63.9（3週間で急性期）"},
+{"key":"G6-S11-SUM-09","answer":4,"confidence":"high","ambiguous":false,"note":"ルール3は一般原則が適用できない場合。誤り"},
+{"key":"G6-S11-SUM-10","answer":1,"confidence":"high","ambiguous":false,"note":"Ⅰ欄最下の高血圧症"},
+{"key":"G6-S11-SUM-11","answer":2,"confidence":"high","ambiguous":false,"note":"修正ルールC連鎖: 高血圧症+心不全 → I11.0"},
+{"key":"G6-S11-SUM-12","answer":1,"confidence":"high","ambiguous":false,"note":"I11.0 心不全を伴う高血圧性心疾患"}
+]}

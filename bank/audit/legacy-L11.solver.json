@@ -1,0 +1,228 @@
+{
+ "answers": [
+  {
+   "key": "lg-11-00",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "一般知識に基づく"
+  },
+  {
+   "key": "lg-11-01",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "一般知識に基づく"
+  },
+  {
+   "key": "lg-11-02",
+   "answer": 3,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "一般知識に基づく"
+  },
+  {
+   "key": "lg-11-03",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "一般知識に基づく"
+  },
+  {
+   "key": "lg-11-04",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "一般知識に基づく"
+  },
+  {
+   "key": "lg-11-05",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "一般知識に基づく"
+  },
+  {
+   "key": "lg-11-06",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "一般知識に基づく"
+  },
+  {
+   "key": "lg-11-07",
+   "answer": 0,
+   "confidence": "low",
+   "ambiguous": true,
+   "note": "T3N1M0のStageは臓器により異なる(大腸IIIB、胃IIB、肺IIIA等)"
+  },
+  {
+   "key": "lg-11-08",
+   "answer": 0,
+   "confidence": "medium",
+   "ambiguous": false,
+   "note": "一般知識に基づく"
+  },
+  {
+   "key": "lg-11-09",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "一般知識に基づく"
+  },
+  {
+   "key": "lg-11-10",
+   "answer": 0,
+   "confidence": "medium",
+   "ambiguous": false,
+   "note": "一般知識に基づく"
+  },
+  {
+   "key": "lg-11-11",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "一般知識に基づく"
+  },
+  {
+   "key": "lg-11-12",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "一般知識に基づく"
+  },
+  {
+   "key": "lg-11-13",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "一般知識に基づく"
+  },
+  {
+   "key": "lg-11-14",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "一般知識に基づく"
+  },
+  {
+   "key": "lg-11-15",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "一般知識に基づく"
+  },
+  {
+   "key": "lg-11-16",
+   "answer": 0,
+   "confidence": "medium",
+   "ambiguous": false,
+   "note": "一般知識に基づく"
+  },
+  {
+   "key": "lg-11-17",
+   "answer": 3,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "一般知識に基づく"
+  },
+  {
+   "key": "lg-11-18",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "一般知識に基づく"
+  },
+  {
+   "key": "lg-11-19",
+   "answer": 3,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "一般知識に基づく"
+  },
+  {
+   "key": "lg-11-20",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "一般知識に基づく"
+  },
+  {
+   "key": "lg-11-21",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "一般知識に基づく"
+  },
+  {
+   "key": "lg-11-22",
+   "answer": 1,
+   "confidence": "medium",
+   "ambiguous": false,
+   "note": "一般知識に基づく"
+  },
+  {
+   "key": "lg-11-23",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "一般知識に基づく"
+  },
+  {
+   "key": "lg-11-24",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "一般知識に基づく"
+  },
+  {
+   "key": "lg-11-25",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "一般知識に基づく"
+  },
+  {
+   "key": "lg-11-26",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "一般知識に基づく"
+  },
+  {
+   "key": "lg-11-27",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "一般知識に基づく"
+  },
+  {
+   "key": "lg-11-28",
+   "answer": 1,
+   "confidence": "medium",
+   "ambiguous": false,
+   "note": "『原則』の語。IARC/IACR規則では臓器・組織型で判定"
+  },
+  {
+   "key": "lg-11-29",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "一般知識に基づく"
+  },
+  {
+   "key": "lg-11-30",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "一般知識に基づく"
+  },
+  {
+   "key": "lg-11-31",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "一般知識に基づく"
+  }
+ ]
+}

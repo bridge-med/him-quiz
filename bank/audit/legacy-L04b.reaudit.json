@@ -1,0 +1,199 @@
+{
+ "verdicts": [
+  {
+   "key": "lg-04-14",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "DM=Diabetes mellitus: mp-appendixb DM; icd:naiyou04 糖尿病(E10-E14) heading. Distractors clearly different diseases. Blind matched key; validator 0 errors."
+  },
+  {
+   "key": "lg-04-15",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "mp-abbrev2: bis in die = twice-daily; mp-appendixb BID/TID. 食前 is timing, not frequency. Blind matched key; validator 0 errors."
+  },
+  {
+   "key": "lg-04-16",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "msd-ja-hf 病態生理 (BNP released from ventricles on stretch) and 診断 (BNP high in HF); msd-ja-gas ABG for hypoxemia. Blind matched key; validator 0 errors."
+  },
+  {
+   "key": "lg-04-17",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "mp-appendixb CBC Complete blood count (measures properties of blood cells); seer-abbrev CBC. Blind matched key; validator 0 errors."
+  },
+  {
+   "key": "lg-04-18",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "msd-ja-gas パルスオキシメトリー: SpO2 estimated by pulse oximetry, correlates with SaO2 within 5%; 動脈血ガス: PaO2. Japanese name 経皮的動脈血酸素飽和度 is the standard term. Blind matched key; validator 0 errors."
+  },
+  {
+   "key": "lg-04-19",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "msd-en-pci heading; msd-ja-pci 概要 (PTCA, stent); msd-ja-cabg 迂回路 supports CABG contrast in point. Choice notes terse but correct. Blind matched key; validator 0 errors."
+  },
+  {
+   "key": "lg-04-20",
+   "verdict": "pass",
+   "blindAnswer": 1,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "msd-ja-icuintro 集中治療室（ICU）; seer-abbrev CCU Coronary care unit; mgmt:chiikikousou-susumekata 高度急性期 examples list ICU, HCU, NICU separately. NICU abbrev also in mgmt:iryoukeikaku_taisei_tsuchi. Blind matched key; validator 0 errors."
+  },
+  {
+   "key": "lg-04-21",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "mp-appendixb NSAID Non-steroidal anti-inflammatory drug; msd-ja-pain 非ステロイド系抗炎症薬（NSAID）. Blind matched key; validator 0 errors."
+  },
+  {
+   "key": "lg-04-22",
+   "verdict": "pass",
+   "blindAnswer": 1,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "mp-ppi reduces stomach acid; msd-ja-acid PPI inhibits H+,K+-ATPase, omeprazole dose; H2RA listed as separate class in same source. Blind matched key; validator 0 errors."
+  },
+  {
+   "key": "lg-04-24",
+   "verdict": "pass",
+   "blindAnswer": 2,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "seer-abbrev ROM Range of motions; msd-ja-pt ゴニオメーターで可動域評価; shimane-fim FIM=機能的自立度評価表. Blind matched key; validator 0 errors."
+  },
+  {
+   "key": "lg-04-25",
+   "verdict": "pass",
+   "blindAnswer": 2,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "shimane-fim: 運動ADL13項目＋認知ADL5項目 (=18), 各項目7点満点, 1点が最低 -> 18-126 by arithmetic. Blind matched key; validator 0 errors."
+  },
+  {
+   "key": "lg-04-26",
+   "verdict": "pass",
+   "blindAnswer": 1,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "msd-ja-antidep: SSRI heading; 薬剤の選択 SSRIが最初の第1選択薬とされる場合が多い (stated with the same hedge in point). Blind matched key; validator 0 errors."
+  },
+  {
+   "key": "lg-04-27",
+   "verdict": "pass",
+   "blindAnswer": 1,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "seer-abbrev TPN; msd-ja-pn PN is IV, central PN needs central access device (>900mOsm/L); msd-ja-en enteral indication and 部分的に加水分解された経腸栄養剤 (supports 半消化態 note). Blind matched key; validator 0 errors."
+  }
+ ]
+}

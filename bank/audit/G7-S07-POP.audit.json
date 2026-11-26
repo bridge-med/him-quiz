@@ -1,0 +1,200 @@
+{
+ "verdicts": [
+  {
+   "key": "G7-S07-POP-01",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "28000/60000*100=46.7 recomputed; distractors 20.0(年少),28.0(高齢化率),66.7(従属),233.3(老年化) verified vs tokyo-jguide 人口構造指標2 (1)-(4) & jinsui-yougo 年齢構造."
+  },
+  {
+   "key": "G7-S07-POP-02",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "老年化指数=65+/15歳未満 (jinsui-yougo; tokyo-jguide 2(4)); A,B,D,E true per tokyo-jguide 2・3 and jinsui-yougo. Not a duplicate of 01 (knowledge vs calc)."
+  },
+  {
+   "key": "G7-S07-POP-03",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "1.25^0.2=1.04564→4.6; 0.8^0.2-1=-4.36→-4.4; 1.25^0.25-1=5.7; 25/5=5.0; formula per tokyo-jguide 分析方法1② (5乗根・幾何平均)."
+  },
+  {
+   "key": "G7-S07-POP-04",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "tokyo-jguide 国勢調査と住基人口のちがい: 5年ごと・外国人含む・3ヶ月以上・登録地不一致; 住基人口はH24.7改正で外国人含む → E is the false one."
+  },
+  {
+   "key": "G7-S07-POP-05",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "性比=男/女×100 (jinsui-yougo 人口構成); 48500/51500=94.17→94.2; 97.0=48500/50000; 106.2=逆."
+  },
+  {
+   "key": "G7-S07-POP-06",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ktyosa25_07 用語21: 分母世帯人員は入院者含む/分子有訴者は含まない → 5000/20000*1000=250.0; 255.1=5000/19600, 270.0, 275.5 recomputed."
+  },
+  {
+   "key": "G7-S07-POP-07",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ktyosa25_01 §1: 1986初年・3年ごと大規模・2025は14回目; §2: 長期入院者は不在者として除外, 介護票は2,500地区内の要介護者・要支援者."
+  },
+  {
+   "key": "G7-S07-POP-08",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ktyosa25_04 §1: 255.7, 男233.2 女276.7, 男女とも腰痛最多; §2: 男女とも高血圧症最多, 男2位糖尿病. Year in stem."
+  },
+  {
+   "key": "G7-S07-POP-09",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "kiryohi24_R06gaiyou §1: 入院時食事・生活医療費は含まれる; 妊娠分娩・健診予防接種・義眼義肢・選定療養（特別の病室への入院）は含まない (choice D mirrors source wording)."
+  },
+  {
+   "key": "G7-S07-POP-10",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "kiryohi24_R06kekka §3: 保険料50.3%>公費37.4%, 国庫24.6%>地方12.8%; §4: 医科71.5%, 入院37.6%>入院外33.9%; §6: 循環器18.2%最多, 新生物15.2%2位 → E false."
+  },
+  {
+   "key": "G7-S07-POP-11",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "kanja23_gaiyou 7(4): 受療率=推計患者数/推計人口×100,000; 33600/600000*1e5=5600; 56, 950(入院), 4650, 6550 recomputed."
+  },
+  {
+   "key": "G7-S07-POP-12",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "kanja23_gaiyou 7(5) 算式; 20+10+70*14*6/7=870; 100, 850, 980, 1010 recomputed per choiceNotes."
+  },
+  {
+   "key": "G7-S07-POP-13",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "kanja23_gaiyou 8(5)※5: 入院=調査日現在入院の理由, 外来=主として治療又は検査, 退院=退院時に入院の理由; DPC '医療資源を最も投入した傷病' exists in cached DPC text."
+  },
+  {
+   "key": "G7-S07-POP-14",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "kanja23_gaiyou §5 管理者記入, 7(1) 推計患者数; ktyosa25_07 用語22: 通院者は入院者除く・あんま・はり・きゅう・柔道整復師を含む → D false."
+  }
+ ]
+}

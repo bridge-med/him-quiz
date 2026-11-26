@@ -1,0 +1,253 @@
+{
+ "verdicts": [
+  {
+   "key": "G7-S06-INF-01",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "再計算 68.3/2+95.5/2=81.9。誤答13.6/68.3/84.1/95.5の由来も確認。cdc-poe-l2s7 Properties of SD、naruhodo-suisoku 正規分布(l.98)。"
+  },
+  {
+   "key": "G7-S06-INF-02",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "3C1×0.2×0.8²=0.384、誤答0.096(x=2)/0.128/0.488(1−0.8³)/0.6(np)を再計算。nist-binomial PMF。"
+  },
+  {
+   "key": "G7-S06-INF-03",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "1−0.95=0.05。誤答注の合計1.15/1.45も確認。naruhodo-suisoku（確率の合計は1）。"
+  },
+  {
+   "key": "G7-S06-INF-04",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "naruhodo-suisoku l.124 中心極限定理、naruhodo-kentei l.59 大数の法則。他の誤答の定義も妥当。"
+  },
+  {
+   "key": "G7-S06-INF-05",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "±1SD 68.3、±2SD 95.5、±3SD 99.7、±1.96SD 95.0（cdc-poe-l2s7）。60±19.6=40.4〜79.6を確認。"
+  },
+  {
+   "key": "G7-S06-INF-06",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "dstart 2-1-2 l.69-71 多段抽出・二段抽出、l.39 単純無作為、l.77 層化、l.51-59 系統抽出。"
+  },
+  {
+   "key": "G7-S06-INF-07",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "naruhodo-kentei l.59（点推定・標準誤差）、l.68（区間推定・信頼区間）、検定の定義。キー正。"
+  },
+  {
+   "key": "G7-S06-INF-08",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "SE=8/√64=1、30±2.58=27.42〜32.58。誤答（±SD、1.96、√なし0.125×2.58、SD×2.58=20.64）全て再計算。mext-joho2 2.58、cdc SE式。"
+  },
+  {
+   "key": "G7-S06-INF-09",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "a: dstart 2-1-3 標本誤差の定義、c: 2-1-2 l.71、d: 2-1-3（回収率の逆数を掛ける）、e: 2-1-3 l.73（多段で誤差大）。a・cのみ正。"
+  },
+  {
+   "key": "G7-S06-INF-10",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "naruhodo-zensu（全数調査・悉皆）、yougo-ma 無作為抽出の定義、mext-joho2 有意抽出（作為的）。Eが誤り。"
+  },
+  {
+   "key": "G7-S06-INF-11",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "24/(4×10)=0.6。0.015=24/1600、0.36=r²(単回帰の決定係数)、2.4、6.0を再計算。naruhodo-hukusu 相関係数。"
+  },
+  {
+   "key": "G7-S06-INF-12",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "傾き2.5＝xが1増えたときの予測値の増分。x=4→14、x=8→24で比例しない。mext-joho1 l.1828,1833（符号は傾きに対応）。"
+  },
+  {
+   "key": "G7-S06-INF-13",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "0.8×50+20=60、66−60=6。誤答26/40/46/60も再計算。naruhodo-hukusu l.104-105 残差。"
+  },
+  {
+   "key": "G7-S06-INF-14",
+   "verdict": "fix",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": false,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "キーD（説明変数と被説明変数が逆）は naruhodo-hukusu l.110 で確認。A・B l.104-106、C mext-joho1 l.1859、E l.110。",
+   "detail": "選択肢Bは「負の値が出てくるため」とだけ述べ、2乗する理由（正負の打ち消し合い）が曖昧で、ブラインド解答者も曖昧と指摘。出典 l.104-105 の趣旨どおり、正負の残差が打ち消し合う点を明示した。キー・他の選択肢は変更なし。",
+   "fixed": {
+    "subject": "S06",
+    "subtopic": "相関と回帰",
+    "format": "knowledge",
+    "difficulty": "advanced",
+    "polarity": "negative",
+    "question": "単回帰分析と最小二乗法について、誤っているものはどれか。",
+    "choices": [
+     "回帰直線は、実測値と予測値の差（残差）を2乗した値の総和が最小になるように決定される。",
+     "残差を2乗してから合計するのは、実測値−予測値をそのまま合計すると負の残差が含まれ、正の残差と打ち消し合ってしまうためである。",
+     "すべてのデータ点が回帰直線上にあり、残差がすべて0となる場合、決定係数は1となる。",
+     "回帰式 Y＝aX＋b では、左辺のYを説明変数、右辺のXを被説明変数という。",
+     "被説明変数が1つの説明変数によって説明される回帰を単回帰という。"
+    ],
+    "answer": 3,
+    "explanation": {
+     "correct": "回帰式では、左辺に説明される値（被説明変数、目的変数）Yを、右辺にYを説明するための値（説明変数）Xを置く。記述は両者を逆にしている。",
+     "choiceNotes": [
+      "誤差の二乗和を最小にするように回帰式を決める方法が最小二乗法であるので正しい。",
+      "単純に実測値−予測値をとると負の誤差が出てくる（そのまま足すと正負が打ち消し合う）ため、各誤差を2乗した値を合計するので正しい。",
+      "データ点がすべて直線上にのり残差がすべて0の状態では決定係数は1となるので正しい。",
+      null,
+      "被説明変数が一つの説明変数によって説明される回帰を単回帰というので正しい。説明変数が複数あれば重回帰である。"
+     ],
+     "point": "Y（左辺）＝被説明変数（目的変数）、X（右辺）＝説明変数。最小二乗法＝残差の二乗和を最小化。"
+    },
+    "sources": [
+     {
+      "ref": "stats:naruhodo-hukusu",
+      "title": "なるほど統計学園「複数の変数の関係性を見る」",
+      "url": "https://www.stat.go.jp/naruhodo/10_tokucho/hukusu.html",
+      "locator": "回帰分析の考え方",
+      "quote": "単純に実測値-予測値を行うと、負の誤差が出て来てしまいます。そこで、各誤差を2乗した値を使用し"
+     },
+     {
+      "ref": "stats:naruhodo-hukusu",
+      "title": "なるほど統計学園「複数の変数の関係性を見る」",
+      "url": "https://www.stat.go.jp/naruhodo/10_tokucho/hukusu.html",
+      "locator": "回帰分析の考え方",
+      "quote": "回帰式は左辺に説明される値（被説明変数：Y「A市のマンション価格と床面積」ではマンション価格）をおき、右辺にYを説明するための値（説明変数：X"
+     },
+     {
+      "ref": "x-legacy-L06b:mext-joho1-ch4",
+      "title": "高等学校情報科「情報Ⅰ」教員研修用教材（本編）第4章 情報通信ネットワークとデータの活用・巻末",
+      "url": "https://www.mext.go.jp/content/20200722-mxt_jogai02-100013300_006.pdf",
+      "locator": "（３）単回帰分析を用いた値の推測",
+      "quote": "データ点がすべて直線上にのっている状態，残差がすべて０となる状態では決定係数１となる。"
+     }
+    ],
+    "asOf": "統計学の一般的な定義（基準時点の影響を受けない）",
+    "key": "G7-S06-INF-14"
+   }
+  }
+ ]
+}

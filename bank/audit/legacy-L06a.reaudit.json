@@ -1,0 +1,199 @@
+{
+ "verdicts": [
+  {
+   "key": "lg-06-00",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "stats:naruhodo-chushin 平均値と中央値と最頻値の違い: 平均値が最も影響、中央値はそれほど影響なし、モードはまず受けない（選択肢にモードなし、合計値・範囲は代表値でない→中央値が一意）。chirabari: 範囲=最大−最小。 盲検解答=キー一致。validate 0 errors."
+  },
+  {
+   "key": "lg-06-01",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "x-legacy-L06a:cdc-poe-l2s7: ±1SD 68.3%, ±2SD 95.5%, ±3SD 99.7%; ±1.96SD=95%は統計理論上正しい。 盲検解答=キー一致。validate 0 errors."
+  },
+  {
+   "key": "lg-06-02",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "stats:naruhodo-kentei 有意水準・棄却→対立仮説採択; mhlw-tokei-yougo 信頼区間「同じ、ということではない」で非棄却≠差なしを確認。統計的有意≠臨床的重要の記述も正しい。 盲検解答=キー一致。validate 0 errors."
+  },
+  {
+   "key": "lg-06-04",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "x-legacy-L06a:msd-kensa ROC曲線（l.40付近）: 面積大ほど識別良好; 感度・特異度は検査特性で集団と無関係; カットオフ移動で反対方向に変化。 盲検解答=キー一致。validate 0 errors."
+  },
+  {
+   "key": "lg-06-05",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "stats:mhlw-tokei-yougo-rr-or l.43-49: 疾患オッズの比=OR、発症率低で近似、>1で増加; minds glossary l.443-447 症例対照研究で多用; env slide 寄与リスク=差。 盲検解答=キー一致。validate 0 errors."
+  },
+  {
+   "key": "lg-06-06",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "x-legacy-L06a:mhlw-ev-level l.127-133: JSH2014 Ⅰ=SR/RCTのMA, Ⅱ=RCT, Ⅲ=非RCT（・RCTのサブ解析/後付解析）, Ⅳa=コホート/コホートMA, Ⅳb=症例対照・横断, Ⅴ=記述研究, Ⅵ=専門家意見。解説のⅢはサブ解析を省略しているが誤りではない。 盲検解答=キー一致。validate 0 errors."
+  },
+  {
+   "key": "lg-06-07",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "x-legacy-L06a:minds-glossary-2020 NNT（1人のイベント抑制に必要な治療人数、ARRの絶対値の逆数）、ICER（費用増分/効果増分）を確認。 盲検解答=キー一致。validate 0 errors."
+  },
+  {
+   "key": "lg-06-08",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "stats:mhlw-tokei-yougo-rr-or χ２検定: 2つの質問項目間の関連; stats:nist-two-sample-t-test: 2母平均の比較はt検定。他の選択肢（ANOVA・相関係数の検定）も明確に誤り。 盲検解答=キー一致。validate 0 errors."
+  },
+  {
+   "key": "lg-06-09",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "x-legacy-L06a:mhlw-edc-epi l.816 症例対照研究の思い出しバイアス、l.754「症例対照研究で問題となるような思い出しバイアス」; minds glossary 実行バイアス・症例減少バイアスの定義。 盲検解答=キー一致。validate 0 errors."
+  },
+  {
+   "key": "lg-06-10",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "stats:ganjoho-kapuranmaiyahou: 死亡が1例ずつ起きた時点で逐次計算、打ち切り例はその時点で観察人数から除外。 盲検解答=キー一致。validate 0 errors."
+  },
+  {
+   "key": "lg-06-11",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "stats:naruhodo-hukusu 相関係数 l.49-53: −1〜1、負の相関が強いと−1に近づく、0付近は相関なし。 盲検解答=キー一致。validate 0 errors."
+  },
+  {
+   "key": "lg-06-12",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "x-legacy-L06a:minds-glossary-2020 交絡因子: 曝露とアウトカムの両方に関係、真の関係と異なる結果、層化・数学的モデリング。 盲検解答=キー一致。validate 0 errors."
+  },
+  {
+   "key": "lg-06-13",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "stats:env-soutai-kiyo-risk スライド3.4: 寄与リスク=曝露群罹患リスク−非曝露群罹患リスク（「その集団の罹患率がどれだけ増えるのか」）、RR−1=過剰相対リスク; minds glossary OR=2つのオッズの比。 盲検解答=キー一致。validate 0 errors."
+  }
+ ]
+}

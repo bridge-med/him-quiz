@@ -1,0 +1,306 @@
+{
+ "verdicts": [
+  {
+   "key": "G4-S11-HIS-01",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:instruction 6.1〜6.2（9045-9069行, 9134行）でBertillon委員長・1893年シカゴ採択、Farr/d’Espine（1853要請・1855提出）、Guillard（祖父）、Huber（1923）を確認。"
+  },
+  {
+   "key": "G4-S11-HIS-02",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:instruction 6.8「剣印及び星印システム…第９回改訂には…加えられた…第10回改訂でも維持」、icd:rikai ５参考（第10回）1)3)で他4肢が正しいことを確認。"
+  },
+  {
+   "key": "G4-S11-HIS-03",
+   "verdict": "fix",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": false,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "キーは正（icd:abc_r07「人口動態統計は、平成29年１月分から適用開始」、icd:rikai 155-157行）。盲検解答者は平成28年（統計基準の適用開始）を選択＝「人口動態統計で」の条件を読み落としやすい設問文。条件を明示する形に設問文のみ修正。",
+   "detail": "解答・解説・出典は正しい。設問文が「人口動態統計で」の一語だけに依存し、統計基準としての適用開始年（平成28年）と取り違えやすい（盲検解答者が平成28年を高確信で選択）。両時期が異なることを設問文で明示し、人口動態統計への適用開始年を問う形に変更。選択肢・解説・出典は変更なし。",
+   "fixed": {
+    "key": "G4-S11-HIS-03",
+    "subject": "S11",
+    "subtopic": "ICDの歴史とWHO-FIC",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "「ICD-10（2013年版）準拠」の「疾病、傷害及び死因の統計分類」は、統計基準としての適用開始と人口動態統計への適用開始とで時期が異なる。このうち、人口動態統計への適用が開始された年はどれか。",
+    "choices": [
+     "平成７年",
+     "平成18年",
+     "平成27年",
+     "平成28年",
+     "平成29年"
+    ],
+    "answer": 4,
+    "explanation": {
+     "correct": "「ICD-10（2013年版）準拠」の「疾病、傷害及び死因の統計分類」は平成28年1月から適用されたが、人口動態統計については平成29年1月分から適用が開始された。",
+     "choiceNotes": [
+      "平成7年は「ICD-10（1990年版）準拠」の適用が始まった年である。",
+      "平成18年は「ICD-10（2003年版）準拠」の適用が始まった年である。",
+      "平成27年は、ICD-10（2013年版）準拠の分類を定めた総務省告示第35号が出された年（2月13日）で、適用開始の年ではない。",
+      "平成28年1月は統計基準としての適用開始であり、人口動態統計への適用はその翌年の1月分からである。",
+      null
+     ],
+     "point": "1990年版＝平成7年、2003年版＝平成18年、2013年版＝平成28年1月（人口動態統計は平成29年1月分から）。"
+    },
+    "sources": [
+     {
+      "ref": "icd:abc_r07",
+      "title": "ICDのABC 令和7年度版",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/icdabc_r07.pdf",
+      "locator": "ICDとは（我が国におけるICD-10の適用）",
+      "quote": "平成28年１月からは「ICD−10（2013年版）準拠」が適用されました（人口動態統計は、平成29年１月分から適用開始）"
+     },
+     {
+      "ref": "icd:abc_r07",
+      "title": "ICDのABC 令和7年度版",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/icdabc_r07.pdf",
+      "locator": "ICDとは（我が国におけるICD-10の適用）",
+      "quote": "国におけるICD−10は、平成７年に「ICD−10（1990年版）準拠」、平成18年に「ICD−10（2003年版）準拠」"
+     },
+     {
+      "ref": "icd:rikai",
+      "title": "疾病、傷害及び死因の統計分類の正しい理解と普及に向けて（ICD-10（2013年版）準拠）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/ICD-10_2013_2802.pdf",
+      "locator": "２ 我が国におけるICDの適用（１）",
+      "quote": "平成 28 年１月１日より ICD-10（2013 年版）に準拠した「疾病、傷害及び死因の統計分類」（平成 27 年２月 13 日総務省告示第 35 号）を適用することとしました。"
+     }
+    ],
+    "asOf": "ICD-10（2013年版）準拠／ICDのABC 令和7年度版"
+   }
+  },
+  {
+   "key": "G4-S11-HIS-04",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:instruction 2.2 派生分類（ICD-O-3等）・関連分類（ICPC-2, ICECI, ISO9999, ATC/DDD）・中心分類（ICD, ICF）と図１を確認。"
+  },
+  {
+   "key": "G4-S11-HIS-05",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:instruction 2.2 中心分類・派生分類・関連分類の定義文と a〜e を逐語照合。正は a,b のみ。"
+  },
+  {
+   "key": "G4-S11-HIS-06",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:rikai ４（２）１）２）（669-683行）：ICD-10に15年、大改正3年ごと・小改正毎年・索引毎年、アップデート＝ICD-10のまま改善、を確認。"
+  },
+  {
+   "key": "G4-S11-HIS-07",
+   "verdict": "fix",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": false,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "キーは正（icd:instruction 1.はじめに／2.4.1 書籍）。ただし同資料5.3節（8280行）に「特定製表用リストが第２巻（総論）にあり」との記載があり、選択肢0の根拠が資料内で揺れるため、設問文を2.4.1の説明に照らす形に限定。",
+   "detail": "解答・解説は正しい。ただし icd:instruction 5.3節に「特定製表用リストが第２巻（総論）にあり」という、2.4.1節・5.4節（第１巻に記載）と食い違う記載があるため、設問文を「第２巻の2.4.1 書籍の説明に照らして」と限定して一意性を確保。選択肢・解説・出典は変更なし。",
+   "fixed": {
+    "key": "G4-S11-HIS-07",
+    "subject": "S11",
+    "subtopic": "ICD-10の構成",
+    "format": "knowledge",
+    "difficulty": "standard",
+    "polarity": "negative",
+    "question": "ICD-10（2013年版）第２巻の全３巻の構成に関する説明（2.4.1 書籍）に照らして、第１巻（内容例示表）に含まれないものはどれか。",
+    "choices": [
+     "特定製表用リスト",
+     "世界保健総会によって採択された定義",
+     "分類規約",
+     "記録及びコーディングのガイドライン",
+     "新生物＜腫瘍＞の形態"
+    ],
+    "answer": 3,
+    "explanation": {
+     "correct": "記録及びコーディングのガイドラインは、分類の歴史的背景の概要などとともに第2巻（総論）に含まれている。第1巻は分類の本体（内容例示表）のほか、特定製表用リスト、定義、分類規約、新生物＜腫瘍＞の形態を含む。",
+     "choiceNotes": [
+      "特定製表用リスト（死亡の製表のための4種類のリストなど）は第1巻に含まれる。",
+      "世界保健総会によって採択された定義は、国際比較を容易にするため第1巻に掲載されている。",
+      "世界保健総会により採択された分類規約は第1巻に含まれる。",
+      null,
+      "新生物＜腫瘍＞の形態は第1巻に掲載されている。"
+     ],
+     "point": "第1巻＝分類の本体＋特定製表用リスト・定義・分類規約・新生物の形態。第2巻＝利用者への指針（ルール・歴史）。第3巻＝索引。"
+    },
+    "sources": [
+     {
+      "ref": "icd:instruction",
+      "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+      "locator": "1. はじめに",
+      "quote": "manual（総論）（以下、「総論」という）には、記録及びコーディングのガイドラインに加え、分類を利用する際の実用的な側面に関する新たな資料、分類の歴史的背景の概要が含まれている。"
+     },
+     {
+      "ref": "icd:instruction",
+      "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+      "locator": "2.4.1 書籍",
+      "quote": "第１巻は、下記の内容も含んでいる。・特定製表用リスト"
+     },
+     {
+      "ref": "icd:instruction",
+      "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+      "locator": "2.4.1 書籍",
+      "quote": "第１巻にはまた、新生物＜腫瘍＞の形態も掲載されている。"
+     }
+    ],
+    "asOf": "ICD-10（2013年版）準拠"
+   }
+  },
+  {
+   "key": "G4-S11-HIS-08",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:instruction 2.4.2：D（Ⅱ・Ⅲ章）とH（Ⅶ・Ⅷ章）、複数文字の章はⅠ・Ⅱ・ⅩⅨ・ⅩⅩ章。A/B, S/T, V〜Yは単一章内。"
+  },
+  {
+   "key": "G4-S11-HIS-09",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "tools/icd.mjs code で5コードの存在・名称・章を確認：D69.3＝第Ⅲ章 D65-D69、D45/D46.9/D47.3＝D37-D48（第Ⅱ章）、C90.0＝第Ⅱ章。"
+  },
+  {
+   "key": "G4-S11-HIS-10",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "tools/icd.mjs chapter 2/3/7/16/19 と icd:rikai 基本分類表（88-101行）で範囲を確認。第Ⅶ章はH00-H59。"
+  },
+  {
+   "key": "G4-S11-HIS-11",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:instruction 2.4.7（U00-U49暫定、U50-U99研究、※第ⅩⅫ章）、icd.mjs chapter 20/21/22 で W・X・Y＝V01-Y98、Z＝Z00-Z99 を確認。"
+  },
+  {
+   "key": "G4-S11-HIS-12",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:instruction 2.4.5：国際レベルの報告では必須ではない／.8その他／.9／第4桁「X」を逐語確認。"
+  },
+  {
+   "key": "G4-S11-HIS-13",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:instruction 2.4.3：第Ⅰ章の二軸、第Ⅱ章第1軸＝性状、形態学的な型の3桁項目あり、範囲は各中間分類項目名の後に括弧、を確認。"
+  },
+  {
+   "key": "G4-S11-HIS-14",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:instruction 2.4.2：Ⅰ〜ⅩⅦ章＝疾病、ⅩⅧ＝症状・徴候、ⅩⅨ＝損傷・中毒、ⅩⅩは疾病の外因にも使用、ⅩⅪの目的、を確認。正は a,d のみ。"
+  }
+ ]
+}

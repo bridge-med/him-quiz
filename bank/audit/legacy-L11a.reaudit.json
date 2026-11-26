@@ -1,0 +1,229 @@
+{
+ "verdicts": [
+  {
+   "key": "lg-11-00",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:r08-kaitei-gaiyo-dpc p2（急性期入院医療・1日あたり包括払い、Per-Diem注記、1日あたり/1入院あたりの支払制度を意味しない）、p4（療養病棟等はDPC算定対象外）で確認。 validate.mjs 0 errors。"
+  },
+  {
+   "key": "lg-11-01",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:dpc-coding-text-v7 用語注（18のMDC・上2桁がMDCコード）、図表3（16〜18）で確認。 validate.mjs 0 errors。"
+  },
+  {
+   "key": "lg-11-02",
+   "verdict": "pass",
+   "blindAnswer": 4,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:dpc-coding-text-v7 図表2（①疾患コード〜⑧重症度等、③年齢・出生時体重等、⑦副傷病）、◆DPCの構成（上6桁・上2桁MDC）で確認。診療科は構成要素にない。 validate.mjs 0 errors。"
+  },
+  {
+   "key": "lg-11-03",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:r08-kaitei-gaiyo-dpc p16 医療機関別係数（3.機能評価係数Ⅱ=効率性・複雑性・カバー率・地域医療の4係数、4.救急補正係数・5.激変緩和係数は別項目）、p8 係数一覧で確認。ブラインドでは旧制度（救急医療係数がⅡに含まれていた）との混同を懸念したが、令和8年度資料で救急補正係数はⅡと別立てであり、stemが令和8年度と明示しているため単一解。 validate.mjs 0 errors。"
+  },
+  {
+   "key": "lg-11-04",
+   "verdict": "pass",
+   "blindAnswer": 2,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:dpc-chosa-setsumei-2026 p4 提出データ一覧（包括レセプト情報=Dファイル、様式1・様式3・Hファイル・Kファイル・EF統合ファイルの内容）で確認。 validate.mjs 0 errors。"
+  },
+  {
+   "key": "lg-11-05",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:がん登録等の推進に関する法律 第2条第3項・第4項、第3条第2項・第5項（2026-10-01版）で確認。 validate.mjs 0 errors。"
+  },
+  {
+   "key": "lg-11-06",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "cancer:glossary-zenkokugantouroku（2016年から登録開始、2013年制定）、cancer:glossary-innaigantouroku（2016年1月1日施行）、法第6条第1項で確認。 validate.mjs 0 errors。"
+  },
+  {
+   "key": "lg-11-08",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "stats:ganjoho-kapuranmaiyahou（死亡1例ごとに逐次計算・中途打ち切り例の除外）、SMR・年齢調整罹患率の用語集で確認。 validate.mjs 0 errors。"
+  },
+  {
+   "key": "lg-11-09",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "stats:ganjoho-dexisio（DCO定義・全症例に対する割合・10%以下水準・遡り調査の注意）、stats:ganjoho-dexisienu（DCN）、cancer:glossary-mv で確認。 validate.mjs 0 errors。"
+  },
+  {
+   "key": "lg-11-10",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:r08-kaitei-gaiyo-dpc p3 DPC対象病院の基準（A207届出、データ数90以上、委員会年4回以上、未コード化2%未満、部位不明・詳細不明10%未満。病床数要件なし）で確認。 validate.mjs 0 errors。"
+  },
+  {
+   "key": "lg-11-11",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "cancer:hcr-standard-format-2016 [500]（UICC TNM第8版準拠）、[300]（ICD-O-3.2）、[550]（原発性肝癌取扱い規約第7版）で確認。 validate.mjs 0 errors。"
+  },
+  {
+   "key": "lg-11-12",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "cancer:hcr-standard-format-2016 [300] 原発部位《局在コード》で確認。全文grepで職業・保険・学歴・年収の項目なし。 validate.mjs 0 errors。"
+  },
+  {
+   "key": "lg-11-13",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "stats:ganjoho-emuaihi（定義、生存率低い・届出不十分→高い、重複登録→低い、IM比）で確認。 validate.mjs 0 errors。"
+  },
+  {
+   "key": "lg-11-14",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "cancer:mhlw-hcr-guideline 第二の二（実務者1名以上・有資格者に限定せず・研修の継続受講が望ましい）、第二の三(1)（標準的な登録様式に準拠、項目追加可）で確認。 validate.mjs 0 errors。"
+  },
+  {
+   "key": "lg-11-15",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:dpc-gaiyo-kangaekata 1(2)②・2(2)②、ins:r08-kaitei-gaiyo-dpc p8 算定方法概要（包括:入院基本料・検査・画像診断・投薬・注射・1,000点未満処置／出来高:医学管理・手術・麻酔・放射線治療・1,000点以上処置）で確認。 validate.mjs 0 errors。"
+  }
+ ]
+}

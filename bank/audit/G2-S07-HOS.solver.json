@@ -1,0 +1,14 @@
+{"answers":[
+{"key":"#0","answer":2,"confidence":"high","ambiguous":false,"note":"36000/(1/2×4800)=15.0。mgmt:byouinhoukoku-yougo 平均在院日数"},
+{"key":"#1","answer":1,"confidence":"high","ambiguous":false,"note":"分母200×90+240×275=84000、67200/84000=80.0%。病床利用率の算式"},
+{"key":"#2","answer":3,"confidence":"high","ambiguous":false,"note":"171/180=95.0%。月末病床利用率"},
+{"key":"#3","answer":1,"confidence":"high","ambiguous":false,"note":"21000/(1/2×(60+90+70+20)=120)=175.0。療養病床の式"},
+{"key":"#4","answer":2,"confidence":"high","ambiguous":false,"note":"外来は当該年の年間日数365で除す=200.0。245日は罠、在院患者延数は無関係"},
+{"key":"#5","answer":2,"confidence":"high","ambiguous":false,"note":"3300/(1/2×440)=15.0。同日退院も含む"},
+{"key":"#6","answer":2,"confidence":"high","ambiguous":false,"note":"延数=0.8×300×365=87600、/5475=16.0"},
+{"key":"#7","answer":1,"confidence":"high","ambiguous":false,"note":"24時現在で数える。A2+B0+C1+D1+E3=7"},
+{"key":"#8","answer":2,"confidence":"high","ambiguous":false,"note":"毎日24時現在。用語の解説"},
+{"key":"#9","answer":3,"confidence":"high","ambiguous":false,"note":"分母は(月間日数×月末病床数)の1〜12月合計であり12月末病床数×年間日数ではない"},
+{"key":"#10","answer":2,"confidence":"high","ambiguous":false,"note":"2科で診療録作成ならそれぞれの診療科の外来患者として取扱う"},
+{"key":"#11","answer":3,"confidence":"high","ambiguous":false,"note":"病院全病床の病床利用率は77.9%で前年より0.9ポイント上昇。他選択肢は表3・4と一致"}
+]}

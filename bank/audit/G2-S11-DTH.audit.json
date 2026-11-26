@@ -1,0 +1,419 @@
+{
+ "verdicts": [
+  {
+   "key": "G2-S11-DTH-01",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "4.1.2(⒜⒝)で定義確認。選択肢0=直接死因、2=4.1.3のⅡ欄、3=DPC概念、4=根拠なし。"
+  },
+  {
+   "key": "G2-S11-DTH-02",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "4.1.2「第６回改訂国際会議において合意」確認。第10回=1989年会議(6.9)。"
+  },
+  {
+   "key": "G2-S11-DTH-03",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "4.1.4(単一死因ルール/一般原則・ルール1-3→修正A-D/外因はV01-Y89)、4.1.8「選択ルール３を再使用する場合がある」、4.1.10「修正後のルール３の適用」確認。"
+  },
+  {
+   "key": "G2-S11-DTH-04",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "4.1.3末尾「起点となる先行原因（起因）」「原死因」の使い分け本文で確認。"
+  },
+  {
+   "key": "G2-S11-DTH-05",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "4.1.5ルール1-3本文、4.1.6(最下欄に多数→一般原則不適用/医師が記載すれば…では不十分)確認。a,c正。"
+  },
+  {
+   "key": "G2-S11-DTH-06",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "4.1.5一般原則・4.1.6(正しく記載された診断書では一般原則)、例3と同型。N40存在確認。"
+  },
+  {
+   "key": "G2-S11-DTH-07",
+   "verdict": "fix",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": false,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "4.1.5ルール1(最初に記載された因果関係の起因)、4.1.7推定(J18.0肺炎は脳出血等麻痺性疾患の結果)。key・解説は正しい。",
+   "detail": "引用箇所『他の病態の直接的な影響によると推定できる場合について』は4.1.5ではなく4.1.7（一般原則と選択ルールの例、ルール３の項）にある。locatorを修正。内容・keyは変更なし。",
+   "fixed": {
+    "format": "case",
+    "difficulty": "standard",
+    "polarity": "positive",
+    "question": "次の死亡診断書（架空例）の死亡の原因欄の記載について、起点となる先行原因の選択に適用されるものと、選ばれる病態の組合せとして正しいものはどれか。\nⅠ欄　(ア) 気管支肺炎　(イ) 脳出血及び慢性腎臓病\nⅡ欄　記載なし",
+    "choices": [
+     "一般原則 ― 慢性腎臓病",
+     "選択ルール１ ― 脳出血",
+     "選択ルール１ ― 慢性腎臓病",
+     "選択ルール２ ― 気管支肺炎",
+     "選択ルール３ ― 慢性腎臓病"
+    ],
+    "answer": 1,
+    "explanation": {
+     "correct": "Ⅰ欄の最下欄に二つの病態が記載されているので一般原則は適用しない。最初に記載された気管支肺炎に帰着する上下の因果関係があり（脳出血のような麻痺を起こす疾患による気管支肺炎は認められる）、因果関係が複数ある場合は最初に記載された因果関係の起因を選ぶので、ルール１により脳出血を選ぶ。",
+     "choiceNotes": [
+      "最下欄に複数の病態があるため一般原則は適用しない。",
+      null,
+      "ルール１で選ぶのは最初に記載された上下の因果関係の起因であり、後に記載された慢性腎臓病ではない。",
+      "最初に記載された病態に帰着する上下の因果関係があるので、ルール２は用いない。",
+      "脳出血が慢性腎臓病の直接影響によることは明らかではなく、ルール３で先行病態として選ぶ根拠はない。"
+     ],
+     "point": "最下欄に複数→一般原則×。ルール１では「最初に記載された」因果関係の起因を選ぶ。"
+    },
+    "sources": [
+     {
+      "ref": "icd:instruction",
+      "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+      "locator": "4.1.5 選択ルール ルール１",
+      "quote": "最初に記載された病態に帰着する上下の因果関係が多数ある場合には、最初に記載された上下の因果関係の起因を選ぶ。"
+     },
+     {
+      "ref": "icd:instruction",
+      "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+      "locator": "4.1.7 一般原則と選択ルールの例 ルール３「他の病態の直接的な影響によると推定できる場合について」",
+      "quote": "J15.8 － J15.9、J16.8、J18.0 及び J18.2 － J18.9 の肺炎は、次の疾患の結果生じたと考えるべきである：すなわち、悪性腫瘍や栄養失調（症）といった消耗性疾患、脳出血や脳塞栓症といった麻痺を起こす疾患"
+     },
+     {
+      "ref": "icd:instruction",
+      "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+      "locator": "4.1.6 選択ルールについての留意事項",
+      "quote": "Ⅰ欄の最下欄に多数の病態が記載された場合、又は記載された単一病態が、その上欄に記載されたすべての病態を引き起こす可能性がない場合は、一般原則は適用しない。"
+     }
+    ],
+    "subject": "S11",
+    "subtopic": "死因統計と原死因の選択",
+    "asOf": "ICD-10（2013年版）準拠",
+    "key": "G2-S11-DTH-07"
+   }
+  },
+  {
+   "key": "G2-S11-DTH-08",
+   "verdict": "fix",
+   "checks": {
+    "answer": false,
+    "distractors": true,
+    "stem": true,
+    "explanations": false,
+    "sources": false,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "4.2.2 A末尾『上記以外の症例では…一般原則を適用すべき』。脳梗塞→急性膵炎は認められない因果関係リストになく、『引き起こし得ない』は出典で確認できない(文理上は一般原則→脳梗塞も主張可能)。",
+   "detail": "決め手の『脳梗塞は急性膵炎を引き起こし得ない』が未出典で、4.2.2の記述からは一般原則適用の余地あり。Ⅰ欄を(ア)胃癌(イ)脳梗塞に変更し、4.2.2 A⒝(悪性新生物はHIV病を除き他疾病によるとしない)で一般原則・ルール3不適用→ルール2で胃癌(C16.9)と出典で確定。",
+   "fixed": {
+    "format": "case",
+    "difficulty": "standard",
+    "polarity": "positive",
+    "question": "次の死亡診断書（架空例）の死亡の原因欄の記載について、起点となる先行原因の選択に適用されるものと、選ばれる病態の組合せとして正しいものはどれか。\nⅠ欄　(ア) 胃癌　(イ) 脳梗塞\nⅡ欄　記載なし",
+    "choices": [
+     "一般原則 ― 脳梗塞",
+     "選択ルール１ ― 脳梗塞",
+     "選択ルール２ ― 胃癌",
+     "選択ルール２ ― 脳梗塞",
+     "選択ルール３ ― 脳梗塞"
+    ],
+    "answer": 2,
+    "explanation": {
+     "correct": "第2巻4.2.2の認められない因果関係により、悪性新生物はHIV病を除き何らかの疾病「による」と考えるべきではない。したがって最下欄の脳梗塞は胃癌を引き起こし得る病態とはならず一般原則は適用できず、最初に記載された胃癌に帰着する上下の因果関係もない。ルール２により最初に記載された胃癌（C16.9）を選ぶ。",
+     "choiceNotes": [
+      "最下欄の脳梗塞が上欄の胃癌を引き起こす可能性はない（悪性新生物はHIV病以外の疾病によるとは考えない）ため、一般原則は適用しない。",
+      "最初に記載された病態（胃癌）に帰着する上下の因果関係がないため、ルール１は適用できない。",
+      null,
+      "ルール２で選ぶのは最初に記載された病態（胃癌）であり、脳梗塞ではない。",
+      "胃癌が脳梗塞の直接影響によることはあり得ない（悪性新生物はHIV病以外の疾病によるとは考えない）ので、ルール３で脳梗塞を選ぶことはできない。"
+     ],
+     "point": "悪性新生物は（HIV病を除き）他の疾病によるとしない→因果関係なし→ルール２で最初に記載された病態。"
+    },
+    "sources": [
+     {
+      "ref": "icd:instruction",
+      "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+      "locator": "4.1.5 選択ルール ルール２",
+      "quote": "死亡診断書に最初に記載された病態に帰着する上下の因果関係の記載がない場合には、この最初に記載された病態を選ぶ。"
+     },
+     {
+      "ref": "icd:instruction",
+      "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+      "locator": "4.1.6 選択ルールについての留意事項",
+      "quote": "又は記載された単一病態が、その上欄に記載されたすべての病態を引き起こす可能性がない場合は、一般原則は適用しない。"
+     },
+     {
+      "ref": "icd:instruction",
+      "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+      "locator": "4.2.2 A ⒝ 悪性新生物＜腫瘍＞",
+      "quote": "悪性新生物＜腫瘍＞は、何らかの疾病「による」と考えるべきではない。ただし、 ヒト免疫不全ウイルス［HIV］病は除く。"
+     }
+    ],
+    "subject": "S11",
+    "subtopic": "死因統計と原死因の選択",
+    "asOf": "ICD-10（2013年版）準拠",
+    "key": "G2-S11-DTH-08"
+   }
+  },
+  {
+   "key": "G2-S11-DTH-09",
+   "verdict": "fix",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": false,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "一般原則で肺塞栓症→4.1.7推定『肺塞栓症…悪性腫瘍の明らかな結果』でルール3→膵臓癌(C25.9)。例26と同型。",
+   "detail": "引用箇所『他の病態の直接的な影響によると推定できる場合について』は4.1.5ではなく4.1.7（一般原則と選択ルールの例、ルール３の項）にある。locatorを修正。内容・keyは変更なし。",
+   "fixed": {
+    "format": "case",
+    "difficulty": "advanced",
+    "polarity": "positive",
+    "question": "次の死亡診断書（架空例）の死亡の原因欄の記載について、原死因として選ばれる病態と、その決め手となる規則の組合せとして正しいものはどれか。\nⅠ欄　(ア) 肺塞栓症\nⅡ欄　膵臓癌",
+    "choices": [
+     "肺塞栓症 ― 一般原則",
+     "膵臓癌 ― 選択ルール３",
+     "膵臓癌 ― 選択ルール２",
+     "肺塞栓症 ― 修正ルールＣ（連鎖）",
+     "膵臓癌 ― 修正ルールＤ（特異性）"
+    ],
+    "answer": 1,
+    "explanation": {
+     "correct": "一般原則によりⅠ欄の肺塞栓症がいったん選ばれるが、肺塞栓症のような一般的な続発性の病態は、悪性腫瘍などの消耗性疾患の明らかな結果と考えるべきとされている。選ばれた病態がⅡ欄の膵臓癌の直接影響によることが明らかなので、ルール３により先行する膵臓癌（C25.9）を選ぶ。",
+     "choiceNotes": [
+      "一般原則で肺塞栓症が選ばれるが、それがⅡ欄の膵臓癌の明らかな結果であるためルール３で選びなおされ、原死因にはならない。",
+      null,
+      "ルール２は最初に記載された病態（本例では肺塞栓症）を選ぶ規則であり、Ⅱ欄の膵臓癌を選ぶ根拠にはならない。",
+      "連鎖は分類や注の規定で複合した病態にコードする規則であり、本例で原死因を決めるのはルール３である。",
+      "特異性は一般的な用語をより詳細な用語に置き換える規則であり、肺塞栓症と膵臓癌の関係には当たらない。"
+     ],
+     "point": "選ばれた病態がⅡ欄の病態の明らかな直接影響→ルール３で先行病態（肺塞栓症←悪性腫瘍）。"
+    },
+    "sources": [
+     {
+      "ref": "icd:instruction",
+      "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+      "locator": "4.1.5 選択ルール ルール３",
+      "quote": "ルール１又はルール２によって選ばれた病態が、明らかにⅠ欄又はⅡ欄に記載されている他の病態の直接影響による場合には、先行する病態を選ぶ。"
+     },
+     {
+      "ref": "icd:instruction",
+      "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+      "locator": "4.1.7 一般原則と選択ルールの例 ルール３「他の病態の直接的な影響によると推定できる場合について」",
+      "quote": "その他の一般的な続発性の病態（肺塞栓症、褥瘡性潰瘍、膀胱炎等）は、次の疾患の明らかな結果と考えるべきである。すなわち、悪性腫瘍や栄養失調（症）といった消耗性疾患"
+     }
+    ],
+    "subject": "S11",
+    "subtopic": "死因統計と原死因の選択",
+    "asOf": "ICD-10（2013年版）準拠",
+    "key": "G2-S11-DTH-09"
+   }
+  },
+  {
+   "key": "G2-S11-DTH-10",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "4.1.9ルールA(R00-R94、R54老衰)、例35(一般原則で老衰→無視)で一般原則→ルールAの流れを確認。R54/J18.9存在確認。"
+  },
+  {
+   "key": "G2-S11-DTH-11",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "4.1.11 I10の注『I50.-（心不全）、I11.0 にコードする』、ルールC本文確認。I11.0/I11.9/I13.0/I50.0の名称確認。"
+  },
+  {
+   "key": "G2-S11-DTH-12",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "4.1.9ルールAの列挙(I46.9,J96.0,I95.9,R00-R94)と『R95…は含まれない』確認。"
+  },
+  {
+   "key": "G2-S11-DTH-13",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "4.1.9ルールB本文(無視されない/副作用/ただし…除く)、4.1.8『起点となる先行原因の選択の後に適用』確認。"
+  },
+  {
+   "key": "G2-S11-DTH-14",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "4.1.9ルールD本文、例59(脳梗塞/脳卒中→I63.9)確認。"
+  },
+  {
+   "key": "G2-S11-DTH-15",
+   "verdict": "fix",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": false,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "4.1.7推定リスト(HIVはC46.-/C81-C96のみ、I50.-、I85.-、脱水、急性腎不全)本文確認。key正。",
+   "detail": "引用箇所『他の病態の直接的な影響によると推定できる場合について』は4.1.5ではなく4.1.7（一般原則と選択ルールの例、ルール３の項）にある。locatorを修正。内容・keyは変更なし。",
+   "fixed": {
+    "format": "knowledge",
+    "difficulty": "advanced",
+    "polarity": "negative",
+    "question": "選択ルール３の適用で「他の病態の直接的な影響によると推定できる場合」として第2巻に示される内容について、誤っているものはどれか。",
+    "choices": [
+     "HIV病が記載されている場合は、あらゆる型の悪性新生物＜腫瘍＞がそのHIV病によって生じたと考える。",
+     "心不全（I50.-）は、他の心臓の病態の結果生じたと考える。",
+     "食道静脈瘤（I85.-）は、B18.-、K70.-、K73.-、K74.-及びK76.-に分類される肝疾患の結果生じたと考える。",
+     "脱水は、腸管感染症の結果生じたと考える。",
+     "急性腎不全は、尿路感染症の発症前から存在していたという記載がある場合を除いて、尿路感染症の結果生じたと推定する。"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "HIV病によって生じたと考えるのは、C46.-又はC81－C96に分類されるカポジ肉腫、バーキット腫瘍並びにリンパ系、造血系及び関連組織の悪性新生物に限られ、その他の型の悪性新生物にはこのような推定をするべきではないとされている。",
+     "choiceNotes": [
+      null,
+      "第2巻に「心不全（I50.-）及び心疾患，詳細不明（I51.9）は、他の心臓の病態の結果生じたと考えるべき」とある。",
+      "第2巻の記述どおりで正しい。",
+      "第2巻に「脱水は、腸管感染症の結果生じたと考えるべき」とある。",
+      "第2巻の記述どおりで正しい。"
+     ],
+     "point": "HIV病との推定はカポジ肉腫・リンパ系／造血系等（C46.-、C81–C96）に限る。"
+    },
+    "sources": [
+     {
+      "ref": "icd:instruction",
+      "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+      "locator": "4.1.7 一般原則と選択ルールの例 ルール３「他の病態の直接的な影響によると推定できる場合について」",
+      "quote": "その他の型の悪性新生物＜腫瘍＞は、このような推定をするべきではない。"
+     },
+     {
+      "ref": "icd:instruction",
+      "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+      "locator": "4.1.7 一般原則と選択ルールの例 ルール３「他の病態の直接的な影響によると推定できる場合について」",
+      "quote": "食道静脈瘤（I85.-）は、B18.-、K70.-、K73.-、K74.- 及び K76.-. に分類される肝疾患の結果生じたと考えるべきである。"
+     },
+     {
+      "ref": "icd:instruction",
+      "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル（総論）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+      "locator": "4.1.7 一般原則と選択ルールの例 ルール３「他の病態の直接的な影響によると推定できる場合について」",
+      "quote": "急性腎不全は、尿路感染症の発症前から存在していたという記載がある場合を除いて、尿路感染症の結果生じたと推定すべきである。"
+     }
+    ],
+    "subject": "S11",
+    "subtopic": "死因統計と原死因の選択",
+    "asOf": "ICD-10（2013年版）準拠",
+    "key": "G2-S11-DTH-15"
+   }
+  }
+ ]
+}

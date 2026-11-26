@@ -1,0 +1,172 @@
+{
+ "verdicts": [
+  {
+   "key": "G2-S05-SEC-01",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "gaisetsu 4.2: 3要素の定義と『完全性が確保されない場合、表示されるべき情報が欠落…』を確認。4.3で真正性・見読性・保存性は電子保存の要件。blind一致。"
+  },
+  {
+   "key": "G2-S05-SEC-02",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "gaisetsu 3（5編構成）・2.1/3.1.5（保守委託機関編対象は概説編＋保守委託機関編で遵守とみなす）・3.1.2/3.1.4の対象読者を確認。gaiyou p.5-6で保守委託機関編は7.0版で追加、6.0版は4編に再構成と確認。blind一致。"
+  },
+  {
+   "key": "G2-S05-SEC-03",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "gaisetsu 図3-1 注記※1（サーバ＝原則クライアント端末除く、端末で処理完結なら含む）・※2（契約書等記載時のみYES、不明確なら医療機関側責任の可能性）・3.1.5（オンプレミスを妨げない）を確認。blind一致。"
+  },
+  {
+   "key": "G2-S05-SEC-04",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "unyo 14 遵守事項⑥(1)(2)(3)(6)、14.1.1『パスワードの定期的な変更は不要とする』、gaiyou p.6『定期的な変更』要件削除を確認。blind一致。"
+  },
+  {
+   "key": "G2-S05-SEC-05",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "unyo 14 遵守事項⑤（クライアント=アプリ、サーバ=OS、令和9年度以降の期限）、14.1.1本文（サーバも含む・経過措置）と表14-1注記（OS一要素＋アプリ一要素は不可）、gaiyou p.8課題①（医療機器は見送り）を確認。blind一致。"
+  },
+  {
+   "key": "G2-S05-SEC-06",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "gaisetsu 2.1（薬局・訪問看護ST・介護事業者を含む）、2.2（保存義務の有無を問わない・患者管理下は対象外）、2.3（自院開発含む・医療情報を含まない会計・経理システムは含まない）を確認。正答b,c。blind一致。"
+  },
+  {
+   "key": "G2-S05-SEC-07",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "keiei 2.2.1 回避・低減・移転・受容の定義、主な方針は『リスクの低減』、継続的にリスク評価を実施する必要、を確認。blind一致。"
+  },
+  {
+   "key": "G2-S05-SEC-08",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "gaisetsu 4.5（MDS/SDSガイドのチェックリスト、厚労省標準規格HS040、合意内容は契約書やSLA）、4.2（ISMS）、kikaku 表11-2（CSIRT）・11 遵守事項①（BCP）を確認。blind一致。"
+  },
+  {
+   "key": "G2-S05-SEC-09",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "keiei 1.3.1（委託先の管理も管理責任に含む・委託先過失でも責任を免れない）、表1-1（適切な事業者を選定する責任）、kikaku 2.1.1（責任分界は通常時/非常時の二つ、契約書やSLA等で合意文書化）を確認。blind一致。"
+  },
+  {
+   "key": "G2-S05-SEC-10",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "qa Q18（保存されないことが契約等で担保されていれば国内法の適用を受けないサーバ利用可）、kikaku 7 遵守事項⑤の該当項目（国内法の適用及び執行の及ぶ範囲を確実に）を確認。blind一致。"
+  },
+  {
+   "key": "G2-S05-SEC-11",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "kikaku 11 遵守事項①②⑥⑨の文言と11.2（具体的対応は発生原因で異なる、バックアップ設計も災害/サイバー攻撃で異なる）を確認。blind一致。"
+  },
+  {
+   "key": "G2-S05-SEC-12",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "unyo 18.1（記録媒体の切り離し・世代管理・日次なら少なくとも3世代/3世代目以降書込不可・2方式以上、選択肢にクラウドサービス、不用意な復旧は被害を繰り返す、全情報でなく診療に直ちに必要な情報）を確認。blind一致。"
+  }
+ ]
+}

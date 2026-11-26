@@ -1,0 +1,139 @@
+{
+ "verdicts": [
+  {
+   "key": "lg-06-14",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "OR=(a/b)/(c/d)=ad/bc verified in stats:mhlw-tokei-yougo-rr-or (相対リスクとオッズ比: p3/p4, p1/p2) and Minds glossary オッズ比 (症例対照研究・横断研究, 低確率でリスク比近似). Distractors B–E correctly identified (RR = choice E). Blind matched. Validator: 0 errors."
+  },
+  {
+   "key": "lg-06-15",
+   "verdict": "pass",
+   "blindAnswer": 1,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "stats:naruhodo-chirabari-jyokyu 分散 (偏差二乗和の平均; 偏差の平均は必ず0) and 標準偏差 (分散の正の平方根); range = 最大値と最小値の差 (naruhodo-chirabari-shokyu 範囲). Population-variance definition, consistent with source. Blind matched. Validator: 0 errors."
+  },
+  {
+   "key": "lg-06-16",
+   "verdict": "pass",
+   "blindAnswer": 1,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "stats:naruhodo-suisoku (推測統計とは…), stats:naruhodo-zensu (全数調査/標本調査), stats:datastart-hyohon-gosa (標本規模を大きく→標本誤差小). All distractors clearly wrong. Blind matched. Validator: 0 errors."
+  },
+  {
+   "key": "lg-06-19",
+   "verdict": "pass",
+   "blindAnswer": 1,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "x-legacy-L06b:mext-joho2-ch3a 学習13 (目的変数Yをp個の説明変数で説明=重回帰), 学習14 (主成分分析=次元削減); stats:naruhodo-hukusu (単回帰=一つの説明変数). Clustering note (正解を与えずにグループ分け) consistent with source's 教師なし学習 framing. Blind matched. Validator: 0 errors."
+  },
+  {
+   "key": "lg-06-20",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "x-legacy-L06b:minds-glossary-2020 ハザード比 (時間tにおける瞬間的な死亡確率; 2群のハザードの比; 生存時間分析) and リスク比 (イベント発生率の比); CDC L3S2 cumulative incidence = risk. Distractors clearly not HR. Blind matched. Validator: 0 errors."
+  },
+  {
+   "key": "lg-06-21",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "x-legacy-L06b:cdc-ss1978-l3s2 Incidence proportion (synonym cumulative incidence; denominator = persons at start of observation) vs incidence rate (person-time denominator). Prevalence and case-fatality distractors correct. Blind matched. Validator: 0 errors."
+  },
+  {
+   "key": "lg-06-22",
+   "verdict": "pass",
+   "blindAnswer": 1,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "stats:ganjoho-rikanritu (新たに診断された数/人口; 有病率=ある時点の患者数/人口) and CDC L3S2 Prevalence (both new and preexisting; based on both incidence and duration). Blind matched. Validator: 0 errors."
+  },
+  {
+   "key": "lg-06-23",
+   "verdict": "pass",
+   "blindAnswer": 1,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "stats:env-soutai-kiyo-risk スライド3.4 (寄与リスク=ばく露群罹患リスク−非ばく露群罹患リスク); Minds glossary リスク差/オッズ比. Distractors = RR, OR, prevalence. Blind matched. Validator: 0 errors."
+  },
+  {
+   "key": "lg-06-26",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "x-legacy-L06b:jjh-64-796 2-8 (従来の疫学理論の3点=必要条件: ①曝露と関連 ②アウトカムのリスクファクター(予測できればよい) ③曝露・アウトカムの影響を受けない, 特に中間因子でない). Stem wording 必要条件 matches source. Blind matched. Validator: 0 errors."
+  }
+ ]
+}

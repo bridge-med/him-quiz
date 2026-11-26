@@ -1,0 +1,79 @@
+{
+ "verdicts": [
+  {
+   "key": "G5-S05-NET-04",
+   "verdict": "pass",
+   "blindAnswer": 1,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "info:mhlw-online-shinryo-shishin(令和8年4月改訂) Ⅴ1(2)②ⅲ: 原則かかりつけの医師、ただしPHR等から医学的情報を把握でき医師が可能と判断した場合にも実施可（事前情報は診療録記載）→B正。Ⅲ1用語の定義（診療前相談）: 映像を用いたリアルタイムのやりとり（D誤）、オンライン診療実施時は診療録記載必要（E誤）、診断・処方等を含まない（C誤）。Aは原則+例外ありで誤。blind一致。validate 0 errors。"
+  },
+  {
+   "key": "G5-S05-NET-05",
+   "verdict": "pass",
+   "blindAnswer": 3,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:医療法(2026-10-01版) 第2条の2第2項（定義, A）・第3条第4項（名称制限, C）・第8条第2項（設置後十日以内に届出, B）。info:mhlw-online-shinryo-hou-sekou 第2の2: へき地等で郵便局・公民館等の活用が期待（E）、オンライン診療のみなら診療所等の開設がなくとも可（D誤=正答）。施行日 令和8年4月1日も同通知冒頭で確認。blind一致。"
+  },
+  {
+   "key": "G5-S05-NET-08",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "x-gen-G5-S05-NET:mext-joho1-ch3 学習11: 5装置構成、制御装置と演算装置を合わせてCPU、CPUは記憶装置から命令やデータを取り出す、入出力含めすべてを制御するのが制御装置。各choiceNote整合。blind一致。"
+  },
+  {
+   "key": "G5-S05-NET-10",
+   "verdict": "pass",
+   "blindAnswer": 2,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "x-legacy-L06b:mext-joho1-ch4 リレーショナルデータベース節: 選択=条件を満たすレコード抽出、射影=一部フィールド取り出し、結合=複数テーブルを1つの表に、1件分=レコード（行）、フィールド=列、テーブル分割で冗長回避・変更漏れ防止（正規化）。A,B,D,E誤を確認。blind一致。"
+  },
+  {
+   "key": "G5-S05-NET-12",
+   "verdict": "pass",
+   "blindAnswer": 1,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "x-legacy-L06b:mext-joho1-ch4 （２）有線LANと無線LANの違い: 無線は電波で伝送し傍受容易(A)、共通鍵暗号は暗号化・復号で同じキー（B誤=正答）、キーがわかれば安全な通信不可(C)、WEPは脆弱(D)、暗号化未設定の無線アクセスポイントも多い(E)。blind一致。"
+  }
+ ]
+}

@@ -1,0 +1,88 @@
+{
+ "answers": [
+  {
+   "key": "G4-S12-INJ-01",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "S節は単一部位の様々な型の損傷"
+  },
+  {
+   "key": "G4-S12-INJ-02",
+   "answer": 3,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "外果骨折=S82.6"
+  },
+  {
+   "key": "G4-S12-INJ-03",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "記載なしは閉鎖性、0=閉鎖性"
+  },
+  {
+   "key": "G4-S12-INJ-04",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "伴う=両方、及び=一方又は両方"
+  },
+  {
+   "key": "G4-S12-INJ-05",
+   "answer": 4,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "T02.2 一側上肢の多部位骨折"
+  },
+  {
+   "key": "G4-S12-INJ-06",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "頭蓋内損傷を伴う頭蓋骨骨折は頭蓋内損傷(S06)が主要病態"
+  },
+  {
+   "key": "G4-S12-INJ-07",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "T23.2 手首及び手の第2度熱傷"
+  },
+  {
+   "key": "G4-S12-INJ-08",
+   "answer": 3,
+   "confidence": "medium",
+   "ambiguous": false,
+   "note": "T31は部位不明の熱傷に一次コード"
+  },
+  {
+   "key": "G4-S12-INJ-09",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "T84.5"
+  },
+  {
+   "key": "G4-S12-INJ-10",
+   "answer": 4,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "誤飲による中毒=T42.-"
+  },
+  {
+   "key": "G4-S12-INJ-11",
+   "answer": 3,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "副作用は病態を主要病態、Y45.1追加"
+  },
+  {
+   "key": "G4-S12-INJ-12",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "胃手術後症候群はK91.1でT81除外"
+  }
+ ]
+}

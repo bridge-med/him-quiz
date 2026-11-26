@@ -1,0 +1,15 @@
+{"answers":[
+{"key":"G5-S03-BEN-01","answer":1,"confidence":"high","ambiguous":false,"note":"健保法52条各号に休業補償給付なし(労災)"},
+{"key":"G5-S03-BEN-02","answer":2,"confidence":"high","ambiguous":false,"note":"健保法74条1項2号 70歳に達する日の属する月の翌月以後"},
+{"key":"G5-S03-BEN-03","answer":1,"confidence":"high","ambiguous":false,"note":"健保法110条2項1号 ロ=80,イ=70,ハ=80,ニ=70; a,e正。bは70、cは現役並みは70、dは被保険者に支給"},
+{"key":"G5-S03-BEN-04","answer":3,"confidence":"medium","ambiguous":false,"note":"高確法67条1項 1号10/2号20/3号30。選択肢2は30を欠くため3が最良"},
+{"key":"G5-S03-BEN-05","answer":1,"confidence":"high","ambiguous":false,"note":"健保法75条 5円未満切捨て・5円以上10円未満は切上げ"},
+{"key":"G5-S03-BEN-06","answer":2,"confidence":"high","ambiguous":false,"note":"健保法87条1項 やむを得ないと認めるとき。額は現に要した費用を超えられない"},
+{"key":"G5-S03-BEN-07","answer":3,"confidence":"high","ambiguous":false,"note":"23,450×0.3=7,035→75条で10円に切上げ 7,040"},
+{"key":"G5-S03-BEN-08","answer":3,"confidence":"high","ambiguous":false,"note":"健保法63条4項 厚生労働大臣に臨床研究中核病院開設者の意見書"},
+{"key":"G5-S03-BEN-09","answer":3,"confidence":"high","ambiguous":false,"note":"保険収載前の医療機器使用は評価療養"},
+{"key":"G5-S03-BEN-10","answer":1,"confidence":"high","ambiguous":false,"note":"先進医療でも保険適用部分は保険給付(保険外併用療養費)"},
+{"key":"G5-S03-BEN-11","answer":1,"confidence":"high","ambiguous":false,"note":"ins:kougaku-page 直近12か月に3か月以上で4か月目以降"},
+{"key":"G5-S03-BEN-12","answer":2,"confidence":"high","ambiguous":false,"note":"ins:kougaku-page 年間とは8月から翌年7月"},
+{"key":"G5-S03-BEN-13","answer":2,"confidence":"high","ambiguous":false,"note":"標報28〜50万区分 85,800+(500,000-286,000)×1%=87,940"}
+]}

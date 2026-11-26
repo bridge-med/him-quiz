@@ -1,0 +1,232 @@
+{
+ "verdicts": [
+  {
+   "key": "G5-S05-STD-01",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "info:medis-master-gaiyou-v25 5.2(1): JSLM制定・分析物5+識別4+材料3+測定法3+結果識別2=17桁、結果識別は依頼時00/報告時設定; 5.4(2)①確認。distractor全て誤り確認。"
+  },
+  {
+   "key": "G5-S05-STD-02",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "v25 6.1: 13桁・永久欠番・汎用コード対応付け目的; 6.2(1): 体外用診断薬を除く医療用医薬品（薬価非収載品含む）、HOT9=販売会社・併売品区別。キーE唯一の誤り。"
+  },
+  {
+   "key": "G5-S05-STD-03",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "v25 6.1表: 薬価基準収載12桁・YJ12桁・JAN13桁・レセ電9桁; 6.2(1) HOT13桁。キーD唯一。"
+  },
+  {
+   "key": "G5-S05-STD-04",
+   "verdict": "fix",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": false,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "v25 2.2.2(1)②: 病名管理番号=病名表記と1対1・不変のレコード管理用コード、更新情報の基。病名交換用コードは構造を基本付ける最重要コード。図2-1で各コードの所属テーブル確認。キー正。",
+   "detail": "発問に出典の「レコード管理用」という語をそのまま入れており、正答「病名管理番号」の「管理」と語の一致で選べる手がかりになっていた。同じ出典の別の特徴（病名基本テーブルの更新情報の基になる）で言い換え、手がかりを除いた。",
+   "fixed": {
+    "key": "G5-S05-STD-04",
+    "subject": "S05",
+    "subtopic": "標準コードとマスター",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "ICD10対応標準病名マスターの病名基本テーブルに設定されているコードのうち、「病名表記」と1対1で対応して決して変わることがなく、病名基本テーブルの更新情報の基になるものはどれか。",
+    "choices": [
+     "病名交換用コード",
+     "病名管理番号",
+     "修飾語交換用コード",
+     "レセ電算コード（傷病名コード）",
+     "ICD10-2013（ICDコード）"
+    ],
+    "answer": 1,
+    "explanation": {
+     "correct": "病名管理番号は「病名表記」と1対1で、決して変わることのないレコード管理用コードであり、病名基本テーブルの更新情報はこの番号を基に出される。",
+     "choiceNotes": [
+      "病名交換用コードは標準病名マスターの構造を基本付ける最も重要なコードで、病態毎の管理や他施設との情報共有に用いる。レコード管理用の番号ではない。",
+      null,
+      "修飾語交換用コードは修飾語テーブルにある、情報交換を想定して修飾語表記に付与されたコードである。",
+      "レセ電算コード（傷病名コード）はレセプト電算処理システム用傷病名マスター側のコードで、標準病名マスターとの共通項目として収載されている。",
+      "ICD10-2013はWHOのICDによる分類コードで、複数分類方式も採用されており、病名表記と1対1のレコード管理用コードではない。"
+     ],
+     "point": "病名管理番号＝レコード管理用（不変）、病名交換用コード＝情報交換・病態管理用。"
+    },
+    "sources": [
+     {
+      "ref": "info:medis-master-gaiyou-v25",
+      "title": "標準マスターの概要と使い方 第25版",
+      "url": "https://www.medis.or.jp/7_kikaku/hanbai/file/DL_master%5Ever25_202607.pdf",
+      "locator": "2.2.2（1）② 病名管理番号と病名交換用コード",
+      "quote": "「病名表記」と１対１で、決して変わることのないレコード管理用コードです。"
+     },
+     {
+      "ref": "info:medis-master-gaiyou-v25",
+      "title": "標準マスターの概要と使い方 第25版",
+      "url": "https://www.medis.or.jp/7_kikaku/hanbai/file/DL_master%5Ever25_202607.pdf",
+      "locator": "2.2.2（1）② 病名管理番号と病名交換用コード",
+      "quote": "標準病名マスターの構造を基本付ける最も重要なコードです。"
+     }
+    ],
+    "asOf": "MEDIS-DC 標準マスターの概要と使い方 第25版（2026年7月）"
+   }
+  },
+  {
+   "key": "G5-S05-STD-05",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "info:mhlw-hs-standards-r0701 別紙1: HS001/HS005/HS014/HS042あり、手術・処置マスターなし（MEDIS v25 1.1表1-1でも非採択）。別紙2「実装を強制するものではない」確認。"
+  },
+  {
+   "key": "G5-S05-STD-06",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "v25 5.4(2)①常に17桁0埋め、②例示集、③先頭Zのユーザ定義コード、5.3ローカルコードはマッピング、5.1 2025年4月よりJLACセンター公開。"
+  },
+  {
+   "key": "G5-S05-STD-07",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "info:mhlw-ebunsho-shiko-tsuchi 第二2(3)②真正性の文言と一致、①見読性③保存性も確認。完全性・可用性は三条件の名称でない。"
+  },
+  {
+   "key": "G5-S05-STD-08",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "info:mhlw-anzen-gl7-unyo 14.3: 混同の定義・代行入力の識別認証留意を確認。施行通知第二2(3)②(ア)。"
+  },
+  {
+   "key": "G5-S05-STD-09",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "info:mhlw-anzen-gl7-qa Q9: 三要件はe文書法令に基づく要件、CIAは情報セキュリティ全般の原則、対立せず相互補完。各定義の入替え確認。"
+  },
+  {
+   "key": "G5-S05-STD-10",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "施行通知 前文: 平成11年通知廃止; 第二2(2)②スキャナ保存; 第二3照射録は法の適用対象外; info:mhlw-hozonbasho-tsuchi 前文: 紙媒体の外部保存も第2の2の基準で認める。GL7企画管理編も施行通知第二の2(3)の3条件を参照。"
+  },
+  {
+   "key": "G5-S05-STD-11",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "外部保存通知 第2の1(1)(2)(4)、第2の2(1)(3)、前文「義務付けるものではない」を確認。a,bのみ正。"
+  },
+  {
+   "key": "G5-S05-STD-12",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "info:mhlw-anzen-gl7-kikaku 7章遵守事項⑥g(ISMAP等→外部監査で確認)、h・i、⑩、7.5（定期確認・監査、契約書に破棄返却を事前明記）、7.6を確認。"
+  },
+  {
+   "key": "G5-S05-STD-13",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "GL7企画管理編16章遵守事項②③⑥（事前周知・異議者除外・外部監査人）⑧（紙保存継続時の安全管理）、システム運用編16.1（元の紙媒体保存は真正性・保存性確保に極めて有効）を確認。"
+  }
+ ]
+}

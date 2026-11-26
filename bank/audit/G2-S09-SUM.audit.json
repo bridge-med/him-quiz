@@ -1,0 +1,259 @@
+{
+ "verdicts": [
+  {
+   "key": "G2-S09-SUM-01",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "him:jhim-discharge-summary-guidance-2019 5)〔主訴，または入院理由〕: 予定治療入院・症候なし→入院理由（例「内視鏡的ポリープ切除を受ける」）。便潜血陽性は検査異常で主訴に当たらず、腹痛は現病歴で否定。blind一致。"
+  },
+  {
+   "key": "G2-S09-SUM-02",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "同ガイダンス 6)<既往歴>: 現在も影響する既存症は退院時診断名列、過去完了の既往は入院までの経過欄。虫垂炎（後遺症なし）が既往歴。記載心得3 i も同旨。blind一致。"
+  },
+  {
+   "key": "G2-S09-SUM-03",
+   "verdict": "fix",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": false,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:dpc-coding-text-v7 の該当箇所は「Ⅲ．DPCコーディングの基本的な考え方（６）」で、locator「Ⅱ（６）」は誤り（Ⅱ（６）は傷病名表記の項）。定義・鍵（入院4日目発症の遅発性出血）は正しい。blind一致。",
+   "detail": "locator を「Ⅱ（６）」から「Ⅲ DPCコーディングの基本的な考え方（６）副傷病名の選択について」に修正（引用文・鍵・説明は不変）。",
+   "fixed": {
+    "key": "G2-S09-SUM-03",
+    "subject": "S09",
+    "subtopic": "退院時要約からの情報抽出",
+    "format": "summary",
+    "difficulty": "standard",
+    "polarity": "positive",
+    "caseId": "case-g2-s09-sum-01",
+    "question": "次の退院時要約（架空症例）を読み，DPC/PDPS傷病名コーディングテキストにいう「入院後発症疾患」に該当するものはどれか。",
+    "choices": [
+     "2型糖尿病",
+     "高血圧症",
+     "S状結腸癌",
+     "ESD後の遅発性出血",
+     "前立腺肥大症"
+    ],
+    "answer": 3,
+    "explanation": {
+     "correct": "コーディングテキストは，入院時併存症を入院時点で入院の契機となった傷病や医療資源病名とは別に既に存在した傷病，入院後発症疾患を入院期間中に発生した傷病としている。ESD後の遅発性出血は入院4日目に発症しており入院後発症疾患にあたる。",
+     "choiceNotes": [
+      "約10年前から存在する傷病で，入院後発症疾患ではなく入院時併存症にあたる。",
+      "約15年前から存在する傷病で，入院時併存症にあたる。",
+      "入院の契機となり，ESDを行った傷病（医療資源を最も投入した傷病名の候補）であり，入院後に発生したものではない。",
+      null,
+      "約5年前から存在する傷病で，入院時併存症にあたる。"
+     ],
+     "point": "入院時併存症＝入院時に既に存在，入院後発症疾患＝入院期間中に発生。"
+    },
+    "sources": [
+     {
+      "ref": "ins:dpc-coding-text-v7",
+      "title": "DPC/PDPS傷病名コーディングテキスト（第7版）",
+      "url": "https://www.mhlw.go.jp/content/12400000/001684575.pdf",
+      "locator": "Ⅲ DPCコーディングの基本的な考え方（６）副傷病名の選択について",
+      "quote": "「入院後発症疾患（入院後発症傷病名）」は入院期間中に発生した傷病である。"
+     }
+    ],
+    "asOf": "DPC/PDPS傷病名コーディングテキスト第7版（令和8年6月）"
+   }
+  },
+  {
+   "key": "G2-S09-SUM-04",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "3/28→4/15 の差＝18日（月またぎ、閏年の影響なし）。ガイダンス1)基本情報「入院日時ならびに退院日時（必須）」、stats:kanja-chosa-r5-gaikyou 利用上の注意(7)の文言を確認。blind一致。"
+  },
+  {
+   "key": "G2-S09-SUM-05",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:r08-kihon-shisetsukijun-tsuchi 第4 1(8)「退院日の翌日から起算して14日以内…毎月９割以上」「退院後30日以内…望ましい」を確認。4/16起算14日目＝4/29、4/28＝退院日起算、4/30＝15日目、5/15＝30日目。blind一致。"
+  },
+  {
+   "key": "G2-S09-SUM-06",
+   "verdict": "fix",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": false,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ガイダンス＜退院サマリーの構造＞: アレルギー・不適応反応は必須、デバイス・手術処置は推奨（該当時）。症例2にアレルギー欄なし、その他の選択肢は記載あり/該当なしで鍵は一意。ただし point「必須9項目（基本情報以外）」は誤り（記載心得2「11項目（必須項目9，推奨項目2）」は基本情報を含む数で、基本情報以外の必須は8）。blind一致。",
+   "detail": "point の「必須9項目（基本情報以外）」は誤り（必須9は基本情報を含む）。「11項目（必須9・推奨2）」の表現に修正。鍵・選択肢は不変。",
+   "fixed": {
+    "key": "G2-S09-SUM-06",
+    "subject": "S09",
+    "subtopic": "退院時要約からの情報抽出",
+    "format": "summary",
+    "difficulty": "standard",
+    "polarity": "positive",
+    "caseId": "case-g2-s09-sum-02",
+    "question": "次の退院時要約（架空症例）を読み，退院サマリー作成に関するガイダンスが必須記載項目とする項目のうち，この要約で記載が欠けているものはどれか。",
+    "choices": [
+     "デバイス情報",
+     "手術・処置情報",
+     "アレルギー・不適応反応",
+     "退院時使用薬剤情報",
+     "主訴，または入院理由"
+    ],
+    "answer": 2,
+    "explanation": {
+     "correct": "ガイダンスはアレルギー・不適応反応を必須記載項目とし，ない場合も「なし」等を登録する。本要約にはこの欄がない。デバイス情報と手術・処置情報は該当がある場合の推奨記載項目である。",
+     "choiceNotes": [
+      "デバイス情報は「デバイス装着がある場合」の推奨記載項目で，本例は植込み型医療機器がなく欠落にはあたらない。",
+      "手術・処置情報は「手術・処置で記載すべきものがある場合」の推奨記載項目で，本例は手術・処置を行っていない。",
+      null,
+      "フロセミド等が記載されている。",
+      "「息切れ，両下肢のむくみ」が記載されている。"
+     ],
+     "point": "退院サマリーは11項目（必須9・推奨2）で，アレルギー・不適応反応は必須（ない場合も「なし」と記載）。デバイス情報・手術・処置情報は推奨（該当時）。"
+    },
+    "sources": [
+     {
+      "ref": "him:jhim-discharge-summary-guidance-2019",
+      "title": "退院サマリー作成に関するガイダンス",
+      "url": "https://jhim-e.com/pdf/guidance.pdf",
+      "locator": "退院サマリーの構造",
+      "quote": "3) 〔アレルギー・不適応反応〕 ---- 退院サマリー必須記載項目"
+     },
+     {
+      "ref": "him:jhim-discharge-summary-guidance-2019",
+      "title": "退院サマリー作成に関するガイダンス",
+      "url": "https://jhim-e.com/pdf/guidance.pdf",
+      "locator": "退院サマリーの構造",
+      "quote": "4) 〔デバイス情報〕 ---- 退院サマリー推奨記載項目（デバイス装着がある場合）"
+     }
+    ],
+    "asOf": "退院サマリー作成に関するガイダンス（2019年9月）／診療情報の記録指針2024"
+   }
+  },
+  {
+   "key": "G2-S09-SUM-07",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "x-legacy-L08:kwtan-pomr-1981「1 WeedのいうPOMRとは」S＝患者の訴え、O＝診察所見や検査成績、A＝s,oに対する考え、P＝Dx/Rx/Ex。空腹時血糖＝O。blind一致。"
+  },
+  {
+   "key": "G2-S09-SUM-08",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "同POMR文献: 「改善傾向である」は評価（A）、教育計画（Ex）はPに含まれる。他の組合せは正。Q07とは同症例だが問う点が異なり重複でない。blind一致。"
+  },
+  {
+   "key": "G2-S09-SUM-09",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ガイダンス 記載心得7「当該診療科から処方される退院時処方を記載するのではなく…直近の退院後において使用される薬剤すべて」と10)「常用薬…すべての薬剤」を確認。3剤が正。blind一致。"
+  },
+  {
+   "key": "G2-S09-SUM-10",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ガイダンス 2)「軽快・不変・悪化・死亡…“軽快”は…治癒を含む」・記載心得3 iii「4択」を確認。症状消失のせん妄＝軽快。治癒・寛解は区分外。blind一致（medium）だが鍵は原文で一意。"
+  },
+  {
+   "key": "G2-S09-SUM-11",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ガイダンス 6)〔入院までの経過〕<現病歴>…入院適応の判断内容、<既往歴><家族歴><嗜好>（喫煙・飲酒）<常用薬情報>の項目を確認。①が現病歴。blind一致。"
+  },
+  {
+   "key": "G2-S09-SUM-12",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ガイダンス 2)「#（診断名番号）は当該入院中に主として対象とした疾病を先頭に…通常」を確認。手術対象の右大腿骨頸部骨折が#1。blind一致。"
+  }
+ ]
+}

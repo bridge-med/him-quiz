@@ -1,0 +1,16 @@
+{"answers":[
+{"key":"G3-S09-REC-01","answer":2,"confidence":"high","ambiguous":false,"note":"業務指針2026 5-2 1患者1ID"},
+{"key":"G3-S09-REC-02","answer":3,"confidence":"high","ambiguous":false,"note":"5-2 統合手順は情報システム部門と連携してあらかじめ定める"},
+{"key":"G3-S09-REC-03","answer":1,"confidence":"high","ambiguous":false,"note":"通知 第4 1(1) 診療録5年・手術記録等3年"},
+{"key":"G3-S09-REC-04","answer":0,"confidence":"high","ambiguous":false,"note":"5-1(2)(3) aとbが正、c d eは誤"},
+{"key":"G3-S09-REC-05","answer":3,"confidence":"high","ambiguous":false,"note":"H25改正 第2の2(3) 外部保存は保存義務を有する病院等の責任"},
+{"key":"G3-S09-REC-06","answer":0,"confidence":"high","ambiguous":false,"note":"GL7.0運用編 元の紙媒体も保存は極めて有効"},
+{"key":"G3-S09-REC-07","answer":3,"confidence":"high","ambiguous":false,"note":"3.1.6の要素に医療機器の一元的管理は無い(3.1.7の要素)"},
+{"key":"G3-S09-REC-08","answer":1,"confidence":"high","ambiguous":false,"note":"5-8(1)"},
+{"key":"G3-S09-REC-09","answer":4,"confidence":"medium","ambiguous":false,"note":"5-8(2)。職員・家族への配慮不要は誤りと判断(他選択肢は指針の記述通り)"},
+{"key":"G3-S09-REC-10","answer":2,"confidence":"high","ambiguous":false,"note":"5-9(3)"},
+{"key":"G3-S09-REC-11","answer":4,"confidence":"high","ambiguous":false,"note":"通知 第4 1(7)ア〜オに医薬品コードは無い"},
+{"key":"G3-S09-REC-12","answer":3,"confidence":"high","ambiguous":false,"note":"通知 第4 1(6)・2(3)"},
+{"key":"G3-S09-REC-13","answer":4,"confidence":"high","ambiguous":false,"note":"5-10(1)"},
+{"key":"G3-S09-REC-14","answer":3,"confidence":"high","ambiguous":false,"note":"通知 第4 1(7) 退院時要約作成後速やかに更新"}
+]}

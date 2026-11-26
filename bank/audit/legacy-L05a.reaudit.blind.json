@@ -1,0 +1,109 @@
+{
+ "answers": [
+  {
+   "key": "lg-05-00",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "blind answer from clinical knowledge; to verify against sources"
+  },
+  {
+   "key": "lg-05-01",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "blind answer from clinical knowledge; to verify against sources"
+  },
+  {
+   "key": "lg-05-02",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "blind answer from clinical knowledge; to verify against sources"
+  },
+  {
+   "key": "lg-05-03",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "blind answer from clinical knowledge; to verify against sources"
+  },
+  {
+   "key": "lg-05-04",
+   "answer": 3,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "blind answer from clinical knowledge; to verify against sources"
+  },
+  {
+   "key": "lg-05-05",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "blind answer from clinical knowledge; to verify against sources"
+  },
+  {
+   "key": "lg-05-06",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "blind answer from clinical knowledge; to verify against sources"
+  },
+  {
+   "key": "lg-05-07",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "blind answer from clinical knowledge; to verify against sources"
+  },
+  {
+   "key": "lg-05-08",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "blind answer from clinical knowledge; to verify against sources"
+  },
+  {
+   "key": "lg-05-09",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "blind answer from clinical knowledge; to verify against sources"
+  },
+  {
+   "key": "lg-05-10",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "blind answer from clinical knowledge; to verify against sources"
+  },
+  {
+   "key": "lg-05-11",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "blind answer from clinical knowledge; to verify against sources"
+  },
+  {
+   "key": "lg-05-13",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "blind answer from clinical knowledge; to verify against sources"
+  },
+  {
+   "key": "lg-05-14",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "blind answer from clinical knowledge; to verify against sources"
+  },
+  {
+   "key": "lg-05-15",
+   "answer": 3,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "blind answer from clinical knowledge; to verify against sources"
+  }
+ ]
+}

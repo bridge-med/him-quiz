@@ -1,0 +1,200 @@
+{
+ "verdicts": [
+  {
+   "key": "G7-S03-MIX-01",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "hakusho_h24 L80-98,482-487: 3機能（生活安定・向上/所得再分配/経済安定）、雇用保険のスタビライザー機能=経済安定機能。社会統合機能は記載なし。"
+  },
+  {
+   "key": "G7-S03-MIX-02",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:生活保護法 第11条第1項 8種類を確認。生業扶助のみ該当。"
+  },
+  {
+   "key": "G7-S03-MIX-03",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:生活保護法 第2条・第3条・第4条第2項/第3項・第34条第1項を確認。各誤肢の根拠一致。"
+  },
+  {
+   "key": "G7-S03-MIX-04",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "hakusho_h24 L885-889「労働保険」（労災保険・雇用保険）を確認。"
+  },
+  {
+   "key": "G7-S03-MIX-05",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:社会保障制度改革推進法 第2条第1〜4号を確認。第3号は社会保険制度を基本→税方式は誤り。"
+  },
+  {
+   "key": "G7-S03-MIX-06",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:r08-kisaiyoryo-betten1 診療報酬請求書 8(2) 結核適正医療＋精神通院医療等の併用で1枚でも公費件数2件を確認。"
+  },
+  {
+   "key": "G7-S03-MIX-07",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:感染症法 第37条の2第1〜4項（95/100、保健所長経由、診査協議会、六月で打切り）、第6条第12項・第40条第1項を確認。"
+  },
+  {
+   "key": "G7-S03-MIX-08",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:感染症法 第37条の2第1項(95/100)・第39条第1項(保険給付の限度で負担不要)。20000×(0.95−0.70)=5000を再計算。"
+  },
+  {
+   "key": "G7-S03-MIX-09",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:労災保険法 第14条第1項（第4日目から、給付基礎日額の100分の60）。7日×6000=42000を再計算。誤肢の計算根拠も一致。"
+  },
+  {
+   "key": "G7-S03-MIX-10",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:労災保険法 第12条の8第1項 7種類、law:健康保険法 第99条第1項（傷病手当金）を確認。"
+  },
+  {
+   "key": "G7-S03-MIX-11",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:高齢者医療確保法 第48条・第104条第1項/第2項・第106条・第107条第1項を確認。賦課期日=年度初日。"
+  },
+  {
+   "key": "G7-S03-MIX-12",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:高齢者医療確保法 第17条（機構の定義＝医療情報基盤・診療報酬審査支払機構）、第118条、第139条第1項第2号、第70条第4項を確認。現行名称で正しい。"
+  },
+  {
+   "key": "G7-S03-MIX-13",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:高齢者医療確保法 第51条第1号・第52条、law:国民健康保険法 第6条第9号、law:生活保護法 第34条第1項を確認。"
+  },
+  {
+   "key": "G7-S03-MIX-14",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:高齢者医療確保法 第56条第1〜3号、第86条第1項/第2項（傷病手当金は条例で行うことができる）を確認。"
+  }
+ ]
+}

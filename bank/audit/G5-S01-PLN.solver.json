@@ -1,0 +1,95 @@
+{
+ "answers": [
+  {
+   "key": "G5-S01-PLN-01",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "医療法30条の6第1項：在宅医療(30条の4第2項6号)は3年ごと、他は6年ごと"
+  },
+  {
+   "key": "G5-S01-PLN-02",
+   "answer": 4,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "医療法30条の4第2項5号：在宅医療は6事業に含まれない"
+  },
+  {
+   "key": "G5-S01-PLN-03",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "施行規則30条の29：三次医療圏は原則都道府県、特別事情で2以上／越境も可。二次医療圏は精神・結核等を除く"
+  },
+  {
+   "key": "G5-S01-PLN-04",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "医療計画作成指針：人口20万人未満・流入20%未満・流出20%以上"
+  },
+  {
+   "key": "G5-S01-PLN-05",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "施行規則30条の30第1号：療養・一般は二次医療圏ごと種別合計。精神・結核・感染症は都道府県ごと"
+  },
+  {
+   "key": "G5-S01-PLN-06",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "H29ガイドライン：C1=3,000点、C2=600点、C3=225点、175点未満は慢性期・在宅等。回リハは療養病床も含む"
+  },
+  {
+   "key": "G5-S01-PLN-07",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "2040ガイドライン：包括期は従来の回復期と高齢者救急等を併せたもの。慢性期ではない"
+  },
+  {
+   "key": "G5-S01-PLN-08",
+   "answer": 4,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "総確法2条：医療・介護・介護予防・住まい・自立した日常生活の支援。就労支援はなし"
+  },
+  {
+   "key": "G5-S01-PLN-09",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "介護保険法115条の45第2項4号：地域支援事業は市町村"
+  },
+  {
+   "key": "G5-S01-PLN-10",
+   "answer": 3,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "介護保険法115条の48第5項：守秘義務。会議の設置主体は市町村、民生委員も構成員"
+  },
+  {
+   "key": "G5-S01-PLN-11",
+   "answer": 3,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "医療体制通知：急変時の対応(3)②夜間・休日における輪番制の構築"
+  },
+  {
+   "key": "G5-S01-PLN-12",
+   "answer": 4,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "医療体制通知：積極的役割を担う医療機関が連携拠点となることも可能"
+  },
+  {
+   "key": "G5-S01-PLN-13",
+   "answer": 1,
+   "confidence": "medium",
+   "ambiguous": false,
+   "note": "a正(医療法70条の5)、c正(総確法6条で3分の2)。b営利事業者は除外、dは消費税増収分、e市町村計画は作成できる(任意)"
+  }
+ ]
+}

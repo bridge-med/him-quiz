@@ -1,0 +1,219 @@
+{
+ "verdicts": [
+  {
+   "key": "G6-S12-SUA-01",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "naiyou09 I21 包含(28日以内)・除外(再発性 I22.-/陳旧性 I25.2)、I22 注(以前の梗塞から28日以内)・I22.0/I22.1 細分類を確認。16日前下壁→今回前壁で I22.0 が一意。solver一致。"
+  },
+  {
+   "key": "G6-S12-SUA-02",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "naiyou09 I23 除外(同時発生 I21-I22／現在の合併症と明示なし I31/I51)、I23.6 名称、I51 除外(I23.-)、I24.0 名称を確認。入院時なし→第7病日出現・主治医が続発合併症と判断で I23.6。solver一致。"
+  },
+  {
+   "key": "G6-S12-SUA-03",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "naiyou09 I10-I15 除外(冠血管を障害するもの I20-I25)、I20-I25 注(疾病分類の期間)・包含(高血圧記載あり・追加コード)、I11 包含(I50, I51.4-I51.9)、naiyou04 .9 合併症を伴わないもの を確認。誤りは E のみ。solver一致。"
+  },
+  {
+   "key": "G6-S12-SUA-04",
+   "verdict": "fix",
+   "checks": {
+    "answer": true,
+    "distractors": false,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "instruction 4.4.3 ルール MB3、naiyou10 J20-J22 除外(COPD＋急性下気道感染症→J44.0／急性増悪NOS→J44.1)、J44.0・J96 を確認。キー J44.0 は正しい。",
+   "detail": "選択肢 J96.0（急性呼吸不全）は、呼吸困難の原因病態としてNPPVでケアされた急性呼吸不全も MB3 の再選択先と主張でき、ICD-10 2013年版の疾病コーディング規則に呼吸不全を主要病態から外す明文がないため、明確に誤りとは言えない（solver も medium で同点を指摘）。J96.0 を、J20－J22 の除外注で明確に否定できる J44.9（慢性閉塞性肺疾患，詳細不明）に差し替え、choiceNote を修正した。他は変更なし。",
+   "fixed": {
+    "key": "G6-S12-SUA-04",
+    "subject": "S12",
+    "subtopic": "退院時要約からのコーディング",
+    "format": "summary",
+    "difficulty": "advanced",
+    "polarity": "positive",
+    "question": "次の退院時要約（架空症例）を読み、主要病態の再選択ルールを適用して「主要病態」に付与するコードとして正しいものはどれか。",
+    "choices": [
+     "R06.0　呼吸困難",
+     "J44.1　急性増悪を伴う慢性閉塞性肺疾患，詳細不明",
+     "J44.0　急性下気道感染症を伴う慢性閉塞性肺疾患",
+     "J20.1　インフルエンザ菌による急性気管支炎",
+     "J44.9　慢性閉塞性肺疾患，詳細不明"
+    ],
+    "answer": 2,
+    "explanation": {
+     "correct": "主治医は症状（第ⅩⅧ章）の「呼吸困難」を主要病態に記載しているが、これは「その他の病態」に記載された慢性閉塞性肺疾患の急性増悪の症状であり、ケアは後者に対して行われているので、ルール MB3 により診断病態を主要病態として再選択する。その病態はインフルエンザ菌による急性気管支炎（急性下気道感染症）を契機とした急性増悪である。急性下気道感染症（J20－J22）は「急性下気道感染症を伴う慢性閉塞性肺疾患（J44.0）」を除外しており、両者を一つで表す J44.0 にコードする。",
+     "choiceNotes": [
+      "R06.0 は第ⅩⅧ章の症状。他に記載された診断病態の症状であり、ケアが診断病態に対して行われているので、ルール MB3 により主要病態には用いない。",
+      "J44.1 は急性増悪を伴うもののうち詳細不明のもの。本症例の急性増悪は急性気管支炎（急性下気道感染症）に伴うもので、J20－J22 の除外注により J44.0 に分類する。",
+      null,
+      "J20.1 はインフルエンザ菌による急性気管支炎だが、急性下気道感染症（J20－J22）は慢性閉塞性肺疾患に伴うもの（J44.0）を除外している。",
+      "J44.9 は詳細不明の慢性閉塞性肺疾患。本症例は急性下気道感染症（インフルエンザ菌による急性気管支炎）を伴う急性増悪と記載されており、J20－J22 の除外注によりこの組合せは J44.0 に分類する。"
+     ],
+     "point": "症状が主要病態に書かれ、原因の診断病態が別にある → MB3 で再選択。COPD＋急性下気道感染症 → J44.0。"
+    },
+    "sources": [
+     {
+      "ref": "icd:instruction",
+      "title": "疾病，傷害及び死因の統計分類提要 ICD-10（2013年版）準拠 第2巻 インストラクションマニュアル",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/instruction_all.pdf",
+      "locator": "4.4.3 ルール MB3",
+      "quote": "症状もしくは徴候（通常は第ⅩⅧ章に分類される）又は第ⅩⅨ章に分類される問題が「主要病態」として記載され、これが明らかに、他に記載された診断病態の徴候、症状又は問題であり、ケアが後者に対してなされたならば、「主要病態」として診断病態を"
+     },
+     {
+      "ref": "icd:naiyou10",
+      "title": "ICD-10（2013年版）準拠 内容例示表 第10章",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou10.pdf",
+      "locator": "J20－J22 除外",
+      "quote": "下記を伴う慢性閉塞性肺疾患： ・急性増悪 ＮＯＳ（Ｊ44．1） ・急性下気道感染症（Ｊ44．0）"
+     }
+    ],
+    "asOf": "ICD-10（2013年版）準拠（わが国の統計基準として2026年12月31日まで適用）",
+    "caseId": "case-g6-s12-sua-02"
+   }
+  },
+  {
+   "key": "G6-S12-SUA-05",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "naiyou01 B95-B98 注(一次コーディングに用いない・補助/追加コード)、B96.3/B95.3 名称、A49 除外(B95-B96)、naiyou10 J14・J20-J22 除外を確認。選択肢の名称はやや言い換えだが誤りなし。solver一致。"
+  },
+  {
+   "key": "G6-S12-SUA-06",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "naiyou10 J96 細分類(.0/.1/.9)、除外(R09.2 心呼吸不全・呼吸停止、J80 ARDS、J95)、任意の補足的細分類(I型/II型)を確認。solver一致。"
+  },
+  {
+   "key": "G6-S12-SUA-07",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "instruction 4.4.4 第Ⅳ章 E10-E14(.7 は多発合併症が主要病態で一つを選べないときのみ／個々は任意的追加コード、例13 E10.7)、naiyou04 共通4桁細分類を確認。E11.7 一意。solver一致。"
+  },
+  {
+   "key": "G6-S12-SUA-08",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "naiyou04 .3†(白内障 H28.0*・網膜症 H36.0*)、.4†(単ニューロパチー G59.0*・多発 G63.2*)、instruction 4.4.2 剣印星印(単一の病態の二つの異なる側面)を確認。誤りは B(網膜症は H36.0*)のみ。solver一致。"
+  },
+  {
+   "key": "G6-S12-SUA-09",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "naiyou04 E89.0(術後甲状腺機能低下症を包含)、E03 除外(処置後 E89.0)、E03.2/E03.4/E05.0 名称を確認。solver一致。"
+  },
+  {
+   "key": "G6-S12-SUA-10",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "instruction 4.4.2 複合分類項目 例8(腎不全＋高血圧性腎疾患→I12.0)、naiyou09 I12 包含(N18.-、腎硬化症)・除外(I15.-)、I13 包含(I11+I12)、naiyou14 N18 除外(高血圧を伴う慢性腎不全 I12.0)、N26 除外(高血圧性腎硬化症 I12.-)を確認。I12.9 は選択肢になく一意。solver一致。"
+  },
+  {
+   "key": "G6-S12-SUA-11",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "naiyou03 D63*、D63.0*(C00-D48†)、D63.8*(慢性腎臓病における貧血 ≧第3期 N18.3-N18.5†)を確認。他の選択肢は星印でない。solver一致。"
+  },
+  {
+   "key": "G6-S12-SUA-12",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "naiyou21 章注(国際比較・原死因コーディングに使用しない)、Z95 除外(T82.-)、Z95.1、Z95.5(冠血管形成術後状態 NOS)、Z99.2(透析用シャント・腎透析状態)を確認。透析未導入で D が誤り。solver一致。"
+  }
+ ]
+}

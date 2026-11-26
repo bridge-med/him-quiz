@@ -1,0 +1,109 @@
+{
+ "answers": [
+  {
+   "key": "G5-S03-RUL-01",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "療担規則9条 帳簿3年・診療録5年"
+  },
+  {
+   "key": "G5-S03-RUL-02",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "療担規則5条の2 領収証は無償交付。C(有償)が誤り"
+  },
+  {
+   "key": "G5-S03-RUL-03",
+   "answer": 3,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "療担規則18条 特殊療法は大臣定めるもののほか行ってはならない"
+  },
+  {
+   "key": "G5-S03-RUL-04",
+   "answer": 3,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "療担規則10条 通知事由は4項目。転医は含まれない"
+  },
+  {
+   "key": "G5-S03-RUL-05",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "療担規則20条 a正 b誤(研究目的不可) c正 d誤(リフィルは3回まで)"
+  },
+  {
+   "key": "G5-S03-RUL-06",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "健保法70条の2 管理者要件 病院で3年以上"
+  },
+  {
+   "key": "G5-S03-RUL-07",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "高確法 保険料徴収は市町村。広域連合は全市町村加入、保険料率は広域連合条例"
+  },
+  {
+   "key": "G5-S03-RUL-08",
+   "answer": 3,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "高確法53条2項 生保該当は該当日から喪失。「翌月から」が誤り"
+  },
+  {
+   "key": "G5-S03-RUL-09",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "高確法67条 1割/2割/3割の3区分"
+  },
+  {
+   "key": "G5-S03-RUL-10",
+   "answer": 4,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "koureisha_iryou_seido: 公費約5割・支援金約4割・保険料約1割"
+  },
+  {
+   "key": "G5-S03-RUL-11",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "高確法55条 継続入院でなければ従前の広域連合(A県)の被保険者のまま(住所地特例)"
+  },
+  {
+   "key": "G5-S03-RUL-12",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "記載要領別表1 生保12。難病54・精神通院21・結核適正10・高齢39"
+  },
+  {
+   "key": "G5-S03-RUL-13",
+   "answer": 3,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "記載要領 公費負担者番号=法別2+都道府県2+実施機関3+検証1=8桁"
+  },
+  {
+   "key": "G5-S03-RUL-14",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "労災法 通勤災害の療養給付は一部負担金200円を徴収(31条2項)。Cが誤り"
+  },
+  {
+   "key": "G5-S03-RUL-15",
+   "answer": 3,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "1事業場・通勤災害 労災保険の療養給付(複数事業労働者療養給付は複数事業労働者対象)"
+  }
+ ]
+}

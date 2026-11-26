@@ -1,0 +1,102 @@
+{
+ "answers": [
+  {
+   "key": "G7-S12-CON-01",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "I51.0 心中隔欠損，後天性"
+  },
+  {
+   "key": "G7-S12-CON-02",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "Q98.0 核型47,XXY"
+  },
+  {
+   "key": "G7-S12-CON-03",
+   "answer": 3,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "Q37.5 硬及び軟口蓋裂，片側性唇裂を伴うもの（Q37.1は硬口蓋のみ）"
+  },
+  {
+   "key": "G7-S12-CON-04",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "Q40.0 先天性肥厚性幽門狭窄（K31.1は成人）"
+  },
+  {
+   "key": "G7-S12-CON-05",
+   "answer": 3,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "naiyou17 Q33.0除外: のう胞性肺疾患 後天性又は詳細不明はJ98.4"
+  },
+  {
+   "key": "G7-S12-CON-06",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "naiyou22 U10.9 MIS-C"
+  },
+  {
+   "key": "G7-S12-CON-07",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "naiyou22 U07.0 EVALI 追加コード"
+  },
+  {
+   "key": "G7-S12-CON-08",
+   "answer": 4,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "U84.7除外: 多剤抗生物質のみはU83.7"
+  },
+  {
+   "key": "G7-S12-CON-09",
+   "answer": 3,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "U11注: 罹患の有無にかかわらず使用"
+  },
+  {
+   "key": "G7-S12-CON-10",
+   "answer": 3,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "naiyou02 注5 舌尖から舌下面へはC02.1"
+  },
+  {
+   "key": "G7-S12-CON-11",
+   "answer": 3,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "naiyou02 注5 食道及び胃はC16.0"
+  },
+  {
+   "key": "G7-S12-CON-12",
+   "answer": 3,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "naiyou02 注2 悪性褐色細胞腫はC74+E27.5"
+  },
+  {
+   "key": "G7-S12-CON-13",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "IM 4.2.7.5 a,d正。bは逆、brain/表3にあり、乳房なし"
+  },
+  {
+   "key": "G7-S12-CON-14",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "IM 4.2.7.5 肝は表3で続発、膵が原発→C25.9"
+  }
+ ]
+}

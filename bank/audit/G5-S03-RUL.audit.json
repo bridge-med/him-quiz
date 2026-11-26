@@ -1,0 +1,320 @@
+{
+ "verdicts": [
+  {
+   "key": "G5-S03-RUL-01",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "療担規則第9条（版施行日2026-06-01）本文3年・ただし書診療録5年を確認。solver一致。"
+  },
+  {
+   "key": "G5-S03-RUL-02",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "療担規則第2条の2・第2条の5第1項・第2条の6第1項・第5条の2第1項（正当な理由がない限り無償）・第6条（ただし書あり→「原則として」で正しい）を確認。solver一致。"
+  },
+  {
+   "key": "G5-S03-RUL-03",
+   "verdict": "fix",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": false,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "療担規則第18条・第19条第1項（治験等ただし書）・第22条（遅滞なく）を確認。key正、solver一致。",
+   "detail": "correct の「混合診療を原則として認めない考え方の根拠の一つ」はキャッシュ資料で裏付けられない記述のため削除し、条文の範囲の説明に置き換えた。",
+   "fixed": {
+    "key": "G5-S03-RUL-03",
+    "subject": "S03",
+    "subtopic": "保険医療機関と療養担当規則",
+    "format": "knowledge",
+    "difficulty": "standard",
+    "polarity": "positive",
+    "question": "保険医療機関及び保険医療養担当規則に定める保険医の診療について、正しいものはどれか。",
+    "choices": [
+     "保険医は、医薬品医療機器等法の承認を受けた医薬品であれば、厚生労働大臣の定める医薬品でなくても、患者に施用し、又は処方することができる。",
+     "保険医は、特殊な療法又は新しい療法等であっても、患者の同意があれば、保険診療として行うことができる。",
+     "保険医は、患者の診療を行った場合には、その月の末日までに診療録に必要な事項を記載すればよい。",
+     "保険医は、特殊な療法又は新しい療法等については、厚生労働大臣の定めるもののほか行ってはならない。",
+     "保険医は、特殊な療法又は新しい療法等については、厚生労働大臣の定めるものであっても行ってはならない。"
+    ],
+    "answer": 3,
+    "explanation": {
+     "correct": "療担規則第18条（特殊療法等の禁止）は、保険医は特殊な療法又は新しい療法等については厚生労働大臣の定めるもののほか行ってはならないと定める。大臣の定めるものは行うことができ、患者の同意による例外は設けられていない。",
+     "choiceNotes": [
+      "第19条第1項は、厚生労働大臣の定める医薬品以外の薬物を施用・処方してはならないと定める（治験等のただし書を除く）。承認の有無だけでは足りない。",
+      "第18条に患者の同意による例外はない。厚生労働大臣の定めるもの以外は行ってはならない。",
+      "第22条は、診療を行った場合には「遅滞なく」診療録に記載すると定める。月末までにまとめて記載すればよいわけではない。",
+      null,
+      "第18条は「厚生労働大臣の定めるもののほか」行ってはならないとするもので、大臣の定めるものは行うことができる。"
+     ],
+     "point": "療担規則：特殊療法は大臣の定めるもの以外禁止（第18条）、医薬品は大臣の定めるもの以外禁止（第19条）、診療録は遅滞なく記載（第22条）。"
+    },
+    "sources": [
+     {
+      "ref": "law:保険医療機関及び保険医療養担当規則",
+      "title": "保険医療機関及び保険医療養担当規則",
+      "url": "https://laws.e-gov.go.jp/law/332M50000100015",
+      "locator": "第18条",
+      "quote": "保険医は、特殊な療法又は新しい療法等については、厚生労働大臣の定めるもののほか行つてはならない。"
+     },
+     {
+      "ref": "law:保険医療機関及び保険医療養担当規則",
+      "title": "保険医療機関及び保険医療養担当規則",
+      "url": "https://laws.e-gov.go.jp/law/332M50000100015",
+      "locator": "第19条第1項",
+      "quote": "保険医は、厚生労働大臣の定める医薬品以外の薬物を患者に施用し、又は処方してはならない。"
+     },
+     {
+      "ref": "law:保険医療機関及び保険医療養担当規則",
+      "title": "保険医療機関及び保険医療養担当規則",
+      "url": "https://laws.e-gov.go.jp/law/332M50000100015",
+      "locator": "第22条",
+      "quote": "保険医は、患者の診療を行つた場合には、遅滞なく、様式第一号又はこれに準ずる様式の診療録に、当該診療に関し必要な事項を記載しなければならない。"
+     }
+    ],
+    "asOf": "2026-11 e-Gov現行法令"
+   }
+  },
+  {
+   "key": "G5-S03-RUL-04",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "療担規則第10条第1〜4号を確認。転医は含まれない。通知先（協会・健保組合）も条文どおり。solver一致。"
+  },
+  {
+   "key": "G5-S03-RUL-05",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "療担規則第20条第1号ハ・ヘ（治験ただし書）、第2号ヘ（14・30・90日分）、第3号ロ（リフィル3回まで）を確認。a・c正。solver一致。"
+  },
+  {
+   "key": "G5-S03-RUL-06",
+   "verdict": "fix",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": false,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "健保法第70条の2第1項第1号・第2号（病院に限る・3年以上）を確認。同項は改正法附則第1条第2号により令和8年4月1日施行、附則第7条（現管理者は3年間適用除外）・第8条（施行時の臨床研修等修了医師は読替え）の経過措置あり。key正、solver一致。",
+   "detail": "stem の「病院である保険医療機関の管理者となる場合」は、要件が管理する機関の種別で異なるかのように読める（条文は全保険医療機関の管理者に共通で、病院に限られるのは経験の場）。stem から「病院である」を削り、explanation に区別と施行日・経過措置を追記、附則の出典を追加。",
+   "fixed": {
+    "key": "G5-S03-RUL-06",
+    "subject": "S03",
+    "subtopic": "保険医療機関と療養担当規則",
+    "format": "knowledge",
+    "difficulty": "advanced",
+    "polarity": "positive",
+    "question": "健康保険法第70条の2第1項に定める保険医療機関の管理者の要件について、医師が保険医療機関の管理者となる場合の要件として、正しいものはどれか。",
+    "choices": [
+     "保険医であり、臨床研修の修了後に保険医療機関（病院に限る。）において保険医として1年以上診療に従事した経験等を有すること",
+     "保険医であり、臨床研修の修了後に保険医療機関（病院に限る。）において保険医として3年以上診療に従事した経験等を有すること",
+     "保険医であり、臨床研修の修了後に保険医療機関（病院に限る。）において保険医として5年以上診療に従事した経験等を有すること",
+     "保険医であり、臨床研修の修了後に保険医療機関（診療所に限る。）において保険医として3年以上診療に従事した経験等を有すること",
+     "保険医であることは要せず、医療法に定める病院の管理者の要件を満たしていること"
+    ],
+    "answer": 1,
+    "explanation": {
+     "correct": "健康保険法第70条の2第1項は、保険医療機関の管理者は、保険医であること（第1号）、及び医師の場合は医師法の臨床研修修了後に保険医療機関（病院に限る。）において保険医として3年以上診療に従事した経験その他の厚生労働省令で定める要件を備える者であること（第2号）の、いずれにも該当する者でなければならないと定める。管理する保険医療機関が病院か診療所かを問わず、経験を積む場が病院に限られる。なお、同項は令和8年4月1日施行の規定で、施行の際現に管理者である者等には附則の経過措置がある。",
+     "choiceNotes": [
+      "必要な経験年数は3年以上であり、1年以上ではない。",
+      null,
+      "必要な経験年数は3年以上であり、5年以上ではない。",
+      "医師の場合、経験を積む場は保険医療機関のうち病院に限られる（第70条の2第1項第2号）。診療所に限るのではない。",
+      "第70条の2第1項第1号により、管理者は保険医でなければならない。"
+     ],
+     "point": "保険医療機関の管理者＝保険医＋臨床研修修了後に保険医療機関（病院）で保険医として3年以上の経験等（健保法第70条の2）。"
+    },
+    "sources": [
+     {
+      "ref": "law:健康保険法",
+      "title": "健康保険法",
+      "url": "https://laws.e-gov.go.jp/law/211AC0000000070",
+      "locator": "第70条の2第1項",
+      "quote": "保険医療機関の管理者は、次に掲げる要件のいずれにも該当する者でなければならない。 一 保険医であること。"
+     },
+     {
+      "ref": "law:健康保険法",
+      "title": "健康保険法",
+      "url": "https://laws.e-gov.go.jp/law/211AC0000000070",
+      "locator": "第70条の2第1項第2号",
+      "quote": "臨床研修の修了後に保険医療機関（病院に限る。）において保険医として三年以上診療に従事した経験"
+     },
+     {
+      "ref": "law:健康保険法",
+      "title": "健康保険法",
+      "url": "https://laws.e-gov.go.jp/law/211AC0000000070",
+      "locator": "附則（令和8年4月1日施行分の経過措置）第7条",
+      "quote": "附則第一条第二号に掲げる規定の施行の際現に保険医療機関（健康保険法第六十三条第三項第一号に規定する保険医療機関をいう。以下この条において同じ。）の管理者である者については"
+     }
+    ],
+    "asOf": "2026-11 e-Gov現行法令"
+   }
+  },
+  {
+   "key": "G5-S03-RUL-07",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "高確法第48条（すべての市町村加入、保険料徴収事務を除く）、第50条第2号（障害認定は広域連合）、第104条第1項（市町村は保険料を徴収）・第2項（広域連合の条例）を確認。solver一致。"
+  },
+  {
+   "key": "G5-S03-RUL-08",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "高確法第51条第1号、第52条第1〜3号、第53条第2項（生保該当に至った日から喪失）を確認。第1項の「翌日」との区別も妥当。solver一致。"
+  },
+  {
+   "key": "G5-S03-RUL-09",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "高確法第67条第1項第1〜3号（100分の10・20・30）を確認（版施行日2026-10-01）。solver一致。"
+  },
+  {
+   "key": "G5-S03-RUL-10",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:koureisha-iryou-seido「高齢者医療制度の財政」図：公費約5割8.7兆円、支援金約4割、保険料約1割、令和6年度予算ベースを確認。年度は設問に明示。solver一致。"
+  },
+  {
+   "key": "G5-S03-RUL-11",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "高確法第55条第1項本文（入院により住所変更→従前の他広域連合の被保険者）と第1号、ただし書（継続入院）を確認。設問で継続入院を除外済み。solver一致。"
+  },
+  {
+   "key": "G5-S03-RUL-12",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:r08-kisaiyoryo-betten1 別添2別表1：生保12、難病特定医療54（51は特定疾患治療費等）、措置入院20・精神通院21、結核適正10・結核入院11、高確法39・国共済31を確認。locator「（３）」は設定要領第2の2の記述どおり（表見出しは（２））で許容。solver一致。"
+  },
+  {
+   "key": "G5-S03-RUL-13",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "同資料 設定要領第2の1「法別番号２桁、都道府県番号２桁、実施機関番号３桁、検証番号１桁、計８桁」を確認。solver一致。"
+  },
+  {
+   "key": "G5-S03-RUL-14",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "労災法第7条第1項・第2項、第31条第2項（療養給付の一部負担金200円以内、省令で除外者あり）、健保法第1条を確認。solver一致。"
+  },
+  {
+   "key": "G5-S03-RUL-15",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "労災法第7条第2項第1号、第12条の8第1項第1号、第20条の2・第20条の3、第22条第1項、健保法第55条第1項を確認。1事業場のみの設定で複数事業労働者を除外。solver一致。"
+  }
+ ]
+}

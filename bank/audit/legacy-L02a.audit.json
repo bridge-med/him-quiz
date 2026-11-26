@@ -1,0 +1,1168 @@
+{
+ "verdicts": [
+  {
+   "id": "lg-02-00",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "白書H23 1-2: 1961年に国保・国民年金への加入で皆保険・皆年金実現、1958年新国保法で1961年4月までに全市町村実施義務。介護保険法施行2000年（kaigo-hoken-gaiyo）。",
+   "detail": "旧解説「1961年に国民健康保険法の改正により」は不正確（新国民健康保険法は1958年成立・1959年施行で、1961年4月までの全市町村実施を義務づけ）。根拠のない「終戦の年」などの注を、正答年との対比で書き直した。",
+   "question": {
+    "id": "lg-02-00",
+    "legacy": {
+     "key": "2_0",
+     "chapter": 2,
+     "chapterName": "医療保険制度",
+     "index": 0,
+     "hash": "6df6a52abeae31fc"
+    },
+    "subject": "S03",
+    "subtopic": "社会保障制度の体系",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "国民皆保険制度が達成された年はどれか。",
+    "choices": [
+     "1961年",
+     "1945年",
+     "1975年",
+     "2000年"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "1958年に成立した新国民健康保険法により、1961年4月までに全市町村で国民健康保険を実施することが義務づけられ、1961（昭和36）年に国民健康保険・国民年金にそれまで未加入の自営業者等を加入させることで国民皆保険・皆年金が実現した。",
+     "choiceNotes": [
+      null,
+      "国民皆保険が実現したのは1961年であり、1945年ではない。",
+      "1975年は国民皆保険の実現年ではない（実現は1961年）。",
+      "2000年は介護保険法が施行された年であり、国民皆保険の実現年ではない。"
+     ],
+     "point": "国民皆保険・皆年金＝1961（昭和36）年。介護保険法の施行＝2000年。"
+    },
+    "sources": [
+     {
+      "ref": "x-legacy-L02a:hakusho-h23-1-2",
+      "title": "平成23年版厚生労働白書 第1部第2章 時代のニーズに対応した社会保障制度の発展を振り返る",
+      "url": "https://www.mhlw.go.jp/wp/hakusyo/kousei/11/dl/01-02.pdf",
+      "locator": "第1部第2章（国民皆保険・皆年金の実現）",
+      "quote": "1961（昭和 36）年に地域保険である国民健康保険、国民年金にこれらの者を加入させることで国民皆保険・皆年金が実現し"
+     },
+     {
+      "ref": "x-legacy-L02a:hakusho-h23-1-2",
+      "title": "平成23年版厚生労働白書 第1部第2章 時代のニーズに対応した社会保障制度の発展を振り返る",
+      "url": "https://www.mhlw.go.jp/wp/hakusyo/kousei/11/dl/01-02.pdf",
+      "locator": "第1部第2章（新国民健康保険法）",
+      "quote": "1958（昭和 33）年 3 月、① 1961（昭和 36）年 4 月から全市町村に事業の実施を義務づけること"
+     },
+     {
+      "ref": "ins:kaigo-hoken-gaiyo",
+      "title": "介護保険制度の概要",
+      "url": "https://www.mhlw.go.jp/content/001512842.pdf",
+      "locator": "介護保険制度の創設",
+      "quote": "1997年 介護保険法成立、2000年 介護保険法施行"
+     }
+    ],
+    "asOf": "平成23年版厚生労働白書（歴史的事実）",
+    "status": "provisional"
+   }
+  },
+  {
+   "id": "lg-02-01",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "白書R5資料編: 1点の単価10円。健保法76条1項（請求額＝費用額−一部負担金）・2項（厚生労働大臣が定める）、82条（中医協に諮問）。",
+   "detail": "旧問は「原則2年に1回改定」を正答の要件にしていたが、改定周期を定める規定・キャッシュ済み一次資料がなく裏づけ不能。法令と白書で確認できる内容（1点10円、厚生労働大臣が定める、中医協に諮問、一部負担金の控除）に組み替え、5択にした。",
+   "question": {
+    "id": "lg-02-01",
+    "legacy": {
+     "key": "2_1",
+     "chapter": 2,
+     "chapterName": "医療保険制度",
+     "index": 1,
+     "hash": "71c8ff785537c5af"
+    },
+    "subject": "S03",
+    "subtopic": "診療報酬制度",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "医科診療報酬の仕組みについて、正しいものはどれか。",
+    "choices": [
+     "診療報酬点数表の1点の単価は10円として計算される。",
+     "診療報酬点数表の1点の単価は1円として計算される。",
+     "療養の給付に要する費用の額は、都道府県知事が定めるところにより算定する。",
+     "厚生労働大臣は、療養の給付に要する費用の額を定めようとするときは、社会保障審議会に諮問する。",
+     "保険医療機関が保険者に請求できる額は、療養の給付に要する費用の額の全額である。"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "診療報酬は実施した医療行為ごとの点数を合計し、1点の単価を10円として計算される。",
+     "choiceNotes": [
+      null,
+      "1点の単価は10円であり、1円ではない。",
+      "療養の給付に要する費用の額は厚生労働大臣が定めるところにより算定する（健康保険法第76条第2項）。",
+      "厚生労働大臣が療養の給付に要する費用の額を定めようとするときは、中央社会保険医療協議会に諮問する（健康保険法第82条第1項）。",
+      "請求できる額は、療養の給付に要する費用の額から被保険者が支払う一部負担金に相当する額を控除した額である（健康保険法第76条第1項）。"
+     ],
+     "point": "1点＝10円。点数（費用の額）は厚生労働大臣が中医協に諮問して定める。医療機関の請求額＝費用の額－一部負担金。"
+    },
+    "sources": [
+     {
+      "ref": "x-legacy-L02a:hakusho-r05-shiryo-02",
+      "title": "令和5年版厚生労働白書 資料編 ２ 保健医療",
+      "url": "https://www.mhlw.go.jp/wp/hakusyo/kousei/23-2/dl/02.pdf",
+      "locator": "資料編 ２保健医療（診療報酬）",
+      "quote": "1点の単価を10円として計算される（いわゆる「出来高払い制」）"
+     },
+     {
+      "ref": "law:健康保険法",
+      "title": "健康保険法",
+      "url": "https://laws.e-gov.go.jp/law/211AC0000000070",
+      "locator": "第76条第1項・第2項",
+      "quote": "一部負担金に相当する額を控除した額とする。２ 前項の療養の給付に要する費用の額は、厚生労働大臣が定めるところにより、算定するものとする。"
+     },
+     {
+      "ref": "law:健康保険法",
+      "title": "健康保険法",
+      "url": "https://laws.e-gov.go.jp/law/211AC0000000070",
+      "locator": "第82条第1項",
+      "quote": "中央社会保険医療協議会に諮問するものとする"
+     }
+    ],
+    "asOf": "2026-11 e-Gov現行法令（健康保険法）／令和5年版厚生労働白書",
+    "status": "provisional"
+   }
+  },
+  {
+   "id": "lg-02-02",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:kougaku-page（2026-07-31更新）: 上限額超過分を支給、上限は年齢・所得別、70歳未満も対象、R8.8から年間上限新設。",
+   "detail": "令和8年8月から「年間上限」が新設され、旧ポイント「高額療養費＝月単位」は現行制度では不完全。選択肢「入院費用のみ」は根拠の引用枠に収まらないため「上限額は全国一律」に差し替え、解説・ポイントを現行制度（月の上限＋年間上限）に更新。",
+   "question": {
+    "id": "lg-02-02",
+    "legacy": {
+     "key": "2_2",
+     "chapter": 2,
+     "chapterName": "医療保険制度",
+     "index": 2,
+     "hash": "e56b362b0cfb23ef"
+    },
+    "subject": "S03",
+    "subtopic": "高額療養費と保険外併用療養費",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "高額療養費制度の説明として正しいのはどれか。",
+    "choices": [
+     "医療機関や薬局の窓口で支払った医療費が上限額を超えた場合に、その超えた額が支給される制度",
+     "年間の医療費が100万円を超えた場合に、自己負担が全額免除される制度",
+     "上限額が年齢や所得にかかわらず全国一律に定められている制度",
+     "70歳以上の者のみが対象となる制度"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "高額療養費制度は、家計の医療費負担が過重にならないよう、医療機関や薬局の窓口で支払う医療費が上限額を超えた場合に、その超えた額を支給する制度である。上限額は年齢や所得に応じて定められている。",
+     "choiceNotes": [
+      null,
+      "上限額を超えた分を支給する制度であり、一定額を超えると全額免除になる仕組みではない。令和8年8月からは年単位の上限額（年間上限）も設けられたが、これも上限を超えた分の負担を軽減するものである。",
+      "上限額は年齢や所得に応じて定められている。",
+      "70歳未満の者も対象であり、上限額は年齢に応じて定められている。"
+     ],
+     "point": "高額療養費＝窓口負担が上限額を超えた分を支給。上限額は年齢・所得で異なる。令和8年8月から年間上限も新設。"
+    },
+    "sources": [
+     {
+      "ref": "ins:kougaku-page",
+      "title": "高額療養費制度を利用される皆さまへ",
+      "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/iryouhoken/juuyou/kougakuiryou/index.html",
+      "locator": "高額療養費制度について",
+      "quote": "医療機関や薬局の窓口で支払う医療費が上限額を超えた場合、その超えた額を支給する「高額療養費制度」"
+     },
+     {
+      "ref": "ins:kougaku-page",
+      "title": "高額療養費制度を利用される皆さまへ",
+      "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/iryouhoken/juuyou/kougakuiryou/index.html",
+      "locator": "高額療養費制度について（上限額）",
+      "quote": "上限額は、年齢や所得に応じて定められており、例えば、令和８年８月からの制度においては、70歳未満・年収約370万円～約510万円の方であれば"
+     },
+     {
+      "ref": "ins:kougaku-page",
+      "title": "高額療養費制度を利用される皆さまへ",
+      "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/iryouhoken/juuyou/kougakuiryou/index.html",
+      "locator": "高額療養費制度について（年間上限）",
+      "quote": "令和８年７月までの制度では、月単位の上限額となっていますが、令和８年８月からは新たに年単位の上限額を設ける「年間上限」が設けられ"
+     }
+    ],
+    "asOf": "厚生労働省「高額療養費制度を利用される皆さまへ」2026-07-31更新（令和8年8月からの制度）",
+    "status": "provisional"
+   }
+  },
+  {
+   "id": "lg-02-03",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "高確法50条1号（75歳以上）・2号（65〜74歳は障害認定を受けた者）。施行2008年4月（白書R5資料編注）。",
+   "detail": "旧問の「対象年齢」は、65〜74歳でも障害認定で被保険者となる（第50条第2号）ため65歳以上が紛れる余地があった。問いを「障害認定によらず被保険者となる年齢」に限定し、根拠のない「高齢受給者証」の注を法の規定に沿う注に改めた。",
+   "question": {
+    "id": "lg-02-03",
+    "legacy": {
+     "key": "2_3",
+     "chapter": 2,
+     "chapterName": "医療保険制度",
+     "index": 3,
+     "hash": "90c2a99dff80acff"
+    },
+    "subject": "S03",
+    "subtopic": "後期高齢者医療制度",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "高齢者の医療の確保に関する法律において、後期高齢者医療広域連合の区域内に住所を有し、障害の認定を受けなくても後期高齢者医療の被保険者となるのは何歳以上の者か。",
+    "choices": [
+     "75歳以上",
+     "65歳以上",
+     "70歳以上",
+     "80歳以上"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "後期高齢者医療の被保険者は、広域連合の区域内に住所を有する75歳以上の者と、65歳以上75歳未満で政令で定める程度の障害の状態にある旨の広域連合の認定を受けた者である（第50条）。障害認定によらず被保険者となるのは75歳以上である。後期高齢者医療制度は2008年4月に施行された。",
+     "choiceNotes": [
+      null,
+      "65歳以上75歳未満の者は、障害の状態にある旨の広域連合の認定を受けた場合に限り被保険者となる（第50条第2号）。",
+      "70歳は後期高齢者医療の被保険者の年齢要件ではない（要件は75歳以上、または障害認定を受けた65歳以上75歳未満）。",
+      "80歳は後期高齢者医療の被保険者の年齢要件ではない（要件は75歳以上）。"
+     ],
+     "point": "後期高齢者医療の被保険者＝75歳以上＋障害認定を受けた65〜74歳（高確法第50条）。2008年4月施行。"
+    },
+    "sources": [
+     {
+      "ref": "law:高齢者の医療の確保に関する法律",
+      "title": "高齢者の医療の確保に関する法律",
+      "url": "https://laws.e-gov.go.jp/law/357AC0000000080",
+      "locator": "第50条第1号",
+      "quote": "後期高齢者医療広域連合の区域内に住所を有する七十五歳以上の者"
+     },
+     {
+      "ref": "law:高齢者の医療の確保に関する法律",
+      "title": "高齢者の医療の確保に関する法律",
+      "url": "https://laws.e-gov.go.jp/law/357AC0000000080",
+      "locator": "第50条第2号",
+      "quote": "六十五歳以上七十五歳未満の者であつて、厚生労働省令で定めるところにより、政令で定める程度の障害の状態にある旨の当該後期高齢者医療広域連合の認定を受けたもの"
+     },
+     {
+      "ref": "x-legacy-L02a:hakusho-r05-shiryo-02",
+      "title": "令和5年版厚生労働白書 資料編 ２ 保健医療",
+      "url": "https://www.mhlw.go.jp/wp/hakusyo/kousei/23-2/dl/02.pdf",
+      "locator": "資料編 ２保健医療（医療費の動向の注2）",
+      "quote": "後期高齢者医療制度の施行前である2008年3月までは老人医療費であり、施行以降である 2008年4月以降は後期高齢者医療費"
+     }
+    ],
+    "asOf": "2026-11 e-Gov現行法令",
+    "status": "provisional"
+   }
+  },
+  {
+   "id": "lg-02-04",
+   "verdict": "pass",
+   "contentChanged": false,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "介護保険法9条1号・2号、ins:kaigo-hoken-gaiyo（第2号は老化による病気＝特定疾病が原因の場合に給付）。令和8年改正（kaigo-hoken-kaisei-r08）でも被保険者の年齢区分の変更なし。",
+   "question": {
+    "id": "lg-02-04",
+    "legacy": {
+     "key": "2_4",
+     "chapter": 2,
+     "chapterName": "医療保険制度",
+     "index": 4,
+     "hash": "aebd2464d2a50862"
+    },
+    "subject": "S03",
+    "subtopic": "介護保険制度",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "介護保険の被保険者について正しいのはどれか。",
+    "choices": [
+     "第1号は65歳以上、第2号は40〜64歳",
+     "第1号は75歳以上、第2号は65〜74歳",
+     "すべての国民が被保険者",
+     "20歳以上が被保険者"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "第1号被保険者＝65歳以上（原因不問）、第2号被保険者＝40〜64歳の医療保険加入者（特定疾病のみ）。",
+     "choiceNotes": [
+      null,
+      "75歳は後期高齢者の区分。介護保険の第1号は65歳以上。",
+      "40歳以上であり全国民ではない。",
+      "40歳以上が被保険者。"
+     ],
+     "point": "介護保険＝40歳から。第1号＝65歳以上、第2号＝40〜64歳。"
+    },
+    "sources": [
+     {
+      "ref": "law:介護保険法",
+      "title": "介護保険法",
+      "url": "https://laws.e-gov.go.jp/law/409AC0000000123",
+      "locator": "第9条",
+      "quote": "市町村の区域内に住所を有する六十五歳以上の者（以下「第一号被保険者」という。）"
+     },
+     {
+      "ref": "law:介護保険法",
+      "title": "介護保険法",
+      "url": "https://laws.e-gov.go.jp/law/409AC0000000123",
+      "locator": "第9条第2号",
+      "quote": "市町村の区域内に住所を有する四十歳以上六十五歳未満の医療保険加入者（以下「第二号被保険者」という。）"
+     },
+     {
+      "ref": "ins:kaigo-hoken-gaiyo",
+      "title": "介護保険制度の概要",
+      "url": "https://www.mhlw.go.jp/content/001512842.pdf",
+      "locator": "介護保険制度の被保険者",
+      "quote": "65歳以上の者は原因を問わず要支援・要介護状態となったときに、40～64歳の者は末期 がんや関節リウマチ等の老化による病気が原因で要支援・要介護状態になった場合に"
+     }
+    ],
+    "asOf": "2026-11 e-Gov現行法令",
+    "status": "provisional"
+   }
+  },
+  {
+   "id": "lg-02-05",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:hokengai-heiyou-page: 一定のルールで保険診療との併用を認める／患者申出療養は患者の申出が起点・平成28年度創設／選定療養は保険導入を前提としない・差額ベッドは選定療養。",
+   "detail": "旧問は誤りの選択肢が「公立と私立の混合」「内科と外科の混合」など制度と無関係で、知識を問えていなかった（低品質）。また「混合診療は原則禁止」を直接述べる一次資料がキャッシュにない。保険外併用療養費の各類型の性格を問う形に作り直した（3区分の名称はlg-02-06が扱うため重複を避けた）。",
+   "question": {
+    "id": "lg-02-05",
+    "legacy": {
+     "key": "2_5",
+     "chapter": 2,
+     "chapterName": "医療保険制度",
+     "index": 5,
+     "hash": "dd471f742fbbd43e"
+    },
+    "subject": "S03",
+    "subtopic": "高額療養費と保険外併用療養費",
+    "format": "knowledge",
+    "difficulty": "standard",
+    "polarity": "positive",
+    "question": "保険診療と保険外の診療の併用について、正しいものはどれか。",
+    "choices": [
+     "保険収載されていない先進的な医療等は、一定のルールの下で保険診療との併用が認められている。",
+     "選定療養は、将来的な保険導入を前提として、その可否の評価を行うものである。",
+     "患者申出療養は、医師からの申出を起点とする仕組みとして創設された。",
+     "特別の療養環境（差額ベッド）の提供は、評価療養に分類される。"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "わが国では必要かつ適切な医療は基本的に保険収載したうえで、保険収載されていない先進的な医療等については、保険外併用療養費制度として、安全性・有効性等を確認するなどの一定のルールにより保険診療との併用を認めている。",
+     "choiceNotes": [
+      null,
+      "選定療養は将来的な保険導入を前提としないもので、患者の選択により特別の料金を支払って保険診療と併用するものである。",
+      "患者申出療養は、患者からの申出を起点とする仕組みとして平成28年度に創設された。",
+      "特別の療養環境（差額ベッド）は選定療養の類型である。"
+     ],
+     "point": "保険診療との併用は保険外併用療養費制度（評価療養・患者申出療養・選定療養）のルールの下で認められる。差額ベッド＝選定療養、患者申出療養＝患者の申出が起点（平成28年度～）。"
+    },
+    "sources": [
+     {
+      "ref": "ins:hokengai-heiyou-page",
+      "title": "保険外併用療養費制度について",
+      "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/iryouhoken/sensiniryo/index_00007.html",
+      "locator": "保険外併用療養費制度について",
+      "quote": "保険収載されていないものの、将来的な保険収載を目指す先進的な医療等については、保険外併用療養費制度として、安全性・有効性等を確認するなどの一定のルールにより保険診療との併用を認めています"
+     },
+     {
+      "ref": "ins:hokengai-heiyou-page",
+      "title": "保険外併用療養費制度について",
+      "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/iryouhoken/sensiniryo/index_00007.html",
+      "locator": "患者申出療養について",
+      "quote": "患者からの申出を起点とする新たな保険外併用療養の仕組みとして平成28年度から創設されました"
+     },
+     {
+      "ref": "ins:hokengai-heiyou-page",
+      "title": "保険外併用療養費制度について",
+      "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/iryouhoken/sensiniryo/index_00007.html",
+      "locator": "選定療養について",
+      "quote": "選定療養とは、保険外併用療養のうち、将来的な保険導入を前提としないもので、患者の選択により特別の料金を支払うことで保険外の診療と保険診療を併用するもののことです。選定療養には、現在以下の類型があります。特別の療養環境（差額ベッド）"
+     }
+    ],
+    "asOf": "厚生労働省「保険外併用療養費制度について」（2026-11閲覧）",
+    "status": "provisional"
+   }
+  },
+  {
+   "id": "lg-02-06",
+   "verdict": "pass",
+   "contentChanged": false,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:hokengai-heiyou-page（3分類、患者申出療養は平成28年度創設）、健保法63条2項3〜5号（評価療養・患者申出療養・選定療養の定義、選定療養＝特別の病室等）。",
+   "question": {
+    "id": "lg-02-06",
+    "legacy": {
+     "key": "2_6",
+     "chapter": 2,
+     "chapterName": "医療保険制度",
+     "index": 6,
+     "hash": "69de84c8908f4b69"
+    },
+    "subject": "S03",
+    "subtopic": "高額療養費と保険外併用療養費",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "保険外併用療養費の区分として正しいのはどれか。",
+    "choices": [
+     "評価療養・選定療養・患者申出療養",
+     "応急療養・計画療養・予防療養",
+     "基本療養・特別療養・先進療養",
+     "入院療養・外来療養・在宅療養"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "評価療養（先進医療・治験等）、選定療養（差額ベッド等）、患者申出療養（2016年創設）の3区分。",
+     "choiceNotes": [
+      null,
+      "そのような法的区分は存在しない。",
+      "正式な分類ではない。",
+      "療養の場の区分であり保険外併用療養費の区分ではない。"
+     ],
+     "point": "患者申出療養は2016年から追加された新しい類型。"
+    },
+    "sources": [
+     {
+      "ref": "ins:hokengai-heiyou-page",
+      "title": "保険外併用療養費制度について",
+      "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/iryouhoken/sensiniryo/index_00007.html",
+      "locator": "保険外併用療養費制度について",
+      "quote": "保険外併用療養費制度は、大きく「評価療養」、「患者申出療養」、「選定療養」に分類されます"
+     },
+     {
+      "ref": "ins:hokengai-heiyou-page",
+      "title": "保険外併用療養費制度について",
+      "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/iryouhoken/sensiniryo/index_00007.html",
+      "locator": "患者申出療養について",
+      "quote": "患者からの申出を起点とする新たな保険外併用療養の仕組みとして平成28年度から創設されました"
+     },
+     {
+      "ref": "law:健康保険法",
+      "title": "健康保険法",
+      "url": "https://laws.e-gov.go.jp/law/211AC0000000070",
+      "locator": "第63条第2項第5号",
+      "quote": "被保険者の選定に係る特別の病室の提供その他の厚生労働大臣が定める療養（以下「選定療養」という。）"
+     }
+    ],
+    "asOf": "2026-11 e-Gov現行法令（健康保険法）／厚生労働省「保険外併用療養費制度について」",
+    "status": "provisional"
+   }
+  },
+  {
+   "id": "lg-02-07",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "健保法76条5項（審査・支払事務の委託先＝基盤機構又は国保連合会、2026-10-01施行版）、ins:hpdx-kaiso（令和8年10月改組）、ins:kokuho-shinsa-seido。ブラインド解答者も旧称を指摘。",
+   "detail": "正答の「社会保険診療報酬支払基金」は2026年10月1日に「医療情報基盤・診療報酬審査支払機構」に改組されており旧称。現行名称に改め、問いに時点を明記。注の「都道府県と市区町村」も根拠に沿う表現にした。",
+   "question": {
+    "id": "lg-02-07",
+    "legacy": {
+     "key": "2_7",
+     "chapter": 2,
+     "chapterName": "医療保険制度",
+     "index": 7,
+     "hash": "f8b30a8e6634b24e"
+    },
+    "subject": "S03",
+    "subtopic": "審査支払とレセプト",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "2026年11月時点で、保険者が診療報酬の審査・支払の事務を委託する審査支払機関の組み合わせとして正しいものはどれか。",
+    "choices": [
+     "医療情報基盤・診療報酬審査支払機構と国民健康保険団体連合会",
+     "厚生労働省と財務省",
+     "日本医師会と日本看護協会",
+     "都道府県と市区町村"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "健康保険法第76条第5項により、保険者は審査・支払の事務を医療情報基盤・診療報酬審査支払機構（基盤機構）又は国民健康保険団体連合会（国保連合会）に委託できる。社会保険診療報酬支払基金は令和8年（2026年）10月に医療情報基盤・診療報酬審査支払機構となった。",
+     "choiceNotes": [
+      null,
+      "行政機関であり、審査支払機関ではない。",
+      "職能団体であり、審査・支払の事務を受託する機関ではない。",
+      "市区町村は国民健康保険の保険者であり、審査支払機関ではない。"
+     ],
+     "point": "審査支払機関＝医療情報基盤・診療報酬審査支払機構（旧・社会保険診療報酬支払基金、2026年10月改組）と国民健康保険団体連合会。"
+    },
+    "sources": [
+     {
+      "ref": "law:健康保険法",
+      "title": "健康保険法",
+      "url": "https://laws.e-gov.go.jp/law/211AC0000000070",
+      "locator": "第76条第5項",
+      "quote": "医療情報基盤・診療報酬審査支払機構法（昭和二十三年法律第百二十九号）による医療情報基盤・診療報酬審査支払機構（以下「基盤機構」という。）又は国民健康保険法第四十五条第五項に規定する国民健康保険団体連合会"
+     },
+     {
+      "ref": "ins:hpdx-kaiso",
+      "title": "令和8年10月より支払基金はDX審査支払機構となりました",
+      "url": "https://www.hpdx.or.jp/about/s_kaikaku/dxkikou_oshirase_1.html",
+      "locator": "お知らせ（タイトル）",
+      "quote": "令和8年10月より支払基金はDX審査支払機構となりました"
+     },
+     {
+      "ref": "ins:kokuho-shinsa-seido",
+      "title": "診療報酬の審査制度",
+      "url": "https://www.kokuho.or.jp/inspect/inspect_rezept.html",
+      "locator": "診療報酬の審査制度",
+      "quote": "各都道府県にある審査支払機関（国保の場合は国民健康保険団体連合会）に請求をすることが出来ます"
+     }
+    ],
+    "asOf": "2026-11 e-Gov現行法令（健康保険法 2026-10-01施行版）",
+    "status": "provisional"
+   }
+  },
+  {
+   "id": "lg-02-08",
+   "verdict": "pass",
+   "contentChanged": false,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:dpc-gaiyo-kangaekata: 急性期入院医療対象、包括評価部分（1日当たり点数×在院日数×医療機関別係数）＋出来高評価部分（手術・麻酔等）。DPC→S10へ再分類。",
+   "question": {
+    "id": "lg-02-08",
+    "legacy": {
+     "key": "2_8",
+     "chapter": 2,
+     "chapterName": "医療保険制度",
+     "index": 8,
+     "hash": "4ce194806fe7212d"
+    },
+    "subject": "S10",
+    "subtopic": "DPC/PDPSの仕組み",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "DPC/PDPSの包括払いについて正しいのはどれか。",
+    "choices": [
+     "入院1日当たりの定額を診断群分類に基づき算定",
+     "すべての医療費を1回の入院で定額とする方式",
+     "外来診療にも適用される",
+     "医療機関の規模に関わらず同一点数"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "DPC/PDPSは入院1日当たりの包括点数を診断群分類に基づき算定。手術等は出来高。",
+     "choiceNotes": [
+      null,
+      "手術料等は出来高で別途算定。",
+      "入院のみが対象。",
+      "医療機関別係数があり病院ごとに異なる。"
+     ],
+     "point": "DPC＝入院1日定額。手術・麻酔は出来高。医療機関別係数あり。"
+    },
+    "sources": [
+     {
+      "ref": "ins:dpc-gaiyo-kangaekata",
+      "title": "DPC制度（DPC/PDPS）の概要と基本的な考え方",
+      "url": "https://www.mhlw.go.jp/file/05-Shingikai-12404000-Hokenkyoku-Iryouka/0000142247.pdf",
+      "locator": "１．（１）これまでの経緯",
+      "quote": "急性期入院医療を対象とした診療報酬の包括評価制度である"
+     },
+     {
+      "ref": "ins:dpc-gaiyo-kangaekata",
+      "title": "DPC制度（DPC/PDPS）の概要と基本的な考え方",
+      "url": "https://www.mhlw.go.jp/file/05-Shingikai-12404000-Hokenkyoku-Iryouka/0000142247.pdf",
+      "locator": "１．（２）②包括点数の設定方法",
+      "quote": "診療報酬の額は、DPC（診断群分類）毎に設定される包括評価部分と出来高評価部分の合計額となる。包括評価部分は、１日当たり点数（３段階の階段設定）に在院日数と医療機関ごとに設定された係数（医療機関別係数）を乗じて算出される。"
+     }
+    ],
+    "asOf": "DPC制度の概要と基本的な考え方（中医協資料、平成28年）。包括評価部分×在院日数×医療機関別係数＋出来高評価部分の構造は令和8年度も同じ",
+    "status": "provisional"
+   }
+  },
+  {
+   "id": "lg-02-09",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "白書R5資料編（出来高払い制＝行為ごとに点数を加算、1点10円）、ins:dpc-gaiyo-kangaekata（1日当たり点数）。",
+   "detail": "正答・選択肢は妥当だが、注「月額定額は人頭払いに近い概念」「年間総額決定は総額予算制」とポイント「外来＝出来高、入院＝DPCが主流」は根拠がなく不正確（DPC/PDPSは対象病院の急性期入院に限られ、出来高評価部分も含む）。注とポイントを根拠のある内容に改め、正答だけが長い手がかりを避けるため誤りの選択肢の文を補った。",
+   "question": {
+    "id": "lg-02-09",
+    "legacy": {
+     "key": "2_9",
+     "chapter": 2,
+     "chapterName": "医療保険制度",
+     "index": 9,
+     "hash": "f6e9a46e277a443b"
+    },
+    "subject": "S03",
+    "subtopic": "診療報酬制度",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "出来高払い方式の説明として正しいのはどれか。",
+    "choices": [
+     "実施した診療行為ごとに点数を積み上げて算定する",
+     "入院1日当たりの定額の点数に在院日数を乗じて算定する",
+     "患者1人当たり月額の定額で算定する",
+     "医療機関ごとに年間の総額をあらかじめ決めて配分する"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "出来高払いは、原則として実施した医療行為ごとに、それぞれの項目に対応した点数を加えて算定する方式で、1点の単価を10円として計算される。",
+     "choiceNotes": [
+      null,
+      "入院1日当たりの定額で算定するのは包括払いの考え方であり、DPC/PDPSの包括評価部分（1日当たり点数×在院日数×医療機関別係数）がその例である。",
+      "月ごとの定額で算定する方式は、行為ごとに点数を積み上げる出来高払いではない。",
+      "年間の総額を事前に決める方式は、行為ごとに点数を積み上げる出来高払いではない。"
+     ],
+     "point": "出来高払い＝実施した医療行為ごとに点数を積み上げ（1点10円）。DPC/PDPS＝包括評価部分（1日当たり点数）＋出来高評価部分。"
+    },
+    "sources": [
+     {
+      "ref": "x-legacy-L02a:hakusho-r05-shiryo-02",
+      "title": "令和5年版厚生労働白書 資料編 ２ 保健医療",
+      "url": "https://www.mhlw.go.jp/wp/hakusyo/kousei/23-2/dl/02.pdf",
+      "locator": "資料編 ２保健医療（診療報酬）",
+      "quote": "原則として実施した医療行為ごとに、それぞれの項目に対応した点数が加えられ、1点の単価を10円として計算される（いわゆる「出来高払い制」）"
+     },
+     {
+      "ref": "ins:dpc-gaiyo-kangaekata",
+      "title": "DPC制度（DPC/PDPS）の概要と基本的な考え方",
+      "url": "https://www.mhlw.go.jp/file/05-Shingikai-12404000-Hokenkyoku-Iryouka/0000142247.pdf",
+      "locator": "１．（２）②包括点数の設定方法",
+      "quote": "包括評価部分は、１日当たり点数（３段階の階段設定）に在院日数と医療機関ごとに設定された係数（医療機関別係数）を乗じて算出される"
+     }
+    ],
+    "asOf": "令和5年版厚生労働白書／DPC制度の概要と基本的な考え方",
+    "status": "provisional"
+   }
+  },
+  {
+   "id": "lg-02-10",
+   "verdict": "pass",
+   "contentChanged": false,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:kokuho-shinsa-seido（1か月分をまとめた明細書＝レセプトで保険者に請求、審査支払機関経由）、記載要領第3 1(3)（被保険者ごとに1枚）。",
+   "question": {
+    "id": "lg-02-10",
+    "legacy": {
+     "key": "2_10",
+     "chapter": 2,
+     "chapterName": "医療保険制度",
+     "index": 10,
+     "hash": "d87bb853a9da9211"
+    },
+    "subject": "S03",
+    "subtopic": "審査支払とレセプト",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "レセプトの説明として正しいのはどれか。",
+    "choices": [
+     "医療機関が保険者に診療報酬を請求するための明細書",
+     "患者が保険料を支払うための請求書",
+     "審査支払機関が医療機関を評価する報告書",
+     "厚労省が医療費を集計する統計表"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "レセプトは医療機関が審査支払機関を通じて保険者に診療報酬を請求する明細書。患者ごと月ごとに作成。",
+     "choiceNotes": [
+      null,
+      "患者の保険料支払い書類ではない。",
+      "請求書であり評価報告書ではない。",
+      "本来の目的は請求。二次的に統計利用される。"
+     ],
+     "point": "レセプト＝医療機関→審査支払機関→保険者。月単位作成。"
+    },
+    "sources": [
+     {
+      "ref": "ins:kokuho-shinsa-seido",
+      "title": "診療報酬の審査制度",
+      "url": "https://www.kokuho.or.jp/inspect/inspect_rezept.html",
+      "locator": "診療報酬の審査制度",
+      "quote": "１ヶ月分の診療行為をまとめた診療（調剤）報酬明細書（レセプトと呼びます）※で請求します"
+     },
+     {
+      "ref": "ins:kokuho-shinsa-seido",
+      "title": "診療報酬の審査制度",
+      "url": "https://www.kokuho.or.jp/inspect/inspect_rezept.html",
+      "locator": "診療報酬の審査制度",
+      "quote": "各都道府県にある審査支払機関（国保の場合は国民健康保険団体連合会）に請求をすることが出来ます"
+     },
+     {
+      "ref": "ins:r08-kisaiyoryo-betten1",
+      "title": "「診療報酬請求書等の記載要領等について」等の一部改正について（令和８年３月27日保医発0327第２号）別添１",
+      "url": "https://www.mhlw.go.jp/content/12400000/001757375.pdf",
+      "locator": "第3 1(3)",
+      "quote": "同一の被保険者等が２以上の傷病について診療を受けた場合においても、１枚の明細書に併せて記載すること"
+     }
+    ],
+    "asOf": "国民健康保険中央会「診療報酬の審査制度」（2026-11閲覧）／令和8年3月27日保医発0327第2号",
+    "status": "provisional"
+   }
+  },
+  {
+   "id": "lg-02-11",
+   "verdict": "pass",
+   "contentChanged": false,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "生活保護法15条（医療扶助）、障害者総合支援法58条（市町村等が自立支援医療費を支給）、感染症法37条1項（都道府県が入院医療費を負担）。民間保険は公費でない。",
+   "question": {
+    "id": "lg-02-11",
+    "legacy": {
+     "key": "2_11",
+     "chapter": 2,
+     "chapterName": "医療保険制度",
+     "index": 11,
+     "hash": "b39058c6c05acb32"
+    },
+    "subject": "S03",
+    "subtopic": "公費負担医療と労災",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "negative",
+    "question": "公費負担医療に該当しないのはどれか。",
+    "choices": [
+     "生活保護法の医療扶助",
+     "自立支援医療",
+     "感染症法の入院医療",
+     "民間の医療保険による給付"
+    ],
+    "answer": 3,
+    "explanation": {
+     "correct": "公費負担医療は国・地方公共団体が公費で負担する制度。民間医療保険は公費ではない。",
+     "choiceNotes": [
+      "医療扶助は代表的な公費負担医療。",
+      "自立支援医療は公費負担医療に含まれる。",
+      "感染症法の入院医療費は公費負担対象。",
+      null
+     ],
+     "point": "公費負担医療＝法律に基づき国・自治体が負担。民間保険は公費ではない。"
+    },
+    "sources": [
+     {
+      "ref": "law:生活保護法",
+      "title": "生活保護法",
+      "url": "https://laws.e-gov.go.jp/law/325AC0000000144",
+      "locator": "第15条",
+      "quote": "医療扶助は、困窮のため最低限度の生活を維持することのできない者に対して、左に掲げる事項の範囲内において行われる"
+     },
+     {
+      "ref": "law:障害者の日常生活及び社会生活を総合的に支援するための法律",
+      "title": "障害者の日常生活及び社会生活を総合的に支援するための法律",
+      "url": "https://laws.e-gov.go.jp/law/417AC0000000123",
+      "locator": "第58条第1項",
+      "quote": "当該指定自立支援医療に要した費用について、自立支援医療費を支給する"
+     },
+     {
+      "ref": "law:感染症の予防及び感染症の患者に対する医療に関する法律",
+      "title": "感染症の予防及び感染症の患者に対する医療に関する法律",
+      "url": "https://laws.e-gov.go.jp/law/410AC0000000114",
+      "locator": "第37条第1項",
+      "quote": "当該患者が感染症指定医療機関において受ける次に掲げる医療に要する費用を負担する"
+     }
+    ],
+    "asOf": "2026-11 e-Gov現行法令",
+    "status": "provisional"
+   }
+  },
+  {
+   "id": "lg-02-12",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "労災保険法1条（業務上・複数業務要因・通勤）、2条（政府が管掌）、7条1項（業務災害・複数業務要因災害・通勤災害・二次健康診断等給付）。",
+   "detail": "注「業務災害・通勤災害のみが対象」は誤り（複数業務要因災害・二次健康診断等給付もある、第7条）。「保険料は全額事業主負担」「年齢制限はない」はキャッシュ済み資料で裏づけられない（徴収法未収録）ため、選択肢を法の条文で判定できるもの（管掌者、二次健康診断等給付）に差し替えた。",
+   "question": {
+    "id": "lg-02-12",
+    "legacy": {
+     "key": "2_12",
+     "chapter": 2,
+     "chapterName": "医療保険制度",
+     "index": 12,
+     "hash": "e8b1001f42abdaa6"
+    },
+    "subject": "S03",
+    "subtopic": "公費負担医療と労災",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "労災保険の説明として正しいのはどれか。",
+    "choices": [
+     "業務上の事由や通勤による労働者の負傷・疾病等に対して保険給付を行う。",
+     "業務と関係のない私傷病も含め、労働者のすべての傷病に保険給付を行う。",
+     "市町村が保険者として管掌する。",
+     "保険給付には、二次健康診断等給付は含まれない。"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "労災保険は、業務上の事由、複数事業労働者の二以上の事業の業務を要因とする事由又は通勤による労働者の負傷、疾病、障害、死亡等に対して保険給付を行う（第1条）。",
+     "choiceNotes": [
+      null,
+      "対象は業務災害・複数業務要因災害・通勤災害等であり、業務と関係のない私傷病は対象外である（第7条）。",
+      "労災保険は政府が管掌する（第2条）。",
+      "保険給付には、業務災害・複数業務要因災害・通勤災害に関する保険給付のほか、二次健康診断等給付が含まれる（第7条第1項第4号）。"
+     ],
+     "point": "労災保険＝政府が管掌。業務災害・複数業務要因災害・通勤災害＋二次健康診断等給付。"
+    },
+    "sources": [
+     {
+      "ref": "law:労働者災害補償保険法",
+      "title": "労働者災害補償保険法",
+      "url": "https://laws.e-gov.go.jp/law/322AC0000000050",
+      "locator": "第1条",
+      "quote": "業務上の事由、事業主が同一人でない二以上の事業に使用される労働者（以下「複数事業労働者」という。）の二以上の事業の業務を要因とする事由又は通勤による労働者の負傷、疾病、障害、死亡等に対して"
+     },
+     {
+      "ref": "law:労働者災害補償保険法",
+      "title": "労働者災害補償保険法",
+      "url": "https://laws.e-gov.go.jp/law/322AC0000000050",
+      "locator": "第2条",
+      "quote": "労働者災害補償保険は、政府が、これを管掌する。"
+     },
+     {
+      "ref": "law:労働者災害補償保険法",
+      "title": "労働者災害補償保険法",
+      "url": "https://laws.e-gov.go.jp/law/322AC0000000050",
+      "locator": "第7条第1項第3号・第4号",
+      "quote": "三 労働者の通勤による負傷、疾病、障害又は死亡（以下「通勤災害」という。）に関する保険給付 四 二次健康診断等給付"
+     }
+    ],
+    "asOf": "2026-11 e-Gov現行法令（労働者災害補償保険法 2026-07-17施行版）",
+    "status": "provisional"
+   }
+  },
+  {
+   "id": "lg-02-13",
+   "verdict": "pass",
+   "contentChanged": false,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "健保法70条1項・72条1項（保険医療機関・保険医は厚生労働省令に従う）、療担規則（昭和32年厚生省令第15号）第2条以下。",
+   "question": {
+    "id": "lg-02-13",
+    "legacy": {
+     "key": "2_13",
+     "chapter": 2,
+     "chapterName": "医療保険制度",
+     "index": 13,
+     "hash": "817cdaf813b86926"
+    },
+    "subject": "S03",
+    "subtopic": "保険医療機関と療養担当規則",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "療養担当規則について正しいのはどれか。",
+    "choices": [
+     "保険医療機関及び保険医が保険診療で遵守すべき規則",
+     "患者が療養中に守るべき規則",
+     "保険者が保険料を徴収する規則",
+     "製薬会社が薬価を決定する規則"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "療養担当規則は保険医療機関と保険医が保険診療で遵守すべき事項を定めた厚労省令。",
+     "choiceNotes": [
+      null,
+      "医療提供側の規則であり患者のルールではない。",
+      "保険料徴収の規則ではない。",
+      "薬価決定とは異なる。"
+     ],
+     "point": "療担規則＝保険医療機関・保険医の義務。保険診療のルールブック。"
+    },
+    "sources": [
+     {
+      "ref": "law:健康保険法",
+      "title": "健康保険法",
+      "url": "https://laws.e-gov.go.jp/law/211AC0000000070",
+      "locator": "第70条第1項",
+      "quote": "厚生労働省令で定めるところにより、療養の給付を担当しなければならない"
+     },
+     {
+      "ref": "law:健康保険法",
+      "title": "健康保険法",
+      "url": "https://laws.e-gov.go.jp/law/211AC0000000070",
+      "locator": "第72条第1項",
+      "quote": "保険医療機関において診療に従事する保険医又は保険薬局において調剤に従事する保険薬剤師は、厚生労働省令で定めるところにより、健康保険の診療又は調剤に当たらなければならない"
+     },
+     {
+      "ref": "law:保険医療機関及び保険医療養担当規則",
+      "title": "保険医療機関及び保険医療養担当規則",
+      "url": "https://laws.e-gov.go.jp/law/332M50000100015",
+      "locator": "第2条",
+      "quote": "保険医療機関は、懇切丁寧に療養の給付を担当しなければならない"
+     }
+    ],
+    "asOf": "2026-11 e-Gov現行法令（療養担当規則 2026-06-01施行版、健康保険法）",
+    "status": "provisional"
+   }
+  },
+  {
+   "id": "lg-02-14",
+   "verdict": "pass",
+   "contentChanged": false,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "MHLW特定健診ページ（対象40〜74歳、メタボに着目、第1期2008年度〜）、高確法20条（保険者が40歳以上の加入者に実施）。75歳以上は後期の被保険者で高確法7条4項の加入者に含まれない。",
+   "question": {
+    "id": "lg-02-14",
+    "legacy": {
+     "key": "2_14",
+     "chapter": 2,
+     "chapterName": "医療保険制度",
+     "index": 14,
+     "hash": "7fd2314d7bdf45f0"
+    },
+    "subject": "S03",
+    "subtopic": "後期高齢者医療制度",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "特定健診の対象年齢として正しいのはどれか。",
+    "choices": [
+     "40〜74歳",
+     "20歳以上すべて",
+     "65〜74歳",
+     "75歳以上"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "特定健診は40〜74歳の医療保険加入者が対象。メタボリックシンドロームに着目。2008年開始。",
+     "choiceNotes": [
+      null,
+      "40〜74歳が対象。",
+      "65歳からではなく40歳から。",
+      "75歳以上は後期高齢者医療制度。"
+     ],
+     "point": "特定健診＝40〜74歳。メタボ健診。2008年開始。"
+    },
+    "sources": [
+     {
+      "ref": "x-legacy-L02a:mhlw-tokutei-kenshin",
+      "title": "特定健診・特定保健指導について",
+      "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000161103.html",
+      "locator": "特定健診とは",
+      "quote": "生活習慣病の予防のために、対象者（40歳～74歳）の方にメタボリックシンドロームに着目した健診を行います"
+     },
+     {
+      "ref": "law:高齢者の医療の確保に関する法律",
+      "title": "高齢者の医療の確保に関する法律",
+      "url": "https://laws.e-gov.go.jp/law/357AC0000000080",
+      "locator": "第20条",
+      "quote": "保険者は、特定健康診査等実施計画に基づき、厚生労働省令で定めるところにより、四十歳以上の加入者に対し、特定健康診査を行うものとする"
+     },
+     {
+      "ref": "x-legacy-L02a:mhlw-tokutei-kenshin",
+      "title": "特定健診・特定保健指導について",
+      "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000161103.html",
+      "locator": "特定健康診査等実施計画",
+      "quote": "第１期（2008年度～2012年度）"
+     }
+    ],
+    "asOf": "2026-11 e-Gov現行法令（高齢者の医療の確保に関する法律）／厚生労働省「特定健診・特定保健指導について」2026-11閲覧",
+    "status": "provisional"
+   }
+  },
+  {
+   "id": "lg-02-15",
+   "verdict": "pass",
+   "contentChanged": false,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "stats:kokumin-iryohi-r6-hani §1（傷病の治療費の推計。正常分娩・健診・予防接種・選定療養=差額ベッド等は含まない）。国民医療費はS01へ再分類。",
+   "question": {
+    "id": "lg-02-15",
+    "legacy": {
+     "key": "2_15",
+     "chapter": 2,
+     "chapterName": "医療保険制度",
+     "index": 15,
+     "hash": "3d39facdd5e3c34d"
+    },
+    "subject": "S01",
+    "subtopic": "国民医療費と医療経済",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "negative",
+    "question": "国民医療費に含まれないのはどれか。",
+    "choices": [
+     "正常分娩の費用",
+     "入院医療費",
+     "外来医療費",
+     "調剤医療費"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "国民医療費は傷病治療に要する費用の推計。正常分娩・健診・予防接種・差額ベッド代は含まれない。",
+     "choiceNotes": [
+      null,
+      "入院医療費は含まれる。",
+      "外来医療費は含まれる。",
+      "調剤医療費は含まれる。"
+     ],
+     "point": "国民医療費に含まれない＝正常分娩・健診・予防接種・差額ベッド。"
+    },
+    "sources": [
+     {
+      "ref": "stats:kokumin-iryohi-r6-hani",
+      "title": "令和６(2024)年度 国民医療費の概況　国民医療費の範囲と推計方法の概要",
+      "url": "https://www.mhlw.go.jp/toukei/saikin/hw/k-iryohi/24/dl/R06gaiyou.pdf",
+      "locator": "１ 国民医療費の範囲",
+      "quote": "当該年度内の医療機関等における保険診療の対象となり得る傷病の治療に要した費用を推計したものである"
+     },
+     {
+      "ref": "stats:kokumin-iryohi-r6-hani",
+      "title": "令和６(2024)年度 国民医療費の概況　国民医療費の範囲と推計方法の概要",
+      "url": "https://www.mhlw.go.jp/toukei/saikin/hw/k-iryohi/24/dl/R06gaiyou.pdf",
+      "locator": "１ 国民医療費の範囲",
+      "quote": "(1)正常な妊娠・分娩に要する費用、(2)健康の維持・増進を目的とした健康診断、予防接種等に要する費用"
+     },
+     {
+      "ref": "stats:kokumin-iryohi-r6-hani",
+      "title": "令和６(2024)年度 国民医療費の概況　国民医療費の範囲と推計方法の概要",
+      "url": "https://www.mhlw.go.jp/toukei/saikin/hw/k-iryohi/24/dl/R06gaiyou.pdf",
+      "locator": "１ 国民医療費の範囲",
+      "quote": "選定療養（特別の病室への入院、歯科の金属材料等）等に要した費用は含まない"
+     }
+    ],
+    "asOf": "令和6(2024)年度 国民医療費の概況（2026-10公表）の範囲定義",
+    "status": "provisional"
+   }
+  }
+ ]
+}

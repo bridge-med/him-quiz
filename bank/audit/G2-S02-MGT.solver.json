@@ -1,0 +1,14 @@
+{"answers":[
+{"key":"#0","answer":2,"confidence":"high","ambiguous":false,"note":"54000/((3620+3580)/2)=15.0。byouinhoukoku_yougo 平均在院日数"},
+{"key":"#1","answer":1,"confidence":"high","ambiguous":false,"note":"61344/(181*200+184*220)=61344/76680=80.0%。病院報告の病床利用率定義"},
+{"key":"#2","answer":3,"confidence":"high","ambiguous":false,"note":"病院経営管理指標の病床利用率の分母は稼働病床数（指標一覧P.102）。許可病床数は誤り"},
+{"key":"#3","answer":3,"confidence":"high","ambiguous":false,"note":"(1.2+2.0)/40=8.0%。償却前医業利益率=(医業利益+減価償却費)/医業収益"},
+{"key":"#4","answer":2,"confidence":"high","ambiguous":false,"note":"(給与費15+設備関係費3+支払利息0.3)/30=61.0%"},
+{"key":"#5","answer":3,"confidence":"high","ambiguous":false,"note":"(紹介900+救急300)/初診2000=60.0%"},
+{"key":"#6","answer":1,"confidence":"high","ambiguous":false,"note":"(18億+0.6億)/(29000+1000)=62,000円"},
+{"key":"#7","answer":0,"confidence":"high","ambiguous":false,"note":"109500/(365*200)=1.5。分母は許可病床数（稼働150は罠）"},
+{"key":"#8","answer":3,"confidence":"high","ambiguous":false,"note":"借入金比率=長期借入金/医業収益（総資本ではない）。他は指標一覧どおり"},
+{"key":"#9","answer":2,"confidence":"high","ambiguous":false,"note":"自己資本比率は【安全性】。他は収益性・機能性"},
+{"key":"#10","answer":4,"confidence":"high","ambiguous":false,"note":"1日平均外来患者数=年間外来患者延数/当該年の年間日数。診療実日数ではない"},
+{"key":"#11","answer":1,"confidence":"high","ambiguous":false,"note":"12000/(0.5*(30+50+60+20))=150.0。療養病床の式"}
+]}

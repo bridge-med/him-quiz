@@ -1,0 +1,53 @@
+{
+ "answers": [
+  {
+   "key": "lg-09-26",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "instruction 4.4.1 主要病態の定義"
+  },
+  {
+   "key": "lg-09-27",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "I69 脳血管疾患の続発・後遺症"
+  },
+  {
+   "key": "lg-09-29",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "手術 通則14（要確認）"
+  },
+  {
+   "key": "lg-10-04",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "instruction 4.4.1"
+  },
+  {
+   "key": "lg-10-07",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "第XV章 O00-O99"
+  },
+  {
+   "key": "lg-10-08",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "一般原則; Dはルール1"
+  },
+  {
+   "key": "lg-10-10",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "coding text v7: 委員会・年4回がDPC参加要件"
+  }
+ ]
+}

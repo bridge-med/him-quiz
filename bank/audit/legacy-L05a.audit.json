@@ -1,0 +1,1122 @@
+{
+ "verdicts": [
+  {
+   "id": "lg-05-00",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "x-legacy-L04a:msd-ja-ami 症状と徴候（胸骨下深部の内臓痛、狭心症より重度で長く、安静・ニトログリセリンでほとんど軽快しない）。",
+   "detail": "正解肢の「30分以上」は出典で確認できないため、出典の表現に改めた。誤答注釈の「数秒の胸痛は不整脈を示唆」等の根拠のない断定を削除。",
+   "question": {
+    "id": "lg-05-00",
+    "legacy": {
+     "key": "5_0",
+     "chapter": 5,
+     "chapterName": "臨床医学",
+     "index": 0,
+     "hash": "fa7847f2ab1801e0"
+    },
+    "subject": "BCL",
+    "subtopic": "循環器・呼吸器",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "急性心筋梗塞の典型的な症状はどれか。",
+    "choices": [
+     "強い胸痛が長く続き、ニトログリセリンでほとんど軽快しない",
+     "数秒間だけの鋭い胸痛が、日に何度も繰り返し起こる",
+     "運動時にだけ息切れが生じ、安静にすると速やかに消失する",
+     "食後に悪化する上腹部の痛みが、食事のたびに繰り返す"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "心筋梗塞の最初の症状は通常、疼痛または圧迫感として表現される胸骨下深部の内臓痛で、背部・下顎・腕・肩に放散することがある。狭心症に似るが、通常はより重度で長く続き、呼吸困難・発汗・悪心・嘔吐を伴うことが多く、安静やニトログリセリンで一時的に軽快するのみか、ほとんど軽快しない。",
+     "choiceNotes": [
+      null,
+      "数秒間だけの胸痛の反復は、長く続く胸骨下の内臓痛という心筋梗塞の典型像に当たらない。",
+      "運動時にだけ生じ安静で消える症状は、安静でも軽快しにくい心筋梗塞の典型像と異なる。",
+      "食事に関連して悪化する上腹部痛は、心筋梗塞の典型的な症状として挙げられていない。"
+     ],
+     "point": "急性心筋梗塞＝胸骨下の強い痛み・圧迫感。狭心症に似るが、より重度で長く続き、安静やニトログリセリンでほとんど軽快しない。"
+    },
+    "sources": [
+     {
+      "ref": "x-legacy-L04a:msd-ja-ami",
+      "title": "MSDマニュアル プロフェッショナル版「急性心筋梗塞」",
+      "url": "https://www.msdmanuals.com/ja-jp/professional/04-心血管疾患/冠動脈疾患/急性心筋梗塞",
+      "locator": "症状と徴候",
+      "quote": "通常，心筋梗塞の最初の症状は疼痛または圧迫感として表現される胸骨下深部の内臓痛であり"
+     },
+     {
+      "ref": "x-legacy-L04a:msd-ja-ami",
+      "title": "MSDマニュアル プロフェッショナル版「急性心筋梗塞」",
+      "url": "https://www.msdmanuals.com/ja-jp/professional/04-心血管疾患/冠動脈疾患/急性心筋梗塞",
+      "locator": "症状と徴候",
+      "quote": "疼痛は 狭心症 と類似するが，通常はより重度で時間時間が長く，しばしば呼吸困難，発汗，悪心，嘔吐を伴い，安静やニトログリセリンで一時的に軽快するのみか，ほとんど軽快しない。"
+     }
+    ],
+    "asOf": "MSDマニュアル プロフェッショナル版（日本語）「急性心筋梗塞」（2024年7月最終更新）"
+   }
+  },
+  {
+   "id": "lg-05-01",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "x-legacy-L04a:msd-ja-copd 病因（大半の国で喫煙が第一の危険因子、低体重もリスクに寄与）。",
+   "detail": "解説の「COPD患者の約90%に喫煙歴」は出典で確認できず削除。誤答注釈を出典の危険因子一覧に基づく記述に改めた。",
+   "question": {
+    "id": "lg-05-01",
+    "legacy": {
+     "key": "5_1",
+     "chapter": 5,
+     "chapterName": "臨床医学",
+     "index": 1,
+     "hash": "ace810b7944e3a89"
+    },
+    "subject": "BCL",
+    "subtopic": "循環器・呼吸器",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "COPD（慢性閉塞性肺疾患）の最大の危険因子はどれか。",
+    "choices": [
+     "喫煙",
+     "飲酒",
+     "高血圧",
+     "肥満"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "COPDは毒素の吸入（しばしばタバコ煙）に対する炎症反応によって引き起こされる気流制限である。あらゆる吸入曝露のうち、大半の国において喫煙が第一の危険因子であり、リスクは喫煙期間と累積喫煙量（pack-year）とともに増加する。",
+     "choiceNotes": [
+      null,
+      "飲酒はCOPDの危険因子として挙げられていない（挙げられているのは喫煙、受動喫煙、大気汚染、職業性塵埃・吸入化学物質、低体重、小児期の呼吸器疾患、α1-アンチトリプシン欠乏症など）。",
+      "高血圧はCOPDの危険因子として挙げられていない。",
+      "肥満は危険因子ではない。むしろ低体重がCOPDのリスクに寄与し、重症例では体重減少がみられる。"
+     ],
+     "point": "COPD＝喫煙が第一の危険因子。ほかに受動喫煙・大気汚染・職業性塵埃、遺伝性ではα1-アンチトリプシン欠乏症。"
+    },
+    "sources": [
+     {
+      "ref": "x-legacy-L04a:msd-ja-copd",
+      "title": "MSDマニュアル プロフェッショナル版「慢性閉塞性肺疾患（COPD）」",
+      "url": "https://www.msdmanuals.com/ja-jp/professional/05-肺疾患/慢性閉塞性肺疾患および関連疾患/慢性閉塞性肺疾患-copd",
+      "locator": "病因",
+      "quote": "あらゆる吸入曝露のうち，大半の国において喫煙が第一の危険因子となっている"
+     },
+     {
+      "ref": "x-legacy-L04a:msd-ja-copd",
+      "title": "MSDマニュアル プロフェッショナル版「慢性閉塞性肺疾患（COPD）」",
+      "url": "https://www.msdmanuals.com/ja-jp/professional/05-肺疾患/慢性閉塞性肺疾患および関連疾患/慢性閉塞性肺疾患-copd",
+      "locator": "病因",
+      "quote": "低体重および小児期の呼吸器疾患もCOPDのリスクに寄与する。"
+     }
+    ],
+    "asOf": "MSDマニュアル プロフェッショナル版（日本語）「慢性閉塞性肺疾患（COPD）」（2024年9月最終更新）"
+   }
+  },
+  {
+   "id": "lg-05-02",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "x-legacy-L04a:msd-ja-dm 1型・2型糖尿病の項、一般的特徴の表（発症年齢）、治療の項。",
+   "detail": "解説の「日本は2型が90%」は出典で確認できず（出典は成人糖尿病の90%超が2型とする一般記述）削除。正解肢の「2型はインスリン抵抗性が主体」を出典どおり抵抗性と分泌不十分の両方に改め、誤答肢を出典で否定できる表現にした。",
+   "question": {
+    "id": "lg-05-02",
+    "legacy": {
+     "key": "5_2",
+     "chapter": 5,
+     "chapterName": "臨床医学",
+     "index": 2,
+     "hash": "5a84e2dbbf6f79d5"
+    },
+    "subject": "BCL",
+    "subtopic": "血液・代謝・内分泌",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "1型糖尿病と2型糖尿病の違いについて正しいものはどれか。",
+    "choices": [
+     "1型は膵β細胞の自己免疫による破壊でインスリンが欠乏し、2型はインスリン抵抗性とインスリン分泌の不足が関与する",
+     "1型は過食や運動不足などの生活習慣が主な原因で、2型は自己免疫が主な原因である",
+     "1型は30歳以上の発症が最も多く、2型は30歳未満の発症が最も多い",
+     "1型も2型も、診断時から必ずインスリン治療が必要である"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "1型糖尿病では膵β細胞の自己免疫による破壊が原因でインスリン産生が欠如する。2型糖尿病ではインスリンに対する抵抗性が発生しているため、インスリン分泌が不十分な状態となる。",
+     "choiceNotes": [
+      null,
+      "原因が逆である。自己免疫による膵β細胞の破壊は1型の原因であり、2型ではインスリン抵抗性が特徴的である。",
+      "逆である。発症年齢は1型が30歳未満、2型が30歳以上で最も一般的である。",
+      "1型はインスリンを必要とするが、2型の一部は食生活の改善と運動で血糖を維持できれば薬物治療を回避・中止できることがある。"
+     ],
+     "point": "1型＝自己免疫でβ細胞破壊→インスリン欠乏（30歳未満に多い）。2型＝インスリン抵抗性＋分泌不十分（30歳以上に多い）。"
+    },
+    "sources": [
+     {
+      "ref": "x-legacy-L04a:msd-ja-dm",
+      "title": "MSDマニュアル プロフェッショナル版「糖尿病」",
+      "url": "https://www.msdmanuals.com/ja-jp/professional/10-内分泌疾患と代謝性疾患/糖尿病と糖代謝異常症/糖尿病",
+      "locator": "1型糖尿病",
+      "quote": "膵β細胞の自己免疫による破壊が原因で インスリン 産生が欠如しており"
+     },
+     {
+      "ref": "x-legacy-L04a:msd-ja-dm",
+      "title": "MSDマニュアル プロフェッショナル版「糖尿病」",
+      "url": "https://www.msdmanuals.com/ja-jp/professional/10-内分泌疾患と代謝性疾患/糖尿病と糖代謝異常症/糖尿病",
+      "locator": "2型糖尿病",
+      "quote": "患者に インスリン に対する抵抗性が発生しているため， インスリン 分泌が不十分な状態となる。"
+     },
+     {
+      "ref": "x-legacy-L04a:msd-ja-dm",
+      "title": "MSDマニュアル プロフェッショナル版「糖尿病」",
+      "url": "https://www.msdmanuals.com/ja-jp/professional/10-内分泌疾患と代謝性疾患/糖尿病と糖代謝異常症/糖尿病",
+      "locator": "治療",
+      "quote": "1型糖尿病患者は インスリン を必要とする。2型糖尿病患者の一部では，食生活の改善と運動で血漿血糖値を維持できる場合，薬物治療を回避または中止できることがある。"
+     }
+    ],
+    "asOf": "MSDマニュアル プロフェッショナル版（日本語）「糖尿病」（2024年10月最終更新）"
+   }
+  },
+  {
+   "id": "lg-05-03",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "cancer:glossary-yuaisisitexienuemubunrui（T＝原発がんの大きさ・広がり・深さ、N＝所属リンパ節転移、M＝遠隔転移）; cancer:hcr-standard-format-2016 形態コード6桁目＝異型度・分化度。",
+   "detail": "誤答肢「転移の有無」と注釈「転移はM」がN（リンパ節転移）と紛らわしいため、「遠隔転移の状況」に改めた。悪性度の注釈を出典に基づき具体化。",
+   "question": {
+    "id": "lg-05-03",
+    "legacy": {
+     "key": "5_3",
+     "chapter": 5,
+     "chapterName": "臨床医学",
+     "index": 3,
+     "hash": "e2fbb46bd4bc3fd0"
+    },
+    "subject": "BCL",
+    "subtopic": "新生物",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "UICC TNM分類の「T」が表すものはどれか。",
+    "choices": [
+     "原発腫瘍の大きさ・広がり・深さ",
+     "他の臓器への遠隔転移の状況",
+     "所属リンパ節への転移の状況",
+     "腫瘍細胞の悪性度（異型度・分化度）"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "UICC TNM分類では、原発がんの大きさ・広がり・深さをT、原発がんの所属リンパ節転移の状況をN、他の臓器への遠隔転移状況をMとして区分し、それらを総合して病期（ステージ）を判定する。",
+     "choiceNotes": [
+      null,
+      "他の臓器への遠隔転移の状況はMで表す。",
+      "所属リンパ節転移の状況はNで表す。",
+      "異型度・分化度はTNMの区分ではない。院内がん登録では形態コード（ICD-O）の6桁目として別に扱う。"
+     ],
+     "point": "T＝原発腫瘍（大きさ・広がり・深さ）、N＝所属リンパ節転移、M＝遠隔転移。総合して病期（0〜Ⅳ期）を判定。"
+    },
+    "sources": [
+     {
+      "ref": "cancer:glossary-yuaisisitexienuemubunrui",
+      "title": "がん統計の用語集：UICC TNM分類",
+      "url": "https://ganjoho.jp/reg_stat/statistics/qa_words/word/yuaisisitexienuemubunrui.html",
+      "locator": "用語集「UICC TNM分類」",
+      "quote": "原発がんの大きさ、広がり、深さをT、原発がんの所属リンパ節転移の状況をN、他の臓器への遠隔転移状況をMとして区分し"
+     },
+     {
+      "ref": "cancer:hcr-standard-format-2016",
+      "title": "がん診療連携拠点病院等 院内がん登録 標準登録様式 2016年版",
+      "url": "https://ganjoho.jp/med_pro/cancer_control/can_reg/registration_hospital/pdf/2016manual.pdf",
+      "locator": "形態コード（コードの選択）",
+      "quote": "6 桁目 異型度、分化度、免疫学的表現型"
+     }
+    ],
+    "asOf": "がん情報サービス用語集（2018年1月26日更新）・院内がん登録標準登録様式2016年版"
+   }
+  },
+  {
+   "id": "lg-05-04",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "x-legacy-L05a:msd-ischemic-stroke 概要・病因（アテローム血栓性閉塞、塞栓、ラクナ梗塞）、治療（出血性梗塞への変化）。",
+   "detail": "「3病型」は国内の慣用的整理で出典の分類（潜因性を含む）と完全には一致しないため、発症機序による病型として問い直した。解説に出血性梗塞が梗塞後の出血性変化である根拠を加えた。",
+   "question": {
+    "id": "lg-05-04",
+    "legacy": {
+     "key": "5_4",
+     "chapter": 5,
+     "chapterName": "臨床医学",
+     "index": 4,
+     "hash": "b106a584dfe605f5"
+    },
+    "subject": "BCL",
+    "subtopic": "精神・脳神経・感覚器",
+    "format": "knowledge",
+    "difficulty": "standard",
+    "polarity": "negative",
+    "question": "脳梗塞の臨床病型（発症機序による分類）に含まれないものはどれか。",
+    "choices": [
+     "ラクナ梗塞",
+     "アテローム血栓性脳梗塞",
+     "心原性脳塞栓症",
+     "出血性梗塞"
+    ],
+    "answer": 3,
+    "explanation": {
+     "correct": "脳梗塞（虚血性脳卒中）の一般的な原因は、太い動脈のアテローム血栓性閉塞（アテローム血栓性脳梗塞）、心原性血栓などによる脳塞栓症（心原性脳塞栓症）、深部の細い穿通動脈の閉塞（ラクナ梗塞）である。出血性梗塞は梗塞巣に出血が生じる変化（出血性梗塞への変化）で、急性期に抗凝固療法を避ける理由とされる合併症であり、発症機序による病型ではない。",
+     "choiceNotes": [
+      "深部の細い穿通動脈の閉塞による小さな梗塞で、病型の一つ。",
+      "太い動脈のアテローム血栓性閉塞による病型の一つ。",
+      "心原性血栓などの塞栓による病型の一つ（心房細動などが塞栓源となる）。",
+      null
+     ],
+     "point": "脳梗塞の病型＝アテローム血栓性・心原性脳塞栓・ラクナ（原因不明は潜因性）。出血性梗塞は病型ではなく梗塞後の出血性変化。"
+    },
+    "sources": [
+     {
+      "ref": "x-legacy-L05a:msd-ischemic-stroke",
+      "title": "MSDマニュアル プロフェッショナル版「虚血性脳卒中」",
+      "url": "https://www.msdmanuals.com/ja-jp/professional/07-神経疾患/脳卒中/虚血性脳卒中",
+      "locator": "概要",
+      "quote": "一般的な原因は太い動脈のアテローム血栓性閉塞；脳塞栓症（塞栓性脳梗塞）；深部の細い脳動"
+     },
+     {
+      "ref": "x-legacy-L05a:msd-ischemic-stroke",
+      "title": "MSDマニュアル プロフェッショナル版「虚血性脳卒中」",
+      "url": "https://www.msdmanuals.com/ja-jp/professional/07-神経疾患/脳卒中/虚血性脳卒中",
+      "locator": "治療（抗凝固療法）",
+      "quote": "急性期には出血（出血性梗塞への変化）のリスクがより高いため（特に大きな梗塞の場合），通常は急性期の抗凝固療法は回避する。"
+     }
+    ],
+    "asOf": "MSDマニュアル プロフェッショナル版（日本語）「虚血性脳卒中」（2024年5月最終更新）"
+   }
+  },
+  {
+   "id": "lg-05-05",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "x-legacy-L05a:msd-ckd 慢性腎臓病の病期（ステージ1〜5をGFRで区分）。",
+   "detail": "要点の「G5＝GFR<15→透析導入」は、ステージ5で自動的に透析導入となるかのような誤解を招くため修正。ステージ1がGFR正常＋持続性アルブミン尿等である点を補足。",
+   "question": {
+    "id": "lg-05-05",
+    "legacy": {
+     "key": "5_5",
+     "chapter": 5,
+     "chapterName": "臨床医学",
+     "index": 5,
+     "hash": "ee0c8c45a194e918"
+    },
+    "subject": "BCL",
+    "subtopic": "消化器・泌尿器",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "CKD（慢性腎臓病）のステージ分類に用いられる指標はどれか。",
+    "choices": [
+     "GFR（糸球体濾過量）",
+     "血糖値",
+     "血圧値",
+     "BMI"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "CKDのステージはGFR（mL/min/1.73m2）で区分される。ステージ1はGFR正常（90以上）かつ持続性アルブミン尿または既知の構造的・遺伝性腎疾患、ステージ2は60～89、3aは45～59、3bは30～44、4は15～29、5は15未満である。",
+     "choiceNotes": [
+      null,
+      "血糖値は糖尿病の指標であり、CKDのステージ分類には用いない。",
+      "血圧はCKDの管理目標（収縮期血圧の推奨目標値）として扱われるが、ステージはGFRで区分する。",
+      "BMIは体格の指標であり、CKDのステージ分類には用いない。"
+     ],
+     "point": "CKDステージ＝GFRで区分（ステージ5＝GFR 15未満）。ステージ1はGFR正常でもアルブミン尿などの腎障害があるもの。"
+    },
+    "sources": [
+     {
+      "ref": "x-legacy-L05a:msd-ckd",
+      "title": "MSDマニュアル プロフェッショナル版「慢性腎臓病」",
+      "url": "https://www.msdmanuals.com/ja-jp/professional/03-泌尿器疾患/慢性腎臓病/慢性腎臓病",
+      "locator": "慢性腎臓病の病期",
+      "quote": "ステージ1：GFR正常（90mL/min/1.73m2以上）かつ，持続性アルブミン尿または既知の構造的もしくは遺伝性腎疾患"
+     },
+     {
+      "ref": "x-legacy-L05a:msd-ckd",
+      "title": "MSDマニュアル プロフェッショナル版「慢性腎臓病」",
+      "url": "https://www.msdmanuals.com/ja-jp/professional/03-泌尿器疾患/慢性腎臓病/慢性腎臓病",
+      "locator": "慢性腎臓病の病期",
+      "quote": "ステージ5：GFR 15mL/min/1.73m2未満"
+     }
+    ],
+    "asOf": "MSDマニュアル プロフェッショナル版（日本語）「慢性腎臓病」（2025年2月最終更新）"
+   }
+  },
+  {
+   "id": "lg-05-06",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "x-legacy-L05a:msd-hip-fracture 概要・病因・治療（骨粗鬆症の高齢者の転倒、大多数は外科的治療）。",
+   "detail": "正解肢の「寝たきりの原因となる」は出典で直接確認できないため、出典で確認できる「骨粗鬆症のある高齢者の転倒で起こりやすい」に改め、正解と重なる誤答肢「骨粗鬆症と関連しない」を別の誤答肢に差し替えた。",
+   "question": {
+    "id": "lg-05-06",
+    "legacy": {
+     "key": "5_6",
+     "chapter": 5,
+     "chapterName": "臨床医学",
+     "index": 6,
+     "hash": "a99938f4cbc5ff07"
+    },
+    "subject": "BCL",
+    "subtopic": "皮膚・筋骨格",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "大腿骨近位部骨折（股関節骨折）について正しいものはどれか。",
+    "choices": [
+     "骨粗鬆症のある高齢者の転倒で起こりやすい",
+     "小児に最も多い骨折である",
+     "保存療法が第一選択である",
+     "交通事故などの強い外力が加わらなければ起こらない"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "股関節骨折は大腿骨の骨頭・頸部・転子部・転子下に起こる骨折で、高齢患者（特に骨粗鬆症の高齢者）で最も多く、通常は平坦な地面での転倒により起こる。",
+     "choiceNotes": [
+      null,
+      "高齢患者（特に骨粗鬆症の高齢者）で最も多い骨折である。",
+      "大多数は外科的に治療する。非外科的治療では長期間の床上安静が必要となり、深部静脈血栓症・褥瘡・肺炎などのリスクが高まる。",
+      "骨粗鬆症の高齢者では、寝返りや椅子から立ち上がるなどのごくわずかな力でも骨折に至ることがある。"
+     ],
+     "point": "大腿骨近位部骨折＝骨粗鬆症の高齢者の転倒で多い。長期臥床の合併症を避けるため大多数は手術。"
+    },
+    "sources": [
+     {
+      "ref": "x-legacy-L05a:msd-hip-fracture",
+      "title": "MSDマニュアル プロフェッショナル版「股関節骨折」",
+      "url": "https://www.msdmanuals.com/ja-jp/professional/22-外傷と中毒/骨折/股関節骨折",
+      "locator": "概要",
+      "quote": "この骨折は高齢患者（特に骨粗鬆症の高齢者）で最も多く，通常は平坦な地面での転倒により起こる。"
+     },
+     {
+      "ref": "x-legacy-L05a:msd-hip-fracture",
+      "title": "MSDマニュアル プロフェッショナル版「股関節骨折」",
+      "url": "https://www.msdmanuals.com/ja-jp/professional/22-外傷と中毒/骨折/股関節骨折",
+      "locator": "病因",
+      "quote": "高齢患者では，通常は骨粗鬆症により骨が脆弱になっていることから，ごくわずかに見える力（例，寝床での寝返り，椅子から立ち上がる，歩行）で骨折に至ることがある。"
+     },
+     {
+      "ref": "x-legacy-L05a:msd-hip-fracture",
+      "title": "MSDマニュアル プロフェッショナル版「股関節骨折」",
+      "url": "https://www.msdmanuals.com/ja-jp/professional/22-外傷と中毒/骨折/股関節骨折",
+      "locator": "治療",
+      "quote": "長期間の床上安静を避けるため，外科的に治療する。"
+     }
+    ],
+    "asOf": "MSDマニュアル プロフェッショナル版（日本語）「股関節骨折」（2024年7月最終更新）"
+   }
+  },
+  {
+   "id": "lg-05-07",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "x-legacy-L05a:msd-cap 概要・細菌性の原因（肺炎球菌が筆頭）、x-legacy-L05a:msd-hap 病原体（緑膿菌・MRSA）。",
+   "detail": "出典は各病原体の相対的重要性が不明とも述べるため、問いを「最も頻度が高いとされる」に改めた。誤答注釈（MRSA＝院内感染、結核）を出典に基づく記述に修正し、院内肺炎の病原体の根拠を加えた。",
+   "question": {
+    "id": "lg-05-07",
+    "legacy": {
+     "key": "5_7",
+     "chapter": 5,
+     "chapterName": "臨床医学",
+     "index": 7,
+     "hash": "ffa68887800aadb9"
+    },
+    "subject": "BCL",
+    "subtopic": "感染症",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "市中肺炎の原因菌として最も頻度が高いとされるものはどれか。",
+    "choices": [
+     "肺炎球菌",
+     "緑膿菌",
+     "MRSA（メチシリン耐性黄色ブドウ球菌）",
+     "結核菌"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "市中肺炎は病院の外で獲得した肺炎で、同定される頻度が最も高い病原体として肺炎球菌、インフルエンザ菌、非定型細菌（肺炎クラミジア、肺炎マイコプラズマ、Legionella属）、ウイルスが挙げられ、最も一般的な細菌性の原因の第一は肺炎球菌である。",
+     "choiceNotes": [
+      null,
+      "緑膿菌は院内肺炎で重要な病原体であり、市中肺炎では過去3カ月間の入院や抗菌薬使用、重度のCOPD、免疫抑制などの危険因子がある場合に考慮される。",
+      "MRSAは入院期間が長くなるにつれて院内肺炎で頻度が高くなる病原体である。市中感染型MRSAが重症肺炎を起こすことはまれである。",
+      "肺結核は市中肺炎とは別に扱われ、市中肺炎の最も一般的な原因菌には含まれない。"
+     ],
+     "point": "市中肺炎＝肺炎球菌が代表（ほかにインフルエンザ菌・非定型細菌）。院内肺炎＝緑膿菌などのグラム陰性桿菌、MRSAを含む黄色ブドウ球菌。"
+    },
+    "sources": [
+     {
+      "ref": "x-legacy-L05a:msd-cap",
+      "title": "MSDマニュアル プロフェッショナル版「市中肺炎」",
+      "url": "https://www.msdmanuals.com/ja-jp/professional/05-肺疾患/肺炎/市中肺炎",
+      "locator": "概要",
+      "quote": "同定される頻度が最も高い病原体は，肺炎球菌（Streptococcus pneumoniae），インフルエンザ菌（Haemophilus influenzae），非定型細菌"
+     },
+     {
+      "ref": "x-legacy-L05a:msd-cap",
+      "title": "MSDマニュアル プロフェッショナル版「市中肺炎」",
+      "url": "https://www.msdmanuals.com/ja-jp/professional/05-肺疾患/肺炎/市中肺炎",
+      "locator": "市中肺炎の病因（細菌性の原因）",
+      "quote": "最も一般的な細菌性の原因は以下のものである： 肺炎球菌（S. pneumoniae）"
+     },
+     {
+      "ref": "x-legacy-L05a:msd-hap",
+      "title": "MSDマニュアル プロフェッショナル版「院内肺炎」",
+      "url": "https://www.msdmanuals.com/ja-jp/professional/05-肺疾患/肺炎/院内肺炎",
+      "locator": "病原体",
+      "quote": "入院の期間が長くなるにつれて，緑膿菌（P. aeruginosa），MRSA，およびグラム陰性腸内菌の頻度が高くなる。"
+     }
+    ],
+    "asOf": "MSDマニュアル プロフェッショナル版（日本語）「市中肺炎」（2025年1月最終更新）・「院内肺炎」（2024年2月最終更新）"
+   }
+  },
+  {
+   "id": "lg-05-08",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "x-legacy-L05a:msd-af 概要・心房細動の合併症（心房内血栓→脳塞栓症、全脳卒中の20～25％）。lg-05-19（L05b）と実質重複のため、どちらか一方のみ採用を推奨（本問を残す想定）。",
+   "detail": "誤答注釈「腎不全は直接的合併症ではない」を出典に基づく記述に改め、合併症の根拠（脳塞栓リスク・心不全）を加えた。",
+   "question": {
+    "id": "lg-05-08",
+    "legacy": {
+     "key": "5_8",
+     "chapter": 5,
+     "chapterName": "臨床医学",
+     "index": 8,
+     "hash": "4d788bf247b75491"
+    },
+    "subject": "BCL",
+    "subtopic": "循環器・呼吸器",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "心房細動の最も重要な合併症はどれか。",
+    "choices": [
+     "脳塞栓症",
+     "心筋梗塞",
+     "肺気腫",
+     "腎不全"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "心房細動では心房収縮の欠如が心房内血栓の形成の素因となり、脳塞栓症のリスクが有意に増大する。脳血管塞栓症の年間リスクは全体で3～5％で、全脳卒中の20～25％が心房細動を原因とする。このため抗凝固療法による血栓塞栓症の予防が治療の柱となる。",
+     "choiceNotes": [
+      null,
+      "心筋梗塞は冠動脈の閉塞による病態で、心房細動の合併症として挙げられていない。",
+      "肺気腫（COPD）は主に喫煙などの吸入曝露による疾患で、心房細動の合併症ではない。",
+      "腎不全は心房細動の合併症として挙げられていない。心房細動の合併症は血栓塞栓症（脳塞栓症）と、心室拍数が高すぎる場合などの心不全である。"
+     ],
+     "point": "心房細動→心房内血栓→脳塞栓症（全脳卒中の20～25％）。抗凝固療法で予防し、CHA2DS2-VAScスコアでリスクを評価する。"
+    },
+    "sources": [
+     {
+      "ref": "x-legacy-L05a:msd-af",
+      "title": "MSDマニュアル プロフェッショナル版「心房細動」",
+      "url": "https://www.msdmanuals.com/ja-jp/professional/04-心血管疾患/不整脈の各論/心房細動",
+      "locator": "概要",
+      "quote": "心房内血栓が形成されることがあり，その場合は脳塞栓症のリスクが有意に増大する。"
+     },
+     {
+      "ref": "x-legacy-L05a:msd-af",
+      "title": "MSDマニュアル プロフェッショナル版「心房細動」",
+      "url": "https://www.msdmanuals.com/ja-jp/professional/04-心血管疾患/不整脈の各論/心房細動",
+      "locator": "心房細動の合併症",
+      "quote": "心房収縮の欠如が血栓形成の素因となり，全体として脳血管塞栓症の年間リスクが3～5％となり，全脳卒中の20～25％が心房細動を原因としている"
+     },
+     {
+      "ref": "x-legacy-L05a:msd-af",
+      "title": "MSDマニュアル プロフェッショナル版「心房細動」",
+      "url": "https://www.msdmanuals.com/ja-jp/professional/04-心血管疾患/不整脈の各論/心房細動",
+      "locator": "心房細動の合併症",
+      "quote": "そのような場合には，心不全を来す可能性がある。"
+     }
+    ],
+    "asOf": "MSDマニュアル プロフェッショナル版（日本語）「心房細動」（2024年12月最終更新）"
+   }
+  },
+  {
+   "id": "lg-05-09",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "x-legacy-L05a:msd-sah 病因（頭部外傷が最も一般的だが外傷性は別扱い、自発性の約85％が嚢状動脈瘤、まれな原因＝感染性動脈瘤・動静脈奇形・出血性疾患）。",
+   "detail": "出典ではくも膜下出血全体の最も一般的な原因は頭部外傷とされ、選択肢「外傷」と競合して正解が一意でなかった。問いを自発性（非外傷性）に限定し、誤答肢を出典の「比較的まれな原因」に差し替えた。「約80%」を出典の約85％に修正。",
+   "question": {
+    "id": "lg-05-09",
+    "legacy": {
+     "key": "5_9",
+     "chapter": 5,
+     "chapterName": "臨床医学",
+     "index": 9,
+     "hash": "e3d76fdff98e4009"
+    },
+    "subject": "BCL",
+    "subtopic": "精神・脳神経・感覚器",
+    "format": "knowledge",
+    "difficulty": "standard",
+    "polarity": "positive",
+    "question": "外傷によらない（自発性の）くも膜下出血の原因として最も多いものはどれか。",
+    "choices": [
+     "脳動脈瘤の破裂",
+     "脳動静脈奇形からの出血",
+     "感染性動脈瘤の破裂",
+     "凝固異常などの出血性疾患"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "自発性（一次性）のくも膜下出血は通常、動脈瘤破裂に起因し、約85％の患者では先天性の頭蓋内嚢状動脈瘤が原因である。頭痛は通常重度で数秒以内にピークとなる。なお、くも膜下出血全体では頭部外傷が最も一般的な原因だが、外傷性くも膜下出血は通常、別の疾患とみなされる。",
+     "choiceNotes": [
+      null,
+      "脳動静脈奇形は自発性くも膜下出血の比較的まれな原因である。",
+      "感染性動脈瘤は比較的まれな原因である。",
+      "出血性疾患は比較的まれな原因である。"
+     ],
+     "point": "自発性くも膜下出血＝脳動脈瘤（嚢状動脈瘤）破裂が約85％。数秒でピークに達する突然の激しい頭痛。"
+    },
+    "sources": [
+     {
+      "ref": "x-legacy-L05a:msd-sah",
+      "title": "MSDマニュアル プロフェッショナル版「くも膜下出血（SAH）」",
+      "url": "https://www.msdmanuals.com/ja-jp/professional/07-神経疾患/脳卒中/くも膜下出血-sah",
+      "locator": "病因",
+      "quote": "自発性（一次性）のくも膜下出血は通常，動脈瘤破裂に起因する。約85％の患者では，先天性の頭蓋内嚢状動脈瘤または桑実状動脈瘤（berry aneurysm）が原因である。"
+     },
+     {
+      "ref": "x-legacy-L05a:msd-sah",
+      "title": "MSDマニュアル プロフェッショナル版「くも膜下出血（SAH）」",
+      "url": "https://www.msdmanuals.com/ja-jp/professional/07-神経疾患/脳卒中/くも膜下出血-sah",
+      "locator": "病因",
+      "quote": "比較的まれな原因は，感染性動脈瘤，動静脈奇形，および出血性疾患である。"
+     },
+     {
+      "ref": "x-legacy-L05a:msd-sah",
+      "title": "MSDマニュアル プロフェッショナル版「くも膜下出血（SAH）」",
+      "url": "https://www.msdmanuals.com/ja-jp/professional/07-神経疾患/脳卒中/くも膜下出血-sah",
+      "locator": "病因",
+      "quote": "一般に，頭部外傷はくも膜下出血の最も一般的な原因であるが，外傷性くも膜下出血は通常，別の疾患とみなされる。"
+     }
+    ],
+    "asOf": "MSDマニュアル プロフェッショナル版（日本語）「くも膜下出血（SAH）」（2023年7月最終更新）"
+   }
+  },
+  {
+   "id": "lg-05-10",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "x-legacy-L05a:msd-alzheimer（認知症の最も一般的な原因、高齢者の認知症の60～80％）、x-legacy-L05a:msd-vascular-dementia（2番目に多い）。",
+   "detail": "「60-70%」を出典の60～80％に修正。出典で確認できない「血管性約20%」「レビー小体型は3番目」「前頭側頭型は比較的稀」を削除。",
+   "question": {
+    "id": "lg-05-10",
+    "legacy": {
+     "key": "5_10",
+     "chapter": 5,
+     "chapterName": "臨床医学",
+     "index": 10,
+     "hash": "7f2ea5ffcae23a4f"
+    },
+    "subject": "BCL",
+    "subtopic": "精神・脳神経・感覚器",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "高齢者の認知症の原因疾患として最も多いものはどれか。",
+    "choices": [
+     "アルツハイマー病",
+     "血管性認知症",
+     "レビー小体型認知症",
+     "前頭側頭型認知症"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "アルツハイマー病は認知症の最も一般的な原因であり、高齢者の認知症の60～80％を占める。",
+     "choiceNotes": [
+      null,
+      "血管性認知障害・認知症は高齢者の認知症で2番目に多い原因である。",
+      "レビー小体型認知症は頻度の高い認知症の病型の一つだが、最多ではない。",
+      "前頭側頭型認知症は頻度の高い認知症の病型の一つだが、最多ではない。"
+     ],
+     "point": "認知症の原因：アルツハイマー病が最多（高齢者の認知症の60～80％）、2番目が血管性認知症。"
+    },
+    "sources": [
+     {
+      "ref": "x-legacy-L05a:msd-alzheimer",
+      "title": "MSDマニュアル プロフェッショナル版「アルツハイマー病」",
+      "url": "https://www.msdmanuals.com/ja-jp/professional/07-神経疾患/せん妄および認知症/アルツハイマー病",
+      "locator": "概要",
+      "quote": "アルツハイマー病は，認知症の最も一般的な原因であり，高齢者の認知症の60～80％を占める。"
+     },
+     {
+      "ref": "x-legacy-L05a:msd-vascular-dementia",
+      "title": "MSDマニュアル プロフェッショナル版「血管性認知障害・認知症」",
+      "url": "https://www.msdmanuals.com/ja-jp/professional/07-神経疾患/せん妄および認知症/血管性認知障害-認知症",
+      "locator": "概要",
+      "quote": "血管性認知障害・認知症は，高齢者の認知症で2番目に多い原因である。"
+     }
+    ],
+    "asOf": "MSDマニュアル プロフェッショナル版（日本語）「アルツハイマー病」「血管性認知障害・認知症」（2025年2月最終更新）"
+   }
+  },
+  {
+   "id": "lg-05-11",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "x-legacy-L05a:ganjoho-stomach-prevention 発生要因（ピロリ菌感染・喫煙・食塩）; ganjoho-liver-prevention（HBV/HCV→肝細胞がん）; ganjoho-cervix-prevention（HPV→子宮頸がん）。",
+   "detail": "旧問の誤答肢「喫煙」は出典で胃がんの発生要因とされ、「肥満」「飲酒」も「最大」以外の点で否定できず、正解の一意性を「最大」の語に依存していた（出典に「最大」の記載なし）。感染に限った問いに作り替え、誤答肢を他のがんの発生要因となる感染に差し替えた。",
+   "question": {
+    "id": "lg-05-11",
+    "legacy": {
+     "key": "5_11",
+     "chapter": 5,
+     "chapterName": "臨床医学",
+     "index": 11,
+     "hash": "ba7367e872c24981"
+    },
+    "subject": "BCL",
+    "subtopic": "新生物",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "胃がんの発生要因として、国立がん研究センターがん情報サービスに挙げられている感染はどれか。",
+    "choices": [
+     "ヘリコバクター・ピロリ（ピロリ菌）の感染",
+     "ヒトパピローマウイルス（HPV）の感染",
+     "B型肝炎ウイルスの持続感染",
+     "C型肝炎ウイルスの持続感染"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "がん情報サービスでは、胃がんの発生要因にはピロリ菌の感染と喫煙があり、その他に食塩・高塩分食品の摂取が危険性を高めると報告されているとしている。胃がんではピロリ菌の除菌によって確実に発生リスクが低下することが明らかになっている（ただしゼロにはならない）。",
+     "choiceNotes": [
+      null,
+      "HPVの感染は子宮頸がんの発生の多くに関連する感染であり、胃がんの発生要因としては挙げられていない。",
+      "B型肝炎ウイルスの持続感染は肝細胞がんの主な要因であり、胃がんの発生要因としては挙げられていない。",
+      "C型肝炎ウイルスの持続感染は肝細胞がんの主な要因であり、胃がんの発生要因としては挙げられていない。"
+     ],
+     "point": "胃がんの発生要因＝ピロリ菌感染・喫煙（＋食塩・高塩分食品）。除菌で発生リスクは確実に低下する。HPV→子宮頸がん、B型・C型肝炎ウイルス→肝細胞がん。"
+    },
+    "sources": [
+     {
+      "ref": "x-legacy-L05a:ganjoho-stomach-prevention",
+      "title": "胃がん 予防・検診（がん情報サービス 一般の方へ）",
+      "url": "https://ganjoho.jp/public/cancer/stomach/prevention_screening.html",
+      "locator": "１．発生要因",
+      "quote": "胃がんの発生要因には、ヘリコバクター・ピロリ（ピロリ菌）の感染と喫煙があります。"
+     },
+     {
+      "ref": "x-legacy-L05a:ganjoho-liver-prevention",
+      "title": "肝臓がん（肝細胞がん） 予防・検診（がん情報サービス 一般の方へ）",
+      "url": "https://ganjoho.jp/public/cancer/liver/prevention_screening.html",
+      "locator": "１．発生要因",
+      "quote": "肝細胞がんが発生する主な要因は、B型肝炎ウイルスあるいはC型肝炎ウイルスの持続感染"
+     },
+     {
+      "ref": "x-legacy-L05a:ganjoho-cervix-prevention",
+      "title": "子宮頸がん 予防・検診（がん情報サービス 一般の方へ）",
+      "url": "https://ganjoho.jp/public/cancer/cervix_uteri/prevention_screening.html",
+      "locator": "１．発生要因",
+      "quote": "子宮頸がんの発生には、その多くにヒトパピローマウイルス（HPV：Human Papillomavirus）の感染が関連しています"
+     }
+    ],
+    "asOf": "がん情報サービス（胃がん 2026年1月13日、肝臓がん 2026年8月21日、子宮頸がん 2026年4月23日 更新・確認）"
+   }
+  },
+  {
+   "id": "lg-05-12",
+   "verdict": "pass",
+   "contentChanged": false,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "x-legacy-L05a:msd-shock ショックの病因と分類（循環血液量減少性・血液分布異常性・心原性・閉塞性）、敗血症性ショック＝血液分布異常性の一種、出血は循環血液量減少性ショックの一般的な原因、心原性の原因に心筋梗塞。",
+   "question": {
+    "id": "lg-05-12",
+    "legacy": {
+     "key": "5_12",
+     "chapter": 5,
+     "chapterName": "臨床医学",
+     "index": 12,
+     "hash": "3fdf2e443acc98a1"
+    },
+    "subject": "BCL",
+    "subtopic": "臨床医学総論",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "negative",
+    "question": "ショックの分類に含まれないのはどれか。",
+    "choices": [
+     "循環血液量減少性ショック",
+     "心原性ショック",
+     "敗血症性ショック",
+     "代謝性ショック"
+    ],
+    "answer": 3,
+    "explanation": {
+     "correct": "ショック分類＝循環血液量減少性・心原性・心外閉塞性・血液分布異常性。代謝性は存在しない。",
+     "choiceNotes": [
+      "出血等で生じるショックの基本型。",
+      "心筋梗塞等でポンプ機能破綻。",
+      "感染症による分布異常性ショック。",
+      null
+     ],
+     "point": "ショック分類＝循環血液量減少性・心原性・心外閉塞性・血液分布異常性。"
+    },
+    "sources": [
+     {
+      "ref": "x-legacy-L05a:msd-shock",
+      "title": "MSDマニュアル プロフェッショナル版「ショック」",
+      "url": "https://www.msdmanuals.com/ja-jp/professional/21-救命医療/ショックおよび輸液蘇生/ショック",
+      "locator": "ショックの病因と分類",
+      "quote": "循環血液量減少（循環血液量減少性ショック） 血管拡張（血液分布異常性ショック） 心拍出量の一次性低下（心原性ショックおよび閉塞性ショック）"
+     },
+     {
+      "ref": "x-legacy-L05a:msd-shock",
+      "title": "MSDマニュアル プロフェッショナル版「ショック」",
+      "url": "https://www.msdmanuals.com/ja-jp/professional/21-救命医療/ショックおよび輸液蘇生/ショック",
+      "locator": "病態生理",
+      "quote": "敗血症性ショックは血液分布異常性ショックの一種であり"
+     },
+     {
+      "ref": "x-legacy-L05a:msd-shock",
+      "title": "MSDマニュアル プロフェッショナル版「ショック」",
+      "url": "https://www.msdmanuals.com/ja-jp/professional/21-救命医療/ショックおよび輸液蘇生/ショック",
+      "locator": "心原性ショックおよび閉塞性ショック",
+      "quote": "心原性ショックは，一次性心疾患に起因する心拍出量の相対的または絶対的な減少である。"
+     }
+    ],
+    "asOf": "MSDマニュアル プロフェッショナル版（日本語）「ショック」（2024年9月最終更新）"
+   }
+  },
+  {
+   "id": "lg-05-13",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "x-legacy-L04a:msd-ja-dm 治療（血糖上昇が軽度の2型は食事・運動療法→メトホルミン等、急性代謝代償不全等ではインスリンを初期治療）。",
+   "detail": "出典では妊娠中・高浸透圧性高血糖状態・DKA・著しい高血糖ではインスリンが初期治療となるため、問いを「血糖値の上昇が軽度の」に限定した。「手術は重度肥満の場合のみ」等の出典で確認できない注釈を修正。",
+   "question": {
+    "id": "lg-05-13",
+    "legacy": {
+     "key": "5_13",
+     "chapter": 5,
+     "chapterName": "臨床医学",
+     "index": 13,
+     "hash": "d9f65665b7ba9840"
+    },
+    "subject": "BCL",
+    "subtopic": "血液・代謝・内分泌",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "血糖値の上昇が軽度の2型糖尿病で、最初に行う治療はどれか。",
+    "choices": [
+     "食事療法と運動療法",
+     "インスリン注射",
+     "透析療法",
+     "手術療法"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "血漿血糖値の上昇が軽度である2型糖尿病患者には、まず食事療法と運動療法を試み、生活習慣の改善で不十分であれば、インスリン以外の血糖降下薬（多くの場合メトホルミン）を1つ処方する。",
+     "choiceNotes": [
+      null,
+      "インスリンは、妊娠中や高浸透圧性高血糖状態・糖尿病性ケトアシドーシスなどの急性代謝代償不全、著しい高血糖などの場合に初期治療となるが、血糖上昇が軽度であればまず食事療法と運動療法を行う。",
+      "透析は進行した腎不全に対する腎代替療法であり、糖尿病の初期治療ではない。",
+      "手術療法は血糖上昇が軽度の2型糖尿病の初期治療ではない。"
+     ],
+     "point": "2型糖尿病（血糖上昇が軽度）＝①食事・運動療法→②インスリン以外の血糖降下薬（多くはメトホルミン）→必要に応じて併用・インスリン。"
+    },
+    "sources": [
+     {
+      "ref": "x-legacy-L04a:msd-ja-dm",
+      "title": "MSDマニュアル プロフェッショナル版「糖尿病」",
+      "url": "https://www.msdmanuals.com/ja-jp/professional/10-内分泌疾患と代謝性疾患/糖尿病と糖代謝異常症/糖尿病",
+      "locator": "治療",
+      "quote": "血漿血糖値の上昇が軽度である 2型糖尿病 患者には食事療法および運動療法を試みるよう指示し，生活習慣の改善で不十分であれば，続いて インスリン以外の血糖降下薬 （多くの場合メトホルミン）を1つ処方する。"
+     },
+     {
+      "ref": "x-legacy-L04a:msd-ja-dm",
+      "title": "MSDマニュアル プロフェッショナル版「糖尿病」",
+      "url": "https://www.msdmanuals.com/ja-jp/professional/10-内分泌疾患と代謝性疾患/糖尿病と糖代謝異常症/糖尿病",
+      "locator": "治療",
+      "quote": "2型糖尿病を有する妊娠中の女性，および 高浸透圧性高血糖状態 または 糖尿病性ケトアシドーシス （DKA）などの急性代謝代償不全を呈する患者では，初期治療として インスリン が適応となる。"
+     }
+    ],
+    "asOf": "MSDマニュアル プロフェッショナル版（日本語）「糖尿病」（2024年10月最終更新）"
+   }
+  },
+  {
+   "id": "lg-05-14",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "x-legacy-L05a:msd-ra 概要・疫学（女性に2～3倍、35～50歳に多い）・症状（対称性、朝のこわばり60分超）・診断（RF・抗CCP抗体・赤沈/CRP）。lg-05-26（L05b）と実質重複のため、どちらか一方のみ採用を推奨（本問を残す想定）。",
+   "detail": "解説の「朝のこわばり（30分以上）」を出典の「典型的には60分を超えて」に、「30〜50歳代女性に好発」を「女性に2～3倍多く35～50歳に多い」に修正。",
+   "question": {
+    "id": "lg-05-14",
+    "legacy": {
+     "key": "5_14",
+     "chapter": 5,
+     "chapterName": "臨床医学",
+     "index": 14,
+     "hash": "c21173a4c94edfec"
+    },
+    "subject": "BCL",
+    "subtopic": "皮膚・筋骨格",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "関節リウマチの特徴として正しいものはどれか。",
+    "choices": [
+     "朝のこわばりと対称性の多関節炎がみられる",
+     "高齢男性に多い",
+     "血液検査で異常がみられない",
+     "片側の大関節だけが侵される"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "関節リウマチは主に関節を侵す慢性の全身性自己免疫疾患で、手関節や中手指節関節などの末梢関節に対称性に炎症が生じる。関節症状は対称性であることが特徴的で、こわばりは典型的には朝の起床後に60分を超えて続く。",
+     "choiceNotes": [
+      null,
+      "女性で発生する頻度が男性の2～3倍高く、35歳から50歳の発症が最も多い。",
+      "診断にはリウマトイド因子（RF）、抗CCP抗体、赤沈またはCRPなどの血液検査が用いられ、分類基準にも含まれる。",
+      "手関節・中手指節関節などの末梢関節に対称性の多関節炎が生じるのが特徴である。"
+     ],
+     "point": "関節リウマチ＝朝のこわばり（典型的には60分超）＋対称性の多関節炎（手関節・中手指節関節など）。女性に2～3倍多く35～50歳に多い。RF・抗CCP抗体・赤沈/CRP。"
+    },
+    "sources": [
+     {
+      "ref": "x-legacy-L05a:msd-ra",
+      "title": "MSDマニュアル プロフェッショナル版「関節リウマチ（RA）」",
+      "url": "https://www.msdmanuals.com/ja-jp/professional/06-筋骨格系疾患と結合組織疾患/関節疾患/関節リウマチ-ra",
+      "locator": "症状と徴候",
+      "quote": "関節症状は対称性であることが特徴的である。典型的にはこわばりは朝の起床後に60分間を超えて続く"
+     },
+     {
+      "ref": "x-legacy-L05a:msd-ra",
+      "title": "MSDマニュアル プロフェッショナル版「関節リウマチ（RA）」",
+      "url": "https://www.msdmanuals.com/ja-jp/professional/06-筋骨格系疾患と結合組織疾患/関節疾患/関節リウマチ-ra",
+      "locator": "疫学",
+      "quote": "女性で発生する頻度が男性の2～3倍高い(2)。年齢を問わず発症する可能性があり，35歳から50歳が最も多い"
+     },
+     {
+      "ref": "x-legacy-L05a:msd-ra",
+      "title": "MSDマニュアル プロフェッショナル版「関節リウマチ（RA）」",
+      "url": "https://www.msdmanuals.com/ja-jp/professional/06-筋骨格系疾患と結合組織疾患/関節疾患/関節リウマチ-ra",
+      "locator": "診断",
+      "quote": "血清中のリウマトイド因子（RF），抗環状シトルリン化ペプチド抗体（抗CCP抗体），および赤血球沈降速度（赤沈）またはC反応性タンパク（CRP）"
+     }
+    ],
+    "asOf": "MSDマニュアル プロフェッショナル版（日本語）「関節リウマチ（RA）」（2024年4月最終更新）"
+   }
+  },
+  {
+   "id": "lg-05-15",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "x-legacy-L05a:msd-cirrhosis 合併症（門脈圧亢進症→静脈瘤からの消化管出血・腹水、肝機能不全→肝性脳症）、代償不全（消化管出血・腹水・肝性脳症）。",
+   "detail": "解説の「すべて門脈圧亢進が関連」は不正確（出典では肝性脳症は進行性の肝機能障害の表れとされる）ため修正。「三大合併症」の根拠として代償不全の特徴を問いに明示した。",
+   "question": {
+    "id": "lg-05-15",
+    "legacy": {
+     "key": "5_15",
+     "chapter": 5,
+     "chapterName": "臨床医学",
+     "index": 15,
+     "hash": "ac714d278d75ae76"
+    },
+    "subject": "BCL",
+    "subtopic": "消化器・泌尿器",
+    "format": "knowledge",
+    "difficulty": "standard",
+    "polarity": "negative",
+    "question": "肝硬変の代償不全を特徴づける、いわゆる三大合併症に含まれないものはどれか。",
+    "choices": [
+     "食道静脈瘤（破裂による消化管出血）",
+     "腹水",
+     "肝性脳症",
+     "胆石症"
+    ],
+    "answer": 3,
+    "explanation": {
+     "correct": "肝硬変の代償不全は消化管出血（食道・胃静脈瘤などからの出血）、腹水、肝性脳症を特徴とし、これらがいわゆる三大合併症である。静脈瘤と腹水は門脈圧亢進症の合併症、肝性脳症は進行性の肝機能障害の表れである。胆石症は代償不全を特徴づける病態として挙げられていない。",
+     "choiceNotes": [
+      "門脈圧亢進症による静脈瘤からの消化管出血は、代償不全の特徴の一つ。",
+      "腹水は門脈圧亢進症による合併症で、代償不全の特徴の一つ。",
+      "肝性脳症は肝機能不全の表れ（羽ばたき振戦、錯乱、肝性昏睡など）で、代償不全の特徴の一つ。",
+      null
+     ],
+     "point": "肝硬変の代償不全（三大合併症）＝静脈瘤からの消化管出血・腹水・肝性脳症。前2者は門脈圧亢進症、肝性脳症は肝機能不全による。"
+    },
+    "sources": [
+     {
+      "ref": "x-legacy-L05a:msd-cirrhosis",
+      "title": "MSDマニュアル プロフェッショナル版「肝硬変」",
+      "url": "https://www.msdmanuals.com/ja-jp/professional/02-肝胆道疾患/線維化と肝硬変/肝硬変",
+      "locator": "症状と徴候",
+      "quote": "肝硬変の合併症が発生すると，さらなる代償不全（消化管出血，腹水，または肝性脳症を特徴とする）が起きる可能性が大幅に高くなる。"
+     },
+     {
+      "ref": "x-legacy-L05a:msd-cirrhosis",
+      "title": "MSDマニュアル プロフェッショナル版「肝硬変」",
+      "url": "https://www.msdmanuals.com/ja-jp/professional/02-肝胆道疾患/線維化と肝硬変/肝硬変",
+      "locator": "合併症",
+      "quote": "門脈圧亢進症は，肝硬変の重篤な合併症として最も頻度の高いものであるが，それ自体も以下のような新たな合併症の原因となる： 食道静脈瘤，胃静脈瘤，または直腸静脈瘤からの消化管出血と門脈圧亢進性胃症"
+     },
+     {
+      "ref": "x-legacy-L05a:msd-cirrhosis",
+      "title": "MSDマニュアル プロフェッショナル版「肝硬変」",
+      "url": "https://www.msdmanuals.com/ja-jp/professional/02-肝胆道疾患/線維化と肝硬変/肝硬変",
+      "locator": "合併症",
+      "quote": "進行性の肝構築の喪失は，肝機能の障害から，肝機能不全へと至るが，凝固障害，急性腎障害（肝腎症候群），および肝性脳症として顕在化する。"
+     }
+    ],
+    "asOf": "MSDマニュアル プロフェッショナル版（日本語）「肝硬変」（2024年1月最終更新）"
+   }
+  }
+ ]
+}

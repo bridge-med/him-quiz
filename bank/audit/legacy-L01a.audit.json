@@ -1,0 +1,1035 @@
+{
+ "verdicts": [
+  {
+   "id": "lg-01-00",
+   "verdict": "reject",
+   "contentChanged": false,
+   "checks": {
+    "answer": false,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": false,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "キャッシュに「医療資源の4区分」を定める公的資料なし。DPCコーディングテキスト第7版 Ⅲ(1)は「医療資源」を「ヒト・モノ・カネ」の総体と定義（情報を含む4区分ではない）。",
+   "detail": "「物的・人的・財的・情報」の4区分は一般的な経営資源論の整理で、公式の定義として裏付けられない。choiceNotesも根拠なし。",
+   "reason": "unsupported"
+  },
+  {
+   "id": "lg-01-01",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "Minds重要用語集 EBM項で3要素（科学的根拠・医療者の技能・患者の価値観や希望）を確認。key正、solver一致。",
+   "detail": "choiceNote「臨床ガイドラインはEBMの成果物」は根拠のない断定のため差し替え。出典追加。",
+   "question": {
+    "id": "lg-01-01",
+    "legacy": {
+     "key": "1_1",
+     "chapter": 1,
+     "chapterName": "医療管理総論",
+     "index": 1,
+     "hash": "ddd27de5757b3ab9"
+    },
+    "subject": "S01",
+    "subtopic": "医療の概念と倫理",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "EBMの3要素として正しいものはどれか。",
+    "choices": [
+     "最善の研究エビデンス・臨床的専門技能・患者の価値観",
+     "最善の研究エビデンス・医療費の効率性・患者の価値観",
+     "臨床ガイドライン・臨床的専門技能・病院の方針",
+     "最善の研究エビデンス・臨床的専門技能・保険者の意向"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "EBM（根拠に基づく医療）は、最善の科学的根拠（研究エビデンス）を基に、医療者の技能と患者の価値観・希望を考え合わせて、よりよい医療を目指す実践様式である（Minds 重要用語集）。",
+     "choiceNotes": [
+      null,
+      "医療費の効率性は3要素に含まれない。",
+      "臨床ガイドラインや病院の方針は3要素に含まれない。3要素は研究エビデンス・医療者の技能・患者の価値観である。",
+      "保険者の意向は3要素に含まれない。"
+     ],
+     "point": "EBM＝最善の研究エビデンス＋医療者の技能（臨床経験）＋患者の価値観・希望。"
+    },
+    "sources": [
+     {
+      "ref": "x-legacy-L01a:minds-glossary-2020",
+      "title": "診療ガイドライン作成マニュアル2020 ver.3.0 重要用語集",
+      "url": "https://minds.jcqhc.or.jp/docs/methods/cpg-development/minds-manual/pdf/glossary_manual_2020.pdf",
+      "locator": "英文「EBM（evidence-based medicine）」",
+      "quote": "最善の科学的根拠／実証報告を基に， 医療者の技能および患者の価値観や希望を考え合わせて"
+     }
+    ],
+    "asOf": "Minds 診療ガイドライン作成マニュアル2020 ver.3.0 重要用語集"
+   }
+  },
+  {
+   "id": "lg-01-02",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "mgmt:quality-outcome-process-h23 1.(1) と脚注1（Donabedian）で構造・過程・結果を確認。key正、solver一致。",
+   "detail": "choiceNotes C「WHOの保健システム評価の指標」・D「プログラム評価の用語」はキャッシュで裏付けられない断定のため中立化。",
+   "question": {
+    "id": "lg-01-02",
+    "legacy": {
+     "key": "1_2",
+     "chapter": 1,
+     "chapterName": "医療管理総論",
+     "index": 2,
+     "hash": "7ffb26b54073887b"
+    },
+    "subject": "S04",
+    "subtopic": "医療の質の評価",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "ドナベディアンモデルの3要素はどれか。",
+    "choices": [
+     "構造・過程・結果",
+     "費用・満足度・安全性",
+     "構造・効率・公平性",
+     "投入・活動・影響"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "ドナベディアンは、医療の質を構造（ストラクチャー）・過程（プロセス）・結果（アウトカム）の3つの側面から評価する枠組みを提唱した。厚生労働省の資料も、医療の質の評価手法としてこの3要素に着目したものを挙げている。",
+     "choiceNotes": [
+      null,
+      "費用・満足度・安全性はドナベディアンの3要素ではない。患者満足度は結果（アウトカム）指標の例として扱われる。",
+      "効率・公平性はドナベディアンの3要素ではない。",
+      "投入・活動・影響はドナベディアンの3要素ではない。"
+     ],
+     "point": "ドナベディアン＝構造・過程・結果（Structure-Process-Outcome）。"
+    },
+    "sources": [
+     {
+      "ref": "mgmt:quality-outcome-process-h23",
+      "title": "医療の成果に関する指標（アウトカム指標）及び過程に関する指標（プロセス指標）の取扱い",
+      "url": "https://www.mhlw.go.jp/stf/shingi/2r9852000001u0or-att/2r9852000001u0tr.pdf",
+      "locator": "１．（１）定義",
+      "quote": "医療の「構造」（ストラクチャー）、「過程」"
+     },
+     {
+      "ref": "mgmt:quality-outcome-process-h23",
+      "title": "医療の成果に関する指標（アウトカム指標）及び過程に関する指標（プロセス指標）の取扱い",
+      "url": "https://www.mhlw.go.jp/stf/shingi/2r9852000001u0or-att/2r9852000001u0tr.pdf",
+      "locator": "１．（１）脚注1",
+      "quote": "Donabedian, A.,”Evaluating the Quality of Medical Care.”"
+     }
+    ],
+    "asOf": "平成23年11月 厚生労働省資料（医療の質の評価手法の整理）"
+   }
+  },
+  {
+   "id": "lg-01-03",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "mgmt:ianzen-sougou-taisaku-h14「３ アクシデントとインシデント」で定義確認。key正、solver一致。",
+   "detail": "pointの「アクシデント＝有害事象」は用語の混同（有害事象は過誤の有無を問わない別概念）。出典の「医療事故」に修正し、解説を出典の定義に合わせた。",
+   "question": {
+    "id": "lg-01-03",
+    "legacy": {
+     "key": "1_3",
+     "chapter": 1,
+     "chapterName": "医療管理総論",
+     "index": 3,
+     "hash": "ebfc3825b48d0d86"
+    },
+    "subject": "S04",
+    "subtopic": "医療安全の基本概念",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "インシデントとアクシデントの違いとして正しいのはどれか。",
+    "choices": [
+     "インシデントは患者に傷害が及ばなかった事象、アクシデントは傷害が及んだ事象",
+     "インシデントは医師の過失、アクシデントは看護師の過失",
+     "インシデントは入院患者、アクシデントは外来患者の事象",
+     "両者に明確な区別はない"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "医療安全推進総合対策（平成14年）では、「アクシデント」は通常、医療事故に相当する用語として用い、「インシデント」は誤った医療行為などが患者に実施される前に発見されたもの、あるいは実施されたが結果として患者に影響を及ぼすに至らなかったもの（ヒヤリ・ハット）をいう。区別の基準は患者への影響の有無である。",
+     "choiceNotes": [
+      null,
+      "職種ではなく、患者への影響の有無で区別する。",
+      "入院・外来の区別ではなく、患者への影響の有無で区別する。",
+      "医療安全推進総合対策では両者を別の用語として定義している。"
+     ],
+     "point": "インシデント＝ヒヤリ・ハット（患者に影響が及ばなかったもの）、アクシデント＝医療事故。"
+    },
+    "sources": [
+     {
+      "ref": "mgmt:ianzen-sougou-taisaku-h14",
+      "title": "医療安全推進総合対策 〜医療事故を未然に防止するために〜",
+      "url": "https://www.mhlw.go.jp/topics/2001/0110/dl/tp1030-1c.pdf",
+      "locator": "第1章 2 ３ アクシデントとインシデント",
+      "quote": "「アクシデント」は通常、医療事故に相当する用語として用いる。"
+     },
+     {
+      "ref": "mgmt:ianzen-sougou-taisaku-h14",
+      "title": "医療安全推進総合対策 〜医療事故を未然に防止するために〜",
+      "url": "https://www.mhlw.go.jp/topics/2001/0110/dl/tp1030-1c.pdf",
+      "locator": "第1章 2 ３ アクシデントとインシデント",
+      "quote": "結果として患者に影響を及ぼすに至らなかったものをいう。"
+     }
+    ],
+    "asOf": "平成14年4月 医療安全推進総合対策（医療安全対策検討会議）"
+   }
+  },
+  {
+   "id": "lg-01-04",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "リスボン宣言 原則3b・4b、医療法第1条の4第2項（2026-10-01施行版）を確認。key正、solver一致。",
+   "detail": "解説の「医療法にも説明義務が規定」は不正確（第1条の4第2項は努力義務）。pointの「IC3要素」は根拠なし。緊急時の例外（選択肢D）を出典で裏付けた。",
+   "question": {
+    "id": "lg-01-04",
+    "legacy": {
+     "key": "1_4",
+     "chapter": 1,
+     "chapterName": "医療管理総論",
+     "index": 4,
+     "hash": "73fc10006213e306"
+    },
+    "subject": "S01",
+    "subtopic": "医療の概念と倫理",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "インフォームドコンセントについて正しいのはどれか。",
+    "choices": [
+     "患者が十分な説明を受けた上で自発的に同意すること",
+     "医師が治療方針を一方的に決定すること",
+     "患者の家族だけに説明すれば足りること",
+     "緊急時を含めいかなる場合も省略できないこと"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "インフォームド・コンセントは、十分な説明を受けた患者が理解したうえで自発的に同意（または拒否）することである。リスボン宣言は、判断能力のある成人患者が診断・治療に同意を与え、または差し控える権利と、決定に必要な情報を得る権利を掲げている。医療法第1条の4第2項も、医療の担い手が適切な説明を行い医療を受ける者の理解を得るよう努めることを定めている（努力義務）。",
+     "choiceNotes": [
+      null,
+      "医師が一方的に治療方針を決めることは、患者の自己決定の権利（リスボン宣言 原則3）に反する。",
+      "同意の権利をもつのは患者本人であり、家族への説明だけでは足りない。",
+      "リスボン宣言は、法律上の権限を有する代理人がおらず医学的侵襲が緊急に必要な場合は患者の同意があるものと推定するとしており、緊急時には例外がある。"
+     ],
+     "point": "IC＝十分な説明＋患者本人の理解＋自発的な同意。医療法第1条の4第2項の説明は努力義務。"
+    },
+    "sources": [
+     {
+      "ref": "x-legacy-L01a:jma-lisbon",
+      "title": "患者の権利に関する世界医師会リスボン宣言（日本医師会訳）",
+      "url": "https://www.med.or.jp/doctor/international/wma/lisbon.html",
+      "locator": "原則3 自己決定の権利 b",
+      "quote": "精神的に判断能力のある成人患者は、いかなる診断上の手続きないし治療に対しても、同意を与えるかまたは差し控える権利を有する。"
+     },
+     {
+      "ref": "x-legacy-L01a:jma-lisbon",
+      "title": "患者の権利に関する世界医師会リスボン宣言（日本医師会訳）",
+      "url": "https://www.med.or.jp/doctor/international/wma/lisbon.html",
+      "locator": "原則4 意識のない患者 b",
+      "quote": "法律上の権限を有する代理人がおらず、患者に対する医学的侵襲が緊急に必要とされる場合は、患者の同意があるものと推定する。"
+     },
+     {
+      "ref": "law:医療法",
+      "title": "医療法",
+      "url": "https://laws.e-gov.go.jp/law/323AC0000000205",
+      "locator": "第1条の4第2項",
+      "quote": "適切な説明を行い、医療を受ける者の理解を得るよう努めなければならない。"
+     }
+    ],
+    "asOf": "2026-11 e-Gov現行法令（医療法）／リスボン宣言 日本医師会訳（2015年再確認版）"
+   }
+  },
+  {
+   "id": "lg-01-05",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "厚労省報告書「チーム医療の推進について」1.基本的な考え方の定義で確認。key正、solver一致。",
+   "detail": "解説・choiceNotesの「対等な立場」「特定の中心職種はない」は出典にない断定のため、報告書の定義に沿って書き直した。",
+   "question": {
+    "id": "lg-01-05",
+    "legacy": {
+     "key": "1_5",
+     "chapter": 1,
+     "chapterName": "医療管理総論",
+     "index": 5,
+     "hash": "1f81ce196d09a952"
+    },
+    "subject": "S01",
+    "subtopic": "医療の概念と倫理",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "チーム医療の説明として最も適切なのはどれか。",
+    "choices": [
+     "多職種が専門性を発揮し連携して患者ケアに当たること",
+     "医師の指示に他職種が従うこと",
+     "各職種が独立して業務を行うこと",
+     "看護師が中心となり医師を補佐すること"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "厚生労働省「チーム医療の推進について」（平成22年）は、チーム医療を、医療に従事する多種多様な医療スタッフが各々の高い専門性を前提に、目的と情報を共有し、業務を分担しつつも互いに連携・補完し合い、患者の状況に的確に対応した医療を提供すること、と整理している。",
+     "choiceNotes": [
+      null,
+      "他職種が医師の指示に従うだけでは、各スタッフが専門性を前提に目的と情報を共有し連携・補完し合うというチーム医療の考え方に当たらない。",
+      "各職種が独立して業務を行うだけでは、互いに連携・補完し合うことにならない。",
+      "特定の職種が中心となって補佐する形ではなく、多種多様な医療スタッフがそれぞれの専門性を前提に連携する。"
+     ],
+     "point": "チーム医療＝多職種が専門性を前提に、目的と情報を共有し、業務を分担しつつ連携・補完する。"
+    },
+    "sources": [
+     {
+      "ref": "x-legacy-L01a:mhlw-team-iryou-h22",
+      "title": "チーム医療の推進について（チーム医療の推進に関する検討会 報告書）",
+      "url": "https://www.mhlw.go.jp/shingi/2010/03/dl/s0319-9a.pdf",
+      "locator": "１．基本的な考え方",
+      "quote": "医療に従事する多種多様な医療スタッフが、各々の高い専門性を前提"
+     },
+     {
+      "ref": "x-legacy-L01a:mhlw-team-iryou-h22",
+      "title": "チーム医療の推進について（チーム医療の推進に関する検討会 報告書）",
+      "url": "https://www.mhlw.go.jp/shingi/2010/03/dl/s0319-9a.pdf",
+      "locator": "１．基本的な考え方",
+      "quote": "目的と情報を共有し、業務を分担しつつも互いに連携・補完し合い"
+     }
+    ],
+    "asOf": "平成22年3月 厚生労働省 チーム医療の推進に関する検討会 報告書"
+   }
+  },
+  {
+   "id": "lg-01-06",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "日本医師会訳リスボン宣言の原則1〜11の見出しを確認（無償の医療の項目なし）。key正、solver一致。",
+   "detail": "解説「医療費は各国制度に委ねられている」は出典になく削除。用語を訳文（守秘義務に対する権利等）に合わせ、設問に宣言の正式名を補った。",
+   "question": {
+    "id": "lg-01-06",
+    "legacy": {
+     "key": "1_6",
+     "chapter": 1,
+     "chapterName": "医療管理総論",
+     "index": 6,
+     "hash": "a6e95a1347ac32a0"
+    },
+    "subject": "S01",
+    "subtopic": "医療の概念と倫理",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "negative",
+    "question": "患者の権利に関する世界医師会（WMA）リスボン宣言の原則に含まれないのはどれか。",
+    "choices": [
+     "良質の医療を受ける権利",
+     "情報を得る権利",
+     "自己決定の権利",
+     "無償で医療を受ける権利"
+    ],
+    "answer": 3,
+    "explanation": {
+     "correct": "リスボン宣言（日本医師会訳）の原則は、良質の医療を受ける権利、選択の自由の権利、自己決定の権利、意識のない患者、法的無能力の患者、患者の意思に反する処置、情報に対する権利、守秘義務に対する権利、健康教育を受ける権利、尊厳に対する権利、宗教的支援に対する権利の11項目であり、「無償で医療を受ける権利」はない。",
+     "choiceNotes": [
+      "原則1「良質の医療を受ける権利」として掲げられている。",
+      "原則7「情報に対する権利」として掲げられている。",
+      "原則3「自己決定の権利」として掲げられている。",
+      null
+     ],
+     "point": "リスボン宣言＝患者の権利に関するWMAの宣言（1981年採択）。原則に「無償で医療を受ける権利」はない。"
+    },
+    "sources": [
+     {
+      "ref": "x-legacy-L01a:jma-lisbon",
+      "title": "患者の権利に関する世界医師会リスボン宣言（日本医師会訳）",
+      "url": "https://www.med.or.jp/doctor/international/wma/lisbon.html",
+      "locator": "原則1〜3",
+      "quote": "１．良質の医療を受ける権利"
+     },
+     {
+      "ref": "x-legacy-L01a:jma-lisbon",
+      "title": "患者の権利に関する世界医師会リスボン宣言（日本医師会訳）",
+      "url": "https://www.med.or.jp/doctor/international/wma/lisbon.html",
+      "locator": "原則7",
+      "quote": "７．情報に対する権利"
+     }
+    ],
+    "asOf": "リスボン宣言 日本医師会訳（1995年改訂・2005年編集上修正・2015年再確認版）"
+   }
+  },
+  {
+   "id": "lg-01-07",
+   "verdict": "pass",
+   "contentChanged": false,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "医療法第1条の5第1項・第2項（2026-10-01施行版）で病院20人以上・診療所19人以下を確認。solver一致。",
+   "question": {
+    "id": "lg-01-07",
+    "legacy": {
+     "key": "1_7",
+     "chapter": 1,
+     "chapterName": "医療管理総論",
+     "index": 7,
+     "hash": "9035a55d3ae50125"
+    },
+    "subject": "S01",
+    "subtopic": "医療施設の類型",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "病院の定義における病床数基準はどれか。",
+    "choices": [
+     "20床以上",
+     "10床以上",
+     "50床以上",
+     "100床以上"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "医療法により病院は20人以上の患者を入院させる施設。19床以下は診療所。",
+     "choiceNotes": [
+      null,
+      "10床以上の基準は存在しない。",
+      "50床以上は病院の定義ではない。",
+      "100床以上は病院の定義ではない。"
+     ],
+     "point": "病院＝20床以上。診療所＝0〜19床。"
+    },
+    "sources": [
+     {
+      "ref": "law:医療法",
+      "title": "医療法",
+      "url": "https://laws.e-gov.go.jp/law/323AC0000000205",
+      "locator": "第1条の5第1項",
+      "quote": "二十人以上の患者を入院させるための施設を有するものをいう。"
+     },
+     {
+      "ref": "law:医療法",
+      "title": "医療法",
+      "url": "https://laws.e-gov.go.jp/law/323AC0000000205",
+      "locator": "第1条の5第2項",
+      "quote": "十九人以下の患者を入院させるための施設を有するものをいう。"
+     }
+    ],
+    "asOf": "2026-11 e-Gov現行法令（医療法 2026-10-01施行版）"
+   }
+  },
+  {
+   "id": "lg-01-08",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "日本クリニカルパス学会 定義（2026）、業務指針2026 5-13(2)を確認。key正、solver一致。",
+   "detail": "旧choiceNotes（「患者用パスも作成」等）と解説「入院から退院までの一覧表」は出典で裏付けられず、選択肢B〜Dを出典で明確に誤りと言える形（逸脱を認めない・保険請求書類・単一職種）に直した。",
+   "question": {
+    "id": "lg-01-08",
+    "legacy": {
+     "key": "1_8",
+     "chapter": 1,
+     "chapterName": "医療管理総論",
+     "index": 8,
+     "hash": "87e1a25a134c00a4"
+    },
+    "subject": "S09",
+    "subtopic": "クリニカルパスと質指標",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "クリニカルパスについて正しいのはどれか。",
+    "choices": [
+     "標準的な診療計画を時間軸に沿って示したもの",
+     "医師の裁量を制限し、標準からの逸脱を認めない規則",
+     "診療報酬の請求のために作成する書類",
+     "単一の職種が作成し運用する計画"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "日本クリニカルパス学会の定義（2026）では、クリニカルパスは病態や疾患の診断・治療を対象に、患者目標（アウトカム）を明確にし、その達成に必要な医療・ケアを時間軸に沿って示した標準診療計画であり、多職種協働により作成・運用される。",
+     "choiceNotes": [
+      null,
+      "標準的な経過からのずれ（バリアンス）は記録・分析の対象であり、その分析がパスの改訂と診療プロセスの改善につながる。逸脱を認めない規則ではない。",
+      "パスは標準診療計画であり、保険請求のための書類ではない。",
+      "パスは多職種協働により作成・運用される。"
+     ],
+     "point": "パス＝時間軸に沿った標準診療計画。バリアンス分析で継続的に改善する。"
+    },
+    "sources": [
+     {
+      "ref": "x-legacy-L01a:jscp-about",
+      "title": "学会概要（日本クリニカルパス学会）—クリニカルパスの定義（2026）",
+      "url": "http://www.jscp.gr.jp/about.html",
+      "locator": "クリニカルパス（略名：パス）の定義（2026）",
+      "quote": "その達成に必要な医療・ケアを時間軸に沿って示した標準診療計画である。多職種協働により作成・運用され"
+     },
+     {
+      "ref": "him:jhim-gyomu-shishin-2026",
+      "title": "診療情報管理士業務指針 2026",
+      "url": "https://jhim-e.com/pdf/2026/guideline2026.pdf",
+      "locator": "5-13（2）バリアンス分析の意義とデータの活用",
+      "quote": "個々の症例における標準的な経過（達成目標）からの ずれを可視化し、診療プロセスの改善につなげる質改善ツール"
+     }
+    ],
+    "asOf": "日本クリニカルパス学会 クリニカルパスの定義（2026）／診療情報管理士業務指針2026"
+   }
+  },
+  {
+   "id": "lg-01-09",
+   "verdict": "pass",
+   "contentChanged": false,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "GL第7.0版 経営管理編 2.2.2「PDCA（Plan-Do-Check-Act）」、e-文書施行通知で順序と各段階の意味を確認。solver一致。",
+   "question": {
+    "id": "lg-01-09",
+    "legacy": {
+     "key": "1_9",
+     "chapter": 1,
+     "chapterName": "医療管理総論",
+     "index": 9,
+     "hash": "dad20c04d10ef291"
+    },
+    "subject": "S04",
+    "subtopic": "質改善の手法",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "PDCAサイクルの正しい順序はどれか。",
+    "choices": [
+     "Plan→Do→Check→Act",
+     "Plan→Do→Act→Check",
+     "Do→Plan→Check→Act",
+     "Check→Plan→Do→Act"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "PDCA＝Plan（計画）→Do（実行）→Check（評価）→Act（改善）の4段階を繰り返す。",
+     "choiceNotes": [
+      null,
+      "ActとCheckの順序が逆。",
+      "Planが最初に来る。",
+      "Checkから始まるのではなくPlanが起点。"
+     ],
+     "point": "P→D→C→A。計画→実行→評価→改善。"
+    },
+    "sources": [
+     {
+      "ref": "info:mhlw-anzen-gl7-keiei",
+      "title": "医療情報システムの安全管理に関するガイドライン 第7.0版 経営管理編",
+      "url": "https://www.mhlw.go.jp/content/10808000/001716291.pdf",
+      "locator": "2.2.2 情報セキュリティマネジメントシステム（ISMS）の実践",
+      "quote": "医療機関等における PDCA（Plan-Do-Check-Act）サイクルの実施"
+     },
+     {
+      "ref": "info:mhlw-ebunsho-shiko-tsuchi",
+      "title": "e-文書法施行通知（医政発第0331009号ほか）",
+      "url": "https://www.mhlw.go.jp/web/t_doc?dataId=00tb2663&dataType=1&pageNo=1",
+      "locator": "運用管理規程",
+      "quote": "策定(Plan)された管理規程に基づいた運用(Do)を行い、適切な監査(Check)を実施し、必要に応じて改善(Action)していかねばならない"
+     }
+    ],
+    "asOf": "医療情報システムの安全管理に関するガイドライン 第7.0版（令和8年6月）"
+   }
+  },
+  {
+   "id": "lg-01-10",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "DPCコーディングテキスト第7版 Ⅲ(1)(2)とⅠの注（主傷病名）を確認。key正、solver一致。",
+   "detail": "旧選択肢C「最も医療費が高い傷病名」は、医療資源が「ヒト・モノ・カネ」の総体と定義されるため誤りと断定しにくい。出典で明確に区別できる「レセプトの主傷病名」に差し替え、正答Aは設問の語句を繰り返さない形（1入院期間・退院時に1つ決定）に改めた。",
+   "question": {
+    "id": "lg-01-10",
+    "legacy": {
+     "key": "1_10",
+     "chapter": 1,
+     "chapterName": "医療管理総論",
+     "index": 10,
+     "hash": "11652fcae3daf2c0"
+    },
+    "subject": "S10",
+    "subtopic": "DPCのコーディング",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "DPC/PDPSの「医療資源を最も投入した傷病名」について正しいのはどれか。",
+    "choices": [
+     "1入院期間を対象として退院時に1つ決定する傷病名",
+     "入院時の主訴に該当する傷病名",
+     "レセプトに医師が記載した主傷病名",
+     "退院時に治癒していない傷病名"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "DPC/PDPS傷病名コーディングテキスト（第7版）では、医療資源病名は1入院期間を対象として退院時に1つ決定し、入院期間中に複数の病態が存在する場合はどの病態に医療資源を最も投入したかで判断する。医療資源とは「ヒト・モノ・カネ」の総体である。",
+     "choiceNotes": [
+      null,
+      "入院時の主訴とは限らず、入院期間中に医療資源を最も投入した病態で判断する。",
+      "レセプトや様式１の主傷病名は医師が診療録に記載した傷病名であり、必ずしも医療資源の投入量に基づいて決定されたものである必要はない。",
+      "治癒の有無ではなく、医療資源の投入量で判断する。"
+     ],
+     "point": "医療資源病名＝1入院期間で医療資源（ヒト・モノ・カネ）を最も投入した傷病名を退院時に1つ選ぶ。"
+    },
+    "sources": [
+     {
+      "ref": "ins:dpc-coding-text-v7",
+      "title": "DPC／PDPS 傷病名コーディングテキスト 改定版（第７版）",
+      "url": "https://www.mhlw.go.jp/content/12400000/001684575.pdf",
+      "locator": "Ⅲ（1）医療資源とは",
+      "quote": "「医療資源」とは「ヒト・モノ・カネ」の総体である。"
+     },
+     {
+      "ref": "ins:dpc-coding-text-v7",
+      "title": "DPC／PDPS 傷病名コーディングテキスト 改定版（第７版）",
+      "url": "https://www.mhlw.go.jp/content/12400000/001684575.pdf",
+      "locator": "Ⅲ（2）",
+      "quote": "医療資源病名は、１入院期間を対象として退院時に１つ決定すること"
+     },
+     {
+      "ref": "ins:dpc-coding-text-v7",
+      "title": "DPC／PDPS 傷病名コーディングテキスト 改定版（第７版）",
+      "url": "https://www.mhlw.go.jp/content/12400000/001684575.pdf",
+      "locator": "Ⅰ 注",
+      "quote": "必ずしも医療資源の投入量に基づいて決定されたものである必要はない。"
+     }
+    ],
+    "asOf": "DPC/PDPS傷病名コーディングテキスト 第7版（令和8年6月）"
+   }
+  },
+  {
+   "id": "lg-01-11",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "施行規則 第30条の33の2の5第2項（2026-10-01施行版）で高度急性期・急性期・包括期・慢性期を確認。病床機能報告の概要（令和8年度）で回復期→包括期の見直しを確認。key（予防期）は新旧どちらでも正。solver一致。",
+   "detail": "解説・pointが4区分を「回復期」を含む旧区分のまま現行として記載していた（現行は包括期機能）。設問を現行制度の病床機能報告に合わせ、旧称を併記した。",
+   "question": {
+    "id": "lg-01-11",
+    "legacy": {
+     "key": "1_11",
+     "chapter": 1,
+     "chapterName": "医療管理総論",
+     "index": 11,
+     "hash": "1285aab298c1f789"
+    },
+    "subject": "S01",
+    "subtopic": "医療計画・地域医療構想",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "negative",
+    "question": "病床機能報告で用いる病床の4つの機能区分に含まれないのはどれか。",
+    "choices": [
+     "高度急性期",
+     "急性期",
+     "慢性期",
+     "予防期"
+    ],
+    "answer": 3,
+    "explanation": {
+     "correct": "医療法施行規則（2026年10月1日施行版）第30条の33の2の5第2項は、病床の機能区分を高度急性期機能・急性期機能・包括期機能・慢性期機能の4区分と定めている。2025年に向けた地域医療構想で「回復期機能」とされていた区分は、2040年に向けた見直しで「包括期機能」として位置づけが改められた。「予防期」という区分はない。",
+     "choiceNotes": [
+      "高度急性期機能は4区分の一つ。",
+      "急性期機能は4区分の一つ。",
+      "慢性期機能は4区分の一つ。",
+      null
+     ],
+     "point": "4区分＝高度急性期・急性期・包括期（2025年に向けた地域医療構想では回復期）・慢性期。"
+    },
+    "sources": [
+     {
+      "ref": "law:医療法施行規則",
+      "title": "医療法施行規則",
+      "url": "https://laws.e-gov.go.jp/law/323M40000100050",
+      "locator": "第30条の33の2の5第2項第4号",
+      "quote": "四 慢性期機能長期にわたり療養が必要な患者"
+     },
+     {
+      "ref": "mgmt:byoushoukinou-gaiyou-r8",
+      "title": "医療機関機能・病床機能報告の概要",
+      "url": "https://www.mhlw.go.jp/content/001759088.pdf",
+      "locator": "病床機能の報告について",
+      "quote": "これまでの４区分のうち、「回復期機能」について、「包括期機能」と"
+     }
+    ],
+    "asOf": "2026-11 e-Gov現行法令（医療法施行規則 2026-10-01施行版）／令和8年度 医療機関機能・病床機能報告の概要"
+   }
+  },
+  {
+   "id": "lg-01-12",
+   "verdict": "pass",
+   "contentChanged": false,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "施行規則 第30条の28で5疾病、平成25年度からの医療計画で精神疾患追加を確認（x-legacy-L03 資料１）。solver一致。",
+   "question": {
+    "id": "lg-01-12",
+    "legacy": {
+     "key": "1_12",
+     "chapter": 1,
+     "chapterName": "医療管理総論",
+     "index": 12,
+     "hash": "6d3574c158a98206"
+    },
+    "subject": "S01",
+    "subtopic": "医療計画・地域医療構想",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "negative",
+    "question": "5疾病に含まれないのはどれか。",
+    "choices": [
+     "がん",
+     "脳卒中",
+     "精神疾患",
+     "アレルギー疾患"
+    ],
+    "answer": 3,
+    "explanation": {
+     "correct": "5疾病＝がん・脳卒中・心血管疾患・糖尿病・精神疾患。アレルギー疾患は含まれない。",
+     "choiceNotes": [
+      "がんは5疾病の筆頭。",
+      "脳卒中は5疾病の一つ。",
+      "精神疾患は2013年から追加。",
+      null
+     ],
+     "point": "5疾病＝がん・脳卒中・心血管・糖尿病・精神。精神疾患の追加も頻出。"
+    },
+    "sources": [
+     {
+      "ref": "law:医療法施行規則",
+      "title": "医療法施行規則",
+      "url": "https://laws.e-gov.go.jp/law/323M40000100050",
+      "locator": "第30条の28",
+      "quote": "がん、脳卒中、心筋梗塞等の心血管疾患、糖尿病及び精神疾患とする。"
+     },
+     {
+      "ref": "x-legacy-L03:mhlw-iryoukeikaku-shiryou1-h25",
+      "title": "医療計画について（資料１）",
+      "url": "https://www.mhlw.go.jp/stf/shingi/2r98520000036ff1-att/2r98520000036fkg.pdf",
+      "locator": "４．精神疾患の医療体制の構築について",
+      "quote": "医療計画に定める疾病として新たに精神疾患を追加することとし"
+     }
+    ],
+    "asOf": "2026-11 e-Gov現行法令（医療法施行規則 2026-10-01施行版）"
+   }
+  },
+  {
+   "id": "lg-01-13",
+   "verdict": "pass",
+   "contentChanged": false,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "h23資料 1.(1)で質の評価（構造・過程・結果）と患者満足度がアウトカム指標の一例であることを確認、h29ガイドラインで臨床指標＝Quality Indicator。solver一致。",
+   "question": {
+    "id": "lg-01-13",
+    "legacy": {
+     "key": "1_13",
+     "chapter": 1,
+     "chapterName": "医療管理総論",
+     "index": 13,
+     "hash": "5ec301f437ac1862"
+    },
+    "subject": "S04",
+    "subtopic": "医療の質の評価",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "QIの説明として正しいのはどれか。",
+    "choices": [
+     "医療の質を定量的に評価するための指標",
+     "医療事故の件数のみを測る指標",
+     "患者満足度アンケートのこと",
+     "医療費の削減率を示す指標"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "QIは医療の質を定量的・客観的に評価するための指標。構造・過程・結果の各側面について設定される。",
+     "choiceNotes": [
+      null,
+      "事故件数だけでなく多角的な指標を含む。",
+      "患者満足度はQIの一要素にはなるがQIそのものではない。",
+      "医療費削減率は経営指標でありQIとは異なる。"
+     ],
+     "point": "QI＝医療の質を数値で測る仕組み。"
+    },
+    "sources": [
+     {
+      "ref": "mgmt:quality-outcome-process-h23",
+      "title": "医療の成果に関する指標（アウトカム指標）及び過程に関する指標（プロセス指標）の取扱い",
+      "url": "https://www.mhlw.go.jp/stf/shingi/2r9852000001u0or-att/2r9852000001u0tr.pdf",
+      "locator": "１．（１）定義",
+      "quote": "医療の質を評価する手法として、医療の「構造」（ストラクチャー）、「過程」"
+     },
+     {
+      "ref": "mgmt:quality-outcome-process-h23",
+      "title": "医療の成果に関する指標（アウトカム指標）及び過程に関する指標（プロセス指標）の取扱い",
+      "url": "https://www.mhlw.go.jp/stf/shingi/2r9852000001u0or-att/2r9852000001u0tr.pdf",
+      "locator": "１．（１）定義 アウトカム指標の具体例",
+      "quote": "死亡率、回復率、再入院率、患者満足度 等"
+     },
+     {
+      "ref": "mgmt:chiikikousou-guideline-h29",
+      "title": "地域医療構想策定ガイドライン",
+      "url": "https://www.mhlw.go.jp/content/10800000/001621958.pdf",
+      "locator": "病床機能に応じた医療の質評価の支援",
+      "quote": "臨床指標（Quality Indicator）を"
+     }
+    ],
+    "asOf": "平成23年11月 厚生労働省資料／平成29年 地域医療構想策定ガイドライン"
+   }
+  },
+  {
+   "id": "lg-01-14",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "医療法第4条の2、施行規則第6条の5（400）・第6条の2（原則200）を確認（2026-10-01施行版。令和8年のA/B類型は安全管理の事象分類で病床数要件は不変）。key正、solver一致。",
+   "detail": "choiceNote・pointの「200床以上は地域医療支援病院の要件」は施行規則第6条の2のただし書（知事が認めたときは例外）を落としていたため「原則」を補った。",
+   "question": {
+    "id": "lg-01-14",
+    "legacy": {
+     "key": "1_14",
+     "chapter": 1,
+     "chapterName": "医療管理総論",
+     "index": 14,
+     "hash": "ce692d121ebcbe14"
+    },
+    "subject": "S01",
+    "subtopic": "医療施設の類型",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "特定機能病院の要件として正しいのはどれか。",
+    "choices": [
+     "高度の医療を提供し400床以上",
+     "救急医療を提供し200床以上",
+     "地域住民に一次医療を提供",
+     "在宅医療を専門に行う"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "医療法第4条の2により、特定機能病院は高度の医療の提供、高度の医療技術の開発及び評価、高度の医療に関する研修、医療の高度の安全の確保の能力などの要件を満たす病院で、厚生労働大臣が承認する。病床数の要件は医療法施行規則第6条の5により400以上である。",
+     "choiceNotes": [
+      null,
+      "特定機能病院の病床数要件は400以上である。救急医療の提供と原則200床以上は地域医療支援病院の要件。",
+      "一次医療の提供は特定機能病院の承認要件ではない。",
+      "在宅医療を専門に行うことは要件に含まれない。"
+     ],
+     "point": "特定機能病院＝400床以上・厚生労働大臣承認。地域医療支援病院＝原則200床以上・都道府県知事承認。"
+    },
+    "sources": [
+     {
+      "ref": "law:医療法",
+      "title": "医療法",
+      "url": "https://laws.e-gov.go.jp/law/323AC0000000205",
+      "locator": "第4条の2第1項",
+      "quote": "厚生労働大臣の承認を得て特定機能病院と称することができる。"
+     },
+     {
+      "ref": "law:医療法施行規則",
+      "title": "医療法施行規則",
+      "url": "https://laws.e-gov.go.jp/law/323M40000100050",
+      "locator": "第6条の5",
+      "quote": "法第四条の二第一項第六号に規定する厚生労働省令で定める数は四百とする。"
+     },
+     {
+      "ref": "law:医療法施行規則",
+      "title": "医療法施行規則",
+      "url": "https://laws.e-gov.go.jp/law/323M40000100050",
+      "locator": "第6条の2",
+      "quote": "厚生労働省令で定める数は二百とする。ただし、都道府県知事が"
+     }
+    ],
+    "asOf": "2026-11 e-Gov現行法令（医療法・医療法施行規則 2026-10-01施行版）"
+   }
+  },
+  {
+   "id": "lg-01-15",
+   "verdict": "fix",
+   "contentChanged": true,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "医療法第4条、施行規則第6条の2、地域医療支援病院制度の概要で確認。key正、solver一致。",
+   "detail": "解説の「200床以上」に「原則」がなく（第6条の2ただし書）、choiceNoteの「高度先進医療」は医療法の要件の文言（高度の医療）と異なるため修正。",
+   "question": {
+    "id": "lg-01-15",
+    "legacy": {
+     "key": "1_15",
+     "chapter": 1,
+     "chapterName": "医療管理総論",
+     "index": 15,
+     "hash": "7b03470568e96114"
+    },
+    "subject": "S01",
+    "subtopic": "医療施設の類型",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "地域医療支援病院の説明として正しいのはどれか。",
+    "choices": [
+     "かかりつけ医を支援し紹介患者中心の医療を提供",
+     "すべての診療科を備えた総合病院",
+     "高度先進医療を専門に行う病院",
+     "救急患者のみを受け入れる病院"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "医療法第4条により、地域医療支援病院は紹介患者への医療提供と施設・設備の共同利用、救急医療の提供、地域の医療従事者の研修などの要件を満たす病院で、都道府県知事が承認する。かかりつけ医等への支援を行う病院として平成9年の医療法改正で創設された。病床数は原則200以上（医療法施行規則第6条の2）。",
+     "choiceNotes": [
+      null,
+      "すべての診療科を備えることは要件ではない。",
+      "高度の医療の提供は特定機能病院の要件である。",
+      "救急医療の提供は要件の一つだが、紹介患者への医療提供や共同利用、研修なども求められ、救急患者のみを受け入れる病院ではない。"
+     ],
+     "point": "地域医療支援病院＝紹介患者中心・かかりつけ医支援・原則200床以上・都道府県知事承認。"
+    },
+    "sources": [
+     {
+      "ref": "law:医療法",
+      "title": "医療法",
+      "url": "https://laws.e-gov.go.jp/law/323AC0000000205",
+      "locator": "第4条第1項",
+      "quote": "その所在地の都道府県知事の承認を得て地域医療支援病院と称することができる。"
+     },
+     {
+      "ref": "mgmt:chiiki-shien-gaiyou",
+      "title": "地域医療支援病院制度の概要",
+      "url": "https://www.mhlw.go.jp/content/10800000/001350751.pdf",
+      "locator": "趣旨",
+      "quote": "かかりつけ医等への支援を行う病院として、平成９年の医療法改正に"
+     },
+     {
+      "ref": "law:医療法施行規則",
+      "title": "医療法施行規則",
+      "url": "https://laws.e-gov.go.jp/law/323M40000100050",
+      "locator": "第6条の2",
+      "quote": "厚生労働省令で定める数は二百とする。ただし、都道府県知事が"
+     }
+    ],
+    "asOf": "2026-11 e-Gov現行法令（医療法・医療法施行規則 2026-10-01施行版）"
+   }
+  }
+ ]
+}

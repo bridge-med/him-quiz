@@ -1,0 +1,218 @@
+{
+ "verdicts": [
+  {
+   "key": "G4-S11-CON-01",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:instruction 3.1.4 を通読。丸括弧⒝・コロン・中括弧・NEC の各肢は本文どおり、ポイント・ダッシュは「第４桁が存在し…」で D が唯一の誤り。G03 除外（G04.-）・H10.5・K36・J16 の例示も一致。"
+  },
+  {
+   "key": "G4-S11-CON-02",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:instruction 3.1.4 角括弧⒜⒞＝a・c、丸括弧⒝⒞⒟＝b・d・e を確認。A50.4・K27 の例示は本文と一致、コード実在（icd.mjs）。"
+  },
+  {
+   "key": "G4-S11-CON-03",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou09 I10 包含「高血圧（症）（動脈性）（良性）（本態性）（悪性）…」と除外（脳 I60－I69・眼 H35.0）を確認。3.1.4 丸括弧⒜が I10 を例示。I15.9/I11.9/I13.9/I67.4 の名称一致。"
+  },
+  {
+   "key": "G4-S11-CON-04",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:instruction 3.1.4 コロン（K36 の例）、icd:naiyou11 K36 包含「虫垂炎：・慢性・再発性」、K37 詳細不明の虫垂炎、K36 は4桁細分類なしを確認。3.1.2「下位分類ではない」も文脈一致。"
+  },
+  {
+   "key": "G4-S11-CON-05",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:instruction 3.1.4 中括弧（O71.6 の例）と icd:naiyou15 O71.6 の3語＋「産科的」の配置を確認。丸括弧・角括弧との対比の肢注も本文どおり。"
+  },
+  {
+   "key": "G4-S11-CON-06",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou10 J16 除外（A70、B59、肺炎NOS J18.9、先天性 P23.-）と J16.0 クラミジア肺炎を確認。icd:instruction 3.1.4 NEC の記述と一致。"
+  },
+  {
+   "key": "G4-S11-CON-07",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:instruction 3.1.4「及び」＝「及び／又は」、A18.0 の例（骨結核・関節結核・骨及び関節の結核）を確認。A18.0 の名称一致。"
+  },
+  {
+   "key": "G4-S11-CON-08",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou09 I05 包含（リウマチ性の記載の有無にかかわらない）・除外（非リウマチ性と明示 I34.-）、I34 除外「狭窄（症）（I05.0）」を確認。3.1.4 NOS の僧帽弁狭窄症の前提と一致。I34.2/I05.9/I05.2/I34.0 の名称一致。"
+  },
+  {
+   "key": "G4-S11-CON-09",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:instruction 3.1.2 包含用語の全段落を確認。例示・境界病態・タイトルの補読・共通の包含注はいずれも本文どおりで、「網羅的」とする C だけが誤り。"
+  },
+  {
+   "key": "G4-S11-CON-10",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou01 A46 除外「分娩後丹毒又は産じょく＜褥＞丹毒（O86.8）」、3.1.2 除外用語（A46 を例示）を確認。O86.8/O86.0/L03.9/A49.1 の名称一致。"
+  },
+  {
+   "key": "G4-S11-CON-11",
+   "verdict": "fix",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": false,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou11 ヘルニア（K40－K46）の注と K40.0〜K40.4 の名称を確認。キー K40.1 は正しい。解説の「個々の4桁項目のタイトルだけでは優先関係を読み取れない」は不正確（K40.0 は「え＜壊＞疽を伴わないもの」と明記）なので差し替えた。",
+   "detail": "explanation.correct の末尾の一文が事実と合わない（K40.0 のタイトルに「え＜壊＞疽を伴わないもの」とあり、タイトルからも読み取れる）。その一文だけを差し替え。キー・選択肢・出典は変更なし。",
+   "fixed": {
+    "subject": "S11",
+    "subtopic": "分類の規約と用語",
+    "format": "icd",
+    "difficulty": "advanced",
+    "polarity": "positive",
+    "question": "両側性のそけい＜鼠径＞ヘルニアで、閉塞及びえ＜壊＞疽の両者を伴うもの。ICD-10（2013年版）のコードとして正しいものはどれか。",
+    "choices": [
+     "K40.0",
+     "K40.2",
+     "K40.4",
+     "K40.1",
+     "K40.3"
+    ],
+    "answer": 3,
+    "explanation": {
+     "correct": "中間分類項目「ヘルニア（K40－K46）」の注に「え＜壊＞疽及び閉塞の両者を伴うヘルニアは，え＜壊＞疽を伴うヘルニアに分類する」とある。両側性であるため、K40.1 両側性そけい＜鼠径＞ヘルニア，え＜壊＞疽を伴うもの に分類する。この注は中間分類項目のタイトルのすぐ後に置かれている。4桁項目のタイトルも、K40.0 は「え＜壊＞疽を伴わないもの」、K40.1 は「え＜壊＞疽を伴うもの」となっており、注と一致する。",
+     "choiceNotes": [
+      "K40.0 は両側性で閉塞を伴い，え＜壊＞疽を伴わないものであり、え＜壊＞疽を伴う本例には当たらない。",
+      "K40.2 は両側性で閉塞及びえ＜壊＞疽を伴わないものである。",
+      "K40.4 はえ＜壊＞疽を伴うものだが、一側性又は患側不明のそけい＜鼠径＞ヘルニアの項目である。",
+      null,
+      "K40.3 は一側性又は患側不明で閉塞を伴い，え＜壊＞疽を伴わないものである。"
+     ],
+     "point": "ヘルニアは「え＜壊＞疽」が「閉塞」に優先する（K40－K46 の注）。次に両側性か一側性かで4桁目を選ぶ。"
+    },
+    "sources": [
+     {
+      "ref": "icd:naiyou11",
+      "title": "疾病、傷害及び死因の統計分類 内容例示表（第11章）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou11.pdf",
+      "locator": "ヘルニア（K40－K46）注",
+      "quote": "え＜壊＞疽及び閉塞の両者を伴うヘルニアは， え＜壊＞疽を伴うヘルニアに分類す"
+     },
+     {
+      "ref": "icd:naiyou11",
+      "title": "疾病、傷害及び死因の統計分類 内容例示表（第11章）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou11.pdf",
+      "locator": "K40.1",
+      "quote": "両側性そけい＜鼠径＞ヘルニア， え＜壊＞疽を伴うもの"
+     }
+    ],
+    "asOf": "ICD-10（2013年版）準拠",
+    "key": "G4-S11-CON-11"
+   }
+  },
+  {
+   "key": "G4-S11-CON-12",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:instruction 3.1.2 解説付用語の段落（第Ⅴ章、包含・除外に加えて使用、病名の多様性、コーダー用ではない、第ⅩⅪ章にも同種の定義）を確認。盲検は確信度中だが同じ答で、本文に明記。"
+  }
+ ]
+}

@@ -1,0 +1,214 @@
+{
+ "verdicts": [
+  {
+   "key": "lg-11-16",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "cancer:glossary-tiikigantouroku（人口集団ベース・1951年宮城県開始・2012年全47都道府県・2016年診断症例から全国がん登録へ移行）, cancer:glossary-innaigantouroku で全選択肢を確認。 盲検回答は正答と一致。validate 0 errors。"
+  },
+  {
+   "key": "lg-11-18",
+   "verdict": "pass",
+   "blindAnswer": 1,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:r08-kaitei-gaiyo-dpc 基本事項（入院初期を重点評価する3段階の定額報酬、期間Ⅲ超は出来高）, ins:dpc-gaiyo-kangaekata ２(1)②③, ins:r08-dpc-ryuijiko 第2の2(1)。点数設定方式A〜Eの詳細は図のみで文字情報なしだが、いずれも3段階設定で、選択肢A・C・Dは明確に誤り。 盲検回答は正答と一致。validate 0 errors。"
+  },
+  {
+   "key": "lg-11-19",
+   "verdict": "pass",
+   "blindAnswer": 3,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:r08-kaitei-gaiyo-dpc 包括範囲表（K手術・L麻酔・M放射線治療＝出来高全て、F投薬全て包括、G注射・E画像診断は一部除き包括）, ins:dpc-gaiyo-kangaekata ２(1)②。 盲検回答は正答と一致。validate 0 errors。"
+  },
+  {
+   "key": "lg-11-20",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "同上の包括範囲表（H/I は薬剤料のみ包括・それ以外出来高、B管理等は手術前後医学管理料以外出来高、K手術出来高）。lg-11-19と同じ表を逆方向から問うが、問い方が異なり重複とまでは言えない。 盲検回答は正答と一致。validate 0 errors。"
+  },
+  {
+   "key": "lg-11-22",
+   "verdict": "pass",
+   "blindAnswer": 1,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:r08-dpc-ryuijiko 第3の1(7)①（7日以内・同一傷病等=上2桁/上6桁等・起算日は初回入院日・退院期間不算入）②（予定された化学療法の再入院は除外）を本文で確認。 盲検回答は正答と一致。validate 0 errors。"
+  },
+  {
+   "key": "lg-11-23",
+   "verdict": "pass",
+   "blindAnswer": 2,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:r08-dpc-ryuijiko 第3の1(5)（入院日Ⅲを超えた日以降は医科点数表により算定、抗悪性腫瘍剤等の留意点）, ins:r08-kaitei-gaiyo-dpc（期間Ⅲ以降出来高算定）。 盲検回答は正答と一致。validate 0 errors。"
+  },
+  {
+   "key": "lg-11-24",
+   "verdict": "pass",
+   "blindAnswer": 1,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "cancer:zenkoku-todokede-manual-2026 第1章 p5-6（原発性の悪性新生物その他の政令で定める疾病、性状コード2/3、中枢神経系は良性も対象、転移・再発でも原発性のがんの情報を届出）。 盲検回答は正答と一致。validate 0 errors。"
+  },
+  {
+   "key": "lg-11-25",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "cancer:glossary-yuaisisitexienuemubunrui（T=原発がんの大きさ・広がり・深さ、N=所属リンパ節、M=遠隔転移）。 盲検回答は正答と一致。validate 0 errors。"
+  },
+  {
+   "key": "lg-11-26",
+   "verdict": "pass",
+   "blindAnswer": 2,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "cancer:hcr-standard-format-2016 ［500］治療前ステージ（臨床病期）・［600］術後病理学的ステージ（病理病期、手術検体の病理所見で補完）を別項目として確認。 盲検回答は正答と一致。validate 0 errors。"
+  },
+  {
+   "key": "lg-11-27",
+   "verdict": "pass",
+   "blindAnswer": 0,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "cancer:glossary-dexisio（DCO=死亡情報のみで登録、DCO%=全症例に対する割合）, cancer:glossary-dexisienu（DCN）, cancer:glossary-mv（MV%）, cancer:glossary-emuaihi（MI比=がん死亡数/罹患数、未引用だが選択肢Cの注記を裏付け）。 盲検回答は正答と一致。validate 0 errors。"
+  },
+  {
+   "key": "lg-11-28",
+   "verdict": "pass",
+   "blindAnswer": 1,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "cancer:zenkoku-todokede-manual-2026 第1章「多重がんとは」「初回の診断とは」、cancer:glossary-tajugan（罹患数の集計では別個）。 盲検回答は正答と一致。validate 0 errors。"
+  },
+  {
+   "key": "lg-11-29",
+   "verdict": "pass",
+   "blindAnswer": 1,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "x-legacy-L11b:jcog-recist11-ja 4.3.1（CR/PR 30%以上減少/PD 20%以上かつ5mm以上/SD）を本文で確認。PDFはdl/に実在、登録情報も整合。 盲検回答は正答と一致。validate 0 errors。"
+  },
+  {
+   "key": "lg-11-30",
+   "verdict": "pass",
+   "blindAnswer": 1,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "cancer:glossary-kapuranmaiyahou（区間に区切らず死亡ごとに逐次計算、打ち切りはその時点で観察人数から除外）, stats:ganjoho-soutaiseizonritu（期待生存率で割る補正＝相対生存率）。 盲検回答は正答と一致。validate 0 errors。"
+  },
+  {
+   "key": "lg-11-31",
+   "verdict": "pass",
+   "blindAnswer": 2,
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "x-legacy-L11b:mhlw-gan-kenshin-shishin-r0810 冒頭の改正履歴（令和8年10月7日一部改正）、第3 1(1)種類（胃・子宮頸・肺・乳・大腸・総合）、胃・大腸の検診項目を本文で確認。膵がん検診なし。 盲検回答は正答と一致。validate 0 errors。"
+  }
+ ]
+}

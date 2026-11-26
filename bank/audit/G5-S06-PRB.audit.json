@@ -1,0 +1,239 @@
+{
+ "verdicts": [
+  {
+   "key": "G5-S06-PRB-01",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "NIST eda3661 (median/mode=μ, skewness 0, range −∞〜∞) and CDC PoE L2S7 Fig2.9 (68.3/95.5/99.7%) confirm key C and all distractor notes. Solver agrees."
+  },
+  {
+   "key": "G5-S06-PRB-02",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "Recomputed (100−95.5)/2=2.25; distractors 0.15=(100−99.7)/2, 4.5 two-sided, 15.85=(100−68.3)/2, 47.75=95.5/2 all correct. CDC Fig2.9 symmetry; naruhodo 偏差値70→上位約2.3%. Solver agrees."
+  },
+  {
+   "key": "G5-S06-PRB-03",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "(72−60)/8×10+50=65; distractor derivations 1.5/15/51.5/62 verified. naruhodo-chirabari-jyokyu 偏差値 定義. Solver agrees."
+  },
+  {
+   "key": "G5-S06-PRB-04",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "偏差値40=50−10=μ−1σ, so E false; A–D true per naruhodo-chirabari-jyokyu (標準化・×10+50・偏差値70=μ+2σ). Polarity negative matches. Solver agrees."
+  },
+  {
+   "key": "G5-S06-PRB-05",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "naruhodo-suisoku 代表的な確率分布表 (二項: 2結果をn回, n大で正規近似; ポアソン: n大かつまれ), NIST binomial 'p is fixed for all trials'. Key A unique. Solver agrees."
+  },
+  {
+   "key": "G5-S06-PRB-06",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "np=10, sqrt(100×0.1×0.9)=3 (NIST binomial Mean np / SD sqrt(np(1−p))). Each distractor note checked. Solver agrees."
+  },
+  {
+   "key": "G5-S06-PRB-07",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "datastart 2-1-2 系統抽出法 (スタート無作為→等間隔), 単純無作為 (乱数), 多段 (地域→個人); naruhodo 層化・全数調査 definitions. Solver agrees."
+  },
+  {
+   "key": "G5-S06-PRB-08",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "E contradicts naruhodo-yougo 層化抽出 '各層から'; A–D verified in datastart 2-1-2 (乱数, 層化で偏り・誤差減, 二段抽出例, 段数↑でコスト↓誤差↑). Solver agrees."
+  },
+  {
+   "key": "G5-S06-PRB-09",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "naruhodo-kentei 点推定 (SE=推定量の標準偏差, n大で小, 不偏分散の正の平方根で推定); CDC SEM 'SD describes variability in a set of data'. D describes SD → false. Solver agrees."
+  },
+  {
+   "key": "G5-S06-PRB-10",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "SE=SD/√n; √100/√400=0.5 (CDC SEM Step 2, naruhodo-kentei). Distractor notes correct. Solver agrees."
+  },
+  {
+   "key": "G5-S06-PRB-11",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "SE=6/√36=1; 14±1.96=12.04〜15.96. Distractors: 14±11.76=2.24〜25.76, 14±6, 14±1, 14±1.96×6/36(=±0.33)→13.67〜14.33 all reproduce. Large-sample z condition stated. CDC 95% CI method. Solver agrees. (Note E could mention the 1.96 factor but is not false.)"
+  },
+  {
+   "key": "G5-S06-PRB-12",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "naruhodo-kentei 区間推定 (100回中95回程度; 1つの区間に95%確率ではない) makes B false; NIST eda352 'As N increases, narrower', 'larger sample SD, larger', 'narrower, more precise' support C–E. Solver agrees."
+  },
+  {
+   "key": "G5-S06-PRB-13",
+   "verdict": "fix",
+   "checks": {
+    "answer": true,
+    "distractors": false,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "datastart 2-1-3: P=0.5で見積もる (A correct), 回収率の逆数を掛ける (B false), 標本規模を大きく (C false), 標本誤差=標本抽出に伴う誤差 (E false), 多段抽出は段数のルートに比例して誤差大 (new D false).",
+   "detail": "Original D 「比率の標本誤差の計算式には母集団の規模は含まれない」 is false only for the finite-population formula in datastart; the widely taught formula ε=t√(P(1−P)/n) has no N, so learners could defend D (solver also flagged it). Replaced D with a 多段抽出 statement clearly false per datastart 2-1-3 and swapped the 3rd source quote to support it; updated choiceNotes[3],[4] and point. Validator clean.",
+   "fixed": {
+    "key": "G5-S06-PRB-13",
+    "subject": "S06",
+    "subtopic": "標本抽出と推定",
+    "format": "knowledge",
+    "difficulty": "advanced",
+    "polarity": "positive",
+    "question": "比率を調べる標本調査で、目標とする標本誤差から標本規模（調査人数）を見積もるときの考え方として、正しいものはどれか。",
+    "choices": [
+     "回答の比率が事前に分からないときは、ばらつきが最大となる0.5として見積もる。",
+     "回収率が50%と見込まれるときは、計算した標本規模を半分にして抽出する。",
+     "標本誤差を小さくしたいときは、標本規模を小さくする。",
+     "多段抽出で標本を選ぶときは、単純無作為抽出よりも標本誤差が小さくなるため、標本規模を少なく見積もってよい。",
+     "標本誤差は全数調査でも標本調査と同じ大きさで生じるため、調査方法の選択には影響しない。"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "比率の標本誤差は比率Pによって変わり、P＝0.5のときにばらつきが最大となる。事前に比率が分からないときは0.5として見積もるのがよく行われる方法である。",
+     "choiceNotes": [
+      null,
+      "回収率が100%からほど遠いと予想されるときは、計算されたnに回収率の逆数を掛けて多めに抽出する。50%なら2倍にする。",
+      "標本誤差を小さくしたいときは、標本規模を大きくする。",
+      "多段抽出では、概ね段数の平方根に比例して標本誤差が大きくなる。単純無作為抽出を仮定して計算した場合よりも、多くの人を対象としなければならない。",
+      "標本誤差は標本抽出に伴って発生する誤差である。全数調査は母集団のすべてを調べるので、標本誤差は生じない。"
+     ],
+     "point": "比率が不明→P＝0.5で見積もる。回収率の見込みで割り戻して増やす。多段抽出は誤差が大きくなるので増やす。誤差を小さく→標本を大きく。"
+    },
+    "sources": [
+     {
+      "ref": "stats:datastart-hyohon-gosa",
+      "title": "Data StaRt EBPM活用塾 ゼミナール編（２）2-1-3 標本誤差の計算",
+      "url": "https://www.stat.go.jp/dstart/point/seminar/02/2-1-3.html",
+      "locator": "標本誤差の計算（比率の場合）",
+      "quote": "どのような値になるか事前にわからないときは、ばらつきが最大となる0.5として見積もるのがよくなされるやり方です。"
+     },
+     {
+      "ref": "stats:datastart-hyohon-gosa",
+      "title": "Data StaRt EBPM活用塾 ゼミナール編（２）2-1-3 標本誤差の計算",
+      "url": "https://www.stat.go.jp/dstart/point/seminar/02/2-1-3.html",
+      "locator": "標本誤差を考慮し、調査対象人数を見積もる",
+      "quote": "計算されたnに回収率の逆数（例えば50%なら1/0.5=2）を掛けて、さらに多くの人を対象者として抽出しなければならなくなります。"
+     },
+     {
+      "ref": "stats:datastart-hyohon-gosa",
+      "title": "Data StaRt EBPM活用塾 ゼミナール編（２）2-1-3 標本誤差の計算",
+      "url": "https://www.stat.go.jp/dstart/point/seminar/02/2-1-3.html",
+      "locator": "標本誤差を考慮し、調査対象人数を見積もる",
+      "quote": "多段抽出を行うと、概ね段数のルートに比例して標本誤差が大きくなることが知られています。"
+     }
+    ],
+    "asOf": "統計学の定義・性質（時点に依存しない）"
+   }
+  }
+ ]
+}

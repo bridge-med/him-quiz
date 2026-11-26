@@ -1,0 +1,8 @@
+{"verdicts":[
+{"key":"G4-S12-INJ-10","verdict":"pass","blindAnswer":4,
+ "checks":{"answer":true,"distractors":true,"stem":true,"explanations":true,"sources":true,"asOf":true,"domain":true},
+ "notes":"盲検回答4=キー一致。icd:naiyou19 T36－T50 中間分類の包含「過量投与／過失による誤った薬物の摂取又は投与」でE正。除外注で A=適正投与の有害作用→性質で分類（皮膚炎 摂取物質 L27.-、icd:naiyou12 L27.0-L27.1 確認）、B=酩酊を意味する中毒 F10－F19（F10.0 急性中毒を icd.mjs で確認）、C=F55（icd:naiyou05 タイトル一致）、D=P00－P96（icd:naiyou16 P04.1/P04.4/P93 確認）。引用2件とも原文・locator一致。修正後は「中毒」がB・D・Eに分散し語句手掛かりなし。validate 0 errors。"},
+{"key":"G4-S12-INJ-11","verdict":"pass","blindAnswer":3,
+ "checks":{"answer":true,"distractors":true,"stem":true,"explanations":true,"sources":true,"asOf":true,"domain":true},
+ "notes":"盲検回答3=キー一致。icd:naiyou19 T36－T50 除外「適正な薬物が適正に投与された場合の有害作用…・アスピリン胃炎（Ｋ29.-）」「・薬物による詳細不明の有害作用（Ｔ88．7）」でK29.-が主要病態、T39.0・T88.7は不可。icd:instruction 4.4.2「疾病の外因のコーディング」(引用文は同節内 l.7152、例15が同型) と 4.4.4 第ⅩⅩ章注「本章のコードは「主要病態」コードとして使用しない」で Y45.1 主要病態は不可・任意的追加コード。コード名称 T39.0/Y45.1/X40/T88.7/K29 を icd.mjs で確認、icd:naiyou20 Y45.1 サリチル酸類・Y40－Y59 中間分類名一致。文末は全肢「追加する」で統一され手掛かりなし（任意的追加である旨は解説に明記）。validate 0 errors。"}
+]}

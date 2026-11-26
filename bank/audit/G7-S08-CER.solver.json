@@ -1,0 +1,15 @@
+{"answers":[
+{"key":"G7-S08-CER-01","answer":2,"confidence":"high","ambiguous":false,"note":"医師法21条: 死体又は妊娠4月以上の死産児、24時間以内、所轄警察署"},
+{"key":"G7-S08-CER-02","answer":2,"confidence":"medium","ambiguous":false,"note":"記入マニュアル: 診察後24時間超でも、死亡後に改めて診察し関連死と判定できれば死亡診断書交付可"},
+{"key":"G7-S08-CER-03","answer":4,"confidence":"high","ambiguous":false,"note":"医師法19条2項: 診断書・検案書・出生証明書・死産証書"},
+{"key":"G7-S08-CER-04","answer":1,"confidence":"high","ambiguous":false,"note":"戸籍法: a,c正。死亡届は知った日から7日以内、国外は3か月、出生証明は医師優先"},
+{"key":"G7-S08-CER-05","answer":4,"confidence":"medium","ambiguous":false,"note":"死産届出義務者は父・母が先で、医師は第一順位でない"},
+{"key":"G7-S08-CER-06","answer":2,"confidence":"high","ambiguous":false,"note":"感染症法12条: 保健所長経由で都道府県知事。一類は直ちに、五類は7日以内（氏名なし）"},
+{"key":"G7-S08-CER-07","answer":4,"confidence":"high","ambiguous":false,"note":"医師法施行規則20条1項10号: 母の生年月日はあるが父はない"},
+{"key":"G7-S08-CER-08","answer":2,"confidence":"high","ambiguous":false,"note":"生産児は出生証明書、死産児は死産証書"},
+{"key":"G7-S08-CER-09","answer":1,"confidence":"high","ambiguous":false,"note":"r08基本施設基準通知 医師事務作業補助体制加算: 代行入力機能を使用。Cは通知の指針名が異なる"},
+{"key":"G7-S08-CER-10","answer":2,"confidence":"high","ambiguous":false,"note":"記録指針2024: 訂正は原記録を残す"},
+{"key":"G7-S08-CER-11","answer":1,"confidence":"high","ambiguous":false,"note":"歯科医師法23条1項。保存は管理者・5年"},
+{"key":"G7-S08-CER-12","answer":1,"confidence":"high","ambiguous":false,"note":"保助看法42条1項: 分べんの介助をしたとき"},
+{"key":"G7-S08-CER-13","answer":2,"confidence":"high","ambiguous":false,"note":"記録指針2024: アウトカム評価の観点の転帰、傷病ごとの転帰"}
+]}

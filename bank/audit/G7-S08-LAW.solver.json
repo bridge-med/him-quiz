@@ -1,0 +1,109 @@
+{
+ "answers": [
+  {
+   "key": "G7-S08-LAW-01",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "刑法134条1項: 薬剤師"
+  },
+  {
+   "key": "G7-S08-LAW-02",
+   "answer": 3,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "保助看法42条の2は保健師・看護師・准看護師。助産師は刑法134条"
+  },
+  {
+   "key": "G7-S08-LAW-03",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "保助看法44条の4: 6月/10万。診療放射線技師は50万円以下罰金(35条)"
+  },
+  {
+   "key": "G7-S08-LAW-04",
+   "answer": 3,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "刑法135条 親告罪"
+  },
+  {
+   "key": "G7-S08-LAW-05",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "感染症法73条1項 1年/100万"
+  },
+  {
+   "key": "G7-S08-LAW-06",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "a,b,dは告訴要件あり(刑135,保助看44条の4,PT法21条)。感染症法・がん登録法にはなし"
+  },
+  {
+   "key": "G7-S08-LAW-07",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "施行通知: 真正性・見読性・保存性"
+  },
+  {
+   "key": "G7-S08-LAW-08",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "真正性=虚偽入力・書換え・消去・混同の防止"
+  },
+  {
+   "key": "G7-S08-LAW-09",
+   "answer": 4,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "外部保存は義務付けではない"
+  },
+  {
+   "key": "G7-S08-LAW-10",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "GL7.0 概説編+経営管理/企画管理/システム運用/保守委託機関の5編"
+  },
+  {
+   "key": "G7-S08-LAW-11",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "施行通知3 照射録は保存義務なしだが電磁的作成・保存を認める"
+  },
+  {
+   "key": "G7-S08-LAW-12",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "がん登録法6条1項。期間は省令(翌年12/31)"
+  },
+  {
+   "key": "G7-S08-LAW-13",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "がん登録法35条: 個人情報保護法による開示請求は不可"
+  },
+  {
+   "key": "G7-S08-LAW-14",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "統計法2条9項"
+  },
+  {
+   "key": "G7-S08-LAW-15",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "統計法28条2項。告示35号は令和8年12/31限り廃止、新分類は2027/1/1"
+  }
+ ]
+}

@@ -1,0 +1,16 @@
+{"answers":[
+{"key":"G7-S09-OPS-01","answer":1,"confidence":"high","ambiguous":false,"note":"診療情報提供指針 7(1): 理由欄を設け理由を要求することは不適切"},
+{"key":"G7-S09-OPS-02","answer":1,"confidence":"high","ambiguous":false,"note":"指針: 満15歳以上(bは18歳で誤), 遺族範囲d正"},
+{"key":"G7-S09-OPS-03","answer":3,"confidence":"high","ambiguous":false,"note":"指針8: 拒む場合は文書で理由と苦情処理体制"},
+{"key":"G7-S09-OPS-04","answer":2,"confidence":"high","ambiguous":false,"note":"医療法施行規則9条の21: 国・地方公共団体・紹介しようとする歯科医師"},
+{"key":"G7-S09-OPS-05","answer":3,"confidence":"high","ambiguous":false,"note":"事業者判断での持出しは不可"},
+{"key":"G7-S09-OPS-06","answer":1,"confidence":"high","ambiguous":false,"note":"病院報告用語: 入院当日退院も含む"},
+{"key":"G7-S09-OPS-07","answer":2,"confidence":"high","ambiguous":false,"note":"36000/(0.5*4800)=15.0"},
+{"key":"G7-S09-OPS-08","answer":2,"confidence":"high","ambiguous":false,"note":"18000/(0.5*400)=90.0"},
+{"key":"G7-S09-OPS-09","answer":3,"confidence":"high","ambiguous":false,"note":"285+10=295 (診療科ごとに数える)"},
+{"key":"G7-S09-OPS-10","answer":4,"confidence":"high","ambiguous":false,"note":"業務指針2026 4-7 利用基準の整備"},
+{"key":"G7-S09-OPS-11","answer":3,"confidence":"high","ambiguous":false,"note":"6情報に手術情報なし"},
+{"key":"G7-S09-OPS-12","answer":2,"confidence":"high","ambiguous":false,"note":"有意既往の感染症は入院までの経過へ"},
+{"key":"G7-S09-OPS-13","answer":2,"confidence":"high","ambiguous":false,"note":"広く薬剤副作用を含む不適応反応"},
+{"key":"G7-S09-OPS-14","answer":3,"confidence":"high","ambiguous":false,"note":"処方は全診療科・他院分も含める"}
+]}

@@ -1,0 +1,10 @@
+{"answers":[
+{"key":"#0","answer":2,"confidence":"high","ambiguous":false,"note":"医療法第4条第1項: 都道府県知事の承認"},
+{"key":"#1","answer":3,"confidence":"high","ambiguous":false,"note":"逆紹介率=1680/2400=70.0%（55.0%は紹介率）"},
+{"key":"#2","answer":1,"confidence":"high","ambiguous":false,"note":"通知: 紹介率80%以上、または65%以上かつ逆紹介40%以上、または50%以上かつ70%以上。66/42のみ該当"},
+{"key":"#3","answer":3,"confidence":"high","ambiguous":false,"note":"h10通知: 逆紹介患者は開設者と直接関係のある他機関に紹介した患者を除く"},
+{"key":"#4","answer":4,"confidence":"high","ambiguous":false,"note":"医療法施行規則第9条の2: 開設者が毎年10月5日までに都道府県知事へ"},
+{"key":"#5","answer":2,"confidence":"high","ambiguous":false,"note":"b誤（病床の種別は問わない）、c誤（医療審議会の意見を聴く）、a・d正"},
+{"key":"#6","answer":0,"confidence":"high","ambiguous":false,"note":"通知(四)オ 年間12回以上。臨床研修は念頭になく、地域の医療従事者を含む"},
+{"key":"#7","answer":4,"confidence":"high","ambiguous":false,"note":"通知: 委員は関係者以外が大半を占めるよう留意"}
+]}

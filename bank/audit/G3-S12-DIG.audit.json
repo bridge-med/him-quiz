@@ -1,0 +1,264 @@
+{
+ "verdicts": [
+  {
+   "key": "G3-S12-DIG-01",
+   "verdict": "fix",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": false,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou11 K25－K28 4桁細分類・K25を確認。正答K25.4と各誤答の名称は正しい（K92.2名称もicd.mjsで確認）。盲検一致。",
+   "detail": "pointの「.4〜.7が慢性又は詳細不明」が不正確。.7は「慢性，出血又は穿孔を伴わないもの」のみで、詳細不明（急性・慢性の別不明）で出血・穿孔なしは.9。pointのみ修正（問題文・選択肢・正答は変更なし）。",
+   "fixed": {
+    "key": "G3-S12-DIG-01",
+    "subject": "S12",
+    "subtopic": "消化器（第ⅩⅠ章）",
+    "format": "icd",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "「慢性胃潰瘍，出血を伴い穿孔を伴わない」と記載された病態のICD-10コードはどれか。",
+    "choices": [
+     "K25.0",
+     "K25.4",
+     "K25.5",
+     "K26.4",
+     "K92.2"
+    ],
+    "answer": 1,
+    "explanation": {
+     "correct": "胃潰瘍はK25で、K25－K28共通の4桁細分類では「.4 慢性又は詳細不明，出血を伴うもの」を用いる。したがってK25.4となる。",
+     "choiceNotes": [
+      "K25.0は「急性，出血を伴うもの」。慢性の記載があるので該当しない。",
+      null,
+      "K25.5は「慢性又は詳細不明，穿孔を伴うもの」。穿孔は伴わない。",
+      "K26.4は十二指腸潰瘍（K26）の慢性・出血を伴うもの。部位が胃なので該当しない。",
+      "K92.2は「胃腸出血，詳細不明」。出血源の潰瘍が明らかなので潰瘍の項目に分類する。"
+     ],
+     "point": "K25－K28の4桁：.0〜.3が急性、.4〜.6が慢性又は詳細不明（.0/.4＝出血、.1/.5＝穿孔、.2/.6＝両者）。出血も穿孔も伴わないものは、急性.3、慢性.7、急性・慢性の別不明.9。"
+    },
+    "sources": [
+     {
+      "ref": "icd:naiyou11",
+      "title": "ICD-10（2013年版）準拠 内容例示表 第11章 消化器系の疾患（K00-K93）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou11.pdf",
+      "locator": "K25－K28 4桁細分類項目",
+      "quote": "下記の４桁細分類項目は項目Ｋ25－Ｋ28 に使用する"
+     },
+     {
+      "ref": "icd:naiyou11",
+      "title": "ICD-10（2013年版）準拠 内容例示表 第11章 消化器系の疾患（K00-K93）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou11.pdf",
+      "locator": "K25－K28 4桁細分類項目 .4",
+      "quote": "．4    慢性又は詳細不明， 出血を伴うもの"
+     }
+    ],
+    "asOf": "ICD-10（2013年版）準拠"
+   }
+  },
+  {
+   "key": "G3-S12-DIG-02",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou11 K25－K28 4桁細分類 .2（急性，出血及び穿孔の両者）とK26を確認。K26.0/K26.1/K26.6/K25.2の名称もicd.mjsで一致。盲検一致。"
+  },
+  {
+   "key": "G3-S12-DIG-03",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou11 K25包含「（急性）胃びらん」・除外「急性出血性びらん性胃炎（K29.0）」、K29.0除外「（急性）胃びらん（K25.-）」、K26包含（幽門後）、K27包含、K28包含（吻合部）、.9の定義を確認。誤りは選択肢4番目のみ。盲検一致。"
+  },
+  {
+   "key": "G3-S12-DIG-04",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou11 K35.2/K35.3/K35.8、K37、K65除外「虫垂炎（K35.-）を伴う腹膜炎」を確認。盲検一致。"
+  },
+  {
+   "key": "G3-S12-DIG-05",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou11 K35.3（腹腔内膿瘍）、K35.8、K36包含（慢性・再発性）、K37、K38.1を確認。誤りは最後の選択肢のみ。盲検一致。"
+  },
+  {
+   "key": "G3-S12-DIG-06",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou11 K40.2 包含「両側性そけいヘルニア NOS」、K40.0/.3/.9、K41.2を確認。盲検一致。"
+  },
+  {
+   "key": "G3-S12-DIG-07",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou11 ヘルニア（K40－K46）注（壊疽＋閉塞→壊疽を伴うヘルニア）、K43.0/.1/.2/.7、K56除外を確認。盲検一致。"
+  },
+  {
+   "key": "G3-S12-DIG-08",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:instruction 4.4.2 複合分類項目のコーディング 例10（腸閉塞＋左そけいヘルニア→K40.3）を原文で確認。icd:naiyou11 K56除外・K40.3/.4/.9も一致。盲検一致（medium）。"
+  },
+  {
+   "key": "G3-S12-DIG-09",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou11 K80.0/.1/.2/.4、K81除外「胆石症を伴うもの（K80.-）」、K81.0「結石を伴わないもの」を確認。盲検一致。"
+  },
+  {
+   "key": "G3-S12-DIG-10",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou11 K80.1包含（（慢性）胆のう炎を伴うK80.2の各病態）、K80.3、K80.5（総胆管結石症）、K81.0、K81除外を確認。icd:instruction 4.4.2 急性及び慢性の病態 例20（K81.0、K81.1は任意的追加）も原文一致。盲検一致。"
+  },
+  {
+   "key": "G3-S12-DIG-11",
+   "verdict": "fix",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": false,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou11 K70.0〜K70.4、K71.7、K71除外（アルコール性肝疾患 K70.-）、K74除外、K74.6を確認。正答K70.3・各解説は正しい。盲検一致。",
+   "detail": "出典2の引用がK74除外の別行「アルコール性肝線維症（K70.2）」で、解説の「K74はアルコール性肝硬変（K70.3）を除外」を直接支持していなかった。同じ除外注の該当行「肝硬変：・アルコール性（K70.3）」に差し替え（本文は変更なし）。",
+   "fixed": {
+    "key": "G3-S12-DIG-11",
+    "subject": "S12",
+    "subtopic": "消化器（第ⅩⅠ章）",
+    "format": "icd",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "アルコール性肝硬変のICD-10コードはどれか。",
+    "choices": [
+     "K74.6",
+     "K70.3",
+     "K70.2",
+     "K71.7",
+     "K70.4"
+    ],
+    "answer": 1,
+    "explanation": {
+     "correct": "アルコール性肝疾患はK70に分類し、アルコール性肝硬変はK70.3である。K74（肝線維症及び肝硬変）はアルコール性肝硬変（K70.3）を除外している。",
+     "choiceNotes": [
+      "K74.6は「その他及び詳細不明の肝硬変」。アルコール性のものはK74から除外されK70.3へ分類する。",
+      null,
+      "K70.2は「アルコール性肝線維症及び肝硬化症」。肝硬変はK70.3である。",
+      "K71.7は「肝線維症及び肝硬変を伴う中毒性肝疾患」（薬物などによるもの）。K71はアルコール性肝疾患を除外する。",
+      "K70.4は「アルコール性肝不全」。"
+     ],
+     "point": "アルコール性：脂肪肝K70.0、肝炎K70.1、線維症・硬化症K70.2、肝硬変K70.3、肝不全K70.4。"
+    },
+    "sources": [
+     {
+      "ref": "icd:naiyou11",
+      "title": "ICD-10（2013年版）準拠 内容例示表 第11章 消化器系の疾患（K00-K93）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou11.pdf",
+      "locator": "K70.3",
+      "quote": "Ｋ70．3   アルコール性肝硬変"
+     },
+     {
+      "ref": "icd:naiyou11",
+      "title": "ICD-10（2013年版）準拠 内容例示表 第11章 消化器系の疾患（K00-K93）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou11.pdf",
+      "locator": "K74 除外（肝硬変：アルコール性）",
+      "quote": "肝硬変： ・アルコール性（Ｋ70．3）"
+     }
+    ],
+    "asOf": "ICD-10（2013年版）準拠"
+   }
+  },
+  {
+   "key": "G3-S12-DIG-12",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou01 B18.1/B18.2、icd:naiyou11 肝疾患（K70－K77）除外・K73除外（ウイルス B15－B19）、K70.1、K71包含（薬物誘発性）、K75.8包含（NASH）を確認。誤りは4番目のみ。盲検一致。"
+  }
+ ]
+}

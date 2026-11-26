@@ -1,0 +1,8 @@
+{"verdicts":[
+{"key":"G3-S10-DOC-07","verdict":"pass","blindAnswer":0,
+ "checks":{"answer":true,"distractors":true,"stem":true,"explanations":true,"sources":true,"asOf":true,"domain":true},
+ "notes":"盲検一致(0)。ins:r08-ika-ryuijiko A207-2(3)（r08_ika_ryuijiko_tsuchi.txt 2268-2277行）を通読：医師（歯科医師を含む）の指示の下の診断書等の文書作成補助は限定列挙に含まれ、医師以外の職種の指示の下に行う業務・診療報酬の請求事務・窓口受付業務・物品運搬業務は「業務としないこと」に明記。修正後の設問文（制度名と年度の補足）は一義的で正の極性とキーが一致。引用2件は原文どおり、locator正。validate 0 errors。バッチ内の重複なし（-02は研修項目、-08は逆方向の別問）。"},
+{"key":"G3-S10-DOC-08","verdict":"pass","blindAnswer":4,
+ "checks":{"answer":true,"distractors":true,"stem":true,"explanations":true,"sources":true,"asOf":true,"domain":true},
+ "notes":"盲検一致(4)。ins:r08-ika-ryuijiko A207-2(3) を通読：院内がん登録等の統計・調査・入力作業、カンファレンスのための準備作業（医療の質の向上に資する事務作業）、救急医療情報システムへの入力（行政上の業務）、地域連携パスへの代行入力はいずれも限定列挙に含まれ、「診療報酬の請求事務（ＤＰＣのコーディングに係る業務を含む。）」のみ業務外。修正後の設問文「医師の指示の下に行うものであっても…含まれないもの」は係り受けが明確で負の極性とキーが一致。引用3件は原文どおり、locator正。validate 0 errors。"}
+]}

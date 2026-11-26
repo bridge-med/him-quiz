@@ -1,0 +1,88 @@
+{
+ "answers": [
+  {
+   "key": "G6-S09-SUA-01",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "高:デバイス(ステント)は既往歴でなく既存症へ(guidance 4)"
+  },
+  {
+   "key": "G6-S09-SUA-02",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "2012年3月頃は2012/03/00の例に準じ2016/05/00(guidance 2)"
+  },
+  {
+   "key": "G6-S09-SUA-03",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "医療的見地で有意味ならあり。発生時期・症状・確認方法を記載(guidance 3 c)"
+  },
+  {
+   "key": "G6-S09-SUA-04",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "DM=入院時併存症、術後創部感染=入院後発症疾患(DPCコーディングテキスト)"
+  },
+  {
+   "key": "G6-S09-SUA-05",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "病院報告:毎日24時現在。10/28-31の4日、11/1-3の3日(退院日24時は不在)"
+  },
+  {
+   "key": "G6-S09-SUA-06",
+   "answer": 4,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "⑤子宮全摘は過去完了の既往歴で入院までの経過欄。既存症ではない(guidance 6)"
+  },
+  {
+   "key": "G6-S09-SUA-07",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "神戸大マニュアル: A=評価・診断。エ(診断)とオ(評価)。ウは検査結果でO"
+  },
+  {
+   "key": "G6-S09-SUA-08",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "神戸大マニュアル: 既往歴は患者申告のS"
+  },
+  {
+   "key": "G6-S09-SUA-09",
+   "answer": 2,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "guidance 7: 退院時投薬は退院後に使用される全薬剤。アムロジピンも記載。点滴は退院後使わず不要"
+  },
+  {
+   "key": "G6-S09-SUA-10",
+   "answer": 0,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "承認サマリーか否かは基本情報の必須。血液型等は任意"
+  },
+  {
+   "key": "G6-S09-SUA-11",
+   "answer": 3,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "ICD codeは必須登録だが表示画面に必ずしも出さなくてよい(印刷では通常非表示)"
+  },
+  {
+   "key": "G6-S09-SUA-12",
+   "answer": 1,
+   "confidence": "high",
+   "ambiguous": false,
+   "note": "guidance 8: 別枠なしならば入院経過内にtextで記載。デバイス・手術処置は推奨項目"
+  }
+ ]
+}

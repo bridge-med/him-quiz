@@ -1,0 +1,16 @@
+{"answers":[
+{"key":"G7-S06-BAS-01","answer":1,"confidence":"high","ambiguous":false,"note":"整列 8,8,8,10,12,14,... 中央値(12+14)/2=13、最頻値8"},
+{"key":"G7-S06-BAS-02","answer":3,"confidence":"high","ambiguous":false,"note":"35-24=11"},
+{"key":"G7-S06-BAS-03","answer":2,"confidence":"high","ambiguous":false,"note":"度数そのものは最頻値ではない"},
+{"key":"G7-S06-BAS-04","answer":0,"confidence":"high","ambiguous":false,"note":"差108/9=12、中央値9のまま"},
+{"key":"G7-S06-BAS-05","answer":1,"confidence":"high","ambiguous":false,"note":"25人の13番目、累積9,16で8-15日未満"},
+{"key":"G7-S06-BAS-06","answer":4,"confidence":"high","ambiguous":false,"note":"四分位範囲"},
+{"key":"G7-S06-BAS-07","answer":3,"confidence":"high","ambiguous":false,"note":"分散は10^6倍"},
+{"key":"G7-S06-BAS-08","answer":0,"confidence":"high","ambiguous":false,"note":"SD不変3、平均12、CV25%"},
+{"key":"G7-S06-BAS-09","answer":1,"confidence":"high","ambiguous":false,"note":"分散8、SD2.828、平均12、CV23.6%"},
+{"key":"G7-S06-BAS-10","answer":2,"confidence":"medium","ambiguous":false,"note":"範囲38、Q1=5、Q3=12、IQR7（主要な算出法で一致）"},
+{"key":"G7-S06-BAS-11","answer":3,"confidence":"high","ambiguous":false,"note":"比尺度の量的データ"},
+{"key":"G7-S06-BAS-12","answer":3,"confidence":"high","ambiguous":false,"note":"件数は離散型"},
+{"key":"G7-S06-BAS-13","answer":2,"confidence":"high","ambiguous":false,"note":"病期は順序尺度"},
+{"key":"G7-S06-BAS-14","answer":3,"confidence":"high","ambiguous":false,"note":"性別コードは名義尺度で平均は無意味"}
+]}

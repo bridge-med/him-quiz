@@ -1,0 +1,14 @@
+{"answers":[
+{"key":"G4-S12-NEU-01","answer":0,"confidence":"high","ambiguous":false,"note":"晩発性AD G30.1†/F00.1＊"},
+{"key":"G4-S12-NEU-02","answer":2,"confidence":"high","ambiguous":false,"note":"F01は星印項目ではない（血管性認知症はF01単独）。他は手引書の記述どおり"},
+{"key":"G4-S12-NEU-03","answer":3,"confidence":"high","ambiguous":false,"note":"F10.4 せん妄を伴う離脱状態"},
+{"key":"G4-S12-NEU-04","answer":2,"confidence":"medium","ambiguous":false,"note":"F10.6 健忘症候群（コルサコフ）"},
+{"key":"G4-S12-NEU-05","answer":3,"confidence":"high","ambiguous":false,"note":"急性酩酊はF10.0。T51.0は毒作用"},
+{"key":"G4-S12-NEU-06","answer":1,"confidence":"high","ambiguous":false,"note":"G80.3 アテトーゼ型（内容例示表）"},
+{"key":"G4-S12-NEU-07","answer":4,"confidence":"high","ambiguous":false,"note":"先天性けい性麻痺NOSはG80.0（内容例示表）"},
+{"key":"G4-S12-NEU-08","answer":2,"confidence":"high","ambiguous":false,"note":"熱性けいれん R56.0"},
+{"key":"G4-S12-NEU-09","answer":1,"confidence":"medium","ambiguous":false,"note":"c正（G45.4）、d誤（P91.0除外）、b誤（G45.3）、e誤（G41）、aはI60-I69の除外（未再確認）"},
+{"key":"G4-S12-NEU-10","answer":2,"confidence":"high","ambiguous":false,"note":"先天白内障はQ12.0（H26.0は若年白内障）"},
+{"key":"G4-S12-NEU-11","answer":0,"confidence":"high","ambiguous":false,"note":"高眼圧症はH40.0（緑内障の疑い）"},
+{"key":"G4-S12-NEU-12","answer":4,"confidence":"high","ambiguous":false,"note":"急性中耳炎NOS H66.9"}
+]}

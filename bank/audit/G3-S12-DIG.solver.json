@@ -1,0 +1,14 @@
+{"answers":[
+{"key":"#0","answer":1,"confidence":"high","ambiguous":false,"note":"K25.4 胃潰瘍 慢性/詳細不明 出血"},
+{"key":"#1","answer":2,"confidence":"high","ambiguous":false,"note":"K26.2 十二指腸潰瘍 急性 出血+穿孔"},
+{"key":"#2","answer":3,"confidence":"high","ambiguous":false,"note":"（急性）胃びらんはK25の包含（naiyou11 K25）。K29ではない"},
+{"key":"#3","answer":0,"confidence":"high","ambiguous":false,"note":"K35.2 穿孔に続発する汎発性腹膜炎"},
+{"key":"#4","answer":4,"confidence":"high","ambiguous":false,"note":"急性慢性不明の虫垂炎はK37。K35.8は急性虫垂炎"},
+{"key":"#5","answer":1,"confidence":"high","ambiguous":false,"note":"K40.2 両側性 閉塞・壊疽なし"},
+{"key":"#6","answer":3,"confidence":"high","ambiguous":false,"note":"壊疽+閉塞は壊疽に分類 K43.1"},
+{"key":"#7","answer":0,"confidence":"medium","ambiguous":false,"note":"ヘルニアを伴う腸閉塞はK56除外、ヘルニア閉塞K40.3"},
+{"key":"#8","answer":2,"confidence":"high","ambiguous":false,"note":"K80.0"},
+{"key":"#9","answer":4,"confidence":"high","ambiguous":false,"note":"結石を伴う慢性胆嚢炎はK80.1単独、K81は除外"},
+{"key":"#10","answer":1,"confidence":"high","ambiguous":false,"note":"K70.3"},
+{"key":"#11","answer":3,"confidence":"high","ambiguous":false,"note":"慢性B型肝炎(デルタなし)はB18.1、K73.9は誤"}
+]}
