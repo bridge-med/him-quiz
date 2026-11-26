@@ -1,0 +1,14 @@
+{"answers":[
+{"key":"G4-S12-OBS-01","answer":3,"confidence":"high","ambiguous":false,"note":"第XV章冒頭の除外に産科破傷風(A34)。O85,O90.3,O99.0は章内"},
+{"key":"G4-S12-OBS-02","answer":4,"confidence":"high","ambiguous":false,"note":"O98の除外に無症候性HIV感染状態(Z21)。O98.7はHIV病(B20-B24)"},
+{"key":"G4-S12-OBS-03","answer":1,"confidence":"high","ambiguous":false,"note":"O24.1 既存の2型糖尿病。O99.2はO24.-を除外"},
+{"key":"G4-S12-OBS-04","answer":2,"confidence":"high","ambiguous":false,"note":"O99.4は高血圧性疾患(O10-O16)を除外"},
+{"key":"G4-S12-OBS-05","answer":0,"confidence":"high","ambiguous":false,"note":"O03.1 不全流産,遅延出血又は多量出血を合併"},
+{"key":"G4-S12-OBS-06","answer":2,"confidence":"medium","ambiguous":false,"note":"指導マニュアルO08注: 合併症治療のみの新エピソードはO08.-(O08.0)を主要病態"},
+{"key":"G4-S12-OBS-07","answer":0,"confidence":"high","ambiguous":false,"note":"指導マニュアル O80-O84: 唯一の情報が分娩の記述又は方法である場合に限定"},
+{"key":"G4-S12-OBS-08","answer":3,"confidence":"high","ambiguous":false,"note":"O60.1 早産(自然陣痛発来、経腟分娩)"},
+{"key":"G4-S12-OBS-09","answer":4,"confidence":"high","ambiguous":false,"note":"O21.2は妊娠満22週以後であり28週は誤り"},
+{"key":"G4-S12-OBS-10","answer":1,"confidence":"high","ambiguous":false,"note":"P01.1 前期破水により影響を受けた胎児及び新生児"},
+{"key":"G4-S12-OBS-11","answer":2,"confidence":"high","ambiguous":false,"note":"単胎生産の分娩の結果 Z37.0(母の記録用)"},
+{"key":"G4-S12-OBS-12","answer":3,"confidence":"high","ambiguous":false,"note":"O99.0を主要病態、D50.9を任意的追加コード(O98-O99ルール)"}
+]}

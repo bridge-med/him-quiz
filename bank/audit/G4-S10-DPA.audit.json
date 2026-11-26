@@ -1,0 +1,200 @@
+{
+ "verdicts": [
+  {
+   "key": "G4-S10-DPA-01",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:dpc-gaiyo-kangaekata 1.(1)※（DPCは②患者分類の略称、支払制度はDPC/PDPS=Per-Diem Payment System、平成22年12月16日整理）と ins:r08-kaitei-gaiyo-dpc「DPCの基本構造」スライド（DRGもDPCも診断群分類で支払制度を意味しない）で正答・誤答4肢とも確認。"
+  },
+  {
+   "key": "G4-S10-DPA-02",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:dpc-gaiyo-kangaekata 1.(1)：閣議決定・平成15年、特定機能病院、平成10年11月から国立病院等10病院の１入院当たり試行、在院日数のばらつきと差、「１日単価を下げるインセンティブ」を原文で確認。Dのみ誤り。"
+  },
+  {
+   "key": "G4-S10-DPA-03",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:dpc-gaiyo-kangaekata 2.(2)②【参考】表：出来高=長所2点/短所（過剰診療・事務複雑化）、包括=長所（過剰診療防止・事務簡素化）/短所（過少診療・診療内容の不透明化）。設問が同資料の比較表に限定しているため一意。"
+  },
+  {
+   "key": "G4-S10-DPA-04",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:dpc-gaiyo-kangaekata 2.(2)②：試行の包括範囲を修正、手術料等の技術料的項目を除外、モノ代・入院基本料等を中心に評価。誤答4肢は同段落（入院基本料等・検査・画像診断・投薬・注射…が包括）と矛盾することを確認。"
+  },
+  {
+   "key": "G4-S10-DPA-05",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:r08-dpc-ryuijiko 第3 1(3)①キ・ク・ケ・コ（投薬、注射、第7部第2節薬剤料、第8部第2節薬剤料は含まれる）、②キ（G020無菌製剤処理料は除外）、②ア〜サを通読し他の選択肢に該当する除外がないことを確認（②コは抗HIV薬のみ）。"
+  },
+  {
+   "key": "G4-S10-DPA-06",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:r08-dpc-ryuijiko 第1 2(1)（24時間以内死亡・生後1週間以内死亡の新生児）、第2 2(1)②（入院期間Ⅱの定義）、第2 1(2)（傷病未確定時は入院契機傷病）、第3 1(5)（入院日Ⅲ超え）、第3 1 再入院の規定（一連の入院）を確認。正答はBのみ。"
+  },
+  {
+   "key": "G4-S10-DPA-07",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:r08-dpc-ryuijiko 第3 1(1)：点数×医療機関別係数、当該月の入院日数を乗じ、月ごとの合計点数の小数点以下第1位を四捨五入。再計算 2345×1.4321×5=16791.3725→16,791。誤答の由来（3358.27／11,725／3358×5=16,790／切上げ16,792）も一致。"
+  },
+  {
+   "key": "G4-S10-DPA-08",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:dpc-coding-text-v7 Ⅱ-1 重要なポイント（1層目ICD-10、2層目手術=医科点数表、3層目 処置・副傷病名・重症度等）、図表4（Kコードで定義）、ins:r08-dpc-ryuijiko 第2 1(2)（ICD-10 2013年版）で確認。"
+  },
+  {
+   "key": "G4-S10-DPA-09",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:dpc-coding-text-v7 Ⅱ-1 ◆DPCの構成「【２層目：手術の層】9・10桁目」を確認。他の桁の説明は図表２（010010 x x 99 0 0 0 x と①〜⑧の並び）から導け、矛盾なし。"
+  },
+  {
+   "key": "G4-S10-DPA-10",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:dpc-coding-text-v7 Ⅱ-1 図表２ ④手術：01〜07=定義テーブルに定義された項目あり、99=手術なし、97=その他手術あり、x=該当する項目がない場合。引用はPDFの段組みで隣の列（Burn indexの「0：10未満」）を含むが原文どおり。"
+  },
+  {
+   "key": "G4-S10-DPA-11",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:dpc-coding-text-v7 Ⅱ-1 図表３：04呼吸器系、06消化器系・肝胆膵、09乳房、13血液・造血器・免疫臓器、16外傷・熱傷・中毒、17精神疾患を全行確認。"
+  },
+  {
+   "key": "G4-S10-DPA-12",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:dpc-coding-text-v7 Ⅱ-1 図表２ ③【出生時体重】1=2,500g以上、2=1,500g以上2,500g未満、3=1,000g以上1,500g未満、4=1,000g未満。1,200gは3。0は年齢・JCS・Burn indexの値で体重区分になし。"
+  },
+  {
+   "key": "G4-S10-DPA-13",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:dpc-coding-text-v7 Ⅱ-2：1層目〜3層目の決定内容、「原則として…一方通行」「３層目から遡って傷病名を選択するべきではない」を原文で確認。Eのみ誤り。"
+  },
+  {
+   "key": "G4-S10-DPA-14",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:r08-dpc-ryuijiko 第2 1(1)（14桁、診断群分類番号=実線、医科点数表算定コード=点線、主治医が選択）、第2 1(7)（適用の決定は退院時）を確認。正答はBのみ。"
+  }
+ ]
+}

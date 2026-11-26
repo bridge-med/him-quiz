@@ -1,0 +1,4 @@
+{"verdicts":[
+{"key":"G3-S08-REC-02","verdict":"pass","blindAnswer":2,"checks":{"answer":true,"distractors":true,"stem":true,"explanations":true,"sources":true,"asOf":true,"domain":true},"notes":"law:保険医療機関及び保険医療養担当規則 第9条（版の施行日2026-06-01）を原文確認：「患者の診療録にあつては、その完結の日から五年間」。修正後の正答肢「その診療録の完結の日」は条文の「その」の指示対象（患者の診療録）と一致。誤答肢の解説は law:薬剤師法 第28条第3項（最終の記入の日から三年間、版2026-05-21）、law:救急救命士法 第46条第2項（その記載の日から五年間）で確認。初診の日・費用請求日は第9条に規定なし。blind一致、validate 0 errors。"},
+{"key":"G3-S08-REC-10","verdict":"pass","blindAnswer":3,"checks":{"answer":true,"distractors":true,"stem":true,"explanations":true,"sources":true,"asOf":true,"domain":true},"notes":"law:救急救命士法 第46条第1項・第2項（版の施行日2025-06-01、現行）を原文確認：「その記載の日から五年間」。修正後の解説の保存義務者（省令で定める機関に勤務する者の分は厚生労働大臣が指定する者、その他は当該救急救命士）は第2項の文言どおり。誤答肢の解説は law:薬剤師法 第28条第3項、療担規則 第9条本文（完結の日から三年間）で確認。blind一致、validate 0 errors。"}
+]}

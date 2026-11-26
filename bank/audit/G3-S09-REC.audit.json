@@ -1,0 +1,200 @@
+{
+ "verdicts": [
+  {
+   "key": "G3-S09-REC-01",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "him:jhim-gyomu-shishin-2026 5-2 本文で「1患者1ID」原則・同一IDでの管理を確認。誤答4肢はいずれも複数ID化で原則に反する。blind一致。"
+  },
+  {
+   "key": "G3-S09-REC-02",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "him:jhim-gyomu-shishin-2026 5-2: 二重登録の弊害、防止策、統合手順は「情報システム部門と連携してあらかじめ定める」、一元的参照体制、記録指針の参照を原文で確認。Dのみ誤り。blind一致。"
+  },
+  {
+   "key": "G3-S09-REC-03",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:r08-kihon-shisetsukijun-tsuchi 第4の1(1)（10/7訂正反映版）で「過去5年間の診療録及び過去3年間の手術記録、看護記録等」を確認。2(1)で加算2も1(1)を要件とすることも確認。blind一致。"
+  },
+  {
+   "key": "G3-S09-REC-04",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "him:jhim-gyomu-shishin-2026 5-1(1)(2)(3)を通読。a・bは(2)の原文どおり、cは(3)明文化、dは(3)廃棄手順、eは(1)中核的な構成員に反する。正答は「aとb」のみ。blind一致。"
+  },
+  {
+   "key": "G3-S09-REC-05",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "info:mhlw-hozonbasho-kaisei-h25 別紙（改正後全文）第2の2(1)〜(3)を確認。責任は保存義務を有する病院・診療所等、直ちに利用できる体制、プライバシー保護。設問に改正時点の明示あり。blind一致。"
+  },
+  {
+   "key": "G3-S09-REC-06",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "info:mhlw-anzen-gl7-unyo 16【遵守事項】①②と16.1を確認。「同等にはならない」「元の紙媒体も保存することは…極めて有効」。B〜Eは遵守事項・16.1に反する。blind一致。"
+  },
+  {
+   "key": "G3-S09-REC-07",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "him:jcqhc-ippan2-3rdg-v3 3.1.6の評価の要素6項目と3.1.7「医療機器の一元的な管理」を確認。版・運用開始時期の記載も登録情報と一致。blind一致。"
+  },
+  {
+   "key": "G3-S09-REC-08",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "him:jhim-gyomu-shishin-2026 5-8(1)を通読。委員会で職種ごとにアクセス範囲、参照・記録の可否、ID・パスワード厳正運用、二要素認証、代行入力の規則整備を確認。blind一致。"
+  },
+  {
+   "key": "G3-S09-REC-09",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "him:jhim-gyomu-shishin-2026 5-8(1)末尾（頁またぎ）と5-8(2)を確認。職員やその家族が患者となる場合は特別な配慮を要する情報の筆頭。A〜Dは原文どおり。blind一致（確信度medium、根拠は同じ）。"
+  },
+  {
+   "key": "G3-S09-REC-10",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "him:jhim-gyomu-shishin-2026 5-9(2)(3)を確認。手続きの適正確認→所要の範囲、証拠保全も同様、診療情報管理士が対応し提供先・目的・日時・範囲を管理。Eは5-9(2)に反する。blind一致。"
+  },
+  {
+   "key": "G3-S09-REC-11",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:r08-kihon-shisetsukijun-tsuchi 第4の1(7)ア〜オを確認。医薬品コードは掲げられていない。blind一致。"
+  },
+  {
+   "key": "G3-S09-REC-12",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:r08-kihon-shisetsukijun-tsuchi 第4の1(6)「4桁又は5桁の細分類項目」、2(3)「ICD大分類程度以上」を確認。blind一致。"
+  },
+  {
+   "key": "G3-S09-REC-13",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "him:jhim-gyomu-shishin-2026 5-10(1)(2)を確認。統計項目は自施設の機能と役割に応じて定め定期実施、レセプトデータ等も活用、結果を共有、臨床指標は委員会等で選定。blind一致。"
+  },
+  {
+   "key": "G3-S09-REC-14",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "ins:r08-kihon-shisetsukijun-tsuchi 第4の1(7)「任意の条件及びコードに基づいて速やかに検索・抽出」「退院時要約が作成された後、速やかに更新」、him:jhim-gyomu-shishin-2026 4-7（発生源にさかのぼる精度管理）・5-15(2)（匿名化の水準を含む利用基準）を確認。blind一致。"
+  }
+ ]
+}

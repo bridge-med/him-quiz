@@ -1,0 +1,14 @@
+{"answers":[
+{"key":"G4-S12-RES-01","answer":4,"confidence":"high","ambiguous":false,"note":"J11.1 インフルエンザNOS (naiyou10)"},
+{"key":"G4-S12-RES-02","answer":2,"confidence":"high","ambiguous":false,"note":"J09除外: インフルエンザ菌肺炎(J14)"},
+{"key":"G4-S12-RES-03","answer":1,"confidence":"high","ambiguous":false,"note":"J15.7 マイコプラズマ肺炎"},
+{"key":"G4-S12-RES-04","answer":4,"confidence":"high","ambiguous":false,"note":"レジオネラ症はA48.1 (J15除外)"},
+{"key":"G4-S12-RES-05","answer":3,"confidence":"high","ambiguous":false,"note":"J69.0 誤嚥性肺炎NOS (J18除外)"},
+{"key":"G4-S12-RES-06","answer":2,"confidence":"high","ambiguous":false,"note":"第X章注: 解剖学的に下位の部位"},
+{"key":"G4-S12-RES-07","answer":0,"confidence":"high","ambiguous":false,"note":"J40注: 15歳未満はJ20.-、NOSはJ20.9"},
+{"key":"G4-S12-RES-08","answer":3,"confidence":"high","ambiguous":false,"note":"第2巻 例21 J44.1"},
+{"key":"G4-S12-RES-09","answer":1,"confidence":"high","ambiguous":false,"note":"J44.0はインフルエンザ(J09-J11)除外"},
+{"key":"G4-S12-RES-10","answer":3,"confidence":"high","ambiguous":false,"note":"J46包含: 急性重症喘息"},
+{"key":"G4-S12-RES-11","answer":1,"confidence":"medium","ambiguous":false,"note":"副鼻腔炎NOSはJ32.9 慢性副鼻腔炎; 他は急性(J00,J02.9,J03.9,J04.0)"},
+{"key":"G4-S12-RES-12","answer":0,"confidence":"high","ambiguous":false,"note":"J96除外: 処置後呼吸不全(J95.-)"}
+]}

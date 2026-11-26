@@ -1,0 +1,15 @@
+{"answers":[
+{"key":"G4-S10-DPB-01","answer":3,"confidence":"high","ambiguous":false,"note":"ins:r08-kaitei-gaiyo-dpc 第Ⅲ日=平均在院日数+2SD以上の30の整数倍"},
+{"key":"G4-S10-DPB-02","answer":1,"confidence":"high","ambiguous":false,"note":"r08-kaitei-gaiyo-dpc 入院期間Ⅱの見直し: A〜Cで変動係数0.6未満、上限10%、平均→中央値"},
+{"key":"G4-S10-DPB-03","answer":2,"confidence":"high","ambiguous":false,"note":"医療機関別係数は各係数の合計（和）であり、乗じたものではない"},
+{"key":"G4-S10-DPB-04","answer":4,"confidence":"high","ambiguous":false,"note":"DPC標準病院群を1・2に区別（r08-kaitei-gaiyo-dpc 基礎係数）"},
+{"key":"G4-S10-DPB-05","answer":0,"confidence":"high","ambiguous":false,"note":"効率性指数の定義（r08-kaitei-gaiyo-dpc）"},
+{"key":"G4-S10-DPB-06","answer":4,"confidence":"high","ambiguous":false,"note":"激変緩和係数は改定年度1年間のみ・該当医療機関のみ"},
+{"key":"G4-S10-DPB-07","answer":3,"confidence":"high","ambiguous":false,"note":"期間Ⅰ5日×3000+期間Ⅱ5日(6〜10日目)×2200=26000×1.25=32500"},
+{"key":"G4-S10-DPB-08","answer":0,"confidence":"high","ambiguous":false,"note":"調査実施説明 6.Hファイル(3): 1日毎に入力し1か月分を1ファイル"},
+{"key":"G4-S10-DPB-09","answer":1,"confidence":"high","ambiguous":false,"note":"様式1は出来高払い症例も対象"},
+{"key":"G4-S10-DPB-10","answer":1,"confidence":"high","ambiguous":false,"note":"様式3は医療機関単位の施設情報"},
+{"key":"G4-S10-DPB-11","answer":3,"confidence":"high","ambiguous":false,"note":"Dファイルは DPC対象病院のみ作成（準備病院は含まれない）"},
+{"key":"G4-S10-DPB-12","answer":2,"confidence":"high","ambiguous":false,"note":"調査期間を通じ1患者=1匿名ID、複数IDを振らない"},
+{"key":"G4-S10-DPB-13","answer":2,"confidence":"high","ambiguous":false,"note":"転棟時点で様式1を別に作成。仮様式1は90日、7日以内再入院は一連の様式1を追加作成、ICD-10(2013)準拠"}
+]}

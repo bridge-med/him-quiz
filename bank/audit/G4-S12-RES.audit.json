@@ -1,0 +1,218 @@
+{
+ "verdicts": [
+  {
+   "key": "G4-S12-RES-01",
+   "verdict": "fix",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": false,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou10 J11包含・J11.1例示(インフルエンザ NOS)、J06除外(J11.1)、J09/J10.1/J11.0の名称を確認。キーJ11.1は正しく一意。盲検一致(4)。",
+   "detail": "pointの「分離あり＝J09またはJ10。肺炎を伴えば4桁目は.0」は、J09にも.0があるように読める。J09は4桁細分類がなく（icd.mjsで3桁・最小、naiyou10 J09「肺炎…の分類が必要な場合追加コードを用いる」）、.0があるのはJ10・J11だけ。pointのみ修正、他は無変更。",
+   "fixed": {
+    "key": "G4-S12-RES-01",
+    "subject": "S12",
+    "subtopic": "呼吸器（第Ⅹ章）",
+    "format": "icd",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "診療録の診断名は「インフルエンザ」のみで、インフルエンザウイルスが分離（同定）されたという記載も、肺炎を伴うという記載もない。ICD-10（2013年版）のコードはどれか。",
+    "choices": [
+     "J06.9",
+     "J09",
+     "J10.1",
+     "J11.0",
+     "J11.1"
+    ],
+    "answer": 4,
+    "explanation": {
+     "correct": "J11（インフルエンザ，インフルエンザウイルスが分離されないもの）は、特異的なウイルスが分離されたという記載がないインフルエンザを包含する。その4桁細分類J11.1（その他の呼吸器症状を伴うもの）の例示に「インフルエンザ NOS」があるので、J11.1にコードする。",
+     "choiceNotes": [
+      "J06.9は急性上気道感染症，詳細不明。J06の除外に、インフルエンザウイルスが分離されないもの（J11.1）が挙げられており、インフルエンザはJ06に分類しない。",
+      "J09は特定のインフルエンザウイルス（A/H1N1 2009年流行型、A/H5N1流行型）が分離されたインフルエンザで、ウイルスの記載がない本例には使えない。",
+      "J10.1はその他のインフルエンザウイルスが「分離されたもの」。本例は分離の記載がない。",
+      "J11.0は肺炎を伴うインフルエンザ（ウイルスが分離されないもの）。本例は肺炎を伴うという記載がない。",
+      null
+     ],
+     "point": "インフルエンザ NOS（ウイルス分離の記載なし）＝J11.1。分離あり＝J09（特定の型。4桁細分類はない）またはJ10。J10・J11は、肺炎を伴えば4桁目が.0。"
+    },
+    "sources": [
+     {
+      "ref": "icd:naiyou10",
+      "title": "ICD-10（2013年版）準拠 内容例示表 第10章 呼吸器系の疾患（J00-J99）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou10.pdf",
+      "locator": "J11.1（例示：インフルエンザ NOS）",
+      "quote": "Ｊ11．1   その他の呼吸器症状を伴うインフルエンザ， インフルエンザウイルスが分離されないもの インフルエンザ ＮＯＳ"
+     },
+     {
+      "ref": "icd:naiyou10",
+      "title": "ICD-10（2013年版）準拠 内容例示表 第10章 呼吸器系の疾患（J00-J99）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou10.pdf",
+      "locator": "J11 包含",
+      "quote": "特異的なウイルスが分離されたという記載が"
+     }
+    ],
+    "asOf": "ICD-10（2013年版）準拠"
+   }
+  },
+  {
+   "key": "G4-S12-RES-02",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou10 J09: 注(WHO勧告のみ)・包含(A/H1N1 2009年流行型, A/H5N1流行型, 追加コードの指示)・除外(インフルエンザ菌 A49.2/G00.0/J14)を本文で確認。J09は3桁・細分類なし(icd.mjs)。盲検一致(2)。"
+  },
+  {
+   "key": "G4-S12-RES-03",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou10 J15.7 マイコプラズマ肺炎、J16.0/J16.8、J12包含、J17*(J17.0 百日咳・J17.1 麻疹)を確認。3桁J15が唯一。盲検一致(1)。"
+  },
+  {
+   "key": "G4-S12-RES-04",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou10 J13/J14/J12.1/J16.0の名称、J15除外「レジオネラ症＜在郷軍人病＞（A48.1）」、J15.6(例示 霊菌)を確認。A48.1存在(icd.mjs)。盲検一致(4)。"
+  },
+  {
+   "key": "G4-S12-RES-05",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou10 J69.0の例示(誤嚥性肺炎 NOS・食物(逆流)等)と除外(J95.4)、J18除外(誤嚥性 NOS→J69.0)、J18.2/J18.9/J15.9の名称を確認。盲検一致(3)。"
+  },
+  {
+   "key": "G4-S12-RES-06",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou10 第Ⅹ章冒頭の注(解剖学的に下位の部位、例 気管気管支炎→J40)を本文で確認。盲検一致(2)。"
+  },
+  {
+   "key": "G4-S12-RES-07",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou10 J40注(15歳未満→J20.-)、J20包含(気管支炎 NOS, 15歳未満)・除外(15歳以上→J40)、J21.9/J22/J42を確認。盲検一致(0)。"
+  },
+  {
+   "key": "G4-S12-RES-08",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:instruction 4.4.2 急性及び慢性の病態のコーディング 例20(K81.0)・例21(J44.1)を前後含め確認。icd:naiyou10 J44.8除外(J44.1)、J42除外(気道閉塞を伴うもの→J44.-)、J44.0名称を確認。盲検一致(3)。"
+  },
+  {
+   "key": "G4-S12-RES-09",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou10 J44.0除外(インフルエンザ J09-J11)、J45除外(慢性閉塞性喘息 J44.-)、J43除外(慢性(閉塞性)気管支炎を伴う肺気腫 J44.-)、J44除外(気管支拡張症 J47)、J44.9例示(慢性閉塞性肺疾患 NOS)を確認。盲検一致(1)。"
+  },
+  {
+   "key": "G4-S12-RES-10",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou10 J46包含(急性重症喘息)、J45除外(急性重症喘息・喘息発作重積状態 J46)、J44除外(喘息 J45.-)、J45.1例示を確認。盲検一致(3)。"
+  },
+  {
+   "key": "G4-S12-RES-11",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou10 J01除外(副鼻腔炎 慢性又はNOS→J32.-)、J32.9例示、J00例示(鼻咽頭炎 NOS)、J31.1/J31.2/J35.0/J37.0の除外(NOS→J00/J02.9/J03.9/J04.0)を全て確認。慢性側は副鼻腔炎のみ。盲検一致(1, 確信度中)。"
+  },
+  {
+   "key": "G4-S12-RES-12",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou10 J96除外(処置後呼吸不全 J95.-)、J95除外(気腫(皮下) T81.8)、J95.0例示(気管切開孔からの出血)、J95.1/J95.2。icd:instruction 3.1.5 処置後障害(J95.- 原死因に使用不可)、4.4.2 処置後病態(肺炎は通常コード＋Y83-Y84任意)を確認。盲検一致(0)。"
+  }
+ ]
+}

@@ -1,0 +1,14 @@
+{"verdicts":[
+{"key":"G3-S06-DAT-03","verdict":"pass","blindAnswer":1,
+ "checks":{"answer":true,"distractors":true,"stem":true,"explanations":true,"sources":true,"asOf":true,"domain":true},
+ "notes":"盲検一致(B)。x-legacy-L06b:mext-joho1-ch4 学習22 本文で、間隔尺度(気温)は差は意味をもち比は意味をもたない／「地点Bは地点Aより2倍暑い」は尺度と分析が合っていない例／比例尺度(体重)は絶対的な0をもち比も意味をもつ／優・良・可の程度の差が一致する保障はない、を確認。学習23(1)「質的データの種類とその扱い」で、質的データ・カテゴリ型データの呼称と「数値で表されていても量的データと同様の演算ができないことがある」を確認(修正後ロケータ 学習23 は正しい。学習24の見出しは「質的データとその種類」)。誤りはBのみ。validate 0 errors。"},
+{"key":"G3-S06-DAT-05","verdict":"pass","blindAnswer":0,
+ "checks":{"answer":true,"distractors":true,"stem":true,"explanations":true,"sources":true,"asOf":true,"domain":true},
+ "notes":"盲検一致(aとb)。x-legacy-L06b:mext-joho1-ch4 学習22 の「尺度と分析の方法があっていない例」3項目のうち、名義尺度の平均(a)と、順序尺度の集計結果をカテゴリーの順序を無視して棒グラフ・円グラフに表す(b、例示は優・良・可)を原文で確認。c(比例尺度の比)、e(間隔尺度の差)は同段落の尺度定義、d(層別)は同学習のデータ変容の段落で適切と確認。修正で加えた「良・可・優」の並べ順明示により b が不適合例であることが文面から読み取れ、a・b以外に不適合な記述はなくキーは一意。選択肢注記・ポイントも出典と整合。"},
+{"key":"G3-S06-DAT-08","verdict":"pass","blindAnswer":2,
+ "checks":{"answer":true,"distractors":true,"stem":true,"explanations":true,"sources":true,"asOf":true,"domain":true},
+ "notes":"盲検一致(8)。再計算 16÷(20÷10)=8、calc一致。stats:naruhodo-chirabari-shokyu ヒストグラム(階級幅2倍→横2倍・縦2分の1、面積が度数を表す)、stats:naruhodo-histogram「気をつけることは？」(面積がデータの個数に比例するように描く)を原文で確認。修正後の choiceNotes[0](16÷8＝2、割るのは階級幅の比2)は算術的に正しく、他の注記(4分の1、度数のまま、掛けて逆)も整合。"},
+{"key":"G3-S06-DAT-11","verdict":"pass","blindAnswer":4,
+ "checks":{"answer":true,"distractors":true,"stem":true,"explanations":true,"sources":true,"asOf":true,"domain":true},
+ "notes":"盲検一致(46)。再計算: IQR=30−20=10、下側基準 20−15=5、上側基準 30+15=45。6・12・38・44 は範囲内、46 のみ外側で一意(境界値ちょうどの選択肢はなく「以上/超」の解釈に依存しない)。x-legacy-L06b:mext-joho1-ch4 学習22「量的データの分析」(Q1−1.5×IQR〜Q3＋1.5×IQR の範囲内の最小値・最大値をひげの両端とし、それ以上離れた値を外れ値として点で示す箱ひげ図)を原文で確認、修正後ロケータ(学習22)は正しい。stats:naruhodo-chirabari-shokyu 四分位範囲の定義も確認。軽微な所見(合否に影響なし): asOf の括弧書きが「尺度水準の定義は…」と他問からの流用文言で本問(箱ひげ図)の内容と対応していない。format が knowledge だが実質は計算問題(calc なし)。"}
+]}

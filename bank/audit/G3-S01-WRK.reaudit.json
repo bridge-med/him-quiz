@@ -1,0 +1,8 @@
+{"verdicts":[
+{"key":"G3-S01-WRK-04","verdict":"pass","blindAnswer":1,
+ "checks":{"answer":true,"distractors":true,"stem":true,"explanations":true,"sources":true,"asOf":true,"domain":true},
+ "notes":"law:医療法施行規則（2026-10-01施行版）第74条（事前に予定された業務の開始）・第75条（24時間／46時間）・第76条第1号（9時間）・第2号（18時間。宿日直勤務〔特定宿日直勤務を除く〕に従事させ前号によらない場合に限る）を原文で確認。特定対象医師側の第112条第1項・第113条第1項も同値、特定臨床研修医の48時間以内24時間は第113条第2項第2号で確認（choiceNotes[2]と一致）。「厚生労働大臣の定める基準に適合するもの」は law:医療法 第110条第1項ただし書の文言どおり。修正で加えた条件は条文と一致し、ブラインド解答も一致。validate 0 errors。"},
+{"key":"G3-S01-WRK-06","verdict":"pass","blindAnswer":4,
+ "checks":{"answer":true,"distractors":true,"stem":true,"explanations":true,"sources":true,"asOf":true,"domain":true},
+ "notes":"A=law:医療法 第110条第1項「確保するよう努めなければならない」（対象医師の要件は規則第73条）、B=同第123条第1項「確保しなければならない」（特定労務管理対象機関の管理者）、C=同第108条第6項＋law:医療法施行規則 第70条第1項（月155時間超）・第2項（遅滞なく）、D・E=mgmt:ikisapo-slide-detail「今後この上限時間（1860時間）は変わらないのですか？」（B・連携Bは2035年度末を目標に終了、C水準は将来的な縮減を志向し中長期的に検証）を原文で確認。Aの「A水準＝努力義務」は同スライドおよび mgmt 概要資料の表記とも一致。asOf にスライド（PDF作成 2023-07）の基準が明記され、キャッシュ内にこれを改める資料なし。ブラインド解答一致。validate 0 errors。"}
+]}

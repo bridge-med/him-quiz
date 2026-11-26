@@ -1,0 +1,200 @@
+{
+ "verdicts": [
+  {
+   "key": "G3-S12-SYM-01",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou18 第ⅩⅧ章冒頭(b)・除外(O28.-, P00-P96)・R00除外(I47-I49)・「診断名をほぼ明確に示す…他の章」を原文で確認。正答一意。"
+  },
+  {
+   "key": "G3-S12-SYM-02",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou18 R56除外(F44.5/G40-G41/P90)・R56.0/R56.8、R50.9、G40.9、P90のコード名称を確認。instruction 4.4.3 例14もR56.0。"
+  },
+  {
+   "key": "G3-S12-SYM-03",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:instruction 4.4.3 ルールMB3（例11・13と同型）。icd:naiyou11 K80.5包含「総胆管結石症」、K80.3/K80.2、K83.1除外「胆石症を伴うもの(K80.-)」、R17を確認。"
+  },
+  {
+   "key": "G3-S12-SYM-04",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:instruction 4.1.9 ルールA の列挙（I46.1/I46.9/I95.9/I99/J96.0/J96.9/P28.5/R00-R94・R96-R99、R95は含まれない）を確認。"
+  },
+  {
+   "key": "G3-S12-SYM-05",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou18 R95-R99。R98包含「死体が発見され，しかも何らその原因が判明しない場合／発見死体」、R96.0/R96.1/R99/R95.9の名称・包含を確認。"
+  },
+  {
+   "key": "G3-S12-SYM-06",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:instruction 4.4.2（疑わしい病態…）・4.4.3 MB3・4.4.4 第ⅩⅧ章注釈、icd:naiyou18 冒頭（.8の説明）を確認。誤りは選択肢3のみ。"
+  },
+  {
+   "key": "G3-S12-SYM-07",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou22 U07.1/U07.2の注記と除外(B34.2, U07.1, Z11.5, Z03.8)、U04.9を確認。"
+  },
+  {
+   "key": "G3-S12-SYM-08",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou22 U07.1・U07.2注記（追加コード）、U07.2除外(Z03.8)、U08.9注（死亡の一次製表に使用すべきでない）、U09.9注（依然COVID-19を呈する場合は使用しない）を確認。"
+  },
+  {
+   "key": "G3-S12-SYM-09",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:instruction 2.4.7（U00-U49暫定／U50-U99研究）、icd:naiyou22 U82-U85注・U04・U84.3、icd:naiyou01 B34.2除外(U04.9)を確認。"
+  },
+  {
+   "key": "G3-S12-SYM-10",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou22 U82.0/U82.1/U82.2/U83.7/U84.7（U84.7除外=U83.7）とU82-U85注を確認。"
+  },
+  {
+   "key": "G3-S12-SYM-11",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou03 D50.0（出血後貧血（慢性）、除外D62）、D50.9/D62/D64.9/D61.9の名称を確認。"
+  },
+  {
+   "key": "G3-S12-SYM-12",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou03 第Ⅲ章除外(C00-D48)、D64除外 不応性貧血NOS(D46.4)、D60/D62/D65/D86が第Ⅲ章にあることを確認。"
+  },
+  {
+   "key": "G3-S12-SYM-13",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou03 D63.0*/D63.8*（慢性腎臓病における貧血，≧第3期 N18.3-N18.5†）、icd:instruction 3.1.3（星印コードは単独で使用しない）、N18.4/N18.9を確認。"
+  },
+  {
+   "key": "G3-S12-SYM-14",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou03 D65 包含（無フィブリノゲン血症，後天性／消費性凝固障害）・除外(O00-O07,O08.1／P60／O45.0,O46.0,O67.0,O72.3)を確認。a・cのみ正。"
+  }
+ ]
+}

@@ -1,0 +1,218 @@
+{
+ "verdicts": [
+  {
+   "key": "G4-S12-NEU-01",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou05 F00.0＊/F00.1＊（65歳以後・70歳代後半発病＝晩発性、G30.1†）、F01.1・F03は星印でない、F02.0＊(G31.0†)を確認。icd:naiyou06 G30.0/G30.1注も一致。"
+  },
+  {
+   "key": "G4-S12-NEU-02",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou05 第Ⅴ章冒頭の星印項目はF00＊・F02＊のみ、F01は無印、F02.3(G20†)確認。icd:instruction「剣印及び星印」システム（単独使用禁止・疾病コーディングでの逆転可）原文一致。"
+  },
+  {
+   "key": "G4-S12-NEU-03",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou05 F10－F19共通4桁 .0/.2/.3/.4（振戦せん妄（アルコールによる））、F05除外「アルコールによる…振戦せん妄（F10.4）」、F05.1名称を確認。"
+  },
+  {
+   "key": "G4-S12-NEU-04",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou05 共通4桁.6（コルサコフ…アルコールもしくは…詳細不明）、F04包含/除外（F10.6）、.5・.7の内容と.7除外、icd:naiyou18 R41.3（健忘NOS）を確認。"
+  },
+  {
+   "key": "G4-S12-NEU-05",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou19 T51.0除外（急性アルコール酩酊→F10.0）、icd:naiyou11 K70.3、icd:naiyou06 G62.1・G31.2（小脳性変性を包含）・G72.1 を確認。誤りはDのみ。"
+  },
+  {
+   "key": "G4-S12-NEU-06",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou06 G80.0〜G80.4の名称・包含（G80.3にアテトーゼ型）、G80除外G11.4、G81除外G80.-、G81.1名称を確認。"
+  },
+  {
+   "key": "G4-S12-NEU-07",
+   "verdict": "fix",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": false,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou06 G80除外、G80.0包含（先天性けい性麻痺NOS）、G81注・除外、G82除外、G82.4名称を確認。キー・選択肢は正しいが point に不正確な要約あり（下記）。",
+   "detail": "point の「G81〜G83は先天性の脳性麻痺を除外」は不正確（除外注があるのはG81・G82。G83は包含で「G80－G82の内容を除く」）。また原死因での使用条件を「原因記載のない陳旧性のものに限る」と要約し「それ以上詳細な記載がない」場合を落としていた。point のみ修正、他は変更なし。",
+   "fixed": {
+    "subject": "S12",
+    "subtopic": "精神・神経・感覚器（第Ⅴ〜Ⅷ章）",
+    "format": "knowledge",
+    "difficulty": "standard",
+    "polarity": "negative",
+    "question": "ICD-10（2013年版）内容例示表の脳性麻痺及びその他の麻痺性症候群（G80－G83）について、誤っているものはどれか。",
+    "choices": [
+     "G80（脳性麻痺）は、遺伝性けい＜痙＞性対麻痺（G11.4）を除外している。",
+     "G81（片麻痺）は、先天性の脳性麻痺（G80.-）を除外している。",
+     "G81は、原死因コーディングの場合には、それ以上詳細な記載がないか、陳旧性あるいは長期にわたるもので特に原因の記載がない片麻痺にのみ使用する。",
+     "G81は、複合コーディングの場合には、あらゆる原因から生じた片麻痺の分類に使用する。",
+     "先天性けい＜痙＞性麻痺NOSは、G82.4（けい性四肢麻痺）に分類する。"
+    ],
+    "answer": 4,
+    "explanation": {
+     "correct": "先天性けい＜痙＞性麻痺NOSはG80.0（けい性四肢麻痺型脳性麻痺）の包含用語として示されており、G82.4ではない。G82（対麻痺及び四肢麻痺）の除外にも先天性の脳性麻痺（G80.-）が挙げられている。",
+     "choiceNotes": [
+      "正しい。G80の除外に遺伝性けい性対麻痺（G11.4）がある。",
+      "正しい。G81の除外に先天性の脳性麻痺（G80.-）がある。",
+      "正しい。G81の注のとおり。原死因コーディングでの使用は限定されている。",
+      "正しい。G81の注に、複合コーディングの場合にはあらゆる原因から生じた片麻痺の分類に使用するとある。",
+      null
+     ],
+     "point": "先天性けい性麻痺NOS＝G80.0。G81・G82は先天性の脳性麻痺（G80.-）を除外する。G81〜G83は、原死因では詳細な記載がないか原因の記載がない陳旧性・長期のものに限り、複合コーディングではあらゆる原因のものに使う。"
+    },
+    "sources": [
+     {
+      "ref": "icd:naiyou06",
+      "title": "ICD-10（2013年版）準拠 内容例示表 第6章 神経系の疾患（G00-G99）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou06.pdf",
+      "locator": "G80.0",
+      "quote": "先天性けい＜痙＞性麻痺 ＮＯＳ"
+     },
+     {
+      "ref": "icd:naiyou06",
+      "title": "ICD-10（2013年版）準拠 内容例示表 第6章 神経系の疾患（G00-G99）",
+      "url": "https://www.mhlw.go.jp/toukei/sippei/dl/naiyou06.pdf",
+      "locator": "G81 注",
+      "quote": "陳旧性あるいは長期にわたるもので， 特に原因の記載がない片麻痺"
+     }
+    ],
+    "asOf": "ICD-10（2013年版）準拠",
+    "key": "G4-S12-NEU-07"
+   }
+  },
+  {
+   "key": "G4-S12-NEU-08",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou18 R56除外（F44.5・G40－G41・P90）とR56.0、icd:naiyou06 G41.0、icd:naiyou16 P90 を確認。"
+  },
+  {
+   "key": "G4-S12-NEU-09",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou09 I60－I69除外（G45.-）、icd:naiyou06 G45除外P91.0・G45.3・G45.4・G40除外G41.-、icd:naiyou07 H34除外G45.3 を確認。a・cのみ正で組合せは一意。"
+  },
+  {
+   "key": "G4-S12-NEU-10",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou07 章除外Q00－Q99、H25.1、H26除外Q12.0、H26.0/.1/.4、H28.0＊（.3を伴うE10－E14†）、icd.mjs E11.3† を確認。"
+  },
+  {
+   "key": "G4-S12-NEU-11",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou07 H40除外（Q15.0）、H40.0包含「高眼圧症」、H40.1/.2の包含、H40.9 を確認。"
+  },
+  {
+   "key": "G4-S12-NEU-12",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "icd:naiyou08 H65.0、H65.1除外「中耳炎（急性）NOS（H66.9）」、H66.0、H66.4、H66.9包含（急性NOS）を確認。"
+  }
+ ]
+}

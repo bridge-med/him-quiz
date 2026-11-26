@@ -1,0 +1,271 @@
+{
+ "verdicts": [
+  {
+   "key": "G3-S02-ORG-01",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:医療法 第10条第1項・第2項、第7条第1項（臨床研修等修了医師の定義）、第11条を2026-10-01施行版で確認。看護師・理事長・未登録医師はいずれも条文上不可。盲検一致。"
+  },
+  {
+   "key": "G3-S02-ORG-02",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:医療法 第12条第1項本文・ただし書、第2項柱書・第1号を確認。許可権者は所在地の都道府県知事で、厚生労働大臣とする選択肢のみ誤り。盲検一致。"
+  },
+  {
+   "key": "G3-S02-ORG-03",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:医療法 第16条本文・ただし書、第15条第1項、第18条（開設者が専属の薬剤師を置く）を確認。盲検一致。"
+  },
+  {
+   "key": "G3-S02-ORG-04",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:医療法 第10条第3項・第5条の2第1項、law:医療法施行規則 第7条の2第1項第1号・第2号イ〜ニを確認。臨床研究中核病院・医療法人立は列挙なし。a・b・eのみ該当。盲検一致。"
+  },
+  {
+   "key": "G3-S02-ORG-05",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:医療法 第10条の2第1項・第2項、law:医療法施行規則 第7条の2の2（あらかじめ定め公表、第1号 医療安全）・第7条の3を確認。盲検一致。"
+  },
+  {
+   "key": "G3-S02-ORG-06",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:医療法 第46条の5第1項〜第3項（社団=社員総会、財団=評議員会）、第46条の6第1項本文・ただし書を確認。盲検一致。"
+  },
+  {
+   "key": "G3-S02-ORG-07",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "x-gen-G3-S02-ORG:jnet21-swot-manga（内部=強み/弱み、外部=機会/脅威）、jnet21-swot-Q0910（外部=競合他社の動向など統制不可能、内部=人材・設備・財務）を本文で確認。各選択肢の区分は一義的。盲検一致。"
+  },
+  {
+   "key": "G3-S02-ORG-08",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "mgmt:quality-outcome-process-h23 1.(1)定義：アウトカム指標の具体例=死亡率・回復率・再入院率・患者満足度、プロセス指標=早期リハビリテーション開始率を確認。問いは資料の分類に限定されており一義的。盲検一致。"
+  },
+  {
+   "key": "G3-S02-ORG-09",
+   "verdict": "fix",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": false,
+    "sources": false,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "jnet21-bsc-Q0176 2.の4つの切り口を確認。キーは正しい。pointの別称「学習と成長」はキャッシュ内のどの資料でも確認できなかったため、厚生労働省委託報告書（x-audit-G3-S02-ORG:mhlw-keieikanri-h15 p.11）で確認できる「革新と学習の視点」に置換し、同資料を出典に追加。",
+   "detail": "解説のpointにあった別称「学習と成長」が出典で裏付けられていなかった。確認できた表記（革新と学習の視点／図では人材の視点）に改め、出典を1件追加。問題文・選択肢・キーは不変。",
+   "fixed": {
+    "key": "G3-S02-ORG-09",
+    "subject": "S02",
+    "subtopic": "マネジメント手法",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "negative",
+    "question": "バランススコアカード（BSC）で、戦略目標を実現するための重要な成功要因を洗い出す切り口として一般的に使われる4つの視点に含まれないものはどれか。",
+    "choices": [
+     "お客様（顧客）の視点",
+     "業務プロセスの視点",
+     "競合他社の視点",
+     "人材育成と変革の視点",
+     "財務的視点"
+    ],
+    "answer": 2,
+    "explanation": {
+     "correct": "バランススコアカードでは、ビジョンと戦略を具体的な目標に置き換え、重要な成功要因を「お客様の視点」「業務プロセスの視点」「人材育成と変革の視点」「財務的視点」の4つの切り口で洗い出し、それぞれに業績評価指標を設定する。厚生労働省委託の調査研究報告書（平成16年3月）も、一般的なBSCの軸を「革新と学習」「業務プロセス」「顧客」「財務」の4つの視点としており、「競合他社の視点」はいずれの資料の4つの視点にも含まれない。",
+     "choiceNotes": [
+      "4つの視点の一つ。医療機関では患者満足度スコアなどが指標例。",
+      "4つの視点の一つ。改善レポート提出数などが指標例。",
+      null,
+      "4つの視点の一つ。従業員満足度・研修参加率などが指標例。厚生労働省委託の報告書が「革新と学習の視点」（同頁の図では「人材の視点」）とする視点に相当する。",
+      "4つの視点の一つ。キャッシュフロー・病床利用率などが指標例。"
+     ],
+     "point": "BSCの4視点：お客様（顧客）・業務プロセス・人材育成と変革（資料により「革新と学習」とも表記）・財務。競合他社は視点ではない。"
+    },
+    "sources": [
+     {
+      "ref": "x-gen-G3-S02-ORG:jnet21-bsc-Q0176",
+      "title": "業績連動型の給与体系を導入する際の注意点について教えてください。（J-Net21）",
+      "url": "https://j-net21.smrj.go.jp/solution/qa/labor/Q0176.html",
+      "locator": "【経営目標の共有】2．戦略目標の設定と重要な成功要因の洗い出し",
+      "quote": "重要な成功要因の洗い出しの切り口としては、次の4つが一般的に使われています。 お客様の視点 業務プロセスの視点 人材育成と変革の視点 財務的視点"
+     },
+     {
+      "ref": "x-audit-G3-S02-ORG:mhlw-keieikanri-h15",
+      "title": "医療機関の経営安定化に資する経営管理手法に関する調査研究 報告書（平成15年度 厚生労働省医政局委託 医療施設経営安定化推進事業）",
+      "url": "https://www.mhlw.go.jp/topics/bukyoku/isei/igyou/igyoukeiei/antika1502.pdf",
+      "locator": "第1章 p.11 参考：BSC（バランス・スコアカード）",
+      "quote": "まず「①革新と学習の視点」を起点として、「②業務プロセスの視点」、「③顧客の視点」そして結果として「④財務の視点」を軸とし"
+     }
+    ],
+    "asOf": "J-Net21（中小企業基盤整備機構）掲載内容（2026-11取得）／厚生労働省医政局委託 調査研究報告書（平成16年3月）"
+   }
+  },
+  {
+   "key": "G3-S02-ORG-10",
+   "verdict": "fix",
+   "checks": {
+    "answer": true,
+    "distractors": false,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "jnet21-bsc-Q0176 3.本文で4視点の指標例を確認。キーは正しい。ただし「病床利用率―お客様の視点」は出典では財務だが、病院のBSC実務では置き場所が施設により異なり『明確な誤り』と言い切れない（盲検も確信度medium）。同じ出典文で財務と明記され一般論でも財務である「キャッシュフロー」に差し替え。",
+   "detail": "選択肢0「病床利用率 ― お客様の視点」が、出典に依存しないと明確な誤りと言えない誤答肢だった。「キャッシュフロー ― お客様の視点」に差し替え、choiceNotes[0]を対応させた。キー（4）・他の選択肢・出典は不変。",
+   "fixed": {
+    "key": "G3-S02-ORG-10",
+    "subject": "S02",
+    "subtopic": "マネジメント手法",
+    "format": "knowledge",
+    "difficulty": "standard",
+    "polarity": "positive",
+    "question": "医療機関でバランススコアカード（BSC）を用いる場合の、業績評価指標の例と視点の組合せとして正しいものはどれか。",
+    "choices": [
+     "キャッシュフロー ― お客様の視点",
+     "改善レポート提出数 ― 財務的視点",
+     "従業員満足度 ― お客様の視点",
+     "顧客（患者）満足度スコア ― 業務プロセスの視点",
+     "研修参加率 ― 人材育成と変革の視点"
+    ],
+    "answer": 4,
+    "explanation": {
+     "correct": "医療機関のBSCの評価基準例として、人材育成と変革の視点には従業員満足度・従業員一人あたり生産性・研修参加率、お客様の視点には顧客（患者）満足度スコア・リピート指名率、業務プロセスの視点には改善レポート提出数・顧客応対（患者検診）数、財務的視点にはキャッシュフロー・病床利用率が挙げられている。",
+     "choiceNotes": [
+      "キャッシュフローは、他の3視点の戦略目標が達成されたときに事業の成長と適正な利益が確保される項目として、病床利用率とともに財務的視点の例に挙げられている。",
+      "改善レポート提出数は業務プロセスの視点の例。",
+      "従業員満足度は人材育成と変革の視点の例。",
+      "顧客（患者）満足度スコアはお客様の視点の例。",
+      null
+     ],
+     "point": "患者満足度＝お客様、改善レポート数＝業務プロセス、従業員満足度・研修参加率＝人材育成と変革、病床利用率・キャッシュフロー＝財務。"
+    },
+    "sources": [
+     {
+      "ref": "x-gen-G3-S02-ORG:jnet21-bsc-Q0176",
+      "title": "業績連動型の給与体系を導入する際の注意点について教えてください。（J-Net21）",
+      "url": "https://j-net21.smrj.go.jp/solution/qa/labor/Q0176.html",
+      "locator": "【経営目標の共有】3．業績評価指標の設定（本文）",
+      "quote": "人材育成と変革の視点からは「従業員満足度」、「従業員一人あたり生産性」、「研修参加率」などでしょうか。"
+     },
+     {
+      "ref": "x-gen-G3-S02-ORG:jnet21-bsc-Q0176",
+      "title": "業績連動型の給与体系を導入する際の注意点について教えてください。（J-Net21）",
+      "url": "https://j-net21.smrj.go.jp/solution/qa/labor/Q0176.html",
+      "locator": "【経営目標の共有】3．業績評価指標の設定（本文）",
+      "quote": "財務的視点では、上記3つの戦略目標が達成されたときに事業の成長と適正な利益が確保されるような項目、たとえば「キャッシュフロー」、「病床利用率」などを案出してください。"
+     },
+     {
+      "ref": "x-gen-G3-S02-ORG:jnet21-bsc-Q0176",
+      "title": "業績連動型の給与体系を導入する際の注意点について教えてください。（J-Net21）",
+      "url": "https://j-net21.smrj.go.jp/solution/qa/labor/Q0176.html",
+      "locator": "【経営目標の共有】3．業績評価指標の設定（本文）",
+      "quote": "業務プロセスの視点からは、たとえば「改善レポート提出数」、「顧客応対（患者検診）数」などがあげられます。"
+     }
+    ],
+    "asOf": "J-Net21（中小企業基盤整備機構）掲載内容（2026-11取得）"
+   }
+  },
+  {
+   "key": "G3-S02-ORG-11",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "info:mhlw-anzen-gl7-keiei 2.2.2を文脈で確認（Plan-Do-Check-Act、平成19年3月30日医政発第0330010号医政局長通知、ISMSでPDCAが有効）。第7.0版は現行版。盲検一致。"
+  },
+  {
+   "key": "G3-S02-ORG-12",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "mgmt:ikisapo-outline（平成26年10月1日施行、PDCA、自主的に行われる任意の仕組み、勤改センターと両アドバイザー）と law:医療法 第30条の19（努力義務）を確認。一律様式・毎年度報告の義務は根拠なし。盲検一致。"
+  }
+ ]
+}

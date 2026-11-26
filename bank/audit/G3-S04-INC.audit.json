@@ -1,0 +1,412 @@
+{
+ "verdicts": [
+  {
+   "key": "G3-S04-INC-01",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "mgmt:ianzen-sougou-taisaku-h14 第1章【参考】3 を通読。インシデント＝実施前に発見/実施されたが影響に至らず（ヒヤリ・ハットと同義）。A=アクシデント、B=医療過誤、D=医療事故の定義で各々原文どおり。"
+  },
+  {
+   "key": "G3-S04-INC-02",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "同 第1章【参考】4。医療事故は人身事故一切で医療従事者が被害者の場合・廊下での転倒を含む、医療過誤は過失があるもの。原文と一致。"
+  },
+  {
+   "key": "G3-S04-INC-03",
+   "verdict": "fix",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": false,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "mgmt:ianzen-kanrisha-shishin-r2 Ⅰ3.3)(2) の3群（業務フロー／事故発生後の原因分析／危険箇所の予測と発生予防）を原文で確認。正答・誤答肢・解説は正しい。",
+   "detail": "locator の番号誤り（「2 医療安全管理者の業務 (2)」→ 正しくは Ⅰ 3．医療安全管理者の業務 3）（2））。locator のみ修正。",
+   "fixed": {
+    "key": "G3-S04-INC-03",
+    "subject": "S04",
+    "subtopic": "インシデント報告と分析手法",
+    "format": "knowledge",
+    "difficulty": "basic",
+    "polarity": "positive",
+    "question": "「医療安全管理者の業務指針および養成のための研修プログラム作成指針」（令和2年3月改定）で、「危険箇所の予測と事故の発生予防を目的としたもの」として挙げられている分析手法はどれか。",
+    "choices": [
+     "根本原因分析（RCA）",
+     "SHELモデル",
+     "4M-4E",
+     "FMEA",
+     "特性要因図作成"
+    ],
+    "answer": 3,
+    "explanation": {
+     "correct": "同指針は事例分析の手法を目的別に3群に分け、「危険箇所の予測と事故の発生予防を目的としたもの」としてFMEAを挙げている。FMEAは事故が起こる前に、起こりうる故障・誤りの様式とその影響を洗い出す前向きの手法である。",
+     "choiceNotes": [
+      "RCAは「事故発生後の原因分析を目的としたもの」に分類されている。",
+      "SHELモデルは「事故発生後の原因分析を目的としたもの」に分類されている。",
+      "4M-4Eは「事故発生後の原因分析を目的としたもの」に分類されている。",
+      null,
+      "特性要因図作成は「業務フローの現状と問題点の分析を目的としたもの」に分類されている。"
+     ],
+     "point": "事前（予測・予防）＝FMEA、事後（原因分析）＝RCA・SHEL・4M-4E、業務フロー分析＝工程分析・工程図・特性要因図。"
+    },
+    "sources": [
+     {
+      "ref": "mgmt:ianzen-kanrisha-shishin-r2",
+      "title": "医療安全管理者の業務指針および養成のための研修プログラム作成指針 ―医療安全管理者の質の向上のために―",
+      "url": "https://www.mhlw.go.jp/content/10800000/000898761.pdf",
+      "locator": "Ⅰ 3．医療安全管理者の業務 3）（2）医療事故等の事例の分析",
+      "quote": "【危険箇所の予測と事故の発生予防を目的としたもの】 ① FMEA（Failure Mode & Effects Analysis）等"
+     },
+     {
+      "ref": "mgmt:ianzen-kanrisha-shishin-r2",
+      "title": "医療安全管理者の業務指針および養成のための研修プログラム作成指針 ―医療安全管理者の質の向上のために―",
+      "url": "https://www.mhlw.go.jp/content/10800000/000898761.pdf",
+      "locator": "Ⅰ 3．医療安全管理者の業務 3）（2）医療事故等の事例の分析",
+      "quote": "【事故発生後の原因分析を目的としたもの】 ① 根本原因分析（RCA : Root Cause Analysis） ② SHEL モデル ③ 4M-4E 等"
+     }
+    ],
+    "asOf": "令和2年3月改定 医療安全管理者の業務指針"
+   }
+  },
+  {
+   "key": "G3-S04-INC-04",
+   "verdict": "fix",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": false,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "mgmt:ianzen-kanrisha-shishin-r2 Ⅰ3.3)(2) の3群（業務フロー／事故発生後の原因分析／危険箇所の予測と発生予防）を原文で確認。正答・誤答肢・解説は正しい。",
+   "detail": "locator の番号誤り（「2 医療安全管理者の業務 (2)」→ 正しくは Ⅰ 3．医療安全管理者の業務 3）（2））。locator のみ修正。 03 と同じ表を問うが形式と正答が異なるため重複とはしない。",
+   "fixed": {
+    "key": "G3-S04-INC-04",
+    "subject": "S04",
+    "subtopic": "インシデント報告と分析手法",
+    "format": "combination",
+    "difficulty": "advanced",
+    "polarity": "positive",
+    "question": "ある病院で注射薬の取り違えによる医療事故が発生した。医療安全管理者が、この事故の背後要因を事後に掘り下げて分析する目的で用いる手法として、「医療安全管理者の業務指針および養成のための研修プログラム作成指針」（令和2年3月改定）で「事故発生後の原因分析を目的としたもの」に分類されている手法の組合せはどれか。\na　根本原因分析（RCA）\nb　FMEA\nc　SHELモデル\nd　業務フロー（工程）図作成\ne　4M-4E",
+    "choices": [
+     "a と b と c",
+     "a と c と e",
+     "a と d と e",
+     "b と c と d",
+     "b と d と e"
+    ],
+    "answer": 1,
+    "explanation": {
+     "correct": "同指針は「事故発生後の原因分析を目的としたもの」として根本原因分析（RCA）、SHELモデル、4M-4Eを挙げている。したがって a・c・e が該当する。",
+     "choiceNotes": [
+      "b のFMEAは「危険箇所の予測と事故の発生予防を目的としたもの」で、事前の予防的手法である。",
+      null,
+      "d の業務フロー（工程）図作成は「業務フローの現状と問題点の分析を目的としたもの」に分類される。",
+      "b はFMEA（事前予防）、d は業務フロー分析に分類され、事故後の原因分析の群ではない。",
+      "b（FMEA）と d（業務フロー図作成）は事故後の原因分析の群に含まれない。"
+     ],
+     "point": "事故後の原因分析＝RCA・SHEL・4M-4E。FMEAは事前、工程図・特性要因図は業務フロー分析。"
+    },
+    "sources": [
+     {
+      "ref": "mgmt:ianzen-kanrisha-shishin-r2",
+      "title": "医療安全管理者の業務指針および養成のための研修プログラム作成指針 ―医療安全管理者の質の向上のために―",
+      "url": "https://www.mhlw.go.jp/content/10800000/000898761.pdf",
+      "locator": "Ⅰ 3．医療安全管理者の業務 3）（2）医療事故等の事例の分析",
+      "quote": "【事故発生後の原因分析を目的としたもの】 ① 根本原因分析（RCA : Root Cause Analysis） ② SHEL モデル ③ 4M-4E 等"
+     },
+     {
+      "ref": "mgmt:ianzen-kanrisha-shishin-r2",
+      "title": "医療安全管理者の業務指針および養成のための研修プログラム作成指針 ―医療安全管理者の質の向上のために―",
+      "url": "https://www.mhlw.go.jp/content/10800000/000898761.pdf",
+      "locator": "Ⅰ 3．医療安全管理者の業務 3）（2）医療事故等の事例の分析",
+      "quote": "【業務フローの現状と問題点の分析を目的としたもの】 ① 業務フロー（工程）分析 ② 業務フロー（工程）図作成 ③ 特性要因図作成 等"
+     }
+    ],
+    "asOf": "令和2年3月改定 医療安全管理者の業務指針"
+   }
+  },
+  {
+   "key": "G3-S04-INC-05",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "x-legacy-L01b:anzeninfo-heinrich 本文。1:29:300、バード 1:10:30:600 の各項目名も原文どおり。"
+  },
+  {
+   "key": "G3-S04-INC-06",
+   "verdict": "fix",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": false,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "mgmt:ianzen-kanrisha-shishin-r2 Ⅰ3.3)(1)。院内情報①②④⑤と院外情報②（各種メディアの報道）を原文で確認。",
+   "detail": "locator の番号誤り（「2 医療安全管理者の業務 (1)」→ Ⅰ 3．医療安全管理者の業務 3）（1））。locator のみ修正。",
+   "fixed": {
+    "key": "G3-S04-INC-06",
+    "subject": "S04",
+    "subtopic": "インシデント報告と分析手法",
+    "format": "knowledge",
+    "difficulty": "standard",
+    "polarity": "negative",
+    "question": "「医療安全管理者の業務指針および養成のための研修プログラム作成指針」（令和2年3月改定）で、医療安全管理者が収集する「医療機関内の情報」として挙げられていないものはどれか。",
+    "choices": [
+     "医療事故およびヒヤリ・ハット事例報告",
+     "患者や家族からの相談や苦情",
+     "院内の各種委員会の議事録",
+     "院内巡視の結果",
+     "新聞やテレビなど各種メディアの報道"
+    ],
+    "answer": 4,
+    "explanation": {
+     "correct": "同指針は、収集する情報を「医療機関内の情報」と「医療機関外の情報」に分けている。各種メディアの報道は「医療機関外の情報」に挙げられており、医療機関内の情報ではない。",
+     "choiceNotes": [
+      "医療機関内の情報の①に挙げられている。",
+      "医療機関内の情報の②に挙げられている。",
+      "医療機関内の情報の④に挙げられている。",
+      "医療機関内の情報の⑤に挙げられている。",
+      null
+     ],
+     "point": "院内情報＝事故・ヒヤリハット報告、相談・苦情、満足度調査、委員会議事録、院内巡視など。院外情報＝専門機関の情報、メディア報道、研究報告、専門家。"
+    },
+    "sources": [
+     {
+      "ref": "mgmt:ianzen-kanrisha-shishin-r2",
+      "title": "医療安全管理者の業務指針および養成のための研修プログラム作成指針 ―医療安全管理者の質の向上のために―",
+      "url": "https://www.mhlw.go.jp/content/10800000/000898761.pdf",
+      "locator": "Ⅰ 3．医療安全管理者の業務 3）（1）医療安全に関する情報収集【医療機関内の情報】",
+      "quote": "【医療機関内の情報】 ① 医療事故およびヒヤリ・ハット事例報告 ② 患者や家族からの相談や苦情"
+     },
+     {
+      "ref": "mgmt:ianzen-kanrisha-shishin-r2",
+      "title": "医療安全管理者の業務指針および養成のための研修プログラム作成指針 ―医療安全管理者の質の向上のために―",
+      "url": "https://www.mhlw.go.jp/content/10800000/000898761.pdf",
+      "locator": "Ⅰ 3．医療安全管理者の業務 3）（1）医療安全に関する情報収集【医療機関外の情報】",
+      "quote": "② 各種メディアの報道 新聞やテレビ、雑誌、インターネットなどの医療安全に関する報道"
+     }
+    ],
+    "asOf": "令和2年3月改定 医療安全管理者の業務指針"
+   }
+  },
+  {
+   "key": "G3-S04-INC-07",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "mgmt:innai-kansen-tsuchi-h26 別記 はじめに。定義①②、媒介経路、易感染患者、医療機関全体での取組を原文で確認。"
+  },
+  {
+   "key": "G3-S04-INC-08",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "同 別記 1-2(1)。300床以上・4職種・週1度以上・2名以上、300床未満は地域の専門家等に相談できる体制。"
+  },
+  {
+   "key": "G3-S04-INC-09",
+   "verdict": "fix",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": false,
+    "explanations": false,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "mgmt:innai-kansen-tsuchi-h26 別記 3-3(1)(3)。4週間以内・同一病棟・同一菌種・計3例以上→アウトブレイクの判断にかかわらず準じて対策。保健所報告は10名以上又は関連が否定できない死亡。正答は正しい。",
+   "detail": "通知 3-1(1) はアウトブレイクを「原因微生物が多剤耐性菌によるものを想定」としており、元の「細菌」「菌種を問わない」は通知の前提より広い。設問の菌を多剤耐性菌と明示し、選択肢Cの解説を「5種類に限らず」に改めた。",
+   "fixed": {
+    "key": "G3-S04-INC-09",
+    "subject": "S04",
+    "subtopic": "院内感染対策",
+    "format": "knowledge",
+    "difficulty": "advanced",
+    "polarity": "positive",
+    "question": "ある病院の同一病棟で、1例目の発見から3週間のうちに、同一菌種の多剤耐性菌による感染症の新規発病症例が計3例特定された。この菌種は、通知が保菌も含めて1例目から厳重な対策を求める5種類の多剤耐性菌には該当しない。厚生労働省通知「医療機関における院内感染対策について」（平成26年12月19日医政地発1219第1号）に照らして、この時点で求められる対応として正しいものはどれか。",
+    "choices": [
+     "医療機関がアウトブレイクと判断していなくても、アウトブレイク時の対応に準じて院内感染対策を実施する。",
+     "介入基準は4週間以内に計5例以上であるため、通常の感染対策を継続して経過を観察する。",
+     "5種類の多剤耐性菌ではないため、介入基準の対象とならない。",
+     "発病症例が3例に達したため、管轄する保健所に速やかに報告しなければならない。",
+     "介入基準は同一病棟で8週間以内に計3例以上であるため、さらに5週間経過を観察してから判断する。"
+    ],
+    "answer": 0,
+    "explanation": {
+     "correct": "介入基準は、1例目の発見から4週間以内に同一病棟で新規に同一菌種による感染症の発病症例が計3例以上特定された場合などを基本とし、これを満たすときは、アウトブレイクの判断にかかわらず、アウトブレイク時の対応に準じて院内感染対策を実施することとされている。設問は3週間で3例であり、基準を満たす。",
+     "choiceNotes": [
+      null,
+      "基準は「計3例以上」であり、5例ではない。",
+      "介入基準（4週間以内・計3例以上）は、5種類の多剤耐性菌に限らず、同一菌種による感染症の発病症例に適用される基本の基準である。5種類の多剤耐性菌は、さらに保菌も含めて1例目から厳重な対策を求める特則である。",
+      "保健所への速やかな報告が求められるのは、院内での対策実施後も発病症例が多数に上る場合（目安として1事例につき10名以上）又は因果関係が否定できない死亡者が確認された場合である。",
+      "期間の基準は「4週間以内」であり、8週間ではない。"
+     ],
+     "point": "介入基準：1例目から4週間以内に同一病棟で同一菌種の発病計3例以上 → アウトブレイクの判断にかかわらず、アウトブレイク時に準じた対策。"
+    },
+    "sources": [
+     {
+      "ref": "mgmt:innai-kansen-tsuchi-h26",
+      "title": "医療機関における院内感染対策について（医政地発1219第1号）",
+      "url": "https://www.mhlw.go.jp/content/10800000/000845013.pdf",
+      "locator": "別記 3-3(1) 介入基準の考え方及び対応",
+      "quote": "1 例目の発見から 4 週間以内に、同一病棟において新規に同一菌種による感染症の発病症例が計 3 例以上特定された場合"
+     },
+     {
+      "ref": "mgmt:innai-kansen-tsuchi-h26",
+      "title": "医療機関における院内感染対策について（医政地発1219第1号）",
+      "url": "https://www.mhlw.go.jp/content/10800000/000845013.pdf",
+      "locator": "別記 3-3(1) 介入基準の考え方及び対応",
+      "quote": "アウトブレイクの判断にかかわらず、アウトブレイク時の対応に準じて院内感染対策を実施すること。"
+     }
+    ],
+    "asOf": "平成26年12月19日 医政地発1219第1号（厚生労働省掲載）"
+   }
+  },
+  {
+   "key": "G3-S04-INC-10",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "同 別記 3-2(1)=1週間、3-3(1)=5菌種は保菌含め1例目、3-3(2)=専門家へ支援依頼、3-3(3)=10名以上又は因果関係が否定できない死亡で保健所報告。"
+  },
+  {
+   "key": "G3-S04-INC-11",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "同 別記 2-1(2), 2-2(2), 2-3(1), 2-4(5)(6)。履物交換・個人防護具の一律常時実施は必ずしも不要。他4肢は原文どおり。"
+  },
+  {
+   "key": "G3-S04-INC-12",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "law:医療法施行規則（2026-10-01施行版）第1条の11第1項ただし書・第2項第1号ただし書。ロ（委員会の開催）のみ病院・有床診療所・入所施設を有する助産所に限定。"
+  },
+  {
+   "key": "G3-S04-INC-13",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "mgmt:jikojoho-youkou 第8条・第16条（2週間）・第17条（仮報告3ヶ月）・第29条第2項（1ヶ月）、mgmt:jikojoho-mhlw（登録分析機関＝日本医療機能評価機構）。"
+  },
+  {
+   "key": "G3-S04-INC-14",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "mgmt:jikojoho-youkou 第24条1〜3号、第14条第1項第1号。障害が残った事例は医療事故情報。"
+  },
+  {
+   "key": "G3-S04-INC-15",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "mgmt:sanka-compensation ［1］2022年以降=在胎28週以上、［2］除外基準（先天性要因、生後6ヶ月未満死亡）、［3］1級または2級。出典2の引用は［2］のみにある（locatorはやや広いが誤りではない）。"
+  },
+  {
+   "key": "G3-S04-INC-16",
+   "verdict": "pass",
+   "checks": {
+    "answer": true,
+    "distractors": true,
+    "stem": true,
+    "explanations": true,
+    "sources": true,
+    "asOf": true,
+    "domain": true
+   },
+   "notes": "mgmt:sanka-system（運営組織、原因分析は過失の有無を判断しない、報告書は児・保護者と分娩機関へ）、mgmt:sanka-compensation（満1歳〜満5歳、補償請求者＝保護者）。"
+  }
+ ]
+}

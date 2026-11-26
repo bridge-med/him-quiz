@@ -1,0 +1,8 @@
+{"verdicts":[
+ {"key":"G3-S02-ORG-09","verdict":"pass","blindAnswer":2,
+  "checks":{"answer":true,"distractors":true,"stem":true,"explanations":true,"sources":true,"asOf":true,"domain":true},
+  "notes":"盲検=キー(2)。x-gen-G3-S02-ORG:jnet21-bsc-Q0176【経営目標の共有】2.で4つの切り口（お客様・業務プロセス・人材育成と変革・財務的）を文脈ごと確認。追加出典 x-audit-G3-S02-ORG:mhlw-keieikanri-h15 は第1章 参考：BSC（目次p.11、本文頁番号11）に「①革新と学習②業務プロセス③顧客④財務」、同頁の図に「人材の視点」とあり、解説・choiceNotes[3]・pointの修正記述と一致。両URLを再取得し引用文の実在を確認（HTTP 200）。競合他社の視点はどちらの資料にもなく唯一の正答。validate 0 errors。"},
+ {"key":"G3-S02-ORG-10","verdict":"pass","blindAnswer":4,
+  "checks":{"answer":true,"distractors":true,"stem":true,"explanations":true,"sources":true,"asOf":true,"domain":true},
+  "notes":"盲検=キー(4)。x-gen-G3-S02-ORG:jnet21-bsc-Q0176【経営目標の共有】3.本文で、お客様=顧客（患者）満足度スコア・リピート指名率、業務プロセス=改善レポート提出数・顧客応対数、人材育成と変革=従業員満足度・一人あたり生産性・研修参加率、財務的=キャッシュフロー・病床利用率を確認。差し替え後の選択肢0「キャッシュフロー―お客様の視点」は出典でも一般的なBSCの理解でも明確に誤り（財務）で、choiceNotes[0]は出典本文と一致。引用3件は表1（見出しに誤記あり）ではなく本文から取られている。ORG-09とは問う内容が異なり重複なし。validate 0 errors。"}
+]}
